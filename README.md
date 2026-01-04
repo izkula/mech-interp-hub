@@ -1,0 +1,2 @@
+# cc
+Claude code explorations
