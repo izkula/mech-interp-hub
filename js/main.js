@@ -126,26 +126,8 @@ class MechInterpHub {
             );
         }
 
-        const sortBy = document.getElementById('paper-sort')?.value || 'date';
-
-        // Sort: featured first, then by date or citations
-        filteredPapers.sort((a, b) => {
-            // Featured papers always come first when sorting by date
-            if (sortBy === 'date' || sortBy === 'featured') {
-                if (a.featured && !b.featured) return -1;
-                if (!a.featured && b.featured) return 1;
-            }
-            if (sortBy === 'citations') {
-                return (b.citations || 0) - (a.citations || 0);
-            }
-            return new Date(b.date) - new Date(a.date);
-        });
-
-        const featuredPapers = filteredPapers.filter(p => p.featured);
-        const otherPapers = filteredPapers.filter(p => !p.featured);
-
-        // Always show all papers (scrollable list)
-        const papersToShow = otherPapers;
+        // Sort purely by date (newest first) - featured papers highlighted inline
+        filteredPapers.sort((a, b) => new Date(b.date) - new Date(a.date));
 
         const renderPaperCard = (paper, isFeatured = false) => {
             const date = new Date(paper.date);
@@ -181,27 +163,13 @@ class MechInterpHub {
             `;
         };
 
-        let html = '';
-
-        // Featured section
-        if (featuredPapers.length > 0 && !searchTerm) {
-            html += `<div class="papers-section">
-                <h3 class="papers-section-title">Key Papers</h3>
-                <p class="papers-section-desc">Foundational and high-impact research you should know</p>
-                ${featuredPapers.map(p => renderPaperCard(p, true)).join('')}
-            </div>`;
-        }
-
-        // Other papers section
-        if (papersToShow.length > 0 || searchTerm) {
-            const allToShow = searchTerm ? filteredPapers : papersToShow;
-            html += `<div class="papers-section">
-                ${!searchTerm ? '<h3 class="papers-section-title">All Papers</h3>' : ''}
-                ${allToShow.map(p => renderPaperCard(p, searchTerm && p.featured)).join('')}
-            </div>`;
-        }
-
-        container.innerHTML = html;
+        // Show ALL papers in one chronological list, with featured ones highlighted
+        container.innerHTML = `
+            <div class="papers-section">
+                <p class="papers-section-desc">${filteredPapers.length} papers sorted by date (newest first). <span class="featured-badge">Key Paper</span> = foundational/high-impact research.</p>
+                ${filteredPapers.map(p => renderPaperCard(p, p.featured)).join('')}
+            </div>
+        `;
 
         // Hide load more button since we show all papers
         const loadMoreBtn = document.getElementById('load-more-papers');
