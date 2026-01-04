@@ -420,6 +420,32 @@ a:hover {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    max-height: 600px;
+    overflow-y: auto;
+    padding-right: 8px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 16px;
+    background: var(--background);
+}
+
+/* Custom scrollbar for papers list */
+.papers-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.papers-list::-webkit-scrollbar-track {
+    background: var(--background);
+    border-radius: 4px;
+}
+
+.papers-list::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 4px;
+}
+
+.papers-list::-webkit-scrollbar-thumb:hover {
+    background: var(--text-muted);
 }
 
 .paper-card {
@@ -654,6 +680,10 @@ footer a:hover {
     .findings-grid,
     .techniques-grid {
         grid-template-columns: 1fr;
+    }
+
+    .papers-list {
+        max-height: 400px;
     }
 
     .paper-card {

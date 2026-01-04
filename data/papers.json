@@ -2,6 +2,127 @@
   "lastUpdated": "2026-01-04",
   "papers": [
     {
+      "id": "sae-embeddings-toolkit",
+      "title": "Interpretable Embeddings with Sparse Autoencoders: A Data Analysis Toolkit",
+      "authors": "Various",
+      "date": "2025-12-10",
+      "url": "https://arxiv.org/abs/2512.10092",
+      "abstract": "Proposes using SAEs to create embeddings whose dimensions map to interpretable concepts. Shows SAE embeddings are more cost-effective and reliable than LLMs for data analysis.",
+      "tags": ["SAE", "embeddings", "tools"],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "save-hallucination",
+      "title": "SAVE: Sparse Autoencoder-Driven Visual Information Enhancement for Mitigating Object Hallucination",
+      "authors": "Various",
+      "date": "2025-12-08",
+      "url": "https://arxiv.org/abs/2512.07730",
+      "abstract": "Uses SAE-driven visual information enhancement to mitigate object hallucination in vision-language models, achieving 10% improvement in CHAIR_S benchmarks.",
+      "tags": ["SAE", "vision", "hallucination", "safety"],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "gpt2-sentiment-mi",
+      "title": "Mechanistic Interpretability of GPT-2: Lexical and Contextual Layers in Sentiment Analysis",
+      "authors": "Amartya Hatua",
+      "date": "2025-12-07",
+      "url": "https://arxiv.org/abs/2512.06681",
+      "abstract": "Using systematic activation patching across all 12 layers, confirms early layers (0-3) act as lexical sentiment detectors with position-specific polarity signals.",
+      "tags": ["circuits", "sentiment", "GPT-2"],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "sparse-dictionary-theory",
+      "title": "On the Theoretical Foundation of Sparse Dictionary Learning in Mechanistic Interpretability",
+      "authors": "Yiming Tang et al.",
+      "date": "2025-12-05",
+      "url": "https://arxiv.org/abs/2512.05534",
+      "abstract": "First closed-form theoretical analysis of SAEs, transcoders, and crosscoders. Reveals SAEs may fail to fully recover ground truth features unless extremely sparse.",
+      "tags": ["SAE", "theory", "transcoders"],
+      "source": "arXiv",
+      "featured": true
+    },
+    {
+      "id": "sparse-attention-post-training",
+      "title": "Sparse Attention Post-Training for Mechanistic Interpretability",
+      "authors": "Florent Draye et al.",
+      "date": "2025-12-05",
+      "url": "https://arxiv.org/abs/2512.05865",
+      "abstract": "Post-training method making transformer attention sparse without sacrificing performance. Reduces attention connectivity to ~0.3% of edges on models up to 1B parameters.",
+      "tags": ["attention", "sparsity", "methods"],
+      "source": "arXiv",
+      "featured": true
+    },
+    {
+      "id": "ethical-multiagent-mi",
+      "title": "Towards Ethical Multi-Agent Systems of Large Language Models: A Mechanistic Interpretability Perspective",
+      "authors": "Various",
+      "date": "2025-12-04",
+      "url": "https://arxiv.org/abs/2512.04691",
+      "abstract": "Research agenda for ensuring ethical behavior of multi-agent LLM systems using mechanistic interpretability, identifying key research challenges.",
+      "tags": ["safety", "multi-agent", "ethics"],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "unsupervised-decoding-reasoning",
+      "title": "Unsupervised Decoding of Encoded Reasoning Using Language Model Interpretability",
+      "authors": "Ching Fang et al.",
+      "date": "2025-12-01",
+      "url": "https://arxiv.org/abs/2512.01222",
+      "abstract": "Evaluates logit lens and other MI methods on decoding hidden reasoning in models fine-tuned to reason in ROT-13 encryption while outputting English.",
+      "tags": ["reasoning", "probing", "methods"],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "nnterp-interface",
+      "title": "nnterp: A Standardized Interface for Mechanistic Interpretability of Transformers",
+      "authors": "Various",
+      "date": "2025-11-18",
+      "url": "https://arxiv.org/abs/2511.14465",
+      "abstract": "Lightweight wrapper around NNsight providing unified interface for transformer analysis while preserving HuggingFace implementations.",
+      "tags": ["tools", "library", "methods"],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "time-series-mi",
+      "title": "Mechanistic Interpretability for Transformer-based Time Series Classification",
+      "authors": "Various",
+      "date": "2025-11-15",
+      "url": "https://arxiv.org/abs/2511.21514",
+      "abstract": "Extends mechanistic interpretability techniques to time series transformers, analyzing how they process temporal patterns.",
+      "tags": ["time-series", "circuits", "methods"],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "circuits-october-2025",
+      "title": "Circuits Updates - October 2025",
+      "authors": "Anthropic Interpretability Team",
+      "date": "2025-10-15",
+      "url": "https://transformer-circuits.pub/2025/october-update/index.html",
+      "abstract": "Explores how LLMs perceive higher-level semantic concepts encoded visually in text, including ASCII art recognition and SVG understanding.",
+      "tags": ["circuits", "vision", "update"],
+      "source": "Anthropic",
+      "featured": false
+    },
+    {
+      "id": "circuits-august-2025",
+      "title": "Circuits Updates - August 2025",
+      "authors": "Anthropic Interpretability Team",
+      "date": "2025-08-15",
+      "url": "https://transformer-circuits.pub/2025/august-update/index.html",
+      "abstract": "Updates on SAE training improvements, crosscoder developments, and applications of MI to biological systems.",
+      "tags": ["circuits", "SAE", "update"],
+      "source": "Anthropic",
+      "featured": false
+    },
+    {
       "id": "salmon-domain-sae",
       "title": "Resurrecting the Salmon: Rethinking Mechanistic Interpretability with Domain-Specific Sparse Autoencoders",
       "authors": "Various",
