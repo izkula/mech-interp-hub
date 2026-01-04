@@ -713,6 +713,46 @@ footer a:hover {
     margin-left: 8px;
 }
 
+/* Featured badge */
+.featured-badge {
+    background: var(--primary-color);
+    color: white;
+    font-size: 0.625rem;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: var(--radius-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    margin-left: 8px;
+}
+
+/* Papers sections */
+.papers-section {
+    margin-bottom: 32px;
+}
+
+.papers-section:last-child {
+    margin-bottom: 0;
+}
+
+.papers-section-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 4px;
+}
+
+.papers-section-desc {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    margin-bottom: 16px;
+}
+
+.paper-card.featured {
+    border-left: 3px solid var(--primary-color);
+    background: linear-gradient(90deg, rgba(15, 118, 110, 0.03) 0%, transparent 100%);
+}
+
 /* Selection */
 ::selection {
     background: rgba(15, 118, 110, 0.15);
