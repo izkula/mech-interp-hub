@@ -7,6 +7,7 @@ class MechInterpHub {
         this.techniques = [];
         this.papers = [];
         this.resources = {};
+        this.neuroComparisons = [];
         this.displayedPapers = 10;
         this.currentFilter = 'all';
 
@@ -20,6 +21,7 @@ class MechInterpHub {
             this.renderQuestions();
             this.renderTechniques();
             this.renderPapers();
+            this.renderNeuroComparisons();
             this.renderResources();
             this.setupEventListeners();
             this.updateLastUpdated();
@@ -42,6 +44,7 @@ class MechInterpHub {
         this.findings = findingsData.findings || [];
         this.questions = findingsData.openQuestions || [];
         this.techniques = findingsData.techniques || [];
+        this.neuroComparisons = findingsData.neuroscienceComparisons || [];
         this.papers = papersData.papers || [];
         this.resources = resourcesData;
         this.lastUpdated = papersData.lastUpdated || findingsData.lastUpdated;
@@ -172,6 +175,32 @@ class MechInterpHub {
         if (loadMoreBtn) {
             loadMoreBtn.style.display = this.displayedPapers >= filteredPapers.length ? 'none' : 'inline-block';
         }
+    }
+
+    renderNeuroComparisons() {
+        const container = document.getElementById('neuro-comparisons-grid');
+        if (!container) return;
+
+        container.innerHTML = this.neuroComparisons.map(comparison => `
+            <div class="neuro-comparison-card">
+                <div class="comparison-header">
+                    <div class="concept ai-concept">
+                        <span class="concept-label">AI</span>
+                        <span class="concept-name">${comparison.aiConcept}</span>
+                    </div>
+                    <div class="comparison-arrow">↔</div>
+                    <div class="concept neuro-concept">
+                        <span class="concept-label">Neuroscience</span>
+                        <span class="concept-name">${comparison.neuroConcept}</span>
+                    </div>
+                </div>
+                <p class="comparison-text">${comparison.comparison}</p>
+                <div class="comparison-implication">
+                    <strong>Implication:</strong> ${comparison.implication}
+                </div>
+                ${comparison.sourceUrl ? `<a href="${comparison.sourceUrl}" target="_blank" class="comparison-source">Learn more →</a>` : ''}
+            </div>
+        `).join('');
     }
 
     renderResources() {
