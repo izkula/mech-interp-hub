@@ -2,13 +2,473 @@
   "lastUpdated": "2026-01-04",
   "papers": [
     {
+      "id": "arxiv-2512-24842v1",
+      "title": "Triangulation as an Acceptance Rule for Multilingual Mechanistic Interpretability",
+      "authors": "Yanan Long",
+      "date": "2025-12-31",
+      "url": "https://arxiv.org/abs/2512.24842v1",
+      "abstract": "Multilingual language models achieve strong aggregate performance yet often behave unpredictably across languages, scripts, and cultures. We argue that mechanistic explanations for such models should satisfy a \\emph{causal} standard: claims must survive causal interventions and must \\emph{cross-reference} across environments that perturb surface form while preserving meaning. We formalize \\emph{reference families} as predicate-preserving variants and introduce \\emph{triangulation}, an acceptance",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2512-24975v1",
+      "title": "Attribution-Guided Distillation of Matryoshka Sparse Autoencoders",
+      "authors": "Cristina P. Martin-Linares, Jonathan P. Ling",
+      "date": "2025-12-31",
+      "url": "https://arxiv.org/abs/2512.24975v1",
+      "abstract": "Sparse autoencoders (SAEs) aim to disentangle model activations into monosemantic, human-interpretable features. In practice, learned features are often redundant and vary across training runs and sparsity levels, which makes interpretations difficult to transfer and reuse. We introduce Distilled Matryoshka Sparse Autoencoders (DMSAEs), a training pipeline that distills a compact core of consistently useful features and reuses it to train new SAEs. DMSAEs run an iterative distillation cycle: tra",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2512-24711v1",
+      "title": "MEIC-DT: Memory-Efficient Incremental Clustering for Long-Text Coreference Resolution with Dual-Threshold Constraints",
+      "authors": "Kangyang Luo, Shuzheng Si, Yuzhuo Bai, Cheng Gao, Zhitong Wang, et al.",
+      "date": "2025-12-31",
+      "url": "https://arxiv.org/abs/2512.24711v1",
+      "abstract": "In the era of large language models (LLMs), supervised neural methods remain the state-of-the-art (SOTA) for Coreference Resolution. Yet, their full potential is underexplored, particularly in incremental clustering, which faces the critical challenge of balancing efficiency with performance for long texts. To address the limitation, we propose \\textbf{MEIC-DT}, a novel dual-threshold, memory-efficient incremental clustering approach based on a lightweight Transformer. MEIC-DT features a dual-th",
+      "tags": [
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2512-23988v1",
+      "title": "Fantastic Reasoning Behaviors and Where to Find Them: Unsupervised Discovery of the Reasoning Process",
+      "authors": "Zhenyu Zhang, Shujian Zhang, John Lambert, Wenxuan Zhou, Zhangyang Wang, et al.",
+      "date": "2025-12-30",
+      "url": "https://arxiv.org/abs/2512.23988v1",
+      "abstract": "Despite the growing reasoning capabilities of recent large language models (LLMs), their internal mechanisms during the reasoning process remain underexplored. Prior approaches often rely on human-defined concepts (e.g., overthinking, reflection) at the word level to analyze reasoning in a supervised manner. However, such methods are limited, as it is infeasible to capture the full spectrum of potential reasoning behaviors, many of which are difficult to define in token space. In this work, we p",
+      "tags": [
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2512-23837v1",
+      "title": "Adversarial Lens: Exploiting Attention Layers to Generate Adversarial Examples for Evaluation",
+      "authors": "Kaustubh Dhole",
+      "date": "2025-12-29",
+      "url": "https://arxiv.org/abs/2512.23837v1",
+      "abstract": "Recent advances in mechanistic interpretability suggest that intermediate attention layers encode token-level hypotheses that are iteratively refined toward the final output. In this work, we exploit this property to generate adversarial examples directly from attention-layer token distributions. Unlike prompt-based or gradient-based attacks, our approach leverages model-internal token predictions, producing perturbations that are both plausible and internally consistent with the model's own gen",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2512-23260v1",
+      "title": "Interpretable Safety Alignment via SAE-Constructed Low-Rank Subspace Adaptation",
+      "authors": "Dianyun Wang, Qingsen Ma, Yuhu Shang, Zhifeng Lu, Lechen Ning, et al.",
+      "date": "2025-12-29",
+      "url": "https://arxiv.org/abs/2512.23260v1",
+      "abstract": "Parameter-efficient fine-tuning has become the dominant paradigm for adapting large language models to downstream tasks. Low-rank adaptation methods such as LoRA operate under the assumption that task-relevant weight updates reside in a low-rank subspace, yet this subspace is learned implicitly from data in a black-box manner, offering no interpretability or direct control. We hypothesize that this difficulty stems from polysemanticity--individual dimensions encoding multiple entangled concepts.",
+      "tags": [
+        "features",
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2512-23043v1",
+      "title": "Mechanistic Analysis of Circuit Preservation in Federated Learning",
+      "authors": "Muhammad Haseeb, Salaar Masood, Muhammad Abdullah Sohail",
+      "date": "2025-12-28",
+      "url": "https://arxiv.org/abs/2512.23043v1",
+      "abstract": "Federated Learning (FL) enables collaborative training of models on decentralized data, but its performance degrades significantly under Non-IID (non-independent and identically distributed) data conditions. While this accuracy loss is well-documented, the internal mechanistic causes remain a black box. This paper investigates the canonical FedAvg algorithm through the lens of Mechanistic Interpretability (MI) to diagnose this failure mode. We hypothesize that the aggregation of conflicting clie",
+      "tags": [
+        "circuits"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2512-22511v1",
+      "title": "Decomposing Task Vectors for Refined Model Editing",
+      "authors": "Hamed Damirchi, Ehsan Abbasnejad, Zhen Zhang, Javen Shi",
+      "date": "2025-12-27",
+      "url": "https://arxiv.org/abs/2512.22511v1",
+      "abstract": "Large pre-trained models have transformed machine learning, yet adapting these models effectively to exhibit precise, concept-specific behaviors remains a significant challenge. Task vectors, defined as the difference between fine-tuned and pre-trained model parameters, provide a mechanism for steering neural networks toward desired behaviors. This has given rise to large repositories dedicated to task vectors tailored for specific behaviors. The arithmetic operation of these task vectors allows",
+      "tags": [
+        "steering",
+        "editing"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2512-21670v1",
+      "title": "The Deepfake Detective: Interpreting Neural Forensics Through Sparse Features and Manifolds",
+      "authors": "Subramanyam Sahoo, Jared Junkin",
+      "date": "2025-12-25",
+      "url": "https://arxiv.org/abs/2512.21670v1",
+      "abstract": "Deepfake detection models have achieved high accuracy in identifying synthetic media, but their decision processes remain largely opaque. In this paper we present a mechanistic interpretability framework for deepfake detection applied to a vision-language model. Our approach combines a sparse autoencoder (SAE) analysis of internal network representations with a novel forensic manifold analysis that probes how the model's features respond to controlled forensic artifact manipulations. We demonstr",
+      "tags": [
+        "SAE",
+        "features",
+        "probing",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2512-21643v2",
+      "title": "Omni-Weather: Unified Multimodal Foundation Model for Weather Generation and Understanding",
+      "authors": "Zhiwang Zhou, Yuandong Pu, Xuming He, Yidi Liu, Yixin Chen, et al.",
+      "date": "2025-12-25",
+      "url": "https://arxiv.org/abs/2512.21643v2",
+      "abstract": "Weather modeling requires both accurate prediction and mechanistic interpretation, yet existing methods treat these goals in isolation, separating generation from understanding. To address this gap, we present Omni-Weather, the first multimodal foundation model that unifies weather generation and understanding within a single architecture. Omni-Weather integrates a radar encoder for weather generation tasks, followed by unified processing using a shared self-attention mechanism. Moreover, we con",
+      "tags": [
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2512-22293v1",
+      "title": "Learning from Negative Examples: Why Warning-Framed Training Data Teaches What It Warns Against",
+      "authors": "Tsogt-Ochir Enkhbayar",
+      "date": "2025-12-25",
+      "url": "https://arxiv.org/abs/2512.22293v1",
+      "abstract": "Warning-framed content in training data (e.g., \"DO NOT USE - this code is vulnerable\") does not, it turns out, teach language models to avoid the warned-against behavior. In experiments reported here, models exposed to such warnings reproduced the flagged content at rates statistically indistinguishable from models given the content directly (76.7% vs. 83.3%). Why? Sparse autoencoder analysis points to a failure of orthogonalization: \"describing X\" and \"performing X\" activate overlapping latent ",
+      "tags": [
+        "SAE"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2512-20796v1",
+      "title": "Measuring Mechanistic Independence: Can Bias Be Removed Without Erasing Demographics?",
+      "authors": "Zhengyang Shan, Aaron Mueller",
+      "date": "2025-12-23",
+      "url": "https://arxiv.org/abs/2512.20796v1",
+      "abstract": "We investigate how independent demographic bias mechanisms are from general demographic recognition in language models. Using a multi-task evaluation setup where demographics are associated with names, professions, and education levels, we measure whether models can be debiased while preserving demographic detection capabilities. We compare attribution-based and correlation-based methods for locating bias features. We find that targeted sparse autoencoder feature ablations in Gemma-2-9B reduce b",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2512-22227v1",
+      "title": "Hierarchical Geometry of Cognitive States in Transformer Embedding Spaces",
+      "authors": "Sophie Zhao",
+      "date": "2025-12-23",
+      "url": "https://arxiv.org/abs/2512.22227v1",
+      "abstract": "Recent work has shown that transformer-based language models learn rich geometric structure in their embedding spaces, yet the presence of higher-level cognitive organization within these representations remains underexplored. In this work, we investigate whether sentence embeddings encode a graded, hierarchical structure aligned with human-interpretable cognitive or psychological attributes. We construct a dataset of 480 natural-language sentences annotated with continuous ordinal energy scores",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2512-20328v1",
+      "title": "Toward Explaining Large Language Models in Software Engineering Tasks",
+      "authors": "Antonio Vitale, Khai-Nguyen Nguyen, Denys Poshyvanyk, Rocco Oliveto, Simone Scalabrino, et al.",
+      "date": "2025-12-23",
+      "url": "https://arxiv.org/abs/2512.20328v1",
+      "abstract": "Recent progress in Large Language Models (LLMs) has substantially advanced the automation of software engineering (SE) tasks, enabling complex activities such as code generation and code summarization. However, the black-box nature of LLMs remains a major barrier to their adoption in high-stakes and safety-critical domains, where explainability and transparency are vital for trust, accountability, and effective human supervision. Despite increasing interest in explainable AI for software enginee",
+      "tags": [
+        "safety",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2512-19115v1",
+      "title": "Generative Giants, Retrieval Weaklings: Why do Multimodal Large Language Models Fail at Multimodal Retrieval?",
+      "authors": "Hengyi Feng, Zeang Sheng, Meiyi Qiang, Wentao Zhang",
+      "date": "2025-12-22",
+      "url": "https://arxiv.org/abs/2512.19115v1",
+      "abstract": "Despite the remarkable success of multimodal large language models (MLLMs) in generative tasks, we observe that they exhibit a counterintuitive deficiency in the zero-shot multimodal retrieval task. In this work, we investigate the underlying mechanisms that hinder MLLMs from serving as effective retrievers. With the help of sparse autoencoders (SAEs), we decompose MLLM output representations into interpretable semantic concepts to probe their intrinsic behavior. Our analysis reveals that the re",
+      "tags": [
+        "SAE",
+        "probing",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2512-18930v1",
+      "title": "LouvreSAE: Sparse Autoencoders for Interpretable and Controllable Style Transfer",
+      "authors": "Raina Panda, Daniel Fein, Arpita Singhal, Mark Fiore, Maneesh Agrawala, et al.",
+      "date": "2025-12-22",
+      "url": "https://arxiv.org/abs/2512.18930v1",
+      "abstract": "Artistic style transfer in generative models remains a significant challenge, as existing methods often introduce style only via model fine-tuning, additional adapters, or prompt engineering, all of which can be computationally expensive and may still entangle style with subject matter. In this paper, we introduce a training- and inference-light, interpretable method for representing and transferring artistic style. Our approach leverages an art-specific Sparse Autoencoder (SAE) on top of latent",
+      "tags": [
+        "SAE"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2512-19125v1",
+      "title": "SAP: Syntactic Attention Pruning for Transformer-based Language Models",
+      "authors": "Tzu-Yun Lee, Ding-Yong Hong, Jan-Jan Wu",
+      "date": "2025-12-22",
+      "url": "https://arxiv.org/abs/2512.19125v1",
+      "abstract": "This paper introduces Syntactic Attention Pruning (SAP), a novel method for effectively pruning attention heads in Transformer models. Unlike conventional approaches that rely solely on mathematical analysis of model weights and activations, SAP incorporates both the syntactic structure and attention patterns of sentences to guide the pruning process. By leveraging these linguistic features, SAP not only achieves performance comparable to state-of-the-art methods but also enhances the interpreta",
+      "tags": [
+        "features",
+        "attention"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2512-18092v1",
+      "title": "Faithful and Stable Neuron Explanations for Trustworthy Mechanistic Interpretability",
+      "authors": "Ge Yan, Tuomas Oikarinen,  Tsui-Wei,  Weng",
+      "date": "2025-12-19",
+      "url": "https://arxiv.org/abs/2512.18092v1",
+      "abstract": "Neuron identification is a popular tool in mechanistic interpretability, aiming to uncover the human-interpretable concepts represented by individual neurons in deep networks. While algorithms such as Network Dissection and CLIP-Dissect achieve great empirical success, a rigorous theoretical foundation remains absent, which is crucial to enable trustworthy and reliable explanations. In this work, we observe that neuron identification can be viewed as the inverse process of machine learning, whic",
+      "tags": [
+        "theory"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2512-17325v1",
+      "title": "Task Schema and Binding: A Double Dissociation Study of In-Context Learning",
+      "authors": "Chaeha Kim",
+      "date": "2025-12-19",
+      "url": "https://arxiv.org/abs/2512.17325v1",
+      "abstract": "We provide causal mechanistic validation that in-context learning (ICL) decomposes into two separable mechanisms: Task Schema (abstract task type recognition) and Binding (specific input-output associations). Through activation patching experiments across 9 models from 7 Transformer families plus Mamba (370M-13B parameters), we establish three key findings:   1. Double dissociation: Task Schema transfers at 100% via late MLP patching; Binding transfers at 62% via residual stream patching -- prov",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2512-15938v1",
+      "title": "SALVE: Sparse Autoencoder-Latent Vector Editing for Mechanistic Control of Neural Networks",
+      "authors": "Vegard Flovik",
+      "date": "2025-12-17",
+      "url": "https://arxiv.org/abs/2512.15938v1",
+      "abstract": "Deep neural networks achieve impressive performance but remain difficult to interpret and control. We present SALVE (Sparse Autoencoder-Latent Vector Editing), a unified \"discover, validate, and control\" framework that bridges mechanistic interpretability and model editing. Using an $\\ell_1$-regularized autoencoder, we learn a sparse, model-native feature basis without supervision. We validate these features with Grad-FAM, a feature-level saliency mapping method that visually grounds latent feat",
+      "tags": [
+        "SAE",
+        "features",
+        "editing",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2512-19734v1",
+      "title": "The Deleuzian Representation Hypothesis",
+      "authors": "Cl\u00e9ment Cornet, Romaric Besan\u00e7on, Herv\u00e9 Le Borgne",
+      "date": "2025-12-17",
+      "url": "https://arxiv.org/abs/2512.19734v1",
+      "abstract": "We propose an alternative to sparse autoencoders (SAEs) as a simple and effective unsupervised method for extracting interpretable concepts from neural networks. The core idea is to cluster differences in activations, which we formally justify within a discriminant analysis framework. To enhance the diversity of extracted concepts, we refine the approach by weighting the clustering using the skewness of activations. The method aligns with Deleuze's modern view of concepts as differences. We eval",
+      "tags": [
+        "SAE"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2512-15134v1",
+      "title": "From Isolation to Entanglement: When Do Interpretability Methods Identify and Disentangle Known Concepts?",
+      "authors": "Aaron Mueller, Andrew Lee, Shruti Joshi, Ekdeep Singh Lubana, Dhanya Sridhar, et al.",
+      "date": "2025-12-17",
+      "url": "https://arxiv.org/abs/2512.15134v1",
+      "abstract": "A central goal of interpretability is to recover representations of causally relevant concepts from the activations of neural networks. The quality of these concept representations is typically evaluated in isolation, and under implicit independence assumptions that may not hold in practice. Thus, it is unclear whether common featurization methods - including sparse autoencoders (SAEs) and sparse probes - recover disentangled representations of these concepts. This study proposes a multi-concept",
+      "tags": [
+        "SAE",
+        "probing"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2512-14880v1",
+      "title": "Task Matrices: Linear Maps for Cross-Model Finetuning Transfer",
+      "authors": "Darrin O' Brien, Dhikshith Gajulapalli, Eric Xia",
+      "date": "2025-12-16",
+      "url": "https://arxiv.org/abs/2512.14880v1",
+      "abstract": "Results in interpretability suggest that large vision and language models learn implicit linear encodings when models are biased by in-context prompting. However, the existence of similar linear representations in more general adaptation regimes has not yet been demonstrated. In this work, we develop the concept of a task matrix, a linear transformation from a base to finetuned embedding state. We demonstrate that for vision and text models and ten different datasets, a base model augmented with",
+      "tags": [
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2512-13979v1",
+      "title": "ReflCtrl: Controlling LLM Reflection via Representation Engineering",
+      "authors": "Ge Yan, Chung-En Sun,  Tsui-Wei,  Weng",
+      "date": "2025-12-16",
+      "url": "https://arxiv.org/abs/2512.13979v1",
+      "abstract": "Large language models (LLMs) with Chain-of-Thought (CoT) reasoning have achieved strong performance across diverse tasks, including mathematics, coding, and general reasoning. A distinctive ability of these reasoning models is self-reflection: the ability to review and revise previous reasoning steps. While self-reflection enhances reasoning performance, it also increases inference cost. In this work, we study self-reflection through the lens of representation engineering. We segment the model's",
+      "tags": [
+        "survey",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2512-15783v1",
+      "title": "AI Epidemiology: achieving explainable AI through expert oversight patterns",
+      "authors": "Kit Tempest-Walters",
+      "date": "2025-12-15",
+      "url": "https://arxiv.org/abs/2512.15783v1",
+      "abstract": "AI Epidemiology is a framework for governing and explaining advanced AI systems by applying population-level surveillance methods to AI outputs. The approach mirrors the way in which epidemiologists enable public health interventions through statistical evidence before molecular mechanisms are understood. This bypasses the problem of model complexity which plagues current interpretability methods (such as SHAP and mechanistic interpretability) at the scale of deployed models.   AI Epidemiology a",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2512-13568v1",
+      "title": "Superposition as Lossy Compression: Measure with Sparse Autoencoders and Connect to Adversarial Vulnerability",
+      "authors": "Leonard Bereska, Zoe Tzifa-Kratira, Reza Samavi, Efstratios Gavves",
+      "date": "2025-12-15",
+      "url": "https://arxiv.org/abs/2512.13568v1",
+      "abstract": "Neural networks achieve remarkable performance through superposition: encoding multiple features as overlapping directions in activation space rather than dedicating individual neurons to each feature. This challenges interpretability, yet we lack principled methods to measure superposition. We present an information-theoretic framework measuring a neural representation's effective degrees of freedom. We apply Shannon entropy to sparse autoencoder activations to compute the number of effective f",
+      "tags": [
+        "SAE",
+        "superposition",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2512-13442v1",
+      "title": "XNNTab -- Interpretable Neural Networks for Tabular Data using Sparse Autoencoders",
+      "authors": "Khawla Elhadri, J\u00f6rg Schl\u00f6tterer, Christin Seifert",
+      "date": "2025-12-15",
+      "url": "https://arxiv.org/abs/2512.13442v1",
+      "abstract": "In data-driven applications relying on tabular data, where interpretability is key, machine learning models such as decision trees and linear regression are applied. Although neural networks can provide higher predictive performance, they are not used because of their blackbox nature. In this work, we present XNNTab, a neural architecture that combines the expressiveness of neural networks and interpretability. XNNTab first learns highly non-linear feature representations, which are decomposed i",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2512-10547v1",
+      "title": "Unlocking the Address Book: Dissecting the Sparse Semantic Structure of LLM Key-Value Caches via Sparse Autoencoders",
+      "authors": "Qingsen Ma, Dianyun Wang, Jiaming Lyu, Yaoye Wang, Lechen Ning, et al.",
+      "date": "2025-12-11",
+      "url": "https://arxiv.org/abs/2512.10547v1",
+      "abstract": "The Key-Value (KV) cache is the primary memory bottleneck in long-context Large Language Models, yet it is typically treated as an opaque numerical tensor. In this work, we propose \\textbf{STA-Attention}, a framework that utilizes Top-K Sparse Autoencoders (SAEs) to decompose the KV cache into interpretable ``semantic atoms.'' Unlike standard $L_1$-regularized SAEs, our Top-K approach eliminates shrinkage bias, preserving the precise dot-product geometry required for attention. Our analysis unco",
+      "tags": [
+        "SAE"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2512-10720v1",
+      "title": "Beyond the Black Box: Identifiable Interpretation and Control in Generative Models via Causal Minimality",
+      "authors": "Lingjing Kong, Shaoan Xie, Guangyi Chen, Yuewen Sun, Xiangchen Song, et al.",
+      "date": "2025-12-11",
+      "url": "https://arxiv.org/abs/2512.10720v1",
+      "abstract": "Deep generative models, while revolutionizing fields like image and text generation, largely operate as opaque black boxes, hindering human understanding, control, and alignment. While methods like sparse autoencoders (SAEs) show remarkable empirical success, they often lack theoretical guarantees, risking subjective insights. Our primary objective is to establish a principled foundation for interpretable generative models. We demonstrate that the principle of causal minimality -- favoring the s",
+      "tags": [
+        "SAE",
+        "safety",
+        "theory",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2512-10300v1",
+      "title": "Investigating The Functional Roles of Attention Heads in Vision Language Models: Evidence for Reasoning Modules",
+      "authors": "Yanbei Jiang, Xueqi Ma, Shu Liu, Sarah Monazam Erfani, Tongliang Liu, et al.",
+      "date": "2025-12-11",
+      "url": "https://arxiv.org/abs/2512.10300v1",
+      "abstract": "Despite excelling on multimodal benchmarks, vision-language models (VLMs) largely remain a black box. In this paper, we propose a novel interpretability framework to systematically analyze the internal mechanisms of VLMs, focusing on the functional roles of attention heads in multimodal reasoning. To this end, we introduce CogVision, a dataset that decomposes complex multimodal questions into step-by-step subquestions designed to simulate human reasoning through a chain-of-thought paradigm, with",
+      "tags": [
+        "attention",
+        "vision",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
       "id": "sae-embeddings-toolkit",
       "title": "Interpretable Embeddings with Sparse Autoencoders: A Data Analysis Toolkit",
       "authors": "Various",
       "date": "2025-12-10",
       "url": "https://arxiv.org/abs/2512.10092",
       "abstract": "Proposes using SAEs to create embeddings whose dimensions map to interpretable concepts. Shows SAE embeddings are more cost-effective and reliable than LLMs for data analysis.",
-      "tags": ["SAE", "embeddings", "tools"],
+      "tags": [
+        "SAE",
+        "embeddings",
+        "tools"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2512-10098v1",
+      "title": "MedXAI: A Retrieval-Augmented and Self-Verifying Framework for Knowledge-Guided Medical Image Analysis",
+      "authors": "Midhat Urooj, Ayan Banerjee, Farhat Shaikh, Kuntal Thakur, Sandeep Gupta",
+      "date": "2025-12-10",
+      "url": "https://arxiv.org/abs/2512.10098v1",
+      "abstract": "Accurate and interpretable image-based diagnosis remains a fundamental challenge in medical AI, particularly under domain shifts and rare-class conditions. Deep learning models often struggle with real-world distribution changes, exhibit bias against infrequent pathologies, and lack the transparency required for deployment in safety-critical clinical environments. We introduce MedXAI (An Explainable Framework for Medical Imaging Classification), a unified expert knowledge based framework that in",
+      "tags": [
+        "safety",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2512-09148v1",
+      "title": "Detecting Hallucinations in Graph Retrieval-Augmented Generation via Attention Patterns and Semantic Alignment",
+      "authors": "Shanghao Li, Jinda Han, Yibo Wang, Yuanjie Zhu, Zihe Song, et al.",
+      "date": "2025-12-09",
+      "url": "https://arxiv.org/abs/2512.09148v1",
+      "abstract": "Graph-based Retrieval-Augmented Generation (GraphRAG) enhances Large Language Models (LLMs) by incorporating external knowledge from linearized subgraphs retrieved from knowledge graphs. However, LLMs struggle to interpret the relational and topological information in these inputs, resulting in hallucinations that are inconsistent with the retrieved knowledge. To analyze how LLMs attend to and retain structured knowledge during generation, we propose two lightweight interpretability metrics: Pat",
+      "tags": [
+        "safety",
+        "attention"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2512-09142v2",
+      "title": "SDialog: A Python Toolkit for End-to-End Agent Building, User Simulation, Dialog Generation, and Evaluation",
+      "authors": "Sergio Burdisso, S\u00e9verin Baroudi, Yanis Labrak, David Grunert, Pawel Cyrta, et al.",
+      "date": "2025-12-09",
+      "url": "https://arxiv.org/abs/2512.09142v2",
+      "abstract": "We present SDialog, an MIT-licensed open-source Python toolkit that unifies dialog generation, evaluation and mechanistic interpretability into a single end-to-end framework for building and analyzing LLM-based conversational agents. Built around a standardized \\texttt{Dialog} representation, SDialog provides: (1) persona-driven multi-agent simulation with composable orchestration for controlled, synthetic dialog generation, (2) comprehensive evaluation combining linguistic metrics, LLM-as-a-jud",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2512-08892v1",
+      "title": "Toward Faithful Retrieval-Augmented Generation with Sparse Autoencoders",
+      "authors": "Guangzhi Xiong, Zhenghao He, Bohan Liu, Sanchit Sinha, Aidong Zhang",
+      "date": "2025-12-09",
+      "url": "https://arxiv.org/abs/2512.08892v1",
+      "abstract": "Retrieval-Augmented Generation (RAG) improves the factuality of large language models (LLMs) by grounding outputs in retrieved evidence, but faithfulness failures, where generations contradict or extend beyond the provided sources, remain a critical challenge. Existing hallucination detection methods for RAG often rely either on large-scale detector training, which requires substantial annotated data, or on querying external LLM judges, which leads to high inference costs. Although some approach",
+      "tags": [
+        "SAE"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -19,7 +479,84 @@
       "date": "2025-12-08",
       "url": "https://arxiv.org/abs/2512.07730",
       "abstract": "Uses SAE-driven visual information enhancement to mitigate object hallucination in vision-language models, achieving 10% improvement in CHAIR_S benchmarks.",
-      "tags": ["SAE", "vision", "hallucination", "safety"],
+      "tags": [
+        "SAE",
+        "vision",
+        "hallucination",
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2512-08077v1",
+      "title": "Unveiling Latent Knowledge in Chemistry Language Models through Sparse Autoencoders",
+      "authors": "Jaron Cohen, Alexander G. Hasson, Sara Tanovic",
+      "date": "2025-12-08",
+      "url": "https://arxiv.org/abs/2512.08077v1",
+      "abstract": "Since the advent of machine learning, interpretability has remained a persistent challenge, becoming increasingly urgent as generative models support high-stakes applications in drug and material discovery. Recent advances in large language model (LLM) architectures have yielded chemistry language models (CLMs) with impressive capabilities in molecular property prediction and molecular generation. However, how these models internally represent chemical knowledge remains poorly understood. In thi",
+      "tags": [
+        "SAE"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2512-07245v1",
+      "title": "Zero-Shot Textual Explanations via Translating Decision-Critical Features",
+      "authors": "Toshinori Yamauchi, Hiroshi Kera, Kazuhiko Kawamoto",
+      "date": "2025-12-08",
+      "url": "https://arxiv.org/abs/2512.07245v1",
+      "abstract": "Textual explanations make image classifier decisions transparent by describing the prediction rationale in natural language. Large vision-language models can generate captions but are designed for general visual understanding, not classifier-specific reasoning. Existing zero-shot explanation methods align global image features with language, producing descriptions of what is visible rather than what drives the prediction. We propose TEXTER, which overcomes this limitation by isolating decision-c",
+      "tags": [
+        "features",
+        "probing",
+        "vision",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2512-07355v1",
+      "title": "A Geometric Unification of Concept Learning with Concept Cones",
+      "authors": "Alexandre Rocchi--Henry, Thomas Fel, Gianni Franchi",
+      "date": "2025-12-08",
+      "url": "https://arxiv.org/abs/2512.07355v1",
+      "abstract": "Two traditions of interpretability have evolved side by side but seldom spoken to each other: Concept Bottleneck Models (CBMs), which prescribe what a concept should be, and Sparse Autoencoders (SAEs), which discover what concepts emerge. While CBMs use supervision to align activations with human-labeled concepts, SAEs rely on sparse coding to uncover emergent ones. We show that both paradigms instantiate the same geometric structure: each learns a set of linear directions in activation space wh",
+      "tags": [
+        "SAE",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2512-07462v2",
+      "title": "Understanding LLM Agent Behaviours via Game Theory: Strategy Recognition, Biases and Multi-Agent Dynamics",
+      "authors": "Trung-Kiet Huynh, Duy-Minh Dao-Sy, Thanh-Bang Cao, Phong-Hao Le, Hong-Dan Nguyen, et al.",
+      "date": "2025-12-08",
+      "url": "https://arxiv.org/abs/2512.07462v2",
+      "abstract": "As Large Language Models (LLMs) increasingly operate as autonomous decision-makers in interactive and multi-agent systems and human societies, understanding their strategic behaviour has profound implications for safety, coordination, and the design of AI-driven social and economic infrastructures. Assessing such behaviour requires methods that capture not only what LLMs output, but the underlying intentions that guide their decisions. In this work, we extend the FAIRGAME framework to systematic",
+      "tags": [
+        "safety",
+        "theory"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2512-07141v1",
+      "title": "Think-Reflect-Revise: A Policy-Guided Reflective Framework for Safety Alignment in Large Vision Language Models",
+      "authors": "Fenghua Weng, Chaochao Lu, Xia Hu, Wenqi Shao, Wenjie Wang",
+      "date": "2025-12-08",
+      "url": "https://arxiv.org/abs/2512.07141v1",
+      "abstract": "As multimodal reasoning improves the overall capabilities of Large Vision Language Models (LVLMs), recent studies have begun to explore safety-oriented reasoning, aiming to enhance safety awareness by analyzing potential safety risks during the reasoning process before generating the final response. Although such approaches improve safety awareness and interpretability, this single-pass think-then-answer paradigm remains vulnerable to contextual or visual jailbreak attacks. This reveals a critic",
+      "tags": [
+        "safety",
+        "vision",
+        "reasoning"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -30,7 +567,40 @@
       "date": "2025-12-07",
       "url": "https://arxiv.org/abs/2512.06681",
       "abstract": "Using systematic activation patching across all 12 layers, confirms early layers (0-3) act as lexical sentiment detectors with position-specific polarity signals.",
-      "tags": ["circuits", "sentiment", "GPT-2"],
+      "tags": [
+        "circuits",
+        "sentiment",
+        "GPT-2"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2512-06655v1",
+      "title": "GSAE: Graph-Regularized Sparse Autoencoders for Robust LLM Safety Steering",
+      "authors": "Jehyeok Yeon, Federico Cinus, Yifan Wu, Luca Luceri",
+      "date": "2025-12-07",
+      "url": "https://arxiv.org/abs/2512.06655v1",
+      "abstract": "Large language models (LLMs) face critical safety challenges, as they can be manipulated to generate harmful content through adversarial prompts and jailbreak attacks. Many defenses are typically either black-box guardrails that filter outputs, or internals-based methods that steer hidden activations by operationalizing safety as a single latent feature or dimension. While effective for simple concepts, this assumption is limiting, as recent evidence shows that abstract concepts such as refusal ",
+      "tags": [
+        "SAE",
+        "features",
+        "safety",
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2512-20638v1",
+      "title": "Uncovering Competency Gaps in Large Language Models and Their Benchmarks",
+      "authors": "Matyas Bohacek, Nino Scherrer, Nicholas Dufour, Thomas Leung, Christoph Bregler, et al.",
+      "date": "2025-12-06",
+      "url": "https://arxiv.org/abs/2512.20638v1",
+      "abstract": "The evaluation of large language models (LLMs) relies heavily on standardized benchmarks. These benchmarks provide useful aggregated metrics for a given capability, but those aggregated metrics can obscure (i) particular sub-areas where the LLMs are weak (\"model gaps\") and (ii) imbalanced coverage in the benchmarks themselves (\"benchmark gaps\"). We propose a new method that uses sparse autoencoders (SAEs) to automatically uncover both types of gaps. By extracting SAE concept activations and comp",
+      "tags": [
+        "SAE"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -41,7 +611,11 @@
       "date": "2025-12-05",
       "url": "https://arxiv.org/abs/2512.05534",
       "abstract": "First closed-form theoretical analysis of SAEs, transcoders, and crosscoders. Reveals SAEs may fail to fully recover ground truth features unless extremely sparse.",
-      "tags": ["SAE", "theory", "transcoders"],
+      "tags": [
+        "SAE",
+        "theory",
+        "transcoders"
+      ],
       "source": "arXiv",
       "featured": true
     },
@@ -52,9 +626,27 @@
       "date": "2025-12-05",
       "url": "https://arxiv.org/abs/2512.05865",
       "abstract": "Post-training method making transformer attention sparse without sacrificing performance. Reduces attention connectivity to ~0.3% of edges on models up to 1B parameters.",
-      "tags": ["attention", "sparsity", "methods"],
+      "tags": [
+        "attention",
+        "sparsity",
+        "methods"
+      ],
       "source": "arXiv",
       "featured": true
+    },
+    {
+      "id": "arxiv-2512-05371v1",
+      "title": "ChipMind: Retrieval-Augmented Reasoning for Long-Context Circuit Design Specifications",
+      "authors": "Changwen Xing, SamZaak Wong, Xinlai Wan, Yanfeng Lu, Mengli Zhang, et al.",
+      "date": "2025-12-05",
+      "url": "https://arxiv.org/abs/2512.05371v1",
+      "abstract": "While Large Language Models (LLMs) demonstrate immense potential for automating integrated circuit (IC) development, their practical deployment is fundamentally limited by restricted context windows. Existing context-extension methods struggle to achieve effective semantic modeling and thorough multi-hop reasoning over extensive, intricate circuit specifications. To address this, we introduce ChipMind, a novel knowledge graph-augmented reasoning framework specifically designed for lengthy IC spe",
+      "tags": [
+        "circuits",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
     },
     {
       "id": "ethical-multiagent-mi",
@@ -63,7 +655,78 @@
       "date": "2025-12-04",
       "url": "https://arxiv.org/abs/2512.04691",
       "abstract": "Research agenda for ensuring ethical behavior of multi-agent LLM systems using mechanistic interpretability, identifying key research challenges.",
-      "tags": ["safety", "multi-agent", "ethics"],
+      "tags": [
+        "safety",
+        "multi-agent",
+        "ethics"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2512-04441v2",
+      "title": "MindDrive: An All-in-One Framework Bridging World Models and Vision-Language Model for End-to-End Autonomous Driving",
+      "authors": "Bin Sun, Yaoguang Cao, Yan Wang, Rui Wang, Jiachen Shang, et al.",
+      "date": "2025-12-04",
+      "url": "https://arxiv.org/abs/2512.04441v2",
+      "abstract": "End-to-End autonomous driving (E2E-AD) has emerged as a new paradigm, where trajectory planning plays a crucial role. Existing studies mainly follow two directions: trajectory generation oriented, which focuses on producing high-quality trajectories with simple decision mechanisms, and trajectory selection oriented, which performs multi-dimensional evaluation to select the best trajectory yet lacks sufficient generative capability. In this work, we propose MindDrive, a harmonized framework that ",
+      "tags": [
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2512-03994v2",
+      "title": "Training-Free Policy Violation Detection via Activation-Space Whitening in LLMs",
+      "authors": "Oren Rachmil, Roy Betser, Itay Gershon, Omer Hofman, Nitay Yakoby, et al.",
+      "date": "2025-12-03",
+      "url": "https://arxiv.org/abs/2512.03994v2",
+      "abstract": "Aligning proprietary large language models (LLMs) with internal organizational policies has become an urgent priority as organizations increasingly deploy LLMs in sensitive domains such as legal support, finance, and medical services. Beyond generic safety filters, enterprises require reliable mechanisms to detect policy violations within their regulatory and operational frameworks, where breaches can trigger legal and reputational risks. Existing content moderation frameworks, such as guardrail",
+      "tags": [
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2512-04165v3",
+      "title": "Mitigating the Curse of Detail: Scaling Arguments for Feature Learning and Sample Complexity",
+      "authors": "Noa Rubin, Orit Davidovich, Zohar Ringel",
+      "date": "2025-12-03",
+      "url": "https://arxiv.org/abs/2512.04165v3",
+      "abstract": "Two pressing topics in the theory of deep learning are the interpretation of feature learning mechanisms and the determination of implicit bias of networks in the rich regime. Current theories of rich feature learning, often appear in the form of high-dimensional non-linear equations, which require computationally intensive numerical solutions. Given the many details that go into defining a deep learning problem, this complexity is a significant and often unavoidable challenge. Here, we propose ",
+      "tags": [
+        "features",
+        "theory"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2512-10978v1",
+      "title": "Cognitive Mirrors: Exploring the Diverse Functional Roles of Attention Heads in LLM Reasoning",
+      "authors": "Xueqi Ma, Jun Wang, Yanbei Jiang, Sarah Monazam Erfani, Tongliang Liu, et al.",
+      "date": "2025-12-03",
+      "url": "https://arxiv.org/abs/2512.10978v1",
+      "abstract": "Large language models (LLMs) have achieved state-of-the-art performance in a variety of tasks, but remain largely opaque in terms of their internal mechanisms. Understanding these mechanisms is crucial to improve their reasoning abilities. Drawing inspiration from the interplay between neural processes and human cognition, we propose a novel interpretability framework to systematically analyze the roles and behaviors of attention heads, which are key components of LLMs. We introduce CogQA, a dat",
+      "tags": [
+        "attention",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2512-03276v1",
+      "title": "Too Late to Recall: Explaining the Two-Hop Problem in Multimodal Knowledge Retrieval",
+      "authors": "Constantin Venhoff, Ashkan Khakzar, Sonia Joseph, Philip Torr, Neel Nanda",
+      "date": "2025-12-02",
+      "url": "https://arxiv.org/abs/2512.03276v1",
+      "abstract": "Training vision language models (VLMs) aims to align visual representations from a vision encoder with the textual representations of a pretrained large language model (LLM). However, many VLMs exhibit reduced factual recall performance compared to their LLM backbones, raising the question of how effective multimodal fine-tuning is at extending existing mechanisms within the LLM to visual inputs. We argue that factual recall based on visual inputs requires VLMs to solve a two-hop problem: (1) fo",
+      "tags": [
+        "vision"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -74,7 +737,278 @@
       "date": "2025-12-01",
       "url": "https://arxiv.org/abs/2512.01222",
       "abstract": "Evaluates logit lens and other MI methods on decoding hidden reasoning in models fine-tuned to reason in ROT-13 encryption while outputting English.",
-      "tags": ["reasoning", "probing", "methods"],
+      "tags": [
+        "reasoning",
+        "probing",
+        "methods"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2512-02004v1",
+      "title": "AlignSAE: Concept-Aligned Sparse Autoencoders",
+      "authors": "Minglai Yang, Xinyu Guo, Mihai Surdeanu, Liangming Pan",
+      "date": "2025-12-01",
+      "url": "https://arxiv.org/abs/2512.02004v1",
+      "abstract": "Large Language Models (LLMs) encode factual knowledge within hidden parametric spaces that are difficult to inspect or control. While Sparse Autoencoders (SAEs) can decompose hidden activations into more fine-grained, interpretable features, they often struggle to reliably align these features with human-defined concepts, resulting in entangled and distributed feature representations. To address this, we introduce AlignSAE, a method that aligns SAE features with a defined ontology through a \"pre",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2512-02194v1",
+      "title": "Enforcing Orderedness to Improve Feature Consistency",
+      "authors": "Sophie L. Wang, Alex Quach, Nithin Parsan, John J. Yang",
+      "date": "2025-12-01",
+      "url": "https://arxiv.org/abs/2512.02194v1",
+      "abstract": "Sparse autoencoders (SAEs) have been widely used for interpretability of neural networks, but their learned features often vary across seeds and hyperparameter settings. We introduce Ordered Sparse Autoencoders (OSAE), which extend Matryoshka SAEs by (1) establishing a strict ordering of latent features and (2) deterministically using every feature dimension, avoiding the sampling-based approximations of prior nested SAE methods. Theoretically, we show that OSAEs resolve permutation non-identifi",
+      "tags": [
+        "SAE",
+        "features",
+        "theory"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2512-01282v2",
+      "title": "Kardia-R1: Unleashing LLMs to Reason toward Understanding and Empathy for Emotional Support via Rubric-as-Judge Reinforcement Learning",
+      "authors": "Jiahao Yuan, Zhiqing Cui, Hanqing Wang, Yuansheng Gao, Yucheng Zhou, et al.",
+      "date": "2025-12-01",
+      "url": "https://arxiv.org/abs/2512.01282v2",
+      "abstract": "As web platforms evolve towards greater personalization and emotional complexity, conversational agents must transcend superficial empathy to demonstrate identity-aware emotional reasoning. However, existing systems face two limitations: (1) reliance on situation-centric datasets lacking persistent user identity, which hampers the capture of personalized affective nuances; and (2) dependence on opaque, coarse reward signals that hinder development of verifiable empathetic reasoning. To address t",
+      "tags": [
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2512-00686v3",
+      "title": "Using physics-inspired Singular Learning Theory to understand grokking & other phase transitions in modern neural networks",
+      "authors": "Anish Lakkapragada",
+      "date": "2025-11-30",
+      "url": "https://arxiv.org/abs/2512.00686v3",
+      "abstract": "Classical statistical inference and learning theory often fail to explain the success of modern neural networks. A key reason is that these models are non-identifiable (singular), violating core assumptions behind PAC bounds and asymptotic normality. Singular learning theory (SLT), a physics-inspired framework grounded in algebraic geometry, has gained popularity for its ability to close this theory-practice gap. In this paper, we empirically study SLT in toy settings relevant to interpretabilit",
+      "tags": [
+        "theory"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2511-23231v1",
+      "title": "Unlocking Multilingual Reasoning Capability of LLMs and LVLMs through Representation Engineering",
+      "authors": "Qiming Li, Xiaocheng Feng, Yixuan Ma, Zekai Ye, Ruihan Chen, et al.",
+      "date": "2025-11-28",
+      "url": "https://arxiv.org/abs/2511.23231v1",
+      "abstract": "Large Language Models (LLMs) and Large Vision-Language Models (LVLMs) demonstrate strong reasoning capabilities, yet their performance in English significantly outperforms that in low-resource languages, raising fairness concerns in multilingual applications. Existing approaches either rely on costly multilingual training or employ prompting with external translation tools, both of which are resource-intensive and sensitive to translation quality. To address these limitations, we propose a train",
+      "tags": [
+        "vision",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2511-23375v1",
+      "title": "Optimizing Multimodal Language Models through Attention-based Interpretability",
+      "authors": "Alexander Sergeev, Evgeny Kotelnikov",
+      "date": "2025-11-28",
+      "url": "https://arxiv.org/abs/2511.23375v1",
+      "abstract": "Modern large language models become multimodal, analyzing various data formats like text and images. While fine-tuning is effective for adapting these multimodal language models (MLMs) to downstream tasks, full fine-tuning is computationally expensive. Parameter-Efficient Fine-Tuning (PEFT) methods address this by training only a small portion of model weights. However, MLMs are difficult to interpret, making it challenging to identify which components are most effective for training to balance ",
+      "tags": [
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2511-22697v1",
+      "title": "Mechanistic Finetuning of Vision-Language-Action Models via Few-Shot Demonstrations",
+      "authors": "Chancharik Mitra, Yusen Luo, Raj Saravanan, Dantong Niu, Anirudh Pai, et al.",
+      "date": "2025-11-27",
+      "url": "https://arxiv.org/abs/2511.22697v1",
+      "abstract": "Vision-Language Action (VLAs) models promise to extend the remarkable success of vision-language models (VLMs) to robotics. Yet, unlike VLMs in the vision-language domain, VLAs for robotics require finetuning to contend with varying physical factors like robot embodiment, environment characteristics, and spatial relationships of each task. Existing fine-tuning methods lack specificity, adapting the same set of parameters regardless of a task's visual, linguistic, and physical characteristics. In",
+      "tags": [
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2511-22519v1",
+      "title": "FoldSAE: Learning to Steer Protein Folding Through Sparse Representations",
+      "authors": "Wojciech Zarzecki, Paulina Szymczak, Ewa Szczurek, Kamil Deja",
+      "date": "2025-11-27",
+      "url": "https://arxiv.org/abs/2511.22519v1",
+      "abstract": "RFdiffusion is a popular and well-established model for generation of protein structures. However, this generative process offers limited insight into its internal representations and how they contribute to the final protein structure. Concurrently, recent work in mechanistic interpretability has successfully used Sparse Autoencoders (SAEs) to discover interpretable features within neural networks. We combine these concepts by applying SAE to the internal representations of RFdiffusion to uncove",
+      "tags": [
+        "SAE",
+        "features",
+        "biology"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2511-21974v1",
+      "title": "Start Making Sense(s): A Developmental Probe of Attention Specialization Using Lexical Ambiguity",
+      "authors": "Pamela D. Rivi\u00e8re, Sean Trott",
+      "date": "2025-11-26",
+      "url": "https://arxiv.org/abs/2511.21974v1",
+      "abstract": "Despite an in-principle understanding of self-attention matrix operations in Transformer language models (LMs), it remains unclear precisely how these operations map onto interpretable computations or functions--and how or when individual attention heads develop specialized attention patterns. Here, we present a pipeline to systematically probe attention mechanisms, and we illustrate its value by leveraging lexical ambiguity--where a single word has multiple meanings--to isolate attention mechan",
+      "tags": [
+        "probing",
+        "attention"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2511-20798v2",
+      "title": "Physics Steering: Causal Control of Cross-Domain Concepts in a Physics Foundation Model",
+      "authors": "Rio Alexa Fear, Payel Mukhopadhyay, Michael McCabe, Alberto Bietti, Miles Cranmer",
+      "date": "2025-11-25",
+      "url": "https://arxiv.org/abs/2511.20798v2",
+      "abstract": "Recent advances in mechanistic interpretability have revealed that large language models (LLMs) develop internal representations corresponding not only to concrete entities but also distinct, human-understandable abstract concepts and behaviour. Moreover, these hidden features can be directly manipulated to steer model behaviour. However, it remains an open question whether this phenomenon is unique to models trained on inherently structured data (ie. language, images) or if it is a general prop",
+      "tags": [
+        "features",
+        "steering",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2511-20820v1",
+      "title": "SAGE: An Agentic Explainer Framework for Interpreting SAE Features in Language Models",
+      "authors": "Jiaojiao Han, Wujiang Xu, Mingyu Jin, Mengnan Du",
+      "date": "2025-11-25",
+      "url": "https://arxiv.org/abs/2511.20820v1",
+      "abstract": "Large language models (LLMs) have achieved remarkable progress, yet their internal mechanisms remain largely opaque, posing a significant challenge to their safe and reliable deployment. Sparse autoencoders (SAEs) have emerged as a promising tool for decomposing LLM representations into more interpretable features, but explaining the features captured by SAEs remains a challenging task. In this work, we propose SAGE (SAE AGentic Explainer), an agent-based framework that recasts feature interpret",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2511-19972v2",
+      "title": "Boosting Reasoning in Large Multimodal Models via Activation Replay",
+      "authors": "Yun Xing, Xiaobin Hu, Qingdong He, Jiangning Zhang, Shuicheng Yan, et al.",
+      "date": "2025-11-25",
+      "url": "https://arxiv.org/abs/2511.19972v2",
+      "abstract": "Recently, Reinforcement Learning with Verifiable Rewards (RLVR) has emerged as an effective approach to incentivizing reasoning capability in Large Multimodal Models (LMMs), while the underlying mechanisms behind this post-training paradigm are poorly understood. We begin by exploring how input activations are affected by RLVR through the perspective of logit lens. Our systematic investigations across multiple post-trained LMMs suggest that RLVR shifts low-entropy activations unexpectedly, while",
+      "tags": [
+        "vision",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2511-21756v1",
+      "title": "Dissecting the Ledger: Locating and Suppressing \"Liar Circuits\" in Financial Large Language Models",
+      "authors": "Soham Mirajkar",
+      "date": "2025-11-24",
+      "url": "https://arxiv.org/abs/2511.21756v1",
+      "abstract": "Large Language Models (LLMs) are increasingly deployed in high-stakes financial domains, yet they suffer from specific, reproducible hallucinations when performing arithmetic operations. Current mitigation strategies often treat the model as a black box. In this work, we propose a mechanistic approach to intrinsic hallucination detection. By applying Causal Tracing to the GPT-2 XL architecture on the ConvFinQA benchmark, we identify a dual-stage mechanism for arithmetic reasoning: a distributed ",
+      "tags": [
+        "circuits",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2511-18024v1",
+      "title": "Extracting Interaction-Aware Monosemantic Concepts in Recommender Systems",
+      "authors": "Dor Arviv, Yehonatan Elisha, Oren Barkan, Noam Koenigstein",
+      "date": "2025-11-22",
+      "url": "https://arxiv.org/abs/2511.18024v1",
+      "abstract": "We present a method for extracting \\emph{monosemantic} neurons, defined as latent dimensions that align with coherent and interpretable concepts, from user and item embeddings in recommender systems. Our approach employs a Sparse Autoencoder (SAE) to reveal semantic structure within pretrained representations. In contrast to work on language models, monosemanticity in recommendation must preserve the interactions between separate user and item embeddings. To achieve this, we introduce a \\emph{pr",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2511-17735v1",
+      "title": "Towards Open-Ended Visual Scientific Discovery with Sparse Autoencoders",
+      "authors": "Samuel Stevens, Jacob Beattie, Tanya Berger-Wolf, Yu Su",
+      "date": "2025-11-21",
+      "url": "https://arxiv.org/abs/2511.17735v1",
+      "abstract": "Scientific archives now contain hundreds of petabytes of data across genomics, ecology, climate, and molecular biology that could reveal undiscovered patterns if systematically analyzed at scale. Large-scale, weakly-supervised datasets in language and vision have driven the development of foundation models whose internal representations encode structure (patterns, co-occurrences and statistical regularities) beyond their training objectives. Most existing methods extract structure only for pre-s",
+      "tags": [
+        "SAE",
+        "vision",
+        "biology"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2511-17699v1",
+      "title": "Understanding Counting Mechanisms in Large Language and Vision-Language Models",
+      "authors": "Hosein Hasani, Amirmohammad Izadi, Fatemeh Askari, Mobin Bagherian, Sadegh Mohammadian, et al.",
+      "date": "2025-11-21",
+      "url": "https://arxiv.org/abs/2511.17699v1",
+      "abstract": "This paper examines how large language models (LLMs) and large vision-language models (LVLMs) represent and compute numerical information in counting tasks. We use controlled experiments with repeated textual and visual items and analyze model behavior through causal mediation and activation patching. To this end, we design a specialized tool, CountScope, for mechanistic interpretability of numerical content. Results show that individual tokens or visual features encode latent positional count i",
+      "tags": [
+        "features",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2511-16309v1",
+      "title": "Sparse Autoencoders are Topic Models",
+      "authors": "Leander Girrbach, Zeynep Akata",
+      "date": "2025-11-20",
+      "url": "https://arxiv.org/abs/2511.16309v1",
+      "abstract": "Sparse autoencoders (SAEs) are used to analyze embeddings, but their role and practical value are debated. We propose a new perspective on SAEs by demonstrating that they can be naturally understood as topic models. We extend Latent Dirichlet Allocation to embedding spaces and derive the SAE objective as a maximum a posteriori estimator under this model. This view implies SAE features are thematic components rather than steerable directions. Based on this, we introduce SAE-TM, a topic modeling f",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2511-15210v1",
+      "title": "Unveiling Intrinsic Dimension of Texts: from Academic Abstract to Creative Story",
+      "authors": "Vladislav Pedashenko, Laida Kushnareva, Yana Khassan Nibal, Eduard Tulchinskii, Kristian Kuznetsov, et al.",
+      "date": "2025-11-19",
+      "url": "https://arxiv.org/abs/2511.15210v1",
+      "abstract": "Intrinsic dimension (ID) is an important tool in modern LLM analysis, informing studies of training dynamics, scaling behavior, and dataset structure, yet its textual determinants remain underexplored. We provide the first comprehensive study grounding ID in interpretable text properties through cross-encoder analysis, linguistic features, and sparse autoencoders (SAEs). In this work, we establish three key findings. First, ID is complementary to entropy-based metrics: after controlling for leng",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2511-15895v1",
+      "title": "Decomposing Theory of Mind: How Emotional Processing Mediates ToM Abilities in LLMs",
+      "authors": "Ivan Chulo, Ananya Joshi",
+      "date": "2025-11-19",
+      "url": "https://arxiv.org/abs/2511.15895v1",
+      "abstract": "Recent work shows activation steering substantially improves language models' Theory of Mind (ToM) (Bortoletto et al. 2024), yet the mechanisms of what changes occur internally that leads to different outputs remains unclear. We propose decomposing ToM in LLMs by comparing steered versus baseline LLMs' activations using linear probes trained on 45 cognitive actions. We applied Contrastive Activation Addition (CAA) steering to Gemma-3-4B and evaluated it on 1,000 BigToM forward belief scenarios (",
+      "tags": [
+        "probing",
+        "steering",
+        "theory"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -85,7 +1019,22 @@
       "date": "2025-11-18",
       "url": "https://arxiv.org/abs/2511.14465",
       "abstract": "Lightweight wrapper around NNsight providing unified interface for transformer analysis while preserving HuggingFace implementations.",
-      "tags": ["tools", "library", "methods"],
+      "tags": [
+        "tools",
+        "library",
+        "methods"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2511-14685v1",
+      "title": "Encoding and Understanding Astrophysical Information in Large Language Model-Generated Summaries",
+      "authors": "Kiera McCormick, Rafael Mart\u00ednez-Galarza",
+      "date": "2025-11-18",
+      "url": "https://arxiv.org/abs/2511.14685v1",
+      "abstract": "Large Language Models have demonstrated the ability to generalize well at many levels across domains, modalities, and even shown in-context learning capabilities. This enables research questions regarding how they can be used to encode physical information that is usually only available from scientific measurements, and loosely encoded in textual descriptions. Using astrophysics as a test bed, we investigate if LLM embeddings can codify physical summary statistics that are obtained from scientif",
+      "tags": [],
       "source": "arXiv",
       "featured": false
     },
@@ -96,7 +1045,265 @@
       "date": "2025-11-15",
       "url": "https://arxiv.org/abs/2511.21514",
       "abstract": "Extends mechanistic interpretability techniques to time series transformers, analyzing how they process temporal patterns.",
-      "tags": ["time-series", "circuits", "methods"],
+      "tags": [
+        "time-series",
+        "circuits",
+        "methods"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2511-11356v1",
+      "title": "SEAL: Subspace-Anchored Watermarks for LLM Ownership",
+      "authors": "Yanbo Dai, Zongjie Li, Zhenlan Ji, Shuai Wang",
+      "date": "2025-11-14",
+      "url": "https://arxiv.org/abs/2511.11356v1",
+      "abstract": "Large language models (LLMs) have achieved remarkable success across a wide range of natural language processing tasks, demonstrating human-level performance in text generation, reasoning, and question answering. However, training such models requires substantial computational resources, large curated datasets, and sophisticated alignment procedures. As a result, they constitute highly valuable intellectual property (IP) assets that warrant robust protection mechanisms. Existing IP protection ap",
+      "tags": [
+        "safety",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2511-10453v1",
+      "title": "Reasoning About Intent for Ambiguous Requests",
+      "authors": "Irina Saparina, Mirella Lapata",
+      "date": "2025-11-13",
+      "url": "https://arxiv.org/abs/2511.10453v1",
+      "abstract": "Large language models often respond to ambiguous requests by implicitly committing to one interpretation. Intent misunderstandings can frustrate users and create safety risks. To address this, we propose generating multiple interpretation-answer pairs in a single structured response to ambiguous requests. Our models are trained with reinforcement learning and customized reward functions using multiple valid answers as supervision. Experiments on conversational question answering and semantic par",
+      "tags": [
+        "safety",
+        "vision",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2511-10094v2",
+      "title": "How does My Model Fail? Automatic Identification and Interpretation of Physical Plausibility Failure Modes with Matryoshka Transcoders",
+      "authors": "Yiming Tang, Abhijeet Sinha, Dianbo Liu",
+      "date": "2025-11-13",
+      "url": "https://arxiv.org/abs/2511.10094v2",
+      "abstract": "Although recent generative models are remarkably capable of producing instruction-following and realistic outputs, they remain prone to notable physical plausibility failures. Though critical in applications, these physical plausibility errors often escape detection by existing evaluation methods. Furthermore, no framework exists for automatically identifying and interpreting specific physical error patterns in natural language, preventing targeted model improvements. We introduce Matryoshka Tra",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2511-09432v1",
+      "title": "Group Equivariance Meets Mechanistic Interpretability: Equivariant Sparse Autoencoders",
+      "authors": "Ege Erdogan, Ana Lucic",
+      "date": "2025-11-12",
+      "url": "https://arxiv.org/abs/2511.09432v1",
+      "abstract": "Sparse autoencoders (SAEs) have proven useful in disentangling the opaque activations of neural networks, primarily large language models, into sets of interpretable features. However, adapting them to domains beyond language, such as scientific data with group symmetries, introduces challenges that can hinder their effectiveness. We show that incorporating such group symmetries into the SAEs yields features more useful in downstream tasks. More specifically, we train autoencoders on synthetic i",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2511-10694v2",
+      "title": "Where does an LLM begin computing an instruction?",
+      "authors": "Aditya Pola, Vineeth N. Balasubramanian",
+      "date": "2025-11-12",
+      "url": "https://arxiv.org/abs/2511.10694v2",
+      "abstract": "Following an instruction involves distinct sub-processes, such as reading content, reading the instruction, executing it, and producing an answer. We ask where, along the layer stack, instruction following begins, the point where reading gives way to doing. We introduce three simple datasets (Key-Value, Quote Attribution, Letter Selection) and two hop compositions of these tasks. Using activation patching on minimal-contrast prompt pairs, we measure a layer-wise flip rate that indicates when sub",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2511-09394v1",
+      "title": "A multimodal AI agent for clinical decision support in ophthalmology",
+      "authors": "Danli Shi, Xiaolan Chen, Bingjie Yan, Weiyi Zhang, Pusheng Xu, et al.",
+      "date": "2025-11-12",
+      "url": "https://arxiv.org/abs/2511.09394v1",
+      "abstract": "Artificial intelligence has shown promise in medical imaging, yet most existing systems lack flexibility, interpretability, and adaptability - challenges especially pronounced in ophthalmology, where diverse imaging modalities are essential. We present EyeAgent, the first agentic AI framework for comprehensive and interpretable clinical decision support in ophthalmology. Using a large language model (DeepSeek-V3) as its central reasoning engine, EyeAgent interprets user queries and dynamically o",
+      "tags": [
+        "vision",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2511-07896v1",
+      "title": "SparseRM: A Lightweight Preference Modeling with Sparse Autoencoder",
+      "authors": "Dengcan Liu, Jiahao Li, Zheren Fu, Yi Tu, Jiajun Li, et al.",
+      "date": "2025-11-11",
+      "url": "https://arxiv.org/abs/2511.07896v1",
+      "abstract": "Reward models (RMs) are a core component in the post-training of large language models (LLMs), serving as proxies for human preference evaluation and guiding model alignment. However, training reliable RMs under limited resources remains challenging due to the reliance on large-scale preference annotations and the high cost of fine-tuning LLMs. To address this, we propose SparseRM, which leverages Sparse Autoencoder (SAE) to extract preference-relevant information encoded in model representation",
+      "tags": [
+        "SAE",
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2511-08379v2",
+      "title": "SOM Directions are Better than One: Multi-Directional Refusal Suppression in Language Models",
+      "authors": "Giorgio Piras, Raffaele Mura, Fabio Brau, Luca Oneto, Fabio Roli, et al.",
+      "date": "2025-11-11",
+      "url": "https://arxiv.org/abs/2511.08379v2",
+      "abstract": "Refusal refers to the functional behavior enabling safety-aligned language models to reject harmful or unethical prompts. Following the growing scientific interest in mechanistic interpretability, recent work encoded refusal behavior as a single direction in the model's latent space; e.g., computed as the difference between the centroids of harmful and harmless prompt representations. However, emerging evidence suggests that concepts in LLMs often appear to be encoded as a low-dimensional manifo",
+      "tags": [
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2511-06739v1",
+      "title": "Rank-1 LoRAs Encode Interpretable Reasoning Signals",
+      "authors": "Jake Ward, Paul Riechers, Adam Shai",
+      "date": "2025-11-10",
+      "url": "https://arxiv.org/abs/2511.06739v1",
+      "abstract": "Reasoning models leverage inference-time compute to significantly enhance the performance of language models on difficult logical tasks, and have become a dominating paradigm in frontier LLMs. Despite their wide adoption, the mechanisms underpinning the enhanced performance of these reasoning models are not well understood. In this work, we show that the majority of new capabilities in reasoning models can be elicited by small, single-rank changes to base model parameters, with many of these cha",
+      "tags": [
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2511-06997v1",
+      "title": "Beyond Phasors: Solving Non-Sinusoidal Electrical Circuits using Geometry",
+      "authors": "Javier Castillo-Mart\u00ednez, Raul Ba\u00f1os, Francisco G. Montoya",
+      "date": "2025-11-10",
+      "url": "https://arxiv.org/abs/2511.06997v1",
+      "abstract": "Classical phasor analysis is fundamentally limited to sinusoidal single-frequency conditions, which poses challenges when working in the presence of harmonics. Furthermore, the conventional solution, which consists of decomposing signals using Fourier series and applying superposition, is a fragmented process that does not provide a unified solution in the frequency domain. This paper overcomes this limitation by introducing a complete and direct approach for multi-harmonic AC circuits using Geo",
+      "tags": [
+        "circuits",
+        "superposition"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2511-07572v1",
+      "title": "SCALAR: Benchmarking SAE Interaction Sparsity in Toy LLMs",
+      "authors": "Sean P. Fillingham, Andrew Gordon, Peter Lai, Xavier Poncini, David Quarel, et al.",
+      "date": "2025-11-10",
+      "url": "https://arxiv.org/abs/2511.07572v1",
+      "abstract": "Mechanistic interpretability aims to decompose neural networks into interpretable features and map their connecting circuits. The standard approach trains sparse autoencoders (SAEs) on each layer's activations. However, SAEs trained in isolation don't encourage sparse cross-layer connections, inflating extracted circuits where upstream features needlessly affect multiple downstream features. Current evaluations focus on individual SAE performance, leaving interaction sparsity unexamined. We intr",
+      "tags": [
+        "SAE",
+        "circuits",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2511-07498v2",
+      "title": "Focusing on Language: Revealing and Exploiting Language Attention Heads in Multilingual Large Language Models",
+      "authors": "Xin Liu, Qiyang Song, Qihang Zhou, Haichao Du, Shaowen Xu, et al.",
+      "date": "2025-11-10",
+      "url": "https://arxiv.org/abs/2511.07498v2",
+      "abstract": "Large language models (LLMs) increasingly support multilingual understanding and generation. Meanwhile, efforts to interpret their internal mechanisms have emerged, offering insights to enhance multilingual performance. While multi-head self-attention (MHA) has proven critical in many areas, its role in multilingual capabilities remains underexplored. In this work, we study the contribution of MHA in supporting multilingual processing in LLMs. We propose Language Attention Head Importance Scores",
+      "tags": [
+        "attention"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2511-06048v1",
+      "title": "Visual Exploration of Feature Relationships in Sparse Autoencoders with Curated Concepts",
+      "authors": "Xinyuan Yan, Shusen Liu, Kowshik Thopalli, Bei Wang",
+      "date": "2025-11-08",
+      "url": "https://arxiv.org/abs/2511.06048v1",
+      "abstract": "Sparse autoencoders (SAEs) have emerged as a powerful tool for uncovering interpretable features in large language models (LLMs) through the sparse directions they learn. However, the sheer number of extracted directions makes comprehensive exploration intractable. While conventional embedding techniques such as UMAP can reveal global structure, they suffer from limitations including high-dimensional compression artifacts, overplotting, and misleading neighborhood distortions. In this work, we p",
+      "tags": [
+        "SAE",
+        "features",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2511-05923v3",
+      "title": "Causal Tracing of Object Representations in Large Vision Language Models: Mechanistic Interpretability and Hallucination Mitigation",
+      "authors": "Qiming Li, Zekai Ye, Xiaocheng Feng, Weihong Zhong, Weitao Ma, et al.",
+      "date": "2025-11-08",
+      "url": "https://arxiv.org/abs/2511.05923v3",
+      "abstract": "Despite the remarkable advancements of Large Vision-Language Models (LVLMs), the mechanistic interpretability remains underexplored. Existing analyses are insufficiently comprehensive and lack examination covering visual and textual tokens, model components, and the full range of layers. This limitation restricts actionable insights to improve the faithfulness of model output and the development of downstream tasks, such as hallucination mitigation. To address this limitation, we introduce Fine-",
+      "tags": [
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2511-05745v1",
+      "title": "Beyond Redundancy: Diverse and Specialized Multi-Expert Sparse Autoencoder",
+      "authors": "Zhen Xu, Zhen Tan, Song Wang, Kaidi Xu, Tianlong Chen",
+      "date": "2025-11-07",
+      "url": "https://arxiv.org/abs/2511.05745v1",
+      "abstract": "Sparse autoencoders (SAEs) have emerged as a powerful tool for interpreting large language models (LLMs) by decomposing token activations into combinations of human-understandable features. While SAEs provide crucial insights into LLM explanations, their practical adoption faces a fundamental challenge: better interpretability demands that SAEs' hidden layers have high dimensionality to satisfy sparsity constraints, resulting in prohibitive training and inference costs. Recent Mixture of Experts",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2511-05261v1",
+      "title": "Fuzzy Neural Network Performance and Interpretability of Quantum Wavefunction Probability Predictions",
+      "authors": "Pedro H. M. Zanineli, Matheus Zaia Monteiro, Vinicius Francisco Wasques, Francielle Santo Pedro Sim\u00f5es, Gabriel R. Schleder",
+      "date": "2025-11-07",
+      "url": "https://arxiv.org/abs/2511.05261v1",
+      "abstract": "Predicting quantum wavefunction probability distributions is crucial for computational chemistry and materials science, yet machine learning (ML) models often face a trade-off between accuracy and interpretability. This study compares Artificial Neural Networks (ANNs) and Adaptive Neuro-Fuzzy Inference Systems (ANFIS) in modeling quantum probability distributions for the H$_{2}^+$ ion, leveraging data generated via Physics-Informed Neural Networks (PINNs). While ANN achieved superior accuracy (R",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2511-05442v1",
+      "title": "APP: Accelerated Path Patching with Task-Specific Pruning",
+      "authors": "Frauke Andersen, William Rudman, Ruochen Zhang, Carsten Eickhoff",
+      "date": "2025-11-07",
+      "url": "https://arxiv.org/abs/2511.05442v1",
+      "abstract": "Circuit discovery is a key step in many mechanistic interpretability pipelines. Current methods, such as Path Patching, are computationally expensive and have limited in-depth circuit analysis for smaller models. In this study, we propose Accelerated Path Patching (APP), a hybrid approach leveraging our novel contrastive attention head pruning method to drastically reduce the search space of circuit discovery methods. Our Contrastive-FLAP pruning algorithm uses techniques from causal mediation a",
+      "tags": [
+        "circuits",
+        "attention"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2511-04053v2",
+      "title": "Interpreting Multi-Attribute Confounding through Numerical Attributes in Large Language Models",
+      "authors": "Hirohane Takagi, Gouki Minegishi, Shota Kizawa, Issey Sukeda, Hitomi Yanaka",
+      "date": "2025-11-06",
+      "url": "https://arxiv.org/abs/2511.04053v2",
+      "abstract": "Although behavioral studies have documented numerical reasoning errors in large language models (LLMs), the underlying representational mechanisms remain unclear. We hypothesize that numerical attributes occupy shared latent subspaces and investigate two questions:(1) How do LLMs internally integrate multiple numerical attributes of a single entity? (2)How does irrelevant numerical context perturb these representations and their downstream outputs? To address these questions, we combine linear p",
+      "tags": [
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2511-04244v1",
+      "title": "Guided by Stars: Interpretable Concept Learning Over Time Series via Temporal Logic Semantics",
+      "authors": "Irene Ferfoglia, Simone Silvetti, Gaia Saveri, Laura Nenzi, Luca Bortolussi",
+      "date": "2025-11-06",
+      "url": "https://arxiv.org/abs/2511.04244v1",
+      "abstract": "Time series classification is a task of paramount importance, as this kind of data often arises in safety-critical applications. However, it is typically tackled with black-box deep learning methods, making it hard for humans to understand the rationale behind their output. To take on this challenge, we propose a novel approach, STELLE (Signal Temporal logic Embedding for Logically-grounded Learning and Explanation), a neuro-symbolic framework that unifies classification and explanation through ",
+      "tags": [
+        "safety"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -107,7 +1314,11 @@
       "date": "2025-10-15",
       "url": "https://transformer-circuits.pub/2025/october-update/index.html",
       "abstract": "Explores how LLMs perceive higher-level semantic concepts encoded visually in text, including ASCII art recognition and SVG understanding.",
-      "tags": ["circuits", "vision", "update"],
+      "tags": [
+        "circuits",
+        "vision",
+        "update"
+      ],
       "source": "Anthropic",
       "featured": false
     },
@@ -118,7 +1329,11 @@
       "date": "2025-08-15",
       "url": "https://transformer-circuits.pub/2025/august-update/index.html",
       "abstract": "Updates on SAE training improvements, crosscoder developments, and applications of MI to biological systems.",
-      "tags": ["circuits", "SAE", "update"],
+      "tags": [
+        "circuits",
+        "SAE",
+        "update"
+      ],
       "source": "Anthropic",
       "featured": false
     },
@@ -129,8 +1344,23 @@
       "date": "2025-08-15",
       "url": "https://arxiv.org/abs/2508.09363",
       "abstract": "Shows that restricting SAE training to well-defined domains (e.g., medical text) reallocates capacity to domain-specific features, reducing 'dark matter' in reconstruction error.",
-      "tags": ["SAE", "domain-specific", "methods"],
+      "tags": [
+        "SAE",
+        "domain-specific",
+        "methods"
+      ],
       "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "ss-78f88d03bc66e3bcd38b",
+      "title": "Autoencoder-like Sparse Non-Negative Matrix Factorization with Structure Relationship Preservation",
+      "authors": "Ling Zhong, Haiyan Gao",
+      "date": "2025-08-01",
+      "url": "https://www.semanticscholar.org/paper/78f88d03bc66e3bcd38b2b900f775cb3d88f070b",
+      "abstract": "Clustering algorithms based on non-negative matrix factorization (NMF) have garnered significant attention in data mining due to their strong interpretability and computational simplicity. However, traditional NMF often struggles to effectively capture and preserve topological structure information between data during low-dimensional representation. Therefore, this paper proposes an autoencoder-like sparse non-negative matrix factorization with structure relationship preservation (ASNMF-SRP). Fi",
+      "tags": [],
+      "source": "Semantic Scholar",
       "featured": false
     },
     {
@@ -140,7 +1370,11 @@
       "date": "2025-07-01",
       "url": "https://transformer-circuits.pub/2025/july-update/index.html",
       "abstract": "Findings on arithmetic heuristics, lookup table features, and applications to biology including Evo 2 DNA foundation models.",
-      "tags": ["circuits", "arithmetic", "biology"],
+      "tags": [
+        "circuits",
+        "arithmetic",
+        "biology"
+      ],
       "source": "Anthropic",
       "featured": false
     },
@@ -151,7 +1385,10 @@
       "date": "2025-06-23",
       "url": "https://arxiv.org/abs/2506.18053",
       "abstract": "Addresses challenges of mechanistic interpretability when multiple architectures can implement the same function.",
-      "tags": ["theory", "challenges"],
+      "tags": [
+        "theory",
+        "challenges"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -162,7 +1399,11 @@
       "date": "2025-06-15",
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12403088/",
       "abstract": "SAEs applied to protein language models reveal interpretable biological concepts and missing database annotations. Published in PNAS.",
-      "tags": ["SAE", "biology", "proteins"],
+      "tags": [
+        "SAE",
+        "biology",
+        "proteins"
+      ],
       "source": "PNAS",
       "featured": true
     },
@@ -173,7 +1414,11 @@
       "date": "2025-06-01",
       "url": "https://www.anthropic.com/research/open-source-circuit-tracing",
       "abstract": "Anthropic open-sources their circuit tracing library, enabling generation of attribution graphs on popular open-weights models like Gemma-2-2b and Llama-3.2-1b.",
-      "tags": ["circuits", "tools", "open-source"],
+      "tags": [
+        "circuits",
+        "tools",
+        "open-source"
+      ],
       "source": "Anthropic",
       "featured": true
     },
@@ -184,7 +1429,11 @@
       "date": "2025-05-20",
       "url": "https://arxiv.org/abs/2505.12345",
       "abstract": "Investigates how polysemantic neurons can be exploited and what this means for model robustness.",
-      "tags": ["safety", "polysemanticity", "adversarial"],
+      "tags": [
+        "safety",
+        "polysemanticity",
+        "adversarial"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -195,7 +1444,11 @@
       "date": "2025-05-15",
       "url": "https://arxiv.org/abs/2505.09876",
       "abstract": "Introduces supervised steering vectors in SAE feature space for more reliable model control.",
-      "tags": ["SAE", "steering", "control"],
+      "tags": [
+        "SAE",
+        "steering",
+        "control"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -206,7 +1459,11 @@
       "date": "2025-05-10",
       "url": "https://arxiv.org/abs/2505.08765",
       "abstract": "Uses gradient information to identify which SAE features are most influential for specific outputs.",
-      "tags": ["SAE", "gradients", "methods"],
+      "tags": [
+        "SAE",
+        "gradients",
+        "methods"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -217,7 +1474,10 @@
       "date": "2025-04-15",
       "url": "https://transformer-circuits.pub/2025/april-update/index.html",
       "abstract": "Latest research updates on circuit analysis and feature discovery.",
-      "tags": ["circuits", "update"],
+      "tags": [
+        "circuits",
+        "update"
+      ],
       "source": "Anthropic",
       "featured": false
     },
@@ -228,7 +1488,11 @@
       "date": "2025-03-27",
       "url": "https://transformer-circuits.pub/2025/attribution-graphs/biology.html",
       "abstract": "Landmark paper using attribution graphs to study Claude 3.5 Haiku's internal reasoning, finding shared conceptual spaces where reasoning happens before translation to language.",
-      "tags": ["circuits", "reasoning", "biology"],
+      "tags": [
+        "circuits",
+        "reasoning",
+        "biology"
+      ],
       "source": "Anthropic",
       "featured": true
     },
@@ -239,7 +1503,11 @@
       "date": "2025-03-15",
       "url": "https://arxiv.org/abs/2503.05613",
       "abstract": "Comprehensive survey presenting SAEs for interpreting and understanding the internal workings of LLMs.",
-      "tags": ["SAE", "survey", "review"],
+      "tags": [
+        "SAE",
+        "survey",
+        "review"
+      ],
       "source": "arXiv",
       "featured": true
     },
@@ -250,7 +1518,11 @@
       "date": "2025-03-10",
       "url": "https://arxiv.org/abs/2503.04321",
       "abstract": "Introduces comprehensive benchmarks for evaluating SAE quality, interpretability, and downstream task performance.",
-      "tags": ["SAE", "benchmark", "evaluation"],
+      "tags": [
+        "SAE",
+        "benchmark",
+        "evaluation"
+      ],
       "source": "arXiv",
       "featured": true
     },
@@ -261,7 +1533,11 @@
       "date": "2025-02-20",
       "url": "https://openreview.net/forum?id=sae-canonical",
       "abstract": "Critical analysis showing SAEs may not recover ground-truth features, raising questions about what SAE features actually represent.",
-      "tags": ["SAE", "theory", "critique"],
+      "tags": [
+        "SAE",
+        "theory",
+        "critique"
+      ],
       "source": "ICLR 2025",
       "featured": true
     },
@@ -272,7 +1548,11 @@
       "date": "2025-02-15",
       "url": "https://arxiv.org/abs/2502.09876",
       "abstract": "Uses mutual information to provide better explanations of SAE features and enable more precise steering.",
-      "tags": ["SAE", "steering", "information-theory"],
+      "tags": [
+        "SAE",
+        "steering",
+        "information-theory"
+      ],
       "source": "ICLR 2025",
       "featured": false
     },
@@ -283,7 +1563,11 @@
       "date": "2025-01-27",
       "url": "https://arxiv.org/abs/2501.16496",
       "abstract": "Comprehensive survey of open problems requiring solutions before scientific and practical benefits of mechanistic interpretability can be realized.",
-      "tags": ["survey", "open-problems", "methodology"],
+      "tags": [
+        "survey",
+        "open-problems",
+        "methodology"
+      ],
       "source": "arXiv",
       "featured": true
     },
@@ -294,7 +1578,11 @@
       "date": "2025-01-25",
       "url": "https://arxiv.org/abs/2501.18823",
       "abstract": "Shows transcoder features are significantly more interpretable than SAE features, and proposes 'skip transcoders' with lower reconstruction loss.",
-      "tags": ["transcoders", "SAE", "methods"],
+      "tags": [
+        "transcoders",
+        "SAE",
+        "methods"
+      ],
       "source": "arXiv",
       "featured": true
     },
@@ -305,7 +1593,11 @@
       "date": "2025-01-24",
       "url": "https://arxiv.org/abs/2501.14926",
       "abstract": "Identifies minimal circuits in superposition and separates compressed computations.",
-      "tags": ["methods", "superposition", "circuits"],
+      "tags": [
+        "methods",
+        "superposition",
+        "circuits"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -316,7 +1608,11 @@
       "date": "2025-01-20",
       "url": "https://arxiv.org/abs/2501.19406",
       "abstract": "Combines LoRA with SAE training for more efficient feature extraction.",
-      "tags": ["SAE", "efficiency", "LoRA"],
+      "tags": [
+        "SAE",
+        "efficiency",
+        "LoRA"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -327,7 +1623,11 @@
       "date": "2025-01-18",
       "url": "https://openreview.net/forum?id=sparse-circuits-icl",
       "abstract": "Scales sparse feature circuit methods to study in-context learning mechanisms.",
-      "tags": ["circuits", "in-context-learning", "scaling"],
+      "tags": [
+        "circuits",
+        "in-context-learning",
+        "scaling"
+      ],
       "source": "OpenReview",
       "featured": false
     },
@@ -338,7 +1638,11 @@
       "date": "2025-01-15",
       "url": "https://transformer-circuits.pub/2025/attribution-graphs/methods.html",
       "abstract": "Breakthrough method for understanding how features interact through attribution graphs, enabling analysis of computational structure.",
-      "tags": ["circuits", "attribution", "methods"],
+      "tags": [
+        "circuits",
+        "attribution",
+        "methods"
+      ],
       "source": "Anthropic",
       "featured": true
     },
@@ -349,7 +1653,11 @@
       "date": "2025-01-10",
       "url": "https://arxiv.org/abs/2501.07654",
       "abstract": "Benchmark showing that simple steering methods can outperform SAE-based steering, raising questions about SAE utility for control.",
-      "tags": ["SAE", "steering", "benchmark"],
+      "tags": [
+        "SAE",
+        "steering",
+        "benchmark"
+      ],
       "source": "ICML 2025",
       "featured": true
     },
@@ -360,7 +1668,11 @@
       "date": "2025-01-05",
       "url": "https://arxiv.org/abs/2501.05432",
       "abstract": "Improves automated feature description by focusing on what features cause in outputs rather than just what activates them.",
-      "tags": ["SAE", "automation", "interpretability"],
+      "tags": [
+        "SAE",
+        "automation",
+        "interpretability"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -371,7 +1683,11 @@
       "date": "2024-12-20",
       "url": "https://arxiv.org/abs/2512.10805",
       "abstract": "Proposes Concept Bottleneck SAEs to address the finding that majority of SAE neurons exhibit low interpretability or low steerability.",
-      "tags": ["SAE", "concepts", "steering"],
+      "tags": [
+        "SAE",
+        "concepts",
+        "steering"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -382,7 +1698,11 @@
       "date": "2024-12-18",
       "url": "https://arxiv.org/abs/2512.05794",
       "abstract": "Uses TopK and Ordered SAEs to investigate antibody language models, finding biologically meaningful latent features.",
-      "tags": ["SAE", "biology", "antibodies"],
+      "tags": [
+        "SAE",
+        "biology",
+        "antibodies"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -393,7 +1713,11 @@
       "date": "2024-12-15",
       "url": "https://arxiv.org/abs/2412.09876",
       "abstract": "Improves TopK SAE training with batch-level sparsity constraints for better feature quality.",
-      "tags": ["SAE", "training", "methods"],
+      "tags": [
+        "SAE",
+        "training",
+        "methods"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -404,7 +1728,11 @@
       "date": "2024-12-10",
       "url": "https://transformer-circuits.pub/2024/stage-diffing/",
       "abstract": "Method for comparing model behavior across training stages using sparse features.",
-      "tags": ["methods", "training-dynamics", "diffing"],
+      "tags": [
+        "methods",
+        "training-dynamics",
+        "diffing"
+      ],
       "source": "Anthropic",
       "featured": false
     },
@@ -415,7 +1743,11 @@
       "date": "2024-11-30",
       "url": "https://arxiv.org/abs/2511.20273",
       "abstract": "Shows transformer computation is distributed along interpretable, low-rank axes that can be independently manipulated.",
-      "tags": ["circuits", "linear-algebra", "low-rank"],
+      "tags": [
+        "circuits",
+        "linear-algebra",
+        "low-rank"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -426,7 +1758,11 @@
       "date": "2024-11-25",
       "url": "https://arxiv.org/abs/2511.13653",
       "abstract": "Shows that training transformers with weight sparsity leads to more interpretable circuits without post-hoc analysis.",
-      "tags": ["circuits", "sparsity", "training"],
+      "tags": [
+        "circuits",
+        "sparsity",
+        "training"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -437,7 +1773,11 @@
       "date": "2024-11-20",
       "url": "https://arxiv.org/abs/2408.05147",
       "abstract": "Release of comprehensive open-source SAEs trained on all layers of Gemma 2 models, enabling community research.",
-      "tags": ["SAE", "open-source", "Gemma"],
+      "tags": [
+        "SAE",
+        "open-source",
+        "Gemma"
+      ],
       "source": "DeepMind",
       "featured": true
     },
@@ -448,7 +1788,11 @@
       "date": "2024-11-15",
       "url": "https://arxiv.org/abs/2411.09876",
       "abstract": "Shows that targeting specific SAE features improves steering vector effectiveness.",
-      "tags": ["SAE", "steering", "control"],
+      "tags": [
+        "SAE",
+        "steering",
+        "control"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -459,7 +1803,11 @@
       "date": "2024-11-10",
       "url": "https://arxiv.org/abs/2411.08765",
       "abstract": "Evaluates SAEs for removing specific concepts from models, with implications for safety.",
-      "tags": ["SAE", "safety", "editing"],
+      "tags": [
+        "SAE",
+        "safety",
+        "editing"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -470,7 +1818,11 @@
       "date": "2024-11-05",
       "url": "https://arxiv.org/abs/2411.05432",
       "abstract": "Uses interpretability to study when models 'know' they lack knowledge, with implications for hallucination prevention.",
-      "tags": ["hallucinations", "knowledge", "safety"],
+      "tags": [
+        "hallucinations",
+        "knowledge",
+        "safety"
+      ],
       "source": "ICLR 2025",
       "featured": false
     },
@@ -481,7 +1833,11 @@
       "date": "2024-10-15",
       "url": "https://transformer-circuits.pub/2024/crosscoders/",
       "abstract": "Dictionary learning to find features shared across models and layers, providing evidence for feature universality.",
-      "tags": ["SAE", "universality", "features"],
+      "tags": [
+        "SAE",
+        "universality",
+        "features"
+      ],
       "source": "Anthropic",
       "featured": true
     },
@@ -492,7 +1848,11 @@
       "date": "2024-10-12",
       "url": "https://arxiv.org/abs/2410.07654",
       "abstract": "Open-source SAEs for Llama-3.1-8B with millions of interpretable features.",
-      "tags": ["SAE", "open-source", "Llama"],
+      "tags": [
+        "SAE",
+        "open-source",
+        "Llama"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -503,7 +1863,11 @@
       "date": "2024-10-10",
       "url": "https://arxiv.org/abs/2410.06543",
       "abstract": "Discovers that LLMs implement TD-learning-like mechanisms, revealed through SAE analysis.",
-      "tags": ["SAE", "learning", "RL"],
+      "tags": [
+        "SAE",
+        "learning",
+        "RL"
+      ],
       "source": "ICLR 2025",
       "featured": true
     },
@@ -514,7 +1878,12 @@
       "date": "2024-10-08",
       "url": "https://www.anthropic.com/research/feature-steering-bias",
       "abstract": "Evaluates using SAE features to steer models away from social biases.",
-      "tags": ["SAE", "steering", "bias", "safety"],
+      "tags": [
+        "SAE",
+        "steering",
+        "bias",
+        "safety"
+      ],
       "source": "Anthropic",
       "featured": false
     },
@@ -525,7 +1894,11 @@
       "date": "2024-10-05",
       "url": "https://arxiv.org/abs/2410.04321",
       "abstract": "Uses SAE features to selectively unlearn specific knowledge from models.",
-      "tags": ["SAE", "unlearning", "safety"],
+      "tags": [
+        "SAE",
+        "unlearning",
+        "safety"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -536,7 +1909,11 @@
       "date": "2024-10-01",
       "url": "https://aclanthology.org/2025.emnlp-main.942.pdf",
       "abstract": "Efficient SAE training method that groups layers for shared feature learning.",
-      "tags": ["SAE", "efficiency", "training"],
+      "tags": [
+        "SAE",
+        "efficiency",
+        "training"
+      ],
       "source": "EMNLP 2025",
       "featured": false
     },
@@ -547,7 +1924,11 @@
       "date": "2024-10-01",
       "url": "https://arxiv.org/abs/2410.01434",
       "abstract": "Studies how similar circuits relate to each other and whether models implement reusable functions through composable subnetworks.",
-      "tags": ["circuits", "modularity", "composition"],
+      "tags": [
+        "circuits",
+        "modularity",
+        "composition"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -558,7 +1939,11 @@
       "date": "2024-09-25",
       "url": "https://arxiv.org/abs/2509.23717",
       "abstract": "Shows that monosemantic activating examples don't reveal feature sensitivity: how reliably a feature activates on similar texts.",
-      "tags": ["SAE", "evaluation", "sensitivity"],
+      "tags": [
+        "SAE",
+        "evaluation",
+        "sensitivity"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -569,7 +1954,11 @@
       "date": "2024-09-20",
       "url": "https://arxiv.org/abs/2409.12345",
       "abstract": "Systematic evaluation of open-source SAEs on factual knowledge tasks.",
-      "tags": ["SAE", "evaluation", "factual-knowledge"],
+      "tags": [
+        "SAE",
+        "evaluation",
+        "factual-knowledge"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -580,7 +1969,11 @@
       "date": "2024-09-12",
       "url": "https://arxiv.org/abs/2409.08101",
       "abstract": "SAE features are remarkably consistent across models trained on different languages.",
-      "tags": ["SAE", "universality", "multilingual"],
+      "tags": [
+        "SAE",
+        "universality",
+        "multilingual"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -591,7 +1984,11 @@
       "date": "2024-08-20",
       "url": "https://arxiv.org/abs/2408.09543",
       "abstract": "Introduces JumpReLU activation for SAEs, improving reconstruction fidelity while maintaining sparsity.",
-      "tags": ["SAE", "architecture", "methods"],
+      "tags": [
+        "SAE",
+        "architecture",
+        "methods"
+      ],
       "source": "DeepMind",
       "featured": false
     },
@@ -602,7 +1999,11 @@
       "date": "2024-07-25",
       "url": "https://www.alignmentforum.org/posts/sae-transfer",
       "abstract": "Studies whether SAEs trained on base models transfer to finetuned chat models.",
-      "tags": ["SAE", "transfer", "finetuning"],
+      "tags": [
+        "SAE",
+        "transfer",
+        "finetuning"
+      ],
       "source": "AI Alignment Forum",
       "featured": false
     },
@@ -613,7 +2014,11 @@
       "date": "2024-07-03",
       "url": "https://arxiv.org/abs/2407.02646",
       "abstract": "A practical guide to mechanistic interpretability research, from problem formulation to validation.",
-      "tags": ["survey", "tutorial", "methodology"],
+      "tags": [
+        "survey",
+        "tutorial",
+        "methodology"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -624,7 +2029,11 @@
       "date": "2024-07-01",
       "url": "https://transformer-circuits.pub/2024/july-update/index.html",
       "abstract": "Research updates on factual recall mechanisms, detokenization in early layers, and attention heads.",
-      "tags": ["circuits", "factual-recall", "attention"],
+      "tags": [
+        "circuits",
+        "factual-recall",
+        "attention"
+      ],
       "source": "Anthropic",
       "featured": false
     },
@@ -635,7 +2044,11 @@
       "date": "2024-06-25",
       "url": "https://arxiv.org/abs/2406.15432",
       "abstract": "Applies SAEs to attention layer outputs rather than just MLP activations.",
-      "tags": ["SAE", "attention", "methods"],
+      "tags": [
+        "SAE",
+        "attention",
+        "methods"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -646,7 +2059,11 @@
       "date": "2024-06-17",
       "url": "https://arxiv.org/abs/2406.11944",
       "abstract": "Introduces transcoders that approximate MLP layers with wider, sparsely-activating layers for better circuit discovery.",
-      "tags": ["transcoders", "circuits", "methods"],
+      "tags": [
+        "transcoders",
+        "circuits",
+        "methods"
+      ],
       "source": "arXiv",
       "featured": true
     },
@@ -657,7 +2074,11 @@
       "date": "2024-06-10",
       "url": "https://openai.com/research/sparse-autoencoders",
       "abstract": "OpenAI's comprehensive study on scaling SAEs and evaluating their properties.",
-      "tags": ["SAE", "scaling", "evaluation"],
+      "tags": [
+        "SAE",
+        "scaling",
+        "evaluation"
+      ],
       "source": "OpenAI",
       "featured": true
     },
@@ -668,7 +2089,12 @@
       "date": "2024-05-21",
       "url": "https://transformer-circuits.pub/2024/scaling-monosemanticity/",
       "abstract": "Landmark paper extracting millions of interpretable features from Claude 3 Sonnet, finding multilingual, multimodal, and safety-relevant features.",
-      "tags": ["SAE", "features", "scaling", "safety"],
+      "tags": [
+        "SAE",
+        "features",
+        "scaling",
+        "safety"
+      ],
       "source": "Anthropic",
       "featured": true
     },
@@ -679,7 +2105,11 @@
       "date": "2024-05-15",
       "url": "https://arxiv.org/abs/2405.09876",
       "abstract": "Trains SAEs end-to-end with task performance, ensuring features are functionally relevant.",
-      "tags": ["SAE", "training", "methods"],
+      "tags": [
+        "SAE",
+        "training",
+        "methods"
+      ],
       "source": "NeurIPS 2024",
       "featured": false
     },
@@ -690,7 +2120,11 @@
       "date": "2024-05-12",
       "url": "https://arxiv.org/abs/2405.12522",
       "abstract": "Achieves higher precision and recall in circuit discovery while reducing runtime from hours to seconds.",
-      "tags": ["SAE", "circuits", "efficiency"],
+      "tags": [
+        "SAE",
+        "circuits",
+        "efficiency"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -701,7 +2135,11 @@
       "date": "2024-05-08",
       "url": "https://arxiv.org/abs/2405.06543",
       "abstract": "Develops principled evaluation frameworks for SAE quality beyond reconstruction loss.",
-      "tags": ["SAE", "evaluation", "methods"],
+      "tags": [
+        "SAE",
+        "evaluation",
+        "methods"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -712,7 +2150,11 @@
       "date": "2024-04-22",
       "url": "https://arxiv.org/abs/2404.14082",
       "abstract": "Comprehensive review of mechanistic interpretability from an AI safety perspective.",
-      "tags": ["survey", "safety", "review"],
+      "tags": [
+        "survey",
+        "safety",
+        "review"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -723,7 +2165,11 @@
       "date": "2024-04-15",
       "url": "https://arxiv.org/abs/2404.09876",
       "abstract": "Practical guide to activation patching techniques for circuit discovery.",
-      "tags": ["methods", "patching", "tutorial"],
+      "tags": [
+        "methods",
+        "patching",
+        "tutorial"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -734,7 +2180,11 @@
       "date": "2024-04-10",
       "url": "https://arxiv.org/abs/2404.07654",
       "abstract": "Introduces gated SAE architecture for improved feature learning.",
-      "tags": ["SAE", "architecture", "methods"],
+      "tags": [
+        "SAE",
+        "architecture",
+        "methods"
+      ],
       "source": "DeepMind",
       "featured": false
     },
@@ -745,7 +2195,11 @@
       "date": "2024-03-20",
       "url": "https://arxiv.org/abs/2403.12345",
       "abstract": "Methods for discovering and editing causal feature circuits in language models.",
-      "tags": ["circuits", "editing", "causality"],
+      "tags": [
+        "circuits",
+        "editing",
+        "causality"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -756,7 +2210,11 @@
       "date": "2024-02-25",
       "url": "https://arxiv.org/abs/2402.15432",
       "abstract": "Benchmark for evaluating how well interpretability methods disentangle representations.",
-      "tags": ["benchmark", "evaluation", "disentanglement"],
+      "tags": [
+        "benchmark",
+        "evaluation",
+        "disentanglement"
+      ],
       "source": "ACL 2024",
       "featured": false
     },
@@ -767,7 +2225,11 @@
       "date": "2024-02-20",
       "url": "https://arxiv.org/abs/2402.12345",
       "abstract": "Shows dictionary learning improves circuit discovery in the Othello-GPT setting.",
-      "tags": ["SAE", "circuits", "Othello"],
+      "tags": [
+        "SAE",
+        "circuits",
+        "Othello"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -778,7 +2240,11 @@
       "date": "2024-02-15",
       "url": "https://www.lesswrong.com/posts/feature-suppression-sae",
       "abstract": "Identifies and addresses the feature suppression problem in SAE training.",
-      "tags": ["SAE", "training", "methods"],
+      "tags": [
+        "SAE",
+        "training",
+        "methods"
+      ],
       "source": "LessWrong",
       "featured": false
     },
@@ -789,7 +2255,11 @@
       "date": "2024-02-10",
       "url": "https://www.alignmentforum.org/posts/gpt2-sae",
       "abstract": "Release of open-source SAEs for all layers of GPT-2 Small.",
-      "tags": ["SAE", "open-source", "GPT-2"],
+      "tags": [
+        "SAE",
+        "open-source",
+        "GPT-2"
+      ],
       "source": "AI Alignment Forum",
       "featured": false
     },
@@ -800,20 +2270,27 @@
       "date": "2024-01-15",
       "url": "https://transformer-circuits.pub/2024/jan-update/index.html",
       "abstract": "Updates on interpretability research including progress on understanding model computations.",
-      "tags": ["circuits", "update"],
+      "tags": [
+        "circuits",
+        "update"
+      ],
       "source": "Anthropic",
       "featured": false
     },
     {
-      "id": "representation-engineering",
-      "title": "Representation Engineering: A Top-Down Approach to AI Transparency",
-      "authors": "Dan Hendrycks, Collin Burns, et al.",
-      "date": "2023-10-02",
-      "url": "https://arxiv.org/abs/2310.01405",
-      "abstract": "Introduces representation engineering for identifying and manipulating high-level concepts like honesty.",
-      "tags": ["representation", "concepts", "methods"],
+      "id": "linear-representations",
+      "title": "The Linear Representation Hypothesis and the Geometry of Large Language Models",
+      "authors": "Various",
+      "date": "2023-11-06",
+      "url": "https://arxiv.org/abs/2311.03658",
+      "abstract": "Investigates the linear representation hypothesis and implications for how LLMs encode concepts.",
+      "tags": [
+        "theory",
+        "representations",
+        "geometry"
+      ],
       "source": "arXiv",
-      "featured": true
+      "featured": false
     },
     {
       "id": "attribution-patching",
@@ -822,7 +2299,11 @@
       "date": "2023-10-16",
       "url": "https://arxiv.org/abs/2310.10348",
       "abstract": "Scales activation patching using gradient-based attribution for efficient circuit discovery.",
-      "tags": ["methods", "circuits", "scaling"],
+      "tags": [
+        "methods",
+        "circuits",
+        "scaling"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -833,8 +2314,27 @@
       "date": "2023-10-04",
       "url": "https://transformer-circuits.pub/2023/monosemantic-features/",
       "abstract": "Foundational paper showing sparse autoencoders can extract monosemantic features from transformers.",
-      "tags": ["SAE", "features", "dictionary-learning"],
+      "tags": [
+        "SAE",
+        "features",
+        "dictionary-learning"
+      ],
       "source": "Anthropic",
+      "featured": true
+    },
+    {
+      "id": "representation-engineering",
+      "title": "Representation Engineering: A Top-Down Approach to AI Transparency",
+      "authors": "Dan Hendrycks, Collin Burns, et al.",
+      "date": "2023-10-02",
+      "url": "https://arxiv.org/abs/2310.01405",
+      "abstract": "Introduces representation engineering for identifying and manipulating high-level concepts like honesty.",
+      "tags": [
+        "representation",
+        "concepts",
+        "methods"
+      ],
+      "source": "arXiv",
       "featured": true
     },
     {
@@ -844,20 +2344,13 @@
       "date": "2023-09-15",
       "url": "https://arxiv.org/abs/2309.08600",
       "abstract": "Foundational paper on using SAEs to resolve superposition and find monosemantic features.",
-      "tags": ["SAE", "features", "foundational"],
+      "tags": [
+        "SAE",
+        "features",
+        "foundational"
+      ],
       "source": "arXiv",
       "featured": true
-    },
-    {
-      "id": "linear-representations",
-      "title": "The Linear Representation Hypothesis and the Geometry of Large Language Models",
-      "authors": "Various",
-      "date": "2023-11-06",
-      "url": "https://arxiv.org/abs/2311.03658",
-      "abstract": "Investigates the linear representation hypothesis and implications for how LLMs encode concepts.",
-      "tags": ["theory", "representations", "geometry"],
-      "source": "arXiv",
-      "featured": false
     },
     {
       "id": "tuned-lens",
@@ -866,7 +2359,11 @@
       "date": "2023-03-14",
       "url": "https://arxiv.org/abs/2303.08112",
       "abstract": "The tuned lens for projecting intermediate activations to vocabulary space.",
-      "tags": ["methods", "probing", "predictions"],
+      "tags": [
+        "methods",
+        "probing",
+        "predictions"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -877,7 +2374,11 @@
       "date": "2022-09-14",
       "url": "https://transformer-circuits.pub/2022/toy_model/index.html",
       "abstract": "Foundational paper on how neural networks represent more features than dimensions using nearly-orthogonal directions.",
-      "tags": ["superposition", "theory", "foundational"],
+      "tags": [
+        "superposition",
+        "theory",
+        "foundational"
+      ],
       "source": "Anthropic",
       "featured": true
     },
@@ -888,7 +2389,11 @@
       "date": "2022-03-08",
       "url": "https://transformer-circuits.pub/2022/in-context-learning-and-induction-heads/",
       "abstract": "Identifies induction heads as a key circuit for in-context learning, forming via phase transition during training.",
-      "tags": ["circuits", "in-context-learning", "attention"],
+      "tags": [
+        "circuits",
+        "in-context-learning",
+        "attention"
+      ],
       "source": "Anthropic",
       "featured": true
     },
@@ -899,7 +2404,11 @@
       "date": "2022-02-10",
       "url": "https://arxiv.org/abs/2202.05262",
       "abstract": "Introduces causal tracing and ROME for locating and editing factual knowledge.",
-      "tags": ["editing", "factual-knowledge", "methods"],
+      "tags": [
+        "editing",
+        "factual-knowledge",
+        "methods"
+      ],
       "source": "arXiv",
       "featured": true
     },
@@ -910,7 +2419,11 @@
       "date": "2021-12-22",
       "url": "https://transformer-circuits.pub/2021/framework/",
       "abstract": "Foundational paper establishing the mathematical framework for analyzing transformer circuits.",
-      "tags": ["theory", "foundational", "circuits"],
+      "tags": [
+        "theory",
+        "foundational",
+        "circuits"
+      ],
       "source": "Anthropic",
       "featured": true
     }
