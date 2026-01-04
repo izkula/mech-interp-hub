@@ -8,7 +8,6 @@ class MechInterpHub {
         this.papers = [];
         this.resources = {};
         this.neuroComparisons = [];
-        this.showAllPapers = false;
         this.currentFilter = 'all';
 
         this.init();
@@ -145,8 +144,8 @@ class MechInterpHub {
         const featuredPapers = filteredPapers.filter(p => p.featured);
         const otherPapers = filteredPapers.filter(p => !p.featured);
 
-        const showAllPapers = this.showAllPapers || false;
-        const papersToShow = showAllPapers ? otherPapers : otherPapers.slice(0, 5);
+        // Always show all papers (scrollable list)
+        const papersToShow = otherPapers;
 
         const renderPaperCard = (paper, isFeatured = false) => {
             const date = new Date(paper.date);
@@ -204,15 +203,10 @@ class MechInterpHub {
 
         container.innerHTML = html;
 
-        // Update expand button
+        // Hide load more button since we show all papers
         const loadMoreBtn = document.getElementById('load-more-papers');
         if (loadMoreBtn) {
-            if (searchTerm || otherPapers.length <= 5) {
-                loadMoreBtn.style.display = 'none';
-            } else {
-                loadMoreBtn.style.display = 'inline-block';
-                loadMoreBtn.textContent = showAllPapers ? 'Show Less' : `Show All Papers (${otherPapers.length})`;
-            }
+            loadMoreBtn.style.display = 'none';
         }
     }
 
