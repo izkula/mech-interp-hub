@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mechanistic Interpretability Hub</title>
-    <link>https://izkula.github.io/cc</link>
+    <link>https://izkula.github.io/mech-interp-hub</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
     <lastBuildDate>Sat, 04 Jan 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="https://izkula.github.io/mech-interp-hub/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
       <title>Open Problems in Mechanistic Interpretability</title>
