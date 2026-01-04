@@ -682,6 +682,10 @@ footer a:hover {
         grid-template-columns: 1fr;
     }
 
+    .papers-list {
+        max-height: 400px;
+    }
+
     .paper-card {
         flex-direction: column;
     }
