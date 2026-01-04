@@ -1,0 +1,279 @@
+{
+  "lastUpdated": "2025-01-04",
+  "findings": [
+    {
+      "id": "sae-scaling",
+      "title": "Sparse Autoencoders Scale to Large Models",
+      "category": "features",
+      "description": "Sparse autoencoders successfully extract millions of interpretable features from Claude 3 Sonnet, demonstrating that dictionary learning scales to frontier models. Features are multilingual, multimodal, and highly abstract.",
+      "source": "Anthropic",
+      "sourceUrl": "https://transformer-circuits.pub/2024/scaling-monosemanticity/",
+      "year": 2024,
+      "importance": "high"
+    },
+    {
+      "id": "circuit-tracing",
+      "title": "Attribution Graphs Reveal Computational Structure",
+      "category": "circuits",
+      "description": "Circuit tracing via attribution graphs allows researchers to understand how features interact to produce model outputs on individual prompts, revealing the computational graph underlying model behavior.",
+      "source": "Anthropic",
+      "sourceUrl": "https://transformer-circuits.pub/2025/attribution-graphs/methods.html",
+      "year": 2025,
+      "importance": "high"
+    },
+    {
+      "id": "induction-heads",
+      "title": "Induction Heads Enable In-Context Learning",
+      "category": "circuits",
+      "description": "Induction heads are a key circuit that enables in-context learning by matching and copying patterns. They form during training via a phase transition and are composed of attention heads that work together.",
+      "source": "Anthropic",
+      "sourceUrl": "https://transformer-circuits.pub/2022/in-context-learning-and-induction-heads/",
+      "year": 2022,
+      "importance": "high"
+    },
+    {
+      "id": "superposition",
+      "title": "Features Are Stored in Superposition",
+      "category": "superposition",
+      "description": "Neural networks represent more features than they have dimensions by encoding features as nearly-orthogonal directions. This superposition enables efficient representation but makes interpretation challenging.",
+      "source": "Anthropic",
+      "sourceUrl": "https://transformer-circuits.pub/2022/toy_model/index.html",
+      "year": 2022,
+      "importance": "high"
+    },
+    {
+      "id": "polysemanticity",
+      "title": "Individual Neurons Are Polysemantic",
+      "category": "superposition",
+      "description": "Individual neurons in language models respond to multiple unrelated concepts. This polysemanticity is a consequence of superposition and means neurons cannot be directly interpreted.",
+      "source": "Anthropic",
+      "sourceUrl": "https://transformer-circuits.pub/2023/monosemantic-features/",
+      "year": 2023,
+      "importance": "high"
+    },
+    {
+      "id": "arithmetic-heuristics",
+      "title": "LLMs Use Parallel Heuristics for Arithmetic",
+      "category": "circuits",
+      "description": "Language models perform addition using parallel heuristics involving magnitudes and modular arithmetic that constructively interfere. This reveals a 'bag of heuristics' computation rather than a unified algorithm.",
+      "source": "Anthropic",
+      "sourceUrl": "https://transformer-circuits.pub/2025/july-update/index.html",
+      "year": 2025,
+      "importance": "medium"
+    },
+    {
+      "id": "factual-recall",
+      "title": "Factual Recall Happens in Early MLP Layers",
+      "category": "circuits",
+      "description": "Factual knowledge recall occurs in early MLP layers (2-6), after detokenization in layers 0-1. Attention heads then select and transmit this information to the final token.",
+      "source": "Anthropic",
+      "sourceUrl": "https://transformer-circuits.pub/2024/july-update/index.html",
+      "year": 2024,
+      "importance": "medium"
+    },
+    {
+      "id": "safety-features",
+      "title": "Safety-Relevant Features Are Identifiable",
+      "category": "safety",
+      "description": "SAEs reveal features related to deception, sycophancy, bias, and dangerous content. These safety-relevant features can potentially be monitored or modified to improve model safety.",
+      "source": "Anthropic",
+      "sourceUrl": "https://transformer-circuits.pub/2024/scaling-monosemanticity/",
+      "year": 2024,
+      "importance": "high"
+    },
+    {
+      "id": "golden-gate",
+      "title": "Model Steering via Feature Amplification",
+      "category": "features",
+      "description": "Adding SAE decoder vectors to model activations can steer behavior. 'Golden Gate Claude' was created by amplifying the Golden Gate Bridge feature, causing the model to mention it constantly.",
+      "source": "Anthropic",
+      "sourceUrl": "https://www.anthropic.com/news/golden-gate-claude",
+      "year": 2024,
+      "importance": "medium"
+    },
+    {
+      "id": "linear-representations",
+      "title": "Concepts Are Represented as Linear Directions",
+      "category": "features",
+      "description": "The linear representation hypothesis states that concepts map linearly to neural activations. This enables techniques like activation patching and linear probing to study model representations.",
+      "source": "Various",
+      "sourceUrl": "https://arxiv.org/abs/2311.03658",
+      "year": 2023,
+      "importance": "high"
+    },
+    {
+      "id": "singular-vectors",
+      "title": "Low-Rank Subspaces Carry Interpretable Behavior",
+      "category": "circuits",
+      "description": "Transformer components are not monolithic - their computation is distributed along a small number of interpretable, low-rank axes. These subspaces can be independently manipulated.",
+      "source": "arXiv",
+      "sourceUrl": "https://arxiv.org/abs/2511.20273",
+      "year": 2025,
+      "importance": "medium"
+    },
+    {
+      "id": "transcoders",
+      "title": "Transcoders Map Between Activation Spaces",
+      "category": "features",
+      "description": "Transcoders extend SAEs to learn mappings between different activation spaces, enabling study of how information transforms across layers and components.",
+      "source": "Various",
+      "sourceUrl": "https://arxiv.org/abs/2406.11944",
+      "year": 2024,
+      "importance": "medium"
+    },
+    {
+      "id": "crosscoders",
+      "title": "Crosscoders Find Shared Features Across Models",
+      "category": "features",
+      "description": "Crosscoders extend dictionary learning to find features shared across different models, providing evidence for feature universality across architectures.",
+      "source": "Anthropic",
+      "sourceUrl": "https://transformer-circuits.pub/2024/crosscoders/",
+      "year": 2024,
+      "importance": "medium"
+    },
+    {
+      "id": "biology-saes",
+      "title": "SAEs Reveal Biological Concepts in Protein Models",
+      "category": "features",
+      "description": "Sparse autoencoders applied to protein language models disentangle dozens of biological concepts from individual neurons, often revealing missing database annotations as 'false positives'.",
+      "source": "PMC",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12403088/",
+      "year": 2025,
+      "importance": "medium"
+    }
+  ],
+  "openQuestions": [
+    {
+      "id": "superposition-challenge",
+      "question": "How can we fully address superposition?",
+      "description": "Neural networks represent more features than dimensions, making it hard to identify what concepts are encoded. While SAEs help, they may not capture all features and have scaling challenges.",
+      "importance": "critical",
+      "relatedWork": ["sae-scaling", "superposition"]
+    },
+    {
+      "id": "scalability",
+      "question": "How do we scale interpretability to understand whole models?",
+      "description": "Current methods decompose models into pieces, but we lack techniques to understand how these pieces compose into complete model behavior at the scale of frontier systems.",
+      "importance": "critical",
+      "relatedWork": ["circuit-tracing"]
+    },
+    {
+      "id": "universality",
+      "question": "Are features and circuits universal across models?",
+      "description": "Do the same features and circuits appear in different models trained on similar data? If universal, insights transfer; if not, each model requires independent interpretation.",
+      "importance": "critical",
+      "relatedWork": ["crosscoders"]
+    },
+    {
+      "id": "validation",
+      "question": "How do we validate that interpretations are faithful?",
+      "description": "It's hard to distinguish explanations that truly reflect model computation from merely plausible ones. Many interpretations fail sanity checks, highlighting the need for better validation.",
+      "importance": "critical",
+      "relatedWork": []
+    },
+    {
+      "id": "computational-cost",
+      "question": "Can interpretability methods become computationally tractable?",
+      "description": "Training SAEs and performing circuit analysis requires significant compute. Methods need to become more efficient for practical deployment and continuous monitoring.",
+      "importance": "important",
+      "relatedWork": ["sae-scaling"]
+    },
+    {
+      "id": "emergence",
+      "question": "How do capabilities emerge during training?",
+      "description": "Understanding when and how specific capabilities develop during training could inform safer training procedures and capability control.",
+      "importance": "important",
+      "relatedWork": ["induction-heads"]
+    },
+    {
+      "id": "feature-completeness",
+      "question": "Do SAEs capture all important features?",
+      "description": "Current SAEs explain significant but not all model variance. Some features may be missed, and the choice of sparsity affects which features are found.",
+      "importance": "important",
+      "relatedWork": ["sae-scaling", "polysemanticity"]
+    },
+    {
+      "id": "deceptive-alignment",
+      "question": "Can interpretability detect deceptive alignment?",
+      "description": "If models learn to behave deceptively, can interpretability methods detect this? This is crucial for AI safety but remains an open challenge.",
+      "importance": "critical",
+      "relatedWork": ["safety-features"]
+    },
+    {
+      "id": "causal-understanding",
+      "question": "How do we move from correlation to causation?",
+      "description": "Current methods often show correlations between activations and behaviors. Establishing true causal relationships requires more rigorous intervention-based approaches.",
+      "importance": "important",
+      "relatedWork": ["circuit-tracing"]
+    },
+    {
+      "id": "multi-step-reasoning",
+      "question": "How do models perform multi-step reasoning?",
+      "description": "Understanding how models chain together multiple reasoning steps is crucial for understanding and improving their problem-solving capabilities.",
+      "importance": "important",
+      "relatedWork": ["factual-recall", "arithmetic-heuristics"]
+    }
+  ],
+  "techniques": [
+    {
+      "name": "Sparse Autoencoders (SAEs)",
+      "description": "Train autoencoders with sparsity constraints to decompose activations into interpretable features. The primary tool for addressing superposition.",
+      "keyPapers": [
+        {"title": "Towards Monosemanticity", "url": "https://transformer-circuits.pub/2023/monosemantic-features/"},
+        {"title": "Scaling Monosemanticity", "url": "https://transformer-circuits.pub/2024/scaling-monosemanticity/"}
+      ]
+    },
+    {
+      "name": "Activation Patching",
+      "description": "Replace activations from one forward pass with another to identify which components are causally responsible for specific behaviors.",
+      "keyPapers": [
+        {"title": "Locating and Editing Factual Associations", "url": "https://arxiv.org/abs/2202.05262"}
+      ]
+    },
+    {
+      "name": "Circuit Analysis",
+      "description": "Identify and characterize the subgraphs of model components responsible for specific behaviors, tracing information flow through the network.",
+      "keyPapers": [
+        {"title": "A Mathematical Framework for Transformer Circuits", "url": "https://transformer-circuits.pub/2021/framework/"},
+        {"title": "Circuit Tracing", "url": "https://transformer-circuits.pub/2025/attribution-graphs/methods.html"}
+      ]
+    },
+    {
+      "name": "Probing",
+      "description": "Train simple classifiers on model activations to test what information is linearly accessible at different layers and positions.",
+      "keyPapers": [
+        {"title": "A Primer in BERTology", "url": "https://arxiv.org/abs/2002.12327"}
+      ]
+    },
+    {
+      "name": "Logit Lens / Tuned Lens",
+      "description": "Project intermediate activations to vocabulary space to see how predictions evolve through layers.",
+      "keyPapers": [
+        {"title": "Interpreting GPT: the Logit Lens", "url": "https://www.lesswrong.com/posts/AcKRB8wDpdaN6v6ru/interpreting-gpt-the-logit-lens"},
+        {"title": "Eliciting Latent Predictions", "url": "https://arxiv.org/abs/2303.08112"}
+      ]
+    },
+    {
+      "name": "Attribution Methods",
+      "description": "Compute how much each input or intermediate component contributes to outputs using gradients or other attribution techniques.",
+      "keyPapers": [
+        {"title": "Attribution Patching", "url": "https://arxiv.org/abs/2310.10348"}
+      ]
+    },
+    {
+      "name": "Representation Engineering",
+      "description": "Identify and manipulate directions in activation space that correspond to high-level concepts like honesty or helpfulness.",
+      "keyPapers": [
+        {"title": "Representation Engineering", "url": "https://arxiv.org/abs/2310.01405"}
+      ]
+    },
+    {
+      "name": "Transcoders & Crosscoders",
+      "description": "Extensions of SAEs that map between activation spaces (transcoders) or find shared features across models (crosscoders).",
+      "keyPapers": [
+        {"title": "Transcoders", "url": "https://arxiv.org/abs/2406.11944"},
+        {"title": "Crosscoders", "url": "https://transformer-circuits.pub/2024/crosscoders/"}
+      ]
+    }
+  ]
+}

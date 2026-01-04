@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mechanistic Interpretability Hub</title>
+    <meta name="description" content="A continuously updated summary of the most important mechanistic interpretability findings, open questions, and latest research.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <h1>Mechanistic Interpretability Hub</h1>
+            <p class="subtitle">A living summary of key findings, open questions, and latest research in understanding how neural networks work internally</p>
+            <div class="last-updated">
+                <span id="last-updated">Last updated: Loading...</span>
+            </div>
+        </div>
+    </header>
+
+    <nav class="sticky-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#key-findings">Key Findings</a></li>
+                <li><a href="#open-questions">Open Questions</a></li>
+                <li><a href="#techniques">Techniques</a></li>
+                <li><a href="#recent-papers">Recent Papers</a></li>
+                <li><a href="#resources">Resources</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <!-- Key Findings Section -->
+        <section id="key-findings" class="section">
+            <h2>Key Findings</h2>
+            <p class="section-intro">Major discoveries that have shaped our understanding of how neural networks compute internally.</p>
+
+            <div class="filter-controls">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="features">Features</button>
+                <button class="filter-btn" data-filter="circuits">Circuits</button>
+                <button class="filter-btn" data-filter="superposition">Superposition</button>
+                <button class="filter-btn" data-filter="safety">Safety</button>
+            </div>
+
+            <div id="findings-grid" class="findings-grid">
+                <!-- Populated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Open Questions Section -->
+        <section id="open-questions" class="section">
+            <h2>Open Questions</h2>
+            <p class="section-intro">Critical unsolved problems that the field is actively working on.</p>
+
+            <div id="questions-list" class="questions-list">
+                <!-- Populated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Techniques Section -->
+        <section id="techniques" class="section">
+            <h2>Core Techniques</h2>
+            <p class="section-intro">The main methodological approaches used in mechanistic interpretability research.</p>
+
+            <div id="techniques-grid" class="techniques-grid">
+                <!-- Populated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Recent Papers Section -->
+        <section id="recent-papers" class="section">
+            <h2>Recent Papers</h2>
+            <p class="section-intro">Latest research from arXiv, conferences, and research labs. Updated automatically.</p>
+
+            <div class="papers-controls">
+                <input type="text" id="paper-search" placeholder="Search papers..." class="search-input">
+                <select id="paper-sort" class="sort-select">
+                    <option value="date">Sort by Date</option>
+                    <option value="citations">Sort by Impact</option>
+                </select>
+            </div>
+
+            <div id="papers-list" class="papers-list">
+                <!-- Populated by JavaScript -->
+            </div>
+
+            <div class="load-more-container">
+                <button id="load-more-papers" class="load-more-btn">Load More Papers</button>
+            </div>
+        </section>
+
+        <!-- Resources Section -->
+        <section id="resources" class="section">
+            <h2>Resources</h2>
+            <p class="section-intro">Essential reading, tools, and communities for mechanistic interpretability.</p>
+
+            <div class="resources-grid">
+                <div class="resource-category">
+                    <h3>Essential Reading</h3>
+                    <ul id="essential-reading">
+                        <!-- Populated by JavaScript -->
+                    </ul>
+                </div>
+                <div class="resource-category">
+                    <h3>Research Groups</h3>
+                    <ul id="research-groups">
+                        <!-- Populated by JavaScript -->
+                    </ul>
+                </div>
+                <div class="resource-category">
+                    <h3>Tools & Libraries</h3>
+                    <ul id="tools-libraries">
+                        <!-- Populated by JavaScript -->
+                    </ul>
+                </div>
+                <div class="resource-category">
+                    <h3>Communities</h3>
+                    <ul id="communities">
+                        <!-- Populated by JavaScript -->
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter/Updates Section -->
+        <section id="updates" class="section updates-section">
+            <h2>Stay Updated</h2>
+            <p>This site automatically fetches the latest mechanistic interpretability papers from arXiv and major research labs.</p>
+            <div class="update-info">
+                <div class="update-card">
+                    <h4>Automated Updates</h4>
+                    <p>Papers are fetched daily via GitHub Actions from arXiv, Semantic Scholar, and major research blogs.</p>
+                </div>
+                <div class="update-card">
+                    <h4>Contribute</h4>
+                    <p>Found a paper we missed? <a href="https://github.com/izkula/cc/issues" target="_blank">Open an issue</a> or submit a PR to add it.</p>
+                </div>
+                <div class="update-card">
+                    <h4>RSS Feed</h4>
+                    <p><a href="feed.xml">Subscribe to our RSS feed</a> to get notified of new additions.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Mechanistic Interpretability Hub - An open-source project tracking MI research</p>
+            <p>Data sources: <a href="https://arxiv.org" target="_blank">arXiv</a>, <a href="https://transformer-circuits.pub" target="_blank">Transformer Circuits</a>, <a href="https://www.semanticscholar.org" target="_blank">Semantic Scholar</a></p>
+            <p><a href="https://github.com/izkula/cc" target="_blank">View on GitHub</a> | <a href="feed.xml">RSS Feed</a></p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

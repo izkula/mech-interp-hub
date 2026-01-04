@@ -1,0 +1,55 @@
+name: Update Papers Database
+
+on:
+  schedule:
+    # Run daily at 6 AM UTC
+    - cron: '0 6 * * *'
+  workflow_dispatch:  # Allow manual triggering
+
+permissions:
+  contents: write
+
+jobs:
+  update-papers:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Fetch new papers
+        run: python scripts/fetch_papers.py
+
+      - name: Check for changes
+        id: check_changes
+        run: |
+          if git diff --quiet data/papers.json; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit and push changes
+        if: steps.check_changes.outputs.changed == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add data/papers.json
+          git commit -m "Auto-update: Fetch latest MI papers $(date +'%Y-%m-%d')"
+          git push
+
+      - name: Generate RSS feed
+        if: steps.check_changes.outputs.changed == 'true'
+        run: python scripts/generate_rss.py
+
+      - name: Commit RSS feed
+        if: steps.check_changes.outputs.changed == 'true'
+        run: |
+          git add feed.xml
+          git commit -m "Update RSS feed" || true
+          git push || true

@@ -1,0 +1,245 @@
+{
+  "lastUpdated": "2025-01-04",
+  "papers": [
+    {
+      "id": "open-problems-mi",
+      "title": "Open Problems in Mechanistic Interpretability",
+      "authors": "Lee Sharkey, Bilal Chughtai, Joshua Batson, Jack Lindamood, et al.",
+      "date": "2025-01-27",
+      "url": "https://arxiv.org/abs/2501.16496",
+      "abstract": "A comprehensive survey of open problems requiring solutions before scientific and practical benefits of mechanistic interpretability can be realized, covering methodological, application, and socio-technical challenges.",
+      "tags": ["survey", "open-problems", "methodology"],
+      "source": "arXiv"
+    },
+    {
+      "id": "circuit-tracing-2025",
+      "title": "Circuit Tracing: Revealing Computational Graphs in Language Models",
+      "authors": "Anthropic Interpretability Team",
+      "date": "2025-01-15",
+      "url": "https://transformer-circuits.pub/2025/attribution-graphs/methods.html",
+      "abstract": "A new method for understanding how features interact to produce model outputs through attribution graphs, enabling analysis of computational structure on individual prompts.",
+      "tags": ["circuits", "attribution", "methods"],
+      "source": "Anthropic"
+    },
+    {
+      "id": "july-2025-update",
+      "title": "Circuits Updates - July 2025",
+      "authors": "Anthropic Interpretability Team",
+      "date": "2025-07-01",
+      "url": "https://transformer-circuits.pub/2025/july-update/index.html",
+      "abstract": "Latest research updates including findings on arithmetic heuristics, lookup table features, and applications to biology including Evo 2 DNA foundation models.",
+      "tags": ["circuits", "arithmetic", "biology"],
+      "source": "Anthropic"
+    },
+    {
+      "id": "singular-vectors-interp",
+      "title": "Beyond Components: Singular Vector-Based Interpretability of Transformer Circuits",
+      "authors": "Various",
+      "date": "2025-11-30",
+      "url": "https://arxiv.org/abs/2511.20273",
+      "abstract": "Demonstrates that transformer components' computation is distributed along a small number of interpretable, low-rank axes that can be independently manipulated.",
+      "tags": ["circuits", "linear-algebra", "low-rank"],
+      "source": "arXiv"
+    },
+    {
+      "id": "apd-2025",
+      "title": "Interpretability in Parameter Space: Attribution-based Parameter Decomposition",
+      "authors": "Various",
+      "date": "2025-01-24",
+      "url": "https://arxiv.org/abs/2501.14926",
+      "abstract": "A new approach that identifies minimal circuits in superposition, separates compressed computations, and identifies cross-layer distributed representations.",
+      "tags": ["methods", "superposition", "circuits"],
+      "source": "arXiv"
+    },
+    {
+      "id": "practical-review-mi",
+      "title": "A Practical Review of Mechanistic Interpretability for Transformer-Based Language Models",
+      "authors": "Rai, Zhou, et al.",
+      "date": "2024-07-03",
+      "url": "https://arxiv.org/abs/2407.02646",
+      "abstract": "A practical guide to mechanistic interpretability research, covering the workflow from problem formulation to validation, with focus on open problems.",
+      "tags": ["survey", "tutorial", "methodology"],
+      "source": "arXiv"
+    },
+    {
+      "id": "scaling-monosemanticity",
+      "title": "Scaling Monosemanticity: Extracting Interpretable Features from Claude 3 Sonnet",
+      "authors": "Anthropic Interpretability Team",
+      "date": "2024-05-21",
+      "url": "https://transformer-circuits.pub/2024/scaling-monosemanticity/",
+      "abstract": "Demonstrates extraction of millions of interpretable features from Claude 3 Sonnet using sparse autoencoders, finding multilingual, multimodal, and safety-relevant features.",
+      "tags": ["SAE", "features", "scaling", "safety"],
+      "source": "Anthropic"
+    },
+    {
+      "id": "crosscoders",
+      "title": "Crosscoders: Finding Shared Features Across Models",
+      "authors": "Anthropic Interpretability Team",
+      "date": "2024-10-15",
+      "url": "https://transformer-circuits.pub/2024/crosscoders/",
+      "abstract": "Extends dictionary learning to find features shared across different models, providing evidence for feature universality.",
+      "tags": ["SAE", "universality", "features"],
+      "source": "Anthropic"
+    },
+    {
+      "id": "july-2024-update",
+      "title": "Circuits Updates - July 2024",
+      "authors": "Anthropic Interpretability Team",
+      "date": "2024-07-01",
+      "url": "https://transformer-circuits.pub/2024/july-update/index.html",
+      "abstract": "Research updates on factual recall mechanisms, detokenization in early layers, and information transmission via attention heads.",
+      "tags": ["circuits", "factual-recall", "attention"],
+      "source": "Anthropic"
+    },
+    {
+      "id": "jan-2024-update",
+      "title": "Circuits Updates - January 2024",
+      "authors": "Anthropic Interpretability Team",
+      "date": "2024-01-15",
+      "url": "https://transformer-circuits.pub/2024/jan-update/index.html",
+      "abstract": "Updates on interpretability research including progress on understanding model computations.",
+      "tags": ["circuits", "update"],
+      "source": "Anthropic"
+    },
+    {
+      "id": "mi-safety-review",
+      "title": "Mechanistic Interpretability for AI Safety - A Review",
+      "authors": "Leonard Bereska, et al.",
+      "date": "2024-04-22",
+      "url": "https://arxiv.org/abs/2404.14082",
+      "abstract": "Comprehensive review of mechanistic interpretability from an AI safety perspective, covering methods, applications, and open challenges.",
+      "tags": ["survey", "safety", "review"],
+      "source": "arXiv"
+    },
+    {
+      "id": "representation-engineering",
+      "title": "Representation Engineering: A Top-Down Approach to AI Transparency",
+      "authors": "Dan Hendrycks, Collin Burns, et al.",
+      "date": "2023-10-02",
+      "url": "https://arxiv.org/abs/2310.01405",
+      "abstract": "Introduces representation engineering for identifying and manipulating high-level concepts like honesty in neural networks.",
+      "tags": ["representation", "concepts", "methods"],
+      "source": "arXiv"
+    },
+    {
+      "id": "towards-monosemanticity",
+      "title": "Towards Monosemanticity: Decomposing Language Models With Dictionary Learning",
+      "authors": "Anthropic Interpretability Team",
+      "date": "2023-10-04",
+      "url": "https://transformer-circuits.pub/2023/monosemantic-features/",
+      "abstract": "Demonstrates that sparse autoencoders can extract monosemantic features from a one-layer transformer, laying groundwork for scaling to larger models.",
+      "tags": ["SAE", "features", "dictionary-learning"],
+      "source": "Anthropic"
+    },
+    {
+      "id": "superposition",
+      "title": "Toy Models of Superposition",
+      "authors": "Anthropic Interpretability Team",
+      "date": "2022-09-14",
+      "url": "https://transformer-circuits.pub/2022/toy_model/index.html",
+      "abstract": "Introduces and analyzes superposition: how neural networks represent more features than dimensions by using nearly-orthogonal directions.",
+      "tags": ["superposition", "theory", "foundational"],
+      "source": "Anthropic"
+    },
+    {
+      "id": "induction-heads",
+      "title": "In-context Learning and Induction Heads",
+      "authors": "Anthropic Interpretability Team",
+      "date": "2022-03-08",
+      "url": "https://transformer-circuits.pub/2022/in-context-learning-and-induction-heads/",
+      "abstract": "Identifies induction heads as a key circuit for in-context learning, showing they form via a phase transition during training.",
+      "tags": ["circuits", "in-context-learning", "attention"],
+      "source": "Anthropic"
+    },
+    {
+      "id": "mathematical-framework",
+      "title": "A Mathematical Framework for Transformer Circuits",
+      "authors": "Anthropic Interpretability Team",
+      "date": "2021-12-22",
+      "url": "https://transformer-circuits.pub/2021/framework/",
+      "abstract": "Foundational paper establishing the mathematical framework for analyzing transformer circuits, including residual stream and attention head analysis.",
+      "tags": ["theory", "foundational", "circuits"],
+      "source": "Anthropic"
+    },
+    {
+      "id": "protein-saes",
+      "title": "Sparse Autoencoders Uncover Biologically Interpretable Features in Protein Language Models",
+      "authors": "Various",
+      "date": "2025-06-15",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12403088/",
+      "abstract": "Applies SAEs to protein language models, successfully disentangling biological concepts and revealing missing database annotations.",
+      "tags": ["SAE", "biology", "proteins"],
+      "source": "PMC"
+    },
+    {
+      "id": "tuned-lens",
+      "title": "Eliciting Latent Predictions from Transformers with the Tuned Lens",
+      "authors": "Nostalgebraist, et al.",
+      "date": "2023-03-14",
+      "url": "https://arxiv.org/abs/2303.08112",
+      "abstract": "Introduces the tuned lens for projecting intermediate activations to vocabulary space, improving on the logit lens.",
+      "tags": ["methods", "probing", "predictions"],
+      "source": "arXiv"
+    },
+    {
+      "id": "rome",
+      "title": "Locating and Editing Factual Associations in GPT",
+      "authors": "Kevin Meng, David Bau, Alex Andonian, Yonatan Belinkov",
+      "date": "2022-02-10",
+      "url": "https://arxiv.org/abs/2202.05262",
+      "abstract": "Introduces causal tracing and ROME for locating and editing factual knowledge in language models.",
+      "tags": ["editing", "factual-knowledge", "methods"],
+      "source": "arXiv"
+    },
+    {
+      "id": "transcoders",
+      "title": "Transcoders Find Interpretable LLM Feature Circuits",
+      "authors": "Various",
+      "date": "2024-06-17",
+      "url": "https://arxiv.org/abs/2406.11944",
+      "abstract": "Introduces transcoders for mapping between activation spaces and finding interpretable circuits.",
+      "tags": ["SAE", "circuits", "methods"],
+      "source": "arXiv"
+    },
+    {
+      "id": "attribution-patching",
+      "title": "Attribution Patching: Activation Patching At Industrial Scale",
+      "authors": "Various",
+      "date": "2023-10-16",
+      "url": "https://arxiv.org/abs/2310.10348",
+      "abstract": "Scales activation patching using gradient-based attribution, enabling efficient circuit discovery in large models.",
+      "tags": ["methods", "circuits", "scaling"],
+      "source": "arXiv"
+    },
+    {
+      "id": "linear-representations",
+      "title": "The Linear Representation Hypothesis and the Geometry of Large Language Models",
+      "authors": "Various",
+      "date": "2023-11-06",
+      "url": "https://arxiv.org/abs/2311.03658",
+      "abstract": "Investigates the linear representation hypothesis and its implications for understanding how LLMs encode concepts.",
+      "tags": ["theory", "representations", "geometry"],
+      "source": "arXiv"
+    },
+    {
+      "id": "mi-survey-mdpi",
+      "title": "Survey on the Role of Mechanistic Interpretability in Generative AI",
+      "authors": "Various",
+      "date": "2024-12-15",
+      "url": "https://www.mdpi.com/2504-2289/9/8/193",
+      "abstract": "Survey covering the role of mechanistic interpretability in understanding and improving generative AI systems.",
+      "tags": ["survey", "generative-ai"],
+      "source": "MDPI"
+    },
+    {
+      "id": "arch-degeneracy",
+      "title": "Mechanistic Interpretability in the Presence of Architectural Degeneracy",
+      "authors": "Various",
+      "date": "2025-06-23",
+      "url": "https://arxiv.org/abs/2506.18053",
+      "abstract": "Addresses challenges of mechanistic interpretability when multiple architectures can implement the same function.",
+      "tags": ["theory", "challenges"],
+      "source": "arXiv"
+    }
+  ]
+}
