@@ -8,7 +8,7 @@ class MechInterpHub {
         this.papers = [];
         this.resources = {};
         this.neuroComparisons = [];
-        this.displayedPapers = 10;
+        this.showAllPapers = false;
         this.currentFilter = 'all';
 
         this.init();
@@ -128,26 +128,37 @@ class MechInterpHub {
         }
 
         const sortBy = document.getElementById('paper-sort')?.value || 'date';
-        if (sortBy === 'date') {
-            filteredPapers.sort((a, b) => new Date(b.date) - new Date(a.date));
-        } else if (sortBy === 'citations') {
-            filteredPapers.sort((a, b) => (b.citations || 0) - (a.citations || 0));
-        }
 
-        const papersToShow = filteredPapers.slice(0, this.displayedPapers);
-        const isNew = (dateStr) => {
-            const date = new Date(dateStr);
-            const weekAgo = new Date();
-            weekAgo.setDate(weekAgo.getDate() - 7);
-            return date > weekAgo;
-        };
+        // Sort: featured first, then by date or citations
+        filteredPapers.sort((a, b) => {
+            // Featured papers always come first when sorting by date
+            if (sortBy === 'date' || sortBy === 'featured') {
+                if (a.featured && !b.featured) return -1;
+                if (!a.featured && b.featured) return 1;
+            }
+            if (sortBy === 'citations') {
+                return (b.citations || 0) - (a.citations || 0);
+            }
+            return new Date(b.date) - new Date(a.date);
+        });
 
-        container.innerHTML = papersToShow.map(paper => {
+        const featuredPapers = filteredPapers.filter(p => p.featured);
+        const otherPapers = filteredPapers.filter(p => !p.featured);
+
+        const showAllPapers = this.showAllPapers || false;
+        const papersToShow = showAllPapers ? otherPapers : otherPapers.slice(0, 5);
+
+        const renderPaperCard = (paper, isFeatured = false) => {
             const date = new Date(paper.date);
             const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+            const isNew = () => {
+                const weekAgo = new Date();
+                weekAgo.setDate(weekAgo.getDate() - 14);
+                return date > weekAgo;
+            };
 
             return `
-                <div class="paper-card">
+                <div class="paper-card ${isFeatured ? 'featured' : ''}">
                     <div class="paper-date">
                         <div class="month">${months[date.getMonth()]}</div>
                         <div class="day">${date.getDate()}</div>
@@ -156,7 +167,8 @@ class MechInterpHub {
                     <div class="paper-content">
                         <h3>
                             <a href="${paper.url}" target="_blank">${paper.title}</a>
-                            ${isNew(paper.date) ? '<span class="new-badge">New</span>' : ''}
+                            ${isFeatured ? '<span class="featured-badge">Key Paper</span>' : ''}
+                            ${isNew() ? '<span class="new-badge">New</span>' : ''}
                         </h3>
                         <div class="paper-authors">${paper.authors}</div>
                         ${paper.abstract ? `<p class="paper-abstract">${paper.abstract}</p>` : ''}
@@ -168,12 +180,39 @@ class MechInterpHub {
                     </div>
                 </div>
             `;
-        }).join('');
+        };
 
-        // Update load more button visibility
+        let html = '';
+
+        // Featured section
+        if (featuredPapers.length > 0 && !searchTerm) {
+            html += `<div class="papers-section">
+                <h3 class="papers-section-title">Key Papers</h3>
+                <p class="papers-section-desc">Foundational and high-impact research you should know</p>
+                ${featuredPapers.map(p => renderPaperCard(p, true)).join('')}
+            </div>`;
+        }
+
+        // Other papers section
+        if (papersToShow.length > 0 || searchTerm) {
+            const allToShow = searchTerm ? filteredPapers : papersToShow;
+            html += `<div class="papers-section">
+                ${!searchTerm ? '<h3 class="papers-section-title">All Papers</h3>' : ''}
+                ${allToShow.map(p => renderPaperCard(p, searchTerm && p.featured)).join('')}
+            </div>`;
+        }
+
+        container.innerHTML = html;
+
+        // Update expand button
         const loadMoreBtn = document.getElementById('load-more-papers');
         if (loadMoreBtn) {
-            loadMoreBtn.style.display = this.displayedPapers >= filteredPapers.length ? 'none' : 'inline-block';
+            if (searchTerm || otherPapers.length <= 5) {
+                loadMoreBtn.style.display = 'none';
+            } else {
+                loadMoreBtn.style.display = 'inline-block';
+                loadMoreBtn.textContent = showAllPapers ? 'Show Less' : `Show All Papers (${otherPapers.length})`;
+            }
         }
     }
 
@@ -254,11 +293,11 @@ class MechInterpHub {
             });
         }
 
-        // Load more papers
+        // Toggle all papers
         const loadMoreBtn = document.getElementById('load-more-papers');
         if (loadMoreBtn) {
             loadMoreBtn.addEventListener('click', () => {
-                this.displayedPapers += 10;
+                this.showAllPapers = !this.showAllPapers;
                 const searchTerm = document.getElementById('paper-search')?.value || '';
                 this.renderPapers(searchTerm);
             });
