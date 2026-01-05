@@ -163,13 +163,38 @@ class MechInterpHub {
             `;
         };
 
-        // Show ALL papers in one chronological list, with featured ones highlighted
-        container.innerHTML = `
-            <div class="papers-section">
-                <p class="papers-section-desc">${filteredPapers.length} papers sorted by date (newest first). <span class="featured-badge">Key Paper</span> = foundational/high-impact research.</p>
-                ${filteredPapers.map(p => renderPaperCard(p, p.featured)).join('')}
-            </div>
-        `;
+        // Separate recent papers from key/foundational papers
+        const recentPapers = filteredPapers.filter(p => !p.featured);
+        const keyPapers = filteredPapers.filter(p => p.featured);
+
+        // Sort each group by date
+        recentPapers.sort((a, b) => new Date(b.date) - new Date(a.date));
+        keyPapers.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+        // Show recent papers first (auto-updating), then key papers below
+        let html = '';
+
+        if (recentPapers.length > 0) {
+            html += `
+                <div class="papers-section">
+                    <h3 class="papers-section-title">Recent Papers</h3>
+                    <p class="papers-section-desc">${recentPapers.length} papers from the latest research (auto-updates daily)</p>
+                    ${recentPapers.map(p => renderPaperCard(p, false)).join('')}
+                </div>
+            `;
+        }
+
+        if (keyPapers.length > 0 && !searchTerm) {
+            html += `
+                <div class="papers-section" style="margin-top: 32px;">
+                    <h3 class="papers-section-title">Key Papers</h3>
+                    <p class="papers-section-desc">${keyPapers.length} foundational and high-impact papers</p>
+                    ${keyPapers.map(p => renderPaperCard(p, true)).join('')}
+                </div>
+            `;
+        }
+
+        container.innerHTML = html || '<p>No papers found.</p>';
 
         // Hide load more button since we show all papers
         const loadMoreBtn = document.getElementById('load-more-papers');
