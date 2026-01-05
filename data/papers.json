@@ -1,6 +1,109 @@
 {
-  "lastUpdated": "2026-01-04",
+  "lastUpdated": "2026-01-05",
   "papers": [
+    {
+      "id": "arxiv-2601-00267v1",
+      "title": "ActErase: A Training-Free Paradigm for Precise Concept Erasure via Activation Patching",
+      "authors": "Yi Sun, Xinhao Zhong, Hongyan Li, Yimin Zhou, Junhao Li, et al.",
+      "date": "2026-01-01",
+      "url": "https://arxiv.org/abs/2601.00267v1",
+      "abstract": "Recent advances in text-to-image diffusion models have demonstrated remarkable generation capabilities, yet they raise significant concerns regarding safety, copyright, and ethical implications. Existing concept erasure methods address these risks by removing sensitive concepts from pre-trained models, but most of them rely on data-intensive and computationally expensive fine-tuning, which poses a critical limitation. To overcome these challenges, inspired by the observation that the model's act",
+      "tags": [
+        "safety",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2512-24842v1",
+      "title": "Triangulation as an Acceptance Rule for Multilingual Mechanistic Interpretability",
+      "authors": "Yanan Long",
+      "date": "2025-12-31",
+      "url": "https://arxiv.org/abs/2512.24842v1",
+      "abstract": "Multilingual language models achieve strong aggregate performance yet often behave unpredictably across languages, scripts, and cultures. We argue that mechanistic explanations for such models should satisfy a \\emph{causal} standard: claims must survive causal interventions and must \\emph{cross-reference} across environments that perturb surface form while preserving meaning. We formalize \\emph{reference families} as predicate-preserving variants and introduce \\emph{triangulation}, an acceptance",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2512-24975v1",
+      "title": "Attribution-Guided Distillation of Matryoshka Sparse Autoencoders",
+      "authors": "Cristina P. Martin-Linares, Jonathan P. Ling",
+      "date": "2025-12-31",
+      "url": "https://arxiv.org/abs/2512.24975v1",
+      "abstract": "Sparse autoencoders (SAEs) aim to disentangle model activations into monosemantic, human-interpretable features. In practice, learned features are often redundant and vary across training runs and sparsity levels, which makes interpretations difficult to transfer and reuse. We introduce Distilled Matryoshka Sparse Autoencoders (DMSAEs), a training pipeline that distills a compact core of consistently useful features and reuses it to train new SAEs. DMSAEs run an iterative distillation cycle: tra",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2512-24711v1",
+      "title": "MEIC-DT: Memory-Efficient Incremental Clustering for Long-Text Coreference Resolution with Dual-Threshold Constraints",
+      "authors": "Kangyang Luo, Shuzheng Si, Yuzhuo Bai, Cheng Gao, Zhitong Wang, et al.",
+      "date": "2025-12-31",
+      "url": "https://arxiv.org/abs/2512.24711v1",
+      "abstract": "In the era of large language models (LLMs), supervised neural methods remain the state-of-the-art (SOTA) for Coreference Resolution. Yet, their full potential is underexplored, particularly in incremental clustering, which faces the critical challenge of balancing efficiency with performance for long texts. To address the limitation, we propose \\textbf{MEIC-DT}, a novel dual-threshold, memory-efficient incremental clustering approach based on a lightweight Transformer. MEIC-DT features a dual-th",
+      "tags": [
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2512-23988v1",
+      "title": "Fantastic Reasoning Behaviors and Where to Find Them: Unsupervised Discovery of the Reasoning Process",
+      "authors": "Zhenyu Zhang, Shujian Zhang, John Lambert, Wenxuan Zhou, Zhangyang Wang, et al.",
+      "date": "2025-12-30",
+      "url": "https://arxiv.org/abs/2512.23988v1",
+      "abstract": "Despite the growing reasoning capabilities of recent large language models (LLMs), their internal mechanisms during the reasoning process remain underexplored. Prior approaches often rely on human-defined concepts (e.g., overthinking, reflection) at the word level to analyze reasoning in a supervised manner. However, such methods are limited, as it is infeasible to capture the full spectrum of potential reasoning behaviors, many of which are difficult to define in token space. In this work, we p",
+      "tags": [
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2512-23837v1",
+      "title": "Adversarial Lens: Exploiting Attention Layers to Generate Adversarial Examples for Evaluation",
+      "authors": "Kaustubh Dhole",
+      "date": "2025-12-29",
+      "url": "https://arxiv.org/abs/2512.23837v1",
+      "abstract": "Recent advances in mechanistic interpretability suggest that intermediate attention layers encode token-level hypotheses that are iteratively refined toward the final output. In this work, we exploit this property to generate adversarial examples directly from attention-layer token distributions. Unlike prompt-based or gradient-based attacks, our approach leverages model-internal token predictions, producing perturbations that are both plausible and internally consistent with the model's own gen",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2512-23260v1",
+      "title": "Interpretable Safety Alignment via SAE-Constructed Low-Rank Subspace Adaptation",
+      "authors": "Dianyun Wang, Qingsen Ma, Yuhu Shang, Zhifeng Lu, Lechen Ning, et al.",
+      "date": "2025-12-29",
+      "url": "https://arxiv.org/abs/2512.23260v1",
+      "abstract": "Parameter-efficient fine-tuning has become the dominant paradigm for adapting large language models to downstream tasks. Low-rank adaptation methods such as LoRA operate under the assumption that task-relevant weight updates reside in a low-rank subspace, yet this subspace is learned implicitly from data in a black-box manner, offering no interpretability or direct control. We hypothesize that this difficulty stems from polysemanticity--individual dimensions encoding multiple entangled concepts.",
+      "tags": [
+        "features",
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2512-23043v1",
+      "title": "Mechanistic Analysis of Circuit Preservation in Federated Learning",
+      "authors": "Muhammad Haseeb, Salaar Masood, Muhammad Abdullah Sohail",
+      "date": "2025-12-28",
+      "url": "https://arxiv.org/abs/2512.23043v1",
+      "abstract": "Federated Learning (FL) enables collaborative training of models on decentralized data, but its performance degrades significantly under Non-IID (non-independent and identically distributed) data conditions. While this accuracy loss is well-documented, the internal mechanistic causes remain a black box. This paper investigates the canonical FedAvg algorithm through the lens of Mechanistic Interpretability (MI) to diagnose this failure mode. We hypothesize that the aggregation of conflicting clie",
+      "tags": [
+        "circuits"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "sae-embeddings-toolkit",
       "title": "Interpretable Embeddings with Sparse Autoencoders: A Data Analysis Toolkit",
@@ -767,19 +870,19 @@
       "featured": false
     },
     {
-      "id": "representation-engineering",
-      "title": "Representation Engineering: A Top-Down Approach to AI Transparency",
-      "authors": "Dan Hendrycks, Collin Burns, et al.",
-      "date": "2023-10-02",
-      "url": "https://arxiv.org/abs/2310.01405",
-      "abstract": "Introduces representation engineering for identifying and manipulating high-level concepts like honesty.",
+      "id": "linear-representations",
+      "title": "The Linear Representation Hypothesis and the Geometry of Large Language Models",
+      "authors": "Various",
+      "date": "2023-11-06",
+      "url": "https://arxiv.org/abs/2311.03658",
+      "abstract": "Investigates the linear representation hypothesis and implications for how LLMs encode concepts.",
       "tags": [
-        "representation",
-        "concepts",
-        "methods"
+        "theory",
+        "representations",
+        "geometry"
       ],
       "source": "arXiv",
-      "featured": true
+      "featured": false
     },
     {
       "id": "attribution-patching",
@@ -812,6 +915,21 @@
       "featured": true
     },
     {
+      "id": "representation-engineering",
+      "title": "Representation Engineering: A Top-Down Approach to AI Transparency",
+      "authors": "Dan Hendrycks, Collin Burns, et al.",
+      "date": "2023-10-02",
+      "url": "https://arxiv.org/abs/2310.01405",
+      "abstract": "Introduces representation engineering for identifying and manipulating high-level concepts like honesty.",
+      "tags": [
+        "representation",
+        "concepts",
+        "methods"
+      ],
+      "source": "arXiv",
+      "featured": true
+    },
+    {
       "id": "sae-original",
       "title": "Sparse Autoencoders Find Highly Interpretable Features in Language Models",
       "authors": "Various",
@@ -825,21 +943,6 @@
       ],
       "source": "arXiv",
       "featured": true
-    },
-    {
-      "id": "linear-representations",
-      "title": "The Linear Representation Hypothesis and the Geometry of Large Language Models",
-      "authors": "Various",
-      "date": "2023-11-06",
-      "url": "https://arxiv.org/abs/2311.03658",
-      "abstract": "Investigates the linear representation hypothesis and implications for how LLMs encode concepts.",
-      "tags": [
-        "theory",
-        "representations",
-        "geometry"
-      ],
-      "source": "arXiv",
-      "featured": false
     },
     {
       "id": "tuned-lens",

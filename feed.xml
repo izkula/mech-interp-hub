@@ -2,179 +2,221 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mechanistic Interpretability Hub</title>
-    <link>https://izkula.github.io/mech-interp-hub</link>
+    <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 04 Jan 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://izkula.github.io/mech-interp-hub/feed.xml" rel="self" type="application/rss+xml"/>
+    <lastBuildDate>Mon, 05 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
-      <title>Open Problems in Mechanistic Interpretability</title>
-      <link>https://arxiv.org/abs/2501.16496</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Lee Sharkey, Bilal Chughtai, Joshua Batson, Jack Lindamood, et al.</p><p>A comprehensive survey of open problems requiring solutions before scientific and practical benefits of mechanistic interpretability can be realized, covering methodological, application, and socio-technical challenges.</p><p><strong>Tags:</strong> survey, open-problems, methodology</p>]]></description>
-      <pubDate>Mon, 27 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2501.16496</guid>
+      <title>ActErase: A Training-Free Paradigm for Precise Concept Erasure via Activation Patching</title>
+      <link>https://arxiv.org/abs/2601.00267v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Yi Sun, Xinhao Zhong, Hongyan Li, Yimin Zhou, Junhao Li, et al.</p><p>Recent advances in text-to-image diffusion models have demonstrated remarkable generation capabilities, yet they raise significant concerns regarding safety, copyright, and ethical implications. Existing concept erasure methods address these risks by removing sensitive concepts from pre-trained models, but most of them rely on data-intensive and computationally expensive fine-tuning, which poses a critical limitation. To overcome these challenges, inspired by the observation that the model&#x27;s act</p><p><strong>Tags:</strong> safety, vision</p>]]></description>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2601.00267v1</guid>
     </item>
     <item>
-      <title>Circuit Tracing: Revealing Computational Graphs in Language Models</title>
-      <link>https://transformer-circuits.pub/2025/attribution-graphs/methods.html</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Anthropic Interpretability Team</p><p>A new method for understanding how features interact to produce model outputs through attribution graphs, enabling analysis of computational structure on individual prompts.</p><p><strong>Tags:</strong> circuits, attribution, methods</p>]]></description>
-      <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://transformer-circuits.pub/2025/attribution-graphs/methods.html</guid>
+      <title>Triangulation as an Acceptance Rule for Multilingual Mechanistic Interpretability</title>
+      <link>https://arxiv.org/abs/2512.24842v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Yanan Long</p><p>Multilingual language models achieve strong aggregate performance yet often behave unpredictably across languages, scripts, and cultures. We argue that mechanistic explanations for such models should satisfy a \emph{causal} standard: claims must survive causal interventions and must \emph{cross-reference} across environments that perturb surface form while preserving meaning. We formalize \emph{reference families} as predicate-preserving variants and introduce \emph{triangulation}, an acceptance</p>]]></description>
+      <pubDate>Wed, 31 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2512.24842v1</guid>
     </item>
     <item>
-      <title>Circuits Updates - July 2025</title>
-      <link>https://transformer-circuits.pub/2025/july-update/index.html</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Anthropic Interpretability Team</p><p>Latest research updates including findings on arithmetic heuristics, lookup table features, and applications to biology including Evo 2 DNA foundation models.</p><p><strong>Tags:</strong> circuits, arithmetic, biology</p>]]></description>
-      <pubDate>Tue, 01 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>https://transformer-circuits.pub/2025/july-update/index.html</guid>
+      <title>Attribution-Guided Distillation of Matryoshka Sparse Autoencoders</title>
+      <link>https://arxiv.org/abs/2512.24975v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Cristina P. Martin-Linares, Jonathan P. Ling</p><p>Sparse autoencoders (SAEs) aim to disentangle model activations into monosemantic, human-interpretable features. In practice, learned features are often redundant and vary across training runs and sparsity levels, which makes interpretations difficult to transfer and reuse. We introduce Distilled Matryoshka Sparse Autoencoders (DMSAEs), a training pipeline that distills a compact core of consistently useful features and reuses it to train new SAEs. DMSAEs run an iterative distillation cycle: tra</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Wed, 31 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2512.24975v1</guid>
     </item>
     <item>
-      <title>Beyond Components: Singular Vector-Based Interpretability of Transformer Circuits</title>
-      <link>https://arxiv.org/abs/2511.20273</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Various</p><p>Demonstrates that transformer components&#x27; computation is distributed along a small number of interpretable, low-rank axes that can be independently manipulated.</p><p><strong>Tags:</strong> circuits, linear-algebra, low-rank</p>]]></description>
-      <pubDate>Sun, 30 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2511.20273</guid>
+      <title>MEIC-DT: Memory-Efficient Incremental Clustering for Long-Text Coreference Resolution with Dual-Threshold Constraints</title>
+      <link>https://arxiv.org/abs/2512.24711v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Kangyang Luo, Shuzheng Si, Yuzhuo Bai, Cheng Gao, Zhitong Wang, et al.</p><p>In the era of large language models (LLMs), supervised neural methods remain the state-of-the-art (SOTA) for Coreference Resolution. Yet, their full potential is underexplored, particularly in incremental clustering, which faces the critical challenge of balancing efficiency with performance for long texts. To address the limitation, we propose \textbf{MEIC-DT}, a novel dual-threshold, memory-efficient incremental clustering approach based on a lightweight Transformer. MEIC-DT features a dual-th</p><p><strong>Tags:</strong> features</p>]]></description>
+      <pubDate>Wed, 31 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2512.24711v1</guid>
     </item>
     <item>
-      <title>Interpretability in Parameter Space: Attribution-based Parameter Decomposition</title>
-      <link>https://arxiv.org/abs/2501.14926</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Various</p><p>A new approach that identifies minimal circuits in superposition, separates compressed computations, and identifies cross-layer distributed representations.</p><p><strong>Tags:</strong> methods, superposition, circuits</p>]]></description>
-      <pubDate>Fri, 24 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2501.14926</guid>
+      <title>Fantastic Reasoning Behaviors and Where to Find Them: Unsupervised Discovery of the Reasoning Process</title>
+      <link>https://arxiv.org/abs/2512.23988v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Zhenyu Zhang, Shujian Zhang, John Lambert, Wenxuan Zhou, Zhangyang Wang, et al.</p><p>Despite the growing reasoning capabilities of recent large language models (LLMs), their internal mechanisms during the reasoning process remain underexplored. Prior approaches often rely on human-defined concepts (e.g., overthinking, reflection) at the word level to analyze reasoning in a supervised manner. However, such methods are limited, as it is infeasible to capture the full spectrum of potential reasoning behaviors, many of which are difficult to define in token space. In this work, we p</p><p><strong>Tags:</strong> reasoning</p>]]></description>
+      <pubDate>Tue, 30 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2512.23988v1</guid>
     </item>
     <item>
-      <title>A Practical Review of Mechanistic Interpretability for Transformer-Based Language Models</title>
-      <link>https://arxiv.org/abs/2407.02646</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Rai, Zhou, et al.</p><p>A practical guide to mechanistic interpretability research, covering the workflow from problem formulation to validation, with focus on open problems.</p><p><strong>Tags:</strong> survey, tutorial, methodology</p>]]></description>
-      <pubDate>Wed, 03 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2407.02646</guid>
+      <title>Adversarial Lens: Exploiting Attention Layers to Generate Adversarial Examples for Evaluation</title>
+      <link>https://arxiv.org/abs/2512.23837v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Kaustubh Dhole</p><p>Recent advances in mechanistic interpretability suggest that intermediate attention layers encode token-level hypotheses that are iteratively refined toward the final output. In this work, we exploit this property to generate adversarial examples directly from attention-layer token distributions. Unlike prompt-based or gradient-based attacks, our approach leverages model-internal token predictions, producing perturbations that are both plausible and internally consistent with the model&#x27;s own gen</p>]]></description>
+      <pubDate>Mon, 29 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2512.23837v1</guid>
     </item>
     <item>
-      <title>Scaling Monosemanticity: Extracting Interpretable Features from Claude 3 Sonnet</title>
-      <link>https://transformer-circuits.pub/2024/scaling-monosemanticity/</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Anthropic Interpretability Team</p><p>Demonstrates extraction of millions of interpretable features from Claude 3 Sonnet using sparse autoencoders, finding multilingual, multimodal, and safety-relevant features.</p><p><strong>Tags:</strong> SAE, features, scaling, safety</p>]]></description>
-      <pubDate>Tue, 21 May 2024 00:00:00 +0000</pubDate>
-      <guid>https://transformer-circuits.pub/2024/scaling-monosemanticity/</guid>
+      <title>Interpretable Safety Alignment via SAE-Constructed Low-Rank Subspace Adaptation</title>
+      <link>https://arxiv.org/abs/2512.23260v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Dianyun Wang, Qingsen Ma, Yuhu Shang, Zhifeng Lu, Lechen Ning, et al.</p><p>Parameter-efficient fine-tuning has become the dominant paradigm for adapting large language models to downstream tasks. Low-rank adaptation methods such as LoRA operate under the assumption that task-relevant weight updates reside in a low-rank subspace, yet this subspace is learned implicitly from data in a black-box manner, offering no interpretability or direct control. We hypothesize that this difficulty stems from polysemanticity--individual dimensions encoding multiple entangled concepts.</p><p><strong>Tags:</strong> features, safety</p>]]></description>
+      <pubDate>Mon, 29 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2512.23260v1</guid>
     </item>
     <item>
-      <title>Crosscoders: Finding Shared Features Across Models</title>
-      <link>https://transformer-circuits.pub/2024/crosscoders/</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Anthropic Interpretability Team</p><p>Extends dictionary learning to find features shared across different models, providing evidence for feature universality.</p><p><strong>Tags:</strong> SAE, universality, features</p>]]></description>
-      <pubDate>Tue, 15 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://transformer-circuits.pub/2024/crosscoders/</guid>
+      <title>Mechanistic Analysis of Circuit Preservation in Federated Learning</title>
+      <link>https://arxiv.org/abs/2512.23043v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Muhammad Haseeb, Salaar Masood, Muhammad Abdullah Sohail</p><p>Federated Learning (FL) enables collaborative training of models on decentralized data, but its performance degrades significantly under Non-IID (non-independent and identically distributed) data conditions. While this accuracy loss is well-documented, the internal mechanistic causes remain a black box. This paper investigates the canonical FedAvg algorithm through the lens of Mechanistic Interpretability (MI) to diagnose this failure mode. We hypothesize that the aggregation of conflicting clie</p><p><strong>Tags:</strong> circuits</p>]]></description>
+      <pubDate>Sun, 28 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2512.23043v1</guid>
     </item>
     <item>
-      <title>Circuits Updates - July 2024</title>
-      <link>https://transformer-circuits.pub/2024/july-update/index.html</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Anthropic Interpretability Team</p><p>Research updates on factual recall mechanisms, detokenization in early layers, and information transmission via attention heads.</p><p><strong>Tags:</strong> circuits, factual-recall, attention</p>]]></description>
-      <pubDate>Mon, 01 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://transformer-circuits.pub/2024/july-update/index.html</guid>
+      <title>Decomposing Task Vectors for Refined Model Editing</title>
+      <link>https://arxiv.org/abs/2512.22511v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Hamed Damirchi, Ehsan Abbasnejad, Zhen Zhang, Javen Shi</p><p>Large pre-trained models have transformed machine learning, yet adapting these models effectively to exhibit precise, concept-specific behaviors remains a significant challenge. Task vectors, defined as the difference between fine-tuned and pre-trained model parameters, provide a mechanism for steering neural networks toward desired behaviors. This has given rise to large repositories dedicated to task vectors tailored for specific behaviors. The arithmetic operation of these task vectors allows</p><p><strong>Tags:</strong> steering, editing</p>]]></description>
+      <pubDate>Sat, 27 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2512.22511v1</guid>
     </item>
     <item>
-      <title>Circuits Updates - January 2024</title>
-      <link>https://transformer-circuits.pub/2024/jan-update/index.html</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Anthropic Interpretability Team</p><p>Updates on interpretability research including progress on understanding model computations.</p><p><strong>Tags:</strong> circuits, update</p>]]></description>
-      <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://transformer-circuits.pub/2024/jan-update/index.html</guid>
+      <title>The Deepfake Detective: Interpreting Neural Forensics Through Sparse Features and Manifolds</title>
+      <link>https://arxiv.org/abs/2512.21670v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Subramanyam Sahoo, Jared Junkin</p><p>Deepfake detection models have achieved high accuracy in identifying synthetic media, but their decision processes remain largely opaque. In this paper we present a mechanistic interpretability framework for deepfake detection applied to a vision-language model. Our approach combines a sparse autoencoder (SAE) analysis of internal network representations with a novel forensic manifold analysis that probes how the model&#x27;s features respond to controlled forensic artifact manipulations. We demonstr</p><p><strong>Tags:</strong> SAE, features, probing, vision</p>]]></description>
+      <pubDate>Thu, 25 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2512.21670v1</guid>
     </item>
     <item>
-      <title>Mechanistic Interpretability for AI Safety - A Review</title>
-      <link>https://arxiv.org/abs/2404.14082</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Leonard Bereska, et al.</p><p>Comprehensive review of mechanistic interpretability from an AI safety perspective, covering methods, applications, and open challenges.</p><p><strong>Tags:</strong> survey, safety, review</p>]]></description>
-      <pubDate>Mon, 22 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2404.14082</guid>
+      <title>Omni-Weather: Unified Multimodal Foundation Model for Weather Generation and Understanding</title>
+      <link>https://arxiv.org/abs/2512.21643v2</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Zhiwang Zhou, Yuandong Pu, Xuming He, Yidi Liu, Yixin Chen, et al.</p><p>Weather modeling requires both accurate prediction and mechanistic interpretation, yet existing methods treat these goals in isolation, separating generation from understanding. To address this gap, we present Omni-Weather, the first multimodal foundation model that unifies weather generation and understanding within a single architecture. Omni-Weather integrates a radar encoder for weather generation tasks, followed by unified processing using a shared self-attention mechanism. Moreover, we con</p><p><strong>Tags:</strong> vision</p>]]></description>
+      <pubDate>Thu, 25 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2512.21643v2</guid>
     </item>
     <item>
-      <title>Representation Engineering: A Top-Down Approach to AI Transparency</title>
-      <link>https://arxiv.org/abs/2310.01405</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Dan Hendrycks, Collin Burns, et al.</p><p>Introduces representation engineering for identifying and manipulating high-level concepts like honesty in neural networks.</p><p><strong>Tags:</strong> representation, concepts, methods</p>]]></description>
-      <pubDate>Mon, 02 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2310.01405</guid>
+      <title>Learning from Negative Examples: Why Warning-Framed Training Data Teaches What It Warns Against</title>
+      <link>https://arxiv.org/abs/2512.22293v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Tsogt-Ochir Enkhbayar</p><p>Warning-framed content in training data (e.g., &quot;DO NOT USE - this code is vulnerable&quot;) does not, it turns out, teach language models to avoid the warned-against behavior. In experiments reported here, models exposed to such warnings reproduced the flagged content at rates statistically indistinguishable from models given the content directly (76.7% vs. 83.3%). Why? Sparse autoencoder analysis points to a failure of orthogonalization: &quot;describing X&quot; and &quot;performing X&quot; activate overlapping latent </p><p><strong>Tags:</strong> SAE</p>]]></description>
+      <pubDate>Thu, 25 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2512.22293v1</guid>
     </item>
     <item>
-      <title>Towards Monosemanticity: Decomposing Language Models With Dictionary Learning</title>
-      <link>https://transformer-circuits.pub/2023/monosemantic-features/</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Anthropic Interpretability Team</p><p>Demonstrates that sparse autoencoders can extract monosemantic features from a one-layer transformer, laying groundwork for scaling to larger models.</p><p><strong>Tags:</strong> SAE, features, dictionary-learning</p>]]></description>
-      <pubDate>Wed, 04 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://transformer-circuits.pub/2023/monosemantic-features/</guid>
+      <title>Measuring Mechanistic Independence: Can Bias Be Removed Without Erasing Demographics?</title>
+      <link>https://arxiv.org/abs/2512.20796v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Zhengyang Shan, Aaron Mueller</p><p>We investigate how independent demographic bias mechanisms are from general demographic recognition in language models. Using a multi-task evaluation setup where demographics are associated with names, professions, and education levels, we measure whether models can be debiased while preserving demographic detection capabilities. We compare attribution-based and correlation-based methods for locating bias features. We find that targeted sparse autoencoder feature ablations in Gemma-2-9B reduce b</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Tue, 23 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2512.20796v1</guid>
     </item>
     <item>
-      <title>Toy Models of Superposition</title>
-      <link>https://transformer-circuits.pub/2022/toy_model/index.html</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Anthropic Interpretability Team</p><p>Introduces and analyzes superposition: how neural networks represent more features than dimensions by using nearly-orthogonal directions.</p><p><strong>Tags:</strong> superposition, theory, foundational</p>]]></description>
-      <pubDate>Wed, 14 Sep 2022 00:00:00 +0000</pubDate>
-      <guid>https://transformer-circuits.pub/2022/toy_model/index.html</guid>
+      <title>Hierarchical Geometry of Cognitive States in Transformer Embedding Spaces</title>
+      <link>https://arxiv.org/abs/2512.22227v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Sophie Zhao</p><p>Recent work has shown that transformer-based language models learn rich geometric structure in their embedding spaces, yet the presence of higher-level cognitive organization within these representations remains underexplored. In this work, we investigate whether sentence embeddings encode a graded, hierarchical structure aligned with human-interpretable cognitive or psychological attributes. We construct a dataset of 480 natural-language sentences annotated with continuous ordinal energy scores</p>]]></description>
+      <pubDate>Tue, 23 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2512.22227v1</guid>
     </item>
     <item>
-      <title>In-context Learning and Induction Heads</title>
-      <link>https://transformer-circuits.pub/2022/in-context-learning-and-induction-heads/</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Anthropic Interpretability Team</p><p>Identifies induction heads as a key circuit for in-context learning, showing they form via a phase transition during training.</p><p><strong>Tags:</strong> circuits, in-context-learning, attention</p>]]></description>
-      <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
-      <guid>https://transformer-circuits.pub/2022/in-context-learning-and-induction-heads/</guid>
+      <title>Toward Explaining Large Language Models in Software Engineering Tasks</title>
+      <link>https://arxiv.org/abs/2512.20328v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Antonio Vitale, Khai-Nguyen Nguyen, Denys Poshyvanyk, Rocco Oliveto, Simone Scalabrino, et al.</p><p>Recent progress in Large Language Models (LLMs) has substantially advanced the automation of software engineering (SE) tasks, enabling complex activities such as code generation and code summarization. However, the black-box nature of LLMs remains a major barrier to their adoption in high-stakes and safety-critical domains, where explainability and transparency are vital for trust, accountability, and effective human supervision. Despite increasing interest in explainable AI for software enginee</p><p><strong>Tags:</strong> safety, vision</p>]]></description>
+      <pubDate>Tue, 23 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2512.20328v1</guid>
     </item>
     <item>
-      <title>A Mathematical Framework for Transformer Circuits</title>
-      <link>https://transformer-circuits.pub/2021/framework/</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Anthropic Interpretability Team</p><p>Foundational paper establishing the mathematical framework for analyzing transformer circuits, including residual stream and attention head analysis.</p><p><strong>Tags:</strong> theory, foundational, circuits</p>]]></description>
-      <pubDate>Wed, 22 Dec 2021 00:00:00 +0000</pubDate>
-      <guid>https://transformer-circuits.pub/2021/framework/</guid>
+      <title>Generative Giants, Retrieval Weaklings: Why do Multimodal Large Language Models Fail at Multimodal Retrieval?</title>
+      <link>https://arxiv.org/abs/2512.19115v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Hengyi Feng, Zeang Sheng, Meiyi Qiang, Wentao Zhang</p><p>Despite the remarkable success of multimodal large language models (MLLMs) in generative tasks, we observe that they exhibit a counterintuitive deficiency in the zero-shot multimodal retrieval task. In this work, we investigate the underlying mechanisms that hinder MLLMs from serving as effective retrievers. With the help of sparse autoencoders (SAEs), we decompose MLLM output representations into interpretable semantic concepts to probe their intrinsic behavior. Our analysis reveals that the re</p><p><strong>Tags:</strong> SAE, probing, vision</p>]]></description>
+      <pubDate>Mon, 22 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2512.19115v1</guid>
     </item>
     <item>
-      <title>Sparse Autoencoders Uncover Biologically Interpretable Features in Protein Language Models</title>
-      <link>https://pmc.ncbi.nlm.nih.gov/articles/PMC12403088/</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Various</p><p>Applies SAEs to protein language models, successfully disentangling biological concepts and revealing missing database annotations.</p><p><strong>Tags:</strong> SAE, biology, proteins</p>]]></description>
-      <pubDate>Sun, 15 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://pmc.ncbi.nlm.nih.gov/articles/PMC12403088/</guid>
+      <title>LouvreSAE: Sparse Autoencoders for Interpretable and Controllable Style Transfer</title>
+      <link>https://arxiv.org/abs/2512.18930v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Raina Panda, Daniel Fein, Arpita Singhal, Mark Fiore, Maneesh Agrawala, et al.</p><p>Artistic style transfer in generative models remains a significant challenge, as existing methods often introduce style only via model fine-tuning, additional adapters, or prompt engineering, all of which can be computationally expensive and may still entangle style with subject matter. In this paper, we introduce a training- and inference-light, interpretable method for representing and transferring artistic style. Our approach leverages an art-specific Sparse Autoencoder (SAE) on top of latent</p><p><strong>Tags:</strong> SAE</p>]]></description>
+      <pubDate>Mon, 22 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2512.18930v1</guid>
     </item>
     <item>
-      <title>Eliciting Latent Predictions from Transformers with the Tuned Lens</title>
-      <link>https://arxiv.org/abs/2303.08112</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Nostalgebraist, et al.</p><p>Introduces the tuned lens for projecting intermediate activations to vocabulary space, improving on the logit lens.</p><p><strong>Tags:</strong> methods, probing, predictions</p>]]></description>
-      <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2303.08112</guid>
+      <title>SAP: Syntactic Attention Pruning for Transformer-based Language Models</title>
+      <link>https://arxiv.org/abs/2512.19125v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Tzu-Yun Lee, Ding-Yong Hong, Jan-Jan Wu</p><p>This paper introduces Syntactic Attention Pruning (SAP), a novel method for effectively pruning attention heads in Transformer models. Unlike conventional approaches that rely solely on mathematical analysis of model weights and activations, SAP incorporates both the syntactic structure and attention patterns of sentences to guide the pruning process. By leveraging these linguistic features, SAP not only achieves performance comparable to state-of-the-art methods but also enhances the interpreta</p><p><strong>Tags:</strong> features, attention</p>]]></description>
+      <pubDate>Mon, 22 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2512.19125v1</guid>
     </item>
     <item>
-      <title>Locating and Editing Factual Associations in GPT</title>
-      <link>https://arxiv.org/abs/2202.05262</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Kevin Meng, David Bau, Alex Andonian, Yonatan Belinkov</p><p>Introduces causal tracing and ROME for locating and editing factual knowledge in language models.</p><p><strong>Tags:</strong> editing, factual-knowledge, methods</p>]]></description>
-      <pubDate>Thu, 10 Feb 2022 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2202.05262</guid>
+      <title>Faithful and Stable Neuron Explanations for Trustworthy Mechanistic Interpretability</title>
+      <link>https://arxiv.org/abs/2512.18092v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Ge Yan, Tuomas Oikarinen,  Tsui-Wei,  Weng</p><p>Neuron identification is a popular tool in mechanistic interpretability, aiming to uncover the human-interpretable concepts represented by individual neurons in deep networks. While algorithms such as Network Dissection and CLIP-Dissect achieve great empirical success, a rigorous theoretical foundation remains absent, which is crucial to enable trustworthy and reliable explanations. In this work, we observe that neuron identification can be viewed as the inverse process of machine learning, whic</p><p><strong>Tags:</strong> theory</p>]]></description>
+      <pubDate>Fri, 19 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2512.18092v1</guid>
     </item>
     <item>
-      <title>Transcoders Find Interpretable LLM Feature Circuits</title>
-      <link>https://arxiv.org/abs/2406.11944</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Various</p><p>Introduces transcoders for mapping between activation spaces and finding interpretable circuits.</p><p><strong>Tags:</strong> SAE, circuits, methods</p>]]></description>
-      <pubDate>Mon, 17 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2406.11944</guid>
+      <title>Task Schema and Binding: A Double Dissociation Study of In-Context Learning</title>
+      <link>https://arxiv.org/abs/2512.17325v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Chaeha Kim</p><p>We provide causal mechanistic validation that in-context learning (ICL) decomposes into two separable mechanisms: Task Schema (abstract task type recognition) and Binding (specific input-output associations). Through activation patching experiments across 9 models from 7 Transformer families plus Mamba (370M-13B parameters), we establish three key findings:   1. Double dissociation: Task Schema transfers at 100% via late MLP patching; Binding transfers at 62% via residual stream patching -- prov</p>]]></description>
+      <pubDate>Fri, 19 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2512.17325v1</guid>
     </item>
     <item>
-      <title>Attribution Patching: Activation Patching At Industrial Scale</title>
-      <link>https://arxiv.org/abs/2310.10348</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Various</p><p>Scales activation patching using gradient-based attribution, enabling efficient circuit discovery in large models.</p><p><strong>Tags:</strong> methods, circuits, scaling</p>]]></description>
-      <pubDate>Mon, 16 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2310.10348</guid>
+      <title>SALVE: Sparse Autoencoder-Latent Vector Editing for Mechanistic Control of Neural Networks</title>
+      <link>https://arxiv.org/abs/2512.15938v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Vegard Flovik</p><p>Deep neural networks achieve impressive performance but remain difficult to interpret and control. We present SALVE (Sparse Autoencoder-Latent Vector Editing), a unified &quot;discover, validate, and control&quot; framework that bridges mechanistic interpretability and model editing. Using an $\ell_1$-regularized autoencoder, we learn a sparse, model-native feature basis without supervision. We validate these features with Grad-FAM, a feature-level saliency mapping method that visually grounds latent feat</p><p><strong>Tags:</strong> SAE, features, editing, vision</p>]]></description>
+      <pubDate>Wed, 17 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2512.15938v1</guid>
     </item>
     <item>
-      <title>The Linear Representation Hypothesis and the Geometry of Large Language Models</title>
-      <link>https://arxiv.org/abs/2311.03658</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Various</p><p>Investigates the linear representation hypothesis and its implications for understanding how LLMs encode concepts.</p><p><strong>Tags:</strong> theory, representations, geometry</p>]]></description>
-      <pubDate>Mon, 06 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2311.03658</guid>
+      <title>The Deleuzian Representation Hypothesis</title>
+      <link>https://arxiv.org/abs/2512.19734v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Clément Cornet, Romaric Besançon, Hervé Le Borgne</p><p>We propose an alternative to sparse autoencoders (SAEs) as a simple and effective unsupervised method for extracting interpretable concepts from neural networks. The core idea is to cluster differences in activations, which we formally justify within a discriminant analysis framework. To enhance the diversity of extracted concepts, we refine the approach by weighting the clustering using the skewness of activations. The method aligns with Deleuze&#x27;s modern view of concepts as differences. We eval</p><p><strong>Tags:</strong> SAE</p>]]></description>
+      <pubDate>Wed, 17 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2512.19734v1</guid>
     </item>
     <item>
-      <title>Survey on the Role of Mechanistic Interpretability in Generative AI</title>
-      <link>https://www.mdpi.com/2504-2289/9/8/193</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Various</p><p>Survey covering the role of mechanistic interpretability in understanding and improving generative AI systems.</p><p><strong>Tags:</strong> survey, generative-ai</p>]]></description>
-      <pubDate>Sun, 15 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.mdpi.com/2504-2289/9/8/193</guid>
+      <title>From Isolation to Entanglement: When Do Interpretability Methods Identify and Disentangle Known Concepts?</title>
+      <link>https://arxiv.org/abs/2512.15134v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Aaron Mueller, Andrew Lee, Shruti Joshi, Ekdeep Singh Lubana, Dhanya Sridhar, et al.</p><p>A central goal of interpretability is to recover representations of causally relevant concepts from the activations of neural networks. The quality of these concept representations is typically evaluated in isolation, and under implicit independence assumptions that may not hold in practice. Thus, it is unclear whether common featurization methods - including sparse autoencoders (SAEs) and sparse probes - recover disentangled representations of these concepts. This study proposes a multi-concept</p><p><strong>Tags:</strong> SAE, probing</p>]]></description>
+      <pubDate>Wed, 17 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2512.15134v1</guid>
     </item>
     <item>
-      <title>Mechanistic Interpretability in the Presence of Architectural Degeneracy</title>
-      <link>https://arxiv.org/abs/2506.18053</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Various</p><p>Addresses challenges of mechanistic interpretability when multiple architectures can implement the same function.</p><p><strong>Tags:</strong> theory, challenges</p>]]></description>
-      <pubDate>Mon, 23 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2506.18053</guid>
+      <title>Task Matrices: Linear Maps for Cross-Model Finetuning Transfer</title>
+      <link>https://arxiv.org/abs/2512.14880v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Darrin O&#x27; Brien, Dhikshith Gajulapalli, Eric Xia</p><p>Results in interpretability suggest that large vision and language models learn implicit linear encodings when models are biased by in-context prompting. However, the existence of similar linear representations in more general adaptation regimes has not yet been demonstrated. In this work, we develop the concept of a task matrix, a linear transformation from a base to finetuned embedding state. We demonstrate that for vision and text models and ten different datasets, a base model augmented with</p><p><strong>Tags:</strong> vision</p>]]></description>
+      <pubDate>Tue, 16 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2512.14880v1</guid>
+    </item>
+    <item>
+      <title>ReflCtrl: Controlling LLM Reflection via Representation Engineering</title>
+      <link>https://arxiv.org/abs/2512.13979v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Ge Yan, Chung-En Sun,  Tsui-Wei,  Weng</p><p>Large language models (LLMs) with Chain-of-Thought (CoT) reasoning have achieved strong performance across diverse tasks, including mathematics, coding, and general reasoning. A distinctive ability of these reasoning models is self-reflection: the ability to review and revise previous reasoning steps. While self-reflection enhances reasoning performance, it also increases inference cost. In this work, we study self-reflection through the lens of representation engineering. We segment the model&#x27;s</p><p><strong>Tags:</strong> survey, reasoning</p>]]></description>
+      <pubDate>Tue, 16 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2512.13979v1</guid>
+    </item>
+    <item>
+      <title>AI Epidemiology: achieving explainable AI through expert oversight patterns</title>
+      <link>https://arxiv.org/abs/2512.15783v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Kit Tempest-Walters</p><p>AI Epidemiology is a framework for governing and explaining advanced AI systems by applying population-level surveillance methods to AI outputs. The approach mirrors the way in which epidemiologists enable public health interventions through statistical evidence before molecular mechanisms are understood. This bypasses the problem of model complexity which plagues current interpretability methods (such as SHAP and mechanistic interpretability) at the scale of deployed models.   AI Epidemiology a</p>]]></description>
+      <pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2512.15783v1</guid>
+    </item>
+    <item>
+      <title>Superposition as Lossy Compression: Measure with Sparse Autoencoders and Connect to Adversarial Vulnerability</title>
+      <link>https://arxiv.org/abs/2512.13568v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Leonard Bereska, Zoe Tzifa-Kratira, Reza Samavi, Efstratios Gavves</p><p>Neural networks achieve remarkable performance through superposition: encoding multiple features as overlapping directions in activation space rather than dedicating individual neurons to each feature. This challenges interpretability, yet we lack principled methods to measure superposition. We present an information-theoretic framework measuring a neural representation&#x27;s effective degrees of freedom. We apply Shannon entropy to sparse autoencoder activations to compute the number of effective f</p><p><strong>Tags:</strong> SAE, superposition, features</p>]]></description>
+      <pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2512.13568v1</guid>
+    </item>
+    <item>
+      <title>XNNTab -- Interpretable Neural Networks for Tabular Data using Sparse Autoencoders</title>
+      <link>https://arxiv.org/abs/2512.13442v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Khawla Elhadri, Jörg Schlötterer, Christin Seifert</p><p>In data-driven applications relying on tabular data, where interpretability is key, machine learning models such as decision trees and linear regression are applied. Although neural networks can provide higher predictive performance, they are not used because of their blackbox nature. In this work, we present XNNTab, a neural architecture that combines the expressiveness of neural networks and interpretability. XNNTab first learns highly non-linear feature representations, which are decomposed i</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2512.13442v1</guid>
+    </item>
+    <item>
+      <title>Unlocking the Address Book: Dissecting the Sparse Semantic Structure of LLM Key-Value Caches via Sparse Autoencoders</title>
+      <link>https://arxiv.org/abs/2512.10547v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Qingsen Ma, Dianyun Wang, Jiaming Lyu, Yaoye Wang, Lechen Ning, et al.</p><p>The Key-Value (KV) cache is the primary memory bottleneck in long-context Large Language Models, yet it is typically treated as an opaque numerical tensor. In this work, we propose \textbf{STA-Attention}, a framework that utilizes Top-K Sparse Autoencoders (SAEs) to decompose the KV cache into interpretable ``semantic atoms.&#x27;&#x27; Unlike standard $L_1$-regularized SAEs, our Top-K approach eliminates shrinkage bias, preserving the precise dot-product geometry required for attention. Our analysis unco</p><p><strong>Tags:</strong> SAE</p>]]></description>
+      <pubDate>Thu, 11 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2512.10547v1</guid>
+    </item>
+    <item>
+      <title>Beyond the Black Box: Identifiable Interpretation and Control in Generative Models via Causal Minimality</title>
+      <link>https://arxiv.org/abs/2512.10720v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Lingjing Kong, Shaoan Xie, Guangyi Chen, Yuewen Sun, Xiangchen Song, et al.</p><p>Deep generative models, while revolutionizing fields like image and text generation, largely operate as opaque black boxes, hindering human understanding, control, and alignment. While methods like sparse autoencoders (SAEs) show remarkable empirical success, they often lack theoretical guarantees, risking subjective insights. Our primary objective is to establish a principled foundation for interpretable generative models. We demonstrate that the principle of causal minimality -- favoring the s</p><p><strong>Tags:</strong> SAE, safety, theory, vision</p>]]></description>
+      <pubDate>Thu, 11 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2512.10720v1</guid>
     </item>
   </channel>
 </rss>
