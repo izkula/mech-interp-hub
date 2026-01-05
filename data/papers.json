@@ -1,6 +1,20 @@
 {
-  "lastUpdated": "2026-01-04",
+  "lastUpdated": "2026-01-05",
   "papers": [
+    {
+      "id": "arxiv-2601-00267v1",
+      "title": "ActErase: A Training-Free Paradigm for Precise Concept Erasure via Activation Patching",
+      "authors": "Yi Sun, Xinhao Zhong, Hongyan Li, Yimin Zhou, Junhao Li, et al.",
+      "date": "2026-01-01",
+      "url": "https://arxiv.org/abs/2601.00267v1",
+      "abstract": "Recent advances in text-to-image diffusion models have demonstrated remarkable generation capabilities, yet they raise significant concerns regarding safety, copyright, and ethical implications. Existing concept erasure methods address these risks by removing sensitive concepts from pre-trained models, but most of them rely on data-intensive and computationally expensive fine-tuning, which poses a critical limitation. To overcome these challenges, inspired by the observation that the model's act",
+      "tags": [
+        "safety",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2512-24842v1",
       "title": "Triangulation as an Acceptance Rule for Multilingual Mechanistic Interpretability",
