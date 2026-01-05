@@ -8,7 +8,11 @@
       "date": "2025-12-10",
       "url": "https://arxiv.org/abs/2512.10092",
       "abstract": "Proposes using SAEs to create embeddings whose dimensions map to interpretable concepts. Shows SAE embeddings are more cost-effective and reliable than LLMs for data analysis.",
-      "tags": ["SAE", "embeddings", "tools"],
+      "tags": [
+        "SAE",
+        "embeddings",
+        "tools"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -19,7 +23,12 @@
       "date": "2025-12-08",
       "url": "https://arxiv.org/abs/2512.07730",
       "abstract": "Uses SAE-driven visual information enhancement to mitigate object hallucination in vision-language models, achieving 10% improvement in CHAIR_S benchmarks.",
-      "tags": ["SAE", "vision", "hallucination", "safety"],
+      "tags": [
+        "SAE",
+        "vision",
+        "hallucination",
+        "safety"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -30,7 +39,11 @@
       "date": "2025-12-07",
       "url": "https://arxiv.org/abs/2512.06681",
       "abstract": "Using systematic activation patching across all 12 layers, confirms early layers (0-3) act as lexical sentiment detectors with position-specific polarity signals.",
-      "tags": ["circuits", "sentiment", "GPT-2"],
+      "tags": [
+        "circuits",
+        "sentiment",
+        "GPT-2"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -41,7 +54,11 @@
       "date": "2025-12-05",
       "url": "https://arxiv.org/abs/2512.05534",
       "abstract": "First closed-form theoretical analysis of SAEs, transcoders, and crosscoders. Reveals SAEs may fail to fully recover ground truth features unless extremely sparse.",
-      "tags": ["SAE", "theory", "transcoders"],
+      "tags": [
+        "SAE",
+        "theory",
+        "transcoders"
+      ],
       "source": "arXiv",
       "featured": true
     },
@@ -52,7 +69,11 @@
       "date": "2025-12-05",
       "url": "https://arxiv.org/abs/2512.05865",
       "abstract": "Post-training method making transformer attention sparse without sacrificing performance. Reduces attention connectivity to ~0.3% of edges on models up to 1B parameters.",
-      "tags": ["attention", "sparsity", "methods"],
+      "tags": [
+        "attention",
+        "sparsity",
+        "methods"
+      ],
       "source": "arXiv",
       "featured": true
     },
@@ -63,7 +84,11 @@
       "date": "2025-12-04",
       "url": "https://arxiv.org/abs/2512.04691",
       "abstract": "Research agenda for ensuring ethical behavior of multi-agent LLM systems using mechanistic interpretability, identifying key research challenges.",
-      "tags": ["safety", "multi-agent", "ethics"],
+      "tags": [
+        "safety",
+        "multi-agent",
+        "ethics"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -74,7 +99,11 @@
       "date": "2025-12-01",
       "url": "https://arxiv.org/abs/2512.01222",
       "abstract": "Evaluates logit lens and other MI methods on decoding hidden reasoning in models fine-tuned to reason in ROT-13 encryption while outputting English.",
-      "tags": ["reasoning", "probing", "methods"],
+      "tags": [
+        "reasoning",
+        "probing",
+        "methods"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -85,7 +114,11 @@
       "date": "2025-11-18",
       "url": "https://arxiv.org/abs/2511.14465",
       "abstract": "Lightweight wrapper around NNsight providing unified interface for transformer analysis while preserving HuggingFace implementations.",
-      "tags": ["tools", "library", "methods"],
+      "tags": [
+        "tools",
+        "library",
+        "methods"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -96,7 +129,11 @@
       "date": "2025-11-15",
       "url": "https://arxiv.org/abs/2511.21514",
       "abstract": "Extends mechanistic interpretability techniques to time series transformers, analyzing how they process temporal patterns.",
-      "tags": ["time-series", "circuits", "methods"],
+      "tags": [
+        "time-series",
+        "circuits",
+        "methods"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -107,7 +144,11 @@
       "date": "2025-10-15",
       "url": "https://transformer-circuits.pub/2025/october-update/index.html",
       "abstract": "Explores how LLMs perceive higher-level semantic concepts encoded visually in text, including ASCII art recognition and SVG understanding.",
-      "tags": ["circuits", "vision", "update"],
+      "tags": [
+        "circuits",
+        "vision",
+        "update"
+      ],
       "source": "Anthropic",
       "featured": false
     },
@@ -118,7 +159,11 @@
       "date": "2025-08-15",
       "url": "https://transformer-circuits.pub/2025/august-update/index.html",
       "abstract": "Updates on SAE training improvements, crosscoder developments, and applications of MI to biological systems.",
-      "tags": ["circuits", "SAE", "update"],
+      "tags": [
+        "circuits",
+        "SAE",
+        "update"
+      ],
       "source": "Anthropic",
       "featured": false
     },
@@ -129,7 +174,11 @@
       "date": "2025-08-15",
       "url": "https://arxiv.org/abs/2508.09363",
       "abstract": "Shows that restricting SAE training to well-defined domains (e.g., medical text) reallocates capacity to domain-specific features, reducing 'dark matter' in reconstruction error.",
-      "tags": ["SAE", "domain-specific", "methods"],
+      "tags": [
+        "SAE",
+        "domain-specific",
+        "methods"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -140,7 +189,11 @@
       "date": "2025-07-01",
       "url": "https://transformer-circuits.pub/2025/july-update/index.html",
       "abstract": "Findings on arithmetic heuristics, lookup table features, and applications to biology including Evo 2 DNA foundation models.",
-      "tags": ["circuits", "arithmetic", "biology"],
+      "tags": [
+        "circuits",
+        "arithmetic",
+        "biology"
+      ],
       "source": "Anthropic",
       "featured": false
     },
@@ -151,7 +204,10 @@
       "date": "2025-06-23",
       "url": "https://arxiv.org/abs/2506.18053",
       "abstract": "Addresses challenges of mechanistic interpretability when multiple architectures can implement the same function.",
-      "tags": ["theory", "challenges"],
+      "tags": [
+        "theory",
+        "challenges"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -162,7 +218,11 @@
       "date": "2025-06-15",
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12403088/",
       "abstract": "SAEs applied to protein language models reveal interpretable biological concepts and missing database annotations. Published in PNAS.",
-      "tags": ["SAE", "biology", "proteins"],
+      "tags": [
+        "SAE",
+        "biology",
+        "proteins"
+      ],
       "source": "PNAS",
       "featured": true
     },
@@ -173,42 +233,13 @@
       "date": "2025-06-01",
       "url": "https://www.anthropic.com/research/open-source-circuit-tracing",
       "abstract": "Anthropic open-sources their circuit tracing library, enabling generation of attribution graphs on popular open-weights models like Gemma-2-2b and Llama-3.2-1b.",
-      "tags": ["circuits", "tools", "open-source"],
+      "tags": [
+        "circuits",
+        "tools",
+        "open-source"
+      ],
       "source": "Anthropic",
       "featured": true
-    },
-    {
-      "id": "polysemantic-vulnerability",
-      "title": "Probing the Vulnerability of Large Language Models to Polysemantic Interventions",
-      "authors": "Various",
-      "date": "2025-05-20",
-      "url": "https://arxiv.org/abs/2505.12345",
-      "abstract": "Investigates how polysemantic neurons can be exploited and what this means for model robustness.",
-      "tags": ["safety", "polysemanticity", "adversarial"],
-      "source": "arXiv",
-      "featured": false
-    },
-    {
-      "id": "sae-ssv-steering",
-      "title": "SAE-SSV: Supervised Steering in Sparse Representation Spaces for Reliable Control of Language Models",
-      "authors": "Various",
-      "date": "2025-05-15",
-      "url": "https://arxiv.org/abs/2505.09876",
-      "abstract": "Introduces supervised steering vectors in SAE feature space for more reliable model control.",
-      "tags": ["SAE", "steering", "control"],
-      "source": "arXiv",
-      "featured": false
-    },
-    {
-      "id": "gradient-sae",
-      "title": "Beyond Input Activations: Identifying Influential Latents by Gradient Sparse Autoencoders",
-      "authors": "Various",
-      "date": "2025-05-10",
-      "url": "https://arxiv.org/abs/2505.08765",
-      "abstract": "Uses gradient information to identify which SAE features are most influential for specific outputs.",
-      "tags": ["SAE", "gradients", "methods"],
-      "source": "arXiv",
-      "featured": false
     },
     {
       "id": "circuits-april-2025",
@@ -217,7 +248,10 @@
       "date": "2025-04-15",
       "url": "https://transformer-circuits.pub/2025/april-update/index.html",
       "abstract": "Latest research updates on circuit analysis and feature discovery.",
-      "tags": ["circuits", "update"],
+      "tags": [
+        "circuits",
+        "update"
+      ],
       "source": "Anthropic",
       "featured": false
     },
@@ -228,7 +262,11 @@
       "date": "2025-03-27",
       "url": "https://transformer-circuits.pub/2025/attribution-graphs/biology.html",
       "abstract": "Landmark paper using attribution graphs to study Claude 3.5 Haiku's internal reasoning, finding shared conceptual spaces where reasoning happens before translation to language.",
-      "tags": ["circuits", "reasoning", "biology"],
+      "tags": [
+        "circuits",
+        "reasoning",
+        "biology"
+      ],
       "source": "Anthropic",
       "featured": true
     },
@@ -239,7 +277,11 @@
       "date": "2025-03-15",
       "url": "https://arxiv.org/abs/2503.05613",
       "abstract": "Comprehensive survey presenting SAEs for interpreting and understanding the internal workings of LLMs.",
-      "tags": ["SAE", "survey", "review"],
+      "tags": [
+        "SAE",
+        "survey",
+        "review"
+      ],
       "source": "arXiv",
       "featured": true
     },
@@ -248,33 +290,15 @@
       "title": "SAEBench: A Comprehensive Benchmark for Sparse Autoencoders in Language Model Interpretability",
       "authors": "Various",
       "date": "2025-03-10",
-      "url": "https://arxiv.org/abs/2503.04321",
+      "url": "https://arxiv.org/abs/2503.09532",
       "abstract": "Introduces comprehensive benchmarks for evaluating SAE quality, interpretability, and downstream task performance.",
-      "tags": ["SAE", "benchmark", "evaluation"],
+      "tags": [
+        "SAE",
+        "benchmark",
+        "evaluation"
+      ],
       "source": "arXiv",
       "featured": true
-    },
-    {
-      "id": "sae-not-canonical",
-      "title": "Sparse Autoencoders Do Not Find Canonical Units of Analysis",
-      "authors": "Various",
-      "date": "2025-02-20",
-      "url": "https://openreview.net/forum?id=sae-canonical",
-      "abstract": "Critical analysis showing SAEs may not recover ground-truth features, raising questions about what SAE features actually represent.",
-      "tags": ["SAE", "theory", "critique"],
-      "source": "ICLR 2025",
-      "featured": true
-    },
-    {
-      "id": "mi-sae-mutual-info",
-      "title": "Interpreting and Steering LLMs with Mutual Information-based Explanations on Sparse Autoencoders",
-      "authors": "Various",
-      "date": "2025-02-15",
-      "url": "https://arxiv.org/abs/2502.09876",
-      "abstract": "Uses mutual information to provide better explanations of SAE features and enable more precise steering.",
-      "tags": ["SAE", "steering", "information-theory"],
-      "source": "ICLR 2025",
-      "featured": false
     },
     {
       "id": "open-problems-mi",
@@ -283,7 +307,11 @@
       "date": "2025-01-27",
       "url": "https://arxiv.org/abs/2501.16496",
       "abstract": "Comprehensive survey of open problems requiring solutions before scientific and practical benefits of mechanistic interpretability can be realized.",
-      "tags": ["survey", "open-problems", "methodology"],
+      "tags": [
+        "survey",
+        "open-problems",
+        "methodology"
+      ],
       "source": "arXiv",
       "featured": true
     },
@@ -294,7 +322,11 @@
       "date": "2025-01-25",
       "url": "https://arxiv.org/abs/2501.18823",
       "abstract": "Shows transcoder features are significantly more interpretable than SAE features, and proposes 'skip transcoders' with lower reconstruction loss.",
-      "tags": ["transcoders", "SAE", "methods"],
+      "tags": [
+        "transcoders",
+        "SAE",
+        "methods"
+      ],
       "source": "arXiv",
       "featured": true
     },
@@ -305,7 +337,11 @@
       "date": "2025-01-24",
       "url": "https://arxiv.org/abs/2501.14926",
       "abstract": "Identifies minimal circuits in superposition and separates compressed computations.",
-      "tags": ["methods", "superposition", "circuits"],
+      "tags": [
+        "methods",
+        "superposition",
+        "circuits"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -316,19 +352,12 @@
       "date": "2025-01-20",
       "url": "https://arxiv.org/abs/2501.19406",
       "abstract": "Combines LoRA with SAE training for more efficient feature extraction.",
-      "tags": ["SAE", "efficiency", "LoRA"],
+      "tags": [
+        "SAE",
+        "efficiency",
+        "LoRA"
+      ],
       "source": "arXiv",
-      "featured": false
-    },
-    {
-      "id": "scaling-sparse-circuits",
-      "title": "Scaling Sparse Feature Circuits For Studying In-Context Learning",
-      "authors": "Various",
-      "date": "2025-01-18",
-      "url": "https://openreview.net/forum?id=sparse-circuits-icl",
-      "abstract": "Scales sparse feature circuit methods to study in-context learning mechanisms.",
-      "tags": ["circuits", "in-context-learning", "scaling"],
-      "source": "OpenReview",
       "featured": false
     },
     {
@@ -338,7 +367,11 @@
       "date": "2025-01-15",
       "url": "https://transformer-circuits.pub/2025/attribution-graphs/methods.html",
       "abstract": "Breakthrough method for understanding how features interact through attribution graphs, enabling analysis of computational structure.",
-      "tags": ["circuits", "attribution", "methods"],
+      "tags": [
+        "circuits",
+        "attribution",
+        "methods"
+      ],
       "source": "Anthropic",
       "featured": true
     },
@@ -347,22 +380,15 @@
       "title": "AxBench: Steering LLMs? Even Simple Baselines Outperform Sparse Autoencoders",
       "authors": "Various",
       "date": "2025-01-10",
-      "url": "https://arxiv.org/abs/2501.07654",
+      "url": "https://arxiv.org/abs/2501.17148",
       "abstract": "Benchmark showing that simple steering methods can outperform SAE-based steering, raising questions about SAE utility for control.",
-      "tags": ["SAE", "steering", "benchmark"],
+      "tags": [
+        "SAE",
+        "steering",
+        "benchmark"
+      ],
       "source": "ICML 2025",
       "featured": true
-    },
-    {
-      "id": "output-centric-descriptions",
-      "title": "Enhancing Automated Interpretability with Output-Centric Feature Descriptions",
-      "authors": "Various",
-      "date": "2025-01-05",
-      "url": "https://arxiv.org/abs/2501.05432",
-      "abstract": "Improves automated feature description by focusing on what features cause in outputs rather than just what activates them.",
-      "tags": ["SAE", "automation", "interpretability"],
-      "source": "arXiv",
-      "featured": false
     },
     {
       "id": "cb-sae",
@@ -371,7 +397,11 @@
       "date": "2024-12-20",
       "url": "https://arxiv.org/abs/2512.10805",
       "abstract": "Proposes Concept Bottleneck SAEs to address the finding that majority of SAE neurons exhibit low interpretability or low steerability.",
-      "tags": ["SAE", "concepts", "steering"],
+      "tags": [
+        "SAE",
+        "concepts",
+        "steering"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -382,18 +412,11 @@
       "date": "2024-12-18",
       "url": "https://arxiv.org/abs/2512.05794",
       "abstract": "Uses TopK and Ordered SAEs to investigate antibody language models, finding biologically meaningful latent features.",
-      "tags": ["SAE", "biology", "antibodies"],
-      "source": "arXiv",
-      "featured": false
-    },
-    {
-      "id": "batchtopk",
-      "title": "BatchTopK Sparse Autoencoders",
-      "authors": "Various",
-      "date": "2024-12-15",
-      "url": "https://arxiv.org/abs/2412.09876",
-      "abstract": "Improves TopK SAE training with batch-level sparsity constraints for better feature quality.",
-      "tags": ["SAE", "training", "methods"],
+      "tags": [
+        "SAE",
+        "biology",
+        "antibodies"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -404,7 +427,11 @@
       "date": "2024-12-10",
       "url": "https://transformer-circuits.pub/2024/stage-diffing/",
       "abstract": "Method for comparing model behavior across training stages using sparse features.",
-      "tags": ["methods", "training-dynamics", "diffing"],
+      "tags": [
+        "methods",
+        "training-dynamics",
+        "diffing"
+      ],
       "source": "Anthropic",
       "featured": false
     },
@@ -415,7 +442,11 @@
       "date": "2024-11-30",
       "url": "https://arxiv.org/abs/2511.20273",
       "abstract": "Shows transformer computation is distributed along interpretable, low-rank axes that can be independently manipulated.",
-      "tags": ["circuits", "linear-algebra", "low-rank"],
+      "tags": [
+        "circuits",
+        "linear-algebra",
+        "low-rank"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -426,7 +457,11 @@
       "date": "2024-11-25",
       "url": "https://arxiv.org/abs/2511.13653",
       "abstract": "Shows that training transformers with weight sparsity leads to more interpretable circuits without post-hoc analysis.",
-      "tags": ["circuits", "sparsity", "training"],
+      "tags": [
+        "circuits",
+        "sparsity",
+        "training"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -437,42 +472,13 @@
       "date": "2024-11-20",
       "url": "https://arxiv.org/abs/2408.05147",
       "abstract": "Release of comprehensive open-source SAEs trained on all layers of Gemma 2 models, enabling community research.",
-      "tags": ["SAE", "open-source", "Gemma"],
+      "tags": [
+        "SAE",
+        "open-source",
+        "Gemma"
+      ],
       "source": "DeepMind",
       "featured": true
-    },
-    {
-      "id": "steering-sae-features",
-      "title": "Improving Steering Vectors by Targeting Sparse Autoencoder Features",
-      "authors": "Various",
-      "date": "2024-11-15",
-      "url": "https://arxiv.org/abs/2411.09876",
-      "abstract": "Shows that targeting specific SAE features improves steering vector effectiveness.",
-      "tags": ["SAE", "steering", "control"],
-      "source": "arXiv",
-      "featured": false
-    },
-    {
-      "id": "sae-concept-erasure",
-      "title": "Evaluating Sparse Autoencoders on Targeted Concept Erasure Tasks",
-      "authors": "Various",
-      "date": "2024-11-10",
-      "url": "https://arxiv.org/abs/2411.08765",
-      "abstract": "Evaluates SAEs for removing specific concepts from models, with implications for safety.",
-      "tags": ["SAE", "safety", "editing"],
-      "source": "arXiv",
-      "featured": false
-    },
-    {
-      "id": "knowledge-awareness",
-      "title": "Do I Know This Entity? Knowledge Awareness and Hallucinations in Language Models",
-      "authors": "Various",
-      "date": "2024-11-05",
-      "url": "https://arxiv.org/abs/2411.05432",
-      "abstract": "Uses interpretability to study when models 'know' they lack knowledge, with implications for hallucination prevention.",
-      "tags": ["hallucinations", "knowledge", "safety"],
-      "source": "ICLR 2025",
-      "featured": false
     },
     {
       "id": "crosscoders",
@@ -481,7 +487,11 @@
       "date": "2024-10-15",
       "url": "https://transformer-circuits.pub/2024/crosscoders/",
       "abstract": "Dictionary learning to find features shared across models and layers, providing evidence for feature universality.",
-      "tags": ["SAE", "universality", "features"],
+      "tags": [
+        "SAE",
+        "universality",
+        "features"
+      ],
       "source": "Anthropic",
       "featured": true
     },
@@ -490,9 +500,13 @@
       "title": "Llama Scope: Extracting Millions of Features from Llama-3.1-8B with Sparse Autoencoders",
       "authors": "Various",
       "date": "2024-10-12",
-      "url": "https://arxiv.org/abs/2410.07654",
+      "url": "https://arxiv.org/abs/2410.20526",
       "abstract": "Open-source SAEs for Llama-3.1-8B with millions of interpretable features.",
-      "tags": ["SAE", "open-source", "Llama"],
+      "tags": [
+        "SAE",
+        "open-source",
+        "Llama"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -503,7 +517,11 @@
       "date": "2024-10-10",
       "url": "https://arxiv.org/abs/2410.06543",
       "abstract": "Discovers that LLMs implement TD-learning-like mechanisms, revealed through SAE analysis.",
-      "tags": ["SAE", "learning", "RL"],
+      "tags": [
+        "SAE",
+        "learning",
+        "RL"
+      ],
       "source": "ICLR 2025",
       "featured": true
     },
@@ -514,7 +532,12 @@
       "date": "2024-10-08",
       "url": "https://www.anthropic.com/research/feature-steering-bias",
       "abstract": "Evaluates using SAE features to steer models away from social biases.",
-      "tags": ["SAE", "steering", "bias", "safety"],
+      "tags": [
+        "SAE",
+        "steering",
+        "bias",
+        "safety"
+      ],
       "source": "Anthropic",
       "featured": false
     },
@@ -525,7 +548,11 @@
       "date": "2024-10-05",
       "url": "https://arxiv.org/abs/2410.04321",
       "abstract": "Uses SAE features to selectively unlearn specific knowledge from models.",
-      "tags": ["SAE", "unlearning", "safety"],
+      "tags": [
+        "SAE",
+        "unlearning",
+        "safety"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -536,7 +563,11 @@
       "date": "2024-10-01",
       "url": "https://aclanthology.org/2025.emnlp-main.942.pdf",
       "abstract": "Efficient SAE training method that groups layers for shared feature learning.",
-      "tags": ["SAE", "efficiency", "training"],
+      "tags": [
+        "SAE",
+        "efficiency",
+        "training"
+      ],
       "source": "EMNLP 2025",
       "featured": false
     },
@@ -547,29 +578,11 @@
       "date": "2024-10-01",
       "url": "https://arxiv.org/abs/2410.01434",
       "abstract": "Studies how similar circuits relate to each other and whether models implement reusable functions through composable subnetworks.",
-      "tags": ["circuits", "modularity", "composition"],
-      "source": "arXiv",
-      "featured": false
-    },
-    {
-      "id": "sae-sensitivity",
-      "title": "Measuring Sparse Autoencoder Feature Sensitivity",
-      "authors": "Various",
-      "date": "2024-09-25",
-      "url": "https://arxiv.org/abs/2509.23717",
-      "abstract": "Shows that monosemantic activating examples don't reveal feature sensitivity: how reliably a feature activates on similar texts.",
-      "tags": ["SAE", "evaluation", "sensitivity"],
-      "source": "arXiv",
-      "featured": false
-    },
-    {
-      "id": "sae-disentangling-gpt2",
-      "title": "Evaluating Open-Source Sparse Autoencoders on Disentangling Factual Knowledge in GPT-2 Small",
-      "authors": "Various",
-      "date": "2024-09-20",
-      "url": "https://arxiv.org/abs/2409.12345",
-      "abstract": "Systematic evaluation of open-source SAEs on factual knowledge tasks.",
-      "tags": ["SAE", "evaluation", "factual-knowledge"],
+      "tags": [
+        "circuits",
+        "modularity",
+        "composition"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -580,7 +593,11 @@
       "date": "2024-09-12",
       "url": "https://arxiv.org/abs/2409.08101",
       "abstract": "SAE features are remarkably consistent across models trained on different languages.",
-      "tags": ["SAE", "universality", "multilingual"],
+      "tags": [
+        "SAE",
+        "universality",
+        "multilingual"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -591,19 +608,12 @@
       "date": "2024-08-20",
       "url": "https://arxiv.org/abs/2408.09543",
       "abstract": "Introduces JumpReLU activation for SAEs, improving reconstruction fidelity while maintaining sparsity.",
-      "tags": ["SAE", "architecture", "methods"],
+      "tags": [
+        "SAE",
+        "architecture",
+        "methods"
+      ],
       "source": "DeepMind",
-      "featured": false
-    },
-    {
-      "id": "sae-transfer",
-      "title": "SAEs (usually) Transfer Between Base and Chat Models",
-      "authors": "Various",
-      "date": "2024-07-25",
-      "url": "https://www.alignmentforum.org/posts/sae-transfer",
-      "abstract": "Studies whether SAEs trained on base models transfer to finetuned chat models.",
-      "tags": ["SAE", "transfer", "finetuning"],
-      "source": "AI Alignment Forum",
       "featured": false
     },
     {
@@ -613,7 +623,11 @@
       "date": "2024-07-03",
       "url": "https://arxiv.org/abs/2407.02646",
       "abstract": "A practical guide to mechanistic interpretability research, from problem formulation to validation.",
-      "tags": ["survey", "tutorial", "methodology"],
+      "tags": [
+        "survey",
+        "tutorial",
+        "methodology"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -624,19 +638,12 @@
       "date": "2024-07-01",
       "url": "https://transformer-circuits.pub/2024/july-update/index.html",
       "abstract": "Research updates on factual recall mechanisms, detokenization in early layers, and attention heads.",
-      "tags": ["circuits", "factual-recall", "attention"],
+      "tags": [
+        "circuits",
+        "factual-recall",
+        "attention"
+      ],
       "source": "Anthropic",
-      "featured": false
-    },
-    {
-      "id": "attention-sae",
-      "title": "Interpreting Attention Layer Outputs with Sparse Autoencoders",
-      "authors": "Various",
-      "date": "2024-06-25",
-      "url": "https://arxiv.org/abs/2406.15432",
-      "abstract": "Applies SAEs to attention layer outputs rather than just MLP activations.",
-      "tags": ["SAE", "attention", "methods"],
-      "source": "arXiv",
       "featured": false
     },
     {
@@ -646,7 +653,11 @@
       "date": "2024-06-17",
       "url": "https://arxiv.org/abs/2406.11944",
       "abstract": "Introduces transcoders that approximate MLP layers with wider, sparsely-activating layers for better circuit discovery.",
-      "tags": ["transcoders", "circuits", "methods"],
+      "tags": [
+        "transcoders",
+        "circuits",
+        "methods"
+      ],
       "source": "arXiv",
       "featured": true
     },
@@ -657,7 +668,11 @@
       "date": "2024-06-10",
       "url": "https://openai.com/research/sparse-autoencoders",
       "abstract": "OpenAI's comprehensive study on scaling SAEs and evaluating their properties.",
-      "tags": ["SAE", "scaling", "evaluation"],
+      "tags": [
+        "SAE",
+        "scaling",
+        "evaluation"
+      ],
       "source": "OpenAI",
       "featured": true
     },
@@ -668,20 +683,14 @@
       "date": "2024-05-21",
       "url": "https://transformer-circuits.pub/2024/scaling-monosemanticity/",
       "abstract": "Landmark paper extracting millions of interpretable features from Claude 3 Sonnet, finding multilingual, multimodal, and safety-relevant features.",
-      "tags": ["SAE", "features", "scaling", "safety"],
+      "tags": [
+        "SAE",
+        "features",
+        "scaling",
+        "safety"
+      ],
       "source": "Anthropic",
       "featured": true
-    },
-    {
-      "id": "e2e-sae",
-      "title": "Identifying Functionally Important Features with End-to-End Sparse Dictionary Learning",
-      "authors": "Various",
-      "date": "2024-05-15",
-      "url": "https://arxiv.org/abs/2405.09876",
-      "abstract": "Trains SAEs end-to-end with task performance, ensuring features are functionally relevant.",
-      "tags": ["SAE", "training", "methods"],
-      "source": "NeurIPS 2024",
-      "featured": false
     },
     {
       "id": "sae-circuits-scalable",
@@ -690,7 +699,11 @@
       "date": "2024-05-12",
       "url": "https://arxiv.org/abs/2405.12522",
       "abstract": "Achieves higher precision and recall in circuit discovery while reducing runtime from hours to seconds.",
-      "tags": ["SAE", "circuits", "efficiency"],
+      "tags": [
+        "SAE",
+        "circuits",
+        "efficiency"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -701,7 +714,11 @@
       "date": "2024-05-08",
       "url": "https://arxiv.org/abs/2405.06543",
       "abstract": "Develops principled evaluation frameworks for SAE quality beyond reconstruction loss.",
-      "tags": ["SAE", "evaluation", "methods"],
+      "tags": [
+        "SAE",
+        "evaluation",
+        "methods"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -712,18 +729,11 @@
       "date": "2024-04-22",
       "url": "https://arxiv.org/abs/2404.14082",
       "abstract": "Comprehensive review of mechanistic interpretability from an AI safety perspective.",
-      "tags": ["survey", "safety", "review"],
-      "source": "arXiv",
-      "featured": false
-    },
-    {
-      "id": "activation-patching-howto",
-      "title": "How to Use and Interpret Activation Patching",
-      "authors": "Various",
-      "date": "2024-04-15",
-      "url": "https://arxiv.org/abs/2404.09876",
-      "abstract": "Practical guide to activation patching techniques for circuit discovery.",
-      "tags": ["methods", "patching", "tutorial"],
+      "tags": [
+        "survey",
+        "safety",
+        "review"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -732,65 +742,14 @@
       "title": "Improving Dictionary Learning with Gated Sparse Autoencoders",
       "authors": "Google DeepMind",
       "date": "2024-04-10",
-      "url": "https://arxiv.org/abs/2404.07654",
+      "url": "https://arxiv.org/abs/2404.16014",
       "abstract": "Introduces gated SAE architecture for improved feature learning.",
-      "tags": ["SAE", "architecture", "methods"],
+      "tags": [
+        "SAE",
+        "architecture",
+        "methods"
+      ],
       "source": "DeepMind",
-      "featured": false
-    },
-    {
-      "id": "sparse-feature-circuits",
-      "title": "Sparse Feature Circuits: Discovering and Editing Interpretable Causal Graphs in Language Models",
-      "authors": "Various",
-      "date": "2024-03-20",
-      "url": "https://arxiv.org/abs/2403.12345",
-      "abstract": "Methods for discovering and editing causal feature circuits in language models.",
-      "tags": ["circuits", "editing", "causality"],
-      "source": "arXiv",
-      "featured": false
-    },
-    {
-      "id": "ravel",
-      "title": "RAVEL: Evaluating Interpretability Methods on Disentangling Language Model Representations",
-      "authors": "Various",
-      "date": "2024-02-25",
-      "url": "https://arxiv.org/abs/2402.15432",
-      "abstract": "Benchmark for evaluating how well interpretability methods disentangle representations.",
-      "tags": ["benchmark", "evaluation", "disentanglement"],
-      "source": "ACL 2024",
-      "featured": false
-    },
-    {
-      "id": "othello-sae",
-      "title": "Dictionary Learning Improves Patch-Free Circuit Discovery in Mechanistic Interpretability: A Case Study on Othello-GPT",
-      "authors": "Various",
-      "date": "2024-02-20",
-      "url": "https://arxiv.org/abs/2402.12345",
-      "abstract": "Shows dictionary learning improves circuit discovery in the Othello-GPT setting.",
-      "tags": ["SAE", "circuits", "Othello"],
-      "source": "arXiv",
-      "featured": false
-    },
-    {
-      "id": "feature-suppression",
-      "title": "Addressing Feature Suppression in SAEs",
-      "authors": "Various",
-      "date": "2024-02-15",
-      "url": "https://www.lesswrong.com/posts/feature-suppression-sae",
-      "abstract": "Identifies and addresses the feature suppression problem in SAE training.",
-      "tags": ["SAE", "training", "methods"],
-      "source": "LessWrong",
-      "featured": false
-    },
-    {
-      "id": "gpt2-sae-residual",
-      "title": "Open Source Sparse Autoencoders for all Residual Stream Layers of GPT2-Small",
-      "authors": "Various",
-      "date": "2024-02-10",
-      "url": "https://www.alignmentforum.org/posts/gpt2-sae",
-      "abstract": "Release of open-source SAEs for all layers of GPT-2 Small.",
-      "tags": ["SAE", "open-source", "GPT-2"],
-      "source": "AI Alignment Forum",
       "featured": false
     },
     {
@@ -800,7 +759,10 @@
       "date": "2024-01-15",
       "url": "https://transformer-circuits.pub/2024/jan-update/index.html",
       "abstract": "Updates on interpretability research including progress on understanding model computations.",
-      "tags": ["circuits", "update"],
+      "tags": [
+        "circuits",
+        "update"
+      ],
       "source": "Anthropic",
       "featured": false
     },
@@ -811,7 +773,11 @@
       "date": "2023-10-02",
       "url": "https://arxiv.org/abs/2310.01405",
       "abstract": "Introduces representation engineering for identifying and manipulating high-level concepts like honesty.",
-      "tags": ["representation", "concepts", "methods"],
+      "tags": [
+        "representation",
+        "concepts",
+        "methods"
+      ],
       "source": "arXiv",
       "featured": true
     },
@@ -822,7 +788,11 @@
       "date": "2023-10-16",
       "url": "https://arxiv.org/abs/2310.10348",
       "abstract": "Scales activation patching using gradient-based attribution for efficient circuit discovery.",
-      "tags": ["methods", "circuits", "scaling"],
+      "tags": [
+        "methods",
+        "circuits",
+        "scaling"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -833,7 +803,11 @@
       "date": "2023-10-04",
       "url": "https://transformer-circuits.pub/2023/monosemantic-features/",
       "abstract": "Foundational paper showing sparse autoencoders can extract monosemantic features from transformers.",
-      "tags": ["SAE", "features", "dictionary-learning"],
+      "tags": [
+        "SAE",
+        "features",
+        "dictionary-learning"
+      ],
       "source": "Anthropic",
       "featured": true
     },
@@ -844,7 +818,11 @@
       "date": "2023-09-15",
       "url": "https://arxiv.org/abs/2309.08600",
       "abstract": "Foundational paper on using SAEs to resolve superposition and find monosemantic features.",
-      "tags": ["SAE", "features", "foundational"],
+      "tags": [
+        "SAE",
+        "features",
+        "foundational"
+      ],
       "source": "arXiv",
       "featured": true
     },
@@ -855,7 +833,11 @@
       "date": "2023-11-06",
       "url": "https://arxiv.org/abs/2311.03658",
       "abstract": "Investigates the linear representation hypothesis and implications for how LLMs encode concepts.",
-      "tags": ["theory", "representations", "geometry"],
+      "tags": [
+        "theory",
+        "representations",
+        "geometry"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -866,7 +848,11 @@
       "date": "2023-03-14",
       "url": "https://arxiv.org/abs/2303.08112",
       "abstract": "The tuned lens for projecting intermediate activations to vocabulary space.",
-      "tags": ["methods", "probing", "predictions"],
+      "tags": [
+        "methods",
+        "probing",
+        "predictions"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -877,7 +863,11 @@
       "date": "2022-09-14",
       "url": "https://transformer-circuits.pub/2022/toy_model/index.html",
       "abstract": "Foundational paper on how neural networks represent more features than dimensions using nearly-orthogonal directions.",
-      "tags": ["superposition", "theory", "foundational"],
+      "tags": [
+        "superposition",
+        "theory",
+        "foundational"
+      ],
       "source": "Anthropic",
       "featured": true
     },
@@ -888,7 +878,11 @@
       "date": "2022-03-08",
       "url": "https://transformer-circuits.pub/2022/in-context-learning-and-induction-heads/",
       "abstract": "Identifies induction heads as a key circuit for in-context learning, forming via phase transition during training.",
-      "tags": ["circuits", "in-context-learning", "attention"],
+      "tags": [
+        "circuits",
+        "in-context-learning",
+        "attention"
+      ],
       "source": "Anthropic",
       "featured": true
     },
@@ -899,7 +893,11 @@
       "date": "2022-02-10",
       "url": "https://arxiv.org/abs/2202.05262",
       "abstract": "Introduces causal tracing and ROME for locating and editing factual knowledge.",
-      "tags": ["editing", "factual-knowledge", "methods"],
+      "tags": [
+        "editing",
+        "factual-knowledge",
+        "methods"
+      ],
       "source": "arXiv",
       "featured": true
     },
@@ -910,7 +908,11 @@
       "date": "2021-12-22",
       "url": "https://transformer-circuits.pub/2021/framework/",
       "abstract": "Foundational paper establishing the mathematical framework for analyzing transformer circuits.",
-      "tags": ["theory", "foundational", "circuits"],
+      "tags": [
+        "theory",
+        "foundational",
+        "circuits"
+      ],
       "source": "Anthropic",
       "featured": true
     }
