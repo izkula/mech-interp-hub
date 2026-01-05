@@ -5,9 +5,16 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 04 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 05 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>ActErase: A Training-Free Paradigm for Precise Concept Erasure via Activation Patching</title>
+      <link>https://arxiv.org/abs/2601.00267v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Yi Sun, Xinhao Zhong, Hongyan Li, Yimin Zhou, Junhao Li, et al.</p><p>Recent advances in text-to-image diffusion models have demonstrated remarkable generation capabilities, yet they raise significant concerns regarding safety, copyright, and ethical implications. Existing concept erasure methods address these risks by removing sensitive concepts from pre-trained models, but most of them rely on data-intensive and computationally expensive fine-tuning, which poses a critical limitation. To overcome these challenges, inspired by the observation that the model&#x27;s act</p><p><strong>Tags:</strong> safety, vision</p>]]></description>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2601.00267v1</guid>
+    </item>
     <item>
       <title>Triangulation as an Acceptance Rule for Multilingual Mechanistic Interpretability</title>
       <link>https://arxiv.org/abs/2512.24842v1</link>
@@ -210,13 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Lingjing Kong, Shaoan Xie, Guangyi Chen, Yuewen Sun, Xiangchen Song, et al.</p><p>Deep generative models, while revolutionizing fields like image and text generation, largely operate as opaque black boxes, hindering human understanding, control, and alignment. While methods like sparse autoencoders (SAEs) show remarkable empirical success, they often lack theoretical guarantees, risking subjective insights. Our primary objective is to establish a principled foundation for interpretable generative models. We demonstrate that the principle of causal minimality -- favoring the s</p><p><strong>Tags:</strong> SAE, safety, theory, vision</p>]]></description>
       <pubDate>Thu, 11 Dec 2025 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2512.10720v1</guid>
-    </item>
-    <item>
-      <title>Investigating The Functional Roles of Attention Heads in Vision Language Models: Evidence for Reasoning Modules</title>
-      <link>https://arxiv.org/abs/2512.10300v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Yanbei Jiang, Xueqi Ma, Shu Liu, Sarah Monazam Erfani, Tongliang Liu, et al.</p><p>Despite excelling on multimodal benchmarks, vision-language models (VLMs) largely remain a black box. In this paper, we propose a novel interpretability framework to systematically analyze the internal mechanisms of VLMs, focusing on the functional roles of attention heads in multimodal reasoning. To this end, we introduce CogVision, a dataset that decomposes complex multimodal questions into step-by-step subquestions designed to simulate human reasoning through a chain-of-thought paradigm, with</p><p><strong>Tags:</strong> attention, vision, reasoning</p>]]></description>
-      <pubDate>Thu, 11 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2512.10300v1</guid>
     </item>
   </channel>
 </rss>
