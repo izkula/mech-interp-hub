@@ -5,9 +5,23 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 05 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 06 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Central Dogma Transformer: Towards Mechanism-Oriented AI for Cellular Understanding</title>
+      <link>https://arxiv.org/abs/2601.01089v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Nobuyuki Ota</p><p>Understanding cellular mechanisms requires integrating information across DNA, RNA, and protein - the three molecular systems linked by the Central Dogma of molecular biology. While domain-specific foundation models have achieved success for each modality individually, they remain isolated, limiting our ability to model integrated cellular processes. Here we present the Central Dogma Transformer (CDT), an architecture that integrates pre-trained language models for DNA, RNA, and protein followin</p><p><strong>Tags:</strong> biology</p>]]></description>
+      <pubDate>Sat, 03 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2601.01089v1</guid>
+    </item>
+    <item>
+      <title>Explainability-Guided Defense: Attribution-Aware Model Refinement Against Adversarial Data Attacks</title>
+      <link>https://arxiv.org/abs/2601.00968v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Longwei Wang, Mohammad Navid Nayyem, Abdullah Al Rakin, KC Santosh, Chaowei Zhang, et al.</p><p>The growing reliance on deep learning models in safety-critical domains such as healthcare and autonomous navigation underscores the need for defenses that are both robust to adversarial perturbations and transparent in their decision-making. In this paper, we identify a connection between interpretability and robustness that can be directly leveraged during training. Specifically, we observe that spurious, unstable, or semantically irrelevant features identified through Local Interpretable Mode</p><p><strong>Tags:</strong> features, safety</p>]]></description>
+      <pubDate>Fri, 02 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2601.00968v1</guid>
+    </item>
     <item>
       <title>ActErase: A Training-Free Paradigm for Precise Concept Erasure via Activation Patching</title>
       <link>https://arxiv.org/abs/2601.00267v1</link>
@@ -203,20 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Khawla Elhadri, Jörg Schlötterer, Christin Seifert</p><p>In data-driven applications relying on tabular data, where interpretability is key, machine learning models such as decision trees and linear regression are applied. Although neural networks can provide higher predictive performance, they are not used because of their blackbox nature. In this work, we present XNNTab, a neural architecture that combines the expressiveness of neural networks and interpretability. XNNTab first learns highly non-linear feature representations, which are decomposed i</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
       <pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2512.13442v1</guid>
-    </item>
-    <item>
-      <title>Unlocking the Address Book: Dissecting the Sparse Semantic Structure of LLM Key-Value Caches via Sparse Autoencoders</title>
-      <link>https://arxiv.org/abs/2512.10547v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Qingsen Ma, Dianyun Wang, Jiaming Lyu, Yaoye Wang, Lechen Ning, et al.</p><p>The Key-Value (KV) cache is the primary memory bottleneck in long-context Large Language Models, yet it is typically treated as an opaque numerical tensor. In this work, we propose \textbf{STA-Attention}, a framework that utilizes Top-K Sparse Autoencoders (SAEs) to decompose the KV cache into interpretable ``semantic atoms.&#x27;&#x27; Unlike standard $L_1$-regularized SAEs, our Top-K approach eliminates shrinkage bias, preserving the precise dot-product geometry required for attention. Our analysis unco</p><p><strong>Tags:</strong> SAE</p>]]></description>
-      <pubDate>Thu, 11 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2512.10547v1</guid>
-    </item>
-    <item>
-      <title>Beyond the Black Box: Identifiable Interpretation and Control in Generative Models via Causal Minimality</title>
-      <link>https://arxiv.org/abs/2512.10720v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Lingjing Kong, Shaoan Xie, Guangyi Chen, Yuewen Sun, Xiangchen Song, et al.</p><p>Deep generative models, while revolutionizing fields like image and text generation, largely operate as opaque black boxes, hindering human understanding, control, and alignment. While methods like sparse autoencoders (SAEs) show remarkable empirical success, they often lack theoretical guarantees, risking subjective insights. Our primary objective is to establish a principled foundation for interpretable generative models. We demonstrate that the principle of causal minimality -- favoring the s</p><p><strong>Tags:</strong> SAE, safety, theory, vision</p>]]></description>
-      <pubDate>Thu, 11 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2512.10720v1</guid>
     </item>
   </channel>
 </rss>
