@@ -24,10 +24,10 @@
     <nav class="sticky-nav">
         <div class="container">
             <ul>
+                <li><a href="#recent-papers">Papers</a></li>
                 <li><a href="#key-findings">Key Findings</a></li>
                 <li><a href="#open-questions">Open Questions</a></li>
                 <li><a href="#techniques">Techniques</a></li>
-                <li><a href="#recent-papers">Recent Papers</a></li>
                 <li><a href="#neuro-comparison">AI & Neuroscience</a></li>
                 <li><a href="#resources">Resources</a></li>
             </ul>
@@ -35,6 +35,28 @@
     </nav>
 
     <main class="container">
+        <!-- Papers Section - At Top -->
+        <section id="recent-papers" class="section">
+            <h2>Papers</h2>
+            <p class="section-intro">Latest research from arXiv, conferences, and research labs. Updated automatically.</p>
+
+            <div class="papers-controls">
+                <input type="text" id="paper-search" placeholder="Search papers..." class="search-input">
+                <select id="paper-sort" class="sort-select">
+                    <option value="date">Sort by Date</option>
+                    <option value="citations">Sort by Impact</option>
+                </select>
+            </div>
+
+            <div id="papers-list" class="papers-list">
+                <!-- Populated by JavaScript -->
+            </div>
+
+            <div class="load-more-container">
+                <button id="load-more-papers" class="load-more-btn">Load More Papers</button>
+            </div>
+        </section>
+
         <!-- Key Findings Section -->
         <section id="key-findings" class="section">
             <h2>Key Findings</h2>
@@ -70,28 +92,6 @@
 
             <div id="techniques-grid" class="techniques-grid">
                 <!-- Populated by JavaScript -->
-            </div>
-        </section>
-
-        <!-- Recent Papers Section -->
-        <section id="recent-papers" class="section">
-            <h2>Recent Papers</h2>
-            <p class="section-intro">Latest research from arXiv, conferences, and research labs. Updated automatically.</p>
-
-            <div class="papers-controls">
-                <input type="text" id="paper-search" placeholder="Search papers..." class="search-input">
-                <select id="paper-sort" class="sort-select">
-                    <option value="date">Sort by Date</option>
-                    <option value="citations">Sort by Impact</option>
-                </select>
-            </div>
-
-            <div id="papers-list" class="papers-list">
-                <!-- Populated by JavaScript -->
-            </div>
-
-            <div class="load-more-container">
-                <button id="load-more-papers" class="load-more-btn">Load More Papers</button>
             </div>
         </section>
 
