@@ -106,9 +106,9 @@
       "title": "Factual Knowledge Is Stored in Early MLP Layers with Subject-Relation Structure",
       "category": "circuits",
       "description": "For 'The Eiffel Tower is located in [Paris]', factual recall occurs in layers 2-6. Subject tokens ('Eiffel Tower') activate MLP neurons storing entity→attribute associations. Editing these specific MLP weights can change what the model 'knows'—making it believe the Tower is in London. The subject-relation-object structure is surprisingly modular and localizable.",
-      "source": "Anthropic",
-      "sourceUrl": "https://transformer-circuits.pub/2024/july-update/index.html",
-      "year": 2024,
+      "source": "Meng et al. (MIT/Northeastern)",
+      "sourceUrl": "https://arxiv.org/abs/2202.05262",
+      "year": 2022,
       "importance": "medium"
     },
     {
