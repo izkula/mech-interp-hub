@@ -76,7 +76,7 @@
       "title": "Polysemanticity Can Arise Incidentally, Not Just From Capacity Constraints",
       "category": "superposition",
       "description": "Contrary to the standard story that polysemanticity arises because models have 'more features than neurons', it can occur even with ample capacity. Random initialization can assign multiple features to one neuron by chance, and training dynamics then strengthen this overlap. Regularization and noise also contribute. This 'incidental polysemanticity' means interpretability challenges exist even in overparameterized networks.",
-      "source": "arXiv",
+      "source": "Lecomte et al. (Stanford)",
       "sourceUrl": "https://arxiv.org/abs/2312.03096",
       "year": 2023,
       "importance": "high"
@@ -126,7 +126,7 @@
       "title": "Transformer Computation Is Distributed Along Low-Rank Interpretable Axes",
       "category": "circuits",
       "description": "Individual attention heads and MLP layers aren't monolithic—their computation distributes across a small number of singular vectors. Each singular vector is independently interpretable: one might handle 'noun→verb agreement', another 'subject identification'. These can be independently manipulated, enabling fine-grained intervention that modifies specific sub-computations without disrupting others.",
-      "source": "arXiv",
+      "source": "Ahmad et al.",
       "sourceUrl": "https://arxiv.org/abs/2511.20273",
       "year": 2025,
       "importance": "medium"
@@ -136,7 +136,7 @@
       "title": "SAEs Applied to Protein Models Reveal Biological Concepts with 85% Accuracy",
       "category": "features",
       "description": "Sparse autoencoders on ESM-2 (protein language model) extract features for: alpha helices, beta sheets, transmembrane regions, binding sites, and specific protein families. Many 'false positives' turned out to be missing database annotations—the SAE was more accurate than the ground truth. This demonstrates SAE techniques transfer beyond language to scientific domains.",
-      "source": "PMC",
+      "source": "Gujral et al. (MIT)",
       "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12403088/",
       "year": 2025,
       "importance": "medium"
@@ -146,7 +146,7 @@
       "title": "Attention Heads Specialize for Syntactic vs. Semantic Roles",
       "category": "circuits",
       "description": "Specific attention heads consistently perform: subject-verb linking, coreference resolution, quotation attribution, and negation scope detection. Head 10.7 in GPT-2 specifically handles indirect object identification. These specialized heads can be ablated to selectively impair specific linguistic capabilities while leaving others intact, demonstrating modular organization.",
-      "source": "Various",
+      "source": "Rai et al.",
       "sourceUrl": "https://arxiv.org/abs/2407.02646",
       "year": 2024,
       "importance": "medium"
