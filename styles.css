@@ -778,6 +778,23 @@ footer a:hover {
     margin-bottom: 16px;
 }
 
+.papers-section-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--border-color), transparent);
+    margin: 40px 0;
+}
+
+.key-papers-section {
+    background: linear-gradient(180deg, rgba(15, 118, 110, 0.02) 0%, transparent 100%);
+    border-radius: var(--radius-lg);
+    padding: 24px;
+    margin: 0 -24px;
+}
+
+.key-papers-section .papers-section-title {
+    color: var(--primary-color);
+}
+
 .paper-card.featured {
     border-left: 3px solid var(--primary-color);
     background: linear-gradient(90deg, rgba(15, 118, 110, 0.03) 0%, transparent 100%);

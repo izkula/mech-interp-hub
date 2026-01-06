@@ -184,11 +184,12 @@ class MechInterpHub {
             `;
         }
 
-        if (keyPapers.length > 0 && !searchTerm) {
+        if (keyPapers.length > 0) {
             html += `
-                <div class="papers-section" style="margin-top: 32px;">
+                <div class="papers-section-divider"></div>
+                <div class="papers-section key-papers-section">
                     <h3 class="papers-section-title">Key Papers</h3>
-                    <p class="papers-section-desc">${keyPapers.length} foundational and high-impact papers</p>
+                    <p class="papers-section-desc">${keyPapers.length} foundational papers — manually curated based on citation impact, novelty of contribution, and influence on subsequent research</p>
                     ${keyPapers.map(p => renderPaperCard(p, true)).join('')}
                 </div>
             `;
