@@ -1,6 +1,74 @@
 {
-  "lastUpdated": "2026-01-06",
+  "lastUpdated": "2026-01-07",
   "papers": [
+    {
+      "id": "arxiv-2601-03047v1",
+      "title": "When the Coffee Feature Activates on Coffins: An Analysis of Feature Extraction and Steering for Mechanistic Interpretability",
+      "authors": "Raphael Ronge, Markus Maier, Frederick Eberhardt",
+      "date": "2026-01-06",
+      "url": "https://arxiv.org/abs/2601.03047v1",
+      "abstract": "Recent work by Anthropic on Mechanistic interpretability claims to understand and control Large Language Models by extracting human-interpretable features from their neural activation patterns using sparse autoencoders (SAEs). If successful, this approach offers one of the most promising routes for human oversight in AI safety. We conduct an initial stress-test of these claims by replicating their main results with open-source SAEs for Llama 3.1. While we successfully reproduce basic feature ext",
+      "tags": [
+        "SAE",
+        "features",
+        "safety",
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2601-02989v1",
+      "title": "Mechanistic Interpretability of Large-Scale Counting in LLMs through a System-2 Strategy",
+      "authors": "Hosein Hasani, Mohammadali Banayeeanzade, Ali Nafisi, Sadegh Mohammadian, Fatemeh Askari, et al.",
+      "date": "2026-01-06",
+      "url": "https://arxiv.org/abs/2601.02989v1",
+      "abstract": "Large language models (LLMs), despite strong performance on complex mathematical problems, exhibit systematic limitations in counting tasks. This issue arises from architectural limits of transformers, where counting is performed across layers, leading to degraded precision for larger counting problems due to depth constraints. To address this limitation, we propose a simple test-time strategy inspired by System-2 cognitive processes that decomposes large counting tasks into smaller, independent",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2601-02978v1",
+      "title": "Mechanistic Knobs in LLMs: Retrieving and Steering High-Order Semantic Features via Sparse Autoencoders",
+      "authors": "Ruikang Zhang, Shuo Wang, Qi Su",
+      "date": "2026-01-06",
+      "url": "https://arxiv.org/abs/2601.02978v1",
+      "abstract": "Recent work in Mechanistic Interpretability (MI) has enabled the identification and intervention of internal features in Large Language Models (LLMs). However, a persistent challenge lies in linking such internal features to the reliable control of complex, behavior-level semantic attributes in language generation. In this paper, we propose a Sparse Autoencoder-based framework for retrieving and steering semantically interpretable internal features associated with high-level linguistic behaviors",
+      "tags": [
+        "SAE",
+        "features",
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2601-02896v1",
+      "title": "Bridging Mechanistic Interpretability and Prompt Engineering with Gradient Ascent for Interpretable Persona Control",
+      "authors": "Harshvardhan Saini, Yiming Tang, Dianbo Liu",
+      "date": "2026-01-06",
+      "url": "https://arxiv.org/abs/2601.02896v1",
+      "abstract": "Controlling emergent behavioral personas (e.g., sycophancy, hallucination) in Large Language Models (LLMs) is critical for AI safety, yet remains a persistent challenge. Existing solutions face a dilemma: manual prompt engineering is intuitive but unscalable and imprecise, while automatic optimization methods are effective but operate as \"black boxes\" with no interpretable connection to model internals. We propose a novel framework that adapts gradient ascent to LLMs, enabling targeted prompt di",
+      "tags": [
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2601-02668v1",
+      "title": "MAFS: Multi-head Attention Feature Selection for High-Dimensional Data via Deep Fusion of Filter Methods",
+      "authors": "Xiaoyan Sun, Qingyu Meng, Yalu Wen",
+      "date": "2026-01-06",
+      "url": "https://arxiv.org/abs/2601.02668v1",
+      "abstract": "Feature selection is essential for high-dimensional biomedical data, enabling stronger predictive performance, reduced computational cost, and improved interpretability in precision medicine applications. Existing approaches face notable challenges. Filter methods are highly scalable but cannot capture complex relationships or eliminate redundancy. Deep learning-based approaches can model nonlinear patterns but often lack stability, interpretability, and efficiency at scale. Single-head attentio",
+      "tags": [
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2601-01089v1",
       "title": "Central Dogma Transformer: Towards Mechanism-Oriented AI for Cellular Understanding",
@@ -185,6 +253,19 @@
         "SAE"
       ],
       "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "ss-0544168cf2012e31794a",
+      "title": "Mechanistic Interpretability of Fine-Tuned Protein Language Models for Nanobody Thermostability Prediction",
+      "authors": "Taihei Murakami, Yuki Hashidate, Yasuhiro Matsunaga",
+      "date": "2025-12-24",
+      "url": "https://www.semanticscholar.org/paper/0544168cf2012e31794a69547a7537994417b47d",
+      "abstract": "",
+      "tags": [
+        "biology"
+      ],
+      "source": "Semantic Scholar",
       "featured": false
     },
     {
@@ -1054,6 +1135,17 @@
       "featured": false
     },
     {
+      "id": "ss-60bf86289fb968e8de2e",
+      "title": "M-AIDE: Mechanistic Agentic Interpretability for Decoding Empathy in Language Models",
+      "authors": "N. Mirnateghi, Sharjeel Tahir, Syed Mohammed Shamsul Islam, Syed Afaq Ali Shah",
+      "date": "2025-11-19",
+      "url": "https://www.semanticscholar.org/paper/60bf86289fb968e8de2efb1b4e452c191f7ca8a6",
+      "abstract": "Large language models (LLMs) have transformed conversational agents, powering applications from everyday assistants to domain-specific systems. Yet, their internal mechanisms remain opaque, limiting our understanding of how complex behaviours are represented. Therapeutic conversational agents provide a compelling setting to study this problem, as they require models to encode empathic behaviours. For a better understanding of these behaviours, we present M-AIDE, an agentic framework designed to ",
+      "tags": [],
+      "source": "Semantic Scholar",
+      "featured": false
+    },
+    {
       "id": "nnterp-interface",
       "title": "nnterp: A Standardized Interface for Mechanistic Interpretability of Transformers",
       "authors": "Various",
@@ -1413,6 +1505,20 @@
       "featured": false
     },
     {
+      "id": "ss-63832a9155720a52f9b2",
+      "title": "Exploring Mechanistic Interpretability in Large Language Models: Challenges, Approaches, and Insights",
+      "authors": "Sandeep Reddy Gantla",
+      "date": "2025-03-28",
+      "url": "https://www.semanticscholar.org/paper/63832a9155720a52f9b2f209a25f5d686f6d7b84",
+      "abstract": "Recent advances in large language models (LLMs) have significantly enhanced their performance across a wide array of tasks. However, the lack of interpretability has become a critical concern, particularly as these models grow in size and complexity. Mechanistic interpretability seeks to uncover the internal workings of neural networks, offering valuable insights into their decision-making processes, biases, and potential safety risks. This survey delves into the emerging field of mechanistic in",
+      "tags": [
+        "safety",
+        "survey"
+      ],
+      "source": "Semantic Scholar",
+      "featured": false
+    },
+    {
       "id": "biology-llm",
       "title": "On the Biology of a Large Language Model",
       "authors": "Anthropic Interpretability Team",
@@ -1456,6 +1562,21 @@
       ],
       "source": "arXiv",
       "featured": true
+    },
+    {
+      "id": "ss-2ac42be0b5fb0b61f4be",
+      "title": "From Mechanistic Interpretability to Mechanistic Biology: Training, Evaluating, and Interpreting Sparse Autoencoders on Protein Language Models",
+      "authors": "Etowah Adams, Liam Bai, Minji Lee, Yiyang Yu, Mohammed Alquraishi",
+      "date": "2025-02-08",
+      "url": "https://www.semanticscholar.org/paper/2ac42be0b5fb0b61f4be220bbd65322bed59ecbf",
+      "abstract": "Protein language models (pLMs) are powerful predictors of protein structure and function, learning through unsupervised training on millions of protein sequences. pLMs are thought to capture common motifs in protein sequences, but the specifics of pLM features are not well understood. Identifying these features would not only shed light on how pLMs work, but potentially uncover novel protein biology\u2013\u2013studying the model to study the biology. Motivated by this, we train sparse autoencoders (SAEs) ",
+      "tags": [
+        "SAE",
+        "features",
+        "biology"
+      ],
+      "source": "Semantic Scholar",
+      "featured": false
     },
     {
       "id": "open-problems-mi",
