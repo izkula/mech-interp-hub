@@ -5,9 +5,44 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 06 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 07 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>When the Coffee Feature Activates on Coffins: An Analysis of Feature Extraction and Steering for Mechanistic Interpretability</title>
+      <link>https://arxiv.org/abs/2601.03047v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Raphael Ronge, Markus Maier, Frederick Eberhardt</p><p>Recent work by Anthropic on Mechanistic interpretability claims to understand and control Large Language Models by extracting human-interpretable features from their neural activation patterns using sparse autoencoders (SAEs). If successful, this approach offers one of the most promising routes for human oversight in AI safety. We conduct an initial stress-test of these claims by replicating their main results with open-source SAEs for Llama 3.1. While we successfully reproduce basic feature ext</p><p><strong>Tags:</strong> SAE, features, safety, steering</p>]]></description>
+      <pubDate>Tue, 06 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2601.03047v1</guid>
+    </item>
+    <item>
+      <title>Mechanistic Interpretability of Large-Scale Counting in LLMs through a System-2 Strategy</title>
+      <link>https://arxiv.org/abs/2601.02989v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Hosein Hasani, Mohammadali Banayeeanzade, Ali Nafisi, Sadegh Mohammadian, Fatemeh Askari, et al.</p><p>Large language models (LLMs), despite strong performance on complex mathematical problems, exhibit systematic limitations in counting tasks. This issue arises from architectural limits of transformers, where counting is performed across layers, leading to degraded precision for larger counting problems due to depth constraints. To address this limitation, we propose a simple test-time strategy inspired by System-2 cognitive processes that decomposes large counting tasks into smaller, independent</p>]]></description>
+      <pubDate>Tue, 06 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2601.02989v1</guid>
+    </item>
+    <item>
+      <title>Mechanistic Knobs in LLMs: Retrieving and Steering High-Order Semantic Features via Sparse Autoencoders</title>
+      <link>https://arxiv.org/abs/2601.02978v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Ruikang Zhang, Shuo Wang, Qi Su</p><p>Recent work in Mechanistic Interpretability (MI) has enabled the identification and intervention of internal features in Large Language Models (LLMs). However, a persistent challenge lies in linking such internal features to the reliable control of complex, behavior-level semantic attributes in language generation. In this paper, we propose a Sparse Autoencoder-based framework for retrieving and steering semantically interpretable internal features associated with high-level linguistic behaviors</p><p><strong>Tags:</strong> SAE, features, steering</p>]]></description>
+      <pubDate>Tue, 06 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2601.02978v1</guid>
+    </item>
+    <item>
+      <title>Bridging Mechanistic Interpretability and Prompt Engineering with Gradient Ascent for Interpretable Persona Control</title>
+      <link>https://arxiv.org/abs/2601.02896v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Harshvardhan Saini, Yiming Tang, Dianbo Liu</p><p>Controlling emergent behavioral personas (e.g., sycophancy, hallucination) in Large Language Models (LLMs) is critical for AI safety, yet remains a persistent challenge. Existing solutions face a dilemma: manual prompt engineering is intuitive but unscalable and imprecise, while automatic optimization methods are effective but operate as &quot;black boxes&quot; with no interpretable connection to model internals. We propose a novel framework that adapts gradient ascent to LLMs, enabling targeted prompt di</p><p><strong>Tags:</strong> safety</p>]]></description>
+      <pubDate>Tue, 06 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2601.02896v1</guid>
+    </item>
+    <item>
+      <title>MAFS: Multi-head Attention Feature Selection for High-Dimensional Data via Deep Fusion of Filter Methods</title>
+      <link>https://arxiv.org/abs/2601.02668v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Xiaoyan Sun, Qingyu Meng, Yalu Wen</p><p>Feature selection is essential for high-dimensional biomedical data, enabling stronger predictive performance, reduced computational cost, and improved interpretability in precision medicine applications. Existing approaches face notable challenges. Filter methods are highly scalable but cannot capture complex relationships or eliminate redundancy. Deep learning-based approaches can model nonlinear patterns but often lack stability, interpretability, and efficiency at scale. Single-head attentio</p><p><strong>Tags:</strong> features</p>]]></description>
+      <pubDate>Tue, 06 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2601.02668v1</guid>
+    </item>
     <item>
       <title>Central Dogma Transformer: Towards Mechanism-Oriented AI for Cellular Understanding</title>
       <link>https://arxiv.org/abs/2601.01089v1</link>
@@ -107,6 +142,13 @@
       <guid>https://arxiv.org/abs/2512.22293v1</guid>
     </item>
     <item>
+      <title>Mechanistic Interpretability of Fine-Tuned Protein Language Models for Nanobody Thermostability Prediction</title>
+      <link>https://www.semanticscholar.org/paper/0544168cf2012e31794a69547a7537994417b47d</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Taihei Murakami, Yuki Hashidate, Yasuhiro Matsunaga</p><p><strong>Tags:</strong> biology</p>]]></description>
+      <pubDate>Wed, 24 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.semanticscholar.org/paper/0544168cf2012e31794a69547a7537994417b47d</guid>
+    </item>
+    <item>
       <title>Measuring Mechanistic Independence: Can Bias Be Removed Without Erasing Demographics?</title>
       <link>https://arxiv.org/abs/2512.20796v1</link>
       <description><![CDATA[<p><strong>Authors:</strong> Zhengyang Shan, Aaron Mueller</p><p>We investigate how independent demographic bias mechanisms are from general demographic recognition in language models. Using a multi-task evaluation setup where demographics are associated with names, professions, and education levels, we measure whether models can be debiased while preserving demographic detection capabilities. We compare attribution-based and correlation-based methods for locating bias features. We find that targeted sparse autoencoder feature ablations in Gemma-2-9B reduce b</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
@@ -175,48 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Clément Cornet, Romaric Besançon, Hervé Le Borgne</p><p>We propose an alternative to sparse autoencoders (SAEs) as a simple and effective unsupervised method for extracting interpretable concepts from neural networks. The core idea is to cluster differences in activations, which we formally justify within a discriminant analysis framework. To enhance the diversity of extracted concepts, we refine the approach by weighting the clustering using the skewness of activations. The method aligns with Deleuze&#x27;s modern view of concepts as differences. We eval</p><p><strong>Tags:</strong> SAE</p>]]></description>
       <pubDate>Wed, 17 Dec 2025 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2512.19734v1</guid>
-    </item>
-    <item>
-      <title>From Isolation to Entanglement: When Do Interpretability Methods Identify and Disentangle Known Concepts?</title>
-      <link>https://arxiv.org/abs/2512.15134v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Aaron Mueller, Andrew Lee, Shruti Joshi, Ekdeep Singh Lubana, Dhanya Sridhar, et al.</p><p>A central goal of interpretability is to recover representations of causally relevant concepts from the activations of neural networks. The quality of these concept representations is typically evaluated in isolation, and under implicit independence assumptions that may not hold in practice. Thus, it is unclear whether common featurization methods - including sparse autoencoders (SAEs) and sparse probes - recover disentangled representations of these concepts. This study proposes a multi-concept</p><p><strong>Tags:</strong> SAE, probing</p>]]></description>
-      <pubDate>Wed, 17 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2512.15134v1</guid>
-    </item>
-    <item>
-      <title>Task Matrices: Linear Maps for Cross-Model Finetuning Transfer</title>
-      <link>https://arxiv.org/abs/2512.14880v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Darrin O&#x27; Brien, Dhikshith Gajulapalli, Eric Xia</p><p>Results in interpretability suggest that large vision and language models learn implicit linear encodings when models are biased by in-context prompting. However, the existence of similar linear representations in more general adaptation regimes has not yet been demonstrated. In this work, we develop the concept of a task matrix, a linear transformation from a base to finetuned embedding state. We demonstrate that for vision and text models and ten different datasets, a base model augmented with</p><p><strong>Tags:</strong> vision</p>]]></description>
-      <pubDate>Tue, 16 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2512.14880v1</guid>
-    </item>
-    <item>
-      <title>ReflCtrl: Controlling LLM Reflection via Representation Engineering</title>
-      <link>https://arxiv.org/abs/2512.13979v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Ge Yan, Chung-En Sun,  Tsui-Wei,  Weng</p><p>Large language models (LLMs) with Chain-of-Thought (CoT) reasoning have achieved strong performance across diverse tasks, including mathematics, coding, and general reasoning. A distinctive ability of these reasoning models is self-reflection: the ability to review and revise previous reasoning steps. While self-reflection enhances reasoning performance, it also increases inference cost. In this work, we study self-reflection through the lens of representation engineering. We segment the model&#x27;s</p><p><strong>Tags:</strong> survey, reasoning</p>]]></description>
-      <pubDate>Tue, 16 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2512.13979v1</guid>
-    </item>
-    <item>
-      <title>AI Epidemiology: achieving explainable AI through expert oversight patterns</title>
-      <link>https://arxiv.org/abs/2512.15783v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Kit Tempest-Walters</p><p>AI Epidemiology is a framework for governing and explaining advanced AI systems by applying population-level surveillance methods to AI outputs. The approach mirrors the way in which epidemiologists enable public health interventions through statistical evidence before molecular mechanisms are understood. This bypasses the problem of model complexity which plagues current interpretability methods (such as SHAP and mechanistic interpretability) at the scale of deployed models.   AI Epidemiology a</p>]]></description>
-      <pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2512.15783v1</guid>
-    </item>
-    <item>
-      <title>Superposition as Lossy Compression: Measure with Sparse Autoencoders and Connect to Adversarial Vulnerability</title>
-      <link>https://arxiv.org/abs/2512.13568v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Leonard Bereska, Zoe Tzifa-Kratira, Reza Samavi, Efstratios Gavves</p><p>Neural networks achieve remarkable performance through superposition: encoding multiple features as overlapping directions in activation space rather than dedicating individual neurons to each feature. This challenges interpretability, yet we lack principled methods to measure superposition. We present an information-theoretic framework measuring a neural representation&#x27;s effective degrees of freedom. We apply Shannon entropy to sparse autoencoder activations to compute the number of effective f</p><p><strong>Tags:</strong> SAE, superposition, features</p>]]></description>
-      <pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2512.13568v1</guid>
-    </item>
-    <item>
-      <title>XNNTab -- Interpretable Neural Networks for Tabular Data using Sparse Autoencoders</title>
-      <link>https://arxiv.org/abs/2512.13442v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Khawla Elhadri, Jörg Schlötterer, Christin Seifert</p><p>In data-driven applications relying on tabular data, where interpretability is key, machine learning models such as decision trees and linear regression are applied. Although neural networks can provide higher predictive performance, they are not used because of their blackbox nature. In this work, we present XNNTab, a neural architecture that combines the expressiveness of neural networks and interpretability. XNNTab first learns highly non-linear feature representations, which are decomposed i</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2512.13442v1</guid>
     </item>
   </channel>
 </rss>
