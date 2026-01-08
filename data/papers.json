@@ -1,6 +1,49 @@
 {
-  "lastUpdated": "2026-01-07",
+  "lastUpdated": "2026-01-08",
   "papers": [
+    {
+      "id": "arxiv-2601-03595v1",
+      "title": "Controllable LLM Reasoning via Sparse Autoencoder-Based Steering",
+      "authors": "Yi Fang, Wenjie Wang, Mingfeng Xue, Boyi Deng, Fengli Xu, et al.",
+      "date": "2026-01-07",
+      "url": "https://arxiv.org/abs/2601.03595v1",
+      "abstract": "Large Reasoning Models (LRMs) exhibit human-like cognitive reasoning strategies (e.g. backtracking, cross-verification) during reasoning process, which improves their performance on complex tasks. Currently, reasoning strategies are autonomously selected by LRMs themselves. However, such autonomous selection often produces inefficient or even erroneous reasoning paths. To make reasoning more reliable and flexible, it is important to develop methods for controlling reasoning strategies. Existing ",
+      "tags": [
+        "SAE",
+        "steering",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2601-03671v1",
+      "title": "NeuronScope: A Multi-Agent Framework for Explaining Polysemantic Neurons in Language Models",
+      "authors": "Weiqi Liu, Yongliang Miao, Haiyan Zhao, Yanguang Liu, Mengnan Du",
+      "date": "2026-01-07",
+      "url": "https://arxiv.org/abs/2601.03671v1",
+      "abstract": "Neuron-level interpretation in large language models (LLMs) is fundamentally challenged by widespread polysemanticity, where individual neurons respond to multiple distinct semantic concepts. Existing single-pass interpretation methods struggle to faithfully capture such multi-concept behavior. In this work, we propose NeuronScope, a multi-agent framework that reformulates neuron interpretation as an iterative, activation-guided process. NeuronScope explicitly deconstructs neuron activations int",
+      "tags": [
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2601-03798v1",
+      "title": "Where meaning lives: Layer-wise accessibility of psycholinguistic features in encoder and decoder language models",
+      "authors": "Taisiia Tikhomirova, Dirk U. Wulff",
+      "date": "2026-01-07",
+      "url": "https://arxiv.org/abs/2601.03798v1",
+      "abstract": "Understanding where transformer language models encode psychologically meaningful aspects of meaning is essential for both theory and practice. We conduct a systematic layer-wise probing study of 58 psycholinguistic features across 10 transformer models, spanning encoder-only and decoder-only architectures, and compare three embedding extraction methods. We find that apparent localization of meaning is strongly method-dependent: contextualized embeddings yield higher feature-specific selectivity",
+      "tags": [
+        "features",
+        "probing",
+        "theory"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2601-03047v1",
       "title": "When the Coffee Feature Activates on Coffins: An Analysis of Feature Extraction and Steering for Mechanistic Interpretability",
@@ -65,6 +108,21 @@
       "abstract": "Feature selection is essential for high-dimensional biomedical data, enabling stronger predictive performance, reduced computational cost, and improved interpretability in precision medicine applications. Existing approaches face notable challenges. Filter methods are highly scalable but cannot capture complex relationships or eliminate redundancy. Deep learning-based approaches can model nonlinear patterns but often lack stability, interpretability, and efficiency at scale. Single-head attentio",
       "tags": [
         "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2601-03300v1",
+      "title": "TRYLOCK: Defense-in-Depth Against LLM Jailbreaks via Layered Preference and Representation Engineering",
+      "authors": "Scott Thornton",
+      "date": "2026-01-06",
+      "url": "https://arxiv.org/abs/2601.03300v1",
+      "abstract": "Large language models remain vulnerable to jailbreak attacks, and single-layer defenses often trade security for usability. We present TRYLOCK, the first defense-in-depth architecture that combines four heterogeneous mechanisms across the inference stack: weight-level safety alignment via DPO, activation-level control via Representation Engineering (RepE) steering, adaptive steering strength selected by a lightweight sidecar classifier, and input canonicalization to neutralize encoding-based byp",
+      "tags": [
+        "safety",
+        "probing",
+        "steering"
       ],
       "source": "arXiv",
       "featured": false
