@@ -5,9 +5,30 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 07 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 08 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Controllable LLM Reasoning via Sparse Autoencoder-Based Steering</title>
+      <link>https://arxiv.org/abs/2601.03595v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Yi Fang, Wenjie Wang, Mingfeng Xue, Boyi Deng, Fengli Xu, et al.</p><p>Large Reasoning Models (LRMs) exhibit human-like cognitive reasoning strategies (e.g. backtracking, cross-verification) during reasoning process, which improves their performance on complex tasks. Currently, reasoning strategies are autonomously selected by LRMs themselves. However, such autonomous selection often produces inefficient or even erroneous reasoning paths. To make reasoning more reliable and flexible, it is important to develop methods for controlling reasoning strategies. Existing </p><p><strong>Tags:</strong> SAE, steering, reasoning</p>]]></description>
+      <pubDate>Wed, 07 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2601.03595v1</guid>
+    </item>
+    <item>
+      <title>NeuronScope: A Multi-Agent Framework for Explaining Polysemantic Neurons in Language Models</title>
+      <link>https://arxiv.org/abs/2601.03671v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Weiqi Liu, Yongliang Miao, Haiyan Zhao, Yanguang Liu, Mengnan Du</p><p>Neuron-level interpretation in large language models (LLMs) is fundamentally challenged by widespread polysemanticity, where individual neurons respond to multiple distinct semantic concepts. Existing single-pass interpretation methods struggle to faithfully capture such multi-concept behavior. In this work, we propose NeuronScope, a multi-agent framework that reformulates neuron interpretation as an iterative, activation-guided process. NeuronScope explicitly deconstructs neuron activations int</p><p><strong>Tags:</strong> features</p>]]></description>
+      <pubDate>Wed, 07 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2601.03671v1</guid>
+    </item>
+    <item>
+      <title>Where meaning lives: Layer-wise accessibility of psycholinguistic features in encoder and decoder language models</title>
+      <link>https://arxiv.org/abs/2601.03798v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Taisiia Tikhomirova, Dirk U. Wulff</p><p>Understanding where transformer language models encode psychologically meaningful aspects of meaning is essential for both theory and practice. We conduct a systematic layer-wise probing study of 58 psycholinguistic features across 10 transformer models, spanning encoder-only and decoder-only architectures, and compare three embedding extraction methods. We find that apparent localization of meaning is strongly method-dependent: contextualized embeddings yield higher feature-specific selectivity</p><p><strong>Tags:</strong> features, probing, theory</p>]]></description>
+      <pubDate>Wed, 07 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2601.03798v1</guid>
+    </item>
     <item>
       <title>When the Coffee Feature Activates on Coffins: An Analysis of Feature Extraction and Steering for Mechanistic Interpretability</title>
       <link>https://arxiv.org/abs/2601.03047v1</link>
@@ -42,6 +63,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Xiaoyan Sun, Qingyu Meng, Yalu Wen</p><p>Feature selection is essential for high-dimensional biomedical data, enabling stronger predictive performance, reduced computational cost, and improved interpretability in precision medicine applications. Existing approaches face notable challenges. Filter methods are highly scalable but cannot capture complex relationships or eliminate redundancy. Deep learning-based approaches can model nonlinear patterns but often lack stability, interpretability, and efficiency at scale. Single-head attentio</p><p><strong>Tags:</strong> features</p>]]></description>
       <pubDate>Tue, 06 Jan 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2601.02668v1</guid>
+    </item>
+    <item>
+      <title>TRYLOCK: Defense-in-Depth Against LLM Jailbreaks via Layered Preference and Representation Engineering</title>
+      <link>https://arxiv.org/abs/2601.03300v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Scott Thornton</p><p>Large language models remain vulnerable to jailbreak attacks, and single-layer defenses often trade security for usability. We present TRYLOCK, the first defense-in-depth architecture that combines four heterogeneous mechanisms across the inference stack: weight-level safety alignment via DPO, activation-level control via Representation Engineering (RepE) steering, adaptive steering strength selected by a lightweight sidecar classifier, and input canonicalization to neutralize encoding-based byp</p><p><strong>Tags:</strong> safety, probing, steering</p>]]></description>
+      <pubDate>Tue, 06 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2601.03300v1</guid>
     </item>
     <item>
       <title>Central Dogma Transformer: Towards Mechanism-Oriented AI for Cellular Understanding</title>
@@ -189,34 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Tzu-Yun Lee, Ding-Yong Hong, Jan-Jan Wu</p><p>This paper introduces Syntactic Attention Pruning (SAP), a novel method for effectively pruning attention heads in Transformer models. Unlike conventional approaches that rely solely on mathematical analysis of model weights and activations, SAP incorporates both the syntactic structure and attention patterns of sentences to guide the pruning process. By leveraging these linguistic features, SAP not only achieves performance comparable to state-of-the-art methods but also enhances the interpreta</p><p><strong>Tags:</strong> features, attention</p>]]></description>
       <pubDate>Mon, 22 Dec 2025 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2512.19125v1</guid>
-    </item>
-    <item>
-      <title>Faithful and Stable Neuron Explanations for Trustworthy Mechanistic Interpretability</title>
-      <link>https://arxiv.org/abs/2512.18092v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Ge Yan, Tuomas Oikarinen,  Tsui-Wei,  Weng</p><p>Neuron identification is a popular tool in mechanistic interpretability, aiming to uncover the human-interpretable concepts represented by individual neurons in deep networks. While algorithms such as Network Dissection and CLIP-Dissect achieve great empirical success, a rigorous theoretical foundation remains absent, which is crucial to enable trustworthy and reliable explanations. In this work, we observe that neuron identification can be viewed as the inverse process of machine learning, whic</p><p><strong>Tags:</strong> theory</p>]]></description>
-      <pubDate>Fri, 19 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2512.18092v1</guid>
-    </item>
-    <item>
-      <title>Task Schema and Binding: A Double Dissociation Study of In-Context Learning</title>
-      <link>https://arxiv.org/abs/2512.17325v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Chaeha Kim</p><p>We provide causal mechanistic validation that in-context learning (ICL) decomposes into two separable mechanisms: Task Schema (abstract task type recognition) and Binding (specific input-output associations). Through activation patching experiments across 9 models from 7 Transformer families plus Mamba (370M-13B parameters), we establish three key findings:   1. Double dissociation: Task Schema transfers at 100% via late MLP patching; Binding transfers at 62% via residual stream patching -- prov</p>]]></description>
-      <pubDate>Fri, 19 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2512.17325v1</guid>
-    </item>
-    <item>
-      <title>SALVE: Sparse Autoencoder-Latent Vector Editing for Mechanistic Control of Neural Networks</title>
-      <link>https://arxiv.org/abs/2512.15938v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Vegard Flovik</p><p>Deep neural networks achieve impressive performance but remain difficult to interpret and control. We present SALVE (Sparse Autoencoder-Latent Vector Editing), a unified &quot;discover, validate, and control&quot; framework that bridges mechanistic interpretability and model editing. Using an $\ell_1$-regularized autoencoder, we learn a sparse, model-native feature basis without supervision. We validate these features with Grad-FAM, a feature-level saliency mapping method that visually grounds latent feat</p><p><strong>Tags:</strong> SAE, features, editing, vision</p>]]></description>
-      <pubDate>Wed, 17 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2512.15938v1</guid>
-    </item>
-    <item>
-      <title>The Deleuzian Representation Hypothesis</title>
-      <link>https://arxiv.org/abs/2512.19734v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Clément Cornet, Romaric Besançon, Hervé Le Borgne</p><p>We propose an alternative to sparse autoencoders (SAEs) as a simple and effective unsupervised method for extracting interpretable concepts from neural networks. The core idea is to cluster differences in activations, which we formally justify within a discriminant analysis framework. To enhance the diversity of extracted concepts, we refine the approach by weighting the clustering using the skewness of activations. The method aligns with Deleuze&#x27;s modern view of concepts as differences. We eval</p><p><strong>Tags:</strong> SAE</p>]]></description>
-      <pubDate>Wed, 17 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2512.19734v1</guid>
     </item>
   </channel>
 </rss>
