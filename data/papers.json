@@ -1,6 +1,61 @@
 {
-  "lastUpdated": "2026-01-08",
+  "lastUpdated": "2026-01-09",
   "papers": [
+    {
+      "id": "ss-48681d875dd4a7fd38cd",
+      "title": "Research on the instability mechanism of transformer winding short-circuit faults based on magneto-mechanical coupling analysis",
+      "authors": "Zhihao Gao, Jing Zhou, Li Zhu, Yuefeng Hao, Zhanlong Zhang, et al.",
+      "date": "2026-02-01",
+      "url": "https://www.semanticscholar.org/paper/48681d875dd4a7fd38cd0b9f05262cccabefe846",
+      "abstract": "",
+      "tags": [
+        "circuits"
+      ],
+      "source": "Semantic Scholar",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2601-04768v1",
+      "title": "LANGSAE EDITING: Improving Multilingual Information Retrieval via Post-hoc Language Identity Removal",
+      "authors": "Dongjun Kim, Jeongho Yoon, Chanjun Park, Heuiseok Lim",
+      "date": "2026-01-08",
+      "url": "https://arxiv.org/abs/2601.04768v1",
+      "abstract": "Dense retrieval in multilingual settings often searches over mixed-language collections, yet multilingual embeddings encode language identity alongside semantics. This language signal can inflate similarity for same-language pairs and crowd out relevant evidence written in other languages. We propose LANGSAE EDITING, a post-hoc sparse autoencoder trained on pooled embeddings that enables controllable removal of language-identity signal directly in vector space. The method identifies language-ass",
+      "tags": [
+        "SAE"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2601-04670v1",
+      "title": "Learning Dynamics in RL Post-Training for Language Models",
+      "authors": "Akiyoshi Tomihari",
+      "date": "2026-01-08",
+      "url": "https://arxiv.org/abs/2601.04670v1",
+      "abstract": "Reinforcement learning (RL) post-training is a critical stage in modern language model development, playing a key role in improving alignment and reasoning ability. However, several phenomena remain poorly understood, including the reduction in output diversity. To gain a broader understanding of RL post-training, we analyze the learning dynamics of RL post-training from a perspective that has been studied in supervised learning but remains underexplored in RL. We adopt an empirical neural tange",
+      "tags": [
+        "safety",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2601-04480v1",
+      "title": "When Models Manipulate Manifolds: The Geometry of a Counting Task",
+      "authors": "Wes Gurnee, Emmanuel Ameisen, Isaac Kauvar, Julius Tarng, Adam Pearce, et al.",
+      "date": "2026-01-08",
+      "url": "https://arxiv.org/abs/2601.04480v1",
+      "abstract": "Language models can perceive visual properties of text despite receiving only sequences of tokens-we mechanistically investigate how Claude 3.5 Haiku accomplishes one such task: linebreaking in fixed-width text. We find that character counts are represented on low-dimensional curved manifolds discretized by sparse feature families, analogous to biological place cells. Accurate predictions emerge from a sequence of geometric transformations: token lengths are accumulated into character count mani",
+      "tags": [
+        "features",
+        "vision",
+        "biology"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2601-03595v1",
       "title": "Controllable LLM Reasoning via Sparse Autoencoder-Based Steering",
@@ -40,6 +95,19 @@
         "features",
         "probing",
         "theory"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2601-04398v1",
+      "title": "Interpreting Transformers Through Attention Head Intervention",
+      "authors": "Mason Kadem, Rong Zheng",
+      "date": "2026-01-07",
+      "url": "https://arxiv.org/abs/2601.04398v1",
+      "abstract": "Neural networks are growing more capable on their own, but we do not understand their neural mechanisms. Understanding these mechanisms' decision-making processes, or mechanistic interpretability, enables (1) accountability and control in high-stakes domains, (2) the study of digital brains and the emergence of cognition, and (3) discovery of new knowledge when AI systems outperform humans.",
+      "tags": [
+        "attention"
       ],
       "source": "arXiv",
       "featured": false
@@ -242,6 +310,19 @@
         "safety"
       ],
       "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "ss-fe33646738431bec8b74",
+      "title": "Analysis of Short-Circuit Impedance in Multi-Winding Transformer",
+      "authors": "Emir Y\u00fckselen",
+      "date": "2025-12-29",
+      "url": "https://www.semanticscholar.org/paper/fe33646738431bec8b7421c6b91815e74f327618",
+      "abstract": "Due to green energy policies, investments in renewable energy are rapidly increasing, which in turn raises the demand for efficient power plant integration into electrical grids. Multi-winding distribution transformers are crucial in this process, as they enable operation at various voltage levels to match different grid requirements. However, designing such transformers, mainly calculating short-circuit impedance in accordance with industry standards, is a highly complex and challenging task wh",
+      "tags": [
+        "circuits"
+      ],
+      "source": "Semantic Scholar",
       "featured": false
     },
     {
@@ -1434,6 +1515,32 @@
       "featured": false
     },
     {
+      "id": "ss-48878e7db51b49256fc5",
+      "title": "Analysis of gas pressure decline SF6 in 70kV circuit breaker bay transformer 3 at Babakan substation",
+      "authors": "Arif Ramdhan Achmad, Muhammad Soleh, Sugeng Suprijadi",
+      "date": "2025-10-29",
+      "url": "https://www.semanticscholar.org/paper/48878e7db51b49256fc5bf294f17bd45a6034974",
+      "abstract": "This study analyzes the decrease in SF\u2086 gas pressure in the 70 kV circuit breaker Transformer Bay 3 at Babakan Substation, which affects the reliability of the power system. SF\u2086 gas is used as an insulating medium due to its high dielectric strength but is susceptible to micro-leakage, which degrades equipment performance. This research employs a qualitative approach with a case study strategy based on primary data obtained from field observations, interviews, and testing documentation before an",
+      "tags": [
+        "circuits"
+      ],
+      "source": "Semantic Scholar",
+      "featured": false
+    },
+    {
+      "id": "ss-5634557d0ad623f77c52",
+      "title": "Equivalent Circuit-Based Analysis of Current Sharing in Planar Transformer Parallel Windings",
+      "authors": "Yan Liang, Yi-Hsun Hsieh, Qiang Li",
+      "date": "2025-10-19",
+      "url": "https://www.semanticscholar.org/paper/5634557d0ad623f77c528c1f7e98aace74550bef",
+      "abstract": "Planar transformers with PCB windings are increasingly popular in modern power conversion systems due to their controllable design and high power density. The small core volume of planar transformers benefits from high-frequency operation. However, high-frequency operation also introduces undesirable effects such as current redistribution within the windings-specifically, induced eddy currents within individual winding layers and uneven current sharing among parallel layers. These phenomena sign",
+      "tags": [
+        "circuits"
+      ],
+      "source": "Semantic Scholar",
+      "featured": false
+    },
+    {
       "id": "circuits-october-2025",
       "title": "Circuits Updates - October 2025",
       "authors": "Anthropic Interpretability Team",
@@ -1446,6 +1553,46 @@
         "update"
       ],
       "source": "Anthropic",
+      "featured": false
+    },
+    {
+      "id": "ss-4776d9326ce4c2152fff",
+      "title": "Loss Analysis of the Clamping Circuit in an IGCT-Based High Step-Up Resonant DC transformer",
+      "authors": "Yiqing Ma, Jialiang Hu, Bin Cui, Xueteng Tang, Hongjie Gong, et al.",
+      "date": "2025-10-14",
+      "url": "https://www.semanticscholar.org/paper/4776d9326ce4c2152fffbad8e2f7ce3405f5ef90",
+      "abstract": "This paper investigates the loss behavior of the clamping circuit in a high step-up resonant DC transformer (IGCT-SRDCT) based on integrated gate commutated thyristor (IGCT) and series-connected diodes. The proposed topology features a simple structure, high voltage gain, and high efficiency, making it highly suitable for medium-voltage DC collection in renewable energy systems. Due to the zero-current switching (ZCS) characteristics of the IGCT-SRDCT, the clamping circuit is triggered only duri",
+      "tags": [
+        "circuits",
+        "features"
+      ],
+      "source": "Semantic Scholar",
+      "featured": false
+    },
+    {
+      "id": "ss-963261e1e7f0ec0444e1",
+      "title": "Leveraging extra high voltage grid supplies for the dynamic performance analysis of large power transformer in short-circuit scenario",
+      "authors": "Narendra Kotta, Jayaram Nakka",
+      "date": "2025-09-24",
+      "url": "https://www.semanticscholar.org/paper/963261e1e7f0ec0444e1d43f15578b2c86dd0d1b",
+      "abstract": "Abstract The current study introduces a novel approach to evaluating the short-circuit (SC) withstand capability of 3-phase, 400/220/33\u202fkV, 500\u202fMVA power transformer through dynamic short-circuit (DSC) tests conducted under actual grid conditions. Departing from conventional lab-based methods, it utilizes a 765\u202fkV grid supply for high-voltage to medium-voltage (HV-MV) windings (i.e., 400kV\u2013220kV) and a 400\u202fkV grid supply for medium-voltage to low-voltage (MV-LV) windings (i.e., 220kV\u201333kV), repl",
+      "tags": [
+        "circuits"
+      ],
+      "source": "Semantic Scholar",
+      "featured": false
+    },
+    {
+      "id": "ss-1573e19c12ff834341c0",
+      "title": "Short-circuit Stress Analysis and Evaluation of 500kV Transformer Windings",
+      "authors": "Shijun Wang, Fan Yang, Pengbo Wang, Yuchen Huang, Fanhan Liu",
+      "date": "2025-09-19",
+      "url": "https://www.semanticscholar.org/paper/1573e19c12ff834341c01496fce1ad9e191dade0",
+      "abstract": "When an electrical transformer is short-circuited, the windings are subjected to electromagnetic forces that are tens of times greater than their normal operating conditions. If the mechanical strength of the transformer is insufficient, it may cause the structural instability of the transformer windings. High-voltage level transformers typically have larger capacities, and during short-circuit faults, they are subjected to greater short-circuit electromagnetic forces. Therefore, the assessment ",
+      "tags": [
+        "circuits"
+      ],
+      "source": "Semantic Scholar",
       "featured": false
     },
     {
@@ -1479,6 +1626,19 @@
       "featured": false
     },
     {
+      "id": "ss-715ce9e24a552ad614cb",
+      "title": "Single-Phase Transformer Circuit Solving using Harmonic Interpolation Method",
+      "authors": "Srdjan Divac, M. Najgebauer, Krzystof Chwastek, B. Koprivica",
+      "date": "2025-08-04",
+      "url": "https://www.semanticscholar.org/paper/715ce9e24a552ad614cbf07e2f96c41747d44caf",
+      "abstract": "The aim of this paper is to present a way of solving in the time domain an electrical circuit with a single-phase transformer. The considered circuit consists of an AC power supply, a ring-shaped transformer and a resistor in the transformer primary and secondary circuit. Three working regimes of the transformer have been considered \u2013 when it is loaded and when it is close to no-load and short-circuit working conditions. Calculations have been made at industrial frequency of 50 Hz using an itera",
+      "tags": [
+        "circuits"
+      ],
+      "source": "Semantic Scholar",
+      "featured": false
+    },
+    {
       "id": "ss-78f88d03bc66e3bcd38b",
       "title": "Autoencoder-like Sparse Non-Negative Matrix Factorization with Structure Relationship Preservation",
       "authors": "Ling Zhong, Haiyan Gao",
@@ -1486,6 +1646,33 @@
       "url": "https://www.semanticscholar.org/paper/78f88d03bc66e3bcd38b2b900f775cb3d88f070b",
       "abstract": "Clustering algorithms based on non-negative matrix factorization (NMF) have garnered significant attention in data mining due to their strong interpretability and computational simplicity. However, traditional NMF often struggles to effectively capture and preserve topological structure information between data during low-dimensional representation. Therefore, this paper proposes an autoencoder-like sparse non-negative matrix factorization with structure relationship preservation (ASNMF-SRP). Fi",
       "tags": [],
+      "source": "Semantic Scholar",
+      "featured": false
+    },
+    {
+      "id": "ss-88197609439a077faa78",
+      "title": "Analysis of the impact of integrating high-sensitivity short-circuit protection devices on transformer protection",
+      "authors": "Tianqi Liu, Shuyan Pan, Xiaobao Liu, Wenhua Lu",
+      "date": "2025-08-01",
+      "url": "https://www.semanticscholar.org/paper/88197609439a077faa789cc03fc8f9bdf58d1cc9",
+      "abstract": "With the expansion of power grids, increasing short-circuit currents pose significant risks to the safety and stability of transformers. Traditional methods, such as impedance adjustment and series reactors, face limitations in control capability and economic feasibility, while the application of fault current limiters (FCL) offers a new solution. This paper takes the operational parameters of an existing 110 kV substation as a case study, constructing a simulation model to analyze the short-cir",
+      "tags": [
+        "circuits",
+        "safety"
+      ],
+      "source": "Semantic Scholar",
+      "featured": false
+    },
+    {
+      "id": "ss-dc547a1ff2089d94633c",
+      "title": "Power Transformer Short-Circuit Force Calculation Using Three and Two-Dimensional Finite-Element Analysis",
+      "authors": "Jian Wang, Junchi He, Xiaohan Chen, Tian Tian, Chenguo Yao, et al.",
+      "date": "2025-07-22",
+      "url": "https://www.semanticscholar.org/paper/dc547a1ff2089d94633c1124d339381d6b1afc6b",
+      "abstract": "In a power transformer short-circuit, transient current and magnetic flux interactions create strong electromagnetic forces that can deform windings and the core, risking failure. Accurate calculation of these forces during design is critical to prevent such outcomes. This paper employs two-dimensional (2D) and three-dimensional (3D) finite-element analysis (FEA) to model a 110 kV, 40 MVA three-phase transformer, calculating magnetic flux density, short-circuit current, and electromagnetic force",
+      "tags": [
+        "circuits"
+      ],
       "source": "Semantic Scholar",
       "featured": false
     },
@@ -1505,6 +1692,19 @@
       "featured": false
     },
     {
+      "id": "ss-27b5c94a919aa50ae2da",
+      "title": "Analysis of a Trip Accident Caused by Short Circuit Impact of 35kV Side Outlet Cable of the Main Transformer",
+      "authors": "Dewen Zhang, Hang Lu, Yuenan Guo, Guangcheng Zhu, Lei Yu, et al.",
+      "date": "2025-06-28",
+      "url": "https://www.semanticscholar.org/paper/27b5c94a919aa50ae2da7327d196192c364b5401",
+      "abstract": "Power cable is the backbone of the power system, once the failure will produce significant losses. The analysis of power system faults can not only prevent similar faults from happening again, reduce the loss caused by power faults, but also find the hidden dangers of transmission lines in time, so as to prevent them before they occur. In this paper, a trip accident of main transformer caused by cable short circuit impact is introduced in detail. Firstly, the anti-short circuit ability of transf",
+      "tags": [
+        "circuits"
+      ],
+      "source": "Semantic Scholar",
+      "featured": false
+    },
+    {
       "id": "arch-degeneracy",
       "title": "Mechanistic Interpretability in the Presence of Architectural Degeneracy",
       "authors": "Various",
@@ -1516,6 +1716,19 @@
         "challenges"
       ],
       "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "ss-c61dec28ac0c5720f035",
+      "title": "Analysis and Diagnosis of Inner-Turn Short Circuit of UHV Converter Transformer Windings",
+      "authors": "Tao Tong, Yang Liu, Yan Liu, Junhui Xiong",
+      "date": "2025-06-20",
+      "url": "https://www.semanticscholar.org/paper/c61dec28ac0c5720f035108e7ac013ef340c0565",
+      "abstract": "As the core component of the UHV DC transmission system, the internal failure of the converter may cause serious power failure. This paper focuses on the sudden abnormal increase of total hydrocarbons in a UHV converter, and comprehensively utilizes oil chromatography analysis, on-site diagnostic test, disassembly inspection at the factory, and multi-physics field simulation verification to investigate the fault mechanism of the short-circuiting between strands of the valve-side coil of the conv",
+      "tags": [
+        "circuits"
+      ],
+      "source": "Semantic Scholar",
       "featured": false
     },
     {
@@ -1549,6 +1762,32 @@
       "featured": true
     },
     {
+      "id": "ss-9884470cb4c65e097dd0",
+      "title": "Error analysis and accuracy improvement strategy of transformer winding short circuit electromagnetic force calculation model",
+      "authors": "Dengfeng Zhu, She Chen, Yudi Wu, Hang Guo, Lipeng Zhong, et al.",
+      "date": "2025-05-16",
+      "url": "https://www.semanticscholar.org/paper/9884470cb4c65e097dd07811d4cf4cfd160d1369",
+      "abstract": "",
+      "tags": [
+        "circuits"
+      ],
+      "source": "Semantic Scholar",
+      "featured": false
+    },
+    {
+      "id": "ss-79a61c84ab5564024453",
+      "title": "Example analysis and preventive proposal of 110kV transformer short circuit fault",
+      "authors": "Jinghui Ruan, Puming Xu, Ping Peng, Yun Liu, Lipeng Zhong",
+      "date": "2025-04-18",
+      "url": "https://www.semanticscholar.org/paper/79a61c84ab5564024453dd8a9d36c6ef0bb71400",
+      "abstract": "A typical case of short-circuit fault of 110kV main transformer is introduced, and the equipment inspection, diagnostic test results and suspension hood disassembly are analyzed. The initial cause and development process of transformer under short-circuit current impact, as well as the vibration and arc ablation morphology of winding under electrodynamic action are sorted out, and the short-circuit damage causes of transformer are identified. According to the operation status of the main transfo",
+      "tags": [
+        "circuits"
+      ],
+      "source": "Semantic Scholar",
+      "featured": false
+    },
+    {
       "id": "circuits-april-2025",
       "title": "Circuits Updates - April 2025",
       "authors": "Anthropic Interpretability Team",
@@ -1560,6 +1799,32 @@
         "update"
       ],
       "source": "Anthropic",
+      "featured": false
+    },
+    {
+      "id": "ss-7348f7b3b4f9e09d492d",
+      "title": "Implementation of a Dual Transformer Model Based on Unified Magnetic Equivalent Circuit for Saturation Analysis and Transient Electromagnetic Simulation",
+      "authors": "Lu Gao, Feng Ji, Jindi Pang, Chen Jia, Yingying Wang",
+      "date": "2025-04-15",
+      "url": "https://www.semanticscholar.org/paper/7348f7b3b4f9e09d492db428cd1c038b9d948395",
+      "abstract": "",
+      "tags": [
+        "circuits"
+      ],
+      "source": "Semantic Scholar",
+      "featured": false
+    },
+    {
+      "id": "ss-18b2cd9e4b1738c98e7f",
+      "title": "Analysis of Transformer Tank Deformation and Rupture, Part 2: Checking of Ability of Transformer Tank Withstand Internal Short-Circuit Arc Fault",
+      "authors": "Zhigang Zhao",
+      "date": "2025-04-15",
+      "url": "https://www.semanticscholar.org/paper/18b2cd9e4b1738c98e7f4f2d4eebc6649ecb627e",
+      "abstract": "In this paper, by comparing the transmission capacity of different voltage levels and the requirements of system power supply configuration, it is discussed that the risk of oil tank deformation and rupture increases when facing potential internal short-circuit arc fault, which puts forward higher requirements for large oil-filled transformer equipment oil tank's ability to withstand internal short-circuit arc fault. Through the calculation of single-phase short-circuit current, analysis of inst",
+      "tags": [
+        "circuits"
+      ],
+      "source": "Semantic Scholar",
       "featured": false
     },
     {
@@ -1620,6 +1885,19 @@
       ],
       "source": "arXiv",
       "featured": true
+    },
+    {
+      "id": "ss-85d3d9064e142dbd0164",
+      "title": "Modeling, Analysis, and Online Detection of\u00a0Interturn Short-Circuit Fault in Medium-Frequency Transformer of Dual-Active-Bridge Converter",
+      "authors": "T. J. Nistane, Samarjeet Singh, S. Payami, Kalaiselvi Jayaraman",
+      "date": "2025-03-01",
+      "url": "https://www.semanticscholar.org/paper/85d3d9064e142dbd01647ebeda295f5e836bb197",
+      "abstract": "The strident working condition of the dual-active-bridge (DAB) converter has elevated the risk of interturn short-circuit fault (ITTSCF) in medium-frequency transformer (MFT). Thus, it is crucial to analyze the DAB converter under ITTSCF in MFT to avoid the complete winding short-circuit due to insulation failure. Thus, the presented work analyses the variations in the magnetizing and leakage inductance of MFT ranging from low to high severity levels of ITTSCF. Thereafter, its impact on the curr",
+      "tags": [
+        "circuits"
+      ],
+      "source": "Semantic Scholar",
+      "featured": false
     },
     {
       "id": "ss-2ac42be0b5fb0b61f4be",
@@ -1710,6 +1988,19 @@
       ],
       "source": "Anthropic",
       "featured": true
+    },
+    {
+      "id": "ss-0fb8bc41122f793a390a",
+      "title": "Simulation Analysis and Scaling Test of Transformer Turn to Turn Short\u2010Circuit Transient Characteristics Based on Field\u2010Circuit Cooperation",
+      "authors": "Zhiwei Chen, Ruibo Yang, Junxian Wang, Nianwen Xiang, Xin Liu",
+      "date": "2025-01-14",
+      "url": "https://www.semanticscholar.org/paper/0fb8bc41122f793a390a4b02d995523f9d0c13e3",
+      "abstract": "It is a common problem that transformers have different degrees of the turn to turn short\u2010circuit (TTS). The fault severity depends on the location and size of the short\u2010circuit. In this paper, the position of TTS is controlled in the middle of the transformer winding. And then, one transformer with 5%, 10% and 20% TTS on the high voltage side of the phase B was constructed. The transformer TTS faults from slight to deep are simulated, and the effect of different degrees of TTS on the transforme",
+      "tags": [
+        "circuits"
+      ],
+      "source": "Semantic Scholar",
+      "featured": false
     },
     {
       "id": "axbench",
