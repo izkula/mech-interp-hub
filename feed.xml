@@ -5,9 +5,37 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 08 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 09 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Research on the instability mechanism of transformer winding short-circuit faults based on magneto-mechanical coupling analysis</title>
+      <link>https://www.semanticscholar.org/paper/48681d875dd4a7fd38cd0b9f05262cccabefe846</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Zhihao Gao, Jing Zhou, Li Zhu, Yuefeng Hao, Zhanlong Zhang, et al.</p><p><strong>Tags:</strong> circuits</p>]]></description>
+      <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://www.semanticscholar.org/paper/48681d875dd4a7fd38cd0b9f05262cccabefe846</guid>
+    </item>
+    <item>
+      <title>LANGSAE EDITING: Improving Multilingual Information Retrieval via Post-hoc Language Identity Removal</title>
+      <link>https://arxiv.org/abs/2601.04768v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Dongjun Kim, Jeongho Yoon, Chanjun Park, Heuiseok Lim</p><p>Dense retrieval in multilingual settings often searches over mixed-language collections, yet multilingual embeddings encode language identity alongside semantics. This language signal can inflate similarity for same-language pairs and crowd out relevant evidence written in other languages. We propose LANGSAE EDITING, a post-hoc sparse autoencoder trained on pooled embeddings that enables controllable removal of language-identity signal directly in vector space. The method identifies language-ass</p><p><strong>Tags:</strong> SAE</p>]]></description>
+      <pubDate>Thu, 08 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2601.04768v1</guid>
+    </item>
+    <item>
+      <title>Learning Dynamics in RL Post-Training for Language Models</title>
+      <link>https://arxiv.org/abs/2601.04670v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Akiyoshi Tomihari</p><p>Reinforcement learning (RL) post-training is a critical stage in modern language model development, playing a key role in improving alignment and reasoning ability. However, several phenomena remain poorly understood, including the reduction in output diversity. To gain a broader understanding of RL post-training, we analyze the learning dynamics of RL post-training from a perspective that has been studied in supervised learning but remains underexplored in RL. We adopt an empirical neural tange</p><p><strong>Tags:</strong> safety, reasoning</p>]]></description>
+      <pubDate>Thu, 08 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2601.04670v1</guid>
+    </item>
+    <item>
+      <title>When Models Manipulate Manifolds: The Geometry of a Counting Task</title>
+      <link>https://arxiv.org/abs/2601.04480v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Wes Gurnee, Emmanuel Ameisen, Isaac Kauvar, Julius Tarng, Adam Pearce, et al.</p><p>Language models can perceive visual properties of text despite receiving only sequences of tokens-we mechanistically investigate how Claude 3.5 Haiku accomplishes one such task: linebreaking in fixed-width text. We find that character counts are represented on low-dimensional curved manifolds discretized by sparse feature families, analogous to biological place cells. Accurate predictions emerge from a sequence of geometric transformations: token lengths are accumulated into character count mani</p><p><strong>Tags:</strong> features, vision, biology</p>]]></description>
+      <pubDate>Thu, 08 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2601.04480v1</guid>
+    </item>
     <item>
       <title>Controllable LLM Reasoning via Sparse Autoencoder-Based Steering</title>
       <link>https://arxiv.org/abs/2601.03595v1</link>
@@ -28,6 +56,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Taisiia Tikhomirova, Dirk U. Wulff</p><p>Understanding where transformer language models encode psychologically meaningful aspects of meaning is essential for both theory and practice. We conduct a systematic layer-wise probing study of 58 psycholinguistic features across 10 transformer models, spanning encoder-only and decoder-only architectures, and compare three embedding extraction methods. We find that apparent localization of meaning is strongly method-dependent: contextualized embeddings yield higher feature-specific selectivity</p><p><strong>Tags:</strong> features, probing, theory</p>]]></description>
       <pubDate>Wed, 07 Jan 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2601.03798v1</guid>
+    </item>
+    <item>
+      <title>Interpreting Transformers Through Attention Head Intervention</title>
+      <link>https://arxiv.org/abs/2601.04398v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Mason Kadem, Rong Zheng</p><p>Neural networks are growing more capable on their own, but we do not understand their neural mechanisms. Understanding these mechanisms&#x27; decision-making processes, or mechanistic interpretability, enables (1) accountability and control in high-stakes domains, (2) the study of digital brains and the emergence of cognition, and (3) discovery of new knowledge when AI systems outperform humans.</p><p><strong>Tags:</strong> attention</p>]]></description>
+      <pubDate>Wed, 07 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2601.04398v1</guid>
     </item>
     <item>
       <title>When the Coffee Feature Activates on Coffins: An Analysis of Feature Extraction and Steering for Mechanistic Interpretability</title>
@@ -135,6 +170,13 @@
       <guid>https://arxiv.org/abs/2512.23260v1</guid>
     </item>
     <item>
+      <title>Analysis of Short-Circuit Impedance in Multi-Winding Transformer</title>
+      <link>https://www.semanticscholar.org/paper/fe33646738431bec8b7421c6b91815e74f327618</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Emir Yükselen</p><p>Due to green energy policies, investments in renewable energy are rapidly increasing, which in turn raises the demand for efficient power plant integration into electrical grids. Multi-winding distribution transformers are crucial in this process, as they enable operation at various voltage levels to match different grid requirements. However, designing such transformers, mainly calculating short-circuit impedance in accordance with industry standards, is a highly complex and challenging task wh</p><p><strong>Tags:</strong> circuits</p>]]></description>
+      <pubDate>Mon, 29 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.semanticscholar.org/paper/fe33646738431bec8b7421c6b91815e74f327618</guid>
+    </item>
+    <item>
       <title>Mechanistic Analysis of Circuit Preservation in Federated Learning</title>
       <link>https://arxiv.org/abs/2512.23043v1</link>
       <description><![CDATA[<p><strong>Authors:</strong> Muhammad Haseeb, Salaar Masood, Muhammad Abdullah Sohail</p><p>Federated Learning (FL) enables collaborative training of models on decentralized data, but its performance degrades significantly under Non-IID (non-independent and identically distributed) data conditions. While this accuracy loss is well-documented, the internal mechanistic causes remain a black box. This paper investigates the canonical FedAvg algorithm through the lens of Mechanistic Interpretability (MI) to diagnose this failure mode. We hypothesize that the aggregation of conflicting clie</p><p><strong>Tags:</strong> circuits</p>]]></description>
@@ -175,48 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Taihei Murakami, Yuki Hashidate, Yasuhiro Matsunaga</p><p><strong>Tags:</strong> biology</p>]]></description>
       <pubDate>Wed, 24 Dec 2025 00:00:00 +0000</pubDate>
       <guid>https://www.semanticscholar.org/paper/0544168cf2012e31794a69547a7537994417b47d</guid>
-    </item>
-    <item>
-      <title>Measuring Mechanistic Independence: Can Bias Be Removed Without Erasing Demographics?</title>
-      <link>https://arxiv.org/abs/2512.20796v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Zhengyang Shan, Aaron Mueller</p><p>We investigate how independent demographic bias mechanisms are from general demographic recognition in language models. Using a multi-task evaluation setup where demographics are associated with names, professions, and education levels, we measure whether models can be debiased while preserving demographic detection capabilities. We compare attribution-based and correlation-based methods for locating bias features. We find that targeted sparse autoencoder feature ablations in Gemma-2-9B reduce b</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Tue, 23 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2512.20796v1</guid>
-    </item>
-    <item>
-      <title>Hierarchical Geometry of Cognitive States in Transformer Embedding Spaces</title>
-      <link>https://arxiv.org/abs/2512.22227v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Sophie Zhao</p><p>Recent work has shown that transformer-based language models learn rich geometric structure in their embedding spaces, yet the presence of higher-level cognitive organization within these representations remains underexplored. In this work, we investigate whether sentence embeddings encode a graded, hierarchical structure aligned with human-interpretable cognitive or psychological attributes. We construct a dataset of 480 natural-language sentences annotated with continuous ordinal energy scores</p>]]></description>
-      <pubDate>Tue, 23 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2512.22227v1</guid>
-    </item>
-    <item>
-      <title>Toward Explaining Large Language Models in Software Engineering Tasks</title>
-      <link>https://arxiv.org/abs/2512.20328v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Antonio Vitale, Khai-Nguyen Nguyen, Denys Poshyvanyk, Rocco Oliveto, Simone Scalabrino, et al.</p><p>Recent progress in Large Language Models (LLMs) has substantially advanced the automation of software engineering (SE) tasks, enabling complex activities such as code generation and code summarization. However, the black-box nature of LLMs remains a major barrier to their adoption in high-stakes and safety-critical domains, where explainability and transparency are vital for trust, accountability, and effective human supervision. Despite increasing interest in explainable AI for software enginee</p><p><strong>Tags:</strong> safety, vision</p>]]></description>
-      <pubDate>Tue, 23 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2512.20328v1</guid>
-    </item>
-    <item>
-      <title>Generative Giants, Retrieval Weaklings: Why do Multimodal Large Language Models Fail at Multimodal Retrieval?</title>
-      <link>https://arxiv.org/abs/2512.19115v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Hengyi Feng, Zeang Sheng, Meiyi Qiang, Wentao Zhang</p><p>Despite the remarkable success of multimodal large language models (MLLMs) in generative tasks, we observe that they exhibit a counterintuitive deficiency in the zero-shot multimodal retrieval task. In this work, we investigate the underlying mechanisms that hinder MLLMs from serving as effective retrievers. With the help of sparse autoencoders (SAEs), we decompose MLLM output representations into interpretable semantic concepts to probe their intrinsic behavior. Our analysis reveals that the re</p><p><strong>Tags:</strong> SAE, probing, vision</p>]]></description>
-      <pubDate>Mon, 22 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2512.19115v1</guid>
-    </item>
-    <item>
-      <title>LouvreSAE: Sparse Autoencoders for Interpretable and Controllable Style Transfer</title>
-      <link>https://arxiv.org/abs/2512.18930v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Raina Panda, Daniel Fein, Arpita Singhal, Mark Fiore, Maneesh Agrawala, et al.</p><p>Artistic style transfer in generative models remains a significant challenge, as existing methods often introduce style only via model fine-tuning, additional adapters, or prompt engineering, all of which can be computationally expensive and may still entangle style with subject matter. In this paper, we introduce a training- and inference-light, interpretable method for representing and transferring artistic style. Our approach leverages an art-specific Sparse Autoencoder (SAE) on top of latent</p><p><strong>Tags:</strong> SAE</p>]]></description>
-      <pubDate>Mon, 22 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2512.18930v1</guid>
-    </item>
-    <item>
-      <title>SAP: Syntactic Attention Pruning for Transformer-based Language Models</title>
-      <link>https://arxiv.org/abs/2512.19125v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Tzu-Yun Lee, Ding-Yong Hong, Jan-Jan Wu</p><p>This paper introduces Syntactic Attention Pruning (SAP), a novel method for effectively pruning attention heads in Transformer models. Unlike conventional approaches that rely solely on mathematical analysis of model weights and activations, SAP incorporates both the syntactic structure and attention patterns of sentences to guide the pruning process. By leveraging these linguistic features, SAP not only achieves performance comparable to state-of-the-art methods but also enhances the interpreta</p><p><strong>Tags:</strong> features, attention</p>]]></description>
-      <pubDate>Mon, 22 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2512.19125v1</guid>
     </item>
   </channel>
 </rss>
