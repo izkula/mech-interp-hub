@@ -5,7 +5,7 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 11 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 12 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
@@ -14,6 +14,20 @@
       <description><![CDATA[<p><strong>Authors:</strong> Zhihao Gao, Jing Zhou, Li Zhu, Yuefeng Hao, Zhanlong Zhang, et al.</p><p><strong>Tags:</strong> circuits</p>]]></description>
       <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://www.semanticscholar.org/paper/48681d875dd4a7fd38cd0b9f05262cccabefe846</guid>
+    </item>
+    <item>
+      <title>Do Sparse Autoencoders Identify Reasoning Features in Language Models?</title>
+      <link>https://arxiv.org/abs/2601.05679v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> George Ma, Zhongyuan Liang, Irene Y. Chen, Somayeh Sojoudi</p><p>We investigate whether sparse autoencoders (SAEs) identify genuine reasoning features in large language models (LLMs). Starting from features selected using standard contrastive activation methods, we introduce a falsification-oriented framework that combines causal token injection experiments and LLM-guided falsification to test whether feature activation reflects reasoning processes or superficial linguistic correlates. Across 20 configurations spanning multiple model families, layers, and rea</p><p><strong>Tags:</strong> SAE, features, reasoning</p>]]></description>
+      <pubDate>Fri, 09 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2601.05679v1</guid>
+    </item>
+    <item>
+      <title>Context-Aware Decoding for Faithful Vision-Language Generation</title>
+      <link>https://arxiv.org/abs/2601.05939v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Mehrdad Fazli, Bowen Wei, Ziwei Zhu</p><p>Hallucinations, generating responses inconsistent with the visual input, remain a critical limitation of large vision-language models (LVLMs), especially in open-ended tasks such as image captioning and visual reasoning. In this work, we probe the layer-wise generation dynamics that drive hallucinations and propose a training-free mitigation strategy. Employing the Logit Lens, we examine how LVLMs construct next-token distributions across decoder layers, uncovering a pronounced commitment-depth </p><p><strong>Tags:</strong> probing, vision, reasoning</p>]]></description>
+      <pubDate>Fri, 09 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2601.05939v1</guid>
     </item>
     <item>
       <title>LANGSAE EDITING: Improving Multilingual Information Retrieval via Post-hoc Language Identity Removal</title>
@@ -203,20 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Zhiwang Zhou, Yuandong Pu, Xuming He, Yidi Liu, Yixin Chen, et al.</p><p>Weather modeling requires both accurate prediction and mechanistic interpretation, yet existing methods treat these goals in isolation, separating generation from understanding. To address this gap, we present Omni-Weather, the first multimodal foundation model that unifies weather generation and understanding within a single architecture. Omni-Weather integrates a radar encoder for weather generation tasks, followed by unified processing using a shared self-attention mechanism. Moreover, we con</p><p><strong>Tags:</strong> vision</p>]]></description>
       <pubDate>Thu, 25 Dec 2025 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2512.21643v2</guid>
-    </item>
-    <item>
-      <title>Learning from Negative Examples: Why Warning-Framed Training Data Teaches What It Warns Against</title>
-      <link>https://arxiv.org/abs/2512.22293v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Tsogt-Ochir Enkhbayar</p><p>Warning-framed content in training data (e.g., &quot;DO NOT USE - this code is vulnerable&quot;) does not, it turns out, teach language models to avoid the warned-against behavior. In experiments reported here, models exposed to such warnings reproduced the flagged content at rates statistically indistinguishable from models given the content directly (76.7% vs. 83.3%). Why? Sparse autoencoder analysis points to a failure of orthogonalization: &quot;describing X&quot; and &quot;performing X&quot; activate overlapping latent </p><p><strong>Tags:</strong> SAE</p>]]></description>
-      <pubDate>Thu, 25 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2512.22293v1</guid>
-    </item>
-    <item>
-      <title>Mechanistic Interpretability of Fine-Tuned Protein Language Models for Nanobody Thermostability Prediction</title>
-      <link>https://www.semanticscholar.org/paper/0544168cf2012e31794a69547a7537994417b47d</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Taihei Murakami, Yuki Hashidate, Yasuhiro Matsunaga</p><p><strong>Tags:</strong> biology</p>]]></description>
-      <pubDate>Wed, 24 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.semanticscholar.org/paper/0544168cf2012e31794a69547a7537994417b47d</guid>
     </item>
   </channel>
 </rss>
