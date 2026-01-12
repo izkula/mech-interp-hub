@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-11",
+  "lastUpdated": "2026-01-12",
   "papers": [
     {
       "id": "ss-48681d875dd4a7fd38cd",
@@ -12,6 +12,36 @@
         "circuits"
       ],
       "source": "Semantic Scholar",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2601-05679v1",
+      "title": "Do Sparse Autoencoders Identify Reasoning Features in Language Models?",
+      "authors": "George Ma, Zhongyuan Liang, Irene Y. Chen, Somayeh Sojoudi",
+      "date": "2026-01-09",
+      "url": "https://arxiv.org/abs/2601.05679v1",
+      "abstract": "We investigate whether sparse autoencoders (SAEs) identify genuine reasoning features in large language models (LLMs). Starting from features selected using standard contrastive activation methods, we introduce a falsification-oriented framework that combines causal token injection experiments and LLM-guided falsification to test whether feature activation reflects reasoning processes or superficial linguistic correlates. Across 20 configurations spanning multiple model families, layers, and rea",
+      "tags": [
+        "SAE",
+        "features",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2601-05939v1",
+      "title": "Context-Aware Decoding for Faithful Vision-Language Generation",
+      "authors": "Mehrdad Fazli, Bowen Wei, Ziwei Zhu",
+      "date": "2026-01-09",
+      "url": "https://arxiv.org/abs/2601.05939v1",
+      "abstract": "Hallucinations, generating responses inconsistent with the visual input, remain a critical limitation of large vision-language models (LVLMs), especially in open-ended tasks such as image captioning and visual reasoning. In this work, we probe the layer-wise generation dynamics that drive hallucinations and propose a training-free mitigation strategy. Employing the Logit Lens, we examine how LVLMs construct next-token distributions across decoder layers, uncovering a pronounced commitment-depth ",
+      "tags": [
+        "probing",
+        "vision",
+        "reasoning"
+      ],
+      "source": "arXiv",
       "featured": false
     },
     {
@@ -1596,6 +1626,19 @@
       "featured": false
     },
     {
+      "id": "ss-d1345252f2341d8e379a",
+      "title": "Fault handling of frequent Automatic pressurization of 220kV circuit breakers in a 220kV transformer substation",
+      "authors": "Ke Wang, Yuqi Xie, Junxian Huang, Xiangyin Liu, Weipeng Tang, et al.",
+      "date": "2025-09-19",
+      "url": "https://www.semanticscholar.org/paper/d1345252f2341d8e379a0e5da578c296c956a04e",
+      "abstract": "In response to the abnormal phenomenon of frequent automatic pressurization of the hydraulic mechanism of the 604 circuit breaker in a 220kV transformer substation (with an average of 140 pressure replenishment times per day, far exceeding the standard value by 4 to 6 times), this paper conducted systematic fault tracing through pressure monitoring, hydraulic circuit analysis, and disassembly inspection. Field tests indicated that the pressure holding of the C-phase mechanism failed, with a cont",
+      "tags": [
+        "circuits"
+      ],
+      "source": "Semantic Scholar",
+      "featured": false
+    },
+    {
       "id": "circuits-august-2025",
       "title": "Circuits Updates - August 2025",
       "authors": "Anthropic Interpretability Team",
@@ -1910,6 +1953,21 @@
         "SAE",
         "features",
         "biology"
+      ],
+      "source": "Semantic Scholar",
+      "featured": false
+    },
+    {
+      "id": "ss-e7acedb59ac28db1f029",
+      "title": "Periodic Segmentation Transformer-Based Internal Short Circuit Detection Method for Battery Packs",
+      "authors": "Zhekang Dong, Shenyu Gu, Shiqi Zhou, Mengjie Yang, Chun Sing Lai, et al.",
+      "date": "2025-02-01",
+      "url": "https://www.semanticscholar.org/paper/e7acedb59ac28db1f02936f5d23172d59d0650b4",
+      "abstract": "With the rapid evolution of electric vehicles (EVs), assuring the security and dependability of battery packs has acquired paramount significance. Internal short circuit (ISC) within EV battery packs poses a threat to the safety and reliability of EVs. Most of the existing ISC detection methods still suffer from two limitations, i.e., the dataset incompleteness and poor feature representation. To address these challenges, we develop a periodic segmentation Transformer-based ISC detection method ",
+      "tags": [
+        "circuits",
+        "features",
+        "safety"
       ],
       "source": "Semantic Scholar",
       "featured": false
