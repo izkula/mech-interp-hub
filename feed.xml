@@ -5,7 +5,7 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 12 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 13 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
@@ -14,6 +14,20 @@
       <description><![CDATA[<p><strong>Authors:</strong> Zhihao Gao, Jing Zhou, Li Zhu, Yuefeng Hao, Zhanlong Zhang, et al.</p><p><strong>Tags:</strong> circuits</p>]]></description>
       <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://www.semanticscholar.org/paper/48681d875dd4a7fd38cd0b9f05262cccabefe846</guid>
+    </item>
+    <item>
+      <title>Time Travel Engine: A Shared Latent Chronological Manifold Enables Historical Navigation in Large Language Models</title>
+      <link>https://arxiv.org/abs/2601.06437v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Jingmin An, Wei Liu, Qian Wang, Fang Fang</p><p>Time functions as a fundamental dimension of human cognition, yet the mechanisms by which Large Language Models (LLMs) encode chronological progression remain opaque. We demonstrate that temporal information in their latent space is organized not as discrete clusters but as a continuous, traversable geometry. We introduce the Time Travel Engine (TTE), an interpretability-driven framework that projects diachronic linguistic patterns onto a shared chronological manifold. Unlike surface-level promp</p>]]></description>
+      <pubDate>Sat, 10 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2601.06437v1</guid>
+    </item>
+    <item>
+      <title>Deriving Decoder-Free Sparse Autoencoders from First Principles</title>
+      <link>https://arxiv.org/abs/2601.06478v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Alan Oursland</p><p>Gradient descent on log-sum-exp (LSE) objectives performs implicit expectation--maximization (EM): the gradient with respect to each component output equals its responsibility. The same theory predicts collapse without volume control analogous to the log-determinant in Gaussian mixture models. We instantiate the theory in a single-layer encoder with an LSE objective and InfoMax regularization for volume control. Experiments confirm the theory&#x27;s predictions. The gradient--responsibility identity </p><p><strong>Tags:</strong> SAE, theory</p>]]></description>
+      <pubDate>Sat, 10 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2601.06478v1</guid>
     </item>
     <item>
       <title>Do Sparse Autoencoders Identify Reasoning Features in Language Models?</title>
@@ -28,6 +42,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Mehrdad Fazli, Bowen Wei, Ziwei Zhu</p><p>Hallucinations, generating responses inconsistent with the visual input, remain a critical limitation of large vision-language models (LVLMs), especially in open-ended tasks such as image captioning and visual reasoning. In this work, we probe the layer-wise generation dynamics that drive hallucinations and propose a training-free mitigation strategy. Employing the Logit Lens, we examine how LVLMs construct next-token distributions across decoder layers, uncovering a pronounced commitment-depth </p><p><strong>Tags:</strong> probing, vision, reasoning</p>]]></description>
       <pubDate>Fri, 09 Jan 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2601.05939v1</guid>
+    </item>
+    <item>
+      <title>Circuit Mechanisms for Spatial Relation Generation in Diffusion Transformers</title>
+      <link>https://arxiv.org/abs/2601.06338v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Binxu Wang, Jingxuan Fan, Xu Pan</p><p>Diffusion Transformers (DiTs) have greatly advanced text-to-image generation, but models still struggle to generate the correct spatial relations between objects as specified in the text prompt. In this study, we adopt a mechanistic interpretability approach to investigate how a DiT can generate correct spatial relations between objects. We train, from scratch, DiTs of different sizes with different text encoders to learn to generate images containing two objects whose attributes and spatial rel</p><p><strong>Tags:</strong> circuits, vision</p>]]></description>
+      <pubDate>Fri, 09 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2601.06338v1</guid>
     </item>
     <item>
       <title>LANGSAE EDITING: Improving Multilingual Information Retrieval via Post-hoc Language Identity Removal</title>
@@ -128,6 +149,20 @@
       <guid>https://arxiv.org/abs/2601.01089v1</guid>
     </item>
     <item>
+      <title>LLM-Powered Social Digital Twins: A Framework for Simulating Population Behavioral Response to Policy Interventions</title>
+      <link>https://arxiv.org/abs/2601.06111v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Aayush Gupta, Farahan Raza Sheikh</p><p>Predicting how populations respond to policy interventions is a fundamental challenge in computational social science and public policy. Traditional approaches rely on aggregate statistical models that capture historical correlations but lack mechanistic interpretability and struggle with novel policy scenarios. We present a general framework for constructing Social Digital Twins - virtual population replicas where Large Language Models (LLMs) serve as cognitive engines for individual agents. Ea</p>]]></description>
+      <pubDate>Sat, 03 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2601.06111v1</guid>
+    </item>
+    <item>
+      <title>CBMAS: Cognitive Behavioral Modeling via Activation Steering</title>
+      <link>https://arxiv.org/abs/2601.06109v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Ahmed H. Ismail, Anthony Kuang, Ayo Akinkugbe, Kevin Zhu, Sean O&#x27;Brien</p><p>Large language models (LLMs) often encode cognitive behaviors unpredictably across prompts, layers, and contexts, making them difficult to diagnose and control. We present CBMAS, a diagnostic framework for continuous activation steering, which extends cognitive bias analysis from discrete before/after interventions to interpretable trajectories. By combining steering vector construction with dense α-sweeps, logit lens-based bias curves, and layer-site sensitivity analysis, our approach can revea</p><p><strong>Tags:</strong> steering</p>]]></description>
+      <pubDate>Sat, 03 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2601.06109v1</guid>
+    </item>
+    <item>
       <title>Explainability-Guided Defense: Attribution-Aware Model Refinement Against Adversarial Data Attacks</title>
       <link>https://arxiv.org/abs/2601.00968v1</link>
       <description><![CDATA[<p><strong>Authors:</strong> Longwei Wang, Mohammad Navid Nayyem, Abdullah Al Rakin, KC Santosh, Chaowei Zhang, et al.</p><p>The growing reliance on deep learning models in safety-critical domains such as healthcare and autonomous navigation underscores the need for defenses that are both robust to adversarial perturbations and transparent in their decision-making. In this paper, we identify a connection between interpretability and robustness that can be directly leveraged during training. Specifically, we observe that spurious, unstable, or semantically irrelevant features identified through Local Interpretable Mode</p><p><strong>Tags:</strong> features, safety</p>]]></description>
@@ -182,41 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Dianyun Wang, Qingsen Ma, Yuhu Shang, Zhifeng Lu, Lechen Ning, et al.</p><p>Parameter-efficient fine-tuning has become the dominant paradigm for adapting large language models to downstream tasks. Low-rank adaptation methods such as LoRA operate under the assumption that task-relevant weight updates reside in a low-rank subspace, yet this subspace is learned implicitly from data in a black-box manner, offering no interpretability or direct control. We hypothesize that this difficulty stems from polysemanticity--individual dimensions encoding multiple entangled concepts.</p><p><strong>Tags:</strong> features, safety</p>]]></description>
       <pubDate>Mon, 29 Dec 2025 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2512.23260v1</guid>
-    </item>
-    <item>
-      <title>Analysis of Short-Circuit Impedance in Multi-Winding Transformer</title>
-      <link>https://www.semanticscholar.org/paper/fe33646738431bec8b7421c6b91815e74f327618</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Emir Yükselen</p><p>Due to green energy policies, investments in renewable energy are rapidly increasing, which in turn raises the demand for efficient power plant integration into electrical grids. Multi-winding distribution transformers are crucial in this process, as they enable operation at various voltage levels to match different grid requirements. However, designing such transformers, mainly calculating short-circuit impedance in accordance with industry standards, is a highly complex and challenging task wh</p><p><strong>Tags:</strong> circuits</p>]]></description>
-      <pubDate>Mon, 29 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.semanticscholar.org/paper/fe33646738431bec8b7421c6b91815e74f327618</guid>
-    </item>
-    <item>
-      <title>Mechanistic Analysis of Circuit Preservation in Federated Learning</title>
-      <link>https://arxiv.org/abs/2512.23043v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Muhammad Haseeb, Salaar Masood, Muhammad Abdullah Sohail</p><p>Federated Learning (FL) enables collaborative training of models on decentralized data, but its performance degrades significantly under Non-IID (non-independent and identically distributed) data conditions. While this accuracy loss is well-documented, the internal mechanistic causes remain a black box. This paper investigates the canonical FedAvg algorithm through the lens of Mechanistic Interpretability (MI) to diagnose this failure mode. We hypothesize that the aggregation of conflicting clie</p><p><strong>Tags:</strong> circuits</p>]]></description>
-      <pubDate>Sun, 28 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2512.23043v1</guid>
-    </item>
-    <item>
-      <title>Decomposing Task Vectors for Refined Model Editing</title>
-      <link>https://arxiv.org/abs/2512.22511v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Hamed Damirchi, Ehsan Abbasnejad, Zhen Zhang, Javen Shi</p><p>Large pre-trained models have transformed machine learning, yet adapting these models effectively to exhibit precise, concept-specific behaviors remains a significant challenge. Task vectors, defined as the difference between fine-tuned and pre-trained model parameters, provide a mechanism for steering neural networks toward desired behaviors. This has given rise to large repositories dedicated to task vectors tailored for specific behaviors. The arithmetic operation of these task vectors allows</p><p><strong>Tags:</strong> steering, editing</p>]]></description>
-      <pubDate>Sat, 27 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2512.22511v1</guid>
-    </item>
-    <item>
-      <title>The Deepfake Detective: Interpreting Neural Forensics Through Sparse Features and Manifolds</title>
-      <link>https://arxiv.org/abs/2512.21670v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Subramanyam Sahoo, Jared Junkin</p><p>Deepfake detection models have achieved high accuracy in identifying synthetic media, but their decision processes remain largely opaque. In this paper we present a mechanistic interpretability framework for deepfake detection applied to a vision-language model. Our approach combines a sparse autoencoder (SAE) analysis of internal network representations with a novel forensic manifold analysis that probes how the model&#x27;s features respond to controlled forensic artifact manipulations. We demonstr</p><p><strong>Tags:</strong> SAE, features, probing, vision</p>]]></description>
-      <pubDate>Thu, 25 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2512.21670v1</guid>
-    </item>
-    <item>
-      <title>Omni-Weather: Unified Multimodal Foundation Model for Weather Generation and Understanding</title>
-      <link>https://arxiv.org/abs/2512.21643v2</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Zhiwang Zhou, Yuandong Pu, Xuming He, Yidi Liu, Yixin Chen, et al.</p><p>Weather modeling requires both accurate prediction and mechanistic interpretation, yet existing methods treat these goals in isolation, separating generation from understanding. To address this gap, we present Omni-Weather, the first multimodal foundation model that unifies weather generation and understanding within a single architecture. Omni-Weather integrates a radar encoder for weather generation tasks, followed by unified processing using a shared self-attention mechanism. Moreover, we con</p><p><strong>Tags:</strong> vision</p>]]></description>
-      <pubDate>Thu, 25 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2512.21643v2</guid>
     </item>
   </channel>
 </rss>
