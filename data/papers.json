@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-12",
+  "lastUpdated": "2026-01-13",
   "papers": [
     {
       "id": "ss-48681d875dd4a7fd38cd",
@@ -12,6 +12,31 @@
         "circuits"
       ],
       "source": "Semantic Scholar",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2601-06437v1",
+      "title": "Time Travel Engine: A Shared Latent Chronological Manifold Enables Historical Navigation in Large Language Models",
+      "authors": "Jingmin An, Wei Liu, Qian Wang, Fang Fang",
+      "date": "2026-01-10",
+      "url": "https://arxiv.org/abs/2601.06437v1",
+      "abstract": "Time functions as a fundamental dimension of human cognition, yet the mechanisms by which Large Language Models (LLMs) encode chronological progression remain opaque. We demonstrate that temporal information in their latent space is organized not as discrete clusters but as a continuous, traversable geometry. We introduce the Time Travel Engine (TTE), an interpretability-driven framework that projects diachronic linguistic patterns onto a shared chronological manifold. Unlike surface-level promp",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2601-06478v1",
+      "title": "Deriving Decoder-Free Sparse Autoencoders from First Principles",
+      "authors": "Alan Oursland",
+      "date": "2026-01-10",
+      "url": "https://arxiv.org/abs/2601.06478v1",
+      "abstract": "Gradient descent on log-sum-exp (LSE) objectives performs implicit expectation--maximization (EM): the gradient with respect to each component output equals its responsibility. The same theory predicts collapse without volume control analogous to the log-determinant in Gaussian mixture models. We instantiate the theory in a single-layer encoder with an LSE objective and InfoMax regularization for volume control. Experiments confirm the theory's predictions. The gradient--responsibility identity ",
+      "tags": [
+        "SAE",
+        "theory"
+      ],
+      "source": "arXiv",
       "featured": false
     },
     {
@@ -40,6 +65,20 @@
         "probing",
         "vision",
         "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2601-06338v1",
+      "title": "Circuit Mechanisms for Spatial Relation Generation in Diffusion Transformers",
+      "authors": "Binxu Wang, Jingxuan Fan, Xu Pan",
+      "date": "2026-01-09",
+      "url": "https://arxiv.org/abs/2601.06338v1",
+      "abstract": "Diffusion Transformers (DiTs) have greatly advanced text-to-image generation, but models still struggle to generate the correct spatial relations between objects as specified in the text prompt. In this study, we adopt a mechanistic interpretability approach to investigate how a DiT can generate correct spatial relations between objects. We train, from scratch, DiTs of different sizes with different text encoders to learn to generate images containing two objects whose attributes and spatial rel",
+      "tags": [
+        "circuits",
+        "vision"
       ],
       "source": "arXiv",
       "featured": false
@@ -234,6 +273,30 @@
       "abstract": "Understanding cellular mechanisms requires integrating information across DNA, RNA, and protein - the three molecular systems linked by the Central Dogma of molecular biology. While domain-specific foundation models have achieved success for each modality individually, they remain isolated, limiting our ability to model integrated cellular processes. Here we present the Central Dogma Transformer (CDT), an architecture that integrates pre-trained language models for DNA, RNA, and protein followin",
       "tags": [
         "biology"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2601-06111v1",
+      "title": "LLM-Powered Social Digital Twins: A Framework for Simulating Population Behavioral Response to Policy Interventions",
+      "authors": "Aayush Gupta, Farahan Raza Sheikh",
+      "date": "2026-01-03",
+      "url": "https://arxiv.org/abs/2601.06111v1",
+      "abstract": "Predicting how populations respond to policy interventions is a fundamental challenge in computational social science and public policy. Traditional approaches rely on aggregate statistical models that capture historical correlations but lack mechanistic interpretability and struggle with novel policy scenarios. We present a general framework for constructing Social Digital Twins - virtual population replicas where Large Language Models (LLMs) serve as cognitive engines for individual agents. Ea",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2601-06109v1",
+      "title": "CBMAS: Cognitive Behavioral Modeling via Activation Steering",
+      "authors": "Ahmed H. Ismail, Anthony Kuang, Ayo Akinkugbe, Kevin Zhu, Sean O'Brien",
+      "date": "2026-01-03",
+      "url": "https://arxiv.org/abs/2601.06109v1",
+      "abstract": "Large language models (LLMs) often encode cognitive behaviors unpredictably across prompts, layers, and contexts, making them difficult to diagnose and control. We present CBMAS, a diagnostic framework for continuous activation steering, which extends cognitive bias analysis from discrete before/after interventions to interpretable trajectories. By combining steering vector construction with dense \u03b1-sweeps, logit lens-based bias curves, and layer-site sensitivity analysis, our approach can revea",
+      "tags": [
+        "steering"
       ],
       "source": "arXiv",
       "featured": false
