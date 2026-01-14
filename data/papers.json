@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-13",
+  "lastUpdated": "2026-01-14",
   "papers": [
     {
       "id": "ss-48681d875dd4a7fd38cd",
@@ -12,6 +12,46 @@
         "circuits"
       ],
       "source": "Semantic Scholar",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2601-08331v1",
+      "title": "CLaS-Bench: A Cross-Lingual Alignment and Steering Benchmark",
+      "authors": "Daniil Gurgurov, Yusser Al Ghussin, Tanja Baeumel, Cheng-Ting Chou, Patrick Schramowski, et al.",
+      "date": "2026-01-13",
+      "url": "https://arxiv.org/abs/2601.08331v1",
+      "abstract": "Understanding and controlling the behavior of large language models (LLMs) is an increasingly important topic in multilingual NLP. Beyond prompting or fine-tuning, , i.e.,~manipulating internal representations during inference, has emerged as a more efficient and interpretable technique for adapting models to a target language. Yet, no dedicated benchmarks or evaluation protocols exist to quantify the effectiveness of steering techniques. We introduce CLaS-Bench, a lightweight parallel-question ",
+      "tags": [
+        "safety",
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2601-08058v1",
+      "title": "Reasoning Beyond Chain-of-Thought: A Latent Computational Mode in Large Language Models",
+      "authors": "Zhenghao He, Guangzhi Xiong, Bohan Liu, Sanchit Sinha, Aidong Zhang",
+      "date": "2026-01-12",
+      "url": "https://arxiv.org/abs/2601.08058v1",
+      "abstract": "Chain-of-Thought (CoT) prompting has improved the reasoning performance of large language models (LLMs), but it remains unclear why it works and whether it is the unique mechanism for triggering reasoning in large language models. In this work, we study this question by directly analyzing and intervening on the internal representations of LLMs with Sparse Autoencoders (SAEs), identifying a small set of latent features that are causally associated with LLM reasoning behavior. Across multiple mode",
+      "tags": [
+        "SAE",
+        "features",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2601-08070v1",
+      "title": "Semantic Gravity Wells: Why Negative Constraints Backfire",
+      "authors": "Shailesh Rana",
+      "date": "2026-01-12",
+      "url": "https://arxiv.org/abs/2601.08070v1",
+      "abstract": "Negative constraints (instructions of the form \"do not use word X\") represent a fundamental test of instruction-following capability in large language models. Despite their apparent simplicity, these constraints fail with striking regularity, and the conditions governing failure have remained poorly understood. This paper presents the first comprehensive mechanistic investigation of negative instruction failure. We introduce semantic pressure, a quantitative measure of the model's intrinsic prob",
+      "tags": [],
+      "source": "arXiv",
       "featured": false
     },
     {
