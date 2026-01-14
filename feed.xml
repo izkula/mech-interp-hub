@@ -5,7 +5,7 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 13 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 14 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
@@ -14,6 +14,27 @@
       <description><![CDATA[<p><strong>Authors:</strong> Zhihao Gao, Jing Zhou, Li Zhu, Yuefeng Hao, Zhanlong Zhang, et al.</p><p><strong>Tags:</strong> circuits</p>]]></description>
       <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://www.semanticscholar.org/paper/48681d875dd4a7fd38cd0b9f05262cccabefe846</guid>
+    </item>
+    <item>
+      <title>CLaS-Bench: A Cross-Lingual Alignment and Steering Benchmark</title>
+      <link>https://arxiv.org/abs/2601.08331v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Daniil Gurgurov, Yusser Al Ghussin, Tanja Baeumel, Cheng-Ting Chou, Patrick Schramowski, et al.</p><p>Understanding and controlling the behavior of large language models (LLMs) is an increasingly important topic in multilingual NLP. Beyond prompting or fine-tuning, , i.e.,~manipulating internal representations during inference, has emerged as a more efficient and interpretable technique for adapting models to a target language. Yet, no dedicated benchmarks or evaluation protocols exist to quantify the effectiveness of steering techniques. We introduce CLaS-Bench, a lightweight parallel-question </p><p><strong>Tags:</strong> safety, steering</p>]]></description>
+      <pubDate>Tue, 13 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2601.08331v1</guid>
+    </item>
+    <item>
+      <title>Reasoning Beyond Chain-of-Thought: A Latent Computational Mode in Large Language Models</title>
+      <link>https://arxiv.org/abs/2601.08058v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Zhenghao He, Guangzhi Xiong, Bohan Liu, Sanchit Sinha, Aidong Zhang</p><p>Chain-of-Thought (CoT) prompting has improved the reasoning performance of large language models (LLMs), but it remains unclear why it works and whether it is the unique mechanism for triggering reasoning in large language models. In this work, we study this question by directly analyzing and intervening on the internal representations of LLMs with Sparse Autoencoders (SAEs), identifying a small set of latent features that are causally associated with LLM reasoning behavior. Across multiple mode</p><p><strong>Tags:</strong> SAE, features, reasoning</p>]]></description>
+      <pubDate>Mon, 12 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2601.08058v1</guid>
+    </item>
+    <item>
+      <title>Semantic Gravity Wells: Why Negative Constraints Backfire</title>
+      <link>https://arxiv.org/abs/2601.08070v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Shailesh Rana</p><p>Negative constraints (instructions of the form &quot;do not use word X&quot;) represent a fundamental test of instruction-following capability in large language models. Despite their apparent simplicity, these constraints fail with striking regularity, and the conditions governing failure have remained poorly understood. This paper presents the first comprehensive mechanistic investigation of negative instruction failure. We introduce semantic pressure, a quantitative measure of the model&#x27;s intrinsic prob</p>]]></description>
+      <pubDate>Mon, 12 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2601.08070v1</guid>
     </item>
     <item>
       <title>Time Travel Engine: A Shared Latent Chronological Manifold Enables Historical Navigation in Large Language Models</title>
@@ -196,27 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Kangyang Luo, Shuzheng Si, Yuzhuo Bai, Cheng Gao, Zhitong Wang, et al.</p><p>In the era of large language models (LLMs), supervised neural methods remain the state-of-the-art (SOTA) for Coreference Resolution. Yet, their full potential is underexplored, particularly in incremental clustering, which faces the critical challenge of balancing efficiency with performance for long texts. To address the limitation, we propose \textbf{MEIC-DT}, a novel dual-threshold, memory-efficient incremental clustering approach based on a lightweight Transformer. MEIC-DT features a dual-th</p><p><strong>Tags:</strong> features</p>]]></description>
       <pubDate>Wed, 31 Dec 2025 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2512.24711v1</guid>
-    </item>
-    <item>
-      <title>Fantastic Reasoning Behaviors and Where to Find Them: Unsupervised Discovery of the Reasoning Process</title>
-      <link>https://arxiv.org/abs/2512.23988v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Zhenyu Zhang, Shujian Zhang, John Lambert, Wenxuan Zhou, Zhangyang Wang, et al.</p><p>Despite the growing reasoning capabilities of recent large language models (LLMs), their internal mechanisms during the reasoning process remain underexplored. Prior approaches often rely on human-defined concepts (e.g., overthinking, reflection) at the word level to analyze reasoning in a supervised manner. However, such methods are limited, as it is infeasible to capture the full spectrum of potential reasoning behaviors, many of which are difficult to define in token space. In this work, we p</p><p><strong>Tags:</strong> reasoning</p>]]></description>
-      <pubDate>Tue, 30 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2512.23988v1</guid>
-    </item>
-    <item>
-      <title>Adversarial Lens: Exploiting Attention Layers to Generate Adversarial Examples for Evaluation</title>
-      <link>https://arxiv.org/abs/2512.23837v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Kaustubh Dhole</p><p>Recent advances in mechanistic interpretability suggest that intermediate attention layers encode token-level hypotheses that are iteratively refined toward the final output. In this work, we exploit this property to generate adversarial examples directly from attention-layer token distributions. Unlike prompt-based or gradient-based attacks, our approach leverages model-internal token predictions, producing perturbations that are both plausible and internally consistent with the model&#x27;s own gen</p>]]></description>
-      <pubDate>Mon, 29 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2512.23837v1</guid>
-    </item>
-    <item>
-      <title>Interpretable Safety Alignment via SAE-Constructed Low-Rank Subspace Adaptation</title>
-      <link>https://arxiv.org/abs/2512.23260v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Dianyun Wang, Qingsen Ma, Yuhu Shang, Zhifeng Lu, Lechen Ning, et al.</p><p>Parameter-efficient fine-tuning has become the dominant paradigm for adapting large language models to downstream tasks. Low-rank adaptation methods such as LoRA operate under the assumption that task-relevant weight updates reside in a low-rank subspace, yet this subspace is learned implicitly from data in a black-box manner, offering no interpretability or direct control. We hypothesize that this difficulty stems from polysemanticity--individual dimensions encoding multiple entangled concepts.</p><p><strong>Tags:</strong> features, safety</p>]]></description>
-      <pubDate>Mon, 29 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2512.23260v1</guid>
     </item>
   </channel>
 </rss>
