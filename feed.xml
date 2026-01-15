@@ -5,7 +5,7 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 14 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 15 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
@@ -14,6 +14,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Zhihao Gao, Jing Zhou, Li Zhu, Yuefeng Hao, Zhanlong Zhang, et al.</p><p><strong>Tags:</strong> circuits</p>]]></description>
       <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://www.semanticscholar.org/paper/48681d875dd4a7fd38cd0b9f05262cccabefe846</guid>
+    </item>
+    <item>
+      <title>Where Knowledge Collides: A Mechanistic Study of Intra-Memory Knowledge Conflict in Language Models</title>
+      <link>https://arxiv.org/abs/2601.09445v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Minh Vu Pham, Hsuvas Borkakoty, Yufang Hou</p><p>In language models (LMs), intra-memory knowledge conflict largely arises when inconsistent information about the same event is encoded within the model&#x27;s parametric knowledge. While prior work has primarily focused on resolving conflicts between a model&#x27;s internal knowledge and external resources through approaches such as fine-tuning or knowledge editing, the problem of localizing conflicts that originate during pre-training within the model&#x27;s internal representations remain unexplored. In this</p><p><strong>Tags:</strong> editing</p>]]></description>
+      <pubDate>Wed, 14 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2601.09445v1</guid>
     </item>
     <item>
       <title>CLaS-Bench: A Cross-Lingual Alignment and Steering Benchmark</title>
@@ -210,13 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Cristina P. Martin-Linares, Jonathan P. Ling</p><p>Sparse autoencoders (SAEs) aim to disentangle model activations into monosemantic, human-interpretable features. In practice, learned features are often redundant and vary across training runs and sparsity levels, which makes interpretations difficult to transfer and reuse. We introduce Distilled Matryoshka Sparse Autoencoders (DMSAEs), a training pipeline that distills a compact core of consistently useful features and reuses it to train new SAEs. DMSAEs run an iterative distillation cycle: tra</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
       <pubDate>Wed, 31 Dec 2025 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2512.24975v1</guid>
-    </item>
-    <item>
-      <title>MEIC-DT: Memory-Efficient Incremental Clustering for Long-Text Coreference Resolution with Dual-Threshold Constraints</title>
-      <link>https://arxiv.org/abs/2512.24711v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Kangyang Luo, Shuzheng Si, Yuzhuo Bai, Cheng Gao, Zhitong Wang, et al.</p><p>In the era of large language models (LLMs), supervised neural methods remain the state-of-the-art (SOTA) for Coreference Resolution. Yet, their full potential is underexplored, particularly in incremental clustering, which faces the critical challenge of balancing efficiency with performance for long texts. To address the limitation, we propose \textbf{MEIC-DT}, a novel dual-threshold, memory-efficient incremental clustering approach based on a lightweight Transformer. MEIC-DT features a dual-th</p><p><strong>Tags:</strong> features</p>]]></description>
-      <pubDate>Wed, 31 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2512.24711v1</guid>
     </item>
   </channel>
 </rss>
