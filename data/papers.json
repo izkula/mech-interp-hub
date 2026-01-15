@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-14",
+  "lastUpdated": "2026-01-15",
   "papers": [
     {
       "id": "ss-48681d875dd4a7fd38cd",
@@ -12,6 +12,19 @@
         "circuits"
       ],
       "source": "Semantic Scholar",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2601-09445v1",
+      "title": "Where Knowledge Collides: A Mechanistic Study of Intra-Memory Knowledge Conflict in Language Models",
+      "authors": "Minh Vu Pham, Hsuvas Borkakoty, Yufang Hou",
+      "date": "2026-01-14",
+      "url": "https://arxiv.org/abs/2601.09445v1",
+      "abstract": "In language models (LMs), intra-memory knowledge conflict largely arises when inconsistent information about the same event is encoded within the model's parametric knowledge. While prior work has primarily focused on resolving conflicts between a model's internal knowledge and external resources through approaches such as fine-tuning or knowledge editing, the problem of localizing conflicts that originate during pre-training within the model's internal representations remain unexplored. In this",
+      "tags": [
+        "editing"
+      ],
+      "source": "arXiv",
       "featured": false
     },
     {
@@ -711,6 +724,19 @@
       "tags": [
         "survey",
         "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2601-08837v1",
+      "title": "From Adversarial Poetry to Adversarial Tales: An Interpretability Research Agenda",
+      "authors": "Piercosma Bisconti, Marcello Galisai, Matteo Prandi, Federico Pierucci, Olga Sorokoletova, et al.",
+      "date": "2025-12-16",
+      "url": "https://arxiv.org/abs/2601.08837v1",
+      "abstract": "Safety mechanisms in LLMs remain vulnerable to attacks that reframe harmful requests through culturally coded structures. We introduce Adversarial Tales, a jailbreak technique that embeds harmful content within cyberpunk narratives and prompts models to perform functional analysis inspired by Vladimir Propp's morphology of folktales. By casting the task as structural decomposition, the attack induces models to reconstruct harmful procedures as legitimate narrative interpretation. Across 26 front",
+      "tags": [
+        "safety"
       ],
       "source": "arXiv",
       "featured": false
