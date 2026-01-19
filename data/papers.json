@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-18",
+  "lastUpdated": "2026-01-19",
   "papers": [
     {
       "id": "ss-48681d875dd4a7fd38cd",
@@ -12,6 +12,75 @@
         "circuits"
       ],
       "source": "Semantic Scholar",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2601-11020v1",
+      "title": "From Interpretability to Performance: Optimizing Retrieval Heads for Long-Context Language Models",
+      "authors": "Youmi Ma, Naoaki Okazaki",
+      "date": "2026-01-16",
+      "url": "https://arxiv.org/abs/2601.11020v1",
+      "abstract": "Advances in mechanistic interpretability have identified special attention heads, known as retrieval heads, that are responsible for retrieving information from the context. However, the role of these retrieval heads in improving model performance remains unexplored. This work investigates whether retrieval heads can be leveraged to enhance the long-context capabilities of LLMs. Specifically, we propose RetMask, a method that generates training signals by contrasting normal model outputs with th",
+      "tags": [
+        "attention"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2601-11182v1",
+      "title": "From Knots to Knobs: Towards Steerable Collaborative Filtering Using Sparse Autoencoders",
+      "authors": "Martin Spi\u0161\u00e1k, Ladislav Pe\u0161ka, Petr \u0160koda, Vojt\u011bch Van\u010dura, Rodrigo Alves",
+      "date": "2026-01-16",
+      "url": "https://arxiv.org/abs/2601.11182v1",
+      "abstract": "Sparse autoencoders (SAEs) have recently emerged as pivotal tools for introspection into large language models. SAEs can uncover high-quality, interpretable features at different levels of granularity and enable targeted steering of the generation process by selectively activating specific neurons in their latent activations. Our paper is the first to apply this approach to collaborative filtering, aiming to extract similarly interpretable features from representations learned purely from intera",
+      "tags": [
+        "SAE",
+        "features",
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2601-11019v1",
+      "title": "Finding the Translation Switch: Discovering and Exploiting the Task-Initiation Features in LLMs",
+      "authors": "Xinwei Wu, Heng Liu, Xiaohu Zhao, Yuqi Ren, Linlong Xu, et al.",
+      "date": "2026-01-16",
+      "url": "https://arxiv.org/abs/2601.11019v1",
+      "abstract": "Large Language Models (LLMs) frequently exhibit strong translation abilities, even without task-specific fine-tuning. However, the internal mechanisms governing this innate capability remain largely opaque. To demystify this process, we leverage Sparse Autoencoders (SAEs) and introduce a novel framework for identifying task-specific features. Our method first recalls features that are frequently co-activated on translation inputs and then filters them for functional coherence using a PCA-based c",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2601-11061v1",
+      "title": "Spurious Rewards Paradox: Mechanistically Understanding How RLVR Activates Memorization Shortcuts in LLMs",
+      "authors": "Lecheng Yan, Ruizhe Li, Guanhua Chen, Qing Li, Jiahui Geng, et al.",
+      "date": "2026-01-16",
+      "url": "https://arxiv.org/abs/2601.11061v1",
+      "abstract": "Reinforcement Learning with Verifiable Rewards (RLVR) is highly effective for enhancing LLM reasoning, yet recent evidence shows models like Qwen 2.5 achieve significant gains even with spurious or incorrect rewards. We investigate this phenomenon and identify a \"Perplexity Paradox\": spurious RLVR triggers a divergence where answer-token perplexity drops while prompt-side coherence degrades, suggesting the model is bypassing reasoning in favor of memorization. Using Path Patching, Logit Lens, JS",
+      "tags": [
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2601-11178v1",
+      "title": "TANDEM: Temporal-Aware Neural Detection for Multimodal Hate Speech",
+      "authors": "Girish A. Koushik, Helen Treharne, Diptesh Kanojia",
+      "date": "2026-01-16",
+      "url": "https://arxiv.org/abs/2601.11178v1",
+      "abstract": "Social media platforms are increasingly dominated by long-form multimodal content, where harmful narratives are constructed through a complex interplay of audio, visual, and textual cues. While automated systems can flag hate speech with high accuracy, they often function as \"black boxes\" that fail to provide the granular, interpretable evidence, such as precise timestamps and target identities, required for effective human-in-the-loop moderation. In this work, we introduce TANDEM, a unified fra",
+      "tags": [
+        "safety",
+        "vision"
+      ],
+      "source": "arXiv",
       "featured": false
     },
     {
@@ -34,6 +103,19 @@
       "abstract": "Understanding relationships between attention heads is essential for interpreting the internal structure of Transformers, yet existing metrics do not capture this structure well. We focus on the subspaces spanned by attention-head weight matrices and quantify head-to-head relationships using the Projection Kernel (PK), a principal-angle-based measure of subspace similarity. Experiments show that PK reproduces known head-to-head interactions on the IOI task more clearly than prior metrics such as",
       "tags": [
         "attention"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2601-10825v1",
+      "title": "Reasoning Models Generate Societies of Thought",
+      "authors": "Junsol Kim, Shiyang Lai, Nino Scherrer, Blaise Ag\u00fcera y Arcas, James Evans",
+      "date": "2026-01-15",
+      "url": "https://arxiv.org/abs/2601.10825v1",
+      "abstract": "Large language models have achieved remarkable capabilities across domains, yet mechanisms underlying sophisticated reasoning remain elusive. Recent reasoning models outperform comparable instruction-tuned models on complex cognitive tasks, attributed to extended computation through longer chains of thought. Here we show that enhanced reasoning emerges not from extended computation alone, but from simulating multi-agent-like interactions -- a society of thought -- which enables diversification a",
+      "tags": [
+        "reasoning"
       ],
       "source": "arXiv",
       "featured": false
