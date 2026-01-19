@@ -5,7 +5,7 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 18 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 19 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
@@ -14,6 +14,41 @@
       <description><![CDATA[<p><strong>Authors:</strong> Zhihao Gao, Jing Zhou, Li Zhu, Yuefeng Hao, Zhanlong Zhang, et al.</p><p><strong>Tags:</strong> circuits</p>]]></description>
       <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://www.semanticscholar.org/paper/48681d875dd4a7fd38cd0b9f05262cccabefe846</guid>
+    </item>
+    <item>
+      <title>From Interpretability to Performance: Optimizing Retrieval Heads for Long-Context Language Models</title>
+      <link>https://arxiv.org/abs/2601.11020v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Youmi Ma, Naoaki Okazaki</p><p>Advances in mechanistic interpretability have identified special attention heads, known as retrieval heads, that are responsible for retrieving information from the context. However, the role of these retrieval heads in improving model performance remains unexplored. This work investigates whether retrieval heads can be leveraged to enhance the long-context capabilities of LLMs. Specifically, we propose RetMask, a method that generates training signals by contrasting normal model outputs with th</p><p><strong>Tags:</strong> attention</p>]]></description>
+      <pubDate>Fri, 16 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2601.11020v1</guid>
+    </item>
+    <item>
+      <title>From Knots to Knobs: Towards Steerable Collaborative Filtering Using Sparse Autoencoders</title>
+      <link>https://arxiv.org/abs/2601.11182v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Martin Spišák, Ladislav Peška, Petr Škoda, Vojtěch Vančura, Rodrigo Alves</p><p>Sparse autoencoders (SAEs) have recently emerged as pivotal tools for introspection into large language models. SAEs can uncover high-quality, interpretable features at different levels of granularity and enable targeted steering of the generation process by selectively activating specific neurons in their latent activations. Our paper is the first to apply this approach to collaborative filtering, aiming to extract similarly interpretable features from representations learned purely from intera</p><p><strong>Tags:</strong> SAE, features, steering</p>]]></description>
+      <pubDate>Fri, 16 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2601.11182v1</guid>
+    </item>
+    <item>
+      <title>Finding the Translation Switch: Discovering and Exploiting the Task-Initiation Features in LLMs</title>
+      <link>https://arxiv.org/abs/2601.11019v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Xinwei Wu, Heng Liu, Xiaohu Zhao, Yuqi Ren, Linlong Xu, et al.</p><p>Large Language Models (LLMs) frequently exhibit strong translation abilities, even without task-specific fine-tuning. However, the internal mechanisms governing this innate capability remain largely opaque. To demystify this process, we leverage Sparse Autoencoders (SAEs) and introduce a novel framework for identifying task-specific features. Our method first recalls features that are frequently co-activated on translation inputs and then filters them for functional coherence using a PCA-based c</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Fri, 16 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2601.11019v1</guid>
+    </item>
+    <item>
+      <title>Spurious Rewards Paradox: Mechanistically Understanding How RLVR Activates Memorization Shortcuts in LLMs</title>
+      <link>https://arxiv.org/abs/2601.11061v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Lecheng Yan, Ruizhe Li, Guanhua Chen, Qing Li, Jiahui Geng, et al.</p><p>Reinforcement Learning with Verifiable Rewards (RLVR) is highly effective for enhancing LLM reasoning, yet recent evidence shows models like Qwen 2.5 achieve significant gains even with spurious or incorrect rewards. We investigate this phenomenon and identify a &quot;Perplexity Paradox&quot;: spurious RLVR triggers a divergence where answer-token perplexity drops while prompt-side coherence degrades, suggesting the model is bypassing reasoning in favor of memorization. Using Path Patching, Logit Lens, JS</p><p><strong>Tags:</strong> reasoning</p>]]></description>
+      <pubDate>Fri, 16 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2601.11061v1</guid>
+    </item>
+    <item>
+      <title>TANDEM: Temporal-Aware Neural Detection for Multimodal Hate Speech</title>
+      <link>https://arxiv.org/abs/2601.11178v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Girish A. Koushik, Helen Treharne, Diptesh Kanojia</p><p>Social media platforms are increasingly dominated by long-form multimodal content, where harmful narratives are constructed through a complex interplay of audio, visual, and textual cues. While automated systems can flag hate speech with high accuracy, they often function as &quot;black boxes&quot; that fail to provide the granular, interpretable evidence, such as precise timestamps and target identities, required for effective human-in-the-loop moderation. In this work, we introduce TANDEM, a unified fra</p><p><strong>Tags:</strong> safety, vision</p>]]></description>
+      <pubDate>Fri, 16 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2601.11178v1</guid>
     </item>
     <item>
       <title>Diagnosing Generalization Failures in Fine-Tuned LLMs: A Cross-Architectural Study on Phishing Detection</title>
@@ -28,6 +63,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Hiroaki Yamagiwa, Yusuke Takase, Hidetoshi Shimodaira</p><p>Understanding relationships between attention heads is essential for interpreting the internal structure of Transformers, yet existing metrics do not capture this structure well. We focus on the subspaces spanned by attention-head weight matrices and quantify head-to-head relationships using the Projection Kernel (PK), a principal-angle-based measure of subspace similarity. Experiments show that PK reproduces known head-to-head interactions on the IOI task more clearly than prior metrics such as</p><p><strong>Tags:</strong> attention</p>]]></description>
       <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2601.10266v1</guid>
+    </item>
+    <item>
+      <title>Reasoning Models Generate Societies of Thought</title>
+      <link>https://arxiv.org/abs/2601.10825v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Junsol Kim, Shiyang Lai, Nino Scherrer, Blaise Agüera y Arcas, James Evans</p><p>Large language models have achieved remarkable capabilities across domains, yet mechanisms underlying sophisticated reasoning remain elusive. Recent reasoning models outperform comparable instruction-tuned models on complex cognitive tasks, attributed to extended computation through longer chains of thought. Here we show that enhanced reasoning emerges not from extended computation alone, but from simulating multi-agent-like interactions -- a society of thought -- which enables diversification a</p><p><strong>Tags:</strong> reasoning</p>]]></description>
+      <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2601.10825v1</guid>
     </item>
     <item>
       <title>Where Knowledge Collides: A Mechanistic Study of Intra-Memory Knowledge Conflict in Language Models</title>
@@ -175,48 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Xiaoyan Sun, Qingyu Meng, Yalu Wen</p><p>Feature selection is essential for high-dimensional biomedical data, enabling stronger predictive performance, reduced computational cost, and improved interpretability in precision medicine applications. Existing approaches face notable challenges. Filter methods are highly scalable but cannot capture complex relationships or eliminate redundancy. Deep learning-based approaches can model nonlinear patterns but often lack stability, interpretability, and efficiency at scale. Single-head attentio</p><p><strong>Tags:</strong> features</p>]]></description>
       <pubDate>Tue, 06 Jan 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2601.02668v1</guid>
-    </item>
-    <item>
-      <title>TRYLOCK: Defense-in-Depth Against LLM Jailbreaks via Layered Preference and Representation Engineering</title>
-      <link>https://arxiv.org/abs/2601.03300v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Scott Thornton</p><p>Large language models remain vulnerable to jailbreak attacks, and single-layer defenses often trade security for usability. We present TRYLOCK, the first defense-in-depth architecture that combines four heterogeneous mechanisms across the inference stack: weight-level safety alignment via DPO, activation-level control via Representation Engineering (RepE) steering, adaptive steering strength selected by a lightweight sidecar classifier, and input canonicalization to neutralize encoding-based byp</p><p><strong>Tags:</strong> safety, probing, steering</p>]]></description>
-      <pubDate>Tue, 06 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2601.03300v1</guid>
-    </item>
-    <item>
-      <title>Central Dogma Transformer: Towards Mechanism-Oriented AI for Cellular Understanding</title>
-      <link>https://arxiv.org/abs/2601.01089v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Nobuyuki Ota</p><p>Understanding cellular mechanisms requires integrating information across DNA, RNA, and protein - the three molecular systems linked by the Central Dogma of molecular biology. While domain-specific foundation models have achieved success for each modality individually, they remain isolated, limiting our ability to model integrated cellular processes. Here we present the Central Dogma Transformer (CDT), an architecture that integrates pre-trained language models for DNA, RNA, and protein followin</p><p><strong>Tags:</strong> biology</p>]]></description>
-      <pubDate>Sat, 03 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2601.01089v1</guid>
-    </item>
-    <item>
-      <title>LLM-Powered Social Digital Twins: A Framework for Simulating Population Behavioral Response to Policy Interventions</title>
-      <link>https://arxiv.org/abs/2601.06111v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Aayush Gupta, Farahan Raza Sheikh</p><p>Predicting how populations respond to policy interventions is a fundamental challenge in computational social science and public policy. Traditional approaches rely on aggregate statistical models that capture historical correlations but lack mechanistic interpretability and struggle with novel policy scenarios. We present a general framework for constructing Social Digital Twins - virtual population replicas where Large Language Models (LLMs) serve as cognitive engines for individual agents. Ea</p>]]></description>
-      <pubDate>Sat, 03 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2601.06111v1</guid>
-    </item>
-    <item>
-      <title>CBMAS: Cognitive Behavioral Modeling via Activation Steering</title>
-      <link>https://arxiv.org/abs/2601.06109v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Ahmed H. Ismail, Anthony Kuang, Ayo Akinkugbe, Kevin Zhu, Sean O&#x27;Brien</p><p>Large language models (LLMs) often encode cognitive behaviors unpredictably across prompts, layers, and contexts, making them difficult to diagnose and control. We present CBMAS, a diagnostic framework for continuous activation steering, which extends cognitive bias analysis from discrete before/after interventions to interpretable trajectories. By combining steering vector construction with dense α-sweeps, logit lens-based bias curves, and layer-site sensitivity analysis, our approach can revea</p><p><strong>Tags:</strong> steering</p>]]></description>
-      <pubDate>Sat, 03 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2601.06109v1</guid>
-    </item>
-    <item>
-      <title>Explainability-Guided Defense: Attribution-Aware Model Refinement Against Adversarial Data Attacks</title>
-      <link>https://arxiv.org/abs/2601.00968v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Longwei Wang, Mohammad Navid Nayyem, Abdullah Al Rakin, KC Santosh, Chaowei Zhang, et al.</p><p>The growing reliance on deep learning models in safety-critical domains such as healthcare and autonomous navigation underscores the need for defenses that are both robust to adversarial perturbations and transparent in their decision-making. In this paper, we identify a connection between interpretability and robustness that can be directly leveraged during training. Specifically, we observe that spurious, unstable, or semantically irrelevant features identified through Local Interpretable Mode</p><p><strong>Tags:</strong> features, safety</p>]]></description>
-      <pubDate>Fri, 02 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2601.00968v1</guid>
-    </item>
-    <item>
-      <title>ActErase: A Training-Free Paradigm for Precise Concept Erasure via Activation Patching</title>
-      <link>https://arxiv.org/abs/2601.00267v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Yi Sun, Xinhao Zhong, Hongyan Li, Yimin Zhou, Junhao Li, et al.</p><p>Recent advances in text-to-image diffusion models have demonstrated remarkable generation capabilities, yet they raise significant concerns regarding safety, copyright, and ethical implications. Existing concept erasure methods address these risks by removing sensitive concepts from pre-trained models, but most of them rely on data-intensive and computationally expensive fine-tuning, which poses a critical limitation. To overcome these challenges, inspired by the observation that the model&#x27;s act</p><p><strong>Tags:</strong> safety, vision</p>]]></description>
-      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2601.00267v1</guid>
     </item>
   </channel>
 </rss>
