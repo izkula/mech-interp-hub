@@ -5,7 +5,7 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 20 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 21 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
@@ -14,6 +14,34 @@
       <description><![CDATA[<p><strong>Authors:</strong> Zhihao Gao, Jing Zhou, Li Zhu, Yuefeng Hao, Zhanlong Zhang, et al.</p><p><strong>Tags:</strong> circuits</p>]]></description>
       <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://www.semanticscholar.org/paper/48681d875dd4a7fd38cd0b9f05262cccabefe846</guid>
+    </item>
+    <item>
+      <title>Locate, Steer, and Improve: A Practical Survey of Actionable Mechanistic Interpretability in Large Language Models</title>
+      <link>https://arxiv.org/abs/2601.14004v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Hengyuan Zhang, Zhihao Zhang, Mingyang Wang, Zunhai Su, Yiwei Wang, et al.</p><p>Mechanistic Interpretability (MI) has emerged as a vital approach to demystify the opaque decision-making of Large Language Models (LLMs). However, existing reviews primarily treat MI as an observational science, summarizing analytical insights while lacking a systematic framework for actionable intervention. To bridge this gap, we present a practical survey structured around the pipeline: &quot;Locate, Steer, and Improve.&quot; We formally categorize Localizing (diagnosis) and Steering (intervention) met</p><p><strong>Tags:</strong> steering, survey</p>]]></description>
+      <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2601.14004v1</guid>
+    </item>
+    <item>
+      <title>Patterning: The Dual of Interpretability</title>
+      <link>https://arxiv.org/abs/2601.13548v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> George Wang, Daniel Murfet</p><p>Mechanistic interpretability aims to understand how neural networks generalize beyond their training data by reverse-engineering their internal structures. We introduce patterning as the dual problem: given a desired form of generalization, determine what training data produces it. Our approach is based on susceptibilities, which measure how posterior expectation values of observables respond to infinitesimal shifts in the data distribution. Inverting this linear response relationship yields the</p>]]></description>
+      <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2601.13548v1</guid>
+    </item>
+    <item>
+      <title>Hierarchical Sparse Circuit Extraction from Billion-Parameter Language Models through Scalable Attribution Graph Decomposition</title>
+      <link>https://arxiv.org/abs/2601.12879v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Mohammed Mudassir Uddin, Shahnawaz Alam, Mohammed Kaif Pasha</p><p>Mechanistic interpretability seeks to reverse-engineer neural network computations into human-understandable algorithms, yet extracting sparse computational circuits from billion-parameter language models remains challenging due to exponential search complexity and pervasive polysemanticity. The proposed Hierarchical Attribution Graph Decomposition (HAGD) framework reduces circuit discovery complexity from O(2^n) exhaustive enumeration to O(n^2 log n) through multi-resolution abstraction hierarc</p><p><strong>Tags:</strong> circuits, features</p>]]></description>
+      <pubDate>Mon, 19 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2601.12879v1</guid>
+    </item>
+    <item>
+      <title>Conversational Context Classification: A Representation Engineering Approach</title>
+      <link>https://arxiv.org/abs/2601.12286v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Jonathan Pan</p><p>The increasing prevalence of Large Language Models (LLMs) demands effective safeguards for their operation, particularly concerning their tendency to generate out-of-context responses. A key challenge is accurately detecting when LLMs stray from expected conversational norms, manifesting as topic shifts, factual inaccuracies, or outright hallucinations. Traditional anomaly detection struggles to directly apply within contextual semantics. This paper outlines our experiment in exploring the use o</p>]]></description>
+      <pubDate>Sun, 18 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2601.12286v1</guid>
     </item>
     <item>
       <title>From Interpretability to Performance: Optimizing Retrieval Heads for Long-Context Language Models</title>
@@ -49,6 +77,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Girish A. Koushik, Helen Treharne, Diptesh Kanojia</p><p>Social media platforms are increasingly dominated by long-form multimodal content, where harmful narratives are constructed through a complex interplay of audio, visual, and textual cues. While automated systems can flag hate speech with high accuracy, they often function as &quot;black boxes&quot; that fail to provide the granular, interpretable evidence, such as precise timestamps and target identities, required for effective human-in-the-loop moderation. In this work, we introduce TANDEM, a unified fra</p><p><strong>Tags:</strong> safety, vision</p>]]></description>
       <pubDate>Fri, 16 Jan 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2601.11178v1</guid>
+    </item>
+    <item>
+      <title>Attesting Model Lineage by Consisted Knowledge Evolution with Fine-Tuning Trajectory</title>
+      <link>https://arxiv.org/abs/2601.11683v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Zhuoyi Shang, Jiasen Li, Pengzhen Chen, Yanwei Liu, Xiaoyan Gu, et al.</p><p>The fine-tuning technique in deep learning gives rise to an emerging lineage relationship among models. This lineage provides a promising perspective for addressing security concerns such as unauthorized model redistribution and false claim of model provenance, which are particularly pressing in \textcolor{blue}{open-weight model} libraries where robust lineage verification mechanisms are often lacking. Existing approaches to model lineage detection primarily rely on static architectural similar</p>]]></description>
+      <pubDate>Fri, 16 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2601.11683v1</guid>
     </item>
     <item>
       <title>Diagnosing Generalization Failures in Fine-Tuned LLMs: A Cross-Architectural Study on Phishing Detection</title>
@@ -98,6 +133,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Shailesh Rana</p><p>Negative constraints (instructions of the form &quot;do not use word X&quot;) represent a fundamental test of instruction-following capability in large language models. Despite their apparent simplicity, these constraints fail with striking regularity, and the conditions governing failure have remained poorly understood. This paper presents the first comprehensive mechanistic investigation of negative instruction failure. We introduce semantic pressure, a quantitative measure of the model&#x27;s intrinsic prob</p>]]></description>
       <pubDate>Mon, 12 Jan 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2601.08070v1</guid>
+    </item>
+    <item>
+      <title>Dynamical Systems Analysis Reveals Functional Regimes in Large Language Models</title>
+      <link>https://arxiv.org/abs/2601.11622v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Hassan Ugail, Newton Howard</p><p>Large language models perform text generation through high-dimensional internal dynamics, yet the temporal organisation of these dynamics remains poorly understood. Most interpretability approaches emphasise static representations or causal interventions, leaving temporal structure largely unexplored. Drawing on neuroscience, where temporal integration and metastability are core markers of neural organisation, we adapt these concepts to transformer models and discuss a composite dynamical metric</p>]]></description>
+      <pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2601.11622v1</guid>
     </item>
     <item>
       <title>Time Travel Engine: A Shared Latent Chronological Manifold Enables Historical Navigation in Large Language Models</title>
@@ -175,48 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Taisiia Tikhomirova, Dirk U. Wulff</p><p>Understanding where transformer language models encode psychologically meaningful aspects of meaning is essential for both theory and practice. We conduct a systematic layer-wise probing study of 58 psycholinguistic features across 10 transformer models, spanning encoder-only and decoder-only architectures, and compare three embedding extraction methods. We find that apparent localization of meaning is strongly method-dependent: contextualized embeddings yield higher feature-specific selectivity</p><p><strong>Tags:</strong> features, probing, theory</p>]]></description>
       <pubDate>Wed, 07 Jan 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2601.03798v1</guid>
-    </item>
-    <item>
-      <title>Interpreting Transformers Through Attention Head Intervention</title>
-      <link>https://arxiv.org/abs/2601.04398v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Mason Kadem, Rong Zheng</p><p>Neural networks are growing more capable on their own, but we do not understand their neural mechanisms. Understanding these mechanisms&#x27; decision-making processes, or mechanistic interpretability, enables (1) accountability and control in high-stakes domains, (2) the study of digital brains and the emergence of cognition, and (3) discovery of new knowledge when AI systems outperform humans.</p><p><strong>Tags:</strong> attention</p>]]></description>
-      <pubDate>Wed, 07 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2601.04398v1</guid>
-    </item>
-    <item>
-      <title>When the Coffee Feature Activates on Coffins: An Analysis of Feature Extraction and Steering for Mechanistic Interpretability</title>
-      <link>https://arxiv.org/abs/2601.03047v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Raphael Ronge, Markus Maier, Frederick Eberhardt</p><p>Recent work by Anthropic on Mechanistic interpretability claims to understand and control Large Language Models by extracting human-interpretable features from their neural activation patterns using sparse autoencoders (SAEs). If successful, this approach offers one of the most promising routes for human oversight in AI safety. We conduct an initial stress-test of these claims by replicating their main results with open-source SAEs for Llama 3.1. While we successfully reproduce basic feature ext</p><p><strong>Tags:</strong> SAE, features, safety, steering</p>]]></description>
-      <pubDate>Tue, 06 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2601.03047v1</guid>
-    </item>
-    <item>
-      <title>Mechanistic Interpretability of Large-Scale Counting in LLMs through a System-2 Strategy</title>
-      <link>https://arxiv.org/abs/2601.02989v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Hosein Hasani, Mohammadali Banayeeanzade, Ali Nafisi, Sadegh Mohammadian, Fatemeh Askari, et al.</p><p>Large language models (LLMs), despite strong performance on complex mathematical problems, exhibit systematic limitations in counting tasks. This issue arises from architectural limits of transformers, where counting is performed across layers, leading to degraded precision for larger counting problems due to depth constraints. To address this limitation, we propose a simple test-time strategy inspired by System-2 cognitive processes that decomposes large counting tasks into smaller, independent</p>]]></description>
-      <pubDate>Tue, 06 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2601.02989v1</guid>
-    </item>
-    <item>
-      <title>Mechanistic Knobs in LLMs: Retrieving and Steering High-Order Semantic Features via Sparse Autoencoders</title>
-      <link>https://arxiv.org/abs/2601.02978v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Ruikang Zhang, Shuo Wang, Qi Su</p><p>Recent work in Mechanistic Interpretability (MI) has enabled the identification and intervention of internal features in Large Language Models (LLMs). However, a persistent challenge lies in linking such internal features to the reliable control of complex, behavior-level semantic attributes in language generation. In this paper, we propose a Sparse Autoencoder-based framework for retrieving and steering semantically interpretable internal features associated with high-level linguistic behaviors</p><p><strong>Tags:</strong> SAE, features, steering</p>]]></description>
-      <pubDate>Tue, 06 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2601.02978v1</guid>
-    </item>
-    <item>
-      <title>Bridging Mechanistic Interpretability and Prompt Engineering with Gradient Ascent for Interpretable Persona Control</title>
-      <link>https://arxiv.org/abs/2601.02896v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Harshvardhan Saini, Yiming Tang, Dianbo Liu</p><p>Controlling emergent behavioral personas (e.g., sycophancy, hallucination) in Large Language Models (LLMs) is critical for AI safety, yet remains a persistent challenge. Existing solutions face a dilemma: manual prompt engineering is intuitive but unscalable and imprecise, while automatic optimization methods are effective but operate as &quot;black boxes&quot; with no interpretable connection to model internals. We propose a novel framework that adapts gradient ascent to LLMs, enabling targeted prompt di</p><p><strong>Tags:</strong> safety</p>]]></description>
-      <pubDate>Tue, 06 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2601.02896v1</guid>
-    </item>
-    <item>
-      <title>MAFS: Multi-head Attention Feature Selection for High-Dimensional Data via Deep Fusion of Filter Methods</title>
-      <link>https://arxiv.org/abs/2601.02668v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Xiaoyan Sun, Qingyu Meng, Yalu Wen</p><p>Feature selection is essential for high-dimensional biomedical data, enabling stronger predictive performance, reduced computational cost, and improved interpretability in precision medicine applications. Existing approaches face notable challenges. Filter methods are highly scalable but cannot capture complex relationships or eliminate redundancy. Deep learning-based approaches can model nonlinear patterns but often lack stability, interpretability, and efficiency at scale. Single-head attentio</p><p><strong>Tags:</strong> features</p>]]></description>
-      <pubDate>Tue, 06 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2601.02668v1</guid>
     </item>
   </channel>
 </rss>
