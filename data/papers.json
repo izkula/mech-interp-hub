@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-20",
+  "lastUpdated": "2026-01-21",
   "papers": [
     {
       "id": "ss-48681d875dd4a7fd38cd",
@@ -12,6 +12,56 @@
         "circuits"
       ],
       "source": "Semantic Scholar",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2601-14004v1",
+      "title": "Locate, Steer, and Improve: A Practical Survey of Actionable Mechanistic Interpretability in Large Language Models",
+      "authors": "Hengyuan Zhang, Zhihao Zhang, Mingyang Wang, Zunhai Su, Yiwei Wang, et al.",
+      "date": "2026-01-20",
+      "url": "https://arxiv.org/abs/2601.14004v1",
+      "abstract": "Mechanistic Interpretability (MI) has emerged as a vital approach to demystify the opaque decision-making of Large Language Models (LLMs). However, existing reviews primarily treat MI as an observational science, summarizing analytical insights while lacking a systematic framework for actionable intervention. To bridge this gap, we present a practical survey structured around the pipeline: \"Locate, Steer, and Improve.\" We formally categorize Localizing (diagnosis) and Steering (intervention) met",
+      "tags": [
+        "steering",
+        "survey"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2601-13548v1",
+      "title": "Patterning: The Dual of Interpretability",
+      "authors": "George Wang, Daniel Murfet",
+      "date": "2026-01-20",
+      "url": "https://arxiv.org/abs/2601.13548v1",
+      "abstract": "Mechanistic interpretability aims to understand how neural networks generalize beyond their training data by reverse-engineering their internal structures. We introduce patterning as the dual problem: given a desired form of generalization, determine what training data produces it. Our approach is based on susceptibilities, which measure how posterior expectation values of observables respond to infinitesimal shifts in the data distribution. Inverting this linear response relationship yields the",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2601-12879v1",
+      "title": "Hierarchical Sparse Circuit Extraction from Billion-Parameter Language Models through Scalable Attribution Graph Decomposition",
+      "authors": "Mohammed Mudassir Uddin, Shahnawaz Alam, Mohammed Kaif Pasha",
+      "date": "2026-01-19",
+      "url": "https://arxiv.org/abs/2601.12879v1",
+      "abstract": "Mechanistic interpretability seeks to reverse-engineer neural network computations into human-understandable algorithms, yet extracting sparse computational circuits from billion-parameter language models remains challenging due to exponential search complexity and pervasive polysemanticity. The proposed Hierarchical Attribution Graph Decomposition (HAGD) framework reduces circuit discovery complexity from O(2^n) exhaustive enumeration to O(n^2 log n) through multi-resolution abstraction hierarc",
+      "tags": [
+        "circuits",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2601-12286v1",
+      "title": "Conversational Context Classification: A Representation Engineering Approach",
+      "authors": "Jonathan Pan",
+      "date": "2026-01-18",
+      "url": "https://arxiv.org/abs/2601.12286v1",
+      "abstract": "The increasing prevalence of Large Language Models (LLMs) demands effective safeguards for their operation, particularly concerning their tendency to generate out-of-context responses. A key challenge is accurately detecting when LLMs stray from expected conversational norms, manifesting as topic shifts, factual inaccuracies, or outright hallucinations. Traditional anomaly detection struggles to directly apply within contextual semantics. This paper outlines our experiment in exploring the use o",
+      "tags": [],
+      "source": "arXiv",
       "featured": false
     },
     {
@@ -80,6 +130,17 @@
         "safety",
         "vision"
       ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2601-11683v1",
+      "title": "Attesting Model Lineage by Consisted Knowledge Evolution with Fine-Tuning Trajectory",
+      "authors": "Zhuoyi Shang, Jiasen Li, Pengzhen Chen, Yanwei Liu, Xiaoyan Gu, et al.",
+      "date": "2026-01-16",
+      "url": "https://arxiv.org/abs/2601.11683v1",
+      "abstract": "The fine-tuning technique in deep learning gives rise to an emerging lineage relationship among models. This lineage provides a promising perspective for addressing security concerns such as unauthorized model redistribution and false claim of model provenance, which are particularly pressing in \\textcolor{blue}{open-weight model} libraries where robust lineage verification mechanisms are often lacking. Existing approaches to model lineage detection primarily rely on static architectural similar",
+      "tags": [],
       "source": "arXiv",
       "featured": false
     },
@@ -169,6 +230,17 @@
       "date": "2026-01-12",
       "url": "https://arxiv.org/abs/2601.08070v1",
       "abstract": "Negative constraints (instructions of the form \"do not use word X\") represent a fundamental test of instruction-following capability in large language models. Despite their apparent simplicity, these constraints fail with striking regularity, and the conditions governing failure have remained poorly understood. This paper presents the first comprehensive mechanistic investigation of negative instruction failure. We introduce semantic pressure, a quantitative measure of the model's intrinsic prob",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2601-11622v1",
+      "title": "Dynamical Systems Analysis Reveals Functional Regimes in Large Language Models",
+      "authors": "Hassan Ugail, Newton Howard",
+      "date": "2026-01-11",
+      "url": "https://arxiv.org/abs/2601.11622v1",
+      "abstract": "Large language models perform text generation through high-dimensional internal dynamics, yet the temporal organisation of these dynamics remains poorly understood. Most interpretability approaches emphasise static representations or causal interventions, leaving temporal structure largely unexplored. Drawing on neuroscience, where temporal integration and metastability are core markers of neural organisation, we adapt these concepts to transformer models and discuss a composite dynamical metric",
       "tags": [],
       "source": "arXiv",
       "featured": false
