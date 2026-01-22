@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-21",
+  "lastUpdated": "2026-01-22",
   "papers": [
     {
       "id": "ss-48681d875dd4a7fd38cd",
@@ -12,6 +12,33 @@
         "circuits"
       ],
       "source": "Semantic Scholar",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2601-15122v1",
+      "title": "From Insight to Intervention: Interpretable Neuron Steering for Controlling Popularity Bias in Recommender Systems",
+      "authors": "Parviz Ahmadov, Masoud Mansoury",
+      "date": "2026-01-21",
+      "url": "https://arxiv.org/abs/2601.15122v1",
+      "abstract": "Popularity bias is a pervasive challenge in recommender systems, where a few popular items dominate attention while the majority of less popular items remain underexposed. This imbalance can reduce recommendation quality and lead to unfair item exposure. Although existing mitigation methods address this issue to some extent, they often lack transparency in how they operate. In this paper, we propose a post-hoc approach, PopSteer, that leverages a Sparse Autoencoder (SAE) to both interpret and mi",
+      "tags": [
+        "SAE",
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2601-14758v1",
+      "title": "Mechanism Shift During Post-training from Autoregressive to Masked Diffusion Language Models",
+      "authors": "Injin Kong, Hyoungjoon Lee, Yohan Jo",
+      "date": "2026-01-21",
+      "url": "https://arxiv.org/abs/2601.14758v1",
+      "abstract": "Post-training pretrained Autoregressive models (ARMs) into Masked Diffusion models (MDMs) has emerged as a cost-effective strategy to overcome the limitations of sequential generation. However, the internal algorithmic transformations induced by this paradigm shift remain unexplored, leaving it unclear whether post-trained MDMs acquire genuine bidirectional reasoning capabilities or merely repackage autoregressive heuristics. In this work, we address this question by conducting a comparative cir",
+      "tags": [
+        "reasoning"
+      ],
+      "source": "arXiv",
       "featured": false
     },
     {
@@ -529,6 +556,17 @@
       "tags": [
         "steering"
       ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2601-06111v2",
+      "title": "LLM Powered Social Digital Twins: A Framework for Simulating Population Behavioral Response to Policy Interventions",
+      "authors": "Fatima Koaik, Aayush Gupta, Farahan Raza Sheikh",
+      "date": "2026-01-03",
+      "url": "https://arxiv.org/abs/2601.06111v2",
+      "abstract": "Predicting how populations respond to policy interventions is a fundamental challenge in computational social science and public policy. Traditional approaches rely on aggregate statistical models that capture historical correlations but lack mechanistic interpretability and struggle with novel policy scenarios. We present a general framework for constructing Social Digital Twins - virtual population replicas where Large Language Models (LLMs) serve as cognitive engines for individual agents. Ea",
+      "tags": [],
       "source": "arXiv",
       "featured": false
     },
