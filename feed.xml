@@ -5,7 +5,7 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 21 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 22 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
@@ -14,6 +14,20 @@
       <description><![CDATA[<p><strong>Authors:</strong> Zhihao Gao, Jing Zhou, Li Zhu, Yuefeng Hao, Zhanlong Zhang, et al.</p><p><strong>Tags:</strong> circuits</p>]]></description>
       <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://www.semanticscholar.org/paper/48681d875dd4a7fd38cd0b9f05262cccabefe846</guid>
+    </item>
+    <item>
+      <title>From Insight to Intervention: Interpretable Neuron Steering for Controlling Popularity Bias in Recommender Systems</title>
+      <link>https://arxiv.org/abs/2601.15122v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Parviz Ahmadov, Masoud Mansoury</p><p>Popularity bias is a pervasive challenge in recommender systems, where a few popular items dominate attention while the majority of less popular items remain underexposed. This imbalance can reduce recommendation quality and lead to unfair item exposure. Although existing mitigation methods address this issue to some extent, they often lack transparency in how they operate. In this paper, we propose a post-hoc approach, PopSteer, that leverages a Sparse Autoencoder (SAE) to both interpret and mi</p><p><strong>Tags:</strong> SAE, steering</p>]]></description>
+      <pubDate>Wed, 21 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2601.15122v1</guid>
+    </item>
+    <item>
+      <title>Mechanism Shift During Post-training from Autoregressive to Masked Diffusion Language Models</title>
+      <link>https://arxiv.org/abs/2601.14758v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Injin Kong, Hyoungjoon Lee, Yohan Jo</p><p>Post-training pretrained Autoregressive models (ARMs) into Masked Diffusion models (MDMs) has emerged as a cost-effective strategy to overcome the limitations of sequential generation. However, the internal algorithmic transformations induced by this paradigm shift remain unexplored, leaving it unclear whether post-trained MDMs acquire genuine bidirectional reasoning capabilities or merely repackage autoregressive heuristics. In this work, we address this question by conducting a comparative cir</p><p><strong>Tags:</strong> reasoning</p>]]></description>
+      <pubDate>Wed, 21 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2601.14758v1</guid>
     </item>
     <item>
       <title>Locate, Steer, and Improve: A Practical Survey of Actionable Mechanistic Interpretability in Large Language Models</title>
@@ -203,20 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Yi Fang, Wenjie Wang, Mingfeng Xue, Boyi Deng, Fengli Xu, et al.</p><p>Large Reasoning Models (LRMs) exhibit human-like cognitive reasoning strategies (e.g. backtracking, cross-verification) during reasoning process, which improves their performance on complex tasks. Currently, reasoning strategies are autonomously selected by LRMs themselves. However, such autonomous selection often produces inefficient or even erroneous reasoning paths. To make reasoning more reliable and flexible, it is important to develop methods for controlling reasoning strategies. Existing </p><p><strong>Tags:</strong> SAE, steering, reasoning</p>]]></description>
       <pubDate>Wed, 07 Jan 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2601.03595v1</guid>
-    </item>
-    <item>
-      <title>NeuronScope: A Multi-Agent Framework for Explaining Polysemantic Neurons in Language Models</title>
-      <link>https://arxiv.org/abs/2601.03671v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Weiqi Liu, Yongliang Miao, Haiyan Zhao, Yanguang Liu, Mengnan Du</p><p>Neuron-level interpretation in large language models (LLMs) is fundamentally challenged by widespread polysemanticity, where individual neurons respond to multiple distinct semantic concepts. Existing single-pass interpretation methods struggle to faithfully capture such multi-concept behavior. In this work, we propose NeuronScope, a multi-agent framework that reformulates neuron interpretation as an iterative, activation-guided process. NeuronScope explicitly deconstructs neuron activations int</p><p><strong>Tags:</strong> features</p>]]></description>
-      <pubDate>Wed, 07 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2601.03671v1</guid>
-    </item>
-    <item>
-      <title>Where meaning lives: Layer-wise accessibility of psycholinguistic features in encoder and decoder language models</title>
-      <link>https://arxiv.org/abs/2601.03798v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Taisiia Tikhomirova, Dirk U. Wulff</p><p>Understanding where transformer language models encode psychologically meaningful aspects of meaning is essential for both theory and practice. We conduct a systematic layer-wise probing study of 58 psycholinguistic features across 10 transformer models, spanning encoder-only and decoder-only architectures, and compare three embedding extraction methods. We find that apparent localization of meaning is strongly method-dependent: contextualized embeddings yield higher feature-specific selectivity</p><p><strong>Tags:</strong> features, probing, theory</p>]]></description>
-      <pubDate>Wed, 07 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2601.03798v1</guid>
     </item>
   </channel>
 </rss>
