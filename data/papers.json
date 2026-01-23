@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-22",
+  "lastUpdated": "2026-01-23",
   "papers": [
     {
       "id": "ss-48681d875dd4a7fd38cd",
@@ -12,6 +12,20 @@
         "circuits"
       ],
       "source": "Semantic Scholar",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2601-15801v1",
+      "title": "Attributing and Exploiting Safety Vectors through Global Optimization in Large Language Models",
+      "authors": "Fengheng Chu, Jiahao Chen, Yuhong Wang, Jun Wang, Zhihui Fu, et al.",
+      "date": "2026-01-22",
+      "url": "https://arxiv.org/abs/2601.15801v1",
+      "abstract": "While Large Language Models (LLMs) are aligned to mitigate risks, their safety guardrails remain fragile against jailbreak attacks. This reveals limited understanding of components governing safety. Existing methods rely on local, greedy attribution that assumes independent component contributions. However, they overlook the cooperative interactions between different components in LLMs, such as attention heads, which jointly contribute to safety mechanisms. We propose \\textbf{G}lobal \\textbf{O}p",
+      "tags": [
+        "safety",
+        "attention"
+      ],
+      "source": "arXiv",
       "featured": false
     },
     {
@@ -38,6 +52,32 @@
       "tags": [
         "reasoning"
       ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2601-15441v1",
+      "title": "CASL: Concept-Aligned Sparse Latents for Interpreting Diffusion Models",
+      "authors": "Zhenghao He, Guangzhi Xiong, Boyang Wang, Sanchit Sinha, Aidong Zhang",
+      "date": "2026-01-21",
+      "url": "https://arxiv.org/abs/2601.15441v1",
+      "abstract": "Internal activations of diffusion models encode rich semantic information, but interpreting such representations remains challenging. While Sparse Autoencoders (SAEs) have shown promise in disentangling latent representations, existing SAE-based methods for diffusion model understanding rely on unsupervised approaches that fail to align sparse features with human-understandable concepts. This limits their ability to provide reliable semantic control over generated images. We introduce CASL (Conc",
+      "tags": [
+        "SAE",
+        "features",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2601-15540v1",
+      "title": "PRISM: Deriving the Transformer as a Signal-Denoising Operator via Maximum Coding Rate Reduction",
+      "authors": "Dongchen Huang",
+      "date": "2026-01-21",
+      "url": "https://arxiv.org/abs/2601.15540v1",
+      "abstract": "Deep learning models, particularly Transformers, are often criticized as \"black boxes\" and lack interpretability. We propose Prism, a white-box attention-based architecture derived from the principles of Maximizing Coding Rate Reduction ($\\text{MCR}^2$). By modeling the attention mechanism as a gradient ascent process on a distinct signal-noise manifold, we introduce two physical constraints: an overcomplete dictionary to expand the representational phase space, and an irrational frequency separ",
+      "tags": [],
       "source": "arXiv",
       "featured": false
     },
