@@ -5,7 +5,7 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 22 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 23 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
@@ -14,6 +14,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Zhihao Gao, Jing Zhou, Li Zhu, Yuefeng Hao, Zhanlong Zhang, et al.</p><p><strong>Tags:</strong> circuits</p>]]></description>
       <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://www.semanticscholar.org/paper/48681d875dd4a7fd38cd0b9f05262cccabefe846</guid>
+    </item>
+    <item>
+      <title>Attributing and Exploiting Safety Vectors through Global Optimization in Large Language Models</title>
+      <link>https://arxiv.org/abs/2601.15801v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Fengheng Chu, Jiahao Chen, Yuhong Wang, Jun Wang, Zhihui Fu, et al.</p><p>While Large Language Models (LLMs) are aligned to mitigate risks, their safety guardrails remain fragile against jailbreak attacks. This reveals limited understanding of components governing safety. Existing methods rely on local, greedy attribution that assumes independent component contributions. However, they overlook the cooperative interactions between different components in LLMs, such as attention heads, which jointly contribute to safety mechanisms. We propose \textbf{G}lobal \textbf{O}p</p><p><strong>Tags:</strong> safety, attention</p>]]></description>
+      <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2601.15801v1</guid>
     </item>
     <item>
       <title>From Insight to Intervention: Interpretable Neuron Steering for Controlling Popularity Bias in Recommender Systems</title>
@@ -28,6 +35,20 @@
       <description><![CDATA[<p><strong>Authors:</strong> Injin Kong, Hyoungjoon Lee, Yohan Jo</p><p>Post-training pretrained Autoregressive models (ARMs) into Masked Diffusion models (MDMs) has emerged as a cost-effective strategy to overcome the limitations of sequential generation. However, the internal algorithmic transformations induced by this paradigm shift remain unexplored, leaving it unclear whether post-trained MDMs acquire genuine bidirectional reasoning capabilities or merely repackage autoregressive heuristics. In this work, we address this question by conducting a comparative cir</p><p><strong>Tags:</strong> reasoning</p>]]></description>
       <pubDate>Wed, 21 Jan 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2601.14758v1</guid>
+    </item>
+    <item>
+      <title>CASL: Concept-Aligned Sparse Latents for Interpreting Diffusion Models</title>
+      <link>https://arxiv.org/abs/2601.15441v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Zhenghao He, Guangzhi Xiong, Boyang Wang, Sanchit Sinha, Aidong Zhang</p><p>Internal activations of diffusion models encode rich semantic information, but interpreting such representations remains challenging. While Sparse Autoencoders (SAEs) have shown promise in disentangling latent representations, existing SAE-based methods for diffusion model understanding rely on unsupervised approaches that fail to align sparse features with human-understandable concepts. This limits their ability to provide reliable semantic control over generated images. We introduce CASL (Conc</p><p><strong>Tags:</strong> SAE, features, vision</p>]]></description>
+      <pubDate>Wed, 21 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2601.15441v1</guid>
+    </item>
+    <item>
+      <title>PRISM: Deriving the Transformer as a Signal-Denoising Operator via Maximum Coding Rate Reduction</title>
+      <link>https://arxiv.org/abs/2601.15540v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Dongchen Huang</p><p>Deep learning models, particularly Transformers, are often criticized as &quot;black boxes&quot; and lack interpretability. We propose Prism, a white-box attention-based architecture derived from the principles of Maximizing Coding Rate Reduction ($\text{MCR}^2$). By modeling the attention mechanism as a gradient ascent process on a distinct signal-noise manifold, we introduce two physical constraints: an overcomplete dictionary to expand the representational phase space, and an irrational frequency separ</p>]]></description>
+      <pubDate>Wed, 21 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2601.15540v1</guid>
     </item>
     <item>
       <title>Locate, Steer, and Improve: A Practical Survey of Actionable Mechanistic Interpretability in Large Language Models</title>
@@ -196,27 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Dongjun Kim, Jeongho Yoon, Chanjun Park, Heuiseok Lim</p><p>Dense retrieval in multilingual settings often searches over mixed-language collections, yet multilingual embeddings encode language identity alongside semantics. This language signal can inflate similarity for same-language pairs and crowd out relevant evidence written in other languages. We propose LANGSAE EDITING, a post-hoc sparse autoencoder trained on pooled embeddings that enables controllable removal of language-identity signal directly in vector space. The method identifies language-ass</p><p><strong>Tags:</strong> SAE</p>]]></description>
       <pubDate>Thu, 08 Jan 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2601.04768v1</guid>
-    </item>
-    <item>
-      <title>Learning Dynamics in RL Post-Training for Language Models</title>
-      <link>https://arxiv.org/abs/2601.04670v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Akiyoshi Tomihari</p><p>Reinforcement learning (RL) post-training is a critical stage in modern language model development, playing a key role in improving alignment and reasoning ability. However, several phenomena remain poorly understood, including the reduction in output diversity. To gain a broader understanding of RL post-training, we analyze the learning dynamics of RL post-training from a perspective that has been studied in supervised learning but remains underexplored in RL. We adopt an empirical neural tange</p><p><strong>Tags:</strong> safety, reasoning</p>]]></description>
-      <pubDate>Thu, 08 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2601.04670v1</guid>
-    </item>
-    <item>
-      <title>When Models Manipulate Manifolds: The Geometry of a Counting Task</title>
-      <link>https://arxiv.org/abs/2601.04480v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Wes Gurnee, Emmanuel Ameisen, Isaac Kauvar, Julius Tarng, Adam Pearce, et al.</p><p>Language models can perceive visual properties of text despite receiving only sequences of tokens-we mechanistically investigate how Claude 3.5 Haiku accomplishes one such task: linebreaking in fixed-width text. We find that character counts are represented on low-dimensional curved manifolds discretized by sparse feature families, analogous to biological place cells. Accurate predictions emerge from a sequence of geometric transformations: token lengths are accumulated into character count mani</p><p><strong>Tags:</strong> features, vision, biology</p>]]></description>
-      <pubDate>Thu, 08 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2601.04480v1</guid>
-    </item>
-    <item>
-      <title>Controllable LLM Reasoning via Sparse Autoencoder-Based Steering</title>
-      <link>https://arxiv.org/abs/2601.03595v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Yi Fang, Wenjie Wang, Mingfeng Xue, Boyi Deng, Fengli Xu, et al.</p><p>Large Reasoning Models (LRMs) exhibit human-like cognitive reasoning strategies (e.g. backtracking, cross-verification) during reasoning process, which improves their performance on complex tasks. Currently, reasoning strategies are autonomously selected by LRMs themselves. However, such autonomous selection often produces inefficient or even erroneous reasoning paths. To make reasoning more reliable and flexible, it is important to develop methods for controlling reasoning strategies. Existing </p><p><strong>Tags:</strong> SAE, steering, reasoning</p>]]></description>
-      <pubDate>Wed, 07 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2601.03595v1</guid>
     </item>
   </channel>
 </rss>
