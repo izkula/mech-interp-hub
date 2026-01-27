@@ -5,7 +5,7 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 26 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 27 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
@@ -14,6 +14,34 @@
       <description><![CDATA[<p><strong>Authors:</strong> Zhihao Gao, Jing Zhou, Li Zhu, Yuefeng Hao, Zhanlong Zhang, et al.</p><p><strong>Tags:</strong> circuits</p>]]></description>
       <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://www.semanticscholar.org/paper/48681d875dd4a7fd38cd0b9f05262cccabefe846</guid>
+    </item>
+    <item>
+      <title>Funny or Persuasive, but Not Both: Evaluating Fine-Grained Multi-Concept Control in LLMs</title>
+      <link>https://arxiv.org/abs/2601.18483v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Arya Labroo, Ivaxi Sheth, Vyas Raina, Amaani Ahmed, Mario Fritz</p><p>Large Language Models (LLMs) offer strong generative capabilities, but many applications require explicit and \textit{fine-grained} control over specific textual concepts, such as humor, persuasiveness, or formality. Prior approaches in prompting and representation engineering can provide coarse or single-attribute control, but systematic evaluation of multi-attribute settings remains limited. We introduce an evaluation framework for fine-grained controllability for both single- and dual-concept</p>]]></description>
+      <pubDate>Mon, 26 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2601.18483v1</guid>
+    </item>
+    <item>
+      <title>A Monosemantic Attribution Framework for Stable Interpretability in Clinical Neuroscience Large Language Models</title>
+      <link>https://arxiv.org/abs/2601.17952v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Michail Mamalakis, Tiago Azevedo, Cristian Cosentino, Chiara D&#x27;Ercoli, Subati Abulikemu, et al.</p><p>Interpretability remains a key challenge for deploying large language models (LLMs) in clinical settings such as Alzheimer&#x27;s disease progression diagnosis, where early and trustworthy predictions are essential. Existing attribution methods exhibit high inter-method variability and unstable explanations due to the polysemantic nature of LLM representations, while mechanistic interpretability approaches lack direct alignment with model inputs and outputs and do not provide explicit importance scor</p><p><strong>Tags:</strong> features, safety</p>]]></description>
+      <pubDate>Sun, 25 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2601.17952v1</guid>
+    </item>
+    <item>
+      <title>TensorLens: End-to-End Transformer Analysis via High-Order Attention Tensors</title>
+      <link>https://arxiv.org/abs/2601.17958v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Ido Andrew Atad, Itamar Zimerman, Shahar Katz, Lior Wolf</p><p>Attention matrices are fundamental to transformer research, supporting a broad range of applications including interpretability, visualization, manipulation, and distillation. Yet, most existing analyses focus on individual attention heads or layers, failing to account for the model&#x27;s global behavior. While prior efforts have extended attention formulations across multiple heads via averaging and matrix multiplications or incorporated components such as normalization and FFNs, a unified and comp</p><p><strong>Tags:</strong> attention, vision</p>]]></description>
+      <pubDate>Sun, 25 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2601.17958v1</guid>
+    </item>
+    <item>
+      <title>Implementing Tensor Logic: Unifying Datalog and Neural Reasoning via Tensor Contraction</title>
+      <link>https://arxiv.org/abs/2601.17188v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Swapn Shah, Wlodek Zadrozny</p><p>The unification of symbolic reasoning and neural networks remains a central challenge in artificial intelligence. Symbolic systems offer reliability and interpretability but lack scalability, while neural networks provide learning capabilities but sacrifice transparency. Tensor Logic, proposed by Domingos, suggests that logical rules and Einstein summation are mathematically equivalent, offering a principled path toward unification. This paper provides empirical validation of this framework thro</p><p><strong>Tags:</strong> reasoning</p>]]></description>
+      <pubDate>Fri, 23 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2601.17188v1</guid>
     </item>
     <item>
       <title>Attributing and Exploiting Safety Vectors through Global Optimization in Large Language Models</title>
@@ -189,34 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Alan Oursland</p><p>Gradient descent on log-sum-exp (LSE) objectives performs implicit expectation--maximization (EM): the gradient with respect to each component output equals its responsibility. The same theory predicts collapse without volume control analogous to the log-determinant in Gaussian mixture models. We instantiate the theory in a single-layer encoder with an LSE objective and InfoMax regularization for volume control. Experiments confirm the theory&#x27;s predictions. The gradient--responsibility identity </p><p><strong>Tags:</strong> SAE, theory</p>]]></description>
       <pubDate>Sat, 10 Jan 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2601.06478v1</guid>
-    </item>
-    <item>
-      <title>Do Sparse Autoencoders Identify Reasoning Features in Language Models?</title>
-      <link>https://arxiv.org/abs/2601.05679v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> George Ma, Zhongyuan Liang, Irene Y. Chen, Somayeh Sojoudi</p><p>We investigate whether sparse autoencoders (SAEs) identify genuine reasoning features in large language models (LLMs). Starting from features selected using standard contrastive activation methods, we introduce a falsification-oriented framework that combines causal token injection experiments and LLM-guided falsification to test whether feature activation reflects reasoning processes or superficial linguistic correlates. Across 20 configurations spanning multiple model families, layers, and rea</p><p><strong>Tags:</strong> SAE, features, reasoning</p>]]></description>
-      <pubDate>Fri, 09 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2601.05679v1</guid>
-    </item>
-    <item>
-      <title>Context-Aware Decoding for Faithful Vision-Language Generation</title>
-      <link>https://arxiv.org/abs/2601.05939v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Mehrdad Fazli, Bowen Wei, Ziwei Zhu</p><p>Hallucinations, generating responses inconsistent with the visual input, remain a critical limitation of large vision-language models (LVLMs), especially in open-ended tasks such as image captioning and visual reasoning. In this work, we probe the layer-wise generation dynamics that drive hallucinations and propose a training-free mitigation strategy. Employing the Logit Lens, we examine how LVLMs construct next-token distributions across decoder layers, uncovering a pronounced commitment-depth </p><p><strong>Tags:</strong> probing, vision, reasoning</p>]]></description>
-      <pubDate>Fri, 09 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2601.05939v1</guid>
-    </item>
-    <item>
-      <title>Circuit Mechanisms for Spatial Relation Generation in Diffusion Transformers</title>
-      <link>https://arxiv.org/abs/2601.06338v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Binxu Wang, Jingxuan Fan, Xu Pan</p><p>Diffusion Transformers (DiTs) have greatly advanced text-to-image generation, but models still struggle to generate the correct spatial relations between objects as specified in the text prompt. In this study, we adopt a mechanistic interpretability approach to investigate how a DiT can generate correct spatial relations between objects. We train, from scratch, DiTs of different sizes with different text encoders to learn to generate images containing two objects whose attributes and spatial rel</p><p><strong>Tags:</strong> circuits, vision</p>]]></description>
-      <pubDate>Fri, 09 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2601.06338v1</guid>
-    </item>
-    <item>
-      <title>LANGSAE EDITING: Improving Multilingual Information Retrieval via Post-hoc Language Identity Removal</title>
-      <link>https://arxiv.org/abs/2601.04768v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Dongjun Kim, Jeongho Yoon, Chanjun Park, Heuiseok Lim</p><p>Dense retrieval in multilingual settings often searches over mixed-language collections, yet multilingual embeddings encode language identity alongside semantics. This language signal can inflate similarity for same-language pairs and crowd out relevant evidence written in other languages. We propose LANGSAE EDITING, a post-hoc sparse autoencoder trained on pooled embeddings that enables controllable removal of language-identity signal directly in vector space. The method identifies language-ass</p><p><strong>Tags:</strong> SAE</p>]]></description>
-      <pubDate>Thu, 08 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2601.04768v1</guid>
     </item>
   </channel>
 </rss>
