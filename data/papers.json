@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-26",
+  "lastUpdated": "2026-01-27",
   "papers": [
     {
       "id": "ss-48681d875dd4a7fd38cd",
@@ -12,6 +12,58 @@
         "circuits"
       ],
       "source": "Semantic Scholar",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2601-18483v1",
+      "title": "Funny or Persuasive, but Not Both: Evaluating Fine-Grained Multi-Concept Control in LLMs",
+      "authors": "Arya Labroo, Ivaxi Sheth, Vyas Raina, Amaani Ahmed, Mario Fritz",
+      "date": "2026-01-26",
+      "url": "https://arxiv.org/abs/2601.18483v1",
+      "abstract": "Large Language Models (LLMs) offer strong generative capabilities, but many applications require explicit and \\textit{fine-grained} control over specific textual concepts, such as humor, persuasiveness, or formality. Prior approaches in prompting and representation engineering can provide coarse or single-attribute control, but systematic evaluation of multi-attribute settings remains limited. We introduce an evaluation framework for fine-grained controllability for both single- and dual-concept",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2601-17952v1",
+      "title": "A Monosemantic Attribution Framework for Stable Interpretability in Clinical Neuroscience Large Language Models",
+      "authors": "Michail Mamalakis, Tiago Azevedo, Cristian Cosentino, Chiara D'Ercoli, Subati Abulikemu, et al.",
+      "date": "2026-01-25",
+      "url": "https://arxiv.org/abs/2601.17952v1",
+      "abstract": "Interpretability remains a key challenge for deploying large language models (LLMs) in clinical settings such as Alzheimer's disease progression diagnosis, where early and trustworthy predictions are essential. Existing attribution methods exhibit high inter-method variability and unstable explanations due to the polysemantic nature of LLM representations, while mechanistic interpretability approaches lack direct alignment with model inputs and outputs and do not provide explicit importance scor",
+      "tags": [
+        "features",
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2601-17958v1",
+      "title": "TensorLens: End-to-End Transformer Analysis via High-Order Attention Tensors",
+      "authors": "Ido Andrew Atad, Itamar Zimerman, Shahar Katz, Lior Wolf",
+      "date": "2026-01-25",
+      "url": "https://arxiv.org/abs/2601.17958v1",
+      "abstract": "Attention matrices are fundamental to transformer research, supporting a broad range of applications including interpretability, visualization, manipulation, and distillation. Yet, most existing analyses focus on individual attention heads or layers, failing to account for the model's global behavior. While prior efforts have extended attention formulations across multiple heads via averaging and matrix multiplications or incorporated components such as normalization and FFNs, a unified and comp",
+      "tags": [
+        "attention",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2601-17188v1",
+      "title": "Implementing Tensor Logic: Unifying Datalog and Neural Reasoning via Tensor Contraction",
+      "authors": "Swapn Shah, Wlodek Zadrozny",
+      "date": "2026-01-23",
+      "url": "https://arxiv.org/abs/2601.17188v1",
+      "abstract": "The unification of symbolic reasoning and neural networks remains a central challenge in artificial intelligence. Symbolic systems offer reliability and interpretability but lack scalability, while neural networks provide learning capabilities but sacrifice transparency. Tensor Logic, proposed by Domingos, suggests that logical rules and Einstein summation are mathematically equivalent, offering a principled path toward unification. This paper provides empirical validation of this framework thro",
+      "tags": [
+        "reasoning"
+      ],
+      "source": "arXiv",
       "featured": false
     },
     {
@@ -377,6 +429,21 @@
       "tags": [
         "circuits",
         "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2601-05679v5",
+      "title": "Falsifying Sparse Autoencoder Reasoning Features in Language Models",
+      "authors": "George Ma, Zhongyuan Liang, Irene Y. Chen, Somayeh Sojoudi",
+      "date": "2026-01-09",
+      "url": "https://arxiv.org/abs/2601.05679v5",
+      "abstract": "We study how reliably sparse autoencoders (SAEs) support claims about reasoning-related internal features in large language models. We first give a stylized analysis showing that sparsity-regularized decoding can preferentially retain stable low-dimensional correlates while suppressing high-dimensional within-behavior variation, motivating the possibility that contrastively selected \"reasoning\" features may concentrate on cue-like structure when such cues are coupled with reasoning traces. Build",
+      "tags": [
+        "SAE",
+        "features",
+        "reasoning"
       ],
       "source": "arXiv",
       "featured": false
