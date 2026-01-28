@@ -5,7 +5,7 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 27 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 28 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
@@ -16,11 +16,25 @@
       <guid>https://www.semanticscholar.org/paper/48681d875dd4a7fd38cd0b9f05262cccabefe846</guid>
     </item>
     <item>
+      <title>How Do Transformers Learn to Associate Tokens: Gradient Leading Terms Bring Mechanistic Interpretability</title>
+      <link>https://arxiv.org/abs/2601.19208v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Shawn Im, Changdae Oh, Zhen Fang, Sharon Li</p><p>Semantic associations such as the link between &quot;bird&quot; and &quot;flew&quot; are foundational for language modeling as they enable models to go beyond memorization and instead generalize and generate coherent text. Understanding how these associations are learned and represented in language models is essential for connecting deep learning with linguistic theory and developing a mechanistic foundation for large language models. In this work, we analyze how these associations emerge from natural language data</p><p><strong>Tags:</strong> theory</p>]]></description>
+      <pubDate>Tue, 27 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2601.19208v1</guid>
+    </item>
+    <item>
       <title>Funny or Persuasive, but Not Both: Evaluating Fine-Grained Multi-Concept Control in LLMs</title>
       <link>https://arxiv.org/abs/2601.18483v1</link>
       <description><![CDATA[<p><strong>Authors:</strong> Arya Labroo, Ivaxi Sheth, Vyas Raina, Amaani Ahmed, Mario Fritz</p><p>Large Language Models (LLMs) offer strong generative capabilities, but many applications require explicit and \textit{fine-grained} control over specific textual concepts, such as humor, persuasiveness, or formality. Prior approaches in prompting and representation engineering can provide coarse or single-attribute control, but systematic evaluation of multi-attribute settings remains limited. We introduce an evaluation framework for fine-grained controllability for both single- and dual-concept</p>]]></description>
       <pubDate>Mon, 26 Jan 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2601.18483v1</guid>
+    </item>
+    <item>
+      <title>A Few Bad Neurons: Isolating and Surgically Correcting Sycophancy</title>
+      <link>https://arxiv.org/abs/2601.18939v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Claire O&#x27;Brien, Jessica Seto, Dristi Roy, Aditya Dwivedi, Sunishchal Dev, et al.</p><p>Behavioral alignment in large language models (LLMs) is often achieved through broad fine-tuning, which can result in undesired side effects like distributional shift and low interpretability. We propose a method for alignment that identifies and updates only the neurons most responsible for a given behavior, a targeted approach that allows for fine-tuning with significantly less data. Using sparse autoencoders (SAEs) and linear probes, we isolate the 3% of MLP neurons most predictive of a targe</p><p><strong>Tags:</strong> SAE, safety, probing</p>]]></description>
+      <pubDate>Mon, 26 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2601.18939v1</guid>
     </item>
     <item>
       <title>A Monosemantic Attribution Framework for Stable Interpretability in Clinical Neuroscience Large Language Models</title>
@@ -203,20 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Hassan Ugail, Newton Howard</p><p>Large language models perform text generation through high-dimensional internal dynamics, yet the temporal organisation of these dynamics remains poorly understood. Most interpretability approaches emphasise static representations or causal interventions, leaving temporal structure largely unexplored. Drawing on neuroscience, where temporal integration and metastability are core markers of neural organisation, we adapt these concepts to transformer models and discuss a composite dynamical metric</p>]]></description>
       <pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2601.11622v1</guid>
-    </item>
-    <item>
-      <title>Time Travel Engine: A Shared Latent Chronological Manifold Enables Historical Navigation in Large Language Models</title>
-      <link>https://arxiv.org/abs/2601.06437v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Jingmin An, Wei Liu, Qian Wang, Fang Fang</p><p>Time functions as a fundamental dimension of human cognition, yet the mechanisms by which Large Language Models (LLMs) encode chronological progression remain opaque. We demonstrate that temporal information in their latent space is organized not as discrete clusters but as a continuous, traversable geometry. We introduce the Time Travel Engine (TTE), an interpretability-driven framework that projects diachronic linguistic patterns onto a shared chronological manifold. Unlike surface-level promp</p>]]></description>
-      <pubDate>Sat, 10 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2601.06437v1</guid>
-    </item>
-    <item>
-      <title>Deriving Decoder-Free Sparse Autoencoders from First Principles</title>
-      <link>https://arxiv.org/abs/2601.06478v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Alan Oursland</p><p>Gradient descent on log-sum-exp (LSE) objectives performs implicit expectation--maximization (EM): the gradient with respect to each component output equals its responsibility. The same theory predicts collapse without volume control analogous to the log-determinant in Gaussian mixture models. We instantiate the theory in a single-layer encoder with an LSE objective and InfoMax regularization for volume control. Experiments confirm the theory&#x27;s predictions. The gradient--responsibility identity </p><p><strong>Tags:</strong> SAE, theory</p>]]></description>
-      <pubDate>Sat, 10 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2601.06478v1</guid>
     </item>
   </channel>
 </rss>
