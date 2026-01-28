@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-27",
+  "lastUpdated": "2026-01-28",
   "papers": [
     {
       "id": "ss-48681d875dd4a7fd38cd",
@@ -15,6 +15,19 @@
       "featured": false
     },
     {
+      "id": "arxiv-2601-19208v1",
+      "title": "How Do Transformers Learn to Associate Tokens: Gradient Leading Terms Bring Mechanistic Interpretability",
+      "authors": "Shawn Im, Changdae Oh, Zhen Fang, Sharon Li",
+      "date": "2026-01-27",
+      "url": "https://arxiv.org/abs/2601.19208v1",
+      "abstract": "Semantic associations such as the link between \"bird\" and \"flew\" are foundational for language modeling as they enable models to go beyond memorization and instead generalize and generate coherent text. Understanding how these associations are learned and represented in language models is essential for connecting deep learning with linguistic theory and developing a mechanistic foundation for large language models. In this work, we analyze how these associations emerge from natural language data",
+      "tags": [
+        "theory"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
       "id": "arxiv-2601-18483v1",
       "title": "Funny or Persuasive, but Not Both: Evaluating Fine-Grained Multi-Concept Control in LLMs",
       "authors": "Arya Labroo, Ivaxi Sheth, Vyas Raina, Amaani Ahmed, Mario Fritz",
@@ -22,6 +35,21 @@
       "url": "https://arxiv.org/abs/2601.18483v1",
       "abstract": "Large Language Models (LLMs) offer strong generative capabilities, but many applications require explicit and \\textit{fine-grained} control over specific textual concepts, such as humor, persuasiveness, or formality. Prior approaches in prompting and representation engineering can provide coarse or single-attribute control, but systematic evaluation of multi-attribute settings remains limited. We introduce an evaluation framework for fine-grained controllability for both single- and dual-concept",
       "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2601-18939v1",
+      "title": "A Few Bad Neurons: Isolating and Surgically Correcting Sycophancy",
+      "authors": "Claire O'Brien, Jessica Seto, Dristi Roy, Aditya Dwivedi, Sunishchal Dev, et al.",
+      "date": "2026-01-26",
+      "url": "https://arxiv.org/abs/2601.18939v1",
+      "abstract": "Behavioral alignment in large language models (LLMs) is often achieved through broad fine-tuning, which can result in undesired side effects like distributional shift and low interpretability. We propose a method for alignment that identifies and updates only the neurons most responsible for a given behavior, a targeted approach that allows for fine-tuning with significantly less data. Using sparse autoencoders (SAEs) and linear probes, we isolate the 3% of MLP neurons most predictive of a targe",
+      "tags": [
+        "SAE",
+        "safety",
+        "probing"
+      ],
       "source": "arXiv",
       "featured": false
     },
