@@ -5,7 +5,7 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 28 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 29 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
@@ -16,11 +16,32 @@
       <guid>https://www.semanticscholar.org/paper/48681d875dd4a7fd38cd0b9f05262cccabefe846</guid>
     </item>
     <item>
+      <title>Concept Component Analysis: A Principled Approach for Concept Extraction in LLMs</title>
+      <link>https://arxiv.org/abs/2601.20420v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Yuhang Liu, Erdun Gao, Dong Gong, Anton van den Hengel, Javen Qinfeng Shi</p><p>Developing human understandable interpretation of large language models (LLMs) becomes increasingly critical for their deployment in essential domains. Mechanistic interpretability seeks to mitigate the issues through extracts human-interpretable process and concepts from LLMs&#x27; activations. Sparse autoencoders (SAEs) have emerged as a popular approach for extracting interpretable and monosemantic concepts by decomposing the LLM internal representations into a dictionary. Despite their empirical </p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Wed, 28 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2601.20420v1</guid>
+    </item>
+    <item>
       <title>How Do Transformers Learn to Associate Tokens: Gradient Leading Terms Bring Mechanistic Interpretability</title>
       <link>https://arxiv.org/abs/2601.19208v1</link>
       <description><![CDATA[<p><strong>Authors:</strong> Shawn Im, Changdae Oh, Zhen Fang, Sharon Li</p><p>Semantic associations such as the link between &quot;bird&quot; and &quot;flew&quot; are foundational for language modeling as they enable models to go beyond memorization and instead generalize and generate coherent text. Understanding how these associations are learned and represented in language models is essential for connecting deep learning with linguistic theory and developing a mechanistic foundation for large language models. In this work, we analyze how these associations emerge from natural language data</p><p><strong>Tags:</strong> theory</p>]]></description>
       <pubDate>Tue, 27 Jan 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2601.19208v1</guid>
+    </item>
+    <item>
+      <title>Sparse CLIP: Co-Optimizing Interpretability and Performance in Contrastive Learning</title>
+      <link>https://arxiv.org/abs/2601.20075v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Chuan Qin, Constantin Venhoff, Sonia Joseph, Fanyi Xiao, Stefan Scherer</p><p>Contrastive Language-Image Pre-training (CLIP) has become a cornerstone in vision-language representation learning, powering diverse downstream tasks and serving as the default vision backbone in multimodal large language models (MLLMs). Despite its success, CLIP&#x27;s dense and opaque latent representations pose significant interpretability challenges. A common assumption is that interpretability and performance are in tension: enforcing sparsity during training degrades accuracy, motivating recent</p><p><strong>Tags:</strong> vision</p>]]></description>
+      <pubDate>Tue, 27 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2601.20075v1</guid>
+    </item>
+    <item>
+      <title>Decomposing multimodal embedding spaces with group-sparse autoencoders</title>
+      <link>https://arxiv.org/abs/2601.20028v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Chiraag Kaushik, Davis Barch, Andrea Fanelli</p><p>The Linear Representation Hypothesis asserts that the embeddings learned by neural networks can be understood as linear combinations of features corresponding to high-level concepts. Based on this ansatz, sparse autoencoders (SAEs) have recently become a popular method for decomposing embeddings into a sparse combination of linear directions, which have been shown empirically to often correspond to human-interpretable semantics. However, recent attempts to apply SAEs to multimodal embedding spac</p><p><strong>Tags:</strong> SAE, features, vision</p>]]></description>
+      <pubDate>Tue, 27 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2601.20028v1</guid>
     </item>
     <item>
       <title>Funny or Persuasive, but Not Both: Evaluating Fine-Grained Multi-Concept Control in LLMs</title>
@@ -196,27 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Daniil Gurgurov, Yusser Al Ghussin, Tanja Baeumel, Cheng-Ting Chou, Patrick Schramowski, et al.</p><p>Understanding and controlling the behavior of large language models (LLMs) is an increasingly important topic in multilingual NLP. Beyond prompting or fine-tuning, , i.e.,~manipulating internal representations during inference, has emerged as a more efficient and interpretable technique for adapting models to a target language. Yet, no dedicated benchmarks or evaluation protocols exist to quantify the effectiveness of steering techniques. We introduce CLaS-Bench, a lightweight parallel-question </p><p><strong>Tags:</strong> safety, steering</p>]]></description>
       <pubDate>Tue, 13 Jan 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2601.08331v1</guid>
-    </item>
-    <item>
-      <title>Reasoning Beyond Chain-of-Thought: A Latent Computational Mode in Large Language Models</title>
-      <link>https://arxiv.org/abs/2601.08058v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Zhenghao He, Guangzhi Xiong, Bohan Liu, Sanchit Sinha, Aidong Zhang</p><p>Chain-of-Thought (CoT) prompting has improved the reasoning performance of large language models (LLMs), but it remains unclear why it works and whether it is the unique mechanism for triggering reasoning in large language models. In this work, we study this question by directly analyzing and intervening on the internal representations of LLMs with Sparse Autoencoders (SAEs), identifying a small set of latent features that are causally associated with LLM reasoning behavior. Across multiple mode</p><p><strong>Tags:</strong> SAE, features, reasoning</p>]]></description>
-      <pubDate>Mon, 12 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2601.08058v1</guid>
-    </item>
-    <item>
-      <title>Semantic Gravity Wells: Why Negative Constraints Backfire</title>
-      <link>https://arxiv.org/abs/2601.08070v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Shailesh Rana</p><p>Negative constraints (instructions of the form &quot;do not use word X&quot;) represent a fundamental test of instruction-following capability in large language models. Despite their apparent simplicity, these constraints fail with striking regularity, and the conditions governing failure have remained poorly understood. This paper presents the first comprehensive mechanistic investigation of negative instruction failure. We introduce semantic pressure, a quantitative measure of the model&#x27;s intrinsic prob</p>]]></description>
-      <pubDate>Mon, 12 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2601.08070v1</guid>
-    </item>
-    <item>
-      <title>Dynamical Systems Analysis Reveals Functional Regimes in Large Language Models</title>
-      <link>https://arxiv.org/abs/2601.11622v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Hassan Ugail, Newton Howard</p><p>Large language models perform text generation through high-dimensional internal dynamics, yet the temporal organisation of these dynamics remains poorly understood. Most interpretability approaches emphasise static representations or causal interventions, leaving temporal structure largely unexplored. Drawing on neuroscience, where temporal integration and metastability are core markers of neural organisation, we adapt these concepts to transformer models and discuss a composite dynamical metric</p>]]></description>
-      <pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2601.11622v1</guid>
     </item>
   </channel>
 </rss>
