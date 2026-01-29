@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-28",
+  "lastUpdated": "2026-01-29",
   "papers": [
     {
       "id": "ss-48681d875dd4a7fd38cd",
@@ -15,6 +15,20 @@
       "featured": false
     },
     {
+      "id": "arxiv-2601-20420v1",
+      "title": "Concept Component Analysis: A Principled Approach for Concept Extraction in LLMs",
+      "authors": "Yuhang Liu, Erdun Gao, Dong Gong, Anton van den Hengel, Javen Qinfeng Shi",
+      "date": "2026-01-28",
+      "url": "https://arxiv.org/abs/2601.20420v1",
+      "abstract": "Developing human understandable interpretation of large language models (LLMs) becomes increasingly critical for their deployment in essential domains. Mechanistic interpretability seeks to mitigate the issues through extracts human-interpretable process and concepts from LLMs' activations. Sparse autoencoders (SAEs) have emerged as a popular approach for extracting interpretable and monosemantic concepts by decomposing the LLM internal representations into a dictionary. Despite their empirical ",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
       "id": "arxiv-2601-19208v1",
       "title": "How Do Transformers Learn to Associate Tokens: Gradient Leading Terms Bring Mechanistic Interpretability",
       "authors": "Shawn Im, Changdae Oh, Zhen Fang, Sharon Li",
@@ -23,6 +37,34 @@
       "abstract": "Semantic associations such as the link between \"bird\" and \"flew\" are foundational for language modeling as they enable models to go beyond memorization and instead generalize and generate coherent text. Understanding how these associations are learned and represented in language models is essential for connecting deep learning with linguistic theory and developing a mechanistic foundation for large language models. In this work, we analyze how these associations emerge from natural language data",
       "tags": [
         "theory"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2601-20075v1",
+      "title": "Sparse CLIP: Co-Optimizing Interpretability and Performance in Contrastive Learning",
+      "authors": "Chuan Qin, Constantin Venhoff, Sonia Joseph, Fanyi Xiao, Stefan Scherer",
+      "date": "2026-01-27",
+      "url": "https://arxiv.org/abs/2601.20075v1",
+      "abstract": "Contrastive Language-Image Pre-training (CLIP) has become a cornerstone in vision-language representation learning, powering diverse downstream tasks and serving as the default vision backbone in multimodal large language models (MLLMs). Despite its success, CLIP's dense and opaque latent representations pose significant interpretability challenges. A common assumption is that interpretability and performance are in tension: enforcing sparsity during training degrades accuracy, motivating recent",
+      "tags": [
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2601-20028v1",
+      "title": "Decomposing multimodal embedding spaces with group-sparse autoencoders",
+      "authors": "Chiraag Kaushik, Davis Barch, Andrea Fanelli",
+      "date": "2026-01-27",
+      "url": "https://arxiv.org/abs/2601.20028v1",
+      "abstract": "The Linear Representation Hypothesis asserts that the embeddings learned by neural networks can be understood as linear combinations of features corresponding to high-level concepts. Based on this ansatz, sparse autoencoders (SAEs) have recently become a popular method for decomposing embeddings into a sparse combination of linear directions, which have been shown empirically to often correspond to human-interpretable semantics. However, recent attempts to apply SAEs to multimodal embedding spac",
+      "tags": [
+        "SAE",
+        "features",
+        "vision"
       ],
       "source": "arXiv",
       "featured": false
