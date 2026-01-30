@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-29",
+  "lastUpdated": "2026-01-30",
   "papers": [
     {
       "id": "ss-48681d875dd4a7fd38cd",
@@ -12,6 +12,32 @@
         "circuits"
       ],
       "source": "Semantic Scholar",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2601-22012v1",
+      "title": "Putting a Face to Forgetting: Continual Learning meets Mechanistic Interpretability",
+      "authors": "Sergi Masip, Gido M. van de Ven, Javier Ferrando, Tinne Tuytelaars",
+      "date": "2026-01-29",
+      "url": "https://arxiv.org/abs/2601.22012v1",
+      "abstract": "Catastrophic forgetting in continual learning is often measured at the performance or last-layer representation level, overlooking the underlying mechanisms. We introduce a mechanistic framework that offers a geometric interpretation of catastrophic forgetting as the result of transformations to the encoding of individual features. These transformations can lead to forgetting by reducing the allocated capacity of features (worse representation) and disrupting their readout by downstream computat",
+      "tags": [
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2601-21996v1",
+      "title": "Mechanistic Data Attribution: Tracing the Training Origins of Interpretable LLM Units",
+      "authors": "Jianhui Chen, Yuzhang Luo, Liangming Pan",
+      "date": "2026-01-29",
+      "url": "https://arxiv.org/abs/2601.21996v1",
+      "abstract": "While Mechanistic Interpretability has identified interpretable circuits in LLMs, their causal origins in training data remain elusive. We introduce Mechanistic Data Attribution (MDA), a scalable framework that employs Influence Functions to trace interpretable units back to specific training samples. Through extensive experiments on the Pythia family, we causally validate that targeted intervention--removing or augmenting a small fraction of high-influence samples--significantly modulates the e",
+      "tags": [
+        "circuits"
+      ],
+      "source": "arXiv",
       "featured": false
     },
     {
@@ -986,6 +1012,19 @@
       "featured": false
     },
     {
+      "id": "ss-ca269e74084894dd4cc6",
+      "title": "Cracking the Circuits: Mechanistic Interpretability in Large Language Models",
+      "authors": "Dost Muhammad, Muhammad Salman, Mushtaq Ali, Malika Bendechache",
+      "date": "2025-12-23",
+      "url": "https://www.semanticscholar.org/paper/ca269e74084894dd4cc60134b50cebf52647849f",
+      "abstract": "Mechanistic interpretability aims to uncover how internal components of large language models (LLMs) contribute to their overall behaviour. While previous research has revealed interpretable circuits in small-scale transformers, the field still lacks a systematic and mathematically grounded framework for understanding, validating, and comparing interpretability techniques. In this paper, we introduce a unified formalism and taxonomy for mechanistic interpretability, defining core concepts such a",
+      "tags": [
+        "circuits"
+      ],
+      "source": "Semantic Scholar",
+      "featured": false
+    },
+    {
       "id": "arxiv-2512-19115v1",
       "title": "Generative Giants, Retrieval Weaklings: Why do Multimodal Large Language Models Fail at Multimodal Retrieval?",
       "authors": "Hengyi Feng, Zeang Sheng, Meiyi Qiang, Wentao Zhang",
@@ -1457,6 +1496,20 @@
       "tags": [
         "circuits",
         "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2512-05534v3",
+      "title": "A Unified Theory of Sparse Dictionary Learning in Mechanistic Interpretability: Piecewise Biconvexity and Spurious Minima",
+      "authors": "Yiming Tang, Harshvardhan Saini, Zhaoqian Yao, Zheng Lin, Yizhen Liao, et al.",
+      "date": "2025-12-05",
+      "url": "https://arxiv.org/abs/2512.05534v3",
+      "abstract": "As AI models achieve remarkable capabilities across diverse domains, understanding what representations they learn and how they encode concepts has become increasingly important for both scientific progress and trustworthy deployment. Recent works in mechanistic interpretability have widely reported that neural networks represent meaningful concepts as linear directions in their representation spaces and often encode diverse concepts in superposition. Various sparse dictionary learning (SDL) met",
+      "tags": [
+        "superposition",
+        "theory"
       ],
       "source": "arXiv",
       "featured": false
