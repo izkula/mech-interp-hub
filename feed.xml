@@ -5,7 +5,7 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 29 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 30 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
@@ -14,6 +14,20 @@
       <description><![CDATA[<p><strong>Authors:</strong> Zhihao Gao, Jing Zhou, Li Zhu, Yuefeng Hao, Zhanlong Zhang, et al.</p><p><strong>Tags:</strong> circuits</p>]]></description>
       <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://www.semanticscholar.org/paper/48681d875dd4a7fd38cd0b9f05262cccabefe846</guid>
+    </item>
+    <item>
+      <title>Putting a Face to Forgetting: Continual Learning meets Mechanistic Interpretability</title>
+      <link>https://arxiv.org/abs/2601.22012v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Sergi Masip, Gido M. van de Ven, Javier Ferrando, Tinne Tuytelaars</p><p>Catastrophic forgetting in continual learning is often measured at the performance or last-layer representation level, overlooking the underlying mechanisms. We introduce a mechanistic framework that offers a geometric interpretation of catastrophic forgetting as the result of transformations to the encoding of individual features. These transformations can lead to forgetting by reducing the allocated capacity of features (worse representation) and disrupting their readout by downstream computat</p><p><strong>Tags:</strong> features</p>]]></description>
+      <pubDate>Thu, 29 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2601.22012v1</guid>
+    </item>
+    <item>
+      <title>Mechanistic Data Attribution: Tracing the Training Origins of Interpretable LLM Units</title>
+      <link>https://arxiv.org/abs/2601.21996v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Jianhui Chen, Yuzhang Luo, Liangming Pan</p><p>While Mechanistic Interpretability has identified interpretable circuits in LLMs, their causal origins in training data remain elusive. We introduce Mechanistic Data Attribution (MDA), a scalable framework that employs Influence Functions to trace interpretable units back to specific training samples. Through extensive experiments on the Pythia family, we causally validate that targeted intervention--removing or augmenting a small fraction of high-influence samples--significantly modulates the e</p><p><strong>Tags:</strong> circuits</p>]]></description>
+      <pubDate>Thu, 29 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2601.21996v1</guid>
     </item>
     <item>
       <title>Concept Component Analysis: A Principled Approach for Concept Extraction in LLMs</title>
@@ -203,20 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Junsol Kim, Shiyang Lai, Nino Scherrer, Blaise Agüera y Arcas, James Evans</p><p>Large language models have achieved remarkable capabilities across domains, yet mechanisms underlying sophisticated reasoning remain elusive. Recent reasoning models outperform comparable instruction-tuned models on complex cognitive tasks, attributed to extended computation through longer chains of thought. Here we show that enhanced reasoning emerges not from extended computation alone, but from simulating multi-agent-like interactions -- a society of thought -- which enables diversification a</p><p><strong>Tags:</strong> reasoning</p>]]></description>
       <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2601.10825v1</guid>
-    </item>
-    <item>
-      <title>Where Knowledge Collides: A Mechanistic Study of Intra-Memory Knowledge Conflict in Language Models</title>
-      <link>https://arxiv.org/abs/2601.09445v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Minh Vu Pham, Hsuvas Borkakoty, Yufang Hou</p><p>In language models (LMs), intra-memory knowledge conflict largely arises when inconsistent information about the same event is encoded within the model&#x27;s parametric knowledge. While prior work has primarily focused on resolving conflicts between a model&#x27;s internal knowledge and external resources through approaches such as fine-tuning or knowledge editing, the problem of localizing conflicts that originate during pre-training within the model&#x27;s internal representations remain unexplored. In this</p><p><strong>Tags:</strong> editing</p>]]></description>
-      <pubDate>Wed, 14 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2601.09445v1</guid>
-    </item>
-    <item>
-      <title>CLaS-Bench: A Cross-Lingual Alignment and Steering Benchmark</title>
-      <link>https://arxiv.org/abs/2601.08331v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Daniil Gurgurov, Yusser Al Ghussin, Tanja Baeumel, Cheng-Ting Chou, Patrick Schramowski, et al.</p><p>Understanding and controlling the behavior of large language models (LLMs) is an increasingly important topic in multilingual NLP. Beyond prompting or fine-tuning, , i.e.,~manipulating internal representations during inference, has emerged as a more efficient and interpretable technique for adapting models to a target language. Yet, no dedicated benchmarks or evaluation protocols exist to quantify the effectiveness of steering techniques. We introduce CLaS-Bench, a lightweight parallel-question </p><p><strong>Tags:</strong> safety, steering</p>]]></description>
-      <pubDate>Tue, 13 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2601.08331v1</guid>
     </item>
   </channel>
 </rss>
