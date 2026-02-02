@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-01",
+  "lastUpdated": "2026-02-02",
   "papers": [
     {
       "id": "ss-48681d875dd4a7fd38cd",
@@ -12,6 +12,60 @@
         "circuits"
       ],
       "source": "Semantic Scholar",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2601-22795v1",
+      "title": "Sparse or Dense? A Mechanistic Estimation of Computation Density in Transformer-based LLMs",
+      "authors": "Corentin Kervadec, Iuliia Lysova, Marco Baroni, Gemma Boleda",
+      "date": "2026-01-30",
+      "url": "https://arxiv.org/abs/2601.22795v1",
+      "abstract": "Transformer-based large language models (LLMs) are comprised of billions of parameters arranged in deep and wide computational graphs. Several studies on LLM efficiency optimization argue that it is possible to prune a significant portion of the parameters, while only marginally impacting performance. This suggests that the computation is not uniformly distributed across the parameters. We introduce here a technique to systematically quantify computation density in LLMs. In particular, we design",
+      "tags": [
+        "circuits"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2601-22594v1",
+      "title": "Language Model Circuits Are Sparse in the Neuron Basis",
+      "authors": "Aryaman Arora, Zhengxuan Wu, Jacob Steinhardt, Sarah Schwettmann",
+      "date": "2026-01-30",
+      "url": "https://arxiv.org/abs/2601.22594v1",
+      "abstract": "The high-level concepts that a neural network uses to perform computation need not be aligned to individual neurons (Smolensky, 1986). Language model interpretability research has thus turned to techniques such as \\textit{sparse autoencoders} (SAEs) to decompose the neuron basis into more interpretable units of model computation, for tasks such as \\textit{circuit tracing}. However, not all neuron-based representations are uninterpretable. For the first time, we empirically show that \\textbf{MLP ",
+      "tags": [
+        "SAE",
+        "circuits"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2601-22447v1",
+      "title": "Beyond Activation Patterns: A Weight-Based Out-of-Context Explanation of Sparse Autoencoder Features",
+      "authors": "Yiting Liu, Zhi-Hong Deng",
+      "date": "2026-01-30",
+      "url": "https://arxiv.org/abs/2601.22447v1",
+      "abstract": "Sparse autoencoders (SAEs) have emerged as a powerful technique for decomposing language model representations into interpretable features. Current interpretation methods infer feature semantics from activation patterns, but overlook that features are trained to reconstruct activations that serve computational roles in the forward pass. We introduce a novel weight-based interpretation framework that measures functional effects through direct weight interactions, requiring no activation data. Thr",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2601-22928v1",
+      "title": "LLMs Explain't: A Post-Mortem on Semantic Interpretability in Transformer Models",
+      "authors": "Alhassan Abdelhalim, Janick Edinger, S\u00f6ren Laue, Michaela Regneri",
+      "date": "2026-01-30",
+      "url": "https://arxiv.org/abs/2601.22928v1",
+      "abstract": "Large Language Models (LLMs) are becoming increasingly popular in pervasive computing due to their versatility and strong performance. However, despite their ubiquitous use, the exact mechanisms underlying their outstanding performance remain unclear. Different methods for LLM explainability exist, and many are, as a method, not fully understood themselves. We started with the question of how linguistic abstraction emerges in LLMs, aiming to detect it across different LLM modules (attention head",
+      "tags": [
+        "attention"
+      ],
+      "source": "arXiv",
       "featured": false
     },
     {
@@ -36,6 +90,19 @@
       "abstract": "While Mechanistic Interpretability has identified interpretable circuits in LLMs, their causal origins in training data remain elusive. We introduce Mechanistic Data Attribution (MDA), a scalable framework that employs Influence Functions to trace interpretable units back to specific training samples. Through extensive experiments on the Pythia family, we causally validate that targeted intervention--removing or augmenting a small fraction of high-influence samples--significantly modulates the e",
       "tags": [
         "circuits"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2601-22257v1",
+      "title": "Symmetry Breaking in Transformers for Efficient and Interpretable Training",
+      "authors": "Eva Silverstein, Daniel Kunin, Vasudev Shyam",
+      "date": "2026-01-29",
+      "url": "https://arxiv.org/abs/2601.22257v1",
+      "abstract": "The attention mechanism in its standard implementation contains extraneous rotational degrees of freedom that are carried through computation but do not affect model activations or outputs. We introduce a simple symmetry-breaking protocol that inserts a preferred direction into this rotational space through batchwise-sampled, unlearned query and value biases. This modification has two theoretically motivated and empirically validated consequences. First, it can substantially improve the performa",
+      "tags": [
+        "theory"
       ],
       "source": "arXiv",
       "featured": false
