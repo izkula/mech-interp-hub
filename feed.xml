@@ -5,7 +5,7 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 02 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
@@ -14,6 +14,34 @@
       <description><![CDATA[<p><strong>Authors:</strong> Zhihao Gao, Jing Zhou, Li Zhu, Yuefeng Hao, Zhanlong Zhang, et al.</p><p><strong>Tags:</strong> circuits</p>]]></description>
       <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://www.semanticscholar.org/paper/48681d875dd4a7fd38cd0b9f05262cccabefe846</guid>
+    </item>
+    <item>
+      <title>Sparse or Dense? A Mechanistic Estimation of Computation Density in Transformer-based LLMs</title>
+      <link>https://arxiv.org/abs/2601.22795v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Corentin Kervadec, Iuliia Lysova, Marco Baroni, Gemma Boleda</p><p>Transformer-based large language models (LLMs) are comprised of billions of parameters arranged in deep and wide computational graphs. Several studies on LLM efficiency optimization argue that it is possible to prune a significant portion of the parameters, while only marginally impacting performance. This suggests that the computation is not uniformly distributed across the parameters. We introduce here a technique to systematically quantify computation density in LLMs. In particular, we design</p><p><strong>Tags:</strong> circuits</p>]]></description>
+      <pubDate>Fri, 30 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2601.22795v1</guid>
+    </item>
+    <item>
+      <title>Language Model Circuits Are Sparse in the Neuron Basis</title>
+      <link>https://arxiv.org/abs/2601.22594v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Aryaman Arora, Zhengxuan Wu, Jacob Steinhardt, Sarah Schwettmann</p><p>The high-level concepts that a neural network uses to perform computation need not be aligned to individual neurons (Smolensky, 1986). Language model interpretability research has thus turned to techniques such as \textit{sparse autoencoders} (SAEs) to decompose the neuron basis into more interpretable units of model computation, for tasks such as \textit{circuit tracing}. However, not all neuron-based representations are uninterpretable. For the first time, we empirically show that \textbf{MLP </p><p><strong>Tags:</strong> SAE, circuits</p>]]></description>
+      <pubDate>Fri, 30 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2601.22594v1</guid>
+    </item>
+    <item>
+      <title>Beyond Activation Patterns: A Weight-Based Out-of-Context Explanation of Sparse Autoencoder Features</title>
+      <link>https://arxiv.org/abs/2601.22447v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Yiting Liu, Zhi-Hong Deng</p><p>Sparse autoencoders (SAEs) have emerged as a powerful technique for decomposing language model representations into interpretable features. Current interpretation methods infer feature semantics from activation patterns, but overlook that features are trained to reconstruct activations that serve computational roles in the forward pass. We introduce a novel weight-based interpretation framework that measures functional effects through direct weight interactions, requiring no activation data. Thr</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Fri, 30 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2601.22447v1</guid>
+    </item>
+    <item>
+      <title>LLMs Explain&#x27;t: A Post-Mortem on Semantic Interpretability in Transformer Models</title>
+      <link>https://arxiv.org/abs/2601.22928v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Alhassan Abdelhalim, Janick Edinger, Sören Laue, Michaela Regneri</p><p>Large Language Models (LLMs) are becoming increasingly popular in pervasive computing due to their versatility and strong performance. However, despite their ubiquitous use, the exact mechanisms underlying their outstanding performance remain unclear. Different methods for LLM explainability exist, and many are, as a method, not fully understood themselves. We started with the question of how linguistic abstraction emerges in LLMs, aiming to detect it across different LLM modules (attention head</p><p><strong>Tags:</strong> attention</p>]]></description>
+      <pubDate>Fri, 30 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2601.22928v1</guid>
     </item>
     <item>
       <title>Putting a Face to Forgetting: Continual Learning meets Mechanistic Interpretability</title>
@@ -28,6 +56,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Jianhui Chen, Yuzhang Luo, Liangming Pan</p><p>While Mechanistic Interpretability has identified interpretable circuits in LLMs, their causal origins in training data remain elusive. We introduce Mechanistic Data Attribution (MDA), a scalable framework that employs Influence Functions to trace interpretable units back to specific training samples. Through extensive experiments on the Pythia family, we causally validate that targeted intervention--removing or augmenting a small fraction of high-influence samples--significantly modulates the e</p><p><strong>Tags:</strong> circuits</p>]]></description>
       <pubDate>Thu, 29 Jan 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2601.21996v1</guid>
+    </item>
+    <item>
+      <title>Symmetry Breaking in Transformers for Efficient and Interpretable Training</title>
+      <link>https://arxiv.org/abs/2601.22257v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Eva Silverstein, Daniel Kunin, Vasudev Shyam</p><p>The attention mechanism in its standard implementation contains extraneous rotational degrees of freedom that are carried through computation but do not affect model activations or outputs. We introduce a simple symmetry-breaking protocol that inserts a preferred direction into this rotational space through batchwise-sampled, unlearned query and value biases. This modification has two theoretically motivated and empirically validated consequences. First, it can substantially improve the performa</p><p><strong>Tags:</strong> theory</p>]]></description>
+      <pubDate>Thu, 29 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2601.22257v1</guid>
     </item>
     <item>
       <title>Concept Component Analysis: A Principled Approach for Concept Extraction in LLMs</title>
@@ -182,41 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Lecheng Yan, Ruizhe Li, Guanhua Chen, Qing Li, Jiahui Geng, et al.</p><p>Reinforcement Learning with Verifiable Rewards (RLVR) is highly effective for enhancing LLM reasoning, yet recent evidence shows models like Qwen 2.5 achieve significant gains even with spurious or incorrect rewards. We investigate this phenomenon and identify a &quot;Perplexity Paradox&quot;: spurious RLVR triggers a divergence where answer-token perplexity drops while prompt-side coherence degrades, suggesting the model is bypassing reasoning in favor of memorization. Using Path Patching, Logit Lens, JS</p><p><strong>Tags:</strong> reasoning</p>]]></description>
       <pubDate>Fri, 16 Jan 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2601.11061v1</guid>
-    </item>
-    <item>
-      <title>TANDEM: Temporal-Aware Neural Detection for Multimodal Hate Speech</title>
-      <link>https://arxiv.org/abs/2601.11178v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Girish A. Koushik, Helen Treharne, Diptesh Kanojia</p><p>Social media platforms are increasingly dominated by long-form multimodal content, where harmful narratives are constructed through a complex interplay of audio, visual, and textual cues. While automated systems can flag hate speech with high accuracy, they often function as &quot;black boxes&quot; that fail to provide the granular, interpretable evidence, such as precise timestamps and target identities, required for effective human-in-the-loop moderation. In this work, we introduce TANDEM, a unified fra</p><p><strong>Tags:</strong> safety, vision</p>]]></description>
-      <pubDate>Fri, 16 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2601.11178v1</guid>
-    </item>
-    <item>
-      <title>Attesting Model Lineage by Consisted Knowledge Evolution with Fine-Tuning Trajectory</title>
-      <link>https://arxiv.org/abs/2601.11683v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Zhuoyi Shang, Jiasen Li, Pengzhen Chen, Yanwei Liu, Xiaoyan Gu, et al.</p><p>The fine-tuning technique in deep learning gives rise to an emerging lineage relationship among models. This lineage provides a promising perspective for addressing security concerns such as unauthorized model redistribution and false claim of model provenance, which are particularly pressing in \textcolor{blue}{open-weight model} libraries where robust lineage verification mechanisms are often lacking. Existing approaches to model lineage detection primarily rely on static architectural similar</p>]]></description>
-      <pubDate>Fri, 16 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2601.11683v1</guid>
-    </item>
-    <item>
-      <title>Diagnosing Generalization Failures in Fine-Tuned LLMs: A Cross-Architectural Study on Phishing Detection</title>
-      <link>https://arxiv.org/abs/2601.10524v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Frank Bobe, Gregory D. Vetaw, Chase Pavlick, Darshan Bryner, Matthew Cook, et al.</p><p>The practice of fine-tuning Large Language Models (LLMs) has achieved state-of-the-art performance on specialized tasks, yet diagnosing why these models become brittle and fail to generalize remains a critical open problem. To address this, we introduce and apply a multi-layered diagnostic framework to a cross-architectural study. We fine-tune Llama 3.1 8B, Gemma 2 9B, and Mistral models on a high-stakes phishing detection task and use SHAP analysis and mechanistic interpretability to uncover th</p>]]></description>
-      <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2601.10524v1</guid>
-    </item>
-    <item>
-      <title>Measuring Affinity between Attention-Head Weight Subspaces via the Projection Kernel</title>
-      <link>https://arxiv.org/abs/2601.10266v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Hiroaki Yamagiwa, Yusuke Takase, Hidetoshi Shimodaira</p><p>Understanding relationships between attention heads is essential for interpreting the internal structure of Transformers, yet existing metrics do not capture this structure well. We focus on the subspaces spanned by attention-head weight matrices and quantify head-to-head relationships using the Projection Kernel (PK), a principal-angle-based measure of subspace similarity. Experiments show that PK reproduces known head-to-head interactions on the IOI task more clearly than prior metrics such as</p><p><strong>Tags:</strong> attention</p>]]></description>
-      <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2601.10266v1</guid>
-    </item>
-    <item>
-      <title>Reasoning Models Generate Societies of Thought</title>
-      <link>https://arxiv.org/abs/2601.10825v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Junsol Kim, Shiyang Lai, Nino Scherrer, Blaise Agüera y Arcas, James Evans</p><p>Large language models have achieved remarkable capabilities across domains, yet mechanisms underlying sophisticated reasoning remain elusive. Recent reasoning models outperform comparable instruction-tuned models on complex cognitive tasks, attributed to extended computation through longer chains of thought. Here we show that enhanced reasoning emerges not from extended computation alone, but from simulating multi-agent-like interactions -- a society of thought -- which enables diversification a</p><p><strong>Tags:</strong> reasoning</p>]]></description>
-      <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2601.10825v1</guid>
     </item>
   </channel>
 </rss>
