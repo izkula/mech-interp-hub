@@ -1,6 +1,83 @@
 {
-  "lastUpdated": "2026-02-02",
+  "lastUpdated": "2026-02-03",
   "papers": [
+    {
+      "id": "arxiv-2602-01605v1",
+      "title": "Universal Redundancies in Time Series Foundation Models",
+      "authors": "Anthony Bao, Venkata Hasith Vattikuti, Jeffrey Lai, William Gilpin",
+      "date": "2026-02-02",
+      "url": "https://arxiv.org/abs/2602.01605v1",
+      "abstract": "Time Series Foundation Models (TSFMs) leverage extensive pretraining to accurately predict unseen time series during inference, without the need for task-specific fine-tuning. Through large-scale evaluations on standard benchmarks, we find that leading transformer-based TSFMs exhibit redundant components in their intermediate layers. We introduce a set of tools for mechanistic interpretability of TSFMs, including ablations of specific components and direct logit attribution on the residual strea",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-01716v1",
+      "title": "Mechanistic Indicators of Steering Effectiveness in Large Language Models",
+      "authors": "Mehdi Jafari, Hao Xue, Flora Salim",
+      "date": "2026-02-02",
+      "url": "https://arxiv.org/abs/2602.01716v1",
+      "abstract": "Activation-based steering enables Large Language Models (LLMs) to exhibit targeted behaviors by intervening on intermediate activations without retraining. Despite its widespread use, the mechanistic factors that govern when steering succeeds or fails remain poorly understood, as prior work has relied primarily on black-box outputs or LLM-based judges. In this study, we investigate whether the reliability of steering can be diagnosed using internal model signals. We focus on two information-theo",
+      "tags": [
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-02224v1",
+      "title": "Spectral Superposition: A Theory of Feature Geometry",
+      "authors": "Georgi Ivanov, Narmeen Oozeer, Shivam Raval, Tasana Pejovic, Shriyash Upadhyay, et al.",
+      "date": "2026-02-02",
+      "url": "https://arxiv.org/abs/2602.02224v1",
+      "abstract": "Neural networks represent more features than they have dimensions via superposition, forcing features to share representational space. Current methods decompose activations into sparse linear features but discard geometric structure. We develop a theory for studying the geometric structre of features by analyzing the spectra (eigenvalues, eigenspaces, etc.) of weight derived matrices. In particular, we introduce the frame operator $F = WW^\\top$, which gives us a spectral measure that describes h",
+      "tags": [
+        "superposition",
+        "features",
+        "theory"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-01999v1",
+      "title": "From Latent Signals to Reflection Behavior: Tracing Meta-Cognitive Activation Trajectory in R1-Style LLMs",
+      "authors": "Yanrui Du, Yibo Gao, Sendong Zhao, Jiayun Li, Haochun Wang, et al.",
+      "date": "2026-02-02",
+      "url": "https://arxiv.org/abs/2602.01999v1",
+      "abstract": "R1-style LLMs have attracted growing attention for their capacity for self-reflection, yet the internal mechanisms underlying such behavior remain unclear. To bridge this gap, we anchor on the onset of reflection behavior and trace its layer-wise activation trajectory. Using the logit lens to read out token-level semantics, we uncover a structured progression: (i) Latent-control layers, where an approximate linear direction encodes the semantics of thinking budget; (ii) Semantic-pivot layers, wh",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-01530v1",
+      "title": "Preserving Localized Patch Semantics in VLMs",
+      "authors": "Parsa Esmaeilkhani, Longin Jan Latecki",
+      "date": "2026-02-02",
+      "url": "https://arxiv.org/abs/2602.01530v1",
+      "abstract": "Logit Lens has been proposed for visualizing tokens that contribute most to LLM answers. Recently, Logit Lens was also shown to be applicable in autoregressive Vision-Language Models (VLMs), where it illustrates the conceptual content of image tokens in the form of heatmaps, e.g., which image tokens are likely to depict the concept of cat in a given image. However, the visual content of image tokens often gets diffused to language tokens, and consequently, the locality of visual information gets",
+      "tags": [
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-01695v1",
+      "title": "Beyond Dense States: Elevating Sparse Transcoders to Active Operators for Latent Reasoning",
+      "authors": "Yadong Wang, Haodong Chen, Yu Tian, Chuanxing Geng, Dong Liang, et al.",
+      "date": "2026-02-02",
+      "url": "https://arxiv.org/abs/2602.01695v1",
+      "abstract": "Latent reasoning compresses the chain-of-thought (CoT) into continuous hidden states, yet existing methods rely on dense latent transitions that remain difficult to interpret and control. Meanwhile, sparse representation models uncover human-interpretable semantic features but remain largely confined to post-hoc analysis. We reconcile this tension by proposing LSTR (Latent Sparse Transcoder Reasoning), a latent reasoning framework that elevates functional sparse transcoders into active reasoning",
+      "tags": [
+        "features",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "ss-48681d875dd4a7fd38cd",
       "title": "Research on the instability mechanism of transformer winding short-circuit faults based on magneto-mechanical coupling analysis",
@@ -12,6 +89,103 @@
         "circuits"
       ],
       "source": "Semantic Scholar",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-01247v1",
+      "title": "Mechanistic Interpretability of Brain-to-Speech Models Across Speech Modes",
+      "authors": "Maryam Maghsoudi, Ayushi Mishra",
+      "date": "2026-02-01",
+      "url": "https://arxiv.org/abs/2602.01247v1",
+      "abstract": "Brain-to-speech decoding models demonstrate robust performance in vocalized, mimed, and imagined speech; yet, the fundamental mechanisms via which these models capture and transmit information across different speech modalities are less explored. In this work, we use mechanistic interpretability to causally investigate the internal representations of a neural speech decoder. We perform cross-mode activation patching of internal activations across speech modes, and use tri-modal interpolation to ",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-01322v1",
+      "title": "PolySAE: Modeling Feature Interactions in Sparse Autoencoders via Polynomial Decoding",
+      "authors": "Panagiotis Koromilas, Andreas D. Demou, James Oldfield, Yannis Panagakis, Mihalis Nicolaou",
+      "date": "2026-02-01",
+      "url": "https://arxiv.org/abs/2602.01322v1",
+      "abstract": "Sparse autoencoders (SAEs) have emerged as a promising method for interpreting neural network representations by decomposing activations into sparse combinations of dictionary atoms. However, SAEs assume that features combine additively through linear reconstruction, an assumption that cannot capture compositional structure: linear models cannot distinguish whether \"Starbucks\" arises from the composition of \"star\" and \"coffee\" features or merely their co-occurrence. This forces SAEs to allocate ",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-00945v1",
+      "title": "Neural FOXP2 -- Language Specific Neuron Steering for Targeted Language Improvement in LLMs",
+      "authors": "Anusa Saha, Tanmay Joshi, Vinija Jain, Aman Chadha, Amitava Das",
+      "date": "2026-02-01",
+      "url": "https://arxiv.org/abs/2602.00945v1",
+      "abstract": "LLMs are multilingual by training, yet their lingua franca is often English, reflecting English language dominance in pretraining. Other languages remain in parametric memory but are systematically suppressed. We argue that language defaultness is governed by a sparse, low-rank control circuit, language neurons, that can be mechanistically isolated and safely steered.   We introduce Neural FOXP2, that makes a chosen language (Hindi or Spanish) primary in a model by steering language-specific neu",
+      "tags": [
+        "circuits",
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-00924v1",
+      "title": "Supervised sparse auto-encoders as unconstrained feature models for semantic composition",
+      "authors": "Ouns El Harzli, Hugo Wallner, Yoonsoo Nam, Haixuan Xavier Tao",
+      "date": "2026-01-31",
+      "url": "https://arxiv.org/abs/2602.00924v1",
+      "abstract": "Sparse auto-encoders (SAEs) have re-emerged as a prominent method for mechanistic interpretability, yet they face two significant challenges: the non-smoothness of the $L_1$ penalty, which hinders reconstruction and scalability, and a lack of alignment between learned features and human semantics. In this paper, we address these limitations by adapting unconstrained feature models-a mathematical framework from neural collapse theory-and by supervising the task. We supervise (decoder-only) SAEs t",
+      "tags": [
+        "SAE",
+        "features",
+        "safety",
+        "theory"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-00621v1",
+      "title": "Towards Interpretable Hallucination Analysis and Mitigation in LVLMs via Contrastive Neuron Steering",
+      "authors": "Guangtao Lyu, Xinyi Cheng, Qi Liu, Chenghao Xu, Jiexi Yan, et al.",
+      "date": "2026-01-31",
+      "url": "https://arxiv.org/abs/2602.00621v1",
+      "abstract": "LVLMs achieve remarkable multimodal understanding and generation but remain susceptible to hallucinations. Existing mitigation methods predominantly focus on output-level adjustments, leaving the internal mechanisms that give rise to these hallucinations largely unexplored. To gain a deeper understanding, we adopt a representation-level perspective by introducing sparse autoencoders (SAEs) to decompose dense visual embeddings into sparse, interpretable neurons. Through neuron-level analysis, we ",
+      "tags": [
+        "SAE",
+        "steering",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-00449v1",
+      "title": "Do Latent-CoT Models Think Step-by-Step? A Mechanistic Study on Sequential Reasoning Tasks",
+      "authors": "Jia Liang, Liangming Pan",
+      "date": "2026-01-31",
+      "url": "https://arxiv.org/abs/2602.00449v1",
+      "abstract": "Latent Chain-of-Thought (Latent-CoT) aims to enable step-by-step computation without emitting long rationales, yet its mechanisms remain unclear. We study CODI, a continuous-thought teacher-student distillation model, on strictly sequential polynomial-iteration tasks. Using logit-lens decoding, linear probes, attention analysis, and activation patching, we localize intermediate-state representations and trace their routing to the final readout. On two- and three-hop tasks, CODI forms the full se",
+      "tags": [
+        "probing",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-00822v1",
+      "title": "Safety-Efficacy Trade Off: Robustness against Data-Poisoning",
+      "authors": "Diego Granziol",
+      "date": "2026-01-31",
+      "url": "https://arxiv.org/abs/2602.00822v1",
+      "abstract": "Backdoor and data poisoning attacks can achieve high attack success while evading existing spectral and optimisation based defences. We show that this behaviour is not incidental, but arises from a fundamental geometric mechanism in input space. Using kernel ridge regression as an exact model of wide neural networks, we prove that clustered dirty label poisons induce a rank one spike in the input Hessian whose magnitude scales quadratically with attack efficacy. Crucially, for nonlinear kernels ",
+      "tags": [
+        "safety"
+      ],
+      "source": "arXiv",
       "featured": false
     },
     {
