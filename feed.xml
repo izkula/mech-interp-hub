@@ -5,15 +5,106 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Universal Redundancies in Time Series Foundation Models</title>
+      <link>https://arxiv.org/abs/2602.01605v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Anthony Bao, Venkata Hasith Vattikuti, Jeffrey Lai, William Gilpin</p><p>Time Series Foundation Models (TSFMs) leverage extensive pretraining to accurately predict unseen time series during inference, without the need for task-specific fine-tuning. Through large-scale evaluations on standard benchmarks, we find that leading transformer-based TSFMs exhibit redundant components in their intermediate layers. We introduce a set of tools for mechanistic interpretability of TSFMs, including ablations of specific components and direct logit attribution on the residual strea</p>]]></description>
+      <pubDate>Mon, 02 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.01605v1</guid>
+    </item>
+    <item>
+      <title>Mechanistic Indicators of Steering Effectiveness in Large Language Models</title>
+      <link>https://arxiv.org/abs/2602.01716v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Mehdi Jafari, Hao Xue, Flora Salim</p><p>Activation-based steering enables Large Language Models (LLMs) to exhibit targeted behaviors by intervening on intermediate activations without retraining. Despite its widespread use, the mechanistic factors that govern when steering succeeds or fails remain poorly understood, as prior work has relied primarily on black-box outputs or LLM-based judges. In this study, we investigate whether the reliability of steering can be diagnosed using internal model signals. We focus on two information-theo</p><p><strong>Tags:</strong> steering</p>]]></description>
+      <pubDate>Mon, 02 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.01716v1</guid>
+    </item>
+    <item>
+      <title>Spectral Superposition: A Theory of Feature Geometry</title>
+      <link>https://arxiv.org/abs/2602.02224v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Georgi Ivanov, Narmeen Oozeer, Shivam Raval, Tasana Pejovic, Shriyash Upadhyay, et al.</p><p>Neural networks represent more features than they have dimensions via superposition, forcing features to share representational space. Current methods decompose activations into sparse linear features but discard geometric structure. We develop a theory for studying the geometric structre of features by analyzing the spectra (eigenvalues, eigenspaces, etc.) of weight derived matrices. In particular, we introduce the frame operator $F = WW^\top$, which gives us a spectral measure that describes h</p><p><strong>Tags:</strong> superposition, features, theory</p>]]></description>
+      <pubDate>Mon, 02 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.02224v1</guid>
+    </item>
+    <item>
+      <title>From Latent Signals to Reflection Behavior: Tracing Meta-Cognitive Activation Trajectory in R1-Style LLMs</title>
+      <link>https://arxiv.org/abs/2602.01999v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Yanrui Du, Yibo Gao, Sendong Zhao, Jiayun Li, Haochun Wang, et al.</p><p>R1-style LLMs have attracted growing attention for their capacity for self-reflection, yet the internal mechanisms underlying such behavior remain unclear. To bridge this gap, we anchor on the onset of reflection behavior and trace its layer-wise activation trajectory. Using the logit lens to read out token-level semantics, we uncover a structured progression: (i) Latent-control layers, where an approximate linear direction encodes the semantics of thinking budget; (ii) Semantic-pivot layers, wh</p>]]></description>
+      <pubDate>Mon, 02 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.01999v1</guid>
+    </item>
+    <item>
+      <title>Preserving Localized Patch Semantics in VLMs</title>
+      <link>https://arxiv.org/abs/2602.01530v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Parsa Esmaeilkhani, Longin Jan Latecki</p><p>Logit Lens has been proposed for visualizing tokens that contribute most to LLM answers. Recently, Logit Lens was also shown to be applicable in autoregressive Vision-Language Models (VLMs), where it illustrates the conceptual content of image tokens in the form of heatmaps, e.g., which image tokens are likely to depict the concept of cat in a given image. However, the visual content of image tokens often gets diffused to language tokens, and consequently, the locality of visual information gets</p><p><strong>Tags:</strong> vision</p>]]></description>
+      <pubDate>Mon, 02 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.01530v1</guid>
+    </item>
+    <item>
+      <title>Beyond Dense States: Elevating Sparse Transcoders to Active Operators for Latent Reasoning</title>
+      <link>https://arxiv.org/abs/2602.01695v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Yadong Wang, Haodong Chen, Yu Tian, Chuanxing Geng, Dong Liang, et al.</p><p>Latent reasoning compresses the chain-of-thought (CoT) into continuous hidden states, yet existing methods rely on dense latent transitions that remain difficult to interpret and control. Meanwhile, sparse representation models uncover human-interpretable semantic features but remain largely confined to post-hoc analysis. We reconcile this tension by proposing LSTR (Latent Sparse Transcoder Reasoning), a latent reasoning framework that elevates functional sparse transcoders into active reasoning</p><p><strong>Tags:</strong> features, reasoning</p>]]></description>
+      <pubDate>Mon, 02 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.01695v1</guid>
+    </item>
     <item>
       <title>Research on the instability mechanism of transformer winding short-circuit faults based on magneto-mechanical coupling analysis</title>
       <link>https://www.semanticscholar.org/paper/48681d875dd4a7fd38cd0b9f05262cccabefe846</link>
       <description><![CDATA[<p><strong>Authors:</strong> Zhihao Gao, Jing Zhou, Li Zhu, Yuefeng Hao, Zhanlong Zhang, et al.</p><p><strong>Tags:</strong> circuits</p>]]></description>
       <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://www.semanticscholar.org/paper/48681d875dd4a7fd38cd0b9f05262cccabefe846</guid>
+    </item>
+    <item>
+      <title>Mechanistic Interpretability of Brain-to-Speech Models Across Speech Modes</title>
+      <link>https://arxiv.org/abs/2602.01247v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Maryam Maghsoudi, Ayushi Mishra</p><p>Brain-to-speech decoding models demonstrate robust performance in vocalized, mimed, and imagined speech; yet, the fundamental mechanisms via which these models capture and transmit information across different speech modalities are less explored. In this work, we use mechanistic interpretability to causally investigate the internal representations of a neural speech decoder. We perform cross-mode activation patching of internal activations across speech modes, and use tri-modal interpolation to </p>]]></description>
+      <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.01247v1</guid>
+    </item>
+    <item>
+      <title>PolySAE: Modeling Feature Interactions in Sparse Autoencoders via Polynomial Decoding</title>
+      <link>https://arxiv.org/abs/2602.01322v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Panagiotis Koromilas, Andreas D. Demou, James Oldfield, Yannis Panagakis, Mihalis Nicolaou</p><p>Sparse autoencoders (SAEs) have emerged as a promising method for interpreting neural network representations by decomposing activations into sparse combinations of dictionary atoms. However, SAEs assume that features combine additively through linear reconstruction, an assumption that cannot capture compositional structure: linear models cannot distinguish whether &quot;Starbucks&quot; arises from the composition of &quot;star&quot; and &quot;coffee&quot; features or merely their co-occurrence. This forces SAEs to allocate </p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.01322v1</guid>
+    </item>
+    <item>
+      <title>Neural FOXP2 -- Language Specific Neuron Steering for Targeted Language Improvement in LLMs</title>
+      <link>https://arxiv.org/abs/2602.00945v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Anusa Saha, Tanmay Joshi, Vinija Jain, Aman Chadha, Amitava Das</p><p>LLMs are multilingual by training, yet their lingua franca is often English, reflecting English language dominance in pretraining. Other languages remain in parametric memory but are systematically suppressed. We argue that language defaultness is governed by a sparse, low-rank control circuit, language neurons, that can be mechanistically isolated and safely steered.   We introduce Neural FOXP2, that makes a chosen language (Hindi or Spanish) primary in a model by steering language-specific neu</p><p><strong>Tags:</strong> circuits, steering</p>]]></description>
+      <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.00945v1</guid>
+    </item>
+    <item>
+      <title>Supervised sparse auto-encoders as unconstrained feature models for semantic composition</title>
+      <link>https://arxiv.org/abs/2602.00924v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Ouns El Harzli, Hugo Wallner, Yoonsoo Nam, Haixuan Xavier Tao</p><p>Sparse auto-encoders (SAEs) have re-emerged as a prominent method for mechanistic interpretability, yet they face two significant challenges: the non-smoothness of the $L_1$ penalty, which hinders reconstruction and scalability, and a lack of alignment between learned features and human semantics. In this paper, we address these limitations by adapting unconstrained feature models-a mathematical framework from neural collapse theory-and by supervising the task. We supervise (decoder-only) SAEs t</p><p><strong>Tags:</strong> SAE, features, safety, theory</p>]]></description>
+      <pubDate>Sat, 31 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.00924v1</guid>
+    </item>
+    <item>
+      <title>Towards Interpretable Hallucination Analysis and Mitigation in LVLMs via Contrastive Neuron Steering</title>
+      <link>https://arxiv.org/abs/2602.00621v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Guangtao Lyu, Xinyi Cheng, Qi Liu, Chenghao Xu, Jiexi Yan, et al.</p><p>LVLMs achieve remarkable multimodal understanding and generation but remain susceptible to hallucinations. Existing mitigation methods predominantly focus on output-level adjustments, leaving the internal mechanisms that give rise to these hallucinations largely unexplored. To gain a deeper understanding, we adopt a representation-level perspective by introducing sparse autoencoders (SAEs) to decompose dense visual embeddings into sparse, interpretable neurons. Through neuron-level analysis, we </p><p><strong>Tags:</strong> SAE, steering, vision</p>]]></description>
+      <pubDate>Sat, 31 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.00621v1</guid>
+    </item>
+    <item>
+      <title>Do Latent-CoT Models Think Step-by-Step? A Mechanistic Study on Sequential Reasoning Tasks</title>
+      <link>https://arxiv.org/abs/2602.00449v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Jia Liang, Liangming Pan</p><p>Latent Chain-of-Thought (Latent-CoT) aims to enable step-by-step computation without emitting long rationales, yet its mechanisms remain unclear. We study CODI, a continuous-thought teacher-student distillation model, on strictly sequential polynomial-iteration tasks. Using logit-lens decoding, linear probes, attention analysis, and activation patching, we localize intermediate-state representations and trace their routing to the final readout. On two- and three-hop tasks, CODI forms the full se</p><p><strong>Tags:</strong> probing, reasoning</p>]]></description>
+      <pubDate>Sat, 31 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.00449v1</guid>
+    </item>
+    <item>
+      <title>Safety-Efficacy Trade Off: Robustness against Data-Poisoning</title>
+      <link>https://arxiv.org/abs/2602.00822v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Diego Granziol</p><p>Backdoor and data poisoning attacks can achieve high attack success while evading existing spectral and optimisation based defences. We show that this behaviour is not incidental, but arises from a fundamental geometric mechanism in input space. Using kernel ridge regression as an exact model of wide neural networks, we prove that clustered dirty label poisons induce a rank one spike in the input Hessian whose magnitude scales quadratically with attack efficacy. Crucially, for nonlinear kernels </p><p><strong>Tags:</strong> safety</p>]]></description>
+      <pubDate>Sat, 31 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.00822v1</guid>
     </item>
     <item>
       <title>Sparse or Dense? A Mechanistic Estimation of Computation Density in Transformer-based LLMs</title>
@@ -126,97 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Swapn Shah, Wlodek Zadrozny</p><p>The unification of symbolic reasoning and neural networks remains a central challenge in artificial intelligence. Symbolic systems offer reliability and interpretability but lack scalability, while neural networks provide learning capabilities but sacrifice transparency. Tensor Logic, proposed by Domingos, suggests that logical rules and Einstein summation are mathematically equivalent, offering a principled path toward unification. This paper provides empirical validation of this framework thro</p><p><strong>Tags:</strong> reasoning</p>]]></description>
       <pubDate>Fri, 23 Jan 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2601.17188v1</guid>
-    </item>
-    <item>
-      <title>Attributing and Exploiting Safety Vectors through Global Optimization in Large Language Models</title>
-      <link>https://arxiv.org/abs/2601.15801v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Fengheng Chu, Jiahao Chen, Yuhong Wang, Jun Wang, Zhihui Fu, et al.</p><p>While Large Language Models (LLMs) are aligned to mitigate risks, their safety guardrails remain fragile against jailbreak attacks. This reveals limited understanding of components governing safety. Existing methods rely on local, greedy attribution that assumes independent component contributions. However, they overlook the cooperative interactions between different components in LLMs, such as attention heads, which jointly contribute to safety mechanisms. We propose \textbf{G}lobal \textbf{O}p</p><p><strong>Tags:</strong> safety, attention</p>]]></description>
-      <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2601.15801v1</guid>
-    </item>
-    <item>
-      <title>From Insight to Intervention: Interpretable Neuron Steering for Controlling Popularity Bias in Recommender Systems</title>
-      <link>https://arxiv.org/abs/2601.15122v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Parviz Ahmadov, Masoud Mansoury</p><p>Popularity bias is a pervasive challenge in recommender systems, where a few popular items dominate attention while the majority of less popular items remain underexposed. This imbalance can reduce recommendation quality and lead to unfair item exposure. Although existing mitigation methods address this issue to some extent, they often lack transparency in how they operate. In this paper, we propose a post-hoc approach, PopSteer, that leverages a Sparse Autoencoder (SAE) to both interpret and mi</p><p><strong>Tags:</strong> SAE, steering</p>]]></description>
-      <pubDate>Wed, 21 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2601.15122v1</guid>
-    </item>
-    <item>
-      <title>Mechanism Shift During Post-training from Autoregressive to Masked Diffusion Language Models</title>
-      <link>https://arxiv.org/abs/2601.14758v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Injin Kong, Hyoungjoon Lee, Yohan Jo</p><p>Post-training pretrained Autoregressive models (ARMs) into Masked Diffusion models (MDMs) has emerged as a cost-effective strategy to overcome the limitations of sequential generation. However, the internal algorithmic transformations induced by this paradigm shift remain unexplored, leaving it unclear whether post-trained MDMs acquire genuine bidirectional reasoning capabilities or merely repackage autoregressive heuristics. In this work, we address this question by conducting a comparative cir</p><p><strong>Tags:</strong> reasoning</p>]]></description>
-      <pubDate>Wed, 21 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2601.14758v1</guid>
-    </item>
-    <item>
-      <title>CASL: Concept-Aligned Sparse Latents for Interpreting Diffusion Models</title>
-      <link>https://arxiv.org/abs/2601.15441v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Zhenghao He, Guangzhi Xiong, Boyang Wang, Sanchit Sinha, Aidong Zhang</p><p>Internal activations of diffusion models encode rich semantic information, but interpreting such representations remains challenging. While Sparse Autoencoders (SAEs) have shown promise in disentangling latent representations, existing SAE-based methods for diffusion model understanding rely on unsupervised approaches that fail to align sparse features with human-understandable concepts. This limits their ability to provide reliable semantic control over generated images. We introduce CASL (Conc</p><p><strong>Tags:</strong> SAE, features, vision</p>]]></description>
-      <pubDate>Wed, 21 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2601.15441v1</guid>
-    </item>
-    <item>
-      <title>PRISM: Deriving the Transformer as a Signal-Denoising Operator via Maximum Coding Rate Reduction</title>
-      <link>https://arxiv.org/abs/2601.15540v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Dongchen Huang</p><p>Deep learning models, particularly Transformers, are often criticized as &quot;black boxes&quot; and lack interpretability. We propose Prism, a white-box attention-based architecture derived from the principles of Maximizing Coding Rate Reduction ($\text{MCR}^2$). By modeling the attention mechanism as a gradient ascent process on a distinct signal-noise manifold, we introduce two physical constraints: an overcomplete dictionary to expand the representational phase space, and an irrational frequency separ</p>]]></description>
-      <pubDate>Wed, 21 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2601.15540v1</guid>
-    </item>
-    <item>
-      <title>Locate, Steer, and Improve: A Practical Survey of Actionable Mechanistic Interpretability in Large Language Models</title>
-      <link>https://arxiv.org/abs/2601.14004v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Hengyuan Zhang, Zhihao Zhang, Mingyang Wang, Zunhai Su, Yiwei Wang, et al.</p><p>Mechanistic Interpretability (MI) has emerged as a vital approach to demystify the opaque decision-making of Large Language Models (LLMs). However, existing reviews primarily treat MI as an observational science, summarizing analytical insights while lacking a systematic framework for actionable intervention. To bridge this gap, we present a practical survey structured around the pipeline: &quot;Locate, Steer, and Improve.&quot; We formally categorize Localizing (diagnosis) and Steering (intervention) met</p><p><strong>Tags:</strong> steering, survey</p>]]></description>
-      <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2601.14004v1</guid>
-    </item>
-    <item>
-      <title>Patterning: The Dual of Interpretability</title>
-      <link>https://arxiv.org/abs/2601.13548v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> George Wang, Daniel Murfet</p><p>Mechanistic interpretability aims to understand how neural networks generalize beyond their training data by reverse-engineering their internal structures. We introduce patterning as the dual problem: given a desired form of generalization, determine what training data produces it. Our approach is based on susceptibilities, which measure how posterior expectation values of observables respond to infinitesimal shifts in the data distribution. Inverting this linear response relationship yields the</p>]]></description>
-      <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2601.13548v1</guid>
-    </item>
-    <item>
-      <title>Hierarchical Sparse Circuit Extraction from Billion-Parameter Language Models through Scalable Attribution Graph Decomposition</title>
-      <link>https://arxiv.org/abs/2601.12879v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Mohammed Mudassir Uddin, Shahnawaz Alam, Mohammed Kaif Pasha</p><p>Mechanistic interpretability seeks to reverse-engineer neural network computations into human-understandable algorithms, yet extracting sparse computational circuits from billion-parameter language models remains challenging due to exponential search complexity and pervasive polysemanticity. The proposed Hierarchical Attribution Graph Decomposition (HAGD) framework reduces circuit discovery complexity from O(2^n) exhaustive enumeration to O(n^2 log n) through multi-resolution abstraction hierarc</p><p><strong>Tags:</strong> circuits, features</p>]]></description>
-      <pubDate>Mon, 19 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2601.12879v1</guid>
-    </item>
-    <item>
-      <title>Conversational Context Classification: A Representation Engineering Approach</title>
-      <link>https://arxiv.org/abs/2601.12286v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Jonathan Pan</p><p>The increasing prevalence of Large Language Models (LLMs) demands effective safeguards for their operation, particularly concerning their tendency to generate out-of-context responses. A key challenge is accurately detecting when LLMs stray from expected conversational norms, manifesting as topic shifts, factual inaccuracies, or outright hallucinations. Traditional anomaly detection struggles to directly apply within contextual semantics. This paper outlines our experiment in exploring the use o</p>]]></description>
-      <pubDate>Sun, 18 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2601.12286v1</guid>
-    </item>
-    <item>
-      <title>From Interpretability to Performance: Optimizing Retrieval Heads for Long-Context Language Models</title>
-      <link>https://arxiv.org/abs/2601.11020v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Youmi Ma, Naoaki Okazaki</p><p>Advances in mechanistic interpretability have identified special attention heads, known as retrieval heads, that are responsible for retrieving information from the context. However, the role of these retrieval heads in improving model performance remains unexplored. This work investigates whether retrieval heads can be leveraged to enhance the long-context capabilities of LLMs. Specifically, we propose RetMask, a method that generates training signals by contrasting normal model outputs with th</p><p><strong>Tags:</strong> attention</p>]]></description>
-      <pubDate>Fri, 16 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2601.11020v1</guid>
-    </item>
-    <item>
-      <title>From Knots to Knobs: Towards Steerable Collaborative Filtering Using Sparse Autoencoders</title>
-      <link>https://arxiv.org/abs/2601.11182v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Martin Spišák, Ladislav Peška, Petr Škoda, Vojtěch Vančura, Rodrigo Alves</p><p>Sparse autoencoders (SAEs) have recently emerged as pivotal tools for introspection into large language models. SAEs can uncover high-quality, interpretable features at different levels of granularity and enable targeted steering of the generation process by selectively activating specific neurons in their latent activations. Our paper is the first to apply this approach to collaborative filtering, aiming to extract similarly interpretable features from representations learned purely from intera</p><p><strong>Tags:</strong> SAE, features, steering</p>]]></description>
-      <pubDate>Fri, 16 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2601.11182v1</guid>
-    </item>
-    <item>
-      <title>Finding the Translation Switch: Discovering and Exploiting the Task-Initiation Features in LLMs</title>
-      <link>https://arxiv.org/abs/2601.11019v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Xinwei Wu, Heng Liu, Xiaohu Zhao, Yuqi Ren, Linlong Xu, et al.</p><p>Large Language Models (LLMs) frequently exhibit strong translation abilities, even without task-specific fine-tuning. However, the internal mechanisms governing this innate capability remain largely opaque. To demystify this process, we leverage Sparse Autoencoders (SAEs) and introduce a novel framework for identifying task-specific features. Our method first recalls features that are frequently co-activated on translation inputs and then filters them for functional coherence using a PCA-based c</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Fri, 16 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2601.11019v1</guid>
-    </item>
-    <item>
-      <title>Spurious Rewards Paradox: Mechanistically Understanding How RLVR Activates Memorization Shortcuts in LLMs</title>
-      <link>https://arxiv.org/abs/2601.11061v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Lecheng Yan, Ruizhe Li, Guanhua Chen, Qing Li, Jiahui Geng, et al.</p><p>Reinforcement Learning with Verifiable Rewards (RLVR) is highly effective for enhancing LLM reasoning, yet recent evidence shows models like Qwen 2.5 achieve significant gains even with spurious or incorrect rewards. We investigate this phenomenon and identify a &quot;Perplexity Paradox&quot;: spurious RLVR triggers a divergence where answer-token perplexity drops while prompt-side coherence degrades, suggesting the model is bypassing reasoning in favor of memorization. Using Path Patching, Logit Lens, JS</p><p><strong>Tags:</strong> reasoning</p>]]></description>
-      <pubDate>Fri, 16 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2601.11061v1</guid>
     </item>
   </channel>
 </rss>
