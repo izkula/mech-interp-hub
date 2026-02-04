@@ -5,9 +5,23 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 04 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Explaining the Explainer: Understanding the Inner Workings of Transformer-based Symbolic Regression Models</title>
+      <link>https://arxiv.org/abs/2602.03506v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Arco van Breda, Erman Acar</p><p>Following their success across many domains, transformers have also proven effective for symbolic regression (SR); however, the internal mechanisms underlying their generation of mathematical operators remain largely unexplored. Although mechanistic interpretability has successfully identified circuits in language and vision models, it has not yet been applied to SR. In this article, we introduce PATCHES, an evolutionary circuit discovery algorithm that identifies compact and correct circuits fo</p><p><strong>Tags:</strong> circuits, vision</p>]]></description>
+      <pubDate>Tue, 03 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.03506v1</guid>
+    </item>
+    <item>
+      <title>CSR-Bench: A Benchmark for Evaluating the Cross-modal Safety and Reliability of MLLMs</title>
+      <link>https://arxiv.org/abs/2602.03263v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Yuxuan Liu, Yuntian Shi, Kun Wang, Haoting Shen, Kun Yang</p><p>Multimodal large language models (MLLMs) enable interaction over both text and images, but their safety behavior can be driven by unimodal shortcuts instead of true joint intent understanding. We introduce CSR-Bench, a benchmark for evaluating cross-modal reliability through four stress-testing interaction patterns spanning Safety, Over-rejection, Bias, and Hallucination, covering 61 fine-grained types. Each instance is constructed to require integrated image-text interpretation, and we addition</p><p><strong>Tags:</strong> safety, vision</p>]]></description>
+      <pubDate>Tue, 03 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.03263v1</guid>
+    </item>
     <item>
       <title>Universal Redundancies in Time Series Foundation Models</title>
       <link>https://arxiv.org/abs/2602.01605v1</link>
@@ -203,20 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Michail Mamalakis, Tiago Azevedo, Cristian Cosentino, Chiara D&#x27;Ercoli, Subati Abulikemu, et al.</p><p>Interpretability remains a key challenge for deploying large language models (LLMs) in clinical settings such as Alzheimer&#x27;s disease progression diagnosis, where early and trustworthy predictions are essential. Existing attribution methods exhibit high inter-method variability and unstable explanations due to the polysemantic nature of LLM representations, while mechanistic interpretability approaches lack direct alignment with model inputs and outputs and do not provide explicit importance scor</p><p><strong>Tags:</strong> features, safety</p>]]></description>
       <pubDate>Sun, 25 Jan 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2601.17952v1</guid>
-    </item>
-    <item>
-      <title>TensorLens: End-to-End Transformer Analysis via High-Order Attention Tensors</title>
-      <link>https://arxiv.org/abs/2601.17958v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Ido Andrew Atad, Itamar Zimerman, Shahar Katz, Lior Wolf</p><p>Attention matrices are fundamental to transformer research, supporting a broad range of applications including interpretability, visualization, manipulation, and distillation. Yet, most existing analyses focus on individual attention heads or layers, failing to account for the model&#x27;s global behavior. While prior efforts have extended attention formulations across multiple heads via averaging and matrix multiplications or incorporated components such as normalization and FFNs, a unified and comp</p><p><strong>Tags:</strong> attention, vision</p>]]></description>
-      <pubDate>Sun, 25 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2601.17958v1</guid>
-    </item>
-    <item>
-      <title>Implementing Tensor Logic: Unifying Datalog and Neural Reasoning via Tensor Contraction</title>
-      <link>https://arxiv.org/abs/2601.17188v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Swapn Shah, Wlodek Zadrozny</p><p>The unification of symbolic reasoning and neural networks remains a central challenge in artificial intelligence. Symbolic systems offer reliability and interpretability but lack scalability, while neural networks provide learning capabilities but sacrifice transparency. Tensor Logic, proposed by Domingos, suggests that logical rules and Einstein summation are mathematically equivalent, offering a principled path toward unification. This paper provides empirical validation of this framework thro</p><p><strong>Tags:</strong> reasoning</p>]]></description>
-      <pubDate>Fri, 23 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2601.17188v1</guid>
     </item>
   </channel>
 </rss>
