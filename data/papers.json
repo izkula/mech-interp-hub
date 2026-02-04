@@ -1,6 +1,34 @@
 {
-  "lastUpdated": "2026-02-03",
+  "lastUpdated": "2026-02-04",
   "papers": [
+    {
+      "id": "arxiv-2602-03506v1",
+      "title": "Explaining the Explainer: Understanding the Inner Workings of Transformer-based Symbolic Regression Models",
+      "authors": "Arco van Breda, Erman Acar",
+      "date": "2026-02-03",
+      "url": "https://arxiv.org/abs/2602.03506v1",
+      "abstract": "Following their success across many domains, transformers have also proven effective for symbolic regression (SR); however, the internal mechanisms underlying their generation of mathematical operators remain largely unexplored. Although mechanistic interpretability has successfully identified circuits in language and vision models, it has not yet been applied to SR. In this article, we introduce PATCHES, an evolutionary circuit discovery algorithm that identifies compact and correct circuits fo",
+      "tags": [
+        "circuits",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-03263v1",
+      "title": "CSR-Bench: A Benchmark for Evaluating the Cross-modal Safety and Reliability of MLLMs",
+      "authors": "Yuxuan Liu, Yuntian Shi, Kun Wang, Haoting Shen, Kun Yang",
+      "date": "2026-02-03",
+      "url": "https://arxiv.org/abs/2602.03263v1",
+      "abstract": "Multimodal large language models (MLLMs) enable interaction over both text and images, but their safety behavior can be driven by unimodal shortcuts instead of true joint intent understanding. We introduce CSR-Bench, a benchmark for evaluating cross-modal reliability through four stress-testing interaction patterns spanning Safety, Over-rejection, Bias, and Hallucination, covering 61 fine-grained types. Each instance is constructed to require integrated image-text interpretation, and we addition",
+      "tags": [
+        "safety",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2602-01605v1",
       "title": "Universal Redundancies in Time Series Foundation Models",
@@ -471,6 +499,17 @@
       "featured": false
     },
     {
+      "id": "arxiv-2601-15540v2",
+      "title": "PRISM: Deriving a White-Box Transformer as a Signal-Noise Decomposition Operator via Maximum Coding Rate Reduction",
+      "authors": "Dongchen Huang",
+      "date": "2026-01-21",
+      "url": "https://arxiv.org/abs/2601.15540v2",
+      "abstract": "Deep learning models, particularly Transformers, are often criticized as \"black boxes\" and lack interpretability. We propose Prism, a white-box attention-based architecture derived from the principles of Maximizing Coding Rate Reduction ($\\text{MCR}^2$). By modeling the attention mechanism as a gradient ascent process on a distinct signal-noise manifold, we introduce a specific irrational frequency separation ($\u03c0$-RoPE) to enforce incoherence between signal (semantic) and noise (syntactic) subsp",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
       "id": "arxiv-2601-14004v1",
       "title": "Locate, Steer, and Improve: A Practical Survey of Actionable Mechanistic Interpretability in Large Language Models",
       "authors": "Hengyuan Zhang, Zhihao Zhang, Mingyang Wang, Zunhai Su, Yiwei Wang, et al.",
@@ -646,6 +685,20 @@
       "abstract": "In language models (LMs), intra-memory knowledge conflict largely arises when inconsistent information about the same event is encoded within the model's parametric knowledge. While prior work has primarily focused on resolving conflicts between a model's internal knowledge and external resources through approaches such as fine-tuning or knowledge editing, the problem of localizing conflicts that originate during pre-training within the model's internal representations remain unexplored. In this",
       "tags": [
         "editing"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-02496v1",
+      "title": "The Hypocrisy Gap: Quantifying Divergence Between Internal Belief and Chain-of-Thought Explanation via Sparse Autoencoders",
+      "authors": "Shikhar Shiromani, Archie Chaudhury, Sri Pranav Kunda",
+      "date": "2026-01-14",
+      "url": "https://arxiv.org/abs/2602.02496v1",
+      "abstract": "Large Language Models (LLMs) frequently exhibit unfaithful behavior, producing a final answer that differs significantly from their internal chain of thought (CoT) reasoning in order to appease the user they are conversing with. In order to better detect this behavior, we introduce the Hypocrisy Gap, a mechanistic metric utilizing Sparse Autoencoders (SAEs) to quantify the divergence between a model's internal reasoning and its final generation. By mathematically comparing an internal truth beli",
+      "tags": [
+        "SAE",
+        "reasoning"
       ],
       "source": "arXiv",
       "featured": false
