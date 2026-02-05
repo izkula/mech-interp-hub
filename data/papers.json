@@ -1,6 +1,48 @@
 {
-  "lastUpdated": "2026-02-04",
+  "lastUpdated": "2026-02-05",
   "papers": [
+    {
+      "id": "arxiv-2602-04613v1",
+      "title": "Disentangling meaning from language in LLM-based machine translation",
+      "authors": "Th\u00e9o Lasnier, Armel Zebaze, Djam\u00e9 Seddah, Rachel Bawden, Beno\u00eet Sagot",
+      "date": "2026-02-04",
+      "url": "https://arxiv.org/abs/2602.04613v1",
+      "abstract": "Mechanistic Interpretability (MI) seeks to explain how neural networks implement their capabilities, but the scale of Large Language Models (LLMs) has limited prior MI work in Machine Translation (MT) to word-level analyses. We study sentence-level MT from a mechanistic perspective by analyzing attention heads to understand how LLMs internally encode and distribute translation functions. We decompose MT into two subtasks: producing text in the target language (i.e. target language identification",
+      "tags": [
+        "attention"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-04718v1",
+      "title": "Identifying Intervenable and Interpretable Features via Orthogonality Regularization",
+      "authors": "Moritz Miller, Florent Draye, Bernhard Sch\u00f6lkopf",
+      "date": "2026-02-04",
+      "url": "https://arxiv.org/abs/2602.04718v1",
+      "abstract": "With recent progress on fine-tuning language models around a fixed sparse autoencoder, we disentangle the decoder matrix into almost orthogonal features. This reduces interference and superposition between the features, while keeping performance on the target dataset essentially unchanged. Our orthogonality penalty leads to identifiable features, ensuring the uniqueness of the decomposition. Further, we find that the distance between embedded feature explanations increases with stricter orthogon",
+      "tags": [
+        "SAE",
+        "superposition",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-04752v1",
+      "title": "Decomposing Query-Key Feature Interactions Using Contrastive Covariances",
+      "authors": "Andrew Lee, Yonatan Belinkov, Fernanda Vi\u00e9gas, Martin Wattenberg",
+      "date": "2026-02-04",
+      "url": "https://arxiv.org/abs/2602.04752v1",
+      "abstract": "Despite the central role of attention heads in Transformers, we lack tools to understand why a model attends to a particular token. To address this, we study the query-key (QK) space -- the bilinear joint embedding space between queries and keys. We present a contrastive covariance method to decompose the QK space into low-rank, human-interpretable components. It is when features in keys and queries align in these low-rank subspaces that high attention scores are produced. We first study our met",
+      "tags": [
+        "features",
+        "attention"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2602-03506v1",
       "title": "Explaining the Explainer: Understanding the Inner Workings of Transformer-based Symbolic Regression Models",
