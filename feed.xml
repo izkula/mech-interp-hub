@@ -5,9 +5,44 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>DLM-Scope: Mechanistic Interpretability of Diffusion Language Models via Sparse Autoencoders</title>
+      <link>https://arxiv.org/abs/2602.05859v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Xu Wang, Bingqing Jiang, Yu Wan, Baosong Yang, Lingpeng Kong, et al.</p><p>Sparse autoencoders (SAEs) have become a standard tool for mechanistic interpretability in autoregressive large language models (LLMs), enabling researchers to extract sparse, human-interpretable features and intervene on model behavior. Recently, as diffusion language models (DLMs) have become an increasingly promising alternative to the autoregressive LLMs, it is essential to develop tailored mechanistic interpretability tools for this emerging class of models. In this work, we present DLM-Sco</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Thu, 05 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.05859v1</guid>
+    </item>
+    <item>
+      <title>Split Personality Training: Revealing Latent Knowledge Through Alternate Personalities</title>
+      <link>https://arxiv.org/abs/2602.05532v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Florian Dietz, William Wale, Oscar Gilg, Robert McCarthy, Felix Michalak, et al.</p><p>Detecting misalignment in large language models is challenging because models may learn to conceal misbehavior during training. Standard auditing techniques fall short: black-box methods often cannot distinguish misaligned outputs from benign ones, and mechanistic interpretability does not scale with model capabilities. We introduce Split Personality Training (SPT), which fine-tunes a second ``honest persona&#x27;&#x27; into LoRA parameters that remain inactive during normal operation. After the main mode</p><p><strong>Tags:</strong> safety</p>]]></description>
+      <pubDate>Thu, 05 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.05532v1</guid>
+    </item>
+    <item>
+      <title>Causal Front-Door Adjustment for Robust Jailbreak Attacks on LLMs</title>
+      <link>https://arxiv.org/abs/2602.05444v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Yao Zhou, Zeen Song, Wenwen Qiang, Fengge Wu, Shuyi Zhou, et al.</p><p>Safety alignment mechanisms in Large Language Models (LLMs) often operate as latent internal states, obscuring the model&#x27;s inherent capabilities. Building on this observation, we model the safety mechanism as an unobserved confounder from a causal perspective. Then, we propose the \textbf{C}ausal \textbf{F}ront-Door \textbf{A}djustment \textbf{A}ttack ({\textbf{CFA}}$^2$) to jailbreak LLM, which is a framework that leverages Pearl&#x27;s Front-Door Criterion to sever the confounding associations for </p><p><strong>Tags:</strong> safety</p>]]></description>
+      <pubDate>Thu, 05 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.05444v1</guid>
+    </item>
+    <item>
+      <title>Advancing Opinion Dynamics Modeling with Neural Diffusion-Convection-Reaction Equation</title>
+      <link>https://arxiv.org/abs/2602.05403v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Chenghua Gong, Yihang Jiang, Hao Li, Rui Sun, Juyuan Zhang, et al.</p><p>Advanced opinion dynamics modeling is vital for deciphering social behavior, emphasizing its role in mitigating polarization and securing cyberspace. To synergize mechanistic interpretability with data-driven flexibility, recent studies have explored the integration of Physics-Informed Neural Networks (PINNs) for opinion modeling. Despite this promise, existing methods are tailored to incomplete priors, lacking a comprehensive physical system to integrate dynamics from local, global, and endogen</p>]]></description>
+      <pubDate>Thu, 05 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.05403v1</guid>
+    </item>
+    <item>
+      <title>Data-Centric Interpretability for LLM-based Multi-Agent Reinforcement Learning</title>
+      <link>https://arxiv.org/abs/2602.05183v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> John Yan, Michael Yu, Yuqi Sun, Alexander Duffy, Tyler Marques, et al.</p><p>Large language models (LLMs) are increasingly trained in complex Reinforcement Learning, multi-agent environments, making it difficult to understand how behavior changes over training. Sparse Autoencoders (SAEs) have recently shown to be useful for data-centric interpretability. In this work, we analyze large-scale reinforcement learning training runs from the sophisticated environment of Full-Press Diplomacy by applying pretrained SAEs, alongside LLM-summarizer methods. We introduce Meta-Autoin</p><p><strong>Tags:</strong> SAE</p>]]></description>
+      <pubDate>Thu, 05 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.05183v1</guid>
+    </item>
     <item>
       <title>Disentangling meaning from language in LLM-based machine translation</title>
       <link>https://arxiv.org/abs/2602.04613v1</link>
@@ -30,6 +65,13 @@
       <guid>https://arxiv.org/abs/2602.04752v1</guid>
     </item>
     <item>
+      <title>AudioSAE: Towards Understanding of Audio-Processing Models with Sparse AutoEncoders</title>
+      <link>https://arxiv.org/abs/2602.05027v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Georgii Aparin, Tasnima Sadekova, Alexey Rukhovich, Assel Yermekova, Laida Kushnareva, et al.</p><p>Sparse Autoencoders (SAEs) are powerful tools for interpreting neural representations, yet their use in audio remains underexplored. We train SAEs across all encoder layers of Whisper and HuBERT, provide an extensive evaluation of their stability, interpretability, and show their practical utility. Over 50% of the features remain consistent across random seeds, and reconstruction quality is preserved. SAE features capture general acoustic and semantic information as well as specific events, incl</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Wed, 04 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.05027v1</guid>
+    </item>
+    <item>
       <title>Explaining the Explainer: Understanding the Inner Workings of Transformer-based Symbolic Regression Models</title>
       <link>https://arxiv.org/abs/2602.03506v1</link>
       <description><![CDATA[<p><strong>Authors:</strong> Arco van Breda, Erman Acar</p><p>Following their success across many domains, transformers have also proven effective for symbolic regression (SR); however, the internal mechanisms underlying their generation of mathematical operators remain largely unexplored. Although mechanistic interpretability has successfully identified circuits in language and vision models, it has not yet been applied to SR. In this article, we introduce PATCHES, an evolutionary circuit discovery algorithm that identifies compact and correct circuits fo</p><p><strong>Tags:</strong> circuits, vision</p>]]></description>
@@ -42,6 +84,20 @@
       <description><![CDATA[<p><strong>Authors:</strong> Yuxuan Liu, Yuntian Shi, Kun Wang, Haoting Shen, Kun Yang</p><p>Multimodal large language models (MLLMs) enable interaction over both text and images, but their safety behavior can be driven by unimodal shortcuts instead of true joint intent understanding. We introduce CSR-Bench, a benchmark for evaluating cross-modal reliability through four stress-testing interaction patterns spanning Safety, Over-rejection, Bias, and Hallucination, covering 61 fine-grained types. Each instance is constructed to require integrated image-text interpretation, and we addition</p><p><strong>Tags:</strong> safety, vision</p>]]></description>
       <pubDate>Tue, 03 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2602.03263v1</guid>
+    </item>
+    <item>
+      <title>Momentum Attention: The Physics of In-Context Learning and Spectral Forensics for Mechanistic Interpretability</title>
+      <link>https://arxiv.org/abs/2602.04902v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Kingsuk Maitra</p><p>The Mechanistic Interpretability (MI) program has mapped the Transformer as a precise computational graph. We extend this graph with a conservation law and time-varying AC dynamics, viewing it as a physical circuit. We introduce Momentum Attention, a symplectic augmentation embedding physical priors via the kinematic difference operator $p_t = q_t - q_{t-1}$, implementing the symplectic shear $\hat{q}_t = q_t + γp_t$ on queries and keys. We identify a fundamental Symplectic-Filter Duality: the p</p><p><strong>Tags:</strong> circuits</p>]]></description>
+      <pubDate>Tue, 03 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.04902v1</guid>
+    </item>
+    <item>
+      <title>Mind the Performance Gap: Capability-Behavior Trade-offs in Feature Steering</title>
+      <link>https://arxiv.org/abs/2602.04903v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Eitan Sprejer, Oscar Agustín Stanchi, María Victoria Carro, Denise Alejandra Mester, Iván Arcuschin</p><p>Feature steering has emerged as a promising approach for controlling LLM behavior through direct manipulation of internal representations, offering advantages over prompt engineering. However, its practical effectiveness in real-world applications remains poorly understood, particularly regarding potential trade-offs with output quality. We show that feature steering methods substantially degrade model performance even when successfully controlling target behaviors, a critical trade-off. Specifi</p><p><strong>Tags:</strong> features, steering</p>]]></description>
+      <pubDate>Tue, 03 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.04903v1</guid>
     </item>
     <item>
       <title>Universal Redundancies in Time Series Foundation Models</title>
@@ -161,62 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Yiting Liu, Zhi-Hong Deng</p><p>Sparse autoencoders (SAEs) have emerged as a powerful technique for decomposing language model representations into interpretable features. Current interpretation methods infer feature semantics from activation patterns, but overlook that features are trained to reconstruct activations that serve computational roles in the forward pass. We introduce a novel weight-based interpretation framework that measures functional effects through direct weight interactions, requiring no activation data. Thr</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
       <pubDate>Fri, 30 Jan 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2601.22447v1</guid>
-    </item>
-    <item>
-      <title>LLMs Explain&#x27;t: A Post-Mortem on Semantic Interpretability in Transformer Models</title>
-      <link>https://arxiv.org/abs/2601.22928v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Alhassan Abdelhalim, Janick Edinger, Sören Laue, Michaela Regneri</p><p>Large Language Models (LLMs) are becoming increasingly popular in pervasive computing due to their versatility and strong performance. However, despite their ubiquitous use, the exact mechanisms underlying their outstanding performance remain unclear. Different methods for LLM explainability exist, and many are, as a method, not fully understood themselves. We started with the question of how linguistic abstraction emerges in LLMs, aiming to detect it across different LLM modules (attention head</p><p><strong>Tags:</strong> attention</p>]]></description>
-      <pubDate>Fri, 30 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2601.22928v1</guid>
-    </item>
-    <item>
-      <title>Putting a Face to Forgetting: Continual Learning meets Mechanistic Interpretability</title>
-      <link>https://arxiv.org/abs/2601.22012v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Sergi Masip, Gido M. van de Ven, Javier Ferrando, Tinne Tuytelaars</p><p>Catastrophic forgetting in continual learning is often measured at the performance or last-layer representation level, overlooking the underlying mechanisms. We introduce a mechanistic framework that offers a geometric interpretation of catastrophic forgetting as the result of transformations to the encoding of individual features. These transformations can lead to forgetting by reducing the allocated capacity of features (worse representation) and disrupting their readout by downstream computat</p><p><strong>Tags:</strong> features</p>]]></description>
-      <pubDate>Thu, 29 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2601.22012v1</guid>
-    </item>
-    <item>
-      <title>Mechanistic Data Attribution: Tracing the Training Origins of Interpretable LLM Units</title>
-      <link>https://arxiv.org/abs/2601.21996v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Jianhui Chen, Yuzhang Luo, Liangming Pan</p><p>While Mechanistic Interpretability has identified interpretable circuits in LLMs, their causal origins in training data remain elusive. We introduce Mechanistic Data Attribution (MDA), a scalable framework that employs Influence Functions to trace interpretable units back to specific training samples. Through extensive experiments on the Pythia family, we causally validate that targeted intervention--removing or augmenting a small fraction of high-influence samples--significantly modulates the e</p><p><strong>Tags:</strong> circuits</p>]]></description>
-      <pubDate>Thu, 29 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2601.21996v1</guid>
-    </item>
-    <item>
-      <title>Symmetry Breaking in Transformers for Efficient and Interpretable Training</title>
-      <link>https://arxiv.org/abs/2601.22257v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Eva Silverstein, Daniel Kunin, Vasudev Shyam</p><p>The attention mechanism in its standard implementation contains extraneous rotational degrees of freedom that are carried through computation but do not affect model activations or outputs. We introduce a simple symmetry-breaking protocol that inserts a preferred direction into this rotational space through batchwise-sampled, unlearned query and value biases. This modification has two theoretically motivated and empirically validated consequences. First, it can substantially improve the performa</p><p><strong>Tags:</strong> theory</p>]]></description>
-      <pubDate>Thu, 29 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2601.22257v1</guid>
-    </item>
-    <item>
-      <title>Concept Component Analysis: A Principled Approach for Concept Extraction in LLMs</title>
-      <link>https://arxiv.org/abs/2601.20420v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Yuhang Liu, Erdun Gao, Dong Gong, Anton van den Hengel, Javen Qinfeng Shi</p><p>Developing human understandable interpretation of large language models (LLMs) becomes increasingly critical for their deployment in essential domains. Mechanistic interpretability seeks to mitigate the issues through extracts human-interpretable process and concepts from LLMs&#x27; activations. Sparse autoencoders (SAEs) have emerged as a popular approach for extracting interpretable and monosemantic concepts by decomposing the LLM internal representations into a dictionary. Despite their empirical </p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Wed, 28 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2601.20420v1</guid>
-    </item>
-    <item>
-      <title>How Do Transformers Learn to Associate Tokens: Gradient Leading Terms Bring Mechanistic Interpretability</title>
-      <link>https://arxiv.org/abs/2601.19208v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Shawn Im, Changdae Oh, Zhen Fang, Sharon Li</p><p>Semantic associations such as the link between &quot;bird&quot; and &quot;flew&quot; are foundational for language modeling as they enable models to go beyond memorization and instead generalize and generate coherent text. Understanding how these associations are learned and represented in language models is essential for connecting deep learning with linguistic theory and developing a mechanistic foundation for large language models. In this work, we analyze how these associations emerge from natural language data</p><p><strong>Tags:</strong> theory</p>]]></description>
-      <pubDate>Tue, 27 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2601.19208v1</guid>
-    </item>
-    <item>
-      <title>Sparse CLIP: Co-Optimizing Interpretability and Performance in Contrastive Learning</title>
-      <link>https://arxiv.org/abs/2601.20075v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Chuan Qin, Constantin Venhoff, Sonia Joseph, Fanyi Xiao, Stefan Scherer</p><p>Contrastive Language-Image Pre-training (CLIP) has become a cornerstone in vision-language representation learning, powering diverse downstream tasks and serving as the default vision backbone in multimodal large language models (MLLMs). Despite its success, CLIP&#x27;s dense and opaque latent representations pose significant interpretability challenges. A common assumption is that interpretability and performance are in tension: enforcing sparsity during training degrades accuracy, motivating recent</p><p><strong>Tags:</strong> vision</p>]]></description>
-      <pubDate>Tue, 27 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2601.20075v1</guid>
-    </item>
-    <item>
-      <title>Decomposing multimodal embedding spaces with group-sparse autoencoders</title>
-      <link>https://arxiv.org/abs/2601.20028v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Chiraag Kaushik, Davis Barch, Andrea Fanelli</p><p>The Linear Representation Hypothesis asserts that the embeddings learned by neural networks can be understood as linear combinations of features corresponding to high-level concepts. Based on this ansatz, sparse autoencoders (SAEs) have recently become a popular method for decomposing embeddings into a sparse combination of linear directions, which have been shown empirically to often correspond to human-interpretable semantics. However, recent attempts to apply SAEs to multimodal embedding spac</p><p><strong>Tags:</strong> SAE, features, vision</p>]]></description>
-      <pubDate>Tue, 27 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2601.20028v1</guid>
     </item>
   </channel>
 </rss>
