@@ -1,6 +1,70 @@
 {
-  "lastUpdated": "2026-02-05",
+  "lastUpdated": "2026-02-06",
   "papers": [
+    {
+      "id": "arxiv-2602-05859v1",
+      "title": "DLM-Scope: Mechanistic Interpretability of Diffusion Language Models via Sparse Autoencoders",
+      "authors": "Xu Wang, Bingqing Jiang, Yu Wan, Baosong Yang, Lingpeng Kong, et al.",
+      "date": "2026-02-05",
+      "url": "https://arxiv.org/abs/2602.05859v1",
+      "abstract": "Sparse autoencoders (SAEs) have become a standard tool for mechanistic interpretability in autoregressive large language models (LLMs), enabling researchers to extract sparse, human-interpretable features and intervene on model behavior. Recently, as diffusion language models (DLMs) have become an increasingly promising alternative to the autoregressive LLMs, it is essential to develop tailored mechanistic interpretability tools for this emerging class of models. In this work, we present DLM-Sco",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-05532v1",
+      "title": "Split Personality Training: Revealing Latent Knowledge Through Alternate Personalities",
+      "authors": "Florian Dietz, William Wale, Oscar Gilg, Robert McCarthy, Felix Michalak, et al.",
+      "date": "2026-02-05",
+      "url": "https://arxiv.org/abs/2602.05532v1",
+      "abstract": "Detecting misalignment in large language models is challenging because models may learn to conceal misbehavior during training. Standard auditing techniques fall short: black-box methods often cannot distinguish misaligned outputs from benign ones, and mechanistic interpretability does not scale with model capabilities. We introduce Split Personality Training (SPT), which fine-tunes a second ``honest persona'' into LoRA parameters that remain inactive during normal operation. After the main mode",
+      "tags": [
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-05444v1",
+      "title": "Causal Front-Door Adjustment for Robust Jailbreak Attacks on LLMs",
+      "authors": "Yao Zhou, Zeen Song, Wenwen Qiang, Fengge Wu, Shuyi Zhou, et al.",
+      "date": "2026-02-05",
+      "url": "https://arxiv.org/abs/2602.05444v1",
+      "abstract": "Safety alignment mechanisms in Large Language Models (LLMs) often operate as latent internal states, obscuring the model's inherent capabilities. Building on this observation, we model the safety mechanism as an unobserved confounder from a causal perspective. Then, we propose the \\textbf{C}ausal \\textbf{F}ront-Door \\textbf{A}djustment \\textbf{A}ttack ({\\textbf{CFA}}$^2$) to jailbreak LLM, which is a framework that leverages Pearl's Front-Door Criterion to sever the confounding associations for ",
+      "tags": [
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-05403v1",
+      "title": "Advancing Opinion Dynamics Modeling with Neural Diffusion-Convection-Reaction Equation",
+      "authors": "Chenghua Gong, Yihang Jiang, Hao Li, Rui Sun, Juyuan Zhang, et al.",
+      "date": "2026-02-05",
+      "url": "https://arxiv.org/abs/2602.05403v1",
+      "abstract": "Advanced opinion dynamics modeling is vital for deciphering social behavior, emphasizing its role in mitigating polarization and securing cyberspace. To synergize mechanistic interpretability with data-driven flexibility, recent studies have explored the integration of Physics-Informed Neural Networks (PINNs) for opinion modeling. Despite this promise, existing methods are tailored to incomplete priors, lacking a comprehensive physical system to integrate dynamics from local, global, and endogen",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-05183v1",
+      "title": "Data-Centric Interpretability for LLM-based Multi-Agent Reinforcement Learning",
+      "authors": "John Yan, Michael Yu, Yuqi Sun, Alexander Duffy, Tyler Marques, et al.",
+      "date": "2026-02-05",
+      "url": "https://arxiv.org/abs/2602.05183v1",
+      "abstract": "Large language models (LLMs) are increasingly trained in complex Reinforcement Learning, multi-agent environments, making it difficult to understand how behavior changes over training. Sparse Autoencoders (SAEs) have recently shown to be useful for data-centric interpretability. In this work, we analyze large-scale reinforcement learning training runs from the sophisticated environment of Full-Press Diplomacy by applying pretrained SAEs, alongside LLM-summarizer methods. We introduce Meta-Autoin",
+      "tags": [
+        "SAE"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2602-04613v1",
       "title": "Disentangling meaning from language in LLM-based machine translation",
@@ -44,6 +108,20 @@
       "featured": false
     },
     {
+      "id": "arxiv-2602-05027v1",
+      "title": "AudioSAE: Towards Understanding of Audio-Processing Models with Sparse AutoEncoders",
+      "authors": "Georgii Aparin, Tasnima Sadekova, Alexey Rukhovich, Assel Yermekova, Laida Kushnareva, et al.",
+      "date": "2026-02-04",
+      "url": "https://arxiv.org/abs/2602.05027v1",
+      "abstract": "Sparse Autoencoders (SAEs) are powerful tools for interpreting neural representations, yet their use in audio remains underexplored. We train SAEs across all encoder layers of Whisper and HuBERT, provide an extensive evaluation of their stability, interpretability, and show their practical utility. Over 50% of the features remain consistent across random seeds, and reconstruction quality is preserved. SAE features capture general acoustic and semantic information as well as specific events, incl",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
       "id": "arxiv-2602-03506v1",
       "title": "Explaining the Explainer: Understanding the Inner Workings of Transformer-based Symbolic Regression Models",
       "authors": "Arco van Breda, Erman Acar",
@@ -67,6 +145,33 @@
       "tags": [
         "safety",
         "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-04902v1",
+      "title": "Momentum Attention: The Physics of In-Context Learning and Spectral Forensics for Mechanistic Interpretability",
+      "authors": "Kingsuk Maitra",
+      "date": "2026-02-03",
+      "url": "https://arxiv.org/abs/2602.04902v1",
+      "abstract": "The Mechanistic Interpretability (MI) program has mapped the Transformer as a precise computational graph. We extend this graph with a conservation law and time-varying AC dynamics, viewing it as a physical circuit. We introduce Momentum Attention, a symplectic augmentation embedding physical priors via the kinematic difference operator $p_t = q_t - q_{t-1}$, implementing the symplectic shear $\\hat{q}_t = q_t + \u03b3p_t$ on queries and keys. We identify a fundamental Symplectic-Filter Duality: the p",
+      "tags": [
+        "circuits"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-04903v1",
+      "title": "Mind the Performance Gap: Capability-Behavior Trade-offs in Feature Steering",
+      "authors": "Eitan Sprejer, Oscar Agust\u00edn Stanchi, Mar\u00eda Victoria Carro, Denise Alejandra Mester, Iv\u00e1n Arcuschin",
+      "date": "2026-02-03",
+      "url": "https://arxiv.org/abs/2602.04903v1",
+      "abstract": "Feature steering has emerged as a promising approach for controlling LLM behavior through direct manipulation of internal representations, offering advantages over prompt engineering. However, its practical effectiveness in real-world applications remains poorly understood, particularly regarding potential trade-offs with output quality. We show that feature steering methods substantially degrade model performance even when successfully controlling target behaviors, a critical trade-off. Specifi",
+      "tags": [
+        "features",
+        "steering"
       ],
       "source": "arXiv",
       "featured": false
@@ -1848,6 +1953,19 @@
         "theory"
       ],
       "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "ss-963b7ebba47eb530160f",
+      "title": "Frequency-Dependent Parameter-Incorporated Equivalent Circuit Modeling and Fault Simulation for Transformer Windings Based on Frequency Response Analysis",
+      "authors": "Xiaoxiao Luo, Haishan Zheng, Xiong Liu, Siquan Li",
+      "date": "2025-12-05",
+      "url": "https://www.semanticscholar.org/paper/963b7ebba47eb530160fad4881afcc1153e456a8",
+      "abstract": "",
+      "tags": [
+        "circuits"
+      ],
+      "source": "Semantic Scholar",
       "featured": false
     },
     {
