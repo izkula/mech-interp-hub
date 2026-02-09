@@ -1,6 +1,48 @@
 {
-  "lastUpdated": "2026-02-08",
+  "lastUpdated": "2026-02-09",
   "papers": [
+    {
+      "id": "arxiv-2602-06852v1",
+      "title": "The Quantum Sieve Tracer: A Hybrid Framework for Layer-Wise Activation Tracing in Large Language Models",
+      "authors": "Jonathan Pan",
+      "date": "2026-02-06",
+      "url": "https://arxiv.org/abs/2602.06852v1",
+      "abstract": "Mechanistic interpretability aims to reverse-engineer the internal computations of Large Language Models (LLMs), yet separating sparse semantic signals from high-dimensional polysemantic noise remains a significant challenge. This paper introduces the Quantum Sieve Tracer, a hybrid quantum-classical framework designed to characterize factual recall circuits. We implement a modular pipeline that first localizes critical layers using classical causal tracing, then maps specific attention head acti",
+      "tags": [
+        "circuits",
+        "features",
+        "attention"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-06964v1",
+      "title": "Learning a Generative Meta-Model of LLM Activations",
+      "authors": "Grace Luo, Jiahai Feng, Trevor Darrell, Alec Radford, Jacob Steinhardt",
+      "date": "2026-02-06",
+      "url": "https://arxiv.org/abs/2602.06964v1",
+      "abstract": "Existing approaches for analyzing neural network activations, such as PCA and sparse autoencoders, rely on strong structural assumptions. Generative models offer an alternative: they can uncover structure without such assumptions and act as priors that improve intervention fidelity. We explore this direction by training diffusion models on one billion residual stream activations, creating \"meta-models\" that learn the distribution of a network's internal states. We find that diffusion loss decrea",
+      "tags": [
+        "SAE"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-06941v1",
+      "title": "Endogenous Resistance to Activation Steering in Language Models",
+      "authors": "Alex McKenzie, Keenan Pepper, Stijn Servaes, Martin Leitgab, Murat Cubuktepe, et al.",
+      "date": "2026-02-06",
+      "url": "https://arxiv.org/abs/2602.06941v1",
+      "abstract": "Large language models can resist task-misaligned activation steering during inference, sometimes recovering mid-generation to produce improved responses even when steering remains active. We term this Endogenous Steering Resistance (ESR). Using sparse autoencoder (SAE) latents to steer model activations, we find that Llama-3.3-70B shows substantial ESR, while smaller models from the Llama-3 and Gemma-2 families exhibit the phenomenon less frequently. We identify 26 SAE latents that activate diff",
+      "tags": [
+        "SAE",
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2602-05859v1",
       "title": "DLM-Scope: Mechanistic Interpretability of Diffusion Language Models via Sparse Autoencoders",
@@ -61,6 +103,21 @@
       "abstract": "Large language models (LLMs) are increasingly trained in complex Reinforcement Learning, multi-agent environments, making it difficult to understand how behavior changes over training. Sparse Autoencoders (SAEs) have recently shown to be useful for data-centric interpretability. In this work, we analyze large-scale reinforcement learning training runs from the sophisticated environment of Full-Press Diplomacy by applying pretrained SAEs, alongside LLM-summarizer methods. We introduce Meta-Autoin",
       "tags": [
         "SAE"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-06218v1",
+      "title": "Cross-Modal Redundancy and the Geometry of Vision-Language Embeddings",
+      "authors": "Gr\u00e9goire Dhimo\u00efla, Thomas Fel, Victor Boutin, Agustin Picard",
+      "date": "2026-02-05",
+      "url": "https://arxiv.org/abs/2602.06218v1",
+      "abstract": "Vision-language models (VLMs) align images and text with remarkable success, yet the geometry of their shared embedding space remains poorly understood. To probe this geometry, we begin from the Iso-Energy Assumption, which exploits cross-modal redundancy: a concept that is truly shared should exhibit the same average energy across modalities. We operationalize this assumption with an Aligned Sparse Autoencoder (SAE) that encourages energy consistency during training while preserving reconstruct",
+      "tags": [
+        "SAE",
+        "probing",
+        "vision"
       ],
       "source": "arXiv",
       "featured": false
