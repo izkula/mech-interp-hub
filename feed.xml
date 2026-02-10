@@ -5,9 +5,16 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>How Do Language Models Understand Tables? A Mechanistic Analysis of Cell Location</title>
+      <link>https://arxiv.org/abs/2602.08548v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Xuanliang Zhang, Dingzirui Wang, Keyan Xu, Qingfu Zhu, Wanxiang Che</p><p>While Large Language Models (LLMs) are increasingly deployed for table-related tasks, the internal mechanisms enabling them to process linearized two-dimensional structured tables remain opaque. In this work, we investigate the process of table understanding by dissecting the atomic task of cell location. Through activation patching and complementary interpretability techniques, we delineate the table understanding mechanism into a sequential three-stage pipeline: Semantic Binding, Coordinate Lo</p>]]></description>
+      <pubDate>Mon, 09 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.08548v1</guid>
+    </item>
     <item>
       <title>The Quantum Sieve Tracer: A Hybrid Framework for Layer-Wise Activation Tracing in Large Language Models</title>
       <link>https://arxiv.org/abs/2602.06852v1</link>
@@ -128,6 +135,13 @@
       <guid>https://arxiv.org/abs/2602.04903v1</guid>
     </item>
     <item>
+      <title>Bypassing the Rationale: Causal Auditing of Implicit Reasoning in Language Models</title>
+      <link>https://arxiv.org/abs/2602.03994v2</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Anish Sathyanarayanan, Aditya Nagarsekar, Aarush Rathore</p><p>Chain-of-thought (CoT) prompting is widely used as a reasoning aid and is often treated as a transparency mechanism. Yet behavioral gains under CoT do not imply that the model&#x27;s internal computation causally depends on the emitted reasoning text, i.e., models may produce fluent rationales while routing decision-critical computation through latent pathways. We introduce a causal, layerwise audit of CoT faithfulness based on activation patching. Our key metric, the CoT Mediation Index (CMI), isola</p><p><strong>Tags:</strong> reasoning</p>]]></description>
+      <pubDate>Tue, 03 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.03994v2</guid>
+    </item>
+    <item>
       <title>Universal Redundancies in Time Series Foundation Models</title>
       <link>https://arxiv.org/abs/2602.01605v1</link>
       <description><![CDATA[<p><strong>Authors:</strong> Anthony Bao, Venkata Hasith Vattikuti, Jeffrey Lai, William Gilpin</p><p>Time Series Foundation Models (TSFMs) leverage extensive pretraining to accurately predict unseen time series during inference, without the need for task-specific fine-tuning. Through large-scale evaluations on standard benchmarks, we find that leading transformer-based TSFMs exhibit redundant components in their intermediate layers. We introduce a set of tools for mechanistic interpretability of TSFMs, including ablations of specific components and direct logit attribution on the residual strea</p>]]></description>
@@ -203,20 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Ouns El Harzli, Hugo Wallner, Yoonsoo Nam, Haixuan Xavier Tao</p><p>Sparse auto-encoders (SAEs) have re-emerged as a prominent method for mechanistic interpretability, yet they face two significant challenges: the non-smoothness of the $L_1$ penalty, which hinders reconstruction and scalability, and a lack of alignment between learned features and human semantics. In this paper, we address these limitations by adapting unconstrained feature models-a mathematical framework from neural collapse theory-and by supervising the task. We supervise (decoder-only) SAEs t</p><p><strong>Tags:</strong> SAE, features, safety, theory</p>]]></description>
       <pubDate>Sat, 31 Jan 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2602.00924v1</guid>
-    </item>
-    <item>
-      <title>Towards Interpretable Hallucination Analysis and Mitigation in LVLMs via Contrastive Neuron Steering</title>
-      <link>https://arxiv.org/abs/2602.00621v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Guangtao Lyu, Xinyi Cheng, Qi Liu, Chenghao Xu, Jiexi Yan, et al.</p><p>LVLMs achieve remarkable multimodal understanding and generation but remain susceptible to hallucinations. Existing mitigation methods predominantly focus on output-level adjustments, leaving the internal mechanisms that give rise to these hallucinations largely unexplored. To gain a deeper understanding, we adopt a representation-level perspective by introducing sparse autoencoders (SAEs) to decompose dense visual embeddings into sparse, interpretable neurons. Through neuron-level analysis, we </p><p><strong>Tags:</strong> SAE, steering, vision</p>]]></description>
-      <pubDate>Sat, 31 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2602.00621v1</guid>
-    </item>
-    <item>
-      <title>Do Latent-CoT Models Think Step-by-Step? A Mechanistic Study on Sequential Reasoning Tasks</title>
-      <link>https://arxiv.org/abs/2602.00449v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Jia Liang, Liangming Pan</p><p>Latent Chain-of-Thought (Latent-CoT) aims to enable step-by-step computation without emitting long rationales, yet its mechanisms remain unclear. We study CODI, a continuous-thought teacher-student distillation model, on strictly sequential polynomial-iteration tasks. Using logit-lens decoding, linear probes, attention analysis, and activation patching, we localize intermediate-state representations and trace their routing to the final readout. On two- and three-hop tasks, CODI forms the full se</p><p><strong>Tags:</strong> probing, reasoning</p>]]></description>
-      <pubDate>Sat, 31 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2602.00449v1</guid>
     </item>
   </channel>
 </rss>
