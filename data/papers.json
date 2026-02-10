@@ -1,6 +1,17 @@
 {
-  "lastUpdated": "2026-02-09",
+  "lastUpdated": "2026-02-10",
   "papers": [
+    {
+      "id": "arxiv-2602-08548v1",
+      "title": "How Do Language Models Understand Tables? A Mechanistic Analysis of Cell Location",
+      "authors": "Xuanliang Zhang, Dingzirui Wang, Keyan Xu, Qingfu Zhu, Wanxiang Che",
+      "date": "2026-02-09",
+      "url": "https://arxiv.org/abs/2602.08548v1",
+      "abstract": "While Large Language Models (LLMs) are increasingly deployed for table-related tasks, the internal mechanisms enabling them to process linearized two-dimensional structured tables remain opaque. In this work, we investigate the process of table understanding by dissecting the atomic task of cell location. Through activation patching and complementary interpretability techniques, we delineate the table understanding mechanism into a sequential three-stage pipeline: Semantic Binding, Coordinate Lo",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2602-06852v1",
       "title": "The Quantum Sieve Tracer: A Hybrid Framework for Layer-Wise Activation Tracing in Large Language Models",
@@ -229,6 +240,19 @@
       "tags": [
         "features",
         "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-03994v2",
+      "title": "Bypassing the Rationale: Causal Auditing of Implicit Reasoning in Language Models",
+      "authors": "Anish Sathyanarayanan, Aditya Nagarsekar, Aarush Rathore",
+      "date": "2026-02-03",
+      "url": "https://arxiv.org/abs/2602.03994v2",
+      "abstract": "Chain-of-thought (CoT) prompting is widely used as a reasoning aid and is often treated as a transparency mechanism. Yet behavioral gains under CoT do not imply that the model's internal computation causally depends on the emitted reasoning text, i.e., models may produce fluent rationales while routing decision-critical computation through latent pathways. We introduce a causal, layerwise audit of CoT faithfulness based on activation patching. Our key metric, the CoT Mediation Index (CMI), isola",
+      "tags": [
+        "reasoning"
       ],
       "source": "arXiv",
       "featured": false
