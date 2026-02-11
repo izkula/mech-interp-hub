@@ -5,7 +5,7 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
@@ -35,6 +35,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Alex McKenzie, Keenan Pepper, Stijn Servaes, Martin Leitgab, Murat Cubuktepe, et al.</p><p>Large language models can resist task-misaligned activation steering during inference, sometimes recovering mid-generation to produce improved responses even when steering remains active. We term this Endogenous Steering Resistance (ESR). Using sparse autoencoder (SAE) latents to steer model activations, we find that Llama-3.3-70B shows substantial ESR, while smaller models from the Llama-3 and Gemma-2 families exhibit the phenomenon less frequently. We identify 26 SAE latents that activate diff</p><p><strong>Tags:</strong> SAE, steering</p>]]></description>
       <pubDate>Fri, 06 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2602.06941v1</guid>
+    </item>
+    <item>
+      <title>Towards Understanding Multimodal Fine-Tuning: Spatial Features</title>
+      <link>https://arxiv.org/abs/2602.08713v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Lachin Naghashyar, Hunar Batra, Ashkan Khakzar, Philip Torr, Ronald Clark, et al.</p><p>Contemporary Vision-Language Models (VLMs) achieve strong performance on a wide range of tasks by pairing a vision encoder with a pre-trained language model, fine-tuned for visual-text inputs. Yet despite these gains, it remains unclear how language backbone representations adapt during multimodal training and when vision-specific capabilities emerge. In this work, we present the first mechanistic analysis of VLM adaptation. Using stage-wise model diffing, a technique that isolates representatio</p><p><strong>Tags:</strong> features, vision</p>]]></description>
+      <pubDate>Fri, 06 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.08713v1</guid>
     </item>
     <item>
       <title>DLM-Scope: Mechanistic Interpretability of Diffusion Language Models via Sparse Autoencoders</title>
@@ -105,6 +112,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Georgii Aparin, Tasnima Sadekova, Alexey Rukhovich, Assel Yermekova, Laida Kushnareva, et al.</p><p>Sparse Autoencoders (SAEs) are powerful tools for interpreting neural representations, yet their use in audio remains underexplored. We train SAEs across all encoder layers of Whisper and HuBERT, provide an extensive evaluation of their stability, interpretability, and show their practical utility. Over 50% of the features remain consistent across random seeds, and reconstruction quality is preserved. SAE features capture general acoustic and semantic information as well as specific events, incl</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
       <pubDate>Wed, 04 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2602.05027v1</guid>
+    </item>
+    <item>
+      <title>ASA: Training-Free Representation Engineering for Tool-Calling Agents</title>
+      <link>https://arxiv.org/abs/2602.04935v2</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Youjin Wang, Run Zhou, Rong Fu, Shuaishuai Cao, Hongwei Zeng, et al.</p><p>Adapting LLM agents to domain-specific tool calling remains notably brittle under evolving interfaces. Prompt and schema engineering is easy to deploy but often fragile under distribution shift and strict parsers, while continual parameter-efficient fine-tuning improves reliability at the cost of training, maintenance, and potential forgetting. We identify a critical Lazy Agent failure mode where tool necessity is nearly perfectly decodable from mid-layer activations, yet the model remains conse</p>]]></description>
+      <pubDate>Wed, 04 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.04935v2</guid>
     </item>
     <item>
       <title>Explaining the Explainer: Understanding the Inner Workings of Transformer-based Symbolic Regression Models</title>
@@ -203,20 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Panagiotis Koromilas, Andreas D. Demou, James Oldfield, Yannis Panagakis, Mihalis Nicolaou</p><p>Sparse autoencoders (SAEs) have emerged as a promising method for interpreting neural network representations by decomposing activations into sparse combinations of dictionary atoms. However, SAEs assume that features combine additively through linear reconstruction, an assumption that cannot capture compositional structure: linear models cannot distinguish whether &quot;Starbucks&quot; arises from the composition of &quot;star&quot; and &quot;coffee&quot; features or merely their co-occurrence. This forces SAEs to allocate </p><p><strong>Tags:</strong> SAE, features</p>]]></description>
       <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2602.01322v1</guid>
-    </item>
-    <item>
-      <title>Neural FOXP2 -- Language Specific Neuron Steering for Targeted Language Improvement in LLMs</title>
-      <link>https://arxiv.org/abs/2602.00945v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Anusa Saha, Tanmay Joshi, Vinija Jain, Aman Chadha, Amitava Das</p><p>LLMs are multilingual by training, yet their lingua franca is often English, reflecting English language dominance in pretraining. Other languages remain in parametric memory but are systematically suppressed. We argue that language defaultness is governed by a sparse, low-rank control circuit, language neurons, that can be mechanistically isolated and safely steered.   We introduce Neural FOXP2, that makes a chosen language (Hindi or Spanish) primary in a model by steering language-specific neu</p><p><strong>Tags:</strong> circuits, steering</p>]]></description>
-      <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2602.00945v1</guid>
-    </item>
-    <item>
-      <title>Supervised sparse auto-encoders as unconstrained feature models for semantic composition</title>
-      <link>https://arxiv.org/abs/2602.00924v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Ouns El Harzli, Hugo Wallner, Yoonsoo Nam, Haixuan Xavier Tao</p><p>Sparse auto-encoders (SAEs) have re-emerged as a prominent method for mechanistic interpretability, yet they face two significant challenges: the non-smoothness of the $L_1$ penalty, which hinders reconstruction and scalability, and a lack of alignment between learned features and human semantics. In this paper, we address these limitations by adapting unconstrained feature models-a mathematical framework from neural collapse theory-and by supervising the task. We supervise (decoder-only) SAEs t</p><p><strong>Tags:</strong> SAE, features, safety, theory</p>]]></description>
-      <pubDate>Sat, 31 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2602.00924v1</guid>
     </item>
   </channel>
 </rss>
