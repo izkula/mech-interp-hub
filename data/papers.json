@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-10",
+  "lastUpdated": "2026-02-11",
   "papers": [
     {
       "id": "arxiv-2602-08548v1",
@@ -50,6 +50,20 @@
       "tags": [
         "SAE",
         "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-08713v1",
+      "title": "Towards Understanding Multimodal Fine-Tuning: Spatial Features",
+      "authors": "Lachin Naghashyar, Hunar Batra, Ashkan Khakzar, Philip Torr, Ronald Clark, et al.",
+      "date": "2026-02-06",
+      "url": "https://arxiv.org/abs/2602.08713v1",
+      "abstract": "Contemporary Vision-Language Models (VLMs) achieve strong performance on a wide range of tasks by pairing a vision encoder with a pre-trained language model, fine-tuned for visual-text inputs. Yet despite these gains, it remains unclear how language backbone representations adapt during multimodal training and when vision-specific capabilities emerge. In this work, we present the first mechanistic analysis of VLM adaptation. Using stage-wise model diffing, a technique that isolates representatio",
+      "tags": [
+        "features",
+        "vision"
       ],
       "source": "arXiv",
       "featured": false
@@ -186,6 +200,17 @@
         "SAE",
         "features"
       ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-04935v2",
+      "title": "ASA: Training-Free Representation Engineering for Tool-Calling Agents",
+      "authors": "Youjin Wang, Run Zhou, Rong Fu, Shuaishuai Cao, Hongwei Zeng, et al.",
+      "date": "2026-02-04",
+      "url": "https://arxiv.org/abs/2602.04935v2",
+      "abstract": "Adapting LLM agents to domain-specific tool calling remains notably brittle under evolving interfaces. Prompt and schema engineering is easy to deploy but often fragile under distribution shift and strict parsers, while continual parameter-efficient fine-tuning improves reliability at the cost of training, maintenance, and potential forgetting. We identify a critical Lazy Agent failure mode where tool necessity is nearly perfectly decodable from mid-layer activations, yet the model remains conse",
+      "tags": [],
       "source": "arXiv",
       "featured": false
     },
