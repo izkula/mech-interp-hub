@@ -5,9 +5,51 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Protein Circuit Tracing via Cross-layer Transcoders</title>
+      <link>https://arxiv.org/abs/2602.12026v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Darin Tsui, Kunal Talreja, Daniel Saeedi, Amirali Aghazadeh</p><p>Protein language models (pLMs) have emerged as powerful predictors of protein structure and function. However, the computational circuits underlying their predictions remain poorly understood. Recent mechanistic interpretability methods decompose pLM representations into interpretable features, but they treat each layer independently and thus fail to capture cross-layer computation, limiting their ability to approximate the full model. We introduce ProtoMech, a framework for discovering computat</p><p><strong>Tags:</strong> circuits, features, biology</p>]]></description>
+      <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.12026v1</guid>
+    </item>
+    <item>
+      <title>From Atoms to Trees: Building a Structured Feature Forest with Hierarchical Sparse Autoencoders</title>
+      <link>https://arxiv.org/abs/2602.11881v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Yifan Luo, Yang Zhan, Jiedong Jiang, Tianyang Liu, Mingrui Wu, et al.</p><p>Sparse autoencoders (SAEs) have proven effective for extracting monosemantic features from large language models (LLMs), yet these features are typically identified in isolation. However, broad evidence suggests that LLMs capture the intrinsic structure of natural language, where the phenomenon of &quot;feature splitting&quot; in particular indicates that such structure is hierarchical. To capture this, we propose the Hierarchical Sparse Autoencoder (HSAE), which jointly learns a series of SAEs and the pa</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.11881v1</guid>
+    </item>
+    <item>
+      <title>EM-Aware Physical Synthesis: Neural Inductor Modeling and Intelligent Placement &amp; Routing for RF Circuits</title>
+      <link>https://arxiv.org/abs/2602.11461v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Yilun Huang, Asal Mehradfar, Salman Avestimehr, Hamidreza Aghasi</p><p>This paper presents an ML-driven framework for automated RF physical synthesis that transforms circuit netlists into manufacturable GDSII layouts. While recent ML approaches demonstrate success in topology selection and parameter optimization, they fail to produce manufacturable layouts due to oversimplified component models and lack of routing capabilities. Our framework addresses these limitations through three key innovations: (1) a neural network framework trained on 18,210 inductor geometri</p><p><strong>Tags:</strong> circuits</p>]]></description>
+      <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.11461v1</guid>
+    </item>
+    <item>
+      <title>TADA! Tuning Audio Diffusion Models through Activation Steering</title>
+      <link>https://arxiv.org/abs/2602.11910v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Łukasz Staniszewski, Katarzyna Zaleska, Mateusz Modrzejewski, Kamil Deja</p><p>Audio diffusion models can synthesize high-fidelity music from text, yet their internal mechanisms for representing high-level concepts remain poorly understood. In this work, we use activation patching to demonstrate that distinct semantic musical concepts, such as the presence of specific instruments, vocals, or genre characteristics, are controlled by a small, shared subset of attention layers in state-of-the-art audio diffusion architectures. Next, we demonstrate that applying Contrastive Ac</p><p><strong>Tags:</strong> steering</p>]]></description>
+      <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.11910v1</guid>
+    </item>
+    <item>
+      <title>SafeNeuron: Neuron-Level Safety Alignment for Large Language Models</title>
+      <link>https://arxiv.org/abs/2602.12158v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Zhaoxin Wang, Jiaming Liang, Fengbin Zhu, Weixiang Zhao, Junfeng Fang, et al.</p><p>Large language models (LLMs) and multimodal LLMs are typically safety-aligned before release to prevent harmful content generation. However, recent studies show that safety behaviors are concentrated in a small subset of parameters, making alignment brittle and easily bypassed through neuron-level attacks. Moreover, most existing alignment methods operate at the behavioral level, offering limited control over the model&#x27;s internal safety mechanisms. In this work, we propose SafeNeuron, a neuron-l</p><p><strong>Tags:</strong> safety, vision</p>]]></description>
+      <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.12158v1</guid>
+    </item>
+    <item>
+      <title>Cross-Architecture Model Diffing with Crosscoders: Unsupervised Discovery of Differences Between LLMs</title>
+      <link>https://arxiv.org/abs/2602.11729v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Thomas Jiralerspong, Trenton Bricken</p><p>Model diffing, the process of comparing models&#x27; internal representations to identify their differences, is a promising approach for uncovering safety-critical behaviors in new models. However, its application has so far been primarily focused on comparing a base model with its finetune. Since new LLM releases are often novel architectures, cross-architecture methods are essential to make model diffing widely applicable. Crosscoders are one solution capable of cross-architecture model diffing but</p><p><strong>Tags:</strong> safety</p>]]></description>
+      <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.11729v1</guid>
+    </item>
     <item>
       <title>From Circuits to Dynamics: Understanding and Stabilizing Failure in 3D Diffusion Transformers</title>
       <link>https://arxiv.org/abs/2602.11130v1</link>
@@ -42,6 +84,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Théo Lasnier, Wissam Antoun, Francis Kulumba, Djamé Seddah</p><p>Backdoor attacks pose significant security risks for Large Language Models (LLMs), yet the internal mechanisms by which triggers operate remain poorly understood. We present the first mechanistic analysis of language-switching backdoors, studying the GAPperon model family (1B, 8B, 24B parameters) which contains triggers injected during pretraining that cause output language switching. Using activation patching, we localize trigger formation to early layers (7.5-25% of model depth) and identify w</p><p><strong>Tags:</strong> circuits</p>]]></description>
       <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2602.10382v1</guid>
+    </item>
+    <item>
+      <title>Control Reinforcement Learning: Interpretable Token-Level Steering of LLMs via Sparse Autoencoder Features</title>
+      <link>https://arxiv.org/abs/2602.10437v2</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Seonglae Cho, Zekun Wu, Adriano Koshiyama</p><p>Sparse autoencoders (SAEs) decompose language model activations into interpretable features, but existing methods reveal only which features activate, not which change model outputs when amplified. We introduce Control Reinforcement Learning (CRL), which trains a policy to select SAE features for steering at each token, producing interpretable intervention logs: the learned policy identifies features that change model outputs when amplified. Adaptive Feature Masking encourages diverse feature di</p><p><strong>Tags:</strong> SAE, features, steering</p>]]></description>
+      <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.10437v2</guid>
     </item>
     <item>
       <title>Simple LLM Baselines are Competitive for Model Diffing</title>
@@ -168,55 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Grégoire Dhimoïla, Thomas Fel, Victor Boutin, Agustin Picard</p><p>Vision-language models (VLMs) align images and text with remarkable success, yet the geometry of their shared embedding space remains poorly understood. To probe this geometry, we begin from the Iso-Energy Assumption, which exploits cross-modal redundancy: a concept that is truly shared should exhibit the same average energy across modalities. We operationalize this assumption with an Aligned Sparse Autoencoder (SAE) that encourages energy consistency during training while preserving reconstruct</p><p><strong>Tags:</strong> SAE, probing, vision</p>]]></description>
       <pubDate>Thu, 05 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2602.06218v1</guid>
-    </item>
-    <item>
-      <title>Disentangling meaning from language in LLM-based machine translation</title>
-      <link>https://arxiv.org/abs/2602.04613v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Théo Lasnier, Armel Zebaze, Djamé Seddah, Rachel Bawden, Benoît Sagot</p><p>Mechanistic Interpretability (MI) seeks to explain how neural networks implement their capabilities, but the scale of Large Language Models (LLMs) has limited prior MI work in Machine Translation (MT) to word-level analyses. We study sentence-level MT from a mechanistic perspective by analyzing attention heads to understand how LLMs internally encode and distribute translation functions. We decompose MT into two subtasks: producing text in the target language (i.e. target language identification</p><p><strong>Tags:</strong> attention</p>]]></description>
-      <pubDate>Wed, 04 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2602.04613v1</guid>
-    </item>
-    <item>
-      <title>Identifying Intervenable and Interpretable Features via Orthogonality Regularization</title>
-      <link>https://arxiv.org/abs/2602.04718v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Moritz Miller, Florent Draye, Bernhard Schölkopf</p><p>With recent progress on fine-tuning language models around a fixed sparse autoencoder, we disentangle the decoder matrix into almost orthogonal features. This reduces interference and superposition between the features, while keeping performance on the target dataset essentially unchanged. Our orthogonality penalty leads to identifiable features, ensuring the uniqueness of the decomposition. Further, we find that the distance between embedded feature explanations increases with stricter orthogon</p><p><strong>Tags:</strong> SAE, superposition, features</p>]]></description>
-      <pubDate>Wed, 04 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2602.04718v1</guid>
-    </item>
-    <item>
-      <title>Decomposing Query-Key Feature Interactions Using Contrastive Covariances</title>
-      <link>https://arxiv.org/abs/2602.04752v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Andrew Lee, Yonatan Belinkov, Fernanda Viégas, Martin Wattenberg</p><p>Despite the central role of attention heads in Transformers, we lack tools to understand why a model attends to a particular token. To address this, we study the query-key (QK) space -- the bilinear joint embedding space between queries and keys. We present a contrastive covariance method to decompose the QK space into low-rank, human-interpretable components. It is when features in keys and queries align in these low-rank subspaces that high attention scores are produced. We first study our met</p><p><strong>Tags:</strong> features, attention</p>]]></description>
-      <pubDate>Wed, 04 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2602.04752v1</guid>
-    </item>
-    <item>
-      <title>AudioSAE: Towards Understanding of Audio-Processing Models with Sparse AutoEncoders</title>
-      <link>https://arxiv.org/abs/2602.05027v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Georgii Aparin, Tasnima Sadekova, Alexey Rukhovich, Assel Yermekova, Laida Kushnareva, et al.</p><p>Sparse Autoencoders (SAEs) are powerful tools for interpreting neural representations, yet their use in audio remains underexplored. We train SAEs across all encoder layers of Whisper and HuBERT, provide an extensive evaluation of their stability, interpretability, and show their practical utility. Over 50% of the features remain consistent across random seeds, and reconstruction quality is preserved. SAE features capture general acoustic and semantic information as well as specific events, incl</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Wed, 04 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2602.05027v1</guid>
-    </item>
-    <item>
-      <title>ASA: Training-Free Representation Engineering for Tool-Calling Agents</title>
-      <link>https://arxiv.org/abs/2602.04935v2</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Youjin Wang, Run Zhou, Rong Fu, Shuaishuai Cao, Hongwei Zeng, et al.</p><p>Adapting LLM agents to domain-specific tool calling remains notably brittle under evolving interfaces. Prompt and schema engineering is easy to deploy but often fragile under distribution shift and strict parsers, while continual parameter-efficient fine-tuning improves reliability at the cost of training, maintenance, and potential forgetting. We identify a critical Lazy Agent failure mode where tool necessity is nearly perfectly decodable from mid-layer activations, yet the model remains conse</p>]]></description>
-      <pubDate>Wed, 04 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2602.04935v2</guid>
-    </item>
-    <item>
-      <title>Explaining the Explainer: Understanding the Inner Workings of Transformer-based Symbolic Regression Models</title>
-      <link>https://arxiv.org/abs/2602.03506v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Arco van Breda, Erman Acar</p><p>Following their success across many domains, transformers have also proven effective for symbolic regression (SR); however, the internal mechanisms underlying their generation of mathematical operators remain largely unexplored. Although mechanistic interpretability has successfully identified circuits in language and vision models, it has not yet been applied to SR. In this article, we introduce PATCHES, an evolutionary circuit discovery algorithm that identifies compact and correct circuits fo</p><p><strong>Tags:</strong> circuits, vision</p>]]></description>
-      <pubDate>Tue, 03 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2602.03506v1</guid>
-    </item>
-    <item>
-      <title>CSR-Bench: A Benchmark for Evaluating the Cross-modal Safety and Reliability of MLLMs</title>
-      <link>https://arxiv.org/abs/2602.03263v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Yuxuan Liu, Yuntian Shi, Kun Wang, Haoting Shen, Kun Yang</p><p>Multimodal large language models (MLLMs) enable interaction over both text and images, but their safety behavior can be driven by unimodal shortcuts instead of true joint intent understanding. We introduce CSR-Bench, a benchmark for evaluating cross-modal reliability through four stress-testing interaction patterns spanning Safety, Over-rejection, Bias, and Hallucination, covering 61 fine-grained types. Each instance is constructed to require integrated image-text interpretation, and we addition</p><p><strong>Tags:</strong> safety, vision</p>]]></description>
-      <pubDate>Tue, 03 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2602.03263v1</guid>
     </item>
   </channel>
 </rss>
