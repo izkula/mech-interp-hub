@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-15",
+  "lastUpdated": "2026-02-16",
   "papers": [
     {
       "id": "arxiv-2602-12026v1",
@@ -79,6 +79,36 @@
       "abstract": "Model diffing, the process of comparing models' internal representations to identify their differences, is a promising approach for uncovering safety-critical behaviors in new models. However, its application has so far been primarily focused on comparing a base model with its finetune. Since new LLM releases are often novel architectures, cross-architecture methods are essential to make model diffing widely applicable. Crosscoders are one solution capable of cross-architecture model diffing but",
       "tags": [
         "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-12418v1",
+      "title": "Sparse Autoencoders are Capable LLM Jailbreak Mitigators",
+      "authors": "Yannick Assogba, Jacopo Cortellazzi, Javier Abad, Pau Rodriguez, Xavier Suau, et al.",
+      "date": "2026-02-12",
+      "url": "https://arxiv.org/abs/2602.12418v1",
+      "abstract": "Jailbreak attacks remain a persistent threat to large language model safety. We propose Context-Conditioned Delta Steering (CC-Delta), an SAE-based defense that identifies jailbreak-relevant sparse features by comparing token-level representations of the same harmful request with and without jailbreak context. Using paired harmful/jailbreak prompts, CC-Delta selects features via statistical testing and applies inference-time mean-shift steering in SAE latent space. Across four aligned instructio",
+      "tags": [
+        "SAE",
+        "features",
+        "safety",
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-12403v1",
+      "title": "MonoLoss: A Training Objective for Interpretable Monosemantic Representations",
+      "authors": "Ali Nasiri-Sarvi, Anh Tien Nguyen, Hassan Rivaz, Dimitris Samaras, Mahdi S. Hosseini",
+      "date": "2026-02-12",
+      "url": "https://arxiv.org/abs/2602.12403v1",
+      "abstract": "Sparse autoencoders (SAEs) decompose polysemantic neural representations, where neurons respond to multiple unrelated concepts, into monosemantic features that capture single, interpretable concepts. However, standard training objectives only weakly encourage this decomposition, and existing monosemanticity metrics require pairwise comparisons across all dataset samples, making them inefficient during training and evaluation. We study a recent MonoScore metric and derive a single-pass algorithm ",
+      "tags": [
+        "SAE",
+        "features"
       ],
       "source": "arXiv",
       "featured": false
