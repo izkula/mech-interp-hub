@@ -5,7 +5,7 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 15 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
@@ -49,6 +49,20 @@
       <description><![CDATA[<p><strong>Authors:</strong> Thomas Jiralerspong, Trenton Bricken</p><p>Model diffing, the process of comparing models&#x27; internal representations to identify their differences, is a promising approach for uncovering safety-critical behaviors in new models. However, its application has so far been primarily focused on comparing a base model with its finetune. Since new LLM releases are often novel architectures, cross-architecture methods are essential to make model diffing widely applicable. Crosscoders are one solution capable of cross-architecture model diffing but</p><p><strong>Tags:</strong> safety</p>]]></description>
       <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2602.11729v1</guid>
+    </item>
+    <item>
+      <title>Sparse Autoencoders are Capable LLM Jailbreak Mitigators</title>
+      <link>https://arxiv.org/abs/2602.12418v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Yannick Assogba, Jacopo Cortellazzi, Javier Abad, Pau Rodriguez, Xavier Suau, et al.</p><p>Jailbreak attacks remain a persistent threat to large language model safety. We propose Context-Conditioned Delta Steering (CC-Delta), an SAE-based defense that identifies jailbreak-relevant sparse features by comparing token-level representations of the same harmful request with and without jailbreak context. Using paired harmful/jailbreak prompts, CC-Delta selects features via statistical testing and applies inference-time mean-shift steering in SAE latent space. Across four aligned instructio</p><p><strong>Tags:</strong> SAE, features, safety, steering</p>]]></description>
+      <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.12418v1</guid>
+    </item>
+    <item>
+      <title>MonoLoss: A Training Objective for Interpretable Monosemantic Representations</title>
+      <link>https://arxiv.org/abs/2602.12403v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Ali Nasiri-Sarvi, Anh Tien Nguyen, Hassan Rivaz, Dimitris Samaras, Mahdi S. Hosseini</p><p>Sparse autoencoders (SAEs) decompose polysemantic neural representations, where neurons respond to multiple unrelated concepts, into monosemantic features that capture single, interpretable concepts. However, standard training objectives only weakly encourage this decomposition, and existing monosemanticity metrics require pairwise comparisons across all dataset samples, making them inefficient during training and evaluation. We study a recent MonoScore metric and derive a single-pass algorithm </p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.12403v1</guid>
     </item>
     <item>
       <title>From Circuits to Dynamics: Understanding and Stabilizing Failure in 3D Diffusion Transformers</title>
@@ -203,20 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Chenghua Gong, Yihang Jiang, Hao Li, Rui Sun, Juyuan Zhang, et al.</p><p>Advanced opinion dynamics modeling is vital for deciphering social behavior, emphasizing its role in mitigating polarization and securing cyberspace. To synergize mechanistic interpretability with data-driven flexibility, recent studies have explored the integration of Physics-Informed Neural Networks (PINNs) for opinion modeling. Despite this promise, existing methods are tailored to incomplete priors, lacking a comprehensive physical system to integrate dynamics from local, global, and endogen</p>]]></description>
       <pubDate>Thu, 05 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2602.05403v1</guid>
-    </item>
-    <item>
-      <title>Data-Centric Interpretability for LLM-based Multi-Agent Reinforcement Learning</title>
-      <link>https://arxiv.org/abs/2602.05183v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> John Yan, Michael Yu, Yuqi Sun, Alexander Duffy, Tyler Marques, et al.</p><p>Large language models (LLMs) are increasingly trained in complex Reinforcement Learning, multi-agent environments, making it difficult to understand how behavior changes over training. Sparse Autoencoders (SAEs) have recently shown to be useful for data-centric interpretability. In this work, we analyze large-scale reinforcement learning training runs from the sophisticated environment of Full-Press Diplomacy by applying pretrained SAEs, alongside LLM-summarizer methods. We introduce Meta-Autoin</p><p><strong>Tags:</strong> SAE</p>]]></description>
-      <pubDate>Thu, 05 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2602.05183v1</guid>
-    </item>
-    <item>
-      <title>Cross-Modal Redundancy and the Geometry of Vision-Language Embeddings</title>
-      <link>https://arxiv.org/abs/2602.06218v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Grégoire Dhimoïla, Thomas Fel, Victor Boutin, Agustin Picard</p><p>Vision-language models (VLMs) align images and text with remarkable success, yet the geometry of their shared embedding space remains poorly understood. To probe this geometry, we begin from the Iso-Energy Assumption, which exploits cross-modal redundancy: a concept that is truly shared should exhibit the same average energy across modalities. We operationalize this assumption with an Aligned Sparse Autoencoder (SAE) that encourages energy consistency during training while preserving reconstruct</p><p><strong>Tags:</strong> SAE, probing, vision</p>]]></description>
-      <pubDate>Thu, 05 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2602.06218v1</guid>
     </item>
   </channel>
 </rss>
