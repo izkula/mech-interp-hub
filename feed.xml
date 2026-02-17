@@ -5,9 +5,30 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>SynthSAEBench: Evaluating Sparse Autoencoders on Scalable Realistic Synthetic Data</title>
+      <link>https://arxiv.org/abs/2602.14687v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> David Chanin, Adrià Garriga-Alonso</p><p>Improving Sparse Autoencoders (SAEs) requires benchmarks that can precisely validate architectural innovations. However, current SAE benchmarks on LLMs are often too noisy to differentiate architectural improvements, and current synthetic data experiments are too small-scale and unrealistic to provide meaningful comparisons. We introduce SynthSAEBench, a toolkit for generating large-scale synthetic data with realistic feature characteristics including correlation, hierarchy, and superposition, a</p><p><strong>Tags:</strong> SAE, superposition, features</p>]]></description>
+      <pubDate>Mon, 16 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.14687v1</guid>
+    </item>
+    <item>
+      <title>Singular Vectors of Attention Heads Align with Features</title>
+      <link>https://arxiv.org/abs/2602.13524v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Gabriel Franco, Carson Loughridge, Mark Crovella</p><p>Identifying feature representations in language models is a central task in mechanistic interpretability. Several recent studies have made an implicit assumption that feature representations can be inferred in some cases from singular vectors of attention matrices. However, sound justification for this assumption is lacking. In this paper we address that question, asking: why and when do singular vectors align with features? First, we demonstrate that singular vectors robustly align with feature</p><p><strong>Tags:</strong> features, attention</p>]]></description>
+      <pubDate>Fri, 13 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.13524v1</guid>
+    </item>
+    <item>
+      <title>Finding Highly Interpretable Prompt-Specific Circuits in Language Models</title>
+      <link>https://arxiv.org/abs/2602.13483v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Gabriel Franco, Lucas M. Tassis, Azalea Rohr, Mark Crovella</p><p>Understanding the internal circuits that language models use to solve tasks remains a central challenge in mechanistic interpretability. Most prior work identifies circuits at the task level by averaging across many prompts, implicitly assuming a single stable mechanism per task. We show that this assumption can obscure a crucial source of structure: circuits are prompt-specific, even within a fixed task. Building on attention causal communication (ACC) (Franco &amp; Crovella, 2025), we introduce AC</p><p><strong>Tags:</strong> circuits</p>]]></description>
+      <pubDate>Fri, 13 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.13483v1</guid>
+    </item>
     <item>
       <title>Protein Circuit Tracing via Cross-layer Transcoders</title>
       <link>https://arxiv.org/abs/2602.12026v1</link>
@@ -196,27 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Xu Wang, Bingqing Jiang, Yu Wan, Baosong Yang, Lingpeng Kong, et al.</p><p>Sparse autoencoders (SAEs) have become a standard tool for mechanistic interpretability in autoregressive large language models (LLMs), enabling researchers to extract sparse, human-interpretable features and intervene on model behavior. Recently, as diffusion language models (DLMs) have become an increasingly promising alternative to the autoregressive LLMs, it is essential to develop tailored mechanistic interpretability tools for this emerging class of models. In this work, we present DLM-Sco</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
       <pubDate>Thu, 05 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2602.05859v1</guid>
-    </item>
-    <item>
-      <title>Split Personality Training: Revealing Latent Knowledge Through Alternate Personalities</title>
-      <link>https://arxiv.org/abs/2602.05532v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Florian Dietz, William Wale, Oscar Gilg, Robert McCarthy, Felix Michalak, et al.</p><p>Detecting misalignment in large language models is challenging because models may learn to conceal misbehavior during training. Standard auditing techniques fall short: black-box methods often cannot distinguish misaligned outputs from benign ones, and mechanistic interpretability does not scale with model capabilities. We introduce Split Personality Training (SPT), which fine-tunes a second ``honest persona&#x27;&#x27; into LoRA parameters that remain inactive during normal operation. After the main mode</p><p><strong>Tags:</strong> safety</p>]]></description>
-      <pubDate>Thu, 05 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2602.05532v1</guid>
-    </item>
-    <item>
-      <title>Causal Front-Door Adjustment for Robust Jailbreak Attacks on LLMs</title>
-      <link>https://arxiv.org/abs/2602.05444v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Yao Zhou, Zeen Song, Wenwen Qiang, Fengge Wu, Shuyi Zhou, et al.</p><p>Safety alignment mechanisms in Large Language Models (LLMs) often operate as latent internal states, obscuring the model&#x27;s inherent capabilities. Building on this observation, we model the safety mechanism as an unobserved confounder from a causal perspective. Then, we propose the \textbf{C}ausal \textbf{F}ront-Door \textbf{A}djustment \textbf{A}ttack ({\textbf{CFA}}$^2$) to jailbreak LLM, which is a framework that leverages Pearl&#x27;s Front-Door Criterion to sever the confounding associations for </p><p><strong>Tags:</strong> safety</p>]]></description>
-      <pubDate>Thu, 05 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2602.05444v1</guid>
-    </item>
-    <item>
-      <title>Advancing Opinion Dynamics Modeling with Neural Diffusion-Convection-Reaction Equation</title>
-      <link>https://arxiv.org/abs/2602.05403v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Chenghua Gong, Yihang Jiang, Hao Li, Rui Sun, Juyuan Zhang, et al.</p><p>Advanced opinion dynamics modeling is vital for deciphering social behavior, emphasizing its role in mitigating polarization and securing cyberspace. To synergize mechanistic interpretability with data-driven flexibility, recent studies have explored the integration of Physics-Informed Neural Networks (PINNs) for opinion modeling. Despite this promise, existing methods are tailored to incomplete priors, lacking a comprehensive physical system to integrate dynamics from local, global, and endogen</p>]]></description>
-      <pubDate>Thu, 05 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2602.05403v1</guid>
     </item>
   </channel>
 </rss>
