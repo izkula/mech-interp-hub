@@ -1,6 +1,32 @@
 {
-  "lastUpdated": "2026-02-17",
+  "lastUpdated": "2026-02-18",
   "papers": [
+    {
+      "id": "arxiv-2602-15307v1",
+      "title": "What Do Neurons Listen To? A Neuron-level Dissection of a General-purpose Audio Model",
+      "authors": "Takao Kawamura, Daisuke Niizumi, Nobutaka Ono",
+      "date": "2026-02-17",
+      "url": "https://arxiv.org/abs/2602.15307v1",
+      "abstract": "In this paper, we analyze the internal representations of a general-purpose audio self-supervised learning (SSL) model from a neuron-level perspective. Despite their strong empirical performance as feature extractors, the internal mechanisms underlying the robust generalization of SSL audio models remain unclear. Drawing on the framework of mechanistic interpretability, we identify and examine class-specific neurons by analyzing conditional activation patterns across diverse tasks. Our analysis ",
+      "tags": [
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-15730v1",
+      "title": "Causal Effect Estimation with Latent Textual Treatments",
+      "authors": "Omri Feldman, Amar Venugopal, Jann Spiess, Amir Feder",
+      "date": "2026-02-17",
+      "url": "https://arxiv.org/abs/2602.15730v1",
+      "abstract": "Understanding the causal effects of text on downstream outcomes is a central task in many applications. Estimating such effects requires researchers to run controlled experiments that systematically vary textual features. While large language models (LLMs) hold promise for generating text, producing and evaluating controlled variation requires more careful attention. In this paper, we present an end-to-end pipeline for the generation and causal estimation of latent textual interventions. Our wor",
+      "tags": [
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2602-14687v1",
       "title": "SynthSAEBench: Evaluating Sparse Autoencoders on Scalable Realistic Synthetic Data",
@@ -11,6 +37,44 @@
       "tags": [
         "SAE",
         "superposition",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-14869v1",
+      "title": "Concept Influence: Leveraging Interpretability to Improve Performance and Efficiency in Training Data Attribution",
+      "authors": "Matthew Kowal, Goncalo Paulo, Louis Jaburi, Tom Tseng, Lev E McKinney, et al.",
+      "date": "2026-02-16",
+      "url": "https://arxiv.org/abs/2602.14869v1",
+      "abstract": "As large language models are increasingly trained and fine-tuned, practitioners need methods to identify which training data drive specific behaviors, particularly unintended ones. Training Data Attribution (TDA) methods address this by estimating datapoint influence. Existing approaches like influence functions are both computationally expensive and attribute based on single test examples, which can bias results toward syntactic rather than semantic similarity. To address these issues of scalab",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-14111v1",
+      "title": "Sanity Checks for Sparse Autoencoders: Do SAEs Beat Random Baselines?",
+      "authors": "Anton Korznikov, Andrey Galichin, Alexey Dontsov, Oleg Rogov, Ivan Oseledets, et al.",
+      "date": "2026-02-15",
+      "url": "https://arxiv.org/abs/2602.14111v1",
+      "abstract": "Sparse Autoencoders (SAEs) have emerged as a promising tool for interpreting neural networks by decomposing their activations into sparse sets of human-interpretable features. Recent work has introduced multiple SAE variants and successfully scaled them to frontier models. Despite much excitement, a growing number of negative results in downstream tasks casts doubt on whether SAEs recover meaningful features. To directly investigate this, we perform two complementary evaluations. On a synthetic ",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-13567v1",
+      "title": "DistillLens: Symmetric Knowledge Distillation Through Logit Lens",
+      "authors": "Manish Dhakal, Uthman Jinadu, Anjila Budathoki, Rajshekhar Sunderraman, Yi Ding",
+      "date": "2026-02-14",
+      "url": "https://arxiv.org/abs/2602.13567v1",
+      "abstract": "Standard Knowledge Distillation (KD) compresses Large Language Models (LLMs) by optimizing final outputs, yet it typically treats the teacher's intermediate layer's thought process as a black box. While feature-based distillation attempts to bridge this gap, existing methods (e.g., MSE and asymmetric KL divergence) ignore the rich uncertainty profiles required for the final output. In this paper, we introduce DistillLens, a framework that symmetrically aligns the evolving thought processes of st",
+      "tags": [
         "features"
       ],
       "source": "arXiv",
@@ -896,6 +960,17 @@
       "tags": [
         "theory"
       ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-15038v1",
+      "title": "Indic-TunedLens: Interpreting Multilingual Models in Indian Languages",
+      "authors": "Mihir Panchal, Deeksha Varshney,  Mamta, Asif Ekbal",
+      "date": "2026-01-29",
+      "url": "https://arxiv.org/abs/2602.15038v1",
+      "abstract": "Multilingual large language models (LLMs) are increasingly deployed in linguistically diverse regions like India, yet most interpretability tools remain tailored to English. Prior work reveals that LLMs often operate in English centric representation spaces, making cross lingual interpretability a pressing concern. We introduce Indic-TunedLens, a novel interpretability framework specifically for Indian languages that learns shared affine transformations. Unlike the standard Logit Lens, which dir",
+      "tags": [],
       "source": "arXiv",
       "featured": false
     },
