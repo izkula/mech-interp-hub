@@ -5,15 +5,50 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>What Do Neurons Listen To? A Neuron-level Dissection of a General-purpose Audio Model</title>
+      <link>https://arxiv.org/abs/2602.15307v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Takao Kawamura, Daisuke Niizumi, Nobutaka Ono</p><p>In this paper, we analyze the internal representations of a general-purpose audio self-supervised learning (SSL) model from a neuron-level perspective. Despite their strong empirical performance as feature extractors, the internal mechanisms underlying the robust generalization of SSL audio models remain unclear. Drawing on the framework of mechanistic interpretability, we identify and examine class-specific neurons by analyzing conditional activation patterns across diverse tasks. Our analysis </p><p><strong>Tags:</strong> features</p>]]></description>
+      <pubDate>Tue, 17 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.15307v1</guid>
+    </item>
+    <item>
+      <title>Causal Effect Estimation with Latent Textual Treatments</title>
+      <link>https://arxiv.org/abs/2602.15730v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Omri Feldman, Amar Venugopal, Jann Spiess, Amir Feder</p><p>Understanding the causal effects of text on downstream outcomes is a central task in many applications. Estimating such effects requires researchers to run controlled experiments that systematically vary textual features. While large language models (LLMs) hold promise for generating text, producing and evaluating controlled variation requires more careful attention. In this paper, we present an end-to-end pipeline for the generation and causal estimation of latent textual interventions. Our wor</p><p><strong>Tags:</strong> features</p>]]></description>
+      <pubDate>Tue, 17 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.15730v1</guid>
+    </item>
     <item>
       <title>SynthSAEBench: Evaluating Sparse Autoencoders on Scalable Realistic Synthetic Data</title>
       <link>https://arxiv.org/abs/2602.14687v1</link>
       <description><![CDATA[<p><strong>Authors:</strong> David Chanin, Adrià Garriga-Alonso</p><p>Improving Sparse Autoencoders (SAEs) requires benchmarks that can precisely validate architectural innovations. However, current SAE benchmarks on LLMs are often too noisy to differentiate architectural improvements, and current synthetic data experiments are too small-scale and unrealistic to provide meaningful comparisons. We introduce SynthSAEBench, a toolkit for generating large-scale synthetic data with realistic feature characteristics including correlation, hierarchy, and superposition, a</p><p><strong>Tags:</strong> SAE, superposition, features</p>]]></description>
       <pubDate>Mon, 16 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2602.14687v1</guid>
+    </item>
+    <item>
+      <title>Concept Influence: Leveraging Interpretability to Improve Performance and Efficiency in Training Data Attribution</title>
+      <link>https://arxiv.org/abs/2602.14869v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Matthew Kowal, Goncalo Paulo, Louis Jaburi, Tom Tseng, Lev E McKinney, et al.</p><p>As large language models are increasingly trained and fine-tuned, practitioners need methods to identify which training data drive specific behaviors, particularly unintended ones. Training Data Attribution (TDA) methods address this by estimating datapoint influence. Existing approaches like influence functions are both computationally expensive and attribute based on single test examples, which can bias results toward syntactic rather than semantic similarity. To address these issues of scalab</p>]]></description>
+      <pubDate>Mon, 16 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.14869v1</guid>
+    </item>
+    <item>
+      <title>Sanity Checks for Sparse Autoencoders: Do SAEs Beat Random Baselines?</title>
+      <link>https://arxiv.org/abs/2602.14111v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Anton Korznikov, Andrey Galichin, Alexey Dontsov, Oleg Rogov, Ivan Oseledets, et al.</p><p>Sparse Autoencoders (SAEs) have emerged as a promising tool for interpreting neural networks by decomposing their activations into sparse sets of human-interpretable features. Recent work has introduced multiple SAE variants and successfully scaled them to frontier models. Despite much excitement, a growing number of negative results in downstream tasks casts doubt on whether SAEs recover meaningful features. To directly investigate this, we perform two complementary evaluations. On a synthetic </p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Sun, 15 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.14111v1</guid>
+    </item>
+    <item>
+      <title>DistillLens: Symmetric Knowledge Distillation Through Logit Lens</title>
+      <link>https://arxiv.org/abs/2602.13567v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Manish Dhakal, Uthman Jinadu, Anjila Budathoki, Rajshekhar Sunderraman, Yi Ding</p><p>Standard Knowledge Distillation (KD) compresses Large Language Models (LLMs) by optimizing final outputs, yet it typically treats the teacher&#x27;s intermediate layer&#x27;s thought process as a black box. While feature-based distillation attempts to bridge this gap, existing methods (e.g., MSE and asymmetric KL divergence) ignore the rich uncertainty profiles required for the final output. In this paper, we introduce DistillLens, a framework that symmetrically aligns the evolving thought processes of st</p><p><strong>Tags:</strong> features</p>]]></description>
+      <pubDate>Sat, 14 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.13567v1</guid>
     </item>
     <item>
       <title>Singular Vectors of Attention Heads Align with Features</title>
@@ -182,41 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Jonathan Pan</p><p>Mechanistic interpretability aims to reverse-engineer the internal computations of Large Language Models (LLMs), yet separating sparse semantic signals from high-dimensional polysemantic noise remains a significant challenge. This paper introduces the Quantum Sieve Tracer, a hybrid quantum-classical framework designed to characterize factual recall circuits. We implement a modular pipeline that first localizes critical layers using classical causal tracing, then maps specific attention head acti</p><p><strong>Tags:</strong> circuits, features, attention</p>]]></description>
       <pubDate>Fri, 06 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2602.06852v1</guid>
-    </item>
-    <item>
-      <title>Learning a Generative Meta-Model of LLM Activations</title>
-      <link>https://arxiv.org/abs/2602.06964v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Grace Luo, Jiahai Feng, Trevor Darrell, Alec Radford, Jacob Steinhardt</p><p>Existing approaches for analyzing neural network activations, such as PCA and sparse autoencoders, rely on strong structural assumptions. Generative models offer an alternative: they can uncover structure without such assumptions and act as priors that improve intervention fidelity. We explore this direction by training diffusion models on one billion residual stream activations, creating &quot;meta-models&quot; that learn the distribution of a network&#x27;s internal states. We find that diffusion loss decrea</p><p><strong>Tags:</strong> SAE</p>]]></description>
-      <pubDate>Fri, 06 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2602.06964v1</guid>
-    </item>
-    <item>
-      <title>Endogenous Resistance to Activation Steering in Language Models</title>
-      <link>https://arxiv.org/abs/2602.06941v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Alex McKenzie, Keenan Pepper, Stijn Servaes, Martin Leitgab, Murat Cubuktepe, et al.</p><p>Large language models can resist task-misaligned activation steering during inference, sometimes recovering mid-generation to produce improved responses even when steering remains active. We term this Endogenous Steering Resistance (ESR). Using sparse autoencoder (SAE) latents to steer model activations, we find that Llama-3.3-70B shows substantial ESR, while smaller models from the Llama-3 and Gemma-2 families exhibit the phenomenon less frequently. We identify 26 SAE latents that activate diff</p><p><strong>Tags:</strong> SAE, steering</p>]]></description>
-      <pubDate>Fri, 06 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2602.06941v1</guid>
-    </item>
-    <item>
-      <title>Towards Understanding Multimodal Fine-Tuning: Spatial Features</title>
-      <link>https://arxiv.org/abs/2602.08713v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Lachin Naghashyar, Hunar Batra, Ashkan Khakzar, Philip Torr, Ronald Clark, et al.</p><p>Contemporary Vision-Language Models (VLMs) achieve strong performance on a wide range of tasks by pairing a vision encoder with a pre-trained language model, fine-tuned for visual-text inputs. Yet despite these gains, it remains unclear how language backbone representations adapt during multimodal training and when vision-specific capabilities emerge. In this work, we present the first mechanistic analysis of VLM adaptation. Using stage-wise model diffing, a technique that isolates representatio</p><p><strong>Tags:</strong> features, vision</p>]]></description>
-      <pubDate>Fri, 06 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2602.08713v1</guid>
-    </item>
-    <item>
-      <title>CodeCircuit: Toward Inferring LLM-Generated Code Correctness via Attribution Graphs</title>
-      <link>https://arxiv.org/abs/2602.07080v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Yicheng He, Zheng Zhao, Zhou Kaiyu, Bryan Dai, Jie Fu, et al.</p><p>Current paradigms for code verification rely heavily on external mechanisms-such as execution-based unit tests or auxiliary LLM judges-which are often labor-intensive or limited by the judging model&#x27;s own capabilities. This raises a fundamental, yet unexplored question: Can an LLM&#x27;s functional correctness be assessed purely from its internal computational structure? Our primary objective is to investigate whether the model&#x27;s neural dynamics encode internally decodable signals that are predictive</p><p><strong>Tags:</strong> circuits</p>]]></description>
-      <pubDate>Fri, 06 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2602.07080v1</guid>
-    </item>
-    <item>
-      <title>DLM-Scope: Mechanistic Interpretability of Diffusion Language Models via Sparse Autoencoders</title>
-      <link>https://arxiv.org/abs/2602.05859v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Xu Wang, Bingqing Jiang, Yu Wan, Baosong Yang, Lingpeng Kong, et al.</p><p>Sparse autoencoders (SAEs) have become a standard tool for mechanistic interpretability in autoregressive large language models (LLMs), enabling researchers to extract sparse, human-interpretable features and intervene on model behavior. Recently, as diffusion language models (DLMs) have become an increasingly promising alternative to the autoregressive LLMs, it is essential to develop tailored mechanistic interpretability tools for this emerging class of models. In this work, we present DLM-Sco</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Thu, 05 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2602.05859v1</guid>
     </item>
   </channel>
 </rss>
