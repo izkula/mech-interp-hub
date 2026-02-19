@@ -5,9 +5,16 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Causality is Key for Interpretability Claims to Generalise</title>
+      <link>https://arxiv.org/abs/2602.16698v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Shruti Joshi, Aaron Mueller, David Klindt, Wieland Brendel, Patrik Reizinger, et al.</p><p>Interpretability research on large language models (LLMs) has yielded important insights into model behaviour, yet recurring pitfalls persist: findings that do not generalise, and causal interpretations that outrun the evidence. Our position is that causal inference specifies what constitutes a valid mapping from model activations to invariant high-level structures, the data or assumptions needed to achieve it, and the inferences it can support. Specifically, Pearl&#x27;s causal hierarchy clarifies w</p>]]></description>
+      <pubDate>Wed, 18 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.16698v1</guid>
+    </item>
     <item>
       <title>What Do Neurons Listen To? A Neuron-level Dissection of a General-purpose Audio Model</title>
       <link>https://arxiv.org/abs/2602.15307v1</link>
@@ -210,13 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Difei Gu, Yunhe Gao, Gerasimos Chatzoudis, Zihan Dong, Guoning Zhang, et al.</p><p>Sparse autoencoders (SAEs) offer a natural path toward comparable explanations across different representation spaces. However, current SAEs are trained per modality, producing dictionaries whose features are not directly understandable and whose explanations do not transfer across domains. In this study, we introduce LUCID (Learning Unified vision-language sparse Codes for Interpretable concept Discovery), a unified vision-language sparse autoencoder that learns a shared latent dictionary for i</p><p><strong>Tags:</strong> SAE, features, vision</p>]]></description>
       <pubDate>Sat, 07 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2602.07311v1</guid>
-    </item>
-    <item>
-      <title>The Quantum Sieve Tracer: A Hybrid Framework for Layer-Wise Activation Tracing in Large Language Models</title>
-      <link>https://arxiv.org/abs/2602.06852v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Jonathan Pan</p><p>Mechanistic interpretability aims to reverse-engineer the internal computations of Large Language Models (LLMs), yet separating sparse semantic signals from high-dimensional polysemantic noise remains a significant challenge. This paper introduces the Quantum Sieve Tracer, a hybrid quantum-classical framework designed to characterize factual recall circuits. We implement a modular pipeline that first localizes critical layers using classical causal tracing, then maps specific attention head acti</p><p><strong>Tags:</strong> circuits, features, attention</p>]]></description>
-      <pubDate>Fri, 06 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2602.06852v1</guid>
     </item>
   </channel>
 </rss>
