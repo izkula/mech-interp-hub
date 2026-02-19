@@ -1,6 +1,17 @@
 {
-  "lastUpdated": "2026-02-18",
+  "lastUpdated": "2026-02-19",
   "papers": [
+    {
+      "id": "arxiv-2602-16698v1",
+      "title": "Causality is Key for Interpretability Claims to Generalise",
+      "authors": "Shruti Joshi, Aaron Mueller, David Klindt, Wieland Brendel, Patrik Reizinger, et al.",
+      "date": "2026-02-18",
+      "url": "https://arxiv.org/abs/2602.16698v1",
+      "abstract": "Interpretability research on large language models (LLMs) has yielded important insights into model behaviour, yet recurring pitfalls persist: findings that do not generalise, and causal interpretations that outrun the evidence. Our position is that causal inference specifies what constitutes a valid mapping from model activations to invariant high-level structures, the data or assumptions needed to achieve it, and the inferences it can support. Specifically, Pearl's causal hierarchy clarifies w",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2602-15307v1",
       "title": "What Do Neurons Listen To? A Neuron-level Dissection of a General-purpose Audio Model",
