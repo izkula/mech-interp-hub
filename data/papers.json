@@ -1,6 +1,70 @@
 {
-  "lastUpdated": "2026-02-19",
+  "lastUpdated": "2026-02-20",
   "papers": [
+    {
+      "id": "arxiv-2602-17532v1",
+      "title": "Systematic Evaluation of Single-Cell Foundation Model Interpretability Reveals Attention Captures Co-Expression Rather Than Unique Regulatory Signal",
+      "authors": "Ihor Kendiukhov",
+      "date": "2026-02-19",
+      "url": "https://arxiv.org/abs/2602.17532v1",
+      "abstract": "We present a systematic evaluation framework - thirty-seven analyses, 153 statistical tests, four cell types, two perturbation modalities - for assessing mechanistic interpretability in single-cell foundation models. Applying this framework to scGPT and Geneformer, we find that attention patterns encode structured biological information with layer-specific organisation - protein-protein interactions in early layers, transcriptional regulation in late layers - but this structure provides no incre",
+      "tags": [
+        "attention",
+        "biology"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-17229v1",
+      "title": "Mechanistic Interpretability of Cognitive Complexity in LLMs via Linear Probing using Bloom's Taxonomy",
+      "authors": "Bianca Raimondi, Maurizio Gabbrielli",
+      "date": "2026-02-19",
+      "url": "https://arxiv.org/abs/2602.17229v1",
+      "abstract": "The black-box nature of Large Language Models necessitates novel evaluation frameworks that transcend surface-level performance metrics. This study investigates the internal neural representations of cognitive complexity using Bloom's Taxonomy as a hierarchical lens. By analyzing high-dimensional activation vectors from different LLMs, we probe whether different cognitive levels, ranging from basic recall (Remember) to abstract synthesis (Create), are linearly separable within the model's residu",
+      "tags": [
+        "probing"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-16980v1",
+      "title": "Discovering Universal Activation Directions for PII Leakage in Language Models",
+      "authors": "Leo Marchyok, Zachary Coalson, Sungho Keum, Sooel Son, Sanghyun Hong",
+      "date": "2026-02-19",
+      "url": "https://arxiv.org/abs/2602.16980v1",
+      "abstract": "Modern language models exhibit rich internal structure, yet little is known about how privacy-sensitive behaviors, such as personally identifiable information (PII) leakage, are represented and modulated within their hidden states. We present UniLeak, a mechanistic-interpretability framework that identifies universal activation directions: latent directions in a model's residual stream whose linear addition at inference time consistently increases the likelihood of generating PII across prompts.",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-17598v1",
+      "title": "The Cascade Equivalence Hypothesis: When Do Speech LLMs Behave Like ASR$\\rightarrow$LLM Pipelines?",
+      "authors": "Jayadev Billa",
+      "date": "2026-02-19",
+      "url": "https://arxiv.org/abs/2602.17598v1",
+      "abstract": "Current speech LLMs largely perform implicit ASR: on tasks solvable from a transcript, they are behaviorally and mechanistically equivalent to simple Whisper$\\to$LLM cascades. We show this through matched-backbone testing across four speech LLMs and six tasks, controlling for the LLM backbone for the first time. Ultravox is statistically indistinguishable from its matched cascade ($\u03ba{=}0.93$); logit lens reveals literal text emerging in hidden states; LEACE concept erasure confirms text represen",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-17560v1",
+      "title": "ODESteer: A Unified ODE-Based Steering Framework for LLM Alignment",
+      "authors": "Hongjue Zhao, Haosen Sun, Jiangtao Kong, Xiaochang Li, Qineng Wang, et al.",
+      "date": "2026-02-19",
+      "url": "https://arxiv.org/abs/2602.17560v1",
+      "abstract": "Activation steering, or representation engineering, offers a lightweight approach to align large language models (LLMs) by manipulating their internal activations at inference time. However, current methods suffer from two key limitations: \\textit{(i)} the lack of a unified theoretical framework for guiding the design of steering directions, and \\textit{(ii)} an over-reliance on \\textit{one-step steering} that fail to capture complex patterns of activation distributions. In this work, we propose",
+      "tags": [
+        "safety",
+        "steering",
+        "theory"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2602-16698v1",
       "title": "Causality is Key for Interpretability Claims to Generalise",
@@ -9,6 +73,34 @@
       "url": "https://arxiv.org/abs/2602.16698v1",
       "abstract": "Interpretability research on large language models (LLMs) has yielded important insights into model behaviour, yet recurring pitfalls persist: findings that do not generalise, and causal interpretations that outrun the evidence. Our position is that causal inference specifies what constitutes a valid mapping from model activations to invariant high-level structures, the data or assumptions needed to achieve it, and the inferences it can support. Specifically, Pearl's causal hierarchy clarifies w",
       "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-16849v1",
+      "title": "On the Mechanism and Dynamics of Modular Addition: Fourier Features, Lottery Ticket, and Grokking",
+      "authors": "Jianliang He, Leda Wang, Siyu Chen, Zhuoran Yang",
+      "date": "2026-02-18",
+      "url": "https://arxiv.org/abs/2602.16849v1",
+      "abstract": "We present a comprehensive analysis of how two-layer neural networks learn features to solve the modular addition task. Our work provides a full mechanistic interpretation of the learned model and a theoretical explanation of its training dynamics. While prior work has identified that individual neurons learn single-frequency Fourier features and phase alignment, it does not fully explain how these features combine into a global solution. We bridge this gap by formalizing a diversification condi",
+      "tags": [
+        "features",
+        "safety",
+        "theory"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-16823v1",
+      "title": "Formal Mechanistic Interpretability: Automated Circuit Discovery with Provable Guarantees",
+      "authors": "Itamar Hadad, Guy Katz, Shahaf Bassan",
+      "date": "2026-02-18",
+      "url": "https://arxiv.org/abs/2602.16823v1",
+      "abstract": "*Automated circuit discovery* is a central tool in mechanistic interpretability for identifying the internal components of neural networks responsible for specific behaviors. While prior methods have made significant progress, they typically depend on heuristics or approximations and do not offer provable guarantees over continuous input domains for the resulting circuits. In this work, we leverage recent advances in neural network verification to propose a suite of automated algorithms that yie",
+      "tags": [
+        "circuits"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -34,6 +126,19 @@
       "abstract": "Understanding the causal effects of text on downstream outcomes is a central task in many applications. Estimating such effects requires researchers to run controlled experiments that systematically vary textual features. While large language models (LLMs) hold promise for generating text, producing and evaluating controlled variation requires more careful attention. In this paper, we present an end-to-end pipeline for the generation and causal estimation of latent textual interventions. Our wor",
       "tags": [
         "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-16740v1",
+      "title": "Quantifying LLM Attention-Head Stability: Implications for Circuit Universality",
+      "authors": "Karan Bali, Jack Stanley, Praneet Suresh, Danilo Bzdok",
+      "date": "2026-02-17",
+      "url": "https://arxiv.org/abs/2602.16740v1",
+      "abstract": "In mechanistic interpretability, recent work scrutinizes transformer \"circuits\" - sparse, mono or multi layer sub computations, that may reflect human understandable functions. Yet, these network circuits are rarely acid-tested for their stability across different instances of the same deep learning architecture. Without this, it remains unclear whether reported circuits emerge universally across labs or turn out to be idiosyncratic to a particular estimation instance, potentially limiting confi",
+      "tags": [
+        "circuits"
       ],
       "source": "arXiv",
       "featured": false
