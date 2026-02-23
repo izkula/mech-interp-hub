@@ -5,9 +5,16 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 22 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Simplifying Outcomes of Language Model Component Analyses with ELIA</title>
+      <link>https://arxiv.org/abs/2602.18262v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Aaron Louis Eidt, Nils Feldhus</p><p>While mechanistic interpretability has developed powerful tools to analyze the internal workings of Large Language Models (LLMs), their complexity has created an accessibility gap, limiting their use to specialists. We address this challenge by designing, building, and evaluating ELIA (Explainable Language Interpretability Analysis), an interactive web application that simplifies the outcomes of various language model component analyses for a broader audience. The system integrates three key tec</p>]]></description>
+      <pubDate>Fri, 20 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.18262v1</guid>
+    </item>
     <item>
       <title>Systematic Evaluation of Single-Cell Foundation Model Interpretability Reveals Attention Captures Co-Expression Rather Than Unique Regulatory Signal</title>
       <link>https://arxiv.org/abs/2602.17532v1</link>
@@ -42,6 +49,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Hongjue Zhao, Haosen Sun, Jiangtao Kong, Xiaochang Li, Qineng Wang, et al.</p><p>Activation steering, or representation engineering, offers a lightweight approach to align large language models (LLMs) by manipulating their internal activations at inference time. However, current methods suffer from two key limitations: \textit{(i)} the lack of a unified theoretical framework for guiding the design of steering directions, and \textit{(ii)} an over-reliance on \textit{one-step steering} that fail to capture complex patterns of activation distributions. In this work, we propose</p><p><strong>Tags:</strong> safety, steering, theory</p>]]></description>
       <pubDate>Thu, 19 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2602.17560v1</guid>
+    </item>
+    <item>
+      <title>ADAPT: Hybrid Prompt Optimization for LLM Feature Visualization</title>
+      <link>https://arxiv.org/abs/2602.17867v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> João N. Cardoso, Arlindo L. Oliveira, Bruno Martins</p><p>Understanding what features are encoded by learned directions in LLM activation space requires identifying inputs that strongly activate them. Feature visualization, which optimizes inputs to maximally activate a target direction, offers an alternative to costly dataset search approaches, but remains underexplored for LLMs due to the discrete nature of text. Furthermore, existing prompt optimization techniques are poorly suited to this domain, which is highly prone to local minima. To overcome t</p><p><strong>Tags:</strong> features, vision</p>]]></description>
+      <pubDate>Thu, 19 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.17867v1</guid>
     </item>
     <item>
       <title>Causality is Key for Interpretability Claims to Generalise</title>
@@ -203,20 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Zhongzhi Li, Xuansheng Wu, Yijiang Li, Lijie Hu, Ninghao Liu</p><p>The diversity of post-training data is critical for effective downstream performance in large language models (LLMs). Many existing approaches to constructing post-training data quantify diversity using text-based metrics that capture linguistic variation, but such metrics provide only weak signals for the task-relevant features that determine downstream performance. In this work, we introduce Feature Activation Coverage (FAC) which measures data diversity in an interpretable feature space. Buil</p><p><strong>Tags:</strong> features</p>]]></description>
       <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2602.10388v1</guid>
-    </item>
-    <item>
-      <title>Med-SegLens: Latent-Level Model Diffing for Interpretable Medical Image Segmentation</title>
-      <link>https://arxiv.org/abs/2602.10508v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Salma J. Ahmed, Emad A. Mohammed, Azam Asilian Bidgoli</p><p>Modern segmentation models achieve strong predictive performance but remain largely opaque, limiting our ability to diagnose failures, understand dataset shift, or intervene in a principled manner. We introduce Med-SegLens, a model-diffing framework that decomposes segmentation model activations into interpretable latent features using sparse autoencoders trained on SegFormer and U-Net. Through cross-architecture and cross-dataset latent alignment across healthy, adult, pediatric, and sub-Sahara</p><p><strong>Tags:</strong> SAE, features, safety, vision</p>]]></description>
-      <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2602.10508v1</guid>
-    </item>
-    <item>
-      <title>Triggers Hijack Language Circuits: A Mechanistic Analysis of Backdoor Behaviors in Large Language Models</title>
-      <link>https://arxiv.org/abs/2602.10382v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Théo Lasnier, Wissam Antoun, Francis Kulumba, Djamé Seddah</p><p>Backdoor attacks pose significant security risks for Large Language Models (LLMs), yet the internal mechanisms by which triggers operate remain poorly understood. We present the first mechanistic analysis of language-switching backdoors, studying the GAPperon model family (1B, 8B, 24B parameters) which contains triggers injected during pretraining that cause output language switching. Using activation patching, we localize trigger formation to early layers (7.5-25% of model depth) and identify w</p><p><strong>Tags:</strong> circuits</p>]]></description>
-      <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2602.10382v1</guid>
     </item>
   </channel>
 </rss>
