@@ -1,6 +1,17 @@
 {
-  "lastUpdated": "2026-02-22",
+  "lastUpdated": "2026-02-23",
   "papers": [
+    {
+      "id": "arxiv-2602-18262v1",
+      "title": "Simplifying Outcomes of Language Model Component Analyses with ELIA",
+      "authors": "Aaron Louis Eidt, Nils Feldhus",
+      "date": "2026-02-20",
+      "url": "https://arxiv.org/abs/2602.18262v1",
+      "abstract": "While mechanistic interpretability has developed powerful tools to analyze the internal workings of Large Language Models (LLMs), their complexity has created an accessibility gap, limiting their use to specialists. We address this challenge by designing, building, and evaluating ELIA (Explainable Language Interpretability Analysis), an interactive web application that simplifies the outcomes of various language model component analyses for a broader audience. The system integrates three key tec",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2602-17532v1",
       "title": "Systematic Evaluation of Single-Cell Foundation Model Interpretability Reveals Attention Captures Co-Expression Rather Than Unique Regulatory Signal",
@@ -61,6 +72,20 @@
         "safety",
         "steering",
         "theory"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-17867v1",
+      "title": "ADAPT: Hybrid Prompt Optimization for LLM Feature Visualization",
+      "authors": "Jo\u00e3o N. Cardoso, Arlindo L. Oliveira, Bruno Martins",
+      "date": "2026-02-19",
+      "url": "https://arxiv.org/abs/2602.17867v1",
+      "abstract": "Understanding what features are encoded by learned directions in LLM activation space requires identifying inputs that strongly activate them. Feature visualization, which optimizes inputs to maximally activate a target direction, offers an alternative to costly dataset search approaches, but remains underexplored for LLMs due to the discrete nature of text. Furthermore, existing prompt optimization techniques are poorly suited to this domain, which is highly prone to local minima. To overcome t",
+      "tags": [
+        "features",
+        "vision"
       ],
       "source": "arXiv",
       "featured": false
@@ -1141,6 +1166,20 @@
         "SAE",
         "features",
         "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-17676v1",
+      "title": "Epistemic Traps: Rational Misalignment Driven by Model Misspecification",
+      "authors": "Xingcheng Xu, Jingjing Qu, Qiaosheng Zhang, Chaochao Lu, Yanqing Yang, et al.",
+      "date": "2026-01-27",
+      "url": "https://arxiv.org/abs/2602.17676v1",
+      "abstract": "The rapid deployment of Large Language Models and AI agents across critical societal and technical domains is hindered by persistent behavioral pathologies including sycophancy, hallucination, and strategic deception that resist mitigation via reinforcement learning. Current safety paradigms treat these failures as transient training artifacts, lacking a unified theoretical framework to explain their emergence and stability. Here we show that these misalignments are not errors, but mathematicall",
+      "tags": [
+        "safety",
+        "theory"
       ],
       "source": "arXiv",
       "featured": false
@@ -2344,6 +2383,17 @@
         "reasoning"
       ],
       "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "ss-b3ad6425303ba03ddb1f",
+      "title": "Mechanistic Interpretability Driven Evaluation Engine for Large Language Models",
+      "authors": "Varsha Shukla, Geoffrey G Parker",
+      "date": "2025-12-11",
+      "url": "https://www.semanticscholar.org/paper/b3ad6425303ba03ddb1fa49778c62fa73ec5f0ad",
+      "abstract": "",
+      "tags": [],
+      "source": "Semantic Scholar",
       "featured": false
     },
     {
