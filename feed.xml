@@ -5,9 +5,58 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>IR$^3$: Contrastive Inverse Reinforcement Learning for Interpretable Detection and Mitigation of Reward Hacking</title>
+      <link>https://arxiv.org/abs/2602.19416v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Mohammad Beigi, Ming Jin, Junshan Zhang, Jiaxin Zhang, Qifan Wang, et al.</p><p>Reinforcement Learning from Human Feedback (RLHF) enables powerful LLM alignment but can introduce reward hacking - models exploit spurious correlations in proxy rewards without genuine alignment. Compounding this, the objectives internalized during RLHF remain opaque, making hacking behaviors difficult to detect or correct. We introduce IR3 (Interpretable Reward Reconstruction and Rectification), a framework that reverse-engineers, interprets, and surgically repairs the implicit objectives driv</p><p><strong>Tags:</strong> safety</p>]]></description>
+      <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.19416v1</guid>
+    </item>
+    <item>
+      <title>Latent Introspection: Models Can Detect Prior Concept Injections</title>
+      <link>https://arxiv.org/abs/2602.20031v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Theia Pearson-Vogel, Martin Vanek, Raymond Douglas, Jan Kulveit</p><p>We uncover a latent capacity for introspection in a Qwen 32B model, demonstrating that the model can detect when concepts have been injected into its earlier context and identify which concept was injected. While the model denies injection in sampled outputs, logit lens analysis reveals clear detection signals in the residual stream, which are attenuated in the final layers. Furthermore, prompting the model with accurate information about AI introspection mechanisms can dramatically strengthen t</p>]]></description>
+      <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.20031v1</guid>
+    </item>
+    <item>
+      <title>Localized Concept Erasure in Text-to-Image Diffusion Models via High-Level Representation Misdirection</title>
+      <link>https://arxiv.org/abs/2602.19631v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Uichan Lee, Jeonghyeon Kim, Sangheum Hwang</p><p>Recent advances in text-to-image (T2I) diffusion models have seen rapid and widespread adoption. However, their powerful generative capabilities raise concerns about potential misuse for synthesizing harmful, private, or copyrighted content. To mitigate such risks, concept erasure techniques have emerged as a promising solution. Prior works have primarily focused on fine-tuning the denoising component (e.g., the U-Net backbone). However, recent causal tracing studies suggest that visual attribut</p><p><strong>Tags:</strong> safety, vision</p>]]></description>
+      <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.19631v1</guid>
+    </item>
+    <item>
+      <title>Beyond Behavioural Trade-Offs: Mechanistic Tracing of Pain-Pleasure Decisions in an LLM</title>
+      <link>https://arxiv.org/abs/2602.19159v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Francesca Bianco, Derek Shiller</p><p>Prior behavioural work suggests that some LLMs alter choices when options are framed as causing pain or pleasure, and that such deviations can scale with stated intensity. To bridge behavioural evidence (what the model does) with mechanistic interpretability (what computations support it), we investigate how valence-related information is represented and where it is causally used inside a transformer. Using Gemma-2-9B-it and a minimalist decision task modelled on prior work, we (i) map represent</p>]]></description>
+      <pubDate>Sun, 22 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.19159v1</guid>
+    </item>
+    <item>
+      <title>How Do LLMs Encode Scientific Quality? An Empirical Study Using Monosemantic Features from Sparse Autoencoders</title>
+      <link>https://arxiv.org/abs/2602.19115v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Michael McCoubrey, Angelo Salatino, Francesco Osborne, Enrico Motta</p><p>In recent years, there has been a growing use of generative AI, and large language models (LLMs) in particular, to support both the assessment and generation of scientific work. Although some studies have shown that LLMs can, to a certain extent, evaluate research according to perceived quality, our understanding of the internal mechanisms that enable this capability remains limited. This paper presents the first study that investigates how LLMs encode the concept of scientific quality through r</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Sun, 22 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.19115v1</guid>
+    </item>
+    <item>
+      <title>Initialization matters in few-shot adaptation of vision-language models for histopathological image classification</title>
+      <link>https://arxiv.org/abs/2602.18766v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Pablo Meseguer, Rocío del Amor, Valery Naranjo</p><p>Vision language models (VLM) pre-trained on datasets of histopathological image-caption pairs enabled zero-shot slide-level classification. The ability of VLM image encoders to extract discriminative features also opens the door for supervised fine-tuning for whole-slide image (WSI) classification, ideally using few labeled samples. Slide-level prediction frameworks require the incorporation of multiple instance learning (MIL) due to the gigapixel size of the WSI. Following patch-level feature e</p><p><strong>Tags:</strong> features, vision</p>]]></description>
+      <pubDate>Sat, 21 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.18766v1</guid>
+    </item>
+    <item>
+      <title>HIME: Mitigating Object Hallucinations in LVLMs via Hallucination Insensitivity Model Editing</title>
+      <link>https://arxiv.org/abs/2602.18711v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Ahmed Akl, Abdelwahed Khamis, Ali Cheraghian, Zhe Wang, Sara Khalifa, et al.</p><p>Large Vision-Language Models (LVLMs) have demonstrated impressive multimodal understanding capabilities, yet they remain prone to object hallucination, where models describe non-existent objects or attribute incorrect factual information, raising serious concerns for reliable real-world deployment. While fine-tuning is a commonly adopted mitigation strategy, its high computational cost and practical difficulty motivate the need for training-free alternatives, among which model editing has recent</p><p><strong>Tags:</strong> editing, vision</p>]]></description>
+      <pubDate>Sat, 21 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.18711v1</guid>
+    </item>
     <item>
       <title>Simplifying Outcomes of Language Model Component Analyses with ELIA</title>
       <link>https://arxiv.org/abs/2602.18262v1</link>
@@ -168,55 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Łukasz Staniszewski, Katarzyna Zaleska, Mateusz Modrzejewski, Kamil Deja</p><p>Audio diffusion models can synthesize high-fidelity music from text, yet their internal mechanisms for representing high-level concepts remain poorly understood. In this work, we use activation patching to demonstrate that distinct semantic musical concepts, such as the presence of specific instruments, vocals, or genre characteristics, are controlled by a small, shared subset of attention layers in state-of-the-art audio diffusion architectures. Next, we demonstrate that applying Contrastive Ac</p><p><strong>Tags:</strong> steering</p>]]></description>
       <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2602.11910v1</guid>
-    </item>
-    <item>
-      <title>SafeNeuron: Neuron-Level Safety Alignment for Large Language Models</title>
-      <link>https://arxiv.org/abs/2602.12158v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Zhaoxin Wang, Jiaming Liang, Fengbin Zhu, Weixiang Zhao, Junfeng Fang, et al.</p><p>Large language models (LLMs) and multimodal LLMs are typically safety-aligned before release to prevent harmful content generation. However, recent studies show that safety behaviors are concentrated in a small subset of parameters, making alignment brittle and easily bypassed through neuron-level attacks. Moreover, most existing alignment methods operate at the behavioral level, offering limited control over the model&#x27;s internal safety mechanisms. In this work, we propose SafeNeuron, a neuron-l</p><p><strong>Tags:</strong> safety, vision</p>]]></description>
-      <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2602.12158v1</guid>
-    </item>
-    <item>
-      <title>Cross-Architecture Model Diffing with Crosscoders: Unsupervised Discovery of Differences Between LLMs</title>
-      <link>https://arxiv.org/abs/2602.11729v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Thomas Jiralerspong, Trenton Bricken</p><p>Model diffing, the process of comparing models&#x27; internal representations to identify their differences, is a promising approach for uncovering safety-critical behaviors in new models. However, its application has so far been primarily focused on comparing a base model with its finetune. Since new LLM releases are often novel architectures, cross-architecture methods are essential to make model diffing widely applicable. Crosscoders are one solution capable of cross-architecture model diffing but</p><p><strong>Tags:</strong> safety</p>]]></description>
-      <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2602.11729v1</guid>
-    </item>
-    <item>
-      <title>Sparse Autoencoders are Capable LLM Jailbreak Mitigators</title>
-      <link>https://arxiv.org/abs/2602.12418v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Yannick Assogba, Jacopo Cortellazzi, Javier Abad, Pau Rodriguez, Xavier Suau, et al.</p><p>Jailbreak attacks remain a persistent threat to large language model safety. We propose Context-Conditioned Delta Steering (CC-Delta), an SAE-based defense that identifies jailbreak-relevant sparse features by comparing token-level representations of the same harmful request with and without jailbreak context. Using paired harmful/jailbreak prompts, CC-Delta selects features via statistical testing and applies inference-time mean-shift steering in SAE latent space. Across four aligned instructio</p><p><strong>Tags:</strong> SAE, features, safety, steering</p>]]></description>
-      <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2602.12418v1</guid>
-    </item>
-    <item>
-      <title>MonoLoss: A Training Objective for Interpretable Monosemantic Representations</title>
-      <link>https://arxiv.org/abs/2602.12403v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Ali Nasiri-Sarvi, Anh Tien Nguyen, Hassan Rivaz, Dimitris Samaras, Mahdi S. Hosseini</p><p>Sparse autoencoders (SAEs) decompose polysemantic neural representations, where neurons respond to multiple unrelated concepts, into monosemantic features that capture single, interpretable concepts. However, standard training objectives only weakly encourage this decomposition, and existing monosemanticity metrics require pairwise comparisons across all dataset samples, making them inefficient during training and evaluation. We study a recent MonoScore metric and derive a single-pass algorithm </p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2602.12403v1</guid>
-    </item>
-    <item>
-      <title>From Circuits to Dynamics: Understanding and Stabilizing Failure in 3D Diffusion Transformers</title>
-      <link>https://arxiv.org/abs/2602.11130v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Maximilian Plattner, Fabian Paischer, Johannes Brandstetter, Arturs Berzins</p><p>Reliable surface completion from sparse point clouds underpins many applications spanning content creation and robotics. While 3D diffusion transformers attain state-of-the-art results on this task, we uncover that they exhibit a catastrophic mode of failure: arbitrarily small on-surface perturbations to the input point cloud can fracture the output into multiple disconnected pieces -- a phenomenon we call Meltdown. Using activation-patching from mechanistic interpretability, we localize Meltdow</p><p><strong>Tags:</strong> circuits</p>]]></description>
-      <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2602.11130v1</guid>
-    </item>
-    <item>
-      <title>Control Reinforcement Learning: Token-Level Mechanistic Analysis via Learned SAE Feature Steering</title>
-      <link>https://arxiv.org/abs/2602.10437v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Seonglae Cho, Zekun Wu, Adriano Koshiyama</p><p>Sparse autoencoders (SAEs) decompose language model activations into interpretable features, but existing methods reveal only which features activate, not which change model outputs when amplified. We introduce Control Reinforcement Learning (CRL), which trains a policy to select SAE features for steering at each token, producing interpretable intervention logs: the learned policy identifies features that change model outputs when amplified. Adaptive Feature Masking encourages diverse feature di</p><p><strong>Tags:</strong> SAE, features, steering</p>]]></description>
-      <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2602.10437v1</guid>
-    </item>
-    <item>
-      <title>Less is Enough: Synthesizing Diverse Data in Feature Space of LLMs</title>
-      <link>https://arxiv.org/abs/2602.10388v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Zhongzhi Li, Xuansheng Wu, Yijiang Li, Lijie Hu, Ninghao Liu</p><p>The diversity of post-training data is critical for effective downstream performance in large language models (LLMs). Many existing approaches to constructing post-training data quantify diversity using text-based metrics that capture linguistic variation, but such metrics provide only weak signals for the task-relevant features that determine downstream performance. In this work, we introduce Feature Activation Coverage (FAC) which measures data diversity in an interpretable feature space. Buil</p><p><strong>Tags:</strong> features</p>]]></description>
-      <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2602.10388v1</guid>
     </item>
   </channel>
 </rss>
