@@ -1,6 +1,97 @@
 {
-  "lastUpdated": "2026-02-23",
+  "lastUpdated": "2026-02-24",
   "papers": [
+    {
+      "id": "arxiv-2602-19416v1",
+      "title": "IR$^3$: Contrastive Inverse Reinforcement Learning for Interpretable Detection and Mitigation of Reward Hacking",
+      "authors": "Mohammad Beigi, Ming Jin, Junshan Zhang, Jiaxin Zhang, Qifan Wang, et al.",
+      "date": "2026-02-23",
+      "url": "https://arxiv.org/abs/2602.19416v1",
+      "abstract": "Reinforcement Learning from Human Feedback (RLHF) enables powerful LLM alignment but can introduce reward hacking - models exploit spurious correlations in proxy rewards without genuine alignment. Compounding this, the objectives internalized during RLHF remain opaque, making hacking behaviors difficult to detect or correct. We introduce IR3 (Interpretable Reward Reconstruction and Rectification), a framework that reverse-engineers, interprets, and surgically repairs the implicit objectives driv",
+      "tags": [
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-20031v1",
+      "title": "Latent Introspection: Models Can Detect Prior Concept Injections",
+      "authors": "Theia Pearson-Vogel, Martin Vanek, Raymond Douglas, Jan Kulveit",
+      "date": "2026-02-23",
+      "url": "https://arxiv.org/abs/2602.20031v1",
+      "abstract": "We uncover a latent capacity for introspection in a Qwen 32B model, demonstrating that the model can detect when concepts have been injected into its earlier context and identify which concept was injected. While the model denies injection in sampled outputs, logit lens analysis reveals clear detection signals in the residual stream, which are attenuated in the final layers. Furthermore, prompting the model with accurate information about AI introspection mechanisms can dramatically strengthen t",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-19631v1",
+      "title": "Localized Concept Erasure in Text-to-Image Diffusion Models via High-Level Representation Misdirection",
+      "authors": "Uichan Lee, Jeonghyeon Kim, Sangheum Hwang",
+      "date": "2026-02-23",
+      "url": "https://arxiv.org/abs/2602.19631v1",
+      "abstract": "Recent advances in text-to-image (T2I) diffusion models have seen rapid and widespread adoption. However, their powerful generative capabilities raise concerns about potential misuse for synthesizing harmful, private, or copyrighted content. To mitigate such risks, concept erasure techniques have emerged as a promising solution. Prior works have primarily focused on fine-tuning the denoising component (e.g., the U-Net backbone). However, recent causal tracing studies suggest that visual attribut",
+      "tags": [
+        "safety",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-19159v1",
+      "title": "Beyond Behavioural Trade-Offs: Mechanistic Tracing of Pain-Pleasure Decisions in an LLM",
+      "authors": "Francesca Bianco, Derek Shiller",
+      "date": "2026-02-22",
+      "url": "https://arxiv.org/abs/2602.19159v1",
+      "abstract": "Prior behavioural work suggests that some LLMs alter choices when options are framed as causing pain or pleasure, and that such deviations can scale with stated intensity. To bridge behavioural evidence (what the model does) with mechanistic interpretability (what computations support it), we investigate how valence-related information is represented and where it is causally used inside a transformer. Using Gemma-2-9B-it and a minimalist decision task modelled on prior work, we (i) map represent",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-19115v1",
+      "title": "How Do LLMs Encode Scientific Quality? An Empirical Study Using Monosemantic Features from Sparse Autoencoders",
+      "authors": "Michael McCoubrey, Angelo Salatino, Francesco Osborne, Enrico Motta",
+      "date": "2026-02-22",
+      "url": "https://arxiv.org/abs/2602.19115v1",
+      "abstract": "In recent years, there has been a growing use of generative AI, and large language models (LLMs) in particular, to support both the assessment and generation of scientific work. Although some studies have shown that LLMs can, to a certain extent, evaluate research according to perceived quality, our understanding of the internal mechanisms that enable this capability remains limited. This paper presents the first study that investigates how LLMs encode the concept of scientific quality through r",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-18766v1",
+      "title": "Initialization matters in few-shot adaptation of vision-language models for histopathological image classification",
+      "authors": "Pablo Meseguer, Roc\u00edo del Amor, Valery Naranjo",
+      "date": "2026-02-21",
+      "url": "https://arxiv.org/abs/2602.18766v1",
+      "abstract": "Vision language models (VLM) pre-trained on datasets of histopathological image-caption pairs enabled zero-shot slide-level classification. The ability of VLM image encoders to extract discriminative features also opens the door for supervised fine-tuning for whole-slide image (WSI) classification, ideally using few labeled samples. Slide-level prediction frameworks require the incorporation of multiple instance learning (MIL) due to the gigapixel size of the WSI. Following patch-level feature e",
+      "tags": [
+        "features",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-18711v1",
+      "title": "HIME: Mitigating Object Hallucinations in LVLMs via Hallucination Insensitivity Model Editing",
+      "authors": "Ahmed Akl, Abdelwahed Khamis, Ali Cheraghian, Zhe Wang, Sara Khalifa, et al.",
+      "date": "2026-02-21",
+      "url": "https://arxiv.org/abs/2602.18711v1",
+      "abstract": "Large Vision-Language Models (LVLMs) have demonstrated impressive multimodal understanding capabilities, yet they remain prone to object hallucination, where models describe non-existent objects or attribute incorrect factual information, raising serious concerns for reliable real-world deployment. While fine-tuning is a commonly adopted mitigation strategy, its high computational cost and practical difficulty motivate the need for training-free alternatives, among which model editing has recent",
+      "tags": [
+        "editing",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2602-18262v1",
       "title": "Simplifying Outcomes of Language Model Component Analyses with ELIA",
@@ -685,6 +776,19 @@
         "SAE",
         "probing",
         "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-18458v1",
+      "title": "The Story is Not the Science: Execution-Grounded Evaluation of Mechanistic Interpretability Research",
+      "authors": "Xiaoyan Bai, Alexander Baumgartner, Haojia Sun, Ari Holtzman, Chenhao Tan",
+      "date": "2026-02-05",
+      "url": "https://arxiv.org/abs/2602.18458v1",
+      "abstract": "Reproducibility crises across sciences highlight the limitations of the paper-centric review system in assessing the rigor and reproducibility of research. AI agents that autonomously design and generate large volumes of research outputs exacerbate these challenges. In this work, we address the growing challenges of scalability and rigor by flipping the dynamic and developing AI agents as research evaluators. We propose the first execution-grounded evaluation framework that verifies research bey",
+      "tags": [
+        "survey"
       ],
       "source": "arXiv",
       "featured": false
