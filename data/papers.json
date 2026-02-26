@@ -1,6 +1,45 @@
 {
-  "lastUpdated": "2026-02-25",
+  "lastUpdated": "2026-02-26",
   "papers": [
+    {
+      "id": "arxiv-2602-21588v1",
+      "title": "ABM-UDE: Developing Surrogates for Epidemic Agent-Based Models via Scientific Machine Learning",
+      "authors": "Sharv Murgai, Utkarsh Utkarsh, Kyle C. Nguyen, Alan Edelman, Erin C. S. Acquesta, et al.",
+      "date": "2026-02-25",
+      "url": "https://arxiv.org/abs/2602.21588v1",
+      "abstract": "Agent-based epidemic models (ABMs) encode behavioral and policy heterogeneity but are too slow for nightly hospital planning. We develop county-ready surrogates that learn directly from exascale ABM trajectories using Universal Differential Equations (UDEs): mechanistic SEIR-family ODEs with a neural-parameterized contact rate $\u03ba_\u03c6(u,t)$ (no additive residual). Our contributions are threefold: we adapt multiple shooting and an observer-based prediction-error method (PEM) to stabilize identificat",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-21442v1",
+      "title": "MINAR: Mechanistic Interpretability for Neural Algorithmic Reasoning",
+      "authors": "Jesse He, Helen Jenne, Max Vargas, Davis Brown, Gal Mishne, et al.",
+      "date": "2026-02-24",
+      "url": "https://arxiv.org/abs/2602.21442v1",
+      "abstract": "The recent field of neural algorithmic reasoning (NAR) studies the ability of graph neural networks (GNNs) to emulate classical algorithms like Bellman-Ford, a phenomenon known as algorithmic alignment. At the same time, recent advances in large language models (LLMs) have spawned the study of mechanistic interpretability, which aims to identify granular model components like circuits that perform specific computations. In this work, we introduce Mechanistic Interpretability for Neural Algorithm",
+      "tags": [
+        "circuits",
+        "safety",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-21428v1",
+      "title": "PSF-Med: Measuring and Explaining Paraphrase Sensitivity in Medical Vision Language Models",
+      "authors": "Binesh Sadanandan, Vahid Behzadan",
+      "date": "2026-02-24",
+      "url": "https://arxiv.org/abs/2602.21428v1",
+      "abstract": "Medical Vision Language Models (VLMs) can change their answers when clinicians rephrase the same question, which raises deployment risks. We introduce Paraphrase Sensitivity Failure (PSF)-Med, a benchmark of 19,748 chest Xray questions paired with about 92,000 meaningpreserving paraphrases across MIMIC-CXR and PadChest. Across six medical VLMs, we measure yes/no flips for the same image and find flip rates from 8% to 58%. However, low flip rate does not imply visual grounding: text-only baseline",
+      "tags": [
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2602-19416v1",
       "title": "IR$^3$: Contrastive Inverse Reinforcement Learning for Interpretable Detection and Mitigation of Reward Hacking",
