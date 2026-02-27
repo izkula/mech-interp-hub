@@ -1,6 +1,56 @@
 {
-  "lastUpdated": "2026-02-26",
+  "lastUpdated": "2026-02-27",
   "papers": [
+    {
+      "id": "arxiv-2602-23164v1",
+      "title": "MetaOthello: A Controlled Study of Multiple World Models in Transformers",
+      "authors": "Aviral Chawla, Galen Hall, Juniper Lovato",
+      "date": "2026-02-26",
+      "url": "https://arxiv.org/abs/2602.23164v1",
+      "abstract": "Foundation models must handle multiple generative processes, yet mechanistic interpretability largely studies capabilities in isolation; it remains unclear how a single transformer organizes multiple, potentially conflicting \"world models\". Previous experiments on Othello playing neural-networks test world-model learning but focus on a single game with a single set of rules. We introduce MetaOthello, a controlled suite of Othello variants with shared syntax but different rules or tokenizations, ",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-22968v1",
+      "title": "Certified Circuits: Stability Guarantees for Mechanistic Circuits",
+      "authors": "Alaa Anani, Tobias Lorenz, Bernt Schiele, Mario Fritz, Jonas Fischer",
+      "date": "2026-02-26",
+      "url": "https://arxiv.org/abs/2602.22968v1",
+      "abstract": "Understanding how neural networks arrive at their predictions is essential for debugging, auditing, and deployment. Mechanistic interpretability pursues this goal by identifying circuits - minimal subnetworks responsible for specific behaviors. However, existing circuit discovery methods are brittle: circuits depend strongly on the chosen concept dataset and often fail to transfer out-of-distribution, raising doubts whether they capture concept or dataset-specific artifacts. We introduce Certifi",
+      "tags": [
+        "circuits"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-22719v1",
+      "title": "Interpreting and Steering State-Space Models via Activation Subspace Bottlenecks",
+      "authors": "Vamshi Sunku Mohan, Kaustubh Gupta, Aneesha Das, Chandan Singh",
+      "date": "2026-02-26",
+      "url": "https://arxiv.org/abs/2602.22719v1",
+      "abstract": "State-space models (SSMs) have emerged as an efficient strategy for building powerful language models, avoiding the quadratic complexity of computing attention in transformers. Despite their promise, the interpretability and steerability of modern SSMs remain relatively underexplored. We take a major step in this direction by identifying activation subspace bottlenecks in the Mamba family of SSM models using tools from mechanistic interpretability. We then introduce a test-time steering interven",
+      "tags": [
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-22600v1",
+      "title": "Transformers converge to invariant algorithmic cores",
+      "authors": "Joshua S. Schiffman",
+      "date": "2026-02-26",
+      "url": "https://arxiv.org/abs/2602.22600v1",
+      "abstract": "Large language models exhibit sophisticated capabilities, yet understanding how they work internally remains a central challenge. A fundamental obstacle is that training selects for behavior, not circuitry, so many weight configurations can implement the same function. Which internal structures reflect the computation, and which are accidents of a particular training run? This work extracts algorithmic cores: compact subspaces necessary and sufficient for task performance. Independently trained ",
+      "tags": [
+        "circuits"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2602-21588v1",
       "title": "ABM-UDE: Developing Surrogates for Epidemic Agent-Based Models via Scientific Machine Learning",
@@ -36,6 +86,20 @@
       "abstract": "Medical Vision Language Models (VLMs) can change their answers when clinicians rephrase the same question, which raises deployment risks. We introduce Paraphrase Sensitivity Failure (PSF)-Med, a benchmark of 19,748 chest Xray questions paired with about 92,000 meaningpreserving paraphrases across MIMIC-CXR and PadChest. Across six medical VLMs, we measure yes/no flips for the same image and find flip rates from 8% to 58%. However, low flip rate does not imply visual grounding: text-only baseline",
       "tags": [
         "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-22253v1",
+      "title": "AR&D: A Framework for Retrieving and Describing Concepts for Interpreting AudioLLMs",
+      "authors": "Townim Faisal Chowdhury, Ta Duc Huy, Siqi Pan, Jeremy Stoddard, Zhibin Liao",
+      "date": "2026-02-24",
+      "url": "https://arxiv.org/abs/2602.22253v1",
+      "abstract": "Despite strong performance in audio perception tasks, large audio-language models (AudioLLMs) remain opaque to interpretation. A major factor behind this lack of interpretability is that individual neurons in these models frequently activate in response to several unrelated concepts. We introduce the first mechanistic interpretability framework for AudioLLMs, leveraging sparse autoencoders (SAEs) to disentangle polysemantic activations into monosemantic features. Our pipeline identifies represen",
+      "tags": [
+        "SAE",
+        "features"
       ],
       "source": "arXiv",
       "featured": false
