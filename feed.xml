@@ -5,9 +5,37 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>MetaOthello: A Controlled Study of Multiple World Models in Transformers</title>
+      <link>https://arxiv.org/abs/2602.23164v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Aviral Chawla, Galen Hall, Juniper Lovato</p><p>Foundation models must handle multiple generative processes, yet mechanistic interpretability largely studies capabilities in isolation; it remains unclear how a single transformer organizes multiple, potentially conflicting &quot;world models&quot;. Previous experiments on Othello playing neural-networks test world-model learning but focus on a single game with a single set of rules. We introduce MetaOthello, a controlled suite of Othello variants with shared syntax but different rules or tokenizations, </p>]]></description>
+      <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.23164v1</guid>
+    </item>
+    <item>
+      <title>Certified Circuits: Stability Guarantees for Mechanistic Circuits</title>
+      <link>https://arxiv.org/abs/2602.22968v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Alaa Anani, Tobias Lorenz, Bernt Schiele, Mario Fritz, Jonas Fischer</p><p>Understanding how neural networks arrive at their predictions is essential for debugging, auditing, and deployment. Mechanistic interpretability pursues this goal by identifying circuits - minimal subnetworks responsible for specific behaviors. However, existing circuit discovery methods are brittle: circuits depend strongly on the chosen concept dataset and often fail to transfer out-of-distribution, raising doubts whether they capture concept or dataset-specific artifacts. We introduce Certifi</p><p><strong>Tags:</strong> circuits</p>]]></description>
+      <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.22968v1</guid>
+    </item>
+    <item>
+      <title>Interpreting and Steering State-Space Models via Activation Subspace Bottlenecks</title>
+      <link>https://arxiv.org/abs/2602.22719v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Vamshi Sunku Mohan, Kaustubh Gupta, Aneesha Das, Chandan Singh</p><p>State-space models (SSMs) have emerged as an efficient strategy for building powerful language models, avoiding the quadratic complexity of computing attention in transformers. Despite their promise, the interpretability and steerability of modern SSMs remain relatively underexplored. We take a major step in this direction by identifying activation subspace bottlenecks in the Mamba family of SSM models using tools from mechanistic interpretability. We then introduce a test-time steering interven</p><p><strong>Tags:</strong> steering</p>]]></description>
+      <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.22719v1</guid>
+    </item>
+    <item>
+      <title>Transformers converge to invariant algorithmic cores</title>
+      <link>https://arxiv.org/abs/2602.22600v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Joshua S. Schiffman</p><p>Large language models exhibit sophisticated capabilities, yet understanding how they work internally remains a central challenge. A fundamental obstacle is that training selects for behavior, not circuitry, so many weight configurations can implement the same function. Which internal structures reflect the computation, and which are accidents of a particular training run? This work extracts algorithmic cores: compact subspaces necessary and sufficient for task performance. Independently trained </p><p><strong>Tags:</strong> circuits</p>]]></description>
+      <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.22600v1</guid>
+    </item>
     <item>
       <title>ABM-UDE: Developing Surrogates for Epidemic Agent-Based Models via Scientific Machine Learning</title>
       <link>https://arxiv.org/abs/2602.21588v1</link>
@@ -28,6 +56,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Binesh Sadanandan, Vahid Behzadan</p><p>Medical Vision Language Models (VLMs) can change their answers when clinicians rephrase the same question, which raises deployment risks. We introduce Paraphrase Sensitivity Failure (PSF)-Med, a benchmark of 19,748 chest Xray questions paired with about 92,000 meaningpreserving paraphrases across MIMIC-CXR and PadChest. Across six medical VLMs, we measure yes/no flips for the same image and find flip rates from 8% to 58%. However, low flip rate does not imply visual grounding: text-only baseline</p><p><strong>Tags:</strong> vision</p>]]></description>
       <pubDate>Tue, 24 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2602.21428v1</guid>
+    </item>
+    <item>
+      <title>AR&amp;D: A Framework for Retrieving and Describing Concepts for Interpreting AudioLLMs</title>
+      <link>https://arxiv.org/abs/2602.22253v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Townim Faisal Chowdhury, Ta Duc Huy, Siqi Pan, Jeremy Stoddard, Zhibin Liao</p><p>Despite strong performance in audio perception tasks, large audio-language models (AudioLLMs) remain opaque to interpretation. A major factor behind this lack of interpretability is that individual neurons in these models frequently activate in response to several unrelated concepts. We introduce the first mechanistic interpretability framework for AudioLLMs, leveraging sparse autoencoders (SAEs) to disentangle polysemantic activations into monosemantic features. Our pipeline identifies represen</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Tue, 24 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.22253v1</guid>
     </item>
     <item>
       <title>IR$^3$: Contrastive Inverse Reinforcement Learning for Interpretable Detection and Mitigation of Reward Hacking</title>
@@ -182,41 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Matthew Kowal, Goncalo Paulo, Louis Jaburi, Tom Tseng, Lev E McKinney, et al.</p><p>As large language models are increasingly trained and fine-tuned, practitioners need methods to identify which training data drive specific behaviors, particularly unintended ones. Training Data Attribution (TDA) methods address this by estimating datapoint influence. Existing approaches like influence functions are both computationally expensive and attribute based on single test examples, which can bias results toward syntactic rather than semantic similarity. To address these issues of scalab</p>]]></description>
       <pubDate>Mon, 16 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2602.14869v1</guid>
-    </item>
-    <item>
-      <title>Sanity Checks for Sparse Autoencoders: Do SAEs Beat Random Baselines?</title>
-      <link>https://arxiv.org/abs/2602.14111v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Anton Korznikov, Andrey Galichin, Alexey Dontsov, Oleg Rogov, Ivan Oseledets, et al.</p><p>Sparse Autoencoders (SAEs) have emerged as a promising tool for interpreting neural networks by decomposing their activations into sparse sets of human-interpretable features. Recent work has introduced multiple SAE variants and successfully scaled them to frontier models. Despite much excitement, a growing number of negative results in downstream tasks casts doubt on whether SAEs recover meaningful features. To directly investigate this, we perform two complementary evaluations. On a synthetic </p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Sun, 15 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2602.14111v1</guid>
-    </item>
-    <item>
-      <title>DistillLens: Symmetric Knowledge Distillation Through Logit Lens</title>
-      <link>https://arxiv.org/abs/2602.13567v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Manish Dhakal, Uthman Jinadu, Anjila Budathoki, Rajshekhar Sunderraman, Yi Ding</p><p>Standard Knowledge Distillation (KD) compresses Large Language Models (LLMs) by optimizing final outputs, yet it typically treats the teacher&#x27;s intermediate layer&#x27;s thought process as a black box. While feature-based distillation attempts to bridge this gap, existing methods (e.g., MSE and asymmetric KL divergence) ignore the rich uncertainty profiles required for the final output. In this paper, we introduce DistillLens, a framework that symmetrically aligns the evolving thought processes of st</p><p><strong>Tags:</strong> features</p>]]></description>
-      <pubDate>Sat, 14 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2602.13567v1</guid>
-    </item>
-    <item>
-      <title>Singular Vectors of Attention Heads Align with Features</title>
-      <link>https://arxiv.org/abs/2602.13524v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Gabriel Franco, Carson Loughridge, Mark Crovella</p><p>Identifying feature representations in language models is a central task in mechanistic interpretability. Several recent studies have made an implicit assumption that feature representations can be inferred in some cases from singular vectors of attention matrices. However, sound justification for this assumption is lacking. In this paper we address that question, asking: why and when do singular vectors align with features? First, we demonstrate that singular vectors robustly align with feature</p><p><strong>Tags:</strong> features, attention</p>]]></description>
-      <pubDate>Fri, 13 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2602.13524v1</guid>
-    </item>
-    <item>
-      <title>Finding Highly Interpretable Prompt-Specific Circuits in Language Models</title>
-      <link>https://arxiv.org/abs/2602.13483v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Gabriel Franco, Lucas M. Tassis, Azalea Rohr, Mark Crovella</p><p>Understanding the internal circuits that language models use to solve tasks remains a central challenge in mechanistic interpretability. Most prior work identifies circuits at the task level by averaging across many prompts, implicitly assuming a single stable mechanism per task. We show that this assumption can obscure a crucial source of structure: circuits are prompt-specific, even within a fixed task. Building on attention causal communication (ACC) (Franco &amp; Crovella, 2025), we introduce AC</p><p><strong>Tags:</strong> circuits</p>]]></description>
-      <pubDate>Fri, 13 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2602.13483v1</guid>
-    </item>
-    <item>
-      <title>Protein Circuit Tracing via Cross-layer Transcoders</title>
-      <link>https://arxiv.org/abs/2602.12026v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Darin Tsui, Kunal Talreja, Daniel Saeedi, Amirali Aghazadeh</p><p>Protein language models (pLMs) have emerged as powerful predictors of protein structure and function. However, the computational circuits underlying their predictions remain poorly understood. Recent mechanistic interpretability methods decompose pLM representations into interpretable features, but they treat each layer independently and thus fail to capture cross-layer computation, limiting their ability to approximate the full model. We introduce ProtoMech, a framework for discovering computat</p><p><strong>Tags:</strong> circuits, features, biology</p>]]></description>
-      <pubDate>Thu, 12 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2602.12026v1</guid>
     </item>
   </channel>
 </rss>
