@@ -5,7 +5,7 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 28 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
@@ -44,6 +44,27 @@
       <guid>https://arxiv.org/abs/2602.21588v1</guid>
     </item>
     <item>
+      <title>Manifold of Failure: Behavioral Attraction Basins in Language Models</title>
+      <link>https://arxiv.org/abs/2602.22291v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Sarthak Munshi, Manish Bhatt, Vineeth Sai Narajala, Idan Habler,  AmmarnAl-Kahfah, et al.</p><p>While prior work has focused on projecting adversarial examples back onto the manifold of natural data to restore safety, we argue that a comprehensive understanding of AI safety requires characterizing the unsafe regions themselves. This paper introduces a framework for systematically mapping the Manifold of Failure in Large Language Models (LLMs). We reframe the search for vulnerabilities as a quality diversity problem, using MAP-Elites to illuminate the continuous topology of these failure re</p><p><strong>Tags:</strong> safety</p>]]></description>
+      <pubDate>Wed, 25 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.22291v1</guid>
+    </item>
+    <item>
+      <title>Evaluating the Usage of African-American Vernacular English in Large Language Models</title>
+      <link>https://arxiv.org/abs/2602.21485v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Deja Dunlap, R. Thomas McCoy</p><p>In AI, most evaluations of natural language understanding tasks are conducted in standardized dialects such as Standard American English (SAE). In this work, we investigate how accurately large language models (LLMs) represent African American Vernacular English (AAVE). We analyze three LLMs to compare their usage of AAVE to the usage of humans who natively speak AAVE. We first analyzed interviews from the Corpus of Regional African American Language and TwitterAAE to identify the typical contex</p>]]></description>
+      <pubDate>Wed, 25 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.21485v1</guid>
+    </item>
+    <item>
+      <title>DySCO: Dynamic Attention-Scaling Decoding for Long-Context LMs</title>
+      <link>https://arxiv.org/abs/2602.22175v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Xi Ye, Wuwei Zhang, Fangcong Yin, Howard Yen, Danqi Chen</p><p>Understanding and reasoning over long contexts is a crucial capability for language models (LMs). Although recent models support increasingly long context windows, their accuracy often deteriorates as input length grows. In practice, models often struggle to keep attention aligned with the most relevant context throughout decoding. In this work, we propose DySCO, a novel decoding algorithm for improving long-context reasoning. DySCO leverages retrieval heads--a subset of attention heads speciali</p><p><strong>Tags:</strong> attention, reasoning</p>]]></description>
+      <pubDate>Wed, 25 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.22175v1</guid>
+    </item>
+    <item>
       <title>MINAR: Mechanistic Interpretability for Neural Algorithmic Reasoning</title>
       <link>https://arxiv.org/abs/2602.21442v1</link>
       <description><![CDATA[<p><strong>Authors:</strong> Jesse He, Helen Jenne, Max Vargas, Davis Brown, Gal Mishne, et al.</p><p>The recent field of neural algorithmic reasoning (NAR) studies the ability of graph neural networks (GNNs) to emulate classical algorithms like Bellman-Ford, a phenomenon known as algorithmic alignment. At the same time, recent advances in large language models (LLMs) have spawned the study of mechanistic interpretability, which aims to identify granular model components like circuits that perform specific computations. In this work, we introduce Mechanistic Interpretability for Neural Algorithm</p><p><strong>Tags:</strong> circuits, safety, reasoning</p>]]></description>
@@ -65,6 +86,13 @@
       <guid>https://arxiv.org/abs/2602.22253v1</guid>
     </item>
     <item>
+      <title>Transcoder Adapters for Reasoning-Model Diffing</title>
+      <link>https://arxiv.org/abs/2602.20904v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Nathan Hu, Jake Ward, Thomas Icard, Christopher Potts</p><p>While reasoning models are increasingly ubiquitous, the effects of reasoning training on a model&#x27;s internal mechanisms remain poorly understood. In this work, we introduce transcoder adapters, a technique for learning an interpretable approximation of the difference in MLP computation before and after fine-tuning. We apply transcoder adapters to characterize the differences between Qwen2.5-Math-7B and its reasoning-distilled variant, DeepSeek-R1-Distill-Qwen-7B. Learned adapters are faithful to </p><p><strong>Tags:</strong> reasoning</p>]]></description>
+      <pubDate>Tue, 24 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.20904v1</guid>
+    </item>
+    <item>
       <title>IR$^3$: Contrastive Inverse Reinforcement Learning for Interpretable Detection and Mitigation of Reward Hacking</title>
       <link>https://arxiv.org/abs/2602.19416v1</link>
       <description><![CDATA[<p><strong>Authors:</strong> Mohammad Beigi, Ming Jin, Junshan Zhang, Jiaxin Zhang, Qifan Wang, et al.</p><p>Reinforcement Learning from Human Feedback (RLHF) enables powerful LLM alignment but can introduce reward hacking - models exploit spurious correlations in proxy rewards without genuine alignment. Compounding this, the objectives internalized during RLHF remain opaque, making hacking behaviors difficult to detect or correct. We introduce IR3 (Interpretable Reward Reconstruction and Rectification), a framework that reverse-engineers, interprets, and surgically repairs the implicit objectives driv</p><p><strong>Tags:</strong> safety</p>]]></description>
@@ -84,6 +112,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Uichan Lee, Jeonghyeon Kim, Sangheum Hwang</p><p>Recent advances in text-to-image (T2I) diffusion models have seen rapid and widespread adoption. However, their powerful generative capabilities raise concerns about potential misuse for synthesizing harmful, private, or copyrighted content. To mitigate such risks, concept erasure techniques have emerged as a promising solution. Prior works have primarily focused on fine-tuning the denoising component (e.g., the U-Net backbone). However, recent causal tracing studies suggest that visual attribut</p><p><strong>Tags:</strong> safety, vision</p>]]></description>
       <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2602.19631v1</guid>
+    </item>
+    <item>
+      <title>Circuit Tracing in Vision-Language Models: Understanding the Internal Mechanisms of Multimodal Thinking</title>
+      <link>https://arxiv.org/abs/2602.20330v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Jingcheng Yang, Tianhu Xiong, Shengyi Qian, Klara Nahrstedt, Mingyuan Wu</p><p>Vision-language models (VLMs) are powerful but remain opaque black boxes. We introduce the first framework for transparent circuit tracing in VLMs to systematically analyze multimodal reasoning. By utilizing transcoders, attribution graphs, and attention-based methods, we uncover how VLMs hierarchically integrate visual and semantic concepts. We reveal that distinct visual feature circuits can handle mathematical reasoning and support cross-modal associations. Validated through feature steering </p><p><strong>Tags:</strong> circuits, features, steering, vision, reasoning</p>]]></description>
+      <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.20330v1</guid>
     </item>
     <item>
       <title>Beyond Behavioural Trade-Offs: Mechanistic Tracing of Pain-Pleasure Decisions in an LLM</title>
@@ -182,41 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Itamar Hadad, Guy Katz, Shahaf Bassan</p><p>*Automated circuit discovery* is a central tool in mechanistic interpretability for identifying the internal components of neural networks responsible for specific behaviors. While prior methods have made significant progress, they typically depend on heuristics or approximations and do not offer provable guarantees over continuous input domains for the resulting circuits. In this work, we leverage recent advances in neural network verification to propose a suite of automated algorithms that yie</p><p><strong>Tags:</strong> circuits</p>]]></description>
       <pubDate>Wed, 18 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2602.16823v1</guid>
-    </item>
-    <item>
-      <title>What Do Neurons Listen To? A Neuron-level Dissection of a General-purpose Audio Model</title>
-      <link>https://arxiv.org/abs/2602.15307v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Takao Kawamura, Daisuke Niizumi, Nobutaka Ono</p><p>In this paper, we analyze the internal representations of a general-purpose audio self-supervised learning (SSL) model from a neuron-level perspective. Despite their strong empirical performance as feature extractors, the internal mechanisms underlying the robust generalization of SSL audio models remain unclear. Drawing on the framework of mechanistic interpretability, we identify and examine class-specific neurons by analyzing conditional activation patterns across diverse tasks. Our analysis </p><p><strong>Tags:</strong> features</p>]]></description>
-      <pubDate>Tue, 17 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2602.15307v1</guid>
-    </item>
-    <item>
-      <title>Causal Effect Estimation with Latent Textual Treatments</title>
-      <link>https://arxiv.org/abs/2602.15730v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Omri Feldman, Amar Venugopal, Jann Spiess, Amir Feder</p><p>Understanding the causal effects of text on downstream outcomes is a central task in many applications. Estimating such effects requires researchers to run controlled experiments that systematically vary textual features. While large language models (LLMs) hold promise for generating text, producing and evaluating controlled variation requires more careful attention. In this paper, we present an end-to-end pipeline for the generation and causal estimation of latent textual interventions. Our wor</p><p><strong>Tags:</strong> features</p>]]></description>
-      <pubDate>Tue, 17 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2602.15730v1</guid>
-    </item>
-    <item>
-      <title>Quantifying LLM Attention-Head Stability: Implications for Circuit Universality</title>
-      <link>https://arxiv.org/abs/2602.16740v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Karan Bali, Jack Stanley, Praneet Suresh, Danilo Bzdok</p><p>In mechanistic interpretability, recent work scrutinizes transformer &quot;circuits&quot; - sparse, mono or multi layer sub computations, that may reflect human understandable functions. Yet, these network circuits are rarely acid-tested for their stability across different instances of the same deep learning architecture. Without this, it remains unclear whether reported circuits emerge universally across labs or turn out to be idiosyncratic to a particular estimation instance, potentially limiting confi</p><p><strong>Tags:</strong> circuits</p>]]></description>
-      <pubDate>Tue, 17 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2602.16740v1</guid>
-    </item>
-    <item>
-      <title>SynthSAEBench: Evaluating Sparse Autoencoders on Scalable Realistic Synthetic Data</title>
-      <link>https://arxiv.org/abs/2602.14687v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> David Chanin, Adrià Garriga-Alonso</p><p>Improving Sparse Autoencoders (SAEs) requires benchmarks that can precisely validate architectural innovations. However, current SAE benchmarks on LLMs are often too noisy to differentiate architectural improvements, and current synthetic data experiments are too small-scale and unrealistic to provide meaningful comparisons. We introduce SynthSAEBench, a toolkit for generating large-scale synthetic data with realistic feature characteristics including correlation, hierarchy, and superposition, a</p><p><strong>Tags:</strong> SAE, superposition, features</p>]]></description>
-      <pubDate>Mon, 16 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2602.14687v1</guid>
-    </item>
-    <item>
-      <title>Concept Influence: Leveraging Interpretability to Improve Performance and Efficiency in Training Data Attribution</title>
-      <link>https://arxiv.org/abs/2602.14869v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Matthew Kowal, Goncalo Paulo, Louis Jaburi, Tom Tseng, Lev E McKinney, et al.</p><p>As large language models are increasingly trained and fine-tuned, practitioners need methods to identify which training data drive specific behaviors, particularly unintended ones. Training Data Attribution (TDA) methods address this by estimating datapoint influence. Existing approaches like influence functions are both computationally expensive and attribute based on single test examples, which can bias results toward syntactic rather than semantic similarity. To address these issues of scalab</p>]]></description>
-      <pubDate>Mon, 16 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2602.14869v1</guid>
     </item>
   </channel>
 </rss>
