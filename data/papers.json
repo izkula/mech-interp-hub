@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-27",
+  "lastUpdated": "2026-02-28",
   "papers": [
     {
       "id": "arxiv-2602-23164v1",
@@ -63,6 +63,44 @@
       "featured": false
     },
     {
+      "id": "arxiv-2602-22291v1",
+      "title": "Manifold of Failure: Behavioral Attraction Basins in Language Models",
+      "authors": "Sarthak Munshi, Manish Bhatt, Vineeth Sai Narajala, Idan Habler,  AmmarnAl-Kahfah, et al.",
+      "date": "2026-02-25",
+      "url": "https://arxiv.org/abs/2602.22291v1",
+      "abstract": "While prior work has focused on projecting adversarial examples back onto the manifold of natural data to restore safety, we argue that a comprehensive understanding of AI safety requires characterizing the unsafe regions themselves. This paper introduces a framework for systematically mapping the Manifold of Failure in Large Language Models (LLMs). We reframe the search for vulnerabilities as a quality diversity problem, using MAP-Elites to illuminate the continuous topology of these failure re",
+      "tags": [
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-21485v1",
+      "title": "Evaluating the Usage of African-American Vernacular English in Large Language Models",
+      "authors": "Deja Dunlap, R. Thomas McCoy",
+      "date": "2026-02-25",
+      "url": "https://arxiv.org/abs/2602.21485v1",
+      "abstract": "In AI, most evaluations of natural language understanding tasks are conducted in standardized dialects such as Standard American English (SAE). In this work, we investigate how accurately large language models (LLMs) represent African American Vernacular English (AAVE). We analyze three LLMs to compare their usage of AAVE to the usage of humans who natively speak AAVE. We first analyzed interviews from the Corpus of Regional African American Language and TwitterAAE to identify the typical contex",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-22175v1",
+      "title": "DySCO: Dynamic Attention-Scaling Decoding for Long-Context LMs",
+      "authors": "Xi Ye, Wuwei Zhang, Fangcong Yin, Howard Yen, Danqi Chen",
+      "date": "2026-02-25",
+      "url": "https://arxiv.org/abs/2602.22175v1",
+      "abstract": "Understanding and reasoning over long contexts is a crucial capability for language models (LMs). Although recent models support increasingly long context windows, their accuracy often deteriorates as input length grows. In practice, models often struggle to keep attention aligned with the most relevant context throughout decoding. In this work, we propose DySCO, a novel decoding algorithm for improving long-context reasoning. DySCO leverages retrieval heads--a subset of attention heads speciali",
+      "tags": [
+        "attention",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
       "id": "arxiv-2602-21442v1",
       "title": "MINAR: Mechanistic Interpretability for Neural Algorithmic Reasoning",
       "authors": "Jesse He, Helen Jenne, Max Vargas, Davis Brown, Gal Mishne, et al.",
@@ -105,6 +143,19 @@
       "featured": false
     },
     {
+      "id": "arxiv-2602-20904v1",
+      "title": "Transcoder Adapters for Reasoning-Model Diffing",
+      "authors": "Nathan Hu, Jake Ward, Thomas Icard, Christopher Potts",
+      "date": "2026-02-24",
+      "url": "https://arxiv.org/abs/2602.20904v1",
+      "abstract": "While reasoning models are increasingly ubiquitous, the effects of reasoning training on a model's internal mechanisms remain poorly understood. In this work, we introduce transcoder adapters, a technique for learning an interpretable approximation of the difference in MLP computation before and after fine-tuning. We apply transcoder adapters to characterize the differences between Qwen2.5-Math-7B and its reasoning-distilled variant, DeepSeek-R1-Distill-Qwen-7B. Learned adapters are faithful to ",
+      "tags": [
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
       "id": "arxiv-2602-19416v1",
       "title": "IR$^3$: Contrastive Inverse Reinforcement Learning for Interpretable Detection and Mitigation of Reward Hacking",
       "authors": "Mohammad Beigi, Ming Jin, Junshan Zhang, Jiaxin Zhang, Qifan Wang, et al.",
@@ -138,6 +189,23 @@
       "tags": [
         "safety",
         "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-20330v1",
+      "title": "Circuit Tracing in Vision-Language Models: Understanding the Internal Mechanisms of Multimodal Thinking",
+      "authors": "Jingcheng Yang, Tianhu Xiong, Shengyi Qian, Klara Nahrstedt, Mingyuan Wu",
+      "date": "2026-02-23",
+      "url": "https://arxiv.org/abs/2602.20330v1",
+      "abstract": "Vision-language models (VLMs) are powerful but remain opaque black boxes. We introduce the first framework for transparent circuit tracing in VLMs to systematically analyze multimodal reasoning. By utilizing transcoders, attribution graphs, and attention-based methods, we uncover how VLMs hierarchically integrate visual and semantic concepts. We reveal that distinct visual feature circuits can handle mathematical reasoning and support cross-modal associations. Validated through feature steering ",
+      "tags": [
+        "circuits",
+        "features",
+        "steering",
+        "vision",
+        "reasoning"
       ],
       "source": "arXiv",
       "featured": false
@@ -385,6 +453,19 @@
       "url": "https://arxiv.org/abs/2602.14869v1",
       "abstract": "As large language models are increasingly trained and fine-tuned, practitioners need methods to identify which training data drive specific behaviors, particularly unintended ones. Training Data Attribution (TDA) methods address this by estimating datapoint influence. Existing approaches like influence functions are both computationally expensive and attribute based on single test examples, which can bias results toward syntactic rather than semantic similarity. To address these issues of scalab",
       "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-15029v2",
+      "title": "Symmetry in language statistics shapes the geometry of model representations",
+      "authors": "Dhruva Karkada, Daniel J. Korchinski, Andres Nava, Matthieu Wyart, Yasaman Bahri",
+      "date": "2026-02-16",
+      "url": "https://arxiv.org/abs/2602.15029v2",
+      "abstract": "The internal representations learned by language models consistently exhibit striking geometric structure: calendar months organize into a circle, historical years form a smooth one-dimensional manifold, and cities' latitudes and longitudes can be decoded using a linear probe. To explain this neural code, we first show that language statistics exhibit translation symmetry (for example, the frequency with which any two months co-occur in text depends only on the time interval between them). We pr",
+      "tags": [
+        "probing"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -3800,6 +3881,19 @@
       "abstract": "In this paper, by comparing the transmission capacity of different voltage levels and the requirements of system power supply configuration, it is discussed that the risk of oil tank deformation and rupture increases when facing potential internal short-circuit arc fault, which puts forward higher requirements for large oil-filled transformer equipment oil tank's ability to withstand internal short-circuit arc fault. Through the calculation of single-phase short-circuit current, analysis of inst",
       "tags": [
         "circuits"
+      ],
+      "source": "Semantic Scholar",
+      "featured": false
+    },
+    {
+      "id": "ss-8030b133f42eb0e686d7",
+      "title": "Interpretable unsupervised neural network structure for data clustering via differentiable reconstruction of ONMF and sparse autoencoder",
+      "authors": "Yongwei Gai, Jinglei Liu",
+      "date": "2025-04-01",
+      "url": "https://www.semanticscholar.org/paper/8030b133f42eb0e686d7e4b87925db8cf3f8079c",
+      "abstract": "Neural networks, while powerful, often face significant challenges in terms of interpretability, particularly in clustering tasks. Traditional methods typically rely on post-hoc explanations or supervised learning, which limit their ability to provide transparent, understandable results. The innovation of this method is the integration of Orthogonal Non-negative Matrix Factorization (ONMF) into a clustering layer, which is directly incorporated into the OSINN neural network model and enhanced by",
+      "tags": [
+        "SAE"
       ],
       "source": "Semantic Scholar",
       "featured": false
