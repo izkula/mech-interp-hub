@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-28",
+  "lastUpdated": "2026-03-01",
   "papers": [
     {
       "id": "arxiv-2602-23164v1",
@@ -3385,6 +3385,19 @@
       "featured": false
     },
     {
+      "id": "ss-9bc8838b58de39e44066",
+      "title": "Analysis and Optimization of Single Point of Failure in the Instrumentation and Control Signal Circuit for Auxiliary Transformer Switching at a Nuclear Power Plant",
+      "authors": "W. Du, Yanan Chen, Lei Tang, Qinglian Zhu, Xiqing Hu, et al.",
+      "date": "2025-11-14",
+      "url": "https://www.semanticscholar.org/paper/9bc8838b58de39e44066c0c0ed5f81a3a0011e02",
+      "abstract": "In view of whether there is a single fault point in the instrument control signal loop of the plant transformer (referred to as ANT) and auxiliary transformer (referred to as AST) power change-over (referred to as ANT/AST) in a domestic nuclear power plant, the full link signal of the ANT/AST Change-over logic is analyzed and studied. The result show that there is optimization space in the reliability and redundancy of the plant auxiliary transformer change-over logic loop. According to the anal",
+      "tags": [
+        "circuits"
+      ],
+      "source": "Semantic Scholar",
+      "featured": false
+    },
+    {
       "id": "arxiv-2511-10453v1",
       "title": "Reasoning About Intent for Ambiguous Requests",
       "authors": "Irina Saparina, Mirella Lapata",
@@ -3557,6 +3570,19 @@
         "vision"
       ],
       "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "ss-f669f2b764a0032c2bc2",
+      "title": "Calculation and Analysis of Electromagnetic Force in Power Transformer Winding under Three phase Short Circuit Conditions",
+      "authors": "Bo Zhang, Yijing Li, Feiyang Chen, Yingli Wang, Yun-guo Yang",
+      "date": "2025-11-07",
+      "url": "https://www.semanticscholar.org/paper/f669f2b764a0032c2bc26ce05ed9eae61ba2a0db",
+      "abstract": "Transformers are critical components for energy transmission and conversion in power systems, and their operational condition plays a vital role in ensuring system security and stability. However, the high currents associated with short-circuit faults make substantial electromagnetic forces within transformers, potentially resulting in severe winding deformation or instability. Such incidents deteriorate the transformer\u2019s operational state and may result in significant losses. Therefore, this pa",
+      "tags": [
+        "circuits"
+      ],
+      "source": "Semantic Scholar",
       "featured": false
     },
     {
