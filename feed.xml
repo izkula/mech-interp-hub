@@ -5,9 +5,16 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 02 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Interpretable Debiasing of Vision-Language Models for Social Fairness</title>
+      <link>https://arxiv.org/abs/2602.24014v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Na Min An, Yoonna Jang, Yusuke Hirota, Ryo Hachiuma, Isabelle Augenstein, et al.</p><p>The rapid advancement of Vision-Language models (VLMs) has raised growing concerns that their black-box reasoning processes could lead to unintended forms of social bias. Current debiasing approaches focus on mitigating surface-level bias signals through post-hoc learning or test-time algorithms, while leaving the internal dynamics of the model largely unexplored. In this work, we introduce an interpretable, model-agnostic bias mitigation framework, DeBiasLens, that localizes social attribute ne</p><p><strong>Tags:</strong> vision, reasoning</p>]]></description>
+      <pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2602.24014v1</guid>
+    </item>
     <item>
       <title>MetaOthello: A Controlled Study of Multiple World Models in Transformers</title>
       <link>https://arxiv.org/abs/2602.23164v1</link>
@@ -210,13 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Jianliang He, Leda Wang, Siyu Chen, Zhuoran Yang</p><p>We present a comprehensive analysis of how two-layer neural networks learn features to solve the modular addition task. Our work provides a full mechanistic interpretation of the learned model and a theoretical explanation of its training dynamics. While prior work has identified that individual neurons learn single-frequency Fourier features and phase alignment, it does not fully explain how these features combine into a global solution. We bridge this gap by formalizing a diversification condi</p><p><strong>Tags:</strong> features, safety, theory</p>]]></description>
       <pubDate>Wed, 18 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2602.16849v1</guid>
-    </item>
-    <item>
-      <title>Formal Mechanistic Interpretability: Automated Circuit Discovery with Provable Guarantees</title>
-      <link>https://arxiv.org/abs/2602.16823v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Itamar Hadad, Guy Katz, Shahaf Bassan</p><p>*Automated circuit discovery* is a central tool in mechanistic interpretability for identifying the internal components of neural networks responsible for specific behaviors. While prior methods have made significant progress, they typically depend on heuristics or approximations and do not offer provable guarantees over continuous input domains for the resulting circuits. In this work, we leverage recent advances in neural network verification to propose a suite of automated algorithms that yie</p><p><strong>Tags:</strong> circuits</p>]]></description>
-      <pubDate>Wed, 18 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2602.16823v1</guid>
     </item>
   </channel>
 </rss>
