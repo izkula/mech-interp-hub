@@ -1,6 +1,20 @@
 {
-  "lastUpdated": "2026-03-01",
+  "lastUpdated": "2026-03-02",
   "papers": [
+    {
+      "id": "arxiv-2602-24014v1",
+      "title": "Interpretable Debiasing of Vision-Language Models for Social Fairness",
+      "authors": "Na Min An, Yoonna Jang, Yusuke Hirota, Ryo Hachiuma, Isabelle Augenstein, et al.",
+      "date": "2026-02-27",
+      "url": "https://arxiv.org/abs/2602.24014v1",
+      "abstract": "The rapid advancement of Vision-Language models (VLMs) has raised growing concerns that their black-box reasoning processes could lead to unintended forms of social bias. Current debiasing approaches focus on mitigating surface-level bias signals through post-hoc learning or test-time algorithms, while leaving the internal dynamics of the model largely unexplored. In this work, we introduce an interpretable, model-agnostic bias mitigation framework, DeBiasLens, that localizes social attribute ne",
+      "tags": [
+        "vision",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2602-23164v1",
       "title": "MetaOthello: A Controlled Study of Multiple World Models in Transformers",
