@@ -1,6 +1,63 @@
 {
-  "lastUpdated": "2026-03-02",
+  "lastUpdated": "2026-03-03",
   "papers": [
+    {
+      "id": "arxiv-2603-01822v1",
+      "title": "Emerging Human-like Strategies for Semantic Memory Foraging in Large Language Models",
+      "authors": "Eric Lacosse, Mariana Duarte, Peter M. Todd, Daniel C. McNamee",
+      "date": "2026-03-02",
+      "url": "https://arxiv.org/abs/2603.01822v1",
+      "abstract": "Both humans and Large Language Models (LLMs) store a vast repository of semantic memories. In humans, efficient and strategic access to this memory store is a critical foundation for a variety of cognitive functions. Such access has long been a focus of psychology and the computational mechanisms behind it are now well characterized. Much of this understanding has been gleaned from a widely-used neuropsychological and cognitive science assessment called the Semantic Fluency Task (SFT), which req",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-01752v1",
+      "title": "Causal Circuit Tracing Reveals Distinct Computational Architectures in Single-Cell Foundation Models: Inhibitory Dominance, Biological Coherence, and Cross-Model Convergence",
+      "authors": "Ihor Kendiukhov",
+      "date": "2026-03-02",
+      "url": "https://arxiv.org/abs/2603.01752v1",
+      "abstract": "Motivation: Sparse autoencoders (SAEs) decompose foundation model activations into interpretable features, but causal feature-to-feature interactions across network depth remain unknown for biological foundation models.   Results: We introduce causal circuit tracing by ablating SAE features and measuring downstream responses, and apply it to Geneformer V2-316M and scGPT whole-human across four conditions (96,892 edges, 80,191 forward passes). Both models show approximately 53 percent biological ",
+      "tags": [
+        "SAE",
+        "circuits",
+        "features",
+        "biology"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-01437v1",
+      "title": "Decoding Answers Before Chain-of-Thought: Evidence from Pre-CoT Probes and Activation Steering",
+      "authors": "Kyle Cox, Darius Kianersi, Adri\u00e0 Garriga-Alonso",
+      "date": "2026-03-02",
+      "url": "https://arxiv.org/abs/2603.01437v1",
+      "abstract": "As chain-of-thought (CoT) has become central to scaling reasoning capabilities in large language models (LLMs), it has also emerged as a promising tool for interpretability, suggesting the opportunity to understand model decisions through verbalized reasoning. However, the utility of CoT toward interpretability depends upon its faithfulness -- whether the model's stated reasoning reflects the underlying decision process. We provide mechanistic evidence that instruction-tuned models often determi",
+      "tags": [
+        "probing",
+        "steering",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-01326v1",
+      "title": "Truth as a Trajectory: What Internal Representations Reveal About Large Language Model Reasoning",
+      "authors": "Hamed Damirchi, Ignacio Meza De la Jara, Ehsan Abbasnejad, Afshar Shamsi, Zhen Zhang, et al.",
+      "date": "2026-03-01",
+      "url": "https://arxiv.org/abs/2603.01326v1",
+      "abstract": "Existing explainability methods for Large Language Models (LLMs) typically treat hidden states as static points in activation space, assuming that correct and incorrect inferences can be separated using representations from an individual layer. However, these activations are saturated with polysemantic features, leading to linear probes learning surface-level lexical patterns rather than underlying reasoning structures. We introduce Truth as a Trajectory (TaT), which models the transformer infer",
+      "tags": [
+        "features",
+        "probing",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2602-24014v1",
       "title": "Interpretable Debiasing of Vision-Language Models for Social Fairness",
@@ -165,6 +222,20 @@
       "abstract": "While reasoning models are increasingly ubiquitous, the effects of reasoning training on a model's internal mechanisms remain poorly understood. In this work, we introduce transcoder adapters, a technique for learning an interpretable approximation of the difference in MLP computation before and after fine-tuning. We apply transcoder adapters to characterize the differences between Qwen2.5-Math-7B and its reasoning-distilled variant, DeepSeek-R1-Distill-Qwen-7B. Learned adapters are faithful to ",
       "tags": [
         "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-00148v1",
+      "title": "Mechanistically Guided LoRA Improves Paraphrase Consistency in Medical Vision-Language Models",
+      "authors": "Binesh Sadanandan, Vahid Behzadan",
+      "date": "2026-02-24",
+      "url": "https://arxiv.org/abs/2603.00148v1",
+      "abstract": "Medical Vision-Language Models can give different yes or no answers to rephrasings of the same clinical question. We study this in MedGemma-4B using PSF-Med Sadanandan and Behzadan (2025), which provides paraphrase pairs for systematic consistency evaluation on medical VQA. On MIMIC-CXR binary questions (n = 158), the baseline flip rate is 14.6% and mean margin difference is 1.63 logits. We validate that Gemma Scope 2 Sparse Autoencoders (SAEs) transfer to MedGemma activations, achieving R2 ~= 0",
+      "tags": [
+        "SAE",
+        "vision"
       ],
       "source": "arXiv",
       "featured": false
