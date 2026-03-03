@@ -5,9 +5,37 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Emerging Human-like Strategies for Semantic Memory Foraging in Large Language Models</title>
+      <link>https://arxiv.org/abs/2603.01822v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Eric Lacosse, Mariana Duarte, Peter M. Todd, Daniel C. McNamee</p><p>Both humans and Large Language Models (LLMs) store a vast repository of semantic memories. In humans, efficient and strategic access to this memory store is a critical foundation for a variety of cognitive functions. Such access has long been a focus of psychology and the computational mechanisms behind it are now well characterized. Much of this understanding has been gleaned from a widely-used neuropsychological and cognitive science assessment called the Semantic Fluency Task (SFT), which req</p>]]></description>
+      <pubDate>Mon, 02 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2603.01822v1</guid>
+    </item>
+    <item>
+      <title>Causal Circuit Tracing Reveals Distinct Computational Architectures in Single-Cell Foundation Models: Inhibitory Dominance, Biological Coherence, and Cross-Model Convergence</title>
+      <link>https://arxiv.org/abs/2603.01752v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Ihor Kendiukhov</p><p>Motivation: Sparse autoencoders (SAEs) decompose foundation model activations into interpretable features, but causal feature-to-feature interactions across network depth remain unknown for biological foundation models.   Results: We introduce causal circuit tracing by ablating SAE features and measuring downstream responses, and apply it to Geneformer V2-316M and scGPT whole-human across four conditions (96,892 edges, 80,191 forward passes). Both models show approximately 53 percent biological </p><p><strong>Tags:</strong> SAE, circuits, features, biology</p>]]></description>
+      <pubDate>Mon, 02 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2603.01752v1</guid>
+    </item>
+    <item>
+      <title>Decoding Answers Before Chain-of-Thought: Evidence from Pre-CoT Probes and Activation Steering</title>
+      <link>https://arxiv.org/abs/2603.01437v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Kyle Cox, Darius Kianersi, Adrià Garriga-Alonso</p><p>As chain-of-thought (CoT) has become central to scaling reasoning capabilities in large language models (LLMs), it has also emerged as a promising tool for interpretability, suggesting the opportunity to understand model decisions through verbalized reasoning. However, the utility of CoT toward interpretability depends upon its faithfulness -- whether the model&#x27;s stated reasoning reflects the underlying decision process. We provide mechanistic evidence that instruction-tuned models often determi</p><p><strong>Tags:</strong> probing, steering, reasoning</p>]]></description>
+      <pubDate>Mon, 02 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2603.01437v1</guid>
+    </item>
+    <item>
+      <title>Truth as a Trajectory: What Internal Representations Reveal About Large Language Model Reasoning</title>
+      <link>https://arxiv.org/abs/2603.01326v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Hamed Damirchi, Ignacio Meza De la Jara, Ehsan Abbasnejad, Afshar Shamsi, Zhen Zhang, et al.</p><p>Existing explainability methods for Large Language Models (LLMs) typically treat hidden states as static points in activation space, assuming that correct and incorrect inferences can be separated using representations from an individual layer. However, these activations are saturated with polysemantic features, leading to linear probes learning surface-level lexical patterns rather than underlying reasoning structures. We introduce Truth as a Trajectory (TaT), which models the transformer infer</p><p><strong>Tags:</strong> features, probing, reasoning</p>]]></description>
+      <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2603.01326v1</guid>
+    </item>
     <item>
       <title>Interpretable Debiasing of Vision-Language Models for Social Fairness</title>
       <link>https://arxiv.org/abs/2602.24014v1</link>
@@ -100,6 +128,13 @@
       <guid>https://arxiv.org/abs/2602.20904v1</guid>
     </item>
     <item>
+      <title>Mechanistically Guided LoRA Improves Paraphrase Consistency in Medical Vision-Language Models</title>
+      <link>https://arxiv.org/abs/2603.00148v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Binesh Sadanandan, Vahid Behzadan</p><p>Medical Vision-Language Models can give different yes or no answers to rephrasings of the same clinical question. We study this in MedGemma-4B using PSF-Med Sadanandan and Behzadan (2025), which provides paraphrase pairs for systematic consistency evaluation on medical VQA. On MIMIC-CXR binary questions (n = 158), the baseline flip rate is 14.6% and mean margin difference is 1.63 logits. We validate that Gemma Scope 2 Sparse Autoencoders (SAEs) transfer to MedGemma activations, achieving R2 ~= 0</p><p><strong>Tags:</strong> SAE, vision</p>]]></description>
+      <pubDate>Tue, 24 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2603.00148v1</guid>
+    </item>
+    <item>
       <title>IR$^3$: Contrastive Inverse Reinforcement Learning for Interpretable Detection and Mitigation of Reward Hacking</title>
       <link>https://arxiv.org/abs/2602.19416v1</link>
       <description><![CDATA[<p><strong>Authors:</strong> Mohammad Beigi, Ming Jin, Junshan Zhang, Jiaxin Zhang, Qifan Wang, et al.</p><p>Reinforcement Learning from Human Feedback (RLHF) enables powerful LLM alignment but can introduce reward hacking - models exploit spurious correlations in proxy rewards without genuine alignment. Compounding this, the objectives internalized during RLHF remain opaque, making hacking behaviors difficult to detect or correct. We introduce IR3 (Interpretable Reward Reconstruction and Rectification), a framework that reverse-engineers, interprets, and surgically repairs the implicit objectives driv</p><p><strong>Tags:</strong> safety</p>]]></description>
@@ -182,41 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Leo Marchyok, Zachary Coalson, Sungho Keum, Sooel Son, Sanghyun Hong</p><p>Modern language models exhibit rich internal structure, yet little is known about how privacy-sensitive behaviors, such as personally identifiable information (PII) leakage, are represented and modulated within their hidden states. We present UniLeak, a mechanistic-interpretability framework that identifies universal activation directions: latent directions in a model&#x27;s residual stream whose linear addition at inference time consistently increases the likelihood of generating PII across prompts.</p>]]></description>
       <pubDate>Thu, 19 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2602.16980v1</guid>
-    </item>
-    <item>
-      <title>The Cascade Equivalence Hypothesis: When Do Speech LLMs Behave Like ASR$\rightarrow$LLM Pipelines?</title>
-      <link>https://arxiv.org/abs/2602.17598v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Jayadev Billa</p><p>Current speech LLMs largely perform implicit ASR: on tasks solvable from a transcript, they are behaviorally and mechanistically equivalent to simple Whisper$\to$LLM cascades. We show this through matched-backbone testing across four speech LLMs and six tasks, controlling for the LLM backbone for the first time. Ultravox is statistically indistinguishable from its matched cascade ($κ{=}0.93$); logit lens reveals literal text emerging in hidden states; LEACE concept erasure confirms text represen</p>]]></description>
-      <pubDate>Thu, 19 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2602.17598v1</guid>
-    </item>
-    <item>
-      <title>ODESteer: A Unified ODE-Based Steering Framework for LLM Alignment</title>
-      <link>https://arxiv.org/abs/2602.17560v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Hongjue Zhao, Haosen Sun, Jiangtao Kong, Xiaochang Li, Qineng Wang, et al.</p><p>Activation steering, or representation engineering, offers a lightweight approach to align large language models (LLMs) by manipulating their internal activations at inference time. However, current methods suffer from two key limitations: \textit{(i)} the lack of a unified theoretical framework for guiding the design of steering directions, and \textit{(ii)} an over-reliance on \textit{one-step steering} that fail to capture complex patterns of activation distributions. In this work, we propose</p><p><strong>Tags:</strong> safety, steering, theory</p>]]></description>
-      <pubDate>Thu, 19 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2602.17560v1</guid>
-    </item>
-    <item>
-      <title>ADAPT: Hybrid Prompt Optimization for LLM Feature Visualization</title>
-      <link>https://arxiv.org/abs/2602.17867v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> João N. Cardoso, Arlindo L. Oliveira, Bruno Martins</p><p>Understanding what features are encoded by learned directions in LLM activation space requires identifying inputs that strongly activate them. Feature visualization, which optimizes inputs to maximally activate a target direction, offers an alternative to costly dataset search approaches, but remains underexplored for LLMs due to the discrete nature of text. Furthermore, existing prompt optimization techniques are poorly suited to this domain, which is highly prone to local minima. To overcome t</p><p><strong>Tags:</strong> features, vision</p>]]></description>
-      <pubDate>Thu, 19 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2602.17867v1</guid>
-    </item>
-    <item>
-      <title>Causality is Key for Interpretability Claims to Generalise</title>
-      <link>https://arxiv.org/abs/2602.16698v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Shruti Joshi, Aaron Mueller, David Klindt, Wieland Brendel, Patrik Reizinger, et al.</p><p>Interpretability research on large language models (LLMs) has yielded important insights into model behaviour, yet recurring pitfalls persist: findings that do not generalise, and causal interpretations that outrun the evidence. Our position is that causal inference specifies what constitutes a valid mapping from model activations to invariant high-level structures, the data or assumptions needed to achieve it, and the inferences it can support. Specifically, Pearl&#x27;s causal hierarchy clarifies w</p>]]></description>
-      <pubDate>Wed, 18 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2602.16698v1</guid>
-    </item>
-    <item>
-      <title>On the Mechanism and Dynamics of Modular Addition: Fourier Features, Lottery Ticket, and Grokking</title>
-      <link>https://arxiv.org/abs/2602.16849v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Jianliang He, Leda Wang, Siyu Chen, Zhuoran Yang</p><p>We present a comprehensive analysis of how two-layer neural networks learn features to solve the modular addition task. Our work provides a full mechanistic interpretation of the learned model and a theoretical explanation of its training dynamics. While prior work has identified that individual neurons learn single-frequency Fourier features and phase alignment, it does not fully explain how these features combine into a global solution. We bridge this gap by formalizing a diversification condi</p><p><strong>Tags:</strong> features, safety, theory</p>]]></description>
-      <pubDate>Wed, 18 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2602.16849v1</guid>
     </item>
   </channel>
 </rss>
