@@ -1,6 +1,50 @@
 {
-  "lastUpdated": "2026-03-03",
+  "lastUpdated": "2026-03-04",
   "papers": [
+    {
+      "id": "arxiv-2603-03031v1",
+      "title": "Step-Level Sparse Autoencoder for Reasoning Process Interpretation",
+      "authors": "Xuan Yang, Jiayu Liu, Yuhang Lai, Hao Xu, Zhenya Huang, et al.",
+      "date": "2026-03-03",
+      "url": "https://arxiv.org/abs/2603.03031v1",
+      "abstract": "Large Language Models (LLMs) have achieved strong complex reasoning capabilities through Chain-of-Thought (CoT) reasoning. However, their reasoning patterns remain too complicated to analyze. While Sparse Autoencoders (SAEs) have emerged as a powerful tool for interpretability, existing approaches predominantly operate at the token level, creating a granularity mismatch when capturing more critical step-level information, such as reasoning direction and semantic transitions. In this work, we pro",
+      "tags": [
+        "SAE",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-02908v1",
+      "title": "SAE as a Crystal Ball: Interpretable Features Predict Cross-domain Transferability of LLMs without Training",
+      "authors": "Qi Zhang, Yifei Wang, Xiaohan Wang, Jiajun Chai, Guojun Yin, et al.",
+      "date": "2026-03-03",
+      "url": "https://arxiv.org/abs/2603.02908v1",
+      "abstract": "In recent years, pre-trained large language models have achieved remarkable success across diverse tasks. Besides the pivotal role of self-supervised pre-training, their effectiveness in downstream applications also depends critically on the post-training process, which adapts models to task-specific data and objectives. However, this process inevitably introduces model shifts that can influence performance in different domains, and how such shifts transfer remains poorly understood. To open up ",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-02952v1",
+      "title": "Sparse autoencoders reveal organized biological knowledge but minimal regulatory logic in single-cell foundation models: a comparative atlas of Geneformer and scGPT",
+      "authors": "Ihor Kendiukhov",
+      "date": "2026-03-03",
+      "url": "https://arxiv.org/abs/2603.02952v1",
+      "abstract": "Background: Single-cell foundation models such as Geneformer and scGPT encode rich biological information, but whether this includes causal regulatory logic rather than statistical co-expression remains unclear. Sparse autoencoders (SAEs) can resolve superposition in neural networks by decomposing dense activations into interpretable features, yet they have not been systematically applied to biological foundation models.   Results: We trained TopK SAEs on residual stream activations from all lay",
+      "tags": [
+        "SAE",
+        "superposition",
+        "features",
+        "biology"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2603-01822v1",
       "title": "Emerging Human-like Strategies for Semantic Memory Foraging in Large Language Models",
