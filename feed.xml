@@ -5,9 +5,30 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 04 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Step-Level Sparse Autoencoder for Reasoning Process Interpretation</title>
+      <link>https://arxiv.org/abs/2603.03031v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Xuan Yang, Jiayu Liu, Yuhang Lai, Hao Xu, Zhenya Huang, et al.</p><p>Large Language Models (LLMs) have achieved strong complex reasoning capabilities through Chain-of-Thought (CoT) reasoning. However, their reasoning patterns remain too complicated to analyze. While Sparse Autoencoders (SAEs) have emerged as a powerful tool for interpretability, existing approaches predominantly operate at the token level, creating a granularity mismatch when capturing more critical step-level information, such as reasoning direction and semantic transitions. In this work, we pro</p><p><strong>Tags:</strong> SAE, reasoning</p>]]></description>
+      <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2603.03031v1</guid>
+    </item>
+    <item>
+      <title>SAE as a Crystal Ball: Interpretable Features Predict Cross-domain Transferability of LLMs without Training</title>
+      <link>https://arxiv.org/abs/2603.02908v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Qi Zhang, Yifei Wang, Xiaohan Wang, Jiajun Chai, Guojun Yin, et al.</p><p>In recent years, pre-trained large language models have achieved remarkable success across diverse tasks. Besides the pivotal role of self-supervised pre-training, their effectiveness in downstream applications also depends critically on the post-training process, which adapts models to task-specific data and objectives. However, this process inevitably introduces model shifts that can influence performance in different domains, and how such shifts transfer remains poorly understood. To open up </p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2603.02908v1</guid>
+    </item>
+    <item>
+      <title>Sparse autoencoders reveal organized biological knowledge but minimal regulatory logic in single-cell foundation models: a comparative atlas of Geneformer and scGPT</title>
+      <link>https://arxiv.org/abs/2603.02952v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Ihor Kendiukhov</p><p>Background: Single-cell foundation models such as Geneformer and scGPT encode rich biological information, but whether this includes causal regulatory logic rather than statistical co-expression remains unclear. Sparse autoencoders (SAEs) can resolve superposition in neural networks by decomposing dense activations into interpretable features, yet they have not been systematically applied to biological foundation models.   Results: We trained TopK SAEs on residual stream activations from all lay</p><p><strong>Tags:</strong> SAE, superposition, features, biology</p>]]></description>
+      <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2603.02952v1</guid>
+    </item>
     <item>
       <title>Emerging Human-like Strategies for Semantic Memory Foraging in Large Language Models</title>
       <link>https://arxiv.org/abs/2603.01822v1</link>
@@ -196,27 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Aaron Louis Eidt, Nils Feldhus</p><p>While mechanistic interpretability has developed powerful tools to analyze the internal workings of Large Language Models (LLMs), their complexity has created an accessibility gap, limiting their use to specialists. We address this challenge by designing, building, and evaluating ELIA (Explainable Language Interpretability Analysis), an interactive web application that simplifies the outcomes of various language model component analyses for a broader audience. The system integrates three key tec</p>]]></description>
       <pubDate>Fri, 20 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2602.18262v1</guid>
-    </item>
-    <item>
-      <title>Systematic Evaluation of Single-Cell Foundation Model Interpretability Reveals Attention Captures Co-Expression Rather Than Unique Regulatory Signal</title>
-      <link>https://arxiv.org/abs/2602.17532v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Ihor Kendiukhov</p><p>We present a systematic evaluation framework - thirty-seven analyses, 153 statistical tests, four cell types, two perturbation modalities - for assessing mechanistic interpretability in single-cell foundation models. Applying this framework to scGPT and Geneformer, we find that attention patterns encode structured biological information with layer-specific organisation - protein-protein interactions in early layers, transcriptional regulation in late layers - but this structure provides no incre</p><p><strong>Tags:</strong> attention, biology</p>]]></description>
-      <pubDate>Thu, 19 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2602.17532v1</guid>
-    </item>
-    <item>
-      <title>Mechanistic Interpretability of Cognitive Complexity in LLMs via Linear Probing using Bloom&#x27;s Taxonomy</title>
-      <link>https://arxiv.org/abs/2602.17229v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Bianca Raimondi, Maurizio Gabbrielli</p><p>The black-box nature of Large Language Models necessitates novel evaluation frameworks that transcend surface-level performance metrics. This study investigates the internal neural representations of cognitive complexity using Bloom&#x27;s Taxonomy as a hierarchical lens. By analyzing high-dimensional activation vectors from different LLMs, we probe whether different cognitive levels, ranging from basic recall (Remember) to abstract synthesis (Create), are linearly separable within the model&#x27;s residu</p><p><strong>Tags:</strong> probing</p>]]></description>
-      <pubDate>Thu, 19 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2602.17229v1</guid>
-    </item>
-    <item>
-      <title>Discovering Universal Activation Directions for PII Leakage in Language Models</title>
-      <link>https://arxiv.org/abs/2602.16980v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Leo Marchyok, Zachary Coalson, Sungho Keum, Sooel Son, Sanghyun Hong</p><p>Modern language models exhibit rich internal structure, yet little is known about how privacy-sensitive behaviors, such as personally identifiable information (PII) leakage, are represented and modulated within their hidden states. We present UniLeak, a mechanistic-interpretability framework that identifies universal activation directions: latent directions in a model&#x27;s residual stream whose linear addition at inference time consistently increases the likelihood of generating PII across prompts.</p>]]></description>
-      <pubDate>Thu, 19 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2602.16980v1</guid>
     </item>
   </channel>
 </rss>
