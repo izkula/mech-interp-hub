@@ -5,9 +5,16 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 04 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Stable and Steerable Sparse Autoencoders with Weight Regularization</title>
+      <link>https://arxiv.org/abs/2603.04198v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Piotr Jedryszek, Oliver M. Crook</p><p>Sparse autoencoders (SAEs) are widely used to extract human-interpretable features from neural network activations, but their learned features can vary substantially across random seeds and training choices. To improve stability, we studied weight regularization by adding L1 or L2 penalties on encoder and decoder weights, and evaluate how regularization interacts with common SAE training defaults. On MNIST, we observe that L2 weight regularization produces a core of highly aligned features and, </p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2603.04198v1</guid>
+    </item>
     <item>
       <title>Step-Level Sparse Autoencoder for Reasoning Process Interpretation</title>
       <link>https://arxiv.org/abs/2603.03031v1</link>
@@ -28,6 +35,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Ihor Kendiukhov</p><p>Background: Single-cell foundation models such as Geneformer and scGPT encode rich biological information, but whether this includes causal regulatory logic rather than statistical co-expression remains unclear. Sparse autoencoders (SAEs) can resolve superposition in neural networks by decomposing dense activations into interpretable features, yet they have not been systematically applied to biological foundation models.   Results: We trained TopK SAEs on residual stream activations from all lay</p><p><strong>Tags:</strong> SAE, superposition, features, biology</p>]]></description>
       <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2603.02952v1</guid>
+    </item>
+    <item>
+      <title>Tracing Pharmacological Knowledge In Large Language Models</title>
+      <link>https://arxiv.org/abs/2603.03407v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Basil Hasan Khwaja, Dylan Chen, Guntas Toor, Anastasiya Kuznetsova</p><p>Large language models (LLMs) have shown strong empirical performance across pharmacology and drug discovery tasks, yet the internal mechanisms by which they encode pharmacological knowledge remain poorly understood. In this work, we investigate how drug-group semantics are represented and retrieved within Llama-based biomedical language models using causal and probing-based interpretability methods. We apply activation patching to localize where drug-group information is stored across model laye</p><p><strong>Tags:</strong> probing</p>]]></description>
+      <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2603.03407v1</guid>
     </item>
     <item>
       <title>Emerging Human-like Strategies for Semantic Memory Foraging in Large Language Models</title>
@@ -203,20 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Pablo Meseguer, Rocío del Amor, Valery Naranjo</p><p>Vision language models (VLM) pre-trained on datasets of histopathological image-caption pairs enabled zero-shot slide-level classification. The ability of VLM image encoders to extract discriminative features also opens the door for supervised fine-tuning for whole-slide image (WSI) classification, ideally using few labeled samples. Slide-level prediction frameworks require the incorporation of multiple instance learning (MIL) due to the gigapixel size of the WSI. Following patch-level feature e</p><p><strong>Tags:</strong> features, vision</p>]]></description>
       <pubDate>Sat, 21 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2602.18766v1</guid>
-    </item>
-    <item>
-      <title>HIME: Mitigating Object Hallucinations in LVLMs via Hallucination Insensitivity Model Editing</title>
-      <link>https://arxiv.org/abs/2602.18711v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Ahmed Akl, Abdelwahed Khamis, Ali Cheraghian, Zhe Wang, Sara Khalifa, et al.</p><p>Large Vision-Language Models (LVLMs) have demonstrated impressive multimodal understanding capabilities, yet they remain prone to object hallucination, where models describe non-existent objects or attribute incorrect factual information, raising serious concerns for reliable real-world deployment. While fine-tuning is a commonly adopted mitigation strategy, its high computational cost and practical difficulty motivate the need for training-free alternatives, among which model editing has recent</p><p><strong>Tags:</strong> editing, vision</p>]]></description>
-      <pubDate>Sat, 21 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2602.18711v1</guid>
-    </item>
-    <item>
-      <title>Simplifying Outcomes of Language Model Component Analyses with ELIA</title>
-      <link>https://arxiv.org/abs/2602.18262v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Aaron Louis Eidt, Nils Feldhus</p><p>While mechanistic interpretability has developed powerful tools to analyze the internal workings of Large Language Models (LLMs), their complexity has created an accessibility gap, limiting their use to specialists. We address this challenge by designing, building, and evaluating ELIA (Explainable Language Interpretability Analysis), an interactive web application that simplifies the outcomes of various language model component analyses for a broader audience. The system integrates three key tec</p>]]></description>
-      <pubDate>Fri, 20 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2602.18262v1</guid>
     </item>
   </channel>
 </rss>
