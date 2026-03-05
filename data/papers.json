@@ -1,6 +1,20 @@
 {
-  "lastUpdated": "2026-03-04",
+  "lastUpdated": "2026-03-05",
   "papers": [
+    {
+      "id": "arxiv-2603-04198v1",
+      "title": "Stable and Steerable Sparse Autoencoders with Weight Regularization",
+      "authors": "Piotr Jedryszek, Oliver M. Crook",
+      "date": "2026-03-04",
+      "url": "https://arxiv.org/abs/2603.04198v1",
+      "abstract": "Sparse autoencoders (SAEs) are widely used to extract human-interpretable features from neural network activations, but their learned features can vary substantially across random seeds and training choices. To improve stability, we studied weight regularization by adding L1 or L2 penalties on encoder and decoder weights, and evaluate how regularization interacts with common SAE training defaults. On MNIST, we observe that L2 weight regularization produces a core of highly aligned features and, ",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2603-03031v1",
       "title": "Step-Level Sparse Autoencoder for Reasoning Process Interpretation",
@@ -41,6 +55,19 @@
         "superposition",
         "features",
         "biology"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-03407v1",
+      "title": "Tracing Pharmacological Knowledge In Large Language Models",
+      "authors": "Basil Hasan Khwaja, Dylan Chen, Guntas Toor, Anastasiya Kuznetsova",
+      "date": "2026-03-03",
+      "url": "https://arxiv.org/abs/2603.03407v1",
+      "abstract": "Large language models (LLMs) have shown strong empirical performance across pharmacology and drug discovery tasks, yet the internal mechanisms by which they encode pharmacological knowledge remain poorly understood. In this work, we investigate how drug-group semantics are represented and retrieved within Llama-based biomedical language models using causal and probing-based interpretability methods. We apply activation patching to localize where drug-group information is stored across model laye",
+      "tags": [
+        "probing"
       ],
       "source": "arXiv",
       "featured": false
@@ -904,6 +931,19 @@
       "tags": [
         "circuits",
         "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-03324v1",
+      "title": "Controlling Chat Style in Language Models via Single-Direction Editing",
+      "authors": "Zhenyu Xu, Victor S. Sheng",
+      "date": "2026-02-10",
+      "url": "https://arxiv.org/abs/2603.03324v1",
+      "abstract": "Controlling stylistic attributes in large language models (LLMs) remains challenging, with existing approaches relying on either prompt engineering or post-training alignment. This paper investigates this challenge through the lens of representation engineering, testing the hypothesis that distinct stylistic attributes - from emotional tone to linguistic structure - are encoded as linear directions in the model's activation space. We provide strong empirical evidence for this hypothesis across a",
+      "tags": [
+        "safety"
       ],
       "source": "arXiv",
       "featured": false
@@ -3983,6 +4023,22 @@
       "abstract": "",
       "tags": [
         "circuits"
+      ],
+      "source": "Semantic Scholar",
+      "featured": false
+    },
+    {
+      "id": "ss-17a8b905d8681bc76148",
+      "title": "FastColitisDetector-XAI: An efficient AI model utilizing sparse Autoencoder with explainable AI for ulcerative colitis diagnosis",
+      "authors": "S. Dhole, S. R. Chougule",
+      "date": "2025-05-01",
+      "url": "https://www.semanticscholar.org/paper/17a8b905d8681bc761483c8715ff56f522322c99",
+      "abstract": "We suggest AI framework for UC diagnosis using Sparse Autoencoders (SA) for feature extraction combined with Explainable AI (XAI) utilizing Grad-CAM to provide a higher degree of interpretability for the model. SA is applied for dimensionality reduction of medical images to efficiently encode the images and preserve vital information required for diagnosis. Features so extracted are passed to a machine learning classifier for classification for detection of UC presence. Visualizations from Grad-",
+      "tags": [
+        "SAE",
+        "features",
+        "probing",
+        "vision"
       ],
       "source": "Semantic Scholar",
       "featured": false
