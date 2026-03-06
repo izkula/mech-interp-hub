@@ -5,9 +5,30 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Observing and Controlling Features in Vision-Language-Action Models</title>
+      <link>https://arxiv.org/abs/2603.05487v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Hugo Buurmeijer, Carmen Amo Alonso, Aiden Swann, Marco Pavone</p><p>Vision-Language-Action Models (VLAs) have shown remarkable progress towards embodied intelligence. While their architecture partially resembles that of Large Language Models (LLMs), VLAs exhibit higher complexity due to their multi-modal inputs/outputs and often hybrid nature of transformer and diffusion heads. This is part of the reason why insights from mechanistic interpretability in LLMs, which explain how the internal model representations relate to their output behavior, do not trivially t</p><p><strong>Tags:</strong> features, vision</p>]]></description>
+      <pubDate>Thu, 05 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2603.05487v1</guid>
+    </item>
+    <item>
+      <title>The Geometric Inductive Bias of Grokking: Bypassing Phase Transitions via Architectural Topology</title>
+      <link>https://arxiv.org/abs/2603.05228v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Alper Yıldırım</p><p>Mechanistic interpretability typically relies on post-hoc analysis of trained networks. We instead adopt an interventional approach: testing hypotheses a priori by modifying architectural topology to observe training dynamics. We study grokking - delayed generalization in Transformers trained on cyclic modular addition (Zp) - investigating if specific architectural degrees of freedom prolong the memorization phase.   We identify two independent structural factors in standard Transformers: unboun</p>]]></description>
+      <pubDate>Thu, 05 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2603.05228v1</guid>
+    </item>
+    <item>
+      <title>Stochastic Optimal Feedforward-Feedback Control for Partially Observable Sensorimotor Systems</title>
+      <link>https://arxiv.org/abs/2603.04994v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Bastien Berret, Frédéric Jean</p><p>Robust control of complex engineered and biological systems hinges on the integration of feedforward and feedback mechanisms. This is exemplified in neural motor control, where feedforward muscle co-contraction complements sensory-driven feedback corrections to ensure stable behaviors. However, deriving a general continuous-time framework to determine such optimal control policies for partially observable, stochastic, nonlinear, and high-dimensional systems remains a formidable computational cha</p><p><strong>Tags:</strong> biology</p>]]></description>
+      <pubDate>Thu, 05 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2603.04994v1</guid>
+    </item>
     <item>
       <title>Stable and Steerable Sparse Autoencoders with Weight Regularization</title>
       <link>https://arxiv.org/abs/2603.04198v1</link>
@@ -42,6 +63,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Basil Hasan Khwaja, Dylan Chen, Guntas Toor, Anastasiya Kuznetsova</p><p>Large language models (LLMs) have shown strong empirical performance across pharmacology and drug discovery tasks, yet the internal mechanisms by which they encode pharmacological knowledge remain poorly understood. In this work, we investigate how drug-group semantics are represented and retrieved within Llama-based biomedical language models using causal and probing-based interpretability methods. We apply activation patching to localize where drug-group information is stored across model laye</p><p><strong>Tags:</strong> probing</p>]]></description>
       <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2603.03407v1</guid>
+    </item>
+    <item>
+      <title>Understanding the Dynamics of Demonstration Conflict in In-Context Learning</title>
+      <link>https://arxiv.org/abs/2603.04464v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Difan Jiao, Di Wang, Lijie Hu</p><p>In-context learning enables large language models to perform novel tasks through few-shot demonstrations. However, demonstrations per se can naturally contain noise and conflicting examples, making this capability vulnerable. To understand how models process such conflicts, we study demonstration-dependent tasks requiring models to infer underlying patterns, a process we characterize as rule inference. We find that models suffer substantial performance degradation from a single demonstration wit</p>]]></description>
+      <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2603.04464v1</guid>
     </item>
     <item>
       <title>Emerging Human-like Strategies for Semantic Memory Foraging in Large Language Models</title>
@@ -189,34 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Uichan Lee, Jeonghyeon Kim, Sangheum Hwang</p><p>Recent advances in text-to-image (T2I) diffusion models have seen rapid and widespread adoption. However, their powerful generative capabilities raise concerns about potential misuse for synthesizing harmful, private, or copyrighted content. To mitigate such risks, concept erasure techniques have emerged as a promising solution. Prior works have primarily focused on fine-tuning the denoising component (e.g., the U-Net backbone). However, recent causal tracing studies suggest that visual attribut</p><p><strong>Tags:</strong> safety, vision</p>]]></description>
       <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2602.19631v1</guid>
-    </item>
-    <item>
-      <title>Circuit Tracing in Vision-Language Models: Understanding the Internal Mechanisms of Multimodal Thinking</title>
-      <link>https://arxiv.org/abs/2602.20330v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Jingcheng Yang, Tianhu Xiong, Shengyi Qian, Klara Nahrstedt, Mingyuan Wu</p><p>Vision-language models (VLMs) are powerful but remain opaque black boxes. We introduce the first framework for transparent circuit tracing in VLMs to systematically analyze multimodal reasoning. By utilizing transcoders, attribution graphs, and attention-based methods, we uncover how VLMs hierarchically integrate visual and semantic concepts. We reveal that distinct visual feature circuits can handle mathematical reasoning and support cross-modal associations. Validated through feature steering </p><p><strong>Tags:</strong> circuits, features, steering, vision, reasoning</p>]]></description>
-      <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2602.20330v1</guid>
-    </item>
-    <item>
-      <title>Beyond Behavioural Trade-Offs: Mechanistic Tracing of Pain-Pleasure Decisions in an LLM</title>
-      <link>https://arxiv.org/abs/2602.19159v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Francesca Bianco, Derek Shiller</p><p>Prior behavioural work suggests that some LLMs alter choices when options are framed as causing pain or pleasure, and that such deviations can scale with stated intensity. To bridge behavioural evidence (what the model does) with mechanistic interpretability (what computations support it), we investigate how valence-related information is represented and where it is causally used inside a transformer. Using Gemma-2-9B-it and a minimalist decision task modelled on prior work, we (i) map represent</p>]]></description>
-      <pubDate>Sun, 22 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2602.19159v1</guid>
-    </item>
-    <item>
-      <title>How Do LLMs Encode Scientific Quality? An Empirical Study Using Monosemantic Features from Sparse Autoencoders</title>
-      <link>https://arxiv.org/abs/2602.19115v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Michael McCoubrey, Angelo Salatino, Francesco Osborne, Enrico Motta</p><p>In recent years, there has been a growing use of generative AI, and large language models (LLMs) in particular, to support both the assessment and generation of scientific work. Although some studies have shown that LLMs can, to a certain extent, evaluate research according to perceived quality, our understanding of the internal mechanisms that enable this capability remains limited. This paper presents the first study that investigates how LLMs encode the concept of scientific quality through r</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Sun, 22 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2602.19115v1</guid>
-    </item>
-    <item>
-      <title>Initialization matters in few-shot adaptation of vision-language models for histopathological image classification</title>
-      <link>https://arxiv.org/abs/2602.18766v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Pablo Meseguer, Rocío del Amor, Valery Naranjo</p><p>Vision language models (VLM) pre-trained on datasets of histopathological image-caption pairs enabled zero-shot slide-level classification. The ability of VLM image encoders to extract discriminative features also opens the door for supervised fine-tuning for whole-slide image (WSI) classification, ideally using few labeled samples. Slide-level prediction frameworks require the incorporation of multiple instance learning (MIL) due to the gigapixel size of the WSI. Following patch-level feature e</p><p><strong>Tags:</strong> features, vision</p>]]></description>
-      <pubDate>Sat, 21 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2602.18766v1</guid>
     </item>
   </channel>
 </rss>
