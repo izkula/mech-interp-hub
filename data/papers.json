@@ -1,6 +1,44 @@
 {
-  "lastUpdated": "2026-03-05",
+  "lastUpdated": "2026-03-06",
   "papers": [
+    {
+      "id": "arxiv-2603-05487v1",
+      "title": "Observing and Controlling Features in Vision-Language-Action Models",
+      "authors": "Hugo Buurmeijer, Carmen Amo Alonso, Aiden Swann, Marco Pavone",
+      "date": "2026-03-05",
+      "url": "https://arxiv.org/abs/2603.05487v1",
+      "abstract": "Vision-Language-Action Models (VLAs) have shown remarkable progress towards embodied intelligence. While their architecture partially resembles that of Large Language Models (LLMs), VLAs exhibit higher complexity due to their multi-modal inputs/outputs and often hybrid nature of transformer and diffusion heads. This is part of the reason why insights from mechanistic interpretability in LLMs, which explain how the internal model representations relate to their output behavior, do not trivially t",
+      "tags": [
+        "features",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-05228v1",
+      "title": "The Geometric Inductive Bias of Grokking: Bypassing Phase Transitions via Architectural Topology",
+      "authors": "Alper Y\u0131ld\u0131r\u0131m",
+      "date": "2026-03-05",
+      "url": "https://arxiv.org/abs/2603.05228v1",
+      "abstract": "Mechanistic interpretability typically relies on post-hoc analysis of trained networks. We instead adopt an interventional approach: testing hypotheses a priori by modifying architectural topology to observe training dynamics. We study grokking - delayed generalization in Transformers trained on cyclic modular addition (Zp) - investigating if specific architectural degrees of freedom prolong the memorization phase.   We identify two independent structural factors in standard Transformers: unboun",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-04994v1",
+      "title": "Stochastic Optimal Feedforward-Feedback Control for Partially Observable Sensorimotor Systems",
+      "authors": "Bastien Berret, Fr\u00e9d\u00e9ric Jean",
+      "date": "2026-03-05",
+      "url": "https://arxiv.org/abs/2603.04994v1",
+      "abstract": "Robust control of complex engineered and biological systems hinges on the integration of feedforward and feedback mechanisms. This is exemplified in neural motor control, where feedforward muscle co-contraction complements sensory-driven feedback corrections to ensure stable behaviors. However, deriving a general continuous-time framework to determine such optimal control policies for partially observable, stochastic, nonlinear, and high-dimensional systems remains a formidable computational cha",
+      "tags": [
+        "biology"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2603-04198v1",
       "title": "Stable and Steerable Sparse Autoencoders with Weight Regularization",
@@ -69,6 +107,17 @@
       "tags": [
         "probing"
       ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-04464v1",
+      "title": "Understanding the Dynamics of Demonstration Conflict in In-Context Learning",
+      "authors": "Difan Jiao, Di Wang, Lijie Hu",
+      "date": "2026-03-03",
+      "url": "https://arxiv.org/abs/2603.04464v1",
+      "abstract": "In-context learning enables large language models to perform novel tasks through few-shot demonstrations. However, demonstrations per se can naturally contain noise and conflicting examples, making this capability vulnerable. To understand how models process such conflicts, we study demonstration-dependent tasks requiring models to infer underlying patterns, a process we characterize as rule inference. We find that models suffer substantial performance degradation from a single demonstration wit",
+      "tags": [],
       "source": "arXiv",
       "featured": false
     },
@@ -622,6 +671,17 @@
       "tags": [
         "probing"
       ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-04426v1",
+      "title": "Delta-Crosscoder: Robust Crosscoder Model Diffing in Narrow Fine-Tuning Regimes",
+      "authors": "Aly Kassem, Thomas Jiralerspong, Negar Rostamzadeh, Golnoosh Farnadi",
+      "date": "2026-02-16",
+      "url": "https://arxiv.org/abs/2603.04426v1",
+      "abstract": "Model diffing methods aim to identify how fine-tuning changes a model's internal representations. Crosscoders approach this by learning shared dictionaries of interpretable latent directions between base and fine-tuned models. However, existing formulations struggle with narrow fine-tuning, where behavioral changes are localized and asymmetric. We introduce Delta-Crosscoder, which combines BatchTopK sparsity with a delta-based loss prioritizing directions that change between models, plus an impl",
+      "tags": [],
       "source": "arXiv",
       "featured": false
     },
