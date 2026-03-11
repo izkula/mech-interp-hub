@@ -1,6 +1,21 @@
 {
-  "lastUpdated": "2026-03-10",
+  "lastUpdated": "2026-03-11",
   "papers": [
+    {
+      "id": "arxiv-2603-09972v1",
+      "title": "From Data Statistics to Feature Geometry: How Correlations Shape Superposition",
+      "authors": "Lucas Prieto, Edward Stevinson, Melih Barsbey, Tolga Birdal, Pedro A. M. Mediano",
+      "date": "2026-03-10",
+      "url": "https://arxiv.org/abs/2603.09972v1",
+      "abstract": "A central idea in mechanistic interpretability is that neural networks represent more features than they have dimensions, arranging them in superposition to form an over-complete basis. This framing has been influential, motivating dictionary learning approaches such as sparse autoencoders. However, superposition has mostly been studied in idealized settings where features are sparse and uncorrelated. In these settings, superposition is typically understood as introducing interference that must ",
+      "tags": [
+        "SAE",
+        "superposition",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2603-08234v1",
       "title": "The Struggle Between Continuation and Refusal: A Mechanistic Analysis of the Continuation-Triggered Jailbreak in LLMs",
@@ -10,6 +25,21 @@
       "abstract": "With the rapid advancement of large language models (LLMs), the safety of LLMs has become a critical concern. Despite significant efforts in safety alignment, current LLMs remain vulnerable to jailbreaking attacks. However, the root causes of such vulnerabilities are still poorly understood, necessitating a rigorous investigation into jailbreak mechanisms across both academic and industrial communities. In this work, we focus on a continuation-triggered jailbreak phenomenon, whereby simply reloc",
       "tags": [
         "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-08869v1",
+      "title": "One Language, Two Scripts: Probing Script-Invariance in LLM Concept Representations",
+      "authors": "Sripad Karne",
+      "date": "2026-03-09",
+      "url": "https://arxiv.org/abs/2603.08869v1",
+      "abstract": "Do the features learned by Sparse Autoencoders (SAEs) represent abstract meaning, or are they tied to how text is written? We investigate this question using Serbian digraphia as a controlled testbed: Serbian is written interchangeably in Latin and Cyrillic scripts with a near-perfect character mapping between them, enabling us to vary orthography while holding meaning exactly constant. Crucially, these scripts are tokenized completely differently, sharing no tokens whatsoever. Analyzing SAE fea",
+      "tags": [
+        "SAE",
+        "features",
+        "probing"
       ],
       "source": "arXiv",
       "featured": false
