@@ -5,15 +5,29 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>From Data Statistics to Feature Geometry: How Correlations Shape Superposition</title>
+      <link>https://arxiv.org/abs/2603.09972v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Lucas Prieto, Edward Stevinson, Melih Barsbey, Tolga Birdal, Pedro A. M. Mediano</p><p>A central idea in mechanistic interpretability is that neural networks represent more features than they have dimensions, arranging them in superposition to form an over-complete basis. This framing has been influential, motivating dictionary learning approaches such as sparse autoencoders. However, superposition has mostly been studied in idealized settings where features are sparse and uncorrelated. In these settings, superposition is typically understood as introducing interference that must </p><p><strong>Tags:</strong> SAE, superposition, features</p>]]></description>
+      <pubDate>Tue, 10 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2603.09972v1</guid>
+    </item>
     <item>
       <title>The Struggle Between Continuation and Refusal: A Mechanistic Analysis of the Continuation-Triggered Jailbreak in LLMs</title>
       <link>https://arxiv.org/abs/2603.08234v1</link>
       <description><![CDATA[<p><strong>Authors:</strong> Yonghong Deng, Zhen Yang, Ping Jian, Xinyue Zhang, Zhongbin Guo, et al.</p><p>With the rapid advancement of large language models (LLMs), the safety of LLMs has become a critical concern. Despite significant efforts in safety alignment, current LLMs remain vulnerable to jailbreaking attacks. However, the root causes of such vulnerabilities are still poorly understood, necessitating a rigorous investigation into jailbreak mechanisms across both academic and industrial communities. In this work, we focus on a continuation-triggered jailbreak phenomenon, whereby simply reloc</p><p><strong>Tags:</strong> safety</p>]]></description>
       <pubDate>Mon, 09 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2603.08234v1</guid>
+    </item>
+    <item>
+      <title>One Language, Two Scripts: Probing Script-Invariance in LLM Concept Representations</title>
+      <link>https://arxiv.org/abs/2603.08869v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Sripad Karne</p><p>Do the features learned by Sparse Autoencoders (SAEs) represent abstract meaning, or are they tied to how text is written? We investigate this question using Serbian digraphia as a controlled testbed: Serbian is written interchangeably in Latin and Cyrillic scripts with a near-perfect character mapping between them, enabling us to vary orthography while holding meaning exactly constant. Crucially, these scripts are tokenized completely differently, sharing no tokens whatsoever. Analyzing SAE fea</p><p><strong>Tags:</strong> SAE, features, probing</p>]]></description>
+      <pubDate>Mon, 09 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2603.08869v1</guid>
     </item>
     <item>
       <title>The Dual-Stream Transformer: Channelized Architecture for Interpretable Language Modeling</title>
@@ -203,20 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Na Min An, Yoonna Jang, Yusuke Hirota, Ryo Hachiuma, Isabelle Augenstein, et al.</p><p>The rapid advancement of Vision-Language models (VLMs) has raised growing concerns that their black-box reasoning processes could lead to unintended forms of social bias. Current debiasing approaches focus on mitigating surface-level bias signals through post-hoc learning or test-time algorithms, while leaving the internal dynamics of the model largely unexplored. In this work, we introduce an interpretable, model-agnostic bias mitigation framework, DeBiasLens, that localizes social attribute ne</p><p><strong>Tags:</strong> vision, reasoning</p>]]></description>
       <pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2602.24014v1</guid>
-    </item>
-    <item>
-      <title>MetaOthello: A Controlled Study of Multiple World Models in Transformers</title>
-      <link>https://arxiv.org/abs/2602.23164v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Aviral Chawla, Galen Hall, Juniper Lovato</p><p>Foundation models must handle multiple generative processes, yet mechanistic interpretability largely studies capabilities in isolation; it remains unclear how a single transformer organizes multiple, potentially conflicting &quot;world models&quot;. Previous experiments on Othello playing neural-networks test world-model learning but focus on a single game with a single set of rules. We introduce MetaOthello, a controlled suite of Othello variants with shared syntax but different rules or tokenizations, </p>]]></description>
-      <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2602.23164v1</guid>
-    </item>
-    <item>
-      <title>Certified Circuits: Stability Guarantees for Mechanistic Circuits</title>
-      <link>https://arxiv.org/abs/2602.22968v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Alaa Anani, Tobias Lorenz, Bernt Schiele, Mario Fritz, Jonas Fischer</p><p>Understanding how neural networks arrive at their predictions is essential for debugging, auditing, and deployment. Mechanistic interpretability pursues this goal by identifying circuits - minimal subnetworks responsible for specific behaviors. However, existing circuit discovery methods are brittle: circuits depend strongly on the chosen concept dataset and often fail to transfer out-of-distribution, raising doubts whether they capture concept or dataset-specific artifacts. We introduce Certifi</p><p><strong>Tags:</strong> circuits</p>]]></description>
-      <pubDate>Thu, 26 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2602.22968v1</guid>
     </item>
   </channel>
 </rss>
