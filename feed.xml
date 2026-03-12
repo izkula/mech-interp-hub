@@ -5,15 +5,50 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Word Recovery in Large Language Models Enables Character-Level Tokenization Robustness</title>
+      <link>https://arxiv.org/abs/2603.10771v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Zhipeng Yang, Shu Yang, Lijie Hu, Di Wang</p><p>Large language models (LLMs) trained with canonical tokenization exhibit surprising robustness to non-canonical inputs such as character-level tokenization, yet the mechanisms underlying this robustness remain unclear. We study this phenomenon through mechanistic interpretability and identify a core process we term word recovery. We first introduce a decoding-based method to detect word recovery, showing that hidden states reconstruct canonical word-level token identities from character-level in</p>]]></description>
+      <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2603.10771v1</guid>
+    </item>
+    <item>
+      <title>Implicit Statistical Inference in Transformers: Approximating Likelihood-Ratio Tests In-Context</title>
+      <link>https://arxiv.org/abs/2603.10573v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Faris Chaudhry, Siddhant Gadkari</p><p>In-context learning (ICL) allows Transformers to adapt to novel tasks without weight updates, yet the underlying algorithms remain poorly understood. We adopt a statistical decision-theoretic perspective by investigating simple binary hypothesis testing, where the optimal policy is determined by the likelihood-ratio test. Notably, this setup provides a mathematically rigorous setting for mechanistic interpretability where the target algorithmic ground truth is known. By training Transformers on </p>]]></description>
+      <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2603.10573v1</guid>
+    </item>
+    <item>
+      <title>Causal Concept Graphs in LLM Latent Space for Stepwise Reasoning</title>
+      <link>https://arxiv.org/abs/2603.10377v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Md Muntaqim Meherab, Noor Islam S. Mohammad, Faiza Feroz</p><p>Sparse autoencoders can localize where concepts live in language models, but not how they interact during multi-step reasoning. We propose Causal Concept Graphs (CCG): a directed acyclic graph over sparse, interpretable latent features, where edges capture learned causal dependencies between concepts. We combine task-conditioned sparse autoencoders for concept discovery with DAGMA-style differentiable structure learning for graph recovery and introduce the Causal Fidelity Score (CFS) to evaluate</p><p><strong>Tags:</strong> SAE, features, reasoning</p>]]></description>
+      <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2603.10377v1</guid>
+    </item>
     <item>
       <title>From Data Statistics to Feature Geometry: How Correlations Shape Superposition</title>
       <link>https://arxiv.org/abs/2603.09972v1</link>
       <description><![CDATA[<p><strong>Authors:</strong> Lucas Prieto, Edward Stevinson, Melih Barsbey, Tolga Birdal, Pedro A. M. Mediano</p><p>A central idea in mechanistic interpretability is that neural networks represent more features than they have dimensions, arranging them in superposition to form an over-complete basis. This framing has been influential, motivating dictionary learning approaches such as sparse autoencoders. However, superposition has mostly been studied in idealized settings where features are sparse and uncorrelated. In these settings, superposition is typically understood as introducing interference that must </p><p><strong>Tags:</strong> SAE, superposition, features</p>]]></description>
       <pubDate>Tue, 10 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2603.09972v1</guid>
+    </item>
+    <item>
+      <title>Discovery of a Hematopoietic Manifold in scGPT Yields a Method for Extracting Performant Algorithms from Biological Foundation Model Internals</title>
+      <link>https://arxiv.org/abs/2603.10261v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Ihor Kendiukhov</p><p>We report the discovery and extraction of a compact hematopoietic algorithm from the single-cell foundation model scGPT, to our knowledge the first biologically useful, competitive algorithm extracted from a foundation model via mechanistic interpretability. We show that scGPT internally encodes a compact hematopoietic manifold with significant developmental branch structure, validated on a strict non-overlap Tabula Sapiens external panel and confirmed via frozen-head zero-shot transfer to an in</p><p><strong>Tags:</strong> biology</p>]]></description>
+      <pubDate>Tue, 10 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2603.10261v1</guid>
+    </item>
+    <item>
+      <title>Dissecting Chronos: Sparse Autoencoders Reveal Causal Feature Hierarchies in Time Series Foundation Models</title>
+      <link>https://arxiv.org/abs/2603.10071v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Anurag Mishra</p><p>Time series foundation models (TSFMs) are increasingly deployed in high-stakes domains, yet their internal representations remain opaque. We present the first application of sparse autoencoders (SAEs) to a TSFM, training TopK SAEs on activations of Chronos-T5-Large (710M parameters) across six layers. Through 392 single-feature ablation experiments, we establish that every ablated feature produces a positive CRPS degradation, confirming causal relevance. Our analysis reveals a depth-dependent hi</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Tue, 10 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2603.10071v1</guid>
     </item>
     <item>
       <title>The Struggle Between Continuation and Refusal: A Mechanistic Analysis of the Continuation-Triggered Jailbreak in LLMs</title>
@@ -182,41 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Difan Jiao, Di Wang, Lijie Hu</p><p>In-context learning enables large language models to perform novel tasks through few-shot demonstrations. However, demonstrations per se can naturally contain noise and conflicting examples, making this capability vulnerable. To understand how models process such conflicts, we study demonstration-dependent tasks requiring models to infer underlying patterns, a process we characterize as rule inference. We find that models suffer substantial performance degradation from a single demonstration wit</p>]]></description>
       <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2603.04464v1</guid>
-    </item>
-    <item>
-      <title>Emerging Human-like Strategies for Semantic Memory Foraging in Large Language Models</title>
-      <link>https://arxiv.org/abs/2603.01822v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Eric Lacosse, Mariana Duarte, Peter M. Todd, Daniel C. McNamee</p><p>Both humans and Large Language Models (LLMs) store a vast repository of semantic memories. In humans, efficient and strategic access to this memory store is a critical foundation for a variety of cognitive functions. Such access has long been a focus of psychology and the computational mechanisms behind it are now well characterized. Much of this understanding has been gleaned from a widely-used neuropsychological and cognitive science assessment called the Semantic Fluency Task (SFT), which req</p>]]></description>
-      <pubDate>Mon, 02 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.01822v1</guid>
-    </item>
-    <item>
-      <title>Causal Circuit Tracing Reveals Distinct Computational Architectures in Single-Cell Foundation Models: Inhibitory Dominance, Biological Coherence, and Cross-Model Convergence</title>
-      <link>https://arxiv.org/abs/2603.01752v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Ihor Kendiukhov</p><p>Motivation: Sparse autoencoders (SAEs) decompose foundation model activations into interpretable features, but causal feature-to-feature interactions across network depth remain unknown for biological foundation models.   Results: We introduce causal circuit tracing by ablating SAE features and measuring downstream responses, and apply it to Geneformer V2-316M and scGPT whole-human across four conditions (96,892 edges, 80,191 forward passes). Both models show approximately 53 percent biological </p><p><strong>Tags:</strong> SAE, circuits, features, biology</p>]]></description>
-      <pubDate>Mon, 02 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.01752v1</guid>
-    </item>
-    <item>
-      <title>Decoding Answers Before Chain-of-Thought: Evidence from Pre-CoT Probes and Activation Steering</title>
-      <link>https://arxiv.org/abs/2603.01437v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Kyle Cox, Darius Kianersi, Adrià Garriga-Alonso</p><p>As chain-of-thought (CoT) has become central to scaling reasoning capabilities in large language models (LLMs), it has also emerged as a promising tool for interpretability, suggesting the opportunity to understand model decisions through verbalized reasoning. However, the utility of CoT toward interpretability depends upon its faithfulness -- whether the model&#x27;s stated reasoning reflects the underlying decision process. We provide mechanistic evidence that instruction-tuned models often determi</p><p><strong>Tags:</strong> probing, steering, reasoning</p>]]></description>
-      <pubDate>Mon, 02 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.01437v1</guid>
-    </item>
-    <item>
-      <title>Truth as a Trajectory: What Internal Representations Reveal About Large Language Model Reasoning</title>
-      <link>https://arxiv.org/abs/2603.01326v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Hamed Damirchi, Ignacio Meza De la Jara, Ehsan Abbasnejad, Afshar Shamsi, Zhen Zhang, et al.</p><p>Existing explainability methods for Large Language Models (LLMs) typically treat hidden states as static points in activation space, assuming that correct and incorrect inferences can be separated using representations from an individual layer. However, these activations are saturated with polysemantic features, leading to linear probes learning surface-level lexical patterns rather than underlying reasoning structures. We introduce Truth as a Trajectory (TaT), which models the transformer infer</p><p><strong>Tags:</strong> features, probing, reasoning</p>]]></description>
-      <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.01326v1</guid>
-    </item>
-    <item>
-      <title>Interpretable Debiasing of Vision-Language Models for Social Fairness</title>
-      <link>https://arxiv.org/abs/2602.24014v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Na Min An, Yoonna Jang, Yusuke Hirota, Ryo Hachiuma, Isabelle Augenstein, et al.</p><p>The rapid advancement of Vision-Language models (VLMs) has raised growing concerns that their black-box reasoning processes could lead to unintended forms of social bias. Current debiasing approaches focus on mitigating surface-level bias signals through post-hoc learning or test-time algorithms, while leaving the internal dynamics of the model largely unexplored. In this work, we introduce an interpretable, model-agnostic bias mitigation framework, DeBiasLens, that localizes social attribute ne</p><p><strong>Tags:</strong> vision, reasoning</p>]]></description>
-      <pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2602.24014v1</guid>
     </item>
   </channel>
 </rss>
