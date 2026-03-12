@@ -1,6 +1,43 @@
 {
-  "lastUpdated": "2026-03-11",
+  "lastUpdated": "2026-03-12",
   "papers": [
+    {
+      "id": "arxiv-2603-10771v1",
+      "title": "Word Recovery in Large Language Models Enables Character-Level Tokenization Robustness",
+      "authors": "Zhipeng Yang, Shu Yang, Lijie Hu, Di Wang",
+      "date": "2026-03-11",
+      "url": "https://arxiv.org/abs/2603.10771v1",
+      "abstract": "Large language models (LLMs) trained with canonical tokenization exhibit surprising robustness to non-canonical inputs such as character-level tokenization, yet the mechanisms underlying this robustness remain unclear. We study this phenomenon through mechanistic interpretability and identify a core process we term word recovery. We first introduce a decoding-based method to detect word recovery, showing that hidden states reconstruct canonical word-level token identities from character-level in",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-10573v1",
+      "title": "Implicit Statistical Inference in Transformers: Approximating Likelihood-Ratio Tests In-Context",
+      "authors": "Faris Chaudhry, Siddhant Gadkari",
+      "date": "2026-03-11",
+      "url": "https://arxiv.org/abs/2603.10573v1",
+      "abstract": "In-context learning (ICL) allows Transformers to adapt to novel tasks without weight updates, yet the underlying algorithms remain poorly understood. We adopt a statistical decision-theoretic perspective by investigating simple binary hypothesis testing, where the optimal policy is determined by the likelihood-ratio test. Notably, this setup provides a mathematically rigorous setting for mechanistic interpretability where the target algorithmic ground truth is known. By training Transformers on ",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-10377v1",
+      "title": "Causal Concept Graphs in LLM Latent Space for Stepwise Reasoning",
+      "authors": "Md Muntaqim Meherab, Noor Islam S. Mohammad, Faiza Feroz",
+      "date": "2026-03-11",
+      "url": "https://arxiv.org/abs/2603.10377v1",
+      "abstract": "Sparse autoencoders can localize where concepts live in language models, but not how they interact during multi-step reasoning. We propose Causal Concept Graphs (CCG): a directed acyclic graph over sparse, interpretable latent features, where edges capture learned causal dependencies between concepts. We combine task-conditioned sparse autoencoders for concept discovery with DAGMA-style differentiable structure learning for graph recovery and introduce the Causal Fidelity Score (CFS) to evaluate",
+      "tags": [
+        "SAE",
+        "features",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2603-09972v1",
       "title": "From Data Statistics to Feature Geometry: How Correlations Shape Superposition",
@@ -11,6 +48,33 @@
       "tags": [
         "SAE",
         "superposition",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-10261v1",
+      "title": "Discovery of a Hematopoietic Manifold in scGPT Yields a Method for Extracting Performant Algorithms from Biological Foundation Model Internals",
+      "authors": "Ihor Kendiukhov",
+      "date": "2026-03-10",
+      "url": "https://arxiv.org/abs/2603.10261v1",
+      "abstract": "We report the discovery and extraction of a compact hematopoietic algorithm from the single-cell foundation model scGPT, to our knowledge the first biologically useful, competitive algorithm extracted from a foundation model via mechanistic interpretability. We show that scGPT internally encodes a compact hematopoietic manifold with significant developmental branch structure, validated on a strict non-overlap Tabula Sapiens external panel and confirmed via frozen-head zero-shot transfer to an in",
+      "tags": [
+        "biology"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-10071v1",
+      "title": "Dissecting Chronos: Sparse Autoencoders Reveal Causal Feature Hierarchies in Time Series Foundation Models",
+      "authors": "Anurag Mishra",
+      "date": "2026-03-10",
+      "url": "https://arxiv.org/abs/2603.10071v1",
+      "abstract": "Time series foundation models (TSFMs) are increasingly deployed in high-stakes domains, yet their internal representations remain opaque. We present the first application of sparse autoencoders (SAEs) to a TSFM, training TopK SAEs on activations of Chronos-T5-Large (710M parameters) across six layers. Through 392 single-feature ablation experiments, we establish that every ablated feature produces a positive CRPS degradation, confirming causal relevance. Our analysis reveals a depth-dependent hi",
+      "tags": [
+        "SAE",
         "features"
       ],
       "source": "arXiv",
@@ -950,6 +1014,20 @@
       "abstract": "Understanding the internal circuits that language models use to solve tasks remains a central challenge in mechanistic interpretability. Most prior work identifies circuits at the task level by averaging across many prompts, implicitly assuming a single stable mechanism per task. We show that this assumption can obscure a crucial source of structure: circuits are prompt-specific, even within a fixed task. Building on attention causal communication (ACC) (Franco & Crovella, 2025), we introduce AC",
       "tags": [
         "circuits"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-09988v1",
+      "title": "Causally Grounded Mechanistic Interpretability for LLMs with Faithful Natural-Language Explanations",
+      "authors": "Ajay Pravin Mahale",
+      "date": "2026-02-13",
+      "url": "https://arxiv.org/abs/2603.09988v1",
+      "abstract": "Mechanistic interpretability identifies internal circuits responsible for model behaviors, yet translating these findings into human-understandable explanations remains an open problem. We present a pipeline that bridges circuit-level analysis and natural language explanations by (i) identifying causally important attention heads via activation patching, (ii) generating explanations using both template-based and LLM-based methods, and (iii) evaluating faithfulness using ERASER-style metrics adap",
+      "tags": [
+        "circuits",
+        "attention"
       ],
       "source": "arXiv",
       "featured": false
