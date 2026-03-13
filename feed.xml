@@ -5,9 +5,30 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Exhaustive Circuit Mapping of a Single-Cell Foundation Model Reveals Massive Redundancy, Heavy-Tailed Hub Architecture, and Layer-Dependent Differentiation Control</title>
+      <link>https://arxiv.org/abs/2603.11940v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Ihor Kendiukhov</p><p>Mechanistic interpretability of biological foundation models has relied on selective feature sampling, pairwise interaction testing, and observational trajectory analysis. Each of these can introduce systematic bias. Here we present three experiments that address these limitations through exhaustive circuit tracing, higher order combinatorial ablation, and causal trajectory steering in Geneformer, a transformer based single cell foundation model. First, exhaustive tracing of all 4065 active spar</p><p><strong>Tags:</strong> circuits, features, steering, biology</p>]]></description>
+      <pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2603.11940v1</guid>
+    </item>
+    <item>
+      <title>Locating Demographic Bias at the Attention-Head Level in CLIP&#x27;s Vision Encoder</title>
+      <link>https://arxiv.org/abs/2603.11793v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Alaa Yasser, Kittipat Phunjanna, Marcos Escudero Viñolo, Catarina Barata, Jenny Benois-Pineau</p><p>Standard fairness audits of foundation models quantify that a model is biased, but not where inside the network the bias resides. We propose a mechanistic fairness audit that combines projected residual-stream decomposition, zero-shot Concept Activation Vectors, and bias-augmented TextSpan analysis to locate demographic bias at the level of individual attention heads in vision transformers. As a feasibility case study, we apply this pipeline to the CLIP ViT-L-14 encoder on 42 profession classes </p><p><strong>Tags:</strong> attention, vision</p>]]></description>
+      <pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2603.11793v1</guid>
+    </item>
+    <item>
+      <title>OrthoEraser: Coupled-Neuron Orthogonal Projection for Concept Erasure</title>
+      <link>https://arxiv.org/abs/2603.11493v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Chuancheng Shi, Wenhua Wu, Fei Shen, Xiaogang Zhu, Kun Hu, et al.</p><p>Text-to-image (T2I) models face significant safety risks from adversarial induction, yet current concept erasure methods often cause collateral damage to benign attributes when suppressing selected neurons entirely. This occurs because sensitive and benign semantics exhibit non-orthogonal superposition, sharing activation subspaces where their respective vectors are inherently entangled. To address this issue, we propose OrthoEraser, which leverages sparse autoencoders (SAE) to achieve high-reso</p><p><strong>Tags:</strong> SAE, superposition, safety, vision</p>]]></description>
+      <pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2603.11493v1</guid>
+    </item>
     <item>
       <title>Word Recovery in Large Language Models Enables Character-Level Tokenization Robustness</title>
       <link>https://arxiv.org/abs/2603.10771v1</link>
@@ -28,6 +49,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Md Muntaqim Meherab, Noor Islam S. Mohammad, Faiza Feroz</p><p>Sparse autoencoders can localize where concepts live in language models, but not how they interact during multi-step reasoning. We propose Causal Concept Graphs (CCG): a directed acyclic graph over sparse, interpretable latent features, where edges capture learned causal dependencies between concepts. We combine task-conditioned sparse autoencoders for concept discovery with DAGMA-style differentiable structure learning for graph recovery and introduce the Causal Fidelity Score (CFS) to evaluate</p><p><strong>Tags:</strong> SAE, features, reasoning</p>]]></description>
       <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2603.10377v1</guid>
+    </item>
+    <item>
+      <title>Attention Gathers, MLPs Compose: A Causal Analysis of an Action-Outcome Circuit in VideoViT</title>
+      <link>https://arxiv.org/abs/2603.11142v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Sai V R Chereddy</p><p>The paper explores how video models trained for classification tasks represent nuanced, hidden semantic information that may not affect the final outcome, a key challenge for Trustworthy AI models. Through Explainable and Interpretable AI methods, specifically mechanistic interpretability techniques, the internal circuit responsible for representing the action&#x27;s outcome is reverse-engineered in a pre-trained video vision transformer, revealing that the &quot;Success vs Failure&quot; signal is computed thr</p><p><strong>Tags:</strong> circuits, vision</p>]]></description>
+      <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2603.11142v1</guid>
     </item>
     <item>
       <title>From Data Statistics to Feature Geometry: How Correlations Shape Superposition</title>
@@ -189,34 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Xuan Yang, Jiayu Liu, Yuhang Lai, Hao Xu, Zhenya Huang, et al.</p><p>Large Language Models (LLMs) have achieved strong complex reasoning capabilities through Chain-of-Thought (CoT) reasoning. However, their reasoning patterns remain too complicated to analyze. While Sparse Autoencoders (SAEs) have emerged as a powerful tool for interpretability, existing approaches predominantly operate at the token level, creating a granularity mismatch when capturing more critical step-level information, such as reasoning direction and semantic transitions. In this work, we pro</p><p><strong>Tags:</strong> SAE, reasoning</p>]]></description>
       <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2603.03031v1</guid>
-    </item>
-    <item>
-      <title>SAE as a Crystal Ball: Interpretable Features Predict Cross-domain Transferability of LLMs without Training</title>
-      <link>https://arxiv.org/abs/2603.02908v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Qi Zhang, Yifei Wang, Xiaohan Wang, Jiajun Chai, Guojun Yin, et al.</p><p>In recent years, pre-trained large language models have achieved remarkable success across diverse tasks. Besides the pivotal role of self-supervised pre-training, their effectiveness in downstream applications also depends critically on the post-training process, which adapts models to task-specific data and objectives. However, this process inevitably introduces model shifts that can influence performance in different domains, and how such shifts transfer remains poorly understood. To open up </p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.02908v1</guid>
-    </item>
-    <item>
-      <title>Sparse autoencoders reveal organized biological knowledge but minimal regulatory logic in single-cell foundation models: a comparative atlas of Geneformer and scGPT</title>
-      <link>https://arxiv.org/abs/2603.02952v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Ihor Kendiukhov</p><p>Background: Single-cell foundation models such as Geneformer and scGPT encode rich biological information, but whether this includes causal regulatory logic rather than statistical co-expression remains unclear. Sparse autoencoders (SAEs) can resolve superposition in neural networks by decomposing dense activations into interpretable features, yet they have not been systematically applied to biological foundation models.   Results: We trained TopK SAEs on residual stream activations from all lay</p><p><strong>Tags:</strong> SAE, superposition, features, biology</p>]]></description>
-      <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.02952v1</guid>
-    </item>
-    <item>
-      <title>Tracing Pharmacological Knowledge In Large Language Models</title>
-      <link>https://arxiv.org/abs/2603.03407v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Basil Hasan Khwaja, Dylan Chen, Guntas Toor, Anastasiya Kuznetsova</p><p>Large language models (LLMs) have shown strong empirical performance across pharmacology and drug discovery tasks, yet the internal mechanisms by which they encode pharmacological knowledge remain poorly understood. In this work, we investigate how drug-group semantics are represented and retrieved within Llama-based biomedical language models using causal and probing-based interpretability methods. We apply activation patching to localize where drug-group information is stored across model laye</p><p><strong>Tags:</strong> probing</p>]]></description>
-      <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.03407v1</guid>
-    </item>
-    <item>
-      <title>Understanding the Dynamics of Demonstration Conflict in In-Context Learning</title>
-      <link>https://arxiv.org/abs/2603.04464v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Difan Jiao, Di Wang, Lijie Hu</p><p>In-context learning enables large language models to perform novel tasks through few-shot demonstrations. However, demonstrations per se can naturally contain noise and conflicting examples, making this capability vulnerable. To understand how models process such conflicts, we study demonstration-dependent tasks requiring models to infer underlying patterns, a process we characterize as rule inference. We find that models suffer substantial performance degradation from a single demonstration wit</p>]]></description>
-      <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.04464v1</guid>
     </item>
   </channel>
 </rss>
