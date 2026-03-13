@@ -1,6 +1,52 @@
 {
-  "lastUpdated": "2026-03-12",
+  "lastUpdated": "2026-03-13",
   "papers": [
+    {
+      "id": "arxiv-2603-11940v1",
+      "title": "Exhaustive Circuit Mapping of a Single-Cell Foundation Model Reveals Massive Redundancy, Heavy-Tailed Hub Architecture, and Layer-Dependent Differentiation Control",
+      "authors": "Ihor Kendiukhov",
+      "date": "2026-03-12",
+      "url": "https://arxiv.org/abs/2603.11940v1",
+      "abstract": "Mechanistic interpretability of biological foundation models has relied on selective feature sampling, pairwise interaction testing, and observational trajectory analysis. Each of these can introduce systematic bias. Here we present three experiments that address these limitations through exhaustive circuit tracing, higher order combinatorial ablation, and causal trajectory steering in Geneformer, a transformer based single cell foundation model. First, exhaustive tracing of all 4065 active spar",
+      "tags": [
+        "circuits",
+        "features",
+        "steering",
+        "biology"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-11793v1",
+      "title": "Locating Demographic Bias at the Attention-Head Level in CLIP's Vision Encoder",
+      "authors": "Alaa Yasser, Kittipat Phunjanna, Marcos Escudero Vi\u00f1olo, Catarina Barata, Jenny Benois-Pineau",
+      "date": "2026-03-12",
+      "url": "https://arxiv.org/abs/2603.11793v1",
+      "abstract": "Standard fairness audits of foundation models quantify that a model is biased, but not where inside the network the bias resides. We propose a mechanistic fairness audit that combines projected residual-stream decomposition, zero-shot Concept Activation Vectors, and bias-augmented TextSpan analysis to locate demographic bias at the level of individual attention heads in vision transformers. As a feasibility case study, we apply this pipeline to the CLIP ViT-L-14 encoder on 42 profession classes ",
+      "tags": [
+        "attention",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-11493v1",
+      "title": "OrthoEraser: Coupled-Neuron Orthogonal Projection for Concept Erasure",
+      "authors": "Chuancheng Shi, Wenhua Wu, Fei Shen, Xiaogang Zhu, Kun Hu, et al.",
+      "date": "2026-03-12",
+      "url": "https://arxiv.org/abs/2603.11493v1",
+      "abstract": "Text-to-image (T2I) models face significant safety risks from adversarial induction, yet current concept erasure methods often cause collateral damage to benign attributes when suppressing selected neurons entirely. This occurs because sensitive and benign semantics exhibit non-orthogonal superposition, sharing activation subspaces where their respective vectors are inherently entangled. To address this issue, we propose OrthoEraser, which leverages sparse autoencoders (SAE) to achieve high-reso",
+      "tags": [
+        "SAE",
+        "superposition",
+        "safety",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2603-10771v1",
       "title": "Word Recovery in Large Language Models Enables Character-Level Tokenization Robustness",
@@ -34,6 +80,20 @@
         "SAE",
         "features",
         "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-11142v1",
+      "title": "Attention Gathers, MLPs Compose: A Causal Analysis of an Action-Outcome Circuit in VideoViT",
+      "authors": "Sai V R Chereddy",
+      "date": "2026-03-11",
+      "url": "https://arxiv.org/abs/2603.11142v1",
+      "abstract": "The paper explores how video models trained for classification tasks represent nuanced, hidden semantic information that may not affect the final outcome, a key challenge for Trustworthy AI models. Through Explainable and Interpretable AI methods, specifically mechanistic interpretability techniques, the internal circuit responsible for representing the action's outcome is reverse-engineered in a pre-trained video vision transformer, revealing that the \"Success vs Failure\" signal is computed thr",
+      "tags": [
+        "circuits",
+        "vision"
       ],
       "source": "arXiv",
       "featured": false
