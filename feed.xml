@@ -5,9 +5,16 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 15 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>SteerRM: Debiasing Reward Models via Sparse Autoencoders</title>
+      <link>https://arxiv.org/abs/2603.12795v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Mengyuan Sun, Zhuohao Yu, Weizheng Gu, Shikun Zhang, Wei Ye</p><p>Reward models (RMs) are critical components of alignment pipelines, yet they exhibit biases toward superficial stylistic cues, preferring better-presented responses over semantically superior ones. Existing debiasing methods typically require retraining or architectural modifications, while direct activation suppression degrades performance due to representation entanglement. We propose SteerRM, the first training-free method for debiasing reward models using Sparse Autoencoder (SAE)-based inter</p><p><strong>Tags:</strong> SAE, safety</p>]]></description>
+      <pubDate>Fri, 13 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2603.12795v1</guid>
+    </item>
     <item>
       <title>Exhaustive Circuit Mapping of a Single-Cell Foundation Model Reveals Massive Redundancy, Heavy-Tailed Hub Architecture, and Layer-Dependent Differentiation Control</title>
       <link>https://arxiv.org/abs/2603.11940v1</link>
@@ -210,13 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Piotr Jedryszek, Oliver M. Crook</p><p>Sparse autoencoders (SAEs) are widely used to extract human-interpretable features from neural network activations, but their learned features can vary substantially across random seeds and training choices. To improve stability, we studied weight regularization by adding L1 or L2 penalties on encoder and decoder weights, and evaluate how regularization interacts with common SAE training defaults. On MNIST, we observe that L2 weight regularization produces a core of highly aligned features and, </p><p><strong>Tags:</strong> SAE, features</p>]]></description>
       <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2603.04198v1</guid>
-    </item>
-    <item>
-      <title>Step-Level Sparse Autoencoder for Reasoning Process Interpretation</title>
-      <link>https://arxiv.org/abs/2603.03031v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Xuan Yang, Jiayu Liu, Yuhang Lai, Hao Xu, Zhenya Huang, et al.</p><p>Large Language Models (LLMs) have achieved strong complex reasoning capabilities through Chain-of-Thought (CoT) reasoning. However, their reasoning patterns remain too complicated to analyze. While Sparse Autoencoders (SAEs) have emerged as a powerful tool for interpretability, existing approaches predominantly operate at the token level, creating a granularity mismatch when capturing more critical step-level information, such as reasoning direction and semantic transitions. In this work, we pro</p><p><strong>Tags:</strong> SAE, reasoning</p>]]></description>
-      <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.03031v1</guid>
     </item>
   </channel>
 </rss>
