@@ -1,6 +1,20 @@
 {
-  "lastUpdated": "2026-03-15",
+  "lastUpdated": "2026-03-16",
   "papers": [
+    {
+      "id": "arxiv-2603-12795v1",
+      "title": "SteerRM: Debiasing Reward Models via Sparse Autoencoders",
+      "authors": "Mengyuan Sun, Zhuohao Yu, Weizheng Gu, Shikun Zhang, Wei Ye",
+      "date": "2026-03-13",
+      "url": "https://arxiv.org/abs/2603.12795v1",
+      "abstract": "Reward models (RMs) are critical components of alignment pipelines, yet they exhibit biases toward superficial stylistic cues, preferring better-presented responses over semantically superior ones. Existing debiasing methods typically require retraining or architectural modifications, while direct activation suppression degrades performance due to representation entanglement. We propose SteerRM, the first training-free method for debiasing reward models using Sparse Autoencoder (SAE)-based inter",
+      "tags": [
+        "SAE",
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2603-11940v1",
       "title": "Exhaustive Circuit Mapping of a Single-Cell Foundation Model Reveals Massive Redundancy, Heavy-Tailed Hub Architecture, and Layer-Dependent Differentiation Control",
