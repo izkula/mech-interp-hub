@@ -1,6 +1,116 @@
 {
-  "lastUpdated": "2026-03-16",
+  "lastUpdated": "2026-03-17",
   "papers": [
+    {
+      "id": "arxiv-2603-15248v1",
+      "title": "Mechanistic Foundations of Goal-Directed Control",
+      "authors": "Alma Lago",
+      "date": "2026-03-16",
+      "url": "https://arxiv.org/abs/2603.15248v1",
+      "abstract": "Mechanistic interpretability has transformed the analysis of transformer circuits by decomposing model behavior into competing algorithms, identifying phase transitions during training, and deriving closed-form predictions for when and why strategies shift. However, this program has remained largely confined to sequence-prediction architectures, leaving embodied control systems without comparable mechanistic accounts. Here we extend this framework to sensorimotor-cognitive development, using inf",
+      "tags": [
+        "circuits"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-14923v1",
+      "title": "Directional Routing in Transformers",
+      "authors": "Kevin Taylor",
+      "date": "2026-03-16",
+      "url": "https://arxiv.org/abs/2603.14923v1",
+      "abstract": "We introduce directional routing, a lightweight mechanism that gives each transformer attention head learned suppression directions controlled by a shared router, at 3.9% parameter cost. We train a 433M-parameter model alongside an identical baseline in a single run, then trace the resulting circuits through mechanistic interpretability.   Routing becomes the model's dominant computational pathway. Disabling it collapses factual recall to near-zero probability across all 8 test prompts and drops",
+      "tags": [
+        "circuits",
+        "attention"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-15615v1",
+      "title": "Mechanistic Origin of Moral Indifference in Language Models",
+      "authors": "Lingyu Li, Yan Teng, Yingchun Wang",
+      "date": "2026-03-16",
+      "url": "https://arxiv.org/abs/2603.15615v1",
+      "abstract": "Existing behavioral alignment techniques for Large Language Models (LLMs) often neglect the discrepancy between surface compliance and internal unaligned representations, leaving LLMs vulnerable to long-tail risks. More crucially, we posit that LLMs possess an inherent state of moral indifference due to compressing distinct moral concepts into uniform probability distributions. We verify and remedy this indifference in LLMs' latent representations, utilizing 251k moral vectors constructed upon P",
+      "tags": [
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-15226v1",
+      "title": "SCAN: Sparse Circuit Anchor Interpretable Neuron for Lifelong Knowledge Editing",
+      "authors": "Yuhuan Liu, Haitian Zhong, Xinyuan Xia, Qiang Liu, Shu Wu, et al.",
+      "date": "2026-03-16",
+      "url": "https://arxiv.org/abs/2603.15226v1",
+      "abstract": "Large Language Models (LLMs) often suffer from catastrophic forgetting and collapse during sequential knowledge editing. This vulnerability stems from the prevailing dense editing paradigm, which treats models as black boxes and relies on coarse-grained parameter interventions that inevitably disrupt preserved knowledge. To address this, we propose SCAN (a sparse editing framework based on Sparse Circuit Anchored Neuron) which transforms editing into a mechanism-aware manipulation by constructin",
+      "tags": [
+        "circuits",
+        "editing"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-14343v1",
+      "title": "Localizing and Editing Knowledge in Large Audio-Language Models",
+      "authors": "Sung Kyun Chung, Jiaheng Dong, Qiuchi Hu, Gongping Huang, Hong Jia, et al.",
+      "date": "2026-03-15",
+      "url": "https://arxiv.org/abs/2603.14343v1",
+      "abstract": "Large Audio-Language Models (LALMs) have shown strong performance in speech understanding, making speech a natural interface for accessing factual information. Yet they are trained on static corpora and may encode incorrect facts. Existing model editing methods localize and update facts in text-only LLMs, but do not account for continuous speech representations, or where knowledge is stored across acoustic or language modules, or their cross-modal module. We construct the first audio benchmark f",
+      "tags": [
+        "editing"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-14219v1",
+      "title": "Safety-Potential Pruning for Enhancing Safety Prompts Against VLM Jailbreaking Without Retraining",
+      "authors": "Chongxin Li, Hanzhang Wang, Lian Duan",
+      "date": "2026-03-15",
+      "url": "https://arxiv.org/abs/2603.14219v1",
+      "abstract": "Safety prompts constitute an interpretable layer of defense against jailbreak attacks in vision-language models (VLMs); however, their efficacy is constrained by the models' latent structural responsiveness. We observe that such prompts consistently engage a sparse set of parameters that remain largely quiescent during benign use. This finding motivates the Safety Subnetwork Hypothesis: VLMs embed structurally distinct pathways capable of enforcing safety, but these pathways remain dormant witho",
+      "tags": [
+        "safety",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-13768v1",
+      "title": "Causal Tracing of Audio-Text Fusion in Large Audio Language Models",
+      "authors": "Wei-Chih Chen, Chien-yu Huang, Hung-yi Lee",
+      "date": "2026-03-14",
+      "url": "https://arxiv.org/abs/2603.13768v1",
+      "abstract": "Despite the strong performance of large audio language models (LALMs) in various tasks, exactly how and where they integrate acoustic features with textual context remains unclear. We adapt causal tracing to investigate the internal information flow of LALMs during audio comprehension. By conducting layer-wise and token-wise analyses across DeSTA, Qwen, and Voxtral, we evaluate the causal effects of individual hidden states. Layer-wise analysis identifies different fusion strategies, from progre",
+      "tags": [
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-13884v1",
+      "title": "SCoCCA: Multi-modal Sparse Concept Decomposition via Canonical Correlation Analysis",
+      "authors": "Ehud Gordon, Meir Yossef Levi, Guy Gilboa",
+      "date": "2026-03-14",
+      "url": "https://arxiv.org/abs/2603.13884v1",
+      "abstract": "Interpreting the internal reasoning of vision-language models is essential for deploying AI in safety-critical domains. Concept-based explainability provides a human-aligned lens by representing a model's behavior through semantically meaningful components. However, existing methods are largely restricted to images and overlook the cross-modal interactions. Text-image embeddings, such as those produced by CLIP, suffer from a modality gap, where visual and textual features follow distinct distrib",
+      "tags": [
+        "features",
+        "safety",
+        "vision",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2603-12795v1",
       "title": "SteerRM: Debiasing Reward Models via Sparse Autoencoders",
@@ -11,6 +121,19 @@
       "tags": [
         "SAE",
         "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-13652v1",
+      "title": "Causal Attribution via Activation Patching",
+      "authors": "Amirmohammad Izadi, Mohammadali Banayeeanzade, Alireza Mirrokni, Hosein Hasani, Mobin Bagherian, et al.",
+      "date": "2026-03-13",
+      "url": "https://arxiv.org/abs/2603.13652v1",
+      "abstract": "Attribution methods for Vision Transformers (ViTs) aim to identify image regions that influence model predictions, but producing faithful and well-localized attributions remains challenging. Existing gradient-based and perturbation-based techniques often fail to isolate the causal contribution of internal representations associated with individual image patches. The key challenge is that class-relevant evidence is formed through interactions between patch tokens across layers, and input-level pe",
+      "tags": [
+        "vision"
       ],
       "source": "arXiv",
       "featured": false
@@ -541,6 +664,20 @@
       "tags": [
         "vision",
         "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-13277v1",
+      "title": "Learning Retrieval Models with Sparse Autoencoders",
+      "authors": "Thibault Formal, Maxime Louis, Herv\u00e9 Dejean, St\u00e9phane Clinchant",
+      "date": "2026-02-27",
+      "url": "https://arxiv.org/abs/2603.13277v1",
+      "abstract": "Sparse autoencoders (SAEs) provide a powerful mechanism for decomposing the dense representations produced by Large Language Models (LLMs) into interpretable latent features. We posit that SAEs constitute a natural foundation for Learned Sparse Retrieval (LSR), whose objective is to encode queries and documents into high-dimensional sparse representations optimized for efficient retrieval. In contrast to existing LSR approaches that project input sequences into the vocabulary space, SAE-based re",
+      "tags": [
+        "SAE",
+        "features"
       ],
       "source": "arXiv",
       "featured": false
@@ -1945,6 +2082,19 @@
       "abstract": "Large Language Models (LLMs) are becoming increasingly popular in pervasive computing due to their versatility and strong performance. However, despite their ubiquitous use, the exact mechanisms underlying their outstanding performance remain unclear. Different methods for LLM explainability exist, and many are, as a method, not fully understood themselves. We started with the question of how linguistic abstraction emerges in LLMs, aiming to detect it across different LLM modules (attention head",
       "tags": [
         "attention"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2601-22888v2",
+      "title": "Should LLMs, like, Generate How Users Talk? Building Dialect-Accurate Dialog[ue]s Beyond the American Default with MDial",
+      "authors": "Jio Oh, Paul Vicinanza, Thomas Butler, Steven Euijong Whang, Dezhi Hong, et al.",
+      "date": "2026-01-30",
+      "url": "https://arxiv.org/abs/2601.22888v2",
+      "abstract": "More than 80% of the 1.6 billion English speakers do not use Standard American English (SAE) and experience higher failure rates and stereotyped responses when interacting with LLMs as a result. Yet multi-dialectal performance remains underexplored. We introduce MDial, the first large-scale framework for generating multi-dialectal conversational data encompassing the three pillars of written dialect -- lexical (vocabulary), orthographic (spelling), and morphosyntactic (grammar) features -- for n",
+      "tags": [
+        "features"
       ],
       "source": "arXiv",
       "featured": false
