@@ -5,15 +5,78 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Mechanistic Foundations of Goal-Directed Control</title>
+      <link>https://arxiv.org/abs/2603.15248v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Alma Lago</p><p>Mechanistic interpretability has transformed the analysis of transformer circuits by decomposing model behavior into competing algorithms, identifying phase transitions during training, and deriving closed-form predictions for when and why strategies shift. However, this program has remained largely confined to sequence-prediction architectures, leaving embodied control systems without comparable mechanistic accounts. Here we extend this framework to sensorimotor-cognitive development, using inf</p><p><strong>Tags:</strong> circuits</p>]]></description>
+      <pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2603.15248v1</guid>
+    </item>
+    <item>
+      <title>Directional Routing in Transformers</title>
+      <link>https://arxiv.org/abs/2603.14923v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Kevin Taylor</p><p>We introduce directional routing, a lightweight mechanism that gives each transformer attention head learned suppression directions controlled by a shared router, at 3.9% parameter cost. We train a 433M-parameter model alongside an identical baseline in a single run, then trace the resulting circuits through mechanistic interpretability.   Routing becomes the model&#x27;s dominant computational pathway. Disabling it collapses factual recall to near-zero probability across all 8 test prompts and drops</p><p><strong>Tags:</strong> circuits, attention</p>]]></description>
+      <pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2603.14923v1</guid>
+    </item>
+    <item>
+      <title>Mechanistic Origin of Moral Indifference in Language Models</title>
+      <link>https://arxiv.org/abs/2603.15615v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Lingyu Li, Yan Teng, Yingchun Wang</p><p>Existing behavioral alignment techniques for Large Language Models (LLMs) often neglect the discrepancy between surface compliance and internal unaligned representations, leaving LLMs vulnerable to long-tail risks. More crucially, we posit that LLMs possess an inherent state of moral indifference due to compressing distinct moral concepts into uniform probability distributions. We verify and remedy this indifference in LLMs&#x27; latent representations, utilizing 251k moral vectors constructed upon P</p><p><strong>Tags:</strong> safety</p>]]></description>
+      <pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2603.15615v1</guid>
+    </item>
+    <item>
+      <title>SCAN: Sparse Circuit Anchor Interpretable Neuron for Lifelong Knowledge Editing</title>
+      <link>https://arxiv.org/abs/2603.15226v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Yuhuan Liu, Haitian Zhong, Xinyuan Xia, Qiang Liu, Shu Wu, et al.</p><p>Large Language Models (LLMs) often suffer from catastrophic forgetting and collapse during sequential knowledge editing. This vulnerability stems from the prevailing dense editing paradigm, which treats models as black boxes and relies on coarse-grained parameter interventions that inevitably disrupt preserved knowledge. To address this, we propose SCAN (a sparse editing framework based on Sparse Circuit Anchored Neuron) which transforms editing into a mechanism-aware manipulation by constructin</p><p><strong>Tags:</strong> circuits, editing</p>]]></description>
+      <pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2603.15226v1</guid>
+    </item>
+    <item>
+      <title>Localizing and Editing Knowledge in Large Audio-Language Models</title>
+      <link>https://arxiv.org/abs/2603.14343v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Sung Kyun Chung, Jiaheng Dong, Qiuchi Hu, Gongping Huang, Hong Jia, et al.</p><p>Large Audio-Language Models (LALMs) have shown strong performance in speech understanding, making speech a natural interface for accessing factual information. Yet they are trained on static corpora and may encode incorrect facts. Existing model editing methods localize and update facts in text-only LLMs, but do not account for continuous speech representations, or where knowledge is stored across acoustic or language modules, or their cross-modal module. We construct the first audio benchmark f</p><p><strong>Tags:</strong> editing</p>]]></description>
+      <pubDate>Sun, 15 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2603.14343v1</guid>
+    </item>
+    <item>
+      <title>Safety-Potential Pruning for Enhancing Safety Prompts Against VLM Jailbreaking Without Retraining</title>
+      <link>https://arxiv.org/abs/2603.14219v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Chongxin Li, Hanzhang Wang, Lian Duan</p><p>Safety prompts constitute an interpretable layer of defense against jailbreak attacks in vision-language models (VLMs); however, their efficacy is constrained by the models&#x27; latent structural responsiveness. We observe that such prompts consistently engage a sparse set of parameters that remain largely quiescent during benign use. This finding motivates the Safety Subnetwork Hypothesis: VLMs embed structurally distinct pathways capable of enforcing safety, but these pathways remain dormant witho</p><p><strong>Tags:</strong> safety, vision</p>]]></description>
+      <pubDate>Sun, 15 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2603.14219v1</guid>
+    </item>
+    <item>
+      <title>Causal Tracing of Audio-Text Fusion in Large Audio Language Models</title>
+      <link>https://arxiv.org/abs/2603.13768v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Wei-Chih Chen, Chien-yu Huang, Hung-yi Lee</p><p>Despite the strong performance of large audio language models (LALMs) in various tasks, exactly how and where they integrate acoustic features with textual context remains unclear. We adapt causal tracing to investigate the internal information flow of LALMs during audio comprehension. By conducting layer-wise and token-wise analyses across DeSTA, Qwen, and Voxtral, we evaluate the causal effects of individual hidden states. Layer-wise analysis identifies different fusion strategies, from progre</p><p><strong>Tags:</strong> features</p>]]></description>
+      <pubDate>Sat, 14 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2603.13768v1</guid>
+    </item>
+    <item>
+      <title>SCoCCA: Multi-modal Sparse Concept Decomposition via Canonical Correlation Analysis</title>
+      <link>https://arxiv.org/abs/2603.13884v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Ehud Gordon, Meir Yossef Levi, Guy Gilboa</p><p>Interpreting the internal reasoning of vision-language models is essential for deploying AI in safety-critical domains. Concept-based explainability provides a human-aligned lens by representing a model&#x27;s behavior through semantically meaningful components. However, existing methods are largely restricted to images and overlook the cross-modal interactions. Text-image embeddings, such as those produced by CLIP, suffer from a modality gap, where visual and textual features follow distinct distrib</p><p><strong>Tags:</strong> features, safety, vision, reasoning</p>]]></description>
+      <pubDate>Sat, 14 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2603.13884v1</guid>
+    </item>
     <item>
       <title>SteerRM: Debiasing Reward Models via Sparse Autoencoders</title>
       <link>https://arxiv.org/abs/2603.12795v1</link>
       <description><![CDATA[<p><strong>Authors:</strong> Mengyuan Sun, Zhuohao Yu, Weizheng Gu, Shikun Zhang, Wei Ye</p><p>Reward models (RMs) are critical components of alignment pipelines, yet they exhibit biases toward superficial stylistic cues, preferring better-presented responses over semantically superior ones. Existing debiasing methods typically require retraining or architectural modifications, while direct activation suppression degrades performance due to representation entanglement. We propose SteerRM, the first training-free method for debiasing reward models using Sparse Autoencoder (SAE)-based inter</p><p><strong>Tags:</strong> SAE, safety</p>]]></description>
       <pubDate>Fri, 13 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2603.12795v1</guid>
+    </item>
+    <item>
+      <title>Causal Attribution via Activation Patching</title>
+      <link>https://arxiv.org/abs/2603.13652v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Amirmohammad Izadi, Mohammadali Banayeeanzade, Alireza Mirrokni, Hosein Hasani, Mobin Bagherian, et al.</p><p>Attribution methods for Vision Transformers (ViTs) aim to identify image regions that influence model predictions, but producing faithful and well-localized attributions remains challenging. Existing gradient-based and perturbation-based techniques often fail to isolate the causal contribution of internal representations associated with individual image patches. The key challenge is that class-relevant evidence is formed through interactions between patch tokens across layers, and input-level pe</p><p><strong>Tags:</strong> vision</p>]]></description>
+      <pubDate>Fri, 13 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2603.13652v1</guid>
     </item>
     <item>
       <title>Exhaustive Circuit Mapping of a Single-Cell Foundation Model Reveals Massive Redundancy, Heavy-Tailed Hub Architecture, and Layer-Dependent Differentiation Control</title>
@@ -154,69 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Shize Liang, Hongzhi Wang</p><p>Large language models (LLMs) have demonstrated remarkable performance in text generation and knowledge-intensive question answering. Nevertheless, they are prone to producing hallucinated content, which severely undermines their reliability in high-stakes application domains. Existing hallucination attribution approaches, based on either external knowledge retrieval or internal model mechanisms, primarily focus on semantic similarity matching or representation-level discrimination. As a result, </p>]]></description>
       <pubDate>Fri, 06 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2603.05828v1</guid>
-    </item>
-    <item>
-      <title>Do Foundation Models Know Geometry? Probing Frozen Features for Continuous Physical Measurement</title>
-      <link>https://arxiv.org/abs/2603.06459v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Yakov Pyotr Shkolnikov</p><p>Vision-language models encode continuous geometry that their text pathway fails to express: a 6,000-parameter linear probe extracts hand joint angles at 6.1 degrees MAE from frozen features, while the best text output achieves only 20.0 degrees -- a 3.3x bottleneck. LoRA fine-tuning (r=16, 2,000 images) narrows this gap to 6.5 degrees, providing evidence for a pathway-training deficit rather than a representational one. Training objective determines accuracy more than architecture: five encoders</p><p><strong>Tags:</strong> features, probing, vision</p>]]></description>
-      <pubDate>Fri, 06 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.06459v1</guid>
-    </item>
-    <item>
-      <title>Safe Transformer: An Explicit Safety Bit For Interpretable And Controllable Alignment</title>
-      <link>https://arxiv.org/abs/2603.06727v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Jingyuan Feng, Andrew Gambardella, Gouki Minegishi, Takeshi Kojima, Yusuke Iwasawa, et al.</p><p>Current safety alignment methods encode safe behavior implicitly within model parameters, creating a fundamental opacity: we cannot easily inspect why a model refuses a request, nor intervene when its safety judgments fail. We propose Safe Transformer, a modular approach that augments pre-trained language models by inserting a discrete information bottleneck containing an explicit safety bit between transformer layers. The safety bit serves as both an interpretable signal of the model&#x27;s safety c</p><p><strong>Tags:</strong> safety</p>]]></description>
-      <pubDate>Fri, 06 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.06727v1</guid>
-    </item>
-    <item>
-      <title>Sparse Crosscoders for diffing MoEs and Dense models</title>
-      <link>https://arxiv.org/abs/2603.05805v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Marmik Chaudhari, Nishkal Hundia, Idhant Gulati</p><p>Mixture of Experts (MoE) achieve parameter-efficient scaling through sparse expert routing, yet their internal representations remain poorly understood compared to dense models. We present a systematic comparison of MoE and dense model internals using crosscoders, a variant of sparse autoencoders, that jointly models multiple activation spaces. We train 5-layer dense and MoEs (equal active parameters) on 1B tokens across code, scientific text, and english stories. Using BatchTopK crosscoders wit</p><p><strong>Tags:</strong> SAE</p>]]></description>
-      <pubDate>Fri, 06 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.05805v1</guid>
-    </item>
-    <item>
-      <title>DEX-AR: A Dynamic Explainability Method for Autoregressive Vision-Language Models</title>
-      <link>https://arxiv.org/abs/2603.06302v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Walid Bousselham, Angie Boggust, Hendrik Strobelt, Hilde Kuehne</p><p>As Vision-Language Models (VLMs) become increasingly sophisticated and widely used, it becomes more and more crucial to understand their decision-making process. Traditional explainability methods, designed for classification tasks, struggle with modern autoregressive VLMs due to their complex token-by-token generation process and intricate interactions between visual and textual modalities. We present DEX-AR (Dynamic Explainability for AutoRegressive models), a novel explainability method desig</p><p><strong>Tags:</strong> vision</p>]]></description>
-      <pubDate>Fri, 06 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.06302v1</guid>
-    </item>
-    <item>
-      <title>Observing and Controlling Features in Vision-Language-Action Models</title>
-      <link>https://arxiv.org/abs/2603.05487v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Hugo Buurmeijer, Carmen Amo Alonso, Aiden Swann, Marco Pavone</p><p>Vision-Language-Action Models (VLAs) have shown remarkable progress towards embodied intelligence. While their architecture partially resembles that of Large Language Models (LLMs), VLAs exhibit higher complexity due to their multi-modal inputs/outputs and often hybrid nature of transformer and diffusion heads. This is part of the reason why insights from mechanistic interpretability in LLMs, which explain how the internal model representations relate to their output behavior, do not trivially t</p><p><strong>Tags:</strong> features, vision</p>]]></description>
-      <pubDate>Thu, 05 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.05487v1</guid>
-    </item>
-    <item>
-      <title>The Geometric Inductive Bias of Grokking: Bypassing Phase Transitions via Architectural Topology</title>
-      <link>https://arxiv.org/abs/2603.05228v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Alper Yıldırım</p><p>Mechanistic interpretability typically relies on post-hoc analysis of trained networks. We instead adopt an interventional approach: testing hypotheses a priori by modifying architectural topology to observe training dynamics. We study grokking - delayed generalization in Transformers trained on cyclic modular addition (Zp) - investigating if specific architectural degrees of freedom prolong the memorization phase.   We identify two independent structural factors in standard Transformers: unboun</p>]]></description>
-      <pubDate>Thu, 05 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.05228v1</guid>
-    </item>
-    <item>
-      <title>Stochastic Optimal Feedforward-Feedback Control for Partially Observable Sensorimotor Systems</title>
-      <link>https://arxiv.org/abs/2603.04994v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Bastien Berret, Frédéric Jean</p><p>Robust control of complex engineered and biological systems hinges on the integration of feedforward and feedback mechanisms. This is exemplified in neural motor control, where feedforward muscle co-contraction complements sensory-driven feedback corrections to ensure stable behaviors. However, deriving a general continuous-time framework to determine such optimal control policies for partially observable, stochastic, nonlinear, and high-dimensional systems remains a formidable computational cha</p><p><strong>Tags:</strong> biology</p>]]></description>
-      <pubDate>Thu, 05 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.04994v1</guid>
-    </item>
-    <item>
-      <title>Interpretable Perception and Reasoning for Audiovisual Geolocation</title>
-      <link>https://arxiv.org/abs/2603.05708v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Yiyang Su, Xiaoming Liu</p><p>While recent advances in Multimodal Large Language Models (MLLMs) have improved image-based localization, precise global geolocation remains a formidable challenge due to the inherent ambiguity of visual landscapes and the largely untapped potential of auditory cues. In this paper, we introduce Audiovisual Geolocation, a framework designed to resolve geographic ambiguity through interpretable perception and reasoning. We present AVG, a high-quality global-scale video benchmark for geolocation, c</p><p><strong>Tags:</strong> vision, reasoning</p>]]></description>
-      <pubDate>Thu, 05 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.05708v1</guid>
-    </item>
-    <item>
-      <title>Stable and Steerable Sparse Autoencoders with Weight Regularization</title>
-      <link>https://arxiv.org/abs/2603.04198v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Piotr Jedryszek, Oliver M. Crook</p><p>Sparse autoencoders (SAEs) are widely used to extract human-interpretable features from neural network activations, but their learned features can vary substantially across random seeds and training choices. To improve stability, we studied weight regularization by adding L1 or L2 penalties on encoder and decoder weights, and evaluate how regularization interacts with common SAE training defaults. On MNIST, we observe that L2 weight regularization produces a core of highly aligned features and, </p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.04198v1</guid>
     </item>
   </channel>
 </rss>
