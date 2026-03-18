@@ -1,6 +1,49 @@
 {
-  "lastUpdated": "2026-03-17",
+  "lastUpdated": "2026-03-18",
   "papers": [
+    {
+      "id": "arxiv-2603-16440v1",
+      "title": "Capability-Guided Compression: Toward Interpretability-Aware Budget Allocation for Large Language Models",
+      "authors": "Rishaank Gupta",
+      "date": "2026-03-17",
+      "url": "https://arxiv.org/abs/2603.16440v1",
+      "abstract": "Large language model compression has made substantial progress through pruning, quantization, and low-rank decomposition, yet a fundamental limitation persists across all existing methods: compression budgets are allocated without any representation of what individual model components functionally encode. We term this the capability-blind compression problem and argue it is a root cause of two well-documented failures -- the insensitivity of perplexity-based evaluation to reasoning capability lo",
+      "tags": [
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-16335v1",
+      "title": "Behavioral Steering in a 35B MoE Language Model via SAE-Decoded Probe Vectors: One Agency Axis, Not Five Traits",
+      "authors": "Jia Qing Yap",
+      "date": "2026-03-17",
+      "url": "https://arxiv.org/abs/2603.16335v1",
+      "abstract": "We train nine sparse autoencoders (SAEs) on the residual stream of Qwen 3.5-35B-A3B, a 35-billion-parameter Mixture-of-Experts model with a hybrid GatedDeltaNet/attention architecture, and use them to identify and steer five agentic behavioral traits. Our method trains linear probes on SAE latent activations, then projects the probe weights back through the SAE decoder to obtain continuous steering vectors in the model's native activation space. This bypasses the SAE's top-k discretization, enab",
+      "tags": [
+        "SAE",
+        "probing",
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-16284v1",
+      "title": "Locate-then-Sparsify: Attribution Guided Sparse Strategy for Visual Hallucination Mitigation",
+      "authors": "TianTian Dang, Chao Bi, Shufan Shen, Jinzhe Liu, Qingming Huang, et al.",
+      "date": "2026-03-17",
+      "url": "https://arxiv.org/abs/2603.16284v1",
+      "abstract": "Despite the significant advancements in Large Vision-Language Models (LVLMs), their tendency to generate hallucinations undermines reliability and restricts broader practical deployment. Among the hallucination mitigation methods, feature steering emerges as a promising approach that reduces erroneous outputs in LVLMs without increasing inference costs. However, current methods apply uniform feature steering across all layers. This heuristic strategy ignores inter-layer differences, potentially ",
+      "tags": [
+        "features",
+        "steering",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2603-15248v1",
       "title": "Mechanistic Foundations of Goal-Directed Control",
@@ -51,6 +94,34 @@
       "tags": [
         "circuits",
         "editing"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-15919v1",
+      "title": "Sparse but not Simpler: A Multi-Level Interpretability Analysis of Vision Transformers",
+      "authors": "Siyu Zhang",
+      "date": "2026-03-16",
+      "url": "https://arxiv.org/abs/2603.15919v1",
+      "abstract": "Sparse neural networks are often hypothesized to be more interpretable than dense models, motivated by findings that weight sparsity can produce compact circuits in language models. However, it remains unclear whether structural sparsity itself leads to improved semantic interpretability. In this work, we systematically evaluate the relationship between weight sparsity and interpretability in Vision Transformers using DeiT-III B/16 models pruned with Wanda. To assess interpretability comprehensi",
+      "tags": [
+        "circuits",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-16017v1",
+      "title": "Understanding Moral Reasoning Trajectories in Large Language Models: Toward Probing-Based Explainability",
+      "authors": "Fan Huang, Haewoon Kwak, Jisun An",
+      "date": "2026-03-16",
+      "url": "https://arxiv.org/abs/2603.16017v1",
+      "abstract": "Large language models (LLMs) increasingly participate in morally sensitive decision-making, yet how they organize ethical frameworks across reasoning steps remains underexplored. We introduce \\textit{moral reasoning trajectories}, sequences of ethical framework invocations across intermediate reasoning steps, and analyze their dynamics across six models and three benchmarks. We find that moral reasoning involves systematic multi-framework deliberation: 55.4--57.7\\% of consecutive steps involve f",
+      "tags": [
+        "probing",
+        "reasoning"
       ],
       "source": "arXiv",
       "featured": false
