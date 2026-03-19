@@ -5,9 +5,23 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Do Language Models Encode Semantic Relations? Probing and Sparse Feature Analysis</title>
+      <link>https://arxiv.org/abs/2603.17624v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Andor Diera, Ansgar Scherp</p><p>Understanding whether large language models (LLMs) capture structured meaning requires examining how they represent concept relationships. In this work, we study three models of increasing scale: Pythia-70M, GPT-2, and Llama 3.1 8B, focusing on four semantic relations: synonymy, antonymy, hypernymy, and hyponymy. We combine linear probing with mechanistic interpretability techniques, including sparse autoencoders (SAE) and activation patching, to identify where these relations are encoded and ho</p><p><strong>Tags:</strong> SAE, features, probing</p>]]></description>
+      <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2603.17624v1</guid>
+    </item>
+    <item>
+      <title>From Drop-off to Recovery: A Mechanistic Analysis of Segmentation in MLLMs</title>
+      <link>https://arxiv.org/abs/2603.17228v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Boyong Wu, Sanghwan Kim, Zeynep Akata</p><p>Multimodal Large Language Models (MLLMs) are increasingly applied to pixel-level vision tasks, yet their intrinsic capacity for spatial understanding remains poorly understood. We investigate segmentation capacity through a layerwise linear probing evaluation across the entire MLLM pipeline: vision encoder, adapter, and LLM. We further conduct an intervention based attention knockout analysis to test whether cross-token attention progressively refines visual representations, and an evaluation of</p><p><strong>Tags:</strong> probing, vision</p>]]></description>
+      <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2603.17228v1</guid>
+    </item>
     <item>
       <title>Capability-Guided Compression: Toward Interpretability-Aware Budget Allocation for Large Language Models</title>
       <link>https://arxiv.org/abs/2603.16440v1</link>
@@ -28,6 +42,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> TianTian Dang, Chao Bi, Shufan Shen, Jinzhe Liu, Qingming Huang, et al.</p><p>Despite the significant advancements in Large Vision-Language Models (LVLMs), their tendency to generate hallucinations undermines reliability and restricts broader practical deployment. Among the hallucination mitigation methods, feature steering emerges as a promising approach that reduces erroneous outputs in LVLMs without increasing inference costs. However, current methods apply uniform feature steering across all layers. This heuristic strategy ignores inter-layer differences, potentially </p><p><strong>Tags:</strong> features, steering, vision</p>]]></description>
       <pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2603.16284v1</guid>
+    </item>
+    <item>
+      <title>LLM-Powered Flood Depth Estimation from Social Media Imagery: A Vision-Language Model Framework with Mechanistic Interpretability for Transportation Resilience</title>
+      <link>https://arxiv.org/abs/2603.17108v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Nafis Fuad, Xiaodong Qian</p><p>Urban flooding poses an escalating threat to transportation network continuity, yet no operational system currently provides real-time, street-level flood depth information at the centimeter resolution required for dynamic routing, electric vehicle (EV) safety, and autonomous vehicle (AV) operations. This study presents FloodLlama, a fine-tuned open-source vision-language model (VLM) for continuous flood depth estimation from single street-level images, supported by a multimodal sensing pipeline</p><p><strong>Tags:</strong> safety, vision</p>]]></description>
+      <pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2603.17108v1</guid>
     </item>
     <item>
       <title>Mechanistic Foundations of Goal-Directed Control</title>
@@ -196,27 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Sripad Karne</p><p>Do the features learned by Sparse Autoencoders (SAEs) represent abstract meaning, or are they tied to how text is written? We investigate this question using Serbian digraphia as a controlled testbed: Serbian is written interchangeably in Latin and Cyrillic scripts with a near-perfect character mapping between them, enabling us to vary orthography while holding meaning exactly constant. Crucially, these scripts are tokenized completely differently, sharing no tokens whatsoever. Analyzing SAE fea</p><p><strong>Tags:</strong> SAE, features, probing</p>]]></description>
       <pubDate>Mon, 09 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2603.08869v1</guid>
-    </item>
-    <item>
-      <title>The Dual-Stream Transformer: Channelized Architecture for Interpretable Language Modeling</title>
-      <link>https://arxiv.org/abs/2603.07461v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> J. Clayton Kerce, Alexis Fox</p><p>Standard transformers entangle all computation in a single residual stream, obscuring which components perform which functions. We introduce the Dual-Stream Transformer, which decomposes the residual stream into two functionally distinct components: a token stream updated by attention and a context stream updated by feed-forward networks. Information flow between attention heads is controlled through a hierarchy of mixing strategies, from fully independent (maximum interpretability) to dense (st</p><p><strong>Tags:</strong> attention</p>]]></description>
-      <pubDate>Sun, 08 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.07461v1</guid>
-    </item>
-    <item>
-      <title>VisualScratchpad: Inference-time Visual Concepts Analysis in Vision Language Models</title>
-      <link>https://arxiv.org/abs/2603.07335v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Hyesu Lim, Jinho Choi, Taekyung Kim, Byeongho Heo, Jaegul Choo, et al.</p><p>High-performing vision language models still produce incorrect answers, yet their failure modes are often difficult to explain. To make model internals more accessible and enable systematic debugging, we introduce VisualScratchpad, an interactive interface for visual concept analysis during inference. We apply sparse autoencoders to the vision encoder and link the resulting visual concepts to text tokens via text-to-image attention, allowing us to examine which visual concepts are both captured </p><p><strong>Tags:</strong> SAE, vision</p>]]></description>
-      <pubDate>Sat, 07 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.07335v1</guid>
-    </item>
-    <item>
-      <title>Learning Concept Bottleneck Models from Mechanistic Explanations</title>
-      <link>https://arxiv.org/abs/2603.07343v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Antonio De Santis, Schrasing Tong, Marco Brambilla, Lalana Kagal</p><p>Concept Bottleneck Models (CBMs) aim for ante-hoc interpretability by learning a bottleneck layer that predicts interpretable concepts before the decision. State-of-the-art approaches typically select which concepts to learn via human specification, open knowledge graphs, prompting an LLM, or using general CLIP concepts. However, concepts defined a-priori may not have sufficient predictive power for the task or even be learnable from the available data. As a result, these CBMs often significantl</p>]]></description>
-      <pubDate>Sat, 07 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.07343v1</guid>
     </item>
   </channel>
 </rss>
