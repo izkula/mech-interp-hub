@@ -1,6 +1,35 @@
 {
-  "lastUpdated": "2026-03-18",
+  "lastUpdated": "2026-03-19",
   "papers": [
+    {
+      "id": "arxiv-2603-17624v1",
+      "title": "Do Language Models Encode Semantic Relations? Probing and Sparse Feature Analysis",
+      "authors": "Andor Diera, Ansgar Scherp",
+      "date": "2026-03-18",
+      "url": "https://arxiv.org/abs/2603.17624v1",
+      "abstract": "Understanding whether large language models (LLMs) capture structured meaning requires examining how they represent concept relationships. In this work, we study three models of increasing scale: Pythia-70M, GPT-2, and Llama 3.1 8B, focusing on four semantic relations: synonymy, antonymy, hypernymy, and hyponymy. We combine linear probing with mechanistic interpretability techniques, including sparse autoencoders (SAE) and activation patching, to identify where these relations are encoded and ho",
+      "tags": [
+        "SAE",
+        "features",
+        "probing"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-17228v1",
+      "title": "From Drop-off to Recovery: A Mechanistic Analysis of Segmentation in MLLMs",
+      "authors": "Boyong Wu, Sanghwan Kim, Zeynep Akata",
+      "date": "2026-03-18",
+      "url": "https://arxiv.org/abs/2603.17228v1",
+      "abstract": "Multimodal Large Language Models (MLLMs) are increasingly applied to pixel-level vision tasks, yet their intrinsic capacity for spatial understanding remains poorly understood. We investigate segmentation capacity through a layerwise linear probing evaluation across the entire MLLM pipeline: vision encoder, adapter, and LLM. We further conduct an intervention based attention knockout analysis to test whether cross-token attention progressively refines visual representations, and an evaluation of",
+      "tags": [
+        "probing",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2603-16440v1",
       "title": "Capability-Guided Compression: Toward Interpretability-Aware Budget Allocation for Large Language Models",
@@ -39,6 +68,20 @@
       "tags": [
         "features",
         "steering",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-17108v1",
+      "title": "LLM-Powered Flood Depth Estimation from Social Media Imagery: A Vision-Language Model Framework with Mechanistic Interpretability for Transportation Resilience",
+      "authors": "Nafis Fuad, Xiaodong Qian",
+      "date": "2026-03-17",
+      "url": "https://arxiv.org/abs/2603.17108v1",
+      "abstract": "Urban flooding poses an escalating threat to transportation network continuity, yet no operational system currently provides real-time, street-level flood depth information at the centimeter resolution required for dynamic routing, electric vehicle (EV) safety, and autonomous vehicle (AV) operations. This study presents FloodLlama, a fine-tuned open-source vision-language model (VLM) for continuous flood depth estimation from single street-level images, supported by a multimodal sensing pipeline",
+      "tags": [
+        "safety",
         "vision"
       ],
       "source": "arXiv",
