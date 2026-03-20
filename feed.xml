@@ -5,9 +5,30 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 20 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Sparse Autoencoders Reveal Interpretable and Steerable Features in VLA Models</title>
+      <link>https://arxiv.org/abs/2603.19183v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Aiden Swann, Lachlain McGranahan, Hugo Buurmeijer, Monroe Kennedy, Mac Schwager</p><p>Vision-Language-Action (VLA) models have emerged as a promising approach for general-purpose robot manipulation. However, their generalization is inconsistent: while these models can perform impressively in some settings, fine-tuned variants often fail on novel objects, scenes, and instructions. We apply mechanistic interpretability techniques to better understand the inner workings of VLA models. To probe internal representations, we train Sparse Autoencoders (SAEs) on hidden layer activations </p><p><strong>Tags:</strong> SAE, features, probing, vision</p>]]></description>
+      <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2603.19183v1</guid>
+    </item>
+    <item>
+      <title>Counting Circuits: Mechanistic Interpretability of Visual Reasoning in Large Vision-Language Models</title>
+      <link>https://arxiv.org/abs/2603.18523v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Liwei Che, Zhiyu Xue, Yihao Quan, Benlin Liu, Zeru Shi, et al.</p><p>Counting serves as a simple but powerful test of a Large Vision-Language Model&#x27;s (LVLM&#x27;s) reasoning; it forces the model to identify each individual object and then add them all up. In this study, we investigate how LVLMs implement counting using controlled synthetic and real-world benchmarks, combined with mechanistic analyses. Our results show that LVLMs display a human-like counting behavior, with precise performance on small numerosities and noisy estimation for larger quantities. We introdu</p><p><strong>Tags:</strong> circuits, vision, reasoning</p>]]></description>
+      <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2603.18523v1</guid>
+    </item>
+    <item>
+      <title>Not All Features Are Created Equal: A Mechanistic Study of Vision-Language-Action Models</title>
+      <link>https://arxiv.org/abs/2603.19233v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Bryce Grant, Xijia Zhao, Peng Wang</p><p>Vision-Language-Action (VLA) models combine perception, language, and motor control in a single architecture, yet how they translate multimodal inputs into actions remains poorly understood. We apply activation injection, sparse autoencoders (SAEs), and linear probes to six models spanning 80M--7B parameters across 394,000+ rollout episodes on four benchmarks. The visual pathway dominates action generation across all architectures: injecting baseline activations into null-prompt episodes recover</p><p><strong>Tags:</strong> SAE, features, probing, vision</p>]]></description>
+      <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2603.19233v1</guid>
+    </item>
     <item>
       <title>Do Language Models Encode Semantic Relations? Probing and Sparse Feature Analysis</title>
       <link>https://arxiv.org/abs/2603.17624v1</link>
@@ -21,6 +42,27 @@
       <description><![CDATA[<p><strong>Authors:</strong> Boyong Wu, Sanghwan Kim, Zeynep Akata</p><p>Multimodal Large Language Models (MLLMs) are increasingly applied to pixel-level vision tasks, yet their intrinsic capacity for spatial understanding remains poorly understood. We investigate segmentation capacity through a layerwise linear probing evaluation across the entire MLLM pipeline: vision encoder, adapter, and LLM. We further conduct an intervention based attention knockout analysis to test whether cross-token attention progressively refines visual representations, and an evaluation of</p><p><strong>Tags:</strong> probing, vision</p>]]></description>
       <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2603.17228v1</guid>
+    </item>
+    <item>
+      <title>Interpretability without actionability: mechanistic methods cannot correct language model errors despite near-perfect internal representations</title>
+      <link>https://arxiv.org/abs/2603.18353v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Sanjay Basu, Sadiq Y. Patel, Parth Sheth, Bhairavi Muralidharan, Namrata Elamaran, et al.</p><p>Language models encode task-relevant knowledge in internal representations that far exceeds their output performance, but whether mechanistic interpretability methods can bridge this knowledge-action gap has not been systematically tested. We compared four mechanistic interpretability methods -- concept bottleneck steering (Steerling-8B), sparse autoencoder feature steering, logit lens with activation patching, and linear probing with truthfulness separator vector steering (Qwen 2.5 7B Instruct)</p><p><strong>Tags:</strong> SAE, features, probing, steering</p>]]></description>
+      <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2603.18353v1</guid>
+    </item>
+    <item>
+      <title>Fundamental Limits of Neural Network Sparsification: Evidence from Catastrophic Interpretability Collapse</title>
+      <link>https://arxiv.org/abs/2603.18056v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Dip Roy, Rajiv Misra, Sanjay Kumar Singh</p><p>Extreme neural network sparsification (90% activation reduction) presents a critical challenge for mechanistic interpretability: understanding whether interpretable features survive aggressive compression. This work investigates feature survival under severe capacity constraints in hybrid Variational Autoencoder--Sparse Autoencoder (VAE-SAE) architectures. We introduce an adaptive sparsity scheduling framework that progressively reduces active neurons from 500 to 50 over 50 training epochs, and </p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2603.18056v1</guid>
+    </item>
+    <item>
+      <title>Towards Interpretable Framework for Neural Audio Codecs via Sparse Autoencoders: A Case Study on Accent Information</title>
+      <link>https://arxiv.org/abs/2603.18359v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Shih-Heng Wang, Tiantian Feng, Aditya Kommineni, Thanathai Lertpetchpun, Bowen Yi, et al.</p><p>Neural Audio Codecs (NACs) are widely adopted in modern speech systems, yet how they encode linguistic and paralinguistic information remains unclear. Improving the interpretability of NAC representations is critical for understanding and deploying them in sensitive applications. Hence, we employ Sparse Autoencoders (SAEs) to decompose dense NAC representations into sparse, interpretable activations. In this work, we focus on a challenging paralinguistic attribute-accent-and propose a framework </p><p><strong>Tags:</strong> SAE</p>]]></description>
+      <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2603.18359v1</guid>
     </item>
     <item>
       <title>Capability-Guided Compression: Toward Interpretability-Aware Budget Allocation for Large Language Models</title>
@@ -175,48 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Md Muntaqim Meherab, Noor Islam S. Mohammad, Faiza Feroz</p><p>Sparse autoencoders can localize where concepts live in language models, but not how they interact during multi-step reasoning. We propose Causal Concept Graphs (CCG): a directed acyclic graph over sparse, interpretable latent features, where edges capture learned causal dependencies between concepts. We combine task-conditioned sparse autoencoders for concept discovery with DAGMA-style differentiable structure learning for graph recovery and introduce the Causal Fidelity Score (CFS) to evaluate</p><p><strong>Tags:</strong> SAE, features, reasoning</p>]]></description>
       <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2603.10377v1</guid>
-    </item>
-    <item>
-      <title>Attention Gathers, MLPs Compose: A Causal Analysis of an Action-Outcome Circuit in VideoViT</title>
-      <link>https://arxiv.org/abs/2603.11142v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Sai V R Chereddy</p><p>The paper explores how video models trained for classification tasks represent nuanced, hidden semantic information that may not affect the final outcome, a key challenge for Trustworthy AI models. Through Explainable and Interpretable AI methods, specifically mechanistic interpretability techniques, the internal circuit responsible for representing the action&#x27;s outcome is reverse-engineered in a pre-trained video vision transformer, revealing that the &quot;Success vs Failure&quot; signal is computed thr</p><p><strong>Tags:</strong> circuits, vision</p>]]></description>
-      <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.11142v1</guid>
-    </item>
-    <item>
-      <title>From Data Statistics to Feature Geometry: How Correlations Shape Superposition</title>
-      <link>https://arxiv.org/abs/2603.09972v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Lucas Prieto, Edward Stevinson, Melih Barsbey, Tolga Birdal, Pedro A. M. Mediano</p><p>A central idea in mechanistic interpretability is that neural networks represent more features than they have dimensions, arranging them in superposition to form an over-complete basis. This framing has been influential, motivating dictionary learning approaches such as sparse autoencoders. However, superposition has mostly been studied in idealized settings where features are sparse and uncorrelated. In these settings, superposition is typically understood as introducing interference that must </p><p><strong>Tags:</strong> SAE, superposition, features</p>]]></description>
-      <pubDate>Tue, 10 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.09972v1</guid>
-    </item>
-    <item>
-      <title>Discovery of a Hematopoietic Manifold in scGPT Yields a Method for Extracting Performant Algorithms from Biological Foundation Model Internals</title>
-      <link>https://arxiv.org/abs/2603.10261v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Ihor Kendiukhov</p><p>We report the discovery and extraction of a compact hematopoietic algorithm from the single-cell foundation model scGPT, to our knowledge the first biologically useful, competitive algorithm extracted from a foundation model via mechanistic interpretability. We show that scGPT internally encodes a compact hematopoietic manifold with significant developmental branch structure, validated on a strict non-overlap Tabula Sapiens external panel and confirmed via frozen-head zero-shot transfer to an in</p><p><strong>Tags:</strong> biology</p>]]></description>
-      <pubDate>Tue, 10 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.10261v1</guid>
-    </item>
-    <item>
-      <title>Dissecting Chronos: Sparse Autoencoders Reveal Causal Feature Hierarchies in Time Series Foundation Models</title>
-      <link>https://arxiv.org/abs/2603.10071v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Anurag Mishra</p><p>Time series foundation models (TSFMs) are increasingly deployed in high-stakes domains, yet their internal representations remain opaque. We present the first application of sparse autoencoders (SAEs) to a TSFM, training TopK SAEs on activations of Chronos-T5-Large (710M parameters) across six layers. Through 392 single-feature ablation experiments, we establish that every ablated feature produces a positive CRPS degradation, confirming causal relevance. Our analysis reveals a depth-dependent hi</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Tue, 10 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.10071v1</guid>
-    </item>
-    <item>
-      <title>The Struggle Between Continuation and Refusal: A Mechanistic Analysis of the Continuation-Triggered Jailbreak in LLMs</title>
-      <link>https://arxiv.org/abs/2603.08234v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Yonghong Deng, Zhen Yang, Ping Jian, Xinyue Zhang, Zhongbin Guo, et al.</p><p>With the rapid advancement of large language models (LLMs), the safety of LLMs has become a critical concern. Despite significant efforts in safety alignment, current LLMs remain vulnerable to jailbreaking attacks. However, the root causes of such vulnerabilities are still poorly understood, necessitating a rigorous investigation into jailbreak mechanisms across both academic and industrial communities. In this work, we focus on a continuation-triggered jailbreak phenomenon, whereby simply reloc</p><p><strong>Tags:</strong> safety</p>]]></description>
-      <pubDate>Mon, 09 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.08234v1</guid>
-    </item>
-    <item>
-      <title>One Language, Two Scripts: Probing Script-Invariance in LLM Concept Representations</title>
-      <link>https://arxiv.org/abs/2603.08869v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Sripad Karne</p><p>Do the features learned by Sparse Autoencoders (SAEs) represent abstract meaning, or are they tied to how text is written? We investigate this question using Serbian digraphia as a controlled testbed: Serbian is written interchangeably in Latin and Cyrillic scripts with a near-perfect character mapping between them, enabling us to vary orthography while holding meaning exactly constant. Crucially, these scripts are tokenized completely differently, sharing no tokens whatsoever. Analyzing SAE fea</p><p><strong>Tags:</strong> SAE, features, probing</p>]]></description>
-      <pubDate>Mon, 09 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.08869v1</guid>
     </item>
   </channel>
 </rss>
