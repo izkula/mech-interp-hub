@@ -1,6 +1,53 @@
 {
-  "lastUpdated": "2026-03-19",
+  "lastUpdated": "2026-03-20",
   "papers": [
+    {
+      "id": "arxiv-2603-19183v1",
+      "title": "Sparse Autoencoders Reveal Interpretable and Steerable Features in VLA Models",
+      "authors": "Aiden Swann, Lachlain McGranahan, Hugo Buurmeijer, Monroe Kennedy, Mac Schwager",
+      "date": "2026-03-19",
+      "url": "https://arxiv.org/abs/2603.19183v1",
+      "abstract": "Vision-Language-Action (VLA) models have emerged as a promising approach for general-purpose robot manipulation. However, their generalization is inconsistent: while these models can perform impressively in some settings, fine-tuned variants often fail on novel objects, scenes, and instructions. We apply mechanistic interpretability techniques to better understand the inner workings of VLA models. To probe internal representations, we train Sparse Autoencoders (SAEs) on hidden layer activations ",
+      "tags": [
+        "SAE",
+        "features",
+        "probing",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-18523v1",
+      "title": "Counting Circuits: Mechanistic Interpretability of Visual Reasoning in Large Vision-Language Models",
+      "authors": "Liwei Che, Zhiyu Xue, Yihao Quan, Benlin Liu, Zeru Shi, et al.",
+      "date": "2026-03-19",
+      "url": "https://arxiv.org/abs/2603.18523v1",
+      "abstract": "Counting serves as a simple but powerful test of a Large Vision-Language Model's (LVLM's) reasoning; it forces the model to identify each individual object and then add them all up. In this study, we investigate how LVLMs implement counting using controlled synthetic and real-world benchmarks, combined with mechanistic analyses. Our results show that LVLMs display a human-like counting behavior, with precise performance on small numerosities and noisy estimation for larger quantities. We introdu",
+      "tags": [
+        "circuits",
+        "vision",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-19233v1",
+      "title": "Not All Features Are Created Equal: A Mechanistic Study of Vision-Language-Action Models",
+      "authors": "Bryce Grant, Xijia Zhao, Peng Wang",
+      "date": "2026-03-19",
+      "url": "https://arxiv.org/abs/2603.19233v1",
+      "abstract": "Vision-Language-Action (VLA) models combine perception, language, and motor control in a single architecture, yet how they translate multimodal inputs into actions remains poorly understood. We apply activation injection, sparse autoencoders (SAEs), and linear probes to six models spanning 80M--7B parameters across 394,000+ rollout episodes on four benchmarks. The visual pathway dominates action generation across all architectures: injecting baseline activations into null-prompt episodes recover",
+      "tags": [
+        "SAE",
+        "features",
+        "probing",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2603-17624v1",
       "title": "Do Language Models Encode Semantic Relations? Probing and Sparse Feature Analysis",
@@ -26,6 +73,49 @@
       "tags": [
         "probing",
         "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-18353v1",
+      "title": "Interpretability without actionability: mechanistic methods cannot correct language model errors despite near-perfect internal representations",
+      "authors": "Sanjay Basu, Sadiq Y. Patel, Parth Sheth, Bhairavi Muralidharan, Namrata Elamaran, et al.",
+      "date": "2026-03-18",
+      "url": "https://arxiv.org/abs/2603.18353v1",
+      "abstract": "Language models encode task-relevant knowledge in internal representations that far exceeds their output performance, but whether mechanistic interpretability methods can bridge this knowledge-action gap has not been systematically tested. We compared four mechanistic interpretability methods -- concept bottleneck steering (Steerling-8B), sparse autoencoder feature steering, logit lens with activation patching, and linear probing with truthfulness separator vector steering (Qwen 2.5 7B Instruct)",
+      "tags": [
+        "SAE",
+        "features",
+        "probing",
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-18056v1",
+      "title": "Fundamental Limits of Neural Network Sparsification: Evidence from Catastrophic Interpretability Collapse",
+      "authors": "Dip Roy, Rajiv Misra, Sanjay Kumar Singh",
+      "date": "2026-03-18",
+      "url": "https://arxiv.org/abs/2603.18056v1",
+      "abstract": "Extreme neural network sparsification (90% activation reduction) presents a critical challenge for mechanistic interpretability: understanding whether interpretable features survive aggressive compression. This work investigates feature survival under severe capacity constraints in hybrid Variational Autoencoder--Sparse Autoencoder (VAE-SAE) architectures. We introduce an adaptive sparsity scheduling framework that progressively reduces active neurons from 500 to 50 over 50 training epochs, and ",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-18359v1",
+      "title": "Towards Interpretable Framework for Neural Audio Codecs via Sparse Autoencoders: A Case Study on Accent Information",
+      "authors": "Shih-Heng Wang, Tiantian Feng, Aditya Kommineni, Thanathai Lertpetchpun, Bowen Yi, et al.",
+      "date": "2026-03-18",
+      "url": "https://arxiv.org/abs/2603.18359v1",
+      "abstract": "Neural Audio Codecs (NACs) are widely adopted in modern speech systems, yet how they encode linguistic and paralinguistic information remains unclear. Improving the interpretability of NAC representations is critical for understanding and deploying them in sensitive applications. Hence, we employ Sparse Autoencoders (SAEs) to decompose dense NAC representations into sparse, interpretable activations. In this work, we focus on a challenging paralinguistic attribute-accent-and propose a framework ",
+      "tags": [
+        "SAE"
       ],
       "source": "arXiv",
       "featured": false
