@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-20",
+  "lastUpdated": "2026-03-21",
   "papers": [
     {
       "id": "arxiv-2603-19183v1",
@@ -44,6 +44,35 @@
         "features",
         "probing",
         "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-18893v1",
+      "title": "Quantitative Introspection in Language Models: Tracking Internal States Across Conversation",
+      "authors": "Nicolas Martorell",
+      "date": "2026-03-19",
+      "url": "https://arxiv.org/abs/2603.18893v1",
+      "abstract": "Tracking the internal states of large language models across conversations is important for safety, interpretability, and model welfare, yet current methods are limited. Linear probes and other white-box methods compress high-dimensional representations imperfectly and are harder to apply with increasing model size. Taking inspiration from human psychology, where numeric self-report is a widely used tool for tracking internal states, we ask whether LLMs' own numeric self-reports can track probe-",
+      "tags": [
+        "safety",
+        "probing"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-18577v1",
+      "title": "MedForge: Interpretable Medical Deepfake Detection via Forgery-aware Reasoning",
+      "authors": "Zhihui Chen, Kai He, Qingyuan Lei, Bin Pu, Jian Zhang, et al.",
+      "date": "2026-03-19",
+      "url": "https://arxiv.org/abs/2603.18577v1",
+      "abstract": "Text-guided image editors can now manipulate authentic medical scans with high fidelity, enabling lesion implantation/removal that threatens clinical trust and safety. Existing defenses are inadequate for healthcare. Medical detectors are largely black-box, while MLLM-based explainers are typically post-hoc, lack medical expertise, and may hallucinate evidence on ambiguous cases. We present MedForge, a data-and-method solution for pre-hoc, evidence-grounded medical forgery detection. We introduc",
+      "tags": [
+        "safety",
+        "vision",
+        "reasoning"
       ],
       "source": "arXiv",
       "featured": false
@@ -518,6 +547,20 @@
       "abstract": "Standard transformers entangle all computation in a single residual stream, obscuring which components perform which functions. We introduce the Dual-Stream Transformer, which decomposes the residual stream into two functionally distinct components: a token stream updated by attention and a context stream updated by feed-forward networks. Information flow between attention heads is controlled through a hierarchy of mixing strategies, from fully independent (maximum interpretability) to dense (st",
       "tags": [
         "attention"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-18029v1",
+      "title": "Engineering Verifiable Modularity in Transformers via Per-Layer Supervision",
+      "authors": "J. Clayton Kerce",
+      "date": "2026-03-08",
+      "url": "https://arxiv.org/abs/2603.18029v1",
+      "abstract": "Transformers resist surgical control. Ablating an attention head identified as critical for capitalization produces minimal behavioral change because distributed redundancy compensates for damage. This Hydra effect renders interpretability illusory: we may identify components through correlation, but cannot predict or control their causal role. We demonstrate that architectural interventions can expose hidden modularity. Our approach combines dual-stream processing separating token and contextua",
+      "tags": [
+        "attention",
+        "vision"
       ],
       "source": "arXiv",
       "featured": false
