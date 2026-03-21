@@ -5,7 +5,7 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 21 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
@@ -28,6 +28,20 @@
       <description><![CDATA[<p><strong>Authors:</strong> Bryce Grant, Xijia Zhao, Peng Wang</p><p>Vision-Language-Action (VLA) models combine perception, language, and motor control in a single architecture, yet how they translate multimodal inputs into actions remains poorly understood. We apply activation injection, sparse autoencoders (SAEs), and linear probes to six models spanning 80M--7B parameters across 394,000+ rollout episodes on four benchmarks. The visual pathway dominates action generation across all architectures: injecting baseline activations into null-prompt episodes recover</p><p><strong>Tags:</strong> SAE, features, probing, vision</p>]]></description>
       <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2603.19233v1</guid>
+    </item>
+    <item>
+      <title>Quantitative Introspection in Language Models: Tracking Internal States Across Conversation</title>
+      <link>https://arxiv.org/abs/2603.18893v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Nicolas Martorell</p><p>Tracking the internal states of large language models across conversations is important for safety, interpretability, and model welfare, yet current methods are limited. Linear probes and other white-box methods compress high-dimensional representations imperfectly and are harder to apply with increasing model size. Taking inspiration from human psychology, where numeric self-report is a widely used tool for tracking internal states, we ask whether LLMs&#x27; own numeric self-reports can track probe-</p><p><strong>Tags:</strong> safety, probing</p>]]></description>
+      <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2603.18893v1</guid>
+    </item>
+    <item>
+      <title>MedForge: Interpretable Medical Deepfake Detection via Forgery-aware Reasoning</title>
+      <link>https://arxiv.org/abs/2603.18577v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Zhihui Chen, Kai He, Qingyuan Lei, Bin Pu, Jian Zhang, et al.</p><p>Text-guided image editors can now manipulate authentic medical scans with high fidelity, enabling lesion implantation/removal that threatens clinical trust and safety. Existing defenses are inadequate for healthcare. Medical detectors are largely black-box, while MLLM-based explainers are typically post-hoc, lack medical expertise, and may hallucinate evidence on ambiguous cases. We present MedForge, a data-and-method solution for pre-hoc, evidence-grounded medical forgery detection. We introduc</p><p><strong>Tags:</strong> safety, vision, reasoning</p>]]></description>
+      <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2603.18577v1</guid>
     </item>
     <item>
       <title>Do Language Models Encode Semantic Relations? Probing and Sparse Feature Analysis</title>
@@ -203,20 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Zhipeng Yang, Shu Yang, Lijie Hu, Di Wang</p><p>Large language models (LLMs) trained with canonical tokenization exhibit surprising robustness to non-canonical inputs such as character-level tokenization, yet the mechanisms underlying this robustness remain unclear. We study this phenomenon through mechanistic interpretability and identify a core process we term word recovery. We first introduce a decoding-based method to detect word recovery, showing that hidden states reconstruct canonical word-level token identities from character-level in</p>]]></description>
       <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2603.10771v1</guid>
-    </item>
-    <item>
-      <title>Implicit Statistical Inference in Transformers: Approximating Likelihood-Ratio Tests In-Context</title>
-      <link>https://arxiv.org/abs/2603.10573v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Faris Chaudhry, Siddhant Gadkari</p><p>In-context learning (ICL) allows Transformers to adapt to novel tasks without weight updates, yet the underlying algorithms remain poorly understood. We adopt a statistical decision-theoretic perspective by investigating simple binary hypothesis testing, where the optimal policy is determined by the likelihood-ratio test. Notably, this setup provides a mathematically rigorous setting for mechanistic interpretability where the target algorithmic ground truth is known. By training Transformers on </p>]]></description>
-      <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.10573v1</guid>
-    </item>
-    <item>
-      <title>Causal Concept Graphs in LLM Latent Space for Stepwise Reasoning</title>
-      <link>https://arxiv.org/abs/2603.10377v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Md Muntaqim Meherab, Noor Islam S. Mohammad, Faiza Feroz</p><p>Sparse autoencoders can localize where concepts live in language models, but not how they interact during multi-step reasoning. We propose Causal Concept Graphs (CCG): a directed acyclic graph over sparse, interpretable latent features, where edges capture learned causal dependencies between concepts. We combine task-conditioned sparse autoencoders for concept discovery with DAGMA-style differentiable structure learning for graph recovery and introduce the Causal Fidelity Score (CFS) to evaluate</p><p><strong>Tags:</strong> SAE, features, reasoning</p>]]></description>
-      <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.10377v1</guid>
     </item>
   </channel>
 </rss>
