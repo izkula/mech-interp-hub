@@ -5,9 +5,23 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 22 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>A Unified Phase-native Computational Principle Governs Hippocampal Spike Timing and Neural Coding</title>
+      <link>https://arxiv.org/abs/2603.19690v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Reza Ahmadvand, Sara Safura Sharif, Yaser Mike Banad</p><p>Hippocampal neurons exhibit precise phase locking to network oscillations, but the computational principle governing this temporal precision is still unclear. Neural information is conveyed jointly by firing rates and spike timing, but existing models treat these dimensions separately, limiting mechanistic interpretation of spike-field coupling and its reported association with spectral features such as the aperiodic slope. Here we show that hippocampal phase locking emerges from a fundamental d</p><p><strong>Tags:</strong> features</p>]]></description>
+      <pubDate>Fri, 20 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2603.19690v1</guid>
+    </item>
+    <item>
+      <title>Accurate Open-Loop Control of a Soft Continuum Robot Through Visually Learned Latent Representations</title>
+      <link>https://arxiv.org/abs/2603.19655v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Henrik Krauss, Johann Licher, Naoya Takeishi, Annika Raatz, Takehisa Yairi</p><p>This work addresses open-loop control of a soft continuum robot (SCR) from video-learned latent dynamics. Visual Oscillator Networks (VONs) from previous work are used, that provide mechanistically interpretable 2D oscillator latents through an attention broadcast decoder (ABCD). Open-loop, single-shooting optimal control is performed in latent space to track image-specified waypoints without camera feedback. An interactive SCR live simulator enables design of static, dynamic, and extrapolated t</p><p><strong>Tags:</strong> vision</p>]]></description>
+      <pubDate>Fri, 20 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2603.19655v1</guid>
+    </item>
     <item>
       <title>Sparse Autoencoders Reveal Interpretable and Steerable Features in VLA Models</title>
       <link>https://arxiv.org/abs/2603.19183v1</link>
@@ -107,6 +121,13 @@
       <guid>https://arxiv.org/abs/2603.17108v1</guid>
     </item>
     <item>
+      <title>Target Concept Tuning Improves Extreme Weather Forecasting</title>
+      <link>https://arxiv.org/abs/2603.19325v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Shijie Ren, Xinyue Gu, Ziheng Peng, Haifan Zhang, Peisong Niu, et al.</p><p>Deep learning models for meteorological forecasting often fail in rare but high-impact events such as typhoons, where relevant data is scarce. Existing fine-tuning methods typically face a trade-off between overlooking these extreme events and overfitting them at the expense of overall performance. We propose TaCT, an interpretable concept-gated fine-tuning framework that solves the aforementioned issue by selective model improvement: models are adapted specifically for failure cases while prese</p>]]></description>
+      <pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2603.19325v1</guid>
+    </item>
+    <item>
       <title>Mechanistic Foundations of Goal-Directed Control</title>
       <link>https://arxiv.org/abs/2603.15248v1</link>
       <description><![CDATA[<p><strong>Authors:</strong> Alma Lago</p><p>Mechanistic interpretability has transformed the analysis of transformer circuits by decomposing model behavior into competing algorithms, identifying phase transitions during training, and deriving closed-form predictions for when and why strategies shift. However, this program has remained largely confined to sequence-prediction architectures, leaving embodied control systems without comparable mechanistic accounts. Here we extend this framework to sensorimotor-cognitive development, using inf</p><p><strong>Tags:</strong> circuits</p>]]></description>
@@ -196,27 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Ihor Kendiukhov</p><p>Mechanistic interpretability of biological foundation models has relied on selective feature sampling, pairwise interaction testing, and observational trajectory analysis. Each of these can introduce systematic bias. Here we present three experiments that address these limitations through exhaustive circuit tracing, higher order combinatorial ablation, and causal trajectory steering in Geneformer, a transformer based single cell foundation model. First, exhaustive tracing of all 4065 active spar</p><p><strong>Tags:</strong> circuits, features, steering, biology</p>]]></description>
       <pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2603.11940v1</guid>
-    </item>
-    <item>
-      <title>Locating Demographic Bias at the Attention-Head Level in CLIP&#x27;s Vision Encoder</title>
-      <link>https://arxiv.org/abs/2603.11793v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Alaa Yasser, Kittipat Phunjanna, Marcos Escudero Viñolo, Catarina Barata, Jenny Benois-Pineau</p><p>Standard fairness audits of foundation models quantify that a model is biased, but not where inside the network the bias resides. We propose a mechanistic fairness audit that combines projected residual-stream decomposition, zero-shot Concept Activation Vectors, and bias-augmented TextSpan analysis to locate demographic bias at the level of individual attention heads in vision transformers. As a feasibility case study, we apply this pipeline to the CLIP ViT-L-14 encoder on 42 profession classes </p><p><strong>Tags:</strong> attention, vision</p>]]></description>
-      <pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.11793v1</guid>
-    </item>
-    <item>
-      <title>OrthoEraser: Coupled-Neuron Orthogonal Projection for Concept Erasure</title>
-      <link>https://arxiv.org/abs/2603.11493v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Chuancheng Shi, Wenhua Wu, Fei Shen, Xiaogang Zhu, Kun Hu, et al.</p><p>Text-to-image (T2I) models face significant safety risks from adversarial induction, yet current concept erasure methods often cause collateral damage to benign attributes when suppressing selected neurons entirely. This occurs because sensitive and benign semantics exhibit non-orthogonal superposition, sharing activation subspaces where their respective vectors are inherently entangled. To address this issue, we propose OrthoEraser, which leverages sparse autoencoders (SAE) to achieve high-reso</p><p><strong>Tags:</strong> SAE, superposition, safety, vision</p>]]></description>
-      <pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.11493v1</guid>
-    </item>
-    <item>
-      <title>Word Recovery in Large Language Models Enables Character-Level Tokenization Robustness</title>
-      <link>https://arxiv.org/abs/2603.10771v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Zhipeng Yang, Shu Yang, Lijie Hu, Di Wang</p><p>Large language models (LLMs) trained with canonical tokenization exhibit surprising robustness to non-canonical inputs such as character-level tokenization, yet the mechanisms underlying this robustness remain unclear. We study this phenomenon through mechanistic interpretability and identify a core process we term word recovery. We first introduce a decoding-based method to detect word recovery, showing that hidden states reconstruct canonical word-level token identities from character-level in</p>]]></description>
-      <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.10771v1</guid>
     </item>
   </channel>
 </rss>
