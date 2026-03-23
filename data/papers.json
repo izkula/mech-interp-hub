@@ -1,6 +1,32 @@
 {
-  "lastUpdated": "2026-03-22",
+  "lastUpdated": "2026-03-23",
   "papers": [
+    {
+      "id": "arxiv-2603-19690v1",
+      "title": "A Unified Phase-native Computational Principle Governs Hippocampal Spike Timing and Neural Coding",
+      "authors": "Reza Ahmadvand, Sara Safura Sharif, Yaser Mike Banad",
+      "date": "2026-03-20",
+      "url": "https://arxiv.org/abs/2603.19690v1",
+      "abstract": "Hippocampal neurons exhibit precise phase locking to network oscillations, but the computational principle governing this temporal precision is still unclear. Neural information is conveyed jointly by firing rates and spike timing, but existing models treat these dimensions separately, limiting mechanistic interpretation of spike-field coupling and its reported association with spectral features such as the aperiodic slope. Here we show that hippocampal phase locking emerges from a fundamental d",
+      "tags": [
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-19655v1",
+      "title": "Accurate Open-Loop Control of a Soft Continuum Robot Through Visually Learned Latent Representations",
+      "authors": "Henrik Krauss, Johann Licher, Naoya Takeishi, Annika Raatz, Takehisa Yairi",
+      "date": "2026-03-20",
+      "url": "https://arxiv.org/abs/2603.19655v1",
+      "abstract": "This work addresses open-loop control of a soft continuum robot (SCR) from video-learned latent dynamics. Visual Oscillator Networks (VONs) from previous work are used, that provide mechanistically interpretable 2D oscillator latents through an attention broadcast decoder (ABCD). Open-loop, single-shooting optimal control is performed in latent space to track image-specified waypoints without camera feedback. An interactive SCR live simulator enables design of static, dynamic, and extrapolated t",
+      "tags": [
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2603-19183v1",
       "title": "Sparse Autoencoders Reveal Interpretable and Steerable Features in VLA Models",
@@ -203,6 +229,17 @@
         "safety",
         "vision"
       ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-19325v1",
+      "title": "Target Concept Tuning Improves Extreme Weather Forecasting",
+      "authors": "Shijie Ren, Xinyue Gu, Ziheng Peng, Haifan Zhang, Peisong Niu, et al.",
+      "date": "2026-03-17",
+      "url": "https://arxiv.org/abs/2603.19325v1",
+      "abstract": "Deep learning models for meteorological forecasting often fail in rare but high-impact events such as typhoons, where relevant data is scarce. Existing fine-tuning methods typically face a trade-off between overlooking these extreme events and overfitting them at the expense of overall performance. We propose TaCT, an interpretable concept-gated fine-tuning framework that solves the aforementioned issue by selective model improvement: models are adapted specifically for failure cases while prese",
+      "tags": [],
       "source": "arXiv",
       "featured": false
     },
