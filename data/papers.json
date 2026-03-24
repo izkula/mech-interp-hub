@@ -1,6 +1,117 @@
 {
-  "lastUpdated": "2026-03-23",
+  "lastUpdated": "2026-03-24",
   "papers": [
+    {
+      "id": "arxiv-2603-21461v1",
+      "title": "DSPA: Dynamic SAE Steering for Data-Efficient Preference Alignment",
+      "authors": "James Wedgwood, Aashiq Muhamed, Mona T. Diab, Virginia Smith",
+      "date": "2026-03-23",
+      "url": "https://arxiv.org/abs/2603.21461v1",
+      "abstract": "Preference alignment is usually achieved by weight-updating training on preference data, which adds substantial alignment-stage compute and provides limited mechanistic visibility. We propose Dynamic SAE Steering for Preference Alignment (DSPA), an inference-time method that makes sparse autoencoder (SAE) steering prompt-conditional. From preference triples, DSPA computes a conditional-difference map linking prompt features to generation-control features; during decoding, it modifies only token-",
+      "tags": [
+        "SAE",
+        "features",
+        "safety",
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-21847v1",
+      "title": "Riding Brainwaves in LLM Space: Understanding Activation Patterns Using Individual Neural Signatures",
+      "authors": "Ajan Subramanian, Sumukh Bettadapura, Rohan Sathish",
+      "date": "2026-03-23",
+      "url": "https://arxiv.org/abs/2603.21847v1",
+      "abstract": "Consumer-grade EEG is entering everyday devices, from earbuds to headbands, raising the question of whether language models can be adapted to individual neural responses. We test this by asking whether frozen LLM representations encode person-specific EEG signals, directions in activation space that predict one person's brain activity but not another's. Using word-level EEG from 30 participants reading naturalistic sentences (ZuCo corpus), we train a separate linear probe for each person, mappin",
+      "tags": [
+        "probing"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-21546v1",
+      "title": "What Do World Models Learn in RL? Probing Latent Representations in Learned Environment Simulators",
+      "authors": "Xinyu Zhang",
+      "date": "2026-03-23",
+      "url": "https://arxiv.org/abs/2603.21546v1",
+      "abstract": "World models learn to simulate environment dynamics from experience, enabling sample-efficient reinforcement learning. But what do these models actually represent internally? We apply interpretability techniques--including linear and nonlinear probing, causal interventions, and attention analysis--to two architecturally distinct world models: IRIS (discrete token transformer) and DIAMOND (continuous diffusion UNet), trained on Atari Breakout and Pong. Using linear probes, we find that both model",
+      "tags": [
+        "probing"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-21236v1",
+      "title": "Does Mechanistic Interpretability Transfer Across Data Modalities? A Cross-Domain Causal Circuit Analysis of Variational Autoencoders",
+      "authors": "Dip Roy, Rajiv Misra, Sanjay Kumar Singh, Anisha Roy",
+      "date": "2026-03-22",
+      "url": "https://arxiv.org/abs/2603.21236v1",
+      "abstract": "Although mechanism-based interpretability has generated an abundance of insight for discriminative network analysis, generative models are less understood -- particularly outside of image-related applications. We investigate how much of the causal circuitry found within image-related variational autoencoders (VAEs) will generalize to tabular data, as VAEs are increasingly used for imputation, anomaly detection, and synthetic data generation. In addition to extending a four-level causal intervent",
+      "tags": [
+        "circuits",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-21014v1",
+      "title": "CLT-Forge: A Scalable Library for Cross-Layer Transcoders and Attribution Graphs",
+      "authors": "Florent Draye, Abir Harrasse, Vedant Palit, Tung-Yu Wu, Jiarui Liu, et al.",
+      "date": "2026-03-22",
+      "url": "https://arxiv.org/abs/2603.21014v1",
+      "abstract": "Mechanistic interpretability seeks to understand how Large Language Models (LLMs) represent and process information. Recent approaches based on dictionary learning and transcoders enable representing model computation in terms of sparse, interpretable features and their interactions, giving rise to feature attribution graphs. However, these graphs are often large and redundant, limiting their interpretability in practice. Cross-Layer Transcoders (CLTs) address this issue by sharing features acro",
+      "tags": [
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-20987v1",
+      "title": "Interpreting the Synchronization Gap: The Hidden Mechanism Inside Diffusion Transformers",
+      "authors": "Emil Albrychiewicz, Andr\u00e9s Franco Valiente, Li-Ching Chen, Viola Zixin Zhao",
+      "date": "2026-03-22",
+      "url": "https://arxiv.org/abs/2603.20987v1",
+      "abstract": "Recent theoretical models of diffusion processes, conceptualized as coupled Ornstein-Uhlenbeck systems, predict a hierarchy of interaction timescales, and consequently, the existence of a synchronization gap between modes that commit at different stages of the reverse process. However, because these predictions rely on continuous time and analytically tractable score functions, it remains unclear how this phenomenology manifests in the deep, discrete architectures deployed in practice. In this w",
+      "tags": [
+        "theory"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-20662v1",
+      "title": "Attention in Space: Functional Roles of VLM Heads for Spatial Reasoning",
+      "authors": "Xueqi Ma, Shuo Yang, Yanbei Jiang, Shu Liu, Zhenzhen Liu, et al.",
+      "date": "2026-03-21",
+      "url": "https://arxiv.org/abs/2603.20662v1",
+      "abstract": "Despite remarkable advances in large Vision-Language Models (VLMs), spatial reasoning remains a persistent challenge. In this work, we investigate how attention heads within VLMs contribute to spatial reasoning by analyzing their functional roles through a mechanistic interpretability lens. We introduce CogVSR, a dataset that decomposes complex spatial reasoning questions into step-by-step subquestions designed to simulate human-like reasoning via a chain-of-thought paradigm, with each subquesti",
+      "tags": [
+        "attention",
+        "vision",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-20795v1",
+      "title": "The Anatomy of an Edit: Mechanism-Guided Activation Steering for Knowledge Editing",
+      "authors": "Yuan Cao, Mingyang Wang, Hinrich Sch\u00fctze",
+      "date": "2026-03-21",
+      "url": "https://arxiv.org/abs/2603.20795v1",
+      "abstract": "Large language models (LLMs) are increasingly used as knowledge bases, but keeping them up to date requires targeted knowledge editing (KE). However, it remains unclear how edits are implemented inside the model once applied. In this work, we take a mechanistic view of KE using neuron-level knowledge attribution (NLKA). Unlike prior work that focuses on pre-edit causal tracing and localization, we use post-edit attribution -- contrasting successful and failed edits -- to isolate the computations",
+      "tags": [
+        "steering",
+        "editing"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2603-19690v1",
       "title": "A Unified Phase-native Computational Principle Governs Hippocampal Spike Timing and Neural Coding",
@@ -21,6 +132,19 @@
       "date": "2026-03-20",
       "url": "https://arxiv.org/abs/2603.19655v1",
       "abstract": "This work addresses open-loop control of a soft continuum robot (SCR) from video-learned latent dynamics. Visual Oscillator Networks (VONs) from previous work are used, that provide mechanistically interpretable 2D oscillator latents through an attention broadcast decoder (ABCD). Open-loop, single-shooting optimal control is performed in latent space to track image-specified waypoints without camera feedback. An interactive SCR live simulator enables design of static, dynamic, and extrapolated t",
+      "tags": [
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-20554v1",
+      "title": "When Negation Is a Geometry Problem in Vision-Language Models",
+      "authors": "Fawaz Sammani, Tzoulio Chamiti, Paul Gavrikov, Nikos Deligiannis",
+      "date": "2026-03-20",
+      "url": "https://arxiv.org/abs/2603.20554v1",
+      "abstract": "Joint Vision-Language Embedding models such as CLIP typically fail at understanding negation in text queries - for example, failing to distinguish \"no\" in the query: \"a plain blue shirt with no logos\". Prior work has largely addressed this limitation through data-centric approaches, fine-tuning CLIP on large-scale synthetic negation datasets. However, these efforts are commonly evaluated using retrieval-based metrics that cannot reliably reflect whether negation is actually understood. In this p",
       "tags": [
         "vision"
       ],
