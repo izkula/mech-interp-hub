@@ -1,6 +1,48 @@
 {
-  "lastUpdated": "2026-03-24",
+  "lastUpdated": "2026-03-25",
   "papers": [
+    {
+      "id": "arxiv-2603-23301v1",
+      "title": "Steering LLMs for Culturally Localized Generation",
+      "authors": "Simran Khanuja, Hongbin Liu, Shujian Zhang, John Lambert, Mingqing Chen, et al.",
+      "date": "2026-03-24",
+      "url": "https://arxiv.org/abs/2603.23301v1",
+      "abstract": "LLMs are deployed globally, yet produce responses biased towards cultures with abundant training data. Existing cultural localization approaches such as prompting or post-training alignment are black-box, hard to control, and do not reveal whether failures reflect missing knowledge or poor elicitation. In this paper, we address these gaps using mechanistic interpretability to uncover and manipulate cultural representations in LLMs. Leveraging sparse autoencoders, we identify interpretable featur",
+      "tags": [
+        "SAE",
+        "safety",
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-23268v1",
+      "title": "SafeSeek: Universal Attribution of Safety Circuits in Language Models",
+      "authors": "Miao Yu, Siyuan Fu, Moayad Aloqaily, Zhenhong Zhou, Safa Otoum, et al.",
+      "date": "2026-03-24",
+      "url": "https://arxiv.org/abs/2603.23268v1",
+      "abstract": "Mechanistic interpretability reveals that safety-critical behaviors (e.g., alignment, jailbreak, backdoor) in Large Language Models (LLMs) are grounded in specialized functional components. However, existing safety attribution methods struggle with generalization and reliability due to their reliance on heuristic, domain-specific metrics and search algorithms. To address this, we propose \\ourmethod, a unified safety interpretability framework that identifies functionally complete safety circuits",
+      "tags": [
+        "circuits",
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-22768v1",
+      "title": "From Pixels to Semantics: A Multi-Stage AI Framework for Structural Damage Detection in Satellite Imagery",
+      "authors": "Bijay Shakya, Catherine Hoier, Khandaker Mamun Ahmed",
+      "date": "2026-03-24",
+      "url": "https://arxiv.org/abs/2603.22768v1",
+      "abstract": "Rapid and accurate structural damage assessment following natural disasters is critical for effective emergency response and recovery. However, remote sensing imagery often suffers from low spatial resolution, contextual ambiguity, and limited semantic interpretability, reducing the reliability of traditional detection pipelines. In this work, we propose a novel hybrid framework that integrates AI-based super-resolution, deep learning object detection, and Vision-Language Models (VLMs) for compr",
+      "tags": [
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2603-21461v1",
       "title": "DSPA: Dynamic SAE Steering for Data-Efficient Preference Alignment",
@@ -39,6 +81,22 @@
       "abstract": "World models learn to simulate environment dynamics from experience, enabling sample-efficient reinforcement learning. But what do these models actually represent internally? We apply interpretability techniques--including linear and nonlinear probing, causal interventions, and attention analysis--to two architecturally distinct world models: IRIS (discrete token transformer) and DIAMOND (continuous diffusion UNet), trained on Atari Breakout and Pong. Using linear probes, we find that both model",
       "tags": [
         "probing"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-22593v1",
+      "title": "Language Models Can Explain Visual Features via Steering",
+      "authors": "Javier Ferrando, Enrique Lopez-Cuena, Pablo Agustin Martin-Torres, Daniel Hinjos, Anna Arias-Duart, et al.",
+      "date": "2026-03-23",
+      "url": "https://arxiv.org/abs/2603.22593v1",
+      "abstract": "Sparse Autoencoders uncover thousands of features in vision models, yet explaining these features without requiring human intervention remains an open challenge. While previous work has proposed generating correlation-based explanations based on top activating input examples, we present a fundamentally different alternative based on causal interventions. We leverage the structure of Vision-Language Models and steer individual SAE features in the vision encoder after providing an empty image. The",
+      "tags": [
+        "SAE",
+        "features",
+        "steering",
+        "vision"
       ],
       "source": "arXiv",
       "featured": false
@@ -472,6 +530,19 @@
       "tags": [
         "safety",
         "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-22295v1",
+      "title": "Whether, Not Which: Mechanistic Interpretability Reveals Dissociable Affect Reception and Emotion Categorization in LLMs",
+      "authors": "Michael Keeman",
+      "date": "2026-03-15",
+      "url": "https://arxiv.org/abs/2603.22295v1",
+      "abstract": "Large language models appear to develop internal representations of emotion -- \"emotion circuits,\" \"emotion neurons,\" and structured emotional manifolds have been reported across multiple model families. But every study making these claims uses stimuli signalled by explicit emotion keywords, leaving a fundamental question unanswered: do these circuits detect genuine emotional meaning, or do they detect the word \"devastated\"? We present the first clinical validity test of emotion circuit claims u",
+      "tags": [
+        "circuits"
       ],
       "source": "arXiv",
       "featured": false
