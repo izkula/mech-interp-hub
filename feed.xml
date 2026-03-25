@@ -5,9 +5,30 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Steering LLMs for Culturally Localized Generation</title>
+      <link>https://arxiv.org/abs/2603.23301v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Simran Khanuja, Hongbin Liu, Shujian Zhang, John Lambert, Mingqing Chen, et al.</p><p>LLMs are deployed globally, yet produce responses biased towards cultures with abundant training data. Existing cultural localization approaches such as prompting or post-training alignment are black-box, hard to control, and do not reveal whether failures reflect missing knowledge or poor elicitation. In this paper, we address these gaps using mechanistic interpretability to uncover and manipulate cultural representations in LLMs. Leveraging sparse autoencoders, we identify interpretable featur</p><p><strong>Tags:</strong> SAE, safety, steering</p>]]></description>
+      <pubDate>Tue, 24 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2603.23301v1</guid>
+    </item>
+    <item>
+      <title>SafeSeek: Universal Attribution of Safety Circuits in Language Models</title>
+      <link>https://arxiv.org/abs/2603.23268v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Miao Yu, Siyuan Fu, Moayad Aloqaily, Zhenhong Zhou, Safa Otoum, et al.</p><p>Mechanistic interpretability reveals that safety-critical behaviors (e.g., alignment, jailbreak, backdoor) in Large Language Models (LLMs) are grounded in specialized functional components. However, existing safety attribution methods struggle with generalization and reliability due to their reliance on heuristic, domain-specific metrics and search algorithms. To address this, we propose \ourmethod, a unified safety interpretability framework that identifies functionally complete safety circuits</p><p><strong>Tags:</strong> circuits, safety</p>]]></description>
+      <pubDate>Tue, 24 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2603.23268v1</guid>
+    </item>
+    <item>
+      <title>From Pixels to Semantics: A Multi-Stage AI Framework for Structural Damage Detection in Satellite Imagery</title>
+      <link>https://arxiv.org/abs/2603.22768v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Bijay Shakya, Catherine Hoier, Khandaker Mamun Ahmed</p><p>Rapid and accurate structural damage assessment following natural disasters is critical for effective emergency response and recovery. However, remote sensing imagery often suffers from low spatial resolution, contextual ambiguity, and limited semantic interpretability, reducing the reliability of traditional detection pipelines. In this work, we propose a novel hybrid framework that integrates AI-based super-resolution, deep learning object detection, and Vision-Language Models (VLMs) for compr</p><p><strong>Tags:</strong> vision</p>]]></description>
+      <pubDate>Tue, 24 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2603.22768v1</guid>
+    </item>
     <item>
       <title>DSPA: Dynamic SAE Steering for Data-Efficient Preference Alignment</title>
       <link>https://arxiv.org/abs/2603.21461v1</link>
@@ -28,6 +49,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Xinyu Zhang</p><p>World models learn to simulate environment dynamics from experience, enabling sample-efficient reinforcement learning. But what do these models actually represent internally? We apply interpretability techniques--including linear and nonlinear probing, causal interventions, and attention analysis--to two architecturally distinct world models: IRIS (discrete token transformer) and DIAMOND (continuous diffusion UNet), trained on Atari Breakout and Pong. Using linear probes, we find that both model</p><p><strong>Tags:</strong> probing</p>]]></description>
       <pubDate>Mon, 23 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2603.21546v1</guid>
+    </item>
+    <item>
+      <title>Language Models Can Explain Visual Features via Steering</title>
+      <link>https://arxiv.org/abs/2603.22593v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Javier Ferrando, Enrique Lopez-Cuena, Pablo Agustin Martin-Torres, Daniel Hinjos, Anna Arias-Duart, et al.</p><p>Sparse Autoencoders uncover thousands of features in vision models, yet explaining these features without requiring human intervention remains an open challenge. While previous work has proposed generating correlation-based explanations based on top activating input examples, we present a fundamentally different alternative based on causal interventions. We leverage the structure of Vision-Language Models and steer individual SAE features in the vision encoder after providing an empty image. The</p><p><strong>Tags:</strong> SAE, features, steering, vision</p>]]></description>
+      <pubDate>Mon, 23 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2603.22593v1</guid>
     </item>
     <item>
       <title>Does Mechanistic Interpretability Transfer Across Data Modalities? A Cross-Domain Causal Circuit Analysis of Variational Autoencoders</title>
@@ -189,34 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Shijie Ren, Xinyue Gu, Ziheng Peng, Haifan Zhang, Peisong Niu, et al.</p><p>Deep learning models for meteorological forecasting often fail in rare but high-impact events such as typhoons, where relevant data is scarce. Existing fine-tuning methods typically face a trade-off between overlooking these extreme events and overfitting them at the expense of overall performance. We propose TaCT, an interpretable concept-gated fine-tuning framework that solves the aforementioned issue by selective model improvement: models are adapted specifically for failure cases while prese</p>]]></description>
       <pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2603.19325v1</guid>
-    </item>
-    <item>
-      <title>Mechanistic Foundations of Goal-Directed Control</title>
-      <link>https://arxiv.org/abs/2603.15248v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Alma Lago</p><p>Mechanistic interpretability has transformed the analysis of transformer circuits by decomposing model behavior into competing algorithms, identifying phase transitions during training, and deriving closed-form predictions for when and why strategies shift. However, this program has remained largely confined to sequence-prediction architectures, leaving embodied control systems without comparable mechanistic accounts. Here we extend this framework to sensorimotor-cognitive development, using inf</p><p><strong>Tags:</strong> circuits</p>]]></description>
-      <pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.15248v1</guid>
-    </item>
-    <item>
-      <title>Directional Routing in Transformers</title>
-      <link>https://arxiv.org/abs/2603.14923v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Kevin Taylor</p><p>We introduce directional routing, a lightweight mechanism that gives each transformer attention head learned suppression directions controlled by a shared router, at 3.9% parameter cost. We train a 433M-parameter model alongside an identical baseline in a single run, then trace the resulting circuits through mechanistic interpretability.   Routing becomes the model&#x27;s dominant computational pathway. Disabling it collapses factual recall to near-zero probability across all 8 test prompts and drops</p><p><strong>Tags:</strong> circuits, attention</p>]]></description>
-      <pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.14923v1</guid>
-    </item>
-    <item>
-      <title>Mechanistic Origin of Moral Indifference in Language Models</title>
-      <link>https://arxiv.org/abs/2603.15615v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Lingyu Li, Yan Teng, Yingchun Wang</p><p>Existing behavioral alignment techniques for Large Language Models (LLMs) often neglect the discrepancy between surface compliance and internal unaligned representations, leaving LLMs vulnerable to long-tail risks. More crucially, we posit that LLMs possess an inherent state of moral indifference due to compressing distinct moral concepts into uniform probability distributions. We verify and remedy this indifference in LLMs&#x27; latent representations, utilizing 251k moral vectors constructed upon P</p><p><strong>Tags:</strong> safety</p>]]></description>
-      <pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.15615v1</guid>
-    </item>
-    <item>
-      <title>SCAN: Sparse Circuit Anchor Interpretable Neuron for Lifelong Knowledge Editing</title>
-      <link>https://arxiv.org/abs/2603.15226v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Yuhuan Liu, Haitian Zhong, Xinyuan Xia, Qiang Liu, Shu Wu, et al.</p><p>Large Language Models (LLMs) often suffer from catastrophic forgetting and collapse during sequential knowledge editing. This vulnerability stems from the prevailing dense editing paradigm, which treats models as black boxes and relies on coarse-grained parameter interventions that inevitably disrupt preserved knowledge. To address this, we propose SCAN (a sparse editing framework based on Sparse Circuit Anchored Neuron) which transforms editing into a mechanism-aware manipulation by constructin</p><p><strong>Tags:</strong> circuits, editing</p>]]></description>
-      <pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.15226v1</guid>
     </item>
   </channel>
 </rss>
