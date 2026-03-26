@@ -1,6 +1,21 @@
 {
-  "lastUpdated": "2026-03-25",
+  "lastUpdated": "2026-03-26",
   "papers": [
+    {
+      "id": "arxiv-2603-24358v1",
+      "title": "A Neuro-Symbolic System for Interpretable Multimodal Physiological Signals Integration in Human Fatigue Detection",
+      "authors": "Mohammadreza Jamalifard, Yaxiong Lei, Parasto Azizinezhad, Javier Fumanal-Idocin, Javier Andreu-Perez",
+      "date": "2026-03-25",
+      "url": "https://arxiv.org/abs/2603.24358v1",
+      "abstract": "We propose a neuro-symbolic architecture that learns four interpretable physiological concepts, oculomotor dynamics, gaze stability, prefrontal hemodynamics, and multimodal, from eye-tracking and neural hemodynamics, functional near-infrared spectroscopy, (fNIRS) windows using attention-based encoders, and combines them with differentiable approximate reasoning rules using learned weights and soft thresholds, to address both rigid hand-crafted rules and the lack of subject-level alignment diagno",
+      "tags": [
+        "safety",
+        "vision",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2603-23301v1",
       "title": "Steering LLMs for Culturally Localized Generation",
@@ -38,6 +53,21 @@
       "url": "https://arxiv.org/abs/2603.22768v1",
       "abstract": "Rapid and accurate structural damage assessment following natural disasters is critical for effective emergency response and recovery. However, remote sensing imagery often suffers from low spatial resolution, contextual ambiguity, and limited semantic interpretability, reducing the reliability of traditional detection pipelines. In this work, we propose a novel hybrid framework that integrates AI-based super-resolution, deep learning object detection, and Vision-Language Models (VLMs) for compr",
       "tags": [
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-23794v1",
+      "title": "Sparse Autoencoders for Interpretable Medical Image Representation Learning",
+      "authors": "Philipp Wesp, Robbie Holland, Vasiliki Sideri-Lampretsa, Sergios Gatidis",
+      "date": "2026-03-24",
+      "url": "https://arxiv.org/abs/2603.23794v1",
+      "abstract": "Vision foundation models (FMs) achieve state-of-the-art performance in medical imaging. However, they encode information in abstract latent representations that clinicians cannot interrogate or verify. The goal of this study is to investigate Sparse Autoencoders (SAEs) for replacing opaque FM image representations with human-interpretable, sparse features. We train SAEs on embeddings from BiomedParse (biomedical) and DINOv3 (general-purpose) using 909,873 CT and MRI 2D image slices from the Tota",
+      "tags": [
+        "SAE",
+        "features",
         "vision"
       ],
       "source": "arXiv",
@@ -938,6 +968,20 @@
       "abstract": "As Vision-Language Models (VLMs) become increasingly sophisticated and widely used, it becomes more and more crucial to understand their decision-making process. Traditional explainability methods, designed for classification tasks, struggle with modern autoregressive VLMs due to their complex token-by-token generation process and intricate interactions between visual and textual modalities. We present DEX-AR (Dynamic Explainability for AutoRegressive models), a novel explainability method desig",
       "tags": [
         "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-23524v1",
+      "title": "Navigating the Concept Space of Language Models",
+      "authors": "Wilson E. Marc\u00edlio-Jr, Danilo M. Eler",
+      "date": "2026-03-06",
+      "url": "https://arxiv.org/abs/2603.23524v1",
+      "abstract": "Sparse autoencoders (SAEs) trained on large language model activations output thousands of features that enable mapping to human-interpretable concepts. The current practice for analyzing these features primarily relies on inspecting top-activating examples, manually browsing individual features, or performing semantic search on interested concepts, which makes exploratory discovery of concepts difficult at scale. In this paper, we present Concept Explorer, a scalable interactive system for post",
+      "tags": [
+        "SAE",
+        "features"
       ],
       "source": "arXiv",
       "featured": false
