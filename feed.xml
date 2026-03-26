@@ -5,9 +5,16 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>A Neuro-Symbolic System for Interpretable Multimodal Physiological Signals Integration in Human Fatigue Detection</title>
+      <link>https://arxiv.org/abs/2603.24358v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Mohammadreza Jamalifard, Yaxiong Lei, Parasto Azizinezhad, Javier Fumanal-Idocin, Javier Andreu-Perez</p><p>We propose a neuro-symbolic architecture that learns four interpretable physiological concepts, oculomotor dynamics, gaze stability, prefrontal hemodynamics, and multimodal, from eye-tracking and neural hemodynamics, functional near-infrared spectroscopy, (fNIRS) windows using attention-based encoders, and combines them with differentiable approximate reasoning rules using learned weights and soft thresholds, to address both rigid hand-crafted rules and the lack of subject-level alignment diagno</p><p><strong>Tags:</strong> safety, vision, reasoning</p>]]></description>
+      <pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2603.24358v1</guid>
+    </item>
     <item>
       <title>Steering LLMs for Culturally Localized Generation</title>
       <link>https://arxiv.org/abs/2603.23301v1</link>
@@ -28,6 +35,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Bijay Shakya, Catherine Hoier, Khandaker Mamun Ahmed</p><p>Rapid and accurate structural damage assessment following natural disasters is critical for effective emergency response and recovery. However, remote sensing imagery often suffers from low spatial resolution, contextual ambiguity, and limited semantic interpretability, reducing the reliability of traditional detection pipelines. In this work, we propose a novel hybrid framework that integrates AI-based super-resolution, deep learning object detection, and Vision-Language Models (VLMs) for compr</p><p><strong>Tags:</strong> vision</p>]]></description>
       <pubDate>Tue, 24 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2603.22768v1</guid>
+    </item>
+    <item>
+      <title>Sparse Autoencoders for Interpretable Medical Image Representation Learning</title>
+      <link>https://arxiv.org/abs/2603.23794v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Philipp Wesp, Robbie Holland, Vasiliki Sideri-Lampretsa, Sergios Gatidis</p><p>Vision foundation models (FMs) achieve state-of-the-art performance in medical imaging. However, they encode information in abstract latent representations that clinicians cannot interrogate or verify. The goal of this study is to investigate Sparse Autoencoders (SAEs) for replacing opaque FM image representations with human-interpretable, sparse features. We train SAEs on embeddings from BiomedParse (biomedical) and DINOv3 (general-purpose) using 909,873 CT and MRI 2D image slices from the Tota</p><p><strong>Tags:</strong> SAE, features, vision</p>]]></description>
+      <pubDate>Tue, 24 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2603.23794v1</guid>
     </item>
     <item>
       <title>DSPA: Dynamic SAE Steering for Data-Efficient Preference Alignment</title>
@@ -203,20 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> TianTian Dang, Chao Bi, Shufan Shen, Jinzhe Liu, Qingming Huang, et al.</p><p>Despite the significant advancements in Large Vision-Language Models (LVLMs), their tendency to generate hallucinations undermines reliability and restricts broader practical deployment. Among the hallucination mitigation methods, feature steering emerges as a promising approach that reduces erroneous outputs in LVLMs without increasing inference costs. However, current methods apply uniform feature steering across all layers. This heuristic strategy ignores inter-layer differences, potentially </p><p><strong>Tags:</strong> features, steering, vision</p>]]></description>
       <pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2603.16284v1</guid>
-    </item>
-    <item>
-      <title>LLM-Powered Flood Depth Estimation from Social Media Imagery: A Vision-Language Model Framework with Mechanistic Interpretability for Transportation Resilience</title>
-      <link>https://arxiv.org/abs/2603.17108v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Nafis Fuad, Xiaodong Qian</p><p>Urban flooding poses an escalating threat to transportation network continuity, yet no operational system currently provides real-time, street-level flood depth information at the centimeter resolution required for dynamic routing, electric vehicle (EV) safety, and autonomous vehicle (AV) operations. This study presents FloodLlama, a fine-tuned open-source vision-language model (VLM) for continuous flood depth estimation from single street-level images, supported by a multimodal sensing pipeline</p><p><strong>Tags:</strong> safety, vision</p>]]></description>
-      <pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.17108v1</guid>
-    </item>
-    <item>
-      <title>Target Concept Tuning Improves Extreme Weather Forecasting</title>
-      <link>https://arxiv.org/abs/2603.19325v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Shijie Ren, Xinyue Gu, Ziheng Peng, Haifan Zhang, Peisong Niu, et al.</p><p>Deep learning models for meteorological forecasting often fail in rare but high-impact events such as typhoons, where relevant data is scarce. Existing fine-tuning methods typically face a trade-off between overlooking these extreme events and overfitting them at the expense of overall performance. We propose TaCT, an interpretable concept-gated fine-tuning framework that solves the aforementioned issue by selective model improvement: models are adapted specifically for failure cases while prese</p>]]></description>
-      <pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.19325v1</guid>
     </item>
   </channel>
 </rss>
