@@ -5,15 +5,57 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Closing the Confidence-Faithfulness Gap in Large Language Models</title>
+      <link>https://arxiv.org/abs/2603.25052v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Miranda Muqing Miao, Lyle Ungar</p><p>Large language models (LLMs) tend to verbalize confidence scores that are largely detached from their actual accuracy, yet the geometric relationship governing this behavior remain poorly understood. In this work, we present a mechanistic interpretability analysis of verbalized confidence, using linear probes and contrastive activation addition (CAA) steering to show that calibration and verbalized confidence signals are encoded linearly but are orthogonal to one another -- a finding consistent </p><p><strong>Tags:</strong> probing, steering</p>]]></description>
+      <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2603.25052v1</guid>
+    </item>
+    <item>
+      <title>Mechanistically Interpreting Compression in Vision-Language Models</title>
+      <link>https://arxiv.org/abs/2603.25035v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Veeraraju Elluru, Arth Singh, Roberto Aguero, Ajay Agarwal, Debojyoti Das, et al.</p><p>Compressed vision-language models (VLMs) are widely used to reduce memory and compute costs, making them a suitable choice for real-world deployment. However, compressing these models raises concerns about whether internal computations and safety behaviors are preserved. In this work, we use causal circuit analysis and crosscoder-based feature comparisons to examine how pruning and quantization fundamentally change the internals across representative VLMs. We observe that pruning generally keeps</p><p><strong>Tags:</strong> circuits, features, safety, vision</p>]]></description>
+      <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2603.25035v1</guid>
+    </item>
+    <item>
+      <title>How Pruning Reshapes Features: Sparse Autoencoder Analysis of Weight-Pruned Language Models</title>
+      <link>https://arxiv.org/abs/2603.25325v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Hector Borobia, Elies Seguí-Mas, Guillermina Tormo-Carbó</p><p>Weight pruning is a standard technique for compressing large language models, yet its effect on learned internal representations remains poorly understood. We present the first systematic study of how unstructured pruning reshapes the feature geometry of language models, using Sparse Autoencoders (SAEs) as interpretability probes. Across three model families (Gemma 3 1B, Gemma 2 2B, Llama 3.2 1B), two pruning methods (magnitude and Wanda), and six sparsity levels (0--60%), we investigate five re</p><p><strong>Tags:</strong> SAE, features, probing</p>]]></description>
+      <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2603.25325v1</guid>
+    </item>
+    <item>
+      <title>Sparse Visual Thought Circuits in Vision-Language Models</title>
+      <link>https://arxiv.org/abs/2603.25075v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Yunpeng Zhou</p><p>Sparse autoencoders (SAEs) improve interpretability in multimodal models, but it remains unclear whether SAE features form modular, composable units for reasoning-an assumption underlying many intervention-based steering methods. We test this modularity hypothesis and find it often fails: intervening on a task-selective feature set can modestly improve reasoning accuracy, while intervening on the union of two such sets reliably induces output drift (large unintended changes in predictions) and d</p><p><strong>Tags:</strong> SAE, circuits, features, steering, vision, reasoning</p>]]></description>
+      <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2603.25075v1</guid>
+    </item>
+    <item>
+      <title>Z-Erase: Enabling Concept Erasure in Single-Stream Diffusion Transformers</title>
+      <link>https://arxiv.org/abs/2603.25074v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Nanxiang Jiang, Zhaoxin Fan, Baisen Wang, Daiheng Gao, Junhang Cheng, et al.</p><p>Concept erasure serves as a vital safety mechanism for removing unwanted concepts from text-to-image (T2I) models. While extensively studied in U-Net and dual-stream architectures (e.g., Flux), this task remains under-explored in the recent emerging paradigm of single-stream diffusion transformers (e.g., Z-Image). In this new paradigm, text and image tokens are processed as a single unified sequence via shared parameters. Consequently, directly applying prior erasure methods typically leads to g</p><p><strong>Tags:</strong> safety, vision</p>]]></description>
+      <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2603.25074v1</guid>
+    </item>
     <item>
       <title>A Neuro-Symbolic System for Interpretable Multimodal Physiological Signals Integration in Human Fatigue Detection</title>
       <link>https://arxiv.org/abs/2603.24358v1</link>
       <description><![CDATA[<p><strong>Authors:</strong> Mohammadreza Jamalifard, Yaxiong Lei, Parasto Azizinezhad, Javier Fumanal-Idocin, Javier Andreu-Perez</p><p>We propose a neuro-symbolic architecture that learns four interpretable physiological concepts, oculomotor dynamics, gaze stability, prefrontal hemodynamics, and multimodal, from eye-tracking and neural hemodynamics, functional near-infrared spectroscopy, (fNIRS) windows using attention-based encoders, and combines them with differentiable approximate reasoning rules using learned weights and soft thresholds, to address both rigid hand-crafted rules and the lack of subject-level alignment diagno</p><p><strong>Tags:</strong> safety, vision, reasoning</p>]]></description>
       <pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2603.24358v1</guid>
+    </item>
+    <item>
+      <title>From Weights to Concepts: Data-Free Interpretability of CLIP via Singular Vector Decomposition</title>
+      <link>https://arxiv.org/abs/2603.24653v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Francesco Gentile, Nicola Dall&#x27;Asen, Francesco Tonini, Massimiliano Mancini, Lorenzo Vaquero, et al.</p><p>As vision-language models are deployed at scale, understanding their internal mechanisms becomes increasingly critical. Existing interpretability methods predominantly rely on activations, making them dataset-dependent, vulnerable to data bias, and often restricted to coarse head-level explanations. We introduce SITH (Semantic Inspection of Transformer Heads), a fully data-free, training-free framework that directly analyzes CLIP&#x27;s vision transformer in weight space. For each attention head, we </p><p><strong>Tags:</strong> attention, vision</p>]]></description>
+      <pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2603.24653v1</guid>
     </item>
     <item>
       <title>Steering LLMs for Culturally Localized Generation</title>
@@ -175,48 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Boyong Wu, Sanghwan Kim, Zeynep Akata</p><p>Multimodal Large Language Models (MLLMs) are increasingly applied to pixel-level vision tasks, yet their intrinsic capacity for spatial understanding remains poorly understood. We investigate segmentation capacity through a layerwise linear probing evaluation across the entire MLLM pipeline: vision encoder, adapter, and LLM. We further conduct an intervention based attention knockout analysis to test whether cross-token attention progressively refines visual representations, and an evaluation of</p><p><strong>Tags:</strong> probing, vision</p>]]></description>
       <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2603.17228v1</guid>
-    </item>
-    <item>
-      <title>Interpretability without actionability: mechanistic methods cannot correct language model errors despite near-perfect internal representations</title>
-      <link>https://arxiv.org/abs/2603.18353v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Sanjay Basu, Sadiq Y. Patel, Parth Sheth, Bhairavi Muralidharan, Namrata Elamaran, et al.</p><p>Language models encode task-relevant knowledge in internal representations that far exceeds their output performance, but whether mechanistic interpretability methods can bridge this knowledge-action gap has not been systematically tested. We compared four mechanistic interpretability methods -- concept bottleneck steering (Steerling-8B), sparse autoencoder feature steering, logit lens with activation patching, and linear probing with truthfulness separator vector steering (Qwen 2.5 7B Instruct)</p><p><strong>Tags:</strong> SAE, features, probing, steering</p>]]></description>
-      <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.18353v1</guid>
-    </item>
-    <item>
-      <title>Fundamental Limits of Neural Network Sparsification: Evidence from Catastrophic Interpretability Collapse</title>
-      <link>https://arxiv.org/abs/2603.18056v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Dip Roy, Rajiv Misra, Sanjay Kumar Singh</p><p>Extreme neural network sparsification (90% activation reduction) presents a critical challenge for mechanistic interpretability: understanding whether interpretable features survive aggressive compression. This work investigates feature survival under severe capacity constraints in hybrid Variational Autoencoder--Sparse Autoencoder (VAE-SAE) architectures. We introduce an adaptive sparsity scheduling framework that progressively reduces active neurons from 500 to 50 over 50 training epochs, and </p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.18056v1</guid>
-    </item>
-    <item>
-      <title>Towards Interpretable Framework for Neural Audio Codecs via Sparse Autoencoders: A Case Study on Accent Information</title>
-      <link>https://arxiv.org/abs/2603.18359v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Shih-Heng Wang, Tiantian Feng, Aditya Kommineni, Thanathai Lertpetchpun, Bowen Yi, et al.</p><p>Neural Audio Codecs (NACs) are widely adopted in modern speech systems, yet how they encode linguistic and paralinguistic information remains unclear. Improving the interpretability of NAC representations is critical for understanding and deploying them in sensitive applications. Hence, we employ Sparse Autoencoders (SAEs) to decompose dense NAC representations into sparse, interpretable activations. In this work, we focus on a challenging paralinguistic attribute-accent-and propose a framework </p><p><strong>Tags:</strong> SAE</p>]]></description>
-      <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.18359v1</guid>
-    </item>
-    <item>
-      <title>Capability-Guided Compression: Toward Interpretability-Aware Budget Allocation for Large Language Models</title>
-      <link>https://arxiv.org/abs/2603.16440v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Rishaank Gupta</p><p>Large language model compression has made substantial progress through pruning, quantization, and low-rank decomposition, yet a fundamental limitation persists across all existing methods: compression budgets are allocated without any representation of what individual model components functionally encode. We term this the capability-blind compression problem and argue it is a root cause of two well-documented failures -- the insensitivity of perplexity-based evaluation to reasoning capability lo</p><p><strong>Tags:</strong> reasoning</p>]]></description>
-      <pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.16440v1</guid>
-    </item>
-    <item>
-      <title>Behavioral Steering in a 35B MoE Language Model via SAE-Decoded Probe Vectors: One Agency Axis, Not Five Traits</title>
-      <link>https://arxiv.org/abs/2603.16335v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Jia Qing Yap</p><p>We train nine sparse autoencoders (SAEs) on the residual stream of Qwen 3.5-35B-A3B, a 35-billion-parameter Mixture-of-Experts model with a hybrid GatedDeltaNet/attention architecture, and use them to identify and steer five agentic behavioral traits. Our method trains linear probes on SAE latent activations, then projects the probe weights back through the SAE decoder to obtain continuous steering vectors in the model&#x27;s native activation space. This bypasses the SAE&#x27;s top-k discretization, enab</p><p><strong>Tags:</strong> SAE, probing, steering</p>]]></description>
-      <pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.16335v1</guid>
-    </item>
-    <item>
-      <title>Locate-then-Sparsify: Attribution Guided Sparse Strategy for Visual Hallucination Mitigation</title>
-      <link>https://arxiv.org/abs/2603.16284v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> TianTian Dang, Chao Bi, Shufan Shen, Jinzhe Liu, Qingming Huang, et al.</p><p>Despite the significant advancements in Large Vision-Language Models (LVLMs), their tendency to generate hallucinations undermines reliability and restricts broader practical deployment. Among the hallucination mitigation methods, feature steering emerges as a promising approach that reduces erroneous outputs in LVLMs without increasing inference costs. However, current methods apply uniform feature steering across all layers. This heuristic strategy ignores inter-layer differences, potentially </p><p><strong>Tags:</strong> features, steering, vision</p>]]></description>
-      <pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.16284v1</guid>
     </item>
   </channel>
 </rss>
