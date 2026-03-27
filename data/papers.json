@@ -1,6 +1,83 @@
 {
-  "lastUpdated": "2026-03-26",
+  "lastUpdated": "2026-03-27",
   "papers": [
+    {
+      "id": "arxiv-2603-25052v1",
+      "title": "Closing the Confidence-Faithfulness Gap in Large Language Models",
+      "authors": "Miranda Muqing Miao, Lyle Ungar",
+      "date": "2026-03-26",
+      "url": "https://arxiv.org/abs/2603.25052v1",
+      "abstract": "Large language models (LLMs) tend to verbalize confidence scores that are largely detached from their actual accuracy, yet the geometric relationship governing this behavior remain poorly understood. In this work, we present a mechanistic interpretability analysis of verbalized confidence, using linear probes and contrastive activation addition (CAA) steering to show that calibration and verbalized confidence signals are encoded linearly but are orthogonal to one another -- a finding consistent ",
+      "tags": [
+        "probing",
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-25035v1",
+      "title": "Mechanistically Interpreting Compression in Vision-Language Models",
+      "authors": "Veeraraju Elluru, Arth Singh, Roberto Aguero, Ajay Agarwal, Debojyoti Das, et al.",
+      "date": "2026-03-26",
+      "url": "https://arxiv.org/abs/2603.25035v1",
+      "abstract": "Compressed vision-language models (VLMs) are widely used to reduce memory and compute costs, making them a suitable choice for real-world deployment. However, compressing these models raises concerns about whether internal computations and safety behaviors are preserved. In this work, we use causal circuit analysis and crosscoder-based feature comparisons to examine how pruning and quantization fundamentally change the internals across representative VLMs. We observe that pruning generally keeps",
+      "tags": [
+        "circuits",
+        "features",
+        "safety",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-25325v1",
+      "title": "How Pruning Reshapes Features: Sparse Autoencoder Analysis of Weight-Pruned Language Models",
+      "authors": "Hector Borobia, Elies Segu\u00ed-Mas, Guillermina Tormo-Carb\u00f3",
+      "date": "2026-03-26",
+      "url": "https://arxiv.org/abs/2603.25325v1",
+      "abstract": "Weight pruning is a standard technique for compressing large language models, yet its effect on learned internal representations remains poorly understood. We present the first systematic study of how unstructured pruning reshapes the feature geometry of language models, using Sparse Autoencoders (SAEs) as interpretability probes. Across three model families (Gemma 3 1B, Gemma 2 2B, Llama 3.2 1B), two pruning methods (magnitude and Wanda), and six sparsity levels (0--60%), we investigate five re",
+      "tags": [
+        "SAE",
+        "features",
+        "probing"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-25075v1",
+      "title": "Sparse Visual Thought Circuits in Vision-Language Models",
+      "authors": "Yunpeng Zhou",
+      "date": "2026-03-26",
+      "url": "https://arxiv.org/abs/2603.25075v1",
+      "abstract": "Sparse autoencoders (SAEs) improve interpretability in multimodal models, but it remains unclear whether SAE features form modular, composable units for reasoning-an assumption underlying many intervention-based steering methods. We test this modularity hypothesis and find it often fails: intervening on a task-selective feature set can modestly improve reasoning accuracy, while intervening on the union of two such sets reliably induces output drift (large unintended changes in predictions) and d",
+      "tags": [
+        "SAE",
+        "circuits",
+        "features",
+        "steering",
+        "vision",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-25074v1",
+      "title": "Z-Erase: Enabling Concept Erasure in Single-Stream Diffusion Transformers",
+      "authors": "Nanxiang Jiang, Zhaoxin Fan, Baisen Wang, Daiheng Gao, Junhang Cheng, et al.",
+      "date": "2026-03-26",
+      "url": "https://arxiv.org/abs/2603.25074v1",
+      "abstract": "Concept erasure serves as a vital safety mechanism for removing unwanted concepts from text-to-image (T2I) models. While extensively studied in U-Net and dual-stream architectures (e.g., Flux), this task remains under-explored in the recent emerging paradigm of single-stream diffusion transformers (e.g., Z-Image). In this new paradigm, text and image tokens are processed as a single unified sequence via shared parameters. Consequently, directly applying prior erasure methods typically leads to g",
+      "tags": [
+        "safety",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2603-24358v1",
       "title": "A Neuro-Symbolic System for Interpretable Multimodal Physiological Signals Integration in Human Fatigue Detection",
@@ -12,6 +89,20 @@
         "safety",
         "vision",
         "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-24653v1",
+      "title": "From Weights to Concepts: Data-Free Interpretability of CLIP via Singular Vector Decomposition",
+      "authors": "Francesco Gentile, Nicola Dall'Asen, Francesco Tonini, Massimiliano Mancini, Lorenzo Vaquero, et al.",
+      "date": "2026-03-25",
+      "url": "https://arxiv.org/abs/2603.24653v1",
+      "abstract": "As vision-language models are deployed at scale, understanding their internal mechanisms becomes increasingly critical. Existing interpretability methods predominantly rely on activations, making them dataset-dependent, vulnerable to data bias, and often restricted to coarse head-level explanations. We introduce SITH (Semantic Inspection of Transformer Heads), a fully data-free, training-free framework that directly analyzes CLIP's vision transformer in weight space. For each attention head, we ",
+      "tags": [
+        "attention",
+        "vision"
       ],
       "source": "arXiv",
       "featured": false
