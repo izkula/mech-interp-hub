@@ -1,6 +1,62 @@
 {
-  "lastUpdated": "2026-03-30",
+  "lastUpdated": "2026-03-31",
   "papers": [
+    {
+      "id": "arxiv-2603-27518v1",
+      "title": "Over-Refusal and Representation Subspaces: A Mechanistic Analysis of Task-Conditioned Refusal in Aligned LLMs",
+      "authors": "Utsav Maskey, Mark Dras, Usman Naseem",
+      "date": "2026-03-29",
+      "url": "https://arxiv.org/abs/2603.27518v1",
+      "abstract": "Aligned language models that are trained to refuse harmful requests also exhibit over-refusal: they decline safe instructions that seemingly resemble harmful instructions. A natural approach is to ablate the global refusal direction, steering the hidden-state vectors away or towards the harmful-refusal examples, but this corrects over-refusal only incidentally while disrupting the broader refusal mechanism. In this work, we analyse the representational geometry of both refusal types to understan",
+      "tags": [
+        "safety",
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-27064v1",
+      "title": "ChartNet: A Million-Scale, High-Quality Multimodal Dataset for Robust Chart Understanding",
+      "authors": "Jovana Kondic, Pengyuan Li, Dhiraj Joshi, Isaac Sanchez, Ben Wiesel, et al.",
+      "date": "2026-03-28",
+      "url": "https://arxiv.org/abs/2603.27064v1",
+      "abstract": "Understanding charts requires models to jointly reason over geometric visual patterns, structured numerical data, and natural language -- a capability where current vision-language models (VLMs) remain limited. We introduce ChartNet, a high-quality, million-scale multimodal dataset designed to advance chart interpretation and reasoning. ChartNet leverages a novel code-guided synthesis pipeline to generate 1.5 million diverse chart samples spanning 24 chart types and 6 plotting libraries. Each sa",
+      "tags": [
+        "vision",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-26323v1",
+      "title": "From Human Cognition to Neural Activations: Probing the Computational Primitives of Spatial Reasoning in LLMs",
+      "authors": "Jiyuan An, Liner Yang, Mengyan Wang, Luming Lu, Weihua An, et al.",
+      "date": "2026-03-27",
+      "url": "https://arxiv.org/abs/2603.26323v1",
+      "abstract": "As spatial intelligence becomes an increasingly important capability for foundation models, it remains unclear whether large language models' (LLMs) performance on spatial reasoning benchmarks reflects structured internal spatial representations or reliance on linguistic heuristics. We address this question from a mechanistic perspective by examining how spatial information is internally represented and used. Drawing on computational theories of human spatial cognition, we decompose spatial reas",
+      "tags": [
+        "probing",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-26236v1",
+      "title": "A Universal Vibe? Finding and Controlling Language-Agnostic Informal Register with SAEs",
+      "authors": "Uri Z. Kialy, Avi Shtarkberg, Ayal Klein",
+      "date": "2026-03-27",
+      "url": "https://arxiv.org/abs/2603.26236v1",
+      "abstract": "While multilingual language models successfully transfer factual and syntactic knowledge across languages, it remains unclear whether they process culture-specific pragmatic registers, such as slang, as isolated language-specific memorizations or as unified, abstract concepts. We study this by probing the internal representations of Gemma-2-9B-IT using Sparse Autoencoders (SAEs) across three typologically diverse source languages: English, Hebrew, and Russian. To definitively isolate pragmatic r",
+      "tags": [
+        "SAE",
+        "probing"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2603-25052v1",
       "title": "Closing the Confidence-Faithfulness Gap in Large Language Models",
@@ -216,6 +272,22 @@
       "tags": [
         "SAE",
         "features",
+        "steering",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-26743v1",
+      "title": "Steering Sparse Autoencoder Latents to Control Dynamic Head Pruning in Vision Transformers (Student Abstract)",
+      "authors": "Yousung Lee, Dongsoo Har",
+      "date": "2026-03-23",
+      "url": "https://arxiv.org/abs/2603.26743v1",
+      "abstract": "Dynamic head pruning in Vision Transformers (ViTs) improves efficiency by removing redundant attention heads, but existing pruning policies are often difficult to interpret and control. In this work, we propose a novel framework by integrating Sparse Autoencoders (SAEs) with dynamic pruning, leveraging their ability to disentangle dense embeddings into interpretable and controllable sparse latents. Specifically, we train an SAE on the final-layer residual embedding of the ViT and amplify the spa",
+      "tags": [
+        "SAE",
+        "attention",
         "steering",
         "vision"
       ],
