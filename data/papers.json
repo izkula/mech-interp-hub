@@ -1,6 +1,30 @@
 {
-  "lastUpdated": "2026-03-31",
+  "lastUpdated": "2026-04-01",
   "papers": [
+    {
+      "id": "arxiv-2603-30002v1",
+      "title": "Tracking Equivalent Mechanistic Interpretations Across Neural Networks",
+      "authors": "Alan Sun, Mariya Toneva",
+      "date": "2026-03-31",
+      "url": "https://arxiv.org/abs/2603.30002v1",
+      "abstract": "Mechanistic interpretability (MI) is an emerging framework for interpreting neural networks. Given a task and model, MI aims to discover a succinct algorithmic process, an interpretation, that explains the model's decision process on that task. However, MI is difficult to scale and generalize. This stems in part from two key challenges: there is no precise notion of a valid interpretation; and, generating interpretations is often an ad hoc process. In this paper, we address these challenges by d",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-30033v1",
+      "title": "Tucker Attention: A generalization of approximate attention mechanisms",
+      "authors": "Timon Klein, Jonas Kusch, Sebastian Sager, Stefan Schnake, Steffen Schotth\u00f6fer",
+      "date": "2026-03-31",
+      "url": "https://arxiv.org/abs/2603.30033v1",
+      "abstract": "The pursuit of reducing the memory footprint of the self-attention mechanism in multi-headed self attention (MHA) spawned a rich portfolio of methods, e.g., group-query attention (GQA) and multi-head latent attention (MLA). The methods leverage specialized low-rank factorizations across embedding dimensions or attention heads. From the point of view of classical low-rank approximation, these methods are unconventional and raise questions of which objects they really approximate and how to interp",
+      "tags": [
+        "attention"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2603-27518v1",
       "title": "Over-Refusal and Representation Subspaces: A Mechanistic Analysis of Task-Conditioned Refusal in Aligned LLMs",
@@ -53,6 +77,44 @@
       "tags": [
         "SAE",
         "probing"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-26506v1",
+      "title": "Identifying Connectivity Distributions from Neural Dynamics Using Flows",
+      "authors": "Timothy Doyeon Kim, Ulises Pereira-Obilinovic, Yiliu Wang, Eric Shea-Brown, Uygar S\u00fcmb\u00fcl",
+      "date": "2026-03-27",
+      "url": "https://arxiv.org/abs/2603.26506v1",
+      "abstract": "Connectivity structure shapes neural computation, but inferring this structure from population recordings is degenerate: multiple connectivity structures can generate identical dynamics. Recent work uses low-rank recurrent neural networks (lrRNNs) to infer low-dimensional latent dynamics and connectivity structure from observed activity, enabling a mechanistic interpretation of the dynamics. However, standard approaches for training lrRNNs can recover spurious structures irrelevant to the underl",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-26494v1",
+      "title": "Entanglement as Memory: Mechanistic Interpretability of Quantum Language Models",
+      "authors": "Nathan Roll",
+      "date": "2026-03-27",
+      "url": "https://arxiv.org/abs/2603.26494v1",
+      "abstract": "Quantum language models have shown competitive performance on sequential tasks, yet whether trained quantum circuits exploit genuinely quantum resources -- or merely embed classical computation in quantum hardware -- remains unknown. Prior work has evaluated these models through endpoint metrics alone, without examining the memory strategies they actually learn internally. We introduce the first mechanistic interpretability study of quantum language models, combining causal gate ablation, entang",
+      "tags": [
+        "circuits"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-26829v1",
+      "title": "Squish and Release: Exposing Hidden Hallucinations by Making Them Surface as Safety Signals",
+      "authors": "Nathaniel Oh, Paul Attie",
+      "date": "2026-03-27",
+      "url": "https://arxiv.org/abs/2603.26829v1",
+      "abstract": "Language models detect false premises when asked directly but absorb them under conversational pressure, producing authoritative professional output built on errors they already identified. This failure - order-gap hallucination - is invisible to output inspection because the error migrates into the activation space of the safety circuit, suppressed but not erased. We introduce Squish and Release (S&R), an activation-patching architecture with two components: a fixed detector body (layers 24-31,",
+      "tags": [
+        "circuits",
+        "safety"
       ],
       "source": "arXiv",
       "featured": false
@@ -793,6 +855,17 @@
       "tags": [
         "vision"
       ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2603-12564v5",
+      "title": "AgentDrift: Unsafe Recommendation Drift Under Tool Corruption Hidden by Ranking Metrics in LLM Agents",
+      "authors": "Zekun Wu, Adriano Koshiyama, Sahan Bulathwela, Maria Perez-Ortiz",
+      "date": "2026-03-13",
+      "url": "https://arxiv.org/abs/2603.12564v5",
+      "abstract": "Tool-augmented LLM agents increasingly operate as multi-turn advisors in high-stakes domains, yet their evaluation relies on ranking metrics that measure what is recommended but not whether it is safe for the user. We present a paired-trajectory protocol that replays real financial dialogues under clean and contaminated tool-output conditions across eight LLMs (7B to frontier), decomposing divergence into information-channel and memory-channel mechanisms. We observe evaluation blindness: recomme",
+      "tags": [],
       "source": "arXiv",
       "featured": false
     },
