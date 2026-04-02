@@ -5,7 +5,7 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 02 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
@@ -21,6 +21,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Timon Klein, Jonas Kusch, Sebastian Sager, Stefan Schnake, Steffen Schotthöfer</p><p>The pursuit of reducing the memory footprint of the self-attention mechanism in multi-headed self attention (MHA) spawned a rich portfolio of methods, e.g., group-query attention (GQA) and multi-head latent attention (MLA). The methods leverage specialized low-rank factorizations across embedding dimensions or attention heads. From the point of view of classical low-rank approximation, these methods are unconventional and raise questions of which objects they really approximate and how to interp</p><p><strong>Tags:</strong> attention</p>]]></description>
       <pubDate>Tue, 31 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2603.30033v1</guid>
+    </item>
+    <item>
+      <title>Hybrid Energy-Based Models for Physical AI: Provably Stable Identification of Port-Hamiltonian Dynamics</title>
+      <link>https://arxiv.org/abs/2604.00277v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Simone Betteti, Luca Laurenti</p><p>Energy-based models (EBMs) implement inference as gradient descent on a learned Lyapunov function, yielding interpretable, structure-preserving alternatives to black-box neural ODEs and aligning naturally with physical AI. Yet their use in system identification remains limited, and existing architectures lack formal stability guarantees that globally preclude unstable modes. We address this gap by introducing an EBM framework for system identification with stable, dissipative, absorbing invarian</p>]]></description>
+      <pubDate>Tue, 31 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.00277v1</guid>
     </item>
     <item>
       <title>Over-Refusal and Representation Subspaces: A Mechanistic Analysis of Task-Conditioned Refusal in Aligned LLMs</title>
@@ -210,13 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Xueqi Ma, Shuo Yang, Yanbei Jiang, Shu Liu, Zhenzhen Liu, et al.</p><p>Despite remarkable advances in large Vision-Language Models (VLMs), spatial reasoning remains a persistent challenge. In this work, we investigate how attention heads within VLMs contribute to spatial reasoning by analyzing their functional roles through a mechanistic interpretability lens. We introduce CogVSR, a dataset that decomposes complex spatial reasoning questions into step-by-step subquestions designed to simulate human-like reasoning via a chain-of-thought paradigm, with each subquesti</p><p><strong>Tags:</strong> attention, vision, reasoning</p>]]></description>
       <pubDate>Sat, 21 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2603.20662v1</guid>
-    </item>
-    <item>
-      <title>The Anatomy of an Edit: Mechanism-Guided Activation Steering for Knowledge Editing</title>
-      <link>https://arxiv.org/abs/2603.20795v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Yuan Cao, Mingyang Wang, Hinrich Schütze</p><p>Large language models (LLMs) are increasingly used as knowledge bases, but keeping them up to date requires targeted knowledge editing (KE). However, it remains unclear how edits are implemented inside the model once applied. In this work, we take a mechanistic view of KE using neuron-level knowledge attribution (NLKA). Unlike prior work that focuses on pre-edit causal tracing and localization, we use post-edit attribution -- contrasting successful and failed edits -- to isolate the computations</p><p><strong>Tags:</strong> steering, editing</p>]]></description>
-      <pubDate>Sat, 21 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.20795v1</guid>
     </item>
   </channel>
 </rss>
