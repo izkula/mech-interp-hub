@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-01",
+  "lastUpdated": "2026-04-02",
   "papers": [
     {
       "id": "arxiv-2603-30002v1",
@@ -22,6 +22,17 @@
       "tags": [
         "attention"
       ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2604-00277v1",
+      "title": "Hybrid Energy-Based Models for Physical AI: Provably Stable Identification of Port-Hamiltonian Dynamics",
+      "authors": "Simone Betteti, Luca Laurenti",
+      "date": "2026-03-31",
+      "url": "https://arxiv.org/abs/2604.00277v1",
+      "abstract": "Energy-based models (EBMs) implement inference as gradient descent on a learned Lyapunov function, yielding interpretable, structure-preserving alternatives to black-box neural ODEs and aligning naturally with physical AI. Yet their use in system identification remains limited, and existing architectures lack formal stability guarantees that globally preclude unstable modes. We address this gap by introducing an EBM framework for system identification with stable, dissipative, absorbing invarian",
+      "tags": [],
       "source": "arXiv",
       "featured": false
     },
