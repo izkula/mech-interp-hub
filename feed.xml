@@ -5,9 +5,30 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 03 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>LiteInception: A Lightweight and Interpretable Deep Learning Framework for General Aviation Fault Diagnosis</title>
+      <link>https://arxiv.org/abs/2604.01725v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Zhihuan Wei, Xinhang Chen, Danyang Han, Yang Hu, Jie Liu, et al.</p><p>General aviation fault diagnosis and efficient maintenance are critical to flight safety; however, deploying deep learning models on resource-constrained edge devices poses dual challenges in computational capacity and interpretability. This paper proposes LiteInception--a lightweight interpretable fault diagnosis framework designed for edge deployment. The framework adopts a two-stage cascaded architecture aligned with standard maintenance workflows: Stage 1 performs high-recall fault detection</p><p><strong>Tags:</strong> safety</p>]]></description>
+      <pubDate>Thu, 02 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.01725v1</guid>
+    </item>
+    <item>
+      <title>When Reward Hacking Rebounds: Understanding and Mitigating It with Representation-Level Signals</title>
+      <link>https://arxiv.org/abs/2604.01476v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Rui Wu, Ruixiang Tang</p><p>Reinforcement learning for LLMs is vulnerable to reward hacking, where models exploit shortcuts to maximize reward without solving the intended task. We systematically study this phenomenon in coding tasks using an environment-manipulation setting, where models can rewrite evaluator code to trivially pass tests without solving the task, as a controlled testbed. Across both studied models, we identify a reproducible three-phase rebound pattern: models first attempt to rewrite the evaluator but fa</p>]]></description>
+      <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.01476v1</guid>
+    </item>
+    <item>
+      <title>SelfGrader: Stable Jailbreak Detection for Large Language Models using Token-Level Logits</title>
+      <link>https://arxiv.org/abs/2604.01473v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Zikai Zhang, Rui Hu, Olivera Kotevska, Jiahao Xu</p><p>Large Language Models (LLMs) are powerful tools for answering user queries, yet they remain highly vulnerable to jailbreak attacks. Existing guardrail methods typically rely on internal features or textual responses to detect malicious queries, which either introduce substantial latency or suffer from the randomness in text generation. To overcome these limitations, we propose SelfGrader, a lightweight guardrail method that formulates jailbreak detection as a numerical grading problem using toke</p><p><strong>Tags:</strong> features</p>]]></description>
+      <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.01473v1</guid>
+    </item>
     <item>
       <title>Tracking Equivalent Mechanistic Interpretations Across Neural Networks</title>
       <link>https://arxiv.org/abs/2603.30002v1</link>
@@ -196,27 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Dip Roy, Rajiv Misra, Sanjay Kumar Singh, Anisha Roy</p><p>Although mechanism-based interpretability has generated an abundance of insight for discriminative network analysis, generative models are less understood -- particularly outside of image-related applications. We investigate how much of the causal circuitry found within image-related variational autoencoders (VAEs) will generalize to tabular data, as VAEs are increasingly used for imputation, anomaly detection, and synthetic data generation. In addition to extending a four-level causal intervent</p><p><strong>Tags:</strong> circuits, vision</p>]]></description>
       <pubDate>Sun, 22 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2603.21236v1</guid>
-    </item>
-    <item>
-      <title>CLT-Forge: A Scalable Library for Cross-Layer Transcoders and Attribution Graphs</title>
-      <link>https://arxiv.org/abs/2603.21014v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Florent Draye, Abir Harrasse, Vedant Palit, Tung-Yu Wu, Jiarui Liu, et al.</p><p>Mechanistic interpretability seeks to understand how Large Language Models (LLMs) represent and process information. Recent approaches based on dictionary learning and transcoders enable representing model computation in terms of sparse, interpretable features and their interactions, giving rise to feature attribution graphs. However, these graphs are often large and redundant, limiting their interpretability in practice. Cross-Layer Transcoders (CLTs) address this issue by sharing features acro</p><p><strong>Tags:</strong> features</p>]]></description>
-      <pubDate>Sun, 22 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.21014v1</guid>
-    </item>
-    <item>
-      <title>Interpreting the Synchronization Gap: The Hidden Mechanism Inside Diffusion Transformers</title>
-      <link>https://arxiv.org/abs/2603.20987v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Emil Albrychiewicz, Andrés Franco Valiente, Li-Ching Chen, Viola Zixin Zhao</p><p>Recent theoretical models of diffusion processes, conceptualized as coupled Ornstein-Uhlenbeck systems, predict a hierarchy of interaction timescales, and consequently, the existence of a synchronization gap between modes that commit at different stages of the reverse process. However, because these predictions rely on continuous time and analytically tractable score functions, it remains unclear how this phenomenology manifests in the deep, discrete architectures deployed in practice. In this w</p><p><strong>Tags:</strong> theory</p>]]></description>
-      <pubDate>Sun, 22 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.20987v1</guid>
-    </item>
-    <item>
-      <title>Attention in Space: Functional Roles of VLM Heads for Spatial Reasoning</title>
-      <link>https://arxiv.org/abs/2603.20662v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Xueqi Ma, Shuo Yang, Yanbei Jiang, Shu Liu, Zhenzhen Liu, et al.</p><p>Despite remarkable advances in large Vision-Language Models (VLMs), spatial reasoning remains a persistent challenge. In this work, we investigate how attention heads within VLMs contribute to spatial reasoning by analyzing their functional roles through a mechanistic interpretability lens. We introduce CogVSR, a dataset that decomposes complex spatial reasoning questions into step-by-step subquestions designed to simulate human-like reasoning via a chain-of-thought paradigm, with each subquesti</p><p><strong>Tags:</strong> attention, vision, reasoning</p>]]></description>
-      <pubDate>Sat, 21 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.20662v1</guid>
     </item>
   </channel>
 </rss>
