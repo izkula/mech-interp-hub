@@ -1,6 +1,43 @@
 {
-  "lastUpdated": "2026-04-02",
+  "lastUpdated": "2026-04-03",
   "papers": [
+    {
+      "id": "arxiv-2604-01725v1",
+      "title": "LiteInception: A Lightweight and Interpretable Deep Learning Framework for General Aviation Fault Diagnosis",
+      "authors": "Zhihuan Wei, Xinhang Chen, Danyang Han, Yang Hu, Jie Liu, et al.",
+      "date": "2026-04-02",
+      "url": "https://arxiv.org/abs/2604.01725v1",
+      "abstract": "General aviation fault diagnosis and efficient maintenance are critical to flight safety; however, deploying deep learning models on resource-constrained edge devices poses dual challenges in computational capacity and interpretability. This paper proposes LiteInception--a lightweight interpretable fault diagnosis framework designed for edge deployment. The framework adopts a two-stage cascaded architecture aligned with standard maintenance workflows: Stage 1 performs high-recall fault detection",
+      "tags": [
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2604-01476v1",
+      "title": "When Reward Hacking Rebounds: Understanding and Mitigating It with Representation-Level Signals",
+      "authors": "Rui Wu, Ruixiang Tang",
+      "date": "2026-04-01",
+      "url": "https://arxiv.org/abs/2604.01476v1",
+      "abstract": "Reinforcement learning for LLMs is vulnerable to reward hacking, where models exploit shortcuts to maximize reward without solving the intended task. We systematically study this phenomenon in coding tasks using an environment-manipulation setting, where models can rewrite evaluator code to trivially pass tests without solving the task, as a controlled testbed. Across both studied models, we identify a reproducible three-phase rebound pattern: models first attempt to rewrite the evaluator but fa",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2604-01473v1",
+      "title": "SelfGrader: Stable Jailbreak Detection for Large Language Models using Token-Level Logits",
+      "authors": "Zikai Zhang, Rui Hu, Olivera Kotevska, Jiahao Xu",
+      "date": "2026-04-01",
+      "url": "https://arxiv.org/abs/2604.01473v1",
+      "abstract": "Large Language Models (LLMs) are powerful tools for answering user queries, yet they remain highly vulnerable to jailbreak attacks. Existing guardrail methods typically rely on internal features or textual responses to detect malicious queries, which either introduce substantial latency or suffer from the randomness in text generation. To overcome these limitations, we propose SelfGrader, a lightweight guardrail method that formulates jailbreak detection as a numerical grading problem using toke",
+      "tags": [
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2603-30002v1",
       "title": "Tracking Equivalent Mechanistic Interpretations Across Neural Networks",
