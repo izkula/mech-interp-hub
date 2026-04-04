@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-03",
+  "lastUpdated": "2026-04-04",
   "papers": [
     {
       "id": "arxiv-2604-01725v1",
@@ -10,6 +10,73 @@
       "abstract": "General aviation fault diagnosis and efficient maintenance are critical to flight safety; however, deploying deep learning models on resource-constrained edge devices poses dual challenges in computational capacity and interpretability. This paper proposes LiteInception--a lightweight interpretable fault diagnosis framework designed for edge deployment. The framework adopts a two-stage cascaded architecture aligned with standard maintenance workflows: Stage 1 performs high-recall fault detection",
       "tags": [
         "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2604-01501v1",
+      "title": "Identifying and Estimating Causal Direct Effects Under Unmeasured Confounding",
+      "authors": "Philippe Boileau, Nima S. Hejazi, Ivana Malenica, Peter B. Gilbert, Sandrine Dudoit, et al.",
+      "date": "2026-04-02",
+      "url": "https://arxiv.org/abs/2604.01501v1",
+      "abstract": "Causal mediation analysis provides techniques for defining and estimating effects that may be endowed with mechanistic interpretations. With many scientific investigations seeking to address mechanistic questions, causal direct and indirect effects have garnered much attention. The natural direct and indirect effects, the most widely used among such causal mediation estimands, are limited in their practical utility due to stringent identification requirements. Accordingly, considerable effort ha",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2604-01619v1",
+      "title": "Automatic Image-Level Morphological Trait Annotation for Organismal Images",
+      "authors": "Vardaan Pahuja, Samuel Stevens, Alyson East, Sydne Record, Yu Su",
+      "date": "2026-04-02",
+      "url": "https://arxiv.org/abs/2604.01619v1",
+      "abstract": "Morphological traits are physical characteristics of biological organisms that provide vital clues on how organisms interact with their environment. Yet extracting these traits remains a slow, expert-driven process, limiting their use in large-scale ecological studies. A major bottleneck is the absence of high-quality datasets linking biological images to trait-level annotations. In this work, we demonstrate that sparse autoencoders trained on foundation-model features yield monosemantic, spatia",
+      "tags": [
+        "SAE",
+        "features",
+        "vision",
+        "biology"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2604-02178v1",
+      "title": "The Expert Strikes Back: Interpreting Mixture-of-Experts Language Models at Expert Level",
+      "authors": "Jeremy Herbst, Jae Hee Lee, Stefan Wermter",
+      "date": "2026-04-02",
+      "url": "https://arxiv.org/abs/2604.02178v1",
+      "abstract": "Mixture-of-Experts (MoE) architectures have become the dominant choice for scaling Large Language Models (LLMs), activating only a subset of parameters per token. While MoE architectures are primarily adopted for computational efficiency, it remains an open question whether their sparsity makes them inherently easier to interpret than dense feed-forward networks (FFNs). We compare MoE experts and dense FFNs using $k$-sparse probing and find that expert neurons are consistently less polysemantic,",
+      "tags": [
+        "features",
+        "probing"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2604-01639v1",
+      "title": "Fragile Reasoning: A Mechanistic Analysis of LLM Sensitivity to Meaning-Preserving Perturbations",
+      "authors": "Shou-Tzu Han, Rodrigue Rizk, KC Santosh",
+      "date": "2026-04-02",
+      "url": "https://arxiv.org/abs/2604.01639v1",
+      "abstract": "Large language models demonstrate strong performance on mathematical reasoning benchmarks, yet remain surprisingly fragile to meaning-preserving surface perturbations. We systematically evaluate three open-weight LLMs, Mistral-7B, Llama-3-8B, and Qwen2.5-7B, on 677 GSM8K problems paired with semantically equivalent variants generated through name substitution and number format paraphrasing. All three models exhibit substantial answer-flip rates (28.8%-45.1%), with number paraphrasing consistentl",
+      "tags": [
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2604-02182v1",
+      "title": "ViT-Explainer: An Interactive Walkthrough of the Vision Transformer Pipeline",
+      "authors": "Juan Manuel Hernandez, Mariana Fernandez-Espinosa, Denis Parra, Diego Gomez-Zara",
+      "date": "2026-04-02",
+      "url": "https://arxiv.org/abs/2604.02182v1",
+      "abstract": "Transformer-based architectures have become the shared backbone of natural language processing and computer vision. However, understanding how these models operate remains challenging, particularly in vision settings, where images are processed as sequences of patch tokens. Existing interpretability tools often focus on isolated components or expert-oriented analysis, leaving a gap in guided, end-to-end understanding of the full inference pipeline. To bridge this gap, we present ViT-Explainer, a",
+      "tags": [
+        "vision"
       ],
       "source": "arXiv",
       "featured": false
@@ -33,6 +100,20 @@
       "url": "https://arxiv.org/abs/2604.01473v1",
       "abstract": "Large Language Models (LLMs) are powerful tools for answering user queries, yet they remain highly vulnerable to jailbreak attacks. Existing guardrail methods typically rely on internal features or textual responses to detect malicious queries, which either introduce substantial latency or suffer from the randomness in text generation. To overcome these limitations, we propose SelfGrader, a lightweight guardrail method that formulates jailbreak detection as a numerical grading problem using toke",
       "tags": [
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2604-00443v1",
+      "title": "Polysemanticity or Polysemy? Lexical Identity Confounds Superposition Metrics",
+      "authors": "Iyad Ait Hou, Rebecca Hwa",
+      "date": "2026-04-01",
+      "url": "https://arxiv.org/abs/2604.00443v1",
+      "abstract": "If the same neuron activates for both \"lender\" and \"riverside,\" standard metrics attribute the overlap to superposition--the neuron must be compressing two unrelated concepts. This work explores how much of the overlap is due a lexical confound: neurons fire for a shared word form (such as \"bank\") rather than for two compressed concepts. A 2x2 factorial decomposition reveals that the lexical-only condition (same word, different meaning) consistently exceeds the semantic-only condition (different",
+      "tags": [
+        "superposition",
         "features"
       ],
       "source": "arXiv",
@@ -5134,6 +5215,21 @@
       "abstract": "Transformers are critical components for energy transmission and conversion in power systems, and their operational condition plays a vital role in ensuring system security and stability. However, the high currents associated with short-circuit faults make substantial electromagnetic forces within transformers, potentially resulting in severe winding deformation or instability. Such incidents deteriorate the transformer\u2019s operational state and may result in significant losses. Therefore, this pa",
       "tags": [
         "circuits"
+      ],
+      "source": "Semantic Scholar",
+      "featured": false
+    },
+    {
+      "id": "ss-3755b2b9e4e9a29d0acb",
+      "title": "Explainable Predictive Modeling for EEG-Based Epilepsy Detection Using Sparse Autoencoder and Random Forest",
+      "authors": "Pratiti Mishra, Himansu Das, Sumati Baral",
+      "date": "2025-10-31",
+      "url": "https://www.semanticscholar.org/paper/3755b2b9e4e9a29d0acbd9f83c8e4769efe6610f",
+      "abstract": "Accurate epileptic seizure detection from electroencephalogram (EEG) data is crucial for effective medical treatment and improved patient care. This study proposes an integrating framework comprising of a Sparse Autoencoder (SAE) for compact feature representation with a Random Forest (RF) classifier for accurate seizure classification. To overcome the model's black-box nature and improve interpretability, Explainable AI (XAI) techniques such as SHAP and LIME are employed. LIME explains individu",
+      "tags": [
+        "SAE",
+        "features",
+        "probing"
       ],
       "source": "Semantic Scholar",
       "featured": false
