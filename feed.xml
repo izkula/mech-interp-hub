@@ -5,9 +5,37 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 06 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 07 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Responses Fall Short of Understanding: Revealing the Gap between Internal Representations and Responses in Visual Document Understanding</title>
+      <link>https://arxiv.org/abs/2604.04411v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Haruka Kawasaki, Ryota Tanaka, Kyosuke Nishida</p><p>Visual document understanding (VDU) is a challenging task for large vision language models (LVLMs), requiring the integration of visual perception, text recognition, and reasoning over structured layouts. Although recent LVLMs have shown progress on VDU benchmarks, their performance is typically evaluated based on generated responses, which may not necessarily reflect whether the model has actually captured the required information internally. In this paper, we investigate how information requir</p><p><strong>Tags:</strong> vision, reasoning</p>]]></description>
+      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.04411v1</guid>
+    </item>
+    <item>
+      <title>Interpreting Video Representations with Spatio-Temporal Sparse Autoencoders</title>
+      <link>https://arxiv.org/abs/2604.03919v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Atahan Dokme, Sriram Vishwanath</p><p>We present the first systematic study of Sparse Autoencoders (SAEs) on video representations. Standard SAEs decompose video into interpretable, monosemantic features but destroy temporal coherence: hard TopK selection produces unstable feature assignments across frames, reducing autocorrelation by 36%. We propose spatio-temporal contrastive objectives and Matryoshka hierarchical grouping that recover and even exceed raw temporal coherence. The contrastive loss weight controls a tunable trade-off</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Sun, 05 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.03919v1</guid>
+    </item>
+    <item>
+      <title>Automated Attention Pattern Discovery at Scale in Large Language Models</title>
+      <link>https://arxiv.org/abs/2604.03764v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Jonathan Katzy, Razvan-Mihai Popescu, Erik Mekkes, Arie van Deursen, Maliheh Izadi</p><p>Large language models have found success by scaling up capabilities to work in general settings. The same can unfortunately not be said for interpretability methods. The current trend in mechanistic interpretability is to provide precise explanations of specific behaviors in controlled settings. These often do not generalize, or are too resource intensive for larger studies. In this work we propose to study repeated behaviors in large language models by mining completion scenarios in Java code d</p><p><strong>Tags:</strong> attention</p>]]></description>
+      <pubDate>Sat, 04 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.03764v1</guid>
+    </item>
+    <item>
+      <title>LangFIR: Discovering Sparse Language-Specific Features from Monolingual Data for Language Steering</title>
+      <link>https://arxiv.org/abs/2604.03532v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Sing Hieng Wong, Hassan Sajjad, A. B. Siddique</p><p>Large language models (LLMs) show strong multilingual capabilities, yet reliably controlling the language of their outputs remains difficult. Representation-level steering addresses this by adding language-specific vectors to model activations at inference time, but identifying language-specific directions in the residual stream often relies on multilingual or parallel data that can be expensive to obtain. Sparse autoencoders (SAEs) decompose residual activations into interpretable, sparse featu</p><p><strong>Tags:</strong> SAE, features, steering</p>]]></description>
+      <pubDate>Sat, 04 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.03532v1</guid>
+    </item>
     <item>
       <title>Finding Belief Geometries with Sparse Autoencoders</title>
       <link>https://arxiv.org/abs/2604.02685v1</link>
@@ -28,6 +56,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Mohammed Suhail B Nadaf</p><p>Function vectors (FVs) -- mean-difference directions extracted from in-context learning demonstrations -- can steer large language model behavior when added to the residual stream. We hypothesized that FV steering failures reflect an absence of task-relevant information: the logit lens would fail alongside steering. We were wrong. In the most comprehensive cross-template FV transfer study to date - 4,032 pairs across 12 tasks, 6 models from 3 families (Llama-3.1-8B, Gemma-2-9B, Mistral-7B-v0.3; </p><p><strong>Tags:</strong> steering</p>]]></description>
       <pubDate>Fri, 03 Apr 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2604.02608v1</guid>
+    </item>
+    <item>
+      <title>MetaSAEs: Joint Training with a Decomposability Penalty Produces More Atomic Sparse Autoencoder Latents</title>
+      <link>https://arxiv.org/abs/2604.03436v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Matthew Levinson</p><p>Sparse autoencoders (SAEs) are increasingly used for safety-relevant applications including alignment detection and model steering. These use cases require SAE latents to be as atomic as possible. Each latent should represent a single coherent concept drawn from a single underlying representational subspace. In practice, SAE latents blend representational subspaces together. A single feature can activate across semantically distinct contexts that share no true common representation, muddying an </p><p><strong>Tags:</strong> SAE, features, safety, steering</p>]]></description>
+      <pubDate>Fri, 03 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.03436v1</guid>
     </item>
     <item>
       <title>LiteInception: A Lightweight and Interpretable Deep Learning Framework for General Aviation Fault Diagnosis</title>
@@ -182,41 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Hector Borobia, Elies Seguí-Mas, Guillermina Tormo-Carbó</p><p>Weight pruning is a standard technique for compressing large language models, yet its effect on learned internal representations remains poorly understood. We present the first systematic study of how unstructured pruning reshapes the feature geometry of language models, using Sparse Autoencoders (SAEs) as interpretability probes. Across three model families (Gemma 3 1B, Gemma 2 2B, Llama 3.2 1B), two pruning methods (magnitude and Wanda), and six sparsity levels (0--60%), we investigate five re</p><p><strong>Tags:</strong> SAE, features, probing</p>]]></description>
       <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2603.25325v1</guid>
-    </item>
-    <item>
-      <title>Sparse Visual Thought Circuits in Vision-Language Models</title>
-      <link>https://arxiv.org/abs/2603.25075v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Yunpeng Zhou</p><p>Sparse autoencoders (SAEs) improve interpretability in multimodal models, but it remains unclear whether SAE features form modular, composable units for reasoning-an assumption underlying many intervention-based steering methods. We test this modularity hypothesis and find it often fails: intervening on a task-selective feature set can modestly improve reasoning accuracy, while intervening on the union of two such sets reliably induces output drift (large unintended changes in predictions) and d</p><p><strong>Tags:</strong> SAE, circuits, features, steering, vision, reasoning</p>]]></description>
-      <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.25075v1</guid>
-    </item>
-    <item>
-      <title>Z-Erase: Enabling Concept Erasure in Single-Stream Diffusion Transformers</title>
-      <link>https://arxiv.org/abs/2603.25074v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Nanxiang Jiang, Zhaoxin Fan, Baisen Wang, Daiheng Gao, Junhang Cheng, et al.</p><p>Concept erasure serves as a vital safety mechanism for removing unwanted concepts from text-to-image (T2I) models. While extensively studied in U-Net and dual-stream architectures (e.g., Flux), this task remains under-explored in the recent emerging paradigm of single-stream diffusion transformers (e.g., Z-Image). In this new paradigm, text and image tokens are processed as a single unified sequence via shared parameters. Consequently, directly applying prior erasure methods typically leads to g</p><p><strong>Tags:</strong> safety, vision</p>]]></description>
-      <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.25074v1</guid>
-    </item>
-    <item>
-      <title>A Neuro-Symbolic System for Interpretable Multimodal Physiological Signals Integration in Human Fatigue Detection</title>
-      <link>https://arxiv.org/abs/2603.24358v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Mohammadreza Jamalifard, Yaxiong Lei, Parasto Azizinezhad, Javier Fumanal-Idocin, Javier Andreu-Perez</p><p>We propose a neuro-symbolic architecture that learns four interpretable physiological concepts, oculomotor dynamics, gaze stability, prefrontal hemodynamics, and multimodal, from eye-tracking and neural hemodynamics, functional near-infrared spectroscopy, (fNIRS) windows using attention-based encoders, and combines them with differentiable approximate reasoning rules using learned weights and soft thresholds, to address both rigid hand-crafted rules and the lack of subject-level alignment diagno</p><p><strong>Tags:</strong> safety, vision, reasoning</p>]]></description>
-      <pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.24358v1</guid>
-    </item>
-    <item>
-      <title>From Weights to Concepts: Data-Free Interpretability of CLIP via Singular Vector Decomposition</title>
-      <link>https://arxiv.org/abs/2603.24653v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Francesco Gentile, Nicola Dall&#x27;Asen, Francesco Tonini, Massimiliano Mancini, Lorenzo Vaquero, et al.</p><p>As vision-language models are deployed at scale, understanding their internal mechanisms becomes increasingly critical. Existing interpretability methods predominantly rely on activations, making them dataset-dependent, vulnerable to data bias, and often restricted to coarse head-level explanations. We introduce SITH (Semantic Inspection of Transformer Heads), a fully data-free, training-free framework that directly analyzes CLIP&#x27;s vision transformer in weight space. For each attention head, we </p><p><strong>Tags:</strong> attention, vision</p>]]></description>
-      <pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.24653v1</guid>
-    </item>
-    <item>
-      <title>Steering LLMs for Culturally Localized Generation</title>
-      <link>https://arxiv.org/abs/2603.23301v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Simran Khanuja, Hongbin Liu, Shujian Zhang, John Lambert, Mingqing Chen, et al.</p><p>LLMs are deployed globally, yet produce responses biased towards cultures with abundant training data. Existing cultural localization approaches such as prompting or post-training alignment are black-box, hard to control, and do not reveal whether failures reflect missing knowledge or poor elicitation. In this paper, we address these gaps using mechanistic interpretability to uncover and manipulate cultural representations in LLMs. Leveraging sparse autoencoders, we identify interpretable featur</p><p><strong>Tags:</strong> SAE, safety, steering</p>]]></description>
-      <pubDate>Tue, 24 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.23301v1</guid>
     </item>
   </channel>
 </rss>
