@@ -1,6 +1,62 @@
 {
-  "lastUpdated": "2026-04-06",
+  "lastUpdated": "2026-04-07",
   "papers": [
+    {
+      "id": "arxiv-2604-04411v1",
+      "title": "Responses Fall Short of Understanding: Revealing the Gap between Internal Representations and Responses in Visual Document Understanding",
+      "authors": "Haruka Kawasaki, Ryota Tanaka, Kyosuke Nishida",
+      "date": "2026-04-06",
+      "url": "https://arxiv.org/abs/2604.04411v1",
+      "abstract": "Visual document understanding (VDU) is a challenging task for large vision language models (LVLMs), requiring the integration of visual perception, text recognition, and reasoning over structured layouts. Although recent LVLMs have shown progress on VDU benchmarks, their performance is typically evaluated based on generated responses, which may not necessarily reflect whether the model has actually captured the required information internally. In this paper, we investigate how information requir",
+      "tags": [
+        "vision",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2604-03919v1",
+      "title": "Interpreting Video Representations with Spatio-Temporal Sparse Autoencoders",
+      "authors": "Atahan Dokme, Sriram Vishwanath",
+      "date": "2026-04-05",
+      "url": "https://arxiv.org/abs/2604.03919v1",
+      "abstract": "We present the first systematic study of Sparse Autoencoders (SAEs) on video representations. Standard SAEs decompose video into interpretable, monosemantic features but destroy temporal coherence: hard TopK selection produces unstable feature assignments across frames, reducing autocorrelation by 36%. We propose spatio-temporal contrastive objectives and Matryoshka hierarchical grouping that recover and even exceed raw temporal coherence. The contrastive loss weight controls a tunable trade-off",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2604-03764v1",
+      "title": "Automated Attention Pattern Discovery at Scale in Large Language Models",
+      "authors": "Jonathan Katzy, Razvan-Mihai Popescu, Erik Mekkes, Arie van Deursen, Maliheh Izadi",
+      "date": "2026-04-04",
+      "url": "https://arxiv.org/abs/2604.03764v1",
+      "abstract": "Large language models have found success by scaling up capabilities to work in general settings. The same can unfortunately not be said for interpretability methods. The current trend in mechanistic interpretability is to provide precise explanations of specific behaviors in controlled settings. These often do not generalize, or are too resource intensive for larger studies. In this work we propose to study repeated behaviors in large language models by mining completion scenarios in Java code d",
+      "tags": [
+        "attention"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2604-03532v1",
+      "title": "LangFIR: Discovering Sparse Language-Specific Features from Monolingual Data for Language Steering",
+      "authors": "Sing Hieng Wong, Hassan Sajjad, A. B. Siddique",
+      "date": "2026-04-04",
+      "url": "https://arxiv.org/abs/2604.03532v1",
+      "abstract": "Large language models (LLMs) show strong multilingual capabilities, yet reliably controlling the language of their outputs remains difficult. Representation-level steering addresses this by adding language-specific vectors to model activations at inference time, but identifying language-specific directions in the residual stream often relies on multilingual or parallel data that can be expensive to obtain. Sparse autoencoders (SAEs) decompose residual activations into interpretable, sparse featu",
+      "tags": [
+        "SAE",
+        "features",
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2604-02685v1",
       "title": "Finding Belief Geometries with Sparse Autoencoders",
@@ -37,6 +93,22 @@
       "url": "https://arxiv.org/abs/2604.02608v1",
       "abstract": "Function vectors (FVs) -- mean-difference directions extracted from in-context learning demonstrations -- can steer large language model behavior when added to the residual stream. We hypothesized that FV steering failures reflect an absence of task-relevant information: the logit lens would fail alongside steering. We were wrong. In the most comprehensive cross-template FV transfer study to date - 4,032 pairs across 12 tasks, 6 models from 3 families (Llama-3.1-8B, Gemma-2-9B, Mistral-7B-v0.3; ",
       "tags": [
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2604-03436v1",
+      "title": "MetaSAEs: Joint Training with a Decomposability Penalty Produces More Atomic Sparse Autoencoder Latents",
+      "authors": "Matthew Levinson",
+      "date": "2026-04-03",
+      "url": "https://arxiv.org/abs/2604.03436v1",
+      "abstract": "Sparse autoencoders (SAEs) are increasingly used for safety-relevant applications including alignment detection and model steering. These use cases require SAE latents to be as atomic as possible. Each latent should represent a single coherent concept drawn from a single underlying representational subspace. In practice, SAE latents blend representational subspaces together. A single feature can activate across semantically distinct contexts that share no true common representation, muddying an ",
+      "tags": [
+        "SAE",
+        "features",
+        "safety",
         "steering"
       ],
       "source": "arXiv",
@@ -5284,6 +5356,20 @@
       "abstract": "This study analyzes the decrease in SF\u2086 gas pressure in the 70 kV circuit breaker Transformer Bay 3 at Babakan Substation, which affects the reliability of the power system. SF\u2086 gas is used as an insulating medium due to its high dielectric strength but is susceptible to micro-leakage, which degrades equipment performance. This research employs a qualitative approach with a case study strategy based on primary data obtained from field observations, interviews, and testing documentation before an",
       "tags": [
         "circuits"
+      ],
+      "source": "Semantic Scholar",
+      "featured": false
+    },
+    {
+      "id": "ss-cbb9a22d651e4d7730a5",
+      "title": "Analysis of Transformer Tank Deformation and Rupture, Part 3: Relationship with System Short-Circuit Current",
+      "authors": "Zhigang Zhao",
+      "date": "2025-10-24",
+      "url": "https://www.semanticscholar.org/paper/cbb9a22d651e4d7730a5c9a57fd525754d8ecb14",
+      "abstract": "In order to analyze the ability of large oil-immersed equipment to withstand internal large arc fault, the technical development of oil-immersed equipment such as oil switch, oil-immersed instrument transformer, oil-impregnated paper bushing and oil-immersed power transformer in explosion-proof and fire-proof is reviewed in this paper. There is a trend of using SF6 or dry-type insulation instead of oil-immersed equipment in less oil equipment. However, similar technical approaches cannot be adop",
+      "tags": [
+        "circuits",
+        "survey"
       ],
       "source": "Semantic Scholar",
       "featured": false
