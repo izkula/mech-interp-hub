@@ -5,9 +5,37 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 08 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>LAG-XAI: A Lie-Inspired Affine Geometric Framework for Interpretable Paraphrasing in Transformer Latent Spaces</title>
+      <link>https://arxiv.org/abs/2604.06086v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Olexander Mazurets, Olexander Barmak, Leonid Bedratyuk, Iurii Krak</p><p>Modern Transformer-based language models achieve strong performance in natural language processing tasks, yet their latent semantic spaces remain largely uninterpretable black boxes. This paper introduces LAG-XAI (Lie Affine Geometry for Explainable AI), a novel geometric framework that models paraphrasing not as discrete word substitutions, but as a structured affine transformation within the embedding space. By conceptualizing paraphrasing as a continuous geometric flow on a semantic manifold,</p>]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.06086v1</guid>
+    </item>
+    <item>
+      <title>Disentangling MLP Neuron Weights in Vocabulary Space</title>
+      <link>https://arxiv.org/abs/2604.06005v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Asaf Avrahamy, Yoav Gur-Arieh, Mor Geva</p><p>Interpreting the information encoded in model weights remains a fundamental challenge in mechanistic interpretability. In this work, we introduce ROTATE (Rotation-Optimized Token Alignment in weighT spacE), a data-free method requiring no forward passes that disentangles MLP neurons directly in weight space. Our approach relies on a key statistical observation: neurons that encode coherent, monosemantic concepts exhibit high kurtosis when projected onto the model&#x27;s vocabulary. By optimizing rota</p><p><strong>Tags:</strong> features, safety</p>]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.06005v1</guid>
+    </item>
+    <item>
+      <title>Beyond Semantics: Disentangling Information Scope in Sparse Autoencoders for CLIP</title>
+      <link>https://arxiv.org/abs/2604.05724v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Yusung Ro, Jaehyun Choi, Junmo Kim</p><p>Sparse Autoencoders (SAEs) have emerged as a powerful tool for interpreting the internal representations of CLIP vision encoders, yet existing analyses largely focus on the semantic meaning of individual features. We introduce information scope as a complementary dimension of interpretability that characterizes how broadly an SAE feature aggregates visual evidence, ranging from localized, patch-specific cues to global, image-level signals. We observe that some SAE features respond consistently a</p><p><strong>Tags:</strong> SAE, features, vision</p>]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.05724v1</guid>
+    </item>
+    <item>
+      <title>Selective Aggregation of Attention Maps Improves Diffusion-Based Visual Interpretation</title>
+      <link>https://arxiv.org/abs/2604.05906v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Jungwon Park, Jungmin Ko, Dongnam Byun, Wonjong Rhee</p><p>Numerous studies on text-to-image (T2I) generative models have utilized cross-attention maps to boost application performance and interpret model behavior. However, the distinct characteristics of attention maps from different attention heads remain relatively underexplored. In this study, we show that selectively aggregating cross-attention maps from heads most relevant to a target concept can improve visual interpretability. Compared to the diffusion-based segmentation method DAAM, our approac</p><p><strong>Tags:</strong> attention, vision</p>]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.05906v1</guid>
+    </item>
     <item>
       <title>Responses Fall Short of Understanding: Revealing the Gap between Internal Representations and Responses in Visual Document Understanding</title>
       <link>https://arxiv.org/abs/2604.04411v1</link>
@@ -163,6 +191,13 @@
       <guid>https://arxiv.org/abs/2603.27064v1</guid>
     </item>
     <item>
+      <title>Sparse Autoencoders as a Steering Basis for Phase Synchronization in Graph-Based CFD Surrogates</title>
+      <link>https://arxiv.org/abs/2604.04946v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Yeping Hu, Ruben Glatt, Shusen Liu</p><p>Graph-based surrogate models provide fast alternatives to high-fidelity CFD solvers, but their opaque latent spaces and limited controllability restrict use in safety-critical settings. A key failure mode in oscillatory flows is phase drift, where predictions remain qualitatively correct but gradually lose temporal alignment with observations, limiting use in digital twins and closed-loop control. Correcting this through retraining is expensive and impractical during deployment. We ask whether p</p><p><strong>Tags:</strong> SAE, safety, steering</p>]]></description>
+      <pubDate>Sat, 28 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.04946v1</guid>
+    </item>
+    <item>
       <title>From Human Cognition to Neural Activations: Probing the Computational Primitives of Spatial Reasoning in LLMs</title>
       <link>https://arxiv.org/abs/2603.26323v1</link>
       <description><![CDATA[<p><strong>Authors:</strong> Jiyuan An, Liner Yang, Mengyan Wang, Luming Lu, Weihua An, et al.</p><p>As spatial intelligence becomes an increasingly important capability for foundation models, it remains unclear whether large language models&#x27; (LLMs) performance on spatial reasoning benchmarks reflects structured internal spatial representations or reliance on linguistic heuristics. We address this question from a mechanistic perspective by examining how spatial information is internally represented and used. Drawing on computational theories of human spatial cognition, we decompose spatial reas</p><p><strong>Tags:</strong> probing, reasoning</p>]]></description>
@@ -182,41 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Timothy Doyeon Kim, Ulises Pereira-Obilinovic, Yiliu Wang, Eric Shea-Brown, Uygar Sümbül</p><p>Connectivity structure shapes neural computation, but inferring this structure from population recordings is degenerate: multiple connectivity structures can generate identical dynamics. Recent work uses low-rank recurrent neural networks (lrRNNs) to infer low-dimensional latent dynamics and connectivity structure from observed activity, enabling a mechanistic interpretation of the dynamics. However, standard approaches for training lrRNNs can recover spurious structures irrelevant to the underl</p>]]></description>
       <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2603.26506v1</guid>
-    </item>
-    <item>
-      <title>Entanglement as Memory: Mechanistic Interpretability of Quantum Language Models</title>
-      <link>https://arxiv.org/abs/2603.26494v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Nathan Roll</p><p>Quantum language models have shown competitive performance on sequential tasks, yet whether trained quantum circuits exploit genuinely quantum resources -- or merely embed classical computation in quantum hardware -- remains unknown. Prior work has evaluated these models through endpoint metrics alone, without examining the memory strategies they actually learn internally. We introduce the first mechanistic interpretability study of quantum language models, combining causal gate ablation, entang</p><p><strong>Tags:</strong> circuits</p>]]></description>
-      <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.26494v1</guid>
-    </item>
-    <item>
-      <title>Squish and Release: Exposing Hidden Hallucinations by Making Them Surface as Safety Signals</title>
-      <link>https://arxiv.org/abs/2603.26829v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Nathaniel Oh, Paul Attie</p><p>Language models detect false premises when asked directly but absorb them under conversational pressure, producing authoritative professional output built on errors they already identified. This failure - order-gap hallucination - is invisible to output inspection because the error migrates into the activation space of the safety circuit, suppressed but not erased. We introduce Squish and Release (S&amp;R), an activation-patching architecture with two components: a fixed detector body (layers 24-31,</p><p><strong>Tags:</strong> circuits, safety</p>]]></description>
-      <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.26829v1</guid>
-    </item>
-    <item>
-      <title>Closing the Confidence-Faithfulness Gap in Large Language Models</title>
-      <link>https://arxiv.org/abs/2603.25052v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Miranda Muqing Miao, Lyle Ungar</p><p>Large language models (LLMs) tend to verbalize confidence scores that are largely detached from their actual accuracy, yet the geometric relationship governing this behavior remain poorly understood. In this work, we present a mechanistic interpretability analysis of verbalized confidence, using linear probes and contrastive activation addition (CAA) steering to show that calibration and verbalized confidence signals are encoded linearly but are orthogonal to one another -- a finding consistent </p><p><strong>Tags:</strong> probing, steering</p>]]></description>
-      <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.25052v1</guid>
-    </item>
-    <item>
-      <title>Mechanistically Interpreting Compression in Vision-Language Models</title>
-      <link>https://arxiv.org/abs/2603.25035v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Veeraraju Elluru, Arth Singh, Roberto Aguero, Ajay Agarwal, Debojyoti Das, et al.</p><p>Compressed vision-language models (VLMs) are widely used to reduce memory and compute costs, making them a suitable choice for real-world deployment. However, compressing these models raises concerns about whether internal computations and safety behaviors are preserved. In this work, we use causal circuit analysis and crosscoder-based feature comparisons to examine how pruning and quantization fundamentally change the internals across representative VLMs. We observe that pruning generally keeps</p><p><strong>Tags:</strong> circuits, features, safety, vision</p>]]></description>
-      <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.25035v1</guid>
-    </item>
-    <item>
-      <title>How Pruning Reshapes Features: Sparse Autoencoder Analysis of Weight-Pruned Language Models</title>
-      <link>https://arxiv.org/abs/2603.25325v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Hector Borobia, Elies Seguí-Mas, Guillermina Tormo-Carbó</p><p>Weight pruning is a standard technique for compressing large language models, yet its effect on learned internal representations remains poorly understood. We present the first systematic study of how unstructured pruning reshapes the feature geometry of language models, using Sparse Autoencoders (SAEs) as interpretability probes. Across three model families (Gemma 3 1B, Gemma 2 2B, Llama 3.2 1B), two pruning methods (magnitude and Wanda), and six sparsity levels (0--60%), we investigate five re</p><p><strong>Tags:</strong> SAE, features, probing</p>]]></description>
-      <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.25325v1</guid>
     </item>
   </channel>
 </rss>
