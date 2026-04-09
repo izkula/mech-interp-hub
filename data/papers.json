@@ -1,6 +1,17 @@
 {
-  "lastUpdated": "2026-04-08",
+  "lastUpdated": "2026-04-09",
   "papers": [
+    {
+      "id": "arxiv-2604-07019v1",
+      "title": "ConceptTracer: Interactive Analysis of Concept Saliency and Selectivity in Neural Representations",
+      "authors": "Ricardo Knauer, Andre Beinrucker, Erik Rodner",
+      "date": "2026-04-08",
+      "url": "https://arxiv.org/abs/2604.07019v1",
+      "abstract": "Neural networks deliver impressive predictive performance across a variety of tasks, but they are often opaque in their decision-making processes. Despite a growing interest in mechanistic interpretability, tools for systematically exploring the representations learned by neural networks in general, and tabular foundation models in particular, remain limited. In this work, we introduce ConceptTracer, an interactive application for analyzing neural representations through the lens of human-interp",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2604-06086v1",
       "title": "LAG-XAI: A Lie-Inspired Affine Geometric Framework for Interpretable Paraphrasing in Transformer Latent Spaces",
@@ -56,6 +67,48 @@
       "featured": false
     },
     {
+      "id": "arxiv-2604-06495v1",
+      "title": "Improving Robustness In Sparse Autoencoders via Masked Regularization",
+      "authors": "Vivek Narayanaswamy, Kowshik Thopalli, Bhavya Kailkhura, Wesam Sakla",
+      "date": "2026-04-07",
+      "url": "https://arxiv.org/abs/2604.06495v1",
+      "abstract": "Sparse autoencoders (SAEs) are widely used in mechanistic interpretability to project LLM activations onto sparse latent spaces. However, sparsity alone is an imperfect proxy for interpretability, and current training objectives often result in brittle latent representations. SAEs are known to be prone to feature absorption, where general features are subsumed by more specific ones due to co-occurrence, degrading interpretability despite high reconstruction fidelity. Recent negative results on O",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2604-06483v1",
+      "title": "Distributed Interpretability and Control for Large Language Models",
+      "authors": "Dev Arpan Desai, Shaoyi Huang, Zining Zhu",
+      "date": "2026-04-07",
+      "url": "https://arxiv.org/abs/2604.06483v1",
+      "abstract": "Large language models that require multiple GPU cards to host are usually the most capable models. It is necessary to understand and steer these models, but the current technologies do not support the interpretability and steering of these models in the multi-GPU setting as well as the single-GPU setting. We present a practical implementation of activation-level interpretability (logit lens) and steering (steering vector) that scales up to multi-GPU language models. Our system implements design ",
+      "tags": [
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2604-06374v1",
+      "title": "The Illusion of Superposition? A Principled Analysis of Latent Thinking in Language Models",
+      "authors": "Michael Rizvi-Martel, Guillaume Rabusseau, Marius Mosbach",
+      "date": "2026-04-07",
+      "url": "https://arxiv.org/abs/2604.06374v1",
+      "abstract": "Latent reasoning via continuous chain-of-thoughts (Latent CoT) has emerged as a promising alternative to discrete CoT reasoning. Operating in continuous space increases expressivity and has been hypothesized to enable superposition: the ability to maintain multiple candidate solutions simultaneously within a single representation. Despite theoretical arguments, it remains unclear whether language models actually leverage superposition when reasoning using latent CoTs. We investigate this questio",
+      "tags": [
+        "superposition",
+        "theory",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
       "id": "arxiv-2604-04411v1",
       "title": "Responses Fall Short of Understanding: Revealing the Gap between Internal Representations and Responses in Visual Document Understanding",
       "authors": "Haruka Kawasaki, Ryota Tanaka, Kyosuke Nishida",
@@ -65,6 +118,21 @@
       "tags": [
         "vision",
         "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2604-06256v1",
+      "title": "Spectral Edge Dynamics Reveal Functional Modes of Learning",
+      "authors": "Yongzhong Xu",
+      "date": "2026-04-06",
+      "url": "https://arxiv.org/abs/2604.06256v1",
+      "abstract": "Training dynamics during grokking concentrate along a small number of dominant update directions -- the spectral edge -- which reliably distinguishes grokking from non-grokking regimes. We show that standard mechanistic interpretability tools (head attribution, activation probing, sparse autoencoders) fail to capture these directions: their structure is not localized in parameter or feature space. Instead, each direction induces a structured function over the input domain, revealing low-dimensio",
+      "tags": [
+        "SAE",
+        "features",
+        "probing"
       ],
       "source": "arXiv",
       "featured": false
