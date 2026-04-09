@@ -5,9 +5,16 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 08 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 09 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>ConceptTracer: Interactive Analysis of Concept Saliency and Selectivity in Neural Representations</title>
+      <link>https://arxiv.org/abs/2604.07019v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Ricardo Knauer, Andre Beinrucker, Erik Rodner</p><p>Neural networks deliver impressive predictive performance across a variety of tasks, but they are often opaque in their decision-making processes. Despite a growing interest in mechanistic interpretability, tools for systematically exploring the representations learned by neural networks in general, and tabular foundation models in particular, remain limited. In this work, we introduce ConceptTracer, an interactive application for analyzing neural representations through the lens of human-interp</p>]]></description>
+      <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.07019v1</guid>
+    </item>
     <item>
       <title>LAG-XAI: A Lie-Inspired Affine Geometric Framework for Interpretable Paraphrasing in Transformer Latent Spaces</title>
       <link>https://arxiv.org/abs/2604.06086v1</link>
@@ -37,11 +44,39 @@
       <guid>https://arxiv.org/abs/2604.05906v1</guid>
     </item>
     <item>
+      <title>Improving Robustness In Sparse Autoencoders via Masked Regularization</title>
+      <link>https://arxiv.org/abs/2604.06495v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Vivek Narayanaswamy, Kowshik Thopalli, Bhavya Kailkhura, Wesam Sakla</p><p>Sparse autoencoders (SAEs) are widely used in mechanistic interpretability to project LLM activations onto sparse latent spaces. However, sparsity alone is an imperfect proxy for interpretability, and current training objectives often result in brittle latent representations. SAEs are known to be prone to feature absorption, where general features are subsumed by more specific ones due to co-occurrence, degrading interpretability despite high reconstruction fidelity. Recent negative results on O</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.06495v1</guid>
+    </item>
+    <item>
+      <title>Distributed Interpretability and Control for Large Language Models</title>
+      <link>https://arxiv.org/abs/2604.06483v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Dev Arpan Desai, Shaoyi Huang, Zining Zhu</p><p>Large language models that require multiple GPU cards to host are usually the most capable models. It is necessary to understand and steer these models, but the current technologies do not support the interpretability and steering of these models in the multi-GPU setting as well as the single-GPU setting. We present a practical implementation of activation-level interpretability (logit lens) and steering (steering vector) that scales up to multi-GPU language models. Our system implements design </p><p><strong>Tags:</strong> steering</p>]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.06483v1</guid>
+    </item>
+    <item>
+      <title>The Illusion of Superposition? A Principled Analysis of Latent Thinking in Language Models</title>
+      <link>https://arxiv.org/abs/2604.06374v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Michael Rizvi-Martel, Guillaume Rabusseau, Marius Mosbach</p><p>Latent reasoning via continuous chain-of-thoughts (Latent CoT) has emerged as a promising alternative to discrete CoT reasoning. Operating in continuous space increases expressivity and has been hypothesized to enable superposition: the ability to maintain multiple candidate solutions simultaneously within a single representation. Despite theoretical arguments, it remains unclear whether language models actually leverage superposition when reasoning using latent CoTs. We investigate this questio</p><p><strong>Tags:</strong> superposition, theory, reasoning</p>]]></description>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.06374v1</guid>
+    </item>
+    <item>
       <title>Responses Fall Short of Understanding: Revealing the Gap between Internal Representations and Responses in Visual Document Understanding</title>
       <link>https://arxiv.org/abs/2604.04411v1</link>
       <description><![CDATA[<p><strong>Authors:</strong> Haruka Kawasaki, Ryota Tanaka, Kyosuke Nishida</p><p>Visual document understanding (VDU) is a challenging task for large vision language models (LVLMs), requiring the integration of visual perception, text recognition, and reasoning over structured layouts. Although recent LVLMs have shown progress on VDU benchmarks, their performance is typically evaluated based on generated responses, which may not necessarily reflect whether the model has actually captured the required information internally. In this paper, we investigate how information requir</p><p><strong>Tags:</strong> vision, reasoning</p>]]></description>
       <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2604.04411v1</guid>
+    </item>
+    <item>
+      <title>Spectral Edge Dynamics Reveal Functional Modes of Learning</title>
+      <link>https://arxiv.org/abs/2604.06256v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Yongzhong Xu</p><p>Training dynamics during grokking concentrate along a small number of dominant update directions -- the spectral edge -- which reliably distinguishes grokking from non-grokking regimes. We show that standard mechanistic interpretability tools (head attribution, activation probing, sparse autoencoders) fail to capture these directions: their structure is not localized in parameter or feature space. Instead, each direction induces a structured function over the input domain, revealing low-dimensio</p><p><strong>Tags:</strong> SAE, features, probing</p>]]></description>
+      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.06256v1</guid>
     </item>
     <item>
       <title>Interpreting Video Representations with Spatio-Temporal Sparse Autoencoders</title>
@@ -182,41 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Utsav Maskey, Mark Dras, Usman Naseem</p><p>Aligned language models that are trained to refuse harmful requests also exhibit over-refusal: they decline safe instructions that seemingly resemble harmful instructions. A natural approach is to ablate the global refusal direction, steering the hidden-state vectors away or towards the harmful-refusal examples, but this corrects over-refusal only incidentally while disrupting the broader refusal mechanism. In this work, we analyse the representational geometry of both refusal types to understan</p><p><strong>Tags:</strong> safety, steering</p>]]></description>
       <pubDate>Sun, 29 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2603.27518v1</guid>
-    </item>
-    <item>
-      <title>ChartNet: A Million-Scale, High-Quality Multimodal Dataset for Robust Chart Understanding</title>
-      <link>https://arxiv.org/abs/2603.27064v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Jovana Kondic, Pengyuan Li, Dhiraj Joshi, Isaac Sanchez, Ben Wiesel, et al.</p><p>Understanding charts requires models to jointly reason over geometric visual patterns, structured numerical data, and natural language -- a capability where current vision-language models (VLMs) remain limited. We introduce ChartNet, a high-quality, million-scale multimodal dataset designed to advance chart interpretation and reasoning. ChartNet leverages a novel code-guided synthesis pipeline to generate 1.5 million diverse chart samples spanning 24 chart types and 6 plotting libraries. Each sa</p><p><strong>Tags:</strong> vision, reasoning</p>]]></description>
-      <pubDate>Sat, 28 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.27064v1</guid>
-    </item>
-    <item>
-      <title>Sparse Autoencoders as a Steering Basis for Phase Synchronization in Graph-Based CFD Surrogates</title>
-      <link>https://arxiv.org/abs/2604.04946v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Yeping Hu, Ruben Glatt, Shusen Liu</p><p>Graph-based surrogate models provide fast alternatives to high-fidelity CFD solvers, but their opaque latent spaces and limited controllability restrict use in safety-critical settings. A key failure mode in oscillatory flows is phase drift, where predictions remain qualitatively correct but gradually lose temporal alignment with observations, limiting use in digital twins and closed-loop control. Correcting this through retraining is expensive and impractical during deployment. We ask whether p</p><p><strong>Tags:</strong> SAE, safety, steering</p>]]></description>
-      <pubDate>Sat, 28 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.04946v1</guid>
-    </item>
-    <item>
-      <title>From Human Cognition to Neural Activations: Probing the Computational Primitives of Spatial Reasoning in LLMs</title>
-      <link>https://arxiv.org/abs/2603.26323v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Jiyuan An, Liner Yang, Mengyan Wang, Luming Lu, Weihua An, et al.</p><p>As spatial intelligence becomes an increasingly important capability for foundation models, it remains unclear whether large language models&#x27; (LLMs) performance on spatial reasoning benchmarks reflects structured internal spatial representations or reliance on linguistic heuristics. We address this question from a mechanistic perspective by examining how spatial information is internally represented and used. Drawing on computational theories of human spatial cognition, we decompose spatial reas</p><p><strong>Tags:</strong> probing, reasoning</p>]]></description>
-      <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.26323v1</guid>
-    </item>
-    <item>
-      <title>A Universal Vibe? Finding and Controlling Language-Agnostic Informal Register with SAEs</title>
-      <link>https://arxiv.org/abs/2603.26236v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Uri Z. Kialy, Avi Shtarkberg, Ayal Klein</p><p>While multilingual language models successfully transfer factual and syntactic knowledge across languages, it remains unclear whether they process culture-specific pragmatic registers, such as slang, as isolated language-specific memorizations or as unified, abstract concepts. We study this by probing the internal representations of Gemma-2-9B-IT using Sparse Autoencoders (SAEs) across three typologically diverse source languages: English, Hebrew, and Russian. To definitively isolate pragmatic r</p><p><strong>Tags:</strong> SAE, probing</p>]]></description>
-      <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.26236v1</guid>
-    </item>
-    <item>
-      <title>Identifying Connectivity Distributions from Neural Dynamics Using Flows</title>
-      <link>https://arxiv.org/abs/2603.26506v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Timothy Doyeon Kim, Ulises Pereira-Obilinovic, Yiliu Wang, Eric Shea-Brown, Uygar Sümbül</p><p>Connectivity structure shapes neural computation, but inferring this structure from population recordings is degenerate: multiple connectivity structures can generate identical dynamics. Recent work uses low-rank recurrent neural networks (lrRNNs) to infer low-dimensional latent dynamics and connectivity structure from observed activity, enabling a mechanistic interpretation of the dynamics. However, standard approaches for training lrRNNs can recover spurious structures irrelevant to the underl</p>]]></description>
-      <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.26506v1</guid>
     </item>
   </channel>
 </rss>
