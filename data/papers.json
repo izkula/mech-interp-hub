@@ -1,6 +1,47 @@
 {
-  "lastUpdated": "2026-04-09",
+  "lastUpdated": "2026-04-10",
   "papers": [
+    {
+      "id": "arxiv-2604-08072v1",
+      "title": "Tensor-Augmented Convolutional Neural Networks: Enhancing Expressivity with Generic Tensor Kernels",
+      "authors": "Chia-Wei Hsing, Wei-Lin Tu",
+      "date": "2026-04-09",
+      "url": "https://arxiv.org/abs/2604.08072v1",
+      "abstract": "Convolutional Neural Networks (CNNs) excel at extracting local features hierarchically, but their performance in capturing complex correlations hinges heavily on deep architectures, which are usually computationally demanding and difficult to interpret. To address these issues, we propose a physically-guided shallow model: tensor-augmented CNN (TACNN), which replaces conventional convolution kernels with generic tensors to enhance representational capacity. This choice is motivated by the fact t",
+      "tags": [
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2604-08039v1",
+      "title": "LINE: LLM-based Iterative Neuron Explanations for Vision Models",
+      "authors": "Vladimir Zaigrajew, Micha\u0142 Piechota, Gaspar Sekula, Przemys\u0142aw Biecek",
+      "date": "2026-04-09",
+      "url": "https://arxiv.org/abs/2604.08039v1",
+      "abstract": "Interpreting the concepts encoded by individual neurons in deep neural networks is a crucial step towards understanding their complex decision-making processes and ensuring AI safety. Despite recent progress in neuron labeling, existing methods often limit the search space to predefined concept vocabularies or produce overly specific descriptions that fail to capture higher-order, global concepts. We introduce LINE, a novel, training-free iterative approach tailored for open-vocabulary concept l",
+      "tags": [
+        "safety",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2604-08524v1",
+      "title": "What Drives Representation Steering? A Mechanistic Case Study on Steering Refusal",
+      "authors": "Stephen Cheng, Sarah Wiegreffe, Dinesh Manocha",
+      "date": "2026-04-09",
+      "url": "https://arxiv.org/abs/2604.08524v1",
+      "abstract": "Applying steering vectors to large language models (LLMs) is an efficient and effective model alignment technique, but we lack an interpretable explanation for how it works-- specifically, what internal mechanisms steering vectors affect and how this results in different model outputs. To investigate the causal mechanisms underlying the effectiveness of steering vectors, we conduct a comprehensive case study on refusal. We propose a multi-token activation patching framework and discover that dif",
+      "tags": [
+        "safety",
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2604-07019v1",
       "title": "ConceptTracer: Interactive Analysis of Concept Saliency and Selectivity in Neural Representations",
