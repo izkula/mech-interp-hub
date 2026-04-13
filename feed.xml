@@ -5,9 +5,23 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 13 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Arbitration Failure, Not Perceptual Blindness: How Vision-Language Models Resolve Visual-Linguistic Conflicts</title>
+      <link>https://arxiv.org/abs/2604.09364v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Farhad Nooralahzadeh, Omid Rohanian, Yi Zhang, Jonathan Fürst, Kurt Stockinger</p><p>When a Vision-Language Model (VLM) sees a blue banana and answers &quot;yellow&quot;, is the problem of perception or arbitration? We explore the question in ten VLMs with various sizes and reveal an Encoding--Grounding Dissociation: models that fail to report what they see (and thus provide a wrong answer) still encode the visual evidence as strongly as models that provide the correct answer. Using Multimodal Arbitration Crossover (MAC) analysis with layer-by-layer Logit Lens probing, we track the compet</p><p><strong>Tags:</strong> probing, vision</p>]]></description>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.09364v1</guid>
+    </item>
+    <item>
+      <title>Dyadic-Order Quantum Fractional Transforms: Circuit Constructions and Applications to Hartley and Cosine Transform Families</title>
+      <link>https://arxiv.org/abs/2604.09295v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Matheus J. A. Oliveira, Israel F. Araujo, José R. de Oliveira Neto, Juliano B. Lima</p><p>This paper presents a generalized circuit framework for constructing Shih-type fractionalizations of unitary operators of dyadic order, i.e., operators $U$ satisfying $U^{2^n}=I$. Building upon the architecture of the quantum fractional Fourier transform (QFrFT), we show that fractionalization can be implemented coherently as a weighted superposition of integer powers, $\sum_k c_k(α)U^k$, where the coefficients are generated through an ancilla-domain quantum Fourier transform and a diagonal phas</p><p><strong>Tags:</strong> circuits, superposition</p>]]></description>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.09295v1</guid>
+    </item>
     <item>
       <title>Tensor-Augmented Convolutional Neural Networks: Enhancing Expressivity with Generic Tensor Kernels</title>
       <link>https://arxiv.org/abs/2604.08072v1</link>
@@ -203,20 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Zikai Zhang, Rui Hu, Olivera Kotevska, Jiahao Xu</p><p>Large Language Models (LLMs) are powerful tools for answering user queries, yet they remain highly vulnerable to jailbreak attacks. Existing guardrail methods typically rely on internal features or textual responses to detect malicious queries, which either introduce substantial latency or suffer from the randomness in text generation. To overcome these limitations, we propose SelfGrader, a lightweight guardrail method that formulates jailbreak detection as a numerical grading problem using toke</p><p><strong>Tags:</strong> features</p>]]></description>
       <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2604.01473v1</guid>
-    </item>
-    <item>
-      <title>Polysemanticity or Polysemy? Lexical Identity Confounds Superposition Metrics</title>
-      <link>https://arxiv.org/abs/2604.00443v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Iyad Ait Hou, Rebecca Hwa</p><p>If the same neuron activates for both &quot;lender&quot; and &quot;riverside,&quot; standard metrics attribute the overlap to superposition--the neuron must be compressing two unrelated concepts. This work explores how much of the overlap is due a lexical confound: neurons fire for a shared word form (such as &quot;bank&quot;) rather than for two compressed concepts. A 2x2 factorial decomposition reveals that the lexical-only condition (same word, different meaning) consistently exceeds the semantic-only condition (different</p><p><strong>Tags:</strong> superposition, features</p>]]></description>
-      <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.00443v1</guid>
-    </item>
-    <item>
-      <title>Tracking Equivalent Mechanistic Interpretations Across Neural Networks</title>
-      <link>https://arxiv.org/abs/2603.30002v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Alan Sun, Mariya Toneva</p><p>Mechanistic interpretability (MI) is an emerging framework for interpreting neural networks. Given a task and model, MI aims to discover a succinct algorithmic process, an interpretation, that explains the model&#x27;s decision process on that task. However, MI is difficult to scale and generalize. This stems in part from two key challenges: there is no precise notion of a valid interpretation; and, generating interpretations is often an ad hoc process. In this paper, we address these challenges by d</p>]]></description>
-      <pubDate>Tue, 31 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2603.30002v1</guid>
     </item>
   </channel>
 </rss>
