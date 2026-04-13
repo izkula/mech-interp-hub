@@ -1,6 +1,34 @@
 {
-  "lastUpdated": "2026-04-12",
+  "lastUpdated": "2026-04-13",
   "papers": [
+    {
+      "id": "arxiv-2604-09364v1",
+      "title": "Arbitration Failure, Not Perceptual Blindness: How Vision-Language Models Resolve Visual-Linguistic Conflicts",
+      "authors": "Farhad Nooralahzadeh, Omid Rohanian, Yi Zhang, Jonathan F\u00fcrst, Kurt Stockinger",
+      "date": "2026-04-10",
+      "url": "https://arxiv.org/abs/2604.09364v1",
+      "abstract": "When a Vision-Language Model (VLM) sees a blue banana and answers \"yellow\", is the problem of perception or arbitration? We explore the question in ten VLMs with various sizes and reveal an Encoding--Grounding Dissociation: models that fail to report what they see (and thus provide a wrong answer) still encode the visual evidence as strongly as models that provide the correct answer. Using Multimodal Arbitration Crossover (MAC) analysis with layer-by-layer Logit Lens probing, we track the compet",
+      "tags": [
+        "probing",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2604-09295v1",
+      "title": "Dyadic-Order Quantum Fractional Transforms: Circuit Constructions and Applications to Hartley and Cosine Transform Families",
+      "authors": "Matheus J. A. Oliveira, Israel F. Araujo, Jos\u00e9 R. de Oliveira Neto, Juliano B. Lima",
+      "date": "2026-04-10",
+      "url": "https://arxiv.org/abs/2604.09295v1",
+      "abstract": "This paper presents a generalized circuit framework for constructing Shih-type fractionalizations of unitary operators of dyadic order, i.e., operators $U$ satisfying $U^{2^n}=I$. Building upon the architecture of the quantum fractional Fourier transform (QFrFT), we show that fractionalization can be implemented coherently as a weighted superposition of integer powers, $\\sum_k c_k(\u03b1)U^k$, where the coefficients are generated through an ancilla-domain quantum Fourier transform and a diagonal phas",
+      "tags": [
+        "circuits",
+        "superposition"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2604-08072v1",
       "title": "Tensor-Augmented Convolutional Neural Networks: Enhancing Expressivity with Generic Tensor Kernels",
