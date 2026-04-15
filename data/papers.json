@@ -1,6 +1,43 @@
 {
-  "lastUpdated": "2026-04-14",
+  "lastUpdated": "2026-04-15",
   "papers": [
+    {
+      "id": "arxiv-2604-12806v1",
+      "title": "Interpretable Relational Inference with LLM-Guided Symbolic Dynamics Modeling",
+      "authors": "Xiaoxiao Liang, Juyuan Zhang, Liming Pan, Linyuan L\u00fc",
+      "date": "2026-04-14",
+      "url": "https://arxiv.org/abs/2604.12806v1",
+      "abstract": "Inferring latent interaction structures from observed dynamics is a fundamental inverse problem in many-body interacting systems. Most neural approaches rely on black-box surrogates over trainable graphs, achieving accuracy at the expense of mechanistic interpretability. Symbolic regression offers explicit dynamical equations and stronger inductive biases, but typically assumes known topology and a fixed function library. We propose \\textbf{COSINE} (\\textbf{C}o-\\textbf{O}ptimization of \\textbf{S",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2604-12426v1",
+      "title": "Do Transformers Use their Depth Adaptively? Evidence from a Relational Reasoning Task",
+      "authors": "Alicia Curth, Rachel Lawrence, Sushrut Karmalkar, Niranjani Prasad",
+      "date": "2026-04-14",
+      "url": "https://arxiv.org/abs/2604.12426v1",
+      "abstract": "We investigate whether transformers use their depth adaptively across tasks of increasing difficulty. Using a controlled multi-hop relational reasoning task based on family stories, where difficulty is determined by the number of relationship hops that must be composed, we monitor (i) how predictions evolve across layers via early readouts (the logit lens) and (ii) how task-relevant information is integrated across tokens via causal patching. For pretrained models, we find some limited evidence ",
+      "tags": [
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2604-12820v1",
+      "title": "RePAIR: Interactive Machine Unlearning through Prompt-Aware Model Repair",
+      "authors": "Jagadeesh Rachapudi, Pranav Singh, Ritali Vatsi, Praful Hambarde, Amit Shukla",
+      "date": "2026-04-14",
+      "url": "https://arxiv.org/abs/2604.12820v1",
+      "abstract": "Large language models (LLMs) inherently absorb harmful knowledge, misinformation, and personal data during pretraining on large-scale web corpora, with no native mechanism for selective removal. While machine unlearning offers a principled solution, existing approaches are provider-centric, requiring retraining pipelines, curated retain datasets, and direct intervention by model service providers (MSPs), thereby excluding end users from controlling their own data. We introduce Interactive Machin",
+      "tags": [
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2604-11061v1",
       "title": "Pando: Do Interpretability Methods Work When Models Won't Explain Themselves?",
