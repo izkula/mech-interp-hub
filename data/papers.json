@@ -1,6 +1,30 @@
 {
-  "lastUpdated": "2026-04-15",
+  "lastUpdated": "2026-04-16",
   "papers": [
+    {
+      "id": "arxiv-2604-13694v1",
+      "title": "Weight Patching: Toward Source-Level Mechanistic Localization in LLMs",
+      "authors": "Chenghao Sun, Chengsheng Zhang, Guanzheng Qin, Rui Dai, Xinmei Tian",
+      "date": "2026-04-15",
+      "url": "https://arxiv.org/abs/2604.13694v1",
+      "abstract": "Mechanistic interpretability seeks to localize model behavior to the internal components that causally realize it. Prior work has advanced activation-space localization and causal tracing, but modules that appear important in activation space may merely aggregate or amplify upstream signals rather than encode the target capability in their own parameters. To address this gap, we propose Weight Patching, a parameter-space intervention method for source-oriented analysis in paired same-architectur",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2604-13417v1",
+      "title": "The Cognitive Circuit Breaker: A Systems Engineering Framework for Intrinsic AI Reliability",
+      "authors": "Jonathan Pan",
+      "date": "2026-04-15",
+      "url": "https://arxiv.org/abs/2604.13417v1",
+      "abstract": "As Large Language Models (LLMs) are increasingly deployed in mission-critical software systems, detecting hallucinations and ``faked truthfulness'' has become a paramount engineering challenge. Current reliability architectures rely heavily on post-generation, black-box mechanisms, such as Retrieval-Augmented Generation (RAG) cross-checking or LLM-as-a-judge evaluators. These extrinsic methods introduce unacceptable latency, high computational overhead, and reliance on secondary external API cal",
+      "tags": [
+        "circuits"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2604-12806v1",
       "title": "Interpretable Relational Inference with LLM-Guided Symbolic Dynamics Modeling",
@@ -34,6 +58,35 @@
       "abstract": "Large language models (LLMs) inherently absorb harmful knowledge, misinformation, and personal data during pretraining on large-scale web corpora, with no native mechanism for selective removal. While machine unlearning offers a principled solution, existing approaches are provider-centric, requiring retraining pipelines, curated retain datasets, and direct intervention by model service providers (MSPs), thereby excluding end users from controlling their own data. We introduce Interactive Machin",
       "tags": [
         "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2604-13304v1",
+      "title": "Can Cross-Layer Transcoders Replace Vision Transformer Activations? An Interpretable Perspective on Vision",
+      "authors": "Gerasimos Chatzoudis, Konstantinos D. Polyzos, Zhuowei Li, Difei Gu, Gemma E. Moran, et al.",
+      "date": "2026-04-14",
+      "url": "https://arxiv.org/abs/2604.13304v1",
+      "abstract": "Understanding the internal activations of Vision Transformers (ViTs) is critical for building interpretable and trustworthy models. While Sparse Autoencoders (SAEs) have been used to extract human-interpretable features, they operate on individual layers and fail to capture the cross-layer computational structure of Transformers, as well as the relative significance of each layer in forming the last-layer representation. Alternatively, we introduce the adoption of Cross-Layer Transcoders (CLTs) ",
+      "tags": [
+        "SAE",
+        "features",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2604-13313v1",
+      "title": "Concrete Jungle: Towards Concreteness Paved Contrastive Negative Mining for Compositional Understanding",
+      "authors": "Eun Woo Im, Dhruv Madhwal, Vivek Gupta",
+      "date": "2026-04-14",
+      "url": "https://arxiv.org/abs/2604.13313v1",
+      "abstract": "Vision-Language Models demonstrate remarkable capabilities but often struggle with compositional reasoning, exhibiting vulnerabilities regarding word order and attribute binding. This limitation arises from a scarcity of informative samples needed to differentiate subtle semantic variations during contrastive pretraining. Although hard negative mining offers a promising remedy, existing methods lack explicit mechanisms to dictate which linguistic elements undergo modification. Instead of enginee",
+      "tags": [
+        "vision",
+        "reasoning"
       ],
       "source": "arXiv",
       "featured": false
@@ -180,6 +233,22 @@
       "tags": [
         "safety",
         "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2604-13466v1",
+      "title": "Functional Emotions or Situational Contexts? A Discriminating Test from the Mythos Preview System Card",
+      "authors": "Hiranya V. Peiris",
+      "date": "2026-04-09",
+      "url": "https://arxiv.org/abs/2604.13466v1",
+      "abstract": "The Claude Mythos Preview system card deploys emotion vectors, sparse autoencoder (SAE) features, and activation verbalisers to study model internals during misaligned behaviour. The two primary toolkits are not jointly reported on the most alignment-relevant episodes. This note identifies two hypotheses that are qualitatively consistent with the published results: that the emotion vectors track functional emotions that causally drive behaviour, or that they are a projection of a richer situatio",
+      "tags": [
+        "SAE",
+        "features",
+        "safety",
+        "survey"
       ],
       "source": "arXiv",
       "featured": false
@@ -493,6 +562,19 @@
       "date": "2026-04-02",
       "url": "https://arxiv.org/abs/2604.02182v1",
       "abstract": "Transformer-based architectures have become the shared backbone of natural language processing and computer vision. However, understanding how these models operate remains challenging, particularly in vision settings, where images are processed as sequences of patch tokens. Existing interpretability tools often focus on isolated components or expert-oriented analysis, leaving a gap in guided, end-to-end understanding of the full inference pipeline. To bridge this gap, we present ViT-Explainer, a",
+      "tags": [
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2604-02486v2",
+      "title": "VLMs Need Words: Vision Language Models Ignore Visual Detail In Favor of Semantic Anchors",
+      "authors": "Haz Sameen Shahgir, Xiaofu Chen, Yu Fu, Erfan Shayegani, Nael Abu-Ghazaleh, et al.",
+      "date": "2026-04-02",
+      "url": "https://arxiv.org/abs/2604.02486v2",
+      "abstract": "Vision-language models (VLMs) have achieved impressive performance across a wide range of multimodal tasks. However, they often fail on tasks that require fine-grained visual perception, even when the required information is still present in their internal representations. Prior work has attributed this ``hidden-in-plain-sight'' gap to the language model, but the cause remains unexplained. In this work, we demonstrate that this gap arises from the language model's lack of semantic labels for fin",
       "tags": [
         "vision"
       ],
