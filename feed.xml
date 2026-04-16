@@ -5,9 +5,23 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 16 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Weight Patching: Toward Source-Level Mechanistic Localization in LLMs</title>
+      <link>https://arxiv.org/abs/2604.13694v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Chenghao Sun, Chengsheng Zhang, Guanzheng Qin, Rui Dai, Xinmei Tian</p><p>Mechanistic interpretability seeks to localize model behavior to the internal components that causally realize it. Prior work has advanced activation-space localization and causal tracing, but modules that appear important in activation space may merely aggregate or amplify upstream signals rather than encode the target capability in their own parameters. To address this gap, we propose Weight Patching, a parameter-space intervention method for source-oriented analysis in paired same-architectur</p>]]></description>
+      <pubDate>Wed, 15 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.13694v1</guid>
+    </item>
+    <item>
+      <title>The Cognitive Circuit Breaker: A Systems Engineering Framework for Intrinsic AI Reliability</title>
+      <link>https://arxiv.org/abs/2604.13417v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Jonathan Pan</p><p>As Large Language Models (LLMs) are increasingly deployed in mission-critical software systems, detecting hallucinations and ``faked truthfulness&#x27;&#x27; has become a paramount engineering challenge. Current reliability architectures rely heavily on post-generation, black-box mechanisms, such as Retrieval-Augmented Generation (RAG) cross-checking or LLM-as-a-judge evaluators. These extrinsic methods introduce unacceptable latency, high computational overhead, and reliance on secondary external API cal</p><p><strong>Tags:</strong> circuits</p>]]></description>
+      <pubDate>Wed, 15 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.13417v1</guid>
+    </item>
     <item>
       <title>Interpretable Relational Inference with LLM-Guided Symbolic Dynamics Modeling</title>
       <link>https://arxiv.org/abs/2604.12806v1</link>
@@ -28,6 +42,20 @@
       <description><![CDATA[<p><strong>Authors:</strong> Jagadeesh Rachapudi, Pranav Singh, Ritali Vatsi, Praful Hambarde, Amit Shukla</p><p>Large language models (LLMs) inherently absorb harmful knowledge, misinformation, and personal data during pretraining on large-scale web corpora, with no native mechanism for selective removal. While machine unlearning offers a principled solution, existing approaches are provider-centric, requiring retraining pipelines, curated retain datasets, and direct intervention by model service providers (MSPs), thereby excluding end users from controlling their own data. We introduce Interactive Machin</p><p><strong>Tags:</strong> safety</p>]]></description>
       <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2604.12820v1</guid>
+    </item>
+    <item>
+      <title>Can Cross-Layer Transcoders Replace Vision Transformer Activations? An Interpretable Perspective on Vision</title>
+      <link>https://arxiv.org/abs/2604.13304v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Gerasimos Chatzoudis, Konstantinos D. Polyzos, Zhuowei Li, Difei Gu, Gemma E. Moran, et al.</p><p>Understanding the internal activations of Vision Transformers (ViTs) is critical for building interpretable and trustworthy models. While Sparse Autoencoders (SAEs) have been used to extract human-interpretable features, they operate on individual layers and fail to capture the cross-layer computational structure of Transformers, as well as the relative significance of each layer in forming the last-layer representation. Alternatively, we introduce the adoption of Cross-Layer Transcoders (CLTs) </p><p><strong>Tags:</strong> SAE, features, vision</p>]]></description>
+      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.13304v1</guid>
+    </item>
+    <item>
+      <title>Concrete Jungle: Towards Concreteness Paved Contrastive Negative Mining for Compositional Understanding</title>
+      <link>https://arxiv.org/abs/2604.13313v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Eun Woo Im, Dhruv Madhwal, Vivek Gupta</p><p>Vision-Language Models demonstrate remarkable capabilities but often struggle with compositional reasoning, exhibiting vulnerabilities regarding word order and attribute binding. This limitation arises from a scarcity of informative samples needed to differentiate subtle semantic variations during contrastive pretraining. Although hard negative mining offers a promising remedy, existing methods lack explicit mechanisms to dictate which linguistic elements undergo modification. Instead of enginee</p><p><strong>Tags:</strong> vision, reasoning</p>]]></description>
+      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.13313v1</guid>
     </item>
     <item>
       <title>Pando: Do Interpretability Methods Work When Models Won&#x27;t Explain Themselves?</title>
@@ -107,6 +135,13 @@
       <guid>https://arxiv.org/abs/2604.08524v1</guid>
     </item>
     <item>
+      <title>Functional Emotions or Situational Contexts? A Discriminating Test from the Mythos Preview System Card</title>
+      <link>https://arxiv.org/abs/2604.13466v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Hiranya V. Peiris</p><p>The Claude Mythos Preview system card deploys emotion vectors, sparse autoencoder (SAE) features, and activation verbalisers to study model internals during misaligned behaviour. The two primary toolkits are not jointly reported on the most alignment-relevant episodes. This note identifies two hypotheses that are qualitatively consistent with the published results: that the emotion vectors track functional emotions that causally drive behaviour, or that they are a projection of a richer situatio</p><p><strong>Tags:</strong> SAE, features, safety, survey</p>]]></description>
+      <pubDate>Thu, 09 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.13466v1</guid>
+    </item>
+    <item>
       <title>ConceptTracer: Interactive Analysis of Concept Saliency and Selectivity in Neural Representations</title>
       <link>https://arxiv.org/abs/2604.07019v1</link>
       <description><![CDATA[<p><strong>Authors:</strong> Ricardo Knauer, Andre Beinrucker, Erik Rodner</p><p>Neural networks deliver impressive predictive performance across a variety of tasks, but they are often opaque in their decision-making processes. Despite a growing interest in mechanistic interpretability, tools for systematically exploring the representations learned by neural networks in general, and tabular foundation models in particular, remain limited. In this work, we introduce ConceptTracer, an interactive application for analyzing neural representations through the lens of human-interp</p>]]></description>
@@ -182,41 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Atahan Dokme, Sriram Vishwanath</p><p>We present the first systematic study of Sparse Autoencoders (SAEs) on video representations. Standard SAEs decompose video into interpretable, monosemantic features but destroy temporal coherence: hard TopK selection produces unstable feature assignments across frames, reducing autocorrelation by 36%. We propose spatio-temporal contrastive objectives and Matryoshka hierarchical grouping that recover and even exceed raw temporal coherence. The contrastive loss weight controls a tunable trade-off</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
       <pubDate>Sun, 05 Apr 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2604.03919v1</guid>
-    </item>
-    <item>
-      <title>Automated Attention Pattern Discovery at Scale in Large Language Models</title>
-      <link>https://arxiv.org/abs/2604.03764v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Jonathan Katzy, Razvan-Mihai Popescu, Erik Mekkes, Arie van Deursen, Maliheh Izadi</p><p>Large language models have found success by scaling up capabilities to work in general settings. The same can unfortunately not be said for interpretability methods. The current trend in mechanistic interpretability is to provide precise explanations of specific behaviors in controlled settings. These often do not generalize, or are too resource intensive for larger studies. In this work we propose to study repeated behaviors in large language models by mining completion scenarios in Java code d</p><p><strong>Tags:</strong> attention</p>]]></description>
-      <pubDate>Sat, 04 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.03764v1</guid>
-    </item>
-    <item>
-      <title>LangFIR: Discovering Sparse Language-Specific Features from Monolingual Data for Language Steering</title>
-      <link>https://arxiv.org/abs/2604.03532v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Sing Hieng Wong, Hassan Sajjad, A. B. Siddique</p><p>Large language models (LLMs) show strong multilingual capabilities, yet reliably controlling the language of their outputs remains difficult. Representation-level steering addresses this by adding language-specific vectors to model activations at inference time, but identifying language-specific directions in the residual stream often relies on multilingual or parallel data that can be expensive to obtain. Sparse autoencoders (SAEs) decompose residual activations into interpretable, sparse featu</p><p><strong>Tags:</strong> SAE, features, steering</p>]]></description>
-      <pubDate>Sat, 04 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.03532v1</guid>
-    </item>
-    <item>
-      <title>Finding Belief Geometries with Sparse Autoencoders</title>
-      <link>https://arxiv.org/abs/2604.02685v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Matthew Levinson</p><p>Understanding the geometric structure of internal representations is a central goal of mechanistic interpretability. Prior work has shown that transformers trained on sequences generated by hidden Markov models encode probabilistic belief states as simplex-shaped geometries in their residual stream, with vertices corresponding to latent generative states. Whether large language models trained on naturalistic text develop analogous geometric representations remains an open question.   We introduc</p><p><strong>Tags:</strong> SAE</p>]]></description>
-      <pubDate>Fri, 03 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.02685v1</guid>
-    </item>
-    <item>
-      <title>Do Audio-Visual Large Language Models Really See and Hear?</title>
-      <link>https://arxiv.org/abs/2604.02605v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Ramaneswaran Selvakumar, Kaousheik Jayakumar, S Sakshi, Sreyan Ghosh, Ruohan Gao, et al.</p><p>Audio-Visual Large Language Models (AVLLMs) are emerging as unified interfaces to multimodal perception. We present the first mechanistic interpretability study of AVLLMs, analyzing how audio and visual features evolve and fuse through different layers of an AVLLM to produce the final text outputs. We find that although AVLLMs encode rich audio semantics at intermediate layers, these capabilities largely fail to surface in the final text generation when audio conflicts with vision. Probing analy</p><p><strong>Tags:</strong> features, probing, vision</p>]]></description>
-      <pubDate>Fri, 03 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.02605v1</guid>
-    </item>
-    <item>
-      <title>Steerable but Not Decodable: Function Vectors Operate Beyond the Logit Lens</title>
-      <link>https://arxiv.org/abs/2604.02608v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Mohammed Suhail B Nadaf</p><p>Function vectors (FVs) -- mean-difference directions extracted from in-context learning demonstrations -- can steer large language model behavior when added to the residual stream. We hypothesized that FV steering failures reflect an absence of task-relevant information: the logit lens would fail alongside steering. We were wrong. In the most comprehensive cross-template FV transfer study to date - 4,032 pairs across 12 tasks, 6 models from 3 families (Llama-3.1-8B, Gemma-2-9B, Mistral-7B-v0.3; </p><p><strong>Tags:</strong> steering</p>]]></description>
-      <pubDate>Fri, 03 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.02608v1</guid>
     </item>
   </channel>
 </rss>
