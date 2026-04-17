@@ -1,6 +1,44 @@
 {
-  "lastUpdated": "2026-04-16",
+  "lastUpdated": "2026-04-17",
   "papers": [
+    {
+      "id": "arxiv-2604-14925v1",
+      "title": "Improving Sparse Autoencoder with Dynamic Attention",
+      "authors": "Dongsheng Wang, Jinsen Zhang, Dawei Su, Hui Huang",
+      "date": "2026-04-16",
+      "url": "https://arxiv.org/abs/2604.14925v1",
+      "abstract": "Recently, sparse autoencoders (SAEs) have emerged as a promising technique for interpreting activations in foundation models by disentangling features into a sparse set of concepts. However, identifying the optimal level of sparsity for each neuron remains challenging in practice: excessive sparsity can lead to poor reconstruction, whereas insufficient sparsity may harm interpretability. While existing activation functions such as ReLU and TopK provide certain sparsity guarantees, they typically",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2604-14593v1",
+      "title": "Mechanistic Decoding of Cognitive Constructs in LLMs",
+      "authors": "Yitong Shou, Manhao Guan",
+      "date": "2026-04-16",
+      "url": "https://arxiv.org/abs/2604.14593v1",
+      "abstract": "While Large Language Models (LLMs) demonstrate increasingly sophisticated affective capabilities, the internal mechanisms by which they process complex emotions remain unclear. Existing interpretability approaches often treat models as black boxes or focus on coarse-grained basic emotions, leaving the cognitive structure of more complex affective states underexplored. To bridge this gap, we propose a Cognitive Reverse-Engineering framework based on Representation Engineering (RepE) to analyze so",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2604-15294v1",
+      "title": "How Do LLMs and VLMs Understand Viewpoint Rotation Without Vision? An Interpretability Study",
+      "authors": "Zhen Yang, Ping Jian, Zhongbin Guo, Zuming Zhang, Chengzhi Li, et al.",
+      "date": "2026-04-16",
+      "url": "https://arxiv.org/abs/2604.15294v1",
+      "abstract": "Over the past year, spatial intelligence has drawn increasing attention. Many prior works study it from the perspective of visual-spatial intelligence, where models have access to visuospatial information from visual inputs. However, in the absence of visual information, whether linguistic intelligence alone is sufficient to endow models with spatial intelligence, and how models perform relevant tasks with text-only inputs still remain unexplored. Therefore, in this paper, we focus on a fundamen",
+      "tags": [
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2604-13694v1",
       "title": "Weight Patching: Toward Source-Level Mechanistic Localization in LLMs",
@@ -21,6 +59,22 @@
       "abstract": "As Large Language Models (LLMs) are increasingly deployed in mission-critical software systems, detecting hallucinations and ``faked truthfulness'' has become a paramount engineering challenge. Current reliability architectures rely heavily on post-generation, black-box mechanisms, such as Retrieval-Augmented Generation (RAG) cross-checking or LLM-as-a-judge evaluators. These extrinsic methods introduce unacceptable latency, high computational overhead, and reliance on secondary external API cal",
       "tags": [
         "circuits"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2604-14477v1",
+      "title": "Seeing Through Circuits: Faithful Mechanistic Interpretability for Vision Transformers",
+      "authors": "Nina \u017bukowska, Wolfgang Stammer, Bernt Schiele, Jonas Fischer",
+      "date": "2026-04-15",
+      "url": "https://arxiv.org/abs/2604.14477v1",
+      "abstract": "Transparency of neural networks' internal reasoning is at the heart of interpretability research, adding to trust, safety, and understanding of these models. The field of mechanistic interpretability has recently focused on studying task-specific computational graphs, defined by connections (edges) between model components. Such edge-based circuits have been defined in the context of large language models, yet vision-based approaches so far only consider neuron-based circuits. These tell which i",
+      "tags": [
+        "circuits",
+        "safety",
+        "vision",
+        "reasoning"
       ],
       "source": "arXiv",
       "featured": false
@@ -2191,6 +2245,20 @@
       "date": "2026-02-25",
       "url": "https://arxiv.org/abs/2602.22175v1",
       "abstract": "Understanding and reasoning over long contexts is a crucial capability for language models (LMs). Although recent models support increasingly long context windows, their accuracy often deteriorates as input length grows. In practice, models often struggle to keep attention aligned with the most relevant context throughout decoding. In this work, we propose DySCO, a novel decoding algorithm for improving long-context reasoning. DySCO leverages retrieval heads--a subset of attention heads speciali",
+      "tags": [
+        "attention",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2602-22175v2",
+      "title": "DySCO: Dynamic Attention-Scaling Decoding for Long-Context Language Models",
+      "authors": "Xi Ye, Wuwei Zhang, Fangcong Yin, Howard Yen, Danqi Chen",
+      "date": "2026-02-25",
+      "url": "https://arxiv.org/abs/2602.22175v2",
+      "abstract": "Understanding and reasoning over long contexts is a crucial capability for language models (LMs). Although recent models support increasingly long context windows, their accuracy often deteriorates as input length grows. In practice, models often struggle to keep attention aligned with the most relevant context throughout decoding. In this work, we propose DYSCO, a novel decoding algorithm for improving long-context reasoning. DYSCO leverages retrieval heads--a subset of attention heads speciali",
       "tags": [
         "attention",
         "reasoning"
