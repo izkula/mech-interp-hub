@@ -1,6 +1,88 @@
 {
-  "lastUpdated": "2026-04-20",
+  "lastUpdated": "2026-04-21",
   "papers": [
+    {
+      "id": "arxiv-2604-17837v1",
+      "title": "Polysemantic Experts, Monosemantic Paths: Routing as Control in MoEs",
+      "authors": "Charles Ye, Bo Yuan, Lee Sharkey",
+      "date": "2026-04-20",
+      "url": "https://arxiv.org/abs/2604.17837v1",
+      "abstract": "An LLM's residual stream is both state and instruction: it encodes the current context and determines the next transformation. We introduce a parameter-free decomposition for Mixture-of-Experts models that splits each layer's hidden state into a control signal that causally drives routing and an orthogonal content channel invisible to the router. Across six MoE architectures, we find that models preserve surface-level features (language, token identity, position) in the content channel, while th",
+      "tags": [
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2604-18134v1",
+      "title": "Can LLM-Generated Text Empower Surgical Vision-Language Pre-training?",
+      "authors": "Chengan Che, Chao Wang, Jiayuan Huang, Xinyue Chen, Luis C. Garcia-Peraza-Herrera",
+      "date": "2026-04-20",
+      "url": "https://arxiv.org/abs/2604.18134v1",
+      "abstract": "Recent advancements in self-supervised learning have led to powerful surgical vision encoders capable of spatiotemporal understanding. However, extending these visual foundations to multi-modal reasoning tasks is severely bottlenecked by the prohibitive cost of expert textual annotations. To overcome this scalability limitation, we introduce \\textbf{LIME}, a large-scale multi-modal dataset derived from open-access surgical videos using human-free, Large Language Model (LLM)-generated narratives.",
+      "tags": [
+        "vision",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2604-18179v1",
+      "title": "Committed SAE-Feature Traces for Audited-Session Substitution Detection in Hosted LLMs",
+      "authors": "Ziyang Liu",
+      "date": "2026-04-20",
+      "url": "https://arxiv.org/abs/2604.18179v1",
+      "abstract": "Hosted-LLM providers have a silent-substitution incentive: advertise a stronger model while serving cheaper replies. Probe-after-return schemes such as SVIP leave a parallel-serve side-channel, since a dishonest provider can route the verifier's probe to the advertised model while serving ordinary users from a substitute. We propose a commit-open protocol that closes this gap. Before any opening request, the provider commits via a Merkle tree to a per-position sparse-autoencoder (SAE) feature-tr",
+      "tags": [
+        "features",
+        "probing"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2604-18094v1",
+      "title": "Decision-Aware Attention Propagation for Vision Transformer Explainability",
+      "authors": "Sehyeong Jo, Gangjae Jang, Haesol Park",
+      "date": "2026-04-20",
+      "url": "https://arxiv.org/abs/2604.18094v1",
+      "abstract": "Vision Transformers (ViTs) have become a dominant architecture in computer vision, yet their prediction process remains difficult to interpret because information is propagated through complex interactions across layers and attention heads. Existing attention based explanation methods provide an intuitive way to trace information flow. However, they rely mainly on raw attention weights, which do not explicitly reflect the final decision and often lead to explanations with limited class discrimin",
+      "tags": [
+        "attention",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2604-17031v1",
+      "title": "Where is the Mind? Persona Vectors and LLM Individuation",
+      "authors": "Pierre Beckmann, Patrick Butlin",
+      "date": "2026-04-18",
+      "url": "https://arxiv.org/abs/2604.17031v1",
+      "abstract": "The individuation problem for large language models asks which entities associated with them, if any, should be identified as minds. We approach this problem through mechanistic interpretability, engaging in particular with recent empirical work on persona vectors, persona space, and emergent misalignment. We argue that three views are the strongest candidates: the virtual instance view and two new views we introduce, the (virtual) instance-persona view and the model-persona view. First, we argu",
+      "tags": [
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2604-16889v1",
+      "title": "Prune, Interpret, Evaluate: A Cross-Layer Transcoder-Native Framework for Efficient Circuit Discovery via Feature Attribution",
+      "authors": "Qinhao Chen, Linyang He, Nima Mesgarani",
+      "date": "2026-04-18",
+      "url": "https://arxiv.org/abs/2604.16889v1",
+      "abstract": "Existing feature-interpretation pipelines typically operate on uniformly sampled units, but only a small fraction of cross-layer transcoder (CLT) features matter for a target behavior, with the rest resulting in expensive feature explaining and evaluating costs. We introduce the first CLT-native end-to-end framework, PIE, connecting Pruning, automatic Interpretation, and interpretation Evaluation, enabling systematic measurement of behavioral fidelity and downstream interpretability under prunin",
+      "tags": [
+        "circuits",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2604-14925v1",
       "title": "Improving Sparse Autoencoder with Dynamic Attention",
@@ -35,6 +117,19 @@
       "abstract": "Over the past year, spatial intelligence has drawn increasing attention. Many prior works study it from the perspective of visual-spatial intelligence, where models have access to visuospatial information from visual inputs. However, in the absence of visual information, whether linguistic intelligence alone is sufficient to endow models with spatial intelligence, and how models perform relevant tasks with text-only inputs still remain unexplored. Therefore, in this paper, we focus on a fundamen",
       "tags": [
         "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2604-15557v1",
+      "title": "Predicting Where Steering Vectors Succeed",
+      "authors": "Jayadev Billa",
+      "date": "2026-04-16",
+      "url": "https://arxiv.org/abs/2604.15557v1",
+      "abstract": "Steering vectors work for some concepts and layers but fail for others, and practitioners have no way to predict which setting applies before running an intervention. We introduce the Linear Accessibility Profile (LAP), a per-layer diagnostic that repurposes the logit lens as a predictor of steering vector effectiveness. The key measure, $A_{\\mathrm{lin}}$, applies the model's unembedding matrix to intermediate hidden states, requiring no training. Across 24 controlled binary concept families on",
+      "tags": [
+        "steering"
       ],
       "source": "arXiv",
       "featured": false
@@ -440,6 +535,17 @@
         "features",
         "probing"
       ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2604-16430v1",
+      "title": "HalluSAE: Detecting Hallucinations in Large Language Models via Sparse Auto-Encoders",
+      "authors": "Boshui Chen, Zhaoxin Fan, Ke Wang, Zhiying Leng, Faguo Wu, et al.",
+      "date": "2026-04-06",
+      "url": "https://arxiv.org/abs/2604.16430v1",
+      "abstract": "Large Language Models (LLMs) are powerful and widely adopted, but their practical impact is limited by the well-known hallucination phenomenon. While recent hallucination detection methods have made notable progress, we find most of them overlook the dynamic nature and underlying mechanisms of it. To address this gap, we propose HalluSAE, a phase transition-inspired framework that models hallucination as a critical shift in the model's latent dynamics. By modeling the generation process as a tra",
+      "tags": [],
       "source": "arXiv",
       "featured": false
     },
