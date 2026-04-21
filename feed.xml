@@ -5,9 +5,51 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 20 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 21 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Polysemantic Experts, Monosemantic Paths: Routing as Control in MoEs</title>
+      <link>https://arxiv.org/abs/2604.17837v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Charles Ye, Bo Yuan, Lee Sharkey</p><p>An LLM&#x27;s residual stream is both state and instruction: it encodes the current context and determines the next transformation. We introduce a parameter-free decomposition for Mixture-of-Experts models that splits each layer&#x27;s hidden state into a control signal that causally drives routing and an orthogonal content channel invisible to the router. Across six MoE architectures, we find that models preserve surface-level features (language, token identity, position) in the content channel, while th</p><p><strong>Tags:</strong> features</p>]]></description>
+      <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.17837v1</guid>
+    </item>
+    <item>
+      <title>Can LLM-Generated Text Empower Surgical Vision-Language Pre-training?</title>
+      <link>https://arxiv.org/abs/2604.18134v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Chengan Che, Chao Wang, Jiayuan Huang, Xinyue Chen, Luis C. Garcia-Peraza-Herrera</p><p>Recent advancements in self-supervised learning have led to powerful surgical vision encoders capable of spatiotemporal understanding. However, extending these visual foundations to multi-modal reasoning tasks is severely bottlenecked by the prohibitive cost of expert textual annotations. To overcome this scalability limitation, we introduce \textbf{LIME}, a large-scale multi-modal dataset derived from open-access surgical videos using human-free, Large Language Model (LLM)-generated narratives.</p><p><strong>Tags:</strong> vision, reasoning</p>]]></description>
+      <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.18134v1</guid>
+    </item>
+    <item>
+      <title>Committed SAE-Feature Traces for Audited-Session Substitution Detection in Hosted LLMs</title>
+      <link>https://arxiv.org/abs/2604.18179v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Ziyang Liu</p><p>Hosted-LLM providers have a silent-substitution incentive: advertise a stronger model while serving cheaper replies. Probe-after-return schemes such as SVIP leave a parallel-serve side-channel, since a dishonest provider can route the verifier&#x27;s probe to the advertised model while serving ordinary users from a substitute. We propose a commit-open protocol that closes this gap. Before any opening request, the provider commits via a Merkle tree to a per-position sparse-autoencoder (SAE) feature-tr</p><p><strong>Tags:</strong> features, probing</p>]]></description>
+      <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.18179v1</guid>
+    </item>
+    <item>
+      <title>Decision-Aware Attention Propagation for Vision Transformer Explainability</title>
+      <link>https://arxiv.org/abs/2604.18094v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Sehyeong Jo, Gangjae Jang, Haesol Park</p><p>Vision Transformers (ViTs) have become a dominant architecture in computer vision, yet their prediction process remains difficult to interpret because information is propagated through complex interactions across layers and attention heads. Existing attention based explanation methods provide an intuitive way to trace information flow. However, they rely mainly on raw attention weights, which do not explicitly reflect the final decision and often lead to explanations with limited class discrimin</p><p><strong>Tags:</strong> attention, vision</p>]]></description>
+      <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.18094v1</guid>
+    </item>
+    <item>
+      <title>Where is the Mind? Persona Vectors and LLM Individuation</title>
+      <link>https://arxiv.org/abs/2604.17031v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Pierre Beckmann, Patrick Butlin</p><p>The individuation problem for large language models asks which entities associated with them, if any, should be identified as minds. We approach this problem through mechanistic interpretability, engaging in particular with recent empirical work on persona vectors, persona space, and emergent misalignment. We argue that three views are the strongest candidates: the virtual instance view and two new views we introduce, the (virtual) instance-persona view and the model-persona view. First, we argu</p><p><strong>Tags:</strong> safety</p>]]></description>
+      <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.17031v1</guid>
+    </item>
+    <item>
+      <title>Prune, Interpret, Evaluate: A Cross-Layer Transcoder-Native Framework for Efficient Circuit Discovery via Feature Attribution</title>
+      <link>https://arxiv.org/abs/2604.16889v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Qinhao Chen, Linyang He, Nima Mesgarani</p><p>Existing feature-interpretation pipelines typically operate on uniformly sampled units, but only a small fraction of cross-layer transcoder (CLT) features matter for a target behavior, with the rest resulting in expensive feature explaining and evaluating costs. We introduce the first CLT-native end-to-end framework, PIE, connecting Pruning, automatic Interpretation, and interpretation Evaluation, enabling systematic measurement of behavioral fidelity and downstream interpretability under prunin</p><p><strong>Tags:</strong> circuits, features</p>]]></description>
+      <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.16889v1</guid>
+    </item>
     <item>
       <title>Improving Sparse Autoencoder with Dynamic Attention</title>
       <link>https://arxiv.org/abs/2604.14925v1</link>
@@ -28,6 +70,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Zhen Yang, Ping Jian, Zhongbin Guo, Zuming Zhang, Chengzhi Li, et al.</p><p>Over the past year, spatial intelligence has drawn increasing attention. Many prior works study it from the perspective of visual-spatial intelligence, where models have access to visuospatial information from visual inputs. However, in the absence of visual information, whether linguistic intelligence alone is sufficient to endow models with spatial intelligence, and how models perform relevant tasks with text-only inputs still remain unexplored. Therefore, in this paper, we focus on a fundamen</p><p><strong>Tags:</strong> vision</p>]]></description>
       <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2604.15294v1</guid>
+    </item>
+    <item>
+      <title>Predicting Where Steering Vectors Succeed</title>
+      <link>https://arxiv.org/abs/2604.15557v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Jayadev Billa</p><p>Steering vectors work for some concepts and layers but fail for others, and practitioners have no way to predict which setting applies before running an intervention. We introduce the Linear Accessibility Profile (LAP), a per-layer diagnostic that repurposes the logit lens as a predictor of steering vector effectiveness. The key measure, $A_{\mathrm{lin}}$, applies the model&#x27;s unembedding matrix to intermediate hidden states, requiring no training. Across 24 controlled binary concept families on</p><p><strong>Tags:</strong> steering</p>]]></description>
+      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.15557v1</guid>
     </item>
     <item>
       <title>Weight Patching: Toward Source-Level Mechanistic Localization in LLMs</title>
@@ -168,55 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Hiranya V. Peiris</p><p>The Claude Mythos Preview system card deploys emotion vectors, sparse autoencoder (SAE) features, and activation verbalisers to study model internals during misaligned behaviour. The two primary toolkits are not jointly reported on the most alignment-relevant episodes. This note identifies two hypotheses that are qualitatively consistent with the published results: that the emotion vectors track functional emotions that causally drive behaviour, or that they are a projection of a richer situatio</p><p><strong>Tags:</strong> SAE, features, safety, survey</p>]]></description>
       <pubDate>Thu, 09 Apr 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2604.13466v1</guid>
-    </item>
-    <item>
-      <title>ConceptTracer: Interactive Analysis of Concept Saliency and Selectivity in Neural Representations</title>
-      <link>https://arxiv.org/abs/2604.07019v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Ricardo Knauer, Andre Beinrucker, Erik Rodner</p><p>Neural networks deliver impressive predictive performance across a variety of tasks, but they are often opaque in their decision-making processes. Despite a growing interest in mechanistic interpretability, tools for systematically exploring the representations learned by neural networks in general, and tabular foundation models in particular, remain limited. In this work, we introduce ConceptTracer, an interactive application for analyzing neural representations through the lens of human-interp</p>]]></description>
-      <pubDate>Wed, 08 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.07019v1</guid>
-    </item>
-    <item>
-      <title>LAG-XAI: A Lie-Inspired Affine Geometric Framework for Interpretable Paraphrasing in Transformer Latent Spaces</title>
-      <link>https://arxiv.org/abs/2604.06086v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Olexander Mazurets, Olexander Barmak, Leonid Bedratyuk, Iurii Krak</p><p>Modern Transformer-based language models achieve strong performance in natural language processing tasks, yet their latent semantic spaces remain largely uninterpretable black boxes. This paper introduces LAG-XAI (Lie Affine Geometry for Explainable AI), a novel geometric framework that models paraphrasing not as discrete word substitutions, but as a structured affine transformation within the embedding space. By conceptualizing paraphrasing as a continuous geometric flow on a semantic manifold,</p>]]></description>
-      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.06086v1</guid>
-    </item>
-    <item>
-      <title>Disentangling MLP Neuron Weights in Vocabulary Space</title>
-      <link>https://arxiv.org/abs/2604.06005v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Asaf Avrahamy, Yoav Gur-Arieh, Mor Geva</p><p>Interpreting the information encoded in model weights remains a fundamental challenge in mechanistic interpretability. In this work, we introduce ROTATE (Rotation-Optimized Token Alignment in weighT spacE), a data-free method requiring no forward passes that disentangles MLP neurons directly in weight space. Our approach relies on a key statistical observation: neurons that encode coherent, monosemantic concepts exhibit high kurtosis when projected onto the model&#x27;s vocabulary. By optimizing rota</p><p><strong>Tags:</strong> features, safety</p>]]></description>
-      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.06005v1</guid>
-    </item>
-    <item>
-      <title>Beyond Semantics: Disentangling Information Scope in Sparse Autoencoders for CLIP</title>
-      <link>https://arxiv.org/abs/2604.05724v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Yusung Ro, Jaehyun Choi, Junmo Kim</p><p>Sparse Autoencoders (SAEs) have emerged as a powerful tool for interpreting the internal representations of CLIP vision encoders, yet existing analyses largely focus on the semantic meaning of individual features. We introduce information scope as a complementary dimension of interpretability that characterizes how broadly an SAE feature aggregates visual evidence, ranging from localized, patch-specific cues to global, image-level signals. We observe that some SAE features respond consistently a</p><p><strong>Tags:</strong> SAE, features, vision</p>]]></description>
-      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.05724v1</guid>
-    </item>
-    <item>
-      <title>Selective Aggregation of Attention Maps Improves Diffusion-Based Visual Interpretation</title>
-      <link>https://arxiv.org/abs/2604.05906v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Jungwon Park, Jungmin Ko, Dongnam Byun, Wonjong Rhee</p><p>Numerous studies on text-to-image (T2I) generative models have utilized cross-attention maps to boost application performance and interpret model behavior. However, the distinct characteristics of attention maps from different attention heads remain relatively underexplored. In this study, we show that selectively aggregating cross-attention maps from heads most relevant to a target concept can improve visual interpretability. Compared to the diffusion-based segmentation method DAAM, our approac</p><p><strong>Tags:</strong> attention, vision</p>]]></description>
-      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.05906v1</guid>
-    </item>
-    <item>
-      <title>Improving Robustness In Sparse Autoencoders via Masked Regularization</title>
-      <link>https://arxiv.org/abs/2604.06495v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Vivek Narayanaswamy, Kowshik Thopalli, Bhavya Kailkhura, Wesam Sakla</p><p>Sparse autoencoders (SAEs) are widely used in mechanistic interpretability to project LLM activations onto sparse latent spaces. However, sparsity alone is an imperfect proxy for interpretability, and current training objectives often result in brittle latent representations. SAEs are known to be prone to feature absorption, where general features are subsumed by more specific ones due to co-occurrence, degrading interpretability despite high reconstruction fidelity. Recent negative results on O</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.06495v1</guid>
-    </item>
-    <item>
-      <title>Distributed Interpretability and Control for Large Language Models</title>
-      <link>https://arxiv.org/abs/2604.06483v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Dev Arpan Desai, Shaoyi Huang, Zining Zhu</p><p>Large language models that require multiple GPU cards to host are usually the most capable models. It is necessary to understand and steer these models, but the current technologies do not support the interpretability and steering of these models in the multi-GPU setting as well as the single-GPU setting. We present a practical implementation of activation-level interpretability (logit lens) and steering (steering vector) that scales up to multi-GPU language models. Our system implements design </p><p><strong>Tags:</strong> steering</p>]]></description>
-      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.06483v1</guid>
     </item>
   </channel>
 </rss>
