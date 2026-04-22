@@ -5,9 +5,30 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 22 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Understanding the Mechanism of Altruism in Large Language Models</title>
+      <link>https://arxiv.org/abs/2604.19260v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Shuhuai Zhang, Shu Wang, Zijun Yao, Chuanhao Li, Xiaozhi Wang, et al.</p><p>Altruism is fundamental to human societies, fostering cooperation and social cohesion. Recent studies suggest that large language models (LLMs) can display human-like prosocial behavior, but the internal computations that produce such behavior remain poorly understood. We investigate the mechanisms underlying LLM altruism using sparse autoencoders (SAEs). In a standard Dictator Game, minimal-pair prompts that differ only in social stance (generous versus selfish) induce large, economically meani</p><p><strong>Tags:</strong> SAE</p>]]></description>
+      <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.19260v1</guid>
+    </item>
+    <item>
+      <title>Cell-Based Representation of Relational Binding in Language Models</title>
+      <link>https://arxiv.org/abs/2604.19052v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Qin Dai, Benjamin Heinzerling, Kentaro Inui</p><p>Understanding a discourse requires tracking entities and the relations that hold between them. While Large Language Models (LLMs) perform well on relational reasoning, the mechanism by which they bind entities, relations, and attributes remains unclear. We study discourse-level relational binding and show that LLMs encode it via a Cell-based Binding Representation (CBR): a low-dimensional linear subspace in which each ``cell&#x27;&#x27; corresponds to an entity--relation index pair, and bound attributes a</p><p><strong>Tags:</strong> reasoning</p>]]></description>
+      <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.19052v1</guid>
+    </item>
+    <item>
+      <title>ProjLens: Unveiling the Role of Projectors in Multimodal Model Safety</title>
+      <link>https://arxiv.org/abs/2604.19083v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Kun Wang, Cheng Qian, Miao Yu, Lilan Peng, Liang Lin, et al.</p><p>Multimodal Large Language Models (MLLMs) have achieved remarkable success in cross-modal understanding and generation, yet their deployment is threatened by critical safety vulnerabilities. While prior works have demonstrated the feasibility of backdoors in MLLMs via fine-tuning data poisoning to manipulate inference, the underlying mechanisms of backdoor attacks remain opaque, complicating the understanding and mitigation. To bridge this gap, we propose ProjLens, an interpretability framework d</p><p><strong>Tags:</strong> safety, vision</p>]]></description>
+      <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.19083v1</guid>
+    </item>
     <item>
       <title>Polysemantic Experts, Monosemantic Paths: Routing as Control in MoEs</title>
       <link>https://arxiv.org/abs/2604.17837v1</link>
@@ -35,6 +56,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Sehyeong Jo, Gangjae Jang, Haesol Park</p><p>Vision Transformers (ViTs) have become a dominant architecture in computer vision, yet their prediction process remains difficult to interpret because information is propagated through complex interactions across layers and attention heads. Existing attention based explanation methods provide an intuitive way to trace information flow. However, they rely mainly on raw attention weights, which do not explicitly reflect the final decision and often lead to explanations with limited class discrimin</p><p><strong>Tags:</strong> attention, vision</p>]]></description>
       <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2604.18094v1</guid>
+    </item>
+    <item>
+      <title>Towards Understanding the Robustness of Sparse Autoencoders</title>
+      <link>https://arxiv.org/abs/2604.18756v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Ahson Saiyed, Sabrina Sadiekh, Chirag Agarwal</p><p>Large Language Models (LLMs) remain vulnerable to optimization-based jailbreak attacks that exploit internal gradient structure. While Sparse Autoencoders (SAEs) are widely used for interpretability, their robustness implications remain underexplored. We present a study of integrating pretrained SAEs into transformer residual streams at inference time, without modifying model weights or blocking gradients. Across four model families (Gemma, LLaMA, Mistral, Qwen) and two strong white-box attacks </p><p><strong>Tags:</strong> SAE</p>]]></description>
+      <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.18756v1</guid>
     </item>
     <item>
       <title>Where is the Mind? Persona Vectors and LLM Individuation</title>
@@ -189,34 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Matheus J. A. Oliveira, Israel F. Araujo, José R. de Oliveira Neto, Juliano B. Lima</p><p>This paper presents a generalized circuit framework for constructing Shih-type fractionalizations of unitary operators of dyadic order, i.e., operators $U$ satisfying $U^{2^n}=I$. Building upon the architecture of the quantum fractional Fourier transform (QFrFT), we show that fractionalization can be implemented coherently as a weighted superposition of integer powers, $\sum_k c_k(α)U^k$, where the coefficients are generated through an ancilla-domain quantum Fourier transform and a diagonal phas</p><p><strong>Tags:</strong> circuits, superposition</p>]]></description>
       <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2604.09295v1</guid>
-    </item>
-    <item>
-      <title>Tensor-Augmented Convolutional Neural Networks: Enhancing Expressivity with Generic Tensor Kernels</title>
-      <link>https://arxiv.org/abs/2604.08072v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Chia-Wei Hsing, Wei-Lin Tu</p><p>Convolutional Neural Networks (CNNs) excel at extracting local features hierarchically, but their performance in capturing complex correlations hinges heavily on deep architectures, which are usually computationally demanding and difficult to interpret. To address these issues, we propose a physically-guided shallow model: tensor-augmented CNN (TACNN), which replaces conventional convolution kernels with generic tensors to enhance representational capacity. This choice is motivated by the fact t</p><p><strong>Tags:</strong> features</p>]]></description>
-      <pubDate>Thu, 09 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.08072v1</guid>
-    </item>
-    <item>
-      <title>LINE: LLM-based Iterative Neuron Explanations for Vision Models</title>
-      <link>https://arxiv.org/abs/2604.08039v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Vladimir Zaigrajew, Michał Piechota, Gaspar Sekula, Przemysław Biecek</p><p>Interpreting the concepts encoded by individual neurons in deep neural networks is a crucial step towards understanding their complex decision-making processes and ensuring AI safety. Despite recent progress in neuron labeling, existing methods often limit the search space to predefined concept vocabularies or produce overly specific descriptions that fail to capture higher-order, global concepts. We introduce LINE, a novel, training-free iterative approach tailored for open-vocabulary concept l</p><p><strong>Tags:</strong> safety, vision</p>]]></description>
-      <pubDate>Thu, 09 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.08039v1</guid>
-    </item>
-    <item>
-      <title>What Drives Representation Steering? A Mechanistic Case Study on Steering Refusal</title>
-      <link>https://arxiv.org/abs/2604.08524v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Stephen Cheng, Sarah Wiegreffe, Dinesh Manocha</p><p>Applying steering vectors to large language models (LLMs) is an efficient and effective model alignment technique, but we lack an interpretable explanation for how it works-- specifically, what internal mechanisms steering vectors affect and how this results in different model outputs. To investigate the causal mechanisms underlying the effectiveness of steering vectors, we conduct a comprehensive case study on refusal. We propose a multi-token activation patching framework and discover that dif</p><p><strong>Tags:</strong> safety, steering</p>]]></description>
-      <pubDate>Thu, 09 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.08524v1</guid>
-    </item>
-    <item>
-      <title>Functional Emotions or Situational Contexts? A Discriminating Test from the Mythos Preview System Card</title>
-      <link>https://arxiv.org/abs/2604.13466v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Hiranya V. Peiris</p><p>The Claude Mythos Preview system card deploys emotion vectors, sparse autoencoder (SAE) features, and activation verbalisers to study model internals during misaligned behaviour. The two primary toolkits are not jointly reported on the most alignment-relevant episodes. This note identifies two hypotheses that are qualitatively consistent with the published results: that the emotion vectors track functional emotions that causally drive behaviour, or that they are a projection of a richer situatio</p><p><strong>Tags:</strong> SAE, features, safety, survey</p>]]></description>
-      <pubDate>Thu, 09 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.13466v1</guid>
     </item>
   </channel>
 </rss>
