@@ -1,6 +1,46 @@
 {
-  "lastUpdated": "2026-04-21",
+  "lastUpdated": "2026-04-22",
   "papers": [
+    {
+      "id": "arxiv-2604-19260v1",
+      "title": "Understanding the Mechanism of Altruism in Large Language Models",
+      "authors": "Shuhuai Zhang, Shu Wang, Zijun Yao, Chuanhao Li, Xiaozhi Wang, et al.",
+      "date": "2026-04-21",
+      "url": "https://arxiv.org/abs/2604.19260v1",
+      "abstract": "Altruism is fundamental to human societies, fostering cooperation and social cohesion. Recent studies suggest that large language models (LLMs) can display human-like prosocial behavior, but the internal computations that produce such behavior remain poorly understood. We investigate the mechanisms underlying LLM altruism using sparse autoencoders (SAEs). In a standard Dictator Game, minimal-pair prompts that differ only in social stance (generous versus selfish) induce large, economically meani",
+      "tags": [
+        "SAE"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2604-19052v1",
+      "title": "Cell-Based Representation of Relational Binding in Language Models",
+      "authors": "Qin Dai, Benjamin Heinzerling, Kentaro Inui",
+      "date": "2026-04-21",
+      "url": "https://arxiv.org/abs/2604.19052v1",
+      "abstract": "Understanding a discourse requires tracking entities and the relations that hold between them. While Large Language Models (LLMs) perform well on relational reasoning, the mechanism by which they bind entities, relations, and attributes remains unclear. We study discourse-level relational binding and show that LLMs encode it via a Cell-based Binding Representation (CBR): a low-dimensional linear subspace in which each ``cell'' corresponds to an entity--relation index pair, and bound attributes a",
+      "tags": [
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2604-19083v1",
+      "title": "ProjLens: Unveiling the Role of Projectors in Multimodal Model Safety",
+      "authors": "Kun Wang, Cheng Qian, Miao Yu, Lilan Peng, Liang Lin, et al.",
+      "date": "2026-04-21",
+      "url": "https://arxiv.org/abs/2604.19083v1",
+      "abstract": "Multimodal Large Language Models (MLLMs) have achieved remarkable success in cross-modal understanding and generation, yet their deployment is threatened by critical safety vulnerabilities. While prior works have demonstrated the feasibility of backdoors in MLLMs via fine-tuning data poisoning to manipulate inference, the underlying mechanisms of backdoor attacks remain opaque, complicating the understanding and mitigation. To bridge this gap, we propose ProjLens, an interpretability framework d",
+      "tags": [
+        "safety",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2604-17837v1",
       "title": "Polysemantic Experts, Monosemantic Paths: Routing as Control in MoEs",
@@ -52,6 +92,19 @@
       "tags": [
         "attention",
         "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2604-18756v1",
+      "title": "Towards Understanding the Robustness of Sparse Autoencoders",
+      "authors": "Ahson Saiyed, Sabrina Sadiekh, Chirag Agarwal",
+      "date": "2026-04-20",
+      "url": "https://arxiv.org/abs/2604.18756v1",
+      "abstract": "Large Language Models (LLMs) remain vulnerable to optimization-based jailbreak attacks that exploit internal gradient structure. While Sparse Autoencoders (SAEs) are widely used for interpretability, their robustness implications remain underexplored. We present a study of integrating pretrained SAEs into transformer residual streams at inference time, without modifying model weights or blocking gradients. Across four model families (Gemma, LLaMA, Mistral, Qwen) and two strong white-box attacks ",
+      "tags": [
+        "SAE"
       ],
       "source": "arXiv",
       "featured": false
