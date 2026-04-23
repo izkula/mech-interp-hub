@@ -1,6 +1,31 @@
 {
-  "lastUpdated": "2026-04-22",
+  "lastUpdated": "2026-04-23",
   "papers": [
+    {
+      "id": "arxiv-2604-20467v1",
+      "title": "Mechanistic Interpretability Tool for AI Weather Models",
+      "authors": "Kirsten I. Tempest, Matthias Beylich, George C. Craig",
+      "date": "2026-04-22",
+      "url": "https://arxiv.org/abs/2604.20467v1",
+      "abstract": "Artificial Intelligence (AI) weather models are improving rapidly, and their forecasts are already competitive with long-established traditional Numerical Weather Prediction (NWP). To build confidence in this new methodology, it is critical that we understand how these predictions are generated. This is a huge challenge as these AI weather models remain largely black boxes. In other areas of Machine Learning (ML), mechanistic interpretability has emerged as a framework for understanding ML predi",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2604-20191v1",
+      "title": "From Scene to Object: Text-Guided Dual-Gaze Prediction",
+      "authors": "Zehong Ke, Yanbo Jiang, Jinhao Li, Zhiyuan Liu, Yiqian Tu, et al.",
+      "date": "2026-04-22",
+      "url": "https://arxiv.org/abs/2604.20191v1",
+      "abstract": "Interpretable driver attention prediction is crucial for human-like autonomous driving. However, existing datasets provide only scene-level global gaze rather than fine-grained object-level annotations, inherently failing to support text-grounded cognitive modeling. Consequently, while Vision-Language Models (VLMs) hold great potential for semantic reasoning, this critical data limitations leads to severe text-vision decoupling and visual-bias hallucinations. To break this bottleneck and achieve",
+      "tags": [
+        "vision",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2604-19260v1",
       "title": "Understanding the Mechanism of Altruism in Large Language Models",
@@ -37,6 +62,20 @@
       "tags": [
         "safety",
         "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2604-19974v1",
+      "title": "Are LLM Uncertainty and Correctness Encoded by the Same Features? A Functional Dissociation via Sparse Autoencoders",
+      "authors": "Het Patel, Tiejin Chen, Hua Wei, Evangelos E. Papalexakis, Jia Chen",
+      "date": "2026-04-21",
+      "url": "https://arxiv.org/abs/2604.19974v1",
+      "abstract": "Large language models can be uncertain yet correct, or confident yet wrong, raising the question of whether their output-level uncertainty and their actual correctness are driven by the same internal mechanisms or by distinct feature populations. We introduce a 2x2 framework that partitions model predictions along correctness and confidence axes, and uses sparse autoencoders to identify features associated with each dimension independently. Applying this to Llama-3.1-8B and Gemma-2-9B, we identi",
+      "tags": [
+        "SAE",
+        "features"
       ],
       "source": "arXiv",
       "featured": false
@@ -137,6 +176,20 @@
       "featured": false
     },
     {
+      "id": "arxiv-2604-19815v1",
+      "title": "Large Language Models Meet Biomedical Knowledge Graphs for Mechanistically Grounded Therapeutic Prioritization",
+      "authors": "Chih-Hsuan Wei, Chi-Ping Day, Zhizheng Wang, Christine C. Alewine, Betty Tyler, et al.",
+      "date": "2026-04-17",
+      "url": "https://arxiv.org/abs/2604.19815v1",
+      "abstract": "Drug repurposing is often framed as a candidate identification task, but existing approaches provide limited guidance for distinguishing biologically plausible candidates from historically well-connected ones. Here we introduce DrugKLM, a hybrid framework that integrates biomedical knowledge graph structure with large language model-based mechanistic reasoning to enable mechanistically grounded therapeutic prioritization. Across benchmark datasets, DrugKLM outperforms knowledge graph-only and la",
+      "tags": [
+        "biology",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
       "id": "arxiv-2604-14925v1",
       "title": "Improving Sparse Autoencoder with Dynamic Attention",
       "authors": "Dongsheng Wang, Jinsen Zhang, Dawei Su, Hui Huang",
@@ -184,6 +237,17 @@
       "tags": [
         "steering"
       ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2604-14593v3",
+      "title": "Mechanistic Decoding of Cognitive Constructs in Large Language Models",
+      "authors": "Yitong Shou, Manhao Guan",
+      "date": "2026-04-16",
+      "url": "https://arxiv.org/abs/2604.14593v3",
+      "abstract": "While Large Language Models (LLMs) demonstrate increasingly sophisticated affective capabilities, the internal mechanisms by which they process complex emotions remain unclear. Existing interpretability approaches often treat models as black boxes or focus on coarse-grained basic emotions, leaving the cognitive structure of more complex affective states underexplored. To bridge this gap, we propose a Cognitive Reverse-Engineering framework based on Representation Engineering (RepE) to analyze so",
+      "tags": [],
       "source": "arXiv",
       "featured": false
     },
@@ -972,6 +1036,19 @@
       "tags": [
         "circuits",
         "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2604-19775v1",
+      "title": "From Actions to Understanding: Conformal Interpretability of Temporal Concepts in LLM Agents",
+      "authors": "Trilok Padhi, Ramneet Kaur, Krishiv Agarwal, Adam D. Cobb, Daniel Elenius, et al.",
+      "date": "2026-03-27",
+      "url": "https://arxiv.org/abs/2604.19775v1",
+      "abstract": "Large Language Models (LLMs) are increasingly deployed as autonomous agents capable of reasoning, planning, and acting within interactive environments. Despite their growing capability to perform multi-step reasoning and decision-making tasks, internal mechanisms guiding their sequential behavior remain opaque. This paper presents a framework for interpreting the temporal evolution of concepts in LLM agents through a step-wise conformal lens. We introduce the conformal interpretability framework",
+      "tags": [
+        "reasoning"
       ],
       "source": "arXiv",
       "featured": false
