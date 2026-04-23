@@ -5,9 +5,23 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Mechanistic Interpretability Tool for AI Weather Models</title>
+      <link>https://arxiv.org/abs/2604.20467v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Kirsten I. Tempest, Matthias Beylich, George C. Craig</p><p>Artificial Intelligence (AI) weather models are improving rapidly, and their forecasts are already competitive with long-established traditional Numerical Weather Prediction (NWP). To build confidence in this new methodology, it is critical that we understand how these predictions are generated. This is a huge challenge as these AI weather models remain largely black boxes. In other areas of Machine Learning (ML), mechanistic interpretability has emerged as a framework for understanding ML predi</p>]]></description>
+      <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.20467v1</guid>
+    </item>
+    <item>
+      <title>From Scene to Object: Text-Guided Dual-Gaze Prediction</title>
+      <link>https://arxiv.org/abs/2604.20191v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Zehong Ke, Yanbo Jiang, Jinhao Li, Zhiyuan Liu, Yiqian Tu, et al.</p><p>Interpretable driver attention prediction is crucial for human-like autonomous driving. However, existing datasets provide only scene-level global gaze rather than fine-grained object-level annotations, inherently failing to support text-grounded cognitive modeling. Consequently, while Vision-Language Models (VLMs) hold great potential for semantic reasoning, this critical data limitations leads to severe text-vision decoupling and visual-bias hallucinations. To break this bottleneck and achieve</p><p><strong>Tags:</strong> vision, reasoning</p>]]></description>
+      <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.20191v1</guid>
+    </item>
     <item>
       <title>Understanding the Mechanism of Altruism in Large Language Models</title>
       <link>https://arxiv.org/abs/2604.19260v1</link>
@@ -28,6 +42,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Kun Wang, Cheng Qian, Miao Yu, Lilan Peng, Liang Lin, et al.</p><p>Multimodal Large Language Models (MLLMs) have achieved remarkable success in cross-modal understanding and generation, yet their deployment is threatened by critical safety vulnerabilities. While prior works have demonstrated the feasibility of backdoors in MLLMs via fine-tuning data poisoning to manipulate inference, the underlying mechanisms of backdoor attacks remain opaque, complicating the understanding and mitigation. To bridge this gap, we propose ProjLens, an interpretability framework d</p><p><strong>Tags:</strong> safety, vision</p>]]></description>
       <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2604.19083v1</guid>
+    </item>
+    <item>
+      <title>Are LLM Uncertainty and Correctness Encoded by the Same Features? A Functional Dissociation via Sparse Autoencoders</title>
+      <link>https://arxiv.org/abs/2604.19974v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Het Patel, Tiejin Chen, Hua Wei, Evangelos E. Papalexakis, Jia Chen</p><p>Large language models can be uncertain yet correct, or confident yet wrong, raising the question of whether their output-level uncertainty and their actual correctness are driven by the same internal mechanisms or by distinct feature populations. We introduce a 2x2 framework that partitions model predictions along correctness and confidence axes, and uses sparse autoencoders to identify features associated with each dimension independently. Applying this to Llama-3.1-8B and Gemma-2-9B, we identi</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.19974v1</guid>
     </item>
     <item>
       <title>Polysemantic Experts, Monosemantic Paths: Routing as Control in MoEs</title>
@@ -79,6 +100,13 @@
       <guid>https://arxiv.org/abs/2604.16889v1</guid>
     </item>
     <item>
+      <title>Large Language Models Meet Biomedical Knowledge Graphs for Mechanistically Grounded Therapeutic Prioritization</title>
+      <link>https://arxiv.org/abs/2604.19815v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Chih-Hsuan Wei, Chi-Ping Day, Zhizheng Wang, Christine C. Alewine, Betty Tyler, et al.</p><p>Drug repurposing is often framed as a candidate identification task, but existing approaches provide limited guidance for distinguishing biologically plausible candidates from historically well-connected ones. Here we introduce DrugKLM, a hybrid framework that integrates biomedical knowledge graph structure with large language model-based mechanistic reasoning to enable mechanistically grounded therapeutic prioritization. Across benchmark datasets, DrugKLM outperforms knowledge graph-only and la</p><p><strong>Tags:</strong> biology, reasoning</p>]]></description>
+      <pubDate>Fri, 17 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.19815v1</guid>
+    </item>
+    <item>
       <title>Improving Sparse Autoencoder with Dynamic Attention</title>
       <link>https://arxiv.org/abs/2604.14925v1</link>
       <description><![CDATA[<p><strong>Authors:</strong> Dongsheng Wang, Jinsen Zhang, Dawei Su, Hui Huang</p><p>Recently, sparse autoencoders (SAEs) have emerged as a promising technique for interpreting activations in foundation models by disentangling features into a sparse set of concepts. However, identifying the optimal level of sparsity for each neuron remains challenging in practice: excessive sparsity can lead to poor reconstruction, whereas insufficient sparsity may harm interpretability. While existing activation functions such as ReLU and TopK provide certain sparsity guarantees, they typically</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
@@ -105,6 +133,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Jayadev Billa</p><p>Steering vectors work for some concepts and layers but fail for others, and practitioners have no way to predict which setting applies before running an intervention. We introduce the Linear Accessibility Profile (LAP), a per-layer diagnostic that repurposes the logit lens as a predictor of steering vector effectiveness. The key measure, $A_{\mathrm{lin}}$, applies the model&#x27;s unembedding matrix to intermediate hidden states, requiring no training. Across 24 controlled binary concept families on</p><p><strong>Tags:</strong> steering</p>]]></description>
       <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2604.15557v1</guid>
+    </item>
+    <item>
+      <title>Mechanistic Decoding of Cognitive Constructs in Large Language Models</title>
+      <link>https://arxiv.org/abs/2604.14593v3</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Yitong Shou, Manhao Guan</p><p>While Large Language Models (LLMs) demonstrate increasingly sophisticated affective capabilities, the internal mechanisms by which they process complex emotions remain unclear. Existing interpretability approaches often treat models as black boxes or focus on coarse-grained basic emotions, leaving the cognitive structure of more complex affective states underexplored. To bridge this gap, we propose a Cognitive Reverse-Engineering framework based on Representation Engineering (RepE) to analyze so</p>]]></description>
+      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.14593v3</guid>
     </item>
     <item>
       <title>Weight Patching: Toward Source-Level Mechanistic Localization in LLMs</title>
@@ -182,41 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> James Stovold, Mia-Katrin Kvalsund, Harald Michael Ludwig, Varun Sharma, Alexander Mordvintsev</p><p>As Neural Cellular Automata (NCAs) are increasingly applied outside of the toy models in Artificial Life, there is a pressing need to understand how they behave and to build appropriate routes to interpret what they have learnt. By their very nature, the benefits of training NCAs are balanced with a lack of interpretability: we can engineer emergent behaviour, but have limited ability to understand what has been learnt.   In this paper, we apply a variety of techniques to pry open the NCA black </p><p><strong>Tags:</strong> vision</p>]]></description>
       <pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2604.10639v1</guid>
-    </item>
-    <item>
-      <title>BMdataset: A Musicologically Curated LilyPond Dataset</title>
-      <link>https://arxiv.org/abs/2604.10628v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Matteo Spanio, Ilay Guler, Antonio Rodà</p><p>Symbolic music research has relied almost exclusively on MIDI-based datasets; text-based engraving formats such as LilyPond remain unexplored for music understanding. We present BMdataset, a musicologically curated dataset of 393 LilyPond scores (2,646 movements) transcribed by experts directly from original Baroque manuscripts, with metadata covering composer, musical form, instrumentation, and sectional attributes. Building on this resource, we introduce LilyBERT (weights can be found at https</p>]]></description>
-      <pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.10628v1</guid>
-    </item>
-    <item>
-      <title>Attention Sink in Transformers: A Survey on Utilization, Interpretation, and Mitigation</title>
-      <link>https://arxiv.org/abs/2604.10098v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Zunhai Su, Hengyuan Zhang, Wei Wu, Yifan Zhang, Yaxiu Liu, et al.</p><p>As the foundational architecture of modern machine learning, Transformers have driven remarkable progress across diverse AI domains. Despite their transformative impact, a persistent challenge across various Transformers is Attention Sink (AS), in which a disproportionate amount of attention is focused on a small subset of specific yet uninformative tokens. AS complicates interpretability, significantly affecting the training and inference dynamics, and exacerbates issues such as hallucinations.</p><p><strong>Tags:</strong> survey</p>]]></description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.10098v1</guid>
-    </item>
-    <item>
-      <title>Jailbreaking the Matrix: Nullspace Steering for Controlled Model Subversion</title>
-      <link>https://arxiv.org/abs/2604.10326v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Vishal Pramanik, Maisha Maliha, Susmit Jha, Sumit Kumar Jha</p><p>Large language models remain vulnerable to jailbreak attacks -- inputs designed to bypass safety mechanisms and elicit harmful responses -- despite advances in alignment and instruction tuning. We propose Head-Masked Nullspace Steering (HMNS), a circuit-level intervention that (i) identifies attention heads most causally responsible for a model&#x27;s default behavior, (ii) suppresses their write paths via targeted column masking, and (iii) injects a perturbation constrained to the orthogonal complem</p><p><strong>Tags:</strong> circuits, safety, attention, steering</p>]]></description>
-      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.10326v1</guid>
-    </item>
-    <item>
-      <title>Arbitration Failure, Not Perceptual Blindness: How Vision-Language Models Resolve Visual-Linguistic Conflicts</title>
-      <link>https://arxiv.org/abs/2604.09364v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Farhad Nooralahzadeh, Omid Rohanian, Yi Zhang, Jonathan Fürst, Kurt Stockinger</p><p>When a Vision-Language Model (VLM) sees a blue banana and answers &quot;yellow&quot;, is the problem of perception or arbitration? We explore the question in ten VLMs with various sizes and reveal an Encoding--Grounding Dissociation: models that fail to report what they see (and thus provide a wrong answer) still encode the visual evidence as strongly as models that provide the correct answer. Using Multimodal Arbitration Crossover (MAC) analysis with layer-by-layer Logit Lens probing, we track the compet</p><p><strong>Tags:</strong> probing, vision</p>]]></description>
-      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.09364v1</guid>
-    </item>
-    <item>
-      <title>Dyadic-Order Quantum Fractional Transforms: Circuit Constructions and Applications to Hartley and Cosine Transform Families</title>
-      <link>https://arxiv.org/abs/2604.09295v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Matheus J. A. Oliveira, Israel F. Araujo, José R. de Oliveira Neto, Juliano B. Lima</p><p>This paper presents a generalized circuit framework for constructing Shih-type fractionalizations of unitary operators of dyadic order, i.e., operators $U$ satisfying $U^{2^n}=I$. Building upon the architecture of the quantum fractional Fourier transform (QFrFT), we show that fractionalization can be implemented coherently as a weighted superposition of integer powers, $\sum_k c_k(α)U^k$, where the coefficients are generated through an ancilla-domain quantum Fourier transform and a diagonal phas</p><p><strong>Tags:</strong> circuits, superposition</p>]]></description>
-      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.09295v1</guid>
     </item>
   </channel>
 </rss>
