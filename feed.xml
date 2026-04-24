@@ -5,7 +5,7 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 23 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 24 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
@@ -21,6 +21,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Zehong Ke, Yanbo Jiang, Jinhao Li, Zhiyuan Liu, Yiqian Tu, et al.</p><p>Interpretable driver attention prediction is crucial for human-like autonomous driving. However, existing datasets provide only scene-level global gaze rather than fine-grained object-level annotations, inherently failing to support text-grounded cognitive modeling. Consequently, while Vision-Language Models (VLMs) hold great potential for semantic reasoning, this critical data limitations leads to severe text-vision decoupling and visual-bias hallucinations. To break this bottleneck and achieve</p><p><strong>Tags:</strong> vision, reasoning</p>]]></description>
       <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2604.20191v1</guid>
+    </item>
+    <item>
+      <title>Breaking Bad: Interpretability-Based Safety Audits of State-of-the-Art LLMs</title>
+      <link>https://arxiv.org/abs/2604.20945v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Krishiv Agarwal, Ramneet Kaur, Colin Samplawski, Manoj Acharya, Anirban Roy, et al.</p><p>Effective safety auditing of large language models (LLMs) demands tools that go beyond black-box probing and systematically uncover vulnerabilities rooted in model internals. We present a comprehensive, interpretability-driven jailbreaking audit of eight SOTA open-source LLMs: Llama-3.1-8B, Llama-3.3-70B-4bt, GPT-oss- 20B, GPT-oss-120B, Qwen3-0.6B, Qwen3-32B, Phi4-3.8B, and Phi4-14B. Leveraging interpretability-based approaches -- Universal Steering (US) and Representation Engineering (RepE) -- </p><p><strong>Tags:</strong> safety, probing, steering</p>]]></description>
+      <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.20945v1</guid>
     </item>
     <item>
       <title>Understanding the Mechanism of Altruism in Large Language Models</title>
@@ -210,13 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Zhegong Shangguan, Alessandro Di Nuovo, Angelo Cangelosi</p><p>Robots are increasingly entering human-interactive scenarios that require understanding of quantity. How intelligent systems acquire abstract numerical concepts from sensorimotor experience remains a fundamental challenge in cognitive science and artificial intelligence. Here we investigate embodied numerical learning using a neural network model trained to perform sequential counting through naturalistic robotic interaction with a Franka Panda manipulator. We demonstrate that embodied models ac</p>]]></description>
       <pubDate>Mon, 13 Apr 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2604.11373v1</guid>
-    </item>
-    <item>
-      <title>Visualising the Attractor Landscape of Neural Cellular Automata</title>
-      <link>https://arxiv.org/abs/2604.10639v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> James Stovold, Mia-Katrin Kvalsund, Harald Michael Ludwig, Varun Sharma, Alexander Mordvintsev</p><p>As Neural Cellular Automata (NCAs) are increasingly applied outside of the toy models in Artificial Life, there is a pressing need to understand how they behave and to build appropriate routes to interpret what they have learnt. By their very nature, the benefits of training NCAs are balanced with a lack of interpretability: we can engineer emergent behaviour, but have limited ability to understand what has been learnt.   In this paper, we apply a variety of techniques to pry open the NCA black </p><p><strong>Tags:</strong> vision</p>]]></description>
-      <pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.10639v1</guid>
     </item>
   </channel>
 </rss>
