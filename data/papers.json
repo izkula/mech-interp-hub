@@ -1,6 +1,31 @@
 {
-  "lastUpdated": "2026-04-26",
+  "lastUpdated": "2026-04-27",
   "papers": [
+    {
+      "id": "arxiv-2604-22345v1",
+      "title": "Preference Heads in Large Language Models: A Mechanistic Framework for Interpretable Personalization",
+      "authors": "Weixu Zhang, Ye Yuan, Changjiang Han, Yuxing Tian, Zipeng Sun, et al.",
+      "date": "2026-04-24",
+      "url": "https://arxiv.org/abs/2604.22345v1",
+      "abstract": "Large Language Models (LLMs) exhibit strong implicit personalization ability, yet most existing approaches treat this behavior as a black box, relying on prompt engineering or fine tuning on user data. In this work, we adopt a mechanistic interpretability perspective and hypothesize the existence of a sparse set of Preference Heads, attention heads that encode user specific stylistic and topical preferences and exert a causal influence on generation. We introduce Differential Preference Steering",
+      "tags": [
+        "attention",
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2604-22166v1",
+      "title": "Fine-Grained Analysis of Shared Syntactic Mechanisms in Language Models",
+      "authors": "Ryoma Kumon, Hitomi Yanaka",
+      "date": "2026-04-24",
+      "url": "https://arxiv.org/abs/2604.22166v1",
+      "abstract": "While language models demonstrate sophisticated syntactic capabilities, the extent to which their internal mechanisms align with cross-constructional principles studied in linguistics remains poorly understood. This study investigates whether models employ shared neural mechanisms across different syntactic constructions by applying causal interpretability methods at a granular level. Focusing on filler-gap dependencies and negative polarity item (NPI) licensing, we utilize activation patching t",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2604-20467v1",
       "title": "Mechanistic Interpretability Tool for AI Weather Models",
