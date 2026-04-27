@@ -5,9 +5,23 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 26 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 27 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Preference Heads in Large Language Models: A Mechanistic Framework for Interpretable Personalization</title>
+      <link>https://arxiv.org/abs/2604.22345v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Weixu Zhang, Ye Yuan, Changjiang Han, Yuxing Tian, Zipeng Sun, et al.</p><p>Large Language Models (LLMs) exhibit strong implicit personalization ability, yet most existing approaches treat this behavior as a black box, relying on prompt engineering or fine tuning on user data. In this work, we adopt a mechanistic interpretability perspective and hypothesize the existence of a sparse set of Preference Heads, attention heads that encode user specific stylistic and topical preferences and exert a causal influence on generation. We introduce Differential Preference Steering</p><p><strong>Tags:</strong> attention, steering</p>]]></description>
+      <pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.22345v1</guid>
+    </item>
+    <item>
+      <title>Fine-Grained Analysis of Shared Syntactic Mechanisms in Language Models</title>
+      <link>https://arxiv.org/abs/2604.22166v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Ryoma Kumon, Hitomi Yanaka</p><p>While language models demonstrate sophisticated syntactic capabilities, the extent to which their internal mechanisms align with cross-constructional principles studied in linguistics remains poorly understood. This study investigates whether models employ shared neural mechanisms across different syntactic constructions by applying causal interpretability methods at a granular level. Focusing on filler-gap dependencies and negative polarity item (NPI) licensing, we utilize activation patching t</p>]]></description>
+      <pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.22166v1</guid>
+    </item>
     <item>
       <title>Mechanistic Interpretability Tool for AI Weather Models</title>
       <link>https://arxiv.org/abs/2604.20467v1</link>
@@ -203,20 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Eun Woo Im, Dhruv Madhwal, Vivek Gupta</p><p>Vision-Language Models demonstrate remarkable capabilities but often struggle with compositional reasoning, exhibiting vulnerabilities regarding word order and attribute binding. This limitation arises from a scarcity of informative samples needed to differentiate subtle semantic variations during contrastive pretraining. Although hard negative mining offers a promising remedy, existing methods lack explicit mechanisms to dictate which linguistic elements undergo modification. Instead of enginee</p><p><strong>Tags:</strong> vision, reasoning</p>]]></description>
       <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2604.13313v1</guid>
-    </item>
-    <item>
-      <title>Pando: Do Interpretability Methods Work When Models Won&#x27;t Explain Themselves?</title>
-      <link>https://arxiv.org/abs/2604.11061v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Ziqian Zhong, Aashiq Muhamed, Mona T. Diab, Virginia Smith, Aditi Raghunathan</p><p>Mechanistic interpretability is often motivated for alignment auditing, where a model&#x27;s verbal explanations can be absent, incomplete, or misleading. Yet many evaluations do not control whether black-box prompting alone can recover the target behavior, so apparent gains from white-box tools may reflect elicitation rather than internal signal; we call this the elicitation confounder. We introduce Pando, a model-organism benchmark that breaks this confound via an explanation axis: models are train</p><p><strong>Tags:</strong> safety</p>]]></description>
-      <pubDate>Mon, 13 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.11061v1</guid>
-    </item>
-    <item>
-      <title>Minimal Embodiment Enables Efficient Learning of Number Concepts in Robot</title>
-      <link>https://arxiv.org/abs/2604.11373v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Zhegong Shangguan, Alessandro Di Nuovo, Angelo Cangelosi</p><p>Robots are increasingly entering human-interactive scenarios that require understanding of quantity. How intelligent systems acquire abstract numerical concepts from sensorimotor experience remains a fundamental challenge in cognitive science and artificial intelligence. Here we investigate embodied numerical learning using a neural network model trained to perform sequential counting through naturalistic robotic interaction with a Franka Panda manipulator. We demonstrate that embodied models ac</p>]]></description>
-      <pubDate>Mon, 13 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.11373v1</guid>
     </item>
   </channel>
 </rss>
