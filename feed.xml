@@ -5,9 +5,58 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 27 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 28 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Differentiable Faithfulness Alignment for Cross-Model Circuit Transfer</title>
+      <link>https://arxiv.org/abs/2604.24302v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Shun Shao, Binxu Wang, Shay B. Cohen, Anna Korhonen, Yonatan Belinkov</p><p>Mechanistic interpretability has made it possible to localize circuits underlying specific behaviors in language models, but existing methods are expensive, model-specific, and difficult to scale to larger architectures. We introduce \textbf{Differentiable Faithfulness Alignment (DFA)}, a framework that transfers circuit information from a smaller source model to a larger target model through a learned differentiable alignment. DFA projects source-model node importance scores into the target mod</p><p><strong>Tags:</strong> circuits, safety</p>]]></description>
+      <pubDate>Mon, 27 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.24302v1</guid>
+    </item>
+    <item>
+      <title>AIPsy-Affect: A Keyword-Free Clinical Stimulus Battery for Mechanistic Interpretability of Emotion in Language Models</title>
+      <link>https://arxiv.org/abs/2604.23719v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Michael Keeman</p><p>Mechanistic interpretability research on emotion in large language models -- linear probing, activation patching, sparse autoencoder (SAE) feature analysis, causal ablation, steering vector extraction -- depends on stimuli that contain the words for the emotions they test. When a probe fires on &quot;I am furious&quot;, it is unclear whether the model has detected anger or detected the word &quot;furious&quot;. The two readings have very different consequences for every downstream claim about emotion circuits, feat</p><p><strong>Tags:</strong> SAE, circuits, features, probing, steering</p>]]></description>
+      <pubDate>Sun, 26 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.23719v1</guid>
+    </item>
+    <item>
+      <title>Domain-Filtered Knowledge Graphs from Sparse Autoencoder Features</title>
+      <link>https://arxiv.org/abs/2604.23829v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> John Winnicki, Abeynaya Gnanasekaran, Eric Darve</p><p>Sparse autoencoders (SAEs) extract millions of interpretable features from a language model, but flat feature inventories aren&#x27;t very useful on their own. Domain concepts get mixed with generic and weakly grounded features, while related ideas are scattered across many units, and there&#x27;s no way to understand relationships between features. We address this by first constructing a strict domain-specific concept universe from a large SAE inventory using contrastive activations and a multi-stage fil</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Sun, 26 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.23829v1</guid>
+    </item>
+    <item>
+      <title>From Edges to Depth: Probing the Spatial Hierarchy in Vision Transformers</title>
+      <link>https://arxiv.org/abs/2604.23452v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Jainum Sanghavi</p><p>Vision Transformers trained only on image classification routinely transfer to tasks that demand spatial understanding, yet they receive no spatial supervision during pretraining. We ask where and how robustly such structure is encoded. Probing a frozen ViT-B/16 layerwise for two complementary properties, local patch boundaries (BSDS500) and per-patch depth (NYU Depth V2), reveals a clear hierarchy: boundary structure becomes linearly decodable at layers 5-6 (AP = 0.833), while depth, which requ</p><p><strong>Tags:</strong> probing, vision</p>]]></description>
+      <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.23452v1</guid>
+    </item>
+    <item>
+      <title>When Chain-of-Thought Fails, the Solution Hides in the Hidden States</title>
+      <link>https://arxiv.org/abs/2604.23351v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Houman Mehrafarin, Amit Parekh, Ioannis Konstas</p><p>Whether intermediate reasoning is computationally useful or merely explanatory depends on whether chain-of-thought (CoT) tokens contain task-relevant information. We present a mechanistic causal analysis of CoT on GSM8K using activation patching: transferring token-level hidden states from a CoT generation to a direct-answer run for the same question, then measuring the effect on final-answer accuracy. Across models, generating after patching yields substantially higher accuracy than both direct</p><p><strong>Tags:</strong> reasoning</p>]]></description>
+      <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.23351v1</guid>
+    </item>
+    <item>
+      <title>Ulterior Motives: Detecting Misaligned Reasoning in Continuous Thought Models</title>
+      <link>https://arxiv.org/abs/2604.23460v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Sharan Ramjee</p><p>Chain-of-Thought (CoT) reasoning has emerged as a key technique for eliciting complex reasoning in Large Language Models (LLMs). Although interpretable, its dependence on natural language limits the model&#x27;s expressive bandwidth. Continuous thought models address this bottleneck by reasoning in latent space rather than human-readable tokens. While they enable richer representations and faster inference, they raise a critical safety question: how can we detect misaligned reasoning in an uninterpre</p><p><strong>Tags:</strong> safety, reasoning</p>]]></description>
+      <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.23460v1</guid>
+    </item>
+    <item>
+      <title>Mechanistic Steering of LLMs Reveals Layer-wise Feature Vulnerabilities in Adversarial Settings</title>
+      <link>https://arxiv.org/abs/2604.23130v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Nilanjana Das, Manas Gaur</p><p>Large language models (LLMs) can still be jailbroken into producing harmful outputs despite safety alignment. Existing attacks show this vulnerability, but not the internal mechanisms that cause it. This study asks whether jailbreak success is driven by identifiable internal features rather than prompts alone. We propose a three-stage pipeline for Gemma-2-2B using the BeaverTails dataset. First, we extract concept-aligned tokens from adversarial responses via subspace similarity. Second, we appl</p><p><strong>Tags:</strong> features, safety, steering</p>]]></description>
+      <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.23130v1</guid>
+    </item>
     <item>
       <title>Preference Heads in Large Language Models: A Mechanistic Framework for Interpretable Personalization</title>
       <link>https://arxiv.org/abs/2604.22345v1</link>
@@ -168,55 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Chenghao Sun, Chengsheng Zhang, Guanzheng Qin, Rui Dai, Xinmei Tian</p><p>Mechanistic interpretability seeks to localize model behavior to the internal components that causally realize it. Prior work has advanced activation-space localization and causal tracing, but modules that appear important in activation space may merely aggregate or amplify upstream signals rather than encode the target capability in their own parameters. To address this gap, we propose Weight Patching, a parameter-space intervention method for source-oriented analysis in paired same-architectur</p>]]></description>
       <pubDate>Wed, 15 Apr 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2604.13694v1</guid>
-    </item>
-    <item>
-      <title>The Cognitive Circuit Breaker: A Systems Engineering Framework for Intrinsic AI Reliability</title>
-      <link>https://arxiv.org/abs/2604.13417v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Jonathan Pan</p><p>As Large Language Models (LLMs) are increasingly deployed in mission-critical software systems, detecting hallucinations and ``faked truthfulness&#x27;&#x27; has become a paramount engineering challenge. Current reliability architectures rely heavily on post-generation, black-box mechanisms, such as Retrieval-Augmented Generation (RAG) cross-checking or LLM-as-a-judge evaluators. These extrinsic methods introduce unacceptable latency, high computational overhead, and reliance on secondary external API cal</p><p><strong>Tags:</strong> circuits</p>]]></description>
-      <pubDate>Wed, 15 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.13417v1</guid>
-    </item>
-    <item>
-      <title>Seeing Through Circuits: Faithful Mechanistic Interpretability for Vision Transformers</title>
-      <link>https://arxiv.org/abs/2604.14477v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Nina Żukowska, Wolfgang Stammer, Bernt Schiele, Jonas Fischer</p><p>Transparency of neural networks&#x27; internal reasoning is at the heart of interpretability research, adding to trust, safety, and understanding of these models. The field of mechanistic interpretability has recently focused on studying task-specific computational graphs, defined by connections (edges) between model components. Such edge-based circuits have been defined in the context of large language models, yet vision-based approaches so far only consider neuron-based circuits. These tell which i</p><p><strong>Tags:</strong> circuits, safety, vision, reasoning</p>]]></description>
-      <pubDate>Wed, 15 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.14477v1</guid>
-    </item>
-    <item>
-      <title>Interpretable Relational Inference with LLM-Guided Symbolic Dynamics Modeling</title>
-      <link>https://arxiv.org/abs/2604.12806v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Xiaoxiao Liang, Juyuan Zhang, Liming Pan, Linyuan Lü</p><p>Inferring latent interaction structures from observed dynamics is a fundamental inverse problem in many-body interacting systems. Most neural approaches rely on black-box surrogates over trainable graphs, achieving accuracy at the expense of mechanistic interpretability. Symbolic regression offers explicit dynamical equations and stronger inductive biases, but typically assumes known topology and a fixed function library. We propose \textbf{COSINE} (\textbf{C}o-\textbf{O}ptimization of \textbf{S</p>]]></description>
-      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.12806v1</guid>
-    </item>
-    <item>
-      <title>Do Transformers Use their Depth Adaptively? Evidence from a Relational Reasoning Task</title>
-      <link>https://arxiv.org/abs/2604.12426v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Alicia Curth, Rachel Lawrence, Sushrut Karmalkar, Niranjani Prasad</p><p>We investigate whether transformers use their depth adaptively across tasks of increasing difficulty. Using a controlled multi-hop relational reasoning task based on family stories, where difficulty is determined by the number of relationship hops that must be composed, we monitor (i) how predictions evolve across layers via early readouts (the logit lens) and (ii) how task-relevant information is integrated across tokens via causal patching. For pretrained models, we find some limited evidence </p><p><strong>Tags:</strong> reasoning</p>]]></description>
-      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.12426v1</guid>
-    </item>
-    <item>
-      <title>RePAIR: Interactive Machine Unlearning through Prompt-Aware Model Repair</title>
-      <link>https://arxiv.org/abs/2604.12820v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Jagadeesh Rachapudi, Pranav Singh, Ritali Vatsi, Praful Hambarde, Amit Shukla</p><p>Large language models (LLMs) inherently absorb harmful knowledge, misinformation, and personal data during pretraining on large-scale web corpora, with no native mechanism for selective removal. While machine unlearning offers a principled solution, existing approaches are provider-centric, requiring retraining pipelines, curated retain datasets, and direct intervention by model service providers (MSPs), thereby excluding end users from controlling their own data. We introduce Interactive Machin</p><p><strong>Tags:</strong> safety</p>]]></description>
-      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.12820v1</guid>
-    </item>
-    <item>
-      <title>Can Cross-Layer Transcoders Replace Vision Transformer Activations? An Interpretable Perspective on Vision</title>
-      <link>https://arxiv.org/abs/2604.13304v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Gerasimos Chatzoudis, Konstantinos D. Polyzos, Zhuowei Li, Difei Gu, Gemma E. Moran, et al.</p><p>Understanding the internal activations of Vision Transformers (ViTs) is critical for building interpretable and trustworthy models. While Sparse Autoencoders (SAEs) have been used to extract human-interpretable features, they operate on individual layers and fail to capture the cross-layer computational structure of Transformers, as well as the relative significance of each layer in forming the last-layer representation. Alternatively, we introduce the adoption of Cross-Layer Transcoders (CLTs) </p><p><strong>Tags:</strong> SAE, features, vision</p>]]></description>
-      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.13304v1</guid>
-    </item>
-    <item>
-      <title>Concrete Jungle: Towards Concreteness Paved Contrastive Negative Mining for Compositional Understanding</title>
-      <link>https://arxiv.org/abs/2604.13313v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Eun Woo Im, Dhruv Madhwal, Vivek Gupta</p><p>Vision-Language Models demonstrate remarkable capabilities but often struggle with compositional reasoning, exhibiting vulnerabilities regarding word order and attribute binding. This limitation arises from a scarcity of informative samples needed to differentiate subtle semantic variations during contrastive pretraining. Although hard negative mining offers a promising remedy, existing methods lack explicit mechanisms to dictate which linguistic elements undergo modification. Instead of enginee</p><p><strong>Tags:</strong> vision, reasoning</p>]]></description>
-      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.13313v1</guid>
     </item>
   </channel>
 </rss>
