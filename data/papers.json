@@ -1,6 +1,107 @@
 {
-  "lastUpdated": "2026-04-27",
+  "lastUpdated": "2026-04-28",
   "papers": [
+    {
+      "id": "arxiv-2604-24302v1",
+      "title": "Differentiable Faithfulness Alignment for Cross-Model Circuit Transfer",
+      "authors": "Shun Shao, Binxu Wang, Shay B. Cohen, Anna Korhonen, Yonatan Belinkov",
+      "date": "2026-04-27",
+      "url": "https://arxiv.org/abs/2604.24302v1",
+      "abstract": "Mechanistic interpretability has made it possible to localize circuits underlying specific behaviors in language models, but existing methods are expensive, model-specific, and difficult to scale to larger architectures. We introduce \\textbf{Differentiable Faithfulness Alignment (DFA)}, a framework that transfers circuit information from a smaller source model to a larger target model through a learned differentiable alignment. DFA projects source-model node importance scores into the target mod",
+      "tags": [
+        "circuits",
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2604-23719v1",
+      "title": "AIPsy-Affect: A Keyword-Free Clinical Stimulus Battery for Mechanistic Interpretability of Emotion in Language Models",
+      "authors": "Michael Keeman",
+      "date": "2026-04-26",
+      "url": "https://arxiv.org/abs/2604.23719v1",
+      "abstract": "Mechanistic interpretability research on emotion in large language models -- linear probing, activation patching, sparse autoencoder (SAE) feature analysis, causal ablation, steering vector extraction -- depends on stimuli that contain the words for the emotions they test. When a probe fires on \"I am furious\", it is unclear whether the model has detected anger or detected the word \"furious\". The two readings have very different consequences for every downstream claim about emotion circuits, feat",
+      "tags": [
+        "SAE",
+        "circuits",
+        "features",
+        "probing",
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2604-23829v1",
+      "title": "Domain-Filtered Knowledge Graphs from Sparse Autoencoder Features",
+      "authors": "John Winnicki, Abeynaya Gnanasekaran, Eric Darve",
+      "date": "2026-04-26",
+      "url": "https://arxiv.org/abs/2604.23829v1",
+      "abstract": "Sparse autoencoders (SAEs) extract millions of interpretable features from a language model, but flat feature inventories aren't very useful on their own. Domain concepts get mixed with generic and weakly grounded features, while related ideas are scattered across many units, and there's no way to understand relationships between features. We address this by first constructing a strict domain-specific concept universe from a large SAE inventory using contrastive activations and a multi-stage fil",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2604-23452v1",
+      "title": "From Edges to Depth: Probing the Spatial Hierarchy in Vision Transformers",
+      "authors": "Jainum Sanghavi",
+      "date": "2026-04-25",
+      "url": "https://arxiv.org/abs/2604.23452v1",
+      "abstract": "Vision Transformers trained only on image classification routinely transfer to tasks that demand spatial understanding, yet they receive no spatial supervision during pretraining. We ask where and how robustly such structure is encoded. Probing a frozen ViT-B/16 layerwise for two complementary properties, local patch boundaries (BSDS500) and per-patch depth (NYU Depth V2), reveals a clear hierarchy: boundary structure becomes linearly decodable at layers 5-6 (AP = 0.833), while depth, which requ",
+      "tags": [
+        "probing",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2604-23351v1",
+      "title": "When Chain-of-Thought Fails, the Solution Hides in the Hidden States",
+      "authors": "Houman Mehrafarin, Amit Parekh, Ioannis Konstas",
+      "date": "2026-04-25",
+      "url": "https://arxiv.org/abs/2604.23351v1",
+      "abstract": "Whether intermediate reasoning is computationally useful or merely explanatory depends on whether chain-of-thought (CoT) tokens contain task-relevant information. We present a mechanistic causal analysis of CoT on GSM8K using activation patching: transferring token-level hidden states from a CoT generation to a direct-answer run for the same question, then measuring the effect on final-answer accuracy. Across models, generating after patching yields substantially higher accuracy than both direct",
+      "tags": [
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2604-23460v1",
+      "title": "Ulterior Motives: Detecting Misaligned Reasoning in Continuous Thought Models",
+      "authors": "Sharan Ramjee",
+      "date": "2026-04-25",
+      "url": "https://arxiv.org/abs/2604.23460v1",
+      "abstract": "Chain-of-Thought (CoT) reasoning has emerged as a key technique for eliciting complex reasoning in Large Language Models (LLMs). Although interpretable, its dependence on natural language limits the model's expressive bandwidth. Continuous thought models address this bottleneck by reasoning in latent space rather than human-readable tokens. While they enable richer representations and faster inference, they raise a critical safety question: how can we detect misaligned reasoning in an uninterpre",
+      "tags": [
+        "safety",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2604-23130v1",
+      "title": "Mechanistic Steering of LLMs Reveals Layer-wise Feature Vulnerabilities in Adversarial Settings",
+      "authors": "Nilanjana Das, Manas Gaur",
+      "date": "2026-04-25",
+      "url": "https://arxiv.org/abs/2604.23130v1",
+      "abstract": "Large language models (LLMs) can still be jailbroken into producing harmful outputs despite safety alignment. Existing attacks show this vulnerability, but not the internal mechanisms that cause it. This study asks whether jailbreak success is driven by identifiable internal features rather than prompts alone. We propose a three-stage pipeline for Gemma-2-2B using the BeaverTails dataset. First, we extract concept-aligned tokens from adversarial responses via subspace similarity. Second, we appl",
+      "tags": [
+        "features",
+        "safety",
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2604-22345v1",
       "title": "Preference Heads in Large Language Models: A Mechanistic Framework for Interpretable Personalization",
