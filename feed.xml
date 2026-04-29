@@ -5,15 +5,50 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 28 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>From Insight to Action: A Novel Framework for Interpretability-Guided Data Selection in Large Language Models</title>
+      <link>https://arxiv.org/abs/2604.25167v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Ling Shi, Xinwei Wu, Xiaohu Zhao, Hao Wang, Heng Liu, et al.</p><p>While mechanistic interpretability tools like Sparse Autoencoders (SAEs) can uncover meaningful features within Large Language Models (LLMs), a critical gap remains in transforming these insights into practical actions for model optimization. We bridge this gap with the hypothesis that data selection guided by a model&#x27;s internal task features is a effective training strategy. Inspired by this, we propose Interpretability-Guided Data Selection (IGDS), a framework that first identifies these causa</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.25167v1</guid>
+    </item>
+    <item>
+      <title>From Syntax to Emotion: A Mechanistic Analysis of Emotion Inference in LLMs</title>
+      <link>https://arxiv.org/abs/2604.25866v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Bangzhao Shu, Arinjay Singh, Mai ElSherief</p><p>Large language models (LLMs) are increasingly used in emotionally sensitive human-AI applications, yet little is known about how emotion recognition is internally represented. In this work, we investigate the internal mechanisms of emotion recognition in LLMs using sparse autoencoders (SAEs). By analyzing sparse feature activations across layers, we identify a consistent three-phase information flow, in which emotion-related features emerge only in the final phase. We further show that emotion r</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.25866v1</guid>
+    </item>
+    <item>
+      <title>PSI-Bench: Towards Clinically Grounded and Interpretable Evaluation of Depression Patient Simulators</title>
+      <link>https://arxiv.org/abs/2604.25840v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Nguyen Khoi Hoang, Shuhaib Mehri, Tse-An Hsu, Yi-Jyun Sun, Quynh Xuan Nguyen Truong, et al.</p><p>Patient simulators are gaining traction in mental health training by providing scalable exposure to complex and sensitive patient interactions. Simulating depressed patients is particularly challenging, as safety constraints and high patient variability complicate simulations and underscore the need for simulators that capture diverse and realistic patient behaviors. However, existing evaluations heavily rely on LLM-judges with poorly specified prompts and do not assess behavioral diversity. We </p><p><strong>Tags:</strong> safety</p>]]></description>
+      <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.25840v1</guid>
+    </item>
+    <item>
+      <title>One Perturbation, Two Failure Modes: Probing VLM Safety via Embedding-Guided Typographic Perturbations</title>
+      <link>https://arxiv.org/abs/2604.25102v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Ravikumar Balakrishnan, Sanket Mendapara</p><p>Typographic prompt injection exploits vision language models&#x27; (VLMs) ability to read text rendered in images, posing a growing threat as VLMs power autonomous agents. Prior work typically focus on maximizing attack success rate (ASR) but does not explain \emph{why} certain renderings bypass safety alignment. We make two contributions. First, an empirical study across four VLMs including GPT-4o and Claude, twelve font sizes, and ten transformations reveals that multimodal embedding distance stron</p><p><strong>Tags:</strong> safety, probing, vision</p>]]></description>
+      <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.25102v1</guid>
+    </item>
     <item>
       <title>Differentiable Faithfulness Alignment for Cross-Model Circuit Transfer</title>
       <link>https://arxiv.org/abs/2604.24302v1</link>
       <description><![CDATA[<p><strong>Authors:</strong> Shun Shao, Binxu Wang, Shay B. Cohen, Anna Korhonen, Yonatan Belinkov</p><p>Mechanistic interpretability has made it possible to localize circuits underlying specific behaviors in language models, but existing methods are expensive, model-specific, and difficult to scale to larger architectures. We introduce \textbf{Differentiable Faithfulness Alignment (DFA)}, a framework that transfers circuit information from a smaller source model to a larger target model through a learned differentiable alignment. DFA projects source-model node importance scores into the target mod</p><p><strong>Tags:</strong> circuits, safety</p>]]></description>
       <pubDate>Mon, 27 Apr 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2604.24302v1</guid>
+    </item>
+    <item>
+      <title>Learning biophysical models of gene regulation with probability flow matching</title>
+      <link>https://arxiv.org/abs/2604.25062v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Suryanarayana Maddu, Victor Chardès, Michael J. Shelley</p><p>Cellular differentiation is governed by gene regulatory networks, the high-dimensional stochastic biochemical systems that determine the transcriptional landscape and mediate cellular responses to signals and perturbations. Although single-cell RNA sequencing provides quantitative snapshots of the transcriptome, current methods for inferring gene-regulatory dynamics often lack mechanistic interpretability and fail to generalize to unseen conditions. Here we introduce Probability Flow Matching (P</p>]]></description>
+      <pubDate>Mon, 27 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.25062v1</guid>
     </item>
     <item>
       <title>AIPsy-Affect: A Keyword-Free Clinical Stimulus Battery for Mechanistic Interpretability of Emotion in Language Models</title>
@@ -182,41 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Dongsheng Wang, Jinsen Zhang, Dawei Su, Hui Huang</p><p>Recently, sparse autoencoders (SAEs) have emerged as a promising technique for interpreting activations in foundation models by disentangling features into a sparse set of concepts. However, identifying the optimal level of sparsity for each neuron remains challenging in practice: excessive sparsity can lead to poor reconstruction, whereas insufficient sparsity may harm interpretability. While existing activation functions such as ReLU and TopK provide certain sparsity guarantees, they typically</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
       <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2604.14925v1</guid>
-    </item>
-    <item>
-      <title>Mechanistic Decoding of Cognitive Constructs in LLMs</title>
-      <link>https://arxiv.org/abs/2604.14593v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Yitong Shou, Manhao Guan</p><p>While Large Language Models (LLMs) demonstrate increasingly sophisticated affective capabilities, the internal mechanisms by which they process complex emotions remain unclear. Existing interpretability approaches often treat models as black boxes or focus on coarse-grained basic emotions, leaving the cognitive structure of more complex affective states underexplored. To bridge this gap, we propose a Cognitive Reverse-Engineering framework based on Representation Engineering (RepE) to analyze so</p>]]></description>
-      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.14593v1</guid>
-    </item>
-    <item>
-      <title>How Do LLMs and VLMs Understand Viewpoint Rotation Without Vision? An Interpretability Study</title>
-      <link>https://arxiv.org/abs/2604.15294v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Zhen Yang, Ping Jian, Zhongbin Guo, Zuming Zhang, Chengzhi Li, et al.</p><p>Over the past year, spatial intelligence has drawn increasing attention. Many prior works study it from the perspective of visual-spatial intelligence, where models have access to visuospatial information from visual inputs. However, in the absence of visual information, whether linguistic intelligence alone is sufficient to endow models with spatial intelligence, and how models perform relevant tasks with text-only inputs still remain unexplored. Therefore, in this paper, we focus on a fundamen</p><p><strong>Tags:</strong> vision</p>]]></description>
-      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.15294v1</guid>
-    </item>
-    <item>
-      <title>Predicting Where Steering Vectors Succeed</title>
-      <link>https://arxiv.org/abs/2604.15557v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Jayadev Billa</p><p>Steering vectors work for some concepts and layers but fail for others, and practitioners have no way to predict which setting applies before running an intervention. We introduce the Linear Accessibility Profile (LAP), a per-layer diagnostic that repurposes the logit lens as a predictor of steering vector effectiveness. The key measure, $A_{\mathrm{lin}}$, applies the model&#x27;s unembedding matrix to intermediate hidden states, requiring no training. Across 24 controlled binary concept families on</p><p><strong>Tags:</strong> steering</p>]]></description>
-      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.15557v1</guid>
-    </item>
-    <item>
-      <title>Mechanistic Decoding of Cognitive Constructs in Large Language Models</title>
-      <link>https://arxiv.org/abs/2604.14593v3</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Yitong Shou, Manhao Guan</p><p>While Large Language Models (LLMs) demonstrate increasingly sophisticated affective capabilities, the internal mechanisms by which they process complex emotions remain unclear. Existing interpretability approaches often treat models as black boxes or focus on coarse-grained basic emotions, leaving the cognitive structure of more complex affective states underexplored. To bridge this gap, we propose a Cognitive Reverse-Engineering framework based on Representation Engineering (RepE) to analyze so</p>]]></description>
-      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.14593v3</guid>
-    </item>
-    <item>
-      <title>Weight Patching: Toward Source-Level Mechanistic Localization in LLMs</title>
-      <link>https://arxiv.org/abs/2604.13694v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Chenghao Sun, Chengsheng Zhang, Guanzheng Qin, Rui Dai, Xinmei Tian</p><p>Mechanistic interpretability seeks to localize model behavior to the internal components that causally realize it. Prior work has advanced activation-space localization and causal tracing, but modules that appear important in activation space may merely aggregate or amplify upstream signals rather than encode the target capability in their own parameters. To address this gap, we propose Weight Patching, a parameter-space intervention method for source-oriented analysis in paired same-architectur</p>]]></description>
-      <pubDate>Wed, 15 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.13694v1</guid>
     </item>
   </channel>
 </rss>
