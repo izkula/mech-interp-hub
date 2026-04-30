@@ -5,9 +5,37 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 30 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>MoRFI: Monotonic Sparse Autoencoder Feature Identification</title>
+      <link>https://arxiv.org/abs/2604.26866v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Dimitris Dimakopoulos, Shay B. Cohen, Ioannis Konstas</p><p>Large language models (LLMs) acquire most of their factual knowledge during the pre-training stage, through next token prediction. Subsequent stages of post-training often introduce new facts outwith the parametric knowledge, giving rise to hallucinations. While it has been demonstrated that supervised fine-tuning (SFT) on new knowledge may exacerbate the problem, the underlying mechanisms are still poorly understood. We conduct a controlled fine-tuning experiment, focusing on closed-book QA, an</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.26866v1</guid>
+    </item>
+    <item>
+      <title>Sparsity as a Key: Unlocking New Insights from Latent Structures for Out-of-Distribution Detection</title>
+      <link>https://arxiv.org/abs/2604.26409v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Ahyoung Oh, Wonseok Shin, Songkuk Kim</p><p>Sparse Autoencoders (SAEs) have demonstrated significant success in interpreting Large Language Models (LLMs) by decomposing dense representations into sparse, semantic components. However, their potential for analyzing Vision Transformers (ViTs) remains largely under-explored. In this work, we present the first application of SAEs to the ViT [CLS] token for out-of-distribution (OOD) detection, addressing the limitation of existing methods that rely on entangled feature representations. We propo</p><p><strong>Tags:</strong> SAE, features, vision</p>]]></description>
+      <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.26409v1</guid>
+    </item>
+    <item>
+      <title>Lyapunov-Guided Self-Alignment: Test-Time Adaptation for Offline Safe Reinforcement Learning</title>
+      <link>https://arxiv.org/abs/2604.26516v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Seungyub Han, Hyungjin Kim, Jungwoo Lee</p><p>Offline reinforcement learning (RL) agents often fail when deployed, as the gap between training datasets and real environments leads to unsafe behavior. To address this, we present SAS (Self-Alignment for Safety), a transformer-based framework that enables test-time adaptation in offline safe RL without retraining. In SAS, the main mechanism is self-alignment: at test time, the pretrained agent generates several imagined trajectories and selects those satisfying the Lyapunov condition. These fe</p><p><strong>Tags:</strong> safety</p>]]></description>
+      <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.26516v1</guid>
+    </item>
+    <item>
+      <title>When Model Editing Meets Service Evolution: A Knowledge-Update Perspective for Service Recommendation</title>
+      <link>https://arxiv.org/abs/2604.26686v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Guodong Fan, Cuiyun Gao, Chun Yong Chong, Lu Zhang, Jing Li, et al.</p><p>The rapid evolution of software services poses substantial challenges to the design and implementation of effective recommendation systems. Traditional service recommendation approaches often rely on static representations and historical usage data, which are insufficient for adapting to the dynamic and evolving nature of service ecosystems. Recently, large language models (LLMs) have shown strong potential to overcome these limitations by leveraging rich contextual understanding. However, their</p><p><strong>Tags:</strong> editing</p>]]></description>
+      <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.26686v1</guid>
+    </item>
     <item>
       <title>From Insight to Action: A Novel Framework for Interpretability-Guided Data Selection in Large Language Models</title>
       <link>https://arxiv.org/abs/2604.25167v1</link>
@@ -35,6 +63,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Ravikumar Balakrishnan, Sanket Mendapara</p><p>Typographic prompt injection exploits vision language models&#x27; (VLMs) ability to read text rendered in images, posing a growing threat as VLMs power autonomous agents. Prior work typically focus on maximizing attack success rate (ASR) but does not explain \emph{why} certain renderings bypass safety alignment. We make two contributions. First, an empirical study across four VLMs including GPT-4o and Claude, twelve font sizes, and ten transformations reveals that multimodal embedding distance stron</p><p><strong>Tags:</strong> safety, probing, vision</p>]]></description>
       <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2604.25102v1</guid>
+    </item>
+    <item>
+      <title>reward-lens: A Mechanistic Interpretability Library for Reward Models</title>
+      <link>https://arxiv.org/abs/2604.26130v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Mohammed Suhail B Nadaf</p><p>Every RLHF-trained language model is shaped by a reward model, yet the mechanistic interpretability toolkit -- logit lens, direct logit attribution, activation patching, sparse autoencoders -- was built for generative LLMs whose primitives all project onto a vocabulary unembedding. Reward models replace that with a scalar regression head, breaking each tool. We present reward-lens, an open-source library that ports this toolkit to reward models, organised around one observation: the reward head&#x27;</p><p><strong>Tags:</strong> SAE</p>]]></description>
+      <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.26130v1</guid>
     </item>
     <item>
       <title>Differentiable Faithfulness Alignment for Cross-Model Circuit Transfer</title>
@@ -182,41 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Sehyeong Jo, Gangjae Jang, Haesol Park</p><p>Vision Transformers (ViTs) have become a dominant architecture in computer vision, yet their prediction process remains difficult to interpret because information is propagated through complex interactions across layers and attention heads. Existing attention based explanation methods provide an intuitive way to trace information flow. However, they rely mainly on raw attention weights, which do not explicitly reflect the final decision and often lead to explanations with limited class discrimin</p><p><strong>Tags:</strong> attention, vision</p>]]></description>
       <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2604.18094v1</guid>
-    </item>
-    <item>
-      <title>Towards Understanding the Robustness of Sparse Autoencoders</title>
-      <link>https://arxiv.org/abs/2604.18756v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Ahson Saiyed, Sabrina Sadiekh, Chirag Agarwal</p><p>Large Language Models (LLMs) remain vulnerable to optimization-based jailbreak attacks that exploit internal gradient structure. While Sparse Autoencoders (SAEs) are widely used for interpretability, their robustness implications remain underexplored. We present a study of integrating pretrained SAEs into transformer residual streams at inference time, without modifying model weights or blocking gradients. Across four model families (Gemma, LLaMA, Mistral, Qwen) and two strong white-box attacks </p><p><strong>Tags:</strong> SAE</p>]]></description>
-      <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.18756v1</guid>
-    </item>
-    <item>
-      <title>Where is the Mind? Persona Vectors and LLM Individuation</title>
-      <link>https://arxiv.org/abs/2604.17031v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Pierre Beckmann, Patrick Butlin</p><p>The individuation problem for large language models asks which entities associated with them, if any, should be identified as minds. We approach this problem through mechanistic interpretability, engaging in particular with recent empirical work on persona vectors, persona space, and emergent misalignment. We argue that three views are the strongest candidates: the virtual instance view and two new views we introduce, the (virtual) instance-persona view and the model-persona view. First, we argu</p><p><strong>Tags:</strong> safety</p>]]></description>
-      <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.17031v1</guid>
-    </item>
-    <item>
-      <title>Prune, Interpret, Evaluate: A Cross-Layer Transcoder-Native Framework for Efficient Circuit Discovery via Feature Attribution</title>
-      <link>https://arxiv.org/abs/2604.16889v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Qinhao Chen, Linyang He, Nima Mesgarani</p><p>Existing feature-interpretation pipelines typically operate on uniformly sampled units, but only a small fraction of cross-layer transcoder (CLT) features matter for a target behavior, with the rest resulting in expensive feature explaining and evaluating costs. We introduce the first CLT-native end-to-end framework, PIE, connecting Pruning, automatic Interpretation, and interpretation Evaluation, enabling systematic measurement of behavioral fidelity and downstream interpretability under prunin</p><p><strong>Tags:</strong> circuits, features</p>]]></description>
-      <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.16889v1</guid>
-    </item>
-    <item>
-      <title>Large Language Models Meet Biomedical Knowledge Graphs for Mechanistically Grounded Therapeutic Prioritization</title>
-      <link>https://arxiv.org/abs/2604.19815v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Chih-Hsuan Wei, Chi-Ping Day, Zhizheng Wang, Christine C. Alewine, Betty Tyler, et al.</p><p>Drug repurposing is often framed as a candidate identification task, but existing approaches provide limited guidance for distinguishing biologically plausible candidates from historically well-connected ones. Here we introduce DrugKLM, a hybrid framework that integrates biomedical knowledge graph structure with large language model-based mechanistic reasoning to enable mechanistically grounded therapeutic prioritization. Across benchmark datasets, DrugKLM outperforms knowledge graph-only and la</p><p><strong>Tags:</strong> biology, reasoning</p>]]></description>
-      <pubDate>Fri, 17 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.19815v1</guid>
-    </item>
-    <item>
-      <title>Improving Sparse Autoencoder with Dynamic Attention</title>
-      <link>https://arxiv.org/abs/2604.14925v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Dongsheng Wang, Jinsen Zhang, Dawei Su, Hui Huang</p><p>Recently, sparse autoencoders (SAEs) have emerged as a promising technique for interpreting activations in foundation models by disentangling features into a sparse set of concepts. However, identifying the optimal level of sparsity for each neuron remains challenging in practice: excessive sparsity can lead to poor reconstruction, whereas insufficient sparsity may harm interpretability. While existing activation functions such as ReLU and TopK provide certain sparsity guarantees, they typically</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.14925v1</guid>
     </item>
   </channel>
 </rss>
