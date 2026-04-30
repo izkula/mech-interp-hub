@@ -1,6 +1,61 @@
 {
-  "lastUpdated": "2026-04-29",
+  "lastUpdated": "2026-04-30",
   "papers": [
+    {
+      "id": "arxiv-2604-26866v1",
+      "title": "MoRFI: Monotonic Sparse Autoencoder Feature Identification",
+      "authors": "Dimitris Dimakopoulos, Shay B. Cohen, Ioannis Konstas",
+      "date": "2026-04-29",
+      "url": "https://arxiv.org/abs/2604.26866v1",
+      "abstract": "Large language models (LLMs) acquire most of their factual knowledge during the pre-training stage, through next token prediction. Subsequent stages of post-training often introduce new facts outwith the parametric knowledge, giving rise to hallucinations. While it has been demonstrated that supervised fine-tuning (SFT) on new knowledge may exacerbate the problem, the underlying mechanisms are still poorly understood. We conduct a controlled fine-tuning experiment, focusing on closed-book QA, an",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2604-26409v1",
+      "title": "Sparsity as a Key: Unlocking New Insights from Latent Structures for Out-of-Distribution Detection",
+      "authors": "Ahyoung Oh, Wonseok Shin, Songkuk Kim",
+      "date": "2026-04-29",
+      "url": "https://arxiv.org/abs/2604.26409v1",
+      "abstract": "Sparse Autoencoders (SAEs) have demonstrated significant success in interpreting Large Language Models (LLMs) by decomposing dense representations into sparse, semantic components. However, their potential for analyzing Vision Transformers (ViTs) remains largely under-explored. In this work, we present the first application of SAEs to the ViT [CLS] token for out-of-distribution (OOD) detection, addressing the limitation of existing methods that rely on entangled feature representations. We propo",
+      "tags": [
+        "SAE",
+        "features",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2604-26516v1",
+      "title": "Lyapunov-Guided Self-Alignment: Test-Time Adaptation for Offline Safe Reinforcement Learning",
+      "authors": "Seungyub Han, Hyungjin Kim, Jungwoo Lee",
+      "date": "2026-04-29",
+      "url": "https://arxiv.org/abs/2604.26516v1",
+      "abstract": "Offline reinforcement learning (RL) agents often fail when deployed, as the gap between training datasets and real environments leads to unsafe behavior. To address this, we present SAS (Self-Alignment for Safety), a transformer-based framework that enables test-time adaptation in offline safe RL without retraining. In SAS, the main mechanism is self-alignment: at test time, the pretrained agent generates several imagined trajectories and selects those satisfying the Lyapunov condition. These fe",
+      "tags": [
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2604-26686v1",
+      "title": "When Model Editing Meets Service Evolution: A Knowledge-Update Perspective for Service Recommendation",
+      "authors": "Guodong Fan, Cuiyun Gao, Chun Yong Chong, Lu Zhang, Jing Li, et al.",
+      "date": "2026-04-29",
+      "url": "https://arxiv.org/abs/2604.26686v1",
+      "abstract": "The rapid evolution of software services poses substantial challenges to the design and implementation of effective recommendation systems. Traditional service recommendation approaches often rely on static representations and historical usage data, which are insufficient for adapting to the dynamic and evolving nature of service ecosystems. Recently, large language models (LLMs) have shown strong potential to overcome these limitations by leveraging rich contextual understanding. However, their",
+      "tags": [
+        "editing"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2604-25167v1",
       "title": "From Insight to Action: A Novel Framework for Interpretability-Guided Data Selection in Large Language Models",
@@ -53,6 +108,19 @@
         "safety",
         "probing",
         "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2604-26130v1",
+      "title": "reward-lens: A Mechanistic Interpretability Library for Reward Models",
+      "authors": "Mohammed Suhail B Nadaf",
+      "date": "2026-04-28",
+      "url": "https://arxiv.org/abs/2604.26130v1",
+      "abstract": "Every RLHF-trained language model is shaped by a reward model, yet the mechanistic interpretability toolkit -- logit lens, direct logit attribution, activation patching, sparse autoencoders -- was built for generative LLMs whose primitives all project onto a vocabulary unembedding. Reward models replace that with a scalar regression head, breaking each tool. We present reward-lens, an open-source library that ports this toolkit to reward models, organised around one observation: the reward head'",
+      "tags": [
+        "SAE"
       ],
       "source": "arXiv",
       "featured": false
@@ -830,6 +898,20 @@
         "superposition",
         "theory",
         "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2604-25934v1",
+      "title": "LLM Psychosis: A Theoretical and Diagnostic Framework for Reality-Boundary Failures in Large Language Models",
+      "authors": "Ashutosh Raj",
+      "date": "2026-04-07",
+      "url": "https://arxiv.org/abs/2604.25934v1",
+      "abstract": "The deployment of large language models (LLMs) as interactive agents has exposed a category of behavioral failure that prevailing terminology, principally hallucination, fails to adequately characterize. This paper introduces LLM Psychosis as a structured theoretical framework for pathological breakdowns in model cognition that exhibit functional resemblance to clinically recognized psychotic disorders. Five hallmark features define the framework: reality-boundary dissolution, persistence of inj",
+      "tags": [
+        "features",
+        "theory"
       ],
       "source": "arXiv",
       "featured": false
