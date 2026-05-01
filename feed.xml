@@ -5,9 +5,16 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 30 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 01 May 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Do Sparse Autoencoders Capture Concept Manifolds?</title>
+      <link>https://arxiv.org/abs/2604.28119v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Usha Bhalla, Thomas Fel, Can Rager, Sheridan Feucht, Tal Haklay, et al.</p><p>Sparse autoencoders (SAEs) are widely used to extract interpretable features from neural network representations, often under the implicit assumption that concepts correspond to independent linear directions. However, a growing body of evidence suggests that many concepts are instead organized along low-dimensional manifolds encoding continuous geometric relationships. This raises three basic questions: what does it mean for an SAE to capture a manifold, when do existing SAE architectures do so,</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Thu, 30 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2604.28119v1</guid>
+    </item>
     <item>
       <title>MoRFI: Monotonic Sparse Autoencoder Feature Identification</title>
       <link>https://arxiv.org/abs/2604.26866v1</link>
@@ -210,13 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Ziyang Liu</p><p>Hosted-LLM providers have a silent-substitution incentive: advertise a stronger model while serving cheaper replies. Probe-after-return schemes such as SVIP leave a parallel-serve side-channel, since a dishonest provider can route the verifier&#x27;s probe to the advertised model while serving ordinary users from a substitute. We propose a commit-open protocol that closes this gap. Before any opening request, the provider commits via a Merkle tree to a per-position sparse-autoencoder (SAE) feature-tr</p><p><strong>Tags:</strong> features, probing</p>]]></description>
       <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2604.18179v1</guid>
-    </item>
-    <item>
-      <title>Decision-Aware Attention Propagation for Vision Transformer Explainability</title>
-      <link>https://arxiv.org/abs/2604.18094v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Sehyeong Jo, Gangjae Jang, Haesol Park</p><p>Vision Transformers (ViTs) have become a dominant architecture in computer vision, yet their prediction process remains difficult to interpret because information is propagated through complex interactions across layers and attention heads. Existing attention based explanation methods provide an intuitive way to trace information flow. However, they rely mainly on raw attention weights, which do not explicitly reflect the final decision and often lead to explanations with limited class discrimin</p><p><strong>Tags:</strong> attention, vision</p>]]></description>
-      <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.18094v1</guid>
     </item>
   </channel>
 </rss>
