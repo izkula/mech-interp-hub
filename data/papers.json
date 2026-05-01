@@ -1,6 +1,20 @@
 {
-  "lastUpdated": "2026-04-30",
+  "lastUpdated": "2026-05-01",
   "papers": [
+    {
+      "id": "arxiv-2604-28119v1",
+      "title": "Do Sparse Autoencoders Capture Concept Manifolds?",
+      "authors": "Usha Bhalla, Thomas Fel, Can Rager, Sheridan Feucht, Tal Haklay, et al.",
+      "date": "2026-04-30",
+      "url": "https://arxiv.org/abs/2604.28119v1",
+      "abstract": "Sparse autoencoders (SAEs) are widely used to extract interpretable features from neural network representations, often under the implicit assumption that concepts correspond to independent linear directions. However, a growing body of evidence suggests that many concepts are instead organized along low-dimensional manifolds encoding continuous geometric relationships. This raises three basic questions: what does it mean for an SAE to capture a manifold, when do existing SAE architectures do so,",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2604-26866v1",
       "title": "MoRFI: Monotonic Sparse Autoencoder Feature Identification",
