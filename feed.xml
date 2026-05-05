@@ -5,9 +5,58 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 04 May 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 05 May 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Bucketing the Good Apples: A Method for Diagnosing and Improving Causal Abstraction</title>
+      <link>https://arxiv.org/abs/2605.02234v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Li Puyin, Jiyuan Tan, Ahmad Jabbar, Thomas Icard, Atticus Geiger</p><p>We present a method for diagnosing interpretation in neural networks by identifying an input subspace where a proposed interpretation is highly faithful. Our method is particularly useful for causal-abstraction-style interpretability, where a high-level causal hypothesis is evaluated by interchange interventions. Rather than treating interchange intervention accuracy as a single global summary, we refine this framework by partitioning the input space into well-interpreted and under-interpreted r</p>]]></description>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2605.02234v1</guid>
+    </item>
+    <item>
+      <title>GeoSAE: Geometric Prior-Guided Layer-Wise Sparse Autoencoder Annotation of Brain MRI Foundation Models</title>
+      <link>https://arxiv.org/abs/2605.01829v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Favour Nerrise, Lucy Yin, Mohammad H. Abbasi, Kilian M. Pohl, Ehsan Adeli</p><p>Brain MRI foundation models learn rich representations of anatomy, but interpreting what clinical information they encode remains an open problem. Standard sparse autoencoders (SAEs) suffer from severe feature collapse in deep transformer layers, and in Alzheimer&#x27;s disease (AD) research, aging confounds nearly every clinical variable, making naive annotation unreliable. We propose GeoSAE, a geometry-guided SAE framework that uses the foundation model&#x27;s learned manifold structure to prevent featu</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2605.01829v1</guid>
+    </item>
+    <item>
+      <title>GRAVITY: Architecture-Agnostic Structured Anchoring for Long-Horizon Conversational Memory</title>
+      <link>https://arxiv.org/abs/2605.01688v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Yushi Sun, Bowen Cao, Dong Fang, Lingfeng Su, Wai Lam</p><p>Long-horizon conversational agents rely on memory systems with increasingly sophisticated retrieval mechanisms. However, retrieved fragments are typically fed to the language model as unstructured text, lacking the relational, temporal, and thematic structures essential for complex reasoning. To bridge this reasoning gap, we introduce GRAVITY (\textbf{G}eneration-time \textbf{R}elational \textbf{A}nchoring \textbf{V}ia \textbf{I}njected \textbf{T}opological Memor\textbf{Y}), a plug-and-play stru</p><p><strong>Tags:</strong> reasoning</p>]]></description>
+      <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2605.01688v1</guid>
+    </item>
+    <item>
+      <title>Automated Interpretability and Feature Discovery in Language Models with Agents</title>
+      <link>https://arxiv.org/abs/2605.01555v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Arnau Marin-Llobet, Javier Ferrando</p><p>We introduce an autonomous multiagent framework for mechanistic interpretability that automates both explaining and finding internal features in large language models. The system runs two coupled loops: (1) explanation refinement, where an agent proposes competing hypotheses and iteratively tests them with targeted prompt controls and a multi-metric evaluation; and (2) feature discovery, where an agent generates prompt sets, constructs a k-nearest-neighbor graph in activation space, and retrieve</p><p><strong>Tags:</strong> features</p>]]></description>
+      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2605.01555v1</guid>
+    </item>
+    <item>
+      <title>A framework for analyzing concept representations in neural models</title>
+      <link>https://arxiv.org/abs/2605.01381v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Burin Naowarat, Hao Tang, Sharon Goldwater</p><p>Understanding how neural models represent human-interpretable concepts is challenging. Prior work has explored linear concept subspaces from diverse perspectives, such as probing and concept erasure. We introduce a unified framework to study these subspaces along two axes: \textit{containment}, which tests if a concept is fully represented in a subspace but not outside it, and \textit{disentanglement}, which tests for isolation from other concepts. In experiments on both text and speech models, </p><p><strong>Tags:</strong> probing</p>]]></description>
+      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2605.01381v1</guid>
+    </item>
+    <item>
+      <title>From Local to Global to Mechanistic: An iERF-Centered Unified Framework for Interpreting Vision Models</title>
+      <link>https://arxiv.org/abs/2605.00474v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Yearim Kim, Sangyu Han, Nojun Kwak</p><p>Modern vision models achieve remarkable accuracy, but explaining where evidence arises, what the model encodes, and how internal computations assemble that evidence remains fragmented. We introduce an iERF-centric framework that unifies local, global, and mechanistic interpretability around a single analysis unit: the pointwise feature vector (PFV) paired with its instance-specific Effective Receptive Field (iERF). On the local side, Sharing Ratio Decomposition (SRD) expresses each PFV as a mixt</p><p><strong>Tags:</strong> features, vision</p>]]></description>
+      <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2605.00474v1</guid>
+    </item>
+    <item>
+      <title>A Knowledge-Driven LLM-Based Decision-Support System for Explainable Defect Analysis and Mitigation Guidance in Laser Powder Bed Fusion</title>
+      <link>https://arxiv.org/abs/2605.01100v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Basit Mahmud Shahriar, Md Habibor Rahman</p><p>This work presents a knowledge-driven decision-support system that integrates structured defect knowledge with LLM-based reasoning to provide explainable defect diagnosis and mitigation guidance in manufacturing, using LPBF as a representative, safety-critical case study. The proposed ontology-integrated LLM-based decision support system for LPBF defect analysis and mitigation guidance is built on a knowledge base containing 27 known LPBF defect types organized into hierarchical categories and c</p><p><strong>Tags:</strong> safety, reasoning</p>]]></description>
+      <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2605.01100v1</guid>
+    </item>
     <item>
       <title>Do Sparse Autoencoders Capture Concept Manifolds?</title>
       <link>https://arxiv.org/abs/2604.28119v1</link>
@@ -77,6 +126,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Mohammed Suhail B Nadaf</p><p>Every RLHF-trained language model is shaped by a reward model, yet the mechanistic interpretability toolkit -- logit lens, direct logit attribution, activation patching, sparse autoencoders -- was built for generative LLMs whose primitives all project onto a vocabulary unembedding. Reward models replace that with a scalar regression head, breaking each tool. We present reward-lens, an open-source library that ports this toolkit to reward models, organised around one observation: the reward head&#x27;</p><p><strong>Tags:</strong> SAE</p>]]></description>
       <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2604.26130v1</guid>
+    </item>
+    <item>
+      <title>LatentDiff: Scaling Semantic Dataset Comparison to Millions of Images</title>
+      <link>https://arxiv.org/abs/2605.00899v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> James Flora, Kowshik Thopalli, Akshay R. Kulkarni, Weng-Keen Wong, Shusen Liu</p><p>We present LatentDiff, a scalable framework for semantic dataset comparison that operates directly in the latent space of pretrained vision encoders. By combining sparse autoencoder-based divergence testing with density ratio estimation, LatentDiff identifies interpretable semantic differences between datasets at a fraction of the computational cost of caption-based alternatives. We also introduce Noisy-Diff, a benchmark capturing realistic sparse distribution shifts that cause existing methods </p><p><strong>Tags:</strong> SAE, vision</p>]]></description>
+      <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2605.00899v1</guid>
     </item>
     <item>
       <title>Differentiable Faithfulness Alignment for Cross-Model Circuit Transfer</title>
@@ -161,62 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Zehong Ke, Yanbo Jiang, Jinhao Li, Zhiyuan Liu, Yiqian Tu, et al.</p><p>Interpretable driver attention prediction is crucial for human-like autonomous driving. However, existing datasets provide only scene-level global gaze rather than fine-grained object-level annotations, inherently failing to support text-grounded cognitive modeling. Consequently, while Vision-Language Models (VLMs) hold great potential for semantic reasoning, this critical data limitations leads to severe text-vision decoupling and visual-bias hallucinations. To break this bottleneck and achieve</p><p><strong>Tags:</strong> vision, reasoning</p>]]></description>
       <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2604.20191v1</guid>
-    </item>
-    <item>
-      <title>Breaking Bad: Interpretability-Based Safety Audits of State-of-the-Art LLMs</title>
-      <link>https://arxiv.org/abs/2604.20945v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Krishiv Agarwal, Ramneet Kaur, Colin Samplawski, Manoj Acharya, Anirban Roy, et al.</p><p>Effective safety auditing of large language models (LLMs) demands tools that go beyond black-box probing and systematically uncover vulnerabilities rooted in model internals. We present a comprehensive, interpretability-driven jailbreaking audit of eight SOTA open-source LLMs: Llama-3.1-8B, Llama-3.3-70B-4bt, GPT-oss- 20B, GPT-oss-120B, Qwen3-0.6B, Qwen3-32B, Phi4-3.8B, and Phi4-14B. Leveraging interpretability-based approaches -- Universal Steering (US) and Representation Engineering (RepE) -- </p><p><strong>Tags:</strong> safety, probing, steering</p>]]></description>
-      <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.20945v1</guid>
-    </item>
-    <item>
-      <title>Understanding the Mechanism of Altruism in Large Language Models</title>
-      <link>https://arxiv.org/abs/2604.19260v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Shuhuai Zhang, Shu Wang, Zijun Yao, Chuanhao Li, Xiaozhi Wang, et al.</p><p>Altruism is fundamental to human societies, fostering cooperation and social cohesion. Recent studies suggest that large language models (LLMs) can display human-like prosocial behavior, but the internal computations that produce such behavior remain poorly understood. We investigate the mechanisms underlying LLM altruism using sparse autoencoders (SAEs). In a standard Dictator Game, minimal-pair prompts that differ only in social stance (generous versus selfish) induce large, economically meani</p><p><strong>Tags:</strong> SAE</p>]]></description>
-      <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.19260v1</guid>
-    </item>
-    <item>
-      <title>Cell-Based Representation of Relational Binding in Language Models</title>
-      <link>https://arxiv.org/abs/2604.19052v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Qin Dai, Benjamin Heinzerling, Kentaro Inui</p><p>Understanding a discourse requires tracking entities and the relations that hold between them. While Large Language Models (LLMs) perform well on relational reasoning, the mechanism by which they bind entities, relations, and attributes remains unclear. We study discourse-level relational binding and show that LLMs encode it via a Cell-based Binding Representation (CBR): a low-dimensional linear subspace in which each ``cell&#x27;&#x27; corresponds to an entity--relation index pair, and bound attributes a</p><p><strong>Tags:</strong> reasoning</p>]]></description>
-      <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.19052v1</guid>
-    </item>
-    <item>
-      <title>ProjLens: Unveiling the Role of Projectors in Multimodal Model Safety</title>
-      <link>https://arxiv.org/abs/2604.19083v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Kun Wang, Cheng Qian, Miao Yu, Lilan Peng, Liang Lin, et al.</p><p>Multimodal Large Language Models (MLLMs) have achieved remarkable success in cross-modal understanding and generation, yet their deployment is threatened by critical safety vulnerabilities. While prior works have demonstrated the feasibility of backdoors in MLLMs via fine-tuning data poisoning to manipulate inference, the underlying mechanisms of backdoor attacks remain opaque, complicating the understanding and mitigation. To bridge this gap, we propose ProjLens, an interpretability framework d</p><p><strong>Tags:</strong> safety, vision</p>]]></description>
-      <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.19083v1</guid>
-    </item>
-    <item>
-      <title>Are LLM Uncertainty and Correctness Encoded by the Same Features? A Functional Dissociation via Sparse Autoencoders</title>
-      <link>https://arxiv.org/abs/2604.19974v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Het Patel, Tiejin Chen, Hua Wei, Evangelos E. Papalexakis, Jia Chen</p><p>Large language models can be uncertain yet correct, or confident yet wrong, raising the question of whether their output-level uncertainty and their actual correctness are driven by the same internal mechanisms or by distinct feature populations. We introduce a 2x2 framework that partitions model predictions along correctness and confidence axes, and uses sparse autoencoders to identify features associated with each dimension independently. Applying this to Llama-3.1-8B and Gemma-2-9B, we identi</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.19974v1</guid>
-    </item>
-    <item>
-      <title>Polysemantic Experts, Monosemantic Paths: Routing as Control in MoEs</title>
-      <link>https://arxiv.org/abs/2604.17837v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Charles Ye, Bo Yuan, Lee Sharkey</p><p>An LLM&#x27;s residual stream is both state and instruction: it encodes the current context and determines the next transformation. We introduce a parameter-free decomposition for Mixture-of-Experts models that splits each layer&#x27;s hidden state into a control signal that causally drives routing and an orthogonal content channel invisible to the router. Across six MoE architectures, we find that models preserve surface-level features (language, token identity, position) in the content channel, while th</p><p><strong>Tags:</strong> features</p>]]></description>
-      <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.17837v1</guid>
-    </item>
-    <item>
-      <title>Can LLM-Generated Text Empower Surgical Vision-Language Pre-training?</title>
-      <link>https://arxiv.org/abs/2604.18134v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Chengan Che, Chao Wang, Jiayuan Huang, Xinyue Chen, Luis C. Garcia-Peraza-Herrera</p><p>Recent advancements in self-supervised learning have led to powerful surgical vision encoders capable of spatiotemporal understanding. However, extending these visual foundations to multi-modal reasoning tasks is severely bottlenecked by the prohibitive cost of expert textual annotations. To overcome this scalability limitation, we introduce \textbf{LIME}, a large-scale multi-modal dataset derived from open-access surgical videos using human-free, Large Language Model (LLM)-generated narratives.</p><p><strong>Tags:</strong> vision, reasoning</p>]]></description>
-      <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.18134v1</guid>
-    </item>
-    <item>
-      <title>Committed SAE-Feature Traces for Audited-Session Substitution Detection in Hosted LLMs</title>
-      <link>https://arxiv.org/abs/2604.18179v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Ziyang Liu</p><p>Hosted-LLM providers have a silent-substitution incentive: advertise a stronger model while serving cheaper replies. Probe-after-return schemes such as SVIP leave a parallel-serve side-channel, since a dishonest provider can route the verifier&#x27;s probe to the advertised model while serving ordinary users from a substitute. We propose a commit-open protocol that closes this gap. Before any opening request, the provider commits via a Merkle tree to a per-position sparse-autoencoder (SAE) feature-tr</p><p><strong>Tags:</strong> features, probing</p>]]></description>
-      <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.18179v1</guid>
     </item>
   </channel>
 </rss>
