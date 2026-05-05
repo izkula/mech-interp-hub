@@ -1,6 +1,98 @@
 {
-  "lastUpdated": "2026-05-04",
+  "lastUpdated": "2026-05-05",
   "papers": [
+    {
+      "id": "arxiv-2605-02234v1",
+      "title": "Bucketing the Good Apples: A Method for Diagnosing and Improving Causal Abstraction",
+      "authors": "Li Puyin, Jiyuan Tan, Ahmad Jabbar, Thomas Icard, Atticus Geiger",
+      "date": "2026-05-04",
+      "url": "https://arxiv.org/abs/2605.02234v1",
+      "abstract": "We present a method for diagnosing interpretation in neural networks by identifying an input subspace where a proposed interpretation is highly faithful. Our method is particularly useful for causal-abstraction-style interpretability, where a high-level causal hypothesis is evaluated by interchange interventions. Rather than treating interchange intervention accuracy as a single global summary, we refine this framework by partitioning the input space into well-interpreted and under-interpreted r",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-01829v1",
+      "title": "GeoSAE: Geometric Prior-Guided Layer-Wise Sparse Autoencoder Annotation of Brain MRI Foundation Models",
+      "authors": "Favour Nerrise, Lucy Yin, Mohammad H. Abbasi, Kilian M. Pohl, Ehsan Adeli",
+      "date": "2026-05-03",
+      "url": "https://arxiv.org/abs/2605.01829v1",
+      "abstract": "Brain MRI foundation models learn rich representations of anatomy, but interpreting what clinical information they encode remains an open problem. Standard sparse autoencoders (SAEs) suffer from severe feature collapse in deep transformer layers, and in Alzheimer's disease (AD) research, aging confounds nearly every clinical variable, making naive annotation unreliable. We propose GeoSAE, a geometry-guided SAE framework that uses the foundation model's learned manifold structure to prevent featu",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-01688v1",
+      "title": "GRAVITY: Architecture-Agnostic Structured Anchoring for Long-Horizon Conversational Memory",
+      "authors": "Yushi Sun, Bowen Cao, Dong Fang, Lingfeng Su, Wai Lam",
+      "date": "2026-05-03",
+      "url": "https://arxiv.org/abs/2605.01688v1",
+      "abstract": "Long-horizon conversational agents rely on memory systems with increasingly sophisticated retrieval mechanisms. However, retrieved fragments are typically fed to the language model as unstructured text, lacking the relational, temporal, and thematic structures essential for complex reasoning. To bridge this reasoning gap, we introduce GRAVITY (\\textbf{G}eneration-time \\textbf{R}elational \\textbf{A}nchoring \\textbf{V}ia \\textbf{I}njected \\textbf{T}opological Memor\\textbf{Y}), a plug-and-play stru",
+      "tags": [
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-01555v1",
+      "title": "Automated Interpretability and Feature Discovery in Language Models with Agents",
+      "authors": "Arnau Marin-Llobet, Javier Ferrando",
+      "date": "2026-05-02",
+      "url": "https://arxiv.org/abs/2605.01555v1",
+      "abstract": "We introduce an autonomous multiagent framework for mechanistic interpretability that automates both explaining and finding internal features in large language models. The system runs two coupled loops: (1) explanation refinement, where an agent proposes competing hypotheses and iteratively tests them with targeted prompt controls and a multi-metric evaluation; and (2) feature discovery, where an agent generates prompt sets, constructs a k-nearest-neighbor graph in activation space, and retrieve",
+      "tags": [
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-01381v1",
+      "title": "A framework for analyzing concept representations in neural models",
+      "authors": "Burin Naowarat, Hao Tang, Sharon Goldwater",
+      "date": "2026-05-02",
+      "url": "https://arxiv.org/abs/2605.01381v1",
+      "abstract": "Understanding how neural models represent human-interpretable concepts is challenging. Prior work has explored linear concept subspaces from diverse perspectives, such as probing and concept erasure. We introduce a unified framework to study these subspaces along two axes: \\textit{containment}, which tests if a concept is fully represented in a subspace but not outside it, and \\textit{disentanglement}, which tests for isolation from other concepts. In experiments on both text and speech models, ",
+      "tags": [
+        "probing"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-00474v1",
+      "title": "From Local to Global to Mechanistic: An iERF-Centered Unified Framework for Interpreting Vision Models",
+      "authors": "Yearim Kim, Sangyu Han, Nojun Kwak",
+      "date": "2026-05-01",
+      "url": "https://arxiv.org/abs/2605.00474v1",
+      "abstract": "Modern vision models achieve remarkable accuracy, but explaining where evidence arises, what the model encodes, and how internal computations assemble that evidence remains fragmented. We introduce an iERF-centric framework that unifies local, global, and mechanistic interpretability around a single analysis unit: the pointwise feature vector (PFV) paired with its instance-specific Effective Receptive Field (iERF). On the local side, Sharing Ratio Decomposition (SRD) expresses each PFV as a mixt",
+      "tags": [
+        "features",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-01100v1",
+      "title": "A Knowledge-Driven LLM-Based Decision-Support System for Explainable Defect Analysis and Mitigation Guidance in Laser Powder Bed Fusion",
+      "authors": "Basit Mahmud Shahriar, Md Habibor Rahman",
+      "date": "2026-05-01",
+      "url": "https://arxiv.org/abs/2605.01100v1",
+      "abstract": "This work presents a knowledge-driven decision-support system that integrates structured defect knowledge with LLM-based reasoning to provide explainable defect diagnosis and mitigation guidance in manufacturing, using LPBF as a representative, safety-critical case study. The proposed ontology-integrated LLM-based decision support system for LPBF defect analysis and mitigation guidance is built on a knowledge base containing 27 known LPBF defect types organized into hierarchical categories and c",
+      "tags": [
+        "safety",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2604-28119v1",
       "title": "Do Sparse Autoencoders Capture Concept Manifolds?",
@@ -135,6 +227,20 @@
       "abstract": "Every RLHF-trained language model is shaped by a reward model, yet the mechanistic interpretability toolkit -- logit lens, direct logit attribution, activation patching, sparse autoencoders -- was built for generative LLMs whose primitives all project onto a vocabulary unembedding. Reward models replace that with a scalar regression head, breaking each tool. We present reward-lens, an open-source library that ports this toolkit to reward models, organised around one observation: the reward head'",
       "tags": [
         "SAE"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-00899v1",
+      "title": "LatentDiff: Scaling Semantic Dataset Comparison to Millions of Images",
+      "authors": "James Flora, Kowshik Thopalli, Akshay R. Kulkarni, Weng-Keen Wong, Shusen Liu",
+      "date": "2026-04-28",
+      "url": "https://arxiv.org/abs/2605.00899v1",
+      "abstract": "We present LatentDiff, a scalable framework for semantic dataset comparison that operates directly in the latent space of pretrained vision encoders. By combining sparse autoencoder-based divergence testing with density ratio estimation, LatentDiff identifies interpretable semantic differences between datasets at a fraction of the computational cost of caption-based alternatives. We also introduce Noisy-Diff, a benchmark capturing realistic sparse distribution shifts that cause existing methods ",
+      "tags": [
+        "SAE",
+        "vision"
       ],
       "source": "arXiv",
       "featured": false
@@ -926,6 +1032,21 @@
       "tags": [
         "features",
         "theory"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-00842v1",
+      "title": "Understanding Emergent Misalignment via Feature Superposition Geometry",
+      "authors": "Gouki Minegishi, Hiroki Furuta, Takeshi Kojima, Yusuke Iwasawa, Yutaka Matsuo",
+      "date": "2026-04-07",
+      "url": "https://arxiv.org/abs/2605.00842v1",
+      "abstract": "Emergent misalignment, where fine-tuning on narrow, non-harmful tasks induces harmful behaviors, poses a key challenge for AI safety in LLMs. Despite growing empirical evidence, its underlying mechanism remains unclear. To uncover the reason behind this phenomenon, we propose a geometric account based on the geometry of feature superposition. Because features are encoded in overlapping representations, fine-tuning that amplifies a target feature also unintentionally strengthens nearby harmful fe",
+      "tags": [
+        "superposition",
+        "features",
+        "safety"
       ],
       "source": "arXiv",
       "featured": false
