@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-05",
+  "lastUpdated": "2026-05-06",
   "papers": [
     {
       "id": "arxiv-2605-02234v1",
@@ -8,6 +8,58 @@
       "date": "2026-05-04",
       "url": "https://arxiv.org/abs/2605.02234v1",
       "abstract": "We present a method for diagnosing interpretation in neural networks by identifying an input subspace where a proposed interpretation is highly faithful. Our method is particularly useful for causal-abstraction-style interpretability, where a high-level causal hypothesis is evaluated by interchange interventions. Rather than treating interchange intervention accuracy as a single global summary, we refine this framework by partitioning the input space into well-interpreted and under-interpreted r",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-03217v1",
+      "title": "Moral Sensitivity in LLMs: A Tiered Evaluation of Contextual Bias via Behavioral Profiling and Mechanistic Interpretability",
+      "authors": "Yash Aggarwal, Atmika Gorti, Vinija Jain, Aman Chadha, Krishnaprasad Thirunarayan, et al.",
+      "date": "2026-05-04",
+      "url": "https://arxiv.org/abs/2605.03217v1",
+      "abstract": "Large language models (LLMs) are increasingly deployed in settings that require nuanced ethical reasoning, yet existing bias evaluations treat model outputs as simply \"biased\" or \"unbiased.\" This binary framing misses the gradual, context-sensitive way bias actually emerges. We address this gap in two stages: behavioral profiling and mechanistic validation. In the behavioral stage, we introduce the Moral Sensitivity Index (MSI), a metric that quantifies the probability of biased output across a ",
+      "tags": [
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-03058v1",
+      "title": "Neuron-Anchored Rule Extraction for Large Language Models via Contrastive Hierarchical Ablation",
+      "authors": "Francesco Sovrano, Gabriele Dominici, Marc Langheinrich",
+      "date": "2026-05-04",
+      "url": "https://arxiv.org/abs/2605.03058v1",
+      "abstract": "A key goal of explainable AI (XAI) is to express the decision logic of large language models (LLMs) in symbolic form and link it to internal mechanisms. Global rule-extraction methods typically learn symbolic surrogates without grounding rules in model circuitry, while mechanistic interpretability can connect behaviors to neuron sets but often depends on hand-crafted hypotheses and expensive neuron-level interventions. We introduce MechaRule, a pipeline that grounds rule extraction in LLM circui",
+      "tags": [
+        "circuits"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-03160v1",
+      "title": "Pairwise matrices for sparse autoencoders: single-feature inspection mislabels causal axes",
+      "authors": "Michael A. Riegler, Birk Sebastian Frostelid Torpmann-Hagen",
+      "date": "2026-05-04",
+      "url": "https://arxiv.org/abs/2605.03160v1",
+      "abstract": "The standard sparse-autoencoder (SAE) interpretability protocol labels each feature from its top-activating contexts and validates by single-feature steering. We propose the pairwise matrix protocol, co-varying steering coefficient with joint condition, and report three findings the standard one-corner protocol misses on Qwen3-1.7B-Instruct, replicated on Gemma-2-2B-it. First, a feature labelled \"AI self-disclaimer\" from its top contexts produces an inverted U-shape under a coefficient sweep: at",
+      "tags": [
+        "SAE",
+        "features",
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-03052v1",
+      "title": "How Language Models Process Negation",
+      "authors": "Zhejian Zhou, Tianyi Zhou, Robin Jia, Jonathan May",
+      "date": "2026-05-04",
+      "url": "https://arxiv.org/abs/2605.03052v1",
+      "abstract": "We study how Large Language Models (LLMs) process negation mechanistically. First, we establish that even though open-weight models often provide wrong answers to questions involving negation, they do possess internal components that process negation correctly. Their poor accuracy is due to late-layer attention behavior that promotes simple shortcuts; ablating those attention modules greatly improves accuracy on negation-related questions. Second, we uncover how models process negation. We consi",
       "tags": [],
       "source": "arXiv",
       "featured": false
@@ -62,6 +114,17 @@
       "tags": [
         "probing"
       ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-02958v1",
+      "title": "Tracing the Dynamics of Refusal: Exploiting Latent Refusal Trajectories for Robust Jailbreak Detection",
+      "authors": "Xulin Hu, Che Wang, Wei Yang Bryan Lim, Jianbo Gao, Zhong Chen",
+      "date": "2026-05-02",
+      "url": "https://arxiv.org/abs/2605.02958v1",
+      "abstract": "Representation Engineering typically relies on static refusal vectors derived from terminal representations. We move beyond this paradigm, demonstrating that refusal is a dynamic and sparse process rather than a localized outcome. Using Causal Tracing, we uncover the Refusal Trajectory-a persistent upstream signature that remains intact even when adversarial attacks (e.g., GCG) suppress terminal signals. Leveraging this, we propose SALO (Sparse Activation Localization Operator), an inference-tim",
+      "tags": [],
       "source": "arXiv",
       "featured": false
     },
