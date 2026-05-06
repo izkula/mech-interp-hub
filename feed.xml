@@ -5,7 +5,7 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 05 May 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 06 May 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
@@ -14,6 +14,34 @@
       <description><![CDATA[<p><strong>Authors:</strong> Li Puyin, Jiyuan Tan, Ahmad Jabbar, Thomas Icard, Atticus Geiger</p><p>We present a method for diagnosing interpretation in neural networks by identifying an input subspace where a proposed interpretation is highly faithful. Our method is particularly useful for causal-abstraction-style interpretability, where a high-level causal hypothesis is evaluated by interchange interventions. Rather than treating interchange intervention accuracy as a single global summary, we refine this framework by partitioning the input space into well-interpreted and under-interpreted r</p>]]></description>
       <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2605.02234v1</guid>
+    </item>
+    <item>
+      <title>Moral Sensitivity in LLMs: A Tiered Evaluation of Contextual Bias via Behavioral Profiling and Mechanistic Interpretability</title>
+      <link>https://arxiv.org/abs/2605.03217v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Yash Aggarwal, Atmika Gorti, Vinija Jain, Aman Chadha, Krishnaprasad Thirunarayan, et al.</p><p>Large language models (LLMs) are increasingly deployed in settings that require nuanced ethical reasoning, yet existing bias evaluations treat model outputs as simply &quot;biased&quot; or &quot;unbiased.&quot; This binary framing misses the gradual, context-sensitive way bias actually emerges. We address this gap in two stages: behavioral profiling and mechanistic validation. In the behavioral stage, we introduce the Moral Sensitivity Index (MSI), a metric that quantifies the probability of biased output across a </p><p><strong>Tags:</strong> reasoning</p>]]></description>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2605.03217v1</guid>
+    </item>
+    <item>
+      <title>Neuron-Anchored Rule Extraction for Large Language Models via Contrastive Hierarchical Ablation</title>
+      <link>https://arxiv.org/abs/2605.03058v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Francesco Sovrano, Gabriele Dominici, Marc Langheinrich</p><p>A key goal of explainable AI (XAI) is to express the decision logic of large language models (LLMs) in symbolic form and link it to internal mechanisms. Global rule-extraction methods typically learn symbolic surrogates without grounding rules in model circuitry, while mechanistic interpretability can connect behaviors to neuron sets but often depends on hand-crafted hypotheses and expensive neuron-level interventions. We introduce MechaRule, a pipeline that grounds rule extraction in LLM circui</p><p><strong>Tags:</strong> circuits</p>]]></description>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2605.03058v1</guid>
+    </item>
+    <item>
+      <title>Pairwise matrices for sparse autoencoders: single-feature inspection mislabels causal axes</title>
+      <link>https://arxiv.org/abs/2605.03160v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Michael A. Riegler, Birk Sebastian Frostelid Torpmann-Hagen</p><p>The standard sparse-autoencoder (SAE) interpretability protocol labels each feature from its top-activating contexts and validates by single-feature steering. We propose the pairwise matrix protocol, co-varying steering coefficient with joint condition, and report three findings the standard one-corner protocol misses on Qwen3-1.7B-Instruct, replicated on Gemma-2-2B-it. First, a feature labelled &quot;AI self-disclaimer&quot; from its top contexts produces an inverted U-shape under a coefficient sweep: at</p><p><strong>Tags:</strong> SAE, features, steering</p>]]></description>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2605.03160v1</guid>
+    </item>
+    <item>
+      <title>How Language Models Process Negation</title>
+      <link>https://arxiv.org/abs/2605.03052v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Zhejian Zhou, Tianyi Zhou, Robin Jia, Jonathan May</p><p>We study how Large Language Models (LLMs) process negation mechanistically. First, we establish that even though open-weight models often provide wrong answers to questions involving negation, they do possess internal components that process negation correctly. Their poor accuracy is due to late-layer attention behavior that promotes simple shortcuts; ablating those attention modules greatly improves accuracy on negation-related questions. Second, we uncover how models process negation. We consi</p>]]></description>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2605.03052v1</guid>
     </item>
     <item>
       <title>GeoSAE: Geometric Prior-Guided Layer-Wise Sparse Autoencoder Annotation of Brain MRI Foundation Models</title>
@@ -42,6 +70,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Burin Naowarat, Hao Tang, Sharon Goldwater</p><p>Understanding how neural models represent human-interpretable concepts is challenging. Prior work has explored linear concept subspaces from diverse perspectives, such as probing and concept erasure. We introduce a unified framework to study these subspaces along two axes: \textit{containment}, which tests if a concept is fully represented in a subspace but not outside it, and \textit{disentanglement}, which tests for isolation from other concepts. In experiments on both text and speech models, </p><p><strong>Tags:</strong> probing</p>]]></description>
       <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2605.01381v1</guid>
+    </item>
+    <item>
+      <title>Tracing the Dynamics of Refusal: Exploiting Latent Refusal Trajectories for Robust Jailbreak Detection</title>
+      <link>https://arxiv.org/abs/2605.02958v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Xulin Hu, Che Wang, Wei Yang Bryan Lim, Jianbo Gao, Zhong Chen</p><p>Representation Engineering typically relies on static refusal vectors derived from terminal representations. We move beyond this paradigm, demonstrating that refusal is a dynamic and sparse process rather than a localized outcome. Using Causal Tracing, we uncover the Refusal Trajectory-a persistent upstream signature that remains intact even when adversarial attacks (e.g., GCG) suppress terminal signals. Leveraging this, we propose SALO (Sparse Activation Localization Operator), an inference-tim</p>]]></description>
+      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2605.02958v1</guid>
     </item>
     <item>
       <title>From Local to Global to Mechanistic: An iERF-Centered Unified Framework for Interpreting Vision Models</title>
@@ -182,41 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Sharan Ramjee</p><p>Chain-of-Thought (CoT) reasoning has emerged as a key technique for eliciting complex reasoning in Large Language Models (LLMs). Although interpretable, its dependence on natural language limits the model&#x27;s expressive bandwidth. Continuous thought models address this bottleneck by reasoning in latent space rather than human-readable tokens. While they enable richer representations and faster inference, they raise a critical safety question: how can we detect misaligned reasoning in an uninterpre</p><p><strong>Tags:</strong> safety, reasoning</p>]]></description>
       <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2604.23460v1</guid>
-    </item>
-    <item>
-      <title>Mechanistic Steering of LLMs Reveals Layer-wise Feature Vulnerabilities in Adversarial Settings</title>
-      <link>https://arxiv.org/abs/2604.23130v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Nilanjana Das, Manas Gaur</p><p>Large language models (LLMs) can still be jailbroken into producing harmful outputs despite safety alignment. Existing attacks show this vulnerability, but not the internal mechanisms that cause it. This study asks whether jailbreak success is driven by identifiable internal features rather than prompts alone. We propose a three-stage pipeline for Gemma-2-2B using the BeaverTails dataset. First, we extract concept-aligned tokens from adversarial responses via subspace similarity. Second, we appl</p><p><strong>Tags:</strong> features, safety, steering</p>]]></description>
-      <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.23130v1</guid>
-    </item>
-    <item>
-      <title>Preference Heads in Large Language Models: A Mechanistic Framework for Interpretable Personalization</title>
-      <link>https://arxiv.org/abs/2604.22345v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Weixu Zhang, Ye Yuan, Changjiang Han, Yuxing Tian, Zipeng Sun, et al.</p><p>Large Language Models (LLMs) exhibit strong implicit personalization ability, yet most existing approaches treat this behavior as a black box, relying on prompt engineering or fine tuning on user data. In this work, we adopt a mechanistic interpretability perspective and hypothesize the existence of a sparse set of Preference Heads, attention heads that encode user specific stylistic and topical preferences and exert a causal influence on generation. We introduce Differential Preference Steering</p><p><strong>Tags:</strong> attention, steering</p>]]></description>
-      <pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.22345v1</guid>
-    </item>
-    <item>
-      <title>Fine-Grained Analysis of Shared Syntactic Mechanisms in Language Models</title>
-      <link>https://arxiv.org/abs/2604.22166v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Ryoma Kumon, Hitomi Yanaka</p><p>While language models demonstrate sophisticated syntactic capabilities, the extent to which their internal mechanisms align with cross-constructional principles studied in linguistics remains poorly understood. This study investigates whether models employ shared neural mechanisms across different syntactic constructions by applying causal interpretability methods at a granular level. Focusing on filler-gap dependencies and negative polarity item (NPI) licensing, we utilize activation patching t</p>]]></description>
-      <pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.22166v1</guid>
-    </item>
-    <item>
-      <title>Mechanistic Interpretability Tool for AI Weather Models</title>
-      <link>https://arxiv.org/abs/2604.20467v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Kirsten I. Tempest, Matthias Beylich, George C. Craig</p><p>Artificial Intelligence (AI) weather models are improving rapidly, and their forecasts are already competitive with long-established traditional Numerical Weather Prediction (NWP). To build confidence in this new methodology, it is critical that we understand how these predictions are generated. This is a huge challenge as these AI weather models remain largely black boxes. In other areas of Machine Learning (ML), mechanistic interpretability has emerged as a framework for understanding ML predi</p>]]></description>
-      <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.20467v1</guid>
-    </item>
-    <item>
-      <title>From Scene to Object: Text-Guided Dual-Gaze Prediction</title>
-      <link>https://arxiv.org/abs/2604.20191v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Zehong Ke, Yanbo Jiang, Jinhao Li, Zhiyuan Liu, Yiqian Tu, et al.</p><p>Interpretable driver attention prediction is crucial for human-like autonomous driving. However, existing datasets provide only scene-level global gaze rather than fine-grained object-level annotations, inherently failing to support text-grounded cognitive modeling. Consequently, while Vision-Language Models (VLMs) hold great potential for semantic reasoning, this critical data limitations leads to severe text-vision decoupling and visual-bias hallucinations. To break this bottleneck and achieve</p><p><strong>Tags:</strong> vision, reasoning</p>]]></description>
-      <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.20191v1</guid>
     </item>
   </channel>
 </rss>
