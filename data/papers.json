@@ -1,6 +1,19 @@
 {
-  "lastUpdated": "2026-05-07",
+  "lastUpdated": "2026-05-08",
   "papers": [
+    {
+      "id": "arxiv-2605-06640v1",
+      "title": "Concept-Based Abductive and Contrastive Explanations for Behaviors of Vision Models",
+      "authors": "Ronaldo Canizales, Divya Gopinath, Corina P\u0103s\u0103reanu, Ravi Mangal",
+      "date": "2026-05-07",
+      "url": "https://arxiv.org/abs/2605.06640v1",
+      "abstract": "*Concept-based explanations* offer a promising approach for explaining the predictions of deep neural networks in terms of high-level, human-understandable concepts. However, existing methods either do not establish a causal connection between the concepts and model predictions or are limited in expressivity and only able to infer causal explanations involving single concepts. At the same time, the parallel line of work on *formal abductive and contrastive explanations* computes the minimal set ",
+      "tags": [
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2605-02234v1",
       "title": "Bucketing the Good Apples: A Method for Diagnosing and Improving Causal Abstraction",
