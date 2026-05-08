@@ -5,9 +5,16 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 07 May 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 08 May 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Concept-Based Abductive and Contrastive Explanations for Behaviors of Vision Models</title>
+      <link>https://arxiv.org/abs/2605.06640v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Ronaldo Canizales, Divya Gopinath, Corina Păsăreanu, Ravi Mangal</p><p>*Concept-based explanations* offer a promising approach for explaining the predictions of deep neural networks in terms of high-level, human-understandable concepts. However, existing methods either do not establish a causal connection between the concepts and model predictions or are limited in expressivity and only able to infer causal explanations involving single concepts. At the same time, the parallel line of work on *formal abductive and contrastive explanations* computes the minimal set </p><p><strong>Tags:</strong> vision</p>]]></description>
+      <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2605.06640v1</guid>
+    </item>
     <item>
       <title>Bucketing the Good Apples: A Method for Diagnosing and Improving Causal Abstraction</title>
       <link>https://arxiv.org/abs/2605.02234v1</link>
@@ -210,13 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Houman Mehrafarin, Amit Parekh, Ioannis Konstas</p><p>Whether intermediate reasoning is computationally useful or merely explanatory depends on whether chain-of-thought (CoT) tokens contain task-relevant information. We present a mechanistic causal analysis of CoT on GSM8K using activation patching: transferring token-level hidden states from a CoT generation to a direct-answer run for the same question, then measuring the effect on final-answer accuracy. Across models, generating after patching yields substantially higher accuracy than both direct</p><p><strong>Tags:</strong> reasoning</p>]]></description>
       <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2604.23351v1</guid>
-    </item>
-    <item>
-      <title>Ulterior Motives: Detecting Misaligned Reasoning in Continuous Thought Models</title>
-      <link>https://arxiv.org/abs/2604.23460v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Sharan Ramjee</p><p>Chain-of-Thought (CoT) reasoning has emerged as a key technique for eliciting complex reasoning in Large Language Models (LLMs). Although interpretable, its dependence on natural language limits the model&#x27;s expressive bandwidth. Continuous thought models address this bottleneck by reasoning in latent space rather than human-readable tokens. While they enable richer representations and faster inference, they raise a critical safety question: how can we detect misaligned reasoning in an uninterpre</p><p><strong>Tags:</strong> safety, reasoning</p>]]></description>
-      <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.23460v1</guid>
     </item>
   </channel>
 </rss>
