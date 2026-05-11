@@ -5,9 +5,30 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 10 May 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 11 May 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Tree SAE: Learning Hierarchical Feature Structures in Sparse Autoencoders</title>
+      <link>https://arxiv.org/abs/2605.07922v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Tue M. Cao, Hoang X. Nhat, Raed Alharbi, My T. Thai</p><p>Learning hierarchical features in Sparse Autoencoders (SAEs) is essential for capturing the structured nature of real-world data and mitigating issues like feature absorption or splitting. Existing works attempt to identify hierarchical relationships within independent feature sets by relying on activation coverage, the assumption that child feature should only activate when its parent feature activates. However, we demonstrate that this condition alone is insufficient; that is, it often produce</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2605.07922v1</guid>
+    </item>
+    <item>
+      <title>Sparse Autoencoders as Plug-and-Play Firewalls for Adversarial Attack Detection in VLMs</title>
+      <link>https://arxiv.org/abs/2605.07447v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Hao Wang, Yiqun Sun, Pengfei Wei, Lawrence B. Hsieh, Daisuke Kawahara</p><p>Vision-language models (VLMs) have advanced rapidly and are increasingly deployed in real-world applications, especially with the rise of agent-based systems. However, their safety has received relatively limited attention. Even the latest proprietary and open-weight VLMs remain highly vulnerable to adversarial attacks, leaving downstream applications exposed to significant risks. In this work, we propose a novel and lightweight adversarial attack detection framework based on sparse autoencoders</p><p><strong>Tags:</strong> SAE, safety, vision</p>]]></description>
+      <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2605.07447v1</guid>
+    </item>
+    <item>
+      <title>Activation Differences Reveal Backdoors: A Comparison of SAE Architectures</title>
+      <link>https://arxiv.org/abs/2605.07324v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Sachin Kumar</p><p>Backdoor attacks on language models pose a significant threat to AI safety, where models behave normally on most inputs but exhibit harmful behavior when triggered by specific patterns. Detecting such backdoors through mechanistic interpretability remains an open challenge. We investigate two sparse autoencoder architectures -- Crosscoders and Differential SAEs (Diff-SAE) -- for isolating backdoor-related features in fine-tuned models. Using a controlled SQL injection backdoor triggered by year-</p><p><strong>Tags:</strong> SAE, features, safety</p>]]></description>
+      <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2605.07324v1</guid>
+    </item>
     <item>
       <title>Concept-Based Abductive and Contrastive Explanations for Behaviors of Vision Models</title>
       <link>https://arxiv.org/abs/2605.06640v1</link>
@@ -196,27 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Ahyoung Oh, Wonseok Shin, Songkuk Kim</p><p>Sparse Autoencoders (SAEs) have demonstrated significant success in interpreting Large Language Models (LLMs) by decomposing dense representations into sparse, semantic components. However, their potential for analyzing Vision Transformers (ViTs) remains largely under-explored. In this work, we present the first application of SAEs to the ViT [CLS] token for out-of-distribution (OOD) detection, addressing the limitation of existing methods that rely on entangled feature representations. We propo</p><p><strong>Tags:</strong> SAE, features, vision</p>]]></description>
       <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2604.26409v1</guid>
-    </item>
-    <item>
-      <title>Lyapunov-Guided Self-Alignment: Test-Time Adaptation for Offline Safe Reinforcement Learning</title>
-      <link>https://arxiv.org/abs/2604.26516v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Seungyub Han, Hyungjin Kim, Jungwoo Lee</p><p>Offline reinforcement learning (RL) agents often fail when deployed, as the gap between training datasets and real environments leads to unsafe behavior. To address this, we present SAS (Self-Alignment for Safety), a transformer-based framework that enables test-time adaptation in offline safe RL without retraining. In SAS, the main mechanism is self-alignment: at test time, the pretrained agent generates several imagined trajectories and selects those satisfying the Lyapunov condition. These fe</p><p><strong>Tags:</strong> safety</p>]]></description>
-      <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.26516v1</guid>
-    </item>
-    <item>
-      <title>When Model Editing Meets Service Evolution: A Knowledge-Update Perspective for Service Recommendation</title>
-      <link>https://arxiv.org/abs/2604.26686v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Guodong Fan, Cuiyun Gao, Chun Yong Chong, Lu Zhang, Jing Li, et al.</p><p>The rapid evolution of software services poses substantial challenges to the design and implementation of effective recommendation systems. Traditional service recommendation approaches often rely on static representations and historical usage data, which are insufficient for adapting to the dynamic and evolving nature of service ecosystems. Recently, large language models (LLMs) have shown strong potential to overcome these limitations by leveraging rich contextual understanding. However, their</p><p><strong>Tags:</strong> editing</p>]]></description>
-      <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.26686v1</guid>
-    </item>
-    <item>
-      <title>From Insight to Action: A Novel Framework for Interpretability-Guided Data Selection in Large Language Models</title>
-      <link>https://arxiv.org/abs/2604.25167v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Ling Shi, Xinwei Wu, Xiaohu Zhao, Hao Wang, Heng Liu, et al.</p><p>While mechanistic interpretability tools like Sparse Autoencoders (SAEs) can uncover meaningful features within Large Language Models (LLMs), a critical gap remains in transforming these insights into practical actions for model optimization. We bridge this gap with the hypothesis that data selection guided by a model&#x27;s internal task features is a effective training strategy. Inspired by this, we propose Interpretability-Guided Data Selection (IGDS), a framework that first identifies these causa</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.25167v1</guid>
     </item>
   </channel>
 </rss>
