@@ -1,6 +1,50 @@
 {
-  "lastUpdated": "2026-05-10",
+  "lastUpdated": "2026-05-11",
   "papers": [
+    {
+      "id": "arxiv-2605-07922v1",
+      "title": "Tree SAE: Learning Hierarchical Feature Structures in Sparse Autoencoders",
+      "authors": "Tue M. Cao, Hoang X. Nhat, Raed Alharbi, My T. Thai",
+      "date": "2026-05-08",
+      "url": "https://arxiv.org/abs/2605.07922v1",
+      "abstract": "Learning hierarchical features in Sparse Autoencoders (SAEs) is essential for capturing the structured nature of real-world data and mitigating issues like feature absorption or splitting. Existing works attempt to identify hierarchical relationships within independent feature sets by relying on activation coverage, the assumption that child feature should only activate when its parent feature activates. However, we demonstrate that this condition alone is insufficient; that is, it often produce",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-07447v1",
+      "title": "Sparse Autoencoders as Plug-and-Play Firewalls for Adversarial Attack Detection in VLMs",
+      "authors": "Hao Wang, Yiqun Sun, Pengfei Wei, Lawrence B. Hsieh, Daisuke Kawahara",
+      "date": "2026-05-08",
+      "url": "https://arxiv.org/abs/2605.07447v1",
+      "abstract": "Vision-language models (VLMs) have advanced rapidly and are increasingly deployed in real-world applications, especially with the rise of agent-based systems. However, their safety has received relatively limited attention. Even the latest proprietary and open-weight VLMs remain highly vulnerable to adversarial attacks, leaving downstream applications exposed to significant risks. In this work, we propose a novel and lightweight adversarial attack detection framework based on sparse autoencoders",
+      "tags": [
+        "SAE",
+        "safety",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-07324v1",
+      "title": "Activation Differences Reveal Backdoors: A Comparison of SAE Architectures",
+      "authors": "Sachin Kumar",
+      "date": "2026-05-08",
+      "url": "https://arxiv.org/abs/2605.07324v1",
+      "abstract": "Backdoor attacks on language models pose a significant threat to AI safety, where models behave normally on most inputs but exhibit harmful behavior when triggered by specific patterns. Detecting such backdoors through mechanistic interpretability remains an open challenge. We investigate two sparse autoencoder architectures -- Crosscoders and Differential SAEs (Diff-SAE) -- for isolating backdoor-related features in fine-tuned models. Using a controlled SQL injection backdoor triggered by year-",
+      "tags": [
+        "SAE",
+        "features",
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2605-06640v1",
       "title": "Concept-Based Abductive and Contrastive Explanations for Behaviors of Vision Models",
@@ -5856,6 +5900,19 @@
         "vision"
       ],
       "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "ss-958edbb401c5849dbc63",
+      "title": "Frequency Response Analysis of Transformer Winding Faults Using Circuit-Based Modeling and Driving Point Impedance",
+      "authors": "Manoj Samal, Mithun Mondal",
+      "date": "2025-12-10",
+      "url": "https://www.semanticscholar.org/paper/958edbb401c5849dbc636b3305f46d6ce4226965",
+      "abstract": "This paper presents a comprehensive circuit-based methodology for diagnosing transformer winding faults using frequency response analysis (FRA) with driving point impedance (DPI) measurements. A detailed ladder network model is developed and simulated in LTspice to investigate seven critical fault scenarios: axial displacement (AD), radial deformation (RD), clamping pressure variation (CPV), inter-disc faults (IDF), short-circuit faults (SC), dielectric leakage (DL), and bushing degradation (BF)",
+      "tags": [
+        "circuits"
+      ],
+      "source": "Semantic Scholar",
       "featured": false
     },
     {
