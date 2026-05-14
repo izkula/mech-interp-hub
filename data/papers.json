@@ -1,6 +1,57 @@
 {
-  "lastUpdated": "2026-05-13",
+  "lastUpdated": "2026-05-14",
   "papers": [
+    {
+      "id": "arxiv-2605-12225v1",
+      "title": "Mechanistic Interpretability of ASR models using Sparse Autoencoders",
+      "authors": "Dan Pluth, Zachary Nicholas Houghton, Yu Zhou, Vijay K. Gurbani",
+      "date": "2026-05-12",
+      "url": "https://arxiv.org/abs/2605.12225v1",
+      "abstract": "Understanding the internal machinations of deep Transformer-based NLP models is more crucial than ever as these models see widespread use in various domains that affect the public at large, such as industry, academia, finance, health. While these models have advanced rapidly, their internal mechanisms remain largely a mystery. Techniques such as Sparse Autoencoders (SAE) have emerged to understand these mechanisms by projecting dense representations into a sparse vector. While existing research ",
+      "tags": [
+        "SAE"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-10622v1",
+      "title": "Vocabulary Hijacking in LVLMs: Unveiling Critical Attention Heads by Excluding Inert Tokens to Mitigate Hallucination",
+      "authors": "Yangneng Chen, Junlin Li, Weijun Yao, Xilai Ma, Guodong Du, et al.",
+      "date": "2026-05-11",
+      "url": "https://arxiv.org/abs/2605.10622v1",
+      "abstract": "Large Vision-Language Models (LVLMs) have achieved remarkable progress in multimodal tasks, yet their reliability is persistently undermined by hallucinations-generating text that contradicts visual input. Recent studies often attribute these errors to inadequate visual attention. In this work, we analyze the attention mechanisms via the logit lens, uncovering a distinct anomaly we term Vocabulary Hijacking. We discover that specific visual tokens, defined as Inert Tokens, disproportionately att",
+      "tags": [
+        "attention",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-09949v1",
+      "title": "From Syntax to Semantics: Unveiling the Emergence of Chirality in SMILES Translation Models",
+      "authors": "Zehao Li, Yasuhiro Yoshikai, Shumpei Nemoto, Hiroyuki Kusuhara, Tadahaya Mizuno",
+      "date": "2026-05-11",
+      "url": "https://arxiv.org/abs/2605.09949v1",
+      "abstract": "Understanding how chemical language models (CLMs) learn chemical meaning from molecular string representations, rather than only surface-level string patterns, is an important question in chemical representation learning and machine learning for chemistry. Chirality provides a demanding test case: enantiomers can differ greatly in pharmacological activity and toxicity, yet CLMs often struggle to distinguish chiral configurations reliably. Here we present Pan-CORE (Pan-Chemical Omniscale Represen",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-09438v1",
+      "title": "fmxcoders: Factorized Masked Crosscoders for Cross-Layer Feature Discovery",
+      "authors": "Andreas D. Demou, Panagiotis Koromilas, James Oldfield, Yannis Panagakis, Mihalis A. Nicolaou",
+      "date": "2026-05-10",
+      "url": "https://arxiv.org/abs/2605.09438v1",
+      "abstract": "Many features in pretrained Transformers span multiple layers: they emerge through stages of inference, persist in the residual stream, or are built jointly by parallel MLPs. Crosscoders (namely, sparse dictionaries trained jointly across layers) aim to recover these cross-layer features in a single shared latent space. We show that standard crosscoders largely fail at this purpose. Although their decoder weight norms spread evenly across layers, a functional coherence metric we introduce reveal",
+      "tags": [
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2605-07922v1",
       "title": "Tree SAE: Learning Hierarchical Feature Structures in Sparse Autoencoders",
@@ -41,6 +92,32 @@
         "SAE",
         "features",
         "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-07209v1",
+      "title": "Hallucination Detection via Activations of Open-Weight Proxy Analyzers",
+      "authors": "Akshita Singh, Prabesh Paudel, Siddhartha Roy",
+      "date": "2026-05-08",
+      "url": "https://arxiv.org/abs/2605.07209v1",
+      "abstract": "We introduce a proxy-analyzer framework for detecting hallucinations in large language models. Instead of looking inside the generating model, our system reads already-generated text through a small locally hosted open-weight model and spots hallucinations using the reader's own internal activations. This works just as well when the generator is a closed API like GPT-4 as when it is any open-weight model. We built eighteen features grounded in how transformers process text, covering residual str",
+      "tags": [
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-08348v1",
+      "title": "How Much Do Circuits Tell Us? Measuring the Consistency and Specificity of Language Model Circuits",
+      "authors": "Michael Li, Nishant Subramani",
+      "date": "2026-05-08",
+      "url": "https://arxiv.org/abs/2605.08348v1",
+      "abstract": "The circuits framework in mechanistic interpretability aims to identify causally important sparse subgraphs of model components, typically evaluated by measuring necessity and sufficiency. We measure circuit reuse, the proportion of components shared across per-example circuits within a task, and investigate two less-studied properties of this: consistency, the recurrence of components within a task, and specificity, their uniqueness to a task. Using edge attribution patching across six tasks an",
+      "tags": [
+        "circuits"
       ],
       "source": "arXiv",
       "featured": false
@@ -293,6 +370,20 @@
       "abstract": "Long-horizon conversational agents rely on memory systems with increasingly sophisticated retrieval mechanisms. However, retrieved fragments are typically fed to the language model as unstructured text, lacking the relational, temporal, and thematic structures essential for complex reasoning. To bridge this reasoning gap, we introduce GRAVITY (\\textbf{G}eneration-time \\textbf{R}elational \\textbf{A}nchoring \\textbf{V}ia \\textbf{I}njected \\textbf{T}opological Memor\\textbf{Y}), a plug-and-play stru",
       "tags": [
         "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-08149v1",
+      "title": "Feature Rivalry in Sparse Autoencoder Representations: A Mechanistic Study of Uncertainty-Driven Feature Competition in LLMs",
+      "authors": " Harshavardhan",
+      "date": "2026-05-03",
+      "url": "https://arxiv.org/abs/2605.08149v1",
+      "abstract": "Sparse Autoencoders (SAEs) decompose large language model representations into interpretable features, but how these features interact under uncertainty remains poorly understood. We introduce Feature Rivalry -- negatively correlated SAE feature pairs -- and study whether rivalry serves as a mechanistic signature of model uncertainty in Gemma-2-2B using Gemma Scope SAEs. Through a controlled within-domain experiment on PopQA split by response entropy, we find that high-entropy questions produce ",
+      "tags": [
+        "SAE",
+        "features"
       ],
       "source": "arXiv",
       "featured": false
