@@ -5,9 +5,37 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 13 May 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 14 May 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Mechanistic Interpretability of ASR models using Sparse Autoencoders</title>
+      <link>https://arxiv.org/abs/2605.12225v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Dan Pluth, Zachary Nicholas Houghton, Yu Zhou, Vijay K. Gurbani</p><p>Understanding the internal machinations of deep Transformer-based NLP models is more crucial than ever as these models see widespread use in various domains that affect the public at large, such as industry, academia, finance, health. While these models have advanced rapidly, their internal mechanisms remain largely a mystery. Techniques such as Sparse Autoencoders (SAE) have emerged to understand these mechanisms by projecting dense representations into a sparse vector. While existing research </p><p><strong>Tags:</strong> SAE</p>]]></description>
+      <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2605.12225v1</guid>
+    </item>
+    <item>
+      <title>Vocabulary Hijacking in LVLMs: Unveiling Critical Attention Heads by Excluding Inert Tokens to Mitigate Hallucination</title>
+      <link>https://arxiv.org/abs/2605.10622v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Yangneng Chen, Junlin Li, Weijun Yao, Xilai Ma, Guodong Du, et al.</p><p>Large Vision-Language Models (LVLMs) have achieved remarkable progress in multimodal tasks, yet their reliability is persistently undermined by hallucinations-generating text that contradicts visual input. Recent studies often attribute these errors to inadequate visual attention. In this work, we analyze the attention mechanisms via the logit lens, uncovering a distinct anomaly we term Vocabulary Hijacking. We discover that specific visual tokens, defined as Inert Tokens, disproportionately att</p><p><strong>Tags:</strong> attention, vision</p>]]></description>
+      <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2605.10622v1</guid>
+    </item>
+    <item>
+      <title>From Syntax to Semantics: Unveiling the Emergence of Chirality in SMILES Translation Models</title>
+      <link>https://arxiv.org/abs/2605.09949v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Zehao Li, Yasuhiro Yoshikai, Shumpei Nemoto, Hiroyuki Kusuhara, Tadahaya Mizuno</p><p>Understanding how chemical language models (CLMs) learn chemical meaning from molecular string representations, rather than only surface-level string patterns, is an important question in chemical representation learning and machine learning for chemistry. Chirality provides a demanding test case: enantiomers can differ greatly in pharmacological activity and toxicity, yet CLMs often struggle to distinguish chiral configurations reliably. Here we present Pan-CORE (Pan-Chemical Omniscale Represen</p>]]></description>
+      <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2605.09949v1</guid>
+    </item>
+    <item>
+      <title>fmxcoders: Factorized Masked Crosscoders for Cross-Layer Feature Discovery</title>
+      <link>https://arxiv.org/abs/2605.09438v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Andreas D. Demou, Panagiotis Koromilas, James Oldfield, Yannis Panagakis, Mihalis A. Nicolaou</p><p>Many features in pretrained Transformers span multiple layers: they emerge through stages of inference, persist in the residual stream, or are built jointly by parallel MLPs. Crosscoders (namely, sparse dictionaries trained jointly across layers) aim to recover these cross-layer features in a single shared latent space. We show that standard crosscoders largely fail at this purpose. Although their decoder weight norms spread evenly across layers, a functional coherence metric we introduce reveal</p><p><strong>Tags:</strong> features</p>]]></description>
+      <pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2605.09438v1</guid>
+    </item>
     <item>
       <title>Tree SAE: Learning Hierarchical Feature Structures in Sparse Autoencoders</title>
       <link>https://arxiv.org/abs/2605.07922v1</link>
@@ -28,6 +56,20 @@
       <description><![CDATA[<p><strong>Authors:</strong> Sachin Kumar</p><p>Backdoor attacks on language models pose a significant threat to AI safety, where models behave normally on most inputs but exhibit harmful behavior when triggered by specific patterns. Detecting such backdoors through mechanistic interpretability remains an open challenge. We investigate two sparse autoencoder architectures -- Crosscoders and Differential SAEs (Diff-SAE) -- for isolating backdoor-related features in fine-tuned models. Using a controlled SQL injection backdoor triggered by year-</p><p><strong>Tags:</strong> SAE, features, safety</p>]]></description>
       <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2605.07324v1</guid>
+    </item>
+    <item>
+      <title>Hallucination Detection via Activations of Open-Weight Proxy Analyzers</title>
+      <link>https://arxiv.org/abs/2605.07209v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Akshita Singh, Prabesh Paudel, Siddhartha Roy</p><p>We introduce a proxy-analyzer framework for detecting hallucinations in large language models. Instead of looking inside the generating model, our system reads already-generated text through a small locally hosted open-weight model and spots hallucinations using the reader&#x27;s own internal activations. This works just as well when the generator is a closed API like GPT-4 as when it is any open-weight model. We built eighteen features grounded in how transformers process text, covering residual str</p><p><strong>Tags:</strong> features</p>]]></description>
+      <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2605.07209v1</guid>
+    </item>
+    <item>
+      <title>How Much Do Circuits Tell Us? Measuring the Consistency and Specificity of Language Model Circuits</title>
+      <link>https://arxiv.org/abs/2605.08348v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Michael Li, Nishant Subramani</p><p>The circuits framework in mechanistic interpretability aims to identify causally important sparse subgraphs of model components, typically evaluated by measuring necessity and sufficiency. We measure circuit reuse, the proportion of components shared across per-example circuits within a task, and investigate two less-studied properties of this: consistency, the recurrence of components within a task, and specificity, their uniqueness to a task. Using edge attribution patching across six tasks an</p><p><strong>Tags:</strong> circuits</p>]]></description>
+      <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2605.08348v1</guid>
     </item>
     <item>
       <title>Concept-Based Abductive and Contrastive Explanations for Behaviors of Vision Models</title>
@@ -163,60 +205,18 @@
       <guid>https://arxiv.org/abs/2605.01688v1</guid>
     </item>
     <item>
+      <title>Feature Rivalry in Sparse Autoencoder Representations: A Mechanistic Study of Uncertainty-Driven Feature Competition in LLMs</title>
+      <link>https://arxiv.org/abs/2605.08149v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong>  Harshavardhan</p><p>Sparse Autoencoders (SAEs) decompose large language model representations into interpretable features, but how these features interact under uncertainty remains poorly understood. We introduce Feature Rivalry -- negatively correlated SAE feature pairs -- and study whether rivalry serves as a mechanistic signature of model uncertainty in Gemma-2-2B using Gemma Scope SAEs. Through a controlled within-domain experiment on PopQA split by response entropy, we find that high-entropy questions produce </p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2605.08149v1</guid>
+    </item>
+    <item>
       <title>Automated Interpretability and Feature Discovery in Language Models with Agents</title>
       <link>https://arxiv.org/abs/2605.01555v1</link>
       <description><![CDATA[<p><strong>Authors:</strong> Arnau Marin-Llobet, Javier Ferrando</p><p>We introduce an autonomous multiagent framework for mechanistic interpretability that automates both explaining and finding internal features in large language models. The system runs two coupled loops: (1) explanation refinement, where an agent proposes competing hypotheses and iteratively tests them with targeted prompt controls and a multi-metric evaluation; and (2) feature discovery, where an agent generates prompt sets, constructs a k-nearest-neighbor graph in activation space, and retrieve</p><p><strong>Tags:</strong> features</p>]]></description>
       <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2605.01555v1</guid>
-    </item>
-    <item>
-      <title>A framework for analyzing concept representations in neural models</title>
-      <link>https://arxiv.org/abs/2605.01381v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Burin Naowarat, Hao Tang, Sharon Goldwater</p><p>Understanding how neural models represent human-interpretable concepts is challenging. Prior work has explored linear concept subspaces from diverse perspectives, such as probing and concept erasure. We introduce a unified framework to study these subspaces along two axes: \textit{containment}, which tests if a concept is fully represented in a subspace but not outside it, and \textit{disentanglement}, which tests for isolation from other concepts. In experiments on both text and speech models, </p><p><strong>Tags:</strong> probing</p>]]></description>
-      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2605.01381v1</guid>
-    </item>
-    <item>
-      <title>Tracing the Dynamics of Refusal: Exploiting Latent Refusal Trajectories for Robust Jailbreak Detection</title>
-      <link>https://arxiv.org/abs/2605.02958v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Xulin Hu, Che Wang, Wei Yang Bryan Lim, Jianbo Gao, Zhong Chen</p><p>Representation Engineering typically relies on static refusal vectors derived from terminal representations. We move beyond this paradigm, demonstrating that refusal is a dynamic and sparse process rather than a localized outcome. Using Causal Tracing, we uncover the Refusal Trajectory-a persistent upstream signature that remains intact even when adversarial attacks (e.g., GCG) suppress terminal signals. Leveraging this, we propose SALO (Sparse Activation Localization Operator), an inference-tim</p>]]></description>
-      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2605.02958v1</guid>
-    </item>
-    <item>
-      <title>From Local to Global to Mechanistic: An iERF-Centered Unified Framework for Interpreting Vision Models</title>
-      <link>https://arxiv.org/abs/2605.00474v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Yearim Kim, Sangyu Han, Nojun Kwak</p><p>Modern vision models achieve remarkable accuracy, but explaining where evidence arises, what the model encodes, and how internal computations assemble that evidence remains fragmented. We introduce an iERF-centric framework that unifies local, global, and mechanistic interpretability around a single analysis unit: the pointwise feature vector (PFV) paired with its instance-specific Effective Receptive Field (iERF). On the local side, Sharing Ratio Decomposition (SRD) expresses each PFV as a mixt</p><p><strong>Tags:</strong> features, vision</p>]]></description>
-      <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2605.00474v1</guid>
-    </item>
-    <item>
-      <title>A Knowledge-Driven LLM-Based Decision-Support System for Explainable Defect Analysis and Mitigation Guidance in Laser Powder Bed Fusion</title>
-      <link>https://arxiv.org/abs/2605.01100v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Basit Mahmud Shahriar, Md Habibor Rahman</p><p>This work presents a knowledge-driven decision-support system that integrates structured defect knowledge with LLM-based reasoning to provide explainable defect diagnosis and mitigation guidance in manufacturing, using LPBF as a representative, safety-critical case study. The proposed ontology-integrated LLM-based decision support system for LPBF defect analysis and mitigation guidance is built on a knowledge base containing 27 known LPBF defect types organized into hierarchical categories and c</p><p><strong>Tags:</strong> safety, reasoning</p>]]></description>
-      <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2605.01100v1</guid>
-    </item>
-    <item>
-      <title>Do Sparse Autoencoders Capture Concept Manifolds?</title>
-      <link>https://arxiv.org/abs/2604.28119v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Usha Bhalla, Thomas Fel, Can Rager, Sheridan Feucht, Tal Haklay, et al.</p><p>Sparse autoencoders (SAEs) are widely used to extract interpretable features from neural network representations, often under the implicit assumption that concepts correspond to independent linear directions. However, a growing body of evidence suggests that many concepts are instead organized along low-dimensional manifolds encoding continuous geometric relationships. This raises three basic questions: what does it mean for an SAE to capture a manifold, when do existing SAE architectures do so,</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Thu, 30 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.28119v1</guid>
-    </item>
-    <item>
-      <title>MoRFI: Monotonic Sparse Autoencoder Feature Identification</title>
-      <link>https://arxiv.org/abs/2604.26866v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Dimitris Dimakopoulos, Shay B. Cohen, Ioannis Konstas</p><p>Large language models (LLMs) acquire most of their factual knowledge during the pre-training stage, through next token prediction. Subsequent stages of post-training often introduce new facts outwith the parametric knowledge, giving rise to hallucinations. While it has been demonstrated that supervised fine-tuning (SFT) on new knowledge may exacerbate the problem, the underlying mechanisms are still poorly understood. We conduct a controlled fine-tuning experiment, focusing on closed-book QA, an</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.26866v1</guid>
-    </item>
-    <item>
-      <title>Sparsity as a Key: Unlocking New Insights from Latent Structures for Out-of-Distribution Detection</title>
-      <link>https://arxiv.org/abs/2604.26409v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Ahyoung Oh, Wonseok Shin, Songkuk Kim</p><p>Sparse Autoencoders (SAEs) have demonstrated significant success in interpreting Large Language Models (LLMs) by decomposing dense representations into sparse, semantic components. However, their potential for analyzing Vision Transformers (ViTs) remains largely under-explored. In this work, we present the first application of SAEs to the ViT [CLS] token for out-of-distribution (OOD) detection, addressing the limitation of existing methods that rely on entangled feature representations. We propo</p><p><strong>Tags:</strong> SAE, features, vision</p>]]></description>
-      <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2604.26409v1</guid>
     </item>
   </channel>
 </rss>
