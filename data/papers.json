@@ -1,6 +1,158 @@
 {
-  "lastUpdated": "2026-05-15",
+  "lastUpdated": "2026-05-16",
   "papers": [
+    {
+      "id": "arxiv-2605-15183v1",
+      "title": "When Are Two Networks the Same? Tensor Similarity for Mechanistic Interpretability",
+      "authors": "ML Nissen Gonzalez, Melwina Albuquerque, Laurence Wroe, Jacob Meyer Cohen, Logan Riggs Smith, et al.",
+      "date": "2026-05-14",
+      "url": "https://arxiv.org/abs/2605.15183v1",
+      "abstract": "Mechanistic interpretability aims to break models into meaningful parts; verifying that two such parts implement the same computation is a prerequisite. Existing similarity measures evaluate either empirical behaviour, leaving them blind to out-of-distribution mechanisms, or basis-dependent parameters, meaning they disregard weight-space symmetries. To address these issues for the class of tensor-based models, we introduce a weight-based metric, tensor similarity, that is invariant to such symme",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-14694v1",
+      "title": "The Rate-Distortion-Polysemanticity Tradeoff in SAEs",
+      "authors": "Tommaso Mencattini, Francesco Montagna, Francesco Locatello",
+      "date": "2026-05-14",
+      "url": "https://arxiv.org/abs/2605.14694v1",
+      "abstract": "Sparse Autoencoders (SAEs) that can accurately reconstruct their input (minimizing distortion) by making efficient use of few features (minimizing the rate) often fail to learn monosemantic representations (highly interpretable), limiting their usefulness for mechanistic interpretability. In this paper, we characterise this tension in learning faithful, efficient, and interpretable explanations, introducing the Rate-Distortion-Polysemanticity tradeoff in SAEs. Under toy-modeling assumptions, we ",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-14535v1",
+      "title": "Exploring Geographic Relative Space in Large Language Models through Activation Patching",
+      "authors": "Stef De Sabbata, Rahul Baiju, Stefano Mizzaro, Kevin Roitero",
+      "date": "2026-05-14",
+      "url": "https://arxiv.org/abs/2605.14535v1",
+      "abstract": "The increased use of Large Language Models (LLMs) in geography raises substantial questions about the safety of integrating these tools across a wide range of processes and analyses, given our very limited understanding of their inner workings. In this extended abstract, we examine how LLMs process relative geographic space using activation patching, an emerging tool for mechanistic interpretability.",
+      "tags": [
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-14347v1",
+      "title": "Exemplar Partitioning for Mechanistic Interpretability",
+      "authors": "Jessica Rumbelow",
+      "date": "2026-05-14",
+      "url": "https://arxiv.org/abs/2605.14347v1",
+      "abstract": "We introduce Exemplar Partitioning (EP), an unsupervised method for constructing interpretable feature dictionaries from large language model activations with $\\sim 10^{3}\\times$ fewer tokens than comparable sparse autoencoders (SAEs). An EP dictionary is a Voronoi partition of activation space, built by leader-clustering streamed activations within a distance threshold. Each region is anchored by an observed exemplar that serves as both its membership criterion and intervention direction; dicti",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-14514v1",
+      "title": "Defenses at Odds: Measuring and Explaining Defense Conflicts in Large Language Models",
+      "authors": "Xiangtao Meng, Wenyu Chen, Chuanchao Zang, Xinyu Gao, Jianing Wang, et al.",
+      "date": "2026-05-14",
+      "url": "https://arxiv.org/abs/2605.14514v1",
+      "abstract": "Large Language Models (LLMs) deployed in high-stakes applications must simultaneously manage multiple risks, yet existing defenses are almost exclusively evaluated in isolation under a one-shot deployment assumption. In practice, providers patch models incrementally throughout their lifecycle-responding to newly exposed vulnerabilities or targeted data-removal requests without retraining from scratch. This raises a fundamental but underexplored question: does a later defense preserve the protect",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-14075v1",
+      "title": "Rethinking Layer Relevance in Large Language Models Beyond Cosine Similarity",
+      "authors": "Cristian Hinostroza, Rodrigo Toro Icarte, Christ Devia, Andres Carvallo De Ferari, Eugenio Herrera-Berg, et al.",
+      "date": "2026-05-13",
+      "url": "https://arxiv.org/abs/2605.14075v1",
+      "abstract": "Large language models (LLMs) have revolutionized natural language processing. Understanding their internal mechanisms is crucial for developing more interpretable and optimized architectures. Mechanistic interpretability has led to the development of various methods for assessing layer relevance, with cosine similarity being a widely used tool in the field. On this work, we demonstrate that cosine similarity is a poor proxy for the actual performance degradation caused by layer removal. Our theo",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-13930v1",
+      "title": "Mechanistic Interpretability of EEG Foundation Models via Sparse Autoencoders",
+      "authors": "William Lehn-Schi\u00f8ler, Magnus Ruud Kj\u00e6r, Rahul Thapa, Magnus Guldberg Pedersen, Anton Storgaard Mosquera, et al.",
+      "date": "2026-05-13",
+      "url": "https://arxiv.org/abs/2605.13930v1",
+      "abstract": "EEG foundation models achieve state-of-the-art clinical performance, yet the internal computations driving their predictions remain opaque: a barrier to clinical trust. We apply TopK Sparse Autoencoders (SAEs) across three architecturally distinct EEG transformers: SleepFM, REVE, and LaBraM to extract sparse feature dictionaries from their embeddings. By grounding these features in a clinical taxonomy (abnormality, age, sex, and medication), we benchmark monosemanticity and entanglement across a",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-13922v1",
+      "title": "XAI and Statistical Analysis for Reliable Intrusion Detection in the UAVIDS-2025 Dataset: From Tree to Hybrid and Tabular DNN Ensembles",
+      "authors": "Iakovos-Christos Zarkadis, Christos Douligeris",
+      "date": "2026-05-13",
+      "url": "https://arxiv.org/abs/2605.13922v1",
+      "abstract": "During the last few years, the term Mechanistic Interpretability, a specific area, under the umbrella of explainable artificial intelligence (XAI), has been introduced, to explain the decisions made by complex machine learning (ML) models in critical systems like UAV intrusion detection systems (UAVIDS). In this paper, we apply best-practices for data pre-processing and examine a wide range of tree-ensembles, deep neural networks, hybrid stacking models and the latest ensemble neural networks to",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-12874v1",
+      "title": "Descriptive Collision in Sparse Autoencoder Auto-Interpretability: When One Explanation Describes Many Features",
+      "authors": "Jordan F. McCann",
+      "date": "2026-05-13",
+      "url": "https://arxiv.org/abs/2605.12874v1",
+      "abstract": "Sparse autoencoders (SAEs) are now standard tools for decomposing language model activations into interpretable features, and automated interpretability pipelines routinely assign each feature a short natural-language explanation. Existing critiques of this practice focus on polysemanticity -- one feature with many meanings -- or on whether explanations predict activations. We identify a complementary, structurally distinct problem we call descriptive collision: many distinct SAE features admit ",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-13156v1",
+      "title": "Dual-Pathway Circuits of Object Hallucination in Vision-Language Models",
+      "authors": "Jiaxin Liu, Ding Zhong, Yue Wang, Zhidong Yang, Zhaolu Kang, et al.",
+      "date": "2026-05-13",
+      "url": "https://arxiv.org/abs/2605.13156v1",
+      "abstract": "Vision-language models (VLMs) have demonstrated remarkable capabilities in bridging visual perception and natural language understanding, enabling a wide range of multimodal reasoning tasks. However, they often produce object hallucinations, describing content absent from the input image, which limits their reliability and interpretability. To address this limitation, we propose Dual-Pathway Circuit Analysis, a framework that identifies and characterizes hallucination-related circuits in VLMs fo",
+      "tags": [
+        "circuits",
+        "vision",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-12991v1",
+      "title": "Not Just RLHF: Why Alignment Alone Won't Fix Multi-Agent Sycophancy",
+      "authors": "Adarsh Kumarappan, Ananya Mujoo",
+      "date": "2026-05-13",
+      "url": "https://arxiv.org/abs/2605.12991v1",
+      "abstract": "LLM-based multi-agent pipelines flip from correct to incorrect answers under simulated peer disagreement at rates we term yield, a vulnerability widely attributed to RLHF-induced sycophancy. We test this attribution across four model families and find it largely wrong: pretrained base models exhibit the same substitution pattern as their Instruct variants, averaging higher yield than Instruct. Using activation patching, we localize the corruption to a narrow mid-layer window where attention carr",
+      "tags": [
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-12922v1",
+      "title": "When Attention Closes: How LLMs Lose the Thread in Multi-Turn Interaction",
+      "authors": "Vardhan Dongre, Joseph Hsieh, Viet Dac Lai, Seunghyun Yoon, Trung Bui, et al.",
+      "date": "2026-05-13",
+      "url": "https://arxiv.org/abs/2605.12922v1",
+      "abstract": "Large language models can follow complex instructions in a single turn, yet over long multi-turn interactions they often lose the thread of instructions, persona, and rules. This degradation has been measured behaviorally but not mechanistically explained. We propose a channel-transition account: goal-defining tokens become less accessible through attention, while goal-related information may persist in residual representations. We introduce the Goal Accessibility Ratio (GAR), measuring attentio",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2605-12225v1",
       "title": "Mechanistic Interpretability of ASR models using Sparse Autoencoders",
@@ -10,6 +162,134 @@
       "abstract": "Understanding the internal machinations of deep Transformer-based NLP models is more crucial than ever as these models see widespread use in various domains that affect the public at large, such as industry, academia, finance, health. While these models have advanced rapidly, their internal mechanisms remain largely a mystery. Techniques such as Sparse Autoencoders (SAE) have emerged to understand these mechanisms by projecting dense representations into a sparse vector. While existing research ",
       "tags": [
         "SAE"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-12639v1",
+      "title": "OceanCBM: A Concept Bottleneck Model for Mechanistic Interpretability in Ocean Forecasting",
+      "authors": "Sanah Suri, Kieran Ringel, Maike Sonnewald",
+      "date": "2026-05-12",
+      "url": "https://arxiv.org/abs/2605.12639v1",
+      "abstract": "Extreme ocean phenomena are challenging not only to predict but to diagnose, as accurate forecasts alone do not reveal the underlying physical drivers. While recent machine learning approaches achieve strong predictive skill, they remain largely opaque and provide limited guarantees of fidelity to ground-truth physics. We introduce OceanCBM, the first concept bottleneck model (CBM) for spatiotemporal prediction and mechanistic interrogation of ocean dynamics. OceanCBM uses mixed supervision to p",
+      "tags": [
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-12299v1",
+      "title": "GKnow: Measuring the Entanglement of Gender Bias and Factual Gender",
+      "authors": "Leonor Veloso, Hinrich Sch\u00fctze",
+      "date": "2026-05-12",
+      "url": "https://arxiv.org/abs/2605.12299v1",
+      "abstract": "Recent works have analyzed the impact of individual components of neural networks on gendered predictions, often with a focus on mitigating gender bias. However, mechanistic interpretations of gender tend to (i) focus on a very specific gender-related task, such as gendered pronoun prediction, or (ii) fail to distinguish between the production of factually gendered outputs (the correct assumption of gender given a word that carries gender as a semantic property) and gender biased outputs (based ",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-11887v1",
+      "title": "Qwen-Scope: Turning Sparse Features into Development Tools for Large Language Models",
+      "authors": "Boyi Deng, Xu Wang, Yaoning Wang, Yu Wan, Yubo Ma, et al.",
+      "date": "2026-05-12",
+      "url": "https://arxiv.org/abs/2605.11887v1",
+      "abstract": "Large language models have achieved remarkable capabilities across diverse tasks, yet their internal decision-making processes remain largely opaque, limiting our ability to inspect, control, and systematically improve them. This opacity motivates a growing body of research in mechanistic interpretability, with sparse autoencoders (SAEs) emerging as one of the most promising tools for decomposing model activations into sparse, interpretable feature representations. We introduce Qwen-Scope, an op",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-12770v2",
+      "title": "WriteSAE: Sparse Autoencoders for Recurrent State",
+      "authors": "Jack Young",
+      "date": "2026-05-12",
+      "url": "https://arxiv.org/abs/2605.12770v2",
+      "abstract": "We introduce WriteSAE, the first sparse autoencoder that decomposes and edits the matrix cache write of state-space and hybrid recurrent language models, where residual SAEs cannot reach. Existing SAEs read residual streams, but Gated DeltaNet, Mamba-2, and RWKV-7 write to a $d_k \\times d_v$ cache through rank-1 updates $k_t v_t^\\top$ that no vector atom can replace. WriteSAE factors each decoder atom into the native write shape, exposes a closed form for the per-token logit shift, and trains un",
+      "tags": [
+        "SAE"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-12055v2",
+      "title": "Do Language Models Encode Knowledge of Linguistic Constraint Violations?",
+      "authors": " Hardy, Sebastian Pad\u00f3",
+      "date": "2026-05-12",
+      "url": "https://arxiv.org/abs/2605.12055v2",
+      "abstract": "Large Language Models (LLMs) achieve strong linguistic performance, yet their internal mechanisms for producing these predictions remain unclear. We investigate the hypothesis that LLMs encode representations of linguistic constraint violations within their parameters, which are selectively activated when processing ungrammatical sentences. To test this, we use sparse autoencoders to decompose polysemantic activations into sparse, monosemantic features and recover candidates for violation-relate",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-11920v1",
+      "title": "Domain Restriction via Multi SAE Layer Transitions",
+      "authors": "Elias Shaheen, Avi Mendelson",
+      "date": "2026-05-12",
+      "url": "https://arxiv.org/abs/2605.11920v1",
+      "abstract": "The general-purpose nature of Large Language Models (LLMs) presents a significant challenge for domain-specific applications, often leading to out-of-domain (OOD) interactions that undermine the provider's intent. Existing methods for detecting such scenarios treat the LLM as an uninterpretable black box and overlook the internal processing of inputs. In this work we show that layer transitions provide a promising avenue for extracting domain-specific signature. Specifically, we present several ",
+      "tags": [
+        "SAE"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-11426v1",
+      "title": "A Mechanistic Investigation of Supervised Fine Tuning",
+      "authors": "Ruhaan Chopra",
+      "date": "2026-05-12",
+      "url": "https://arxiv.org/abs/2605.11426v1",
+      "abstract": "The cosine similarity between a large language model's hidden activations before and after Supervised Fine-Tuning (SFT) remains very high. This, at first glance, suggests that SFT leaves the model's activation geometry largely undisturbed. However, projecting both sets of activations through a Sparse Autoencoder (SAE) pretrained on the base model reveals that the underlying sparse latents diverge significantly. We introduce a novel investigative pipeline which utilizes these pretrained SAEs as a",
+      "tags": [
+        "SAE"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-12412v1",
+      "title": "Stories in Space: In-Context Learning Trajectories in Conceptual Belief Space",
+      "authors": "Eric Bigelow, Rapha\u00ebl Sarfati, Daniel Wurgaft, Owen Lewis, Thomas McGrath, et al.",
+      "date": "2026-05-12",
+      "url": "https://arxiv.org/abs/2605.12412v1",
+      "abstract": "Large Language Models (LLMs) update their behavior in context, which can be viewed as a form of Bayesian inference. However, the structure of the latent hypothesis space over which this inference operates remains unclear. In this work, we propose that LLMs assign beliefs over a low-dimensional geometric space - a conceptual belief space - and that in-context learning corresponds to a trajectory through this space as beliefs are updated over time. Using story understanding as a natural setting fo",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-12128v1",
+      "title": "Metaphor Is Not All Attention Needs",
+      "authors": "Olga Sorokoletova, Francesco Giarrusso, Giacomo De Luca, Piercosma Bisconti, Matteo Prandi, et al.",
+      "date": "2026-05-12",
+      "url": "https://arxiv.org/abs/2605.12128v1",
+      "abstract": "Large language models are increasingly deployed in safety-critical applications, where their ability to resist harmful instructions is essential. Although post-training aims to make models robust against many jailbreak strategies, recent evidence shows that stylistic reformulations, such as poetic transformation, can still bypass safety mechanisms with alarming effectiveness. This raises a central question: why do literary jailbreaks succeed? In this work, we investigate whether their effectiven",
+      "tags": [
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-11836v1",
+      "title": "More Edits, More Stable: Understanding the Lifelong Normalization in Sequential Model Editing",
+      "authors": "Xin Ma, Wei Chen, Qi Liu, Derong Xu, Zhi Zheng, et al.",
+      "date": "2026-05-12",
+      "url": "https://arxiv.org/abs/2605.11836v1",
+      "abstract": "Lifelong Model Editing aims to continuously update evolving facts in Large Language Models while preserving unrelated knowledge and general capabilities, yet it remains plagued by catastrophic forgetting and model collapse. Empirically, we find that recent editors resilient over long horizons share the same core strategy: Lifelong Normalization (LN), which normalizes value gradients using running statistics. Removing LN causes immediate performance collapse, and we observe a counter-intuitive po",
+      "tags": [
+        "editing"
       ],
       "source": "arXiv",
       "featured": false
@@ -40,6 +320,94 @@
       "featured": false
     },
     {
+      "id": "arxiv-2605-10601v1",
+      "title": "The Open-Box Fallacy: Why AI Deployment Needs a Calibrated Verification Regime",
+      "authors": "Phongsakon Mark Konrad, Tim Lukas Adam, Ane Cathrine Holst Merrild, Riccardo Terrenzi, Rebecca De Rosa, et al.",
+      "date": "2026-05-11",
+      "url": "https://arxiv.org/abs/2605.10601v1",
+      "abstract": "AI deployment in sensitive domains such as health care, credit, employment, and criminal justice is often treated as unsafe to authorize until model internals can be explained. This often leads to an excessive reliance on mechanistic interpretability to address a deployment challenge beyond its intended scope. We argue that the gate should instead be calibrated verification: authorization should be domain-scoped, independently checkable, monitored after release, accountable, contestable, and rev",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-10069v1",
+      "title": "Estimating Consensus Epidemic Trajectories via a Constrained Power Fr\u00e9chet Mean with Functional Registration",
+      "authors": "Yui Tomo, Shu Tamano, Daisuke Yoneoka",
+      "date": "2026-05-11",
+      "url": "https://arxiv.org/abs/2605.10069v1",
+      "abstract": "We propose a method for summarizing multiple solutions to SEIR-type compartmental models on a functional space by computing a constrained power Fr\u00e9chet mean with functional registration to obtain consensus epidemic trajectories with partial mechanistic interpretability. In our method, we regard the pairs of exposed and infectious compartments as objects in a Hilbert space, and the consensus trajectory is defined as the solution to a constrained optimization problem. Differential equation constra",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-09881v1",
+      "title": "Dissecting Jet-Tagger Through Mechanistic Interpretability",
+      "authors": "Saurabh Rai, Sanmay Ganguly",
+      "date": "2026-05-11",
+      "url": "https://arxiv.org/abs/2605.09881v1",
+      "abstract": "Mechanistic interpretability seeks to reverse engineer a trained neural network by identifying the minimal subset of internal components. We perform a mechanistic interpretability analysis of the Particle Transformer architecture, trained on the Top Quark Tagging reference dataset, with the goal of identifying the computational circuit responsible for jet classification and characterizing the physical content of its internal representations. Combining zero ablation, path patching with two comple",
+      "tags": [
+        "circuits"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-10831v1",
+      "title": "SLIM: Sparse Latent Steering for Interpretable and Property-Directed LLM-Based Molecular Editing",
+      "authors": "Mingxu Zhang, Yuhan Li, Lujundong Li, Dazhong Shen, Hui Xiong, et al.",
+      "date": "2026-05-11",
+      "url": "https://arxiv.org/abs/2605.10831v1",
+      "abstract": "Large language models possess strong chemical reasoning capabilities, making them effective molecular editors. However, property-relevant information is implicitly entangled across their dense hidden states, providing no explicit handle for property control: a substantial fraction of edits fail to improve or even degrade target properties. To address these issues, we propose SLIM (Sparse Latent Interpretable Molecular editing), a plug-and-play framework that decomposes the editor's hidden states",
+      "tags": [
+        "steering",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-09887v1",
+      "title": "The Geometric Wall: Manifold Structure Predicts Layerwise Sparse Autoencoder Scaling Laws",
+      "authors": "Eslam Zaher, Maciej Trzaskowski, Quan Nguyen, Fred Roosta",
+      "date": "2026-05-11",
+      "url": "https://arxiv.org/abs/2605.09887v1",
+      "abstract": "Sparse autoencoders (SAEs) operationalise the linear representation hypothesis: they reconstruct model activations as sparse linear combinations of interpretable dictionary atoms, on the implicit assumption that activation space is well approximated by a globally linear structure. Their reconstruction error varies sharply across layers in ways that existing scaling laws, fitted at single layers, do not explain. We argue that this variation is the empirical trace of a geometric mismatch: where th",
+      "tags": [
+        "SAE"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-10235v2",
+      "title": "Route Before Retrieve: Activating Latent Routing Abilities of LLMs for RAG vs. Long-Context Selection",
+      "authors": "Yiwen Chen, Kuan Li, Fuzhen Zhuang, Deqing Wang, Zhao Zhang, et al.",
+      "date": "2026-05-11",
+      "url": "https://arxiv.org/abs/2605.10235v2",
+      "abstract": "Recent advances in large language models (LLMs) have expanded the context window to beyond 128K tokens, enabling long-document understanding and multi-source reasoning. A key challenge, however, lies in choosing between retrieval-augmented generation (RAG) and long-context (LC) strategies: RAG is efficient but constrained by retrieval quality, while LC supports global reasoning at higher cost and with position sensitivity. Existing methods such as Self-Route adopt failure-driven fallback from RA",
+      "tags": [
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-09967v1",
+      "title": "Tensor Product Representation Probes Reveal Shared Structure Across Linear Directions",
+      "authors": "Andrew Lee, Fernanda Vi\u00e9gas, Martin Wattenberg",
+      "date": "2026-05-11",
+      "url": "https://arxiv.org/abs/2605.09967v1",
+      "abstract": "While researchers are finding concepts represented as linear directions in language models, a bag of linear directions fails to capture relational structure. To better understand this dichotomy, we study a model with known linear representations, but trained in a highly structured domain -- the board game Othello. While the model's internal board-state representation is linearly decodable, we find additional structure in the form of tensor product representations (TPRs). We train TPR probes to r",
+      "tags": [
+        "probing"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
       "id": "arxiv-2605-09438v1",
       "title": "fmxcoders: Factorized Masked Crosscoders for Cross-Layer Feature Discovery",
       "authors": "Andreas D. Demou, Panagiotis Koromilas, James Oldfield, Yannis Panagakis, Mihalis A. Nicolaou",
@@ -48,6 +416,170 @@
       "abstract": "Many features in pretrained Transformers span multiple layers: they emerge through stages of inference, persist in the residual stream, or are built jointly by parallel MLPs. Crosscoders (namely, sparse dictionaries trained jointly across layers) aim to recover these cross-layer features in a single shared latent space. We show that standard crosscoders largely fail at this purpose. Although their decoder weight norms spread evenly across layers, a functional coherence metric we introduce reveal",
       "tags": [
         "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-09773v1",
+      "title": "Exploitation Without Deception: Dark Triad Feature Steering Reveals Separable Antisocial Circuits in Language Models",
+      "authors": "Cameron Berg, Roshni Lulla",
+      "date": "2026-05-10",
+      "url": "https://arxiv.org/abs/2605.09773v1",
+      "abstract": "We use sparse autoencoder (SAE) feature steering to amplify Dark Triad personality traits (Machiavellianism, narcissism, and psychopathy) in Llama-3.3-70B-Instruct and evaluate the resulting behavioral changes across five psychological instruments. The steered model becomes substantially more exploitative, aggressive, and callous on novel behavioral scenarios (d=10.62) while its cognitive empathy remains intact, reproducing the empathy dissociation characteristic of human Dark Triad populations.",
+      "tags": [
+        "SAE",
+        "circuits",
+        "features",
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-09496v1",
+      "title": "Beyond Language: Format-Agnostic Reasoning Subspaces in Large Language Models",
+      "authors": "Aojie Yuan, Zhiyuan Su",
+      "date": "2026-05-10",
+      "url": "https://arxiv.org/abs/2605.09496v1",
+      "abstract": "Large language models represent the same reasoning in vastly different surface forms -- English prose, Python code, mathematical notation -- yet whether they share a common internal substrate across these symbolic systems remains unknown. We introduce the TriForm Benchmark (18 concepts x 6 forms x 3 instances = 324 stimuli) and study five LLMs (1.6B-8B) across three architecture families. Using permutation-corrected RSA, cross-form probing, and activation patching, we find converging evidence fo",
+      "tags": [
+        "probing",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-09314v1",
+      "title": "How LLMs Are Persuaded: A Few Attention Heads, Rerouted",
+      "authors": "Xiangkun Sun, Lingkai Kong, Aoqi Zhang, Liang Zeng, Tonghan Wang",
+      "date": "2026-05-10",
+      "url": "https://arxiv.org/abs/2605.09314v1",
+      "abstract": "Language models can be persuaded to abandon factual knowledge. This vulnerability is central to AI safety, but its internal mechanism remains poorly understood. We uncover a compact causal mechanism for persuasion-induced factual errors. A small set of mid-layer attention heads almost entirely determines the model's answer. These heads write answer options into a low-dimensional polyhedron, with options occupying distinct vertices. Persuasion does not blur belief or merely reduce confidence; it ",
+      "tags": [
+        "safety",
+        "attention"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-09224v1",
+      "title": "SMIXAE: Towards Unsupervised Manifold Discovery in Language Models",
+      "authors": "Collin Francel",
+      "date": "2026-05-09",
+      "url": "https://arxiv.org/abs/2605.09224v1",
+      "abstract": "Sparse autoencoders (SAEs) have been used widely to decompose and interpret neural network activations, especially those of transformer language models. One key issue with SAEs is their inability to directly model multidimensional features. Instead, SAEs may tile such features by a set of independent directions that must be grouped together after the SAE training phase, impeding discoverability and interpretation of learned feature representations. We begin to address this issue by introducing t",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-08934v1",
+      "title": "From Mechanistic to Compositional Interpretability",
+      "authors": "Ward Gauderis, Thomas Dooms, Steven T. Holmer, Kola Ayonrinde, Geraint A. Wiggins",
+      "date": "2026-05-09",
+      "url": "https://arxiv.org/abs/2605.08934v1",
+      "abstract": "Mechanistic interpretability aims to explain neural model behaviour by reverse-engineering learned computational structure into human-understandable components. Without a formal framework, however, mechanistic explanations cannot be objectively verified, compared, or composed. We introduce compositional interpretability, a category-theoretic framework grounded in the principles of compositionality and minimum description length. Compositional interpretations are pairs of syntactic and semantic m",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-08853v1",
+      "title": "Architecture, Not Scale: Circuit Localization in Large Language Models",
+      "authors": "Sohan Venkatesh",
+      "date": "2026-05-09",
+      "url": "https://arxiv.org/abs/2605.08853v1",
+      "abstract": "Mechanistic interpretability assumes that circuit analysis becomes harder as models scale. We challenge this assumption by showing that the attention architecture matters more than parameter count. Studying three circuit types across Pythia and Qwen2.5, we find that grouped query attention produces circuits that are far more concentrated and mechanistically stable than standard multi-head attention at comparable scales. The same concentration pattern holds across indirect object identification, ",
+      "tags": [
+        "circuits"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-08740v1",
+      "title": "Causal Dimensionality of Transformer Representations: Measurement, Scaling, and Layer Structure",
+      "authors": "Nilesh Sarkar, Dawar Jyoti Deka",
+      "date": "2026-05-09",
+      "url": "https://arxiv.org/abs/2605.08740v1",
+      "abstract": "Sparse autoencoders (SAEs) decompose transformer residual streams into interpretable feature dictionaries, yet the relationship between SAE width and causal influence on model output has not been systematically characterised. We introduce causal dimensionality kappa(L, M, T), defined as the effective rank of the expected Jacobian outer product at layer L, and show it can be estimated via the SAE width sweep paired with attribution patching. Across seven SAE widths from 16,384 to 1,048,576 featur",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-08891v1",
+      "title": "Bilinear autoencoders find interpretable manifolds",
+      "authors": "Thomas Dooms, Ward Gauderis, Geraint Wiggins, Jose Oramas",
+      "date": "2026-05-09",
+      "url": "https://arxiv.org/abs/2605.08891v1",
+      "abstract": "Sparse autoencoders have become a standard tool for uncovering interpretable latent representations in neural networks. Yet salient concepts often span manifolds that current linear methods cannot capture without post hoc analysis. This paper uses quadratic latents to close this gap: we implement these with bilinear autoencoders, which decompose activations into low-rank quadratic forms, compose linearly in weight space, and admit input-independent geometric analysis. This qualitative difference",
+      "tags": [
+        "SAE"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-09187v1",
+      "title": "Emergent Semantic Role Understanding in Language Models",
+      "authors": "Carla Griffiths, Mirco Musolesi",
+      "date": "2026-05-09",
+      "url": "https://arxiv.org/abs/2605.09187v1",
+      "abstract": "Understanding how linguistic structure emerges in language models is central to interpreting what these systems learn from data and how much supervision they truly require. In particular, semantic role understanding (\"who did what to whom\") is a core component of meaning representation, yet it remains unclear whether it arises from pre-training alone or depends on task-specific fine-tuning. We study whether semantic role understanding emerges during language model pre-training or requires task-s",
+      "tags": [
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-10985v1",
+      "title": "Structural Interpretations of Protein Language Model Representations via Differentiable Graph Partitioning",
+      "authors": "Siddhant Dutta, Edward Tan Beng Wai, Soumick Sarker, Pasan Gunawardane, Jagath C. Rajapakse",
+      "date": "2026-05-09",
+      "url": "https://arxiv.org/abs/2605.10985v1",
+      "abstract": "Protein language models such as ESM-2 learn rich residue representations that achieve strong performance on protein function prediction, but their features remain difficult to interpret as structural $\\&$ evolutionary signals are encoded in dense latent spaces. We propose a plug-$\\&$-play framework that projects ESM-2 representations onto protein contact graphs $\\&$ applies $\\textbf{SoftBlobGIN}$, a lightweight Graph Isomorphism Network with differentiable Gumbel-softmax substructure pooling, to",
+      "tags": [
+        "features",
+        "biology"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-08878v1",
+      "title": "Why Do Aligned LLMs Remain Jailbreakable: Refusal-Escape Directions, Operator-Level Sources, and Safety-Utility Trade-off",
+      "authors": "Yu Chen, Yuanhao Liu, Qi Cao",
+      "date": "2026-05-09",
+      "url": "https://arxiv.org/abs/2605.08878v1",
+      "abstract": "Aligned large language models (LLMs) remain vulnerable to jailbreak attacks. Recent mechanistic studies have identified latent features and representation shifts associated with jailbreak success, but they leave a more fundamental question open: why do aligned LLMs remain jailbreakable, and what structural vulnerabilities in the model make this possible? We study this question through a continuous input-transformation view. Our theoretical finding is that aligned models can still exhibit Refusal",
+      "tags": [
+        "features",
+        "safety",
+        "theory"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-08668v1",
+      "title": "PrismNet: Viewing Time Series Through a Multi-Modal Prism for Interpretable Power Load Forecasting",
+      "authors": "Yuxuan Chen, Shuo Dai, Ruoyi Xu, Haipeng Xie",
+      "date": "2026-05-09",
+      "url": "https://arxiv.org/abs/2605.08668v1",
+      "abstract": "Load forecasting plays a pivotal role in the safe and stable operation of power systems. Conventional deep learning methods often struggle to adapt to few-shot scenarios frequently encountered in industrial applications. Existing multi-modal approaches typically overlook domain-specific cross-modal semantic alignment and lack sufficient mechanism interpretability. To address these challenges, this study proposes PrismNet, an interpretable multi-modal framework for power load forecasting. First, ",
+      "tags": [
+        "safety"
       ],
       "source": "arXiv",
       "featured": false
@@ -118,6 +650,86 @@
       "abstract": "The circuits framework in mechanistic interpretability aims to identify causally important sparse subgraphs of model components, typically evaluated by measuring necessity and sufficiency. We measure circuit reuse, the proportion of components shared across per-example circuits within a task, and investigate two less-studied properties of this: consistency, the recurrence of components within a task, and specificity, their uniqueness to a task. Using edge attribution patching across six tasks an",
       "tags": [
         "circuits"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-08405v1",
+      "title": "Belief or Circuitry? Causal Evidence for In-Context Graph Learning",
+      "authors": "Katharine Kowalyshyn, Timothy Duggan, Daniel Little, Michael C Hughes",
+      "date": "2026-05-08",
+      "url": "https://arxiv.org/abs/2605.08405v1",
+      "abstract": "How do LLMs learn in-context? Is it by pattern-matching recent tokens, or by inferring latent structure? We probe this question using a toy graph random-walk across two competing graph structures. This task's answer is, in principle, decidable: either the model tracks global topology, or it copies local transitions. We present two lines of evidence that neither account alone is sufficient. First, reconstructing the internal representation structure via PCA reveals that at intermediate mixture ra",
+      "tags": [
+        "circuits",
+        "probing"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-08012v1",
+      "title": "Position: Mechanistic Interpretability Must Disclose Identification Assumptions for Causal Claims",
+      "authors": "Zezheng Lin, Fengming Liu",
+      "date": "2026-05-08",
+      "url": "https://arxiv.org/abs/2605.08012v1",
+      "abstract": "Mechanistic interpretability papers increasingly use causal vocabulary: circuits, mediators, causal abstraction, monosemanticity. Such claims require explicit identification assumptions. A purposive audit of 10 papers across four methodological strands finds no dedicated identification-assumptions section and a recurring pattern: validation metrics such as faithfulness, completeness, monosemanticity, alignment, or ablation effects are reported as causal support without stating the assumptions th",
+      "tags": [
+        "circuits",
+        "features",
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-08326v1",
+      "title": "LLM Advertisement based on Neuron Auctions",
+      "authors": "Peiran Yun, Wenxin Xu, Jiayuan Liu, Yihang Zhang, Liang Zeng, et al.",
+      "date": "2026-05-08",
+      "url": "https://arxiv.org/abs/2605.08326v1",
+      "abstract": "As Large Language Models (LLMs) transition into conversational agents, generative advertising emerges as a crucial monetization strategy. However, embedding advertisements within unstructured LLM outputs introduces a critical trilemma: balancing advertiser payoffs, platform revenue, and user experience. Existing methods, such as prompt injection or rigid position slots, disrupt semantic coherence and lack a parametric framework for independent control, rendering rigorous mechanism design intract",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-07345v1",
+      "title": "Mean-Pooled Cosine Similarity is Not Length-Invariant: Theory and Cross-Domain Evidence for a Length-Invariant Alternative",
+      "authors": "Sibayan Mitra, Dhruv Kumar",
+      "date": "2026-05-08",
+      "url": "https://arxiv.org/abs/2605.07345v1",
+      "abstract": "Mean-pooled cosine similarity is the default metric for comparing neural representations across languages, modalities, and tasks. We establish that this metric is not length-invariant: under the anisotropy that characterizes modern transformer representations, mean-pooled cosine grows monotonically in sequence length, independent of representational content. Empirically, on HumanEvalPack across four code LLMs, the length ratio alone explains $R^2 = 0.52$--$0.75$ of cross-language \"Python proximi",
+      "tags": [
+        "theory"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-10971v1",
+      "title": "Steering Without Breaking: Mechanistically Informed Interventions for Discrete Diffusion Language Models",
+      "authors": "Hanhan Zhou, Shamik Roy, Rashmi Gangadharaiah",
+      "date": "2026-05-08",
+      "url": "https://arxiv.org/abs/2605.10971v1",
+      "abstract": "Discrete diffusion language models (DLMs) generate text by iteratively denoising all positions in parallel, offering an alternative to autoregressive models. Controlled generation methods for DLMs, imported from autoregressive models, apply uniform intervention at every denoising steps. We show this uniform schedule degrades quality, and the damage compounds when multiple attributes are steered jointly. To diagnose the failure, we train sparse autoencoders on four DLMs (124M-8B parameters) and f",
+      "tags": [
+        "SAE",
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-07984v1",
+      "title": "Where's the Plan? Locating Latent Planning in Language Models with Lightweight Mechanistic Interventions",
+      "authors": "Nicole Ma, Nick Rui",
+      "date": "2026-05-08",
+      "url": "https://arxiv.org/abs/2605.07984v1",
+      "abstract": "We study planning site formation in language models -- where internal representations of structurally-constrained future tokens form during the forward pass, and whether they causally drive generation. Using rhyming-couplet completion as a clean test of forward-looking constraint, we apply two lightweight methods (linear probing and activation patching) across Qwen3, Gemma-3, and Llama-3 at more than ten scales. Probing shows that future-rhyme information is linearly decodable at the line bounda",
+      "tags": [
+        "probing"
       ],
       "source": "arXiv",
       "featured": false
@@ -228,6 +840,19 @@
       "featured": false
     },
     {
+      "id": "arxiv-2605-06979v1",
+      "title": "PLOT: Progressive Localization via Optimal Transport in Neural Causal Abstraction",
+      "authors": "Jonathn Chang, Arya Datla, Ziv Goldfeld",
+      "date": "2026-05-07",
+      "url": "https://arxiv.org/abs/2605.06979v1",
+      "abstract": "Causal abstraction offers a principled framework for mechanistic interpretability, aligning a high-level causal model with the low-level computation realized by a neural network through counterfactual intervention analysis. Existing methods such as distributed alignment search (DAS) learn expressive subspace interventions, but the relevant neural site is unknown a priori, so finding a handle requires a computationally burdensome search over candidate sites. We introduce PLOT (Progressive Localiz",
+      "tags": [
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
       "id": "arxiv-2605-05151v1",
       "title": "Superposition Is Not Necessary: A Mechanistic Interpretability Analysis of Transformer Representations for Time Series Forecasting",
       "authors": "Alper Y\u0131ld\u0131r\u0131m",
@@ -280,6 +905,36 @@
         "features",
         "probing",
         "attention"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-08218v1",
+      "title": "Deep Dreams Are Made of This: Visualizing Monosemantic Features in Diffusion Models",
+      "authors": "Adam Szokalski, Mateusz Modrzejewski",
+      "date": "2026-05-06",
+      "url": "https://arxiv.org/abs/2605.08218v1",
+      "abstract": "This paper proposes latent visualization by optimization (LVO), a mechanistic interpretability technique that extends feature visualization by optimization - originally developed for convolutional neural networks - to latent diffusion models. LVO employs sparse autoencoders (SAEs) to disentangle polysemantic layer representations into monosemantic features. Key contributions include latent-space optimization, time-step activity analysis, schedule-matched noise injection, prior initialization thr",
+      "tags": [
+        "SAE",
+        "features",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-08200v1",
+      "title": "Where Reliability Lives in Vision-Language Models: A Mechanistic Study of Attention, Hidden States, and Causal Circuits",
+      "authors": "Logan Mann, Ajit Saravanan, Ishan Dave, Shikhar Shiromani, Saadullah Ismail, et al.",
+      "date": "2026-05-05",
+      "url": "https://arxiv.org/abs/2605.08200v1",
+      "abstract": "A pervasive intuition holds that vision-language models (VLMs) are most trustworthy when their attention maps look sharp: concentrated attention on the queried region should imply a confident, calibrated answer. We test this Attention-Confidence Assumption directly. We instrument three open-weight VLM families (LLaVA-1.5, PaliGemma, Qwen2-VL; 3-7B parameters) with a unified mechanistic pipeline -- the VLM Reliability Probe (VRP) -- that compares attention structure, generation dynamics, and hidd",
+      "tags": [
+        "circuits",
+        "probing",
+        "vision"
       ],
       "source": "arXiv",
       "featured": false
@@ -1043,6 +1698,20 @@
         "safety",
         "vision",
         "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-12529v1",
+      "title": "BackFlush: Knowledge-Free Backdoor Detection and Elimination with Watermark Preservation in Large Language Models",
+      "authors": "Jagadeesh Rachapudi, Ritali Vatsi, Pranav Singh, Praful Hambarde, Amit Shukla",
+      "date": "2026-04-15",
+      "url": "https://arxiv.org/abs/2605.12529v1",
+      "abstract": "In recent trends, one can observe Large Language Models (LLMs) are exposed to backdoor attacks where vicious triggers added during training or model editing to elicit harmful outputs on specific input patterns while maintaining clean performance on normal inputs. Legitimate watermarks used as ownership signatures share similar mechanisms to backdoors, creating a critical challenge: detecting and eliminating unknown backdoors without compromising watermark integrity. Existing defenses require pri",
+      "tags": [
+        "safety",
+        "editing"
       ],
       "source": "arXiv",
       "featured": false
