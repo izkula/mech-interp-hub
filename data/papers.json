@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-17",
+  "lastUpdated": "2026-05-18",
   "papers": [
     {
       "id": "arxiv-2605-15183v1",
@@ -7747,6 +7747,19 @@
       "abstract": "In a power transformer short-circuit, transient current and magnetic flux interactions create strong electromagnetic forces that can deform windings and the core, risking failure. Accurate calculation of these forces during design is critical to prevent such outcomes. This paper employs two-dimensional (2D) and three-dimensional (3D) finite-element analysis (FEA) to model a 110 kV, 40 MVA three-phase transformer, calculating magnetic flux density, short-circuit current, and electromagnetic force",
       "tags": [
         "circuits"
+      ],
+      "source": "Semantic Scholar",
+      "featured": false
+    },
+    {
+      "id": "ss-fff96942a96eb4c287d6",
+      "title": "Application of Sparse Autoencoders to Enhance Mechanistic Interpretability of Large Language Models in Medicine (Preprint)",
+      "authors": "A. Metzger, Shiv Patil, Lauren R. Sugarmann, Mert Karabacak, K. Margetis",
+      "date": "2025-07-22",
+      "url": "https://www.semanticscholar.org/paper/fff96942a96eb4c287d603c34660f796fe27aea5",
+      "abstract": "",
+      "tags": [
+        "SAE"
       ],
       "source": "Semantic Scholar",
       "featured": false
