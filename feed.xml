@@ -5,9 +5,65 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 18 May 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 19 May 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Babel: Jailbreaking Safety Attention via Obfuscation Distribution Optimized Sampling</title>
+      <link>https://arxiv.org/abs/2605.17971v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Ziwei Wang, Jing Chen, Ruichao Liang, Zhi Wang, Yebo Feng, et al.</p><p>Despite rigorous safety alignment, Large Language Models (LLMs) remain vulnerable to jailbreak attacks. Existing black-box methods often rely on heuristic templates or exhaustive trials, lacking mechanistic interpretability and query efficiency. In this study, we investigate an intrinsic vulnerability in the safety mechanisms of LLMs, where safety alignment relies on a small set of sparsely distributed attention heads, leaving much of the representational space weakly monitored. We formalize thi</p><p><strong>Tags:</strong> safety, attention</p>]]></description>
+      <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2605.17971v1</guid>
+    </item>
+    <item>
+      <title>Are Sparse Autoencoder Benchmarks Reliable?</title>
+      <link>https://arxiv.org/abs/2605.18229v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> David Chanin</p><p>Sparse autoencoders (SAEs) are a core interpretability tool for large language models, and progress on SAE architectures depends on benchmarks that reliably distinguish better SAEs from worse ones. We audit the SAE quality metrics in SAEBench, the de-facto standard SAE evaluation suite, through three complementary lenses: reseed noise on a fixed SAE, ground-truth correlation on synthetic SAEs, and discriminability across training trajectories. We find that two of these metrics, Targeted Probe Pe</p><p><strong>Tags:</strong> SAE, probing</p>]]></description>
+      <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2605.18229v1</guid>
+    </item>
+    <item>
+      <title>Aligned Training: A Parameter-Free Method to Improve Feature Quality and Stability of Sparse Autoencoders (SAE)</title>
+      <link>https://arxiv.org/abs/2605.18629v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Michał Brzozowski, Neo Christopher Chung</p><p>Sparse autoencoders (SAEs) are one of the main methods to interpret the inner workings of deep neural networks (DNNs), decomposing activations into higher-dimensional features. However, they exhibit critical shortcomings where a large fraction of features are never activated and are unstable. Despite variants of SAEs that attempt to mitigate these issues, they require additional data, resampling, or training. We propose the \textbf{aligned training}, a parameter-free reparameterization of SAEs t</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2605.18629v1</guid>
+    </item>
+    <item>
+      <title>A Distributional View for Visual Mechanistic Interpretability: KL-Minimal Soft-Constraint Principle</title>
+      <link>https://arxiv.org/abs/2605.17504v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Guancheng Zhou, Yisi Luo, Zhengfu He, Zhenyu Jin, Xuyang Ge, et al.</p><p>Most current paradigms in visual mechanistic interpretability (MI) remain confined to interpreting internal units of the vision model via heuristic methods (e.g., top-$K$ activation retrieval or optimization with regularization). In this work, we establish a theoretical distributional view for visual MI, which models the influence of a feature activation on the natural image distribution, thereby formulating a Kullback-Leibler (KL)-minimal optimization problem to model the MI task. Under this fr</p><p><strong>Tags:</strong> features, theory, vision</p>]]></description>
+      <pubDate>Sun, 17 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2605.17504v1</guid>
+    </item>
+    <item>
+      <title>Beyond Linear Superposition: Discovering Climate Features in AI Weather Models with KAN-SAE</title>
+      <link>https://arxiv.org/abs/2605.17493v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Minjong Cheon</p><p>Deep learning weather prediction models achieve remarkable predictive skill yet remain largely opaque: we know little about how they represent physical climate phenomena internally. Mechanistic interpretability through Sparse Autoencoders (SAEs) offers a principled route to decomposing these representations, but existing SAEs assume strictly linear feature superposition - a constraint ill-suited for the highly nonlinear atmospheric dynamics encoded in modern transformers. We introduce KAN-SAE, a</p><p><strong>Tags:</strong> SAE, superposition, features</p>]]></description>
+      <pubDate>Sun, 17 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2605.17493v1</guid>
+    </item>
+    <item>
+      <title>Event-Grounded Sparse Autoencoders for Vision-Language-Action Policies</title>
+      <link>https://arxiv.org/abs/2605.17204v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Xinchen Jin, Aditya Chatterjee, Pranav Kumar, Rohan Paleja</p><p>Vision-Language-Action (VLA) policies translate language and visual inputs into robot actions, where their hidden representations directly shape closed-loop behavior. However, mechanistic interpretability tools from language and vision-language models do not transfer cleanly to VLAs: outputs are robot actions rather than human-readable tokens, and interventions can only be tested via expensive closed-loop rollouts. We propose an event-grounded interpretability pipeline that anchors SAE feature a</p><p><strong>Tags:</strong> SAE, features, vision</p>]]></description>
+      <pubDate>Sun, 17 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2605.17204v1</guid>
+    </item>
+    <item>
+      <title>Mechanistically Interpretable Neural Encoding Reveals Fine-Grained Functional Selectivity in Human Visual Cortex</title>
+      <link>https://arxiv.org/abs/2605.16468v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Idan Daniel Grosbard, Mor Geva, Galit Yovel</p><p>A central goal in understanding human vision is to uncover the visual features that drive neuronal activity. A growing body of work has used artificial neural networks as encoding models to predict cortical responses to natural images, revealing the visual content that activates category-selective regions. However, existing approaches are largely correlational and treat the encoder as a black box, leaving open which image features drive each voxel&#x27;s response. We introduce Mechanistically Interpr</p><p><strong>Tags:</strong> features, vision</p>]]></description>
+      <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2605.16468v1</guid>
+    </item>
+    <item>
+      <title>Sparse Autoencoders enable Robust and Interpretable Fine-tuning of CLIP models</title>
+      <link>https://arxiv.org/abs/2605.15961v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Fabian Morelli, Arnas Uselis, Ankit Sonthalia, Seong Joon Oh</p><p>Large-scale pre-trained vision-language models like CLIP demonstrate remarkable zero-shot performance across diverse tasks. However, fine-tuning these models to improve downstream performance often degrades robustness against distribution shifts. Recent approaches have attempted to mitigate this trade-off, but often rely on computationally expensive text-guidance. We propose a novel method for robust fine-tuning, SAE-FT, which operates only on the model&#x27;s visual representations. SAE-FT regulariz</p><p><strong>Tags:</strong> SAE, vision</p>]]></description>
+      <pubDate>Fri, 15 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2605.15961v1</guid>
+    </item>
     <item>
       <title>When Are Two Networks the Same? Tensor Similarity for Mechanistic Interpretability</title>
       <link>https://arxiv.org/abs/2605.15183v1</link>
@@ -161,62 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Olga Sorokoletova, Francesco Giarrusso, Giacomo De Luca, Piercosma Bisconti, Matteo Prandi, et al.</p><p>Large language models are increasingly deployed in safety-critical applications, where their ability to resist harmful instructions is essential. Although post-training aims to make models robust against many jailbreak strategies, recent evidence shows that stylistic reformulations, such as poetic transformation, can still bypass safety mechanisms with alarming effectiveness. This raises a central question: why do literary jailbreaks succeed? In this work, we investigate whether their effectiven</p><p><strong>Tags:</strong> safety</p>]]></description>
       <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2605.12128v1</guid>
-    </item>
-    <item>
-      <title>More Edits, More Stable: Understanding the Lifelong Normalization in Sequential Model Editing</title>
-      <link>https://arxiv.org/abs/2605.11836v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Xin Ma, Wei Chen, Qi Liu, Derong Xu, Zhi Zheng, et al.</p><p>Lifelong Model Editing aims to continuously update evolving facts in Large Language Models while preserving unrelated knowledge and general capabilities, yet it remains plagued by catastrophic forgetting and model collapse. Empirically, we find that recent editors resilient over long horizons share the same core strategy: Lifelong Normalization (LN), which normalizes value gradients using running statistics. Removing LN causes immediate performance collapse, and we observe a counter-intuitive po</p><p><strong>Tags:</strong> editing</p>]]></description>
-      <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2605.11836v1</guid>
-    </item>
-    <item>
-      <title>Vocabulary Hijacking in LVLMs: Unveiling Critical Attention Heads by Excluding Inert Tokens to Mitigate Hallucination</title>
-      <link>https://arxiv.org/abs/2605.10622v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Yangneng Chen, Junlin Li, Weijun Yao, Xilai Ma, Guodong Du, et al.</p><p>Large Vision-Language Models (LVLMs) have achieved remarkable progress in multimodal tasks, yet their reliability is persistently undermined by hallucinations-generating text that contradicts visual input. Recent studies often attribute these errors to inadequate visual attention. In this work, we analyze the attention mechanisms via the logit lens, uncovering a distinct anomaly we term Vocabulary Hijacking. We discover that specific visual tokens, defined as Inert Tokens, disproportionately att</p><p><strong>Tags:</strong> attention, vision</p>]]></description>
-      <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2605.10622v1</guid>
-    </item>
-    <item>
-      <title>From Syntax to Semantics: Unveiling the Emergence of Chirality in SMILES Translation Models</title>
-      <link>https://arxiv.org/abs/2605.09949v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Zehao Li, Yasuhiro Yoshikai, Shumpei Nemoto, Hiroyuki Kusuhara, Tadahaya Mizuno</p><p>Understanding how chemical language models (CLMs) learn chemical meaning from molecular string representations, rather than only surface-level string patterns, is an important question in chemical representation learning and machine learning for chemistry. Chirality provides a demanding test case: enantiomers can differ greatly in pharmacological activity and toxicity, yet CLMs often struggle to distinguish chiral configurations reliably. Here we present Pan-CORE (Pan-Chemical Omniscale Represen</p>]]></description>
-      <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2605.09949v1</guid>
-    </item>
-    <item>
-      <title>The Open-Box Fallacy: Why AI Deployment Needs a Calibrated Verification Regime</title>
-      <link>https://arxiv.org/abs/2605.10601v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Phongsakon Mark Konrad, Tim Lukas Adam, Ane Cathrine Holst Merrild, Riccardo Terrenzi, Rebecca De Rosa, et al.</p><p>AI deployment in sensitive domains such as health care, credit, employment, and criminal justice is often treated as unsafe to authorize until model internals can be explained. This often leads to an excessive reliance on mechanistic interpretability to address a deployment challenge beyond its intended scope. We argue that the gate should instead be calibrated verification: authorization should be domain-scoped, independently checkable, monitored after release, accountable, contestable, and rev</p>]]></description>
-      <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2605.10601v1</guid>
-    </item>
-    <item>
-      <title>Estimating Consensus Epidemic Trajectories via a Constrained Power Fréchet Mean with Functional Registration</title>
-      <link>https://arxiv.org/abs/2605.10069v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Yui Tomo, Shu Tamano, Daisuke Yoneoka</p><p>We propose a method for summarizing multiple solutions to SEIR-type compartmental models on a functional space by computing a constrained power Fréchet mean with functional registration to obtain consensus epidemic trajectories with partial mechanistic interpretability. In our method, we regard the pairs of exposed and infectious compartments as objects in a Hilbert space, and the consensus trajectory is defined as the solution to a constrained optimization problem. Differential equation constra</p>]]></description>
-      <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2605.10069v1</guid>
-    </item>
-    <item>
-      <title>Dissecting Jet-Tagger Through Mechanistic Interpretability</title>
-      <link>https://arxiv.org/abs/2605.09881v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Saurabh Rai, Sanmay Ganguly</p><p>Mechanistic interpretability seeks to reverse engineer a trained neural network by identifying the minimal subset of internal components. We perform a mechanistic interpretability analysis of the Particle Transformer architecture, trained on the Top Quark Tagging reference dataset, with the goal of identifying the computational circuit responsible for jet classification and characterizing the physical content of its internal representations. Combining zero ablation, path patching with two comple</p><p><strong>Tags:</strong> circuits</p>]]></description>
-      <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2605.09881v1</guid>
-    </item>
-    <item>
-      <title>SLIM: Sparse Latent Steering for Interpretable and Property-Directed LLM-Based Molecular Editing</title>
-      <link>https://arxiv.org/abs/2605.10831v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Mingxu Zhang, Yuhan Li, Lujundong Li, Dazhong Shen, Hui Xiong, et al.</p><p>Large language models possess strong chemical reasoning capabilities, making them effective molecular editors. However, property-relevant information is implicitly entangled across their dense hidden states, providing no explicit handle for property control: a substantial fraction of edits fail to improve or even degrade target properties. To address these issues, we propose SLIM (Sparse Latent Interpretable Molecular editing), a plug-and-play framework that decomposes the editor&#x27;s hidden states</p><p><strong>Tags:</strong> steering, reasoning</p>]]></description>
-      <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2605.10831v1</guid>
-    </item>
-    <item>
-      <title>The Geometric Wall: Manifold Structure Predicts Layerwise Sparse Autoencoder Scaling Laws</title>
-      <link>https://arxiv.org/abs/2605.09887v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Eslam Zaher, Maciej Trzaskowski, Quan Nguyen, Fred Roosta</p><p>Sparse autoencoders (SAEs) operationalise the linear representation hypothesis: they reconstruct model activations as sparse linear combinations of interpretable dictionary atoms, on the implicit assumption that activation space is well approximated by a globally linear structure. Their reconstruction error varies sharply across layers in ways that existing scaling laws, fitted at single layers, do not explain. We argue that this variation is the empirical trace of a geometric mismatch: where th</p><p><strong>Tags:</strong> SAE</p>]]></description>
-      <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2605.09887v1</guid>
     </item>
   </channel>
 </rss>
