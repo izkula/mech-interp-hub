@@ -1,6 +1,121 @@
 {
-  "lastUpdated": "2026-05-18",
+  "lastUpdated": "2026-05-19",
   "papers": [
+    {
+      "id": "arxiv-2605-17971v1",
+      "title": "Babel: Jailbreaking Safety Attention via Obfuscation Distribution Optimized Sampling",
+      "authors": "Ziwei Wang, Jing Chen, Ruichao Liang, Zhi Wang, Yebo Feng, et al.",
+      "date": "2026-05-18",
+      "url": "https://arxiv.org/abs/2605.17971v1",
+      "abstract": "Despite rigorous safety alignment, Large Language Models (LLMs) remain vulnerable to jailbreak attacks. Existing black-box methods often rely on heuristic templates or exhaustive trials, lacking mechanistic interpretability and query efficiency. In this study, we investigate an intrinsic vulnerability in the safety mechanisms of LLMs, where safety alignment relies on a small set of sparsely distributed attention heads, leaving much of the representational space weakly monitored. We formalize thi",
+      "tags": [
+        "safety",
+        "attention"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-18229v1",
+      "title": "Are Sparse Autoencoder Benchmarks Reliable?",
+      "authors": "David Chanin",
+      "date": "2026-05-18",
+      "url": "https://arxiv.org/abs/2605.18229v1",
+      "abstract": "Sparse autoencoders (SAEs) are a core interpretability tool for large language models, and progress on SAE architectures depends on benchmarks that reliably distinguish better SAEs from worse ones. We audit the SAE quality metrics in SAEBench, the de-facto standard SAE evaluation suite, through three complementary lenses: reseed noise on a fixed SAE, ground-truth correlation on synthetic SAEs, and discriminability across training trajectories. We find that two of these metrics, Targeted Probe Pe",
+      "tags": [
+        "SAE",
+        "probing"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-18629v1",
+      "title": "Aligned Training: A Parameter-Free Method to Improve Feature Quality and Stability of Sparse Autoencoders (SAE)",
+      "authors": "Micha\u0142 Brzozowski, Neo Christopher Chung",
+      "date": "2026-05-18",
+      "url": "https://arxiv.org/abs/2605.18629v1",
+      "abstract": "Sparse autoencoders (SAEs) are one of the main methods to interpret the inner workings of deep neural networks (DNNs), decomposing activations into higher-dimensional features. However, they exhibit critical shortcomings where a large fraction of features are never activated and are unstable. Despite variants of SAEs that attempt to mitigate these issues, they require additional data, resampling, or training. We propose the \\textbf{aligned training}, a parameter-free reparameterization of SAEs t",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-17504v1",
+      "title": "A Distributional View for Visual Mechanistic Interpretability: KL-Minimal Soft-Constraint Principle",
+      "authors": "Guancheng Zhou, Yisi Luo, Zhengfu He, Zhenyu Jin, Xuyang Ge, et al.",
+      "date": "2026-05-17",
+      "url": "https://arxiv.org/abs/2605.17504v1",
+      "abstract": "Most current paradigms in visual mechanistic interpretability (MI) remain confined to interpreting internal units of the vision model via heuristic methods (e.g., top-$K$ activation retrieval or optimization with regularization). In this work, we establish a theoretical distributional view for visual MI, which models the influence of a feature activation on the natural image distribution, thereby formulating a Kullback-Leibler (KL)-minimal optimization problem to model the MI task. Under this fr",
+      "tags": [
+        "features",
+        "theory",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-17493v1",
+      "title": "Beyond Linear Superposition: Discovering Climate Features in AI Weather Models with KAN-SAE",
+      "authors": "Minjong Cheon",
+      "date": "2026-05-17",
+      "url": "https://arxiv.org/abs/2605.17493v1",
+      "abstract": "Deep learning weather prediction models achieve remarkable predictive skill yet remain largely opaque: we know little about how they represent physical climate phenomena internally. Mechanistic interpretability through Sparse Autoencoders (SAEs) offers a principled route to decomposing these representations, but existing SAEs assume strictly linear feature superposition - a constraint ill-suited for the highly nonlinear atmospheric dynamics encoded in modern transformers. We introduce KAN-SAE, a",
+      "tags": [
+        "SAE",
+        "superposition",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-17204v1",
+      "title": "Event-Grounded Sparse Autoencoders for Vision-Language-Action Policies",
+      "authors": "Xinchen Jin, Aditya Chatterjee, Pranav Kumar, Rohan Paleja",
+      "date": "2026-05-17",
+      "url": "https://arxiv.org/abs/2605.17204v1",
+      "abstract": "Vision-Language-Action (VLA) policies translate language and visual inputs into robot actions, where their hidden representations directly shape closed-loop behavior. However, mechanistic interpretability tools from language and vision-language models do not transfer cleanly to VLAs: outputs are robot actions rather than human-readable tokens, and interventions can only be tested via expensive closed-loop rollouts. We propose an event-grounded interpretability pipeline that anchors SAE feature a",
+      "tags": [
+        "SAE",
+        "features",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-16468v1",
+      "title": "Mechanistically Interpretable Neural Encoding Reveals Fine-Grained Functional Selectivity in Human Visual Cortex",
+      "authors": "Idan Daniel Grosbard, Mor Geva, Galit Yovel",
+      "date": "2026-05-15",
+      "url": "https://arxiv.org/abs/2605.16468v1",
+      "abstract": "A central goal in understanding human vision is to uncover the visual features that drive neuronal activity. A growing body of work has used artificial neural networks as encoding models to predict cortical responses to natural images, revealing the visual content that activates category-selective regions. However, existing approaches are largely correlational and treat the encoder as a black box, leaving open which image features drive each voxel's response. We introduce Mechanistically Interpr",
+      "tags": [
+        "features",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-15961v1",
+      "title": "Sparse Autoencoders enable Robust and Interpretable Fine-tuning of CLIP models",
+      "authors": "Fabian Morelli, Arnas Uselis, Ankit Sonthalia, Seong Joon Oh",
+      "date": "2026-05-15",
+      "url": "https://arxiv.org/abs/2605.15961v1",
+      "abstract": "Large-scale pre-trained vision-language models like CLIP demonstrate remarkable zero-shot performance across diverse tasks. However, fine-tuning these models to improve downstream performance often degrades robustness against distribution shifts. Recent approaches have attempted to mitigate this trade-off, but often rely on computationally expensive text-guidance. We propose a novel method for robust fine-tuning, SAE-FT, which operates only on the model's visual representations. SAE-FT regulariz",
+      "tags": [
+        "SAE",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2605-15183v1",
       "title": "When Are Two Networks the Same? Tensor Similarity for Mechanistic Interpretability",
@@ -465,6 +580,21 @@
       "featured": false
     },
     {
+      "id": "arxiv-2605-16372v1",
+      "title": "SwordBench: Evaluating Orthogonality of Steering Image Representations",
+      "authors": "Vladimir Zaigrajew, Dawid Pludowski, Hubert Baniecki, Przemyslaw Biecek",
+      "date": "2026-05-10",
+      "url": "https://arxiv.org/abs/2605.16372v1",
+      "abstract": "Steering or intervening on model representations at inference time to correct predictions is essential for AI interpretability and safety, yet existing evaluation protocols are limited to ambiguous language modeling tasks. To address this gap, we introduce SwordBench, a benchmark for steering image representations of vision models across multiple backbones and concept removal tasks. Beyond a unified benchmarking suite, we propose new evaluation notions that uncover the second-order effects of or",
+      "tags": [
+        "safety",
+        "steering",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
       "id": "arxiv-2605-09224v1",
       "title": "SMIXAE: Towards Unsupervised Manifold Discovery in Language Models",
       "authors": "Collin Francel",
@@ -848,6 +978,19 @@
       "abstract": "Causal abstraction offers a principled framework for mechanistic interpretability, aligning a high-level causal model with the low-level computation realized by a neural network through counterfactual intervention analysis. Existing methods such as distributed alignment search (DAS) learn expressive subspace interventions, but the relevant neural site is unknown a priori, so finding a handle requires a computationally burdensome search over candidate sites. We introduce PLOT (Progressive Localiz",
       "tags": [
         "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-16339v1",
+      "title": "Preference Instability in Reward Models: Detection and Mitigation via Sparse Autoencoders",
+      "authors": "Shunchang Liu, Xin Chen, Belen Martin Urcelay, Francesco Croce",
+      "date": "2026-05-07",
+      "url": "https://arxiv.org/abs/2605.16339v1",
+      "abstract": "Preference learning in large language models relies on reward models as proxies for human judgment. However, these models frequently exhibit preference instability, producing contradictory preference assignments in response to subtle, meaning-preserving input variations. We analyze this instability at the representation level under three semantic-preserving perturbation types: paraphrasing, pattern injection, and backdoor triggers. We attribute this instability to over-reliance on predictive yet",
+      "tags": [
+        "SAE"
       ],
       "source": "arXiv",
       "featured": false
