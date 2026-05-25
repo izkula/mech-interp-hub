@@ -5,9 +5,16 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 24 May 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 25 May 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Every Component is a Lookup: Token Attribution and Composition from a Single Decomposition</title>
+      <link>https://arxiv.org/abs/2605.23393v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Po-Kai Chen, Niki van Stein, Aske Plaat</p><p>Mechanistic interpretability of transformers requires identifying not just which components matter but how they compose into the computational route that produced a prediction. Both attention and MLP follow a shared key-value template $φ(S)U$. We exploit this structure to develop Unpack, a backward recursion that decomposes credit through both sublayers, producing interaction strengths between any two components, named end-to-end paths with K/Q/V composition labels, and per-token attribution fro</p>]]></description>
+      <pubDate>Fri, 22 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2605.23393v1</guid>
+    </item>
     <item>
       <title>Geometry-Adaptive Explainer for Faithful Dictionary-Based Interpretability under Distribution Shift</title>
       <link>https://arxiv.org/abs/2605.21849v1</link>
@@ -56,6 +63,34 @@
       <description><![CDATA[<p><strong>Authors:</strong> Chengsheng Zhang, Chenghao Sun, Zhining Xie, Xinmei Tian</p><p>Large Vision-Language Models (LVLMs) represent a significant leap towards empathetic agents, demonstrating remarkable capabilities in emotion understanding. However, the internal mechanisms governing how LVLMs translate abstract visual stimuli into coherent emotional narratives remain largely unexplored, primarily due to the scarcity of visual counterfactuals and the diffuse nature of emotional expression. In this paper, we bridge this gap by introducing a steering-vector-based causal attributio</p><p><strong>Tags:</strong> circuits, steering, vision</p>]]></description>
       <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2605.21980v1</guid>
+    </item>
+    <item>
+      <title>Multilingual Steering by Design: Multilingual Sparse Autoencoders and Principled Layer Selection</title>
+      <link>https://arxiv.org/abs/2605.23036v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Yusser Al Ghussin, Daniil Gurgurov, Tanja Baeumel, Josef van Genabith, Patrick Schramowski, et al.</p><p>Sparse autoencoders (SAEs) enable feature-level mechanistic interpretability and activation steering in large language models (LLMs), but SAE-based language control remains unreliable in multilingual settings: most SAEs are trained on English-only data, and steering layers are chosen heuristically. We address these limitations by advancing a principled, mechanistic account of multilingual language steering with SAEs. First, we show that training SAEs on multilingual data consistently strengthens</p><p><strong>Tags:</strong> SAE, features, steering</p>]]></description>
+      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2605.23036v1</guid>
+    </item>
+    <item>
+      <title>Sparse Autoencoders Map Brain-LLM Alignment onto Cortical Semantic Topography</title>
+      <link>https://arxiv.org/abs/2605.23035v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Dongxin Guo, Jikun Wu, Siu Ming Yiu</p><p>Intermediate layers of large language models (LLMs) best predict human brain responses to language, one of the most robust findings in computational neurolinguistics, yet why remains mechanistically unexplained. We address this gap by bridging sparse autoencoders (SAEs) from mechanistic interpretability with neural encoding models, decomposing GPT-2 XL and Llama-3.1-8B into 16K-32K interpretable features per layer. A human-validated taxonomy ($κ\geq 0.74$) reveals that semantic features alone re</p><p><strong>Tags:</strong> SAE, features, safety</p>]]></description>
+      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2605.23035v1</guid>
+    </item>
+    <item>
+      <title>Steered Generation via Gradient-Based Optimization on Sparse Query Features</title>
+      <link>https://arxiv.org/abs/2605.23040v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Sumanta Bhattacharyya, Pedram Rooshenas</p><p>Latent steering exploits internal representations of Large Language Models (LLMs) to guide generation, yet interventions on dense states can entangle distinct semantic features. In this paper, we investigate attention query activations as a high-fidelity site for precise control, hypothesizing that manipulating the attention mechanism itself offers sharper steerability than general state interventions. We introduce Prototype-Based Sparse Steering, a framework that applies Sparse Autoencoders (SA</p><p><strong>Tags:</strong> SAE, features, steering</p>]]></description>
+      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2605.23040v1</guid>
+    </item>
+    <item>
+      <title>Transcoders Trace Visual Grounding and Hallucinations in Vision-Language Models</title>
+      <link>https://arxiv.org/abs/2605.22902v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Dimitrios Damianos, Leon Voukoutis, Georgios Skyrianos, Vassilis Katsouros, Georgios Paraskevopoulos</p><p>Generative Vision-Language Models (VLMs) perform well on multimodal reasoning, but how visual inputs are transformed to text remains poorly understood. Existing interpretability work on VLMs uses Sparse Autoencoders (SAEs), which decompose static residual representations and miss the functional updates that drive cross-modal interaction. We adopt a function-centric framework based on Transcoders, sparse approximations of MLP sublayers that act as a causal proxy for layer-wise computation. Applie</p><p><strong>Tags:</strong> SAE, vision, reasoning</p>]]></description>
+      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2605.22902v1</guid>
     </item>
     <item>
       <title>Post-Hoc Understanding of Metaphor Processing in Decoder-Only Language Models via Conditional Scale Entropy</title>
@@ -182,41 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> ML Nissen Gonzalez, Melwina Albuquerque, Laurence Wroe, Jacob Meyer Cohen, Logan Riggs Smith, et al.</p><p>Mechanistic interpretability aims to break models into meaningful parts; verifying that two such parts implement the same computation is a prerequisite. Existing similarity measures evaluate either empirical behaviour, leaving them blind to out-of-distribution mechanisms, or basis-dependent parameters, meaning they disregard weight-space symmetries. To address these issues for the class of tensor-based models, we introduce a weight-based metric, tensor similarity, that is invariant to such symme</p>]]></description>
       <pubDate>Thu, 14 May 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2605.15183v1</guid>
-    </item>
-    <item>
-      <title>The Rate-Distortion-Polysemanticity Tradeoff in SAEs</title>
-      <link>https://arxiv.org/abs/2605.14694v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Tommaso Mencattini, Francesco Montagna, Francesco Locatello</p><p>Sparse Autoencoders (SAEs) that can accurately reconstruct their input (minimizing distortion) by making efficient use of few features (minimizing the rate) often fail to learn monosemantic representations (highly interpretable), limiting their usefulness for mechanistic interpretability. In this paper, we characterise this tension in learning faithful, efficient, and interpretable explanations, introducing the Rate-Distortion-Polysemanticity tradeoff in SAEs. Under toy-modeling assumptions, we </p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Thu, 14 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2605.14694v1</guid>
-    </item>
-    <item>
-      <title>Exploring Geographic Relative Space in Large Language Models through Activation Patching</title>
-      <link>https://arxiv.org/abs/2605.14535v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Stef De Sabbata, Rahul Baiju, Stefano Mizzaro, Kevin Roitero</p><p>The increased use of Large Language Models (LLMs) in geography raises substantial questions about the safety of integrating these tools across a wide range of processes and analyses, given our very limited understanding of their inner workings. In this extended abstract, we examine how LLMs process relative geographic space using activation patching, an emerging tool for mechanistic interpretability.</p><p><strong>Tags:</strong> safety</p>]]></description>
-      <pubDate>Thu, 14 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2605.14535v1</guid>
-    </item>
-    <item>
-      <title>Exemplar Partitioning for Mechanistic Interpretability</title>
-      <link>https://arxiv.org/abs/2605.14347v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Jessica Rumbelow</p><p>We introduce Exemplar Partitioning (EP), an unsupervised method for constructing interpretable feature dictionaries from large language model activations with $\sim 10^{3}\times$ fewer tokens than comparable sparse autoencoders (SAEs). An EP dictionary is a Voronoi partition of activation space, built by leader-clustering streamed activations within a distance threshold. Each region is anchored by an observed exemplar that serves as both its membership criterion and intervention direction; dicti</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Thu, 14 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2605.14347v1</guid>
-    </item>
-    <item>
-      <title>Defenses at Odds: Measuring and Explaining Defense Conflicts in Large Language Models</title>
-      <link>https://arxiv.org/abs/2605.14514v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Xiangtao Meng, Wenyu Chen, Chuanchao Zang, Xinyu Gao, Jianing Wang, et al.</p><p>Large Language Models (LLMs) deployed in high-stakes applications must simultaneously manage multiple risks, yet existing defenses are almost exclusively evaluated in isolation under a one-shot deployment assumption. In practice, providers patch models incrementally throughout their lifecycle-responding to newly exposed vulnerabilities or targeted data-removal requests without retraining from scratch. This raises a fundamental but underexplored question: does a later defense preserve the protect</p>]]></description>
-      <pubDate>Thu, 14 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2605.14514v1</guid>
-    </item>
-    <item>
-      <title>Rethinking Layer Relevance in Large Language Models Beyond Cosine Similarity</title>
-      <link>https://arxiv.org/abs/2605.14075v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Cristian Hinostroza, Rodrigo Toro Icarte, Christ Devia, Andres Carvallo De Ferari, Eugenio Herrera-Berg, et al.</p><p>Large language models (LLMs) have revolutionized natural language processing. Understanding their internal mechanisms is crucial for developing more interpretable and optimized architectures. Mechanistic interpretability has led to the development of various methods for assessing layer relevance, with cosine similarity being a widely used tool in the field. On this work, we demonstrate that cosine similarity is a poor proxy for the actual performance degradation caused by layer removal. Our theo</p>]]></description>
-      <pubDate>Wed, 13 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2605.14075v1</guid>
     </item>
   </channel>
 </rss>
