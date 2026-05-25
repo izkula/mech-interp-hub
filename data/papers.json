@@ -1,6 +1,17 @@
 {
-  "lastUpdated": "2026-05-24",
+  "lastUpdated": "2026-05-25",
   "papers": [
+    {
+      "id": "arxiv-2605-23393v1",
+      "title": "Every Component is a Lookup: Token Attribution and Composition from a Single Decomposition",
+      "authors": "Po-Kai Chen, Niki van Stein, Aske Plaat",
+      "date": "2026-05-22",
+      "url": "https://arxiv.org/abs/2605.23393v1",
+      "abstract": "Mechanistic interpretability of transformers requires identifying not just which components matter but how they compose into the computational route that produced a prediction. Both attention and MLP follow a shared key-value template $\u03c6(S)U$. We exploit this structure to develop Unpack, a backward recursion that decomposes credit through both sublayers, producing interaction strengths between any two components, named end-to-end paths with K/Q/V composition labels, and per-token attribution fro",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2605-21849v1",
       "title": "Geometry-Adaptive Explainer for Faithful Dictionary-Based Interpretability under Distribution Shift",
@@ -97,6 +108,66 @@
         "circuits",
         "steering",
         "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-23036v1",
+      "title": "Multilingual Steering by Design: Multilingual Sparse Autoencoders and Principled Layer Selection",
+      "authors": "Yusser Al Ghussin, Daniil Gurgurov, Tanja Baeumel, Josef van Genabith, Patrick Schramowski, et al.",
+      "date": "2026-05-21",
+      "url": "https://arxiv.org/abs/2605.23036v1",
+      "abstract": "Sparse autoencoders (SAEs) enable feature-level mechanistic interpretability and activation steering in large language models (LLMs), but SAE-based language control remains unreliable in multilingual settings: most SAEs are trained on English-only data, and steering layers are chosen heuristically. We address these limitations by advancing a principled, mechanistic account of multilingual language steering with SAEs. First, we show that training SAEs on multilingual data consistently strengthens",
+      "tags": [
+        "SAE",
+        "features",
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-23035v1",
+      "title": "Sparse Autoencoders Map Brain-LLM Alignment onto Cortical Semantic Topography",
+      "authors": "Dongxin Guo, Jikun Wu, Siu Ming Yiu",
+      "date": "2026-05-21",
+      "url": "https://arxiv.org/abs/2605.23035v1",
+      "abstract": "Intermediate layers of large language models (LLMs) best predict human brain responses to language, one of the most robust findings in computational neurolinguistics, yet why remains mechanistically unexplained. We address this gap by bridging sparse autoencoders (SAEs) from mechanistic interpretability with neural encoding models, decomposing GPT-2 XL and Llama-3.1-8B into 16K-32K interpretable features per layer. A human-validated taxonomy ($\u03ba\\geq 0.74$) reveals that semantic features alone re",
+      "tags": [
+        "SAE",
+        "features",
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-23040v1",
+      "title": "Steered Generation via Gradient-Based Optimization on Sparse Query Features",
+      "authors": "Sumanta Bhattacharyya, Pedram Rooshenas",
+      "date": "2026-05-21",
+      "url": "https://arxiv.org/abs/2605.23040v1",
+      "abstract": "Latent steering exploits internal representations of Large Language Models (LLMs) to guide generation, yet interventions on dense states can entangle distinct semantic features. In this paper, we investigate attention query activations as a high-fidelity site for precise control, hypothesizing that manipulating the attention mechanism itself offers sharper steerability than general state interventions. We introduce Prototype-Based Sparse Steering, a framework that applies Sparse Autoencoders (SA",
+      "tags": [
+        "SAE",
+        "features",
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-22902v1",
+      "title": "Transcoders Trace Visual Grounding and Hallucinations in Vision-Language Models",
+      "authors": "Dimitrios Damianos, Leon Voukoutis, Georgios Skyrianos, Vassilis Katsouros, Georgios Paraskevopoulos",
+      "date": "2026-05-21",
+      "url": "https://arxiv.org/abs/2605.22902v1",
+      "abstract": "Generative Vision-Language Models (VLMs) perform well on multimodal reasoning, but how visual inputs are transformed to text remains poorly understood. Existing interpretability work on VLMs uses Sparse Autoencoders (SAEs), which decompose static residual representations and miss the functional updates that drive cross-modal interaction. We adopt a function-centric framework based on Transcoders, sparse approximations of MLP sublayers that act as a causal proxy for layer-wise computation. Applie",
+      "tags": [
+        "SAE",
+        "vision",
+        "reasoning"
       ],
       "source": "arXiv",
       "featured": false
