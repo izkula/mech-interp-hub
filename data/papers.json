@@ -1,6 +1,142 @@
 {
-  "lastUpdated": "2026-05-25",
+  "lastUpdated": "2026-05-26",
   "papers": [
+    {
+      "id": "arxiv-2605-25603v1",
+      "title": "Detecting Unfaithful Chain-of-Thought via Circuit-Guided Internal-External Discrepancy",
+      "authors": "Xu Shen, Zhen Tan, Song Wang, Pingjun Hong, Rui Miao, et al.",
+      "date": "2026-05-25",
+      "url": "https://arxiv.org/abs/2605.25603v1",
+      "abstract": "Chain-of-thought (CoT) reasoning improves the problem-solving ability of large language models (LLMs), but generated reasoning traces may not faithfully reflect the model's actual decision process. Existing CoT unfaithfulness detectors mainly rely on external signals from generated rationales, such as textual plausibility or answer consistency, while overlooking evidence from the model's internal computation. Although recent circuit tracing methods provide a way to obtain model-internal evidence",
+      "tags": [
+        "circuits",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-25520v1",
+      "title": "Is Inference Mediated by Distinct Semantic Structures in LLMs? A Mechanistic Interpretation",
+      "authors": "Nura Aljaafari, Marco Valentino, Andr\u00e9 Freitas",
+      "date": "2026-05-25",
+      "url": "https://arxiv.org/abs/2605.25520v1",
+      "abstract": "Predicting a label correctly does not necessarily require representing the operation that produces it. Transformer representations are known to carry label-level information, but whether they encode semantic operations producing those labels is unclear. We investigate this in Natural Language Inference using controlled premise-hypothesis pairs that differ by a single semantic transformation. Using layer-wise activations, we estimate operation-level subspaces via SVD and test their causal relevan",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-25525v1",
+      "title": "SAE-FD: Sparse Autoencoder Feature Distillation for Continual Learning of Large Language Models",
+      "authors": "Mingxu Zhang, Yuhan Li, Lujundong Li, Dazhong Shen, Hui Xiong, et al.",
+      "date": "2026-05-25",
+      "url": "https://arxiv.org/abs/2605.25525v1",
+      "abstract": "Continual learning enables large language models to adapt to evolving tasks without retraining from scratch, yet catastrophic forgetting remains a central obstacle. Among continual learning methods, regularization-based approaches are widely used to constrain model updates and reduce forgetting, operating in weight space, gradient space, or output space. However, these dense representation spaces suffer from feature superposition, where multiple concepts are encoded in overlapping dimensions, ma",
+      "tags": [
+        "SAE",
+        "superposition",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-25225v1",
+      "title": "Continuous-Depth Field Theory for Transformer Patching and Mechanistic Interpretability",
+      "authors": "David N. Olivieri, Antonio F. P\u00e9rez Rodr\u00edguez",
+      "date": "2026-05-24",
+      "url": "https://arxiv.org/abs/2605.25225v1",
+      "abstract": "Mechanistic interpretability often uses activation patching, causal tracing, path patching, and steering directions to reveal behaviorally meaningful directions in Transformer activation space. This paper develops a field-theoretic framework for organizing and predicting such interventions. Treating the residual stream as a depth-token field, we formulate patching as localized source insertion, patch effects as sensitivity-field predictions, downstream propagation as empirical Green-function res",
+      "tags": [
+        "steering",
+        "theory"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-24856v1",
+      "title": "The Concept Allocation Zone: Tracking How Concepts Form Across Transformer Depth",
+      "authors": "James Henry",
+      "date": "2026-05-24",
+      "url": "https://arxiv.org/abs/2605.24856v1",
+      "abstract": "Concept formation in transformer language models is depth-extended, not a single-layer event: concepts emerge gradually across a contiguous region of the residual stream. Mechanistic interpretability methods identify the single layer of peak class separation -- the \"best layer\" -- capturing a snapshot rather than the process itself. We introduce the Concept Allocation Zone (CAZ): the depth interval within which a concept becomes measurably separable, the region allocated to its geometric express",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-24977v1",
+      "title": "Universal Boosts, Specific Suppressors: Sparse Autoencoder Steering of Medical Vision-Language Models",
+      "authors": "Farhad Nooralahzadeh, Benjamin Gundersen, Nicolas Deperrois, Hidetoshi Matsuom, Mizuho Nishio, et al.",
+      "date": "2026-05-24",
+      "url": "https://arxiv.org/abs/2605.24977v1",
+      "abstract": "Medical vision-language models (VLMs) often hallucinate findings when generating chest X-ray reports: they fabricate findings that are not present in the image, miss important ones, or locate them incorrectly. We mitigate this without weight updates by decoding-time residual steering on a per-token sparse autoencoder (SAE) basis: Top-$K$ SAEs on late layers, causal steering against clinical errors, then combined suppress/boost intervention at inference time. On the MIMIC-CXR test split, our infe",
+      "tags": [
+        "SAE",
+        "steering",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-24946v1",
+      "title": "Interpretability Transfer from Language to Vision via Sparse Autoencoders",
+      "authors": "Alexey Kravets, Da Li, Chuan Li, Da Chen, Vinay P. Namboodiri",
+      "date": "2026-05-24",
+      "url": "https://arxiv.org/abs/2605.24946v1",
+      "abstract": "Recent advances in language model interpretability using sparse autoencoders (SAEs) have yet to effectively translate to the visual domain, mainly due to the difficulty and ambiguity of labeling visual concepts. In this paper, we introduce Visual Interpretability via SAE Transfer Alignment (VISTA), a framework that transfers interpretability from language to vision in a LLaVA-style vision-language model by constraining a visual projector to map visual tokens into an LLM's pre-existing, labeled t",
+      "tags": [
+        "SAE",
+        "safety",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-24577v1",
+      "title": "Polymorphism Is Rotation: Operational Mechanistic Interpretability from a Two-Layer Transformer to Pythia-70m",
+      "authors": "Jordan F. McCann",
+      "date": "2026-05-23",
+      "url": "https://arxiv.org/abs/2605.24577v1",
+      "abstract": "Independently trained transformers compute the same function in residual-stream bases that differ by a uniform random rotation on $\\mathrm{SO}(d_{\\mathrm{model}})$. We call this phenomenon polymorphism: same function, mutually unintelligible interior coordinates. One matrix multiplication per model pair removes it: an orthogonal Procrustes fit on a single batch of activations transfers sparse-autoencoder feature dictionaries and steering vectors between independently trained models, with no retr",
+      "tags": [
+        "features",
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-24614v1",
+      "title": "Measuring the Depth of LLM Unlearning via Activation Patching",
+      "authors": "Jaeung Lee, Dohyun Kim, Jaemin Jo",
+      "date": "2026-05-23",
+      "url": "https://arxiv.org/abs/2605.24614v1",
+      "abstract": "Large language model (LLM) unlearning has emerged as a crucial post-hoc mechanism for privacy protection and AI safety, yet auditing whether target knowledge is truly erased remains challenging. Existing output-level metrics fail to detect when this knowledge remains recoverable from internal representations. Recent white-box studies reveal such residual knowledge but often rely on auxiliary training or dataset-specific adaptations, leaving no generalizable metric. To address these limitations, ",
+      "tags": [
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-24552v1",
+      "title": "Ellipsoid Control: A White-list Jailbreak Defense via Benign Latent Modeling",
+      "authors": "Luoyu Chen, Weiqi Wang, Zhiyi Tian, Feng Wu, Ahmed Asiri, et al.",
+      "date": "2026-05-23",
+      "url": "https://arxiv.org/abs/2605.24552v1",
+      "abstract": "Representation engineering (RepE) defenses have shown strong robustness against jailbreak attacks on large language models (LLMs). However, these methods fundamentally rely on black-list supervision: they learn jailbreak-to-refusal activation transformations from harmful or jailbreak data that are inherently incomplete and continuously evolving. Hence, the performance of RepE-based defenses becomes tightly coupled to the quality and coverage of collected harmful samples, leaving models vulnerabl",
+      "tags": [
+        "safety",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2605-23393v1",
       "title": "Every Component is a Lookup: Token Attribution and Composition from a Single Decomposition",
@@ -8,6 +144,17 @@
       "date": "2026-05-22",
       "url": "https://arxiv.org/abs/2605.23393v1",
       "abstract": "Mechanistic interpretability of transformers requires identifying not just which components matter but how they compose into the computational route that produced a prediction. Both attention and MLP follow a shared key-value template $\u03c6(S)U$. We exploit this structure to develop Unpack, a backward recursion that decomposes credit through both sublayers, producing interaction strengths between any two components, named end-to-end paths with K/Q/V composition labels, and per-token attribution fro",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-24170v1",
+      "title": "Learning dynamical systems with biochemically informed neural ordinary differential equations",
+      "authors": "Luis L. Fonseca, Reinhard C. Laubenbacher, Lucas B\u00f6ttcher",
+      "date": "2026-05-22",
+      "url": "https://arxiv.org/abs/2605.24170v1",
+      "abstract": "Ordinary differential equation models of biochemical reactions are often formulated as stoichiometric systems in which the dynamics arise from a collection of interacting processes. A central challenge is that the functional form of each process is rarely known a priori and may be difficult to infer from data. We propose biochemically informed neural ordinary differential equations (BINODEs), a neural-ODE framework that retains the stoichiometric structure of mechanistic models while representin",
       "tags": [],
       "source": "arXiv",
       "featured": false
@@ -167,6 +314,20 @@
       "tags": [
         "SAE",
         "vision",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-24033v1",
+      "title": "Towards Verifiable Transformers: Solver-Checkable Circuit Explanations",
+      "authors": "Neel Somani",
+      "date": "2026-05-21",
+      "url": "https://arxiv.org/abs/2605.24033v1",
+      "abstract": "Mechanistic interpretability often identifies circuits inside Transformer models, but explanations of those circuits are usually validated through examples, ablations, and manual reasoning. This leaves a gap between finding a plausible circuit and proving what the circuit does. We introduce Verifiable Transformers, a framework for converting task-localized Transformer circuits into bounded, solver-checkable claims. Given a behavior, a finite task domain, and a candidate-token projection, we extr",
+      "tags": [
+        "circuits",
         "reasoning"
       ],
       "source": "arXiv",
