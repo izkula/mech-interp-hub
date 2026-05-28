@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-27",
+  "lastUpdated": "2026-05-28",
   "papers": [
     {
       "id": "arxiv-2605-25603v1",
@@ -3456,6 +3456,19 @@
         "theory"
       ],
       "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "ss-2942a2cd5b29a8861c93",
+      "title": "Short-Circuit Analysis of Solid-State Transformer-Based DC Distribution in Data Center",
+      "authors": "Haiguo Li, Rudy Wang, Peter Barbosa",
+      "date": "2026-03-22",
+      "url": "https://www.semanticscholar.org/paper/2942a2cd5b29a8861c93fcbc87b87ea2e23e7324",
+      "abstract": "This paper discusses the modeling and analysis of the DC distribution network in the data center application considering short-circuit faults. Different cable models are discussed, and the proper one is selected. The importance of the mutual inductance in the multi-cable network is discussed, and the comparison between with and without considering the mutual inductance is provided to verify the analysis. How the short-circuit faults have impact on the SST converter is discussed. Also, for the th",
+      "tags": [
+        "circuits"
+      ],
+      "source": "Semantic Scholar",
       "featured": false
     },
     {
