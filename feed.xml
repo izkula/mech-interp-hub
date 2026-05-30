@@ -5,9 +5,86 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 29 May 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 30 May 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Low-Magnification SEM May Suffice: Interpretable Deep Learning for Multi-Scale Fracture-Cause Classification in Zirconia-Toughened Alumina</title>
+      <link>https://arxiv.org/abs/2605.29798v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Julian Schmid, Pawel Astankow, Tom Vater, Julius Beck, Robert Cichon, et al.</p><p>Reliable identification of fracture origins in alumina matrix composite hip and knee implants is critical for quality assurance and patient safety, yet current fractographic workflows are time-consuming, partly subjective, and reliant on high-magnification scanning electron microscopy (SEM). We present an interpretable vision-transformer (ViT) workflow for automated classification of fracture causes in an alumina matrix composite (BIOLOX delta, CeramTec GmbH) widely used in total joint replaceme</p><p><strong>Tags:</strong> safety, vision</p>]]></description>
+      <pubDate>Thu, 28 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2605.29798v1</guid>
+    </item>
+    <item>
+      <title>Internal Representation, Not Clinical Knowledge: Where Apparent LLM Triage Failures Originate</title>
+      <link>https://arxiv.org/abs/2605.29889v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> David Fraile Navarro, Berardino Como, Jialei Sheng, Soundariya Ananthan, Shlomo Berkovsky</p><p>Patient-voiced clinical-triage benchmarks report high under-triage rates for consumer LLMs for constrained multiple-choice output, yet the same cases score differently with free-text. We ask whether output format changes the model&#x27;s \emph{clinical representation} or only the mapping from a preserved representation to an answer. Using sparse-autoencoder (SAE) features in Gemma 3 4B/12B IT and Qwen3-8B, we find the same medical features fire on the shared clinical narrative under both formats but </p><p><strong>Tags:</strong> features</p>]]></description>
+      <pubDate>Thu, 28 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2605.29889v1</guid>
+    </item>
+    <item>
+      <title>Dissecting the Black Box: Circuit-Level Analysis of LLM Vulnerability Detection</title>
+      <link>https://arxiv.org/abs/2605.29901v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Syafiq Al Atiiq, Chun Zhou, Christian Gehrmann</p><p>Large language models (LLMs) can detect software vulnerabilities, but how do they actually identify vulnerable code? We address this question using mechanistic interpretability; analyzing the internal computations of a neural network to understand its reasoning process.Using Circuit Tracer on Gemma-2-2b, we trace the computational pathways activated when the model classifies 472 C/C++ code samples as vulnerable or safe. Our analysis reveals a surprising finding: the model primarily relies on saf</p><p><strong>Tags:</strong> circuits, reasoning</p>]]></description>
+      <pubDate>Thu, 28 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2605.29901v1</guid>
+    </item>
+    <item>
+      <title>Relational Rank Geometry in Transformers: Detecting and Steering Hidden-State Relation Frames</title>
+      <link>https://arxiv.org/abs/2605.29634v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Mazen Kobrosly</p><p>Transformer hidden states are often interpreted through local or low-order objects: neurons, sparse features, attention heads, residual-stream directions, or activation patches. This paper studies a complementary object: the rank-indexed geometry of relations among token tuples. I use Plucker sign entropy to test whether r-argument relations leave arity-matched orientation signatures in hidden-state space. Across Llama-family 8B, 70B, and 405B checkpoints, true relation tuples show stronger orie</p><p><strong>Tags:</strong> features, attention, steering</p>]]></description>
+      <pubDate>Thu, 28 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2605.29634v1</guid>
+    </item>
+    <item>
+      <title>Feature Geometry of LoRA Adapters: A Sparse Autoencoder Analysis of Representational Divergence in Fine-Tuned Language Models</title>
+      <link>https://arxiv.org/abs/2605.28896v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Prasanth K K</p><p>Low-Rank Adaptation (LoRA) has emerged as a widely adopted approach for adapting large language models, yet the internal representational changes induced by LoRA fine-tuning remain insufficiently understood. In this work, we investigate the geometry of LoRA-induced representations using Sparse Autoencoders (SAEs). We introduce a delta activation framework that isolates the adapter-specific contribution to the residual stream.   Using Gemma-2-9B with LoRA ranks 4, 8, 16, and 32, we train adapter-</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2605.28896v1</guid>
+    </item>
+    <item>
+      <title>Interpretability-Guided Layer Selection over Subspace Projection: SAEs as Stethoscopes, Not Scalpels, for Raw Task Vector Model Editing</title>
+      <link>https://arxiv.org/abs/2605.28649v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Li Lei, Madalina Ciobanu, Qingqing Mao, Ritankar Das</p><p>LLMs increasingly require surgical model editing to enhance domain-specific capabilities without incurring the computational cost or catastrophic forgetting associated with full fine-tuning. Sparse Autoencoders (SAEs) have emerged as a promising tool in this setting, in principle allowing for feature-level identification of where to intervene. In this work, we rigorously evaluate an SAE-guided editing pipeline for mathematical reasoning on Gemma-3-4B-IT and uncover a fundamental failure mode: th</p><p><strong>Tags:</strong> SAE, features, editing, reasoning</p>]]></description>
+      <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2605.28649v1</guid>
+    </item>
+    <item>
+      <title>Semantic Optimal Transport for Sparse Autoencoder Feature Matching and Circuit Compression</title>
+      <link>https://arxiv.org/abs/2605.28567v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Tue M. Cao, Nguyen Do, My T. Thai</p><p>Sparse autoencoders (SAEs) have become a central tool for interpreting language models. However, two key SAE analyses that remain difficult to scale are (1) matching semantically similar features across multi-layers and (2) compressing large feature circuits into interpretable supernodes. Although these have been treated as separate problems, we show that both are instances of a more fundamental challenge, which we frame as the estimation of semantic distances between SAE features that lie on di</p><p><strong>Tags:</strong> SAE, circuits, features</p>]]></description>
+      <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2605.28567v1</guid>
+    </item>
+    <item>
+      <title>Mechanistically Interpreting the Role of Sample Difficulty in RLVR for LLMs</title>
+      <link>https://arxiv.org/abs/2605.28388v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Yue Cheng, Jiajun Zhang, Xiaohui Gao, Weiwei Xing, Zheng Wang, et al.</p><p>Reinforcement Learning with Verifiable Reward (RLVR) is empirically shown to notably enhance the reasoning performance of large language models (LLMs), particularly in mathematics and programming. However, the mechanistic role of Sample Difficulty in RLVR remains poorly understood. In this paper, we investigate RLVR through the lens of difficulty-wise and one-sample analysis. We find that sample difficulty has a non-monotonic effect on RLVR: easy and medium-difficulty problems yield the stronges</p><p><strong>Tags:</strong> reasoning</p>]]></description>
+      <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2605.28388v1</guid>
+    </item>
+    <item>
+      <title>Sign-Aware Gated Sparse Autoencoders: Modeling Anticorrelated Features with Bi-Jump-ReLU Activations</title>
+      <link>https://arxiv.org/abs/2605.28149v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Bartosz Wieciech, Zmnako Awrahman, Marcin Czelej, Victor Hugo Jaramillo Velasquez, Wioletta Stobieniecka</p><p>Sparse Autoencoders (SAEs) extract interpretable features from Large Language Models, but standard variants enforce non-negativity, forcing separate latents for diametrically opposed concepts (e.g., &quot;pressure too high&quot; vs. &quot;pressure too low&quot;) and wasting dictionary capacity when features are anticorrelated. We propose the Sign-Aware Gated SAE (SA-GSAE): two-sided gated sparsity with signed magnitude and auxiliary supervision. A polarity-sensitive gate selects support on either sign, a signed-mag</p><p><strong>Tags:</strong> SAE, features, vision</p>]]></description>
+      <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2605.28149v1</guid>
+    </item>
+    <item>
+      <title>Cultural Binding Heads in Language Models</title>
+      <link>https://arxiv.org/abs/2605.28543v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Avrile Floro, Luca Benedetto</p><p>LLMs often default to equal treatment across cultural groups, even though context warrants differentiation: this is a lack of difference awareness. Using mechanistic interpretability and a factorial design on the N4 cultural appropriation benchmark from Wang et al. (2025), we identify 2-3 mid-layer attention heads per model that contribute causally to cultural binding across eight models (four architectures, base and instruct). Cultural binding is the process of associating cultural items with t</p><p><strong>Tags:</strong> attention</p>]]></description>
+      <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2605.28543v1</guid>
+    </item>
+    <item>
+      <title>Practical Anonymous Two-Party Gradient Boosting Decision Tree</title>
+      <link>https://arxiv.org/abs/2605.26903v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Huang Chenyu, Zhang Fan, Du Minxin, Chow Sherman SM, Chen Huangxun, et al.</p><p>Structured data is well handled by gradient-boosted decision trees (GBDT), which are usually trained on vertically partitioned features across mutually distrustful parties. High speed and interpretability make GBDTs popular in finance and healthcare, where neural networks may fall short. Enabling secure computation for GBDTs poses unique challenges, requiring secure record alignment for comparison. Relying on private set intersection (PSI) is a de facto approach. Mistaking PSI for a safety measu</p><p><strong>Tags:</strong> features, safety</p>]]></description>
+      <pubDate>Tue, 26 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2605.26903v1</guid>
+    </item>
     <item>
       <title>Detecting Unfaithful Chain-of-Thought via Circuit-Guided Internal-External Discrepancy</title>
       <link>https://arxiv.org/abs/2605.25603v1</link>
@@ -28,6 +105,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Mingxu Zhang, Yuhan Li, Lujundong Li, Dazhong Shen, Hui Xiong, et al.</p><p>Continual learning enables large language models to adapt to evolving tasks without retraining from scratch, yet catastrophic forgetting remains a central obstacle. Among continual learning methods, regularization-based approaches are widely used to constrain model updates and reduce forgetting, operating in weight space, gradient space, or output space. However, these dense representation spaces suffer from feature superposition, where multiple concepts are encoded in overlapping dimensions, ma</p><p><strong>Tags:</strong> SAE, superposition, features</p>]]></description>
       <pubDate>Mon, 25 May 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2605.25525v1</guid>
+    </item>
+    <item>
+      <title>MechRL: Reinforcement Learning Agents Perform Circuit Discovery for Mechanistic Interpretability</title>
+      <link>https://arxiv.org/abs/2605.26343v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Barsat Khadka</p><p>Mechanistic interpretability has identified small sets of attention heads that implement specific behaviours in transformer language models, but recovering these circuits typically requires a bespoke analytical pipeline for each new task. We recast circuit discovery as a reinforcement-learning problem. An agent operates over the 144 attention heads of GPT-2 small as a discrete action space; each action triggers a zero-ablation and a contrastive reward that subtracts the ablation&#x27;s damage to gene</p><p><strong>Tags:</strong> circuits, attention</p>]]></description>
+      <pubDate>Mon, 25 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2605.26343v1</guid>
     </item>
     <item>
       <title>Continuous-Depth Field Theory for Transformer Patching and Mechanistic Interpretability</title>
@@ -133,90 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Hisashi Miyashita</p><p>We show that singular value decomposition of the lm_head} weight matrix of a transformer-based large language model -- requiring only five lines of PyTorch and no model inference -- reveals interpretable semantic subspaces directly from the model weights. Each left singular vector identifies the vocabulary tokens most readily selected when the hidden state aligns with the corresponding singular direction; inspecting these clusters exposes the model&#x27;s training data composition and curation philos</p>]]></description>
       <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2605.22005v1</guid>
-    </item>
-    <item>
-      <title>Interpreting and Enhancing Emotional Circuits in Large Vision-Language Models via Cross-Modal Information Flow</title>
-      <link>https://arxiv.org/abs/2605.21980v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Chengsheng Zhang, Chenghao Sun, Zhining Xie, Xinmei Tian</p><p>Large Vision-Language Models (LVLMs) represent a significant leap towards empathetic agents, demonstrating remarkable capabilities in emotion understanding. However, the internal mechanisms governing how LVLMs translate abstract visual stimuli into coherent emotional narratives remain largely unexplored, primarily due to the scarcity of visual counterfactuals and the diffuse nature of emotional expression. In this paper, we bridge this gap by introducing a steering-vector-based causal attributio</p><p><strong>Tags:</strong> circuits, steering, vision</p>]]></description>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2605.21980v1</guid>
-    </item>
-    <item>
-      <title>Multilingual Steering by Design: Multilingual Sparse Autoencoders and Principled Layer Selection</title>
-      <link>https://arxiv.org/abs/2605.23036v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Yusser Al Ghussin, Daniil Gurgurov, Tanja Baeumel, Josef van Genabith, Patrick Schramowski, et al.</p><p>Sparse autoencoders (SAEs) enable feature-level mechanistic interpretability and activation steering in large language models (LLMs), but SAE-based language control remains unreliable in multilingual settings: most SAEs are trained on English-only data, and steering layers are chosen heuristically. We address these limitations by advancing a principled, mechanistic account of multilingual language steering with SAEs. First, we show that training SAEs on multilingual data consistently strengthens</p><p><strong>Tags:</strong> SAE, features, steering</p>]]></description>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2605.23036v1</guid>
-    </item>
-    <item>
-      <title>Sparse Autoencoders Map Brain-LLM Alignment onto Cortical Semantic Topography</title>
-      <link>https://arxiv.org/abs/2605.23035v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Dongxin Guo, Jikun Wu, Siu Ming Yiu</p><p>Intermediate layers of large language models (LLMs) best predict human brain responses to language, one of the most robust findings in computational neurolinguistics, yet why remains mechanistically unexplained. We address this gap by bridging sparse autoencoders (SAEs) from mechanistic interpretability with neural encoding models, decomposing GPT-2 XL and Llama-3.1-8B into 16K-32K interpretable features per layer. A human-validated taxonomy ($κ\geq 0.74$) reveals that semantic features alone re</p><p><strong>Tags:</strong> SAE, features, safety</p>]]></description>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2605.23035v1</guid>
-    </item>
-    <item>
-      <title>Steered Generation via Gradient-Based Optimization on Sparse Query Features</title>
-      <link>https://arxiv.org/abs/2605.23040v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Sumanta Bhattacharyya, Pedram Rooshenas</p><p>Latent steering exploits internal representations of Large Language Models (LLMs) to guide generation, yet interventions on dense states can entangle distinct semantic features. In this paper, we investigate attention query activations as a high-fidelity site for precise control, hypothesizing that manipulating the attention mechanism itself offers sharper steerability than general state interventions. We introduce Prototype-Based Sparse Steering, a framework that applies Sparse Autoencoders (SA</p><p><strong>Tags:</strong> SAE, features, steering</p>]]></description>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2605.23040v1</guid>
-    </item>
-    <item>
-      <title>Transcoders Trace Visual Grounding and Hallucinations in Vision-Language Models</title>
-      <link>https://arxiv.org/abs/2605.22902v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Dimitrios Damianos, Leon Voukoutis, Georgios Skyrianos, Vassilis Katsouros, Georgios Paraskevopoulos</p><p>Generative Vision-Language Models (VLMs) perform well on multimodal reasoning, but how visual inputs are transformed to text remains poorly understood. Existing interpretability work on VLMs uses Sparse Autoencoders (SAEs), which decompose static residual representations and miss the functional updates that drive cross-modal interaction. We adopt a function-centric framework based on Transcoders, sparse approximations of MLP sublayers that act as a causal proxy for layer-wise computation. Applie</p><p><strong>Tags:</strong> SAE, vision, reasoning</p>]]></description>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2605.22902v1</guid>
-    </item>
-    <item>
-      <title>Towards Verifiable Transformers: Solver-Checkable Circuit Explanations</title>
-      <link>https://arxiv.org/abs/2605.24033v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Neel Somani</p><p>Mechanistic interpretability often identifies circuits inside Transformer models, but explanations of those circuits are usually validated through examples, ablations, and manual reasoning. This leaves a gap between finding a plausible circuit and proving what the circuit does. We introduce Verifiable Transformers, a framework for converting task-localized Transformer circuits into bounded, solver-checkable claims. Given a behavior, a finite task domain, and a candidate-token projection, we extr</p><p><strong>Tags:</strong> circuits, reasoning</p>]]></description>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2605.24033v1</guid>
-    </item>
-    <item>
-      <title>Post-Hoc Understanding of Metaphor Processing in Decoder-Only Language Models via Conditional Scale Entropy</title>
-      <link>https://arxiv.org/abs/2605.21391v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Lawhori Chakrabarti, Jennifer Johnson-Leung, Bert Baumgaertner, Aleksandar Vakanski, Min Xian, et al.</p><p>Metaphor requires a language model to resolve a token whose contextual meaning diverges from its basic literal sense. Understanding how transformer models organize this reinterpretation across depth remains an open problem in mechanistic interpretability. We introduce conditional scale entropy (CSE), a wavelet-derived measure of how broadly transformer computation engages across frequency scales at each layer position. Two theorems establish that CSE is invariant to update magnitude, isolating t</p>]]></description>
-      <pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2605.21391v1</guid>
-    </item>
-    <item>
-      <title>From Circuit Evidence to Mechanistic Theory: An Inductive Logic Approach</title>
-      <link>https://arxiv.org/abs/2605.21303v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Nura Aljaafari, Danilo S. Carvalho, Andre Freitas</p><p>Mechanistic interpretability produces circuit-level causal analyses of neural network behaviour, but discovered circuits often remain isolated experimental artefacts: there is no shared formal representation for what circuits compute, how they relate, or when two findings provide evidence for the same mechanism. This work provides a formal infrastructure for cumulative mechanistic science by treating circuit interpretation as inductive theory construction. Each circuit is characterised at two le</p><p><strong>Tags:</strong> circuits, theory</p>]]></description>
-      <pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2605.21303v1</guid>
-    </item>
-    <item>
-      <title>Mechanistic Interpretability for Learning Assurance of a Vision-Based Landing System</title>
-      <link>https://arxiv.org/abs/2605.20607v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Romeo Valentin, Olivia Beyer Bruvik, Marc R. Schlichting, Mykel J. Kochenderfer</p><p>EASA&#x27;s learning-assurance guidance requires data-driven aviation systems to build and monitor their own situation representation, yet for neural networks the technical means to provide such evidence remain an open problem. We address this gap for a vision-based aircraft landing system: we propose that a minimally assurable model must at least be shown to separate content from style in its own situation representation. Showing that the model&#x27;s predictions then rely largely on the contentful repre</p><p><strong>Tags:</strong> vision</p>]]></description>
-      <pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2605.20607v1</guid>
-    </item>
-    <item>
-      <title>Interaction Locality in Hierarchical Recursive Reasoning</title>
-      <link>https://arxiv.org/abs/2605.20784v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Yosuke Miyanishi, Tetsuro Morimura</p><p>Spatial reasoning requires both location-bound computation and location-invariant structure: agents must make local moves while preserving route, object, or constraint-level plans. We propose interaction locality, a task-geometry-aware framework for measuring whether information flow stays within nearby cells or semantic segments, or crosses them. We instantiate the framework with sparse-autoencoder feature ablations and finite-noise activation patching, with structural Jacobian and attention ch</p><p><strong>Tags:</strong> features, reasoning</p>]]></description>
-      <pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2605.20784v1</guid>
-    </item>
-    <item>
-      <title>Mechanics of Bias and Reasoning: Interpreting the Impact of Chain-of-Thought Prompting on Gender Bias in LLMs</title>
-      <link>https://arxiv.org/abs/2605.20410v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Edie Pearman, Sophia Osborne, Mira Kandlikar-Bloch, Mina Arzaghi, Florian Carichon, et al.</p><p>Large language models (LLMs) are increasingly deployed in socially sensitive settings despite substantial documentation that they encode gender biases. Chain-of-Thought (CoT) prompting has been proposed as a bias-mitigation approach. However, existing evaluations primarily focus on changes in LLM benchmark performance, providing limited insight into whether apparent bias reductions reflect meaningful changes in a model&#x27;s internal mechanisms. In this work, we investigate how CoT prompting affects</p><p><strong>Tags:</strong> reasoning</p>]]></description>
-      <pubDate>Tue, 19 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2605.20410v1</guid>
-    </item>
-    <item>
-      <title>Where Does Authorship Signal Emerge in Encoder-Based Language Models?</title>
-      <link>https://arxiv.org/abs/2605.19908v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Francis Kulumba, Guillaume Vimont, Laurent Romary, Florian Cafiero</p><p>Authorship attribution models fine-tuned with the same pretrained encoder, data, and loss can differ four-fold in performance depending only on their scoring mechanism. We use mechanistic interpretability tools to explain this gap. Stylistic features such as word length, punctuation density, and function-word frequency are equally available at every layer in every model, including in an off-the-shelf control encoder, hence the gap not coming from representation quality. Instead, causal intervent</p><p><strong>Tags:</strong> features</p>]]></description>
-      <pubDate>Tue, 19 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2605.19908v1</guid>
     </item>
   </channel>
 </rss>
