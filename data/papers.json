@@ -1,6 +1,162 @@
 {
-  "lastUpdated": "2026-05-29",
+  "lastUpdated": "2026-05-30",
   "papers": [
+    {
+      "id": "arxiv-2605-29798v1",
+      "title": "Low-Magnification SEM May Suffice: Interpretable Deep Learning for Multi-Scale Fracture-Cause Classification in Zirconia-Toughened Alumina",
+      "authors": "Julian Schmid, Pawel Astankow, Tom Vater, Julius Beck, Robert Cichon, et al.",
+      "date": "2026-05-28",
+      "url": "https://arxiv.org/abs/2605.29798v1",
+      "abstract": "Reliable identification of fracture origins in alumina matrix composite hip and knee implants is critical for quality assurance and patient safety, yet current fractographic workflows are time-consuming, partly subjective, and reliant on high-magnification scanning electron microscopy (SEM). We present an interpretable vision-transformer (ViT) workflow for automated classification of fracture causes in an alumina matrix composite (BIOLOX delta, CeramTec GmbH) widely used in total joint replaceme",
+      "tags": [
+        "safety",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-29889v1",
+      "title": "Internal Representation, Not Clinical Knowledge: Where Apparent LLM Triage Failures Originate",
+      "authors": "David Fraile Navarro, Berardino Como, Jialei Sheng, Soundariya Ananthan, Shlomo Berkovsky",
+      "date": "2026-05-28",
+      "url": "https://arxiv.org/abs/2605.29889v1",
+      "abstract": "Patient-voiced clinical-triage benchmarks report high under-triage rates for consumer LLMs for constrained multiple-choice output, yet the same cases score differently with free-text. We ask whether output format changes the model's \\emph{clinical representation} or only the mapping from a preserved representation to an answer. Using sparse-autoencoder (SAE) features in Gemma 3 4B/12B IT and Qwen3-8B, we find the same medical features fire on the shared clinical narrative under both formats but ",
+      "tags": [
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-29901v1",
+      "title": "Dissecting the Black Box: Circuit-Level Analysis of LLM Vulnerability Detection",
+      "authors": "Syafiq Al Atiiq, Chun Zhou, Christian Gehrmann",
+      "date": "2026-05-28",
+      "url": "https://arxiv.org/abs/2605.29901v1",
+      "abstract": "Large language models (LLMs) can detect software vulnerabilities, but how do they actually identify vulnerable code? We address this question using mechanistic interpretability; analyzing the internal computations of a neural network to understand its reasoning process.Using Circuit Tracer on Gemma-2-2b, we trace the computational pathways activated when the model classifies 472 C/C++ code samples as vulnerable or safe. Our analysis reveals a surprising finding: the model primarily relies on saf",
+      "tags": [
+        "circuits",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-29634v1",
+      "title": "Relational Rank Geometry in Transformers: Detecting and Steering Hidden-State Relation Frames",
+      "authors": "Mazen Kobrosly",
+      "date": "2026-05-28",
+      "url": "https://arxiv.org/abs/2605.29634v1",
+      "abstract": "Transformer hidden states are often interpreted through local or low-order objects: neurons, sparse features, attention heads, residual-stream directions, or activation patches. This paper studies a complementary object: the rank-indexed geometry of relations among token tuples. I use Plucker sign entropy to test whether r-argument relations leave arity-matched orientation signatures in hidden-state space. Across Llama-family 8B, 70B, and 405B checkpoints, true relation tuples show stronger orie",
+      "tags": [
+        "features",
+        "attention",
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-28896v1",
+      "title": "Feature Geometry of LoRA Adapters: A Sparse Autoencoder Analysis of Representational Divergence in Fine-Tuned Language Models",
+      "authors": "Prasanth K K",
+      "date": "2026-05-27",
+      "url": "https://arxiv.org/abs/2605.28896v1",
+      "abstract": "Low-Rank Adaptation (LoRA) has emerged as a widely adopted approach for adapting large language models, yet the internal representational changes induced by LoRA fine-tuning remain insufficiently understood. In this work, we investigate the geometry of LoRA-induced representations using Sparse Autoencoders (SAEs). We introduce a delta activation framework that isolates the adapter-specific contribution to the residual stream.   Using Gemma-2-9B with LoRA ranks 4, 8, 16, and 32, we train adapter-",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-28649v1",
+      "title": "Interpretability-Guided Layer Selection over Subspace Projection: SAEs as Stethoscopes, Not Scalpels, for Raw Task Vector Model Editing",
+      "authors": "Li Lei, Madalina Ciobanu, Qingqing Mao, Ritankar Das",
+      "date": "2026-05-27",
+      "url": "https://arxiv.org/abs/2605.28649v1",
+      "abstract": "LLMs increasingly require surgical model editing to enhance domain-specific capabilities without incurring the computational cost or catastrophic forgetting associated with full fine-tuning. Sparse Autoencoders (SAEs) have emerged as a promising tool in this setting, in principle allowing for feature-level identification of where to intervene. In this work, we rigorously evaluate an SAE-guided editing pipeline for mathematical reasoning on Gemma-3-4B-IT and uncover a fundamental failure mode: th",
+      "tags": [
+        "SAE",
+        "features",
+        "editing",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-28567v1",
+      "title": "Semantic Optimal Transport for Sparse Autoencoder Feature Matching and Circuit Compression",
+      "authors": "Tue M. Cao, Nguyen Do, My T. Thai",
+      "date": "2026-05-27",
+      "url": "https://arxiv.org/abs/2605.28567v1",
+      "abstract": "Sparse autoencoders (SAEs) have become a central tool for interpreting language models. However, two key SAE analyses that remain difficult to scale are (1) matching semantically similar features across multi-layers and (2) compressing large feature circuits into interpretable supernodes. Although these have been treated as separate problems, we show that both are instances of a more fundamental challenge, which we frame as the estimation of semantic distances between SAE features that lie on di",
+      "tags": [
+        "SAE",
+        "circuits",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-28388v1",
+      "title": "Mechanistically Interpreting the Role of Sample Difficulty in RLVR for LLMs",
+      "authors": "Yue Cheng, Jiajun Zhang, Xiaohui Gao, Weiwei Xing, Zheng Wang, et al.",
+      "date": "2026-05-27",
+      "url": "https://arxiv.org/abs/2605.28388v1",
+      "abstract": "Reinforcement Learning with Verifiable Reward (RLVR) is empirically shown to notably enhance the reasoning performance of large language models (LLMs), particularly in mathematics and programming. However, the mechanistic role of Sample Difficulty in RLVR remains poorly understood. In this paper, we investigate RLVR through the lens of difficulty-wise and one-sample analysis. We find that sample difficulty has a non-monotonic effect on RLVR: easy and medium-difficulty problems yield the stronges",
+      "tags": [
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-28149v1",
+      "title": "Sign-Aware Gated Sparse Autoencoders: Modeling Anticorrelated Features with Bi-Jump-ReLU Activations",
+      "authors": "Bartosz Wieciech, Zmnako Awrahman, Marcin Czelej, Victor Hugo Jaramillo Velasquez, Wioletta Stobieniecka",
+      "date": "2026-05-27",
+      "url": "https://arxiv.org/abs/2605.28149v1",
+      "abstract": "Sparse Autoencoders (SAEs) extract interpretable features from Large Language Models, but standard variants enforce non-negativity, forcing separate latents for diametrically opposed concepts (e.g., \"pressure too high\" vs. \"pressure too low\") and wasting dictionary capacity when features are anticorrelated. We propose the Sign-Aware Gated SAE (SA-GSAE): two-sided gated sparsity with signed magnitude and auxiliary supervision. A polarity-sensitive gate selects support on either sign, a signed-mag",
+      "tags": [
+        "SAE",
+        "features",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-28543v1",
+      "title": "Cultural Binding Heads in Language Models",
+      "authors": "Avrile Floro, Luca Benedetto",
+      "date": "2026-05-27",
+      "url": "https://arxiv.org/abs/2605.28543v1",
+      "abstract": "LLMs often default to equal treatment across cultural groups, even though context warrants differentiation: this is a lack of difference awareness. Using mechanistic interpretability and a factorial design on the N4 cultural appropriation benchmark from Wang et al. (2025), we identify 2-3 mid-layer attention heads per model that contribute causally to cultural binding across eight models (four architectures, base and instruct). Cultural binding is the process of associating cultural items with t",
+      "tags": [
+        "attention"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-26903v1",
+      "title": "Practical Anonymous Two-Party Gradient Boosting Decision Tree",
+      "authors": "Huang Chenyu, Zhang Fan, Du Minxin, Chow Sherman SM, Chen Huangxun, et al.",
+      "date": "2026-05-26",
+      "url": "https://arxiv.org/abs/2605.26903v1",
+      "abstract": "Structured data is well handled by gradient-boosted decision trees (GBDT), which are usually trained on vertically partitioned features across mutually distrustful parties. High speed and interpretability make GBDTs popular in finance and healthcare, where neural networks may fall short. Enabling secure computation for GBDTs poses unique challenges, requiring secure record alignment for comparison. Relying on private set intersection (PSI) is a de facto approach. Mistaking PSI for a safety measu",
+      "tags": [
+        "features",
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2605-25603v1",
       "title": "Detecting Unfaithful Chain-of-Thought via Circuit-Guided Internal-External Discrepancy",
@@ -37,6 +193,20 @@
         "SAE",
         "superposition",
         "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-26343v1",
+      "title": "MechRL: Reinforcement Learning Agents Perform Circuit Discovery for Mechanistic Interpretability",
+      "authors": "Barsat Khadka",
+      "date": "2026-05-25",
+      "url": "https://arxiv.org/abs/2605.26343v1",
+      "abstract": "Mechanistic interpretability has identified small sets of attention heads that implement specific behaviours in transformer language models, but recovering these circuits typically requires a bespoke analytical pipeline for each new task. We recast circuit discovery as a reinforcement-learning problem. An agent operates over the 144 attention heads of GPT-2 small as a discrete action space; each action triggers a zero-ablation and a contrastive reward that subtracts the ablation's damage to gene",
+      "tags": [
+        "circuits",
+        "attention"
       ],
       "source": "arXiv",
       "featured": false
