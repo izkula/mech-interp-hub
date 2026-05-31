@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-30",
+  "lastUpdated": "2026-05-31",
   "papers": [
     {
       "id": "arxiv-2605-29798v1",
@@ -53,6 +53,33 @@
         "features",
         "attention",
         "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-30162v1",
+      "title": "BioRefusalAudit: Auditing Biosecurity Refusal Depth Using General and Domain-Fine-Tuned Sparse Autoencoders",
+      "authors": "Caleb DeLeeuw",
+      "date": "2026-05-28",
+      "url": "https://arxiv.org/abs/2605.30162v1",
+      "abstract": "Biosecurity evaluations of language models typically ask whether models produce hazardous output. This paper asks a complementary question: when a model refuses, is that refusal structurally sound, or does it disappear under modest changes to prompt framing, formatting, or output length? Across five architectures, no model cleanly discriminated benign from hazard. Gemma 2 2B-IT never genuinely refused across 75 prompts, hedging on every hazard-adjacent query. Gemma 4 E2B-IT refused 65/75 prompts",
+      "tags": [
+        "SAE"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-29384v1",
+      "title": "Latent Terms: Dense Retrievers Contain Trivially Extractable BM25-ready Zipfian Vocabularies",
+      "authors": "Benjamin Clavi\u00e9, Sean Lee, Aamir Shakir, Makoto P. Kato",
+      "date": "2026-05-28",
+      "url": "https://arxiv.org/abs/2605.29384v1",
+      "abstract": "We propose Latent Terms, a method revealing that models trained for dense retrieval, whether single- or multi-vector, learn representations that can trivially be decomposed into retrieval-ready sparse features. When trained on frozen retrievers, Sparse Autoencoders without any retrieval-specific adjustments extract a latent vocabulary with approximately Zipfian collection statistics, directly suitable for classical sparse retrieval scoring via BM25. This approach enables sparse retrieval while r",
+      "tags": [
+        "SAE",
+        "features"
       ],
       "source": "arXiv",
       "featured": false
@@ -144,6 +171,48 @@
       "featured": false
     },
     {
+      "id": "arxiv-2605-27997v1",
+      "title": "Where Does Toxicity Live? Mechanistic Localization and Targeted Suppression in Language Models",
+      "authors": "Himanshu Beniwal, Mayank Singh",
+      "date": "2026-05-27",
+      "url": "https://arxiv.org/abs/2605.27997v1",
+      "abstract": "Large language models frequently generate toxic, hateful, or harmful content, yet existing mitigation methods rely on costly retraining or output-level filtering with no mechanistic insight into where toxicity originates internally. We introduce Meow2X and TRNE, two complementary retraining-free frameworks that localize toxicity to specific layers and neurons by analyzing activation differentials between toxic and neutral prompts, then suppress them via inference-time scaling or minimal rank-one",
+      "tags": [
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-28247v1",
+      "title": "IRDS: Interpretable RLVR Data Selection via Verifier-Coupled Sparse Autoencoder Coverage",
+      "authors": "Yuhan Li, Mingxu Zhang, Dazhong Shen, Ying Sun",
+      "date": "2026-05-27",
+      "url": "https://arxiv.org/abs/2605.28247v1",
+      "abstract": "Reinforcement learning with verifiable rewards (RLVR) has become a key technique for en- hancing LLM reasoning, yet its data ineffi- ciency remains a major bottleneck. Existing methods address this problem only partially, each missing at least one of subset-level cov- erage, verifier signal use, or interpretability. To address this gap, we present IRDS (Inter- pretable RLVR Data Selection), which selects RLVR training instances on a sparse autoen- coder (SAE) cluster basis so the selection itsel",
+      "tags": [
+        "SAE",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-27813v1",
+      "title": "Residualized Temporal Sparse Autoencoders for Interpreting Diffusion Models",
+      "authors": "Calvin Yeung, Prathyush Poduval, Ali Zakeri, Zhuowen Zou, Mohsen Imani",
+      "date": "2026-05-27",
+      "url": "https://arxiv.org/abs/2605.27813v1",
+      "abstract": "Text-to-image diffusion models generate images through an iterative denoising process, so internal neural layers produce trajectories of activations rather than single static representations. Sparse autoencoders (SAEs) have recently been used to decompose diffusion activations into interpretable feature directions, but most approaches analyze activations at individual timesteps or condition on time rather than learning directly from full activation trajectories. In this work, we introduce residu",
+      "tags": [
+        "SAE",
+        "features",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
       "id": "arxiv-2605-26903v1",
       "title": "Practical Anonymous Two-Party Gradient Boosting Decision Tree",
       "authors": "Huang Chenyu, Zhang Fan, Du Minxin, Chow Sherman SM, Chen Huangxun, et al.",
@@ -153,6 +222,19 @@
       "tags": [
         "features",
         "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-27354v1",
+      "title": "Guiding LLM Post-training Data Engineering with Model Internals from Sparse Autoencoders",
+      "authors": "Yi Jing, Zao Dai, Jinwu Hu, Zijun Yao, Lei Hou, et al.",
+      "date": "2026-05-26",
+      "url": "https://arxiv.org/abs/2605.27354v1",
+      "abstract": "Model internals encode rich information about how a large language model (LLM) processes its training data; however, post-training data engineering largely relies on external signals and ignores rich intrinsic signals lying in model internals. We propose SAERL, a data engineering framework for LLM reinforcement learning (RL). It models three intrinsic data properties: diversity, difficulty, and quality, using model internals extracted with Sparse Autoencoder (SAE), an advanced mechanistic interp",
+      "tags": [
+        "SAE"
       ],
       "source": "arXiv",
       "featured": false
