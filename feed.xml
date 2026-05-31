@@ -5,7 +5,7 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 30 May 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 31 May 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
@@ -35,6 +35,20 @@
       <description><![CDATA[<p><strong>Authors:</strong> Mazen Kobrosly</p><p>Transformer hidden states are often interpreted through local or low-order objects: neurons, sparse features, attention heads, residual-stream directions, or activation patches. This paper studies a complementary object: the rank-indexed geometry of relations among token tuples. I use Plucker sign entropy to test whether r-argument relations leave arity-matched orientation signatures in hidden-state space. Across Llama-family 8B, 70B, and 405B checkpoints, true relation tuples show stronger orie</p><p><strong>Tags:</strong> features, attention, steering</p>]]></description>
       <pubDate>Thu, 28 May 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2605.29634v1</guid>
+    </item>
+    <item>
+      <title>BioRefusalAudit: Auditing Biosecurity Refusal Depth Using General and Domain-Fine-Tuned Sparse Autoencoders</title>
+      <link>https://arxiv.org/abs/2605.30162v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Caleb DeLeeuw</p><p>Biosecurity evaluations of language models typically ask whether models produce hazardous output. This paper asks a complementary question: when a model refuses, is that refusal structurally sound, or does it disappear under modest changes to prompt framing, formatting, or output length? Across five architectures, no model cleanly discriminated benign from hazard. Gemma 2 2B-IT never genuinely refused across 75 prompts, hedging on every hazard-adjacent query. Gemma 4 E2B-IT refused 65/75 prompts</p><p><strong>Tags:</strong> SAE</p>]]></description>
+      <pubDate>Thu, 28 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2605.30162v1</guid>
+    </item>
+    <item>
+      <title>Latent Terms: Dense Retrievers Contain Trivially Extractable BM25-ready Zipfian Vocabularies</title>
+      <link>https://arxiv.org/abs/2605.29384v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Benjamin Clavié, Sean Lee, Aamir Shakir, Makoto P. Kato</p><p>We propose Latent Terms, a method revealing that models trained for dense retrieval, whether single- or multi-vector, learn representations that can trivially be decomposed into retrieval-ready sparse features. When trained on frozen retrievers, Sparse Autoencoders without any retrieval-specific adjustments extract a latent vocabulary with approximately Zipfian collection statistics, directly suitable for classical sparse retrieval scoring via BM25. This approach enables sparse retrieval while r</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Thu, 28 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2605.29384v1</guid>
     </item>
     <item>
       <title>Feature Geometry of LoRA Adapters: A Sparse Autoencoder Analysis of Representational Divergence in Fine-Tuned Language Models</title>
@@ -79,11 +93,39 @@
       <guid>https://arxiv.org/abs/2605.28543v1</guid>
     </item>
     <item>
+      <title>Where Does Toxicity Live? Mechanistic Localization and Targeted Suppression in Language Models</title>
+      <link>https://arxiv.org/abs/2605.27997v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Himanshu Beniwal, Mayank Singh</p><p>Large language models frequently generate toxic, hateful, or harmful content, yet existing mitigation methods rely on costly retraining or output-level filtering with no mechanistic insight into where toxicity originates internally. We introduce Meow2X and TRNE, two complementary retraining-free frameworks that localize toxicity to specific layers and neurons by analyzing activation differentials between toxic and neutral prompts, then suppress them via inference-time scaling or minimal rank-one</p><p><strong>Tags:</strong> safety</p>]]></description>
+      <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2605.27997v1</guid>
+    </item>
+    <item>
+      <title>IRDS: Interpretable RLVR Data Selection via Verifier-Coupled Sparse Autoencoder Coverage</title>
+      <link>https://arxiv.org/abs/2605.28247v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Yuhan Li, Mingxu Zhang, Dazhong Shen, Ying Sun</p><p>Reinforcement learning with verifiable rewards (RLVR) has become a key technique for en- hancing LLM reasoning, yet its data ineffi- ciency remains a major bottleneck. Existing methods address this problem only partially, each missing at least one of subset-level cov- erage, verifier signal use, or interpretability. To address this gap, we present IRDS (Inter- pretable RLVR Data Selection), which selects RLVR training instances on a sparse autoen- coder (SAE) cluster basis so the selection itsel</p><p><strong>Tags:</strong> SAE, reasoning</p>]]></description>
+      <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2605.28247v1</guid>
+    </item>
+    <item>
+      <title>Residualized Temporal Sparse Autoencoders for Interpreting Diffusion Models</title>
+      <link>https://arxiv.org/abs/2605.27813v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Calvin Yeung, Prathyush Poduval, Ali Zakeri, Zhuowen Zou, Mohsen Imani</p><p>Text-to-image diffusion models generate images through an iterative denoising process, so internal neural layers produce trajectories of activations rather than single static representations. Sparse autoencoders (SAEs) have recently been used to decompose diffusion activations into interpretable feature directions, but most approaches analyze activations at individual timesteps or condition on time rather than learning directly from full activation trajectories. In this work, we introduce residu</p><p><strong>Tags:</strong> SAE, features, vision</p>]]></description>
+      <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2605.27813v1</guid>
+    </item>
+    <item>
       <title>Practical Anonymous Two-Party Gradient Boosting Decision Tree</title>
       <link>https://arxiv.org/abs/2605.26903v1</link>
       <description><![CDATA[<p><strong>Authors:</strong> Huang Chenyu, Zhang Fan, Du Minxin, Chow Sherman SM, Chen Huangxun, et al.</p><p>Structured data is well handled by gradient-boosted decision trees (GBDT), which are usually trained on vertically partitioned features across mutually distrustful parties. High speed and interpretability make GBDTs popular in finance and healthcare, where neural networks may fall short. Enabling secure computation for GBDTs poses unique challenges, requiring secure record alignment for comparison. Relying on private set intersection (PSI) is a de facto approach. Mistaking PSI for a safety measu</p><p><strong>Tags:</strong> features, safety</p>]]></description>
       <pubDate>Tue, 26 May 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2605.26903v1</guid>
+    </item>
+    <item>
+      <title>Guiding LLM Post-training Data Engineering with Model Internals from Sparse Autoencoders</title>
+      <link>https://arxiv.org/abs/2605.27354v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Yi Jing, Zao Dai, Jinwu Hu, Zijun Yao, Lei Hou, et al.</p><p>Model internals encode rich information about how a large language model (LLM) processes its training data; however, post-training data engineering largely relies on external signals and ignores rich intrinsic signals lying in model internals. We propose SAERL, a data engineering framework for LLM reinforcement learning (RL). It models three intrinsic data properties: diversity, difficulty, and quality, using model internals extracted with Sparse Autoencoder (SAE), an advanced mechanistic interp</p><p><strong>Tags:</strong> SAE</p>]]></description>
+      <pubDate>Tue, 26 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2605.27354v1</guid>
     </item>
     <item>
       <title>Detecting Unfaithful Chain-of-Thought via Circuit-Guided Internal-External Discrepancy</title>
@@ -175,48 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Luis L. Fonseca, Reinhard C. Laubenbacher, Lucas Böttcher</p><p>Ordinary differential equation models of biochemical reactions are often formulated as stoichiometric systems in which the dynamics arise from a collection of interacting processes. A central challenge is that the functional form of each process is rarely known a priori and may be difficult to infer from data. We propose biochemically informed neural ordinary differential equations (BINODEs), a neural-ODE framework that retains the stoichiometric structure of mechanistic models while representin</p>]]></description>
       <pubDate>Fri, 22 May 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2605.24170v1</guid>
-    </item>
-    <item>
-      <title>Geometry-Adaptive Explainer for Faithful Dictionary-Based Interpretability under Distribution Shift</title>
-      <link>https://arxiv.org/abs/2605.21849v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Sungjun Lim, Heedong Kim, Andrew Lee, Kyungwoo Song</p><p>Mechanistic interpretability aims to explain a model&#x27;s behavior by identifying causally responsible internal structures. Dictionary-based explainers such as sparse autoencoders and transcoders are a primary tool, but their faithfulness under out-of-distribution (OOD) shift has received little systematic attention. We show that distribution shift rotates the subspace that the model actively uses, misaligning the explainer&#x27;s dictionary trained on in-distribution (ID) activations. We formalize this</p><p><strong>Tags:</strong> SAE</p>]]></description>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2605.21849v1</guid>
-    </item>
-    <item>
-      <title>Conceptualizing Embeddings: Sparse Disentanglement for Vision-Language Models</title>
-      <link>https://arxiv.org/abs/2605.22679v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Piotr Kubaty, Patryk Marszałek, Łukasz Struski, Adam Wróbel, Jacek Tabor, et al.</p><p>Vision-language models learn powerful multimodal embeddings, yet their internal semantics remain opaque. While sparse autoencoders (SAEs) can extract interpretable features, they rely on expanding the representation dimension, which compromises the original geometry and introduces redundancy. We introduce CEDAR (Conceptual Embedding Disentanglement via Adaptive Rotation), a post-hoc method that reveals the compositional structure of pretrained embeddings without increasing dimensionality. By lea</p><p><strong>Tags:</strong> SAE, features, vision</p>]]></description>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2605.22679v1</guid>
-    </item>
-    <item>
-      <title>SegCompass: Exploring Interpretable Alignment with Sparse Autoencoders for Enhanced Reasoning Segmentation</title>
-      <link>https://arxiv.org/abs/2605.22658v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Zhenyu Lu, Liupeng Li, Jinpeng Wang, Haoqian Kang, Yan Feng, et al.</p><p>While large language models provide strong compositional reasoning, existing reasoning segmentation pipelines fail to transparently connect this reasoning to visual perception. Current methods, such as latent query alignment, are end-to-end yet opaque &quot;black boxes&quot;. Conversely, textual localization readout is merely readable, not truly interpretable, often functioning as an unconstrained post-hoc step. To bridge this interpretability gap, we propose SegCompass, an end-to-end model that leverages</p><p><strong>Tags:</strong> SAE, safety, vision, reasoning</p>]]></description>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2605.22658v1</guid>
-    </item>
-    <item>
-      <title>From Correlation to Cause: A Five-Stage Methodology for Feature Analysis in Transformer Language Models</title>
-      <link>https://arxiv.org/abs/2605.22462v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Caleb Munigety</p><p>We propose a five-stage methodology for causal feature analysis in transformer language models (probe design, feature extraction, causal validation, robustness testing, and deployment integration) and demonstrate it end-to-end on GPT-2 small performing the Indirect Object Identification (IOI) task. Activation patching recovers the canonical IOI circuit (layer-9 head 9 alone gives recovery +1.02). A sparse autoencoder recovers per-name selective features with effect sizes of 30 to 50 activation u</p><p><strong>Tags:</strong> SAE, circuits, features, probing</p>]]></description>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2605.22462v1</guid>
-    </item>
-    <item>
-      <title>Reading Task Failure Off the Activations: A Sparse-Feature Audit of GPT-2 Small on Indirect Object Identification</title>
-      <link>https://arxiv.org/abs/2605.22719v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Mahdi Nasermoghadasi</p><p>We report a small, reproducible audit of which sparse-autoencoder (SAE) features of GPT-2 small fire differently on failed versus successful trials of the Indirect Object Identification (IOI) task. On 300 prompts, GPT-2 small reaches 79.7% accuracy; 146 of the 24,576 features in the layer-8 residual-stream SAE release of Bloom (2024) clear a Holm-corrected significance threshold and 105 reach a large effect size (|Cohen&#x27;s d| &gt; 0.8). The strongest single correlate of failure -- feature 17,491, d=</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2605.22719v1</guid>
-    </item>
-    <item>
-      <title>Check Your LLM&#x27;s Secret Dictionary! Five Lines of Code Reveal What Your LLM Learned (Including What It Shouldn&#x27;t Have)</title>
-      <link>https://arxiv.org/abs/2605.22005v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Hisashi Miyashita</p><p>We show that singular value decomposition of the lm_head} weight matrix of a transformer-based large language model -- requiring only five lines of PyTorch and no model inference -- reveals interpretable semantic subspaces directly from the model weights. Each left singular vector identifies the vocabulary tokens most readily selected when the hidden state aligns with the corresponding singular direction; inspecting these clusters exposes the model&#x27;s training data composition and curation philos</p>]]></description>
-      <pubDate>Thu, 21 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2605.22005v1</guid>
     </item>
   </channel>
 </rss>
