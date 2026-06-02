@@ -1,6 +1,154 @@
 {
-  "lastUpdated": "2026-06-01",
+  "lastUpdated": "2026-06-02",
   "papers": [
+    {
+      "id": "arxiv-2606-01914v1",
+      "title": "Mechanistic Diagnostics of Spatial Lexical Bias in Multimodal Large Language Model Spatial Reasoning",
+      "authors": "Chuang Ma, Qianying Liu, Tomoyuki Obuchi, Fei Cheng, Wang Yang, et al.",
+      "date": "2026-06-01",
+      "url": "https://arxiv.org/abs/2606.01914v1",
+      "abstract": "Multimodal large language models (MLLMs) remain unreliable on spatial multiple-choice questions, and their failures are often attributed to poorly attended visual information. In this work, we identify a complementary failure mode, spatial lexical bias: adding a spatial relation word to the answer options can attract the model's decision and make the newly added option likely to be selected. Using nine open-weight MLLMs, we show that this phenomenon is widely observed. In particular, models can ",
+      "tags": [
+        "vision",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-01925v1",
+      "title": "QoEReasoner: An Agentic Reasoning Framework for Automated and Explainable QoE Diagnosis in RANs",
+      "authors": "Qizhe Li, Haolong Chen, Shan Dai, Zhuo Li, Zhiwei Hu, et al.",
+      "date": "2026-06-01",
+      "url": "https://arxiv.org/abs/2606.01925v1",
+      "abstract": "Diagnosing Quality-of-Experience (QoE) degradations in operational Radio Access Networks (RANs) is a critical but notoriously complex task, traditionally requiring labor-intensive expert analysis over high-dimensional, cross-layer telemetry. While Large Language Models (LLMs) offer unprecedented reasoning capabilities, they are fundamentally unsuited for raw RANs troubleshooting: they fail at numeric time-series analysis, hallucinate protocol-violating causal links, and lack the stateful rigor r",
+      "tags": [
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-02378v1",
+      "title": "When Do Attention Circuits Form? Developmental Trajectories of Capability and Attention-Sink Emergence Across Three 1B-ClassArchitectures",
+      "authors": "Yongzhong Xu",
+      "date": "2026-06-01",
+      "url": "https://arxiv.org/abs/2606.02378v1",
+      "abstract": "We track the developmental trajectory of attention-head circuit formation across three 1B-class language models spanning two architecture families (dense transformer, mixture-of-experts) and two pretraining corpora (The Pile, DCLM): Pythia 1B, OLMo 1B-0724-hf, and OLMoE 1B-7B-0924. At each of 10 log-spaced revisions per model -- 30 mechanistic-interpretability runs in total -- we apply a participation-ratio (PR) spectral signal and an all-head capability-specific selectivity screen to track indu",
+      "tags": [
+        "circuits",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-01479v1",
+      "title": "Sparse Autoencoders for Interpretable Emotion Control in Text-to-Speech",
+      "authors": "Hongfei Du, Jiacheng Shi, Sidi Lu, Gang Zhou, Ye Gao",
+      "date": "2026-05-31",
+      "url": "https://arxiv.org/abs/2606.01479v1",
+      "abstract": "Integrating large language models (LLMs) into text-to-speech (TTS) systems has improved speech expressiveness, yet interpretable emotional control remains challenging. Existing approaches primarily rely on external conditioning or global activation steering, offering limited insight into the internal representations underlying emotional control. In this work, we analyze emotion-related variation in the semantic hidden states of LLM-based TTS models using sparse autoencoders (SAEs) to identify sp",
+      "tags": [
+        "SAE",
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-00926v1",
+      "title": "Task Structure Reverses Layerwise State Encoding in Sequence Models",
+      "authors": "Yuhang Jiang",
+      "date": "2026-05-30",
+      "url": "https://arxiv.org/abs/2606.00926v1",
+      "abstract": "Mechanistic studies of sequence models often treat layerwise state encodings as architectural traits: recurrent models concentrate readable state, attention-based models distribute it. We find that the same architecture reverses this profile when the task changes. Across Transformers, Mamba, Mamba-2, LSTMs, and GRUs, Parity is concentrated late in Mamba and the recurrent baselines and built gradually by Transformer; on bounded-depth Dyck-k the pattern flips. The same flip appears in fine-tuned M",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-31518v1",
+      "title": "On the Relationship Between Activation Outliers and Feature Death in Sparse Autoencoders",
+      "authors": "Elana Simon, Etowah Adams, James Zou",
+      "date": "2026-05-29",
+      "url": "https://arxiv.org/abs/2605.31518v1",
+      "abstract": "Sparse autoencoders (SAEs) decompose neural network activations into interpretable features, but many learned features never activate, a problem called feature death that wastes dictionary capacity and can reintroduce superposition. Death rates vary dramatically between models: near-zero on GPT-2, over 70% on AlphaFold3 with identical configurations. We find that dimension-level activation outliers (dimensions whose mean magnitude is large relative to per-token variation) cause this by shifting ",
+      "tags": [
+        "SAE",
+        "superposition",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-31304v1",
+      "title": "Interpretability Without Tradeoffs: Disentangling Polysemanticity At Equal Predictive Performance",
+      "authors": "Do\u011fukan Ba\u011fc\u0131, Bernt Schiele, Simone Schaub-Meyer, Jonas Fischer, Robin Hesse",
+      "date": "2026-05-29",
+      "url": "https://arxiv.org/abs/2605.31304v1",
+      "abstract": "Deep neural networks (DNNs) are widely used, but interpreting what they actually learn remains difficult. A major obstacle is that individual neurons often encode multiple unrelated concepts, obscuring the decision process of the network. While prior work, such as sparse autoencoders, can separate these mixed signals into more meaningful, \"monosemantic\" features, this typically requires altering the model in ways that can degrade downstream performance. To overcome this, we introduce ELUDe (expl",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-31363v1",
+      "title": "The Latin Substrate: How Language Models Represent and Mediate Script Choice",
+      "authors": "Daniil Gurgurov, Alan Saji, Katharina Trinley, Josef van Genabith, Simon Ostermann",
+      "date": "2026-05-29",
+      "url": "https://arxiv.org/abs/2605.31363v1",
+      "abstract": "Many languages are written in multiple scripts, requiring large language models (LLMs) to generate equivalent linguistic content in distinct orthographic forms. While prior work suggests that LLMs route information through shared latent representations, how they internally mediate script variation remains poorly understood.   We study this question by first examining per-layer output distributions with the logit lens, which reveals consistent latent romanization during transliteration, and then ",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-31220v1",
+      "title": "Shared Doubt: Zero-shot Cross-Lingual Confidence Estimation for Language Models",
+      "authors": "Athina Kyriakou, Dennis Ulmer, Ivan Titov",
+      "date": "2026-05-29",
+      "url": "https://arxiv.org/abs/2605.31220v1",
+      "abstract": "Confidence estimation (CE), i.e. quantifying the reliability of a model's prediction, has attracted great interest in the context of large language models (LLMs). However, most studies focus on English, ignoring the multilingual reality of LLM usage, while many CE methods degrade or require retraining across languages. To address this gap, we investigate whether multilingual LLMs encode shared, language-transferable confidence features. We use a lightweight linear probe that predicts answer corr",
+      "tags": [
+        "features",
+        "probing"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-31183v1",
+      "title": "Steering LLMs? Actually, Sparse Autoencoders can outperform simple baselines",
+      "authors": "Mikkel Godsk J\u00f8rgensen, Lars Kai Hansen",
+      "date": "2026-05-29",
+      "url": "https://arxiv.org/abs/2605.31183v1",
+      "abstract": "Sparse Autoencoders (SAEs) have been seen as a promising avenue for exploring the internals of Large Language Models (LLMs) and for steering model output generation. When AxBench - a model steering benchmark - was introduced in Wu et al. (2025), SAEs did not seem to live up to their original hype due to poor steering performance relative to a set of simple baselines. This work serves as a partial rebuttal for Sparse Autoencoders and suggests that the results of Wu et al. (2025) did not do them f",
+      "tags": [
+        "SAE",
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-31558v1",
+      "title": "Positional versus Symbolic Attention Heads: Learning Dynamics, RoPE Geometry, and Length Generalization",
+      "authors": "Felipe Urrutia, Juan Jos\u00e9 Alegr\u00eda, Cinthia Sanchez Macias, Jorge Salas, Cristian B. Calderon, et al.",
+      "date": "2026-05-29",
+      "url": "https://arxiv.org/abs/2605.31558v1",
+      "abstract": "Transformer-based language models are widespread in today's society. As such, understanding the mechanisms by which they solve structured tasks and predicting how they may behave in novel scenarios is of great importance for safe deployment. We study the learning dynamics of attention heads in a controlled setting by training a decoder-only Transformer (GPT-J) on two structurally equivalent multi-hop reasoning tasks: a number task requiring positional reasoning and a letter task requiring symbol",
+      "tags": [
+        "attention",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2605-29798v1",
       "title": "Low-Magnification SEM May Suffice: Interpretable Deep Learning for Multi-Scale Fracture-Cause Classification in Zirconia-Toughened Alumina",
@@ -343,6 +491,21 @@
       "tags": [
         "SAE",
         "safety",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-00092v1",
+      "title": "Aligning Cellular Sheaves with Classifier Attention for Interpretable Weakly-Supervised Pathology Localization",
+      "authors": "Devansh Lalwani, Swapnil Bhat, Maulik Shah",
+      "date": "2026-05-24",
+      "url": "https://arxiv.org/abs/2606.00092v1",
+      "abstract": "Weakly-supervised classification of whole-slide images with attention-based multiple instance learning (ABMIL) on top of foundation features now reaches near-saturation on Camelyon16 slide-level performance, but the corresponding attention maps are an imperfect localization signal: in clinical interpretation, a model that classifies correctly without firing on the actual lesion is hard to trust. We address this gap with cellular sheaves, which equip each vertex and edge of a graph with a finite-",
+      "tags": [
+        "features",
+        "probing",
         "vision"
       ],
       "source": "arXiv",
