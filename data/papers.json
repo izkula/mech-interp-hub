@@ -1,6 +1,71 @@
 {
-  "lastUpdated": "2026-06-03",
+  "lastUpdated": "2026-06-04",
   "papers": [
+    {
+      "id": "arxiv-2606-05134v1",
+      "title": "Activation-Based Active Learning for In-Context Learning: Challenges and Insights",
+      "authors": "Yaseen M. Osman, Geoff V. Merrett, Stuart E. Middleton",
+      "date": "2026-06-03",
+      "url": "https://arxiv.org/abs/2606.05134v1",
+      "abstract": "Deep active learning has previously been explored for LLM in-context sample selection, but not with methods that utilise recent advances in understanding of transformer activations. In this paper, we test the hypothesis that model activations could provide a fine-grained signal to optimise the selection of in-context examples. We present the most comprehensive analysis to date of MLP activation-based deep active learning methods applied to in-context learning, including how different attention m",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-04717v1",
+      "title": "Selection-Aware Diagnostics for Chain-of-Thought Answer Hijacking",
+      "authors": "Jianwei Tai",
+      "date": "2026-06-03",
+      "url": "https://arxiv.org/abs/2606.04717v1",
+      "abstract": "We study a controlled numeric proxy for chain-of-thought (CoT) answer hijacking, motivated by attacks in which benign-looking reasoning steers a harmful final answer. CoT wrappers on GSM8K and MATH-500 flip final answers away from gold labels. Rather than treating activation patching as clean-trace restoration, we ask where hijacked trajectories are fragile and whether recovery depends on a same-problem clean source. Across Qwen2.5-7B and Llama3-8B on GSM8K few-shot, puzzle, and sycophant hijack",
+      "tags": [
+        "safety",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-03002v1",
+      "title": "How Quantization Changes Interpretable Features: A Sparse Autoencoder Analysis of Language Models",
+      "authors": "Evan Duan",
+      "date": "2026-06-02",
+      "url": "https://arxiv.org/abs/2606.03002v1",
+      "abstract": "Quantization is a standard path to deploying large language models, and a quantized model is typically judged acceptable when its perplexity or downstream accuracy stays close to the full-precision original. Whether the model still computes in the same way, or whether the interpretable features identified in the full-precision model survive weight rounding, is rarely tested, even as safety audits and steering interventions increasingly rely on those features. We ask whether sparse autoencoder (S",
+      "tags": [
+        "SAE",
+        "features",
+        "safety",
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-03780v1",
+      "title": "Expert-Aware Causal Tracing of Factual Recall in Sparse MoE Language Models",
+      "authors": "Yuetian Lu, Ali Modarressi, Yihong Liu, Hinrich Sch\u00fctze",
+      "date": "2026-06-02",
+      "url": "https://arxiv.org/abs/2606.03780v1",
+      "abstract": "Causal tracing of factual recall has been studied predominantly in dense transformer language models, where interventions localize information flow to layers or feed-forward modules. Sparse mixture-of-experts (MoE) language models introduce a sharper question: when a factual prediction is mediated by a routed MoE block, which routed expert contributions matter? We formulate expert-aware causal tracing for sparse MoE language models. Using CounterFact facts, we first corrupt the model's factual p",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-03085v1",
+      "title": "Multi-component Causal Tracing in Large Language Models",
+      "authors": "Zirui Yan, Dennis Wei, Dmitriy A. Katz, Prasanna Sattigeri, Ali Tajer",
+      "date": "2026-06-02",
+      "url": "https://arxiv.org/abs/2606.03085v1",
+      "abstract": "Causal tracing systematically intervenes on a large language model's (LLM's) internal representations to uncover and quantify the causal pathways linking specific inputs or computations to specific metrics of interest, quantifying the LLM's behavior. Building on previous single-component or single-layer studies, this paper presents a unified framework for causally tracing multiple components simultaneously. This framework systematically identifies the subsets of components (e.g., attention heads",
+      "tags": [
+        "attention"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2606-01914v1",
       "title": "Mechanistic Diagnostics of Spatial Lexical Bias in Multimodal Large Language Model Spatial Reasoning",
@@ -43,6 +108,35 @@
       "featured": false
     },
     {
+      "id": "arxiv-2606-02061v1",
+      "title": "Ablating Archetypes: The Stability of Archetypal SAEs is an Artifact of Initialization and Metric Design",
+      "authors": "Micha\u0142 Brzozowski, Neo Christopher Chung",
+      "date": "2026-06-01",
+      "url": "https://arxiv.org/abs/2606.02061v1",
+      "abstract": "Dictionary learning with sparse autoencoders (SAEs) produces overcomplete bases from neural network activations that are often interpretable and reduces polysemanticity. However, features from SAEs vary substantially across random seeds -- a problem known as instability. Archetypal SAEs (Fel et al., 2025) were proposed as a general dictionary-learning intervention for more reliable concept extraction, and report more stable dictionaries at the end of training. We demonstrate that the stability c",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-02385v1",
+      "title": "How Optimality Structures Sparse Dictionaries: A Theory for Understanding SAE Representations",
+      "authors": "William Dorrell",
+      "date": "2026-06-01",
+      "url": "https://arxiv.org/abs/2606.02385v1",
+      "abstract": "Sparse Autoencoders (SAEs) have found success parsing neural representations into interpretable concepts, providing a basis for understanding and control. However, what exactly SAEs extract, and, correspondingly, the scientific conclusions we can draw from them, are not obvious. Empirically, the proof is in the pudding: SAEs learn interpretable features. Theoretically, we lack a clear account of what properties a 'concept' must satisfy for an SAE to extract it. There has been extensive identifia",
+      "tags": [
+        "SAE",
+        "features",
+        "theory"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
       "id": "arxiv-2606-01479v1",
       "title": "Sparse Autoencoders for Interpretable Emotion Control in Text-to-Speech",
       "authors": "Hongfei Du, Jiacheng Shi, Sidi Lu, Gang Zhou, Ye Gao",
@@ -57,6 +151,33 @@
       "featured": false
     },
     {
+      "id": "arxiv-2606-01243v1",
+      "title": "Unlocking the Black Box of Latent Reasoning: An Interpretability-Guided Approach to Intervention",
+      "authors": "Shuochen Chang, Tong Bai, Xiaofeng Zhang, Qianli Ma, Qingyang Liu, et al.",
+      "date": "2026-05-31",
+      "url": "https://arxiv.org/abs/2606.01243v1",
+      "abstract": "Latent reasoning enables Large Language Models (LLMs) to perform multi-step inference within continuous hidden states, offering efficiency gains over explicit Chain-of-Thought (CoT). However, the opacity of these continuous thought vectors hinders their reliability and controllability. This paper bridges the gap between mechanistic interpretability and actionable control. We first present a systematic analysis using structural, causal, and geometric probes, revealing that latent vectors encode c",
+      "tags": [
+        "probing",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-01089v1",
+      "title": "A literature-grounded scientific reasoning framework for defect-engineered TiO$_{2}$ photocatalysts",
+      "authors": "F. J. Dominguez-Gutierrez, E. Wierzbicka",
+      "date": "2026-05-31",
+      "url": "https://arxiv.org/abs/2606.01089v1",
+      "abstract": "Defect-engineered TiO$_2$ photocatalysts are extensively investigated for photocatalytic hydrogen evolution; however, the highly heterogeneous nature of the literature, including inconsistent descriptors, diverse synthesis protocols, non-uniform activity metrics, and incomplete mechanistic reporting, limits the applicability of conventional machine-learning approaches based solely on statistical regression. Here, we present a literature-grounded large language model (LLM)-assisted scientific rea",
+      "tags": [
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
       "id": "arxiv-2606-00926v1",
       "title": "Task Structure Reverses Layerwise State Encoding in Sequence Models",
       "authors": "Yuhang Jiang",
@@ -64,6 +185,20 @@
       "url": "https://arxiv.org/abs/2606.00926v1",
       "abstract": "Mechanistic studies of sequence models often treat layerwise state encodings as architectural traits: recurrent models concentrate readable state, attention-based models distribute it. We find that the same architecture reverses this profile when the task changes. Across Transformers, Mamba, Mamba-2, LSTMs, and GRUs, Parity is concentrated late in Mamba and the recurrent baselines and built gradually by Transformer; on bounded-depth Dyck-k the pattern flips. The same flip appears in fine-tuned M",
       "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-00930v1",
+      "title": "Detection vs. Execution: Single-Bucket Probes Miss Half the Mamba-2 State Sink",
+      "authors": "Yuhang Jiang",
+      "date": "2026-05-30",
+      "url": "https://arxiv.org/abs/2606.00930v1",
+      "abstract": "Mechanistic interpretability often assumes that probes identifying a representational signature also identify the circuit executing the corresponding computation. We show that this assumption can fail systematically in Mamba-2. Studying the state sink (disproportionate Delta-gate activation on boundary tokens, analogous to the attention sink), we find that single-bucket probes recover only a small execution layer while missing a much larger detection layer with the same representational signatur",
+      "tags": [
+        "circuits",
+        "probing"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -150,6 +285,47 @@
       "featured": false
     },
     {
+      "id": "arxiv-2605-31295v1",
+      "title": "Latent Space Disentanglement via Activation Steering for Interpretable Attribute Control in Symbolic Music Generation",
+      "authors": "Ioannis Prokopiou, Pantelis Vikatos, Maximos Kaliakatsos-Papakostas, Theodoros Giannakopoulos, Themos Stafylakis",
+      "date": "2026-05-29",
+      "url": "https://arxiv.org/abs/2605.31295v1",
+      "abstract": "Transformer-based architectures have significantly advanced the generation of complex symbolic sequences, yet a significant gap remains in achieving fine-grained, interpretable control over discrete signal attributes. This paper investigates the mechanistic interpretability of the Multitrack Music Transformer (MMT) and proposes a framework for deterministic attribute modulation without retraining to bridge this gap via inference-time activation steering. Utilizing the Difference-in-Means (DiffMe",
+      "tags": [
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-00356v2",
+      "title": "How Far Do Auto-Interpretation Labels Generalize: A Controlled Study Across Languages, Scripts, and Rewordings",
+      "authors": "Sripad Karne",
+      "date": "2026-05-29",
+      "url": "https://arxiv.org/abs/2606.00356v2",
+      "abstract": "Sparse autoencoder (SAE) features are increasingly used to interpret language models, with auto-generated natural-language labels serving as the primary interface for understanding what each feature represents. We ask whether these labels generalize: does a feature labeled for a concept actually track that concept across languages and scripts? Using Serbian digraphia as a controlled testbed--the same language written in both Latin and Cyrillic via deterministic transliteration--we first find tha",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-31245v1",
+      "title": "Toward Identifiable Sparse Autoencoders",
+      "authors": "Walter Nelson, Theofanis Karaletsos, Francesco Locatello",
+      "date": "2026-05-29",
+      "url": "https://arxiv.org/abs/2605.31245v1",
+      "abstract": "Recently, sparse autoencoders (SAEs) have emerged as an attractive tool for interpreting and interacting with representations in practical neural networks. While it is common empirical folklore, we also show theoretically that SAEs are highly unstable: different training runs are likely to produce different concept dictionaries and sparse codes. We characterize the model properties that hinder the stability of real-world SAEs, and address each of these problems through minimal changes to the arc",
+      "tags": [
+        "SAE",
+        "theory"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
       "id": "arxiv-2605-29798v1",
       "title": "Low-Magnification SEM May Suffice: Interpretable Deep Learning for Multi-Scale Fracture-Cause Classification in Zirconia-Toughened Alumina",
       "authors": "Julian Schmid, Pawel Astankow, Tom Vater, Julius Beck, Robert Cichon, et al.",
@@ -229,6 +405,17 @@
         "SAE",
         "features"
       ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-30482v1",
+      "title": "Discovering a Zeta Map Algorithm on Dyck Paths via Mechanistic Interpretability",
+      "authors": "Xiaoyu Huang, Blake Jackson, Kyu-Hwan Lee",
+      "date": "2026-05-28",
+      "url": "https://arxiv.org/abs/2605.30482v1",
+      "abstract": "Machine learning is increasingly used in mathematical discovery, but in mathematics the desired output is often not a prediction itself, but an explicit construction that can be checked independently. We study this setting through the zeta map on Dyck paths, a classical bijection in the combinatorics of the q,t-Catalan numbers. We train a deliberately small one-layer, one-head encoder-decoder transformer on this map and analyze its learned computation using mechanistic interpretability tools, in",
+      "tags": [],
       "source": "arXiv",
       "featured": false
     },
