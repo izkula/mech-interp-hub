@@ -5,9 +5,58 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 04 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 05 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Subspace-Aware Sparse Autoencoders for Effective Mechanistic Interpretability</title>
+      <link>https://arxiv.org/abs/2606.06333v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Seyed Arshan Dalili, Mehrdad Mahdavi</p><p>Sparse Autoencoders (SAEs) are widely used for mechanistic interpretability in large language models, yet their formulation assigns each latent feature a single decoder direction, implicitly assuming features to be one-dimensional. We show that this assumption mismatches with the multi-dimensional structure of model features, provably inducing feature splitting through two distinct mechanisms. Geometrically, reconstructing a feature of intrinsic dimension $d_i \ge 2$ to error $\varepsilon$ with </p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.06333v1</guid>
+    </item>
+    <item>
+      <title>What&#x27;s in a Name? Morphological Shortcuts by LLMs in Pharmacology</title>
+      <link>https://arxiv.org/abs/2606.05616v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Kaijie Mo, Thomas Yang, Chantal Shaib, Qing Yao, William Rudman, et al.</p><p>The morphological form of a word can often give cues to its meaning, but purely relying on these mappings can lead to overgeneralization in high-stakes domains. In the medical domain, for instance, LLMs can confidently reason about fictitious drugs from their affixes alone (e.g., wugcillin) and generate plausible-looking clinical content. We present a behavioral and mechanistic study of LLM &quot;affix heuristics&quot; in pharmacology. Using fictitious drug names built from real affixes, we show that affi</p>]]></description>
+      <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.05616v1</guid>
+    </item>
+    <item>
+      <title>Towards the Readability of LLM-Generated Codes through Multitask Representation Engineering</title>
+      <link>https://arxiv.org/abs/2606.06214v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Huifan Gao, Liuhua He, Yinghui Pan, Shenbao Yu, Yifeng Zeng, et al.</p><p>Correctness and readability are key measures of code quality, respectively ensuring functional fidelity and ease of comprehension. While most existing research focuses on improving the correctness of large language models~(LLMs) generated codes, readability remains under-addressed. Enhancing readability through targeted control is challenging due to its subjective nature. In this article, we employ representation engineering~(RepE) as the targeted control method given its characteristics of low </p>]]></description>
+      <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.06214v1</guid>
+    </item>
+    <item>
+      <title>Unsupervised Pattern Analysis in Japanese Veterinary Toxicology: A Regulatory-Compliant Framework for Cross-Species Risk Assessment</title>
+      <link>https://arxiv.org/abs/2606.06207v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Yukiko Kawakami, Mohammad Shirazi, Ryo Shimizuwa, Saito Shinoda, Alireza Mortazavi, et al.</p><p>Veterinary pharmacovigilance systems are essential for monitoring adverse drug events (ADEs), yet existing approaches often fail to capture region-specific toxicity patterns shaped by local biological and regulatory contexts. In Japan, these challenges are amplified by species-specific metabolic differences and reporting practices defined by the Ministry of Agriculture, Forestry, and Fisheries (MAFF). Most prior work relies on prediction-oriented models, limiting mechanistic interpretability. Th</p><p><strong>Tags:</strong> biology</p>]]></description>
+      <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.06207v1</guid>
+    </item>
+    <item>
+      <title>UNIVID: Unified Vision-Language Model for Video Moderation</title>
+      <link>https://arxiv.org/abs/2606.05748v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Kejuan Yang, Yizhuo Zhang, Mingyuan Du, Yue Zhang, Dixin Zheng, et al.</p><p>Global-scale video moderation faces a dual challenge: the need for fine-grained multi-modal reasoning and the demand for interpretable outputs to support downstream enforcement. Traditional moderation systems often rely on fragmented black-box classifiers that are difficult to maintain and lack transparency. In this paper, we present UNIVID, a UNIfied VIsion-language model for video moDeration. Unlike standard classification models, UNIVID generates policy-aware captions that serve as an interpr</p><p><strong>Tags:</strong> probing, vision, reasoning</p>]]></description>
+      <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.05748v1</guid>
+    </item>
+    <item>
+      <title>The Tell-Tale Norm: $\ell_2$ Magnitude as a Signal for Reasoning Dynamics in Large Language Models</title>
+      <link>https://arxiv.org/abs/2606.06188v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Jinyang Zhang, Hongxin Ding, Yue Fang, Weibin Liao, Muyang Ye, et al.</p><p>Recent work has sought to understand Large Language Models (LLMs) reasoning, yet a principled, model-intrinsic signal that captures its layer-wise reasoning dynamics remains underexplored. We bridge this gap by demonstrating that the l2 norm of hidden states serves as an endogenous signal of the model&#x27;s reasoning intensity. Using Sparse Autoencoders (SAEs) as a diagnostic probe, we observe that LLMs&#x27; internal reasoning is marked by a sharp increase in reasoning feature activations concentrated i</p><p><strong>Tags:</strong> SAE, features, probing, reasoning</p>]]></description>
+      <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.06188v1</guid>
+    </item>
+    <item>
+      <title>Mechanistic Insights into Functional Sparsity in Multimodal LLMs via CoRe Heads</title>
+      <link>https://arxiv.org/abs/2606.05843v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Ruoxi Sun, Quantong Qiu, Juntao Li, Zecheng Tang, Yihang Lou, et al.</p><p>While Multimodal Large Language Models (MLLMs) demonstrate remarkable proficiency on complex vision-language tasks, the mechanisms by which they extract query-relevant visual features from complex, noisy contexts remain opaque. In this paper, we present an in-depth interpretability study that uncovers a profound structural property within MLLMs: functional sparsity in cross-modal retrieval. Leveraging a token-level metric termed Retrieval Attention Mass (RAM), we identify and characterize a high</p><p><strong>Tags:</strong> features, vision</p>]]></description>
+      <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.05843v1</guid>
+    </item>
     <item>
       <title>Activation-Based Active Learning for In-Context Learning: Challenges and Insights</title>
       <link>https://arxiv.org/abs/2606.05134v1</link>
@@ -21,6 +70,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Jianwei Tai</p><p>We study a controlled numeric proxy for chain-of-thought (CoT) answer hijacking, motivated by attacks in which benign-looking reasoning steers a harmful final answer. CoT wrappers on GSM8K and MATH-500 flip final answers away from gold labels. Rather than treating activation patching as clean-trace restoration, we ask where hijacked trajectories are fragile and whether recovery depends on a same-problem clean source. Across Qwen2.5-7B and Llama3-8B on GSM8K few-shot, puzzle, and sycophant hijack</p><p><strong>Tags:</strong> safety, reasoning</p>]]></description>
       <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2606.04717v1</guid>
+    </item>
+    <item>
+      <title>Localizing Prompt Ambiguity in Large Language Models with Probe-Targeted Attribution</title>
+      <link>https://arxiv.org/abs/2606.05486v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Govind Ramesh, Yao Dou, Wei Xu</p><p>Prompt ambiguity is a common source of failure in large language models, but is difficult to localize because it is a latent property of the prompt, while existing attribution methods are designed to explain observable outputs such as logits or generated tokens. We introduce PRIG, a gradient attribution method that uses a probe logit to attribute latent ambiguity to token positions. Specifically, PRIG trains a linear probe to distinguish clear prompts from ambiguous prompts and attributes the pr</p><p><strong>Tags:</strong> probing</p>]]></description>
+      <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.05486v1</guid>
     </item>
     <item>
       <title>How Quantization Changes Interpretable Features: A Sparse Autoencoder Analysis of Language Models</title>
@@ -161,62 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Ioannis Prokopiou, Pantelis Vikatos, Maximos Kaliakatsos-Papakostas, Theodoros Giannakopoulos, Themos Stafylakis</p><p>Transformer-based architectures have significantly advanced the generation of complex symbolic sequences, yet a significant gap remains in achieving fine-grained, interpretable control over discrete signal attributes. This paper investigates the mechanistic interpretability of the Multitrack Music Transformer (MMT) and proposes a framework for deterministic attribute modulation without retraining to bridge this gap via inference-time activation steering. Utilizing the Difference-in-Means (DiffMe</p><p><strong>Tags:</strong> steering</p>]]></description>
       <pubDate>Fri, 29 May 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2605.31295v1</guid>
-    </item>
-    <item>
-      <title>How Far Do Auto-Interpretation Labels Generalize: A Controlled Study Across Languages, Scripts, and Rewordings</title>
-      <link>https://arxiv.org/abs/2606.00356v2</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Sripad Karne</p><p>Sparse autoencoder (SAE) features are increasingly used to interpret language models, with auto-generated natural-language labels serving as the primary interface for understanding what each feature represents. We ask whether these labels generalize: does a feature labeled for a concept actually track that concept across languages and scripts? Using Serbian digraphia as a controlled testbed--the same language written in both Latin and Cyrillic via deterministic transliteration--we first find tha</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Fri, 29 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.00356v2</guid>
-    </item>
-    <item>
-      <title>Toward Identifiable Sparse Autoencoders</title>
-      <link>https://arxiv.org/abs/2605.31245v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Walter Nelson, Theofanis Karaletsos, Francesco Locatello</p><p>Recently, sparse autoencoders (SAEs) have emerged as an attractive tool for interpreting and interacting with representations in practical neural networks. While it is common empirical folklore, we also show theoretically that SAEs are highly unstable: different training runs are likely to produce different concept dictionaries and sparse codes. We characterize the model properties that hinder the stability of real-world SAEs, and address each of these problems through minimal changes to the arc</p><p><strong>Tags:</strong> SAE, theory</p>]]></description>
-      <pubDate>Fri, 29 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2605.31245v1</guid>
-    </item>
-    <item>
-      <title>Low-Magnification SEM May Suffice: Interpretable Deep Learning for Multi-Scale Fracture-Cause Classification in Zirconia-Toughened Alumina</title>
-      <link>https://arxiv.org/abs/2605.29798v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Julian Schmid, Pawel Astankow, Tom Vater, Julius Beck, Robert Cichon, et al.</p><p>Reliable identification of fracture origins in alumina matrix composite hip and knee implants is critical for quality assurance and patient safety, yet current fractographic workflows are time-consuming, partly subjective, and reliant on high-magnification scanning electron microscopy (SEM). We present an interpretable vision-transformer (ViT) workflow for automated classification of fracture causes in an alumina matrix composite (BIOLOX delta, CeramTec GmbH) widely used in total joint replaceme</p><p><strong>Tags:</strong> safety, vision</p>]]></description>
-      <pubDate>Thu, 28 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2605.29798v1</guid>
-    </item>
-    <item>
-      <title>Internal Representation, Not Clinical Knowledge: Where Apparent LLM Triage Failures Originate</title>
-      <link>https://arxiv.org/abs/2605.29889v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> David Fraile Navarro, Berardino Como, Jialei Sheng, Soundariya Ananthan, Shlomo Berkovsky</p><p>Patient-voiced clinical-triage benchmarks report high under-triage rates for consumer LLMs for constrained multiple-choice output, yet the same cases score differently with free-text. We ask whether output format changes the model&#x27;s \emph{clinical representation} or only the mapping from a preserved representation to an answer. Using sparse-autoencoder (SAE) features in Gemma 3 4B/12B IT and Qwen3-8B, we find the same medical features fire on the shared clinical narrative under both formats but </p><p><strong>Tags:</strong> features</p>]]></description>
-      <pubDate>Thu, 28 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2605.29889v1</guid>
-    </item>
-    <item>
-      <title>Dissecting the Black Box: Circuit-Level Analysis of LLM Vulnerability Detection</title>
-      <link>https://arxiv.org/abs/2605.29901v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Syafiq Al Atiiq, Chun Zhou, Christian Gehrmann</p><p>Large language models (LLMs) can detect software vulnerabilities, but how do they actually identify vulnerable code? We address this question using mechanistic interpretability; analyzing the internal computations of a neural network to understand its reasoning process.Using Circuit Tracer on Gemma-2-2b, we trace the computational pathways activated when the model classifies 472 C/C++ code samples as vulnerable or safe. Our analysis reveals a surprising finding: the model primarily relies on saf</p><p><strong>Tags:</strong> circuits, reasoning</p>]]></description>
-      <pubDate>Thu, 28 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2605.29901v1</guid>
-    </item>
-    <item>
-      <title>Relational Rank Geometry in Transformers: Detecting and Steering Hidden-State Relation Frames</title>
-      <link>https://arxiv.org/abs/2605.29634v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Mazen Kobrosly</p><p>Transformer hidden states are often interpreted through local or low-order objects: neurons, sparse features, attention heads, residual-stream directions, or activation patches. This paper studies a complementary object: the rank-indexed geometry of relations among token tuples. I use Plucker sign entropy to test whether r-argument relations leave arity-matched orientation signatures in hidden-state space. Across Llama-family 8B, 70B, and 405B checkpoints, true relation tuples show stronger orie</p><p><strong>Tags:</strong> features, attention, steering</p>]]></description>
-      <pubDate>Thu, 28 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2605.29634v1</guid>
-    </item>
-    <item>
-      <title>BioRefusalAudit: Auditing Biosecurity Refusal Depth Using General and Domain-Fine-Tuned Sparse Autoencoders</title>
-      <link>https://arxiv.org/abs/2605.30162v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Caleb DeLeeuw</p><p>Biosecurity evaluations of language models typically ask whether models produce hazardous output. This paper asks a complementary question: when a model refuses, is that refusal structurally sound, or does it disappear under modest changes to prompt framing, formatting, or output length? Across five architectures, no model cleanly discriminated benign from hazard. Gemma 2 2B-IT never genuinely refused across 75 prompts, hedging on every hazard-adjacent query. Gemma 4 E2B-IT refused 65/75 prompts</p><p><strong>Tags:</strong> SAE</p>]]></description>
-      <pubDate>Thu, 28 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2605.30162v1</guid>
-    </item>
-    <item>
-      <title>Latent Terms: Dense Retrievers Contain Trivially Extractable BM25-ready Zipfian Vocabularies</title>
-      <link>https://arxiv.org/abs/2605.29384v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Benjamin Clavié, Sean Lee, Aamir Shakir, Makoto P. Kato</p><p>We propose Latent Terms, a method revealing that models trained for dense retrieval, whether single- or multi-vector, learn representations that can trivially be decomposed into retrieval-ready sparse features. When trained on frozen retrievers, Sparse Autoencoders without any retrieval-specific adjustments extract a latent vocabulary with approximately Zipfian collection statistics, directly suitable for classical sparse retrieval scoring via BM25. This approach enables sparse retrieval while r</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Thu, 28 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2605.29384v1</guid>
     </item>
   </channel>
 </rss>
