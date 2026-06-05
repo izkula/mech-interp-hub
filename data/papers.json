@@ -1,6 +1,100 @@
 {
-  "lastUpdated": "2026-06-04",
+  "lastUpdated": "2026-06-05",
   "papers": [
+    {
+      "id": "arxiv-2606-06333v1",
+      "title": "Subspace-Aware Sparse Autoencoders for Effective Mechanistic Interpretability",
+      "authors": "Seyed Arshan Dalili, Mehrdad Mahdavi",
+      "date": "2026-06-04",
+      "url": "https://arxiv.org/abs/2606.06333v1",
+      "abstract": "Sparse Autoencoders (SAEs) are widely used for mechanistic interpretability in large language models, yet their formulation assigns each latent feature a single decoder direction, implicitly assuming features to be one-dimensional. We show that this assumption mismatches with the multi-dimensional structure of model features, provably inducing feature splitting through two distinct mechanisms. Geometrically, reconstructing a feature of intrinsic dimension $d_i \\ge 2$ to error $\\varepsilon$ with ",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-05616v1",
+      "title": "What's in a Name? Morphological Shortcuts by LLMs in Pharmacology",
+      "authors": "Kaijie Mo, Thomas Yang, Chantal Shaib, Qing Yao, William Rudman, et al.",
+      "date": "2026-06-04",
+      "url": "https://arxiv.org/abs/2606.05616v1",
+      "abstract": "The morphological form of a word can often give cues to its meaning, but purely relying on these mappings can lead to overgeneralization in high-stakes domains. In the medical domain, for instance, LLMs can confidently reason about fictitious drugs from their affixes alone (e.g., wugcillin) and generate plausible-looking clinical content. We present a behavioral and mechanistic study of LLM \"affix heuristics\" in pharmacology. Using fictitious drug names built from real affixes, we show that affi",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-06214v1",
+      "title": "Towards the Readability of LLM-Generated Codes through Multitask Representation Engineering",
+      "authors": "Huifan Gao, Liuhua He, Yinghui Pan, Shenbao Yu, Yifeng Zeng, et al.",
+      "date": "2026-06-04",
+      "url": "https://arxiv.org/abs/2606.06214v1",
+      "abstract": "Correctness and readability are key measures of code quality, respectively ensuring functional fidelity and ease of comprehension. While most existing research focuses on improving the correctness of large language models~(LLMs) generated codes, readability remains under-addressed. Enhancing readability through targeted control is challenging due to its subjective nature. In this article, we employ representation engineering~(RepE) as the targeted control method given its characteristics of low ",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-06207v1",
+      "title": "Unsupervised Pattern Analysis in Japanese Veterinary Toxicology: A Regulatory-Compliant Framework for Cross-Species Risk Assessment",
+      "authors": "Yukiko Kawakami, Mohammad Shirazi, Ryo Shimizuwa, Saito Shinoda, Alireza Mortazavi, et al.",
+      "date": "2026-06-04",
+      "url": "https://arxiv.org/abs/2606.06207v1",
+      "abstract": "Veterinary pharmacovigilance systems are essential for monitoring adverse drug events (ADEs), yet existing approaches often fail to capture region-specific toxicity patterns shaped by local biological and regulatory contexts. In Japan, these challenges are amplified by species-specific metabolic differences and reporting practices defined by the Ministry of Agriculture, Forestry, and Fisheries (MAFF). Most prior work relies on prediction-oriented models, limiting mechanistic interpretability. Th",
+      "tags": [
+        "biology"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-05748v1",
+      "title": "UNIVID: Unified Vision-Language Model for Video Moderation",
+      "authors": "Kejuan Yang, Yizhuo Zhang, Mingyuan Du, Yue Zhang, Dixin Zheng, et al.",
+      "date": "2026-06-04",
+      "url": "https://arxiv.org/abs/2606.05748v1",
+      "abstract": "Global-scale video moderation faces a dual challenge: the need for fine-grained multi-modal reasoning and the demand for interpretable outputs to support downstream enforcement. Traditional moderation systems often rely on fragmented black-box classifiers that are difficult to maintain and lack transparency. In this paper, we present UNIVID, a UNIfied VIsion-language model for video moDeration. Unlike standard classification models, UNIVID generates policy-aware captions that serve as an interpr",
+      "tags": [
+        "probing",
+        "vision",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-06188v1",
+      "title": "The Tell-Tale Norm: $\\ell_2$ Magnitude as a Signal for Reasoning Dynamics in Large Language Models",
+      "authors": "Jinyang Zhang, Hongxin Ding, Yue Fang, Weibin Liao, Muyang Ye, et al.",
+      "date": "2026-06-04",
+      "url": "https://arxiv.org/abs/2606.06188v1",
+      "abstract": "Recent work has sought to understand Large Language Models (LLMs) reasoning, yet a principled, model-intrinsic signal that captures its layer-wise reasoning dynamics remains underexplored. We bridge this gap by demonstrating that the l2 norm of hidden states serves as an endogenous signal of the model's reasoning intensity. Using Sparse Autoencoders (SAEs) as a diagnostic probe, we observe that LLMs' internal reasoning is marked by a sharp increase in reasoning feature activations concentrated i",
+      "tags": [
+        "SAE",
+        "features",
+        "probing",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-05843v1",
+      "title": "Mechanistic Insights into Functional Sparsity in Multimodal LLMs via CoRe Heads",
+      "authors": "Ruoxi Sun, Quantong Qiu, Juntao Li, Zecheng Tang, Yihang Lou, et al.",
+      "date": "2026-06-04",
+      "url": "https://arxiv.org/abs/2606.05843v1",
+      "abstract": "While Multimodal Large Language Models (MLLMs) demonstrate remarkable proficiency on complex vision-language tasks, the mechanisms by which they extract query-relevant visual features from complex, noisy contexts remain opaque. In this paper, we present an in-depth interpretability study that uncovers a profound structural property within MLLMs: functional sparsity in cross-modal retrieval. Leveraging a token-level metric termed Retrieval Attention Mass (RAM), we identify and characterize a high",
+      "tags": [
+        "features",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2606-05134v1",
       "title": "Activation-Based Active Learning for In-Context Learning: Challenges and Insights",
@@ -22,6 +116,19 @@
       "tags": [
         "safety",
         "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-05486v1",
+      "title": "Localizing Prompt Ambiguity in Large Language Models with Probe-Targeted Attribution",
+      "authors": "Govind Ramesh, Yao Dou, Wei Xu",
+      "date": "2026-06-03",
+      "url": "https://arxiv.org/abs/2606.05486v1",
+      "abstract": "Prompt ambiguity is a common source of failure in large language models, but is difficult to localize because it is a latent property of the prompt, while existing attribution methods are designed to explain observable outputs such as logits or generated tokens. We introduce PRIG, a gradient attribution method that uses a probe logit to attribute latent ambiguity to token positions. Specifically, PRIG trains a linear probe to distinguish clear prompts from ambiguous prompts and attributes the pr",
+      "tags": [
+        "probing"
       ],
       "source": "arXiv",
       "featured": false
@@ -1608,6 +1715,17 @@
         "SAE",
         "features"
       ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-05194v1",
+      "title": "Temporal Preference Concepts and their Functions in a Large Language Model",
+      "authors": "Ian Rios-Sialer, Shantanu Darveshi, Shuai Jiang, Avigya Paudel, Anastasiia Pronina, et al.",
+      "date": "2026-05-11",
+      "url": "https://arxiv.org/abs/2606.05194v1",
+      "abstract": "Large Language Models (LLMs) are increasingly being deployed to make decisions that require trading off near-term gains against long-term consequences, yet little is known about how they internally represent or resolve these tradeoffs. In this work, we causally localize an underlying subgraph for temporal preference in a distilled LLM (Qwen3-4B-Instruct-2507), identifying mid-to-upper-layer nodes through converging evidence from gradient-based attribution and activation patching. We find that th",
+      "tags": [],
       "source": "arXiv",
       "featured": false
     },
