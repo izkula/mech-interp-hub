@@ -1,6 +1,51 @@
 {
-  "lastUpdated": "2026-06-07",
+  "lastUpdated": "2026-06-08",
   "papers": [
+    {
+      "id": "arxiv-2606-07451v1",
+      "title": "TEVI: Text-Conditioned Editing of Visual Representations via Sparse Autoencoders for Improved Vision-Language Alignment",
+      "authors": "Sweta Mahajan, Sukrut Rao, Jiahao Xie, Alexander Koller, Bernt Schiele",
+      "date": "2026-06-05",
+      "url": "https://arxiv.org/abs/2606.07451v1",
+      "abstract": "Vision-language models such as CLIP are highly useful for diverse tasks due to their shared image-text embedding space. Despite this, the image and text embeddings are often poorly aligned, affecting downstream performance. Recent work has shown that this can be attributed to an information imbalance: images contain more information than their captions describe. In this work, we propose TEVI, a framework that uses captions as a signal for what to retain from image embeddings. Specifically, we us",
+      "tags": [
+        "SAE",
+        "safety",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-06857v1",
+      "title": "Interpreting Brain Responses to Language with Sparse Features from Language Models",
+      "authors": "Michael A. Lepori, Kendrick Kay, Greta Tuckute",
+      "date": "2026-06-05",
+      "url": "https://arxiv.org/abs/2606.06857v1",
+      "abstract": "A central goal of cognitive neuroscience is to characterize the features that are represented by human language cortex. Artificial language models (LMs) have emerged as a powerful tool to address this challenge, but studies relating biological and artificial representations are often criticized as relating one black box to another. The present work introduces Augmented Sparse Encoding Models, an encoding framework that replaces dense LM hidden states with hierarchically-organized sparse autoenco",
+      "tags": [
+        "features",
+        "biology"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-07007v1",
+      "title": "A Geometric View for Understanding Concept Learning and Neuron Interpretation in Sparse Autoencoders",
+      "authors": "Chenhao Zhang, Chris Lin, Su-In Lee",
+      "date": "2026-06-05",
+      "url": "https://arxiv.org/abs/2606.07007v1",
+      "abstract": "We propose a unified mathematical framework for a geometric understanding of concept learning and neuron interpretation in sparse autoencoders (SAEs). While SAEs improve interpretability of neural networks by learning sparse feature representations, a principled definition of ''concept'' and ''learning'' remains unclear. We formalize concepts as sets of data points and cast concept learning as a set-alignment problem between human-defined and model-induced concepts. This formulation distinguishe",
+      "tags": [
+        "SAE",
+        "features",
+        "safety",
+        "theory"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2606-06333v1",
       "title": "Subspace-Aware Sparse Autoencoders for Effective Mechanistic Interpretability",
@@ -96,6 +141,23 @@
       "featured": false
     },
     {
+      "id": "arxiv-2606-06664v1",
+      "title": "Inside the Visual Mind: Neuroscience-Motivated Concept Circuits for Interpreting and Steering Vision Transformers",
+      "authors": "Tang Li, Yanlin Chen, Mengmeng Ma, Xi Peng",
+      "date": "2026-06-04",
+      "url": "https://arxiv.org/abs/2606.06664v1",
+      "abstract": "Despite high accuracy, Vision Transformer (ViT) predictions can be driven by spurious cues, raising the need to understand their inner workings before safe deployment. Sparse autoencoders (SAEs) provide a promising lens for decomposing model representations into human-interpretable concepts, yet adapting SAE-based interpretation to ViTs remains challenging due to limited control over concept coverage and subjective, non-scalable feature interpretation. To fill the gaps, motivated by neuroscience",
+      "tags": [
+        "SAE",
+        "circuits",
+        "features",
+        "steering",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
       "id": "arxiv-2606-05134v1",
       "title": "Activation-Based Active Learning for In-Context Learning: Challenges and Insights",
       "authors": "Yaseen M. Osman, Geoff V. Merrett, Stuart E. Middleton",
@@ -169,6 +231,20 @@
       "abstract": "Causal tracing systematically intervenes on a large language model's (LLM's) internal representations to uncover and quantify the causal pathways linking specific inputs or computations to specific metrics of interest, quantifying the LLM's behavior. Building on previous single-component or single-layer studies, this paper presents a unified framework for causally tracing multiple components simultaneously. This framework systematically identifies the subsets of components (e.g., attention heads",
       "tags": [
         "attention"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-03002v2",
+      "title": "Perplexity Can Miss SAE Feature Damage Under Quantization",
+      "authors": "Evan Duan",
+      "date": "2026-06-02",
+      "url": "https://arxiv.org/abs/2606.03002v2",
+      "abstract": "Quantization is a standard path to deploying large language models, and quantized models are typically judged acceptable when perplexity or downstream accuracy remains close to the full-precision original. But behavioral parity need not imply feature fidelity: the sparse-autoencoder (SAE) features used to interpret a full-precision model may change after weight rounding. We test this directly by using a frozen SAE as a fixed measurement basis, encoding full-precision and round-to-nearest (RTN) q",
+      "tags": [
+        "SAE",
+        "features"
       ],
       "source": "arXiv",
       "featured": false
