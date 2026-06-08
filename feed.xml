@@ -5,9 +5,30 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 07 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 08 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>TEVI: Text-Conditioned Editing of Visual Representations via Sparse Autoencoders for Improved Vision-Language Alignment</title>
+      <link>https://arxiv.org/abs/2606.07451v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Sweta Mahajan, Sukrut Rao, Jiahao Xie, Alexander Koller, Bernt Schiele</p><p>Vision-language models such as CLIP are highly useful for diverse tasks due to their shared image-text embedding space. Despite this, the image and text embeddings are often poorly aligned, affecting downstream performance. Recent work has shown that this can be attributed to an information imbalance: images contain more information than their captions describe. In this work, we propose TEVI, a framework that uses captions as a signal for what to retain from image embeddings. Specifically, we us</p><p><strong>Tags:</strong> SAE, safety, vision</p>]]></description>
+      <pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.07451v1</guid>
+    </item>
+    <item>
+      <title>Interpreting Brain Responses to Language with Sparse Features from Language Models</title>
+      <link>https://arxiv.org/abs/2606.06857v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Michael A. Lepori, Kendrick Kay, Greta Tuckute</p><p>A central goal of cognitive neuroscience is to characterize the features that are represented by human language cortex. Artificial language models (LMs) have emerged as a powerful tool to address this challenge, but studies relating biological and artificial representations are often criticized as relating one black box to another. The present work introduces Augmented Sparse Encoding Models, an encoding framework that replaces dense LM hidden states with hierarchically-organized sparse autoenco</p><p><strong>Tags:</strong> features, biology</p>]]></description>
+      <pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.06857v1</guid>
+    </item>
+    <item>
+      <title>A Geometric View for Understanding Concept Learning and Neuron Interpretation in Sparse Autoencoders</title>
+      <link>https://arxiv.org/abs/2606.07007v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Chenhao Zhang, Chris Lin, Su-In Lee</p><p>We propose a unified mathematical framework for a geometric understanding of concept learning and neuron interpretation in sparse autoencoders (SAEs). While SAEs improve interpretability of neural networks by learning sparse feature representations, a principled definition of &#x27;&#x27;concept&#x27;&#x27; and &#x27;&#x27;learning&#x27;&#x27; remains unclear. We formalize concepts as sets of data points and cast concept learning as a set-alignment problem between human-defined and model-induced concepts. This formulation distinguishe</p><p><strong>Tags:</strong> SAE, features, safety, theory</p>]]></description>
+      <pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.07007v1</guid>
+    </item>
     <item>
       <title>Subspace-Aware Sparse Autoencoders for Effective Mechanistic Interpretability</title>
       <link>https://arxiv.org/abs/2606.06333v1</link>
@@ -58,6 +79,13 @@
       <guid>https://arxiv.org/abs/2606.05843v1</guid>
     </item>
     <item>
+      <title>Inside the Visual Mind: Neuroscience-Motivated Concept Circuits for Interpreting and Steering Vision Transformers</title>
+      <link>https://arxiv.org/abs/2606.06664v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Tang Li, Yanlin Chen, Mengmeng Ma, Xi Peng</p><p>Despite high accuracy, Vision Transformer (ViT) predictions can be driven by spurious cues, raising the need to understand their inner workings before safe deployment. Sparse autoencoders (SAEs) provide a promising lens for decomposing model representations into human-interpretable concepts, yet adapting SAE-based interpretation to ViTs remains challenging due to limited control over concept coverage and subjective, non-scalable feature interpretation. To fill the gaps, motivated by neuroscience</p><p><strong>Tags:</strong> SAE, circuits, features, steering, vision</p>]]></description>
+      <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.06664v1</guid>
+    </item>
+    <item>
       <title>Activation-Based Active Learning for In-Context Learning: Challenges and Insights</title>
       <link>https://arxiv.org/abs/2606.05134v1</link>
       <description><![CDATA[<p><strong>Authors:</strong> Yaseen M. Osman, Geoff V. Merrett, Stuart E. Middleton</p><p>Deep active learning has previously been explored for LLM in-context sample selection, but not with methods that utilise recent advances in understanding of transformer activations. In this paper, we test the hypothesis that model activations could provide a fine-grained signal to optimise the selection of in-context examples. We present the most comprehensive analysis to date of MLP activation-based deep active learning methods applied to in-context learning, including how different attention m</p>]]></description>
@@ -98,6 +126,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Zirui Yan, Dennis Wei, Dmitriy A. Katz, Prasanna Sattigeri, Ali Tajer</p><p>Causal tracing systematically intervenes on a large language model&#x27;s (LLM&#x27;s) internal representations to uncover and quantify the causal pathways linking specific inputs or computations to specific metrics of interest, quantifying the LLM&#x27;s behavior. Building on previous single-component or single-layer studies, this paper presents a unified framework for causally tracing multiple components simultaneously. This framework systematically identifies the subsets of components (e.g., attention heads</p><p><strong>Tags:</strong> attention</p>]]></description>
       <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2606.03085v1</guid>
+    </item>
+    <item>
+      <title>Perplexity Can Miss SAE Feature Damage Under Quantization</title>
+      <link>https://arxiv.org/abs/2606.03002v2</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Evan Duan</p><p>Quantization is a standard path to deploying large language models, and quantized models are typically judged acceptable when perplexity or downstream accuracy remains close to the full-precision original. But behavioral parity need not imply feature fidelity: the sparse-autoencoder (SAE) features used to interpret a full-precision model may change after weight rounding. We test this directly by using a frozen SAE as a fixed measurement basis, encoding full-precision and round-to-nearest (RTN) q</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.03002v2</guid>
     </item>
     <item>
       <title>Mechanistic Diagnostics of Spatial Lexical Bias in Multimodal Large Language Model Spatial Reasoning</title>
@@ -182,41 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Doğukan Bağcı, Bernt Schiele, Simone Schaub-Meyer, Jonas Fischer, Robin Hesse</p><p>Deep neural networks (DNNs) are widely used, but interpreting what they actually learn remains difficult. A major obstacle is that individual neurons often encode multiple unrelated concepts, obscuring the decision process of the network. While prior work, such as sparse autoencoders, can separate these mixed signals into more meaningful, &quot;monosemantic&quot; features, this typically requires altering the model in ways that can degrade downstream performance. To overcome this, we introduce ELUDe (expl</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
       <pubDate>Fri, 29 May 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2605.31304v1</guid>
-    </item>
-    <item>
-      <title>The Latin Substrate: How Language Models Represent and Mediate Script Choice</title>
-      <link>https://arxiv.org/abs/2605.31363v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Daniil Gurgurov, Alan Saji, Katharina Trinley, Josef van Genabith, Simon Ostermann</p><p>Many languages are written in multiple scripts, requiring large language models (LLMs) to generate equivalent linguistic content in distinct orthographic forms. While prior work suggests that LLMs route information through shared latent representations, how they internally mediate script variation remains poorly understood.   We study this question by first examining per-layer output distributions with the logit lens, which reveals consistent latent romanization during transliteration, and then </p>]]></description>
-      <pubDate>Fri, 29 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2605.31363v1</guid>
-    </item>
-    <item>
-      <title>Shared Doubt: Zero-shot Cross-Lingual Confidence Estimation for Language Models</title>
-      <link>https://arxiv.org/abs/2605.31220v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Athina Kyriakou, Dennis Ulmer, Ivan Titov</p><p>Confidence estimation (CE), i.e. quantifying the reliability of a model&#x27;s prediction, has attracted great interest in the context of large language models (LLMs). However, most studies focus on English, ignoring the multilingual reality of LLM usage, while many CE methods degrade or require retraining across languages. To address this gap, we investigate whether multilingual LLMs encode shared, language-transferable confidence features. We use a lightweight linear probe that predicts answer corr</p><p><strong>Tags:</strong> features, probing</p>]]></description>
-      <pubDate>Fri, 29 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2605.31220v1</guid>
-    </item>
-    <item>
-      <title>Steering LLMs? Actually, Sparse Autoencoders can outperform simple baselines</title>
-      <link>https://arxiv.org/abs/2605.31183v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Mikkel Godsk Jørgensen, Lars Kai Hansen</p><p>Sparse Autoencoders (SAEs) have been seen as a promising avenue for exploring the internals of Large Language Models (LLMs) and for steering model output generation. When AxBench - a model steering benchmark - was introduced in Wu et al. (2025), SAEs did not seem to live up to their original hype due to poor steering performance relative to a set of simple baselines. This work serves as a partial rebuttal for Sparse Autoencoders and suggests that the results of Wu et al. (2025) did not do them f</p><p><strong>Tags:</strong> SAE, steering</p>]]></description>
-      <pubDate>Fri, 29 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2605.31183v1</guid>
-    </item>
-    <item>
-      <title>Positional versus Symbolic Attention Heads: Learning Dynamics, RoPE Geometry, and Length Generalization</title>
-      <link>https://arxiv.org/abs/2605.31558v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Felipe Urrutia, Juan José Alegría, Cinthia Sanchez Macias, Jorge Salas, Cristian B. Calderon, et al.</p><p>Transformer-based language models are widespread in today&#x27;s society. As such, understanding the mechanisms by which they solve structured tasks and predicting how they may behave in novel scenarios is of great importance for safe deployment. We study the learning dynamics of attention heads in a controlled setting by training a decoder-only Transformer (GPT-J) on two structurally equivalent multi-hop reasoning tasks: a number task requiring positional reasoning and a letter task requiring symbol</p><p><strong>Tags:</strong> attention, reasoning</p>]]></description>
-      <pubDate>Fri, 29 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2605.31558v1</guid>
-    </item>
-    <item>
-      <title>Latent Space Disentanglement via Activation Steering for Interpretable Attribute Control in Symbolic Music Generation</title>
-      <link>https://arxiv.org/abs/2605.31295v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Ioannis Prokopiou, Pantelis Vikatos, Maximos Kaliakatsos-Papakostas, Theodoros Giannakopoulos, Themos Stafylakis</p><p>Transformer-based architectures have significantly advanced the generation of complex symbolic sequences, yet a significant gap remains in achieving fine-grained, interpretable control over discrete signal attributes. This paper investigates the mechanistic interpretability of the Multitrack Music Transformer (MMT) and proposes a framework for deterministic attribute modulation without retraining to bridge this gap via inference-time activation steering. Utilizing the Difference-in-Means (DiffMe</p><p><strong>Tags:</strong> steering</p>]]></description>
-      <pubDate>Fri, 29 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2605.31295v1</guid>
     </item>
   </channel>
 </rss>
