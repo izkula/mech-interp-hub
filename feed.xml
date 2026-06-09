@@ -5,9 +5,114 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 08 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 09 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Trajectory Geometry of Transformer Representations Across Layers</title>
+      <link>https://arxiv.org/abs/2606.09287v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Vishal Pandey, Gopal Singh</p><p>Understanding how transformer representations evolve across layers, not merely what they encode, remains an open problem in mechanistic interpretability. We recast the transformer forward pass as a discrete population trajectory through a high-dimensional representation manifold, drawing on geometric tools from computational neuroscience. Rather than probing for pre-specified features, we characterize trajectory geometry using five metrics computed directly in the ambient space: trajectory lengt</p><p><strong>Tags:</strong> features, probing</p>]]></description>
+      <pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.09287v1</guid>
+    </item>
+    <item>
+      <title>The Neutral Mask: How RLHF Provides Shallow Alignment while Leaving Partisan Structure Intact in a Large Language Model</title>
+      <link>https://arxiv.org/abs/2606.09735v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Wendy K. Tam</p><p>The ambition behind alignment training is to make large language models safe and useful. The primary mechanism, reinforcement learning from human feedback (RLHF), shapes the behavior of deployed language models by aligning them with ``human values.&#x27;&#x27; Yet the process is opaque. What values are being encoded; whose values are they; and how does RLHF encode them? A growing body of evidence suggests that RLHF produces only functional compliance rather than deep alignment. We offer a mechanistic case</p><p><strong>Tags:</strong> safety</p>]]></description>
+      <pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.09735v1</guid>
+    </item>
+    <item>
+      <title>Closure-Validated Circuit Discovery in Attention Heads: Co-activation Proposes, Ablation Disposes</title>
+      <link>https://arxiv.org/abs/2606.09607v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Yongzhong Xu</p><p>Interpretability increasingly treats groups of components, not individual units, as the basic object, and proposes to find them by clustering co-activation statistics. We ask whether such a cheap signal actually identifies an attention-head circuit. Adapting a sparse-autoencoder clustering recipe to attention heads -- but validating by causal ablation rather than reconstruction -- we cluster heads and then run a closure test: ablate the discovered community and compare per-example damage to matc</p><p><strong>Tags:</strong> circuits, attention</p>]]></description>
+      <pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.09607v1</guid>
+    </item>
+    <item>
+      <title>Now You (Still) See Me: Detecting Evasive Steganographic Payloads in LLMs</title>
+      <link>https://arxiv.org/abs/2606.09411v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Charles Westphal, Timothy Douglas, Keivan Navaie, Tiago Pimentel, Fernando E. Rosas</p><p>Large language models can be fine-tuned to encode prompt-borne secrets into fluent, seemingly benign outputs. This creates a steganographic exfiltration risk that is difficult to detect with output-level steganalysis. Recent work proposes mechanistic detection using linear probes that recover the secret from internal activations. We show that this defense can be systematically evaded, but that detectability can be recovered through a targeted data-level intervention. First, we extend the detecti</p><p><strong>Tags:</strong> probing</p>]]></description>
+      <pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.09411v1</guid>
+    </item>
+    <item>
+      <title>SAEExplainer: Interpreting SAE Features with Activation-Guided Preference Optimization</title>
+      <link>https://arxiv.org/abs/2606.08496v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Jingyi He, Haiyan Zhao, Ruxue Shi, Yanguang Liu, Xin Wang, et al.</p><p>Although Sparse Autoencoders (SAEs) have mitigated the opacity of large language models (LLMs) by decomposing dense representations into sparse features, explaining these features still remains a central challenge. Current explanation methods, however, typically operate within an open-loop paradigm, failing to leverage mechanistic feedback for further refinement. In this paper, we propose SAEExplainer, a training framework utilizes activation scores as an objective reward signal to train the mod</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Sun, 07 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.08496v1</guid>
+    </item>
+    <item>
+      <title>How Many Counterfactuals Does It Take? Probing VLM Hallucinations Through Circuits and Causal Effects</title>
+      <link>https://arxiv.org/abs/2606.08777v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Abhivansh Gupta, Simardeep Singh, Advika Sinha, Shreyansh Modi, Akshat Tomar</p><p>Visual Language Models (VLMs) are known to produce hallucinated predictions that are not grounded in visual evidence, yet existing approaches lack a principled understanding of how robust such predictions are under counterfactual perturbations. In this work, we study the sample complexity of counterfactual robustness for hallucinated outputs in VLMs. We define a causal influence metric based on log-probability differences between factual, counterfactual, and activation-patched runs, and use it t</p><p><strong>Tags:</strong> circuits, probing, vision</p>]]></description>
+      <pubDate>Sun, 07 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.08777v1</guid>
+    </item>
+    <item>
+      <title>Beyond Linear Activation Steering: Invertible Latent Transformations for Controlling LLM Behavior</title>
+      <link>https://arxiv.org/abs/2606.08454v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Tuc Nguyen, Thai Le</p><p>Activation steering provides a lightweight inference-time mechanism for controlling large language models (LLMs) by modifying their internal activation vectors toward desired behaviors. Most existing methods compute a fixed steering direction in the original activation space, typically from pairs of contrastive examples using mean differences, linear probes, or arbitrary separability criteria. While effective to a certain extent, these methods treat behavioral control as a global, linear, additi</p><p><strong>Tags:</strong> probing, steering</p>]]></description>
+      <pubDate>Sun, 07 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.08454v1</guid>
+    </item>
+    <item>
+      <title>Sycophancy Towards Researchers Drives Performative Misalignment</title>
+      <link>https://arxiv.org/abs/2606.08629v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> David D. Baek, Xinnuo Li, Anay Gupta, Taslim Mahbub, Kejian Shi, et al.</p><p>The increasing situational awareness of language models raises safety concerns: models might be aware when they are evaluated, and adjust their behavior to evade monitoring and resist modification, e.g., pretending to be aligned only in evaluation. This alignment faking behavior is often interpreted as scheming: an intentional effort of strategic deception. In this paper, we examine an alternative interpretation, performative misalignment, which explains the change in behavior as a result of syc</p><p><strong>Tags:</strong> safety</p>]]></description>
+      <pubDate>Sun, 07 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.08629v1</guid>
+    </item>
+    <item>
+      <title>Explaining Black-Box Language Models: Learning to Optimize Linguistically-Structured Word Subsets</title>
+      <link>https://arxiv.org/abs/2606.08497v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Minyoung Hwang, Seokhyun Lee, Changhee Lee</p><p>As deep language models (DLMs) are increasingly deployed in high-stakes domains such as healthcare, understanding their decision rationale becomes paramount for ensuring trust, safety, and accountability. However, achieving this vital level of interpretability is particularly challenging when these DLMs operate as black-box systems (e.g., via APIs), where access to internal model states (e.g., parameters, gradients) is restricted. Despite numerous efforts, existing explanation methods often fail</p><p><strong>Tags:</strong> safety</p>]]></description>
+      <pubDate>Sun, 07 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.08497v1</guid>
+    </item>
+    <item>
+      <title>A retrieval conditioned rebinding circuit for dynamic entity tracking in large language models</title>
+      <link>https://arxiv.org/abs/2606.08644v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Soyoung Oh, Vera Demberg</p><p>To interpret context correctly and retrieve relevant information, large language models must bind entities to their attributes and update these bindings as state changes. We analyze how LLMs implement this binding process in a dynamic state tracking. Using causal interventions, we identify a retrieval conditioned rebinding mechanism, a compact attention head circuit that encodes swap relevant binding information and reinstates it at readout. Across Gemma and Llama models, this circuit supports r</p><p><strong>Tags:</strong> circuits, attention</p>]]></description>
+      <pubDate>Sun, 07 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.08644v1</guid>
+    </item>
+    <item>
+      <title>Ablation-Reversible Heads Don&#x27;t Transfer: A Stress Test for Mechanistic Role Claims in Transformers</title>
+      <link>https://arxiv.org/abs/2606.08292v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Philip Quirke</p><p>In mechanistic interpretability, attention heads are commonly elevated to role claims (e.g., &quot;this head represents addition&quot;) when they are necessary for a behavior, encode it linearly, and recover that behavior when restored after ablation. We show this evidence is insufficient: across three 7-8B instruction-tuned models and five computation families, heads passing all three checks routinely fail to transfer the computation when their activations are patched into a different prompt under matche</p><p><strong>Tags:</strong> attention</p>]]></description>
+      <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.08292v1</guid>
+    </item>
+    <item>
+      <title>Shared Semantics, Divergent Mechanisms: Unsupervised Feature Discovery by Aligning Semantics and Mechanisms</title>
+      <link>https://arxiv.org/abs/2606.08236v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Hyunjin Cho, Youngji Roh, Jaehyung Kim</p><p>As large language models are increasingly deployed in high-stakes settings, there is a growing need for tools that audit not only model outputs but also the internal computations that produce them. Circuit analysis is a central approach in mechanistic interpretability, but it is typically target-conditioned, explaining a single prompt paired with a chosen completion. This target-conditioned setup can obscure heterogeneity across a model&#x27;s continuation distribution. We introduce distribution-leve</p><p><strong>Tags:</strong> circuits, features</p>]]></description>
+      <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.08236v1</guid>
+    </item>
+    <item>
+      <title>Pre-Intervention Prediction of Sparse Autoencoder Steering Side Effects</title>
+      <link>https://arxiv.org/abs/2606.08365v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Evan Duan</p><p>Sparse autoencoder (SAE) features are increasingly used to steer language models, but feature steering is rarely clean: the same intervention can behave inconsistently across contexts and perturb unrelated features. We introduce a pre-intervention screening framework for forecasting SAE steering side effects from feature statistics computed before steering. We operationalize side effects along two axes of steering modularity, effect stability and collateral spread, and evaluate GPT-2-small, Pyth</p><p><strong>Tags:</strong> SAE, features, steering</p>]]></description>
+      <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.08365v1</guid>
+    </item>
+    <item>
+      <title>Vision-Language Asymmetry in Bistable Image Captioning</title>
+      <link>https://arxiv.org/abs/2606.08031v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Arohan Agate</p><p>Wittgenstein&#x27;s duck-rabbit poses a question for vision-language models: when a model captions an ambiguous image, where in the model is the commitment to one aspect made? We address this with a 3,320-generation behavioral baseline over 83 bistable stimuli that surfaces three regimes (default-dominant, force-dominant, force-balanced) under neutral vs forced-choice prompting, then probe the underlying representations using a TopK sparse autoencoder we train on the CLIP layer that LLaVA-1.6-7B actu</p><p><strong>Tags:</strong> SAE, probing, vision</p>]]></description>
+      <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.08031v1</guid>
+    </item>
+    <item>
+      <title>Shared Latent Structures Enable Unified Backdoor Detection and Mitigation in LLMs</title>
+      <link>https://arxiv.org/abs/2606.07963v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Omar Mahmoud, Aly M. Kassem, Thommen George Karimpanal, Buddhika Laknath Semage, Negar Rostamzadeh, et al.</p><p>Backdoor attacks in large language models (LLMs) are often treated as isolated trigger-response failures, motivating defenses tailored to specific triggers or behaviors. We show this view is incomplete. Across diverse backdoor behaviors, we identify a shared latent mechanism that can be detected, causally controlled, and suppressed. Using sparse autoencoders (SAEs) on residual-stream activations, we find a small set of latent features consistently activated across jailbreaking, refusal manipulat</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.07963v1</guid>
+    </item>
     <item>
       <title>TEVI: Text-Conditioned Editing of Visual Representations via Sparse Autoencoders for Improved Vision-Language Alignment</title>
       <link>https://arxiv.org/abs/2606.07451v1</link>
@@ -112,111 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Evan Duan</p><p>Quantization is a standard path to deploying large language models, and a quantized model is typically judged acceptable when its perplexity or downstream accuracy stays close to the full-precision original. Whether the model still computes in the same way, or whether the interpretable features identified in the full-precision model survive weight rounding, is rarely tested, even as safety audits and steering interventions increasingly rely on those features. We ask whether sparse autoencoder (S</p><p><strong>Tags:</strong> SAE, features, safety, steering</p>]]></description>
       <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2606.03002v1</guid>
-    </item>
-    <item>
-      <title>Expert-Aware Causal Tracing of Factual Recall in Sparse MoE Language Models</title>
-      <link>https://arxiv.org/abs/2606.03780v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Yuetian Lu, Ali Modarressi, Yihong Liu, Hinrich Schütze</p><p>Causal tracing of factual recall has been studied predominantly in dense transformer language models, where interventions localize information flow to layers or feed-forward modules. Sparse mixture-of-experts (MoE) language models introduce a sharper question: when a factual prediction is mediated by a routed MoE block, which routed expert contributions matter? We formulate expert-aware causal tracing for sparse MoE language models. Using CounterFact facts, we first corrupt the model&#x27;s factual p</p>]]></description>
-      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.03780v1</guid>
-    </item>
-    <item>
-      <title>Multi-component Causal Tracing in Large Language Models</title>
-      <link>https://arxiv.org/abs/2606.03085v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Zirui Yan, Dennis Wei, Dmitriy A. Katz, Prasanna Sattigeri, Ali Tajer</p><p>Causal tracing systematically intervenes on a large language model&#x27;s (LLM&#x27;s) internal representations to uncover and quantify the causal pathways linking specific inputs or computations to specific metrics of interest, quantifying the LLM&#x27;s behavior. Building on previous single-component or single-layer studies, this paper presents a unified framework for causally tracing multiple components simultaneously. This framework systematically identifies the subsets of components (e.g., attention heads</p><p><strong>Tags:</strong> attention</p>]]></description>
-      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.03085v1</guid>
-    </item>
-    <item>
-      <title>Perplexity Can Miss SAE Feature Damage Under Quantization</title>
-      <link>https://arxiv.org/abs/2606.03002v2</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Evan Duan</p><p>Quantization is a standard path to deploying large language models, and quantized models are typically judged acceptable when perplexity or downstream accuracy remains close to the full-precision original. But behavioral parity need not imply feature fidelity: the sparse-autoencoder (SAE) features used to interpret a full-precision model may change after weight rounding. We test this directly by using a frozen SAE as a fixed measurement basis, encoding full-precision and round-to-nearest (RTN) q</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.03002v2</guid>
-    </item>
-    <item>
-      <title>Mechanistic Diagnostics of Spatial Lexical Bias in Multimodal Large Language Model Spatial Reasoning</title>
-      <link>https://arxiv.org/abs/2606.01914v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Chuang Ma, Qianying Liu, Tomoyuki Obuchi, Fei Cheng, Wang Yang, et al.</p><p>Multimodal large language models (MLLMs) remain unreliable on spatial multiple-choice questions, and their failures are often attributed to poorly attended visual information. In this work, we identify a complementary failure mode, spatial lexical bias: adding a spatial relation word to the answer options can attract the model&#x27;s decision and make the newly added option likely to be selected. Using nine open-weight MLLMs, we show that this phenomenon is widely observed. In particular, models can </p><p><strong>Tags:</strong> vision, reasoning</p>]]></description>
-      <pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.01914v1</guid>
-    </item>
-    <item>
-      <title>QoEReasoner: An Agentic Reasoning Framework for Automated and Explainable QoE Diagnosis in RANs</title>
-      <link>https://arxiv.org/abs/2606.01925v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Qizhe Li, Haolong Chen, Shan Dai, Zhuo Li, Zhiwei Hu, et al.</p><p>Diagnosing Quality-of-Experience (QoE) degradations in operational Radio Access Networks (RANs) is a critical but notoriously complex task, traditionally requiring labor-intensive expert analysis over high-dimensional, cross-layer telemetry. While Large Language Models (LLMs) offer unprecedented reasoning capabilities, they are fundamentally unsuited for raw RANs troubleshooting: they fail at numeric time-series analysis, hallucinate protocol-violating causal links, and lack the stateful rigor r</p><p><strong>Tags:</strong> reasoning</p>]]></description>
-      <pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.01925v1</guid>
-    </item>
-    <item>
-      <title>When Do Attention Circuits Form? Developmental Trajectories of Capability and Attention-Sink Emergence Across Three 1B-ClassArchitectures</title>
-      <link>https://arxiv.org/abs/2606.02378v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Yongzhong Xu</p><p>We track the developmental trajectory of attention-head circuit formation across three 1B-class language models spanning two architecture families (dense transformer, mixture-of-experts) and two pretraining corpora (The Pile, DCLM): Pythia 1B, OLMo 1B-0724-hf, and OLMoE 1B-7B-0924. At each of 10 log-spaced revisions per model -- 30 mechanistic-interpretability runs in total -- we apply a participation-ratio (PR) spectral signal and an all-head capability-specific selectivity screen to track indu</p><p><strong>Tags:</strong> circuits, vision</p>]]></description>
-      <pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.02378v1</guid>
-    </item>
-    <item>
-      <title>Ablating Archetypes: The Stability of Archetypal SAEs is an Artifact of Initialization and Metric Design</title>
-      <link>https://arxiv.org/abs/2606.02061v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Michał Brzozowski, Neo Christopher Chung</p><p>Dictionary learning with sparse autoencoders (SAEs) produces overcomplete bases from neural network activations that are often interpretable and reduces polysemanticity. However, features from SAEs vary substantially across random seeds -- a problem known as instability. Archetypal SAEs (Fel et al., 2025) were proposed as a general dictionary-learning intervention for more reliable concept extraction, and report more stable dictionaries at the end of training. We demonstrate that the stability c</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.02061v1</guid>
-    </item>
-    <item>
-      <title>How Optimality Structures Sparse Dictionaries: A Theory for Understanding SAE Representations</title>
-      <link>https://arxiv.org/abs/2606.02385v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> William Dorrell</p><p>Sparse Autoencoders (SAEs) have found success parsing neural representations into interpretable concepts, providing a basis for understanding and control. However, what exactly SAEs extract, and, correspondingly, the scientific conclusions we can draw from them, are not obvious. Empirically, the proof is in the pudding: SAEs learn interpretable features. Theoretically, we lack a clear account of what properties a &#x27;concept&#x27; must satisfy for an SAE to extract it. There has been extensive identifia</p><p><strong>Tags:</strong> SAE, features, theory</p>]]></description>
-      <pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.02385v1</guid>
-    </item>
-    <item>
-      <title>Sparse Autoencoders for Interpretable Emotion Control in Text-to-Speech</title>
-      <link>https://arxiv.org/abs/2606.01479v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Hongfei Du, Jiacheng Shi, Sidi Lu, Gang Zhou, Ye Gao</p><p>Integrating large language models (LLMs) into text-to-speech (TTS) systems has improved speech expressiveness, yet interpretable emotional control remains challenging. Existing approaches primarily rely on external conditioning or global activation steering, offering limited insight into the internal representations underlying emotional control. In this work, we analyze emotion-related variation in the semantic hidden states of LLM-based TTS models using sparse autoencoders (SAEs) to identify sp</p><p><strong>Tags:</strong> SAE, steering</p>]]></description>
-      <pubDate>Sun, 31 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.01479v1</guid>
-    </item>
-    <item>
-      <title>Unlocking the Black Box of Latent Reasoning: An Interpretability-Guided Approach to Intervention</title>
-      <link>https://arxiv.org/abs/2606.01243v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Shuochen Chang, Tong Bai, Xiaofeng Zhang, Qianli Ma, Qingyang Liu, et al.</p><p>Latent reasoning enables Large Language Models (LLMs) to perform multi-step inference within continuous hidden states, offering efficiency gains over explicit Chain-of-Thought (CoT). However, the opacity of these continuous thought vectors hinders their reliability and controllability. This paper bridges the gap between mechanistic interpretability and actionable control. We first present a systematic analysis using structural, causal, and geometric probes, revealing that latent vectors encode c</p><p><strong>Tags:</strong> probing, reasoning</p>]]></description>
-      <pubDate>Sun, 31 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.01243v1</guid>
-    </item>
-    <item>
-      <title>A literature-grounded scientific reasoning framework for defect-engineered TiO$_{2}$ photocatalysts</title>
-      <link>https://arxiv.org/abs/2606.01089v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> F. J. Dominguez-Gutierrez, E. Wierzbicka</p><p>Defect-engineered TiO$_2$ photocatalysts are extensively investigated for photocatalytic hydrogen evolution; however, the highly heterogeneous nature of the literature, including inconsistent descriptors, diverse synthesis protocols, non-uniform activity metrics, and incomplete mechanistic reporting, limits the applicability of conventional machine-learning approaches based solely on statistical regression. Here, we present a literature-grounded large language model (LLM)-assisted scientific rea</p><p><strong>Tags:</strong> reasoning</p>]]></description>
-      <pubDate>Sun, 31 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.01089v1</guid>
-    </item>
-    <item>
-      <title>Task Structure Reverses Layerwise State Encoding in Sequence Models</title>
-      <link>https://arxiv.org/abs/2606.00926v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Yuhang Jiang</p><p>Mechanistic studies of sequence models often treat layerwise state encodings as architectural traits: recurrent models concentrate readable state, attention-based models distribute it. We find that the same architecture reverses this profile when the task changes. Across Transformers, Mamba, Mamba-2, LSTMs, and GRUs, Parity is concentrated late in Mamba and the recurrent baselines and built gradually by Transformer; on bounded-depth Dyck-k the pattern flips. The same flip appears in fine-tuned M</p>]]></description>
-      <pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.00926v1</guid>
-    </item>
-    <item>
-      <title>Detection vs. Execution: Single-Bucket Probes Miss Half the Mamba-2 State Sink</title>
-      <link>https://arxiv.org/abs/2606.00930v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Yuhang Jiang</p><p>Mechanistic interpretability often assumes that probes identifying a representational signature also identify the circuit executing the corresponding computation. We show that this assumption can fail systematically in Mamba-2. Studying the state sink (disproportionate Delta-gate activation on boundary tokens, analogous to the attention sink), we find that single-bucket probes recover only a small execution layer while missing a much larger detection layer with the same representational signatur</p><p><strong>Tags:</strong> circuits, probing</p>]]></description>
-      <pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.00930v1</guid>
-    </item>
-    <item>
-      <title>On the Relationship Between Activation Outliers and Feature Death in Sparse Autoencoders</title>
-      <link>https://arxiv.org/abs/2605.31518v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Elana Simon, Etowah Adams, James Zou</p><p>Sparse autoencoders (SAEs) decompose neural network activations into interpretable features, but many learned features never activate, a problem called feature death that wastes dictionary capacity and can reintroduce superposition. Death rates vary dramatically between models: near-zero on GPT-2, over 70% on AlphaFold3 with identical configurations. We find that dimension-level activation outliers (dimensions whose mean magnitude is large relative to per-token variation) cause this by shifting </p><p><strong>Tags:</strong> SAE, superposition, features</p>]]></description>
-      <pubDate>Fri, 29 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2605.31518v1</guid>
-    </item>
-    <item>
-      <title>Interpretability Without Tradeoffs: Disentangling Polysemanticity At Equal Predictive Performance</title>
-      <link>https://arxiv.org/abs/2605.31304v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Doğukan Bağcı, Bernt Schiele, Simone Schaub-Meyer, Jonas Fischer, Robin Hesse</p><p>Deep neural networks (DNNs) are widely used, but interpreting what they actually learn remains difficult. A major obstacle is that individual neurons often encode multiple unrelated concepts, obscuring the decision process of the network. While prior work, such as sparse autoencoders, can separate these mixed signals into more meaningful, &quot;monosemantic&quot; features, this typically requires altering the model in ways that can degrade downstream performance. To overcome this, we introduce ELUDe (expl</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Fri, 29 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2605.31304v1</guid>
     </item>
   </channel>
 </rss>
