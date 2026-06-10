@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-09",
+  "lastUpdated": "2026-06-10",
   "papers": [
     {
       "id": "arxiv-2606-09287v1",
@@ -51,6 +51,50 @@
       "abstract": "Large language models can be fine-tuned to encode prompt-borne secrets into fluent, seemingly benign outputs. This creates a steganographic exfiltration risk that is difficult to detect with output-level steganalysis. Recent work proposes mechanistic detection using linear probes that recover the secret from internal activations. We show that this defense can be systematically evaded, but that detectability can be recovered through a targeted data-level intervention. First, we extend the detecti",
       "tags": [
         "probing"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-10080v1",
+      "title": "VFUSE: Virulent Feature Understanding with Sparse autoEncoders",
+      "authors": "Michael Yu, Matthew L. Olson",
+      "date": "2026-06-08",
+      "url": "https://arxiv.org/abs/2606.10080v1",
+      "abstract": "Generative models have shown remarkable progress in a variety of domains such as protein design, but such power enables the opaque generation of hazardous proteins. In this work, we introduce VFUSE (Virulent Feature Understanding with Sparse autoEncoders), a mechanistic interpretability approach that trains SAEs on diffusion-transformer activations to audit protein models for hazard-aware features. We apply VFUSE to RoseTTAFold3 and RFDiffusion3, popular open-weight models for protein folding an",
+      "tags": [
+        "SAE",
+        "features",
+        "biology"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-09940v1",
+      "title": "Interactions Between Crosscoder Features: A Compact Proofs Perspective",
+      "authors": "Dmitry Manning-Coe, Thomas Read, Anna Soligo, Oliver Clive-Griffin, Chun-Hei Yip, et al.",
+      "date": "2026-06-08",
+      "url": "https://arxiv.org/abs/2606.09940v1",
+      "abstract": "Dictionary learning methods like Sparse Autoencoders (SAEs) and crosscoders attempt to explain a model by decomposing its activations into independent features. Interactions between features hence induce errors in the reconstruction. We formalize this intuition via compact proofs and make five contributions. First, we show how, \\textit{in principle}, a compact proof of model performance can be constructed using a crosscoder. Second, we show that an error term arising in this proof can naturally ",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-10029v1",
+      "title": "Interpreting and Steering a Text-to-Speech Language Model with Sparse Autoencoders",
+      "authors": "Nikita Koriagin, Georgii Aparin, Nikita Balagansky, Daniil Gavrilov",
+      "date": "2026-06-08",
+      "url": "https://arxiv.org/abs/2606.10029v1",
+      "abstract": "Language models increasingly serve as the backbone of text-to-speech (TTS) systems, yet we understand little about the representations they build when text and generated speech tokens share a single residual stream. We train BatchTopK sparse autoencoders on the LM backbone of CosyVoice3 and introduce a modality-aware auto-interp pipeline that labels each feature from where it fires-text-prefix context, 1-second speech clips, or both. The recovered features are interpretable, spanning phonemes, l",
+      "tags": [
+        "SAE",
+        "features",
+        "steering"
       ],
       "source": "arXiv",
       "featured": false
@@ -135,6 +179,17 @@
         "circuits",
         "attention"
       ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-09936v1",
+      "title": "One Lens, Many Worlds : A Capability-Typed Interface for World-Model Interpretability",
+      "authors": "Bhavith Chandra Challagundla, Sanskar Pandey, Param Thakkar, Rishikesh Mallagundla, Yugandhar Reddy Gogireddy, et al.",
+      "date": "2026-06-07",
+      "url": "https://arxiv.org/abs/2606.09936v1",
+      "abstract": "World models are now built on substantially different computational substrates. Latent recurrent state-space models such as PlaNet and the Dreamer family compress observations into recurrent states; token-based models such as IRIS quantize observations into a learned codebook and predict autoregressively with a transformer; and joint-embedding predictive architectures such as I-JEPA predict in a learned latent space with no pixel decoder. The interpretability methods applied to these models, inc",
+      "tags": [],
       "source": "arXiv",
       "featured": false
     },
@@ -250,6 +305,19 @@
         "features",
         "safety",
         "theory"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-09899v1",
+      "title": "When Attribution Patching Lies: Diagnosis and a Second-Order Correction",
+      "authors": "Luyang Zhang, Jialu Wang",
+      "date": "2026-06-05",
+      "url": "https://arxiv.org/abs/2606.09899v1",
+      "abstract": "A central goal of mechanistic interpretability is to identify which internal components causally drive a language model's behavior. Because these importance estimates serve as the evidence for identifying circuits, systematic errors can lead to the misidentification of the underlying mechanisms. While activation patching provides a gold-standard causal metric, its computational cost is prohibitive at scale. Practitioners instead rely on attribution patching, a gradient-based, first-order approxi",
+      "tags": [
+        "circuits"
       ],
       "source": "arXiv",
       "featured": false
@@ -2215,6 +2283,21 @@
       "abstract": "Load forecasting plays a pivotal role in the safe and stable operation of power systems. Conventional deep learning methods often struggle to adapt to few-shot scenarios frequently encountered in industrial applications. Existing multi-modal approaches typically overlook domain-specific cross-modal semantic alignment and lack sufficient mechanism interpretability. To address these challenges, this study proposes PrismNet, an interpretable multi-modal framework for power load forecasting. First, ",
       "tags": [
         "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-09850v1",
+      "title": "Mechanistic Analysis of Alignment Algorithms in Language Models",
+      "authors": "Aarush Sinha, Ishan Garg, Veeraraju Elluru, Arth Singh, Kushal Garg",
+      "date": "2026-05-09",
+      "url": "https://arxiv.org/abs/2606.09850v1",
+      "abstract": "Post-training alignment algorithms are predominantly evaluated as black boxes, obscuring how they reshape language models' internal computations. We present a systematic mechanistic analysis of six preference-optimization methods: PPO, DPO, SimPO, ORPO, GRPO, and KTO across three open-weight model families. By integrating layer-wise linear probing, Sparse Autoencoders, and crosscoders, we localize preference representations and quantify alignment-induced geometric transformations in latent space",
+      "tags": [
+        "SAE",
+        "safety",
+        "probing"
       ],
       "source": "arXiv",
       "featured": false
