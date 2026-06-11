@@ -1,6 +1,48 @@
 {
-  "lastUpdated": "2026-06-10",
+  "lastUpdated": "2026-06-11",
   "papers": [
+    {
+      "id": "arxiv-2606-12209v1",
+      "title": "Interpretable enzyme function prediction via sparse autoencoder features of ESMC across the microbial protein universe",
+      "authors": "Yue Hu, Wanyu Cheng, Junqing Wang, Yingchao Liu",
+      "date": "2026-06-10",
+      "url": "https://arxiv.org/abs/2606.12209v1",
+      "abstract": "Microbial genomes and metagenomes contain millions of proteins whose enzymatic functions remain unknown, the enzyme dark matter. While deep learning has improved protein function prediction, most methods are black boxes relying on sequence or structural similarity, limiting discovery of novel catalytic activities. The ESMC-6B protein language model and its sparse autoencoder with a 16,384-dimensional codebook of interpretable biological concepts, each annotated by GPT-5, creates a new opportunit",
+      "tags": [
+        "SAE",
+        "features",
+        "biology"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-12138v1",
+      "title": "Unstable Features, Reproducible Subspaces: Understanding Seed Dependence in Sparse Autoencoders",
+      "authors": "Gleb Gerasimov, Timofei Rusalev, Nikita Balagansky, Daniil Laptev, Vadim Kurochkin, et al.",
+      "date": "2026-06-10",
+      "url": "https://arxiv.org/abs/2606.12138v1",
+      "abstract": "Sparse autoencoders (SAEs) are widely used to interpret neural network representations, but their utility depends on whether the learned features are reproducible across training runs. We study this question through \\emph{feature stability}: for each SAE feature, we estimate the probability that a similar feature reappears in an independently trained SAE. This yields a scalable per-feature signal that separates stable from unstable features. In a large-scale study across seeds, models, layers, d",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-11722v1",
+      "title": "ICA Lens: Interpreting Language Models Without Training Another Dictionary",
+      "authors": "Sida Liu, Feijiang Han",
+      "date": "2026-06-10",
+      "url": "https://arxiv.org/abs/2606.11722v1",
+      "abstract": "Finding interpretable directions in language-model representations is critical for understanding and controlling model behavior. Sparse autoencoders (SAEs) have become the standard tool for this purpose, but using them as the default first lens often requires training, storing, and evaluating large overcomplete dictionaries. This bottleneck limits rapid exploration and raises a fundamental question: how much interpretable structure is already visible from activation geometry before training anot",
+      "tags": [
+        "SAE"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2606-09287v1",
       "title": "Trajectory Geometry of Transformer Representations Across Layers",
@@ -467,6 +509,20 @@
       "abstract": "Prompt ambiguity is a common source of failure in large language models, but is difficult to localize because it is a latent property of the prompt, while existing attribution methods are designed to explain observable outputs such as logits or generated tokens. We introduce PRIG, a gradient attribution method that uses a probe logit to attribute latent ambiguity to token positions. Specifically, PRIG trains a linear probe to distinguish clear prompts from ambiguous prompts and attributes the pr",
       "tags": [
         "probing"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-04717v2",
+      "title": "Auditing CoT Answer-Hijack Patches: Source-Control Certificates with Type-I Guarantees",
+      "authors": "Jianwei Tai",
+      "date": "2026-06-03",
+      "url": "https://arxiv.org/abs/2606.04717v2",
+      "abstract": "Chain-of-thought (CoT) answer-hijack templates can flip the final numeric answer of a 7B-8B language model on GSM8K or MATH-500 even when the visible reasoning trace looks fluent. Activation patching is the standard probe for locating where this hijack can be undone, and a successful clean-source patch is often read as evidence that the patched activation carries the recovered content. We show that this reading is unsound: clean-only localization profiles (peak, spread, thresholded band) underid",
+      "tags": [
+        "probing",
+        "reasoning"
       ],
       "source": "arXiv",
       "featured": false
