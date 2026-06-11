@@ -5,9 +5,30 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 10 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 11 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Interpretable enzyme function prediction via sparse autoencoder features of ESMC across the microbial protein universe</title>
+      <link>https://arxiv.org/abs/2606.12209v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Yue Hu, Wanyu Cheng, Junqing Wang, Yingchao Liu</p><p>Microbial genomes and metagenomes contain millions of proteins whose enzymatic functions remain unknown, the enzyme dark matter. While deep learning has improved protein function prediction, most methods are black boxes relying on sequence or structural similarity, limiting discovery of novel catalytic activities. The ESMC-6B protein language model and its sparse autoencoder with a 16,384-dimensional codebook of interpretable biological concepts, each annotated by GPT-5, creates a new opportunit</p><p><strong>Tags:</strong> SAE, features, biology</p>]]></description>
+      <pubDate>Wed, 10 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.12209v1</guid>
+    </item>
+    <item>
+      <title>Unstable Features, Reproducible Subspaces: Understanding Seed Dependence in Sparse Autoencoders</title>
+      <link>https://arxiv.org/abs/2606.12138v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Gleb Gerasimov, Timofei Rusalev, Nikita Balagansky, Daniil Laptev, Vadim Kurochkin, et al.</p><p>Sparse autoencoders (SAEs) are widely used to interpret neural network representations, but their utility depends on whether the learned features are reproducible across training runs. We study this question through \emph{feature stability}: for each SAE feature, we estimate the probability that a similar feature reappears in an independently trained SAE. This yields a scalable per-feature signal that separates stable from unstable features. In a large-scale study across seeds, models, layers, d</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Wed, 10 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.12138v1</guid>
+    </item>
+    <item>
+      <title>ICA Lens: Interpreting Language Models Without Training Another Dictionary</title>
+      <link>https://arxiv.org/abs/2606.11722v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Sida Liu, Feijiang Han</p><p>Finding interpretable directions in language-model representations is critical for understanding and controlling model behavior. Sparse autoencoders (SAEs) have become the standard tool for this purpose, but using them as the default first lens often requires training, storing, and evaluating large overcomplete dictionaries. This bottleneck limits rapid exploration and raises a fundamental question: how much interpretable structure is already visible from activation geometry before training anot</p><p><strong>Tags:</strong> SAE</p>]]></description>
+      <pubDate>Wed, 10 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.11722v1</guid>
+    </item>
     <item>
       <title>Trajectory Geometry of Transformer Representations Across Layers</title>
       <link>https://arxiv.org/abs/2606.09287v1</link>
@@ -196,27 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Yukiko Kawakami, Mohammad Shirazi, Ryo Shimizuwa, Saito Shinoda, Alireza Mortazavi, et al.</p><p>Veterinary pharmacovigilance systems are essential for monitoring adverse drug events (ADEs), yet existing approaches often fail to capture region-specific toxicity patterns shaped by local biological and regulatory contexts. In Japan, these challenges are amplified by species-specific metabolic differences and reporting practices defined by the Ministry of Agriculture, Forestry, and Fisheries (MAFF). Most prior work relies on prediction-oriented models, limiting mechanistic interpretability. Th</p><p><strong>Tags:</strong> biology</p>]]></description>
       <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2606.06207v1</guid>
-    </item>
-    <item>
-      <title>UNIVID: Unified Vision-Language Model for Video Moderation</title>
-      <link>https://arxiv.org/abs/2606.05748v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Kejuan Yang, Yizhuo Zhang, Mingyuan Du, Yue Zhang, Dixin Zheng, et al.</p><p>Global-scale video moderation faces a dual challenge: the need for fine-grained multi-modal reasoning and the demand for interpretable outputs to support downstream enforcement. Traditional moderation systems often rely on fragmented black-box classifiers that are difficult to maintain and lack transparency. In this paper, we present UNIVID, a UNIfied VIsion-language model for video moDeration. Unlike standard classification models, UNIVID generates policy-aware captions that serve as an interpr</p><p><strong>Tags:</strong> probing, vision, reasoning</p>]]></description>
-      <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.05748v1</guid>
-    </item>
-    <item>
-      <title>The Tell-Tale Norm: $\ell_2$ Magnitude as a Signal for Reasoning Dynamics in Large Language Models</title>
-      <link>https://arxiv.org/abs/2606.06188v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Jinyang Zhang, Hongxin Ding, Yue Fang, Weibin Liao, Muyang Ye, et al.</p><p>Recent work has sought to understand Large Language Models (LLMs) reasoning, yet a principled, model-intrinsic signal that captures its layer-wise reasoning dynamics remains underexplored. We bridge this gap by demonstrating that the l2 norm of hidden states serves as an endogenous signal of the model&#x27;s reasoning intensity. Using Sparse Autoencoders (SAEs) as a diagnostic probe, we observe that LLMs&#x27; internal reasoning is marked by a sharp increase in reasoning feature activations concentrated i</p><p><strong>Tags:</strong> SAE, features, probing, reasoning</p>]]></description>
-      <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.06188v1</guid>
-    </item>
-    <item>
-      <title>Mechanistic Insights into Functional Sparsity in Multimodal LLMs via CoRe Heads</title>
-      <link>https://arxiv.org/abs/2606.05843v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Ruoxi Sun, Quantong Qiu, Juntao Li, Zecheng Tang, Yihang Lou, et al.</p><p>While Multimodal Large Language Models (MLLMs) demonstrate remarkable proficiency on complex vision-language tasks, the mechanisms by which they extract query-relevant visual features from complex, noisy contexts remain opaque. In this paper, we present an in-depth interpretability study that uncovers a profound structural property within MLLMs: functional sparsity in cross-modal retrieval. Leveraging a token-level metric termed Retrieval Attention Mass (RAM), we identify and characterize a high</p><p><strong>Tags:</strong> features, vision</p>]]></description>
-      <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.05843v1</guid>
     </item>
   </channel>
 </rss>
