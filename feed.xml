@@ -5,9 +5,37 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 11 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 12 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Understanding helpfulness and harmless tension in reward models</title>
+      <link>https://arxiv.org/abs/2606.13209v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Eshaan Tanwar, Pepa Atanasova</p><p>Reward models are a key component of reinforcement learning from human feedback (RLHF), aligning language models toward both helpful and harmless behaviour. However, the internal mechanisms underlying these objectives and their conflicts remain poorly understood. We study alignment tension in reward models trained under helpfulness-only, harmlessness-only, and mixed-objective settings. We find that mixed-objective models often underperform single-objective models, indicating interference between</p><p><strong>Tags:</strong> safety</p>]]></description>
+      <pubDate>Thu, 11 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.13209v1</guid>
+    </item>
+    <item>
+      <title>When Does Routing Become Interpretable? Causal Probes on Block Attention Residuals</title>
+      <link>https://arxiv.org/abs/2606.13168v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Aydin Javadov</p><p>Block Attention Residuals (Block AttnRes) by replace fixed additive residuals with a learned softmax over earlier depth-source representations, surfacing cross-layer routing as an inspectable tensor in the forward pass. This is a tempting interpretability target: information flow normally inferred indirectly is now directly observable. We ask whether such exposure suffices for mechanistic interpretation. We probe two same-scale ($0.6$B) Block AttnRes checkpoints under identical routing-ablation </p><p><strong>Tags:</strong> probing</p>]]></description>
+      <pubDate>Thu, 11 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.13168v1</guid>
+    </item>
+    <item>
+      <title>Where Computation Lives Inside TabPFN: Causal Localisation of Attention Head Function</title>
+      <link>https://arxiv.org/abs/2606.12917v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Atharva Gupta, Dhruv Kumar, Murari Mandal, Saurabh Deshpande</p><p>We present the first causal mechanistic analysis of a tabular foundation model, investigating how TabPFN 2.5&#x27;s feature wise attention heads distribute computation across layers. Using activation patching, ablation, and attention entropy across two synthetic regression datasets, we find clear temporal specialisation: one head&#x27;s causal necessity dominates that of the others by 2 to 5 times at peak layer, with its dominant layer shifting across tasks of different complexity, while the remaining hea</p><p><strong>Tags:</strong> features, attention</p>]]></description>
+      <pubDate>Thu, 11 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.12917v1</guid>
+    </item>
+    <item>
+      <title>TimeROME-DLM: Temporal Causal Tracing and Low-Rank Inference-Time Knowledge Editing for Masked Diffusion Language Models</title>
+      <link>https://arxiv.org/abs/2606.12841v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Zhengtao Yao, Liuyang Song, Hongbo Zhang, Chenhao Wei, Haoyan Xu, et al.</p><p>Masked diffusion language models (MDLMs) such as LLaDA now rival autoregressive (AR) LLMs, but every existing knowledge-editing and unlearning method (ROME, MEMIT, etc.) targets AR transformers and either makes assumptions that fail under iterative denoising, or requires gradient updates whose backward-pass activations cost tens of GB of extra VRAM and which collapse MDLMs at standard learning rates. We introduce TimeROME-DLM, the first training-free, gradient-free, inference-time knowledge-edit</p><p><strong>Tags:</strong> editing</p>]]></description>
+      <pubDate>Thu, 11 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.12841v1</guid>
+    </item>
     <item>
       <title>Interpretable enzyme function prediction via sparse autoencoder features of ESMC across the microbial protein universe</title>
       <link>https://arxiv.org/abs/2606.12209v1</link>
@@ -28,6 +56,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Sida Liu, Feijiang Han</p><p>Finding interpretable directions in language-model representations is critical for understanding and controlling model behavior. Sparse autoencoders (SAEs) have become the standard tool for this purpose, but using them as the default first lens often requires training, storing, and evaluating large overcomplete dictionaries. This bottleneck limits rapid exploration and raises a fundamental question: how much interpretable structure is already visible from activation geometry before training anot</p><p><strong>Tags:</strong> SAE</p>]]></description>
       <pubDate>Wed, 10 Jun 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2606.11722v1</guid>
+    </item>
+    <item>
+      <title>Bag of Dims: Training-Free Mechanistic Interpretability via Dimension-Level Sign Patterns</title>
+      <link>https://arxiv.org/abs/2606.12629v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Varun Reddy Nalagatla</p><p>We show that the standard basis of transformer hidden states already provides a training-free, architecture-general feature basis. Individual dimensions encode semantic content via their signs and confidence via their magnitudes, functioning as independent binary registers. We validate this Bag of Dims framework across three model families (Qwen 3.5-4B, Gemma 3-4B, Mistral 7B) through four progressive experiments. Sign patterns alone carry predictive content: replacing all magnitudes with unity </p><p><strong>Tags:</strong> features</p>]]></description>
+      <pubDate>Wed, 10 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.12629v1</guid>
     </item>
     <item>
       <title>Trajectory Geometry of Transformer Representations Across Layers</title>
@@ -182,41 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Chenhao Zhang, Chris Lin, Su-In Lee</p><p>We propose a unified mathematical framework for a geometric understanding of concept learning and neuron interpretation in sparse autoencoders (SAEs). While SAEs improve interpretability of neural networks by learning sparse feature representations, a principled definition of &#x27;&#x27;concept&#x27;&#x27; and &#x27;&#x27;learning&#x27;&#x27; remains unclear. We formalize concepts as sets of data points and cast concept learning as a set-alignment problem between human-defined and model-induced concepts. This formulation distinguishe</p><p><strong>Tags:</strong> SAE, features, safety, theory</p>]]></description>
       <pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2606.07007v1</guid>
-    </item>
-    <item>
-      <title>When Attribution Patching Lies: Diagnosis and a Second-Order Correction</title>
-      <link>https://arxiv.org/abs/2606.09899v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Luyang Zhang, Jialu Wang</p><p>A central goal of mechanistic interpretability is to identify which internal components causally drive a language model&#x27;s behavior. Because these importance estimates serve as the evidence for identifying circuits, systematic errors can lead to the misidentification of the underlying mechanisms. While activation patching provides a gold-standard causal metric, its computational cost is prohibitive at scale. Practitioners instead rely on attribution patching, a gradient-based, first-order approxi</p><p><strong>Tags:</strong> circuits</p>]]></description>
-      <pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.09899v1</guid>
-    </item>
-    <item>
-      <title>Subspace-Aware Sparse Autoencoders for Effective Mechanistic Interpretability</title>
-      <link>https://arxiv.org/abs/2606.06333v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Seyed Arshan Dalili, Mehrdad Mahdavi</p><p>Sparse Autoencoders (SAEs) are widely used for mechanistic interpretability in large language models, yet their formulation assigns each latent feature a single decoder direction, implicitly assuming features to be one-dimensional. We show that this assumption mismatches with the multi-dimensional structure of model features, provably inducing feature splitting through two distinct mechanisms. Geometrically, reconstructing a feature of intrinsic dimension $d_i \ge 2$ to error $\varepsilon$ with </p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.06333v1</guid>
-    </item>
-    <item>
-      <title>What&#x27;s in a Name? Morphological Shortcuts by LLMs in Pharmacology</title>
-      <link>https://arxiv.org/abs/2606.05616v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Kaijie Mo, Thomas Yang, Chantal Shaib, Qing Yao, William Rudman, et al.</p><p>The morphological form of a word can often give cues to its meaning, but purely relying on these mappings can lead to overgeneralization in high-stakes domains. In the medical domain, for instance, LLMs can confidently reason about fictitious drugs from their affixes alone (e.g., wugcillin) and generate plausible-looking clinical content. We present a behavioral and mechanistic study of LLM &quot;affix heuristics&quot; in pharmacology. Using fictitious drug names built from real affixes, we show that affi</p>]]></description>
-      <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.05616v1</guid>
-    </item>
-    <item>
-      <title>Towards the Readability of LLM-Generated Codes through Multitask Representation Engineering</title>
-      <link>https://arxiv.org/abs/2606.06214v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Huifan Gao, Liuhua He, Yinghui Pan, Shenbao Yu, Yifeng Zeng, et al.</p><p>Correctness and readability are key measures of code quality, respectively ensuring functional fidelity and ease of comprehension. While most existing research focuses on improving the correctness of large language models~(LLMs) generated codes, readability remains under-addressed. Enhancing readability through targeted control is challenging due to its subjective nature. In this article, we employ representation engineering~(RepE) as the targeted control method given its characteristics of low </p>]]></description>
-      <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.06214v1</guid>
-    </item>
-    <item>
-      <title>Unsupervised Pattern Analysis in Japanese Veterinary Toxicology: A Regulatory-Compliant Framework for Cross-Species Risk Assessment</title>
-      <link>https://arxiv.org/abs/2606.06207v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Yukiko Kawakami, Mohammad Shirazi, Ryo Shimizuwa, Saito Shinoda, Alireza Mortazavi, et al.</p><p>Veterinary pharmacovigilance systems are essential for monitoring adverse drug events (ADEs), yet existing approaches often fail to capture region-specific toxicity patterns shaped by local biological and regulatory contexts. In Japan, these challenges are amplified by species-specific metabolic differences and reporting practices defined by the Ministry of Agriculture, Forestry, and Fisheries (MAFF). Most prior work relies on prediction-oriented models, limiting mechanistic interpretability. Th</p><p><strong>Tags:</strong> biology</p>]]></description>
-      <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.06207v1</guid>
     </item>
   </channel>
 </rss>
