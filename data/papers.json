@@ -1,6 +1,59 @@
 {
-  "lastUpdated": "2026-06-11",
+  "lastUpdated": "2026-06-12",
   "papers": [
+    {
+      "id": "arxiv-2606-13209v1",
+      "title": "Understanding helpfulness and harmless tension in reward models",
+      "authors": "Eshaan Tanwar, Pepa Atanasova",
+      "date": "2026-06-11",
+      "url": "https://arxiv.org/abs/2606.13209v1",
+      "abstract": "Reward models are a key component of reinforcement learning from human feedback (RLHF), aligning language models toward both helpful and harmless behaviour. However, the internal mechanisms underlying these objectives and their conflicts remain poorly understood. We study alignment tension in reward models trained under helpfulness-only, harmlessness-only, and mixed-objective settings. We find that mixed-objective models often underperform single-objective models, indicating interference between",
+      "tags": [
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-13168v1",
+      "title": "When Does Routing Become Interpretable? Causal Probes on Block Attention Residuals",
+      "authors": "Aydin Javadov",
+      "date": "2026-06-11",
+      "url": "https://arxiv.org/abs/2606.13168v1",
+      "abstract": "Block Attention Residuals (Block AttnRes) by replace fixed additive residuals with a learned softmax over earlier depth-source representations, surfacing cross-layer routing as an inspectable tensor in the forward pass. This is a tempting interpretability target: information flow normally inferred indirectly is now directly observable. We ask whether such exposure suffices for mechanistic interpretation. We probe two same-scale ($0.6$B) Block AttnRes checkpoints under identical routing-ablation ",
+      "tags": [
+        "probing"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-12917v1",
+      "title": "Where Computation Lives Inside TabPFN: Causal Localisation of Attention Head Function",
+      "authors": "Atharva Gupta, Dhruv Kumar, Murari Mandal, Saurabh Deshpande",
+      "date": "2026-06-11",
+      "url": "https://arxiv.org/abs/2606.12917v1",
+      "abstract": "We present the first causal mechanistic analysis of a tabular foundation model, investigating how TabPFN 2.5's feature wise attention heads distribute computation across layers. Using activation patching, ablation, and attention entropy across two synthetic regression datasets, we find clear temporal specialisation: one head's causal necessity dominates that of the others by 2 to 5 times at peak layer, with its dominant layer shifting across tasks of different complexity, while the remaining hea",
+      "tags": [
+        "features",
+        "attention"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-12841v1",
+      "title": "TimeROME-DLM: Temporal Causal Tracing and Low-Rank Inference-Time Knowledge Editing for Masked Diffusion Language Models",
+      "authors": "Zhengtao Yao, Liuyang Song, Hongbo Zhang, Chenhao Wei, Haoyan Xu, et al.",
+      "date": "2026-06-11",
+      "url": "https://arxiv.org/abs/2606.12841v1",
+      "abstract": "Masked diffusion language models (MDLMs) such as LLaDA now rival autoregressive (AR) LLMs, but every existing knowledge-editing and unlearning method (ROME, MEMIT, etc.) targets AR transformers and either makes assumptions that fail under iterative denoising, or requires gradient updates whose backward-pass activations cost tens of GB of extra VRAM and which collapse MDLMs at standard learning rates. We introduce TimeROME-DLM, the first training-free, gradient-free, inference-time knowledge-edit",
+      "tags": [
+        "editing"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2606-12209v1",
       "title": "Interpretable enzyme function prediction via sparse autoencoder features of ESMC across the microbial protein universe",
@@ -39,6 +92,19 @@
       "abstract": "Finding interpretable directions in language-model representations is critical for understanding and controlling model behavior. Sparse autoencoders (SAEs) have become the standard tool for this purpose, but using them as the default first lens often requires training, storing, and evaluating large overcomplete dictionaries. This bottleneck limits rapid exploration and raises a fundamental question: how much interpretable structure is already visible from activation geometry before training anot",
       "tags": [
         "SAE"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-12629v1",
+      "title": "Bag of Dims: Training-Free Mechanistic Interpretability via Dimension-Level Sign Patterns",
+      "authors": "Varun Reddy Nalagatla",
+      "date": "2026-06-10",
+      "url": "https://arxiv.org/abs/2606.12629v1",
+      "abstract": "We show that the standard basis of transformer hidden states already provides a training-free, architecture-general feature basis. Individual dimensions encode semantic content via their signs and confidence via their magnitudes, functioning as independent binary registers. We validate this Bag of Dims framework across three model families (Qwen 3.5-4B, Gemma 3-4B, Mistral 7B) through four progressive experiments. Sign patterns alone carry predictive content: replacing all magnitudes with unity ",
+      "tags": [
+        "features"
       ],
       "source": "arXiv",
       "featured": false
@@ -1223,6 +1289,20 @@
         "features",
         "probing",
         "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2605-25225v2",
+      "title": "Transformer Field Theory: A Response-Theoretic Approach to Mechanistic Interpretability",
+      "authors": "David N. Olivieri, Antonio F. P\u00e9rez Rodr\u00edguez",
+      "date": "2026-05-24",
+      "url": "https://arxiv.org/abs/2605.25225v2",
+      "abstract": "Mechanistic interpretability often studies Transformer behavior by intervening on internal activations through activation patching, causal tracing, path patching, and steering directions. This paper develops Transformer Field Theory: a response-theoretic framework in which the residual stream of a fixed forward pass is treated as a Transformer field over layer depth and token position. In this formulation, patching becomes a localized source insertion into the Transformer field, first-order sens",
+      "tags": [
+        "steering",
+        "theory"
       ],
       "source": "arXiv",
       "featured": false
