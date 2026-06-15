@@ -1,6 +1,59 @@
 {
-  "lastUpdated": "2026-06-14",
+  "lastUpdated": "2026-06-15",
   "papers": [
+    {
+      "id": "arxiv-2606-14673v1",
+      "title": "Compressed Computation is (probably) not Computation in Superposition",
+      "authors": "Jai Bhagat, Sara Molas-Medina, Giorgi Giglemiani, Stefan Heimersheim",
+      "date": "2026-06-12",
+      "url": "https://arxiv.org/abs/2606.14673v1",
+      "abstract": "We study whether the Compressed Computation (CC) toy model (Braun et al., 2025) is an instance of computation in superposition. The CC model appears to compute 100 ReLU functions with just 50 neurons, achieving a better loss than expected from only representing 50 ReLU functions. We show that the model mixes inputs via its noisy residual stream, corresponding to an unintended mixing matrix in the labels. Splitting the training objective into the ReLU term and the mixing term, we find that perfor",
+      "tags": [
+        "superposition"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-14388v1",
+      "title": "A Low-Rank Subspace Analysis of LLM Interventions",
+      "authors": "Angira Sharma, Christian Schroeder de Witt, Philip Torr, Anisoara Calinescu, Jialin Yu",
+      "date": "2026-06-12",
+      "url": "https://arxiv.org/abs/2606.14388v1",
+      "abstract": "Interventions designed to modify a particular behavior in LLMs, such as refusal or sycophancy, often produce unintended changes in other behaviors. This lack of targeted control makes it difficult to design and implement reliable safety controls. To understand these side-effects, we introduce a diagnostic framework for analyzing interacting behaviors in LLMs. We model behaviors as low-rank subspaces in activation space, and study how interventions influence across behaviors. Across multiple inst",
+      "tags": [
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-14040v1",
+      "title": "Decompose Sparsely Where You Should, Absorb Densely Where You Should No",
+      "authors": "Ruixuan Deng, Zehao Jin, Zekun Wang, Zihan Dong",
+      "date": "2026-06-12",
+      "url": "https://arxiv.org/abs/2606.14040v1",
+      "abstract": "Sparse autoencoders (SAEs) are typically trained to reconstruct the \\textbf{entire} residual stream through a sparse dictionary, implicitly assuming that all activation content is amenable to sparse, monosemantic decomposition. We question this assumption and hypothesize that activations contain a low-rank, dense component that is computationally important to the model yet inherently unsuitable for sparse representation, which serves as a major source of the persistent dense latents widely obser",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-14355v1",
+      "title": "Point Cloud Upsampling through Patch-based Frequency Superposition",
+      "authors": "Marina Ritthaler, Azhar Hussian, Vasileios Belagiannis, Andr\u00e9 Kaup",
+      "date": "2026-06-12",
+      "url": "https://arxiv.org/abs/2606.14355v1",
+      "abstract": "In recent years, neural networks have become the dominant models in most point cloud upsampling methods. Although these approaches are achieving good results, they do have drawbacks, such as a lack of interpretability and data dependency. Moreover, they have to be trained on a dataset that is similar to the test data in order to perform well. To avoid these disadvantages, we propose Point Cloud Upsampling through Patch-based Frequency Superposition (PUtPFS), an optimization-based approach that s",
+      "tags": [
+        "superposition"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2606-13209v1",
       "title": "Understanding helpfulness and harmless tension in reward models",
