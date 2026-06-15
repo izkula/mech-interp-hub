@@ -5,9 +5,37 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 14 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 15 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Compressed Computation is (probably) not Computation in Superposition</title>
+      <link>https://arxiv.org/abs/2606.14673v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Jai Bhagat, Sara Molas-Medina, Giorgi Giglemiani, Stefan Heimersheim</p><p>We study whether the Compressed Computation (CC) toy model (Braun et al., 2025) is an instance of computation in superposition. The CC model appears to compute 100 ReLU functions with just 50 neurons, achieving a better loss than expected from only representing 50 ReLU functions. We show that the model mixes inputs via its noisy residual stream, corresponding to an unintended mixing matrix in the labels. Splitting the training objective into the ReLU term and the mixing term, we find that perfor</p><p><strong>Tags:</strong> superposition</p>]]></description>
+      <pubDate>Fri, 12 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.14673v1</guid>
+    </item>
+    <item>
+      <title>A Low-Rank Subspace Analysis of LLM Interventions</title>
+      <link>https://arxiv.org/abs/2606.14388v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Angira Sharma, Christian Schroeder de Witt, Philip Torr, Anisoara Calinescu, Jialin Yu</p><p>Interventions designed to modify a particular behavior in LLMs, such as refusal or sycophancy, often produce unintended changes in other behaviors. This lack of targeted control makes it difficult to design and implement reliable safety controls. To understand these side-effects, we introduce a diagnostic framework for analyzing interacting behaviors in LLMs. We model behaviors as low-rank subspaces in activation space, and study how interventions influence across behaviors. Across multiple inst</p><p><strong>Tags:</strong> safety</p>]]></description>
+      <pubDate>Fri, 12 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.14388v1</guid>
+    </item>
+    <item>
+      <title>Decompose Sparsely Where You Should, Absorb Densely Where You Should No</title>
+      <link>https://arxiv.org/abs/2606.14040v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Ruixuan Deng, Zehao Jin, Zekun Wang, Zihan Dong</p><p>Sparse autoencoders (SAEs) are typically trained to reconstruct the \textbf{entire} residual stream through a sparse dictionary, implicitly assuming that all activation content is amenable to sparse, monosemantic decomposition. We question this assumption and hypothesize that activations contain a low-rank, dense component that is computationally important to the model yet inherently unsuitable for sparse representation, which serves as a major source of the persistent dense latents widely obser</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Fri, 12 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.14040v1</guid>
+    </item>
+    <item>
+      <title>Point Cloud Upsampling through Patch-based Frequency Superposition</title>
+      <link>https://arxiv.org/abs/2606.14355v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Marina Ritthaler, Azhar Hussian, Vasileios Belagiannis, André Kaup</p><p>In recent years, neural networks have become the dominant models in most point cloud upsampling methods. Although these approaches are achieving good results, they do have drawbacks, such as a lack of interpretability and data dependency. Moreover, they have to be trained on a dataset that is similar to the test data in order to perform well. To avoid these disadvantages, we propose Point Cloud Upsampling through Patch-based Frequency Superposition (PUtPFS), an optimization-based approach that s</p><p><strong>Tags:</strong> superposition</p>]]></description>
+      <pubDate>Fri, 12 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.14355v1</guid>
+    </item>
     <item>
       <title>Understanding helpfulness and harmless tension in reward models</title>
       <link>https://arxiv.org/abs/2606.13209v1</link>
@@ -189,34 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Arohan Agate</p><p>Wittgenstein&#x27;s duck-rabbit poses a question for vision-language models: when a model captions an ambiguous image, where in the model is the commitment to one aspect made? We address this with a 3,320-generation behavioral baseline over 83 bistable stimuli that surfaces three regimes (default-dominant, force-dominant, force-balanced) under neutral vs forced-choice prompting, then probe the underlying representations using a TopK sparse autoencoder we train on the CLIP layer that LLaVA-1.6-7B actu</p><p><strong>Tags:</strong> SAE, probing, vision</p>]]></description>
       <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2606.08031v1</guid>
-    </item>
-    <item>
-      <title>Shared Latent Structures Enable Unified Backdoor Detection and Mitigation in LLMs</title>
-      <link>https://arxiv.org/abs/2606.07963v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Omar Mahmoud, Aly M. Kassem, Thommen George Karimpanal, Buddhika Laknath Semage, Negar Rostamzadeh, et al.</p><p>Backdoor attacks in large language models (LLMs) are often treated as isolated trigger-response failures, motivating defenses tailored to specific triggers or behaviors. We show this view is incomplete. Across diverse backdoor behaviors, we identify a shared latent mechanism that can be detected, causally controlled, and suppressed. Using sparse autoencoders (SAEs) on residual-stream activations, we find a small set of latent features consistently activated across jailbreaking, refusal manipulat</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.07963v1</guid>
-    </item>
-    <item>
-      <title>TEVI: Text-Conditioned Editing of Visual Representations via Sparse Autoencoders for Improved Vision-Language Alignment</title>
-      <link>https://arxiv.org/abs/2606.07451v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Sweta Mahajan, Sukrut Rao, Jiahao Xie, Alexander Koller, Bernt Schiele</p><p>Vision-language models such as CLIP are highly useful for diverse tasks due to their shared image-text embedding space. Despite this, the image and text embeddings are often poorly aligned, affecting downstream performance. Recent work has shown that this can be attributed to an information imbalance: images contain more information than their captions describe. In this work, we propose TEVI, a framework that uses captions as a signal for what to retain from image embeddings. Specifically, we us</p><p><strong>Tags:</strong> SAE, safety, vision</p>]]></description>
-      <pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.07451v1</guid>
-    </item>
-    <item>
-      <title>Interpreting Brain Responses to Language with Sparse Features from Language Models</title>
-      <link>https://arxiv.org/abs/2606.06857v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Michael A. Lepori, Kendrick Kay, Greta Tuckute</p><p>A central goal of cognitive neuroscience is to characterize the features that are represented by human language cortex. Artificial language models (LMs) have emerged as a powerful tool to address this challenge, but studies relating biological and artificial representations are often criticized as relating one black box to another. The present work introduces Augmented Sparse Encoding Models, an encoding framework that replaces dense LM hidden states with hierarchically-organized sparse autoenco</p><p><strong>Tags:</strong> features, biology</p>]]></description>
-      <pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.06857v1</guid>
-    </item>
-    <item>
-      <title>A Geometric View for Understanding Concept Learning and Neuron Interpretation in Sparse Autoencoders</title>
-      <link>https://arxiv.org/abs/2606.07007v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Chenhao Zhang, Chris Lin, Su-In Lee</p><p>We propose a unified mathematical framework for a geometric understanding of concept learning and neuron interpretation in sparse autoencoders (SAEs). While SAEs improve interpretability of neural networks by learning sparse feature representations, a principled definition of &#x27;&#x27;concept&#x27;&#x27; and &#x27;&#x27;learning&#x27;&#x27; remains unclear. We formalize concepts as sets of data points and cast concept learning as a set-alignment problem between human-defined and model-induced concepts. This formulation distinguishe</p><p><strong>Tags:</strong> SAE, features, safety, theory</p>]]></description>
-      <pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.07007v1</guid>
     </item>
   </channel>
 </rss>
