@@ -5,9 +5,93 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 15 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 16 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Scalable Circuit Learning for Interpreting Large Language Models</title>
+      <link>https://arxiv.org/abs/2606.16939v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Naiyu Yin, Dennis Wei, Tian Gao, Amit Dhurandhar, Karthikeyan Natesan Ramamurthy, et al.</p><p>A prominent research direction in mechanistic interpretability is learning sparse circuits over LLM components to reveal how they jointly produce model behavior. However, raw neurons are polysemantic, making learned circuits hard to interpret. Sparse autoencoder (SAE) features alleviate this, but their high dimensionality makes existing intervention-based circuit learning methods computationally prohibitive. We propose CircuitLasso, a scalable circuit-learning approach based on sparse linear reg</p><p><strong>Tags:</strong> SAE, circuits, features</p>]]></description>
+      <pubDate>Mon, 15 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.16939v1</guid>
+    </item>
+    <item>
+      <title>Demystifying Variance in Circuit Discovery of LLMs</title>
+      <link>https://arxiv.org/abs/2606.16920v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Frank Zhengqing Wu, Francesco Tonin, Volkan Cevher</p><p>Circuit discovery is a key technique in mechanistic interpretability to pinpoint the model components that are crucial for performing a given task. Although the current state-of-the-art method (EAP-IG) performs well on the metric of (un)faithfulness, it suffers from substantial variability. This includes resampling variance, where the circuit changes when we probe with a new batch of data from the same distribution; rephrasing variance, where the discovered circuit shifts when the prompts are re</p><p><strong>Tags:</strong> circuits, probing</p>]]></description>
+      <pubDate>Mon, 15 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.16920v1</guid>
+    </item>
+    <item>
+      <title>Learning Hybrid Biophysical Neuron Models with Neural ODEs</title>
+      <link>https://arxiv.org/abs/2606.16693v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Jonas Beck, Michael Deistler, Dóra Viktória Molnár, Jakob H. Macke, Philipp Berens</p><p>Biophysical neuron models link measurements of neural activity to underlying cellular mechanisms. Yet, a central challenge is that the kinetics of many ion channels are poorly characterized, and practical simplifications -- omitting channels or reducing morphological detail -- introduce systematic gaps between model and biology. Bridging these gaps requires approaches that can flexibly discover unmodeled dynamics while preserving mechanistic interpretability. Here, we introduce a hybrid modeling</p><p><strong>Tags:</strong> biology</p>]]></description>
+      <pubDate>Mon, 15 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.16693v1</guid>
+    </item>
+    <item>
+      <title>Cascaded Sparse Autoencoders Learn Multi-Level Visual Concepts in Multimodal LLMs</title>
+      <link>https://arxiv.org/abs/2606.16193v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Yusong Zhao, Hengyi Wang, Tanuja Ganu, Akshay Nambi, Hao Wang</p><p>Multimodal Large Language Models (MLLMs) have demonstrated strong performance on vision-language tasks, yet their internal visual representations remain difficult to interpret. Sparse Autoencoders (SAEs) provide a scalable way to decompose dense model activations into sparse, interpretable features. However, existing SAE architectures primarily recover flat feature dictionaries and are less suited for explicit multi-level concept organization. In this paper, we introduce cascaded sparse autoenco</p><p><strong>Tags:</strong> SAE, features, vision</p>]]></description>
+      <pubDate>Mon, 15 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.16193v1</guid>
+    </item>
+    <item>
+      <title>When Confidence Lacks Concepts: Interpretable OOD Detection via Representation Perturbations</title>
+      <link>https://arxiv.org/abs/2606.16196v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Anju Chhetri, Pratik Shrestha, Ramesh Rana, Prashnna Gyawali, Binod Bhattarai</p><p>Deep neural networks have achieved remarkable performance across medical imaging tasks, yet their tendency to overgeneralize under distributional shifts poses a major obstacle to safe clinical deployment. Out-of-Distribution (OOD) detection methods aim to mitigate this risk, but most existing approaches rely on opaque internal signals with poorly understood semantic meaning, limiting trust in safety-critical settings. In this work, we propose an interpretable OOD detection framework that probes </p><p><strong>Tags:</strong> safety, probing</p>]]></description>
+      <pubDate>Mon, 15 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.16196v1</guid>
+    </item>
+    <item>
+      <title>Progressive Knowledge-Guided Large Language Model Framework for Bearing Fault Diagnosis</title>
+      <link>https://arxiv.org/abs/2606.16684v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Jinghan Wang, Gaoliang Peng, Yanjun Chen, Wei Zhang, Wentao Wu, et al.</p><p>Vibration-based bearing fault diagnosis requires resolving three interrelated measurement challenges, including the trade-off between global statistical feature efficiency and local transient signal fidelity, insufficient traceability of measurement features to underlying fault physics, and ineffective multi-source measurement information fusion across diagnostic scales. This paper presents a progressive physics-guided multi-scale vibration signal processing framework that addresses all three ch</p><p><strong>Tags:</strong> features</p>]]></description>
+      <pubDate>Mon, 15 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.16684v1</guid>
+    </item>
+    <item>
+      <title>Circuit Tracing in Autoregressive Protein Language Models</title>
+      <link>https://arxiv.org/abs/2606.16044v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Darin Tsui, William Deinzer, Daniel Saeedi, Amirali Aghazadeh</p><p>Protein language models (pLMs) can generate novel protein sequences with properties beyond those observed in nature, yet the mechanisms underlying protein generation remain poorly understood. Existing mechanistic interpretability methods based on sparse autoencoders and transcoders primarily focus on protein representation learning models and do not capture the computation required for autoregressive generation. Here, we introduce ProGenMech, a mechanistic interpretability framework for generati</p><p><strong>Tags:</strong> SAE, circuits, biology</p>]]></description>
+      <pubDate>Sun, 14 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.16044v1</guid>
+    </item>
+    <item>
+      <title>DifFRACT: Diffusion Feature Reconstruction and Attribution for Circuit Tracing</title>
+      <link>https://arxiv.org/abs/2606.15796v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Artyom Mazur, Nina Konovalova, Aibek Alanov</p><p>Mechanistic interpretability seeks to explain neural network behavior by decomposing model computations into interpretable features and circuits. While transcoder-based circuit tracing has recently enabled detailed causal analyses of large language models, multimodal diffusion transformers for image generation remain comparatively opaque. We still lack tools for understanding how semantic information propagates across denoising steps and how text and image representations interact within double-</p><p><strong>Tags:</strong> circuits, features, vision</p>]]></description>
+      <pubDate>Sun, 14 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.15796v1</guid>
+    </item>
+    <item>
+      <title>Frame-Conditioned Moral Computation in LLaMA 3.1-8B-Instruct: A Mechanistic Interpretability Audit of Ethical Reasoning</title>
+      <link>https://arxiv.org/abs/2606.15507v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Ali Dasdan, Manan Shah, W. Russell Neuman, Chad Coleman, Kund Meghani, et al.</p><p>Behavioral audits of Large Language Models on moral prompts measure what the model says, not the internal computation producing it. We use Transluce, an AI-driven mechanistic-interpretability platform, to examine LLaMA 3.1-8B-Instruct on 54 moral prompts in four batteries: 17 dilemmas, policy, and meta-ethical questions (B1); 6 role-playing scenarios (B3); and a controlled trolley contrast varying the switching mechanism with people fixed (B4, 15 prompts) or identity attributes with mechanism fi</p><p><strong>Tags:</strong> reasoning</p>]]></description>
+      <pubDate>Sat, 13 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.15507v1</guid>
+    </item>
+    <item>
+      <title>Size Doesn&#x27;t Matter: Cosine-Scored Sparse Autoencoders</title>
+      <link>https://arxiv.org/abs/2606.15054v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Silen Naihin, Lev Stambler</p><p>Sparse autoencoders (SAEs) detect features via inner product, so a feature&#x27;s activation scales with both its directional alignment and the input&#x27;s norm. Under BatchTopK, high-norm tokens inflate all pre-activations simultaneously, claiming dictionary slots regardless of content alignment. This matters because sublayer normalization has already discarded the magnitude the score measures, so the encoder detects a quantity the model does not read. We replace the score with a learned blend of cosine</p><p><strong>Tags:</strong> SAE, features, safety</p>]]></description>
+      <pubDate>Sat, 13 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.15054v1</guid>
+    </item>
+    <item>
+      <title>Transformers Learn the Mestre-Nagao Heuristic</title>
+      <link>https://arxiv.org/abs/2606.15036v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Pranav Venkata Konda</p><p>We train a two-layer transformer encoder to classify rational elliptic curves $E/\mathbb{Q}$ of conductor $\leq 10000$ as either rank 0 or rank 1 from the first 128 normalized Frobenius traces. We achieve &gt;99% accuracy on both classes, and accuracy is essentially unchanged on test curves with no isogeny or quadratic-twist relative in the training set. We then apply techniques from mechanistic interpretability such as attention analysis, linear probing, activation patching, logit attribution, and</p><p><strong>Tags:</strong> probing</p>]]></description>
+      <pubDate>Sat, 13 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.15036v1</guid>
+    </item>
+    <item>
+      <title>Analyzing Visual Aircraft Representations with Sparse Autoencoders</title>
+      <link>https://arxiv.org/abs/2606.15468v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Deepshik Sharma</p><p>Vision models can achieve strong performance on classification tasks, but the internal representations supporting their predictions are often difficult to interpret. This work investigates whether sparse autoencoders can decompose intermediate representations of a vision model into interpretable features. We train a ConvNeXt classifier on the FGVC-Aircraft dataset, extract spatial activations from its final feature stage, and train a sparse autoencoder on these activations. The learned sparse fe</p><p><strong>Tags:</strong> SAE, features, probing, vision</p>]]></description>
+      <pubDate>Sat, 13 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.15468v1</guid>
+    </item>
     <item>
       <title>Compressed Computation is (probably) not Computation in Superposition</title>
       <link>https://arxiv.org/abs/2606.14673v1</link>
@@ -35,6 +119,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Marina Ritthaler, Azhar Hussian, Vasileios Belagiannis, André Kaup</p><p>In recent years, neural networks have become the dominant models in most point cloud upsampling methods. Although these approaches are achieving good results, they do have drawbacks, such as a lack of interpretability and data dependency. Moreover, they have to be trained on a dataset that is similar to the test data in order to perform well. To avoid these disadvantages, we propose Point Cloud Upsampling through Patch-based Frequency Superposition (PUtPFS), an optimization-based approach that s</p><p><strong>Tags:</strong> superposition</p>]]></description>
       <pubDate>Fri, 12 Jun 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2606.14355v1</guid>
+    </item>
+    <item>
+      <title>Rational Sparse Autoencoder</title>
+      <link>https://arxiv.org/abs/2606.14990v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Naiyu Yin, Yue Yu</p><p>Sparse autoencoders (SAEs) are standard tools for mechanistic interpretability, but current SAE families are constrained by fixed encoder nonlinearities such as ReLU, JumpReLU, and TopK. This hard-codes a particular sparsity mechanism into the model and can distort the reconstruction-versus-sparsity trade-off. We introduce the Rational Sparse Autoencoder (RSAE), which replaces the fixed encoder activation with a trainable rational function. Rational activations are flexible enough to uniformly a</p><p><strong>Tags:</strong> SAE</p>]]></description>
+      <pubDate>Fri, 12 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.14990v1</guid>
     </item>
     <item>
       <title>Understanding helpfulness and harmless tension in reward models</title>
@@ -126,97 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Michael Yu, Matthew L. Olson</p><p>Generative models have shown remarkable progress in a variety of domains such as protein design, but such power enables the opaque generation of hazardous proteins. In this work, we introduce VFUSE (Virulent Feature Understanding with Sparse autoEncoders), a mechanistic interpretability approach that trains SAEs on diffusion-transformer activations to audit protein models for hazard-aware features. We apply VFUSE to RoseTTAFold3 and RFDiffusion3, popular open-weight models for protein folding an</p><p><strong>Tags:</strong> SAE, features, biology</p>]]></description>
       <pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2606.10080v1</guid>
-    </item>
-    <item>
-      <title>Interactions Between Crosscoder Features: A Compact Proofs Perspective</title>
-      <link>https://arxiv.org/abs/2606.09940v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Dmitry Manning-Coe, Thomas Read, Anna Soligo, Oliver Clive-Griffin, Chun-Hei Yip, et al.</p><p>Dictionary learning methods like Sparse Autoencoders (SAEs) and crosscoders attempt to explain a model by decomposing its activations into independent features. Interactions between features hence induce errors in the reconstruction. We formalize this intuition via compact proofs and make five contributions. First, we show how, \textit{in principle}, a compact proof of model performance can be constructed using a crosscoder. Second, we show that an error term arising in this proof can naturally </p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.09940v1</guid>
-    </item>
-    <item>
-      <title>Interpreting and Steering a Text-to-Speech Language Model with Sparse Autoencoders</title>
-      <link>https://arxiv.org/abs/2606.10029v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Nikita Koriagin, Georgii Aparin, Nikita Balagansky, Daniil Gavrilov</p><p>Language models increasingly serve as the backbone of text-to-speech (TTS) systems, yet we understand little about the representations they build when text and generated speech tokens share a single residual stream. We train BatchTopK sparse autoencoders on the LM backbone of CosyVoice3 and introduce a modality-aware auto-interp pipeline that labels each feature from where it fires-text-prefix context, 1-second speech clips, or both. The recovered features are interpretable, spanning phonemes, l</p><p><strong>Tags:</strong> SAE, features, steering</p>]]></description>
-      <pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.10029v1</guid>
-    </item>
-    <item>
-      <title>SAEExplainer: Interpreting SAE Features with Activation-Guided Preference Optimization</title>
-      <link>https://arxiv.org/abs/2606.08496v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Jingyi He, Haiyan Zhao, Ruxue Shi, Yanguang Liu, Xin Wang, et al.</p><p>Although Sparse Autoencoders (SAEs) have mitigated the opacity of large language models (LLMs) by decomposing dense representations into sparse features, explaining these features still remains a central challenge. Current explanation methods, however, typically operate within an open-loop paradigm, failing to leverage mechanistic feedback for further refinement. In this paper, we propose SAEExplainer, a training framework utilizes activation scores as an objective reward signal to train the mod</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Sun, 07 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.08496v1</guid>
-    </item>
-    <item>
-      <title>How Many Counterfactuals Does It Take? Probing VLM Hallucinations Through Circuits and Causal Effects</title>
-      <link>https://arxiv.org/abs/2606.08777v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Abhivansh Gupta, Simardeep Singh, Advika Sinha, Shreyansh Modi, Akshat Tomar</p><p>Visual Language Models (VLMs) are known to produce hallucinated predictions that are not grounded in visual evidence, yet existing approaches lack a principled understanding of how robust such predictions are under counterfactual perturbations. In this work, we study the sample complexity of counterfactual robustness for hallucinated outputs in VLMs. We define a causal influence metric based on log-probability differences between factual, counterfactual, and activation-patched runs, and use it t</p><p><strong>Tags:</strong> circuits, probing, vision</p>]]></description>
-      <pubDate>Sun, 07 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.08777v1</guid>
-    </item>
-    <item>
-      <title>Beyond Linear Activation Steering: Invertible Latent Transformations for Controlling LLM Behavior</title>
-      <link>https://arxiv.org/abs/2606.08454v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Tuc Nguyen, Thai Le</p><p>Activation steering provides a lightweight inference-time mechanism for controlling large language models (LLMs) by modifying their internal activation vectors toward desired behaviors. Most existing methods compute a fixed steering direction in the original activation space, typically from pairs of contrastive examples using mean differences, linear probes, or arbitrary separability criteria. While effective to a certain extent, these methods treat behavioral control as a global, linear, additi</p><p><strong>Tags:</strong> probing, steering</p>]]></description>
-      <pubDate>Sun, 07 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.08454v1</guid>
-    </item>
-    <item>
-      <title>Sycophancy Towards Researchers Drives Performative Misalignment</title>
-      <link>https://arxiv.org/abs/2606.08629v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> David D. Baek, Xinnuo Li, Anay Gupta, Taslim Mahbub, Kejian Shi, et al.</p><p>The increasing situational awareness of language models raises safety concerns: models might be aware when they are evaluated, and adjust their behavior to evade monitoring and resist modification, e.g., pretending to be aligned only in evaluation. This alignment faking behavior is often interpreted as scheming: an intentional effort of strategic deception. In this paper, we examine an alternative interpretation, performative misalignment, which explains the change in behavior as a result of syc</p><p><strong>Tags:</strong> safety</p>]]></description>
-      <pubDate>Sun, 07 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.08629v1</guid>
-    </item>
-    <item>
-      <title>Explaining Black-Box Language Models: Learning to Optimize Linguistically-Structured Word Subsets</title>
-      <link>https://arxiv.org/abs/2606.08497v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Minyoung Hwang, Seokhyun Lee, Changhee Lee</p><p>As deep language models (DLMs) are increasingly deployed in high-stakes domains such as healthcare, understanding their decision rationale becomes paramount for ensuring trust, safety, and accountability. However, achieving this vital level of interpretability is particularly challenging when these DLMs operate as black-box systems (e.g., via APIs), where access to internal model states (e.g., parameters, gradients) is restricted. Despite numerous efforts, existing explanation methods often fail</p><p><strong>Tags:</strong> safety</p>]]></description>
-      <pubDate>Sun, 07 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.08497v1</guid>
-    </item>
-    <item>
-      <title>A retrieval conditioned rebinding circuit for dynamic entity tracking in large language models</title>
-      <link>https://arxiv.org/abs/2606.08644v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Soyoung Oh, Vera Demberg</p><p>To interpret context correctly and retrieve relevant information, large language models must bind entities to their attributes and update these bindings as state changes. We analyze how LLMs implement this binding process in a dynamic state tracking. Using causal interventions, we identify a retrieval conditioned rebinding mechanism, a compact attention head circuit that encodes swap relevant binding information and reinstates it at readout. Across Gemma and Llama models, this circuit supports r</p><p><strong>Tags:</strong> circuits, attention</p>]]></description>
-      <pubDate>Sun, 07 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.08644v1</guid>
-    </item>
-    <item>
-      <title>One Lens, Many Worlds : A Capability-Typed Interface for World-Model Interpretability</title>
-      <link>https://arxiv.org/abs/2606.09936v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Bhavith Chandra Challagundla, Sanskar Pandey, Param Thakkar, Rishikesh Mallagundla, Yugandhar Reddy Gogireddy, et al.</p><p>World models are now built on substantially different computational substrates. Latent recurrent state-space models such as PlaNet and the Dreamer family compress observations into recurrent states; token-based models such as IRIS quantize observations into a learned codebook and predict autoregressively with a transformer; and joint-embedding predictive architectures such as I-JEPA predict in a learned latent space with no pixel decoder. The interpretability methods applied to these models, inc</p>]]></description>
-      <pubDate>Sun, 07 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.09936v1</guid>
-    </item>
-    <item>
-      <title>Ablation-Reversible Heads Don&#x27;t Transfer: A Stress Test for Mechanistic Role Claims in Transformers</title>
-      <link>https://arxiv.org/abs/2606.08292v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Philip Quirke</p><p>In mechanistic interpretability, attention heads are commonly elevated to role claims (e.g., &quot;this head represents addition&quot;) when they are necessary for a behavior, encode it linearly, and recover that behavior when restored after ablation. We show this evidence is insufficient: across three 7-8B instruction-tuned models and five computation families, heads passing all three checks routinely fail to transfer the computation when their activations are patched into a different prompt under matche</p><p><strong>Tags:</strong> attention</p>]]></description>
-      <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.08292v1</guid>
-    </item>
-    <item>
-      <title>Shared Semantics, Divergent Mechanisms: Unsupervised Feature Discovery by Aligning Semantics and Mechanisms</title>
-      <link>https://arxiv.org/abs/2606.08236v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Hyunjin Cho, Youngji Roh, Jaehyung Kim</p><p>As large language models are increasingly deployed in high-stakes settings, there is a growing need for tools that audit not only model outputs but also the internal computations that produce them. Circuit analysis is a central approach in mechanistic interpretability, but it is typically target-conditioned, explaining a single prompt paired with a chosen completion. This target-conditioned setup can obscure heterogeneity across a model&#x27;s continuation distribution. We introduce distribution-leve</p><p><strong>Tags:</strong> circuits, features</p>]]></description>
-      <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.08236v1</guid>
-    </item>
-    <item>
-      <title>Pre-Intervention Prediction of Sparse Autoencoder Steering Side Effects</title>
-      <link>https://arxiv.org/abs/2606.08365v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Evan Duan</p><p>Sparse autoencoder (SAE) features are increasingly used to steer language models, but feature steering is rarely clean: the same intervention can behave inconsistently across contexts and perturb unrelated features. We introduce a pre-intervention screening framework for forecasting SAE steering side effects from feature statistics computed before steering. We operationalize side effects along two axes of steering modularity, effect stability and collateral spread, and evaluate GPT-2-small, Pyth</p><p><strong>Tags:</strong> SAE, features, steering</p>]]></description>
-      <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.08365v1</guid>
-    </item>
-    <item>
-      <title>Vision-Language Asymmetry in Bistable Image Captioning</title>
-      <link>https://arxiv.org/abs/2606.08031v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Arohan Agate</p><p>Wittgenstein&#x27;s duck-rabbit poses a question for vision-language models: when a model captions an ambiguous image, where in the model is the commitment to one aspect made? We address this with a 3,320-generation behavioral baseline over 83 bistable stimuli that surfaces three regimes (default-dominant, force-dominant, force-balanced) under neutral vs forced-choice prompting, then probe the underlying representations using a TopK sparse autoencoder we train on the CLIP layer that LLaVA-1.6-7B actu</p><p><strong>Tags:</strong> SAE, probing, vision</p>]]></description>
-      <pubDate>Sat, 06 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.08031v1</guid>
     </item>
   </channel>
 </rss>
