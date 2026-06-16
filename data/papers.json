@@ -1,6 +1,177 @@
 {
-  "lastUpdated": "2026-06-15",
+  "lastUpdated": "2026-06-16",
   "papers": [
+    {
+      "id": "arxiv-2606-16939v1",
+      "title": "Scalable Circuit Learning for Interpreting Large Language Models",
+      "authors": "Naiyu Yin, Dennis Wei, Tian Gao, Amit Dhurandhar, Karthikeyan Natesan Ramamurthy, et al.",
+      "date": "2026-06-15",
+      "url": "https://arxiv.org/abs/2606.16939v1",
+      "abstract": "A prominent research direction in mechanistic interpretability is learning sparse circuits over LLM components to reveal how they jointly produce model behavior. However, raw neurons are polysemantic, making learned circuits hard to interpret. Sparse autoencoder (SAE) features alleviate this, but their high dimensionality makes existing intervention-based circuit learning methods computationally prohibitive. We propose CircuitLasso, a scalable circuit-learning approach based on sparse linear reg",
+      "tags": [
+        "SAE",
+        "circuits",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-16920v1",
+      "title": "Demystifying Variance in Circuit Discovery of LLMs",
+      "authors": "Frank Zhengqing Wu, Francesco Tonin, Volkan Cevher",
+      "date": "2026-06-15",
+      "url": "https://arxiv.org/abs/2606.16920v1",
+      "abstract": "Circuit discovery is a key technique in mechanistic interpretability to pinpoint the model components that are crucial for performing a given task. Although the current state-of-the-art method (EAP-IG) performs well on the metric of (un)faithfulness, it suffers from substantial variability. This includes resampling variance, where the circuit changes when we probe with a new batch of data from the same distribution; rephrasing variance, where the discovered circuit shifts when the prompts are re",
+      "tags": [
+        "circuits",
+        "probing"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-16693v1",
+      "title": "Learning Hybrid Biophysical Neuron Models with Neural ODEs",
+      "authors": "Jonas Beck, Michael Deistler, D\u00f3ra Vikt\u00f3ria Moln\u00e1r, Jakob H. Macke, Philipp Berens",
+      "date": "2026-06-15",
+      "url": "https://arxiv.org/abs/2606.16693v1",
+      "abstract": "Biophysical neuron models link measurements of neural activity to underlying cellular mechanisms. Yet, a central challenge is that the kinetics of many ion channels are poorly characterized, and practical simplifications -- omitting channels or reducing morphological detail -- introduce systematic gaps between model and biology. Bridging these gaps requires approaches that can flexibly discover unmodeled dynamics while preserving mechanistic interpretability. Here, we introduce a hybrid modeling",
+      "tags": [
+        "biology"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-16193v1",
+      "title": "Cascaded Sparse Autoencoders Learn Multi-Level Visual Concepts in Multimodal LLMs",
+      "authors": "Yusong Zhao, Hengyi Wang, Tanuja Ganu, Akshay Nambi, Hao Wang",
+      "date": "2026-06-15",
+      "url": "https://arxiv.org/abs/2606.16193v1",
+      "abstract": "Multimodal Large Language Models (MLLMs) have demonstrated strong performance on vision-language tasks, yet their internal visual representations remain difficult to interpret. Sparse Autoencoders (SAEs) provide a scalable way to decompose dense model activations into sparse, interpretable features. However, existing SAE architectures primarily recover flat feature dictionaries and are less suited for explicit multi-level concept organization. In this paper, we introduce cascaded sparse autoenco",
+      "tags": [
+        "SAE",
+        "features",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-16196v1",
+      "title": "When Confidence Lacks Concepts: Interpretable OOD Detection via Representation Perturbations",
+      "authors": "Anju Chhetri, Pratik Shrestha, Ramesh Rana, Prashnna Gyawali, Binod Bhattarai",
+      "date": "2026-06-15",
+      "url": "https://arxiv.org/abs/2606.16196v1",
+      "abstract": "Deep neural networks have achieved remarkable performance across medical imaging tasks, yet their tendency to overgeneralize under distributional shifts poses a major obstacle to safe clinical deployment. Out-of-Distribution (OOD) detection methods aim to mitigate this risk, but most existing approaches rely on opaque internal signals with poorly understood semantic meaning, limiting trust in safety-critical settings. In this work, we propose an interpretable OOD detection framework that probes ",
+      "tags": [
+        "safety",
+        "probing"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-16684v1",
+      "title": "Progressive Knowledge-Guided Large Language Model Framework for Bearing Fault Diagnosis",
+      "authors": "Jinghan Wang, Gaoliang Peng, Yanjun Chen, Wei Zhang, Wentao Wu, et al.",
+      "date": "2026-06-15",
+      "url": "https://arxiv.org/abs/2606.16684v1",
+      "abstract": "Vibration-based bearing fault diagnosis requires resolving three interrelated measurement challenges, including the trade-off between global statistical feature efficiency and local transient signal fidelity, insufficient traceability of measurement features to underlying fault physics, and ineffective multi-source measurement information fusion across diagnostic scales. This paper presents a progressive physics-guided multi-scale vibration signal processing framework that addresses all three ch",
+      "tags": [
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-16044v1",
+      "title": "Circuit Tracing in Autoregressive Protein Language Models",
+      "authors": "Darin Tsui, William Deinzer, Daniel Saeedi, Amirali Aghazadeh",
+      "date": "2026-06-14",
+      "url": "https://arxiv.org/abs/2606.16044v1",
+      "abstract": "Protein language models (pLMs) can generate novel protein sequences with properties beyond those observed in nature, yet the mechanisms underlying protein generation remain poorly understood. Existing mechanistic interpretability methods based on sparse autoencoders and transcoders primarily focus on protein representation learning models and do not capture the computation required for autoregressive generation. Here, we introduce ProGenMech, a mechanistic interpretability framework for generati",
+      "tags": [
+        "SAE",
+        "circuits",
+        "biology"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-15796v1",
+      "title": "DifFRACT: Diffusion Feature Reconstruction and Attribution for Circuit Tracing",
+      "authors": "Artyom Mazur, Nina Konovalova, Aibek Alanov",
+      "date": "2026-06-14",
+      "url": "https://arxiv.org/abs/2606.15796v1",
+      "abstract": "Mechanistic interpretability seeks to explain neural network behavior by decomposing model computations into interpretable features and circuits. While transcoder-based circuit tracing has recently enabled detailed causal analyses of large language models, multimodal diffusion transformers for image generation remain comparatively opaque. We still lack tools for understanding how semantic information propagates across denoising steps and how text and image representations interact within double-",
+      "tags": [
+        "circuits",
+        "features",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-15507v1",
+      "title": "Frame-Conditioned Moral Computation in LLaMA 3.1-8B-Instruct: A Mechanistic Interpretability Audit of Ethical Reasoning",
+      "authors": "Ali Dasdan, Manan Shah, W. Russell Neuman, Chad Coleman, Kund Meghani, et al.",
+      "date": "2026-06-13",
+      "url": "https://arxiv.org/abs/2606.15507v1",
+      "abstract": "Behavioral audits of Large Language Models on moral prompts measure what the model says, not the internal computation producing it. We use Transluce, an AI-driven mechanistic-interpretability platform, to examine LLaMA 3.1-8B-Instruct on 54 moral prompts in four batteries: 17 dilemmas, policy, and meta-ethical questions (B1); 6 role-playing scenarios (B3); and a controlled trolley contrast varying the switching mechanism with people fixed (B4, 15 prompts) or identity attributes with mechanism fi",
+      "tags": [
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-15054v1",
+      "title": "Size Doesn't Matter: Cosine-Scored Sparse Autoencoders",
+      "authors": "Silen Naihin, Lev Stambler",
+      "date": "2026-06-13",
+      "url": "https://arxiv.org/abs/2606.15054v1",
+      "abstract": "Sparse autoencoders (SAEs) detect features via inner product, so a feature's activation scales with both its directional alignment and the input's norm. Under BatchTopK, high-norm tokens inflate all pre-activations simultaneously, claiming dictionary slots regardless of content alignment. This matters because sublayer normalization has already discarded the magnitude the score measures, so the encoder detects a quantity the model does not read. We replace the score with a learned blend of cosine",
+      "tags": [
+        "SAE",
+        "features",
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-15036v1",
+      "title": "Transformers Learn the Mestre-Nagao Heuristic",
+      "authors": "Pranav Venkata Konda",
+      "date": "2026-06-13",
+      "url": "https://arxiv.org/abs/2606.15036v1",
+      "abstract": "We train a two-layer transformer encoder to classify rational elliptic curves $E/\\mathbb{Q}$ of conductor $\\leq 10000$ as either rank 0 or rank 1 from the first 128 normalized Frobenius traces. We achieve >99% accuracy on both classes, and accuracy is essentially unchanged on test curves with no isogeny or quadratic-twist relative in the training set. We then apply techniques from mechanistic interpretability such as attention analysis, linear probing, activation patching, logit attribution, and",
+      "tags": [
+        "probing"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-15468v1",
+      "title": "Analyzing Visual Aircraft Representations with Sparse Autoencoders",
+      "authors": "Deepshik Sharma",
+      "date": "2026-06-13",
+      "url": "https://arxiv.org/abs/2606.15468v1",
+      "abstract": "Vision models can achieve strong performance on classification tasks, but the internal representations supporting their predictions are often difficult to interpret. This work investigates whether sparse autoencoders can decompose intermediate representations of a vision model into interpretable features. We train a ConvNeXt classifier on the FGVC-Aircraft dataset, extract spatial activations from its final feature stage, and train a sparse autoencoder on these activations. The learned sparse fe",
+      "tags": [
+        "SAE",
+        "features",
+        "probing",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2606-14673v1",
       "title": "Compressed Computation is (probably) not Computation in Superposition",
@@ -50,6 +221,19 @@
       "abstract": "In recent years, neural networks have become the dominant models in most point cloud upsampling methods. Although these approaches are achieving good results, they do have drawbacks, such as a lack of interpretability and data dependency. Moreover, they have to be trained on a dataset that is similar to the test data in order to perform well. To avoid these disadvantages, we propose Point Cloud Upsampling through Patch-based Frequency Superposition (PUtPFS), an optimization-based approach that s",
       "tags": [
         "superposition"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-14990v1",
+      "title": "Rational Sparse Autoencoder",
+      "authors": "Naiyu Yin, Yue Yu",
+      "date": "2026-06-12",
+      "url": "https://arxiv.org/abs/2606.14990v1",
+      "abstract": "Sparse autoencoders (SAEs) are standard tools for mechanistic interpretability, but current SAE families are constrained by fixed encoder nonlinearities such as ReLU, JumpReLU, and TopK. This hard-codes a particular sparsity mechanism into the model and can distort the reconstruction-versus-sparsity trade-off. We introduce the Rational Sparse Autoencoder (RSAE), which replaces the fixed encoder activation with a trainable rational function. Rational activations are flexible enough to uniformly a",
+      "tags": [
+        "SAE"
       ],
       "source": "arXiv",
       "featured": false
