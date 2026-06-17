@@ -1,6 +1,21 @@
 {
-  "lastUpdated": "2026-06-16",
+  "lastUpdated": "2026-06-17",
   "papers": [
+    {
+      "id": "arxiv-2606-17478v1",
+      "title": "Decoding Hidden Deception in Reasoning LLMs: Activation Explainers for Deception Auditing",
+      "authors": "Kexin Chen, Yi Liu, Haonan Zhang, Yanhui Li, Xinyu Deng, et al.",
+      "date": "2026-06-16",
+      "url": "https://arxiv.org/abs/2606.17478v1",
+      "abstract": "As LLMs acquire stronger reasoning capabilities, deceptive behavior becomes an increasingly serious safety concern. Existing deception monitors either score visible transcripts or derive scalar probe scores from representation vectors, leaving little inspectable evidence about why a response is suspicious. We introduce STATEWITNESS, an activation explainer for deception auditing. A separate decoder reads a target model's hidden states, then answers natural-language queries or emits structured re",
+      "tags": [
+        "safety",
+        "probing",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2606-16939v1",
       "title": "Scalable Circuit Learning for Interpreting Large Language Models",
