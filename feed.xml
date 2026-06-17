@@ -5,9 +5,16 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 16 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 17 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Decoding Hidden Deception in Reasoning LLMs: Activation Explainers for Deception Auditing</title>
+      <link>https://arxiv.org/abs/2606.17478v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Kexin Chen, Yi Liu, Haonan Zhang, Yanhui Li, Xinyu Deng, et al.</p><p>As LLMs acquire stronger reasoning capabilities, deceptive behavior becomes an increasingly serious safety concern. Existing deception monitors either score visible transcripts or derive scalar probe scores from representation vectors, leaving little inspectable evidence about why a response is suspicious. We introduce STATEWITNESS, an activation explainer for deception auditing. A separate decoder reads a target model&#x27;s hidden states, then answers natural-language queries or emits structured re</p><p><strong>Tags:</strong> safety, probing, reasoning</p>]]></description>
+      <pubDate>Tue, 16 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.17478v1</guid>
+    </item>
     <item>
       <title>Scalable Circuit Learning for Interpreting Large Language Models</title>
       <link>https://arxiv.org/abs/2606.16939v1</link>
@@ -210,13 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Charles Westphal, Timothy Douglas, Keivan Navaie, Tiago Pimentel, Fernando E. Rosas</p><p>Large language models can be fine-tuned to encode prompt-borne secrets into fluent, seemingly benign outputs. This creates a steganographic exfiltration risk that is difficult to detect with output-level steganalysis. Recent work proposes mechanistic detection using linear probes that recover the secret from internal activations. We show that this defense can be systematically evaded, but that detectability can be recovered through a targeted data-level intervention. First, we extend the detecti</p><p><strong>Tags:</strong> probing</p>]]></description>
       <pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2606.09411v1</guid>
-    </item>
-    <item>
-      <title>VFUSE: Virulent Feature Understanding with Sparse autoEncoders</title>
-      <link>https://arxiv.org/abs/2606.10080v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Michael Yu, Matthew L. Olson</p><p>Generative models have shown remarkable progress in a variety of domains such as protein design, but such power enables the opaque generation of hazardous proteins. In this work, we introduce VFUSE (Virulent Feature Understanding with Sparse autoEncoders), a mechanistic interpretability approach that trains SAEs on diffusion-transformer activations to audit protein models for hazard-aware features. We apply VFUSE to RoseTTAFold3 and RFDiffusion3, popular open-weight models for protein folding an</p><p><strong>Tags:</strong> SAE, features, biology</p>]]></description>
-      <pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.10080v1</guid>
     </item>
   </channel>
 </rss>
