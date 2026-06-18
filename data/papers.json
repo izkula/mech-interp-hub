@@ -1,6 +1,72 @@
 {
-  "lastUpdated": "2026-06-17",
+  "lastUpdated": "2026-06-18",
   "papers": [
+    {
+      "id": "arxiv-2606-18924v1",
+      "title": "Who Wins the Conflict? Mechanistic Interpretability of Text Bias in Audio LLMs",
+      "authors": "Hyebin Cho, Suho Yoo, Jaehyuk Jang, Changick Kim, Joon Son Chung",
+      "date": "2026-06-17",
+      "url": "https://arxiv.org/abs/2606.18924v1",
+      "abstract": "While Audio Large Language Models (Audio LLMs) excel at multimodal understanding, they suffer from text dominance, a bias where models blindly favor text over acoustic evidence, causing hallucinations. However, the internal mechanisms underlying how these models behave when audio and textual inputs contradict each other remain unexplored. In this work, we present the first mechanistic analysis of this phenomenon by tracing the propagation of internal representations across layers. Our investigat",
+      "tags": [
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-18790v1",
+      "title": "Closing the Loop: PID Feedback Control for Interpretable Activation Steering in Symbolic Music Generation",
+      "authors": "Ioannis Prokopiou, Pantelis Vikatos, Maximos Kaliakatsos-Papakostas, Theodoros Giannakopoulos, Themos Stafylakis",
+      "date": "2026-06-17",
+      "url": "https://arxiv.org/abs/2606.18790v1",
+      "abstract": "Transformer-based architectures have significantly advanced the generation of complex symbolic sequences, yet a significant gap remains in achieving fine-grained, interpretable control over discrete signal attributes. This paper investigates the mechanistic interpretability of the Multitrack Music Transformer (MMT) and proposes a framework for deterministic attribute modulation without retraining to bridge this gap via inference-time activation steering. Utilizing the Difference-in-Means (DiffMe",
+      "tags": [
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-18703v1",
+      "title": "Contextualizing Biological Language Models across Modalities via Logit-Space Contrastive Alignment",
+      "authors": "Yanjun Shao, Yundi Chen, Yashvi Patel, Aurelien Pelissier, Mar\u00eda Rodr\u00edguez Mart\u00ednez",
+      "date": "2026-06-17",
+      "url": "https://arxiv.org/abs/2606.18703v1",
+      "abstract": "Pretrained biological language models expose per-token probability distributions through masked-token prediction, providing the likelihood interface central to sequence design, variant scoring, and mechanistic interpretation. Yet these distributions are learned from broad unlabeled corpora and are not naturally conditioned on task-specific biological contexts such as interaction partners, cellular environments, or therapeutic interventions. Existing contextual matching methods often distort this",
+      "tags": [
+        "safety",
+        "biology"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-18897v1",
+      "title": "SAERec: Constructing Fine-grained Interpretable Intents Priors via Sparse Autoencoders for Recommendation",
+      "authors": "Jiangnan Xia, Xuansheng Wu, Yu Yang, Xin Wang, Ninghao Liu",
+      "date": "2026-06-17",
+      "url": "https://arxiv.org/abs/2606.18897v1",
+      "abstract": "Intent-based recommender systems have gained significant attention for improving accuracy and interpretability by modeling the underlying motivations behind user behaviors. Most existing models derive intents directly from user sequences via clustering or prototype learning. However, they are sensitive to sequence quality, require presetting the number of intents, and lack explicit semantic grounding. These issues lead to an incomplete and coarse intent set and limit the effectiveness of recomme",
+      "tags": [
+        "SAE"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-19317v1",
+      "title": "Explaining Attention with Program Synthesis",
+      "authors": "Amiri Hayes, Belinda Li, Jacob Andreas",
+      "date": "2026-06-17",
+      "url": "https://arxiv.org/abs/2606.19317v1",
+      "abstract": "A longstanding goal of research on interpretable deep learning is to replace opaque neural computations with human-meaningful symbolic descriptions. In this paper, we propose an approach for approximating the behavior of components of deep networks with executable programs. We focus on attention heads in transformer language models. For a given head, we first compute its associated attention matrices on a collection of randomly selected training examples. Next, we prompt a pre-trained language m",
+      "tags": [
+        "attention"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2606-17478v1",
       "title": "Decoding Hidden Deception in Reasoning LLMs: Activation Explainers for Deception Auditing",
@@ -12,6 +78,49 @@
         "safety",
         "probing",
         "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-18538v1",
+      "title": "Effects of sparsity and superposition on loss in simple autoencoders",
+      "authors": "Mriganka Basu Roy Chowdhury, Eric McLaughlin Weiner",
+      "date": "2026-06-16",
+      "url": "https://arxiv.org/abs/2606.18538v1",
+      "abstract": "One of the major difficulties in the mechanistic interpretability of neural networks is the occurrence of polysemanticity, which suggests that each neuron is typically responsible for multiple different tasks, impeding a clean interpretation of their function. The seminal paper of Elhage et al. (2022) argues that this occurs due to superposition, a phenomenon where the neural network represents distinct features as non-orthogonal directions in a lower-dimensional space, a strategy that allows mu",
+      "tags": [
+        "superposition",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-18383v1",
+      "title": "From Sparse Features to Trustworthy Proxies: Certifying SAE-Based Interpretability",
+      "authors": "Dibyanayan Bandyopadhyay, Asif Ekbal",
+      "date": "2026-06-16",
+      "url": "https://arxiv.org/abs/2606.18383v1",
+      "abstract": "Sparse autoencoders (SAEs) are increasingly used to extract interpretable features from language models (LMs), yet a central question remains: when can an SAE-based explanation be treated as a faithful view of an underlying frozen LM We study this through a post-hoc generalization framework that certifies the LM via a sparse proxy, obtained by replacing a native hidden activation with its pretrained SAE reconstruction. Our framework derives an upper bound on the base model's expected risk using ",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-18322v1",
+      "title": "SAE Interventions are Unreliable: Post-Intervention Recovery of Suppressed Behavior",
+      "authors": "Mingyue Cui, Linghui Shen, Xingyi Yang",
+      "date": "2026-06-16",
+      "url": "https://arxiv.org/abs/2606.18322v1",
+      "abstract": "Sparse Autoencoders (SAEs) decompose residual-stream activations into interpretable features. Recent latent-space defenses increasingly rely on these decompositions, assuming that identified \"unsafe\" SAE features serve as actionable handles for monitoring and intervention. In this paradigm, clamping a specific harmful feature is expected to reliably prevent model misbehavior. However, we show that this success may hide a recoverable failure mode: the clamp may block one visible route to a behavi",
+      "tags": [
+        "SAE",
+        "features",
+        "safety"
       ],
       "source": "arXiv",
       "featured": false
