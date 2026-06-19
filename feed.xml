@@ -5,9 +5,30 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 18 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 19 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Critical Percolation as a Synthetic Data Model for Interpretability</title>
+      <link>https://arxiv.org/abs/2606.20347v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Aryeh Brill, Tom Ingebretsen Carlson</p><p>Neural networks learn features that reflect the hierarchical, multi-scale structure of natural data. Synthetic datasets used to evaluate interpretability methods typically lack this structure, limiting their value as realistic toy models. To close this gap, we introduce a family of synthetic datasets consisting of hierarchical functions defined on critical mean-field percolation clusters embedded in a high-dimensional data space. The percolation data consists of sparse, low-dimensional fractal c</p><p><strong>Tags:</strong> features</p>]]></description>
+      <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.20347v1</guid>
+    </item>
+    <item>
+      <title>Multimodal Concept Bottleneck Models</title>
+      <link>https://arxiv.org/abs/2606.19882v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Tongqing Shi, Ge Yan, Tuomas Oikarinen, Tsui-Wei Weng</p><p>Concept Bottleneck Models (CBMs) enhance the interpretability of deep learning networks by aligning the features extracted from images with natural concepts. However, existing CBMs are constrained in their ability to generalize beyond a fixed set of predefined classes and the risk of non-concept information leakage, where predictive signals outside the intended concepts are inadvertently exploited. In this paper, we propose Multimodal Concept Bottleneck Model (MM-CBM) to address these issues and</p><p><strong>Tags:</strong> features, vision</p>]]></description>
+      <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.19882v1</guid>
+    </item>
+    <item>
+      <title>From Texts to Scores: Tracing the Emergence of Essay Quality Representations in Large Language Models</title>
+      <link>https://arxiv.org/abs/2606.20152v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Jiaxu Zuo, Mu You, Kaixin Lan, Tao Fang, Yujia Huo, et al.</p><p>Recent advances in Large Language Models (LLMs) have substantially transformed Automated Essay Scoring (AES), yet the internal mechanisms underlying LLM-based scoring remain poorly understood. In this work, we systematically analyze the hidden representations of eight LLMs across two English essay datasets (ASAP++, CSEE) and one Portuguese dataset (ENEM). Using linear probing, cross-prompt generalization, dimensionality reduction, and neuron-level analyses, we find consistent evidence that essay</p><p><strong>Tags:</strong> probing</p>]]></description>
+      <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.20152v1</guid>
+    </item>
     <item>
       <title>Who Wins the Conflict? Mechanistic Interpretability of Text Bias in Audio LLMs</title>
       <link>https://arxiv.org/abs/2606.18924v1</link>
@@ -196,27 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Eshaan Tanwar, Pepa Atanasova</p><p>Reward models are a key component of reinforcement learning from human feedback (RLHF), aligning language models toward both helpful and harmless behaviour. However, the internal mechanisms underlying these objectives and their conflicts remain poorly understood. We study alignment tension in reward models trained under helpfulness-only, harmlessness-only, and mixed-objective settings. We find that mixed-objective models often underperform single-objective models, indicating interference between</p><p><strong>Tags:</strong> safety</p>]]></description>
       <pubDate>Thu, 11 Jun 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2606.13209v1</guid>
-    </item>
-    <item>
-      <title>When Does Routing Become Interpretable? Causal Probes on Block Attention Residuals</title>
-      <link>https://arxiv.org/abs/2606.13168v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Aydin Javadov</p><p>Block Attention Residuals (Block AttnRes) by replace fixed additive residuals with a learned softmax over earlier depth-source representations, surfacing cross-layer routing as an inspectable tensor in the forward pass. This is a tempting interpretability target: information flow normally inferred indirectly is now directly observable. We ask whether such exposure suffices for mechanistic interpretation. We probe two same-scale ($0.6$B) Block AttnRes checkpoints under identical routing-ablation </p><p><strong>Tags:</strong> probing</p>]]></description>
-      <pubDate>Thu, 11 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.13168v1</guid>
-    </item>
-    <item>
-      <title>Where Computation Lives Inside TabPFN: Causal Localisation of Attention Head Function</title>
-      <link>https://arxiv.org/abs/2606.12917v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Atharva Gupta, Dhruv Kumar, Murari Mandal, Saurabh Deshpande</p><p>We present the first causal mechanistic analysis of a tabular foundation model, investigating how TabPFN 2.5&#x27;s feature wise attention heads distribute computation across layers. Using activation patching, ablation, and attention entropy across two synthetic regression datasets, we find clear temporal specialisation: one head&#x27;s causal necessity dominates that of the others by 2 to 5 times at peak layer, with its dominant layer shifting across tasks of different complexity, while the remaining hea</p><p><strong>Tags:</strong> features, attention</p>]]></description>
-      <pubDate>Thu, 11 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.12917v1</guid>
-    </item>
-    <item>
-      <title>TimeROME-DLM: Temporal Causal Tracing and Low-Rank Inference-Time Knowledge Editing for Masked Diffusion Language Models</title>
-      <link>https://arxiv.org/abs/2606.12841v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Zhengtao Yao, Liuyang Song, Hongbo Zhang, Chenhao Wei, Haoyan Xu, et al.</p><p>Masked diffusion language models (MDLMs) such as LLaDA now rival autoregressive (AR) LLMs, but every existing knowledge-editing and unlearning method (ROME, MEMIT, etc.) targets AR transformers and either makes assumptions that fail under iterative denoising, or requires gradient updates whose backward-pass activations cost tens of GB of extra VRAM and which collapse MDLMs at standard learning rates. We introduce TimeROME-DLM, the first training-free, gradient-free, inference-time knowledge-edit</p><p><strong>Tags:</strong> editing</p>]]></description>
-      <pubDate>Thu, 11 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.12841v1</guid>
     </item>
   </channel>
 </rss>
