@@ -1,6 +1,46 @@
 {
-  "lastUpdated": "2026-06-18",
+  "lastUpdated": "2026-06-19",
   "papers": [
+    {
+      "id": "arxiv-2606-20347v1",
+      "title": "Critical Percolation as a Synthetic Data Model for Interpretability",
+      "authors": "Aryeh Brill, Tom Ingebretsen Carlson",
+      "date": "2026-06-18",
+      "url": "https://arxiv.org/abs/2606.20347v1",
+      "abstract": "Neural networks learn features that reflect the hierarchical, multi-scale structure of natural data. Synthetic datasets used to evaluate interpretability methods typically lack this structure, limiting their value as realistic toy models. To close this gap, we introduce a family of synthetic datasets consisting of hierarchical functions defined on critical mean-field percolation clusters embedded in a high-dimensional data space. The percolation data consists of sparse, low-dimensional fractal c",
+      "tags": [
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-19882v1",
+      "title": "Multimodal Concept Bottleneck Models",
+      "authors": "Tongqing Shi, Ge Yan, Tuomas Oikarinen, Tsui-Wei Weng",
+      "date": "2026-06-18",
+      "url": "https://arxiv.org/abs/2606.19882v1",
+      "abstract": "Concept Bottleneck Models (CBMs) enhance the interpretability of deep learning networks by aligning the features extracted from images with natural concepts. However, existing CBMs are constrained in their ability to generalize beyond a fixed set of predefined classes and the risk of non-concept information leakage, where predictive signals outside the intended concepts are inadvertently exploited. In this paper, we propose Multimodal Concept Bottleneck Model (MM-CBM) to address these issues and",
+      "tags": [
+        "features",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-20152v1",
+      "title": "From Texts to Scores: Tracing the Emergence of Essay Quality Representations in Large Language Models",
+      "authors": "Jiaxu Zuo, Mu You, Kaixin Lan, Tao Fang, Yujia Huo, et al.",
+      "date": "2026-06-18",
+      "url": "https://arxiv.org/abs/2606.20152v1",
+      "abstract": "Recent advances in Large Language Models (LLMs) have substantially transformed Automated Essay Scoring (AES), yet the internal mechanisms underlying LLM-based scoring remain poorly understood. In this work, we systematically analyze the hidden representations of eight LLMs across two English essay datasets (ASAP++, CSEE) and one Portuguese dataset (ENEM). Using linear probing, cross-prompt generalization, dimensionality reduction, and neuron-level analyses, we find consistent evidence that essay",
+      "tags": [
+        "probing"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2606-18924v1",
       "title": "Who Wins the Conflict? Mechanistic Interpretability of Text Bias in Audio LLMs",
