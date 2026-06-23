@@ -1,6 +1,104 @@
 {
-  "lastUpdated": "2026-06-22",
+  "lastUpdated": "2026-06-23",
   "papers": [
+    {
+      "id": "arxiv-2606-23443v1",
+      "title": "What Does a Chemical Language Model Know About Molecules?",
+      "authors": "Christian Kenneth, Etowah Adams, Liam Bai, Gerard JP van Westen",
+      "date": "2026-06-22",
+      "url": "https://arxiv.org/abs/2606.23443v1",
+      "abstract": "Chemical language models (cLMs) are widely assumed to learn surface-level syntactic patterns rather than learning meaningful molecular semantics. Here, we apply sparse autoencoders (SAEs) to MolFormer, an encoder-only cLM, to mechanistically examine how molecular representations are built across layers. We discover that early layers rely on position-tracking latents to parse molecular grammar, while later layers encode atom-in-substructure and pharmacologically relevant features. Additionally, w",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-22994v1",
+      "title": "Do Sparse Autoencoders Learn Meaningful Concept Hierarchies?",
+      "authors": "Nils Grandien, David Steinmann, Felix Friedrich, Kristian Kersting",
+      "date": "2026-06-22",
+      "url": "https://arxiv.org/abs/2606.22994v1",
+      "abstract": "Sparse autoencoders (SAEs) have become an important tool for unsupervised concept discovery in large models. To make the resulting feature spaces more interpretable and manageable, recent approaches have begun imposing hierarchical structure, either explicitly or as an implicit effect of training constraints, yet rigorous comparison remains difficult. There are no agreed-upon requirements for what a meaningful feature hierarchy should satisfy, and evaluation has largely relied on qualitative ill",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-22673v1",
+      "title": "AgentLens: Interpretable Safety Steering via Mechanistic Subspaces for Multi-Turn Coding Agent",
+      "authors": "Weidi Luo, Qiming Zhang, Yihao Quan, Mingyu Jin, Jie Cai, et al.",
+      "date": "2026-06-21",
+      "url": "https://arxiv.org/abs/2606.22673v1",
+      "abstract": "Coding agents based on large language models (LLMs) demonstrate remarkable autonomous capabilities, but they also introduce significant safety and misuse risks during multi-turn interactions with external environments. Existing safety mechanisms mainly rely on external guardrails, which have a limited ability to perform fine-grained behavioral control during execution. Meanwhile, recent mechanistic interpretability methods for LLM safety are mostly confined to single-turn or jailbreak-style QA s",
+      "tags": [
+        "safety",
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-22686v1",
+      "title": "The Geometry of Refusal: Linear Instability in Safety-Aligned LLMs",
+      "authors": "Shivam Ratnakar, Kartikeya Vats",
+      "date": "2026-06-21",
+      "url": "https://arxiv.org/abs/2606.22686v1",
+      "abstract": "Modern Large Language Models (LLMs) rely on extensive safety alignment, yet the mechanistic basis of refusal remains opaque. In this work, we investigate whether safety compliance is a deep semantic decision or a manipulable linear feature. We introduce Contrastive Logit Steering (CLS), a zero-optimization framework that isolates the \"refusal direction\" by contrasting hidden states derived from safe and unrestricted system prompts. Unlike representation engineering methods that intervene on inte",
+      "tags": [
+        "features",
+        "safety",
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-21821v1",
+      "title": "Local Causal Attribution of Chain-of-Thought Reasoning",
+      "authors": "Dennis Wei, Yannis Belkhiter, Erik Miehling, Radu Marinescu",
+      "date": "2026-06-20",
+      "url": "https://arxiv.org/abs/2606.21821v1",
+      "abstract": "Understanding the causal structure of a language model's thought process is a problem of significant importance for both transparency and safety. In this work, we take a local approach toward this goal by analyzing the causal relationships among individual components, termed units, of a given, specific chain-of-thought trace. We construct a structural causal model on these units and relate each unit to the log probability of generating (subsequent) output units. Our algorithm, termed AttriCoT, i",
+      "tags": [
+        "safety",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-21197v1",
+      "title": "Extraction and Analysis of Multimodal Concepts in Vision Language Models through Sparse Autoencoders",
+      "authors": "Sergio Lanza, Jae Hee Lee, Stefan Wermter",
+      "date": "2026-06-19",
+      "url": "https://arxiv.org/abs/2606.21197v1",
+      "abstract": "Vision Language Models (VLMs) have demonstrated impressive performance in tasks requiring joint understanding of images and text, such as image captioning and Visual Question Answering (VQA), but our understanding of their internal processes remains limited. Recently, Sparse Autoencoders (SAEs) have emerged as a promising tool to support the interpretation of concepts encoded in VLMs. However, most SAE-based approaches focus only on textual or visual concepts separately, ignoring multimodal conc",
+      "tags": [
+        "SAE",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-21147v1",
+      "title": "AOR-Bench: Do Large Audio Language Models Over-Refuse Pseudo-Harmful Queries?",
+      "authors": "Jiaxi Yang, Chaewan Chun, Jason Lucas, Yuchen Yang, Dongwon Lee",
+      "date": "2026-06-19",
+      "url": "https://arxiv.org/abs/2606.21147v1",
+      "abstract": "Large Audio Language Models (LALMs) have demonstrated strong performance across a wide range of audio tasks. As they are increasingly deployed in real-world applications, ensuring their safety alignment has become more important. Although refusal mechanisms serve as a key safeguard by preventing LALMs from responding to harmful requests, they can also lead to {\\em over-refusal}, where models incorrectly reject benign queries. This issue is especially challenging in the audio domain because speec",
+      "tags": [
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2606-20347v1",
       "title": "Critical Percolation as a Synthetic Data Model for Interpretability",
@@ -399,6 +497,17 @@
       "tags": [
         "SAE"
       ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-20678v1",
+      "title": "Beyond Importance: Interchange-Sobol Sensitivity Reveals Task-Specific Content Channels in Transformer Components",
+      "authors": "Yifeng Guo, Jin-Hong Du, Xiang Chen",
+      "date": "2026-06-12",
+      "url": "https://arxiv.org/abs/2606.20678v1",
+      "abstract": "Mechanistic interpretability methods summarize a transformer component by a single importance score, conflating two distinct roles: a component may matter because it transports task-relevant content, or because the forward computation degrades when its contribution is removed. We introduce \\emph{Interchange-Group Sobol Decomposition} (IGSD), a paired-intervention framework that compares matched activation replacement with zero ablation on the same component, estimates two Sobol-style variance in",
+      "tags": [],
       "source": "arXiv",
       "featured": false
     },
