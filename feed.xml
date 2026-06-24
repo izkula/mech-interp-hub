@@ -5,9 +5,30 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 23 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 24 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Can Language Model Agents be Helpful Circuit Explainers in Mechanistic Interpretability?</title>
+      <link>https://arxiv.org/abs/2606.24026v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Ayan Antik Khan, Harsh Kohli, Yuekun Yao, Huan Sun, Ziyu Yao</p><p>Mechanistic interpretability has made substantial progress in automatically localizing circuits, but explaining what localized components do remains labor-intensive and difficult to standardize. In this work, we study whether language model (LM) agents can assist with this explanation problem once a circuit has already been identified. We introduce AgenticInterpBench, a benchmark for circuit explanation built from 84 semi-synthetic transformer circuits with 163 component-level annotations. We pr</p><p><strong>Tags:</strong> circuits</p>]]></description>
+      <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.24026v1</guid>
+    </item>
+    <item>
+      <title>Evaluating the Interpretability of Sparse Autoencoders with Concept Annotations</title>
+      <link>https://arxiv.org/abs/2606.24716v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Jonas Klotz, Cassio F. Dantas, Pallavi Jain, Diego Marcos, Begüm Demir</p><p>Sparse autoencoders (SAEs) are increasingly used to extract interpretable concepts from vision and vision language models, yet existing evaluation methods largely rely on proxy metrics or qualitative inspection rather than measuring semantic correspondence. We present a human-grounded evaluation framework that quantifies alignment between SAE latents and human-annotated concepts, without requiring user studies, and validate this matching through targeted attribute perturbations. To enable this i</p><p><strong>Tags:</strong> SAE, safety, vision</p>]]></description>
+      <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.24716v1</guid>
+    </item>
+    <item>
+      <title>UniDrive: A Unified Vision-Language and Grounding Framework for Interpretable Risk Understanding in Autonomous Driving</title>
+      <link>https://arxiv.org/abs/2606.24759v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Xiaowei Gao, Pengxiang Li, Yitai Cheng, Ruihan Xu, James Haworth, et al.</p><p>Recent multimodal large language models (MLLMs) have shown strong potential for autonomous driving scene understanding, yet existing methods still face a fundamental trade-off between temporal reasoning and spatial precision. Models that rely on single-frame or low-resolution inputs often miss small, distant, or partially occluded hazards, while language-centric driving models frequently provide limited grounded evidence for their explanations. To address this gap, we propose UniDrive, a unified</p><p><strong>Tags:</strong> vision, reasoning</p>]]></description>
+      <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.24759v1</guid>
+    </item>
     <item>
       <title>What Does a Chemical Language Model Know About Molecules?</title>
       <link>https://arxiv.org/abs/2606.23443v1</link>
@@ -196,27 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Artyom Mazur, Nina Konovalova, Aibek Alanov</p><p>Mechanistic interpretability seeks to explain neural network behavior by decomposing model computations into interpretable features and circuits. While transcoder-based circuit tracing has recently enabled detailed causal analyses of large language models, multimodal diffusion transformers for image generation remain comparatively opaque. We still lack tools for understanding how semantic information propagates across denoising steps and how text and image representations interact within double-</p><p><strong>Tags:</strong> circuits, features, vision</p>]]></description>
       <pubDate>Sun, 14 Jun 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2606.15796v1</guid>
-    </item>
-    <item>
-      <title>Frame-Conditioned Moral Computation in LLaMA 3.1-8B-Instruct: A Mechanistic Interpretability Audit of Ethical Reasoning</title>
-      <link>https://arxiv.org/abs/2606.15507v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Ali Dasdan, Manan Shah, W. Russell Neuman, Chad Coleman, Kund Meghani, et al.</p><p>Behavioral audits of Large Language Models on moral prompts measure what the model says, not the internal computation producing it. We use Transluce, an AI-driven mechanistic-interpretability platform, to examine LLaMA 3.1-8B-Instruct on 54 moral prompts in four batteries: 17 dilemmas, policy, and meta-ethical questions (B1); 6 role-playing scenarios (B3); and a controlled trolley contrast varying the switching mechanism with people fixed (B4, 15 prompts) or identity attributes with mechanism fi</p><p><strong>Tags:</strong> reasoning</p>]]></description>
-      <pubDate>Sat, 13 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.15507v1</guid>
-    </item>
-    <item>
-      <title>Size Doesn&#x27;t Matter: Cosine-Scored Sparse Autoencoders</title>
-      <link>https://arxiv.org/abs/2606.15054v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Silen Naihin, Lev Stambler</p><p>Sparse autoencoders (SAEs) detect features via inner product, so a feature&#x27;s activation scales with both its directional alignment and the input&#x27;s norm. Under BatchTopK, high-norm tokens inflate all pre-activations simultaneously, claiming dictionary slots regardless of content alignment. This matters because sublayer normalization has already discarded the magnitude the score measures, so the encoder detects a quantity the model does not read. We replace the score with a learned blend of cosine</p><p><strong>Tags:</strong> SAE, features, safety</p>]]></description>
-      <pubDate>Sat, 13 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.15054v1</guid>
-    </item>
-    <item>
-      <title>Transformers Learn the Mestre-Nagao Heuristic</title>
-      <link>https://arxiv.org/abs/2606.15036v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Pranav Venkata Konda</p><p>We train a two-layer transformer encoder to classify rational elliptic curves $E/\mathbb{Q}$ of conductor $\leq 10000$ as either rank 0 or rank 1 from the first 128 normalized Frobenius traces. We achieve &gt;99% accuracy on both classes, and accuracy is essentially unchanged on test curves with no isogeny or quadratic-twist relative in the training set. We then apply techniques from mechanistic interpretability such as attention analysis, linear probing, activation patching, logit attribution, and</p><p><strong>Tags:</strong> probing</p>]]></description>
-      <pubDate>Sat, 13 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.15036v1</guid>
     </item>
   </channel>
 </rss>
