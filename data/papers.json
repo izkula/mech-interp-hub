@@ -1,6 +1,48 @@
 {
-  "lastUpdated": "2026-06-23",
+  "lastUpdated": "2026-06-24",
   "papers": [
+    {
+      "id": "arxiv-2606-24026v1",
+      "title": "Can Language Model Agents be Helpful Circuit Explainers in Mechanistic Interpretability?",
+      "authors": "Ayan Antik Khan, Harsh Kohli, Yuekun Yao, Huan Sun, Ziyu Yao",
+      "date": "2026-06-23",
+      "url": "https://arxiv.org/abs/2606.24026v1",
+      "abstract": "Mechanistic interpretability has made substantial progress in automatically localizing circuits, but explaining what localized components do remains labor-intensive and difficult to standardize. In this work, we study whether language model (LM) agents can assist with this explanation problem once a circuit has already been identified. We introduce AgenticInterpBench, a benchmark for circuit explanation built from 84 semi-synthetic transformer circuits with 163 component-level annotations. We pr",
+      "tags": [
+        "circuits"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-24716v1",
+      "title": "Evaluating the Interpretability of Sparse Autoencoders with Concept Annotations",
+      "authors": "Jonas Klotz, Cassio F. Dantas, Pallavi Jain, Diego Marcos, Beg\u00fcm Demir",
+      "date": "2026-06-23",
+      "url": "https://arxiv.org/abs/2606.24716v1",
+      "abstract": "Sparse autoencoders (SAEs) are increasingly used to extract interpretable concepts from vision and vision language models, yet existing evaluation methods largely rely on proxy metrics or qualitative inspection rather than measuring semantic correspondence. We present a human-grounded evaluation framework that quantifies alignment between SAE latents and human-annotated concepts, without requiring user studies, and validate this matching through targeted attribute perturbations. To enable this i",
+      "tags": [
+        "SAE",
+        "safety",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-24759v1",
+      "title": "UniDrive: A Unified Vision-Language and Grounding Framework for Interpretable Risk Understanding in Autonomous Driving",
+      "authors": "Xiaowei Gao, Pengxiang Li, Yitai Cheng, Ruihan Xu, James Haworth, et al.",
+      "date": "2026-06-23",
+      "url": "https://arxiv.org/abs/2606.24759v1",
+      "abstract": "Recent multimodal large language models (MLLMs) have shown strong potential for autonomous driving scene understanding, yet existing methods still face a fundamental trade-off between temporal reasoning and spatial precision. Models that rely on single-frame or low-resolution inputs often miss small, distant, or partially occluded hazards, while language-centric driving models frequently provide limited grounded evidence for their explanations. To address this gap, we propose UniDrive, a unified",
+      "tags": [
+        "vision",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2606-23443v1",
       "title": "What Does a Chemical Language Model Know About Molecules?",
