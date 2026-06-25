@@ -1,6 +1,23 @@
 {
-  "lastUpdated": "2026-06-24",
+  "lastUpdated": "2026-06-25",
   "papers": [
+    {
+      "id": "arxiv-2606-25657v1",
+      "title": "Steering Vision-Language Models with Joint Sparse Autoencoders",
+      "authors": "Huizhen Shu, Xuying Li, Hongxu Lin, Wenjie Sun, Hui Li",
+      "date": "2026-06-24",
+      "url": "https://arxiv.org/abs/2606.25657v1",
+      "abstract": "Sparse Autoencoders (SAEs) have shown promise for analyzing language models, but applying them to vision-language models (VLMs) often yields representations that are difficult to use as controllable cross-modal steering directions. We introduce the Joint Sparse Autoencoder (JSAE), which uses an explicit alignment constraint to jointly factorize sequence-pooled vision and language activations into shared, interpretable image/caption-level features. Applied to LLaVA, JSAE recovers cross-modal feat",
+      "tags": [
+        "SAE",
+        "features",
+        "safety",
+        "steering",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2606-24026v1",
       "title": "Can Language Model Agents be Helpful Circuit Explainers in Mechanistic Interpretability?",
@@ -39,6 +56,73 @@
       "tags": [
         "vision",
         "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-24952v1",
+      "title": "Perfect Detection, Failed Control: The Geometry of Knowing vs. Steering in Language Models",
+      "authors": "Cosimo Galeone, Anna Ettorre, Minsu Park, Giuseppe Ettorre, Daniele Ligorio",
+      "date": "2026-06-23",
+      "url": "https://arxiv.org/abs/2606.24952v1",
+      "abstract": "A central aspiration of mechanistic interpretability is controllability: if we know where a behavior is represented in a model's activations, we should be able to modify it. This rests on a hidden premise -- that the direction which detects a behavior and the direction which controls it are the same, or close. We test this geometrically: what is the angle between the direction that best detects a behavior and the one that best causes it? If detection implies control the cosine is near 1; otherwi",
+      "tags": [
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-24997v1",
+      "title": "What's in an Earth Embedding? An Explainability Analysis of Location Encoders",
+      "authors": "Livia Betti, Sebastian Ricke, Ivica Obadic, Adam J. Stewart, Esther Rolf",
+      "date": "2026-06-23",
+      "url": "https://arxiv.org/abs/2606.24997v1",
+      "abstract": "Geographic implicit neural representations (INRs) learn to map any coordinate on Earth to a location embedding, implicitly encoding geospatial data into the weights of a neural network. Location embeddings are widely used off the shelf as general-purpose geospatial representations, yet users lack principled tools to audit what geographic or semantic information these embeddings capture. In this work, we analyze the information content of geographic INRs through their location embeddings. We deco",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-25182v1",
+      "title": "What Intermediate Layers Know: Detecting Jailbreaks from Entropy Dynamics",
+      "authors": "Sofiia Nikolenko, Michele Papucci, Mina Rezaei, Shireen Kudukkil Manchingal",
+      "date": "2026-06-23",
+      "url": "https://arxiv.org/abs/2606.25182v1",
+      "abstract": "Jailbreak attacks reveal a persistent weakness in aligned Large Language Models: carefully crafted prompts can elicit policy-violating responses despite safety training. While most defenses operate at the prompt or output level, it remains unclear how harmful intent is encoded within the model's internal representations. We investigate this question by analyzing token-level predictive entropy trajectories across layers of a frozen LLM using the logit lens. We find that static aggregate statistic",
+      "tags": [
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-25034v1",
+      "title": "Yuvion VL: A Multimodal Foundation Model for Adversarial Content and AI Safety",
+      "authors": "Shikai Qiu, Xiaowen Xu, Benlei Cui, Ting Ma, Xiufeng Huang, et al.",
+      "date": "2026-06-23",
+      "url": "https://arxiv.org/abs/2606.25034v1",
+      "abstract": "General-purpose models often struggle to reliably identify and understand real-world multimodal risks, largely due to the inherent multimodal adversarial nature of content and AI safety. We present Yuvion VL, a family of multimodal large language models purpose-built for content and AI safety, with both instruction-tuned and reasoning-oriented variants. Yuvion VL addresses this gap by treating safety as an inherently adversarial and multimodal problem and designing the entire pipeline around adv",
+      "tags": [
+        "safety",
+        "vision",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-24964v1",
+      "title": "Evidence for feature-specific error correction in LLMs",
+      "authors": "Francisco Ferreira da Silva, Stefan Heimersheim",
+      "date": "2026-06-23",
+      "url": "https://arxiv.org/abs/2606.24964v1",
+      "abstract": "Understanding the features of large language models (LLMs) is a central goal of interpretability. LLMs are commonly assumed to use superposition to represent more features than they have dimensions. They may not only represent features in superposition but also perform computation in superposition. Theory predicts that computing in superposition requires error correction that privileges feature directions over generic ones, but this prediction has not been tested empirically. We propose an empir",
+      "tags": [
+        "superposition",
+        "features",
+        "theory"
       ],
       "source": "arXiv",
       "featured": false
