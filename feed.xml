@@ -5,9 +5,16 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 24 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 25 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Steering Vision-Language Models with Joint Sparse Autoencoders</title>
+      <link>https://arxiv.org/abs/2606.25657v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Huizhen Shu, Xuying Li, Hongxu Lin, Wenjie Sun, Hui Li</p><p>Sparse Autoencoders (SAEs) have shown promise for analyzing language models, but applying them to vision-language models (VLMs) often yields representations that are difficult to use as controllable cross-modal steering directions. We introduce the Joint Sparse Autoencoder (JSAE), which uses an explicit alignment constraint to jointly factorize sequence-pooled vision and language activations into shared, interpretable image/caption-level features. Applied to LLaVA, JSAE recovers cross-modal feat</p><p><strong>Tags:</strong> SAE, features, safety, steering, vision</p>]]></description>
+      <pubDate>Wed, 24 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.25657v1</guid>
+    </item>
     <item>
       <title>Can Language Model Agents be Helpful Circuit Explainers in Mechanistic Interpretability?</title>
       <link>https://arxiv.org/abs/2606.24026v1</link>
@@ -28,6 +35,41 @@
       <description><![CDATA[<p><strong>Authors:</strong> Xiaowei Gao, Pengxiang Li, Yitai Cheng, Ruihan Xu, James Haworth, et al.</p><p>Recent multimodal large language models (MLLMs) have shown strong potential for autonomous driving scene understanding, yet existing methods still face a fundamental trade-off between temporal reasoning and spatial precision. Models that rely on single-frame or low-resolution inputs often miss small, distant, or partially occluded hazards, while language-centric driving models frequently provide limited grounded evidence for their explanations. To address this gap, we propose UniDrive, a unified</p><p><strong>Tags:</strong> vision, reasoning</p>]]></description>
       <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2606.24759v1</guid>
+    </item>
+    <item>
+      <title>Perfect Detection, Failed Control: The Geometry of Knowing vs. Steering in Language Models</title>
+      <link>https://arxiv.org/abs/2606.24952v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Cosimo Galeone, Anna Ettorre, Minsu Park, Giuseppe Ettorre, Daniele Ligorio</p><p>A central aspiration of mechanistic interpretability is controllability: if we know where a behavior is represented in a model&#x27;s activations, we should be able to modify it. This rests on a hidden premise -- that the direction which detects a behavior and the direction which controls it are the same, or close. We test this geometrically: what is the angle between the direction that best detects a behavior and the one that best causes it? If detection implies control the cosine is near 1; otherwi</p><p><strong>Tags:</strong> steering</p>]]></description>
+      <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.24952v1</guid>
+    </item>
+    <item>
+      <title>What&#x27;s in an Earth Embedding? An Explainability Analysis of Location Encoders</title>
+      <link>https://arxiv.org/abs/2606.24997v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Livia Betti, Sebastian Ricke, Ivica Obadic, Adam J. Stewart, Esther Rolf</p><p>Geographic implicit neural representations (INRs) learn to map any coordinate on Earth to a location embedding, implicitly encoding geospatial data into the weights of a neural network. Location embeddings are widely used off the shelf as general-purpose geospatial representations, yet users lack principled tools to audit what geographic or semantic information these embeddings capture. In this work, we analyze the information content of geographic INRs through their location embeddings. We deco</p>]]></description>
+      <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.24997v1</guid>
+    </item>
+    <item>
+      <title>What Intermediate Layers Know: Detecting Jailbreaks from Entropy Dynamics</title>
+      <link>https://arxiv.org/abs/2606.25182v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Sofiia Nikolenko, Michele Papucci, Mina Rezaei, Shireen Kudukkil Manchingal</p><p>Jailbreak attacks reveal a persistent weakness in aligned Large Language Models: carefully crafted prompts can elicit policy-violating responses despite safety training. While most defenses operate at the prompt or output level, it remains unclear how harmful intent is encoded within the model&#x27;s internal representations. We investigate this question by analyzing token-level predictive entropy trajectories across layers of a frozen LLM using the logit lens. We find that static aggregate statistic</p><p><strong>Tags:</strong> safety</p>]]></description>
+      <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.25182v1</guid>
+    </item>
+    <item>
+      <title>Yuvion VL: A Multimodal Foundation Model for Adversarial Content and AI Safety</title>
+      <link>https://arxiv.org/abs/2606.25034v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Shikai Qiu, Xiaowen Xu, Benlei Cui, Ting Ma, Xiufeng Huang, et al.</p><p>General-purpose models often struggle to reliably identify and understand real-world multimodal risks, largely due to the inherent multimodal adversarial nature of content and AI safety. We present Yuvion VL, a family of multimodal large language models purpose-built for content and AI safety, with both instruction-tuned and reasoning-oriented variants. Yuvion VL addresses this gap by treating safety as an inherently adversarial and multimodal problem and designing the entire pipeline around adv</p><p><strong>Tags:</strong> safety, vision, reasoning</p>]]></description>
+      <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.25034v1</guid>
+    </item>
+    <item>
+      <title>Evidence for feature-specific error correction in LLMs</title>
+      <link>https://arxiv.org/abs/2606.24964v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Francisco Ferreira da Silva, Stefan Heimersheim</p><p>Understanding the features of large language models (LLMs) is a central goal of interpretability. LLMs are commonly assumed to use superposition to represent more features than they have dimensions. They may not only represent features in superposition but also perform computation in superposition. Theory predicts that computing in superposition requires error correction that privileges feature directions over generic ones, but this prediction has not been tested empirically. We propose an empir</p><p><strong>Tags:</strong> superposition, features, theory</p>]]></description>
+      <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.24964v1</guid>
     </item>
     <item>
       <title>What Does a Chemical Language Model Know About Molecules?</title>
@@ -175,48 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Frank Zhengqing Wu, Francesco Tonin, Volkan Cevher</p><p>Circuit discovery is a key technique in mechanistic interpretability to pinpoint the model components that are crucial for performing a given task. Although the current state-of-the-art method (EAP-IG) performs well on the metric of (un)faithfulness, it suffers from substantial variability. This includes resampling variance, where the circuit changes when we probe with a new batch of data from the same distribution; rephrasing variance, where the discovered circuit shifts when the prompts are re</p><p><strong>Tags:</strong> circuits, probing</p>]]></description>
       <pubDate>Mon, 15 Jun 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2606.16920v1</guid>
-    </item>
-    <item>
-      <title>Learning Hybrid Biophysical Neuron Models with Neural ODEs</title>
-      <link>https://arxiv.org/abs/2606.16693v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Jonas Beck, Michael Deistler, Dóra Viktória Molnár, Jakob H. Macke, Philipp Berens</p><p>Biophysical neuron models link measurements of neural activity to underlying cellular mechanisms. Yet, a central challenge is that the kinetics of many ion channels are poorly characterized, and practical simplifications -- omitting channels or reducing morphological detail -- introduce systematic gaps between model and biology. Bridging these gaps requires approaches that can flexibly discover unmodeled dynamics while preserving mechanistic interpretability. Here, we introduce a hybrid modeling</p><p><strong>Tags:</strong> biology</p>]]></description>
-      <pubDate>Mon, 15 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.16693v1</guid>
-    </item>
-    <item>
-      <title>Cascaded Sparse Autoencoders Learn Multi-Level Visual Concepts in Multimodal LLMs</title>
-      <link>https://arxiv.org/abs/2606.16193v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Yusong Zhao, Hengyi Wang, Tanuja Ganu, Akshay Nambi, Hao Wang</p><p>Multimodal Large Language Models (MLLMs) have demonstrated strong performance on vision-language tasks, yet their internal visual representations remain difficult to interpret. Sparse Autoencoders (SAEs) provide a scalable way to decompose dense model activations into sparse, interpretable features. However, existing SAE architectures primarily recover flat feature dictionaries and are less suited for explicit multi-level concept organization. In this paper, we introduce cascaded sparse autoenco</p><p><strong>Tags:</strong> SAE, features, vision</p>]]></description>
-      <pubDate>Mon, 15 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.16193v1</guid>
-    </item>
-    <item>
-      <title>When Confidence Lacks Concepts: Interpretable OOD Detection via Representation Perturbations</title>
-      <link>https://arxiv.org/abs/2606.16196v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Anju Chhetri, Pratik Shrestha, Ramesh Rana, Prashnna Gyawali, Binod Bhattarai</p><p>Deep neural networks have achieved remarkable performance across medical imaging tasks, yet their tendency to overgeneralize under distributional shifts poses a major obstacle to safe clinical deployment. Out-of-Distribution (OOD) detection methods aim to mitigate this risk, but most existing approaches rely on opaque internal signals with poorly understood semantic meaning, limiting trust in safety-critical settings. In this work, we propose an interpretable OOD detection framework that probes </p><p><strong>Tags:</strong> safety, probing</p>]]></description>
-      <pubDate>Mon, 15 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.16196v1</guid>
-    </item>
-    <item>
-      <title>Progressive Knowledge-Guided Large Language Model Framework for Bearing Fault Diagnosis</title>
-      <link>https://arxiv.org/abs/2606.16684v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Jinghan Wang, Gaoliang Peng, Yanjun Chen, Wei Zhang, Wentao Wu, et al.</p><p>Vibration-based bearing fault diagnosis requires resolving three interrelated measurement challenges, including the trade-off between global statistical feature efficiency and local transient signal fidelity, insufficient traceability of measurement features to underlying fault physics, and ineffective multi-source measurement information fusion across diagnostic scales. This paper presents a progressive physics-guided multi-scale vibration signal processing framework that addresses all three ch</p><p><strong>Tags:</strong> features</p>]]></description>
-      <pubDate>Mon, 15 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.16684v1</guid>
-    </item>
-    <item>
-      <title>Circuit Tracing in Autoregressive Protein Language Models</title>
-      <link>https://arxiv.org/abs/2606.16044v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Darin Tsui, William Deinzer, Daniel Saeedi, Amirali Aghazadeh</p><p>Protein language models (pLMs) can generate novel protein sequences with properties beyond those observed in nature, yet the mechanisms underlying protein generation remain poorly understood. Existing mechanistic interpretability methods based on sparse autoencoders and transcoders primarily focus on protein representation learning models and do not capture the computation required for autoregressive generation. Here, we introduce ProGenMech, a mechanistic interpretability framework for generati</p><p><strong>Tags:</strong> SAE, circuits, biology</p>]]></description>
-      <pubDate>Sun, 14 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.16044v1</guid>
-    </item>
-    <item>
-      <title>DifFRACT: Diffusion Feature Reconstruction and Attribution for Circuit Tracing</title>
-      <link>https://arxiv.org/abs/2606.15796v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Artyom Mazur, Nina Konovalova, Aibek Alanov</p><p>Mechanistic interpretability seeks to explain neural network behavior by decomposing model computations into interpretable features and circuits. While transcoder-based circuit tracing has recently enabled detailed causal analyses of large language models, multimodal diffusion transformers for image generation remain comparatively opaque. We still lack tools for understanding how semantic information propagates across denoising steps and how text and image representations interact within double-</p><p><strong>Tags:</strong> circuits, features, vision</p>]]></description>
-      <pubDate>Sun, 14 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.15796v1</guid>
     </item>
   </channel>
 </rss>
