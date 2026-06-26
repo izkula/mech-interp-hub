@@ -1,6 +1,90 @@
 {
-  "lastUpdated": "2026-06-25",
+  "lastUpdated": "2026-06-26",
   "papers": [
+    {
+      "id": "arxiv-2606-26523v1",
+      "title": "Radical AI Interpretability",
+      "authors": "Daniel A. Herrmann, Benjamin A. Levinstein",
+      "date": "2026-06-25",
+      "url": "https://arxiv.org/abs/2606.26523v1",
+      "abstract": "We develop a framework for interpreting AI systems as agents, drawing on the philosophical tradition of radical interpretation and the tools of mechanistic interpretability. The core question is: given the computational facts about a system, how do we solve for its beliefs, desires, and meanings? This matters increasingly for safety. We want to be able to trust the systems we deploy, whether by understanding their goals or, more modestly, by reliably detecting deception. Interpretability researc",
+      "tags": [
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-26474v1",
+      "title": "Localizing RL-Induced Tool Use to a Single Crosscoder Feature",
+      "authors": "Andrii Shportko, Shubham Bhokare, Ahmed Zeyad A Alzahrani, Bowen Cheng, Gustavo Mercier, et al.",
+      "date": "2026-06-25",
+      "url": "https://arxiv.org/abs/2606.26474v1",
+      "abstract": "Fine-tuning through RL reshapes the internal representations of language models to enable agentic behaviors such as tool use, yet the mechanistic basis of these changes remains poorly understood. While RL substantially improves structured tool-call generation, it is unclear which features emerge, which are preserved, and whether identified features can be leveraged for retraining-free behavioral control. In this work, we show that $\\textit{Dedicated Feature Crosscoders (DFC)}$ isolate a compact ",
+      "tags": [
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-27199v1",
+      "title": "Forecasting With LLMs: Improved Generalization Through Feature Steering",
+      "authors": "Humzah Merchant, Bradford Levy",
+      "date": "2026-06-25",
+      "url": "https://arxiv.org/abs/2606.27199v1",
+      "abstract": "Successful forecasting involves identifying patterns between historical and future states of the world which generalize to future observations. We apply LLMs to a variety of forecasting tasks and inspect their internal states using sparse autoencoders to understand whether they appear to rely on time-specific pieces of knowledge versus generalizable patterns. Our analyses identify features associated with both time-aware reasoning and look-ahead-biased reasoning. We then apply the LLMs to an ent",
+      "tags": [
+        "SAE",
+        "features",
+        "steering",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-26629v1",
+      "title": "From Weights to Features: SAE-Guided Activation Regularization for LLM Continual Learning",
+      "authors": "Evan Ning, Wei Xue, Dong Lou, Yike Guo",
+      "date": "2026-06-25",
+      "url": "https://arxiv.org/abs/2606.26629v1",
+      "abstract": "Weight-space regularization methods such as Elastic Weight Consolidation (EWC) are the standard approach to catastrophic forgetting in continual learning. However, those methods tend to underperform when applied to large language models. We argue that such underperformance can be partly explained by the ``polysemantic'' nature of large language models: per-weight importance estimates utilized by EWC-style regularization are too coarse and cannot isolate the knowledge that needs protection. In th",
+      "tags": [
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-26620v1",
+      "title": "Discovering Millions of Interpretable Features with Sparse Autoencoders",
+      "authors": "XinYang He, Wei Wang, Bing Zhao, Xuan Ren, WenBo Li, et al.",
+      "date": "2026-06-25",
+      "url": "https://arxiv.org/abs/2606.26620v1",
+      "abstract": "Sparse autoencoders (SAEs) have emerged as a powerful tool for decomposing superposed language model representations into sparse and interpretable features. However, training SAEs is computationally expensive, and available open-source SAE models remain limited. In this work, we introduce \\textbf{Qwen3-Instruct SAE}, a comprehensive suite of SAEs trained on the Qwen3 instruction-tuned model family, covering Qwen3-1.7B, Qwen3-4B, and Qwen3-8B. For Qwen3-1.7B and Qwen3-4B, we train layer-wise SAEs",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-27321v1",
+      "title": "Beyond the Hard Budget: Sparsity Regularizers for More Interpretable Top-k Sparse Autoencoders",
+      "authors": "Nathana\u00ebl Jacquier, Maria Vakalopoulou, Mahdi S. Hosseini",
+      "date": "2026-06-25",
+      "url": "https://arxiv.org/abs/2606.27321v1",
+      "abstract": "Sparse autoencoders (SAEs) have become a leading tool for interpreting the representations of vision foundation models, decomposing their polysemantic activations into a larger set of sparse, more monosemantic features. The Top-$k$ SAE, a now-standard variant, enforces sparsity architecturally through its activation function, retaining only the $k$ most active latents per input. Because it was designed precisely to avoid the $\\ell_1$ penalty used by earlier SAEs and its known drawbacks, it has n",
+      "tags": [
+        "SAE",
+        "features",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2606-25657v1",
       "title": "Steering Vision-Language Models with Joint Sparse Autoencoders",
@@ -14,6 +98,20 @@
         "safety",
         "steering",
         "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-26396v1",
+      "title": "At the Edge of Understanding: Sparse Autoencoders Trace The Limits of Transformer Generalization",
+      "authors": "Praneet Suresh, Jack Stanley, Sonia Joseph, Luca Scimeca, Danilo Bzdok",
+      "date": "2026-06-24",
+      "url": "https://arxiv.org/abs/2606.26396v1",
+      "abstract": "Pre-trained transformers have demonstrated remarkable generalization abilities, at times extending beyond the scope of their training data. Yet, real-world deployments often face unexpected or adversarial data that diverges from training data distributions. Without explicit mechanisms for handling such shifts, model reliability and safety degrade, urging more disciplined study of out-of-distribution (OOD) settings for transformers. By systematic experiments, we present a mechanistic framework fo",
+      "tags": [
+        "SAE",
+        "safety"
       ],
       "source": "arXiv",
       "featured": false
