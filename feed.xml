@@ -5,15 +5,64 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 25 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 26 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Radical AI Interpretability</title>
+      <link>https://arxiv.org/abs/2606.26523v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Daniel A. Herrmann, Benjamin A. Levinstein</p><p>We develop a framework for interpreting AI systems as agents, drawing on the philosophical tradition of radical interpretation and the tools of mechanistic interpretability. The core question is: given the computational facts about a system, how do we solve for its beliefs, desires, and meanings? This matters increasingly for safety. We want to be able to trust the systems we deploy, whether by understanding their goals or, more modestly, by reliably detecting deception. Interpretability researc</p><p><strong>Tags:</strong> safety</p>]]></description>
+      <pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.26523v1</guid>
+    </item>
+    <item>
+      <title>Localizing RL-Induced Tool Use to a Single Crosscoder Feature</title>
+      <link>https://arxiv.org/abs/2606.26474v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Andrii Shportko, Shubham Bhokare, Ahmed Zeyad A Alzahrani, Bowen Cheng, Gustavo Mercier, et al.</p><p>Fine-tuning through RL reshapes the internal representations of language models to enable agentic behaviors such as tool use, yet the mechanistic basis of these changes remains poorly understood. While RL substantially improves structured tool-call generation, it is unclear which features emerge, which are preserved, and whether identified features can be leveraged for retraining-free behavioral control. In this work, we show that $\textit{Dedicated Feature Crosscoders (DFC)}$ isolate a compact </p><p><strong>Tags:</strong> features</p>]]></description>
+      <pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.26474v1</guid>
+    </item>
+    <item>
+      <title>Forecasting With LLMs: Improved Generalization Through Feature Steering</title>
+      <link>https://arxiv.org/abs/2606.27199v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Humzah Merchant, Bradford Levy</p><p>Successful forecasting involves identifying patterns between historical and future states of the world which generalize to future observations. We apply LLMs to a variety of forecasting tasks and inspect their internal states using sparse autoencoders to understand whether they appear to rely on time-specific pieces of knowledge versus generalizable patterns. Our analyses identify features associated with both time-aware reasoning and look-ahead-biased reasoning. We then apply the LLMs to an ent</p><p><strong>Tags:</strong> SAE, features, steering, reasoning</p>]]></description>
+      <pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.27199v1</guid>
+    </item>
+    <item>
+      <title>From Weights to Features: SAE-Guided Activation Regularization for LLM Continual Learning</title>
+      <link>https://arxiv.org/abs/2606.26629v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Evan Ning, Wei Xue, Dong Lou, Yike Guo</p><p>Weight-space regularization methods such as Elastic Weight Consolidation (EWC) are the standard approach to catastrophic forgetting in continual learning. However, those methods tend to underperform when applied to large language models. We argue that such underperformance can be partly explained by the ``polysemantic&#x27;&#x27; nature of large language models: per-weight importance estimates utilized by EWC-style regularization are too coarse and cannot isolate the knowledge that needs protection. In th</p><p><strong>Tags:</strong> features</p>]]></description>
+      <pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.26629v1</guid>
+    </item>
+    <item>
+      <title>Discovering Millions of Interpretable Features with Sparse Autoencoders</title>
+      <link>https://arxiv.org/abs/2606.26620v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> XinYang He, Wei Wang, Bing Zhao, Xuan Ren, WenBo Li, et al.</p><p>Sparse autoencoders (SAEs) have emerged as a powerful tool for decomposing superposed language model representations into sparse and interpretable features. However, training SAEs is computationally expensive, and available open-source SAE models remain limited. In this work, we introduce \textbf{Qwen3-Instruct SAE}, a comprehensive suite of SAEs trained on the Qwen3 instruction-tuned model family, covering Qwen3-1.7B, Qwen3-4B, and Qwen3-8B. For Qwen3-1.7B and Qwen3-4B, we train layer-wise SAEs</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.26620v1</guid>
+    </item>
+    <item>
+      <title>Beyond the Hard Budget: Sparsity Regularizers for More Interpretable Top-k Sparse Autoencoders</title>
+      <link>https://arxiv.org/abs/2606.27321v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Nathanaël Jacquier, Maria Vakalopoulou, Mahdi S. Hosseini</p><p>Sparse autoencoders (SAEs) have become a leading tool for interpreting the representations of vision foundation models, decomposing their polysemantic activations into a larger set of sparse, more monosemantic features. The Top-$k$ SAE, a now-standard variant, enforces sparsity architecturally through its activation function, retaining only the $k$ most active latents per input. Because it was designed precisely to avoid the $\ell_1$ penalty used by earlier SAEs and its known drawbacks, it has n</p><p><strong>Tags:</strong> SAE, features, vision</p>]]></description>
+      <pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.27321v1</guid>
+    </item>
     <item>
       <title>Steering Vision-Language Models with Joint Sparse Autoencoders</title>
       <link>https://arxiv.org/abs/2606.25657v1</link>
       <description><![CDATA[<p><strong>Authors:</strong> Huizhen Shu, Xuying Li, Hongxu Lin, Wenjie Sun, Hui Li</p><p>Sparse Autoencoders (SAEs) have shown promise for analyzing language models, but applying them to vision-language models (VLMs) often yields representations that are difficult to use as controllable cross-modal steering directions. We introduce the Joint Sparse Autoencoder (JSAE), which uses an explicit alignment constraint to jointly factorize sequence-pooled vision and language activations into shared, interpretable image/caption-level features. Applied to LLaVA, JSAE recovers cross-modal feat</p><p><strong>Tags:</strong> SAE, features, safety, steering, vision</p>]]></description>
       <pubDate>Wed, 24 Jun 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2606.25657v1</guid>
+    </item>
+    <item>
+      <title>At the Edge of Understanding: Sparse Autoencoders Trace The Limits of Transformer Generalization</title>
+      <link>https://arxiv.org/abs/2606.26396v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Praneet Suresh, Jack Stanley, Sonia Joseph, Luca Scimeca, Danilo Bzdok</p><p>Pre-trained transformers have demonstrated remarkable generalization abilities, at times extending beyond the scope of their training data. Yet, real-world deployments often face unexpected or adversarial data that diverges from training data distributions. Without explicit mechanisms for handling such shifts, model reliability and safety degrade, urging more disciplined study of out-of-distribution (OOD) settings for transformers. By systematic experiments, we present a mechanistic framework fo</p><p><strong>Tags:</strong> SAE, safety</p>]]></description>
+      <pubDate>Wed, 24 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.26396v1</guid>
     </item>
     <item>
       <title>Can Language Model Agents be Helpful Circuit Explainers in Mechanistic Interpretability?</title>
@@ -168,55 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Jiangnan Xia, Xuansheng Wu, Yu Yang, Xin Wang, Ninghao Liu</p><p>Intent-based recommender systems have gained significant attention for improving accuracy and interpretability by modeling the underlying motivations behind user behaviors. Most existing models derive intents directly from user sequences via clustering or prototype learning. However, they are sensitive to sequence quality, require presetting the number of intents, and lack explicit semantic grounding. These issues lead to an incomplete and coarse intent set and limit the effectiveness of recomme</p><p><strong>Tags:</strong> SAE</p>]]></description>
       <pubDate>Wed, 17 Jun 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2606.18897v1</guid>
-    </item>
-    <item>
-      <title>Explaining Attention with Program Synthesis</title>
-      <link>https://arxiv.org/abs/2606.19317v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Amiri Hayes, Belinda Li, Jacob Andreas</p><p>A longstanding goal of research on interpretable deep learning is to replace opaque neural computations with human-meaningful symbolic descriptions. In this paper, we propose an approach for approximating the behavior of components of deep networks with executable programs. We focus on attention heads in transformer language models. For a given head, we first compute its associated attention matrices on a collection of randomly selected training examples. Next, we prompt a pre-trained language m</p><p><strong>Tags:</strong> attention</p>]]></description>
-      <pubDate>Wed, 17 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.19317v1</guid>
-    </item>
-    <item>
-      <title>Decoding Hidden Deception in Reasoning LLMs: Activation Explainers for Deception Auditing</title>
-      <link>https://arxiv.org/abs/2606.17478v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Kexin Chen, Yi Liu, Haonan Zhang, Yanhui Li, Xinyu Deng, et al.</p><p>As LLMs acquire stronger reasoning capabilities, deceptive behavior becomes an increasingly serious safety concern. Existing deception monitors either score visible transcripts or derive scalar probe scores from representation vectors, leaving little inspectable evidence about why a response is suspicious. We introduce STATEWITNESS, an activation explainer for deception auditing. A separate decoder reads a target model&#x27;s hidden states, then answers natural-language queries or emits structured re</p><p><strong>Tags:</strong> safety, probing, reasoning</p>]]></description>
-      <pubDate>Tue, 16 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.17478v1</guid>
-    </item>
-    <item>
-      <title>Effects of sparsity and superposition on loss in simple autoencoders</title>
-      <link>https://arxiv.org/abs/2606.18538v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Mriganka Basu Roy Chowdhury, Eric McLaughlin Weiner</p><p>One of the major difficulties in the mechanistic interpretability of neural networks is the occurrence of polysemanticity, which suggests that each neuron is typically responsible for multiple different tasks, impeding a clean interpretation of their function. The seminal paper of Elhage et al. (2022) argues that this occurs due to superposition, a phenomenon where the neural network represents distinct features as non-orthogonal directions in a lower-dimensional space, a strategy that allows mu</p><p><strong>Tags:</strong> superposition, features</p>]]></description>
-      <pubDate>Tue, 16 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.18538v1</guid>
-    </item>
-    <item>
-      <title>From Sparse Features to Trustworthy Proxies: Certifying SAE-Based Interpretability</title>
-      <link>https://arxiv.org/abs/2606.18383v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Dibyanayan Bandyopadhyay, Asif Ekbal</p><p>Sparse autoencoders (SAEs) are increasingly used to extract interpretable features from language models (LMs), yet a central question remains: when can an SAE-based explanation be treated as a faithful view of an underlying frozen LM We study this through a post-hoc generalization framework that certifies the LM via a sparse proxy, obtained by replacing a native hidden activation with its pretrained SAE reconstruction. Our framework derives an upper bound on the base model&#x27;s expected risk using </p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Tue, 16 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.18383v1</guid>
-    </item>
-    <item>
-      <title>SAE Interventions are Unreliable: Post-Intervention Recovery of Suppressed Behavior</title>
-      <link>https://arxiv.org/abs/2606.18322v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Mingyue Cui, Linghui Shen, Xingyi Yang</p><p>Sparse Autoencoders (SAEs) decompose residual-stream activations into interpretable features. Recent latent-space defenses increasingly rely on these decompositions, assuming that identified &quot;unsafe&quot; SAE features serve as actionable handles for monitoring and intervention. In this paradigm, clamping a specific harmful feature is expected to reliably prevent model misbehavior. However, we show that this success may hide a recoverable failure mode: the clamp may block one visible route to a behavi</p><p><strong>Tags:</strong> SAE, features, safety</p>]]></description>
-      <pubDate>Tue, 16 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.18322v1</guid>
-    </item>
-    <item>
-      <title>Scalable Circuit Learning for Interpreting Large Language Models</title>
-      <link>https://arxiv.org/abs/2606.16939v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Naiyu Yin, Dennis Wei, Tian Gao, Amit Dhurandhar, Karthikeyan Natesan Ramamurthy, et al.</p><p>A prominent research direction in mechanistic interpretability is learning sparse circuits over LLM components to reveal how they jointly produce model behavior. However, raw neurons are polysemantic, making learned circuits hard to interpret. Sparse autoencoder (SAE) features alleviate this, but their high dimensionality makes existing intervention-based circuit learning methods computationally prohibitive. We propose CircuitLasso, a scalable circuit-learning approach based on sparse linear reg</p><p><strong>Tags:</strong> SAE, circuits, features</p>]]></description>
-      <pubDate>Mon, 15 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.16939v1</guid>
-    </item>
-    <item>
-      <title>Demystifying Variance in Circuit Discovery of LLMs</title>
-      <link>https://arxiv.org/abs/2606.16920v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Frank Zhengqing Wu, Francesco Tonin, Volkan Cevher</p><p>Circuit discovery is a key technique in mechanistic interpretability to pinpoint the model components that are crucial for performing a given task. Although the current state-of-the-art method (EAP-IG) performs well on the metric of (un)faithfulness, it suffers from substantial variability. This includes resampling variance, where the circuit changes when we probe with a new batch of data from the same distribution; rephrasing variance, where the discovered circuit shifts when the prompts are re</p><p><strong>Tags:</strong> circuits, probing</p>]]></description>
-      <pubDate>Mon, 15 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.16920v1</guid>
     </item>
   </channel>
 </rss>
