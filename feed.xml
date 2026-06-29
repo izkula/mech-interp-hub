@@ -5,9 +5,30 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 28 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 29 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Can LLMs Judge Better Than They Generate? Evaluating Task Asymmetry, Mechanistic Interpretability and Transferability for In-Context QA</title>
+      <link>https://arxiv.org/abs/2606.28050v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Sambaran Bandyopadhyay</p><p>LLM-as-a-Judge and self-evaluation pipelines implicitly assume that evaluation is easier than generation. We test this in a controlled in-context QA setting where a context passage is the sole information source and each model judges the answer it generated, removing the parametric-knowledge confound of open-domain comparisons. Across four benchmarks (SQuAD 2.0, DROP, HotpotQA, MuSiQue) and two models, evaluation is not uniformly easier: generation accuracy exceeds self-evaluation on three of fo</p>]]></description>
+      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.28050v1</guid>
+    </item>
+    <item>
+      <title>VASAE: Naming SAE Dictionary Directions with Vocabulary-Aligned Anchoring</title>
+      <link>https://arxiv.org/abs/2606.27941v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Kairui Zhang, Ziwen Yu, Zahraa S. Abdallah, Martha Lewis</p><p>Sparse autoencoders (SAEs) provide useful decompositions of Transformer residual streams, but their learned features are usually named post hoc rather than directly connected to the Transformer&#x27;s token vocabulary. We introduce Vocabulary-Aligned Sparse Autoencoder (VASAE), a method that trains SAE features under vocabulary-aligned anchoring and assigns each feature an intrinsic token name: the token string whose embedding is nearest to that feature. Without reducing reconstruction quality compar</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.27941v1</guid>
+    </item>
+    <item>
+      <title>Vision-Default, Prior-Override: Causal Mechanisms of Perception-Knowledge Conflict in Vision-Language Models</title>
+      <link>https://arxiv.org/abs/2606.28273v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Niclas Lietzow, Danielle Bitterman, Carsten Eickhoff, William Rudman, Michal Golovanevsky</p><p>Vision-language models must reconcile visual evidence with memorized world knowledge when the two conflict. How they resolve this conflict shapes the reliability of multimodal systems, yet prior work characterizes it behaviorally without a component-level causal account. We combine activation patching across three granularities (residual stream, attention heads, and MLP sublayers) with model-component ablation studies and mechanistic analysis. Across three VLM families, we find that visual groun</p><p><strong>Tags:</strong> attention, vision</p>]]></description>
+      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.28273v1</guid>
+    </item>
     <item>
       <title>Radical AI Interpretability</title>
       <link>https://arxiv.org/abs/2606.26523v1</link>
@@ -49,6 +70,27 @@
       <description><![CDATA[<p><strong>Authors:</strong> Nathanaël Jacquier, Maria Vakalopoulou, Mahdi S. Hosseini</p><p>Sparse autoencoders (SAEs) have become a leading tool for interpreting the representations of vision foundation models, decomposing their polysemantic activations into a larger set of sparse, more monosemantic features. The Top-$k$ SAE, a now-standard variant, enforces sparsity architecturally through its activation function, retaining only the $k$ most active latents per input. Because it was designed precisely to avoid the $\ell_1$ penalty used by earlier SAEs and its known drawbacks, it has n</p><p><strong>Tags:</strong> SAE, features, vision</p>]]></description>
       <pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2606.27321v1</guid>
+    </item>
+    <item>
+      <title>The Curse of Multiple Mediators: Hidden Interaction Effects in Activation Patching</title>
+      <link>https://arxiv.org/abs/2606.27510v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Sankaran Vaidyanathan, David Arbour, Aaron Mueller, Scott Niekum, David Jensen</p><p>Activation patching is the primary tool in mechanistic interpretability. It attributes causal responsibility for a model behavior to each of its individual components by estimating its natural indirect effect (NIE). Re-deriving the activation patching estimand from causal mediation analysis, we find that the NIE does not solely capture the causal effect through the specific component. It also contains interaction effects (INT) that measure how much the component&#x27;s causal effect itself depends on</p>]]></description>
+      <pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.27510v1</guid>
+    </item>
+    <item>
+      <title>PairSAE: Mechanistic Interpretability from Pair Representations in Protein Co-Folding</title>
+      <link>https://arxiv.org/abs/2606.27440v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Giosue Migliorini, Aristofanis Rontogiannis, Grigori Guitchounts, Nicholas Franklin, Axel Elaldi, et al.</p><p>Foundation models for structural biology have achieved remarkable performance in predicting biomolecular structure and show promise for the design of proteins and small molecules. Yet understanding which internal features drive their outputs remains challenging. Standard sparse autoencoders (SAEs), effective on transformer-style sequence embeddings, do not transfer cleanly to pairformer-like architectures: naively operating on pairwise representations yields a quadratic blow-up of features and o</p><p><strong>Tags:</strong> SAE, features, biology</p>]]></description>
+      <pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.27440v1</guid>
+    </item>
+    <item>
+      <title>hia-gat: A Heterogeneous Interaction-Aware Graph Attention Network For Frame-Level Traffic Conflict Risk Prediction On Freeways</title>
+      <link>https://arxiv.org/abs/2606.27577v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Mahshid Malazizi, Seyedmehdi Khaleghian, Mina Sartipi, Toru Hirano, Yunfei Xu, et al.</p><p>This paper formulates frame-level freeway risk assessment as a multi-agent scene graph-level binary classification problem, where each video or trajectory frame is labeled risky if any TTC- or PET-based conflict violates a specified severity threshold. We construct a relation-aware graph per frame with vehicles as nodes and two interaction types as edges: same-lane (longitudinal) and adjacent-lane (lateral), augmented with physics-informed edge features aligned to rear-end and lane-change confli</p><p><strong>Tags:</strong> features</p>]]></description>
+      <pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2606.27577v1</guid>
     </item>
     <item>
       <title>Steering Vision-Language Models with Joint Sparse Autoencoders</title>
@@ -175,48 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Aryeh Brill, Tom Ingebretsen Carlson</p><p>Neural networks learn features that reflect the hierarchical, multi-scale structure of natural data. Synthetic datasets used to evaluate interpretability methods typically lack this structure, limiting their value as realistic toy models. To close this gap, we introduce a family of synthetic datasets consisting of hierarchical functions defined on critical mean-field percolation clusters embedded in a high-dimensional data space. The percolation data consists of sparse, low-dimensional fractal c</p><p><strong>Tags:</strong> features</p>]]></description>
       <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2606.20347v1</guid>
-    </item>
-    <item>
-      <title>Multimodal Concept Bottleneck Models</title>
-      <link>https://arxiv.org/abs/2606.19882v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Tongqing Shi, Ge Yan, Tuomas Oikarinen, Tsui-Wei Weng</p><p>Concept Bottleneck Models (CBMs) enhance the interpretability of deep learning networks by aligning the features extracted from images with natural concepts. However, existing CBMs are constrained in their ability to generalize beyond a fixed set of predefined classes and the risk of non-concept information leakage, where predictive signals outside the intended concepts are inadvertently exploited. In this paper, we propose Multimodal Concept Bottleneck Model (MM-CBM) to address these issues and</p><p><strong>Tags:</strong> features, vision</p>]]></description>
-      <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.19882v1</guid>
-    </item>
-    <item>
-      <title>From Texts to Scores: Tracing the Emergence of Essay Quality Representations in Large Language Models</title>
-      <link>https://arxiv.org/abs/2606.20152v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Jiaxu Zuo, Mu You, Kaixin Lan, Tao Fang, Yujia Huo, et al.</p><p>Recent advances in Large Language Models (LLMs) have substantially transformed Automated Essay Scoring (AES), yet the internal mechanisms underlying LLM-based scoring remain poorly understood. In this work, we systematically analyze the hidden representations of eight LLMs across two English essay datasets (ASAP++, CSEE) and one Portuguese dataset (ENEM). Using linear probing, cross-prompt generalization, dimensionality reduction, and neuron-level analyses, we find consistent evidence that essay</p><p><strong>Tags:</strong> probing</p>]]></description>
-      <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.20152v1</guid>
-    </item>
-    <item>
-      <title>Who Wins the Conflict? Mechanistic Interpretability of Text Bias in Audio LLMs</title>
-      <link>https://arxiv.org/abs/2606.18924v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Hyebin Cho, Suho Yoo, Jaehyuk Jang, Changick Kim, Joon Son Chung</p><p>While Audio Large Language Models (Audio LLMs) excel at multimodal understanding, they suffer from text dominance, a bias where models blindly favor text over acoustic evidence, causing hallucinations. However, the internal mechanisms underlying how these models behave when audio and textual inputs contradict each other remain unexplored. In this work, we present the first mechanistic analysis of this phenomenon by tracing the propagation of internal representations across layers. Our investigat</p><p><strong>Tags:</strong> vision</p>]]></description>
-      <pubDate>Wed, 17 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.18924v1</guid>
-    </item>
-    <item>
-      <title>Closing the Loop: PID Feedback Control for Interpretable Activation Steering in Symbolic Music Generation</title>
-      <link>https://arxiv.org/abs/2606.18790v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Ioannis Prokopiou, Pantelis Vikatos, Maximos Kaliakatsos-Papakostas, Theodoros Giannakopoulos, Themos Stafylakis</p><p>Transformer-based architectures have significantly advanced the generation of complex symbolic sequences, yet a significant gap remains in achieving fine-grained, interpretable control over discrete signal attributes. This paper investigates the mechanistic interpretability of the Multitrack Music Transformer (MMT) and proposes a framework for deterministic attribute modulation without retraining to bridge this gap via inference-time activation steering. Utilizing the Difference-in-Means (DiffMe</p><p><strong>Tags:</strong> steering</p>]]></description>
-      <pubDate>Wed, 17 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.18790v1</guid>
-    </item>
-    <item>
-      <title>Contextualizing Biological Language Models across Modalities via Logit-Space Contrastive Alignment</title>
-      <link>https://arxiv.org/abs/2606.18703v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Yanjun Shao, Yundi Chen, Yashvi Patel, Aurelien Pelissier, María Rodríguez Martínez</p><p>Pretrained biological language models expose per-token probability distributions through masked-token prediction, providing the likelihood interface central to sequence design, variant scoring, and mechanistic interpretation. Yet these distributions are learned from broad unlabeled corpora and are not naturally conditioned on task-specific biological contexts such as interaction partners, cellular environments, or therapeutic interventions. Existing contextual matching methods often distort this</p><p><strong>Tags:</strong> safety, biology</p>]]></description>
-      <pubDate>Wed, 17 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.18703v1</guid>
-    </item>
-    <item>
-      <title>SAERec: Constructing Fine-grained Interpretable Intents Priors via Sparse Autoencoders for Recommendation</title>
-      <link>https://arxiv.org/abs/2606.18897v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Jiangnan Xia, Xuansheng Wu, Yu Yang, Xin Wang, Ninghao Liu</p><p>Intent-based recommender systems have gained significant attention for improving accuracy and interpretability by modeling the underlying motivations behind user behaviors. Most existing models derive intents directly from user sequences via clustering or prototype learning. However, they are sensitive to sequence quality, require presetting the number of intents, and lack explicit semantic grounding. These issues lead to an incomplete and coarse intent set and limit the effectiveness of recomme</p><p><strong>Tags:</strong> SAE</p>]]></description>
-      <pubDate>Wed, 17 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.18897v1</guid>
     </item>
   </channel>
 </rss>
