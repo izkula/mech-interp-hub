@@ -1,6 +1,112 @@
 {
-  "lastUpdated": "2026-06-29",
+  "lastUpdated": "2026-06-30",
   "papers": [
+    {
+      "id": "arxiv-2606-30609v1",
+      "title": "C$^{2}$R: Cross-sample Consistency Regularization Mitigates Feature Splitting and Absorption in Sparse Autoencoders",
+      "authors": "Haoran Jin, Xiting Wang, Shijie Ren, Hong Xie, Defu Lian",
+      "date": "2026-06-29",
+      "url": "https://arxiv.org/abs/2606.30609v1",
+      "abstract": "Sparse Autoencoders (SAEs) are widely used to interpret large language models by decomposing activations into sparse, human-understandable features, but scaling to large dictionaries exposes fundamental challenges. Systematic studies reveal pervasive feature splitting that fragments coherent concepts into non-atomic latents and widespread feature absorption that creates arbitrary exceptions in general features, severely compromising latent reliability. These issues stem from inconsistent latent ",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-29888v1",
+      "title": "Same Concept, Different Directions: Cross-Modal Feature Heterogeneity in Sparse Autoencoders",
+      "authors": "Chungpa Lee, Jihoon Kwon, Kyle Min, Jy-yong Sohn",
+      "date": "2026-06-29",
+      "url": "https://arxiv.org/abs/2606.29888v1",
+      "abstract": "Vision-language models map images and text into a joint embedding space. However, these embeddings often entangle multiple semantic features, which limits their interpretability and controllability. While sparse autoencoders have emerged as a useful tool for decomposing these embeddings into monosemantic features, their application to joint embedding spaces has largely relied on an implicit, untested assumption that semantically corresponding features share the same directions across modalities.",
+      "tags": [
+        "SAE",
+        "features",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-29693v1",
+      "title": "IG-Lens: Exact Additive Probability Attribution Across Transformer Layers via Telescoping Integrated Gradients",
+      "authors": "Duc Anh Nguyen",
+      "date": "2026-06-29",
+      "url": "https://arxiv.org/abs/2606.29693v1",
+      "abstract": "We ask a simple question about decoder-only transformers: \\emph{between which two layers is the probability of a predicted token actually produced?} Existing layer-wise readout tools answer only approximately. The logit lens and its trained variant report a per-layer \\emph{level} of probability but give no additive decomposition; their estimates are biased and non-monotone across depth. Direct Logit Attribution and related residual-stream methods are additive, but only in \\emph{logit} space -- t",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-30329v1",
+      "title": "Cohort-amortized personalization: navigating the privacy-utility frontier for virtual brain twins",
+      "authors": "Amirhossein Esmaeili, Marmaduke Woodman, Nina Baldy, Abolfazl Ziaeemehr, Julia Makhalova, et al.",
+      "date": "2026-06-29",
+      "url": "https://arxiv.org/abs/2606.30329v1",
+      "abstract": "Personalized generative brain models require individual neuroimaging data that privacy constraints and re-identification risk make difficult to share, while per-subject fitting procedures cost hours of compute -- limiting clinical translation and multi-site collaboration. We introduce cohort-amortized personalization (CAP), which replaces data sharing with model sharing: a neural density estimator is trained on simulations from a mechanistic whole-brain model under a low-rank cohort prior, and o",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-29171v1",
+      "title": "Symbolic Mechanistic Data Attribution: Tracing Training Influence to Learned Behavioral Policies",
+      "authors": "Reza Habibi, Darian Lee, Magy Seif El-Nasr",
+      "date": "2026-06-28",
+      "url": "https://arxiv.org/abs/2606.29171v1",
+      "abstract": "While existing data attribution methods can identify which training examples build specific mechanistic circuits, they cannot explain how training data shapes the high-level behavioral decisions a model learns to make. To bridge this gap, we introduce Symbolic Mechanistic Data Attribution (SMDA), a framework that attributes training pairs to the interpretable symbolic policies governing model behavior. SMDA fits a closed-form Ridge regression over sparse autoencoder (SAE) features to model a tar",
+      "tags": [
+        "SAE",
+        "circuits",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-29341v1",
+      "title": "Monosemanticity in Recommender Systems",
+      "authors": "Yagel Alfasi, Eden Rzezak, Eadan Schechter",
+      "date": "2026-06-28",
+      "url": "https://arxiv.org/abs/2606.29341v1",
+      "abstract": "Latent factor models such as matrix factorization are widely used in recommender systems, yet the learned embedding dimensions typically lack explicit semantic interpretation. This opacity limits transparency, explainability, and principled intervention in recommendation behavior. While sparse autoencoders (SAEs) have recently been used to extract monosemantic features from dense neural representations, standard SAEs suffer from scaling pathologies including feature splitting, feature absorption",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-29604v1",
+      "title": "Mechanistically Eliciting Latent Behaviors in Language Models",
+      "authors": "Andrew Mack, Nina Panickssery, Alexander Matt Turner",
+      "date": "2026-06-28",
+      "url": "https://arxiv.org/abs/2606.29604v1",
+      "abstract": "We aim to discover diverse, generalizable perturbations of LLM internals that can surface hidden behavioral modes. Such perturbations could help reshape model behavior and systematically evaluate potential risks. We introduce Causal Perturbative Elicitation (CPE), an unsupervised method for discovering interpretable low-rank adapters (LoRAs) that can elicit these latent behaviors. CPE decomposes the computations of a deep transformer slice using a heuristic tensor-decomposition-based algorithm. ",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-28770v1",
+      "title": "Mechanistic Personality Analysis of LLMs Steering Personality via Latent Feature Interventions",
+      "authors": "David Courtis, Ting Hu",
+      "date": "2026-06-27",
+      "url": "https://arxiv.org/abs/2606.28770v1",
+      "abstract": "Large Language Models (LLMs) have demonstrated the ability to simulate human-like OCEAN personality traits in generated text. Previous efforts have focused on prompt engineering or fine-tuning to shape LLM personality. In this work, we propose a mechanistic interpretability approach that directly intervenes on the model's latent features. Our method identifies latent directions in the residual stream corresponding to a target OCEAN trait using sparse autoencoders (SAEs) and contrastive activatio",
+      "tags": [
+        "SAE",
+        "features",
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2606-28050v1",
       "title": "Can LLMs Judge Better Than They Generate? Evaluating Task Asymmetry, Mechanistic Interpretability and Transferability for In-Context QA",
@@ -36,6 +142,20 @@
       "tags": [
         "attention",
         "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-28548v1",
+      "title": "Turn-Averaged SAEs for Feature Discovery and Long-Context Attribution",
+      "authors": "Kevin Der, Harish Kamath, Ben Thompson",
+      "date": "2026-06-26",
+      "url": "https://arxiv.org/abs/2606.28548v1",
+      "abstract": "Sparse autoencoders (SAEs) have become a useful tool for extracting interpretable features in language models. However, standard SAE architectures operate on individual token activations, meaning that the number of active features scales linearly with context length, and studying long model transcripts becomes difficult. We introduce turn-averaged SAEs, which represent a single Human or Assistant turn with a fixed number of features by learning to reconstruct the average model activation across ",
+      "tags": [
+        "SAE",
+        "features"
       ],
       "source": "arXiv",
       "featured": false
@@ -190,6 +310,20 @@
       "tags": [
         "SAE",
         "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-28401v1",
+      "title": "Vision-driven Preference Synthesis for Mitigating Hallucinations in VLMs",
+      "authors": "Yunhun Nam, Jongheon Jeong",
+      "date": "2026-06-24",
+      "url": "https://arxiv.org/abs/2606.28401v1",
+      "abstract": "Vision-Language Models (VLMs) have shown strong performance in visual understanding, yet they still suffer from hallucinations, generating content that is not grounded in the image. Preference alignment is a promising approach to improve visual faithfulness, but its success depends heavily on how preference pairs are constructed. Existing methods exhibit two key limitations; (a) intervention-based methods often introduce significant deviation from the policy distribution, and (b) sampling-based ",
+      "tags": [
+        "safety",
+        "vision"
       ],
       "source": "arXiv",
       "featured": false
@@ -918,6 +1052,17 @@
       "tags": [
         "features"
       ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-28358v1",
+      "title": "How Do LLMs Cite? A Mechanistic Interpretation of Attribution in Retrieval-Augmented Generation",
+      "authors": "Ian van Dort, Maria Heuss",
+      "date": "2026-06-09",
+      "url": "https://arxiv.org/abs/2606.28358v1",
+      "abstract": "Retrieval-Augmented Generation (RAG) aims to enhance the trustworthiness of Large Language Models (LLMs) by grounding their outputs in external documents, often using inline citations for verifiability. However, the faithfulness of these citations -- whether the model genuinely uses a source to generate an answer -- remains a critical, unverified assumption. This paper offers the first mechanistic account of how a large language model decides whether to attach an inline citation while answering ",
+      "tags": [],
       "source": "arXiv",
       "featured": false
     },
