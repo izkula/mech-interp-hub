@@ -1,6 +1,64 @@
 {
-  "lastUpdated": "2026-06-30",
+  "lastUpdated": "2026-07-01",
   "papers": [
+    {
+      "id": "arxiv-2606-32008v1",
+      "title": "Surrogate Fidelity: When Can Open LLMs Explain Closed Ones?",
+      "authors": "Philippe Chlenski, Zachariah Carmichael, Ayush Warikoo, Chia-Tse Shao, Yingxiao Ye, et al.",
+      "date": "2026-06-30",
+      "url": "https://arxiv.org/abs/2606.32008v1",
+      "abstract": "Mechanistic interpretability (MI) requires full access to model internals, yet the APIs for most widely deployed language models at best expose log-probabilities over output tokens. This creates a surrogate problem: when do measurements made on open models allow us to make claims about a closed model? We evaluate surrogate fidelity at the prediction, attribution, and representation levels. For binary classification tasks, log-odds provide an API-compatible scalar readout of the model's represent",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-31963v1",
+      "title": "Signed-Permutation Coordinate Transport for RMSNorm Transformers",
+      "authors": "John Sweeney",
+      "date": "2026-06-30",
+      "url": "https://arxiv.org/abs/2606.31963v1",
+      "abstract": "Modern LLM workflows move coordinate-indexed objects across checkpoints: steering vectors, sparse autoencoders, top-$k$ neuron sets, attribution lists, and merge alignments. This is only well posed after fixing the model's residual-stream gauge, which we show is architecture-dependent: LayerNorm residual charts have permutation gauge $S_d$ (up to a global sign flip), while RMSNorm charts with generic per-channel gain have signed-permutation gauge $B_d = S_d \\ltimes \\{\\pm 1\\}^d$. Permutation-only",
+      "tags": [
+        "SAE",
+        "safety",
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-31699v1",
+      "title": "Look But Don't Touch with Sparse Autoencoders for Unlearning in Diffusion Models",
+      "authors": "Enrico Cassano, Riccardo Renzulli, Rayyan Ahmed, Marco Grangetto, Stephan Alaniz",
+      "date": "2026-06-30",
+      "url": "https://arxiv.org/abs/2606.31699v1",
+      "abstract": "Sparse autoencoders (SAEs) have recently been proposed as interpretable tools for concept-level manipulation, under the assumption that isolated features can serve as controllable intervention points. In this work, we systematically evaluate this assumption in the context of object erasure and steering in diffusion models. We show that while SAEs reliably detect and localize semantic concepts within diffusion model activations, direct intervention in their latent space frequently induces out-of-",
+      "tags": [
+        "SAE",
+        "features",
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-31394v1",
+      "title": "Resolving superposition in AI for interpretability and cross-modal alignment in patient-neuronal images",
+      "authors": "Jisung Park, Seohyeon Kang, Daeun Yoo, Eunsu Lee, Seoin Cho, et al.",
+      "date": "2026-06-30",
+      "url": "https://arxiv.org/abs/2606.31394v1",
+      "abstract": "Artificial intelligence is transforming our capability to solve biological challenges. In dimensionality bottleneck regimes exacerbated by high-dimensional biological data, Neural networks force distinct concepts into the lower dimensions known as superposition. Although this superposition is widely known to hinder interpretability, its impact on corrupting the geometry of latent spaces remains critically overlooked. Here, we utilized sparse autoencoders (SAEs) trained on over 100,000 multiplexe",
+      "tags": [
+        "SAE",
+        "superposition",
+        "safety",
+        "vision",
+        "biology"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2606-30609v1",
       "title": "C$^{2}$R: Cross-sample Consistency Regularization Mitigates Feature Splitting and Absorption in Sparse Autoencoders",
@@ -48,6 +106,17 @@
       "date": "2026-06-29",
       "url": "https://arxiv.org/abs/2606.30329v1",
       "abstract": "Personalized generative brain models require individual neuroimaging data that privacy constraints and re-identification risk make difficult to share, while per-subject fitting procedures cost hours of compute -- limiting clinical translation and multi-site collaboration. We introduce cohort-amortized personalization (CAP), which replaces data sharing with model sharing: a neural density estimator is trained on simulations from a mechanistic whole-brain model under a low-rank cohort prior, and o",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-30899v1",
+      "title": "Curvature-Guided Module Localization for Low-Rank Detoxification of Backdoored Large Language Models",
+      "authors": "Arash Raftari, Mehrdad Mahdavi, Nathan Blackthorn, Andrew Arash Mahyari",
+      "date": "2026-06-29",
+      "url": "https://arxiv.org/abs/2606.30899v1",
+      "abstract": "Backdoor attacks pose a serious threat to large language models (LLMs) by causing otherwise benign systems to produce attacker-specified malicious behavior when a hidden trigger is present. In this work, we study post hoc detoxification of backdoored LLMs in a practical setting where the defender has access to the poisoned model but does not wish to retrain the full network from scratch. We propose a mechanistically guided weight-space repair framework that first localizes modules involved in pr",
       "tags": [],
       "source": "arXiv",
       "featured": false
