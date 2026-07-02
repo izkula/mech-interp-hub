@@ -1,6 +1,41 @@
 {
-  "lastUpdated": "2026-07-01",
+  "lastUpdated": "2026-07-02",
   "papers": [
+    {
+      "id": "arxiv-2607-01124v1",
+      "title": "Muon as a Residual Connection",
+      "authors": "Hao Huang",
+      "date": "2026-07-01",
+      "url": "https://arxiv.org/abs/2607.01124v1",
+      "abstract": "Muon has recently emerged as one of the most effective optimizers for training large neural networks, yet its empirical success has been explained from several different perspectives. In this paper, we propose a simple mechanistic interpretation: Muon can be understood as an implicit residual connection during training. Specifically, orthogonalizing the update can sacrifice some immediate gradient fidelity while improving representation preservation for downstream layers. We study this trade-off",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2607-01033v1",
+      "title": "The Model Organism Lottery: Model Organism Interpretability Strongly Depends on Training Methodology",
+      "authors": "Andrzej Szablewski, Gabriel Konar-Steenberg, Raffaello Fornasiere, Nikita Menon, Stefan Heimersheim",
+      "date": "2026-07-01",
+      "url": "https://arxiv.org/abs/2607.01033v1",
+      "abstract": "Model organisms (MOs) - language models trained to exhibit undesired or unnatural behaviours - are frequently used as testbeds for evaluating white-box interpretability techniques. Current MOs are typically constructed via post-hoc supervised fine-tuning (SFT) on behavioural transcripts or synthetic documents. Prior research has shown that interpretability methods can easily identify hidden behaviours in these MOs. However, recent work suggests that such post-hoc training methods may make interp",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2607-00415v1",
+      "title": "A Mechanistic View of Authority Hierarchy in LLM Sycophancy",
+      "authors": "Emil Joswin, Srujananjali Medicherla, Priyanka Mary Mammen",
+      "date": "2026-07-01",
+      "url": "https://arxiv.org/abs/2607.00415v1",
+      "abstract": "Authority bias poses a critical safety concern in language models: models systematically prioritize social cues from authority figures over factual consistency, swaying their answers based on source credibility rather than evidence. We mechanistically investigate this phenomenon using a controlled medical QA setting, where hints suggesting incorrect answers are attributed to personas of varying expertise. Across Llama-3.1-8B, Qwen3-8B, and Gemma-2-9B, we find that models respond in a graded mann",
+      "tags": [
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2606-32008v1",
       "title": "Surrogate Fidelity: When Can Open LLMs Explain Closed Ones?",
@@ -55,6 +90,34 @@
         "safety",
         "vision",
         "biology"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2607-00089v1",
+      "title": "Representation as a Bottleneck for Mechanistic Interpretability: The Manifestation Unit Protocol",
+      "authors": "Hussein Chouman, Wataru Sasaki, Tomokazu Matsui, Hirohiko Suwa, Keiichi Yasumoto",
+      "date": "2026-06-30",
+      "url": "https://arxiv.org/abs/2607.00089v1",
+      "abstract": "Mechanistic interpretability has produced a rich inventory of component-level analyses that characterise what neural-network components encode and how they interact. Their outputs, however, are not easily reusable: selectivity tables, circuit diagrams, and feature lists remain locked in per-study notebooks - non-composable, not queryable in natural language, and not directly actionable for downstream audit or intervention. We study the representation layer that sits between these analyses and do",
+      "tags": [
+        "circuits",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2607-00183v1",
+      "title": "DriftScope: Measuring The Hidden Effects of Diffusion Model Adaptation",
+      "authors": "H\u00e9ctor Laria, Yiping Han, Julian D. Santamaria, Kai Wang, Bogdan Raducanu, et al.",
+      "date": "2026-06-30",
+      "url": "https://arxiv.org/abs/2607.00183v1",
+      "abstract": "Adapting pre-trained text-to-image diffusion models, whether to learn new visual concepts or erase unwanted ones, is routinely evaluated on its intended effects alone. We argue this framing is incomplete. Through sparse autoencoder analysis and zero-shot classification, we demonstrate that adaptation systematically damages semantically unrelated concepts in ways that aggregate metrics structurally cannot surface: when damage is severe enough for FID and KID to respond, the model is already nearl",
+      "tags": [
+        "SAE",
+        "vision"
       ],
       "source": "arXiv",
       "featured": false
@@ -599,6 +662,22 @@
       "url": "https://arxiv.org/abs/2606.21147v1",
       "abstract": "Large Audio Language Models (LALMs) have demonstrated strong performance across a wide range of audio tasks. As they are increasingly deployed in real-world applications, ensuring their safety alignment has become more important. Although refusal mechanisms serve as a key safeguard by preventing LALMs from responding to harmful requests, they can also lead to {\\em over-refusal}, where models incorrectly reject benign queries. This issue is especially challenging in the audio domain because speec",
       "tags": [
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2607-00023v1",
+      "title": "Aligning Sentence Embeddings to Human Concepts via Sparse Autoencoders",
+      "authors": "Wonseok Shin, Songkuk Kim",
+      "date": "2026-06-19",
+      "url": "https://arxiv.org/abs/2607.00023v1",
+      "abstract": "Dense sentence embeddings are fundamental to modern Retrieval-Augmented Generation (RAG) systems but suffer from a lack of interpretability due to feature superposition. This opacity hinders the alignment of retrieval processes with human intent, as the entangled representations are difficult to analyze or control. In this work, we propose a method to disentangle the dense representations of sentence transformers (e.g., E5) into human-interpretable concepts using Top-k Sparse Autoencoders (SAEs)",
+      "tags": [
+        "SAE",
+        "superposition",
+        "features",
         "safety"
       ],
       "source": "arXiv",
