@@ -5,9 +5,37 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 03 Jul 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Fast Multi-dimensional Refusal Subspaces via RFM-AGOP</title>
+      <link>https://arxiv.org/abs/2607.02396v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Thomas Winninger</p><p>Steering and monitoring activations in Large Language Models (LLMs) are increasingly used for both safety and interpretability. Early work assumed behaviours are encoded along single linear directions, but recent findings suggest complex behaviours, such as the refusal to answer harmful queries, live in multi-dimensional subspaces. However, existing methods for extracting these subspaces are computationally expensive, which becomes prohibitive on reasoning models who produce long reasoning trace</p><p><strong>Tags:</strong> safety, steering, reasoning</p>]]></description>
+      <pubDate>Thu, 02 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2607.02396v1</guid>
+    </item>
+    <item>
+      <title>Conditional Co-Ablation: Recovering Self-Repair Backups in Transformer Circuits</title>
+      <link>https://arxiv.org/abs/2607.01940v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Zhiren Gong, Zihao Zeng, Chau Yuen, Wei Yang Bryan Lim</p><p>Mechanistic interpretability often relies on component-level interventions to discover how a model produces a behavior. This guides attribution, capability knockout, and model pruning downstream to operate by scoring each unit by the effect of ablation in isolation. Such first-order scoring is natural when component importance is additive, but becomes misleading when a transformer self-repairs: after a primary component is removed, a dormant backup can take over, muting the primary&#x27;s measured ef</p><p><strong>Tags:</strong> circuits</p>]]></description>
+      <pubDate>Thu, 02 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2607.01940v1</guid>
+    </item>
+    <item>
+      <title>Expander Sparse Autoencoders: Parameter-Efficient Dictionaries for Mechanistic Interpretability</title>
+      <link>https://arxiv.org/abs/2607.01799v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Rodrigo Mendoza-Smith</p><p>Sparse autoencoders (SAEs) decompose internal activations of neural networks into sparse linear combinations of learned features by fitting an overcomplete dictionary $\mathbf{W}\in\mathbb{R}^{m\times n}$ with $m&lt;n$, and inferring a sparse code $\mathbf{x}\in\mathbb{R}^n$ from $\mathbf{h}\approx\mathbf{W}\mathbf{x}$. This inference problem closely resembles the canonical setup of compressed sensing, but dense decoders requires $O(mn)$ learned values, which becomes costly at large feature counts.</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Thu, 02 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2607.01799v1</guid>
+    </item>
+    <item>
+      <title>X-LogSMask: Expand Transformer for Graph-Structured Data</title>
+      <link>https://arxiv.org/abs/2607.01553v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Leyan Li, Rennong Yang, Zhenxing Zhang, Liping Hu</p><p>Transformers have become general-purpose architectures, but their all-to-all self-attention is poorly matched to graph data, whose interactions are sparse, structured and multi-scale. Existing Graph Transformers address this mismatch through structural encodings, hybrid message-passing modules or learned attention constraints, often introducing additional complexity and limited interpretability. Here we introduce X-LogSMask, an explainable multi-head logarithmic structural mask that injects symm</p>]]></description>
+      <pubDate>Thu, 02 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2607.01553v1</guid>
+    </item>
     <item>
       <title>Muon as a Residual Connection</title>
       <link>https://arxiv.org/abs/2607.01124v1</link>
@@ -28,6 +56,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Emil Joswin, Srujananjali Medicherla, Priyanka Mary Mammen</p><p>Authority bias poses a critical safety concern in language models: models systematically prioritize social cues from authority figures over factual consistency, swaying their answers based on source credibility rather than evidence. We mechanistically investigate this phenomenon using a controlled medical QA setting, where hints suggesting incorrect answers are attributed to personas of varying expertise. Across Llama-3.1-8B, Qwen3-8B, and Gemma-2-9B, we find that models respond in a graded mann</p><p><strong>Tags:</strong> safety</p>]]></description>
       <pubDate>Wed, 01 Jul 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2607.00415v1</guid>
+    </item>
+    <item>
+      <title>Mechanistic Interpretability and Causal Feature Steering of Neural Quantum States via Sparse Autoencoders</title>
+      <link>https://arxiv.org/abs/2607.01336v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Zihao Qi, Christopher Earls</p><p>Neural Quantum States (NQS) are a remarkably expressive class of variational ansätze for quantum many-body wavefunctions, yet little is understood about their internal mechanisms: trained on variational objectives alone, how do NQS accurately capture physical observables that they have never been explicitly optimized for? In this work, we present a systematic approach to analyze the internal activations of NQS using sparse autoencoders. We extract features from the residual stream and demonstrat</p><p><strong>Tags:</strong> SAE, features, steering</p>]]></description>
+      <pubDate>Wed, 01 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2607.01336v1</guid>
     </item>
     <item>
       <title>Surrogate Fidelity: When Can Open LLMs Explain Closed Ones?</title>
@@ -182,41 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Humzah Merchant, Bradford Levy</p><p>Successful forecasting involves identifying patterns between historical and future states of the world which generalize to future observations. We apply LLMs to a variety of forecasting tasks and inspect their internal states using sparse autoencoders to understand whether they appear to rely on time-specific pieces of knowledge versus generalizable patterns. Our analyses identify features associated with both time-aware reasoning and look-ahead-biased reasoning. We then apply the LLMs to an ent</p><p><strong>Tags:</strong> SAE, features, steering, reasoning</p>]]></description>
       <pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2606.27199v1</guid>
-    </item>
-    <item>
-      <title>From Weights to Features: SAE-Guided Activation Regularization for LLM Continual Learning</title>
-      <link>https://arxiv.org/abs/2606.26629v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Evan Ning, Wei Xue, Dong Lou, Yike Guo</p><p>Weight-space regularization methods such as Elastic Weight Consolidation (EWC) are the standard approach to catastrophic forgetting in continual learning. However, those methods tend to underperform when applied to large language models. We argue that such underperformance can be partly explained by the ``polysemantic&#x27;&#x27; nature of large language models: per-weight importance estimates utilized by EWC-style regularization are too coarse and cannot isolate the knowledge that needs protection. In th</p><p><strong>Tags:</strong> features</p>]]></description>
-      <pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.26629v1</guid>
-    </item>
-    <item>
-      <title>Discovering Millions of Interpretable Features with Sparse Autoencoders</title>
-      <link>https://arxiv.org/abs/2606.26620v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> XinYang He, Wei Wang, Bing Zhao, Xuan Ren, WenBo Li, et al.</p><p>Sparse autoencoders (SAEs) have emerged as a powerful tool for decomposing superposed language model representations into sparse and interpretable features. However, training SAEs is computationally expensive, and available open-source SAE models remain limited. In this work, we introduce \textbf{Qwen3-Instruct SAE}, a comprehensive suite of SAEs trained on the Qwen3 instruction-tuned model family, covering Qwen3-1.7B, Qwen3-4B, and Qwen3-8B. For Qwen3-1.7B and Qwen3-4B, we train layer-wise SAEs</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.26620v1</guid>
-    </item>
-    <item>
-      <title>Beyond the Hard Budget: Sparsity Regularizers for More Interpretable Top-k Sparse Autoencoders</title>
-      <link>https://arxiv.org/abs/2606.27321v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Nathanaël Jacquier, Maria Vakalopoulou, Mahdi S. Hosseini</p><p>Sparse autoencoders (SAEs) have become a leading tool for interpreting the representations of vision foundation models, decomposing their polysemantic activations into a larger set of sparse, more monosemantic features. The Top-$k$ SAE, a now-standard variant, enforces sparsity architecturally through its activation function, retaining only the $k$ most active latents per input. Because it was designed precisely to avoid the $\ell_1$ penalty used by earlier SAEs and its known drawbacks, it has n</p><p><strong>Tags:</strong> SAE, features, vision</p>]]></description>
-      <pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.27321v1</guid>
-    </item>
-    <item>
-      <title>The Curse of Multiple Mediators: Hidden Interaction Effects in Activation Patching</title>
-      <link>https://arxiv.org/abs/2606.27510v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Sankaran Vaidyanathan, David Arbour, Aaron Mueller, Scott Niekum, David Jensen</p><p>Activation patching is the primary tool in mechanistic interpretability. It attributes causal responsibility for a model behavior to each of its individual components by estimating its natural indirect effect (NIE). Re-deriving the activation patching estimand from causal mediation analysis, we find that the NIE does not solely capture the causal effect through the specific component. It also contains interaction effects (INT) that measure how much the component&#x27;s causal effect itself depends on</p>]]></description>
-      <pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.27510v1</guid>
-    </item>
-    <item>
-      <title>PairSAE: Mechanistic Interpretability from Pair Representations in Protein Co-Folding</title>
-      <link>https://arxiv.org/abs/2606.27440v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Giosue Migliorini, Aristofanis Rontogiannis, Grigori Guitchounts, Nicholas Franklin, Axel Elaldi, et al.</p><p>Foundation models for structural biology have achieved remarkable performance in predicting biomolecular structure and show promise for the design of proteins and small molecules. Yet understanding which internal features drive their outputs remains challenging. Standard sparse autoencoders (SAEs), effective on transformer-style sequence embeddings, do not transfer cleanly to pairformer-like architectures: naively operating on pairwise representations yields a quadratic blow-up of features and o</p><p><strong>Tags:</strong> SAE, features, biology</p>]]></description>
-      <pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.27440v1</guid>
     </item>
   </channel>
 </rss>
