@@ -1,6 +1,59 @@
 {
-  "lastUpdated": "2026-07-02",
+  "lastUpdated": "2026-07-03",
   "papers": [
+    {
+      "id": "arxiv-2607-02396v1",
+      "title": "Fast Multi-dimensional Refusal Subspaces via RFM-AGOP",
+      "authors": "Thomas Winninger",
+      "date": "2026-07-02",
+      "url": "https://arxiv.org/abs/2607.02396v1",
+      "abstract": "Steering and monitoring activations in Large Language Models (LLMs) are increasingly used for both safety and interpretability. Early work assumed behaviours are encoded along single linear directions, but recent findings suggest complex behaviours, such as the refusal to answer harmful queries, live in multi-dimensional subspaces. However, existing methods for extracting these subspaces are computationally expensive, which becomes prohibitive on reasoning models who produce long reasoning trace",
+      "tags": [
+        "safety",
+        "steering",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2607-01940v1",
+      "title": "Conditional Co-Ablation: Recovering Self-Repair Backups in Transformer Circuits",
+      "authors": "Zhiren Gong, Zihao Zeng, Chau Yuen, Wei Yang Bryan Lim",
+      "date": "2026-07-02",
+      "url": "https://arxiv.org/abs/2607.01940v1",
+      "abstract": "Mechanistic interpretability often relies on component-level interventions to discover how a model produces a behavior. This guides attribution, capability knockout, and model pruning downstream to operate by scoring each unit by the effect of ablation in isolation. Such first-order scoring is natural when component importance is additive, but becomes misleading when a transformer self-repairs: after a primary component is removed, a dormant backup can take over, muting the primary's measured ef",
+      "tags": [
+        "circuits"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2607-01799v1",
+      "title": "Expander Sparse Autoencoders: Parameter-Efficient Dictionaries for Mechanistic Interpretability",
+      "authors": "Rodrigo Mendoza-Smith",
+      "date": "2026-07-02",
+      "url": "https://arxiv.org/abs/2607.01799v1",
+      "abstract": "Sparse autoencoders (SAEs) decompose internal activations of neural networks into sparse linear combinations of learned features by fitting an overcomplete dictionary $\\mathbf{W}\\in\\mathbb{R}^{m\\times n}$ with $m<n$, and inferring a sparse code $\\mathbf{x}\\in\\mathbb{R}^n$ from $\\mathbf{h}\\approx\\mathbf{W}\\mathbf{x}$. This inference problem closely resembles the canonical setup of compressed sensing, but dense decoders requires $O(mn)$ learned values, which becomes costly at large feature counts.",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2607-01553v1",
+      "title": "X-LogSMask: Expand Transformer for Graph-Structured Data",
+      "authors": "Leyan Li, Rennong Yang, Zhenxing Zhang, Liping Hu",
+      "date": "2026-07-02",
+      "url": "https://arxiv.org/abs/2607.01553v1",
+      "abstract": "Transformers have become general-purpose architectures, but their all-to-all self-attention is poorly matched to graph data, whose interactions are sparse, structured and multi-scale. Existing Graph Transformers address this mismatch through structural encodings, hybrid message-passing modules or learned attention constraints, often introducing additional complexity and limited interpretability. Here we introduce X-LogSMask, an explainable multi-head logarithmic structural mask that injects symm",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2607-01124v1",
       "title": "Muon as a Residual Connection",
@@ -32,6 +85,21 @@
       "abstract": "Authority bias poses a critical safety concern in language models: models systematically prioritize social cues from authority figures over factual consistency, swaying their answers based on source credibility rather than evidence. We mechanistically investigate this phenomenon using a controlled medical QA setting, where hints suggesting incorrect answers are attributed to personas of varying expertise. Across Llama-3.1-8B, Qwen3-8B, and Gemma-2-9B, we find that models respond in a graded mann",
       "tags": [
         "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2607-01336v1",
+      "title": "Mechanistic Interpretability and Causal Feature Steering of Neural Quantum States via Sparse Autoencoders",
+      "authors": "Zihao Qi, Christopher Earls",
+      "date": "2026-07-01",
+      "url": "https://arxiv.org/abs/2607.01336v1",
+      "abstract": "Neural Quantum States (NQS) are a remarkably expressive class of variational ans\u00e4tze for quantum many-body wavefunctions, yet little is understood about their internal mechanisms: trained on variational objectives alone, how do NQS accurately capture physical observables that they have never been explicitly optimized for? In this work, we present a systematic approach to analyze the internal activations of NQS using sparse autoencoders. We extract features from the residual stream and demonstrat",
+      "tags": [
+        "SAE",
+        "features",
+        "steering"
       ],
       "source": "arXiv",
       "featured": false
