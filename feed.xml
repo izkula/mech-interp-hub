@@ -5,9 +5,58 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 06 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 07 Jul 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>TORINO: Token Reduction via Interpretable Concept Overlap in Vision-Language Models</title>
+      <link>https://arxiv.org/abs/2607.04593v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Riccardo Renzulli, Gabriele Spadaro, Shruthi Gowda, Alaa Eddine Mazouz, Van-Tam Nguyen</p><p>Vision-Language Models (VLMs) have demonstrated impressive capabilities across different tasks, but their computational cost is dominated by the large number of visual tokens fed to the language model. Existing token reduction methods rely on attention-based scores or pairwise similarity, without an explicit semantic representation of each token. We introduce TORINO (TOken Reduction via Interpretable coNcept Overlap), a plug-and-play framework for adaptive visual token reduction in VLMs that req</p><p><strong>Tags:</strong> vision</p>]]></description>
+      <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2607.04593v1</guid>
+    </item>
+    <item>
+      <title>Erasing Without Collateral Damage: Precise Concept Removal in Diffusion Models</title>
+      <link>https://arxiv.org/abs/2607.05274v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Parth Upman, Nishita Jain, Shreyank N Gowda</p><p>Training-free concept erasure is an attractive mechanism for controlling text-to-image diffusion models, but precise erasure often comes at the cost of damaging semantically related non-target concepts. Existing value-space methods remove the component of each cross-attention value along the target concept direction, implicitly treating target identity and shared visual structure as the same signal. We argue that this is the source of much of the collateral damage in prior preservation. We intro</p><p><strong>Tags:</strong> vision</p>]]></description>
+      <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2607.05274v1</guid>
+    </item>
+    <item>
+      <title>Evaluating and Understanding Model Editing for Medical Vision Language Models</title>
+      <link>https://arxiv.org/abs/2607.05310v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Guli Zhu, Chenwei Wu, Liyue Shen</p><p>Model editing promises a fast, targeted way to correct post-deployment mistakes in medical vision-language models (VLMs) without costly retraining. However, existing multimodal model editing benchmarks focus on general-purpose tasks and do not reflect realistic clinical domain requirements and variability. To address this, we introduce M3Bench, a clinically grounded benchmark for multimodal model editing that evaluates whether an edit remains reliable, precise, and generalizable under the challe</p><p><strong>Tags:</strong> editing, vision</p>]]></description>
+      <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2607.05310v1</guid>
+    </item>
+    <item>
+      <title>Geometry of Ordinal Representations in Language Models</title>
+      <link>https://arxiv.org/abs/2607.04167v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Saksham Bassi, Sharvi Tomar</p><p>Recent work showed that language models represent character counts on curved 1D manifolds, with attention heads performing geometric transformations to enable computation. We test whether this generalizes across four ordinal tasks (bracket depth, indentation, table position, numeric magnitude) in Gemma-2-2B, Gemma-2-9B, and Qwen3-4B. We find that 1D manifolds with place-cell feature tiling emerge for tasks where the ordinal variable is locally computable from token identity, while tasks requirin</p><p><strong>Tags:</strong> features, attention</p>]]></description>
+      <pubDate>Sun, 05 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2607.04167v1</guid>
+    </item>
+    <item>
+      <title>Individual Parameters in Weight-Sparse Transformers Appear Interpretable</title>
+      <link>https://arxiv.org/abs/2607.02964v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Arnau Marin-Llobet, Stefan Heimersheim</p><p>A central goal of mechanistic interpretability is to understand how neural networks work and what each individual component does. Dominant circuit-finding approaches focus on a specific behavior and reverse-engineer the role of components on the associated sub-distribution. However, past work has shown that components can have different functions that are active on different subsets of the input distribution. In this work we ask whether a single weight can be understood globally across the full </p><p><strong>Tags:</strong> circuits</p>]]></description>
+      <pubDate>Fri, 03 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2607.02964v1</guid>
+    </item>
+    <item>
+      <title>Brand-as-Memory: Vision-Language Models Encode Causal, Mechanistically Localizable Credibility Priors for News Sources</title>
+      <link>https://arxiv.org/abs/2607.03365v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Chih-Ting Liao, Xin Cao</p><p>Vision-language models (VLMs) increasingly read news and web content as images, where the publisher&#x27;s identity is visually present. We show that VLMs carry a strong source-credibility prior keyed on outlet identity, and study it along three axes. (i) Cross-model benchmark. We introduce CueTrust, a cross-model diagnostic that measures which surface source cue overrides an article&#x27;s content evidence via a Source-Override Index (SOI). Across seven VLMs and five cues, the vulnerability profile is mo</p><p><strong>Tags:</strong> vision</p>]]></description>
+      <pubDate>Fri, 03 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2607.03365v1</guid>
+    </item>
+    <item>
+      <title>They Infer What You Meant: Models Represent Communicative Intent More Reliably Than They Act On It</title>
+      <link>https://arxiv.org/abs/2607.03598v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Alex Kwon</p><p>When a person shares something with a language model, the model often answers the surface of the message rather than what the sender was doing by sending it: share a finished project and it critiques the code; share a raw late-night line and it runs a wellness check. We treat the sender&#x27;s communicative intent, the Gricean what-was-meant, as a first-class interpretability object, and show the failure is one of readout on top of a robust representation. A linear probe decodes the sender&#x27;s intent, </p><p><strong>Tags:</strong> probing</p>]]></description>
+      <pubDate>Fri, 03 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2607.03598v1</guid>
+    </item>
     <item>
       <title>Fast Multi-dimensional Refusal Subspaces via RFM-AGOP</title>
       <link>https://arxiv.org/abs/2607.02396v1</link>
@@ -35,6 +84,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Leyan Li, Rennong Yang, Zhenxing Zhang, Liping Hu</p><p>Transformers have become general-purpose architectures, but their all-to-all self-attention is poorly matched to graph data, whose interactions are sparse, structured and multi-scale. Existing Graph Transformers address this mismatch through structural encodings, hybrid message-passing modules or learned attention constraints, often introducing additional complexity and limited interpretability. Here we introduce X-LogSMask, an explainable multi-head logarithmic structural mask that injects symm</p>]]></description>
       <pubDate>Thu, 02 Jul 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2607.01553v1</guid>
+    </item>
+    <item>
+      <title>Induction Heads Interpolate N-Grams</title>
+      <link>https://arxiv.org/abs/2607.02800v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Francesco D&#x27;Angelo, Oguz Kaan Yuksel, Swathi Shree Narashiman, Nicolas Flammarion</p><p>Induction heads are attention circuits believed to underlie in-context learning in transformers, yet a precise characterization of the estimators they implement remains elusive. We study transformers trained on order-$k$ Markov chains and identify two complementary smoothing mechanisms. First, at finite attention-weight scale, the circuit implements a soft context-matching estimator: it aggregates contributions from exact and partial context matches, weighted exponentially by their overlap, and </p><p><strong>Tags:</strong> circuits</p>]]></description>
+      <pubDate>Thu, 02 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2607.02800v1</guid>
     </item>
     <item>
       <title>Muon as a Residual Connection</title>
@@ -161,62 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Andrew Mack, Nina Panickssery, Alexander Matt Turner</p><p>We aim to discover diverse, generalizable perturbations of LLM internals that can surface hidden behavioral modes. Such perturbations could help reshape model behavior and systematically evaluate potential risks. We introduce Causal Perturbative Elicitation (CPE), an unsupervised method for discovering interpretable low-rank adapters (LoRAs) that can elicit these latent behaviors. CPE decomposes the computations of a deep transformer slice using a heuristic tensor-decomposition-based algorithm. </p>]]></description>
       <pubDate>Sun, 28 Jun 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2606.29604v1</guid>
-    </item>
-    <item>
-      <title>Mechanistic Personality Analysis of LLMs Steering Personality via Latent Feature Interventions</title>
-      <link>https://arxiv.org/abs/2606.28770v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> David Courtis, Ting Hu</p><p>Large Language Models (LLMs) have demonstrated the ability to simulate human-like OCEAN personality traits in generated text. Previous efforts have focused on prompt engineering or fine-tuning to shape LLM personality. In this work, we propose a mechanistic interpretability approach that directly intervenes on the model&#x27;s latent features. Our method identifies latent directions in the residual stream corresponding to a target OCEAN trait using sparse autoencoders (SAEs) and contrastive activatio</p><p><strong>Tags:</strong> SAE, features, steering</p>]]></description>
-      <pubDate>Sat, 27 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.28770v1</guid>
-    </item>
-    <item>
-      <title>Can LLMs Judge Better Than They Generate? Evaluating Task Asymmetry, Mechanistic Interpretability and Transferability for In-Context QA</title>
-      <link>https://arxiv.org/abs/2606.28050v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Sambaran Bandyopadhyay</p><p>LLM-as-a-Judge and self-evaluation pipelines implicitly assume that evaluation is easier than generation. We test this in a controlled in-context QA setting where a context passage is the sole information source and each model judges the answer it generated, removing the parametric-knowledge confound of open-domain comparisons. Across four benchmarks (SQuAD 2.0, DROP, HotpotQA, MuSiQue) and two models, evaluation is not uniformly easier: generation accuracy exceeds self-evaluation on three of fo</p>]]></description>
-      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.28050v1</guid>
-    </item>
-    <item>
-      <title>VASAE: Naming SAE Dictionary Directions with Vocabulary-Aligned Anchoring</title>
-      <link>https://arxiv.org/abs/2606.27941v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Kairui Zhang, Ziwen Yu, Zahraa S. Abdallah, Martha Lewis</p><p>Sparse autoencoders (SAEs) provide useful decompositions of Transformer residual streams, but their learned features are usually named post hoc rather than directly connected to the Transformer&#x27;s token vocabulary. We introduce Vocabulary-Aligned Sparse Autoencoder (VASAE), a method that trains SAE features under vocabulary-aligned anchoring and assigns each feature an intrinsic token name: the token string whose embedding is nearest to that feature. Without reducing reconstruction quality compar</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.27941v1</guid>
-    </item>
-    <item>
-      <title>Vision-Default, Prior-Override: Causal Mechanisms of Perception-Knowledge Conflict in Vision-Language Models</title>
-      <link>https://arxiv.org/abs/2606.28273v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Niclas Lietzow, Danielle Bitterman, Carsten Eickhoff, William Rudman, Michal Golovanevsky</p><p>Vision-language models must reconcile visual evidence with memorized world knowledge when the two conflict. How they resolve this conflict shapes the reliability of multimodal systems, yet prior work characterizes it behaviorally without a component-level causal account. We combine activation patching across three granularities (residual stream, attention heads, and MLP sublayers) with model-component ablation studies and mechanistic analysis. Across three VLM families, we find that visual groun</p><p><strong>Tags:</strong> attention, vision</p>]]></description>
-      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.28273v1</guid>
-    </item>
-    <item>
-      <title>Turn-Averaged SAEs for Feature Discovery and Long-Context Attribution</title>
-      <link>https://arxiv.org/abs/2606.28548v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Kevin Der, Harish Kamath, Ben Thompson</p><p>Sparse autoencoders (SAEs) have become a useful tool for extracting interpretable features in language models. However, standard SAE architectures operate on individual token activations, meaning that the number of active features scales linearly with context length, and studying long model transcripts becomes difficult. We introduce turn-averaged SAEs, which represent a single Human or Assistant turn with a fixed number of features by learning to reconstruct the average model activation across </p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.28548v1</guid>
-    </item>
-    <item>
-      <title>Radical AI Interpretability</title>
-      <link>https://arxiv.org/abs/2606.26523v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Daniel A. Herrmann, Benjamin A. Levinstein</p><p>We develop a framework for interpreting AI systems as agents, drawing on the philosophical tradition of radical interpretation and the tools of mechanistic interpretability. The core question is: given the computational facts about a system, how do we solve for its beliefs, desires, and meanings? This matters increasingly for safety. We want to be able to trust the systems we deploy, whether by understanding their goals or, more modestly, by reliably detecting deception. Interpretability researc</p><p><strong>Tags:</strong> safety</p>]]></description>
-      <pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.26523v1</guid>
-    </item>
-    <item>
-      <title>Localizing RL-Induced Tool Use to a Single Crosscoder Feature</title>
-      <link>https://arxiv.org/abs/2606.26474v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Andrii Shportko, Shubham Bhokare, Ahmed Zeyad A Alzahrani, Bowen Cheng, Gustavo Mercier, et al.</p><p>Fine-tuning through RL reshapes the internal representations of language models to enable agentic behaviors such as tool use, yet the mechanistic basis of these changes remains poorly understood. While RL substantially improves structured tool-call generation, it is unclear which features emerge, which are preserved, and whether identified features can be leveraged for retraining-free behavioral control. In this work, we show that $\textit{Dedicated Feature Crosscoders (DFC)}$ isolate a compact </p><p><strong>Tags:</strong> features</p>]]></description>
-      <pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.26474v1</guid>
-    </item>
-    <item>
-      <title>Forecasting With LLMs: Improved Generalization Through Feature Steering</title>
-      <link>https://arxiv.org/abs/2606.27199v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Humzah Merchant, Bradford Levy</p><p>Successful forecasting involves identifying patterns between historical and future states of the world which generalize to future observations. We apply LLMs to a variety of forecasting tasks and inspect their internal states using sparse autoencoders to understand whether they appear to rely on time-specific pieces of knowledge versus generalizable patterns. Our analyses identify features associated with both time-aware reasoning and look-ahead-biased reasoning. We then apply the LLMs to an ent</p><p><strong>Tags:</strong> SAE, features, steering, reasoning</p>]]></description>
-      <pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.27199v1</guid>
     </item>
   </channel>
 </rss>
