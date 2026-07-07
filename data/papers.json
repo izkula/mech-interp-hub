@@ -1,6 +1,99 @@
 {
-  "lastUpdated": "2026-07-06",
+  "lastUpdated": "2026-07-07",
   "papers": [
+    {
+      "id": "arxiv-2607-04593v1",
+      "title": "TORINO: Token Reduction via Interpretable Concept Overlap in Vision-Language Models",
+      "authors": "Riccardo Renzulli, Gabriele Spadaro, Shruthi Gowda, Alaa Eddine Mazouz, Van-Tam Nguyen",
+      "date": "2026-07-06",
+      "url": "https://arxiv.org/abs/2607.04593v1",
+      "abstract": "Vision-Language Models (VLMs) have demonstrated impressive capabilities across different tasks, but their computational cost is dominated by the large number of visual tokens fed to the language model. Existing token reduction methods rely on attention-based scores or pairwise similarity, without an explicit semantic representation of each token. We introduce TORINO (TOken Reduction via Interpretable coNcept Overlap), a plug-and-play framework for adaptive visual token reduction in VLMs that req",
+      "tags": [
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2607-05274v1",
+      "title": "Erasing Without Collateral Damage: Precise Concept Removal in Diffusion Models",
+      "authors": "Parth Upman, Nishita Jain, Shreyank N Gowda",
+      "date": "2026-07-06",
+      "url": "https://arxiv.org/abs/2607.05274v1",
+      "abstract": "Training-free concept erasure is an attractive mechanism for controlling text-to-image diffusion models, but precise erasure often comes at the cost of damaging semantically related non-target concepts. Existing value-space methods remove the component of each cross-attention value along the target concept direction, implicitly treating target identity and shared visual structure as the same signal. We argue that this is the source of much of the collateral damage in prior preservation. We intro",
+      "tags": [
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2607-05310v1",
+      "title": "Evaluating and Understanding Model Editing for Medical Vision Language Models",
+      "authors": "Guli Zhu, Chenwei Wu, Liyue Shen",
+      "date": "2026-07-06",
+      "url": "https://arxiv.org/abs/2607.05310v1",
+      "abstract": "Model editing promises a fast, targeted way to correct post-deployment mistakes in medical vision-language models (VLMs) without costly retraining. However, existing multimodal model editing benchmarks focus on general-purpose tasks and do not reflect realistic clinical domain requirements and variability. To address this, we introduce M3Bench, a clinically grounded benchmark for multimodal model editing that evaluates whether an edit remains reliable, precise, and generalizable under the challe",
+      "tags": [
+        "editing",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2607-04167v1",
+      "title": "Geometry of Ordinal Representations in Language Models",
+      "authors": "Saksham Bassi, Sharvi Tomar",
+      "date": "2026-07-05",
+      "url": "https://arxiv.org/abs/2607.04167v1",
+      "abstract": "Recent work showed that language models represent character counts on curved 1D manifolds, with attention heads performing geometric transformations to enable computation. We test whether this generalizes across four ordinal tasks (bracket depth, indentation, table position, numeric magnitude) in Gemma-2-2B, Gemma-2-9B, and Qwen3-4B. We find that 1D manifolds with place-cell feature tiling emerge for tasks where the ordinal variable is locally computable from token identity, while tasks requirin",
+      "tags": [
+        "features",
+        "attention"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2607-02964v1",
+      "title": "Individual Parameters in Weight-Sparse Transformers Appear Interpretable",
+      "authors": "Arnau Marin-Llobet, Stefan Heimersheim",
+      "date": "2026-07-03",
+      "url": "https://arxiv.org/abs/2607.02964v1",
+      "abstract": "A central goal of mechanistic interpretability is to understand how neural networks work and what each individual component does. Dominant circuit-finding approaches focus on a specific behavior and reverse-engineer the role of components on the associated sub-distribution. However, past work has shown that components can have different functions that are active on different subsets of the input distribution. In this work we ask whether a single weight can be understood globally across the full ",
+      "tags": [
+        "circuits"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2607-03365v1",
+      "title": "Brand-as-Memory: Vision-Language Models Encode Causal, Mechanistically Localizable Credibility Priors for News Sources",
+      "authors": "Chih-Ting Liao, Xin Cao",
+      "date": "2026-07-03",
+      "url": "https://arxiv.org/abs/2607.03365v1",
+      "abstract": "Vision-language models (VLMs) increasingly read news and web content as images, where the publisher's identity is visually present. We show that VLMs carry a strong source-credibility prior keyed on outlet identity, and study it along three axes. (i) Cross-model benchmark. We introduce CueTrust, a cross-model diagnostic that measures which surface source cue overrides an article's content evidence via a Source-Override Index (SOI). Across seven VLMs and five cues, the vulnerability profile is mo",
+      "tags": [
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2607-03598v1",
+      "title": "They Infer What You Meant: Models Represent Communicative Intent More Reliably Than They Act On It",
+      "authors": "Alex Kwon",
+      "date": "2026-07-03",
+      "url": "https://arxiv.org/abs/2607.03598v1",
+      "abstract": "When a person shares something with a language model, the model often answers the surface of the message rather than what the sender was doing by sending it: share a finished project and it critiques the code; share a raw late-night line and it runs a wellness check. We treat the sender's communicative intent, the Gricean what-was-meant, as a first-class interpretability object, and show the failure is one of readout on top of a robust representation. A linear probe decodes the sender's intent, ",
+      "tags": [
+        "probing"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2607-02396v1",
       "title": "Fast Multi-dimensional Refusal Subspaces via RFM-AGOP",
@@ -51,6 +144,19 @@
       "url": "https://arxiv.org/abs/2607.01553v1",
       "abstract": "Transformers have become general-purpose architectures, but their all-to-all self-attention is poorly matched to graph data, whose interactions are sparse, structured and multi-scale. Existing Graph Transformers address this mismatch through structural encodings, hybrid message-passing modules or learned attention constraints, often introducing additional complexity and limited interpretability. Here we introduce X-LogSMask, an explainable multi-head logarithmic structural mask that injects symm",
       "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2607-02800v1",
+      "title": "Induction Heads Interpolate N-Grams",
+      "authors": "Francesco D'Angelo, Oguz Kaan Yuksel, Swathi Shree Narashiman, Nicolas Flammarion",
+      "date": "2026-07-02",
+      "url": "https://arxiv.org/abs/2607.02800v1",
+      "abstract": "Induction heads are attention circuits believed to underlie in-context learning in transformers, yet a precise characterization of the estimators they implement remains elusive. We study transformers trained on order-$k$ Markov chains and identify two complementary smoothing mechanisms. First, at finite attention-weight scale, the circuit implements a soft context-matching estimator: it aggregates contributions from exact and partial context matches, weighted exponentially by their overlap, and ",
+      "tags": [
+        "circuits"
+      ],
       "source": "arXiv",
       "featured": false
     },
