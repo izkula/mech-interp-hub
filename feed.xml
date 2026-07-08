@@ -5,7 +5,7 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 08 Jul 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
@@ -28,6 +28,20 @@
       <description><![CDATA[<p><strong>Authors:</strong> Guli Zhu, Chenwei Wu, Liyue Shen</p><p>Model editing promises a fast, targeted way to correct post-deployment mistakes in medical vision-language models (VLMs) without costly retraining. However, existing multimodal model editing benchmarks focus on general-purpose tasks and do not reflect realistic clinical domain requirements and variability. To address this, we introduce M3Bench, a clinically grounded benchmark for multimodal model editing that evaluates whether an edit remains reliable, precise, and generalizable under the challe</p><p><strong>Tags:</strong> editing, vision</p>]]></description>
       <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2607.05310v1</guid>
+    </item>
+    <item>
+      <title>A Coin Flip Per Token: Bernoulli Sparse Steering of Large Language Models</title>
+      <link>https://arxiv.org/abs/2607.05615v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Nima Eshraghi, Lovedeep Gondara, Yuqing Huang, Sagarika Suresh, Leizer Teran, et al.</p><p>Activation steering via sparse autoencoders (SAEs) enables behavioral control of large language models without task-specific fine-tuning, but standard methods apply the steering signal at every generated token, incurring constant per-token perturbation that risks degrading fluency. We ask: is dense intervention necessary? We introduce Stochastic Token Steering (STS), which gates each token independently with probability $p$, and Stochastic Block Steering (SBS), which gates a leading window once </p><p><strong>Tags:</strong> SAE, steering</p>]]></description>
+      <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2607.05615v1</guid>
+    </item>
+    <item>
+      <title>A Mechanistic Lens on Semantic Conflicts: Using Activation Patching to Understand LLM Behavior</title>
+      <link>https://arxiv.org/abs/2607.05587v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Youssef Abdelsalam, Norman Peitek, Anna-Maria Maurer, Marvin Wyrich, Sven Apel</p><p>Large language models (LLMs) are increasingly used in software-engineering tasks processing executable code and non-executable semantic cues such as comments or identifiers. These two sources can conflict when semantic cues suggest different program behavior than the code itself. It remains unclear how such semantic conflicts affect LLM behavior and which source dominates their outputs.   We present the first controlled, mechanistic study of LLM behavior under semantic conflicts. To this end, we</p>]]></description>
+      <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2607.05587v1</guid>
     </item>
     <item>
       <title>Geometry of Ordinal Representations in Language Models</title>
@@ -203,20 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Reza Habibi, Darian Lee, Magy Seif El-Nasr</p><p>While existing data attribution methods can identify which training examples build specific mechanistic circuits, they cannot explain how training data shapes the high-level behavioral decisions a model learns to make. To bridge this gap, we introduce Symbolic Mechanistic Data Attribution (SMDA), a framework that attributes training pairs to the interpretable symbolic policies governing model behavior. SMDA fits a closed-form Ridge regression over sparse autoencoder (SAE) features to model a tar</p><p><strong>Tags:</strong> SAE, circuits, features</p>]]></description>
       <pubDate>Sun, 28 Jun 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2606.29171v1</guid>
-    </item>
-    <item>
-      <title>Monosemanticity in Recommender Systems</title>
-      <link>https://arxiv.org/abs/2606.29341v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Yagel Alfasi, Eden Rzezak, Eadan Schechter</p><p>Latent factor models such as matrix factorization are widely used in recommender systems, yet the learned embedding dimensions typically lack explicit semantic interpretation. This opacity limits transparency, explainability, and principled intervention in recommendation behavior. While sparse autoencoders (SAEs) have recently been used to extract monosemantic features from dense neural representations, standard SAEs suffer from scaling pathologies including feature splitting, feature absorption</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Sun, 28 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.29341v1</guid>
-    </item>
-    <item>
-      <title>Mechanistically Eliciting Latent Behaviors in Language Models</title>
-      <link>https://arxiv.org/abs/2606.29604v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Andrew Mack, Nina Panickssery, Alexander Matt Turner</p><p>We aim to discover diverse, generalizable perturbations of LLM internals that can surface hidden behavioral modes. Such perturbations could help reshape model behavior and systematically evaluate potential risks. We introduce Causal Perturbative Elicitation (CPE), an unsupervised method for discovering interpretable low-rank adapters (LoRAs) that can elicit these latent behaviors. CPE decomposes the computations of a deep transformer slice using a heuristic tensor-decomposition-based algorithm. </p>]]></description>
-      <pubDate>Sun, 28 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.29604v1</guid>
     </item>
   </channel>
 </rss>
