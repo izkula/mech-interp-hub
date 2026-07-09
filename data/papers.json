@@ -1,6 +1,48 @@
 {
-  "lastUpdated": "2026-07-08",
+  "lastUpdated": "2026-07-09",
   "papers": [
+    {
+      "id": "arxiv-2607-07316v1",
+      "title": "Mechanistic Interpretability for Neural Networks: Circuits, Sparse Features and Symbolic Reasoning",
+      "authors": "Pranav Sawant, Jakub Krej\u010d\u00ed",
+      "date": "2026-07-08",
+      "url": "https://arxiv.org/abs/2607.07316v1",
+      "abstract": "This article offers a comprehensive overview of mechanistic interpretability, an emerging field that seeks to reverse-engineer the internal algorithms of modern neural networks. While traditional explainable AI methods often stop at surface-level input-output correlations, this approach directly addresses the opaque \"black box\" nature of machine learning models, which is essential for ensuring safety and auditability in high-stakes deployments. The paper provides a detailed examination of Transf",
+      "tags": [
+        "circuits",
+        "features",
+        "safety",
+        "survey",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2607-07066v1",
+      "title": "Multiplication Beyond Groups: Stratified Fourier Mechanisms in Transformer Circuits",
+      "authors": "Zitong Andrew Chen, Junaid Hasan, Akhil Srinivasan, Hemkesh Bandi, Jarod Alper",
+      "date": "2026-07-08",
+      "url": "https://arxiv.org/abs/2607.07066v1",
+      "abstract": "Transformers have demonstrated a remarkable ability to learn algorithmic reasoning, yet mechanistic analyses have mostly focused on globally invertible operations such as cyclic addition and group composition. In this work, we investigate how small transformers learn modular integer multiplication over composite moduli, a fundamentally non-invertible operation due to the presence of zero-divisors. We propose the monoid extension: a localized generalization of Group Composition via Representation",
+      "tags": [
+        "circuits",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2607-07003v1",
+      "title": "Dissociating the Internal Representations of Sycophancy in LLMs",
+      "authors": "Anthony Baez, Sheer Karny, Pat Pataranutaporn",
+      "date": "2026-07-08",
+      "url": "https://arxiv.org/abs/2607.07003v1",
+      "abstract": "Large Language Models (LLMs) frequently exhibit sycophancy, where they agree with a user's statement even when incorrect. While sycophancy is often treated as a single defined behavior, it can manifest in substantially distinct ways and circumstances, raising the question of whether this multi-faceted nature is reflected in its internal mechanisms. To address this gap, we dissociate the representations of sycophancy into factual and opinion subtypes -- motivated by the distinction between verifi",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2607-04593v1",
       "title": "TORINO: Token Reduction via Interpretable Concept Overlap in Vision-Language Models",
@@ -1398,6 +1440,20 @@
       "abstract": "We show that the standard basis of transformer hidden states already provides a training-free, architecture-general feature basis. Individual dimensions encode semantic content via their signs and confidence via their magnitudes, functioning as independent binary registers. We validate this Bag of Dims framework across three model families (Qwen 3.5-4B, Gemma 3-4B, Mistral 7B) through four progressive experiments. Sign patterns alone carry predictive content: replacing all magnitudes with unity ",
       "tags": [
         "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-12629v3",
+      "title": "The Signs Were Always There: Training-Free Concept Detection and Steering in Raw Transformer Dimensions",
+      "authors": "Varun Reddy Nalagatla",
+      "date": "2026-06-10",
+      "url": "https://arxiv.org/abs/2606.12629v3",
+      "abstract": "The standard basis of transformer hidden states is a training-free, architecture-general feature basis for detecting concepts and, in language models, steering them; with no learned dictionary. Individual dimensions act as binary registers read one at a time: their signs (+/-1) encode content, their magnitudes strength. A feature is just a subset of dimensions with a consistent sign pattern, read by counting sign agreements. We validate this Bag of Dims (BoD) framework across seven models spanni",
+      "tags": [
+        "features",
+        "steering"
       ],
       "source": "arXiv",
       "featured": false
