@@ -1,6 +1,46 @@
 {
-  "lastUpdated": "2026-07-09",
+  "lastUpdated": "2026-07-10",
   "papers": [
+    {
+      "id": "arxiv-2607-08605v1",
+      "title": "When Structured Sparse Autoencoders Learn Consistent Concepts Across Modalities",
+      "authors": "Weiduo Liao, Yunqiao Yang, Ying Wei",
+      "date": "2026-07-09",
+      "url": "https://arxiv.org/abs/2607.08605v1",
+      "abstract": "Sparse autoencoders (SAEs) have emerged as a promising technique for mechanistic interpretability by learning a set of sparse latent features in large models, each of which encodes a distinct concept. However, in vision-language models (VLMs), vanilla SAEs struggle to learn modality-consistent concepts, with concepts often exhibiting fragmented coverage (i.e., disjoint regions) in the visual modality. To address this challenge, we propose a Structured Sparse AutoEncoder ($S^2AE$) that enforces c",
+      "tags": [
+        "SAE",
+        "features",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2607-08499v1",
+      "title": "Cross-seed explainability using Procrustes-conditioned Joint End-to-end Top-K Sparse Autoencoders",
+      "authors": "Bendeg\u00faz V\u00e1radi, Zolt\u00e1n Kmetty",
+      "date": "2026-07-09",
+      "url": "https://arxiv.org/abs/2607.08499v1",
+      "abstract": "We present a Procrustes-conditioned Joint End-to-end Top-K Sparse Autoencoder (SAE) for extracting cross-seed universal features from independently trained BERT models. Cross-seed feature universality is a fundamental challenge in mechanistic interpretability: because dictionary learning is non-convex, independently trained networks learn misaligned feature spaces, so apparently identical features may differ by random initialization. We address this by computing an orthogonal Procrustes rotation",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2607-08349v1",
+      "title": "Certified Interventional Fidelity: Anytime-Valid, Adaptive Evaluation of Causal Claims in Mechanistic Interpretability",
+      "authors": "Amir Asiaee",
+      "date": "2026-07-09",
+      "url": "https://arxiv.org/abs/2607.08349v1",
+      "abstract": "Mechanistic interpretability often evaluates explanations by intervening on a model: swapping hidden states, patching activations, ablating components, or comparing a compressed model to the original one. These experiments are usually summarized by a point estimate, even though the evaluation may be monitored while it runs or adapted toward suspected failures. This makes it hard to tell whether a reported fidelity or patching effect is a stable causal claim or a consequence of finite sampling an",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2607-07316v1",
       "title": "Mechanistic Interpretability for Neural Networks: Circuits, Sparse Features and Symbolic Reasoning",
@@ -40,6 +80,19 @@
       "url": "https://arxiv.org/abs/2607.07003v1",
       "abstract": "Large Language Models (LLMs) frequently exhibit sycophancy, where they agree with a user's statement even when incorrect. While sycophancy is often treated as a single defined behavior, it can manifest in substantially distinct ways and circumstances, raising the question of whether this multi-faceted nature is reflected in its internal mechanisms. To address this gap, we dissociate the representations of sycophancy into factual and opinion subtypes -- motivated by the distinction between verifi",
       "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2607-07903v1",
+      "title": "Mechanistic Interpretability of LLM Jailbreaks via Internal Attribution Graphs",
+      "authors": "Anupam Wagle, Ifrat Ikhtear Uddin, Chaowei Zhang, Longwei Wang",
+      "date": "2026-07-08",
+      "url": "https://arxiv.org/abs/2607.07903v1",
+      "abstract": "Large language models (LLMs) exhibit remarkable capabilities but remain highly vulnerable to adversarial prompts and jailbreak attacks. Existing approaches primarily analyze these failures through input-output behaviors or attribution methods, offering limited insight into how adversarial perturbations alter the model's internal reasoning. Consequently, the mechanisms underlying unsafe or incorrect behaviors remain poorly understood. We introduce a mechanistic framework for diagnosing LLM vulner",
+      "tags": [
+        "reasoning"
+      ],
       "source": "arXiv",
       "featured": false
     },
