@@ -5,9 +5,58 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 13 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 14 Jul 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Inside the Unfair Judge: A Mechanistic Interpretability Account of LLM-as-Judge Bias</title>
+      <link>https://arxiv.org/abs/2607.11871v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Zixiang Xu, Sixian Li, Huaxing Liu, Xiang Wang, Shuai Li, et al.</p><p>Existing studies of LLM-as-judge scoring bias work predominantly at the input-output level: they perturb inputs, measure score deltas, and propose prompt-level mitigations. We argue that the same biases admit a representation-level account in the judge&#x27;s hidden state, complementary to the input-output view and operationally useful in ways it does not afford. We report three findings, across seven judges, seven bias types, and nine benchmarks. Geometry: baseline judging inputs occupy a tight acti</p>]]></description>
+      <pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2607.11871v1</guid>
+    </item>
+    <item>
+      <title>PRISM Edit: One Vector for All Temporal Answers</title>
+      <link>https://arxiv.org/abs/2607.11327v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Chen Huang, Qi Zheng, Ruiqin Zheng, Long Zeng, Yuantong Xu</p><p>Model editing keeps large language models (LLMs) up to date without retraining, but temporal facts expose a limitation of the prevailing locate-and-edit paradigm: an update is not always a replacement. When a fact changes, the new answer should become current while the old answer may remain correct in historical time contexts. Building on this insight, we use causal tracing to show that LLMs already support this distinction via a two-stage internal computation: early MLP layers retrieve a time-a</p><p><strong>Tags:</strong> editing</p>]]></description>
+      <pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2607.11327v1</guid>
+    </item>
+    <item>
+      <title>Controlling Motion Transfer in Diffusion Transformers via Attention Heads</title>
+      <link>https://arxiv.org/abs/2607.11081v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Sunyoung Jung, Jiwoo Park, Yoonseok Choi, Kyobin Choo, Ming-Hsuan Yang, et al.</p><p>Diffusion Transformers (DiTs) have advanced video generation with high-quality, temporally coherent results. However, extending them to motion transfer, which requires following reference motion while aligning with a target prompt, remains challenging due to limited understanding of motion and structure representations within DiTs. We analyze video DiTs at the attention-head level and identify distinct heads specialized for motion and spatial structure. Based on this insight, we propose a head-a</p><p><strong>Tags:</strong> attention</p>]]></description>
+      <pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2607.11081v1</guid>
+    </item>
+    <item>
+      <title>Which Neurons Detect Malicious Code? A Probing Study of LLM Security Knowledge</title>
+      <link>https://arxiv.org/abs/2607.10221v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Lam D. Dao, Vang T. Nguyen, Anh M. T. Bui, Phuong T. Nguyen</p><p>Background. Large language models (LLMs) have become increasingly capable of understanding and generating source code, leading to their widespread adoption in software engineering tasks such as code completion, repair, and vulnerability detection. However, despite their strong empirical performance, the internal mechanisms through which LLMs recognize malicious or vulnerable code patterns remain poorly understood. Aim. We investigated where the malware detection behavior is encoded inside LLMs F</p><p><strong>Tags:</strong> probing</p>]]></description>
+      <pubDate>Sat, 11 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2607.10221v1</guid>
+    </item>
+    <item>
+      <title>Benchmarking the Robustness of Foundation Models for Mammography under Domain Shift</title>
+      <link>https://arxiv.org/abs/2607.10358v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Giang Nguyen, Raghav Mehta, Emma A. M. Stanley, Tian Xia, Thi Hao Nguyen, et al.</p><p>Foundation models are increasingly used as image feature extractors for mammography, but their robustness under external domain shift remains unclear. We benchmark 15 foundation-model backbones across breast density, BI-RADS severity, and cancer status using a unified frozen-backbone linear-probe protocol, training on 3 source datasets and evaluating on 12 task-compatible out-of-distribution (OOD) datasets after label harmonization. Mammography-specific vision-language models (Mammo-FM and MaMA)</p><p><strong>Tags:</strong> features, probing, vision</p>]]></description>
+      <pubDate>Sat, 11 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2607.10358v1</guid>
+    </item>
+    <item>
+      <title>Gradient-Skipping Relevance Propagation for Efficient Explainability of Vision Transformers</title>
+      <link>https://arxiv.org/abs/2607.10365v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Christopher Buratti, Michele Marchetti, Federica Parlapiano, Davide Traini, Domenico Ursino, et al.</p><p>Vision Transformers (ViTs) are difficult to interpret because current methods of relevance propagation and attention flow do not fully consider some key architectural features, such as the uneven importance of attention heads and residual connections. Prior approaches typically assume uniform importance across attention heads; furthermore, they model skip connections as identity paths, leading to inaccurate relevance attribution. To address these issues, we introduce GradSkip, a novel relevance </p><p><strong>Tags:</strong> features, attention, vision</p>]]></description>
+      <pubDate>Sat, 11 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2607.10365v1</guid>
+    </item>
+    <item>
+      <title>MLPs are Hebbians: Constructing Efficient Fact-Storing MLPs for Transformers</title>
+      <link>https://arxiv.org/abs/2607.10034v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Roberto Garcia, Jerry Liu, Ronny Junkins, Sabri Eyuboglu, Atri Rudra, et al.</p><p>Large language models (LLMs) store factual knowledge in their parameters. While recent work has shown that this knowledge resides in MLP layers, existing constructive and mechanistic interpretability models of fact-storage in LLMs fail to explain the surprising empirical phenomenon that they store facts at an information-theoretically optimal rate. In this work, we develop a theoretical account of this phenomenon. We develop the first Transformer-compatible fact-storing MLP closed-form construct</p><p><strong>Tags:</strong> theory</p>]]></description>
+      <pubDate>Fri, 10 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2607.10034v1</guid>
+    </item>
     <item>
       <title>When Structured Sparse Autoencoders Learn Consistent Concepts Across Modalities</title>
       <link>https://arxiv.org/abs/2607.08605v1</link>
@@ -168,55 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Andrzej Szablewski, Gabriel Konar-Steenberg, Raffaello Fornasiere, Nikita Menon, Stefan Heimersheim</p><p>Model organisms (MOs) - language models trained to exhibit undesired or unnatural behaviours - are frequently used as testbeds for evaluating white-box interpretability techniques. Current MOs are typically constructed via post-hoc supervised fine-tuning (SFT) on behavioural transcripts or synthetic documents. Prior research has shown that interpretability methods can easily identify hidden behaviours in these MOs. However, recent work suggests that such post-hoc training methods may make interp</p>]]></description>
       <pubDate>Wed, 01 Jul 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2607.01033v1</guid>
-    </item>
-    <item>
-      <title>A Mechanistic View of Authority Hierarchy in LLM Sycophancy</title>
-      <link>https://arxiv.org/abs/2607.00415v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Emil Joswin, Srujananjali Medicherla, Priyanka Mary Mammen</p><p>Authority bias poses a critical safety concern in language models: models systematically prioritize social cues from authority figures over factual consistency, swaying their answers based on source credibility rather than evidence. We mechanistically investigate this phenomenon using a controlled medical QA setting, where hints suggesting incorrect answers are attributed to personas of varying expertise. Across Llama-3.1-8B, Qwen3-8B, and Gemma-2-9B, we find that models respond in a graded mann</p><p><strong>Tags:</strong> safety</p>]]></description>
-      <pubDate>Wed, 01 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.00415v1</guid>
-    </item>
-    <item>
-      <title>Mechanistic Interpretability and Causal Feature Steering of Neural Quantum States via Sparse Autoencoders</title>
-      <link>https://arxiv.org/abs/2607.01336v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Zihao Qi, Christopher Earls</p><p>Neural Quantum States (NQS) are a remarkably expressive class of variational ansätze for quantum many-body wavefunctions, yet little is understood about their internal mechanisms: trained on variational objectives alone, how do NQS accurately capture physical observables that they have never been explicitly optimized for? In this work, we present a systematic approach to analyze the internal activations of NQS using sparse autoencoders. We extract features from the residual stream and demonstrat</p><p><strong>Tags:</strong> SAE, features, steering</p>]]></description>
-      <pubDate>Wed, 01 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.01336v1</guid>
-    </item>
-    <item>
-      <title>Surrogate Fidelity: When Can Open LLMs Explain Closed Ones?</title>
-      <link>https://arxiv.org/abs/2606.32008v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Philippe Chlenski, Zachariah Carmichael, Ayush Warikoo, Chia-Tse Shao, Yingxiao Ye, et al.</p><p>Mechanistic interpretability (MI) requires full access to model internals, yet the APIs for most widely deployed language models at best expose log-probabilities over output tokens. This creates a surrogate problem: when do measurements made on open models allow us to make claims about a closed model? We evaluate surrogate fidelity at the prediction, attribution, and representation levels. For binary classification tasks, log-odds provide an API-compatible scalar readout of the model&#x27;s represent</p>]]></description>
-      <pubDate>Tue, 30 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.32008v1</guid>
-    </item>
-    <item>
-      <title>Signed-Permutation Coordinate Transport for RMSNorm Transformers</title>
-      <link>https://arxiv.org/abs/2606.31963v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> John Sweeney</p><p>Modern LLM workflows move coordinate-indexed objects across checkpoints: steering vectors, sparse autoencoders, top-$k$ neuron sets, attribution lists, and merge alignments. This is only well posed after fixing the model&#x27;s residual-stream gauge, which we show is architecture-dependent: LayerNorm residual charts have permutation gauge $S_d$ (up to a global sign flip), while RMSNorm charts with generic per-channel gain have signed-permutation gauge $B_d = S_d \ltimes \{\pm 1\}^d$. Permutation-only</p><p><strong>Tags:</strong> SAE, safety, steering</p>]]></description>
-      <pubDate>Tue, 30 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.31963v1</guid>
-    </item>
-    <item>
-      <title>Look But Don&#x27;t Touch with Sparse Autoencoders for Unlearning in Diffusion Models</title>
-      <link>https://arxiv.org/abs/2606.31699v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Enrico Cassano, Riccardo Renzulli, Rayyan Ahmed, Marco Grangetto, Stephan Alaniz</p><p>Sparse autoencoders (SAEs) have recently been proposed as interpretable tools for concept-level manipulation, under the assumption that isolated features can serve as controllable intervention points. In this work, we systematically evaluate this assumption in the context of object erasure and steering in diffusion models. We show that while SAEs reliably detect and localize semantic concepts within diffusion model activations, direct intervention in their latent space frequently induces out-of-</p><p><strong>Tags:</strong> SAE, features, steering</p>]]></description>
-      <pubDate>Tue, 30 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.31699v1</guid>
-    </item>
-    <item>
-      <title>Resolving superposition in AI for interpretability and cross-modal alignment in patient-neuronal images</title>
-      <link>https://arxiv.org/abs/2606.31394v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Jisung Park, Seohyeon Kang, Daeun Yoo, Eunsu Lee, Seoin Cho, et al.</p><p>Artificial intelligence is transforming our capability to solve biological challenges. In dimensionality bottleneck regimes exacerbated by high-dimensional biological data, Neural networks force distinct concepts into the lower dimensions known as superposition. Although this superposition is widely known to hinder interpretability, its impact on corrupting the geometry of latent spaces remains critically overlooked. Here, we utilized sparse autoencoders (SAEs) trained on over 100,000 multiplexe</p><p><strong>Tags:</strong> SAE, superposition, safety, vision, biology</p>]]></description>
-      <pubDate>Tue, 30 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2606.31394v1</guid>
-    </item>
-    <item>
-      <title>Representation as a Bottleneck for Mechanistic Interpretability: The Manifestation Unit Protocol</title>
-      <link>https://arxiv.org/abs/2607.00089v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Hussein Chouman, Wataru Sasaki, Tomokazu Matsui, Hirohiko Suwa, Keiichi Yasumoto</p><p>Mechanistic interpretability has produced a rich inventory of component-level analyses that characterise what neural-network components encode and how they interact. Their outputs, however, are not easily reusable: selectivity tables, circuit diagrams, and feature lists remain locked in per-study notebooks - non-composable, not queryable in natural language, and not directly actionable for downstream audit or intervention. We study the representation layer that sits between these analyses and do</p><p><strong>Tags:</strong> circuits, features</p>]]></description>
-      <pubDate>Tue, 30 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.00089v1</guid>
     </item>
   </channel>
 </rss>
