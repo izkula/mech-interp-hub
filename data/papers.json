@@ -1,6 +1,99 @@
 {
-  "lastUpdated": "2026-07-13",
+  "lastUpdated": "2026-07-14",
   "papers": [
+    {
+      "id": "arxiv-2607-11871v1",
+      "title": "Inside the Unfair Judge: A Mechanistic Interpretability Account of LLM-as-Judge Bias",
+      "authors": "Zixiang Xu, Sixian Li, Huaxing Liu, Xiang Wang, Shuai Li, et al.",
+      "date": "2026-07-13",
+      "url": "https://arxiv.org/abs/2607.11871v1",
+      "abstract": "Existing studies of LLM-as-judge scoring bias work predominantly at the input-output level: they perturb inputs, measure score deltas, and propose prompt-level mitigations. We argue that the same biases admit a representation-level account in the judge's hidden state, complementary to the input-output view and operationally useful in ways it does not afford. We report three findings, across seven judges, seven bias types, and nine benchmarks. Geometry: baseline judging inputs occupy a tight acti",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2607-11327v1",
+      "title": "PRISM Edit: One Vector for All Temporal Answers",
+      "authors": "Chen Huang, Qi Zheng, Ruiqin Zheng, Long Zeng, Yuantong Xu",
+      "date": "2026-07-13",
+      "url": "https://arxiv.org/abs/2607.11327v1",
+      "abstract": "Model editing keeps large language models (LLMs) up to date without retraining, but temporal facts expose a limitation of the prevailing locate-and-edit paradigm: an update is not always a replacement. When a fact changes, the new answer should become current while the old answer may remain correct in historical time contexts. Building on this insight, we use causal tracing to show that LLMs already support this distinction via a two-stage internal computation: early MLP layers retrieve a time-a",
+      "tags": [
+        "editing"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2607-11081v1",
+      "title": "Controlling Motion Transfer in Diffusion Transformers via Attention Heads",
+      "authors": "Sunyoung Jung, Jiwoo Park, Yoonseok Choi, Kyobin Choo, Ming-Hsuan Yang, et al.",
+      "date": "2026-07-13",
+      "url": "https://arxiv.org/abs/2607.11081v1",
+      "abstract": "Diffusion Transformers (DiTs) have advanced video generation with high-quality, temporally coherent results. However, extending them to motion transfer, which requires following reference motion while aligning with a target prompt, remains challenging due to limited understanding of motion and structure representations within DiTs. We analyze video DiTs at the attention-head level and identify distinct heads specialized for motion and spatial structure. Based on this insight, we propose a head-a",
+      "tags": [
+        "attention"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2607-10221v1",
+      "title": "Which Neurons Detect Malicious Code? A Probing Study of LLM Security Knowledge",
+      "authors": "Lam D. Dao, Vang T. Nguyen, Anh M. T. Bui, Phuong T. Nguyen",
+      "date": "2026-07-11",
+      "url": "https://arxiv.org/abs/2607.10221v1",
+      "abstract": "Background. Large language models (LLMs) have become increasingly capable of understanding and generating source code, leading to their widespread adoption in software engineering tasks such as code completion, repair, and vulnerability detection. However, despite their strong empirical performance, the internal mechanisms through which LLMs recognize malicious or vulnerable code patterns remain poorly understood. Aim. We investigated where the malware detection behavior is encoded inside LLMs F",
+      "tags": [
+        "probing"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2607-10358v1",
+      "title": "Benchmarking the Robustness of Foundation Models for Mammography under Domain Shift",
+      "authors": "Giang Nguyen, Raghav Mehta, Emma A. M. Stanley, Tian Xia, Thi Hao Nguyen, et al.",
+      "date": "2026-07-11",
+      "url": "https://arxiv.org/abs/2607.10358v1",
+      "abstract": "Foundation models are increasingly used as image feature extractors for mammography, but their robustness under external domain shift remains unclear. We benchmark 15 foundation-model backbones across breast density, BI-RADS severity, and cancer status using a unified frozen-backbone linear-probe protocol, training on 3 source datasets and evaluating on 12 task-compatible out-of-distribution (OOD) datasets after label harmonization. Mammography-specific vision-language models (Mammo-FM and MaMA)",
+      "tags": [
+        "features",
+        "probing",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2607-10365v1",
+      "title": "Gradient-Skipping Relevance Propagation for Efficient Explainability of Vision Transformers",
+      "authors": "Christopher Buratti, Michele Marchetti, Federica Parlapiano, Davide Traini, Domenico Ursino, et al.",
+      "date": "2026-07-11",
+      "url": "https://arxiv.org/abs/2607.10365v1",
+      "abstract": "Vision Transformers (ViTs) are difficult to interpret because current methods of relevance propagation and attention flow do not fully consider some key architectural features, such as the uneven importance of attention heads and residual connections. Prior approaches typically assume uniform importance across attention heads; furthermore, they model skip connections as identity paths, leading to inaccurate relevance attribution. To address these issues, we introduce GradSkip, a novel relevance ",
+      "tags": [
+        "features",
+        "attention",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2607-10034v1",
+      "title": "MLPs are Hebbians: Constructing Efficient Fact-Storing MLPs for Transformers",
+      "authors": "Roberto Garcia, Jerry Liu, Ronny Junkins, Sabri Eyuboglu, Atri Rudra, et al.",
+      "date": "2026-07-10",
+      "url": "https://arxiv.org/abs/2607.10034v1",
+      "abstract": "Large language models (LLMs) store factual knowledge in their parameters. While recent work has shown that this knowledge resides in MLP layers, existing constructive and mechanistic interpretability models of fact-storage in LLMs fail to explain the surprising empirical phenomenon that they store facts at an information-theoretically optimal rate. In this work, we develop a theoretical account of this phenomenon. We develop the first Transformer-compatible fact-storing MLP closed-form construct",
+      "tags": [
+        "theory"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2607-08605v1",
       "title": "When Structured Sparse Autoencoders Learn Consistent Concepts Across Modalities",
