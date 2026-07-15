@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-14",
+  "lastUpdated": "2026-07-15",
   "papers": [
     {
       "id": "arxiv-2607-11871v1",
@@ -34,6 +34,35 @@
       "abstract": "Diffusion Transformers (DiTs) have advanced video generation with high-quality, temporally coherent results. However, extending them to motion transfer, which requires following reference motion while aligning with a target prompt, remains challenging due to limited understanding of motion and structure representations within DiTs. We analyze video DiTs at the attention-head level and identify distinct heads specialized for motion and spatial structure. Based on this insight, we propose a head-a",
       "tags": [
         "attention"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2607-12166v1",
+      "title": "From Geometric Recovery to Causal Validation: A Reproducible Audit of Sparse Autoencoder Features, from Superposition Geometry to Causal Inertness",
+      "authors": "Mohamed Abdessalem Bal",
+      "date": "2026-07-13",
+      "url": "https://arxiv.org/abs/2607.12166v1",
+      "abstract": "Sparse autoencoders (SAEs) are the standard for decomposing superposed neural representations into interpretable features, and evaluation relies predominantly on correlational recovery metrics -- cosine similarity between ground-truth directions and decoder atoms. We show this conflates two distinct claims: decoder-geometry alignment and encoder-activation behavior. We reproduce the superposition phase diagram of Elhage et al. (2022), identifying a convergence artifact at high sparsity and an un",
+      "tags": [
+        "SAE",
+        "superposition",
+        "features",
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2607-12094v1",
+      "title": "Sparse Autoencoders for Interpretable Out-of-Distribution Detection",
+      "authors": "Ayush Karmacharya, Luke Luschwitz, Lucia Romero, Yanan Niu, Joseph Campbell",
+      "date": "2026-07-13",
+      "url": "https://arxiv.org/abs/2607.12094v1",
+      "abstract": "Reliable detection of out-of-distribution (OOD) samples is crucial for the safe deployment of machine learning models. Neural networks often produce overconfident predictions for inputs that deviate from their training data, leading to significant degradation in performance. While many OOD detection methods focus on the final output layer, they neglect the rich hierarchical information present in intermediate network layers. This paper introduces a novel approach that leverages sparse autoencode",
+      "tags": [
+        "SAE"
       ],
       "source": "arXiv",
       "featured": false
