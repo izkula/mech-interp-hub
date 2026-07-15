@@ -5,7 +5,7 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 14 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 15 Jul 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
@@ -28,6 +28,20 @@
       <description><![CDATA[<p><strong>Authors:</strong> Sunyoung Jung, Jiwoo Park, Yoonseok Choi, Kyobin Choo, Ming-Hsuan Yang, et al.</p><p>Diffusion Transformers (DiTs) have advanced video generation with high-quality, temporally coherent results. However, extending them to motion transfer, which requires following reference motion while aligning with a target prompt, remains challenging due to limited understanding of motion and structure representations within DiTs. We analyze video DiTs at the attention-head level and identify distinct heads specialized for motion and spatial structure. Based on this insight, we propose a head-a</p><p><strong>Tags:</strong> attention</p>]]></description>
       <pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2607.11081v1</guid>
+    </item>
+    <item>
+      <title>From Geometric Recovery to Causal Validation: A Reproducible Audit of Sparse Autoencoder Features, from Superposition Geometry to Causal Inertness</title>
+      <link>https://arxiv.org/abs/2607.12166v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Mohamed Abdessalem Bal</p><p>Sparse autoencoders (SAEs) are the standard for decomposing superposed neural representations into interpretable features, and evaluation relies predominantly on correlational recovery metrics -- cosine similarity between ground-truth directions and decoder atoms. We show this conflates two distinct claims: decoder-geometry alignment and encoder-activation behavior. We reproduce the superposition phase diagram of Elhage et al. (2022), identifying a convergence artifact at high sparsity and an un</p><p><strong>Tags:</strong> SAE, superposition, features, safety</p>]]></description>
+      <pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2607.12166v1</guid>
+    </item>
+    <item>
+      <title>Sparse Autoencoders for Interpretable Out-of-Distribution Detection</title>
+      <link>https://arxiv.org/abs/2607.12094v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Ayush Karmacharya, Luke Luschwitz, Lucia Romero, Yanan Niu, Joseph Campbell</p><p>Reliable detection of out-of-distribution (OOD) samples is crucial for the safe deployment of machine learning models. Neural networks often produce overconfident predictions for inputs that deviate from their training data, leading to significant degradation in performance. While many OOD detection methods focus on the final output layer, they neglect the rich hierarchical information present in intermediate network layers. This paper introduces a novel approach that leverages sparse autoencode</p><p><strong>Tags:</strong> SAE</p>]]></description>
+      <pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2607.12094v1</guid>
     </item>
     <item>
       <title>Which Neurons Detect Malicious Code? A Probing Study of LLM Security Knowledge</title>
@@ -203,20 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Francesco D&#x27;Angelo, Oguz Kaan Yuksel, Swathi Shree Narashiman, Nicolas Flammarion</p><p>Induction heads are attention circuits believed to underlie in-context learning in transformers, yet a precise characterization of the estimators they implement remains elusive. We study transformers trained on order-$k$ Markov chains and identify two complementary smoothing mechanisms. First, at finite attention-weight scale, the circuit implements a soft context-matching estimator: it aggregates contributions from exact and partial context matches, weighted exponentially by their overlap, and </p><p><strong>Tags:</strong> circuits</p>]]></description>
       <pubDate>Thu, 02 Jul 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2607.02800v1</guid>
-    </item>
-    <item>
-      <title>Muon as a Residual Connection</title>
-      <link>https://arxiv.org/abs/2607.01124v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Hao Huang</p><p>Muon has recently emerged as one of the most effective optimizers for training large neural networks, yet its empirical success has been explained from several different perspectives. In this paper, we propose a simple mechanistic interpretation: Muon can be understood as an implicit residual connection during training. Specifically, orthogonalizing the update can sacrifice some immediate gradient fidelity while improving representation preservation for downstream layers. We study this trade-off</p>]]></description>
-      <pubDate>Wed, 01 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.01124v1</guid>
-    </item>
-    <item>
-      <title>The Model Organism Lottery: Model Organism Interpretability Strongly Depends on Training Methodology</title>
-      <link>https://arxiv.org/abs/2607.01033v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Andrzej Szablewski, Gabriel Konar-Steenberg, Raffaello Fornasiere, Nikita Menon, Stefan Heimersheim</p><p>Model organisms (MOs) - language models trained to exhibit undesired or unnatural behaviours - are frequently used as testbeds for evaluating white-box interpretability techniques. Current MOs are typically constructed via post-hoc supervised fine-tuning (SFT) on behavioural transcripts or synthetic documents. Prior research has shown that interpretability methods can easily identify hidden behaviours in these MOs. However, recent work suggests that such post-hoc training methods may make interp</p>]]></description>
-      <pubDate>Wed, 01 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.01033v1</guid>
     </item>
   </channel>
 </rss>
