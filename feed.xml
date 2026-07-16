@@ -5,9 +5,16 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 16 Jul 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Screening of Biosecurity Features in Metagenomic Data with Evo 2 Probes</title>
+      <link>https://arxiv.org/abs/2607.14070v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Jeremy Guntoro, Alexander Dack, Dylan Danno, Michaela Jančovičová, Križan Jurinović, et al.</p><p>Genomic foundation models such as Evo 2 learn rich sequence representations, but their value for biosecurity screening is largely unexplored. We ask how much biosecurity-relevant signal is linearly accessible in these representations by training minimal linear and attention probes on frozen Evo 2 layer-26 activations, without fine-tuning the underlying model. Across held-out metagenomic test sets, the probes detect antimicrobial resistance (AMR) with strong discrimination: a linear probe reaches</p><p><strong>Tags:</strong> features, probing</p>]]></description>
+      <pubDate>Wed, 15 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2607.14070v1</guid>
+    </item>
     <item>
       <title>Inside the Unfair Judge: A Mechanistic Interpretability Account of LLM-as-Judge Bias</title>
       <link>https://arxiv.org/abs/2607.11871v1</link>
@@ -210,13 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Leyan Li, Rennong Yang, Zhenxing Zhang, Liping Hu</p><p>Transformers have become general-purpose architectures, but their all-to-all self-attention is poorly matched to graph data, whose interactions are sparse, structured and multi-scale. Existing Graph Transformers address this mismatch through structural encodings, hybrid message-passing modules or learned attention constraints, often introducing additional complexity and limited interpretability. Here we introduce X-LogSMask, an explainable multi-head logarithmic structural mask that injects symm</p>]]></description>
       <pubDate>Thu, 02 Jul 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2607.01553v1</guid>
-    </item>
-    <item>
-      <title>Induction Heads Interpolate N-Grams</title>
-      <link>https://arxiv.org/abs/2607.02800v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Francesco D&#x27;Angelo, Oguz Kaan Yuksel, Swathi Shree Narashiman, Nicolas Flammarion</p><p>Induction heads are attention circuits believed to underlie in-context learning in transformers, yet a precise characterization of the estimators they implement remains elusive. We study transformers trained on order-$k$ Markov chains and identify two complementary smoothing mechanisms. First, at finite attention-weight scale, the circuit implements a soft context-matching estimator: it aggregates contributions from exact and partial context matches, weighted exponentially by their overlap, and </p><p><strong>Tags:</strong> circuits</p>]]></description>
-      <pubDate>Thu, 02 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.02800v1</guid>
     </item>
   </channel>
 </rss>
