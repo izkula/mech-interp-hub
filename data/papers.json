@@ -1,6 +1,20 @@
 {
-  "lastUpdated": "2026-07-15",
+  "lastUpdated": "2026-07-16",
   "papers": [
+    {
+      "id": "arxiv-2607-14070v1",
+      "title": "Screening of Biosecurity Features in Metagenomic Data with Evo 2 Probes",
+      "authors": "Jeremy Guntoro, Alexander Dack, Dylan Danno, Michaela Jan\u010dovi\u010dov\u00e1, Kri\u017ean Jurinovi\u0107, et al.",
+      "date": "2026-07-15",
+      "url": "https://arxiv.org/abs/2607.14070v1",
+      "abstract": "Genomic foundation models such as Evo 2 learn rich sequence representations, but their value for biosecurity screening is largely unexplored. We ask how much biosecurity-relevant signal is linearly accessible in these representations by training minimal linear and attention probes on frozen Evo 2 layer-26 activations, without fine-tuning the underlying model. Across held-out metagenomic test sets, the probes detect antimicrobial resistance (AMR) with strong discrimination: a linear probe reaches",
+      "tags": [
+        "features",
+        "probing"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2607-11871v1",
       "title": "Inside the Unfair Judge: A Mechanistic Interpretability Account of LLM-as-Judge Bias",
