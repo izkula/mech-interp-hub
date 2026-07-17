@@ -5,15 +5,43 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 16 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 17 Jul 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Steering Robustness into World Action Models via Mechanistic Interpretability and Optimal Control</title>
+      <link>https://arxiv.org/abs/2607.14943v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Jihoon Hong, Julian Skifstad, Qiyue Dai, Alice Chan, Glen Chou</p><p>World Action Models (WAMs) enable semantically- and physically-informed control but are brittle under distribution shift. In this work, we use mechanistic interpretability to study how robustness-relevant perturbations are represented in WAM activation space. Comparing activations across successful and unsuccessful rollouts, we find some WAM architectures exhibit low-dimensional linear separability for robustness-critical features, while others do not. This motivates the use of contrastive activ</p><p><strong>Tags:</strong> features, steering</p>]]></description>
+      <pubDate>Thu, 16 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2607.14943v1</guid>
+    </item>
+    <item>
+      <title>Transcoders for Investigating Deception in Language Models</title>
+      <link>https://arxiv.org/abs/2607.14791v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Darius Lim, Nathan Leow, Xin Wei Chia</p><p>Transcoders have recently emerged as a promising approach for mechanistic interpretability (MI), enabling circuit-level analysis of model behaviour. In this paper, we investigate the use of transcoders to analyse deceptive behaviour in language models, a behaviour that poses a safety and security risk. Using a Qwen3-4B model with pre-trained transcoders, specifically per-layer transcoders (PLTs), we construct attribution graphs that capture feature activations and inter-feature dependencies, all</p><p><strong>Tags:</strong> circuits, features, safety</p>]]></description>
+      <pubDate>Thu, 16 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2607.14791v1</guid>
+    </item>
     <item>
       <title>Screening of Biosecurity Features in Metagenomic Data with Evo 2 Probes</title>
       <link>https://arxiv.org/abs/2607.14070v1</link>
       <description><![CDATA[<p><strong>Authors:</strong> Jeremy Guntoro, Alexander Dack, Dylan Danno, Michaela Jančovičová, Križan Jurinović, et al.</p><p>Genomic foundation models such as Evo 2 learn rich sequence representations, but their value for biosecurity screening is largely unexplored. We ask how much biosecurity-relevant signal is linearly accessible in these representations by training minimal linear and attention probes on frozen Evo 2 layer-26 activations, without fine-tuning the underlying model. Across held-out metagenomic test sets, the probes detect antimicrobial resistance (AMR) with strong discrimination: a linear probe reaches</p><p><strong>Tags:</strong> features, probing</p>]]></description>
       <pubDate>Wed, 15 Jul 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2607.14070v1</guid>
+    </item>
+    <item>
+      <title>Tracing LLM Behavior to the Training Data with Empirical Next-Token Distributions</title>
+      <link>https://arxiv.org/abs/2607.14306v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Zachary Izzo</p><p>In this paper, we study the connection between an LLM&#x27;s output distribution and the data used to train it. Specifically, we study the degree to which an LLM&#x27;s next-token distribution agrees with the empirical next-token distribution (ENTD) given the context in the training data. The ENTD is an appealing target because it is the unrestricted global minimizer of the next-token cross entropy loss used for pretraining, as well as an easily interpretable function of the pretraining corpus. We find th</p>]]></description>
+      <pubDate>Wed, 15 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2607.14306v1</guid>
+    </item>
+    <item>
+      <title>Breaking Refusal in the First Half: A Mechanistic Study of the Prefill Jailbreak</title>
+      <link>https://arxiv.org/abs/2607.14147v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Alex Kwon</p><p>Aligned language models refuse harmful requests, but a one-line prefill (&quot;Sure, here is&quot;) strips the refusal. We ask where and how it fails. The harm representation stays intact: on the prompts the attack flips to compliance, a linear probe reads harm as high as on the refused ones (0.91-0.98), while behavioral refusal drops to chance. This holds across four models and three families (1.5-3.8B, and at 14B). Refusal is therefore a shallow, response-site computation. We localize it to an early win</p><p><strong>Tags:</strong> safety, probing</p>]]></description>
+      <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2607.14147v1</guid>
     </item>
     <item>
       <title>Inside the Unfair Judge: A Mechanistic Interpretability Account of LLM-as-Judge Bias</title>
@@ -189,34 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Alex Kwon</p><p>When a person shares something with a language model, the model often answers the surface of the message rather than what the sender was doing by sending it: share a finished project and it critiques the code; share a raw late-night line and it runs a wellness check. We treat the sender&#x27;s communicative intent, the Gricean what-was-meant, as a first-class interpretability object, and show the failure is one of readout on top of a robust representation. A linear probe decodes the sender&#x27;s intent, </p><p><strong>Tags:</strong> probing</p>]]></description>
       <pubDate>Fri, 03 Jul 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2607.03598v1</guid>
-    </item>
-    <item>
-      <title>Fast Multi-dimensional Refusal Subspaces via RFM-AGOP</title>
-      <link>https://arxiv.org/abs/2607.02396v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Thomas Winninger</p><p>Steering and monitoring activations in Large Language Models (LLMs) are increasingly used for both safety and interpretability. Early work assumed behaviours are encoded along single linear directions, but recent findings suggest complex behaviours, such as the refusal to answer harmful queries, live in multi-dimensional subspaces. However, existing methods for extracting these subspaces are computationally expensive, which becomes prohibitive on reasoning models who produce long reasoning trace</p><p><strong>Tags:</strong> safety, steering, reasoning</p>]]></description>
-      <pubDate>Thu, 02 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.02396v1</guid>
-    </item>
-    <item>
-      <title>Conditional Co-Ablation: Recovering Self-Repair Backups in Transformer Circuits</title>
-      <link>https://arxiv.org/abs/2607.01940v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Zhiren Gong, Zihao Zeng, Chau Yuen, Wei Yang Bryan Lim</p><p>Mechanistic interpretability often relies on component-level interventions to discover how a model produces a behavior. This guides attribution, capability knockout, and model pruning downstream to operate by scoring each unit by the effect of ablation in isolation. Such first-order scoring is natural when component importance is additive, but becomes misleading when a transformer self-repairs: after a primary component is removed, a dormant backup can take over, muting the primary&#x27;s measured ef</p><p><strong>Tags:</strong> circuits</p>]]></description>
-      <pubDate>Thu, 02 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.01940v1</guid>
-    </item>
-    <item>
-      <title>Expander Sparse Autoencoders: Parameter-Efficient Dictionaries for Mechanistic Interpretability</title>
-      <link>https://arxiv.org/abs/2607.01799v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Rodrigo Mendoza-Smith</p><p>Sparse autoencoders (SAEs) decompose internal activations of neural networks into sparse linear combinations of learned features by fitting an overcomplete dictionary $\mathbf{W}\in\mathbb{R}^{m\times n}$ with $m&lt;n$, and inferring a sparse code $\mathbf{x}\in\mathbb{R}^n$ from $\mathbf{h}\approx\mathbf{W}\mathbf{x}$. This inference problem closely resembles the canonical setup of compressed sensing, but dense decoders requires $O(mn)$ learned values, which becomes costly at large feature counts.</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Thu, 02 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.01799v1</guid>
-    </item>
-    <item>
-      <title>X-LogSMask: Expand Transformer for Graph-Structured Data</title>
-      <link>https://arxiv.org/abs/2607.01553v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Leyan Li, Rennong Yang, Zhenxing Zhang, Liping Hu</p><p>Transformers have become general-purpose architectures, but their all-to-all self-attention is poorly matched to graph data, whose interactions are sparse, structured and multi-scale. Existing Graph Transformers address this mismatch through structural encodings, hybrid message-passing modules or learned attention constraints, often introducing additional complexity and limited interpretability. Here we introduce X-LogSMask, an explainable multi-head logarithmic structural mask that injects symm</p>]]></description>
-      <pubDate>Thu, 02 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.01553v1</guid>
     </item>
   </channel>
 </rss>
