@@ -1,6 +1,35 @@
 {
-  "lastUpdated": "2026-07-16",
+  "lastUpdated": "2026-07-17",
   "papers": [
+    {
+      "id": "arxiv-2607-14943v1",
+      "title": "Steering Robustness into World Action Models via Mechanistic Interpretability and Optimal Control",
+      "authors": "Jihoon Hong, Julian Skifstad, Qiyue Dai, Alice Chan, Glen Chou",
+      "date": "2026-07-16",
+      "url": "https://arxiv.org/abs/2607.14943v1",
+      "abstract": "World Action Models (WAMs) enable semantically- and physically-informed control but are brittle under distribution shift. In this work, we use mechanistic interpretability to study how robustness-relevant perturbations are represented in WAM activation space. Comparing activations across successful and unsuccessful rollouts, we find some WAM architectures exhibit low-dimensional linear separability for robustness-critical features, while others do not. This motivates the use of contrastive activ",
+      "tags": [
+        "features",
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2607-14791v1",
+      "title": "Transcoders for Investigating Deception in Language Models",
+      "authors": "Darius Lim, Nathan Leow, Xin Wei Chia",
+      "date": "2026-07-16",
+      "url": "https://arxiv.org/abs/2607.14791v1",
+      "abstract": "Transcoders have recently emerged as a promising approach for mechanistic interpretability (MI), enabling circuit-level analysis of model behaviour. In this paper, we investigate the use of transcoders to analyse deceptive behaviour in language models, a behaviour that poses a safety and security risk. Using a Qwen3-4B model with pre-trained transcoders, specifically per-layer transcoders (PLTs), we construct attribution graphs that capture feature activations and inter-feature dependencies, all",
+      "tags": [
+        "circuits",
+        "features",
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2607-14070v1",
       "title": "Screening of Biosecurity Features in Metagenomic Data with Evo 2 Probes",
@@ -10,6 +39,31 @@
       "abstract": "Genomic foundation models such as Evo 2 learn rich sequence representations, but their value for biosecurity screening is largely unexplored. We ask how much biosecurity-relevant signal is linearly accessible in these representations by training minimal linear and attention probes on frozen Evo 2 layer-26 activations, without fine-tuning the underlying model. Across held-out metagenomic test sets, the probes detect antimicrobial resistance (AMR) with strong discrimination: a linear probe reaches",
       "tags": [
         "features",
+        "probing"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2607-14306v1",
+      "title": "Tracing LLM Behavior to the Training Data with Empirical Next-Token Distributions",
+      "authors": "Zachary Izzo",
+      "date": "2026-07-15",
+      "url": "https://arxiv.org/abs/2607.14306v1",
+      "abstract": "In this paper, we study the connection between an LLM's output distribution and the data used to train it. Specifically, we study the degree to which an LLM's next-token distribution agrees with the empirical next-token distribution (ENTD) given the context in the training data. The ENTD is an appealing target because it is the unrestricted global minimizer of the next-token cross entropy loss used for pretraining, as well as an easily interpretable function of the pretraining corpus. We find th",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2607-14147v1",
+      "title": "Breaking Refusal in the First Half: A Mechanistic Study of the Prefill Jailbreak",
+      "authors": "Alex Kwon",
+      "date": "2026-07-14",
+      "url": "https://arxiv.org/abs/2607.14147v1",
+      "abstract": "Aligned language models refuse harmful requests, but a one-line prefill (\"Sure, here is\") strips the refusal. We ask where and how it fails. The harm representation stays intact: on the prompts the attack flips to compliance, a linear probe reads harm as high as on the refused ones (0.91-0.98), while behavioral refusal drops to chance. This holds across four models and three families (1.5-3.8B, and at 14B). Refusal is therefore a shallow, response-site computation. We localize it to an early win",
+      "tags": [
+        "safety",
         "probing"
       ],
       "source": "arXiv",
