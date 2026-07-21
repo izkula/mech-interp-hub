@@ -5,9 +5,30 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 20 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 21 Jul 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Measuring Monosemanticity in Sparse Autoencoders via Latent Activation Coherence</title>
+      <link>https://arxiv.org/abs/2607.17770v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Katarzyna Filus, Sebastian Pokuciński</p><p>Within Explainable Artificial Intelligence, mechanistic interpretability uses Sparse Autoencoders (SAEs) to extract more interpretable features from neural representations. However, assessing their monosemanticity, and thus explanation quality, remains challenging. Existing metrics require external concept labels or depend on pretrained embedding models, making them sensitive to encoder&#x27;s geometry. We introduce the Tversky Monosemanticity Score (TMS), a label-free metric that operationalizes mon</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Mon, 20 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2607.17770v1</guid>
+    </item>
+    <item>
+      <title>Persistent Sparse Autoencoders: Learning Feature Timescales in Language Models</title>
+      <link>https://arxiv.org/abs/2607.17117v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Haoyan Luo, Mateo Espinosa Zarlenga, Mateja Jamnik</p><p>Sparse autoencoders (SAEs) decompose language model activations into sparse features, but standard SAEs encode each token independently and do not expose information that persists across a sequence. We introduce Persistent Sparse Autoencoders (Persistent SAEs), which extend standard SAEs by learning a persistence coefficient for each feature, allowing the model to learn which features should persist and for how long. Our experiments show that they retain competitive reconstruction quality while </p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Sun, 19 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2607.17117v1</guid>
+    </item>
+    <item>
+      <title>Are Arithmetic Heuristic Neurons Form-Invariant? A Mechanistic Analysis of Symbols, Text, and Code in LLMs</title>
+      <link>https://arxiv.org/abs/2607.16693v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Sharath Naganna, Tanvir Ahmed Sijan, Uddipta Kalita</p><p>Large language models often succeed on one formulation of a problem while failing on an equivalent formulation. Whether these failures arise from distinct internal circuits or different activation states of a shared circuit remains unknown. Recent mechanistic interpretability studies suggest that arithmetic in LLMs emerges from a &quot;bag of heuristics,&quot; encoded by a sparse set of MLP neurons that represent distinct arithmetic strategies. We investigate whether arithmetic heuristic neurons are form-</p><p><strong>Tags:</strong> circuits</p>]]></description>
+      <pubDate>Sat, 18 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2607.16693v1</guid>
+    </item>
     <item>
       <title>Steering Robustness into World Action Models via Mechanistic Interpretability and Optimal Control</title>
       <link>https://arxiv.org/abs/2607.14943v1</link>
@@ -77,6 +98,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Ayush Karmacharya, Luke Luschwitz, Lucia Romero, Yanan Niu, Joseph Campbell</p><p>Reliable detection of out-of-distribution (OOD) samples is crucial for the safe deployment of machine learning models. Neural networks often produce overconfident predictions for inputs that deviate from their training data, leading to significant degradation in performance. While many OOD detection methods focus on the final output layer, they neglect the rich hierarchical information present in intermediate network layers. This paper introduces a novel approach that leverages sparse autoencode</p><p><strong>Tags:</strong> SAE</p>]]></description>
       <pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2607.12094v1</guid>
+    </item>
+    <item>
+      <title>Emergent Hierarchical Monosemantic Neurons from the Group-Contrastive Forward-Forward Algorithm</title>
+      <link>https://arxiv.org/abs/2607.16295v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Yiming Tang, Qinglin Qi, Zhaoqian Yao, Harshvardhan Saini, Dianbo Liu</p><p>Mechanistic interpretability has made significant strides in understanding neural network representations, with sparse dictionary learning (SDL) methods, most prominently sparse autoencoders, as a central paradigm. However, recent work has reported several limitations of this paradigm: SDL objectives are non-identifiable; SDL methods rely heavily on the Linear Representation Hypothesis; and a growing body of evidence points to concepts that are encoded non-linearly and are therefore not expressi</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2607.16295v1</guid>
     </item>
     <item>
       <title>Which Neurons Detect Malicious Code? A Probing Study of LLM Security Knowledge</title>
@@ -189,34 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Youssef Abdelsalam, Norman Peitek, Anna-Maria Maurer, Marvin Wyrich, Sven Apel</p><p>Large language models (LLMs) are increasingly used in software-engineering tasks processing executable code and non-executable semantic cues such as comments or identifiers. These two sources can conflict when semantic cues suggest different program behavior than the code itself. It remains unclear how such semantic conflicts affect LLM behavior and which source dominates their outputs.   We present the first controlled, mechanistic study of LLM behavior under semantic conflicts. To this end, we</p>]]></description>
       <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2607.05587v1</guid>
-    </item>
-    <item>
-      <title>Geometry of Ordinal Representations in Language Models</title>
-      <link>https://arxiv.org/abs/2607.04167v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Saksham Bassi, Sharvi Tomar</p><p>Recent work showed that language models represent character counts on curved 1D manifolds, with attention heads performing geometric transformations to enable computation. We test whether this generalizes across four ordinal tasks (bracket depth, indentation, table position, numeric magnitude) in Gemma-2-2B, Gemma-2-9B, and Qwen3-4B. We find that 1D manifolds with place-cell feature tiling emerge for tasks where the ordinal variable is locally computable from token identity, while tasks requirin</p><p><strong>Tags:</strong> features, attention</p>]]></description>
-      <pubDate>Sun, 05 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.04167v1</guid>
-    </item>
-    <item>
-      <title>Individual Parameters in Weight-Sparse Transformers Appear Interpretable</title>
-      <link>https://arxiv.org/abs/2607.02964v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Arnau Marin-Llobet, Stefan Heimersheim</p><p>A central goal of mechanistic interpretability is to understand how neural networks work and what each individual component does. Dominant circuit-finding approaches focus on a specific behavior and reverse-engineer the role of components on the associated sub-distribution. However, past work has shown that components can have different functions that are active on different subsets of the input distribution. In this work we ask whether a single weight can be understood globally across the full </p><p><strong>Tags:</strong> circuits</p>]]></description>
-      <pubDate>Fri, 03 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.02964v1</guid>
-    </item>
-    <item>
-      <title>Brand-as-Memory: Vision-Language Models Encode Causal, Mechanistically Localizable Credibility Priors for News Sources</title>
-      <link>https://arxiv.org/abs/2607.03365v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Chih-Ting Liao, Xin Cao</p><p>Vision-language models (VLMs) increasingly read news and web content as images, where the publisher&#x27;s identity is visually present. We show that VLMs carry a strong source-credibility prior keyed on outlet identity, and study it along three axes. (i) Cross-model benchmark. We introduce CueTrust, a cross-model diagnostic that measures which surface source cue overrides an article&#x27;s content evidence via a Source-Override Index (SOI). Across seven VLMs and five cues, the vulnerability profile is mo</p><p><strong>Tags:</strong> vision</p>]]></description>
-      <pubDate>Fri, 03 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.03365v1</guid>
-    </item>
-    <item>
-      <title>They Infer What You Meant: Models Represent Communicative Intent More Reliably Than They Act On It</title>
-      <link>https://arxiv.org/abs/2607.03598v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Alex Kwon</p><p>When a person shares something with a language model, the model often answers the surface of the message rather than what the sender was doing by sending it: share a finished project and it critiques the code; share a raw late-night line and it runs a wellness check. We treat the sender&#x27;s communicative intent, the Gricean what-was-meant, as a first-class interpretability object, and show the failure is one of readout on top of a robust representation. A linear probe decodes the sender&#x27;s intent, </p><p><strong>Tags:</strong> probing</p>]]></description>
-      <pubDate>Fri, 03 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.03598v1</guid>
     </item>
   </channel>
 </rss>
