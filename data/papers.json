@@ -1,6 +1,47 @@
 {
-  "lastUpdated": "2026-07-20",
+  "lastUpdated": "2026-07-21",
   "papers": [
+    {
+      "id": "arxiv-2607-17770v1",
+      "title": "Measuring Monosemanticity in Sparse Autoencoders via Latent Activation Coherence",
+      "authors": "Katarzyna Filus, Sebastian Pokuci\u0144ski",
+      "date": "2026-07-20",
+      "url": "https://arxiv.org/abs/2607.17770v1",
+      "abstract": "Within Explainable Artificial Intelligence, mechanistic interpretability uses Sparse Autoencoders (SAEs) to extract more interpretable features from neural representations. However, assessing their monosemanticity, and thus explanation quality, remains challenging. Existing metrics require external concept labels or depend on pretrained embedding models, making them sensitive to encoder's geometry. We introduce the Tversky Monosemanticity Score (TMS), a label-free metric that operationalizes mon",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2607-17117v1",
+      "title": "Persistent Sparse Autoencoders: Learning Feature Timescales in Language Models",
+      "authors": "Haoyan Luo, Mateo Espinosa Zarlenga, Mateja Jamnik",
+      "date": "2026-07-19",
+      "url": "https://arxiv.org/abs/2607.17117v1",
+      "abstract": "Sparse autoencoders (SAEs) decompose language model activations into sparse features, but standard SAEs encode each token independently and do not expose information that persists across a sequence. We introduce Persistent Sparse Autoencoders (Persistent SAEs), which extend standard SAEs by learning a persistence coefficient for each feature, allowing the model to learn which features should persist and for how long. Our experiments show that they retain competitive reconstruction quality while ",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2607-16693v1",
+      "title": "Are Arithmetic Heuristic Neurons Form-Invariant? A Mechanistic Analysis of Symbols, Text, and Code in LLMs",
+      "authors": "Sharath Naganna, Tanvir Ahmed Sijan, Uddipta Kalita",
+      "date": "2026-07-18",
+      "url": "https://arxiv.org/abs/2607.16693v1",
+      "abstract": "Large language models often succeed on one formulation of a problem while failing on an equivalent formulation. Whether these failures arise from distinct internal circuits or different activation states of a shared circuit remains unknown. Recent mechanistic interpretability studies suggest that arithmetic in LLMs emerges from a \"bag of heuristics,\" encoded by a sparse set of MLP neurons that represent distinct arithmetic strategies. We investigate whether arithmetic heuristic neurons are form-",
+      "tags": [
+        "circuits"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2607-14943v1",
       "title": "Steering Robustness into World Action Models via Mechanistic Interpretability and Optimal Control",
@@ -131,6 +172,20 @@
       "abstract": "Reliable detection of out-of-distribution (OOD) samples is crucial for the safe deployment of machine learning models. Neural networks often produce overconfident predictions for inputs that deviate from their training data, leading to significant degradation in performance. While many OOD detection methods focus on the final output layer, they neglect the rich hierarchical information present in intermediate network layers. This paper introduces a novel approach that leverages sparse autoencode",
       "tags": [
         "SAE"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2607-16295v1",
+      "title": "Emergent Hierarchical Monosemantic Neurons from the Group-Contrastive Forward-Forward Algorithm",
+      "authors": "Yiming Tang, Qinglin Qi, Zhaoqian Yao, Harshvardhan Saini, Dianbo Liu",
+      "date": "2026-07-13",
+      "url": "https://arxiv.org/abs/2607.16295v1",
+      "abstract": "Mechanistic interpretability has made significant strides in understanding neural network representations, with sparse dictionary learning (SDL) methods, most prominently sparse autoencoders, as a central paradigm. However, recent work has reported several limitations of this paradigm: SDL objectives are non-identifiable; SDL methods rely heavily on the Linear Representation Hypothesis; and a growing body of evidence points to concepts that are encoded non-linearly and are therefore not expressi",
+      "tags": [
+        "SAE",
+        "features"
       ],
       "source": "arXiv",
       "featured": false
@@ -1204,6 +1259,17 @@
       "tags": [
         "probing"
       ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2606-20959v2",
+      "title": "Right Knowledge, Wrong Answer: Characterizing Parametric Temporal Conflict in Open-Weight Language Models",
+      "authors": "Elias Hossain, Sourav Saha, Tasfia Nuzhat Ornee, Sanjeda Sara Jennifer, Umesh Chandra Biswas, et al.",
+      "date": "2026-06-18",
+      "url": "https://arxiv.org/abs/2606.20959v2",
+      "abstract": "Language models may encode both outdated facts and their newer replacements. We introduce Parametric Temporal Conflict (PTC), where the newer fact is present and recoverable, but the default forward pass prefers the outdated one. We release a deterministically verified benchmark of 8,746 Wikidata position-holder transitions and evaluate four open-weight language models across three families. A date-prefix prompt recovers the newer fact in 61-81% of PTC cases. Activation patching flips prediction",
+      "tags": [],
       "source": "arXiv",
       "featured": false
     },
