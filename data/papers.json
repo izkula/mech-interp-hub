@@ -1,6 +1,34 @@
 {
-  "lastUpdated": "2026-07-21",
+  "lastUpdated": "2026-07-22",
   "papers": [
+    {
+      "id": "arxiv-2607-19317v1",
+      "title": "CircuitKIT : Circuit Discovery, Evaluation, and Application Toolkit for Mechanistic Interpretability",
+      "authors": "Pratinav Seth, Hem Gosalia, Aditya Kasliwal, Vinay Kumar Sankarapu",
+      "date": "2026-07-21",
+      "url": "https://arxiv.org/abs/2607.19317v1",
+      "abstract": "Circuit analysis can support not only model explanation but also downstream interventions such as pruning, editing, steering, and selective fine-tuning. However, conducting such analyses currently requires stitching together separate implementations for discovery, evaluation, and intervention, as well as hand-authoring the contrastive prompts required by many discovery methods. This fragmentation makes methods difficult to compare and limits their application beyond canonical tasks. We introduce",
+      "tags": [
+        "circuits",
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2607-19011v1",
+      "title": "Computational Humor with Multimodal LLMs: Methods, Datasets, Evaluation, and Challenges",
+      "authors": "Tuo Liang, Zhe Hu, Disheng Liu, Jing Li, Yu Yin",
+      "date": "2026-07-21",
+      "url": "https://arxiv.org/abs/2607.19011v1",
+      "abstract": "Multimodal humor in memes, cartoons, and comics remains difficult for AI systems because intended meaning depends on non-literal mechanisms, shared cultural knowledge, and communicative intent rather than literal scene description. This survey focuses on visual humor understanding in single-image and multi-panel artifacts, while treating humor generation as an emerging downstream frontier. We position the literature against prior humor, sarcasm, and general MLLM surveys and organize it using a c",
+      "tags": [
+        "survey",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2607-17770v1",
       "title": "Measuring Monosemanticity in Sparse Autoencoders via Latent Activation Coherence",
@@ -36,6 +64,19 @@
       "date": "2026-07-18",
       "url": "https://arxiv.org/abs/2607.16693v1",
       "abstract": "Large language models often succeed on one formulation of a problem while failing on an equivalent formulation. Whether these failures arise from distinct internal circuits or different activation states of a shared circuit remains unknown. Recent mechanistic interpretability studies suggest that arithmetic in LLMs emerges from a \"bag of heuristics,\" encoded by a sparse set of MLP neurons that represent distinct arithmetic strategies. We investigate whether arithmetic heuristic neurons are form-",
+      "tags": [
+        "circuits"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2607-18323v1",
+      "title": "Cost Accounting for Reactive Computational Graphs: Exhaustive Sweeps, Sequential Mutation, and the Backward-Locality Gap",
+      "authors": "Abdallah Khemais",
+      "date": "2026-07-18",
+      "url": "https://arxiv.org/abs/2607.18323v1",
+      "abstract": "Exhaustive site-by-site interventions on a neural network's computational graph -- activation-patching sweeps, circuit-discovery searches, systematic ablation studies -- mutate the graph at every candidate site, and their cost is dominated by recomputation after each mutation. On a reactive graph engine whose invalidation provably touches exactly the downstream cone of a mutated node, we give a complete cost accounting for such workloads. First, the aggregate speedup of an exhaustive sweep over ",
       "tags": [
         "circuits"
       ],
