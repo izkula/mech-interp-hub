@@ -5,9 +5,23 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 22 Jul 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>CircuitKIT : Circuit Discovery, Evaluation, and Application Toolkit for Mechanistic Interpretability</title>
+      <link>https://arxiv.org/abs/2607.19317v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Pratinav Seth, Hem Gosalia, Aditya Kasliwal, Vinay Kumar Sankarapu</p><p>Circuit analysis can support not only model explanation but also downstream interventions such as pruning, editing, steering, and selective fine-tuning. However, conducting such analyses currently requires stitching together separate implementations for discovery, evaluation, and intervention, as well as hand-authoring the contrastive prompts required by many discovery methods. This fragmentation makes methods difficult to compare and limits their application beyond canonical tasks. We introduce</p><p><strong>Tags:</strong> circuits, steering</p>]]></description>
+      <pubDate>Tue, 21 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2607.19317v1</guid>
+    </item>
+    <item>
+      <title>Computational Humor with Multimodal LLMs: Methods, Datasets, Evaluation, and Challenges</title>
+      <link>https://arxiv.org/abs/2607.19011v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Tuo Liang, Zhe Hu, Disheng Liu, Jing Li, Yu Yin</p><p>Multimodal humor in memes, cartoons, and comics remains difficult for AI systems because intended meaning depends on non-literal mechanisms, shared cultural knowledge, and communicative intent rather than literal scene description. This survey focuses on visual humor understanding in single-image and multi-panel artifacts, while treating humor generation as an emerging downstream frontier. We position the literature against prior humor, sarcasm, and general MLLM surveys and organize it using a c</p><p><strong>Tags:</strong> survey, vision</p>]]></description>
+      <pubDate>Tue, 21 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2607.19011v1</guid>
+    </item>
     <item>
       <title>Measuring Monosemanticity in Sparse Autoencoders via Latent Activation Coherence</title>
       <link>https://arxiv.org/abs/2607.17770v1</link>
@@ -28,6 +42,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Sharath Naganna, Tanvir Ahmed Sijan, Uddipta Kalita</p><p>Large language models often succeed on one formulation of a problem while failing on an equivalent formulation. Whether these failures arise from distinct internal circuits or different activation states of a shared circuit remains unknown. Recent mechanistic interpretability studies suggest that arithmetic in LLMs emerges from a &quot;bag of heuristics,&quot; encoded by a sparse set of MLP neurons that represent distinct arithmetic strategies. We investigate whether arithmetic heuristic neurons are form-</p><p><strong>Tags:</strong> circuits</p>]]></description>
       <pubDate>Sat, 18 Jul 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2607.16693v1</guid>
+    </item>
+    <item>
+      <title>Cost Accounting for Reactive Computational Graphs: Exhaustive Sweeps, Sequential Mutation, and the Backward-Locality Gap</title>
+      <link>https://arxiv.org/abs/2607.18323v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Abdallah Khemais</p><p>Exhaustive site-by-site interventions on a neural network&#x27;s computational graph -- activation-patching sweeps, circuit-discovery searches, systematic ablation studies -- mutate the graph at every candidate site, and their cost is dominated by recomputation after each mutation. On a reactive graph engine whose invalidation provably touches exactly the downstream cone of a mutated node, we give a complete cost accounting for such workloads. First, the aggregate speedup of an exhaustive sweep over </p><p><strong>Tags:</strong> circuits</p>]]></description>
+      <pubDate>Sat, 18 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2607.18323v1</guid>
     </item>
     <item>
       <title>Steering Robustness into World Action Models via Mechanistic Interpretability and Optimal Control</title>
@@ -196,27 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Parth Upman, Nishita Jain, Shreyank N Gowda</p><p>Training-free concept erasure is an attractive mechanism for controlling text-to-image diffusion models, but precise erasure often comes at the cost of damaging semantically related non-target concepts. Existing value-space methods remove the component of each cross-attention value along the target concept direction, implicitly treating target identity and shared visual structure as the same signal. We argue that this is the source of much of the collateral damage in prior preservation. We intro</p><p><strong>Tags:</strong> vision</p>]]></description>
       <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2607.05274v1</guid>
-    </item>
-    <item>
-      <title>Evaluating and Understanding Model Editing for Medical Vision Language Models</title>
-      <link>https://arxiv.org/abs/2607.05310v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Guli Zhu, Chenwei Wu, Liyue Shen</p><p>Model editing promises a fast, targeted way to correct post-deployment mistakes in medical vision-language models (VLMs) without costly retraining. However, existing multimodal model editing benchmarks focus on general-purpose tasks and do not reflect realistic clinical domain requirements and variability. To address this, we introduce M3Bench, a clinically grounded benchmark for multimodal model editing that evaluates whether an edit remains reliable, precise, and generalizable under the challe</p><p><strong>Tags:</strong> editing, vision</p>]]></description>
-      <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.05310v1</guid>
-    </item>
-    <item>
-      <title>A Coin Flip Per Token: Bernoulli Sparse Steering of Large Language Models</title>
-      <link>https://arxiv.org/abs/2607.05615v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Nima Eshraghi, Lovedeep Gondara, Yuqing Huang, Sagarika Suresh, Leizer Teran, et al.</p><p>Activation steering via sparse autoencoders (SAEs) enables behavioral control of large language models without task-specific fine-tuning, but standard methods apply the steering signal at every generated token, incurring constant per-token perturbation that risks degrading fluency. We ask: is dense intervention necessary? We introduce Stochastic Token Steering (STS), which gates each token independently with probability $p$, and Stochastic Block Steering (SBS), which gates a leading window once </p><p><strong>Tags:</strong> SAE, steering</p>]]></description>
-      <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.05615v1</guid>
-    </item>
-    <item>
-      <title>A Mechanistic Lens on Semantic Conflicts: Using Activation Patching to Understand LLM Behavior</title>
-      <link>https://arxiv.org/abs/2607.05587v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Youssef Abdelsalam, Norman Peitek, Anna-Maria Maurer, Marvin Wyrich, Sven Apel</p><p>Large language models (LLMs) are increasingly used in software-engineering tasks processing executable code and non-executable semantic cues such as comments or identifiers. These two sources can conflict when semantic cues suggest different program behavior than the code itself. It remains unclear how such semantic conflicts affect LLM behavior and which source dominates their outputs.   We present the first controlled, mechanistic study of LLM behavior under semantic conflicts. To this end, we</p>]]></description>
-      <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.05587v1</guid>
     </item>
   </channel>
 </rss>
