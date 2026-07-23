@@ -5,9 +5,23 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jul 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>OPIUM: Mitigating Steering Externalities and Over-Refusal via Dual Objective Latent Optimization</title>
+      <link>https://arxiv.org/abs/2607.19806v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Kavin Aravindan, Arihant Rastogi, Aadi Prasad, Krishak Aneja, Saiyam Jain, et al.</p><p>Activation steering provides a lightweight mechanism for controlling large language models at inference time, but steering vectors can have unintended externalities: utility vectors may weaken safety behavior, while refusal vectors may induce over-refusal on benign prompts. We introduce OPIUM (Optimizing Protected Injections via Utility Manifolds), a training-free method for sanitizing steering vectors through representation matching. Given reference behaviors on two prompt sets, OPIUM optimizes</p><p><strong>Tags:</strong> safety, steering</p>]]></description>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2607.19806v1</guid>
+    </item>
+    <item>
+      <title>Understanding the Impact of Linguistic Realization Choices on LLM Stance with Causal Tracing</title>
+      <link>https://arxiv.org/abs/2607.20115v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Langchen Huang, Sebastian Padó, Franziska Weeber</p><p>Large language models (LLMs) are known to be sensitive to prompt and input formulations. However, existing studies have focused on lexical realization and largely ignored constructional choice. This paper studies whether linguistic construction can systematically shift LLM decisions and where these shifts can be causally localized inside the model. We use political stance judgment as a meaning-sensitive case study and extend an English political statements dataset, resulting in six controlled li</p>]]></description>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2607.20115v1</guid>
+    </item>
     <item>
       <title>CircuitKIT : Circuit Discovery, Evaluation, and Application Toolkit for Mechanistic Interpretability</title>
       <link>https://arxiv.org/abs/2607.19317v1</link>
@@ -21,6 +35,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Tuo Liang, Zhe Hu, Disheng Liu, Jing Li, Yu Yin</p><p>Multimodal humor in memes, cartoons, and comics remains difficult for AI systems because intended meaning depends on non-literal mechanisms, shared cultural knowledge, and communicative intent rather than literal scene description. This survey focuses on visual humor understanding in single-image and multi-panel artifacts, while treating humor generation as an emerging downstream frontier. We position the literature against prior humor, sarcasm, and general MLLM surveys and organize it using a c</p><p><strong>Tags:</strong> survey, vision</p>]]></description>
       <pubDate>Tue, 21 Jul 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2607.19011v1</guid>
+    </item>
+    <item>
+      <title>Causal dictionary learning reveals and validates transcription-factor binding features in genomic language models</title>
+      <link>https://arxiv.org/abs/2607.19618v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Sarwan Ali</p><p>Genomic language models achieve strong performance across regulatory-genomics tasks, yet what these models internally represent remains opaque, and the field lacks a principled procedure for verifying that an apparent ``concept&#x27;&#x27; inside a model is real rather than an artifact of sequence composition. We introduce a framework that combines sparse dictionary learning with causal intervention to extract, validate, and causally test interpretable features in genomic foundation models. Training top-$</p><p><strong>Tags:</strong> features</p>]]></description>
+      <pubDate>Tue, 21 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2607.19618v1</guid>
     </item>
     <item>
       <title>Measuring Monosemanticity in Sparse Autoencoders via Latent Activation Coherence</title>
@@ -196,27 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Anthony Baez, Sheer Karny, Pat Pataranutaporn</p><p>Large Language Models (LLMs) frequently exhibit sycophancy, where they agree with a user&#x27;s statement even when incorrect. While sycophancy is often treated as a single defined behavior, it can manifest in substantially distinct ways and circumstances, raising the question of whether this multi-faceted nature is reflected in its internal mechanisms. To address this gap, we dissociate the representations of sycophancy into factual and opinion subtypes -- motivated by the distinction between verifi</p>]]></description>
       <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2607.07003v1</guid>
-    </item>
-    <item>
-      <title>Mechanistic Interpretability of LLM Jailbreaks via Internal Attribution Graphs</title>
-      <link>https://arxiv.org/abs/2607.07903v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Anupam Wagle, Ifrat Ikhtear Uddin, Chaowei Zhang, Longwei Wang</p><p>Large language models (LLMs) exhibit remarkable capabilities but remain highly vulnerable to adversarial prompts and jailbreak attacks. Existing approaches primarily analyze these failures through input-output behaviors or attribution methods, offering limited insight into how adversarial perturbations alter the model&#x27;s internal reasoning. Consequently, the mechanisms underlying unsafe or incorrect behaviors remain poorly understood. We introduce a mechanistic framework for diagnosing LLM vulner</p><p><strong>Tags:</strong> reasoning</p>]]></description>
-      <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.07903v1</guid>
-    </item>
-    <item>
-      <title>TORINO: Token Reduction via Interpretable Concept Overlap in Vision-Language Models</title>
-      <link>https://arxiv.org/abs/2607.04593v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Riccardo Renzulli, Gabriele Spadaro, Shruthi Gowda, Alaa Eddine Mazouz, Van-Tam Nguyen</p><p>Vision-Language Models (VLMs) have demonstrated impressive capabilities across different tasks, but their computational cost is dominated by the large number of visual tokens fed to the language model. Existing token reduction methods rely on attention-based scores or pairwise similarity, without an explicit semantic representation of each token. We introduce TORINO (TOken Reduction via Interpretable coNcept Overlap), a plug-and-play framework for adaptive visual token reduction in VLMs that req</p><p><strong>Tags:</strong> vision</p>]]></description>
-      <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.04593v1</guid>
-    </item>
-    <item>
-      <title>Erasing Without Collateral Damage: Precise Concept Removal in Diffusion Models</title>
-      <link>https://arxiv.org/abs/2607.05274v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Parth Upman, Nishita Jain, Shreyank N Gowda</p><p>Training-free concept erasure is an attractive mechanism for controlling text-to-image diffusion models, but precise erasure often comes at the cost of damaging semantically related non-target concepts. Existing value-space methods remove the component of each cross-attention value along the target concept direction, implicitly treating target identity and shared visual structure as the same signal. We argue that this is the source of much of the collateral damage in prior preservation. We intro</p><p><strong>Tags:</strong> vision</p>]]></description>
-      <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.05274v1</guid>
     </item>
   </channel>
 </rss>
