@@ -1,6 +1,31 @@
 {
-  "lastUpdated": "2026-07-22",
+  "lastUpdated": "2026-07-23",
   "papers": [
+    {
+      "id": "arxiv-2607-19806v1",
+      "title": "OPIUM: Mitigating Steering Externalities and Over-Refusal via Dual Objective Latent Optimization",
+      "authors": "Kavin Aravindan, Arihant Rastogi, Aadi Prasad, Krishak Aneja, Saiyam Jain, et al.",
+      "date": "2026-07-22",
+      "url": "https://arxiv.org/abs/2607.19806v1",
+      "abstract": "Activation steering provides a lightweight mechanism for controlling large language models at inference time, but steering vectors can have unintended externalities: utility vectors may weaken safety behavior, while refusal vectors may induce over-refusal on benign prompts. We introduce OPIUM (Optimizing Protected Injections via Utility Manifolds), a training-free method for sanitizing steering vectors through representation matching. Given reference behaviors on two prompt sets, OPIUM optimizes",
+      "tags": [
+        "safety",
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2607-20115v1",
+      "title": "Understanding the Impact of Linguistic Realization Choices on LLM Stance with Causal Tracing",
+      "authors": "Langchen Huang, Sebastian Pad\u00f3, Franziska Weeber",
+      "date": "2026-07-22",
+      "url": "https://arxiv.org/abs/2607.20115v1",
+      "abstract": "Large language models (LLMs) are known to be sensitive to prompt and input formulations. However, existing studies have focused on lexical realization and largely ignored constructional choice. This paper studies whether linguistic construction can systematically shift LLM decisions and where these shifts can be causally localized inside the model. We use political stance judgment as a meaning-sensitive case study and extend an English political statements dataset, resulting in six controlled li",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2607-19317v1",
       "title": "CircuitKIT : Circuit Discovery, Evaluation, and Application Toolkit for Mechanistic Interpretability",
@@ -25,6 +50,19 @@
       "tags": [
         "survey",
         "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2607-19618v1",
+      "title": "Causal dictionary learning reveals and validates transcription-factor binding features in genomic language models",
+      "authors": "Sarwan Ali",
+      "date": "2026-07-21",
+      "url": "https://arxiv.org/abs/2607.19618v1",
+      "abstract": "Genomic language models achieve strong performance across regulatory-genomics tasks, yet what these models internally represent remains opaque, and the field lacks a principled procedure for verifying that an apparent ``concept'' inside a model is real rather than an artifact of sequence composition. We introduce a framework that combines sparse dictionary learning with causal intervention to extract, validate, and causally test interpretable features in genomic foundation models. Training top-$",
+      "tags": [
+        "features"
       ],
       "source": "arXiv",
       "featured": false
@@ -612,6 +650,20 @@
         "SAE",
         "features",
         "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2607-19386v1",
+      "title": "Building Fast, Evaluating Slow: Pipeline Choices Dominate Autointerpretability Score Variance",
+      "authors": "Sinie van der Ben, Neele Roch, Anna Hedstr\u00f6m, Mennatallah El-Assady",
+      "date": "2026-07-01",
+      "url": "https://arxiv.org/abs/2607.19386v1",
+      "abstract": "Cross-paper comparison of sparse autoencoder (SAE) interpretability often relies on autointerpretability scores. In this evaluation pipeline, a language model (LM) explains each feature, and another LM scores the explanation. For these comparisons to be meaningful, scores must reflect stable properties of the features rather than confounding aspects of the evaluation pipeline. Through systematic experiments across four metrics (simulation, detection, fuzzing, purity), two models (Pythia-160M, Ap",
+      "tags": [
+        "SAE",
+        "features"
       ],
       "source": "arXiv",
       "featured": false
@@ -1820,6 +1872,21 @@
       "featured": false
     },
     {
+      "id": "arxiv-2607-19366v1",
+      "title": "Geometry-Guided Constraint Learning for LLM Safety Classification",
+      "authors": "Fumiaki Uehara, Koo Imai, Masato Tsutsumi, Keigo Kansa, Sora Usui, et al.",
+      "date": "2026-06-09",
+      "url": "https://arxiv.org/abs/2607.19366v1",
+      "abstract": "Safety as Polytope (SaP) learns linear half-space constraints in LLM hidden space but requires per-category tuning of the constraint count K. We show that sparse autoencoder (SAE) feature extraction resolves this: K=2 becomes optimal for 12/14 categories on Qwen3.5-9B, achieving 96-99% accuracy per category on our BeaverTails classification benchmark, largely eliminating the need for exhaustive sweeps (K=4-25 with random initialization). This convergence to two planes is consistent with the Line",
+      "tags": [
+        "SAE",
+        "features",
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
       "id": "arxiv-2606-09287v1",
       "title": "Trajectory Geometry of Transformer Representations Across Layers",
       "authors": "Vishal Pandey, Gopal Singh",
@@ -2136,6 +2203,20 @@
       "abstract": "A central goal of mechanistic interpretability is to identify which internal components causally drive a language model's behavior. Because these importance estimates serve as the evidence for identifying circuits, systematic errors can lead to the misidentification of the underlying mechanisms. While activation patching provides a gold-standard causal metric, its computational cost is prohibitive at scale. Practitioners instead rely on attribution patching, a gradient-based, first-order approxi",
       "tags": [
         "circuits"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2607-19364v1",
+      "title": "Statistically Grounded Sparse-Feature Interventions for Activation-Space Control in Large Language Models",
+      "authors": "Oshayer Siddique, J. M Areeb Uzair Alam, Md Jobayer Rahman Rafy, Syed Rifat Raiyan, Hasan Mahmud, et al.",
+      "date": "2026-06-05",
+      "url": "https://arxiv.org/abs/2607.19364v1",
+      "abstract": "Activation steering offers a lightweight alternative to fine-tuning for behavioral control of large language models, but SAE-based steering methods often rely on learned steering objectives or single-criterion feature selection. We introduce a transparent SAE-feature steering pipeline that first applies a six-condition reliability filter, then ranks sparse features through an unweighted Borda consensus over three complementary statistics: $F$-test, KSG mutual information, and Cohen's $d$. The re",
+      "tags": [
+        "features",
+        "steering"
       ],
       "source": "arXiv",
       "featured": false
