@@ -5,9 +5,16 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 23 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 24 Jul 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>What, Where, and How: Disentangling the Roles of Task, Language, and Model in Code Model Representations</title>
+      <link>https://arxiv.org/abs/2607.21491v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Piotr Wilam</p><p>Do independently trained language models come to represent the same thing in the same way? We answer for code, extending a recently introduced concept-circuit extraction method to a 2x2 design -- Python and Rust crossed with Qwen2.5-Coder-7B and DeepSeek-Coder-V1-6.7B -- and measuring a complete inventory of grammatical concepts (58 Python, 57 Rust) identically in all four cells: the smallest design that separates what depends on the task, the language, and the model.   The answer splits into th</p><p><strong>Tags:</strong> circuits</p>]]></description>
+      <pubDate>Thu, 23 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2607.21491v1</guid>
+    </item>
     <item>
       <title>OPIUM: Mitigating Steering Externalities and Over-Refusal via Dual Objective Latent Optimization</title>
       <link>https://arxiv.org/abs/2607.19806v1</link>
@@ -21,6 +28,27 @@
       <description><![CDATA[<p><strong>Authors:</strong> Langchen Huang, Sebastian Padó, Franziska Weeber</p><p>Large language models (LLMs) are known to be sensitive to prompt and input formulations. However, existing studies have focused on lexical realization and largely ignored constructional choice. This paper studies whether linguistic construction can systematically shift LLM decisions and where these shifts can be causally localized inside the model. We use political stance judgment as a meaning-sensitive case study and extend an English political statements dataset, resulting in six controlled li</p>]]></description>
       <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2607.20115v1</guid>
+    </item>
+    <item>
+      <title>Toward Mechanistic Interpretability of an AI Foundation Model Fine-Tuned for Atmospheric Chemistry</title>
+      <link>https://arxiv.org/abs/2607.20778v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Jason Y. Hu, Ivan Higuera-Mendieta, Patrick Obin Sturm, Makoto M. Kelp</p><p>Weather forecasting foundation models (FMs) are increasingly fine-tuned to predict air quality, offering fast global pollution forecasts at lower computational cost than conventional chemical transport models. These FMs are typically trained on reanalysis data and generate forecasts through autoregressive rollout. They do not explicitly represent governing physical or chemical processes. Therefore, high forecast skill does not reveal whether a model has learned physical mechanisms or exploits st</p>]]></description>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2607.20778v1</guid>
+    </item>
+    <item>
+      <title>Scaling Interpretable Transformers with Parity Bottleneck Layers</title>
+      <link>https://arxiv.org/abs/2607.20652v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Andrew Mack, Kraig Yuheng Tou, Mark Henry, Zhengxun Wu, Lauren Greenspan</p><p>Language models are thought to exhibit the phenomenon of superposition, representing many more features than dimensions in their residual streams. Sparse autoencoders (SAEs) are designed to recover such features post-hoc, but training models that are interpretable by construction has remained impractical, as a per-layer over-complete bottleneck is prohibitively expensive in both memory and compute. To overcome this issue, we introduce the ParityTransformer, a GPT-2-scale architecture whose inter</p><p><strong>Tags:</strong> SAE, superposition, features</p>]]></description>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2607.20652v1</guid>
+    </item>
+    <item>
+      <title>Are Single-Token Sparse Autoencoder Features Causally Necessary? Layer-Depth and SAE-Family Effects</title>
+      <link>https://arxiv.org/abs/2607.20596v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Seonglae Cho, Zekun Wu, Kleyton Da Costa, Rishi Kalra, Ilham Wicaksono, et al.</p><p>Sparse autoencoder (SAE) features are used to interpret and steer large language models, yet whether a feature&#x27;s causal role is stable across SAE families remains untested. Single-token features that activate on one vocabulary item provide the diagnostic case where ground truth permits direct comparison. We analyze 3.9M features across six models and three SAE families using zero-ablation at full layer depth. Single-token features cluster 4.7x tighter in decoder space and concentrate in early la</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2607.20596v1</guid>
     </item>
     <item>
       <title>CircuitKIT : Circuit Discovery, Evaluation, and Application Toolkit for Mechanistic Interpretability</title>
@@ -189,34 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Bendegúz Váradi, Zoltán Kmetty</p><p>We present a Procrustes-conditioned Joint End-to-end Top-K Sparse Autoencoder (SAE) for extracting cross-seed universal features from independently trained BERT models. Cross-seed feature universality is a fundamental challenge in mechanistic interpretability: because dictionary learning is non-convex, independently trained networks learn misaligned feature spaces, so apparently identical features may differ by random initialization. We address this by computing an orthogonal Procrustes rotation</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
       <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2607.08499v1</guid>
-    </item>
-    <item>
-      <title>Certified Interventional Fidelity: Anytime-Valid, Adaptive Evaluation of Causal Claims in Mechanistic Interpretability</title>
-      <link>https://arxiv.org/abs/2607.08349v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Amir Asiaee</p><p>Mechanistic interpretability often evaluates explanations by intervening on a model: swapping hidden states, patching activations, ablating components, or comparing a compressed model to the original one. These experiments are usually summarized by a point estimate, even though the evaluation may be monitored while it runs or adapted toward suspected failures. This makes it hard to tell whether a reported fidelity or patching effect is a stable causal claim or a consequence of finite sampling an</p>]]></description>
-      <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.08349v1</guid>
-    </item>
-    <item>
-      <title>Mechanistic Interpretability for Neural Networks: Circuits, Sparse Features and Symbolic Reasoning</title>
-      <link>https://arxiv.org/abs/2607.07316v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Pranav Sawant, Jakub Krejčí</p><p>This article offers a comprehensive overview of mechanistic interpretability, an emerging field that seeks to reverse-engineer the internal algorithms of modern neural networks. While traditional explainable AI methods often stop at surface-level input-output correlations, this approach directly addresses the opaque &quot;black box&quot; nature of machine learning models, which is essential for ensuring safety and auditability in high-stakes deployments. The paper provides a detailed examination of Transf</p><p><strong>Tags:</strong> circuits, features, safety, survey, reasoning</p>]]></description>
-      <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.07316v1</guid>
-    </item>
-    <item>
-      <title>Multiplication Beyond Groups: Stratified Fourier Mechanisms in Transformer Circuits</title>
-      <link>https://arxiv.org/abs/2607.07066v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Zitong Andrew Chen, Junaid Hasan, Akhil Srinivasan, Hemkesh Bandi, Jarod Alper</p><p>Transformers have demonstrated a remarkable ability to learn algorithmic reasoning, yet mechanistic analyses have mostly focused on globally invertible operations such as cyclic addition and group composition. In this work, we investigate how small transformers learn modular integer multiplication over composite moduli, a fundamentally non-invertible operation due to the presence of zero-divisors. We propose the monoid extension: a localized generalization of Group Composition via Representation</p><p><strong>Tags:</strong> circuits, reasoning</p>]]></description>
-      <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.07066v1</guid>
-    </item>
-    <item>
-      <title>Dissociating the Internal Representations of Sycophancy in LLMs</title>
-      <link>https://arxiv.org/abs/2607.07003v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Anthony Baez, Sheer Karny, Pat Pataranutaporn</p><p>Large Language Models (LLMs) frequently exhibit sycophancy, where they agree with a user&#x27;s statement even when incorrect. While sycophancy is often treated as a single defined behavior, it can manifest in substantially distinct ways and circumstances, raising the question of whether this multi-faceted nature is reflected in its internal mechanisms. To address this gap, we dissociate the representations of sycophancy into factual and opinion subtypes -- motivated by the distinction between verifi</p>]]></description>
-      <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.07003v1</guid>
     </item>
   </channel>
 </rss>
