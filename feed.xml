@@ -5,9 +5,16 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 26 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 27 Jul 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>CommandLM: Data driven behavior level descriptor for ego vehicles</title>
+      <link>https://arxiv.org/abs/2607.22078v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Boris Tokic, Constantin Selzer, Fabian B. Flohr</p><p>As autonomous driving systems move toward real-world deployment, interpretable, behavior-level decision-making is essential for safety, trust, and regulation. We introduce CommandLM, a multimodal large language model that generates concise, human-readable behavior descriptions for ego vehicles from fused multi-sensor data. Our model processes temporally fused bird&#x27;s-eye view representations from LiDAR and multi-camera inputs via a Q-Former adapter connected to a quantized, LoRA-fine-tuned large </p><p><strong>Tags:</strong> safety, vision</p>]]></description>
+      <pubDate>Fri, 24 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2607.22078v1</guid>
+    </item>
     <item>
       <title>What, Where, and How: Disentangling the Roles of Task, Language, and Model in Code Model Representations</title>
       <link>https://arxiv.org/abs/2607.21491v1</link>
@@ -210,13 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Weiduo Liao, Yunqiao Yang, Ying Wei</p><p>Sparse autoencoders (SAEs) have emerged as a promising technique for mechanistic interpretability by learning a set of sparse latent features in large models, each of which encodes a distinct concept. However, in vision-language models (VLMs), vanilla SAEs struggle to learn modality-consistent concepts, with concepts often exhibiting fragmented coverage (i.e., disjoint regions) in the visual modality. To address this challenge, we propose a Structured Sparse AutoEncoder ($S^2AE$) that enforces c</p><p><strong>Tags:</strong> SAE, features, vision</p>]]></description>
       <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2607.08605v1</guid>
-    </item>
-    <item>
-      <title>Cross-seed explainability using Procrustes-conditioned Joint End-to-end Top-K Sparse Autoencoders</title>
-      <link>https://arxiv.org/abs/2607.08499v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Bendegúz Váradi, Zoltán Kmetty</p><p>We present a Procrustes-conditioned Joint End-to-end Top-K Sparse Autoencoder (SAE) for extracting cross-seed universal features from independently trained BERT models. Cross-seed feature universality is a fundamental challenge in mechanistic interpretability: because dictionary learning is non-convex, independently trained networks learn misaligned feature spaces, so apparently identical features may differ by random initialization. We address this by computing an orthogonal Procrustes rotation</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.08499v1</guid>
     </item>
   </channel>
 </rss>
