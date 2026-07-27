@@ -1,6 +1,20 @@
 {
-  "lastUpdated": "2026-07-26",
+  "lastUpdated": "2026-07-27",
   "papers": [
+    {
+      "id": "arxiv-2607-22078v1",
+      "title": "CommandLM: Data driven behavior level descriptor for ego vehicles",
+      "authors": "Boris Tokic, Constantin Selzer, Fabian B. Flohr",
+      "date": "2026-07-24",
+      "url": "https://arxiv.org/abs/2607.22078v1",
+      "abstract": "As autonomous driving systems move toward real-world deployment, interpretable, behavior-level decision-making is essential for safety, trust, and regulation. We introduce CommandLM, a multimodal large language model that generates concise, human-readable behavior descriptions for ego vehicles from fused multi-sensor data. Our model processes temporally fused bird's-eye view representations from LiDAR and multi-camera inputs via a Q-Former adapter connected to a quantized, LoRA-fine-tuned large ",
+      "tags": [
+        "safety",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2607-21491v1",
       "title": "What, Where, and How: Disentangling the Roles of Task, Language, and Model in Code Model Representations",
