@@ -1,6 +1,59 @@
 {
-  "lastUpdated": "2026-07-27",
+  "lastUpdated": "2026-07-28",
   "papers": [
+    {
+      "id": "arxiv-2607-24645v1",
+      "title": "Sparse Autoencoders Encode Both Concepts and Functions: The Downstream Geometry of Feature Effects",
+      "authors": "Phu Gia Hoang, Anwoy Chatterjee, Tanmoy Chakraborty, Iryna Gurevych, Subhabrata Dutta",
+      "date": "2026-07-27",
+      "url": "https://arxiv.org/abs/2607.24645v1",
+      "abstract": "The wide-scale use of sparse autoencoders (SAEs) as interpretability tools is limited by inconsistent links between SAE features and model behavior. Features with clear activation descriptions may have weak or unexpected causal effects; steering can vary across prompts or oppose the intended direction; and activation-based feature selection can miss features that produce the desired output change. Prior work has studied feature geometry inside the model, where features are computed. We instead s",
+      "tags": [
+        "SAE",
+        "features",
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2607-23496v1",
+      "title": "Do LLMs Know Their Vulnerable Scenarios?",
+      "authors": "Ziheng Peng, Huiqi Deng, Haoran Jing, Xuankun Rong, Jiahui Han, et al.",
+      "date": "2026-07-26",
+      "url": "https://arxiv.org/abs/2607.23496v1",
+      "abstract": "Safety-aligned large language models are trained to refuse harmful requests, yet embedding the same requests in particular scenarios can bypass their safeguards. Existing red-teaming methods empirically identify effective scenarios through observed attack outcomes, but why particular scenarios weaken refusal remains mechanistically unclear. Meanwhile, mechanistic interpretability studies have characterized both refusal directions and jailbreak-associated features, without explaining the relation",
+      "tags": [
+        "features",
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2607-23289v1",
+      "title": "Continuous surrogates versus threshold Boolean networks for modeling Arabidopsis ISR gene regulation",
+      "authors": "Gonzalo A. Ruz",
+      "date": "2026-07-25",
+      "url": "https://arxiv.org/abs/2607.23289v1",
+      "abstract": "Gene regulatory network modeling often requires balancing predictive accuracy and mechanistic interpretability. In this work, we compare continuous surrogate models and a discrete mechanistic model on the same \\textit{Arabidopsis thaliana} induced systemic resistance (ISR) dataset, using both the raw continuous gene-expression measurements and their sign-binarized representation. The study considers eight defense-related genes measured over nine time points and evaluates two continuous predictor",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2607-23054v1",
+      "title": "Through the Bottleneck: How Multi-head Latent Attention Separates Content from Position in Language Models",
+      "authors": "Dhruvil S, Fenil Sojitra, Ravirajsinh Chauhan",
+      "date": "2026-07-25",
+      "url": "https://arxiv.org/abs/2607.23054v1",
+      "abstract": "Multi-head Latent Attention (MLA), introduced in DeepSeek-V2, compresses key-value pairs through a shared low-rank bottleneck (cKV), achieving 81% KV-cache reduction during inference. Despite its adoption in massive production models, no prior work has studied what information this bottleneck preserves or discards, nor how it reshapes internal transformer circuits. We present the first comprehensive mechanistic interpretability study of MLA, training a 114M-parameter transformer (pretrained on a",
+      "tags": [
+        "circuits"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2607-22078v1",
       "title": "CommandLM: Data driven behavior level descriptor for ego vehicles",
@@ -2289,6 +2342,17 @@
       "featured": false
     },
     {
+      "id": "arxiv-2607-22575v1",
+      "title": "Temporal Context Reinstatement Drives Episodic-Like Order Memory in Long-Context Language Models",
+      "authors": "Mathis Pink, Vy Ai Vo, Qinyuan Wu, Jianing Mu, Javier Turek, et al.",
+      "date": "2026-06-05",
+      "url": "https://arxiv.org/abs/2607.22575v1",
+      "abstract": "Human episodic memory supports the retrieval of experiences that unfold over extended timescales, yet the computational mechanisms underlying this ability remain debated due to the limited mechanistic accessibility in long-term memory experiments in humans. Long-context LLMs may offer promising ways to reveal plausible computational mechanisms that drive this type of retrieval. Here, we investigate whether and how LLMs capture the core behavioral signatures of episodic memory via a temporal orde",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
       "id": "arxiv-2606-06333v1",
       "title": "Subspace-Aware Sparse Autoencoders for Effective Mechanistic Interpretability",
       "authors": "Seyed Arshan Dalili, Mehrdad Mahdavi",
@@ -2571,6 +2635,19 @@
         "SAE",
         "features",
         "theory"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2607-22570v1",
+      "title": "Reference Feature Atlases for Mechanistic Auditing of Language Models",
+      "authors": "Rui Wu, Tong Che",
+      "date": "2026-06-01",
+      "url": "https://arxiv.org/abs/2607.22570v1",
+      "abstract": "Auditing a new language model usually means relearning and reinterpreting its internal features from scratch. We propose a reference feature atlas: a sparse feature library trained once on a reference panel and reused for new targets, which attach by fitting only a linear decoder. This yields two complementary views. The atlas channel reads the target on already interpreted panel features, providing a stable coordinate system across models. The residual channel learns features only from what the",
+      "tags": [
+        "features"
       ],
       "source": "arXiv",
       "featured": false
