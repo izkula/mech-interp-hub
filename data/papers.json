@@ -1,6 +1,30 @@
 {
-  "lastUpdated": "2026-07-28",
+  "lastUpdated": "2026-07-29",
   "papers": [
+    {
+      "id": "arxiv-2607-25459v1",
+      "title": "Emergent Latent-State Computation under Stochastic Volatility",
+      "authors": "Xiaoyu Huang, Lulu Wang",
+      "date": "2026-07-28",
+      "url": "https://arxiv.org/abs/2607.25459v1",
+      "abstract": "Mechanistic interpretability has largely focused on language models and deterministic toy tasks. Much less is known about how sequence models internally represent latent stochastic dynamics under noisy, partially observed observations. We study this question in a controlled multivariate stochastic volatility setting, where models observe only returns while the ground-truth latent volatility state is known to the researcher. This setting provides a useful benchmark for mechanistic interpretabilit",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2607-25244v1",
+      "title": "CADENCE: A Cardiac Atom Dictionary for Interpretable Neural Concept Extraction from ECG Foundation Models",
+      "authors": "Yixuan Duan, Arjun Naik, Sadeer Al-Kindi, Wei Qiu",
+      "date": "2026-07-28",
+      "url": "https://arxiv.org/abs/2607.25244v1",
+      "abstract": "Foundation models for 12-lead electrocardiograms (ECGs) transfer well across clinical tasks, but the physiological knowledge encoded in their representations remains opaque. We present CADENCE, a framework that decomposes an ECG foundation model into a human-interpretable, queryable dictionary of physiological concepts. Using a BatchTopK sparse autoencoder, CADENCE factorizes Layer-6 embeddings from more than nine million ECG tokens into 8,192 sparse cardiac atoms. These atoms align better than ",
+      "tags": [
+        "SAE"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2607-24645v1",
       "title": "Sparse Autoencoders Encode Both Concepts and Functions: The Downstream Geometry of Feature Effects",
@@ -12,6 +36,30 @@
         "SAE",
         "features",
         "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2607-24874v1",
+      "title": "A Hierarchical Validity-Audit Framework for Neural Mass Models in Simulation-Based Inference: From Observational Coverage to Mechanistic Interpretation",
+      "authors": "Tianming Cai, Ning Jiang, Yuan Yang, Jiayuan He",
+      "date": "2026-07-27",
+      "url": "https://arxiv.org/abs/2607.24874v1",
+      "abstract": "Neural mass models describe population level neural activity using low-dimensional dynamical parameters and, through simulation-based inference, enable posterior estimation when explicit likelihoods are intractable, but good posterior recovery on simulated data does not guarantee that the model covers real observations, that summary statistics retain target information, or that multiple parameters stay independently interpretable. We introduce NMM-SBI Audit, a hierarchical validity-audit framewo",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2607-25132v1",
+      "title": "Interpretable GOHR Agents via Sparse Autoencoders",
+      "authors": "Shiwei Tan, Yusong Zhao, Weiyi Qin, Wentian Wang, Jacob Feldman, et al.",
+      "date": "2026-07-27",
+      "url": "https://arxiv.org/abs/2607.25132v1",
+      "abstract": "A central challenge in interpreting learned decision-making systems is to determine whether their internal representations contain concepts that help explain their behavior. We report interpretability experiments for a tokenized autoregressive Transformer agent in the Game of Hidden Rules (GOHR). We focus on a compact two-rule task in which both hidden rules map object shapes to target buckets, but with different permutations. The policy is trained on episodes sampled from these two hidden rules",
+      "tags": [
+        "SAE"
       ],
       "source": "arXiv",
       "featured": false
