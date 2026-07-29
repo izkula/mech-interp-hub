@@ -5,15 +5,43 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 28 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Jul 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Emergent Latent-State Computation under Stochastic Volatility</title>
+      <link>https://arxiv.org/abs/2607.25459v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Xiaoyu Huang, Lulu Wang</p><p>Mechanistic interpretability has largely focused on language models and deterministic toy tasks. Much less is known about how sequence models internally represent latent stochastic dynamics under noisy, partially observed observations. We study this question in a controlled multivariate stochastic volatility setting, where models observe only returns while the ground-truth latent volatility state is known to the researcher. This setting provides a useful benchmark for mechanistic interpretabilit</p>]]></description>
+      <pubDate>Tue, 28 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2607.25459v1</guid>
+    </item>
+    <item>
+      <title>CADENCE: A Cardiac Atom Dictionary for Interpretable Neural Concept Extraction from ECG Foundation Models</title>
+      <link>https://arxiv.org/abs/2607.25244v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Yixuan Duan, Arjun Naik, Sadeer Al-Kindi, Wei Qiu</p><p>Foundation models for 12-lead electrocardiograms (ECGs) transfer well across clinical tasks, but the physiological knowledge encoded in their representations remains opaque. We present CADENCE, a framework that decomposes an ECG foundation model into a human-interpretable, queryable dictionary of physiological concepts. Using a BatchTopK sparse autoencoder, CADENCE factorizes Layer-6 embeddings from more than nine million ECG tokens into 8,192 sparse cardiac atoms. These atoms align better than </p><p><strong>Tags:</strong> SAE</p>]]></description>
+      <pubDate>Tue, 28 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2607.25244v1</guid>
+    </item>
     <item>
       <title>Sparse Autoencoders Encode Both Concepts and Functions: The Downstream Geometry of Feature Effects</title>
       <link>https://arxiv.org/abs/2607.24645v1</link>
       <description><![CDATA[<p><strong>Authors:</strong> Phu Gia Hoang, Anwoy Chatterjee, Tanmoy Chakraborty, Iryna Gurevych, Subhabrata Dutta</p><p>The wide-scale use of sparse autoencoders (SAEs) as interpretability tools is limited by inconsistent links between SAE features and model behavior. Features with clear activation descriptions may have weak or unexpected causal effects; steering can vary across prompts or oppose the intended direction; and activation-based feature selection can miss features that produce the desired output change. Prior work has studied feature geometry inside the model, where features are computed. We instead s</p><p><strong>Tags:</strong> SAE, features, steering</p>]]></description>
       <pubDate>Mon, 27 Jul 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2607.24645v1</guid>
+    </item>
+    <item>
+      <title>A Hierarchical Validity-Audit Framework for Neural Mass Models in Simulation-Based Inference: From Observational Coverage to Mechanistic Interpretation</title>
+      <link>https://arxiv.org/abs/2607.24874v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Tianming Cai, Ning Jiang, Yuan Yang, Jiayuan He</p><p>Neural mass models describe population level neural activity using low-dimensional dynamical parameters and, through simulation-based inference, enable posterior estimation when explicit likelihoods are intractable, but good posterior recovery on simulated data does not guarantee that the model covers real observations, that summary statistics retain target information, or that multiple parameters stay independently interpretable. We introduce NMM-SBI Audit, a hierarchical validity-audit framewo</p>]]></description>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2607.24874v1</guid>
+    </item>
+    <item>
+      <title>Interpretable GOHR Agents via Sparse Autoencoders</title>
+      <link>https://arxiv.org/abs/2607.25132v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Shiwei Tan, Yusong Zhao, Weiyi Qin, Wentian Wang, Jacob Feldman, et al.</p><p>A central challenge in interpreting learned decision-making systems is to determine whether their internal representations contain concepts that help explain their behavior. We report interpretability experiments for a tokenized autoregressive Transformer agent in the Game of Hidden Rules (GOHR). We focus on a compact two-rule task in which both hidden rules map object shapes to target buckets, but with different permutations. The policy is trained on episodes sampled from these two hidden rules</p><p><strong>Tags:</strong> SAE</p>]]></description>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2607.25132v1</guid>
     </item>
     <item>
       <title>Do LLMs Know Their Vulnerable Scenarios?</title>
@@ -189,34 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Sunyoung Jung, Jiwoo Park, Yoonseok Choi, Kyobin Choo, Ming-Hsuan Yang, et al.</p><p>Diffusion Transformers (DiTs) have advanced video generation with high-quality, temporally coherent results. However, extending them to motion transfer, which requires following reference motion while aligning with a target prompt, remains challenging due to limited understanding of motion and structure representations within DiTs. We analyze video DiTs at the attention-head level and identify distinct heads specialized for motion and spatial structure. Based on this insight, we propose a head-a</p><p><strong>Tags:</strong> attention</p>]]></description>
       <pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2607.11081v1</guid>
-    </item>
-    <item>
-      <title>From Geometric Recovery to Causal Validation: A Reproducible Audit of Sparse Autoencoder Features, from Superposition Geometry to Causal Inertness</title>
-      <link>https://arxiv.org/abs/2607.12166v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Mohamed Abdessalem Bal</p><p>Sparse autoencoders (SAEs) are the standard for decomposing superposed neural representations into interpretable features, and evaluation relies predominantly on correlational recovery metrics -- cosine similarity between ground-truth directions and decoder atoms. We show this conflates two distinct claims: decoder-geometry alignment and encoder-activation behavior. We reproduce the superposition phase diagram of Elhage et al. (2022), identifying a convergence artifact at high sparsity and an un</p><p><strong>Tags:</strong> SAE, superposition, features, safety</p>]]></description>
-      <pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.12166v1</guid>
-    </item>
-    <item>
-      <title>Sparse Autoencoders for Interpretable Out-of-Distribution Detection</title>
-      <link>https://arxiv.org/abs/2607.12094v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Ayush Karmacharya, Luke Luschwitz, Lucia Romero, Yanan Niu, Joseph Campbell</p><p>Reliable detection of out-of-distribution (OOD) samples is crucial for the safe deployment of machine learning models. Neural networks often produce overconfident predictions for inputs that deviate from their training data, leading to significant degradation in performance. While many OOD detection methods focus on the final output layer, they neglect the rich hierarchical information present in intermediate network layers. This paper introduces a novel approach that leverages sparse autoencode</p><p><strong>Tags:</strong> SAE</p>]]></description>
-      <pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.12094v1</guid>
-    </item>
-    <item>
-      <title>Emergent Hierarchical Monosemantic Neurons from the Group-Contrastive Forward-Forward Algorithm</title>
-      <link>https://arxiv.org/abs/2607.16295v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Yiming Tang, Qinglin Qi, Zhaoqian Yao, Harshvardhan Saini, Dianbo Liu</p><p>Mechanistic interpretability has made significant strides in understanding neural network representations, with sparse dictionary learning (SDL) methods, most prominently sparse autoencoders, as a central paradigm. However, recent work has reported several limitations of this paradigm: SDL objectives are non-identifiable; SDL methods rely heavily on the Linear Representation Hypothesis; and a growing body of evidence points to concepts that are encoded non-linearly and are therefore not expressi</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.16295v1</guid>
-    </item>
-    <item>
-      <title>Which Neurons Detect Malicious Code? A Probing Study of LLM Security Knowledge</title>
-      <link>https://arxiv.org/abs/2607.10221v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Lam D. Dao, Vang T. Nguyen, Anh M. T. Bui, Phuong T. Nguyen</p><p>Background. Large language models (LLMs) have become increasingly capable of understanding and generating source code, leading to their widespread adoption in software engineering tasks such as code completion, repair, and vulnerability detection. However, despite their strong empirical performance, the internal mechanisms through which LLMs recognize malicious or vulnerable code patterns remain poorly understood. Aim. We investigated where the malware detection behavior is encoded inside LLMs F</p><p><strong>Tags:</strong> probing</p>]]></description>
-      <pubDate>Sat, 11 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.10221v1</guid>
     </item>
   </channel>
 </rss>
