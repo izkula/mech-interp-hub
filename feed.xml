@@ -5,9 +5,23 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 30 Jul 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Understanding Knowledge Transfer Mechanism in Heterogeneous MLLM Fusion: A Simple Linear Approach</title>
+      <link>https://arxiv.org/abs/2607.26608v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Yinghao Hou, Jiahe Fan, Yuanhao Pu, Zongyuan Chen, Hong Xie</p><p>Training-free fusion of heterogeneous multimodal large language models (MLLMs) provides a direct route for cross-scale capability transfer, yet improvements in aggregate performance do not reveal what a smaller model actually inherits. Existing studies are largely designed and evaluated on limited task sets or aggregate metrics; as evaluation expands to broader task collections, whether different capabilities can transfer across scales remains poorly understood. To investigate this question, we </p><p><strong>Tags:</strong> vision</p>]]></description>
+      <pubDate>Wed, 29 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2607.26608v1</guid>
+    </item>
+    <item>
+      <title>From Representations to Behaviors: Exploring the Person-Situation-Behavior Triad in LLMs</title>
+      <link>https://arxiv.org/abs/2607.26853v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Ruikang Zhang, Shuo Wang, Qi Su</p><p>Human personality theories characterize traits not as isolated attributes captured by a single score, but as stable individual tendencies expressed through the interplay among persons, situations, and behaviors. Existing studies of personality-related behavior in LLMs have primarily focused on outputs elicited under personality conditioning, characterizing observable trait-related expressions while lacking mechanistic evidence for the existence of internal personality-related representations, th</p>]]></description>
+      <pubDate>Wed, 29 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2607.26853v1</guid>
+    </item>
     <item>
       <title>Emergent Latent-State Computation under Stochastic Volatility</title>
       <link>https://arxiv.org/abs/2607.25459v1</link>
@@ -203,20 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Zixiang Xu, Sixian Li, Huaxing Liu, Xiang Wang, Shuai Li, et al.</p><p>Existing studies of LLM-as-judge scoring bias work predominantly at the input-output level: they perturb inputs, measure score deltas, and propose prompt-level mitigations. We argue that the same biases admit a representation-level account in the judge&#x27;s hidden state, complementary to the input-output view and operationally useful in ways it does not afford. We report three findings, across seven judges, seven bias types, and nine benchmarks. Geometry: baseline judging inputs occupy a tight acti</p>]]></description>
       <pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2607.11871v1</guid>
-    </item>
-    <item>
-      <title>PRISM Edit: One Vector for All Temporal Answers</title>
-      <link>https://arxiv.org/abs/2607.11327v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Chen Huang, Qi Zheng, Ruiqin Zheng, Long Zeng, Yuantong Xu</p><p>Model editing keeps large language models (LLMs) up to date without retraining, but temporal facts expose a limitation of the prevailing locate-and-edit paradigm: an update is not always a replacement. When a fact changes, the new answer should become current while the old answer may remain correct in historical time contexts. Building on this insight, we use causal tracing to show that LLMs already support this distinction via a two-stage internal computation: early MLP layers retrieve a time-a</p><p><strong>Tags:</strong> editing</p>]]></description>
-      <pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.11327v1</guid>
-    </item>
-    <item>
-      <title>Controlling Motion Transfer in Diffusion Transformers via Attention Heads</title>
-      <link>https://arxiv.org/abs/2607.11081v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Sunyoung Jung, Jiwoo Park, Yoonseok Choi, Kyobin Choo, Ming-Hsuan Yang, et al.</p><p>Diffusion Transformers (DiTs) have advanced video generation with high-quality, temporally coherent results. However, extending them to motion transfer, which requires following reference motion while aligning with a target prompt, remains challenging due to limited understanding of motion and structure representations within DiTs. We analyze video DiTs at the attention-head level and identify distinct heads specialized for motion and spatial structure. Based on this insight, we propose a head-a</p><p><strong>Tags:</strong> attention</p>]]></description>
-      <pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.11081v1</guid>
     </item>
   </channel>
 </rss>
