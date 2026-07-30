@@ -1,6 +1,30 @@
 {
-  "lastUpdated": "2026-07-29",
+  "lastUpdated": "2026-07-30",
   "papers": [
+    {
+      "id": "arxiv-2607-26608v1",
+      "title": "Understanding Knowledge Transfer Mechanism in Heterogeneous MLLM Fusion: A Simple Linear Approach",
+      "authors": "Yinghao Hou, Jiahe Fan, Yuanhao Pu, Zongyuan Chen, Hong Xie",
+      "date": "2026-07-29",
+      "url": "https://arxiv.org/abs/2607.26608v1",
+      "abstract": "Training-free fusion of heterogeneous multimodal large language models (MLLMs) provides a direct route for cross-scale capability transfer, yet improvements in aggregate performance do not reveal what a smaller model actually inherits. Existing studies are largely designed and evaluated on limited task sets or aggregate metrics; as evaluation expands to broader task collections, whether different capabilities can transfer across scales remains poorly understood. To investigate this question, we ",
+      "tags": [
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2607-26853v1",
+      "title": "From Representations to Behaviors: Exploring the Person-Situation-Behavior Triad in LLMs",
+      "authors": "Ruikang Zhang, Shuo Wang, Qi Su",
+      "date": "2026-07-29",
+      "url": "https://arxiv.org/abs/2607.26853v1",
+      "abstract": "Human personality theories characterize traits not as isolated attributes captured by a single score, but as stable individual tendencies expressed through the interplay among persons, situations, and behaviors. Existing studies of personality-related behavior in LLMs have primarily focused on outputs elicited under personality conditioning, characterizing observable trait-related expressions while lacking mechanistic evidence for the existence of internal personality-related representations, th",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2607-25459v1",
       "title": "Emergent Latent-State Computation under Stochastic Volatility",
