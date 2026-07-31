@@ -1,6 +1,19 @@
 {
-  "lastUpdated": "2026-07-30",
+  "lastUpdated": "2026-07-31",
   "papers": [
+    {
+      "id": "arxiv-2607-28008v1",
+      "title": "RepBench: Compiling Benchmarks into Capability Representations for Large Language Models",
+      "authors": "Yanshi Li, Xueru Bai, Shuman Liu, Long Zhang",
+      "date": "2026-07-30",
+      "url": "https://arxiv.org/abs/2607.28008v1",
+      "abstract": "Representation engineering reads and steers capability directions in large language models, yet methods are typically evaluated on paper-specific synthetic data. The resulting measurements are difficult to compare or reproduce and may reflect surface patterns rather than capabilities. We present RepBench, a benchmark-grounded data layer for capability-aligned representation probing. Crawling 13,427 benchmark papers yields a taxonomy of 182 capability clusters in 13 families; harvesting 353 publi",
+      "tags": [
+        "probing"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2607-26608v1",
       "title": "Understanding Knowledge Transfer Mechanism in Heterogeneous MLLM Fusion: A Simple Linear Approach",
@@ -22,6 +35,19 @@
       "url": "https://arxiv.org/abs/2607.26853v1",
       "abstract": "Human personality theories characterize traits not as isolated attributes captured by a single score, but as stable individual tendencies expressed through the interplay among persons, situations, and behaviors. Existing studies of personality-related behavior in LLMs have primarily focused on outputs elicited under personality conditioning, characterizing observable trait-related expressions while lacking mechanistic evidence for the existence of internal personality-related representations, th",
       "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2607-27404v1",
+      "title": "ECG-InterpBench: Benchmarking the Interpretability of ECG Foundation Models with Matched-Scale Sparse Autoencoders",
+      "authors": "Yixuan Duan, Wei Qiu",
+      "date": "2026-07-29",
+      "url": "https://arxiv.org/abs/2607.27404v1",
+      "abstract": "Existing benchmarks for electrocardiogram foundation models primarily evaluate downstream predictive performance, providing limited insight into whether their internal representations can be faithfully decomposed, clinically interpreted, or reproduced across independent analyses. We introduce ECG-InterpBench, a benchmark designed to systematically evaluate the interpretability of ECG foundation-model representations. ECG-InterpBench uses sparse autoencoders as standardized measurement instrument",
+      "tags": [
+        "SAE"
+      ],
       "source": "arXiv",
       "featured": false
     },
