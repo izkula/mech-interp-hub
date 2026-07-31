@@ -5,9 +5,16 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 30 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 31 Jul 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>RepBench: Compiling Benchmarks into Capability Representations for Large Language Models</title>
+      <link>https://arxiv.org/abs/2607.28008v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Yanshi Li, Xueru Bai, Shuman Liu, Long Zhang</p><p>Representation engineering reads and steers capability directions in large language models, yet methods are typically evaluated on paper-specific synthetic data. The resulting measurements are difficult to compare or reproduce and may reflect surface patterns rather than capabilities. We present RepBench, a benchmark-grounded data layer for capability-aligned representation probing. Crawling 13,427 benchmark papers yields a taxonomy of 182 capability clusters in 13 families; harvesting 353 publi</p><p><strong>Tags:</strong> probing</p>]]></description>
+      <pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2607.28008v1</guid>
+    </item>
     <item>
       <title>Understanding Knowledge Transfer Mechanism in Heterogeneous MLLM Fusion: A Simple Linear Approach</title>
       <link>https://arxiv.org/abs/2607.26608v1</link>
@@ -21,6 +28,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Ruikang Zhang, Shuo Wang, Qi Su</p><p>Human personality theories characterize traits not as isolated attributes captured by a single score, but as stable individual tendencies expressed through the interplay among persons, situations, and behaviors. Existing studies of personality-related behavior in LLMs have primarily focused on outputs elicited under personality conditioning, characterizing observable trait-related expressions while lacking mechanistic evidence for the existence of internal personality-related representations, th</p>]]></description>
       <pubDate>Wed, 29 Jul 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2607.26853v1</guid>
+    </item>
+    <item>
+      <title>ECG-InterpBench: Benchmarking the Interpretability of ECG Foundation Models with Matched-Scale Sparse Autoencoders</title>
+      <link>https://arxiv.org/abs/2607.27404v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Yixuan Duan, Wei Qiu</p><p>Existing benchmarks for electrocardiogram foundation models primarily evaluate downstream predictive performance, providing limited insight into whether their internal representations can be faithfully decomposed, clinically interpreted, or reproduced across independent analyses. We introduce ECG-InterpBench, a benchmark designed to systematically evaluate the interpretability of ECG foundation-model representations. ECG-InterpBench uses sparse autoencoders as standardized measurement instrument</p><p><strong>Tags:</strong> SAE</p>]]></description>
+      <pubDate>Wed, 29 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2607.27404v1</guid>
     </item>
     <item>
       <title>Emergent Latent-State Computation under Stochastic Volatility</title>
@@ -203,20 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Zachary Izzo</p><p>In this paper, we study the connection between an LLM&#x27;s output distribution and the data used to train it. Specifically, we study the degree to which an LLM&#x27;s next-token distribution agrees with the empirical next-token distribution (ENTD) given the context in the training data. The ENTD is an appealing target because it is the unrestricted global minimizer of the next-token cross entropy loss used for pretraining, as well as an easily interpretable function of the pretraining corpus. We find th</p>]]></description>
       <pubDate>Wed, 15 Jul 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2607.14306v1</guid>
-    </item>
-    <item>
-      <title>Breaking Refusal in the First Half: A Mechanistic Study of the Prefill Jailbreak</title>
-      <link>https://arxiv.org/abs/2607.14147v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Alex Kwon</p><p>Aligned language models refuse harmful requests, but a one-line prefill (&quot;Sure, here is&quot;) strips the refusal. We ask where and how it fails. The harm representation stays intact: on the prompts the attack flips to compliance, a linear probe reads harm as high as on the refused ones (0.91-0.98), while behavioral refusal drops to chance. This holds across four models and three families (1.5-3.8B, and at 14B). Refusal is therefore a shallow, response-site computation. We localize it to an early win</p><p><strong>Tags:</strong> safety, probing</p>]]></description>
-      <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.14147v1</guid>
-    </item>
-    <item>
-      <title>Inside the Unfair Judge: A Mechanistic Interpretability Account of LLM-as-Judge Bias</title>
-      <link>https://arxiv.org/abs/2607.11871v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Zixiang Xu, Sixian Li, Huaxing Liu, Xiang Wang, Shuai Li, et al.</p><p>Existing studies of LLM-as-judge scoring bias work predominantly at the input-output level: they perturb inputs, measure score deltas, and propose prompt-level mitigations. We argue that the same biases admit a representation-level account in the judge&#x27;s hidden state, complementary to the input-output view and operationally useful in ways it does not afford. We report three findings, across seven judges, seven bias types, and nine benchmarks. Geometry: baseline judging inputs occupy a tight acti</p>]]></description>
-      <pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.11871v1</guid>
     </item>
   </channel>
 </rss>
