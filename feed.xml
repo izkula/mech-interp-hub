@@ -5,9 +5,37 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 04 Aug 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Cultural Awareness is Represented but Not Decoded: Tracing Mythological Knowledge across 18 Open-Source LLMs</title>
+      <link>https://arxiv.org/abs/2608.02486v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Iaroslav Chelombitko, Ekaterina Chelombitko, Mika Hämäläinen</p><p>Open-source LLMs reliably name Zeus, Jupiter, and Thor, but recover their counterparts in less-represented traditions like Finnish, Slavic, Egyptian, or Chinese mythology far less consistently. We ask where inside the model this cultural default is produced. On a parallel cross-cultural substrate of Thompson-motif entities, we instrument 18 open-source LLMs from 8 architecture families with linear probing, logit lens, activation patching, and output extraction. The residual stream cleanly distin</p><p><strong>Tags:</strong> probing</p>]]></description>
+      <pubDate>Mon, 03 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.02486v1</guid>
+    </item>
+    <item>
+      <title>Divergent large language model predictions from convergent representations in ambiguous word pairs</title>
+      <link>https://arxiv.org/abs/2608.01816v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> K. Jack Scott, Narun Pat, Veronica Liesaputra</p><p>In this work we investigate how decoder-only transformers resolve lexical ambiguity through layer-by-layer analysis of three models spanning three parameter sizes (GPT-2-Small-117M, Llama-3.2-3B, Qwen2.5-32B). For both homonyms and polysemes, we find that representations become maximally distinct in middle layers, then partially reconverge in late layers, while the KL divergence between their next-token predictions reaches its maximum in the final layers. The activation patching experiment provi</p>]]></description>
+      <pubDate>Mon, 03 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.01816v1</guid>
+    </item>
+    <item>
+      <title>Bridging the English-Arabic Medical Knowledge Gap: Targeted Low-Rank Adaptation via Causal Layer Selection</title>
+      <link>https://arxiv.org/abs/2608.00207v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Chaimae Abouzahir, Musa Khan, Hala Ali-Hassan, Congbo Ma, Khaled Saleh, et al.</p><p>Large Language Models (LLMs) perform strongly in English medical tasks but degrade substantially in Arabic, a gap widely attributed to limited training data. We systematically investigate this assumption via tuned lens probing and causal activation patching, and find that Arabic medical knowledge is present in intermediate model representations but fails to surface at the output. This mechanistic insight motivates a targeted adaptation strategy: rather than fine-tuning the full network, we propo</p><p><strong>Tags:</strong> probing</p>]]></description>
+      <pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.00207v1</guid>
+    </item>
+    <item>
+      <title>Interpretability-Guided Soft Pruning of Attention Heads in Vision Transformers</title>
+      <link>https://arxiv.org/abs/2608.00264v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Kamil Książek, Piotr Suszyński, Michał Jan Włodarczyk, Jacek Tabor, Przemysław Biecek</p><p>Vision foundation models, such as DINOv2, learn highly expressive representations but rely on massive, opaque architectures that demand substantial computational power and memory. To provide an interpretable-guided and efficient solution to this issue, we first propose a spectral analysis and new visualization technique for individual attention heads based on the Laplacian eigenvectors of their attention maps. Building upon recent observations regarding the block structure of Vision Transformers</p><p><strong>Tags:</strong> attention, vision</p>]]></description>
+      <pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.00264v1</guid>
+    </item>
     <item>
       <title>RepBench: Compiling Benchmarks into Capability Representations for Large Language Models</title>
       <link>https://arxiv.org/abs/2607.28008v1</link>
@@ -189,34 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Abdallah Khemais</p><p>Exhaustive site-by-site interventions on a neural network&#x27;s computational graph -- activation-patching sweeps, circuit-discovery searches, systematic ablation studies -- mutate the graph at every candidate site, and their cost is dominated by recomputation after each mutation. On a reactive graph engine whose invalidation provably touches exactly the downstream cone of a mutated node, we give a complete cost accounting for such workloads. First, the aggregate speedup of an exhaustive sweep over </p><p><strong>Tags:</strong> circuits</p>]]></description>
       <pubDate>Sat, 18 Jul 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2607.18323v1</guid>
-    </item>
-    <item>
-      <title>Steering Robustness into World Action Models via Mechanistic Interpretability and Optimal Control</title>
-      <link>https://arxiv.org/abs/2607.14943v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Jihoon Hong, Julian Skifstad, Qiyue Dai, Alice Chan, Glen Chou</p><p>World Action Models (WAMs) enable semantically- and physically-informed control but are brittle under distribution shift. In this work, we use mechanistic interpretability to study how robustness-relevant perturbations are represented in WAM activation space. Comparing activations across successful and unsuccessful rollouts, we find some WAM architectures exhibit low-dimensional linear separability for robustness-critical features, while others do not. This motivates the use of contrastive activ</p><p><strong>Tags:</strong> features, steering</p>]]></description>
-      <pubDate>Thu, 16 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.14943v1</guid>
-    </item>
-    <item>
-      <title>Transcoders for Investigating Deception in Language Models</title>
-      <link>https://arxiv.org/abs/2607.14791v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Darius Lim, Nathan Leow, Xin Wei Chia</p><p>Transcoders have recently emerged as a promising approach for mechanistic interpretability (MI), enabling circuit-level analysis of model behaviour. In this paper, we investigate the use of transcoders to analyse deceptive behaviour in language models, a behaviour that poses a safety and security risk. Using a Qwen3-4B model with pre-trained transcoders, specifically per-layer transcoders (PLTs), we construct attribution graphs that capture feature activations and inter-feature dependencies, all</p><p><strong>Tags:</strong> circuits, features, safety</p>]]></description>
-      <pubDate>Thu, 16 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.14791v1</guid>
-    </item>
-    <item>
-      <title>Screening of Biosecurity Features in Metagenomic Data with Evo 2 Probes</title>
-      <link>https://arxiv.org/abs/2607.14070v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Jeremy Guntoro, Alexander Dack, Dylan Danno, Michaela Jančovičová, Križan Jurinović, et al.</p><p>Genomic foundation models such as Evo 2 learn rich sequence representations, but their value for biosecurity screening is largely unexplored. We ask how much biosecurity-relevant signal is linearly accessible in these representations by training minimal linear and attention probes on frozen Evo 2 layer-26 activations, without fine-tuning the underlying model. Across held-out metagenomic test sets, the probes detect antimicrobial resistance (AMR) with strong discrimination: a linear probe reaches</p><p><strong>Tags:</strong> features, probing</p>]]></description>
-      <pubDate>Wed, 15 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.14070v1</guid>
-    </item>
-    <item>
-      <title>Tracing LLM Behavior to the Training Data with Empirical Next-Token Distributions</title>
-      <link>https://arxiv.org/abs/2607.14306v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Zachary Izzo</p><p>In this paper, we study the connection between an LLM&#x27;s output distribution and the data used to train it. Specifically, we study the degree to which an LLM&#x27;s next-token distribution agrees with the empirical next-token distribution (ENTD) given the context in the training data. The ENTD is an appealing target because it is the unrestricted global minimizer of the next-token cross entropy loss used for pretraining, as well as an easily interpretable function of the pretraining corpus. We find th</p>]]></description>
-      <pubDate>Wed, 15 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.14306v1</guid>
     </item>
   </channel>
 </rss>
