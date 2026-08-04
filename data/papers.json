@@ -1,6 +1,57 @@
 {
-  "lastUpdated": "2026-08-03",
+  "lastUpdated": "2026-08-04",
   "papers": [
+    {
+      "id": "arxiv-2608-02486v1",
+      "title": "Cultural Awareness is Represented but Not Decoded: Tracing Mythological Knowledge across 18 Open-Source LLMs",
+      "authors": "Iaroslav Chelombitko, Ekaterina Chelombitko, Mika H\u00e4m\u00e4l\u00e4inen",
+      "date": "2026-08-03",
+      "url": "https://arxiv.org/abs/2608.02486v1",
+      "abstract": "Open-source LLMs reliably name Zeus, Jupiter, and Thor, but recover their counterparts in less-represented traditions like Finnish, Slavic, Egyptian, or Chinese mythology far less consistently. We ask where inside the model this cultural default is produced. On a parallel cross-cultural substrate of Thompson-motif entities, we instrument 18 open-source LLMs from 8 architecture families with linear probing, logit lens, activation patching, and output extraction. The residual stream cleanly distin",
+      "tags": [
+        "probing"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2608-01816v1",
+      "title": "Divergent large language model predictions from convergent representations in ambiguous word pairs",
+      "authors": "K. Jack Scott, Narun Pat, Veronica Liesaputra",
+      "date": "2026-08-03",
+      "url": "https://arxiv.org/abs/2608.01816v1",
+      "abstract": "In this work we investigate how decoder-only transformers resolve lexical ambiguity through layer-by-layer analysis of three models spanning three parameter sizes (GPT-2-Small-117M, Llama-3.2-3B, Qwen2.5-32B). For both homonyms and polysemes, we find that representations become maximally distinct in middle layers, then partially reconverge in late layers, while the KL divergence between their next-token predictions reaches its maximum in the final layers. The activation patching experiment provi",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2608-00207v1",
+      "title": "Bridging the English-Arabic Medical Knowledge Gap: Targeted Low-Rank Adaptation via Causal Layer Selection",
+      "authors": "Chaimae Abouzahir, Musa Khan, Hala Ali-Hassan, Congbo Ma, Khaled Saleh, et al.",
+      "date": "2026-07-31",
+      "url": "https://arxiv.org/abs/2608.00207v1",
+      "abstract": "Large Language Models (LLMs) perform strongly in English medical tasks but degrade substantially in Arabic, a gap widely attributed to limited training data. We systematically investigate this assumption via tuned lens probing and causal activation patching, and find that Arabic medical knowledge is present in intermediate model representations but fails to surface at the output. This mechanistic insight motivates a targeted adaptation strategy: rather than fine-tuning the full network, we propo",
+      "tags": [
+        "probing"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2608-00264v1",
+      "title": "Interpretability-Guided Soft Pruning of Attention Heads in Vision Transformers",
+      "authors": "Kamil Ksi\u0105\u017cek, Piotr Suszy\u0144ski, Micha\u0142 Jan W\u0142odarczyk, Jacek Tabor, Przemys\u0142aw Biecek",
+      "date": "2026-07-31",
+      "url": "https://arxiv.org/abs/2608.00264v1",
+      "abstract": "Vision foundation models, such as DINOv2, learn highly expressive representations but rely on massive, opaque architectures that demand substantial computational power and memory. To provide an interpretable-guided and efficient solution to this issue, we first propose a spectral analysis and new visualization technique for individual attention heads based on the Laplacian eigenvectors of their attention maps. Building upon recent observations regarding the block structure of Vision Transformers",
+      "tags": [
+        "attention",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2607-28008v1",
       "title": "RepBench: Compiling Benchmarks into Capability Representations for Large Language Models",
