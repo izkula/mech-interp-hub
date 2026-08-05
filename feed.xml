@@ -5,9 +5,30 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 04 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 05 Aug 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Sparse Weight Decomposition for Efficient Circuit Extraction</title>
+      <link>https://arxiv.org/abs/2608.03913v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Chuanhao Yan, Xuhan Huang, Yawen Duan, Zhenfei Yin, Hang Zhao, et al.</p><p>Dense pretrained transformers do not naturally expose interpretable units for circuit extraction. Existing approaches obtain such units by learning auxiliary sparse representations or training sparse models, incurring substantial additional computation while potentially introducing a fidelity gap between the representation being analyzed and the original pretrained model. We propose Sparse Weight Decomposition (SWD), which reparameterizes pretrained linear projections by factorizing each weight </p><p><strong>Tags:</strong> circuits</p>]]></description>
+      <pubDate>Tue, 04 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.03913v1</guid>
+    </item>
+    <item>
+      <title>Cross-Layer Interaction under Weight-Space Ablation: A Closed-Form Attention Jacobian Bound and a Test on a Real Pretrained Model</title>
+      <link>https://arxiv.org/abs/2608.03629v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Abdallah Khemais</p><p>A companion paper studies when activation patching and weight-space ablation agree, inside an idealized model where a conditional computation is carried additively through a residual stream. For the one composition in that model where two carriers are architecturally dependent, an attention head and its own layer&#x27;s normalization-MLP composition, it derives an exact first-order interaction formula, zero when only the MLP is ablated and second-order bounded when the head is also ablated. That resu</p><p><strong>Tags:</strong> attention</p>]]></description>
+      <pubDate>Tue, 04 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.03629v1</guid>
+    </item>
+    <item>
+      <title>A Theory of Conditional Collapse under Low-Rank Weight-Space Ablations: I. The Single-Block Theory and Synthetic Validation</title>
+      <link>https://arxiv.org/abs/2608.03620v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Abdallah Khemais</p><p>Activation patching and weight-space ablation both claim a component is causally responsible for a behavior, yet they act on different objects: one forward pass versus the parameters behind every forward pass. We ask when they agree.   We study an idealized model where a conditional computation is carried additively through a residual stream, $F(x)=F_0(x)+\sum_iα_i(x)v_i$, read out by a linear functional, and prove three exact results. First, deleting a subset of carriers collapses a matched inp</p><p><strong>Tags:</strong> theory</p>]]></description>
+      <pubDate>Tue, 04 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.03620v1</guid>
+    </item>
     <item>
       <title>Cultural Awareness is Represented but Not Decoded: Tracing Mythological Knowledge across 18 Open-Source LLMs</title>
       <link>https://arxiv.org/abs/2608.02486v1</link>
@@ -77,6 +98,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Yixuan Duan, Arjun Naik, Sadeer Al-Kindi, Wei Qiu</p><p>Foundation models for 12-lead electrocardiograms (ECGs) transfer well across clinical tasks, but the physiological knowledge encoded in their representations remains opaque. We present CADENCE, a framework that decomposes an ECG foundation model into a human-interpretable, queryable dictionary of physiological concepts. Using a BatchTopK sparse autoencoder, CADENCE factorizes Layer-6 embeddings from more than nine million ECG tokens into 8,192 sparse cardiac atoms. These atoms align better than </p><p><strong>Tags:</strong> SAE</p>]]></description>
       <pubDate>Tue, 28 Jul 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2607.25244v1</guid>
+    </item>
+    <item>
+      <title>LLMs Can Annotate Attribution Graphs</title>
+      <link>https://arxiv.org/abs/2608.02632v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Ameen Patel, Max Zhang, Nathan Hu</p><p>Circuit tracing is an exciting technique for revealing the internal computation of language models, but it requires a time-intensive manual step of grouping individual features or MLP neurons into supernodes. We present a simple pipeline for automating this step: directly presenting feature descriptions to a language model that groups them into supernodes. Using automated interpretability metrics, we confirm that supernodes generated by our pipeline are as interpretable as those generated by hum</p><p><strong>Tags:</strong> circuits, features</p>]]></description>
+      <pubDate>Tue, 28 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.02632v1</guid>
     </item>
     <item>
       <title>Sparse Autoencoders Encode Both Concepts and Functions: The Downstream Geometry of Feature Effects</title>
@@ -189,34 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Sarwan Ali</p><p>Genomic language models achieve strong performance across regulatory-genomics tasks, yet what these models internally represent remains opaque, and the field lacks a principled procedure for verifying that an apparent ``concept&#x27;&#x27; inside a model is real rather than an artifact of sequence composition. We introduce a framework that combines sparse dictionary learning with causal intervention to extract, validate, and causally test interpretable features in genomic foundation models. Training top-$</p><p><strong>Tags:</strong> features</p>]]></description>
       <pubDate>Tue, 21 Jul 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2607.19618v1</guid>
-    </item>
-    <item>
-      <title>Measuring Monosemanticity in Sparse Autoencoders via Latent Activation Coherence</title>
-      <link>https://arxiv.org/abs/2607.17770v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Katarzyna Filus, Sebastian Pokuciński</p><p>Within Explainable Artificial Intelligence, mechanistic interpretability uses Sparse Autoencoders (SAEs) to extract more interpretable features from neural representations. However, assessing their monosemanticity, and thus explanation quality, remains challenging. Existing metrics require external concept labels or depend on pretrained embedding models, making them sensitive to encoder&#x27;s geometry. We introduce the Tversky Monosemanticity Score (TMS), a label-free metric that operationalizes mon</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Mon, 20 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.17770v1</guid>
-    </item>
-    <item>
-      <title>Persistent Sparse Autoencoders: Learning Feature Timescales in Language Models</title>
-      <link>https://arxiv.org/abs/2607.17117v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Haoyan Luo, Mateo Espinosa Zarlenga, Mateja Jamnik</p><p>Sparse autoencoders (SAEs) decompose language model activations into sparse features, but standard SAEs encode each token independently and do not expose information that persists across a sequence. We introduce Persistent Sparse Autoencoders (Persistent SAEs), which extend standard SAEs by learning a persistence coefficient for each feature, allowing the model to learn which features should persist and for how long. Our experiments show that they retain competitive reconstruction quality while </p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Sun, 19 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.17117v1</guid>
-    </item>
-    <item>
-      <title>Are Arithmetic Heuristic Neurons Form-Invariant? A Mechanistic Analysis of Symbols, Text, and Code in LLMs</title>
-      <link>https://arxiv.org/abs/2607.16693v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Sharath Naganna, Tanvir Ahmed Sijan, Uddipta Kalita</p><p>Large language models often succeed on one formulation of a problem while failing on an equivalent formulation. Whether these failures arise from distinct internal circuits or different activation states of a shared circuit remains unknown. Recent mechanistic interpretability studies suggest that arithmetic in LLMs emerges from a &quot;bag of heuristics,&quot; encoded by a sparse set of MLP neurons that represent distinct arithmetic strategies. We investigate whether arithmetic heuristic neurons are form-</p><p><strong>Tags:</strong> circuits</p>]]></description>
-      <pubDate>Sat, 18 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.16693v1</guid>
-    </item>
-    <item>
-      <title>Cost Accounting for Reactive Computational Graphs: Exhaustive Sweeps, Sequential Mutation, and the Backward-Locality Gap</title>
-      <link>https://arxiv.org/abs/2607.18323v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Abdallah Khemais</p><p>Exhaustive site-by-site interventions on a neural network&#x27;s computational graph -- activation-patching sweeps, circuit-discovery searches, systematic ablation studies -- mutate the graph at every candidate site, and their cost is dominated by recomputation after each mutation. On a reactive graph engine whose invalidation provably touches exactly the downstream cone of a mutated node, we give a complete cost accounting for such workloads. First, the aggregate speedup of an exhaustive sweep over </p><p><strong>Tags:</strong> circuits</p>]]></description>
-      <pubDate>Sat, 18 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.18323v1</guid>
     </item>
   </channel>
 </rss>
