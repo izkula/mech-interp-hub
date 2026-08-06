@@ -1,6 +1,21 @@
 {
-  "lastUpdated": "2026-08-05",
+  "lastUpdated": "2026-08-06",
   "papers": [
+    {
+      "id": "arxiv-2608-04904v1",
+      "title": "Strengthening Target-Language Features: SAE-Based Steering for Multilingual Inference",
+      "authors": "Hongsheng Wang, Phlipp Koehn",
+      "date": "2026-08-05",
+      "url": "https://arxiv.org/abs/2608.04904v1",
+      "abstract": "Multilingual large language models exhibit substantial performance differences across languages, while existing adaptation methods often require parameter updates and considerable multilingual training data. We propose an inference-time multilingual steering method that uses pretrained sparse autoencoders to identify and strengthen target-language-related features. Using multilingual parallel sentences, we compare SAE activations across languages and select a small number of layer-specific featu",
+      "tags": [
+        "SAE",
+        "features",
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2608-03913v1",
       "title": "Sparse Weight Decomposition for Efficient Circuit Extraction",
@@ -36,6 +51,20 @@
       "abstract": "Activation patching and weight-space ablation both claim a component is causally responsible for a behavior, yet they act on different objects: one forward pass versus the parameters behind every forward pass. We ask when they agree.   We study an idealized model where a conditional computation is carried additively through a residual stream, $F(x)=F_0(x)+\\sum_i\u03b1_i(x)v_i$, read out by a linear functional, and prove three exact results. First, deleting a subset of carriers collapses a matched inp",
       "tags": [
         "theory"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2608-04183v1",
+      "title": "Test, then Route: How Language Models Execute In-Context Conditional Rules Across Models and Languages",
+      "authors": "Luxshan Thavarasa, Sivasuthan Sukumar",
+      "date": "2026-08-04",
+      "url": "https://arxiv.org/abs/2608.04183v1",
+      "abstract": "When a language model follows an in-context conditional rule such as \"if P(x) then A else B,\" does it assemble a runtime circuit with one module that tests the predicate and another that routes the answer? We probe this with activation patching under a four-donor design whose two swapped-rule donors make the condition and the answer word disagree, so each layer reveals which of the two it carries. Across three open models from two families and six languages sharing one fixed item bank, a mid-sta",
+      "tags": [
+        "circuits",
+        "probing"
       ],
       "source": "arXiv",
       "featured": false
