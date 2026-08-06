@@ -5,9 +5,16 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 05 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 06 Aug 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Strengthening Target-Language Features: SAE-Based Steering for Multilingual Inference</title>
+      <link>https://arxiv.org/abs/2608.04904v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Hongsheng Wang, Phlipp Koehn</p><p>Multilingual large language models exhibit substantial performance differences across languages, while existing adaptation methods often require parameter updates and considerable multilingual training data. We propose an inference-time multilingual steering method that uses pretrained sparse autoencoders to identify and strengthen target-language-related features. Using multilingual parallel sentences, we compare SAE activations across languages and select a small number of layer-specific featu</p><p><strong>Tags:</strong> SAE, features, steering</p>]]></description>
+      <pubDate>Wed, 05 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.04904v1</guid>
+    </item>
     <item>
       <title>Sparse Weight Decomposition for Efficient Circuit Extraction</title>
       <link>https://arxiv.org/abs/2608.03913v1</link>
@@ -28,6 +35,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Abdallah Khemais</p><p>Activation patching and weight-space ablation both claim a component is causally responsible for a behavior, yet they act on different objects: one forward pass versus the parameters behind every forward pass. We ask when they agree.   We study an idealized model where a conditional computation is carried additively through a residual stream, $F(x)=F_0(x)+\sum_iα_i(x)v_i$, read out by a linear functional, and prove three exact results. First, deleting a subset of carriers collapses a matched inp</p><p><strong>Tags:</strong> theory</p>]]></description>
       <pubDate>Tue, 04 Aug 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2608.03620v1</guid>
+    </item>
+    <item>
+      <title>Test, then Route: How Language Models Execute In-Context Conditional Rules Across Models and Languages</title>
+      <link>https://arxiv.org/abs/2608.04183v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Luxshan Thavarasa, Sivasuthan Sukumar</p><p>When a language model follows an in-context conditional rule such as &quot;if P(x) then A else B,&quot; does it assemble a runtime circuit with one module that tests the predicate and another that routes the answer? We probe this with activation patching under a four-donor design whose two swapped-rule donors make the condition and the answer word disagree, so each layer reveals which of the two it carries. Across three open models from two families and six languages sharing one fixed item bank, a mid-sta</p><p><strong>Tags:</strong> circuits, probing</p>]]></description>
+      <pubDate>Tue, 04 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.04183v1</guid>
     </item>
     <item>
       <title>Cultural Awareness is Represented but Not Decoded: Tracing Mythological Knowledge across 18 Open-Source LLMs</title>
@@ -203,20 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Pratinav Seth, Hem Gosalia, Aditya Kasliwal, Vinay Kumar Sankarapu</p><p>Circuit analysis can support not only model explanation but also downstream interventions such as pruning, editing, steering, and selective fine-tuning. However, conducting such analyses currently requires stitching together separate implementations for discovery, evaluation, and intervention, as well as hand-authoring the contrastive prompts required by many discovery methods. This fragmentation makes methods difficult to compare and limits their application beyond canonical tasks. We introduce</p><p><strong>Tags:</strong> circuits, steering</p>]]></description>
       <pubDate>Tue, 21 Jul 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2607.19317v1</guid>
-    </item>
-    <item>
-      <title>Computational Humor with Multimodal LLMs: Methods, Datasets, Evaluation, and Challenges</title>
-      <link>https://arxiv.org/abs/2607.19011v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Tuo Liang, Zhe Hu, Disheng Liu, Jing Li, Yu Yin</p><p>Multimodal humor in memes, cartoons, and comics remains difficult for AI systems because intended meaning depends on non-literal mechanisms, shared cultural knowledge, and communicative intent rather than literal scene description. This survey focuses on visual humor understanding in single-image and multi-panel artifacts, while treating humor generation as an emerging downstream frontier. We position the literature against prior humor, sarcasm, and general MLLM surveys and organize it using a c</p><p><strong>Tags:</strong> survey, vision</p>]]></description>
-      <pubDate>Tue, 21 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.19011v1</guid>
-    </item>
-    <item>
-      <title>Causal dictionary learning reveals and validates transcription-factor binding features in genomic language models</title>
-      <link>https://arxiv.org/abs/2607.19618v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Sarwan Ali</p><p>Genomic language models achieve strong performance across regulatory-genomics tasks, yet what these models internally represent remains opaque, and the field lacks a principled procedure for verifying that an apparent ``concept&#x27;&#x27; inside a model is real rather than an artifact of sequence composition. We introduce a framework that combines sparse dictionary learning with causal intervention to extract, validate, and causally test interpretable features in genomic foundation models. Training top-$</p><p><strong>Tags:</strong> features</p>]]></description>
-      <pubDate>Tue, 21 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.19618v1</guid>
     </item>
   </channel>
 </rss>
