@@ -5,9 +5,23 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 06 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 07 Aug 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Bias Analysis of L2 Speaking Assessment Systems Using Concept Activation Vectors</title>
+      <link>https://arxiv.org/abs/2608.06300v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Arya Labroo, Mengjie Qian, Kate Knill</p><p>Automatic speaking assessment systems are increasingly deployed in high-stakes settings to mark second language (L2) learners&#x27; speaking tests, making it critical to show that their scores depend on speaking proficiency rather than irrelevant speaker attributes such as first language (L1) or age. Transformer-based foundation models have improved the accuracy of these L2 speaking graders, but their black-box representations make fairness and interpretability analysis more difficult. Building on pr</p>]]></description>
+      <pubDate>Thu, 06 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.06300v1</guid>
+    </item>
+    <item>
+      <title>CircuitSteer: Geometrically Aligned Multi-Layer Steering via Sparse Autoencoder Circuits</title>
+      <link>https://arxiv.org/abs/2608.05732v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Mehrshad Saadatinia, Parsa Razmara, Ardalan Aryashad, Ali Abbasi, Seyedarmin Azizi</p><p>Controlling the behavior of large language models (LLMs) remains a critical challenge for AI alignment. Existing steering methods, such as Contrastive Activation Addition (CAA), typically rely on fixed single-layer interventions derived from aggregate activation differences. These methods impose a single intervention across semantically diverse inputs and often fail to sustain consistent behavioral changes across layers, limiting the effectiveness of the steering. In this work, we introduce Circ</p><p><strong>Tags:</strong> SAE, circuits, safety, steering</p>]]></description>
+      <pubDate>Thu, 06 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.05732v1</guid>
+    </item>
     <item>
       <title>Strengthening Target-Language Features: SAE-Based Steering for Multilingual Inference</title>
       <link>https://arxiv.org/abs/2608.04904v1</link>
@@ -203,20 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Andrew Mack, Kraig Yuheng Tou, Mark Henry, Zhengxun Wu, Lauren Greenspan</p><p>Language models are thought to exhibit the phenomenon of superposition, representing many more features than dimensions in their residual streams. Sparse autoencoders (SAEs) are designed to recover such features post-hoc, but training models that are interpretable by construction has remained impractical, as a per-layer over-complete bottleneck is prohibitively expensive in both memory and compute. To overcome this issue, we introduce the ParityTransformer, a GPT-2-scale architecture whose inter</p><p><strong>Tags:</strong> SAE, superposition, features</p>]]></description>
       <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2607.20652v1</guid>
-    </item>
-    <item>
-      <title>Are Single-Token Sparse Autoencoder Features Causally Necessary? Layer-Depth and SAE-Family Effects</title>
-      <link>https://arxiv.org/abs/2607.20596v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Seonglae Cho, Zekun Wu, Kleyton Da Costa, Rishi Kalra, Ilham Wicaksono, et al.</p><p>Sparse autoencoder (SAE) features are used to interpret and steer large language models, yet whether a feature&#x27;s causal role is stable across SAE families remains untested. Single-token features that activate on one vocabulary item provide the diagnostic case where ground truth permits direct comparison. We analyze 3.9M features across six models and three SAE families using zero-ablation at full layer depth. Single-token features cluster 4.7x tighter in decoder space and concentrate in early la</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.20596v1</guid>
-    </item>
-    <item>
-      <title>CircuitKIT : Circuit Discovery, Evaluation, and Application Toolkit for Mechanistic Interpretability</title>
-      <link>https://arxiv.org/abs/2607.19317v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Pratinav Seth, Hem Gosalia, Aditya Kasliwal, Vinay Kumar Sankarapu</p><p>Circuit analysis can support not only model explanation but also downstream interventions such as pruning, editing, steering, and selective fine-tuning. However, conducting such analyses currently requires stitching together separate implementations for discovery, evaluation, and intervention, as well as hand-authoring the contrastive prompts required by many discovery methods. This fragmentation makes methods difficult to compare and limits their application beyond canonical tasks. We introduce</p><p><strong>Tags:</strong> circuits, steering</p>]]></description>
-      <pubDate>Tue, 21 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.19317v1</guid>
     </item>
   </channel>
 </rss>
