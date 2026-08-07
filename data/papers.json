@@ -1,6 +1,33 @@
 {
-  "lastUpdated": "2026-08-06",
+  "lastUpdated": "2026-08-07",
   "papers": [
+    {
+      "id": "arxiv-2608-06300v1",
+      "title": "Bias Analysis of L2 Speaking Assessment Systems Using Concept Activation Vectors",
+      "authors": "Arya Labroo, Mengjie Qian, Kate Knill",
+      "date": "2026-08-06",
+      "url": "https://arxiv.org/abs/2608.06300v1",
+      "abstract": "Automatic speaking assessment systems are increasingly deployed in high-stakes settings to mark second language (L2) learners' speaking tests, making it critical to show that their scores depend on speaking proficiency rather than irrelevant speaker attributes such as first language (L1) or age. Transformer-based foundation models have improved the accuracy of these L2 speaking graders, but their black-box representations make fairness and interpretability analysis more difficult. Building on pr",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2608-05732v1",
+      "title": "CircuitSteer: Geometrically Aligned Multi-Layer Steering via Sparse Autoencoder Circuits",
+      "authors": "Mehrshad Saadatinia, Parsa Razmara, Ardalan Aryashad, Ali Abbasi, Seyedarmin Azizi",
+      "date": "2026-08-06",
+      "url": "https://arxiv.org/abs/2608.05732v1",
+      "abstract": "Controlling the behavior of large language models (LLMs) remains a critical challenge for AI alignment. Existing steering methods, such as Contrastive Activation Addition (CAA), typically rely on fixed single-layer interventions derived from aggregate activation differences. These methods impose a single intervention across semantically diverse inputs and often fail to sustain consistent behavioral changes across layers, limiting the effectiveness of the steering. In this work, we introduce Circ",
+      "tags": [
+        "SAE",
+        "circuits",
+        "safety",
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2608-04904v1",
       "title": "Strengthening Target-Language Features: SAE-Based Steering for Multilingual Inference",
