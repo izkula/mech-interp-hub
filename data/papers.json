@@ -1,6 +1,48 @@
 {
-  "lastUpdated": "2026-08-09",
+  "lastUpdated": "2026-08-10",
   "papers": [
+    {
+      "id": "arxiv-2608-06969v1",
+      "title": "Finding Usable Weight Mechanisms with Tiled SVD",
+      "authors": "Ash Manvi, Samreena Tajreen",
+      "date": "2026-08-07",
+      "url": "https://arxiv.org/abs/2608.06969v1",
+      "abstract": "The dominant approach to mechanistic interpretability trains proxy dictionaries such as sparse autoencoders and labels features from max-activating text. The best such atlases identify con- cepts, but that identity lives in the learned dictionary rather than in the network weights them- selves. We propose extracting mechanism mounts directly from linear sites by column-tiled SVD: each mount is a triple (v,u,\u03c3) read as trigger, write, and strength. Identity is the weight rule. We evaluate mounts ",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2608-07361v1",
+      "title": "Depth-Wise Probing and Pruning of the Planning Token in a Driving Vision-Language-Action Model",
+      "authors": "Harisankar Babu, Benjamin Coors, Christopher Lang, Hendrik Berkemeyer, Tamim Asfour, et al.",
+      "date": "2026-08-07",
+      "url": "https://arxiv.org/abs/2608.07361v1",
+      "abstract": "Vision-language-action (VLA) models route driving decisions through a deep language model, but it is unclear how much of that depth the action itself requires. We study a representative driving VLA whose entire plan is carried by a single planning token that a generative planner decodes into a trajectory. Borrowing the planner as a trajectory-space logit lens, we decode the planning token from every one of the 32 decoder layers and measure two signals: the linear decodability of the navigation c",
+      "tags": [
+        "probing",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2608-07302v1",
+      "title": "Same Attention, Different Truths: Put Logit-Lens over Visual Attention to Detect and Mitigate LVLM Object Hallucination",
+      "authors": "Zichuan Wang, Songlin Yang, Bo Peng, Zhenchen Tang, Yang Li, et al.",
+      "date": "2026-08-07",
+      "url": "https://arxiv.org/abs/2608.07302v1",
+      "abstract": "Large Vision-Language Models (LVLMs) often suffer from object hallucination, generating objects that are absent from the image. Prior work largely attributes this to insufficient visual attention. However, we find that both real and hallucinated objects receive equally strong visual attention in the model's mid-to-late layers, suggesting that the key issue may not be how much the model attends, but what it attends to and why. To this end, we decode the visual features of high-attention regions u",
+      "tags": [
+        "features",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2608-06300v1",
       "title": "Bias Analysis of L2 Speaking Assessment Systems Using Concept Activation Vectors",
@@ -23,6 +65,20 @@
         "SAE",
         "circuits",
         "safety",
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2608-06638v1",
+      "title": "MI-MIDI: Mechanistic Interpretability of Text-to-MIDI Generation Models via Probing, Lenses and Steering",
+      "authors": "Jakub Po\u0107wiardowski, Mateusz Modrzejewski",
+      "date": "2026-08-06",
+      "url": "https://arxiv.org/abs/2608.06638v1",
+      "abstract": "Mechanistic interpretability of music generation has concentrated on audio models, leaving symbolic models largely unexplored. We analyze two public text-to-MIDI systems of contrasting design: the purpose-built encoder--decoder text2midi and MIDI-LLM, a Llama~3.2~1B model extended with MIDI tokens using linear probing, the logit and tuned lenses, activation patching and difference-in-means steering. Across these methods, we recover musically meaningful structure and show how architecture shapes ",
+      "tags": [
+        "probing",
         "steering"
       ],
       "source": "arXiv",
