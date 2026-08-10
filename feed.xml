@@ -5,9 +5,30 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 09 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 10 Aug 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Finding Usable Weight Mechanisms with Tiled SVD</title>
+      <link>https://arxiv.org/abs/2608.06969v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Ash Manvi, Samreena Tajreen</p><p>The dominant approach to mechanistic interpretability trains proxy dictionaries such as sparse autoencoders and labels features from max-activating text. The best such atlases identify con- cepts, but that identity lives in the learned dictionary rather than in the network weights them- selves. We propose extracting mechanism mounts directly from linear sites by column-tiled SVD: each mount is a triple (v,u,σ) read as trigger, write, and strength. Identity is the weight rule. We evaluate mounts </p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.06969v1</guid>
+    </item>
+    <item>
+      <title>Depth-Wise Probing and Pruning of the Planning Token in a Driving Vision-Language-Action Model</title>
+      <link>https://arxiv.org/abs/2608.07361v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Harisankar Babu, Benjamin Coors, Christopher Lang, Hendrik Berkemeyer, Tamim Asfour, et al.</p><p>Vision-language-action (VLA) models route driving decisions through a deep language model, but it is unclear how much of that depth the action itself requires. We study a representative driving VLA whose entire plan is carried by a single planning token that a generative planner decodes into a trajectory. Borrowing the planner as a trajectory-space logit lens, we decode the planning token from every one of the 32 decoder layers and measure two signals: the linear decodability of the navigation c</p><p><strong>Tags:</strong> probing, vision</p>]]></description>
+      <pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.07361v1</guid>
+    </item>
+    <item>
+      <title>Same Attention, Different Truths: Put Logit-Lens over Visual Attention to Detect and Mitigate LVLM Object Hallucination</title>
+      <link>https://arxiv.org/abs/2608.07302v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Zichuan Wang, Songlin Yang, Bo Peng, Zhenchen Tang, Yang Li, et al.</p><p>Large Vision-Language Models (LVLMs) often suffer from object hallucination, generating objects that are absent from the image. Prior work largely attributes this to insufficient visual attention. However, we find that both real and hallucinated objects receive equally strong visual attention in the model&#x27;s mid-to-late layers, suggesting that the key issue may not be how much the model attends, but what it attends to and why. To this end, we decode the visual features of high-attention regions u</p><p><strong>Tags:</strong> features, vision</p>]]></description>
+      <pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.07302v1</guid>
+    </item>
     <item>
       <title>Bias Analysis of L2 Speaking Assessment Systems Using Concept Activation Vectors</title>
       <link>https://arxiv.org/abs/2608.06300v1</link>
@@ -21,6 +42,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Mehrshad Saadatinia, Parsa Razmara, Ardalan Aryashad, Ali Abbasi, Seyedarmin Azizi</p><p>Controlling the behavior of large language models (LLMs) remains a critical challenge for AI alignment. Existing steering methods, such as Contrastive Activation Addition (CAA), typically rely on fixed single-layer interventions derived from aggregate activation differences. These methods impose a single intervention across semantically diverse inputs and often fail to sustain consistent behavioral changes across layers, limiting the effectiveness of the steering. In this work, we introduce Circ</p><p><strong>Tags:</strong> SAE, circuits, safety, steering</p>]]></description>
       <pubDate>Thu, 06 Aug 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2608.05732v1</guid>
+    </item>
+    <item>
+      <title>MI-MIDI: Mechanistic Interpretability of Text-to-MIDI Generation Models via Probing, Lenses and Steering</title>
+      <link>https://arxiv.org/abs/2608.06638v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Jakub Poćwiardowski, Mateusz Modrzejewski</p><p>Mechanistic interpretability of music generation has concentrated on audio models, leaving symbolic models largely unexplored. We analyze two public text-to-MIDI systems of contrasting design: the purpose-built encoder--decoder text2midi and MIDI-LLM, a Llama~3.2~1B model extended with MIDI tokens using linear probing, the logit and tuned lenses, activation patching and difference-in-means steering. Across these methods, we recover musically meaningful structure and show how architecture shapes </p><p><strong>Tags:</strong> probing, steering</p>]]></description>
+      <pubDate>Thu, 06 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.06638v1</guid>
     </item>
     <item>
       <title>Strengthening Target-Language Features: SAE-Based Steering for Multilingual Inference</title>
@@ -189,34 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Piotr Wilam</p><p>Do independently trained language models come to represent the same thing in the same way? We answer for code, extending a recently introduced concept-circuit extraction method to a 2x2 design -- Python and Rust crossed with Qwen2.5-Coder-7B and DeepSeek-Coder-V1-6.7B -- and measuring a complete inventory of grammatical concepts (58 Python, 57 Rust) identically in all four cells: the smallest design that separates what depends on the task, the language, and the model.   The answer splits into th</p><p><strong>Tags:</strong> circuits</p>]]></description>
       <pubDate>Thu, 23 Jul 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2607.21491v1</guid>
-    </item>
-    <item>
-      <title>OPIUM: Mitigating Steering Externalities and Over-Refusal via Dual Objective Latent Optimization</title>
-      <link>https://arxiv.org/abs/2607.19806v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Kavin Aravindan, Arihant Rastogi, Aadi Prasad, Krishak Aneja, Saiyam Jain, et al.</p><p>Activation steering provides a lightweight mechanism for controlling large language models at inference time, but steering vectors can have unintended externalities: utility vectors may weaken safety behavior, while refusal vectors may induce over-refusal on benign prompts. We introduce OPIUM (Optimizing Protected Injections via Utility Manifolds), a training-free method for sanitizing steering vectors through representation matching. Given reference behaviors on two prompt sets, OPIUM optimizes</p><p><strong>Tags:</strong> safety, steering</p>]]></description>
-      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.19806v1</guid>
-    </item>
-    <item>
-      <title>Understanding the Impact of Linguistic Realization Choices on LLM Stance with Causal Tracing</title>
-      <link>https://arxiv.org/abs/2607.20115v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Langchen Huang, Sebastian Padó, Franziska Weeber</p><p>Large language models (LLMs) are known to be sensitive to prompt and input formulations. However, existing studies have focused on lexical realization and largely ignored constructional choice. This paper studies whether linguistic construction can systematically shift LLM decisions and where these shifts can be causally localized inside the model. We use political stance judgment as a meaning-sensitive case study and extend an English political statements dataset, resulting in six controlled li</p>]]></description>
-      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.20115v1</guid>
-    </item>
-    <item>
-      <title>Toward Mechanistic Interpretability of an AI Foundation Model Fine-Tuned for Atmospheric Chemistry</title>
-      <link>https://arxiv.org/abs/2607.20778v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Jason Y. Hu, Ivan Higuera-Mendieta, Patrick Obin Sturm, Makoto M. Kelp</p><p>Weather forecasting foundation models (FMs) are increasingly fine-tuned to predict air quality, offering fast global pollution forecasts at lower computational cost than conventional chemical transport models. These FMs are typically trained on reanalysis data and generate forecasts through autoregressive rollout. They do not explicitly represent governing physical or chemical processes. Therefore, high forecast skill does not reveal whether a model has learned physical mechanisms or exploits st</p>]]></description>
-      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.20778v1</guid>
-    </item>
-    <item>
-      <title>Scaling Interpretable Transformers with Parity Bottleneck Layers</title>
-      <link>https://arxiv.org/abs/2607.20652v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Andrew Mack, Kraig Yuheng Tou, Mark Henry, Zhengxun Wu, Lauren Greenspan</p><p>Language models are thought to exhibit the phenomenon of superposition, representing many more features than dimensions in their residual streams. Sparse autoencoders (SAEs) are designed to recover such features post-hoc, but training models that are interpretable by construction has remained impractical, as a per-layer over-complete bottleneck is prohibitively expensive in both memory and compute. To overcome this issue, we introduce the ParityTransformer, a GPT-2-scale architecture whose inter</p><p><strong>Tags:</strong> SAE, superposition, features</p>]]></description>
-      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.20652v1</guid>
     </item>
   </channel>
 </rss>
