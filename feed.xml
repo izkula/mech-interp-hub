@@ -5,9 +5,65 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 10 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 11 Aug 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Who Bridges Safety? Identifying and Targeting Cross-Lingual Shared Safety Pathways</title>
+      <link>https://arxiv.org/abs/2608.09095v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Shuyi Miao, Wangjie Qiu, Pengyang Shao, Canran Xiao, Fei Shen, et al.</p><p>Uncovering the internal mechanisms underlying the safety capabilities of large language models (LLMs) is crucial for developing trustworthy artificial intelligence. Currently, mechanistic interpretability studies on multilingual safety are largely confined to local components, such as isolated neurons. However, this static and fragmented perspective overlooks the synergy among components and fails to elucidate how safety signals dynamically propagate within the model to drive safety decisions ul</p><p><strong>Tags:</strong> safety</p>]]></description>
+      <pubDate>Mon, 10 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.09095v1</guid>
+    </item>
+    <item>
+      <title>Label-Free Parkinson&#x27;s Disease Screening from Face and Voice through Mechanistic Interpretability</title>
+      <link>https://arxiv.org/abs/2608.08976v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Jiaheng Su, Yu Sun</p><p>Parkinson&#x27;s disease (PD) is the second most common neurodegenerative disorder. Typical machine learning screening methods require PD labels, but the available data is limited by privacy concerns and the need for expert annotation. We propose a label-free face-plus-voice PD screen built entirely on frozen pretrained encoders--a face-expression Vision Transformer and HuBERT--in which no PD label touches any fit; the reference is training controls only. The voice modality uses a synthetic-dysarthri</p><p><strong>Tags:</strong> vision</p>]]></description>
+      <pubDate>Mon, 10 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.08976v1</guid>
+    </item>
+    <item>
+      <title>Multimodal Model Diffing for Feature Discovery and Control</title>
+      <link>https://arxiv.org/abs/2608.09928v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Hunar Batra, Lachin Naghashyar, Ashkan Khakzar, Philip Torr, Christian Schroeder de Witt, et al.</p><p>Multimodal Large Language Models (MLLMs) exhibit strong visual understanding, yet the internal features that cause these behaviors remain difficult to identify, audit, or control. While applicable to post-hoc inspection, hidden states that are decomposed into interpretable feature directions using sparse autoencoders (SAEs) neither readily isolate which features are changed by multimodal training, nor are they directly useful for targeted control. We introduce MMDiff, a multimodal model-diffing </p><p><strong>Tags:</strong> SAE, features, vision</p>]]></description>
+      <pubDate>Mon, 10 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.09928v1</guid>
+    </item>
+    <item>
+      <title>One Adapter Pair per Model: A Universal Activation Interface for Language Models</title>
+      <link>https://arxiv.org/abs/2608.09521v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Su-Hyeon Kim, Jiwan Mun, Yo-Sub Han</p><p>Activation-based tools are usually tied to one model&#x27;s native hidden space, requiring probes, sparse autoencoders, and natural-language interpreters to be rebuilt or rediscovered for each new language model. We present a Universal Activation Bus, a framework that provides a common activation interface across compatible language models. Using a small set of source models, we learn a shared dense space together with one lightweight linear encoder--decoder adapter pair per model. After source train</p><p><strong>Tags:</strong> SAE, probing</p>]]></description>
+      <pubDate>Mon, 10 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.09521v1</guid>
+    </item>
+    <item>
+      <title>Pragmatic Attack Surface: Vulnerabilities of Implicit Context in Large Language Models</title>
+      <link>https://arxiv.org/abs/2608.09551v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Bocheng Chen, Han Zi, Roucheng Ou, Yawei Liu, Minyue Chen, et al.</p><p>In the era of large language models (LLMs), attackers often manipulate natural language to elicit unsafe or harmful outputs, creating a new natural language attack surface unique to LLM-based systems, where attacks directly exploit explicit linguistic cues in user prompts to bypass the safety mechanism of LLMs. However, such attacks can often be mitigated by existing safety alignment algorithms. On the other hand, human language is inherently grounded in pragmatics, necessitating typical context</p><p><strong>Tags:</strong> safety</p>]]></description>
+      <pubDate>Mon, 10 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.09551v1</guid>
+    </item>
+    <item>
+      <title>Can Graph Learning Learn Circuits?</title>
+      <link>https://arxiv.org/abs/2608.08536v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Chester Tan, Moritz Lampert, Courtney Maynard, Ankit Ramakrishnan, Tina Eliassi-Rad, et al.</p><p>Circuit localization is a mechanistic interpretability task whose goal is to identify a sparse subgraph of a transformer&#x27;s computation graph sufficient to reproduce a particular behavior. Most established methods localize circuits independently for each model--task pair. We instead frame circuit localization as a graph machine learning problem in which the edges of a computation graph represent computational pathways, and graph neural networks (GNNs) model interactions among these pathways. We i</p><p><strong>Tags:</strong> circuits</p>]]></description>
+      <pubDate>Sun, 09 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.08536v1</guid>
+    </item>
+    <item>
+      <title>Thinking vs. NoThinking: Towards Interpreting Reasoning Mechanisms of Large Language Models via Sparse Autoencoders</title>
+      <link>https://arxiv.org/abs/2608.08168v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Bo Cheng, Qiaolin Lu, Yi Chang, Yuan Wu</p><p>While Large Language Models (LLMs) employing Chain-of-Thought (CoT) exhibit superior reasoning capabilities, the neural mechanisms distinguishing this explicit Thinking mode from direct answer generation (NoThinking mode) remain poorly understood. To deconstruct this cognitive process, we apply Top-K Sparse Autoencoders (SAEs) to the intermediate representations of DeepSeek-R1-Distill-Qwen-7B and examine the model&#x27;s divergent behaviors across math-solving tasks of three distinct difficulty level</p><p><strong>Tags:</strong> SAE, reasoning</p>]]></description>
+      <pubDate>Sat, 08 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.08168v1</guid>
+    </item>
+    <item>
+      <title>&quot;Many Are My Names&quot;: The Anatomy of the Assistant and Its Personas via Sparse Autoencoders</title>
+      <link>https://arxiv.org/abs/2608.07852v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Adelaide Danilov, Aria Nourbakhsh, Oleksandr Marchenko Breneur, Salima Lamsiyah</p><p>How a language model internally represents who is speaking, the Assistant, an assigned roleplay persona, or a narrated story character, remains underexplored. We study speaker representations using a dataset of user-expressed emotional text and corresponding model responses. We decompose three generation settings (Assistant, Roleplay, and Story) into sparse autoencoder features extracted at turn-boundary and pronoun-token positions and selected through a filtering pipeline for different depths. </p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Sat, 08 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.07852v1</guid>
+    </item>
     <item>
       <title>Finding Usable Weight Mechanisms with Tiled SVD</title>
       <link>https://arxiv.org/abs/2608.06969v1</link>
@@ -100,6 +156,13 @@
       <guid>https://arxiv.org/abs/2608.01816v1</guid>
     </item>
     <item>
+      <title>Mechanistic Interpretability-Guided Selective Fine-Tuning of Vision-Language Models for Centimeter-Level Flood Depth Estimation</title>
+      <link>https://arxiv.org/abs/2608.07562v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Nafis Fuad, Xiaodong Qian, Dongxiao Zhu</p><p>Urban flooding poses an escalating threat to transportation infrastructure, yet no operational system provides real-time, street-level flood-depth estimates at centimeter resolution. This paper presents three vision-language models fine-tuned for continuous flood-depth estimation from street-level imagery: FloodLlama-Dense, a fully fine-tuned QLoRA baseline, and FloodLlama-MI5 and FloodLlama-MI6, interpretability-guided sparse variants that fine-tune only the top five and six causally relevant c</p><p><strong>Tags:</strong> vision</p>]]></description>
+      <pubDate>Sun, 02 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.07562v1</guid>
+    </item>
+    <item>
       <title>Bridging the English-Arabic Medical Knowledge Gap: Targeted Low-Rank Adaptation via Causal Layer Selection</title>
       <link>https://arxiv.org/abs/2608.00207v1</link>
       <description><![CDATA[<p><strong>Authors:</strong> Chaimae Abouzahir, Musa Khan, Hala Ali-Hassan, Congbo Ma, Khaled Saleh, et al.</p><p>Large Language Models (LLMs) perform strongly in English medical tasks but degrade substantially in Arabic, a gap widely attributed to limited training data. We systematically investigate this assumption via tuned lens probing and causal activation patching, and find that Arabic medical knowledge is present in intermediate model representations but fails to surface at the output. This mechanistic insight motivates a targeted adaptation strategy: rather than fine-tuning the full network, we propo</p><p><strong>Tags:</strong> probing</p>]]></description>
@@ -154,69 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Yixuan Duan, Arjun Naik, Sadeer Al-Kindi, Wei Qiu</p><p>Foundation models for 12-lead electrocardiograms (ECGs) transfer well across clinical tasks, but the physiological knowledge encoded in their representations remains opaque. We present CADENCE, a framework that decomposes an ECG foundation model into a human-interpretable, queryable dictionary of physiological concepts. Using a BatchTopK sparse autoencoder, CADENCE factorizes Layer-6 embeddings from more than nine million ECG tokens into 8,192 sparse cardiac atoms. These atoms align better than </p><p><strong>Tags:</strong> SAE</p>]]></description>
       <pubDate>Tue, 28 Jul 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2607.25244v1</guid>
-    </item>
-    <item>
-      <title>LLMs Can Annotate Attribution Graphs</title>
-      <link>https://arxiv.org/abs/2608.02632v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Ameen Patel, Max Zhang, Nathan Hu</p><p>Circuit tracing is an exciting technique for revealing the internal computation of language models, but it requires a time-intensive manual step of grouping individual features or MLP neurons into supernodes. We present a simple pipeline for automating this step: directly presenting feature descriptions to a language model that groups them into supernodes. Using automated interpretability metrics, we confirm that supernodes generated by our pipeline are as interpretable as those generated by hum</p><p><strong>Tags:</strong> circuits, features</p>]]></description>
-      <pubDate>Tue, 28 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.02632v1</guid>
-    </item>
-    <item>
-      <title>Sparse Autoencoders Encode Both Concepts and Functions: The Downstream Geometry of Feature Effects</title>
-      <link>https://arxiv.org/abs/2607.24645v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Phu Gia Hoang, Anwoy Chatterjee, Tanmoy Chakraborty, Iryna Gurevych, Subhabrata Dutta</p><p>The wide-scale use of sparse autoencoders (SAEs) as interpretability tools is limited by inconsistent links between SAE features and model behavior. Features with clear activation descriptions may have weak or unexpected causal effects; steering can vary across prompts or oppose the intended direction; and activation-based feature selection can miss features that produce the desired output change. Prior work has studied feature geometry inside the model, where features are computed. We instead s</p><p><strong>Tags:</strong> SAE, features, steering</p>]]></description>
-      <pubDate>Mon, 27 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.24645v1</guid>
-    </item>
-    <item>
-      <title>A Hierarchical Validity-Audit Framework for Neural Mass Models in Simulation-Based Inference: From Observational Coverage to Mechanistic Interpretation</title>
-      <link>https://arxiv.org/abs/2607.24874v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Tianming Cai, Ning Jiang, Yuan Yang, Jiayuan He</p><p>Neural mass models describe population level neural activity using low-dimensional dynamical parameters and, through simulation-based inference, enable posterior estimation when explicit likelihoods are intractable, but good posterior recovery on simulated data does not guarantee that the model covers real observations, that summary statistics retain target information, or that multiple parameters stay independently interpretable. We introduce NMM-SBI Audit, a hierarchical validity-audit framewo</p>]]></description>
-      <pubDate>Mon, 27 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.24874v1</guid>
-    </item>
-    <item>
-      <title>Interpretable GOHR Agents via Sparse Autoencoders</title>
-      <link>https://arxiv.org/abs/2607.25132v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Shiwei Tan, Yusong Zhao, Weiyi Qin, Wentian Wang, Jacob Feldman, et al.</p><p>A central challenge in interpreting learned decision-making systems is to determine whether their internal representations contain concepts that help explain their behavior. We report interpretability experiments for a tokenized autoregressive Transformer agent in the Game of Hidden Rules (GOHR). We focus on a compact two-rule task in which both hidden rules map object shapes to target buckets, but with different permutations. The policy is trained on episodes sampled from these two hidden rules</p><p><strong>Tags:</strong> SAE</p>]]></description>
-      <pubDate>Mon, 27 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.25132v1</guid>
-    </item>
-    <item>
-      <title>Do LLMs Know Their Vulnerable Scenarios?</title>
-      <link>https://arxiv.org/abs/2607.23496v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Ziheng Peng, Huiqi Deng, Haoran Jing, Xuankun Rong, Jiahui Han, et al.</p><p>Safety-aligned large language models are trained to refuse harmful requests, yet embedding the same requests in particular scenarios can bypass their safeguards. Existing red-teaming methods empirically identify effective scenarios through observed attack outcomes, but why particular scenarios weaken refusal remains mechanistically unclear. Meanwhile, mechanistic interpretability studies have characterized both refusal directions and jailbreak-associated features, without explaining the relation</p><p><strong>Tags:</strong> features, safety</p>]]></description>
-      <pubDate>Sun, 26 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.23496v1</guid>
-    </item>
-    <item>
-      <title>Continuous surrogates versus threshold Boolean networks for modeling Arabidopsis ISR gene regulation</title>
-      <link>https://arxiv.org/abs/2607.23289v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Gonzalo A. Ruz</p><p>Gene regulatory network modeling often requires balancing predictive accuracy and mechanistic interpretability. In this work, we compare continuous surrogate models and a discrete mechanistic model on the same \textit{Arabidopsis thaliana} induced systemic resistance (ISR) dataset, using both the raw continuous gene-expression measurements and their sign-binarized representation. The study considers eight defense-related genes measured over nine time points and evaluates two continuous predictor</p>]]></description>
-      <pubDate>Sat, 25 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.23289v1</guid>
-    </item>
-    <item>
-      <title>Through the Bottleneck: How Multi-head Latent Attention Separates Content from Position in Language Models</title>
-      <link>https://arxiv.org/abs/2607.23054v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Dhruvil S, Fenil Sojitra, Ravirajsinh Chauhan</p><p>Multi-head Latent Attention (MLA), introduced in DeepSeek-V2, compresses key-value pairs through a shared low-rank bottleneck (cKV), achieving 81% KV-cache reduction during inference. Despite its adoption in massive production models, no prior work has studied what information this bottleneck preserves or discards, nor how it reshapes internal transformer circuits. We present the first comprehensive mechanistic interpretability study of MLA, training a 114M-parameter transformer (pretrained on a</p><p><strong>Tags:</strong> circuits</p>]]></description>
-      <pubDate>Sat, 25 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.23054v1</guid>
-    </item>
-    <item>
-      <title>CommandLM: Data driven behavior level descriptor for ego vehicles</title>
-      <link>https://arxiv.org/abs/2607.22078v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Boris Tokic, Constantin Selzer, Fabian B. Flohr</p><p>As autonomous driving systems move toward real-world deployment, interpretable, behavior-level decision-making is essential for safety, trust, and regulation. We introduce CommandLM, a multimodal large language model that generates concise, human-readable behavior descriptions for ego vehicles from fused multi-sensor data. Our model processes temporally fused bird&#x27;s-eye view representations from LiDAR and multi-camera inputs via a Q-Former adapter connected to a quantized, LoRA-fine-tuned large </p><p><strong>Tags:</strong> safety, vision</p>]]></description>
-      <pubDate>Fri, 24 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.22078v1</guid>
-    </item>
-    <item>
-      <title>What, Where, and How: Disentangling the Roles of Task, Language, and Model in Code Model Representations</title>
-      <link>https://arxiv.org/abs/2607.21491v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Piotr Wilam</p><p>Do independently trained language models come to represent the same thing in the same way? We answer for code, extending a recently introduced concept-circuit extraction method to a 2x2 design -- Python and Rust crossed with Qwen2.5-Coder-7B and DeepSeek-Coder-V1-6.7B -- and measuring a complete inventory of grammatical concepts (58 Python, 57 Rust) identically in all four cells: the smallest design that separates what depends on the task, the language, and the model.   The answer splits into th</p><p><strong>Tags:</strong> circuits</p>]]></description>
-      <pubDate>Thu, 23 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.21491v1</guid>
     </item>
   </channel>
 </rss>
