@@ -1,6 +1,115 @@
 {
-  "lastUpdated": "2026-08-10",
+  "lastUpdated": "2026-08-11",
   "papers": [
+    {
+      "id": "arxiv-2608-09095v1",
+      "title": "Who Bridges Safety? Identifying and Targeting Cross-Lingual Shared Safety Pathways",
+      "authors": "Shuyi Miao, Wangjie Qiu, Pengyang Shao, Canran Xiao, Fei Shen, et al.",
+      "date": "2026-08-10",
+      "url": "https://arxiv.org/abs/2608.09095v1",
+      "abstract": "Uncovering the internal mechanisms underlying the safety capabilities of large language models (LLMs) is crucial for developing trustworthy artificial intelligence. Currently, mechanistic interpretability studies on multilingual safety are largely confined to local components, such as isolated neurons. However, this static and fragmented perspective overlooks the synergy among components and fails to elucidate how safety signals dynamically propagate within the model to drive safety decisions ul",
+      "tags": [
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2608-08976v1",
+      "title": "Label-Free Parkinson's Disease Screening from Face and Voice through Mechanistic Interpretability",
+      "authors": "Jiaheng Su, Yu Sun",
+      "date": "2026-08-10",
+      "url": "https://arxiv.org/abs/2608.08976v1",
+      "abstract": "Parkinson's disease (PD) is the second most common neurodegenerative disorder. Typical machine learning screening methods require PD labels, but the available data is limited by privacy concerns and the need for expert annotation. We propose a label-free face-plus-voice PD screen built entirely on frozen pretrained encoders--a face-expression Vision Transformer and HuBERT--in which no PD label touches any fit; the reference is training controls only. The voice modality uses a synthetic-dysarthri",
+      "tags": [
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2608-09928v1",
+      "title": "Multimodal Model Diffing for Feature Discovery and Control",
+      "authors": "Hunar Batra, Lachin Naghashyar, Ashkan Khakzar, Philip Torr, Christian Schroeder de Witt, et al.",
+      "date": "2026-08-10",
+      "url": "https://arxiv.org/abs/2608.09928v1",
+      "abstract": "Multimodal Large Language Models (MLLMs) exhibit strong visual understanding, yet the internal features that cause these behaviors remain difficult to identify, audit, or control. While applicable to post-hoc inspection, hidden states that are decomposed into interpretable feature directions using sparse autoencoders (SAEs) neither readily isolate which features are changed by multimodal training, nor are they directly useful for targeted control. We introduce MMDiff, a multimodal model-diffing ",
+      "tags": [
+        "SAE",
+        "features",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2608-09521v1",
+      "title": "One Adapter Pair per Model: A Universal Activation Interface for Language Models",
+      "authors": "Su-Hyeon Kim, Jiwan Mun, Yo-Sub Han",
+      "date": "2026-08-10",
+      "url": "https://arxiv.org/abs/2608.09521v1",
+      "abstract": "Activation-based tools are usually tied to one model's native hidden space, requiring probes, sparse autoencoders, and natural-language interpreters to be rebuilt or rediscovered for each new language model. We present a Universal Activation Bus, a framework that provides a common activation interface across compatible language models. Using a small set of source models, we learn a shared dense space together with one lightweight linear encoder--decoder adapter pair per model. After source train",
+      "tags": [
+        "SAE",
+        "probing"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2608-09551v1",
+      "title": "Pragmatic Attack Surface: Vulnerabilities of Implicit Context in Large Language Models",
+      "authors": "Bocheng Chen, Han Zi, Roucheng Ou, Yawei Liu, Minyue Chen, et al.",
+      "date": "2026-08-10",
+      "url": "https://arxiv.org/abs/2608.09551v1",
+      "abstract": "In the era of large language models (LLMs), attackers often manipulate natural language to elicit unsafe or harmful outputs, creating a new natural language attack surface unique to LLM-based systems, where attacks directly exploit explicit linguistic cues in user prompts to bypass the safety mechanism of LLMs. However, such attacks can often be mitigated by existing safety alignment algorithms. On the other hand, human language is inherently grounded in pragmatics, necessitating typical context",
+      "tags": [
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2608-08536v1",
+      "title": "Can Graph Learning Learn Circuits?",
+      "authors": "Chester Tan, Moritz Lampert, Courtney Maynard, Ankit Ramakrishnan, Tina Eliassi-Rad, et al.",
+      "date": "2026-08-09",
+      "url": "https://arxiv.org/abs/2608.08536v1",
+      "abstract": "Circuit localization is a mechanistic interpretability task whose goal is to identify a sparse subgraph of a transformer's computation graph sufficient to reproduce a particular behavior. Most established methods localize circuits independently for each model--task pair. We instead frame circuit localization as a graph machine learning problem in which the edges of a computation graph represent computational pathways, and graph neural networks (GNNs) model interactions among these pathways. We i",
+      "tags": [
+        "circuits"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2608-08168v1",
+      "title": "Thinking vs. NoThinking: Towards Interpreting Reasoning Mechanisms of Large Language Models via Sparse Autoencoders",
+      "authors": "Bo Cheng, Qiaolin Lu, Yi Chang, Yuan Wu",
+      "date": "2026-08-08",
+      "url": "https://arxiv.org/abs/2608.08168v1",
+      "abstract": "While Large Language Models (LLMs) employing Chain-of-Thought (CoT) exhibit superior reasoning capabilities, the neural mechanisms distinguishing this explicit Thinking mode from direct answer generation (NoThinking mode) remain poorly understood. To deconstruct this cognitive process, we apply Top-K Sparse Autoencoders (SAEs) to the intermediate representations of DeepSeek-R1-Distill-Qwen-7B and examine the model's divergent behaviors across math-solving tasks of three distinct difficulty level",
+      "tags": [
+        "SAE",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2608-07852v1",
+      "title": "\"Many Are My Names\": The Anatomy of the Assistant and Its Personas via Sparse Autoencoders",
+      "authors": "Adelaide Danilov, Aria Nourbakhsh, Oleksandr Marchenko Breneur, Salima Lamsiyah",
+      "date": "2026-08-08",
+      "url": "https://arxiv.org/abs/2608.07852v1",
+      "abstract": "How a language model internally represents who is speaking, the Assistant, an assigned roleplay persona, or a narrated story character, remains underexplored. We study speaker representations using a dataset of user-expressed emotional text and corresponding model responses. We decompose three generation settings (Assistant, Roleplay, and Story) into sparse autoencoder features extracted at turn-boundary and pronoun-token positions and selected through a filtering pipeline for different depths. ",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2608-06969v1",
       "title": "Finding Usable Weight Mechanisms with Tiled SVD",
@@ -173,6 +282,19 @@
       "url": "https://arxiv.org/abs/2608.01816v1",
       "abstract": "In this work we investigate how decoder-only transformers resolve lexical ambiguity through layer-by-layer analysis of three models spanning three parameter sizes (GPT-2-Small-117M, Llama-3.2-3B, Qwen2.5-32B). For both homonyms and polysemes, we find that representations become maximally distinct in middle layers, then partially reconverge in late layers, while the KL divergence between their next-token predictions reaches its maximum in the final layers. The activation patching experiment provi",
       "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2608-07562v1",
+      "title": "Mechanistic Interpretability-Guided Selective Fine-Tuning of Vision-Language Models for Centimeter-Level Flood Depth Estimation",
+      "authors": "Nafis Fuad, Xiaodong Qian, Dongxiao Zhu",
+      "date": "2026-08-02",
+      "url": "https://arxiv.org/abs/2608.07562v1",
+      "abstract": "Urban flooding poses an escalating threat to transportation infrastructure, yet no operational system provides real-time, street-level flood-depth estimates at centimeter resolution. This paper presents three vision-language models fine-tuned for continuous flood-depth estimation from street-level imagery: FloodLlama-Dense, a fully fine-tuned QLoRA baseline, and FloodLlama-MI5 and FloodLlama-MI6, interpretability-guided sparse variants that fine-tune only the top five and six causally relevant c",
+      "tags": [
+        "vision"
+      ],
       "source": "arXiv",
       "featured": false
     },
