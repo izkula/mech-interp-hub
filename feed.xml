@@ -5,9 +5,51 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 12 Aug 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>From Interpretability to Control: Insights from Six Years of the TrustNLP Workshop</title>
+      <link>https://arxiv.org/abs/2608.11171v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Rahul Gupta, Abhinav Mohanty, Anaelia Ovalle, Anil Ramakrishna, Anubrata Das, et al.</p><p>The Workshop on Trustworthy Natural Language Processing (TrustNLP), co-located with major ACL conferences since 2021, has grown from 8 proceedings papers to 41 over six editions, documenting a field-wide transition from post-hoc interpretability of static models to mechanistic understanding and proactive control of generative systems. We synthesize insights from all 144 proceedings papers, classifying them along six trust dimensions grounded in established frameworks (TrustLLM, DecodingTrust). W</p>]]></description>
+      <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.11171v1</guid>
+    </item>
+    <item>
+      <title>Beyond a Bag of Features: Set-Level Instability in Sparse Autoencoders</title>
+      <link>https://arxiv.org/abs/2608.11197v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Nikolai Bolik, Lennart Stöpler, Artur Andrzejak</p><p>Shani et al. (2026) show that LLM representations broadly recover human category boundaries, while failing to reflect fine-grained typicality structure. Their analysis uses cosine similarity over dense model representations. We revisit their approach using overlap over active sparse autoencoder (SAE) latent sets as a more interpretable similarity measure. We first verify that this set-level measure is meaningful: SAE latent sets can recover union-like compositional structure in controlled toy mo</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.11197v1</guid>
+    </item>
+    <item>
+      <title>Data Attribution of Emergent Misalignment with Persona Features</title>
+      <link>https://arxiv.org/abs/2608.11025v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Clemens Vetter, David Kaczér, Lucie Flek, Florian Mai</p><p>Emergent misalignment (EM) is the phenomenon where fine-tuning a language model on a narrow task leads to harmful behavior in unrelated domains. A leading mechanistic account attributes EM to persona features: latent directions acquired during pre-training that misaligned fine-tuning amplifies. We ask where these features come from: which pre-training documents activate them, and whether naturally occurring human-written text suffices to induce EM. Using Sparse Autoencoder (SAE) based model diff</p><p><strong>Tags:</strong> SAE, features, safety</p>]]></description>
+      <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.11025v1</guid>
+    </item>
+    <item>
+      <title>PEAK: Precise and Persistent Concept Erasure via k-Sparse Autoencoders</title>
+      <link>https://arxiv.org/abs/2608.10985v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Man Jiang, Ouxiang Li, Weibao Xue, Zhenhua Tang, Yuan Wang, et al.</p><p>Erasing concepts from large-scale text-to-image (T2I) diffusion models has become increasingly crucial due to the growing concerns over copyright infringement, privacy violations, and offensive content. Existing approaches struggle to achieve both precise and persistent concept erasure: inaccurate localization of concept-related representations may cause unintended semantic interference, while incomplete removal of the underlying concept knowledge allows adversarial recovery. To address this dil</p><p><strong>Tags:</strong> SAE, vision</p>]]></description>
+      <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.10985v1</guid>
+    </item>
+    <item>
+      <title>Where To Look? : Causal Tracing of Vision Encoders in VLM</title>
+      <link>https://arxiv.org/abs/2608.10758v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Naren Kumar S, Tirth Bhatt, Mayank Singh</p><p>Vision-language models can describe an image with remarkable accuracy, yet a more fundamental question remains unanswered: what visual information actually drives their answers? In this work, we investigate this question through causal tracing, and we observe that highly causal vision tokens often lie outside the target region. Extending the analysis to larger vision-language models reveals a similar pattern across models and corruption settings, suggesting that strong multimodal performance doe</p><p><strong>Tags:</strong> vision</p>]]></description>
+      <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.10758v1</guid>
+    </item>
+    <item>
+      <title>Measuring Semantic Abstractness of SAE Features via Nonlocality</title>
+      <link>https://arxiv.org/abs/2608.10537v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Chuqiao Lin, Shivaji Sondhi, Xiao-Liang Qi</p><p>Sparse autoencoders (SAEs) have helped uncover mechanistic explanations for LLM behaviours such as reasoning, jailbreaking etc., via understanding the corresponding task-relevant and causally effective features. To evaluate such mechanistic explanations, downstream studies must distinguish surface lexical features from genuinely high-level ones. However, neither an autointerp-based semantic description nor causal steering utility fully resolves the abstraction level of a feature. To this end, we</p><p><strong>Tags:</strong> SAE, features, steering, reasoning</p>]]></description>
+      <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.10537v1</guid>
+    </item>
     <item>
       <title>Who Bridges Safety? Identifying and Targeting Cross-Lingual Shared Safety Pathways</title>
       <link>https://arxiv.org/abs/2608.09095v1</link>
@@ -42,6 +84,20 @@
       <description><![CDATA[<p><strong>Authors:</strong> Bocheng Chen, Han Zi, Roucheng Ou, Yawei Liu, Minyue Chen, et al.</p><p>In the era of large language models (LLMs), attackers often manipulate natural language to elicit unsafe or harmful outputs, creating a new natural language attack surface unique to LLM-based systems, where attacks directly exploit explicit linguistic cues in user prompts to bypass the safety mechanism of LLMs. However, such attacks can often be mitigated by existing safety alignment algorithms. On the other hand, human language is inherently grounded in pragmatics, necessitating typical context</p><p><strong>Tags:</strong> safety</p>]]></description>
       <pubDate>Mon, 10 Aug 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2608.09551v1</guid>
+    </item>
+    <item>
+      <title>Intrinsic Structure: Spectral Identifiability for Mechanistic Interpretability</title>
+      <link>https://arxiv.org/abs/2608.10172v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Ashim Dhor, Pin-Yu Chen</p><p>Mechanistic interpretability explains models by identifying circuits inside them, but has no way to tell whether a circuit is a property of the model or an artifact of the method that found it. Sparse autoencoders illustrate the problem: different seeds and widths recover materially different features from the same activations, and no theory says whether that variability is incidental or structural. We put dictionary learning for interpretability on an identifiability footing. Treating the forwa</p><p><strong>Tags:</strong> SAE, circuits, features, theory</p>]]></description>
+      <pubDate>Mon, 10 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.10172v1</guid>
+    </item>
+    <item>
+      <title>Post-Hoc Sparse Coding of Latent Communication Between Vision-Language Model Agents</title>
+      <link>https://arxiv.org/abs/2608.10198v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Di Wu, Xiaohui Zhu</p><p>Latent-space communication allows heterogeneous vision-language model agents to exchange continuous representations without serializing visual and reasoning states into text. Vision Wormhole realizes this approach by translating visual features into a universal latent representation that can be consumed by another model, but every message is transported as a dense tensor of the same size regardless of its content. A fixed-capacity dense tensor therefore need not have a fixed effective informatio</p><p><strong>Tags:</strong> features, vision, reasoning</p>]]></description>
+      <pubDate>Mon, 10 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.10198v1</guid>
     </item>
     <item>
       <title>Can Graph Learning Learn Circuits?</title>
@@ -161,62 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Nafis Fuad, Xiaodong Qian, Dongxiao Zhu</p><p>Urban flooding poses an escalating threat to transportation infrastructure, yet no operational system provides real-time, street-level flood-depth estimates at centimeter resolution. This paper presents three vision-language models fine-tuned for continuous flood-depth estimation from street-level imagery: FloodLlama-Dense, a fully fine-tuned QLoRA baseline, and FloodLlama-MI5 and FloodLlama-MI6, interpretability-guided sparse variants that fine-tune only the top five and six causally relevant c</p><p><strong>Tags:</strong> vision</p>]]></description>
       <pubDate>Sun, 02 Aug 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2608.07562v1</guid>
-    </item>
-    <item>
-      <title>Bridging the English-Arabic Medical Knowledge Gap: Targeted Low-Rank Adaptation via Causal Layer Selection</title>
-      <link>https://arxiv.org/abs/2608.00207v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Chaimae Abouzahir, Musa Khan, Hala Ali-Hassan, Congbo Ma, Khaled Saleh, et al.</p><p>Large Language Models (LLMs) perform strongly in English medical tasks but degrade substantially in Arabic, a gap widely attributed to limited training data. We systematically investigate this assumption via tuned lens probing and causal activation patching, and find that Arabic medical knowledge is present in intermediate model representations but fails to surface at the output. This mechanistic insight motivates a targeted adaptation strategy: rather than fine-tuning the full network, we propo</p><p><strong>Tags:</strong> probing</p>]]></description>
-      <pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.00207v1</guid>
-    </item>
-    <item>
-      <title>Interpretability-Guided Soft Pruning of Attention Heads in Vision Transformers</title>
-      <link>https://arxiv.org/abs/2608.00264v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Kamil Książek, Piotr Suszyński, Michał Jan Włodarczyk, Jacek Tabor, Przemysław Biecek</p><p>Vision foundation models, such as DINOv2, learn highly expressive representations but rely on massive, opaque architectures that demand substantial computational power and memory. To provide an interpretable-guided and efficient solution to this issue, we first propose a spectral analysis and new visualization technique for individual attention heads based on the Laplacian eigenvectors of their attention maps. Building upon recent observations regarding the block structure of Vision Transformers</p><p><strong>Tags:</strong> attention, vision</p>]]></description>
-      <pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.00264v1</guid>
-    </item>
-    <item>
-      <title>RepBench: Compiling Benchmarks into Capability Representations for Large Language Models</title>
-      <link>https://arxiv.org/abs/2607.28008v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Yanshi Li, Xueru Bai, Shuman Liu, Long Zhang</p><p>Representation engineering reads and steers capability directions in large language models, yet methods are typically evaluated on paper-specific synthetic data. The resulting measurements are difficult to compare or reproduce and may reflect surface patterns rather than capabilities. We present RepBench, a benchmark-grounded data layer for capability-aligned representation probing. Crawling 13,427 benchmark papers yields a taxonomy of 182 capability clusters in 13 families; harvesting 353 publi</p><p><strong>Tags:</strong> probing</p>]]></description>
-      <pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.28008v1</guid>
-    </item>
-    <item>
-      <title>Understanding Knowledge Transfer Mechanism in Heterogeneous MLLM Fusion: A Simple Linear Approach</title>
-      <link>https://arxiv.org/abs/2607.26608v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Yinghao Hou, Jiahe Fan, Yuanhao Pu, Zongyuan Chen, Hong Xie</p><p>Training-free fusion of heterogeneous multimodal large language models (MLLMs) provides a direct route for cross-scale capability transfer, yet improvements in aggregate performance do not reveal what a smaller model actually inherits. Existing studies are largely designed and evaluated on limited task sets or aggregate metrics; as evaluation expands to broader task collections, whether different capabilities can transfer across scales remains poorly understood. To investigate this question, we </p><p><strong>Tags:</strong> vision</p>]]></description>
-      <pubDate>Wed, 29 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.26608v1</guid>
-    </item>
-    <item>
-      <title>From Representations to Behaviors: Exploring the Person-Situation-Behavior Triad in LLMs</title>
-      <link>https://arxiv.org/abs/2607.26853v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Ruikang Zhang, Shuo Wang, Qi Su</p><p>Human personality theories characterize traits not as isolated attributes captured by a single score, but as stable individual tendencies expressed through the interplay among persons, situations, and behaviors. Existing studies of personality-related behavior in LLMs have primarily focused on outputs elicited under personality conditioning, characterizing observable trait-related expressions while lacking mechanistic evidence for the existence of internal personality-related representations, th</p>]]></description>
-      <pubDate>Wed, 29 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.26853v1</guid>
-    </item>
-    <item>
-      <title>ECG-InterpBench: Benchmarking the Interpretability of ECG Foundation Models with Matched-Scale Sparse Autoencoders</title>
-      <link>https://arxiv.org/abs/2607.27404v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Yixuan Duan, Wei Qiu</p><p>Existing benchmarks for electrocardiogram foundation models primarily evaluate downstream predictive performance, providing limited insight into whether their internal representations can be faithfully decomposed, clinically interpreted, or reproduced across independent analyses. We introduce ECG-InterpBench, a benchmark designed to systematically evaluate the interpretability of ECG foundation-model representations. ECG-InterpBench uses sparse autoencoders as standardized measurement instrument</p><p><strong>Tags:</strong> SAE</p>]]></description>
-      <pubDate>Wed, 29 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.27404v1</guid>
-    </item>
-    <item>
-      <title>Emergent Latent-State Computation under Stochastic Volatility</title>
-      <link>https://arxiv.org/abs/2607.25459v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Xiaoyu Huang, Lulu Wang</p><p>Mechanistic interpretability has largely focused on language models and deterministic toy tasks. Much less is known about how sequence models internally represent latent stochastic dynamics under noisy, partially observed observations. We study this question in a controlled multivariate stochastic volatility setting, where models observe only returns while the ground-truth latent volatility state is known to the researcher. This setting provides a useful benchmark for mechanistic interpretabilit</p>]]></description>
-      <pubDate>Tue, 28 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.25459v1</guid>
-    </item>
-    <item>
-      <title>CADENCE: A Cardiac Atom Dictionary for Interpretable Neural Concept Extraction from ECG Foundation Models</title>
-      <link>https://arxiv.org/abs/2607.25244v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Yixuan Duan, Arjun Naik, Sadeer Al-Kindi, Wei Qiu</p><p>Foundation models for 12-lead electrocardiograms (ECGs) transfer well across clinical tasks, but the physiological knowledge encoded in their representations remains opaque. We present CADENCE, a framework that decomposes an ECG foundation model into a human-interpretable, queryable dictionary of physiological concepts. Using a BatchTopK sparse autoencoder, CADENCE factorizes Layer-6 embeddings from more than nine million ECG tokens into 8,192 sparse cardiac atoms. These atoms align better than </p><p><strong>Tags:</strong> SAE</p>]]></description>
-      <pubDate>Tue, 28 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2607.25244v1</guid>
     </item>
   </channel>
 </rss>
