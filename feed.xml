@@ -5,9 +5,37 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 13 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 14 Aug 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Decoding Task Progress from VLA Representations</title>
+      <link>https://arxiv.org/abs/2608.13474v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Atiksh Bhardwaj, Edward Weiyi Duan, Prithwish Dan, Wei-Chiu Ma, Preston Culbertson</p><p>Vision-language-action models (VLAs) are moving rapidly towards deployment as general-purpose manipulation policies, but we currently lack basic tools for understanding what these models represent internally or for monitoring them at runtime. Leveraging ideas from mechanistic interpretability, we probe the residual stream of $π_{0.5}$ and find that task progress, the normalized time remaining in a trajectory, is linearly readable from the activations. We find that this signal is present in the p</p><p><strong>Tags:</strong> probing, vision</p>]]></description>
+      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.13474v1</guid>
+    </item>
+    <item>
+      <title>Perturbation-based Regional Interpretability through Subtraction Mapping (PRISM): naming-error dissociations in language models and post-stroke aphasia</title>
+      <link>https://arxiv.org/abs/2608.12717v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Xiang Guan, Roger D. Newman-Norlund, Yong Yang, Saeed Ahmadi, Regan Willis, et al.</p><p>Mechanistic interpretability of large language models lacks spatially resolved, falsifiable tools for testing whether internal components are specialized for distinct cognitive operations. We adapt subtraction analysis, the standard framework of human neuroimaging, from biological brains to perturbed transformers, and apply the same logic to both substrates in parallel. Building on the Brain-LLM Unified Model (BLUM), which showed that layer-perturbed LLaVA-1.6-Vicuna-13B error profiles match the</p><p><strong>Tags:</strong> biology</p>]]></description>
+      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.12717v1</guid>
+    </item>
+    <item>
+      <title>SAEVerbalizer: Generating Explanations for Sparse Autoencoder Features via Representation Verbalization</title>
+      <link>https://arxiv.org/abs/2608.13538v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Weihan Meng, Hongzhu Guo, Yi Jing, Dewen Liu, Zijun Yao, et al.</p><p>Sparse autoencoders (SAEs) are proposed to extract numerous features from large language model (LLM) representations, yet explaining these features still relies primarily on external observation. This reliance leads to superficial explanations inferred from observed model behavior and computational inefficiency from collecting such behavioral evidence at scale. We introduce SAEVerbalizer, a framework that injects SAE decoder directions into an LLM&#x27;s representations and fine-tunes the LLM&#x27;s downs</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.13538v1</guid>
+    </item>
+    <item>
+      <title>Where You Measure Decides What You Measure: Position Selection in Ablation-Based SAE Evaluation</title>
+      <link>https://arxiv.org/abs/2608.13337v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Valentin Noël</p><p>Sparse autoencoders are meant to name the things a language model computes, and the usual way to check that a latent matters is to switch it off and see what changes. But a latent fires at many tokens, and the effect has to be measured at one of them. The convention is to measure where the latent fires hardest. That choice is almost never reported, and it is not made by the experimenter: it is made by the dictionary under evaluation. Change the dictionary and the measurement moves to a different</p><p><strong>Tags:</strong> SAE</p>]]></description>
+      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.13337v1</guid>
+    </item>
     <item>
       <title>From Interpretability to Control: Insights from Six Years of the TrustNLP Workshop</title>
       <link>https://arxiv.org/abs/2608.11171v1</link>
@@ -189,34 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Abdallah Khemais</p><p>Activation patching and weight-space ablation both claim a component is causally responsible for a behavior, yet they act on different objects: one forward pass versus the parameters behind every forward pass. We ask when they agree.   We study an idealized model where a conditional computation is carried additively through a residual stream, $F(x)=F_0(x)+\sum_iα_i(x)v_i$, read out by a linear functional, and prove three exact results. First, deleting a subset of carriers collapses a matched inp</p><p><strong>Tags:</strong> theory</p>]]></description>
       <pubDate>Tue, 04 Aug 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2608.03620v1</guid>
-    </item>
-    <item>
-      <title>Test, then Route: How Language Models Execute In-Context Conditional Rules Across Models and Languages</title>
-      <link>https://arxiv.org/abs/2608.04183v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Luxshan Thavarasa, Sivasuthan Sukumar</p><p>When a language model follows an in-context conditional rule such as &quot;if P(x) then A else B,&quot; does it assemble a runtime circuit with one module that tests the predicate and another that routes the answer? We probe this with activation patching under a four-donor design whose two swapped-rule donors make the condition and the answer word disagree, so each layer reveals which of the two it carries. Across three open models from two families and six languages sharing one fixed item bank, a mid-sta</p><p><strong>Tags:</strong> circuits, probing</p>]]></description>
-      <pubDate>Tue, 04 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.04183v1</guid>
-    </item>
-    <item>
-      <title>Cultural Awareness is Represented but Not Decoded: Tracing Mythological Knowledge across 18 Open-Source LLMs</title>
-      <link>https://arxiv.org/abs/2608.02486v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Iaroslav Chelombitko, Ekaterina Chelombitko, Mika Hämäläinen</p><p>Open-source LLMs reliably name Zeus, Jupiter, and Thor, but recover their counterparts in less-represented traditions like Finnish, Slavic, Egyptian, or Chinese mythology far less consistently. We ask where inside the model this cultural default is produced. On a parallel cross-cultural substrate of Thompson-motif entities, we instrument 18 open-source LLMs from 8 architecture families with linear probing, logit lens, activation patching, and output extraction. The residual stream cleanly distin</p><p><strong>Tags:</strong> probing</p>]]></description>
-      <pubDate>Mon, 03 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.02486v1</guid>
-    </item>
-    <item>
-      <title>Divergent large language model predictions from convergent representations in ambiguous word pairs</title>
-      <link>https://arxiv.org/abs/2608.01816v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> K. Jack Scott, Narun Pat, Veronica Liesaputra</p><p>In this work we investigate how decoder-only transformers resolve lexical ambiguity through layer-by-layer analysis of three models spanning three parameter sizes (GPT-2-Small-117M, Llama-3.2-3B, Qwen2.5-32B). For both homonyms and polysemes, we find that representations become maximally distinct in middle layers, then partially reconverge in late layers, while the KL divergence between their next-token predictions reaches its maximum in the final layers. The activation patching experiment provi</p>]]></description>
-      <pubDate>Mon, 03 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.01816v1</guid>
-    </item>
-    <item>
-      <title>Mechanistic Interpretability-Guided Selective Fine-Tuning of Vision-Language Models for Centimeter-Level Flood Depth Estimation</title>
-      <link>https://arxiv.org/abs/2608.07562v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Nafis Fuad, Xiaodong Qian, Dongxiao Zhu</p><p>Urban flooding poses an escalating threat to transportation infrastructure, yet no operational system provides real-time, street-level flood-depth estimates at centimeter resolution. This paper presents three vision-language models fine-tuned for continuous flood-depth estimation from street-level imagery: FloodLlama-Dense, a fully fine-tuned QLoRA baseline, and FloodLlama-MI5 and FloodLlama-MI6, interpretability-guided sparse variants that fine-tune only the top five and six causally relevant c</p><p><strong>Tags:</strong> vision</p>]]></description>
-      <pubDate>Sun, 02 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.07562v1</guid>
     </item>
   </channel>
 </rss>
