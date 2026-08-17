@@ -1,6 +1,19 @@
 {
-  "lastUpdated": "2026-08-16",
+  "lastUpdated": "2026-08-17",
   "papers": [
+    {
+      "id": "arxiv-2608-14177v1",
+      "title": "Structure-Guided Spatiotemporal Attention Graph Neural Network for Traffic Flow Prediction",
+      "authors": "Xuanmian He, Can Li, Wanjing Ma",
+      "date": "2026-08-14",
+      "url": "https://arxiv.org/abs/2608.14177v1",
+      "abstract": "Deep spatiotemporal models integrating graph convolutions and attention mechanisms have demonstrated excellent performance in network-level traffic flow prediction, owing to their exceptional ability to capture complex spatiotemporal dependencies. Despite their predictive success, deployment of such models in safety-critical urban systems remains constrained by their inherent lack of transparency. Existing post-hoc diagnostic methods often struggle with spurious correlations and fail to unveil t",
+      "tags": [
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2608-13474v1",
       "title": "Decoding Task Progress from VLA Representations",
@@ -51,6 +64,19 @@
       "abstract": "Sparse autoencoders are meant to name the things a language model computes, and the usual way to check that a latent matters is to switch it off and see what changes. But a latent fires at many tokens, and the effect has to be measured at one of them. The convention is to measure where the latent fires hardest. That choice is almost never reported, and it is not made by the experimenter: it is made by the dictionary under evaluation. Change the dictionary and the measurement moves to a different",
       "tags": [
         "SAE"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2608-13754v1",
+      "title": "Explanation Multiplicity: Circuit-Level Interpretability Evidence Does Not Survive Defensible Analytic Variation",
+      "authors": "Ajay Pravin Mahale",
+      "date": "2026-08-13",
+      "url": "https://arxiv.org/abs/2608.13754v1",
+      "abstract": "The EU AI Act requires providers of high-risk systems to file technical documentation describing how the system reaches its decisions. Mechanistic interpretability is the obvious source of such evidence, and circuit discovery is its most developed instrument. We ask whether that evidence survives the condition under which it would be relied upon: two competent analysts, the same system, the same tool, different defensible settings.   We pre-registered a crossed grid of seven analytic axes, every",
+      "tags": [
+        "circuits"
       ],
       "source": "arXiv",
       "featured": false
