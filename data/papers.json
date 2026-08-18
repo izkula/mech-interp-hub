@@ -1,6 +1,61 @@
 {
-  "lastUpdated": "2026-08-17",
+  "lastUpdated": "2026-08-18",
   "papers": [
+    {
+      "id": "arxiv-2608-16094v1",
+      "title": "Protein Structure Prediction: From Evolutionary Constraints to Generative Modeling",
+      "authors": "Wengan He, Yongsheng Luo, Lihong Jiang, Wenhui Xu, Yu Li",
+      "date": "2026-08-17",
+      "url": "https://arxiv.org/abs/2608.16094v1",
+      "abstract": "Accurate protein structure prediction is fundamental to structural biology because protein structure underlies molecular function and provides a basis for mechanistic interpretation. Recent advances in deep learning have transformed the field from multiple sequence alignment (MSA)-driven monomer folding into broader frameworks capable of modeling protein complexes and increasingly heterogeneous molecular systems. Existing reviews have summarized this progress from the perspectives of representat",
+      "tags": [
+        "safety",
+        "survey",
+        "biology"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2608-15459v1",
+      "title": "Not All Attention Is Equal: A Quantitative Survey of the EEI Trade-off",
+      "authors": "Aditya Singh",
+      "date": "2026-08-16",
+      "url": "https://arxiv.org/abs/2608.15459v1",
+      "abstract": "Attention mechanisms have driven machine learning for a decade, from neural machine translation to language models that do general-purpose reasoning. This survey covers four connected threads: their formulation for sequence-to-sequence tasks, adaptation to computer vision, efficiency innovations that address the quadratic bottleneck, and advances in interpretability. We define three criteria: efficiency, expressiveness, and interpretability, and compare twenty-one methods using an EEI scoring fr",
+      "tags": [
+        "survey",
+        "vision",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2608-15632v1",
+      "title": "Sparse Prototype Code Underlies Classification and Prediction Across Modalities",
+      "authors": "Yehonatan Avidan, Daniel D. Lee, Haim Sompolinsky",
+      "date": "2026-08-16",
+      "url": "https://arxiv.org/abs/2608.15632v1",
+      "abstract": "Neural representations have become a central tool for studying the internal mechanisms of modern AI models, yet their complex high-dimensional structure makes them difficult to interpret. We show that classification tasks give rise to a universal representational geometry, shared across state-of-the-art models in vision, audio, and language processing. The key structure is that within-class variability is not random in representation space. Instead, its classifier-relevant component has strong a",
+      "tags": [
+        "probing",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2608-15772v1",
+      "title": "Broken Symmetry in LLM Refusal: Answer Release Is More Local Than Refusal Restoration",
+      "authors": "Yiqi Liu, Yang Wang, Songxin Wang, Chenghao Xiao, Chenghua Lin",
+      "date": "2026-08-16",
+      "url": "https://arxiv.org/abs/2608.15772v1",
+      "abstract": "When a language model refuses to answer a prompt, it is unclear whether the correct answer is erased from its internal representations, or merely suppressed at the output layer. We investigate this mechanism using a controlled withhold setting, which yields perfectly matched answering and refusal trajectories for bidirectional activation patching. We uncover a causal asymmetry in intervention locality under matched causal interventions, which we term broken symmetry. Even when a model generates ",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2608-14177v1",
       "title": "Structure-Guided Spatiotemporal Attention Graph Neural Network for Traffic Flow Prediction",
@@ -10,6 +65,36 @@
       "abstract": "Deep spatiotemporal models integrating graph convolutions and attention mechanisms have demonstrated excellent performance in network-level traffic flow prediction, owing to their exceptional ability to capture complex spatiotemporal dependencies. Despite their predictive success, deployment of such models in safety-critical urban systems remains constrained by their inherent lack of transparency. Existing post-hoc diagnostic methods often struggle with spurious correlations and fail to unveil t",
       "tags": [
         "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2608-14922v1",
+      "title": "SpIn-ViT: Designing a Sparsity-Induced Vision Transformer That Is Mechanistically Interpretable",
+      "authors": "Philip H. Lee, Parth Padalkar",
+      "date": "2026-08-14",
+      "url": "https://arxiv.org/abs/2608.14922v1",
+      "abstract": "Mechanistic interpretability has recently expanded to Vision Transformers (ViTs), with Sparse Autoencoders (SAEs) increasingly used as post-hoc tools to decompose internal representations into sparse and more interpretable features. However, because post-hoc SAEs are trained on frozen representations after the ViT has already been optimized, their latent features are not directly aligned with the downstream classification objective. We introduce SpIn-ViT, a framework that jointly trains a pretra",
+      "tags": [
+        "SAE",
+        "features",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2608-14896v1",
+      "title": "Interpretable Cross-Lingual Alignment in Small Language Models: Probing Cultural and Pragmatic Reasoning in Japanese-English Bilingual LLMs",
+      "authors": "Florian Braun",
+      "date": "2026-08-14",
+      "url": "https://arxiv.org/abs/2608.14896v1",
+      "abstract": "Large language models work well on English and behave in poorly understood ways on languages typologically far from it. Japanese is a clean example, where evaluation still leans on translation quality and JGLUE-style benchmarks, which roll lexical, syntactic and pragmatic competence into a single score. The phenomena on which general-purpose models fail Japanese users are pragmatic: honorifics, in-group and out-group reference, context-sensitive politeness, zero anaphora.   I introduce J-PragEva",
+      "tags": [
+        "safety",
+        "probing",
+        "reasoning"
       ],
       "source": "arXiv",
       "featured": false
