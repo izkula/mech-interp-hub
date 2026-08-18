@@ -5,15 +5,57 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 17 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 18 Aug 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Protein Structure Prediction: From Evolutionary Constraints to Generative Modeling</title>
+      <link>https://arxiv.org/abs/2608.16094v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Wengan He, Yongsheng Luo, Lihong Jiang, Wenhui Xu, Yu Li</p><p>Accurate protein structure prediction is fundamental to structural biology because protein structure underlies molecular function and provides a basis for mechanistic interpretation. Recent advances in deep learning have transformed the field from multiple sequence alignment (MSA)-driven monomer folding into broader frameworks capable of modeling protein complexes and increasingly heterogeneous molecular systems. Existing reviews have summarized this progress from the perspectives of representat</p><p><strong>Tags:</strong> safety, survey, biology</p>]]></description>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.16094v1</guid>
+    </item>
+    <item>
+      <title>Not All Attention Is Equal: A Quantitative Survey of the EEI Trade-off</title>
+      <link>https://arxiv.org/abs/2608.15459v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Aditya Singh</p><p>Attention mechanisms have driven machine learning for a decade, from neural machine translation to language models that do general-purpose reasoning. This survey covers four connected threads: their formulation for sequence-to-sequence tasks, adaptation to computer vision, efficiency innovations that address the quadratic bottleneck, and advances in interpretability. We define three criteria: efficiency, expressiveness, and interpretability, and compare twenty-one methods using an EEI scoring fr</p><p><strong>Tags:</strong> survey, vision, reasoning</p>]]></description>
+      <pubDate>Sun, 16 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.15459v1</guid>
+    </item>
+    <item>
+      <title>Sparse Prototype Code Underlies Classification and Prediction Across Modalities</title>
+      <link>https://arxiv.org/abs/2608.15632v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Yehonatan Avidan, Daniel D. Lee, Haim Sompolinsky</p><p>Neural representations have become a central tool for studying the internal mechanisms of modern AI models, yet their complex high-dimensional structure makes them difficult to interpret. We show that classification tasks give rise to a universal representational geometry, shared across state-of-the-art models in vision, audio, and language processing. The key structure is that within-class variability is not random in representation space. Instead, its classifier-relevant component has strong a</p><p><strong>Tags:</strong> probing, vision</p>]]></description>
+      <pubDate>Sun, 16 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.15632v1</guid>
+    </item>
+    <item>
+      <title>Broken Symmetry in LLM Refusal: Answer Release Is More Local Than Refusal Restoration</title>
+      <link>https://arxiv.org/abs/2608.15772v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Yiqi Liu, Yang Wang, Songxin Wang, Chenghao Xiao, Chenghua Lin</p><p>When a language model refuses to answer a prompt, it is unclear whether the correct answer is erased from its internal representations, or merely suppressed at the output layer. We investigate this mechanism using a controlled withhold setting, which yields perfectly matched answering and refusal trajectories for bidirectional activation patching. We uncover a causal asymmetry in intervention locality under matched causal interventions, which we term broken symmetry. Even when a model generates </p>]]></description>
+      <pubDate>Sun, 16 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.15772v1</guid>
+    </item>
     <item>
       <title>Structure-Guided Spatiotemporal Attention Graph Neural Network for Traffic Flow Prediction</title>
       <link>https://arxiv.org/abs/2608.14177v1</link>
       <description><![CDATA[<p><strong>Authors:</strong> Xuanmian He, Can Li, Wanjing Ma</p><p>Deep spatiotemporal models integrating graph convolutions and attention mechanisms have demonstrated excellent performance in network-level traffic flow prediction, owing to their exceptional ability to capture complex spatiotemporal dependencies. Despite their predictive success, deployment of such models in safety-critical urban systems remains constrained by their inherent lack of transparency. Existing post-hoc diagnostic methods often struggle with spurious correlations and fail to unveil t</p><p><strong>Tags:</strong> safety</p>]]></description>
       <pubDate>Fri, 14 Aug 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2608.14177v1</guid>
+    </item>
+    <item>
+      <title>SpIn-ViT: Designing a Sparsity-Induced Vision Transformer That Is Mechanistically Interpretable</title>
+      <link>https://arxiv.org/abs/2608.14922v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Philip H. Lee, Parth Padalkar</p><p>Mechanistic interpretability has recently expanded to Vision Transformers (ViTs), with Sparse Autoencoders (SAEs) increasingly used as post-hoc tools to decompose internal representations into sparse and more interpretable features. However, because post-hoc SAEs are trained on frozen representations after the ViT has already been optimized, their latent features are not directly aligned with the downstream classification objective. We introduce SpIn-ViT, a framework that jointly trains a pretra</p><p><strong>Tags:</strong> SAE, features, vision</p>]]></description>
+      <pubDate>Fri, 14 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.14922v1</guid>
+    </item>
+    <item>
+      <title>Interpretable Cross-Lingual Alignment in Small Language Models: Probing Cultural and Pragmatic Reasoning in Japanese-English Bilingual LLMs</title>
+      <link>https://arxiv.org/abs/2608.14896v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Florian Braun</p><p>Large language models work well on English and behave in poorly understood ways on languages typologically far from it. Japanese is a clean example, where evaluation still leans on translation quality and JGLUE-style benchmarks, which roll lexical, syntactic and pragmatic competence into a single score. The phenomena on which general-purpose models fail Japanese users are pragmatic: honorifics, in-group and out-group reference, context-sensitive politeness, zero anaphora.   I introduce J-PragEva</p><p><strong>Tags:</strong> safety, probing, reasoning</p>]]></description>
+      <pubDate>Fri, 14 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.14896v1</guid>
     </item>
     <item>
       <title>Decoding Task Progress from VLA Representations</title>
@@ -175,48 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Harisankar Babu, Benjamin Coors, Christopher Lang, Hendrik Berkemeyer, Tamim Asfour, et al.</p><p>Vision-language-action (VLA) models route driving decisions through a deep language model, but it is unclear how much of that depth the action itself requires. We study a representative driving VLA whose entire plan is carried by a single planning token that a generative planner decodes into a trajectory. Borrowing the planner as a trajectory-space logit lens, we decode the planning token from every one of the 32 decoder layers and measure two signals: the linear decodability of the navigation c</p><p><strong>Tags:</strong> probing, vision</p>]]></description>
       <pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2608.07361v1</guid>
-    </item>
-    <item>
-      <title>Same Attention, Different Truths: Put Logit-Lens over Visual Attention to Detect and Mitigate LVLM Object Hallucination</title>
-      <link>https://arxiv.org/abs/2608.07302v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Zichuan Wang, Songlin Yang, Bo Peng, Zhenchen Tang, Yang Li, et al.</p><p>Large Vision-Language Models (LVLMs) often suffer from object hallucination, generating objects that are absent from the image. Prior work largely attributes this to insufficient visual attention. However, we find that both real and hallucinated objects receive equally strong visual attention in the model&#x27;s mid-to-late layers, suggesting that the key issue may not be how much the model attends, but what it attends to and why. To this end, we decode the visual features of high-attention regions u</p><p><strong>Tags:</strong> features, vision</p>]]></description>
-      <pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.07302v1</guid>
-    </item>
-    <item>
-      <title>Bias Analysis of L2 Speaking Assessment Systems Using Concept Activation Vectors</title>
-      <link>https://arxiv.org/abs/2608.06300v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Arya Labroo, Mengjie Qian, Kate Knill</p><p>Automatic speaking assessment systems are increasingly deployed in high-stakes settings to mark second language (L2) learners&#x27; speaking tests, making it critical to show that their scores depend on speaking proficiency rather than irrelevant speaker attributes such as first language (L1) or age. Transformer-based foundation models have improved the accuracy of these L2 speaking graders, but their black-box representations make fairness and interpretability analysis more difficult. Building on pr</p>]]></description>
-      <pubDate>Thu, 06 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.06300v1</guid>
-    </item>
-    <item>
-      <title>CircuitSteer: Geometrically Aligned Multi-Layer Steering via Sparse Autoencoder Circuits</title>
-      <link>https://arxiv.org/abs/2608.05732v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Mehrshad Saadatinia, Parsa Razmara, Ardalan Aryashad, Ali Abbasi, Seyedarmin Azizi</p><p>Controlling the behavior of large language models (LLMs) remains a critical challenge for AI alignment. Existing steering methods, such as Contrastive Activation Addition (CAA), typically rely on fixed single-layer interventions derived from aggregate activation differences. These methods impose a single intervention across semantically diverse inputs and often fail to sustain consistent behavioral changes across layers, limiting the effectiveness of the steering. In this work, we introduce Circ</p><p><strong>Tags:</strong> SAE, circuits, safety, steering</p>]]></description>
-      <pubDate>Thu, 06 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.05732v1</guid>
-    </item>
-    <item>
-      <title>MI-MIDI: Mechanistic Interpretability of Text-to-MIDI Generation Models via Probing, Lenses and Steering</title>
-      <link>https://arxiv.org/abs/2608.06638v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Jakub Poćwiardowski, Mateusz Modrzejewski</p><p>Mechanistic interpretability of music generation has concentrated on audio models, leaving symbolic models largely unexplored. We analyze two public text-to-MIDI systems of contrasting design: the purpose-built encoder--decoder text2midi and MIDI-LLM, a Llama~3.2~1B model extended with MIDI tokens using linear probing, the logit and tuned lenses, activation patching and difference-in-means steering. Across these methods, we recover musically meaningful structure and show how architecture shapes </p><p><strong>Tags:</strong> probing, steering</p>]]></description>
-      <pubDate>Thu, 06 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.06638v1</guid>
-    </item>
-    <item>
-      <title>Strengthening Target-Language Features: SAE-Based Steering for Multilingual Inference</title>
-      <link>https://arxiv.org/abs/2608.04904v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Hongsheng Wang, Phlipp Koehn</p><p>Multilingual large language models exhibit substantial performance differences across languages, while existing adaptation methods often require parameter updates and considerable multilingual training data. We propose an inference-time multilingual steering method that uses pretrained sparse autoencoders to identify and strengthen target-language-related features. Using multilingual parallel sentences, we compare SAE activations across languages and select a small number of layer-specific featu</p><p><strong>Tags:</strong> SAE, features, steering</p>]]></description>
-      <pubDate>Wed, 05 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.04904v1</guid>
-    </item>
-    <item>
-      <title>Sparse Weight Decomposition for Efficient Circuit Extraction</title>
-      <link>https://arxiv.org/abs/2608.03913v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Chuanhao Yan, Xuhan Huang, Yawen Duan, Zhenfei Yin, Hang Zhao, et al.</p><p>Dense pretrained transformers do not naturally expose interpretable units for circuit extraction. Existing approaches obtain such units by learning auxiliary sparse representations or training sparse models, incurring substantial additional computation while potentially introducing a fidelity gap between the representation being analyzed and the original pretrained model. We propose Sparse Weight Decomposition (SWD), which reparameterizes pretrained linear projections by factorizing each weight </p><p><strong>Tags:</strong> circuits</p>]]></description>
-      <pubDate>Tue, 04 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.03913v1</guid>
     </item>
   </channel>
 </rss>
