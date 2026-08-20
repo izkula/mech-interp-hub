@@ -1,6 +1,32 @@
 {
-  "lastUpdated": "2026-08-19",
+  "lastUpdated": "2026-08-20",
   "papers": [
+    {
+      "id": "arxiv-2608-18419v1",
+      "title": "Mechanistic Interpretability of Structure-Aware Numerical Reasoning in LLaMA 3.1 8B",
+      "authors": "Rahul Chowdhury, Timothy A Rupprecht, Senhao Cao, Jiahao Liu, Octavia Camps, et al.",
+      "date": "2026-08-19",
+      "url": "https://arxiv.org/abs/2608.18419v1",
+      "abstract": "Recent work has shown that large language models (LLMs) exhibit strong numerical sequence modeling capabilities and show promise in time-series prediction. While LLMs display in-context learning capabilities, the mechanisms with which they accomplish time-series prediction remain unclear. Specifically, whether they truly understand the underlying structure, which at a minimum requires reasoning over first differences in the sequence of numbers. To study this, we investigate Llama 3.1-8B from a m",
+      "tags": [
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2608-18545v1",
+      "title": "Shared Circuits for Shared Grammar: Tracing Subject-Verb Agreement Across Languages",
+      "authors": "Isabella Gidi, Antonio Almud\u00e9var, Core Francisco Park, Naomi Saphra, Ricard Marxer",
+      "date": "2026-08-19",
+      "url": "https://arxiv.org/abs/2608.18545v1",
+      "abstract": "Multilingual large language models often generalize across languages, and prior work suggests that their internal mechanisms can overlap cross-lingually. It remains unclear, however, when such sharing emerges and whether it varies with the overt realization of the same grammatical operation. We investigate this question for present-tense subject-verb agreement, a morphosyntactic process that varies substantially across languages and is only weakly expressed in English. Using activation patching ",
+      "tags": [
+        "circuits"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2608-16094v1",
       "title": "Protein Structure Prediction: From Evolutionary Constraints to Generative Modeling",
