@@ -5,9 +5,23 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 20 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 21 Aug 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>SAE-Xplainers: Rule-Based Feature Interpretation for Extreme Earth Events</title>
+      <link>https://arxiv.org/abs/2608.20117v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Hugo Porta, Emanuele Dalsasso, Chang Xu, Theo Gnassounou, Devis Tuia</p><p>The emergence of large-scale Weather and Climate (W&amp;C) datasets offers new opportunities for modeling extreme Earth events (ExEE) and their impacts using deep learning. However, their adoption in operational settings remains limited by the lack of models&#x27; interpretability. While for conventional text and image modalities, tools such as Sparse Autoencoders (SAEs) have proven effective for extracting human-understandable concepts, their use for the analysis of ExEE remains challenging due to the n</p><p><strong>Tags:</strong> SAE, features, vision</p>]]></description>
+      <pubDate>Thu, 20 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.20117v1</guid>
+    </item>
+    <item>
+      <title>Listening Forward: Next Patch Embedding Prediction Enables Scalable Audio Learners</title>
+      <link>https://arxiv.org/abs/2608.19863v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Umberto Cappellazzo, Xubo Liu, Stavros Petridis, Maja Pantic</p><p>Self-supervised learning (SSL) has driven substantial progress in audio representation learning, though existing methods have increasingly relied on elaborate pre-training recipes to reach competitive performance. A markedly different pre-training philosophy underpins the most influential progress in language modeling and, more recently, in visual representation learning: rather than train encoders as static feature extractors, models are trained to predict the next element, a discrete token or </p><p><strong>Tags:</strong> features, vision</p>]]></description>
+      <pubDate>Thu, 20 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.19863v1</guid>
+    </item>
     <item>
       <title>Mechanistic Interpretability of Structure-Aware Numerical Reasoning in LLaMA 3.1 8B</title>
       <link>https://arxiv.org/abs/2608.18419v1</link>
@@ -21,6 +35,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Isabella Gidi, Antonio Almudévar, Core Francisco Park, Naomi Saphra, Ricard Marxer</p><p>Multilingual large language models often generalize across languages, and prior work suggests that their internal mechanisms can overlap cross-lingually. It remains unclear, however, when such sharing emerges and whether it varies with the overt realization of the same grammatical operation. We investigate this question for present-tense subject-verb agreement, a morphosyntactic process that varies substantially across languages and is only weakly expressed in English. Using activation patching </p><p><strong>Tags:</strong> circuits</p>]]></description>
       <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2608.18545v1</guid>
+    </item>
+    <item>
+      <title>Mechanistic Tomography: Designed Measurement for Control-Oriented Interpretability</title>
+      <link>https://arxiv.org/abs/2608.19338v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Vijay Erramilli</p><p>Mechanistic interpretability seeks quantities that models do not expose directly: represented states, component effects, interactions, and responses to interventions. Patching, gradients, Hessian-vector products, and subset interventions provide different measurements under different access assumptions and may target different quantities. We formulate their shared measurement structure as mechanistic tomography: designed measurement for recovering internal mechanisms and intervention effects.   </p>]]></description>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.19338v1</guid>
     </item>
     <item>
       <title>Protein Structure Prediction: From Evolutionary Constraints to Generative Modeling</title>
@@ -196,27 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Di Wu, Xiaohui Zhu</p><p>Latent-space communication allows heterogeneous vision-language model agents to exchange continuous representations without serializing visual and reasoning states into text. Vision Wormhole realizes this approach by translating visual features into a universal latent representation that can be consumed by another model, but every message is transported as a dense tensor of the same size regardless of its content. A fixed-capacity dense tensor therefore need not have a fixed effective informatio</p><p><strong>Tags:</strong> features, vision, reasoning</p>]]></description>
       <pubDate>Mon, 10 Aug 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2608.10198v1</guid>
-    </item>
-    <item>
-      <title>Can Graph Learning Learn Circuits?</title>
-      <link>https://arxiv.org/abs/2608.08536v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Chester Tan, Moritz Lampert, Courtney Maynard, Ankit Ramakrishnan, Tina Eliassi-Rad, et al.</p><p>Circuit localization is a mechanistic interpretability task whose goal is to identify a sparse subgraph of a transformer&#x27;s computation graph sufficient to reproduce a particular behavior. Most established methods localize circuits independently for each model--task pair. We instead frame circuit localization as a graph machine learning problem in which the edges of a computation graph represent computational pathways, and graph neural networks (GNNs) model interactions among these pathways. We i</p><p><strong>Tags:</strong> circuits</p>]]></description>
-      <pubDate>Sun, 09 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.08536v1</guid>
-    </item>
-    <item>
-      <title>Thinking vs. NoThinking: Towards Interpreting Reasoning Mechanisms of Large Language Models via Sparse Autoencoders</title>
-      <link>https://arxiv.org/abs/2608.08168v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Bo Cheng, Qiaolin Lu, Yi Chang, Yuan Wu</p><p>While Large Language Models (LLMs) employing Chain-of-Thought (CoT) exhibit superior reasoning capabilities, the neural mechanisms distinguishing this explicit Thinking mode from direct answer generation (NoThinking mode) remain poorly understood. To deconstruct this cognitive process, we apply Top-K Sparse Autoencoders (SAEs) to the intermediate representations of DeepSeek-R1-Distill-Qwen-7B and examine the model&#x27;s divergent behaviors across math-solving tasks of three distinct difficulty level</p><p><strong>Tags:</strong> SAE, reasoning</p>]]></description>
-      <pubDate>Sat, 08 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.08168v1</guid>
-    </item>
-    <item>
-      <title>&quot;Many Are My Names&quot;: The Anatomy of the Assistant and Its Personas via Sparse Autoencoders</title>
-      <link>https://arxiv.org/abs/2608.07852v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Adelaide Danilov, Aria Nourbakhsh, Oleksandr Marchenko Breneur, Salima Lamsiyah</p><p>How a language model internally represents who is speaking, the Assistant, an assigned roleplay persona, or a narrated story character, remains underexplored. We study speaker representations using a dataset of user-expressed emotional text and corresponding model responses. We decompose three generation settings (Assistant, Roleplay, and Story) into sparse autoencoder features extracted at turn-boundary and pronoun-token positions and selected through a filtering pipeline for different depths. </p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Sat, 08 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.07852v1</guid>
     </item>
   </channel>
 </rss>
