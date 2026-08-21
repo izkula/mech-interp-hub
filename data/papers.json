@@ -1,6 +1,35 @@
 {
-  "lastUpdated": "2026-08-20",
+  "lastUpdated": "2026-08-21",
   "papers": [
+    {
+      "id": "arxiv-2608-20117v1",
+      "title": "SAE-Xplainers: Rule-Based Feature Interpretation for Extreme Earth Events",
+      "authors": "Hugo Porta, Emanuele Dalsasso, Chang Xu, Theo Gnassounou, Devis Tuia",
+      "date": "2026-08-20",
+      "url": "https://arxiv.org/abs/2608.20117v1",
+      "abstract": "The emergence of large-scale Weather and Climate (W&C) datasets offers new opportunities for modeling extreme Earth events (ExEE) and their impacts using deep learning. However, their adoption in operational settings remains limited by the lack of models' interpretability. While for conventional text and image modalities, tools such as Sparse Autoencoders (SAEs) have proven effective for extracting human-understandable concepts, their use for the analysis of ExEE remains challenging due to the n",
+      "tags": [
+        "SAE",
+        "features",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2608-19863v1",
+      "title": "Listening Forward: Next Patch Embedding Prediction Enables Scalable Audio Learners",
+      "authors": "Umberto Cappellazzo, Xubo Liu, Stavros Petridis, Maja Pantic",
+      "date": "2026-08-20",
+      "url": "https://arxiv.org/abs/2608.19863v1",
+      "abstract": "Self-supervised learning (SSL) has driven substantial progress in audio representation learning, though existing methods have increasingly relied on elaborate pre-training recipes to reach competitive performance. A markedly different pre-training philosophy underpins the most influential progress in language modeling and, more recently, in visual representation learning: rather than train encoders as static feature extractors, models are trained to predict the next element, a discrete token or ",
+      "tags": [
+        "features",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2608-18419v1",
       "title": "Mechanistic Interpretability of Structure-Aware Numerical Reasoning in LLaMA 3.1 8B",
@@ -24,6 +53,17 @@
       "tags": [
         "circuits"
       ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2608-19338v1",
+      "title": "Mechanistic Tomography: Designed Measurement for Control-Oriented Interpretability",
+      "authors": "Vijay Erramilli",
+      "date": "2026-08-19",
+      "url": "https://arxiv.org/abs/2608.19338v1",
+      "abstract": "Mechanistic interpretability seeks quantities that models do not expose directly: represented states, component effects, interactions, and responses to interventions. Patching, gradients, Hessian-vector products, and subset interventions provide different measurements under different access assumptions and may target different quantities. We formulate their shared measurement structure as mechanistic tomography: designed measurement for recovering internal mechanisms and intervention effects.   ",
+      "tags": [],
       "source": "arXiv",
       "featured": false
     },
