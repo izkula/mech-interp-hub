@@ -1,6 +1,32 @@
 {
-  "lastUpdated": "2026-08-23",
+  "lastUpdated": "2026-08-24",
   "papers": [
+    {
+      "id": "arxiv-2608-20970v1",
+      "title": "Deep Learning Models Also Recall Features",
+      "authors": "Pierre Beckmann",
+      "date": "2026-08-21",
+      "url": "https://arxiv.org/abs/2608.20970v1",
+      "abstract": "Recent work in mechanistic interpretability has studied how large language models recall facts stored in their weights. This paper argues that factual recall points to something broader: a general kind of operation in deep learning models, which I call feature recall. The core observation is that a linear projection can be read as retrieving stored information scaled by input activations. I define feature recall, show it applies across architectures, and contrast it with the established paradigm",
+      "tags": [
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2608-21236v1",
+      "title": "RARE: Decoupling Representation Steering from Expert Routing in Mixture-of-Experts Language Models",
+      "authors": "Zhibo Zhang, Zhen Ouyang, Ling Shi, Kailong Wang",
+      "date": "2026-08-21",
+      "url": "https://arxiv.org/abs/2608.21236v1",
+      "abstract": "Representation engineering offers a lightweight means of controlling language-model behavior by modifying intermediate hidden states, but its direct application to Mixture-of-Experts (MoE) models introduces a structural mismatch. We first verify this failure mode through a series of empirical studies and find that preserving clean routing substantially recovers steering performance and that routing is more sensitive to semantic content than to behavioral changes under controlled content. Motivat",
+      "tags": [
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2608-20117v1",
       "title": "SAE-Xplainers: Rule-Based Feature Interpretation for Extreme Earth Events",
