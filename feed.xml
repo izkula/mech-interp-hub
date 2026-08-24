@@ -5,9 +5,23 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 23 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 24 Aug 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Deep Learning Models Also Recall Features</title>
+      <link>https://arxiv.org/abs/2608.20970v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Pierre Beckmann</p><p>Recent work in mechanistic interpretability has studied how large language models recall facts stored in their weights. This paper argues that factual recall points to something broader: a general kind of operation in deep learning models, which I call feature recall. The core observation is that a linear projection can be read as retrieving stored information scaled by input activations. I define feature recall, show it applies across architectures, and contrast it with the established paradigm</p><p><strong>Tags:</strong> features</p>]]></description>
+      <pubDate>Fri, 21 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.20970v1</guid>
+    </item>
+    <item>
+      <title>RARE: Decoupling Representation Steering from Expert Routing in Mixture-of-Experts Language Models</title>
+      <link>https://arxiv.org/abs/2608.21236v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Zhibo Zhang, Zhen Ouyang, Ling Shi, Kailong Wang</p><p>Representation engineering offers a lightweight means of controlling language-model behavior by modifying intermediate hidden states, but its direct application to Mixture-of-Experts (MoE) models introduces a structural mismatch. We first verify this failure mode through a series of empirical studies and find that preserving clean routing substantially recovers steering performance and that routing is more sensitive to semantic content than to behavioral changes under controlled content. Motivat</p><p><strong>Tags:</strong> steering</p>]]></description>
+      <pubDate>Fri, 21 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.21236v1</guid>
+    </item>
     <item>
       <title>SAE-Xplainers: Rule-Based Feature Interpretation for Extreme Earth Events</title>
       <link>https://arxiv.org/abs/2608.20117v1</link>
@@ -203,20 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Bocheng Chen, Han Zi, Roucheng Ou, Yawei Liu, Minyue Chen, et al.</p><p>In the era of large language models (LLMs), attackers often manipulate natural language to elicit unsafe or harmful outputs, creating a new natural language attack surface unique to LLM-based systems, where attacks directly exploit explicit linguistic cues in user prompts to bypass the safety mechanism of LLMs. However, such attacks can often be mitigated by existing safety alignment algorithms. On the other hand, human language is inherently grounded in pragmatics, necessitating typical context</p><p><strong>Tags:</strong> safety</p>]]></description>
       <pubDate>Mon, 10 Aug 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2608.09551v1</guid>
-    </item>
-    <item>
-      <title>Intrinsic Structure: Spectral Identifiability for Mechanistic Interpretability</title>
-      <link>https://arxiv.org/abs/2608.10172v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Ashim Dhor, Pin-Yu Chen</p><p>Mechanistic interpretability explains models by identifying circuits inside them, but has no way to tell whether a circuit is a property of the model or an artifact of the method that found it. Sparse autoencoders illustrate the problem: different seeds and widths recover materially different features from the same activations, and no theory says whether that variability is incidental or structural. We put dictionary learning for interpretability on an identifiability footing. Treating the forwa</p><p><strong>Tags:</strong> SAE, circuits, features, theory</p>]]></description>
-      <pubDate>Mon, 10 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.10172v1</guid>
-    </item>
-    <item>
-      <title>Post-Hoc Sparse Coding of Latent Communication Between Vision-Language Model Agents</title>
-      <link>https://arxiv.org/abs/2608.10198v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Di Wu, Xiaohui Zhu</p><p>Latent-space communication allows heterogeneous vision-language model agents to exchange continuous representations without serializing visual and reasoning states into text. Vision Wormhole realizes this approach by translating visual features into a universal latent representation that can be consumed by another model, but every message is transported as a dense tensor of the same size regardless of its content. A fixed-capacity dense tensor therefore need not have a fixed effective informatio</p><p><strong>Tags:</strong> features, vision, reasoning</p>]]></description>
-      <pubDate>Mon, 10 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.10198v1</guid>
     </item>
   </channel>
 </rss>
