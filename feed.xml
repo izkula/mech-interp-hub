@@ -5,9 +5,51 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 24 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 25 Aug 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Grounding Isn&#x27;t Knowing: Do VLMs Need Object Localization for Spatial Reasoning?</title>
+      <link>https://arxiv.org/abs/2608.23074v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Xiwei Liu, Yulong Li, Xinlin Zhuang, Xuhui Li, Zhixiang Lu, et al.</p><p>Vision-language models (VLMs) can answer spatial questions, yet the mechanisms connecting object grounding to spatial reasoning remain poorly understood. It is underexplored whether spatial reasoning internally requires precise objects localization, or can bypass explicit localization through global layout cues. In this work, we investigate two representative model families, LLaVA-1.5 and Qwen2.5-VL, using a suite of mechanistic interpretability tools, including token ablation, layer-wise probin</p><p><strong>Tags:</strong> vision, reasoning</p>]]></description>
+      <pubDate>Mon, 24 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.23074v1</guid>
+    </item>
+    <item>
+      <title>What AstroPT knows about galaxies, and what that can teach us about LLMs</title>
+      <link>https://arxiv.org/abs/2608.22614v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong>  UniverseTBD,  :, Kshitij Duraphe, Aman Kumar, Michael J. Smith, et al.</p><p>Interpretability research increasingly asks when concepts emerge during training and whether linear probes recover real structure, but in language models these claims are hard to validate because language offers little ground-truth ordering of concepts or relationships among them. We propose the use of astronomical ground truth through AstroPT, a transformer trained on millions of galaxy images, as a calibration testbed. AstroPT is an LLM-like model trained within a domain where the difficulty o</p><p><strong>Tags:</strong> probing, vision</p>]]></description>
+      <pubDate>Sun, 23 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.22614v1</guid>
+    </item>
+    <item>
+      <title>Mechanistic Interpretability of Chain-of-Thought Reasoning via Sequential Activation Patching</title>
+      <link>https://arxiv.org/abs/2608.22332v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Murat Dura, Serkan Öztürk, Selma Tekir</p><p>Large Language Models (LLMs) demonstrate remarkable problem-solving capabilities when guided by Chain-of-Thought (CoT) prompting, yet the internal mechanisms underlying these improvements remain poorly understood. In this work, we investigate where CoT-related causal effects emerge across the generated reasoning trajectory and which attention heads carry signals that contribute to final-answer computation. Because CoT reasoning unfolds over multiple generated tokens, standard activation patching</p><p><strong>Tags:</strong> attention, reasoning</p>]]></description>
+      <pubDate>Sun, 23 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.22332v1</guid>
+    </item>
+    <item>
+      <title>Why Does Robustness Reduce Superposition?</title>
+      <link>https://arxiv.org/abs/2608.22155v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Adam Elimadi</p><p>The study of adversarial examples and their origins remains an open area of research. Mechanistic interpretability, and superposition in particular, offers new avenues for approaching this problem. Gorton &amp; Lewis (2025) demonstrate that adversarial examples arise from superposition and show empirically that adversarial training reduces superposition, yet provide no mechanistic account of why this occurs. We present an empirical explanation inspired by the feature taxonomy of Ilyas et al. (2019),</p><p><strong>Tags:</strong> superposition, features</p>]]></description>
+      <pubDate>Sun, 23 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.22155v1</guid>
+    </item>
+    <item>
+      <title>Align, Unify, Suppress, Route: A Coherentist View of Transformer Computation</title>
+      <link>https://arxiv.org/abs/2608.22034v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Nura Aljaafari, Andre Freitas</p><p>Mechanistic interpretability has identified transformer circuits, but lacks a shared vocabulary for describing how their functions compose across tasks and architectures. We introduce Coherentist Probabilistic Compositionalism (CPC), an interpretive framework that grounds transformer computation in coherentist theories of interpretation and describes it through four operator roles. Alignment identifies candidate relations, unification integrates supporting information, suppression reduces incomp</p><p><strong>Tags:</strong> circuits, safety</p>]]></description>
+      <pubDate>Sat, 22 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.22034v1</guid>
+    </item>
+    <item>
+      <title>The Communication Map of a Transformer</title>
+      <link>https://arxiv.org/abs/2608.22007v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Richard Zhe Wang</p><p>The components of a transformer communicate by writing to and reading from a shared residual stream, and mechanistic interpretability has mapped these connections by hand, one circuit at a time. We present the communication map, which charts every potential communication channel in a language model from weights alone, generalizing the composition score of Elhage et al. (2021) into a single coupling coefficient covering all 18 connection classes, from entire attention head circuits to single neur</p><p><strong>Tags:</strong> circuits, attention</p>]]></description>
+      <pubDate>Sat, 22 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.22007v1</guid>
+    </item>
     <item>
       <title>Deep Learning Models Also Recall Features</title>
       <link>https://arxiv.org/abs/2608.20970v1</link>
@@ -175,48 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Naren Kumar S, Tirth Bhatt, Mayank Singh</p><p>Vision-language models can describe an image with remarkable accuracy, yet a more fundamental question remains unanswered: what visual information actually drives their answers? In this work, we investigate this question through causal tracing, and we observe that highly causal vision tokens often lie outside the target region. Extending the analysis to larger vision-language models reveals a similar pattern across models and corruption settings, suggesting that strong multimodal performance doe</p><p><strong>Tags:</strong> vision</p>]]></description>
       <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2608.10758v1</guid>
-    </item>
-    <item>
-      <title>Measuring Semantic Abstractness of SAE Features via Nonlocality</title>
-      <link>https://arxiv.org/abs/2608.10537v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Chuqiao Lin, Shivaji Sondhi, Xiao-Liang Qi</p><p>Sparse autoencoders (SAEs) have helped uncover mechanistic explanations for LLM behaviours such as reasoning, jailbreaking etc., via understanding the corresponding task-relevant and causally effective features. To evaluate such mechanistic explanations, downstream studies must distinguish surface lexical features from genuinely high-level ones. However, neither an autointerp-based semantic description nor causal steering utility fully resolves the abstraction level of a feature. To this end, we</p><p><strong>Tags:</strong> SAE, features, steering, reasoning</p>]]></description>
-      <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.10537v1</guid>
-    </item>
-    <item>
-      <title>Who Bridges Safety? Identifying and Targeting Cross-Lingual Shared Safety Pathways</title>
-      <link>https://arxiv.org/abs/2608.09095v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Shuyi Miao, Wangjie Qiu, Pengyang Shao, Canran Xiao, Fei Shen, et al.</p><p>Uncovering the internal mechanisms underlying the safety capabilities of large language models (LLMs) is crucial for developing trustworthy artificial intelligence. Currently, mechanistic interpretability studies on multilingual safety are largely confined to local components, such as isolated neurons. However, this static and fragmented perspective overlooks the synergy among components and fails to elucidate how safety signals dynamically propagate within the model to drive safety decisions ul</p><p><strong>Tags:</strong> safety</p>]]></description>
-      <pubDate>Mon, 10 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.09095v1</guid>
-    </item>
-    <item>
-      <title>Label-Free Parkinson&#x27;s Disease Screening from Face and Voice through Mechanistic Interpretability</title>
-      <link>https://arxiv.org/abs/2608.08976v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Jiaheng Su, Yu Sun</p><p>Parkinson&#x27;s disease (PD) is the second most common neurodegenerative disorder. Typical machine learning screening methods require PD labels, but the available data is limited by privacy concerns and the need for expert annotation. We propose a label-free face-plus-voice PD screen built entirely on frozen pretrained encoders--a face-expression Vision Transformer and HuBERT--in which no PD label touches any fit; the reference is training controls only. The voice modality uses a synthetic-dysarthri</p><p><strong>Tags:</strong> vision</p>]]></description>
-      <pubDate>Mon, 10 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.08976v1</guid>
-    </item>
-    <item>
-      <title>Multimodal Model Diffing for Feature Discovery and Control</title>
-      <link>https://arxiv.org/abs/2608.09928v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Hunar Batra, Lachin Naghashyar, Ashkan Khakzar, Philip Torr, Christian Schroeder de Witt, et al.</p><p>Multimodal Large Language Models (MLLMs) exhibit strong visual understanding, yet the internal features that cause these behaviors remain difficult to identify, audit, or control. While applicable to post-hoc inspection, hidden states that are decomposed into interpretable feature directions using sparse autoencoders (SAEs) neither readily isolate which features are changed by multimodal training, nor are they directly useful for targeted control. We introduce MMDiff, a multimodal model-diffing </p><p><strong>Tags:</strong> SAE, features, vision</p>]]></description>
-      <pubDate>Mon, 10 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.09928v1</guid>
-    </item>
-    <item>
-      <title>One Adapter Pair per Model: A Universal Activation Interface for Language Models</title>
-      <link>https://arxiv.org/abs/2608.09521v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Su-Hyeon Kim, Jiwan Mun, Yo-Sub Han</p><p>Activation-based tools are usually tied to one model&#x27;s native hidden space, requiring probes, sparse autoencoders, and natural-language interpreters to be rebuilt or rediscovered for each new language model. We present a Universal Activation Bus, a framework that provides a common activation interface across compatible language models. Using a small set of source models, we learn a shared dense space together with one lightweight linear encoder--decoder adapter pair per model. After source train</p><p><strong>Tags:</strong> SAE, probing</p>]]></description>
-      <pubDate>Mon, 10 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.09521v1</guid>
-    </item>
-    <item>
-      <title>Pragmatic Attack Surface: Vulnerabilities of Implicit Context in Large Language Models</title>
-      <link>https://arxiv.org/abs/2608.09551v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Bocheng Chen, Han Zi, Roucheng Ou, Yawei Liu, Minyue Chen, et al.</p><p>In the era of large language models (LLMs), attackers often manipulate natural language to elicit unsafe or harmful outputs, creating a new natural language attack surface unique to LLM-based systems, where attacks directly exploit explicit linguistic cues in user prompts to bypass the safety mechanism of LLMs. However, such attacks can often be mitigated by existing safety alignment algorithms. On the other hand, human language is inherently grounded in pragmatics, necessitating typical context</p><p><strong>Tags:</strong> safety</p>]]></description>
-      <pubDate>Mon, 10 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.09551v1</guid>
     </item>
   </channel>
 </rss>
