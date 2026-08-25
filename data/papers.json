@@ -1,6 +1,90 @@
 {
-  "lastUpdated": "2026-08-24",
+  "lastUpdated": "2026-08-25",
   "papers": [
+    {
+      "id": "arxiv-2608-23074v1",
+      "title": "Grounding Isn't Knowing: Do VLMs Need Object Localization for Spatial Reasoning?",
+      "authors": "Xiwei Liu, Yulong Li, Xinlin Zhuang, Xuhui Li, Zhixiang Lu, et al.",
+      "date": "2026-08-24",
+      "url": "https://arxiv.org/abs/2608.23074v1",
+      "abstract": "Vision-language models (VLMs) can answer spatial questions, yet the mechanisms connecting object grounding to spatial reasoning remain poorly understood. It is underexplored whether spatial reasoning internally requires precise objects localization, or can bypass explicit localization through global layout cues. In this work, we investigate two representative model families, LLaVA-1.5 and Qwen2.5-VL, using a suite of mechanistic interpretability tools, including token ablation, layer-wise probin",
+      "tags": [
+        "vision",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2608-22614v1",
+      "title": "What AstroPT knows about galaxies, and what that can teach us about LLMs",
+      "authors": " UniverseTBD,  :, Kshitij Duraphe, Aman Kumar, Michael J. Smith, et al.",
+      "date": "2026-08-23",
+      "url": "https://arxiv.org/abs/2608.22614v1",
+      "abstract": "Interpretability research increasingly asks when concepts emerge during training and whether linear probes recover real structure, but in language models these claims are hard to validate because language offers little ground-truth ordering of concepts or relationships among them. We propose the use of astronomical ground truth through AstroPT, a transformer trained on millions of galaxy images, as a calibration testbed. AstroPT is an LLM-like model trained within a domain where the difficulty o",
+      "tags": [
+        "probing",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2608-22332v1",
+      "title": "Mechanistic Interpretability of Chain-of-Thought Reasoning via Sequential Activation Patching",
+      "authors": "Murat Dura, Serkan \u00d6zt\u00fcrk, Selma Tekir",
+      "date": "2026-08-23",
+      "url": "https://arxiv.org/abs/2608.22332v1",
+      "abstract": "Large Language Models (LLMs) demonstrate remarkable problem-solving capabilities when guided by Chain-of-Thought (CoT) prompting, yet the internal mechanisms underlying these improvements remain poorly understood. In this work, we investigate where CoT-related causal effects emerge across the generated reasoning trajectory and which attention heads carry signals that contribute to final-answer computation. Because CoT reasoning unfolds over multiple generated tokens, standard activation patching",
+      "tags": [
+        "attention",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2608-22155v1",
+      "title": "Why Does Robustness Reduce Superposition?",
+      "authors": "Adam Elimadi",
+      "date": "2026-08-23",
+      "url": "https://arxiv.org/abs/2608.22155v1",
+      "abstract": "The study of adversarial examples and their origins remains an open area of research. Mechanistic interpretability, and superposition in particular, offers new avenues for approaching this problem. Gorton & Lewis (2025) demonstrate that adversarial examples arise from superposition and show empirically that adversarial training reduces superposition, yet provide no mechanistic account of why this occurs. We present an empirical explanation inspired by the feature taxonomy of Ilyas et al. (2019),",
+      "tags": [
+        "superposition",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2608-22034v1",
+      "title": "Align, Unify, Suppress, Route: A Coherentist View of Transformer Computation",
+      "authors": "Nura Aljaafari, Andre Freitas",
+      "date": "2026-08-22",
+      "url": "https://arxiv.org/abs/2608.22034v1",
+      "abstract": "Mechanistic interpretability has identified transformer circuits, but lacks a shared vocabulary for describing how their functions compose across tasks and architectures. We introduce Coherentist Probabilistic Compositionalism (CPC), an interpretive framework that grounds transformer computation in coherentist theories of interpretation and describes it through four operator roles. Alignment identifies candidate relations, unification integrates supporting information, suppression reduces incomp",
+      "tags": [
+        "circuits",
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2608-22007v1",
+      "title": "The Communication Map of a Transformer",
+      "authors": "Richard Zhe Wang",
+      "date": "2026-08-22",
+      "url": "https://arxiv.org/abs/2608.22007v1",
+      "abstract": "The components of a transformer communicate by writing to and reading from a shared residual stream, and mechanistic interpretability has mapped these connections by hand, one circuit at a time. We present the communication map, which charts every potential communication channel in a language model from weights alone, generalizing the composition score of Elhage et al. (2021) into a single coupling coefficient covering all 18 connection classes, from entire attention head circuits to single neur",
+      "tags": [
+        "circuits",
+        "attention"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2608-20970v1",
       "title": "Deep Learning Models Also Recall Features",
