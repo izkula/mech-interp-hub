@@ -1,6 +1,57 @@
 {
-  "lastUpdated": "2026-08-25",
+  "lastUpdated": "2026-08-26",
   "papers": [
+    {
+      "id": "arxiv-2608-24758v1",
+      "title": "RACE: Scalable Statistical Estimation of Functional Consistency in LLM Neurons",
+      "authors": "Runyu Wang, Bo Liu, Xiaxin Zhang, Yu Han, Jiawei Cao, et al.",
+      "date": "2026-08-25",
+      "url": "https://arxiv.org/abs/2608.24758v1",
+      "abstract": "Discovering stable neuron behavior across entire domains remains a challenge in mechanistic interpretability. Existing methods often rely on instance-level point estimates or computationally expensive procedures, which either obscure population-level variability or limit scalable domain-wide analysis. We present RACE (Residual Alignment for Consistency Estimation), a forward-pass statistical framework that evaluates the domain-wide functional consistency of Transformer neurons. Perturbation expe",
+      "tags": [
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2608-24482v1",
+      "title": "Beyond Static Interpretability: Anticipating Post-SFT Mechanisms from Pre-SFT Parameters for Better Tuning",
+      "authors": "Hang Chen, Jiaying Zhu, Wenya Wang",
+      "date": "2026-08-25",
+      "url": "https://arxiv.org/abs/2608.24482v1",
+      "abstract": "Mechanistic Localization bridges mechanistic interpretability and post-training optimization by isolating critical parameters via interpretative approaches and then guiding parameter-efficient Supervised Fine-Tuning (SFT) in a ``locating-then-tuning'' paradigm. However, due to the retrospective nature of mechanistic interpretability, directly interpreting pre-SFT models introduces misleading conclusions. Specifically for novel tasks, initially identified neurons differ drastically from those gov",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2608-24065v1",
+      "title": "Mechanistic Circuit Identification for Controllable Data Generation",
+      "authors": "Nakyung Lee, Sangwoo Hong, Jungwoo Lee",
+      "date": "2026-08-25",
+      "url": "https://arxiv.org/abs/2608.24065v1",
+      "abstract": "While recent advances in data synthesis aim to curate high-quality datasets, most generation pipelines still rely on heuristic prompt-based control. This black-box paradigm provides limited insight into how individual samples interact with a model's underlying learning dynamics. To bridge this gap, we propose a circuit-grounded framework that connects training-dynamics-based data valuation with mechanistic interpretability (MI). Specifically, we conceptualize data quality along three complementa",
+      "tags": [
+        "circuits"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2608-24007v1",
+      "title": "Revenge of Monosemanticity: Specialized Neurons Improve Data Efficiency in MLPs",
+      "authors": "Amirhesam Abedsoltan, Enric Boix-Adsera, Fivos Kalogiannis, Mikhail Belkin",
+      "date": "2026-08-25",
+      "url": "https://arxiv.org/abs/2608.24007v1",
+      "abstract": "Understanding how neural networks learn and organize features is central to understanding their behavior. Much existing theory of feature learning has focused on the emergence of a global low-dimensional predictive geometry. We show that this picture is incomplete. In regression problems with clustered data, we demonstrate that multilayer perceptrons (MLPs) naturally develop monosemantic specialized neurons: individual neurons become strongly aligned with a specific predictive feature relevant t",
+      "tags": [
+        "features",
+        "theory"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2608-23074v1",
       "title": "Grounding Isn't Knowing: Do VLMs Need Object Localization for Spatial Reasoning?",
@@ -10,6 +61,21 @@
       "abstract": "Vision-language models (VLMs) can answer spatial questions, yet the mechanisms connecting object grounding to spatial reasoning remain poorly understood. It is underexplored whether spatial reasoning internally requires precise objects localization, or can bypass explicit localization through global layout cues. In this work, we investigate two representative model families, LLaVA-1.5 and Qwen2.5-VL, using a suite of mechanistic interpretability tools, including token ablation, layer-wise probin",
       "tags": [
         "vision",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2608-23809v1",
+      "title": "Discovering Cross-Language Reasoning Invariance in LLMs with Geometry-Invariant Sparse Autoencoders",
+      "authors": "Igor Bogdanov, Changcheng Huang",
+      "date": "2026-08-24",
+      "url": "https://arxiv.org/abs/2608.23809v1",
+      "abstract": "Multilingual language models can solve the same mathematical problem in different languages, but it remains unclear whether they rely on shared features or on language-specific computations that only produce similar outputs. We study this question in five models from four families using the Multilingual Grade School Math (MGSM) dataset, with problems solved in English, German, French, Spanish, Russian, and Chinese, retaining problems with valid reasoning traces in all six languages and replaying",
+      "tags": [
+        "SAE",
+        "features",
         "reasoning"
       ],
       "source": "arXiv",
@@ -53,6 +119,20 @@
       "tags": [
         "superposition",
         "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2608-23634v1",
+      "title": "The Blending Ratio Is Not Where the Performance Is: Diagnosing Prototype Blending for Few-Shot Adaptation of Vision-Language Models",
+      "authors": "Liangzhi Li, Bowen Wang, Yiming Qian, Thorsten Neumann, Xia Xie, et al.",
+      "date": "2026-08-23",
+      "url": "https://arxiv.org/abs/2608.23634v1",
+      "abstract": "Many few-shot adaptation methods for vision-language models classify with a convex combination of the zero-shot text prototype and the mean of the K labelled image features, with a single blending ratio routinely tuned on held-out labels, often on the test set itself. We ask what the family's own bias-variance justification invites: what is the right ratio, can it be estimated without validation data, and is finding it where the performance is? First, the ratio minimising prototype mean-squared ",
+      "tags": [
+        "features",
+        "vision"
       ],
       "source": "arXiv",
       "featured": false
