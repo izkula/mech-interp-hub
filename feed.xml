@@ -5,15 +5,50 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 25 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 26 Aug 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>RACE: Scalable Statistical Estimation of Functional Consistency in LLM Neurons</title>
+      <link>https://arxiv.org/abs/2608.24758v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Runyu Wang, Bo Liu, Xiaxin Zhang, Yu Han, Jiawei Cao, et al.</p><p>Discovering stable neuron behavior across entire domains remains a challenge in mechanistic interpretability. Existing methods often rely on instance-level point estimates or computationally expensive procedures, which either obscure population-level variability or limit scalable domain-wide analysis. We present RACE (Residual Alignment for Consistency Estimation), a forward-pass statistical framework that evaluates the domain-wide functional consistency of Transformer neurons. Perturbation expe</p><p><strong>Tags:</strong> safety</p>]]></description>
+      <pubDate>Tue, 25 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.24758v1</guid>
+    </item>
+    <item>
+      <title>Beyond Static Interpretability: Anticipating Post-SFT Mechanisms from Pre-SFT Parameters for Better Tuning</title>
+      <link>https://arxiv.org/abs/2608.24482v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Hang Chen, Jiaying Zhu, Wenya Wang</p><p>Mechanistic Localization bridges mechanistic interpretability and post-training optimization by isolating critical parameters via interpretative approaches and then guiding parameter-efficient Supervised Fine-Tuning (SFT) in a ``locating-then-tuning&#x27;&#x27; paradigm. However, due to the retrospective nature of mechanistic interpretability, directly interpreting pre-SFT models introduces misleading conclusions. Specifically for novel tasks, initially identified neurons differ drastically from those gov</p>]]></description>
+      <pubDate>Tue, 25 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.24482v1</guid>
+    </item>
+    <item>
+      <title>Mechanistic Circuit Identification for Controllable Data Generation</title>
+      <link>https://arxiv.org/abs/2608.24065v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Nakyung Lee, Sangwoo Hong, Jungwoo Lee</p><p>While recent advances in data synthesis aim to curate high-quality datasets, most generation pipelines still rely on heuristic prompt-based control. This black-box paradigm provides limited insight into how individual samples interact with a model&#x27;s underlying learning dynamics. To bridge this gap, we propose a circuit-grounded framework that connects training-dynamics-based data valuation with mechanistic interpretability (MI). Specifically, we conceptualize data quality along three complementa</p><p><strong>Tags:</strong> circuits</p>]]></description>
+      <pubDate>Tue, 25 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.24065v1</guid>
+    </item>
+    <item>
+      <title>Revenge of Monosemanticity: Specialized Neurons Improve Data Efficiency in MLPs</title>
+      <link>https://arxiv.org/abs/2608.24007v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Amirhesam Abedsoltan, Enric Boix-Adsera, Fivos Kalogiannis, Mikhail Belkin</p><p>Understanding how neural networks learn and organize features is central to understanding their behavior. Much existing theory of feature learning has focused on the emergence of a global low-dimensional predictive geometry. We show that this picture is incomplete. In regression problems with clustered data, we demonstrate that multilayer perceptrons (MLPs) naturally develop monosemantic specialized neurons: individual neurons become strongly aligned with a specific predictive feature relevant t</p><p><strong>Tags:</strong> features, theory</p>]]></description>
+      <pubDate>Tue, 25 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.24007v1</guid>
+    </item>
     <item>
       <title>Grounding Isn&#x27;t Knowing: Do VLMs Need Object Localization for Spatial Reasoning?</title>
       <link>https://arxiv.org/abs/2608.23074v1</link>
       <description><![CDATA[<p><strong>Authors:</strong> Xiwei Liu, Yulong Li, Xinlin Zhuang, Xuhui Li, Zhixiang Lu, et al.</p><p>Vision-language models (VLMs) can answer spatial questions, yet the mechanisms connecting object grounding to spatial reasoning remain poorly understood. It is underexplored whether spatial reasoning internally requires precise objects localization, or can bypass explicit localization through global layout cues. In this work, we investigate two representative model families, LLaVA-1.5 and Qwen2.5-VL, using a suite of mechanistic interpretability tools, including token ablation, layer-wise probin</p><p><strong>Tags:</strong> vision, reasoning</p>]]></description>
       <pubDate>Mon, 24 Aug 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2608.23074v1</guid>
+    </item>
+    <item>
+      <title>Discovering Cross-Language Reasoning Invariance in LLMs with Geometry-Invariant Sparse Autoencoders</title>
+      <link>https://arxiv.org/abs/2608.23809v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Igor Bogdanov, Changcheng Huang</p><p>Multilingual language models can solve the same mathematical problem in different languages, but it remains unclear whether they rely on shared features or on language-specific computations that only produce similar outputs. We study this question in five models from four families using the Multilingual Grade School Math (MGSM) dataset, with problems solved in English, German, French, Spanish, Russian, and Chinese, retaining problems with valid reasoning traces in all six languages and replaying</p><p><strong>Tags:</strong> SAE, features, reasoning</p>]]></description>
+      <pubDate>Mon, 24 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.23809v1</guid>
     </item>
     <item>
       <title>What AstroPT knows about galaxies, and what that can teach us about LLMs</title>
@@ -35,6 +70,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Adam Elimadi</p><p>The study of adversarial examples and their origins remains an open area of research. Mechanistic interpretability, and superposition in particular, offers new avenues for approaching this problem. Gorton &amp; Lewis (2025) demonstrate that adversarial examples arise from superposition and show empirically that adversarial training reduces superposition, yet provide no mechanistic account of why this occurs. We present an empirical explanation inspired by the feature taxonomy of Ilyas et al. (2019),</p><p><strong>Tags:</strong> superposition, features</p>]]></description>
       <pubDate>Sun, 23 Aug 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2608.22155v1</guid>
+    </item>
+    <item>
+      <title>The Blending Ratio Is Not Where the Performance Is: Diagnosing Prototype Blending for Few-Shot Adaptation of Vision-Language Models</title>
+      <link>https://arxiv.org/abs/2608.23634v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Liangzhi Li, Bowen Wang, Yiming Qian, Thorsten Neumann, Xia Xie, et al.</p><p>Many few-shot adaptation methods for vision-language models classify with a convex combination of the zero-shot text prototype and the mean of the K labelled image features, with a single blending ratio routinely tuned on held-out labels, often on the test set itself. We ask what the family&#x27;s own bias-variance justification invites: what is the right ratio, can it be estimated without validation data, and is finding it where the performance is? First, the ratio minimising prototype mean-squared </p><p><strong>Tags:</strong> features, vision</p>]]></description>
+      <pubDate>Sun, 23 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.23634v1</guid>
     </item>
     <item>
       <title>Align, Unify, Suppress, Route: A Coherentist View of Transformer Computation</title>
@@ -175,48 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Valentin Noël</p><p>Sparse autoencoders are meant to name the things a language model computes, and the usual way to check that a latent matters is to switch it off and see what changes. But a latent fires at many tokens, and the effect has to be measured at one of them. The convention is to measure where the latent fires hardest. That choice is almost never reported, and it is not made by the experimenter: it is made by the dictionary under evaluation. Change the dictionary and the measurement moves to a different</p><p><strong>Tags:</strong> SAE</p>]]></description>
       <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2608.13337v1</guid>
-    </item>
-    <item>
-      <title>Explanation Multiplicity: Circuit-Level Interpretability Evidence Does Not Survive Defensible Analytic Variation</title>
-      <link>https://arxiv.org/abs/2608.13754v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Ajay Pravin Mahale</p><p>The EU AI Act requires providers of high-risk systems to file technical documentation describing how the system reaches its decisions. Mechanistic interpretability is the obvious source of such evidence, and circuit discovery is its most developed instrument. We ask whether that evidence survives the condition under which it would be relied upon: two competent analysts, the same system, the same tool, different defensible settings.   We pre-registered a crossed grid of seven analytic axes, every</p><p><strong>Tags:</strong> circuits</p>]]></description>
-      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.13754v1</guid>
-    </item>
-    <item>
-      <title>From Interpretability to Control: Insights from Six Years of the TrustNLP Workshop</title>
-      <link>https://arxiv.org/abs/2608.11171v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Rahul Gupta, Abhinav Mohanty, Anaelia Ovalle, Anil Ramakrishna, Anubrata Das, et al.</p><p>The Workshop on Trustworthy Natural Language Processing (TrustNLP), co-located with major ACL conferences since 2021, has grown from 8 proceedings papers to 41 over six editions, documenting a field-wide transition from post-hoc interpretability of static models to mechanistic understanding and proactive control of generative systems. We synthesize insights from all 144 proceedings papers, classifying them along six trust dimensions grounded in established frameworks (TrustLLM, DecodingTrust). W</p>]]></description>
-      <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.11171v1</guid>
-    </item>
-    <item>
-      <title>Beyond a Bag of Features: Set-Level Instability in Sparse Autoencoders</title>
-      <link>https://arxiv.org/abs/2608.11197v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Nikolai Bolik, Lennart Stöpler, Artur Andrzejak</p><p>Shani et al. (2026) show that LLM representations broadly recover human category boundaries, while failing to reflect fine-grained typicality structure. Their analysis uses cosine similarity over dense model representations. We revisit their approach using overlap over active sparse autoencoder (SAE) latent sets as a more interpretable similarity measure. We first verify that this set-level measure is meaningful: SAE latent sets can recover union-like compositional structure in controlled toy mo</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.11197v1</guid>
-    </item>
-    <item>
-      <title>Data Attribution of Emergent Misalignment with Persona Features</title>
-      <link>https://arxiv.org/abs/2608.11025v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Clemens Vetter, David Kaczér, Lucie Flek, Florian Mai</p><p>Emergent misalignment (EM) is the phenomenon where fine-tuning a language model on a narrow task leads to harmful behavior in unrelated domains. A leading mechanistic account attributes EM to persona features: latent directions acquired during pre-training that misaligned fine-tuning amplifies. We ask where these features come from: which pre-training documents activate them, and whether naturally occurring human-written text suffices to induce EM. Using Sparse Autoencoder (SAE) based model diff</p><p><strong>Tags:</strong> SAE, features, safety</p>]]></description>
-      <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.11025v1</guid>
-    </item>
-    <item>
-      <title>PEAK: Precise and Persistent Concept Erasure via k-Sparse Autoencoders</title>
-      <link>https://arxiv.org/abs/2608.10985v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Man Jiang, Ouxiang Li, Weibao Xue, Zhenhua Tang, Yuan Wang, et al.</p><p>Erasing concepts from large-scale text-to-image (T2I) diffusion models has become increasingly crucial due to the growing concerns over copyright infringement, privacy violations, and offensive content. Existing approaches struggle to achieve both precise and persistent concept erasure: inaccurate localization of concept-related representations may cause unintended semantic interference, while incomplete removal of the underlying concept knowledge allows adversarial recovery. To address this dil</p><p><strong>Tags:</strong> SAE, vision</p>]]></description>
-      <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.10985v1</guid>
-    </item>
-    <item>
-      <title>Where To Look? : Causal Tracing of Vision Encoders in VLM</title>
-      <link>https://arxiv.org/abs/2608.10758v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Naren Kumar S, Tirth Bhatt, Mayank Singh</p><p>Vision-language models can describe an image with remarkable accuracy, yet a more fundamental question remains unanswered: what visual information actually drives their answers? In this work, we investigate this question through causal tracing, and we observe that highly causal vision tokens often lie outside the target region. Extending the analysis to larger vision-language models reveals a similar pattern across models and corruption settings, suggesting that strong multimodal performance doe</p><p><strong>Tags:</strong> vision</p>]]></description>
-      <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.10758v1</guid>
     </item>
   </channel>
 </rss>
