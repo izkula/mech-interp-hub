@@ -5,9 +5,37 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 26 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 27 Aug 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Finding and using interpretable latents in a neutrino foundation model with sparse autoencoders</title>
+      <link>https://arxiv.org/abs/2608.26090v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Raphaël Bonnet-Guerrini, Johann Ioannou-Nikolaides, Inar Timiryasov, Vincenzo Piuri</p><p>We present a first application of sparse-autoencoder-based mechanistic interpretability to particle physics. Studying a neutrino foundation model pretrained on IceCube data and fine-tuned for direction reconstruction, we identify a validated atlas of physical concepts in the model representation, using a strict validation protocol consisting of held-out tests, matched nuisance controls, and replication across independent dictionary trainings. Causal interventions show that the direction head bar</p><p><strong>Tags:</strong> SAE</p>]]></description>
+      <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.26090v1</guid>
+    </item>
+    <item>
+      <title>When Pruning Meets Interpretability: Preserving Sparse Autoencoder Robustness in LLMs</title>
+      <link>https://arxiv.org/abs/2608.25941v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Suchit Gupte, Xueru Zhang, Mohammad Mahdi Khalili</p><p>Sparse autoencoders (SAEs) are widely used to interpret the internal representations of large language models (LLMs), yet their reliability under post-hoc model compression remains poorly understood. We present a systematic study of how pruning affects SAE behavior and theoretically show that, for a fixed SAE, its impact is governed by perturbation energy, a covariance-weighted norm. This perspective exposes a key limitation of magnitude pruning: by ignoring activation geometry, it distorts the </p><p><strong>Tags:</strong> SAE, theory</p>]]></description>
+      <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.25941v1</guid>
+    </item>
+    <item>
+      <title>LMSM: LLM Security Framework Inspired by Linux Security Modules</title>
+      <link>https://arxiv.org/abs/2608.25697v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> XiuYu Zhang, Bonan Ruan, Junfeng Fang, An Zhang, Tat-Seng Chua, et al.</p><p>Large language models (LLMs) are increasingly deployed with layered defenses, yet malicious prompts can still bypass them. Interpretability methods can expose model-internal signals along the generation path that could inform enforcement, but these signals are not security controls by themselves. Deployments that adapt them for safety typically couple each signal to its own calibration, policy logic, and intervention code, so each new artifact creates integration work instead of strengthening a </p><p><strong>Tags:</strong> safety</p>]]></description>
+      <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.25697v1</guid>
+    </item>
+    <item>
+      <title>Escaping Low-Dimensional Overlap: Multi-Task Model Merging via High-Dimensional Sparse Disentanglement</title>
+      <link>https://arxiv.org/abs/2608.25354v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Yihang Zhang, Shengke Sun, Junjie Wen, Feng Zeng</p><p>Model merging provides an efficient way to construct multi-task generalist models without additional training, but its performance often degrades under severe task interference. Task interference in model merging primarily stems from \textit{superposition}, where task-specific features become entangled within the parameter space. This entanglement renders conventional decomposition methods insufficient for effectively isolating useful task directions from interfering components. In this paper, w</p><p><strong>Tags:</strong> superposition, features</p>]]></description>
+      <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.25354v1</guid>
+    </item>
     <item>
       <title>RACE: Scalable Statistical Estimation of Functional Consistency in LLM Neurons</title>
       <link>https://arxiv.org/abs/2608.24758v1</link>
@@ -35,6 +63,20 @@
       <description><![CDATA[<p><strong>Authors:</strong> Amirhesam Abedsoltan, Enric Boix-Adsera, Fivos Kalogiannis, Mikhail Belkin</p><p>Understanding how neural networks learn and organize features is central to understanding their behavior. Much existing theory of feature learning has focused on the emergence of a global low-dimensional predictive geometry. We show that this picture is incomplete. In regression problems with clustered data, we demonstrate that multilayer perceptrons (MLPs) naturally develop monosemantic specialized neurons: individual neurons become strongly aligned with a specific predictive feature relevant t</p><p><strong>Tags:</strong> features, theory</p>]]></description>
       <pubDate>Tue, 25 Aug 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2608.24007v1</guid>
+    </item>
+    <item>
+      <title>Can We Read the Mind of an Audio LLM? A Verbalizable, Multilingual Middle-Layer Workspace</title>
+      <link>https://arxiv.org/abs/2608.24958v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Jiajun Fan, Jingyuan Li, Prashanth Gurunath Shivakumar, Qi Luo, Jia-Hong Huang, et al.</p><p>An audio language model is a black box in a specific way: we see what it says, never what it works out on the way there, and chain-of-thought monitoring helps only if the model writes its reasoning down. Reading a base Qwen3-Omni with a logit lens at the audio-token positions, we find that the answer to a spoken question becomes legible - in words - in the model&#x27;s middle layers, before it emits any token. Five findings follow. (1) The readout carries concepts in neither the question, the options</p><p><strong>Tags:</strong> reasoning</p>]]></description>
+      <pubDate>Tue, 25 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.24958v1</guid>
+    </item>
+    <item>
+      <title>Targeting the Attention Heads Behind Object Hallucination in LLaVA</title>
+      <link>https://arxiv.org/abs/2608.24966v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Armaan Sandhu, Abhilasha Senapati, Hima Kammachi</p><p>Vision-language models such as LLaVA-1.5-7B often hallucinate objects absent from the image when generating captions. We ask whether an interpretability diagnosis of this failure can guide a targeted fix, and we measure what that fix actually changes. We rank attention heads by how much their image attention drops around hallucinated object words, then screen the shortlist by ablating candidate heads and measuring the change in hallucination-token log probability, yielding a 32-head set. We rest</p><p><strong>Tags:</strong> attention, vision</p>]]></description>
+      <pubDate>Tue, 25 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.24966v1</guid>
     </item>
     <item>
       <title>Grounding Isn&#x27;t Knowing: Do VLMs Need Object Localization for Spatial Reasoning?</title>
@@ -175,48 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Xuanmian He, Can Li, Wanjing Ma</p><p>Deep spatiotemporal models integrating graph convolutions and attention mechanisms have demonstrated excellent performance in network-level traffic flow prediction, owing to their exceptional ability to capture complex spatiotemporal dependencies. Despite their predictive success, deployment of such models in safety-critical urban systems remains constrained by their inherent lack of transparency. Existing post-hoc diagnostic methods often struggle with spurious correlations and fail to unveil t</p><p><strong>Tags:</strong> safety</p>]]></description>
       <pubDate>Fri, 14 Aug 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2608.14177v1</guid>
-    </item>
-    <item>
-      <title>SpIn-ViT: Designing a Sparsity-Induced Vision Transformer That Is Mechanistically Interpretable</title>
-      <link>https://arxiv.org/abs/2608.14922v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Philip H. Lee, Parth Padalkar</p><p>Mechanistic interpretability has recently expanded to Vision Transformers (ViTs), with Sparse Autoencoders (SAEs) increasingly used as post-hoc tools to decompose internal representations into sparse and more interpretable features. However, because post-hoc SAEs are trained on frozen representations after the ViT has already been optimized, their latent features are not directly aligned with the downstream classification objective. We introduce SpIn-ViT, a framework that jointly trains a pretra</p><p><strong>Tags:</strong> SAE, features, vision</p>]]></description>
-      <pubDate>Fri, 14 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.14922v1</guid>
-    </item>
-    <item>
-      <title>Interpretable Cross-Lingual Alignment in Small Language Models: Probing Cultural and Pragmatic Reasoning in Japanese-English Bilingual LLMs</title>
-      <link>https://arxiv.org/abs/2608.14896v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Florian Braun</p><p>Large language models work well on English and behave in poorly understood ways on languages typologically far from it. Japanese is a clean example, where evaluation still leans on translation quality and JGLUE-style benchmarks, which roll lexical, syntactic and pragmatic competence into a single score. The phenomena on which general-purpose models fail Japanese users are pragmatic: honorifics, in-group and out-group reference, context-sensitive politeness, zero anaphora.   I introduce J-PragEva</p><p><strong>Tags:</strong> safety, probing, reasoning</p>]]></description>
-      <pubDate>Fri, 14 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.14896v1</guid>
-    </item>
-    <item>
-      <title>Decoding Task Progress from VLA Representations</title>
-      <link>https://arxiv.org/abs/2608.13474v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Atiksh Bhardwaj, Edward Weiyi Duan, Prithwish Dan, Wei-Chiu Ma, Preston Culbertson</p><p>Vision-language-action models (VLAs) are moving rapidly towards deployment as general-purpose manipulation policies, but we currently lack basic tools for understanding what these models represent internally or for monitoring them at runtime. Leveraging ideas from mechanistic interpretability, we probe the residual stream of $π_{0.5}$ and find that task progress, the normalized time remaining in a trajectory, is linearly readable from the activations. We find that this signal is present in the p</p><p><strong>Tags:</strong> probing, vision</p>]]></description>
-      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.13474v1</guid>
-    </item>
-    <item>
-      <title>Perturbation-based Regional Interpretability through Subtraction Mapping (PRISM): naming-error dissociations in language models and post-stroke aphasia</title>
-      <link>https://arxiv.org/abs/2608.12717v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Xiang Guan, Roger D. Newman-Norlund, Yong Yang, Saeed Ahmadi, Regan Willis, et al.</p><p>Mechanistic interpretability of large language models lacks spatially resolved, falsifiable tools for testing whether internal components are specialized for distinct cognitive operations. We adapt subtraction analysis, the standard framework of human neuroimaging, from biological brains to perturbed transformers, and apply the same logic to both substrates in parallel. Building on the Brain-LLM Unified Model (BLUM), which showed that layer-perturbed LLaVA-1.6-Vicuna-13B error profiles match the</p><p><strong>Tags:</strong> biology</p>]]></description>
-      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.12717v1</guid>
-    </item>
-    <item>
-      <title>SAEVerbalizer: Generating Explanations for Sparse Autoencoder Features via Representation Verbalization</title>
-      <link>https://arxiv.org/abs/2608.13538v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Weihan Meng, Hongzhu Guo, Yi Jing, Dewen Liu, Zijun Yao, et al.</p><p>Sparse autoencoders (SAEs) are proposed to extract numerous features from large language model (LLM) representations, yet explaining these features still relies primarily on external observation. This reliance leads to superficial explanations inferred from observed model behavior and computational inefficiency from collecting such behavioral evidence at scale. We introduce SAEVerbalizer, a framework that injects SAE decoder directions into an LLM&#x27;s representations and fine-tunes the LLM&#x27;s downs</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.13538v1</guid>
-    </item>
-    <item>
-      <title>Where You Measure Decides What You Measure: Position Selection in Ablation-Based SAE Evaluation</title>
-      <link>https://arxiv.org/abs/2608.13337v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Valentin Noël</p><p>Sparse autoencoders are meant to name the things a language model computes, and the usual way to check that a latent matters is to switch it off and see what changes. But a latent fires at many tokens, and the effect has to be measured at one of them. The convention is to measure where the latent fires hardest. That choice is almost never reported, and it is not made by the experimenter: it is made by the dictionary under evaluation. Change the dictionary and the measurement moves to a different</p><p><strong>Tags:</strong> SAE</p>]]></description>
-      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.13337v1</guid>
     </item>
   </channel>
 </rss>
