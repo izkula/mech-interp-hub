@@ -1,6 +1,60 @@
 {
-  "lastUpdated": "2026-08-26",
+  "lastUpdated": "2026-08-27",
   "papers": [
+    {
+      "id": "arxiv-2608-26090v1",
+      "title": "Finding and using interpretable latents in a neutrino foundation model with sparse autoencoders",
+      "authors": "Rapha\u00ebl Bonnet-Guerrini, Johann Ioannou-Nikolaides, Inar Timiryasov, Vincenzo Piuri",
+      "date": "2026-08-26",
+      "url": "https://arxiv.org/abs/2608.26090v1",
+      "abstract": "We present a first application of sparse-autoencoder-based mechanistic interpretability to particle physics. Studying a neutrino foundation model pretrained on IceCube data and fine-tuned for direction reconstruction, we identify a validated atlas of physical concepts in the model representation, using a strict validation protocol consisting of held-out tests, matched nuisance controls, and replication across independent dictionary trainings. Causal interventions show that the direction head bar",
+      "tags": [
+        "SAE"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2608-25941v1",
+      "title": "When Pruning Meets Interpretability: Preserving Sparse Autoencoder Robustness in LLMs",
+      "authors": "Suchit Gupte, Xueru Zhang, Mohammad Mahdi Khalili",
+      "date": "2026-08-26",
+      "url": "https://arxiv.org/abs/2608.25941v1",
+      "abstract": "Sparse autoencoders (SAEs) are widely used to interpret the internal representations of large language models (LLMs), yet their reliability under post-hoc model compression remains poorly understood. We present a systematic study of how pruning affects SAE behavior and theoretically show that, for a fixed SAE, its impact is governed by perturbation energy, a covariance-weighted norm. This perspective exposes a key limitation of magnitude pruning: by ignoring activation geometry, it distorts the ",
+      "tags": [
+        "SAE",
+        "theory"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2608-25697v1",
+      "title": "LMSM: LLM Security Framework Inspired by Linux Security Modules",
+      "authors": "XiuYu Zhang, Bonan Ruan, Junfeng Fang, An Zhang, Tat-Seng Chua, et al.",
+      "date": "2026-08-26",
+      "url": "https://arxiv.org/abs/2608.25697v1",
+      "abstract": "Large language models (LLMs) are increasingly deployed with layered defenses, yet malicious prompts can still bypass them. Interpretability methods can expose model-internal signals along the generation path that could inform enforcement, but these signals are not security controls by themselves. Deployments that adapt them for safety typically couple each signal to its own calibration, policy logic, and intervention code, so each new artifact creates integration work instead of strengthening a ",
+      "tags": [
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2608-25354v1",
+      "title": "Escaping Low-Dimensional Overlap: Multi-Task Model Merging via High-Dimensional Sparse Disentanglement",
+      "authors": "Yihang Zhang, Shengke Sun, Junjie Wen, Feng Zeng",
+      "date": "2026-08-26",
+      "url": "https://arxiv.org/abs/2608.25354v1",
+      "abstract": "Model merging provides an efficient way to construct multi-task generalist models without additional training, but its performance often degrades under severe task interference. Task interference in model merging primarily stems from \\textit{superposition}, where task-specific features become entangled within the parameter space. This entanglement renders conventional decomposition methods insufficient for effectively isolating useful task directions from interfering components. In this paper, w",
+      "tags": [
+        "superposition",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2608-24758v1",
       "title": "RACE: Scalable Statistical Estimation of Functional Consistency in LLM Neurons",
@@ -48,6 +102,33 @@
       "tags": [
         "features",
         "theory"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2608-24958v1",
+      "title": "Can We Read the Mind of an Audio LLM? A Verbalizable, Multilingual Middle-Layer Workspace",
+      "authors": "Jiajun Fan, Jingyuan Li, Prashanth Gurunath Shivakumar, Qi Luo, Jia-Hong Huang, et al.",
+      "date": "2026-08-25",
+      "url": "https://arxiv.org/abs/2608.24958v1",
+      "abstract": "An audio language model is a black box in a specific way: we see what it says, never what it works out on the way there, and chain-of-thought monitoring helps only if the model writes its reasoning down. Reading a base Qwen3-Omni with a logit lens at the audio-token positions, we find that the answer to a spoken question becomes legible - in words - in the model's middle layers, before it emits any token. Five findings follow. (1) The readout carries concepts in neither the question, the options",
+      "tags": [
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2608-24966v1",
+      "title": "Targeting the Attention Heads Behind Object Hallucination in LLaVA",
+      "authors": "Armaan Sandhu, Abhilasha Senapati, Hima Kammachi",
+      "date": "2026-08-25",
+      "url": "https://arxiv.org/abs/2608.24966v1",
+      "abstract": "Vision-language models such as LLaVA-1.5-7B often hallucinate objects absent from the image when generating captions. We ask whether an interpretability diagnosis of this failure can guide a targeted fix, and we measure what that fix actually changes. We rank attention heads by how much their image attention drops around hallucinated object words, then screen the shortlist by ablating candidate heads and measuring the change in hallucination-token log probability, yielding a 32-head set. We rest",
+      "tags": [
+        "attention",
+        "vision"
       ],
       "source": "arXiv",
       "featured": false
