@@ -5,9 +5,30 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 27 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 28 Aug 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Circuit Condensation: Post-Training that Concentrates a Behavior&#x27;s Causal Circuit</title>
+      <link>https://arxiv.org/abs/2608.27254v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Sai Adith Senthil Kumar</p><p>One approach to mechanistic interpretability explains behavior through circuits: the components and connections that carry it. Frozen discovery often returns hundreds of edges, making them hard to inspect, compare, or verify exhaustively. We introduce Circuit Condensation, which post-trains models to concentrate behaviors into smaller causal graphs. Each round prunes low-attribution edges and trains a low-rank adapter to match the original through what remains, retaining the cut only if task per</p><p><strong>Tags:</strong> circuits</p>]]></description>
+      <pubDate>Thu, 27 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.27254v1</guid>
+    </item>
+    <item>
+      <title>Making Clinical Language Models Auditable: Concept-Guided Fine-Tuning for Robust Prediction</title>
+      <link>https://arxiv.org/abs/2608.27397v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Jin Mu, Guanhua Chen</p><p>Clinical language models can achieve strong in-hospital accuracy yet fail under deployment shifts because they exploit note-specific artifacts (e.g., templates, separators, boilerplate) that do not reflect patient state. We propose CAST (Concept-guided Artifact Suppression Tuning), an SAE-based framework for auditable clinical text classification. CAST uses Sparse Autoencoders to expose sparse, human-auditable features from intermediate Transformer activations, labels SAE latents with an LLM-ass</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Thu, 27 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.27397v1</guid>
+    </item>
+    <item>
+      <title>Planting a Latent Variable in Natural-Looking Text: a More Realistic Test of Belief States in LLMs and Their Link to Concept Geometry</title>
+      <link>https://arxiv.org/abs/2608.26887v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Alexandru-Iulius Jerpelea</p><p>LLMs are thought to track &quot;belief states,&quot; i.e., running probability distributions over the latent variables that govern language (Shai et al., 2024; Sarfati et al., 2026), but so far this has only been comprehensively demonstrated on toy synthetic data and in a few isolated case studies. It has also never been empirically connected to the geometry of LLM features (the concepts interpretability finds in model activations). In this work, we plant a controllable latent variable inside natural-look</p><p><strong>Tags:</strong> features</p>]]></description>
+      <pubDate>Thu, 27 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.26887v1</guid>
+    </item>
     <item>
       <title>Finding and using interpretable latents in a neutrino foundation model with sparse autoencoders</title>
       <link>https://arxiv.org/abs/2608.26090v1</link>
@@ -35,6 +56,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Yihang Zhang, Shengke Sun, Junjie Wen, Feng Zeng</p><p>Model merging provides an efficient way to construct multi-task generalist models without additional training, but its performance often degrades under severe task interference. Task interference in model merging primarily stems from \textit{superposition}, where task-specific features become entangled within the parameter space. This entanglement renders conventional decomposition methods insufficient for effectively isolating useful task directions from interfering components. In this paper, w</p><p><strong>Tags:</strong> superposition, features</p>]]></description>
       <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2608.25354v1</guid>
+    </item>
+    <item>
+      <title>Interpreting Latent Protein Language Model Features with Geometric Annotations</title>
+      <link>https://arxiv.org/abs/2608.26419v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Siddharth Setlur, Djordje Mihajlovic, Darrick Lee</p><p>Protein language models (pLMs) encode information about protein sequences which enable downstream tasks such as structure prediction, but their internal representations are not well understood. Sparse autoencoders (SAEs) provide a promising tool to disentangle latent pLM representations into interpretable features, but existing annotation pipelines largely rely on protein-level annotations derived from database labels and LLM annotations of top activating sequences. Such annotations can overlook</p><p><strong>Tags:</strong> SAE, features, biology</p>]]></description>
+      <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.26419v1</guid>
     </item>
     <item>
       <title>RACE: Scalable Statistical Estimation of Functional Consistency in LLM Neurons</title>
@@ -189,34 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Wengan He, Yongsheng Luo, Lihong Jiang, Wenhui Xu, Yu Li</p><p>Accurate protein structure prediction is fundamental to structural biology because protein structure underlies molecular function and provides a basis for mechanistic interpretation. Recent advances in deep learning have transformed the field from multiple sequence alignment (MSA)-driven monomer folding into broader frameworks capable of modeling protein complexes and increasingly heterogeneous molecular systems. Existing reviews have summarized this progress from the perspectives of representat</p><p><strong>Tags:</strong> safety, survey, biology</p>]]></description>
       <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2608.16094v1</guid>
-    </item>
-    <item>
-      <title>Not All Attention Is Equal: A Quantitative Survey of the EEI Trade-off</title>
-      <link>https://arxiv.org/abs/2608.15459v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Aditya Singh</p><p>Attention mechanisms have driven machine learning for a decade, from neural machine translation to language models that do general-purpose reasoning. This survey covers four connected threads: their formulation for sequence-to-sequence tasks, adaptation to computer vision, efficiency innovations that address the quadratic bottleneck, and advances in interpretability. We define three criteria: efficiency, expressiveness, and interpretability, and compare twenty-one methods using an EEI scoring fr</p><p><strong>Tags:</strong> survey, vision, reasoning</p>]]></description>
-      <pubDate>Sun, 16 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.15459v1</guid>
-    </item>
-    <item>
-      <title>Sparse Prototype Code Underlies Classification and Prediction Across Modalities</title>
-      <link>https://arxiv.org/abs/2608.15632v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Yehonatan Avidan, Daniel D. Lee, Haim Sompolinsky</p><p>Neural representations have become a central tool for studying the internal mechanisms of modern AI models, yet their complex high-dimensional structure makes them difficult to interpret. We show that classification tasks give rise to a universal representational geometry, shared across state-of-the-art models in vision, audio, and language processing. The key structure is that within-class variability is not random in representation space. Instead, its classifier-relevant component has strong a</p><p><strong>Tags:</strong> probing, vision</p>]]></description>
-      <pubDate>Sun, 16 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.15632v1</guid>
-    </item>
-    <item>
-      <title>Broken Symmetry in LLM Refusal: Answer Release Is More Local Than Refusal Restoration</title>
-      <link>https://arxiv.org/abs/2608.15772v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Yiqi Liu, Yang Wang, Songxin Wang, Chenghao Xiao, Chenghua Lin</p><p>When a language model refuses to answer a prompt, it is unclear whether the correct answer is erased from its internal representations, or merely suppressed at the output layer. We investigate this mechanism using a controlled withhold setting, which yields perfectly matched answering and refusal trajectories for bidirectional activation patching. We uncover a causal asymmetry in intervention locality under matched causal interventions, which we term broken symmetry. Even when a model generates </p>]]></description>
-      <pubDate>Sun, 16 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.15772v1</guid>
-    </item>
-    <item>
-      <title>Structure-Guided Spatiotemporal Attention Graph Neural Network for Traffic Flow Prediction</title>
-      <link>https://arxiv.org/abs/2608.14177v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Xuanmian He, Can Li, Wanjing Ma</p><p>Deep spatiotemporal models integrating graph convolutions and attention mechanisms have demonstrated excellent performance in network-level traffic flow prediction, owing to their exceptional ability to capture complex spatiotemporal dependencies. Despite their predictive success, deployment of such models in safety-critical urban systems remains constrained by their inherent lack of transparency. Existing post-hoc diagnostic methods often struggle with spurious correlations and fail to unveil t</p><p><strong>Tags:</strong> safety</p>]]></description>
-      <pubDate>Fri, 14 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.14177v1</guid>
     </item>
   </channel>
 </rss>
