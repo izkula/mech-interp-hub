@@ -1,6 +1,46 @@
 {
-  "lastUpdated": "2026-08-27",
+  "lastUpdated": "2026-08-28",
   "papers": [
+    {
+      "id": "arxiv-2608-27254v1",
+      "title": "Circuit Condensation: Post-Training that Concentrates a Behavior's Causal Circuit",
+      "authors": "Sai Adith Senthil Kumar",
+      "date": "2026-08-27",
+      "url": "https://arxiv.org/abs/2608.27254v1",
+      "abstract": "One approach to mechanistic interpretability explains behavior through circuits: the components and connections that carry it. Frozen discovery often returns hundreds of edges, making them hard to inspect, compare, or verify exhaustively. We introduce Circuit Condensation, which post-trains models to concentrate behaviors into smaller causal graphs. Each round prunes low-attribution edges and trains a low-rank adapter to match the original through what remains, retaining the cut only if task per",
+      "tags": [
+        "circuits"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2608-27397v1",
+      "title": "Making Clinical Language Models Auditable: Concept-Guided Fine-Tuning for Robust Prediction",
+      "authors": "Jin Mu, Guanhua Chen",
+      "date": "2026-08-27",
+      "url": "https://arxiv.org/abs/2608.27397v1",
+      "abstract": "Clinical language models can achieve strong in-hospital accuracy yet fail under deployment shifts because they exploit note-specific artifacts (e.g., templates, separators, boilerplate) that do not reflect patient state. We propose CAST (Concept-guided Artifact Suppression Tuning), an SAE-based framework for auditable clinical text classification. CAST uses Sparse Autoencoders to expose sparse, human-auditable features from intermediate Transformer activations, labels SAE latents with an LLM-ass",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2608-26887v1",
+      "title": "Planting a Latent Variable in Natural-Looking Text: a More Realistic Test of Belief States in LLMs and Their Link to Concept Geometry",
+      "authors": "Alexandru-Iulius Jerpelea",
+      "date": "2026-08-27",
+      "url": "https://arxiv.org/abs/2608.26887v1",
+      "abstract": "LLMs are thought to track \"belief states,\" i.e., running probability distributions over the latent variables that govern language (Shai et al., 2024; Sarfati et al., 2026), but so far this has only been comprehensively demonstrated on toy synthetic data and in a few isolated case studies. It has also never been empirically connected to the geometry of LLM features (the concepts interpretability finds in model activations). In this work, we plant a controllable latent variable inside natural-look",
+      "tags": [
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2608-26090v1",
       "title": "Finding and using interpretable latents in a neutrino foundation model with sparse autoencoders",
@@ -51,6 +91,21 @@
       "tags": [
         "superposition",
         "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2608-26419v1",
+      "title": "Interpreting Latent Protein Language Model Features with Geometric Annotations",
+      "authors": "Siddharth Setlur, Djordje Mihajlovic, Darrick Lee",
+      "date": "2026-08-26",
+      "url": "https://arxiv.org/abs/2608.26419v1",
+      "abstract": "Protein language models (pLMs) encode information about protein sequences which enable downstream tasks such as structure prediction, but their internal representations are not well understood. Sparse autoencoders (SAEs) provide a promising tool to disentangle latent pLM representations into interpretable features, but existing annotation pipelines largely rely on protein-level annotations derived from database labels and LLM annotations of top activating sequences. Such annotations can overlook",
+      "tags": [
+        "SAE",
+        "features",
+        "biology"
       ],
       "source": "arXiv",
       "featured": false
