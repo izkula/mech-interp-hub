@@ -5,9 +5,16 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 30 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 31 Aug 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>REINS: Refusal-Enhanced Inhibitory Steering with Sparse Autoencoder Features</title>
+      <link>https://arxiv.org/abs/2608.28233v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Kai-Xuan Ding, Hao-Xiang Xu, Ji-Hua Peng, Zi-Qi Chen, Jiaqi Wang, et al.</p><p>Steering with Sparse Autoencoders (SAEs) offers a lightweight inference-time path for adapting the behavior of large language models without retraining. By exposing sparse and interpretable features, SAE steering provides a promising interface for safety control that guides harmful continuations toward refusal. However, we observe that complex wrappers can still undermine existing SAE steering methods on harmful prompts. To evaluate this failure mode systematically, we construct Generalized Unde</p><p><strong>Tags:</strong> SAE, features, safety, steering</p>]]></description>
+      <pubDate>Fri, 28 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.28233v1</guid>
+    </item>
     <item>
       <title>Circuit Condensation: Post-Training that Concentrates a Behavior&#x27;s Causal Circuit</title>
       <link>https://arxiv.org/abs/2608.27254v1</link>
@@ -28,6 +35,34 @@
       <description><![CDATA[<p><strong>Authors:</strong> Alexandru-Iulius Jerpelea</p><p>LLMs are thought to track &quot;belief states,&quot; i.e., running probability distributions over the latent variables that govern language (Shai et al., 2024; Sarfati et al., 2026), but so far this has only been comprehensively demonstrated on toy synthetic data and in a few isolated case studies. It has also never been empirically connected to the geometry of LLM features (the concepts interpretability finds in model activations). In this work, we plant a controllable latent variable inside natural-look</p><p><strong>Tags:</strong> features</p>]]></description>
       <pubDate>Thu, 27 Aug 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2608.26887v1</guid>
+    </item>
+    <item>
+      <title>Circuit Discovery Helps Detect LLM Jailbreaking: A Mechanistic Interpretability Study</title>
+      <link>https://arxiv.org/abs/2608.27504v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Paria Mehrbod, Boris Knyazev, Guy Wolf, Eugene Belilovsky, Geraldin Nanfack</p><p>Despite extensive safety alignment, large language models (LLMs) remain vulnerable to jailbreak attacks that bypass safeguards to elicit harmful content. While prior work attributes this vulnerability to safety training limitations, the internal mechanisms by which LLMs process adversarial prompts remain poorly understood. We present a mechanistic analysis of the jailbreaking behavior in a large-scale, safety-aligned LLM, focusing on LLaMA-2-7B-chat-hf. Leveraging edge attribution patching and s</p><p><strong>Tags:</strong> circuits, safety</p>]]></description>
+      <pubDate>Thu, 27 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.27504v1</guid>
+    </item>
+    <item>
+      <title>Efficient Auto-Interpretability of AI Models in Biology</title>
+      <link>https://arxiv.org/abs/2608.27754v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Piotr Jedryszek, Oliver M. Crook</p><p>Sparse autoencoders (SAEs), and other interpretability methods could turn AI models in Biology and other fields into engines of scientific discovery by explaining the superhuman capabilities of those models. However, a latent is only useful if we know three things: whether it is coherent, whether it can be described, and whether that description has predictive power. These questions are routinely conflated. We assemble them into a single pipeline and report the practical innovations each stage r</p><p><strong>Tags:</strong> SAE, biology</p>]]></description>
+      <pubDate>Thu, 27 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.27754v1</guid>
+    </item>
+    <item>
+      <title>How Do Linear Probes Emerge? A Circuit-Tracing Framework with Concept-Targeted Attribution</title>
+      <link>https://arxiv.org/abs/2608.27510v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Vedant Palit, Florent Draye, Terry Jingchen Zhang, Bernhard Schölkopf, Zhijing Jin</p><p>Transcoder attribution graphs are usually trained to explain why a model assigns high probability to a particular next token. We introduce Concept-Targeted Attribution (CTA), which instead trains attribution graphs with respect to a linear probe direction. CTA therefore yields probe-specific circuits that explain why an internal concept representation arises in a prompt, independently of whether it is expressed in the generated token. Using Cross-Layer Transcoders, we show that these probe-targe</p><p><strong>Tags:</strong> circuits, probing</p>]]></description>
+      <pubDate>Thu, 27 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.27510v1</guid>
+    </item>
+    <item>
+      <title>A Deeper Analysis of Block-Sparse Featurizers</title>
+      <link>https://arxiv.org/abs/2608.27515v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Alexandru-Iulius Jerpelea, Amith Ananthram</p><p>The recently introduced block-sparse featurizer (BSF; Fel et al., 2026) is similar to a sparse autoencoder (SAE), but its atomic unit is a small subspace (a block of directions) rather than a single direction. It is designed for features that live on low-dimensional manifolds, which are especially frequent in vision. This work studies the BSF&#x27;s strengths and weaknesses, finding how it still somewhat suffers from classic SAE failure modes, like feature splitting and composition. We propose severa</p><p><strong>Tags:</strong> SAE, features, vision</p>]]></description>
+      <pubDate>Thu, 27 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2608.27515v1</guid>
     </item>
     <item>
       <title>Finding and using interpretable latents in a neutrino foundation model with sparse autoencoders</title>
@@ -182,41 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Hugo Porta, Emanuele Dalsasso, Chang Xu, Theo Gnassounou, Devis Tuia</p><p>The emergence of large-scale Weather and Climate (W&amp;C) datasets offers new opportunities for modeling extreme Earth events (ExEE) and their impacts using deep learning. However, their adoption in operational settings remains limited by the lack of models&#x27; interpretability. While for conventional text and image modalities, tools such as Sparse Autoencoders (SAEs) have proven effective for extracting human-understandable concepts, their use for the analysis of ExEE remains challenging due to the n</p><p><strong>Tags:</strong> SAE, features, vision</p>]]></description>
       <pubDate>Thu, 20 Aug 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2608.20117v1</guid>
-    </item>
-    <item>
-      <title>Listening Forward: Next Patch Embedding Prediction Enables Scalable Audio Learners</title>
-      <link>https://arxiv.org/abs/2608.19863v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Umberto Cappellazzo, Xubo Liu, Stavros Petridis, Maja Pantic</p><p>Self-supervised learning (SSL) has driven substantial progress in audio representation learning, though existing methods have increasingly relied on elaborate pre-training recipes to reach competitive performance. A markedly different pre-training philosophy underpins the most influential progress in language modeling and, more recently, in visual representation learning: rather than train encoders as static feature extractors, models are trained to predict the next element, a discrete token or </p><p><strong>Tags:</strong> features, vision</p>]]></description>
-      <pubDate>Thu, 20 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.19863v1</guid>
-    </item>
-    <item>
-      <title>Mechanistic Interpretability of Structure-Aware Numerical Reasoning in LLaMA 3.1 8B</title>
-      <link>https://arxiv.org/abs/2608.18419v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Rahul Chowdhury, Timothy A Rupprecht, Senhao Cao, Jiahao Liu, Octavia Camps, et al.</p><p>Recent work has shown that large language models (LLMs) exhibit strong numerical sequence modeling capabilities and show promise in time-series prediction. While LLMs display in-context learning capabilities, the mechanisms with which they accomplish time-series prediction remain unclear. Specifically, whether they truly understand the underlying structure, which at a minimum requires reasoning over first differences in the sequence of numbers. To study this, we investigate Llama 3.1-8B from a m</p><p><strong>Tags:</strong> reasoning</p>]]></description>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.18419v1</guid>
-    </item>
-    <item>
-      <title>Shared Circuits for Shared Grammar: Tracing Subject-Verb Agreement Across Languages</title>
-      <link>https://arxiv.org/abs/2608.18545v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Isabella Gidi, Antonio Almudévar, Core Francisco Park, Naomi Saphra, Ricard Marxer</p><p>Multilingual large language models often generalize across languages, and prior work suggests that their internal mechanisms can overlap cross-lingually. It remains unclear, however, when such sharing emerges and whether it varies with the overt realization of the same grammatical operation. We investigate this question for present-tense subject-verb agreement, a morphosyntactic process that varies substantially across languages and is only weakly expressed in English. Using activation patching </p><p><strong>Tags:</strong> circuits</p>]]></description>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.18545v1</guid>
-    </item>
-    <item>
-      <title>Mechanistic Tomography: Designed Measurement for Control-Oriented Interpretability</title>
-      <link>https://arxiv.org/abs/2608.19338v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Vijay Erramilli</p><p>Mechanistic interpretability seeks quantities that models do not expose directly: represented states, component effects, interactions, and responses to interventions. Patching, gradients, Hessian-vector products, and subset interventions provide different measurements under different access assumptions and may target different quantities. We formulate their shared measurement structure as mechanistic tomography: designed measurement for recovering internal mechanisms and intervention effects.   </p>]]></description>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.19338v1</guid>
-    </item>
-    <item>
-      <title>Protein Structure Prediction: From Evolutionary Constraints to Generative Modeling</title>
-      <link>https://arxiv.org/abs/2608.16094v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Wengan He, Yongsheng Luo, Lihong Jiang, Wenhui Xu, Yu Li</p><p>Accurate protein structure prediction is fundamental to structural biology because protein structure underlies molecular function and provides a basis for mechanistic interpretation. Recent advances in deep learning have transformed the field from multiple sequence alignment (MSA)-driven monomer folding into broader frameworks capable of modeling protein complexes and increasingly heterogeneous molecular systems. Existing reviews have summarized this progress from the perspectives of representat</p><p><strong>Tags:</strong> safety, survey, biology</p>]]></description>
-      <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.16094v1</guid>
     </item>
   </channel>
 </rss>
