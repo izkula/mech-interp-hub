@@ -1,6 +1,22 @@
 {
-  "lastUpdated": "2026-08-30",
+  "lastUpdated": "2026-08-31",
   "papers": [
+    {
+      "id": "arxiv-2608-28233v1",
+      "title": "REINS: Refusal-Enhanced Inhibitory Steering with Sparse Autoencoder Features",
+      "authors": "Kai-Xuan Ding, Hao-Xiang Xu, Ji-Hua Peng, Zi-Qi Chen, Jiaqi Wang, et al.",
+      "date": "2026-08-28",
+      "url": "https://arxiv.org/abs/2608.28233v1",
+      "abstract": "Steering with Sparse Autoencoders (SAEs) offers a lightweight inference-time path for adapting the behavior of large language models without retraining. By exposing sparse and interpretable features, SAE steering provides a promising interface for safety control that guides harmful continuations toward refusal. However, we observe that complex wrappers can still undermine existing SAE steering methods on harmful prompts. To evaluate this failure mode systematically, we construct Generalized Unde",
+      "tags": [
+        "SAE",
+        "features",
+        "safety",
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2608-27254v1",
       "title": "Circuit Condensation: Post-Training that Concentrates a Behavior's Causal Circuit",
@@ -37,6 +53,63 @@
       "abstract": "LLMs are thought to track \"belief states,\" i.e., running probability distributions over the latent variables that govern language (Shai et al., 2024; Sarfati et al., 2026), but so far this has only been comprehensively demonstrated on toy synthetic data and in a few isolated case studies. It has also never been empirically connected to the geometry of LLM features (the concepts interpretability finds in model activations). In this work, we plant a controllable latent variable inside natural-look",
       "tags": [
         "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2608-27504v1",
+      "title": "Circuit Discovery Helps Detect LLM Jailbreaking: A Mechanistic Interpretability Study",
+      "authors": "Paria Mehrbod, Boris Knyazev, Guy Wolf, Eugene Belilovsky, Geraldin Nanfack",
+      "date": "2026-08-27",
+      "url": "https://arxiv.org/abs/2608.27504v1",
+      "abstract": "Despite extensive safety alignment, large language models (LLMs) remain vulnerable to jailbreak attacks that bypass safeguards to elicit harmful content. While prior work attributes this vulnerability to safety training limitations, the internal mechanisms by which LLMs process adversarial prompts remain poorly understood. We present a mechanistic analysis of the jailbreaking behavior in a large-scale, safety-aligned LLM, focusing on LLaMA-2-7B-chat-hf. Leveraging edge attribution patching and s",
+      "tags": [
+        "circuits",
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2608-27754v1",
+      "title": "Efficient Auto-Interpretability of AI Models in Biology",
+      "authors": "Piotr Jedryszek, Oliver M. Crook",
+      "date": "2026-08-27",
+      "url": "https://arxiv.org/abs/2608.27754v1",
+      "abstract": "Sparse autoencoders (SAEs), and other interpretability methods could turn AI models in Biology and other fields into engines of scientific discovery by explaining the superhuman capabilities of those models. However, a latent is only useful if we know three things: whether it is coherent, whether it can be described, and whether that description has predictive power. These questions are routinely conflated. We assemble them into a single pipeline and report the practical innovations each stage r",
+      "tags": [
+        "SAE",
+        "biology"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2608-27510v1",
+      "title": "How Do Linear Probes Emerge? A Circuit-Tracing Framework with Concept-Targeted Attribution",
+      "authors": "Vedant Palit, Florent Draye, Terry Jingchen Zhang, Bernhard Sch\u00f6lkopf, Zhijing Jin",
+      "date": "2026-08-27",
+      "url": "https://arxiv.org/abs/2608.27510v1",
+      "abstract": "Transcoder attribution graphs are usually trained to explain why a model assigns high probability to a particular next token. We introduce Concept-Targeted Attribution (CTA), which instead trains attribution graphs with respect to a linear probe direction. CTA therefore yields probe-specific circuits that explain why an internal concept representation arises in a prompt, independently of whether it is expressed in the generated token. Using Cross-Layer Transcoders, we show that these probe-targe",
+      "tags": [
+        "circuits",
+        "probing"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2608-27515v1",
+      "title": "A Deeper Analysis of Block-Sparse Featurizers",
+      "authors": "Alexandru-Iulius Jerpelea, Amith Ananthram",
+      "date": "2026-08-27",
+      "url": "https://arxiv.org/abs/2608.27515v1",
+      "abstract": "The recently introduced block-sparse featurizer (BSF; Fel et al., 2026) is similar to a sparse autoencoder (SAE), but its atomic unit is a small subspace (a block of directions) rather than a single direction. It is designed for features that live on low-dimensional manifolds, which are especially frequent in vision. This work studies the BSF's strengths and weaknesses, finding how it still somewhat suffers from classic SAE failure modes, like feature splitting and composition. We propose severa",
+      "tags": [
+        "SAE",
+        "features",
+        "vision"
       ],
       "source": "arXiv",
       "featured": false
