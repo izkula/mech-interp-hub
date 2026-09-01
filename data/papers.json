@@ -1,6 +1,124 @@
 {
-  "lastUpdated": "2026-08-31",
+  "lastUpdated": "2026-09-01",
   "papers": [
+    {
+      "id": "arxiv-2608-30662v1",
+      "title": "MURANO: Design, Run, and Reproduce Mechanistic Interpretability Experiments as Composable Pipelines",
+      "authors": "Alireza Bayat Makou, Emirhan B\u00f6ge, Phu Gia Hoang, Federico Tiblias, Jingcheng Niu, et al.",
+      "date": "2026-08-31",
+      "url": "https://arxiv.org/abs/2608.30662v1",
+      "abstract": "This paper presents Murano, an open source framework for designing, running, and reproducing mechanistic interpretability studies of large language models, intended for researchers across disciplines. These studies often combine loading, recording, attribution, intervention, and evaluation, while existing libraries tend to focus on different parts of this workflow. As a result, researchers using several libraries may need to adapt outputs from one for use by another. To bridge this gap, Murano r",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2608-30585v1",
+      "title": "The Safety Relay in Roleplay Jailbreaks: A Component-Resolved Causal Analysis of Harm Recognition and Refusal",
+      "authors": "Md Mokarram Chowdhury, Ernie Chang, Yang Li",
+      "date": "2026-08-31",
+      "url": "https://arxiv.org/abs/2608.30585v1",
+      "abstract": "Large language models are trained to follow instructions while refusing harmful requests. Jailbreaks exploit this balance to elicit content a model would ordinarily reject. Roleplay jailbreaks are especially concerning: the harmful request can remain visible inside a roleplay wrapper made of a persona, scenario, and task, yet the model may comply. We use mechanistic interpretability to determine how this context reverses refusal and which elements contribute to the reversal. Across two benchmark",
+      "tags": [
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2608-30462v1",
+      "title": "Enhancing Low-Resource Language Reasoning via High-Resource Language Feature Transfer",
+      "authors": "Minju Song, Hyeon Hwang, Junhyun Lee, Jaewoo Kang",
+      "date": "2026-08-31",
+      "url": "https://arxiv.org/abs/2608.30462v1",
+      "abstract": "Large language models exhibit substantial performance variation across languages, even when solving semantically equivalent tasks. Existing analyses often treat this phenomenon as an observational disparity caused by differences in pretraining data, tokenization, or benchmark coverage. We study a complementary hypothesis: high-resource languages (HRLs) may more reliably elicit latent computations useful for task-specific (i.e. mathematical) reasoning, while lower-resource languages (LRLs) may un",
+      "tags": [
+        "features",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2608-30403v1",
+      "title": "Why Are LLM Backdoor Defenses Fragmented? A Feature-Level Explanation with Sparse Autoencoders",
+      "authors": "Yizhe Zeng, Chenxu Niu, Wei Zhang, Hao Huang, Yunpeng Li, et al.",
+      "date": "2026-08-31",
+      "url": "https://arxiv.org/abs/2608.30403v1",
+      "abstract": "Backdoor attacks pose a serious threat to large language models (LLMs), but existing defenses remain fragmented, failing to pro?vide unified defense against both dirty-label and clean-label attacks. To investigate why such fragmentation arises, we present the first systematic feature-level mechanistic analysis of LLM backdoors using sparse autoencoders (SAEs). Starting from a 2 x 2 comparison of clean and poisoned models on clean and triggered inputs, we trace backdoor-induced logit shifts to hi",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2608-30649v1",
+      "title": "Where Identity Lives: Localized, Retain-Free Identity Unlearning in Multimodal Large Language Models",
+      "authors": "Kangwook Ko, Jaehyuk Jang, Wonjun Lee, Hee-Seon Kim, Changick Kim",
+      "date": "2026-08-31",
+      "url": "https://arxiv.org/abs/2608.30649v1",
+      "abstract": "Removing a specific individual's information from multimodal large language models (MLLMs) is often needed after deployment, but existing methods rely on a retain set, which is hardest to obtain at that point, and rebuilding it recreates the privacy exposure that unlearning aims to remove. Forgetting from the forget set alone instead damages the shared visual-language computation, harming perception. We cast retain-free unlearning as a localization problem: causal tracing, weight transplant, and",
+      "tags": [
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2608-30705v1",
+      "title": "VisLens: Single-Pass Interpretable Visual Search for Multimodal LLMs",
+      "authors": "Jingyi He, Sanghwan Kim, Zeynep Akata",
+      "date": "2026-08-31",
+      "url": "https://arxiv.org/abs/2608.30705v1",
+      "abstract": "Multimodal large language models (MLLMs) struggle with fine-grained Visual Search, the task of locating small or rare objects in high-resolution images. Existing remedies fall into two families: (1) Training-free methods based on attention or confidence scores are accurate but slow, since they require multiple MLLM queries per example. (2) Reinforcement Learning (RL) trained tool-use models are faster at inference but opaque, since their tool calls remain uncontrollable and hard to interpret. To",
+      "tags": [
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2608-30025v1",
+      "title": "Interpreting and Steering for Safe and Correct Code Generation",
+      "authors": "Hao Yan, Ziyu Yao",
+      "date": "2026-08-30",
+      "url": "https://arxiv.org/abs/2608.30025v1",
+      "abstract": "Large language models (LLMs) frequently generate source code containing vulnerabilities, yet little work studies the internal mechanisms that distinguish safe from vulnerable generation in them. In this work, we systematically perform a mechanistic interpretation of LLMs, aiming at both understanding how code safety-vs-vulnerability is represented or driven by components in an LM and turning the insights into actionable steering strategies to encourage safer code generation. To this end, we intr",
+      "tags": [
+        "safety",
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2608-29936v1",
+      "title": "When Safety Speaks a Language: A Mechanistic Analysis of Safety-Language Identity Entanglement in LLMs",
+      "authors": "Apoorva Upadhyaya, Sandipan Sikdar",
+      "date": "2026-08-30",
+      "url": "https://arxiv.org/abs/2608.29936v1",
+      "abstract": "Safety alignment of large language models (LLMs) degrades across languages, yet the internal mechanism driving this asymmetry remains poorly understood. Our work, therefore, presents a systematic mechanistic analysis of multilingual safety using sparse autoencoder (SAE) features, sparse interpretable directions in the residual stream associated with harmful and harmless model behavior across three instruction-tuned LLMs, eight languages, and all model layers. We observe that safety-relevant feat",
+      "tags": [
+        "SAE",
+        "features",
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2608-29034v1",
+      "title": "A Unifying Perspective on Language Model Representations: From Filler-Role Structure to Mechanistic Interpretability",
+      "authors": "Zhang Enyan, R. Thomas McCoy",
+      "date": "2026-08-29",
+      "url": "https://arxiv.org/abs/2608.29034v1",
+      "abstract": "A wide range of methods have been proposed for interpreting language models, delivering important insights into their inner workings. However, different methods and their resulting insights stand in relative isolation: what could the underlying structure of language models be, such that they give rise to all our interpretations? In this work, we propose using Tensor Product Representations (TPRs) as a unifying hypothesis. TPRs give a concrete proposal for how compositional structure could be rep",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2608-28233v1",
       "title": "REINS: Refusal-Enhanced Inhibitory Steering with Sparse Autoencoder Features",
@@ -12,6 +130,34 @@
         "SAE",
         "features",
         "safety",
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2608-28924v1",
+      "title": "Causal Interventions Reveal Typologically Organized Syntactic Mechanisms in Multilingual Language Models",
+      "authors": "Sasha Boguraev, Toshiki Nakai, Kyle Mahowald, Julius Steuer",
+      "date": "2026-08-28",
+      "url": "https://arxiv.org/abs/2608.28924v1",
+      "abstract": "Linguistic theory has long recognized cross-linguistic syntactic regularities, leading to claims that these similar structures are processed by similar mechanisms. However, this hypothesis has been difficult to test empirically due to our lack of fine-grained, manipulable access of human processing mechanisms. In this work, we take advantage of techniques from mechanistic interpretability to study such a question in multilingual LMs. We first isolate language-internal mechanisms before attemptin",
+      "tags": [
+        "theory"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2608-28806v1",
+      "title": "Enhancing SAE-based Steering via Neighbor Integrated Feature Selection",
+      "authors": "Yutian Liu, Xu Wang, Difan Zou",
+      "date": "2026-08-28",
+      "url": "https://arxiv.org/abs/2608.28806v1",
+      "abstract": "Sparse autoencoders (SAEs) disentangle model activations into interpretable features and are widely used for steering large language models. Most existing SAE-based steering methods select features by applying a top- filter based on statistical scores, assuming that higher-scoring features yield stronger steering effects. In this paper, we show that this assumption is often invalid, leading to suboptimal feature selection. Our analysis reveals that effective steering features may be distributed ",
+      "tags": [
+        "SAE",
+        "features",
         "steering"
       ],
       "source": "arXiv",
