@@ -5,9 +5,37 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 01 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 02 Sep 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>S^3martCirc: Self-supervised Smart Circuit Discovery</title>
+      <link>https://arxiv.org/abs/2609.00755v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Wendy Zheng, Yinhan He, Liang Wu, Jundong Li</p><p>Large Language Models (LLMs) have demonstrated remarkable performance across diverse tasks, from text summarization to question answering. Despite these capabilities, their black-box nature obscures internal decision-making processes. Mechanistic interpretability (MI) aims to address this by reverse-engineering neural networks into human-understandable algorithms. Current MI approaches for LLMs typically follow a two-stage paradigm: first identifying important components (circuit discovery), whe</p><p><strong>Tags:</strong> circuits</p>]]></description>
+      <pubDate>Tue, 01 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2609.00755v1</guid>
+    </item>
+    <item>
+      <title>Exploring Sparse Autoencoders in Text-Based Causal Confounding Adjustment</title>
+      <link>https://arxiv.org/abs/2609.01322v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Mian Zhong, Katherine A. Keith, Anjalie Field</p><p>In many settings, studying causal questions based on text data requires adjusting for confounding information within texts. Yet there is a tradeoff in constructing text representations for adjustment: they must be sufficiently large and/or dense to preserve the confounding variables necessary for unbiased effect estimation, but sufficiently small and/or sparse to satisfy finite-sample overlap and yield low-variance estimates. To address this tradeoff, we turn to sparse autoencoders (SAEs), and p</p><p><strong>Tags:</strong> SAE</p>]]></description>
+      <pubDate>Tue, 01 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2609.01322v1</guid>
+    </item>
+    <item>
+      <title>Beyond Scores: Understanding LLM-as-a-Judge Mechanisms in Summarization Evaluation</title>
+      <link>https://arxiv.org/abs/2609.01604v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Himil Vasava, Ming Jiang</p><p>LLM-based evaluators of natural language generation (NLG) quality are widely deployed as scoring tools and as automated training signals, yet the internal procedure by which they assign a rating remains poorly understood. We investigate this procedure mechanistically through an eight-attack perturbation taxonomy across the Readability and Adequacy dimensions of NLG quality, a generation pipeline that produces paired clean and corrupt summaries with controlled error intensity and explicit token-l</p>]]></description>
+      <pubDate>Tue, 01 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2609.01604v1</guid>
+    </item>
+    <item>
+      <title>Heard but Not Heeded: Paralinguistic Information Encoding and Loss in Audio-Language Models</title>
+      <link>https://arxiv.org/abs/2609.00727v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Bhuvan Koduru, Dareen Safar B Alharthi, Rita Singh, Bhiksha Raj</p><p>Audio language models are designed to understand speech, yet it remains unclear whether they capture how something is said beyond what is said. We present a mechanistic analysis of paralinguistic information in four open source models, Whisper-large-v2, Qwen2-Audio-7B Instruct, Qwen2.5-Omni-7B, and Chroma-4B, using the Expresso dataset with controlled speaking styles. We combine centered kernel alignment, linear probing with leave one speaker out evaluation, open ended tone prediction, and a con</p><p><strong>Tags:</strong> safety, probing</p>]]></description>
+      <pubDate>Tue, 01 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2609.00727v1</guid>
+    </item>
     <item>
       <title>MURANO: Design, Run, and Reproduce Mechanistic Interpretability Experiments as Composable Pipelines</title>
       <link>https://arxiv.org/abs/2608.30662v1</link>
@@ -51,6 +79,13 @@
       <guid>https://arxiv.org/abs/2608.30705v1</guid>
     </item>
     <item>
+      <title>Latent Mechanisms of Language Control in Multilingual Language Models</title>
+      <link>https://arxiv.org/abs/2609.00325v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Ryo Mitsuhashi, Sabri Boughorbel, Majd Hawasly</p><p>Multilingual large language models can exhibit unintended code-switching -- unnecessarily alternating between languages during generation. We present a comparative study of three methods that identify language-controlling latents in cross-layer transcoders: activation value-based selection (ValSel), activation frequency-based selection (FreqSel), and LLM-generated latent annotation-based selection (AnnSel). To evaluate the efficacy of these methods in identifying language-controlling latents, we</p>]]></description>
+      <pubDate>Mon, 31 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2609.00325v1</guid>
+    </item>
+    <item>
       <title>Interpreting and Steering for Safe and Correct Code Generation</title>
       <link>https://arxiv.org/abs/2608.30025v1</link>
       <description><![CDATA[<p><strong>Authors:</strong> Hao Yan, Ziyu Yao</p><p>Large language models (LLMs) frequently generate source code containing vulnerabilities, yet little work studies the internal mechanisms that distinguish safe from vulnerable generation in them. In this work, we systematically perform a mechanistic interpretation of LLMs, aiming at both understanding how code safety-vs-vulnerability is represented or driven by components in an LM and turning the insights into actionable steering strategies to encourage safer code generation. To this end, we intr</p><p><strong>Tags:</strong> safety, steering</p>]]></description>
@@ -63,6 +98,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Apoorva Upadhyaya, Sandipan Sikdar</p><p>Safety alignment of large language models (LLMs) degrades across languages, yet the internal mechanism driving this asymmetry remains poorly understood. Our work, therefore, presents a systematic mechanistic analysis of multilingual safety using sparse autoencoder (SAE) features, sparse interpretable directions in the residual stream associated with harmful and harmless model behavior across three instruction-tuned LLMs, eight languages, and all model layers. We observe that safety-relevant feat</p><p><strong>Tags:</strong> SAE, features, safety</p>]]></description>
       <pubDate>Sun, 30 Aug 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2608.29936v1</guid>
+    </item>
+    <item>
+      <title>From Detection to Refusal: Safer LLMs via Circuit-Guided Weight Scaling</title>
+      <link>https://arxiv.org/abs/2609.00051v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Kuan-Lin Chu, Chung-En Sun, Tsui-Wei Weng</p><p>Despite extensive alignment efforts, Large Language Models (LLMs) remain vulnerable to generating unsafe content under adversarial prompting, yet the internal mechanisms by which safety behaviors are implemented remain poorly understood. We study LLM safety from a mechanistic interpretability perspective and characterize a multi-stage *safety circuit* that organizes refusal behavior, consisting of (i) $\textbf{Harmful Detection Heads}$ that respond to harmful inputs, (ii) $\textbf{Safety Neurons</p><p><strong>Tags:</strong> circuits, safety</p>]]></description>
+      <pubDate>Sun, 30 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2609.00051v1</guid>
     </item>
     <item>
       <title>A Unifying Perspective on Language Model Representations: From Filler-Role Structure to Mechanistic Interpretability</title>
@@ -175,48 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Siddharth Setlur, Djordje Mihajlovic, Darrick Lee</p><p>Protein language models (pLMs) encode information about protein sequences which enable downstream tasks such as structure prediction, but their internal representations are not well understood. Sparse autoencoders (SAEs) provide a promising tool to disentangle latent pLM representations into interpretable features, but existing annotation pipelines largely rely on protein-level annotations derived from database labels and LLM annotations of top activating sequences. Such annotations can overlook</p><p><strong>Tags:</strong> SAE, features, biology</p>]]></description>
       <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2608.26419v1</guid>
-    </item>
-    <item>
-      <title>RACE: Scalable Statistical Estimation of Functional Consistency in LLM Neurons</title>
-      <link>https://arxiv.org/abs/2608.24758v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Runyu Wang, Bo Liu, Xiaxin Zhang, Yu Han, Jiawei Cao, et al.</p><p>Discovering stable neuron behavior across entire domains remains a challenge in mechanistic interpretability. Existing methods often rely on instance-level point estimates or computationally expensive procedures, which either obscure population-level variability or limit scalable domain-wide analysis. We present RACE (Residual Alignment for Consistency Estimation), a forward-pass statistical framework that evaluates the domain-wide functional consistency of Transformer neurons. Perturbation expe</p><p><strong>Tags:</strong> safety</p>]]></description>
-      <pubDate>Tue, 25 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.24758v1</guid>
-    </item>
-    <item>
-      <title>Beyond Static Interpretability: Anticipating Post-SFT Mechanisms from Pre-SFT Parameters for Better Tuning</title>
-      <link>https://arxiv.org/abs/2608.24482v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Hang Chen, Jiaying Zhu, Wenya Wang</p><p>Mechanistic Localization bridges mechanistic interpretability and post-training optimization by isolating critical parameters via interpretative approaches and then guiding parameter-efficient Supervised Fine-Tuning (SFT) in a ``locating-then-tuning&#x27;&#x27; paradigm. However, due to the retrospective nature of mechanistic interpretability, directly interpreting pre-SFT models introduces misleading conclusions. Specifically for novel tasks, initially identified neurons differ drastically from those gov</p>]]></description>
-      <pubDate>Tue, 25 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.24482v1</guid>
-    </item>
-    <item>
-      <title>Mechanistic Circuit Identification for Controllable Data Generation</title>
-      <link>https://arxiv.org/abs/2608.24065v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Nakyung Lee, Sangwoo Hong, Jungwoo Lee</p><p>While recent advances in data synthesis aim to curate high-quality datasets, most generation pipelines still rely on heuristic prompt-based control. This black-box paradigm provides limited insight into how individual samples interact with a model&#x27;s underlying learning dynamics. To bridge this gap, we propose a circuit-grounded framework that connects training-dynamics-based data valuation with mechanistic interpretability (MI). Specifically, we conceptualize data quality along three complementa</p><p><strong>Tags:</strong> circuits</p>]]></description>
-      <pubDate>Tue, 25 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.24065v1</guid>
-    </item>
-    <item>
-      <title>Revenge of Monosemanticity: Specialized Neurons Improve Data Efficiency in MLPs</title>
-      <link>https://arxiv.org/abs/2608.24007v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Amirhesam Abedsoltan, Enric Boix-Adsera, Fivos Kalogiannis, Mikhail Belkin</p><p>Understanding how neural networks learn and organize features is central to understanding their behavior. Much existing theory of feature learning has focused on the emergence of a global low-dimensional predictive geometry. We show that this picture is incomplete. In regression problems with clustered data, we demonstrate that multilayer perceptrons (MLPs) naturally develop monosemantic specialized neurons: individual neurons become strongly aligned with a specific predictive feature relevant t</p><p><strong>Tags:</strong> features, theory</p>]]></description>
-      <pubDate>Tue, 25 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.24007v1</guid>
-    </item>
-    <item>
-      <title>Can We Read the Mind of an Audio LLM? A Verbalizable, Multilingual Middle-Layer Workspace</title>
-      <link>https://arxiv.org/abs/2608.24958v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Jiajun Fan, Jingyuan Li, Prashanth Gurunath Shivakumar, Qi Luo, Jia-Hong Huang, et al.</p><p>An audio language model is a black box in a specific way: we see what it says, never what it works out on the way there, and chain-of-thought monitoring helps only if the model writes its reasoning down. Reading a base Qwen3-Omni with a logit lens at the audio-token positions, we find that the answer to a spoken question becomes legible - in words - in the model&#x27;s middle layers, before it emits any token. Five findings follow. (1) The readout carries concepts in neither the question, the options</p><p><strong>Tags:</strong> reasoning</p>]]></description>
-      <pubDate>Tue, 25 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.24958v1</guid>
-    </item>
-    <item>
-      <title>Targeting the Attention Heads Behind Object Hallucination in LLaVA</title>
-      <link>https://arxiv.org/abs/2608.24966v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Armaan Sandhu, Abhilasha Senapati, Hima Kammachi</p><p>Vision-language models such as LLaVA-1.5-7B often hallucinate objects absent from the image when generating captions. We ask whether an interpretability diagnosis of this failure can guide a targeted fix, and we measure what that fix actually changes. We rank attention heads by how much their image attention drops around hallucinated object words, then screen the shortlist by ablating candidate heads and measuring the change in hallucination-token log probability, yielding a 32-head set. We rest</p><p><strong>Tags:</strong> attention, vision</p>]]></description>
-      <pubDate>Tue, 25 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.24966v1</guid>
     </item>
   </channel>
 </rss>
