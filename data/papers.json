@@ -1,6 +1,57 @@
 {
-  "lastUpdated": "2026-09-01",
+  "lastUpdated": "2026-09-02",
   "papers": [
+    {
+      "id": "arxiv-2609-00755v1",
+      "title": "S^3martCirc: Self-supervised Smart Circuit Discovery",
+      "authors": "Wendy Zheng, Yinhan He, Liang Wu, Jundong Li",
+      "date": "2026-09-01",
+      "url": "https://arxiv.org/abs/2609.00755v1",
+      "abstract": "Large Language Models (LLMs) have demonstrated remarkable performance across diverse tasks, from text summarization to question answering. Despite these capabilities, their black-box nature obscures internal decision-making processes. Mechanistic interpretability (MI) aims to address this by reverse-engineering neural networks into human-understandable algorithms. Current MI approaches for LLMs typically follow a two-stage paradigm: first identifying important components (circuit discovery), whe",
+      "tags": [
+        "circuits"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2609-01322v1",
+      "title": "Exploring Sparse Autoencoders in Text-Based Causal Confounding Adjustment",
+      "authors": "Mian Zhong, Katherine A. Keith, Anjalie Field",
+      "date": "2026-09-01",
+      "url": "https://arxiv.org/abs/2609.01322v1",
+      "abstract": "In many settings, studying causal questions based on text data requires adjusting for confounding information within texts. Yet there is a tradeoff in constructing text representations for adjustment: they must be sufficiently large and/or dense to preserve the confounding variables necessary for unbiased effect estimation, but sufficiently small and/or sparse to satisfy finite-sample overlap and yield low-variance estimates. To address this tradeoff, we turn to sparse autoencoders (SAEs), and p",
+      "tags": [
+        "SAE"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2609-01604v1",
+      "title": "Beyond Scores: Understanding LLM-as-a-Judge Mechanisms in Summarization Evaluation",
+      "authors": "Himil Vasava, Ming Jiang",
+      "date": "2026-09-01",
+      "url": "https://arxiv.org/abs/2609.01604v1",
+      "abstract": "LLM-based evaluators of natural language generation (NLG) quality are widely deployed as scoring tools and as automated training signals, yet the internal procedure by which they assign a rating remains poorly understood. We investigate this procedure mechanistically through an eight-attack perturbation taxonomy across the Readability and Adequacy dimensions of NLG quality, a generation pipeline that produces paired clean and corrupt summaries with controlled error intensity and explicit token-l",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2609-00727v1",
+      "title": "Heard but Not Heeded: Paralinguistic Information Encoding and Loss in Audio-Language Models",
+      "authors": "Bhuvan Koduru, Dareen Safar B Alharthi, Rita Singh, Bhiksha Raj",
+      "date": "2026-09-01",
+      "url": "https://arxiv.org/abs/2609.00727v1",
+      "abstract": "Audio language models are designed to understand speech, yet it remains unclear whether they capture how something is said beyond what is said. We present a mechanistic analysis of paralinguistic information in four open source models, Whisper-large-v2, Qwen2-Audio-7B Instruct, Qwen2.5-Omni-7B, and Chroma-4B, using the Expresso dataset with controlled speaking styles. We combine centered kernel alignment, linear probing with leave one speaker out evaluation, open ended tone prediction, and a con",
+      "tags": [
+        "safety",
+        "probing"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2608-30662v1",
       "title": "MURANO: Design, Run, and Reproduce Mechanistic Interpretability Experiments as Composable Pipelines",
@@ -80,6 +131,17 @@
       "featured": false
     },
     {
+      "id": "arxiv-2609-00325v1",
+      "title": "Latent Mechanisms of Language Control in Multilingual Language Models",
+      "authors": "Ryo Mitsuhashi, Sabri Boughorbel, Majd Hawasly",
+      "date": "2026-08-31",
+      "url": "https://arxiv.org/abs/2609.00325v1",
+      "abstract": "Multilingual large language models can exhibit unintended code-switching -- unnecessarily alternating between languages during generation. We present a comparative study of three methods that identify language-controlling latents in cross-layer transcoders: activation value-based selection (ValSel), activation frequency-based selection (FreqSel), and LLM-generated latent annotation-based selection (AnnSel). To evaluate the efficacy of these methods in identifying language-controlling latents, we",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
       "id": "arxiv-2608-30025v1",
       "title": "Interpreting and Steering for Safe and Correct Code Generation",
       "authors": "Hao Yan, Ziyu Yao",
@@ -103,6 +165,20 @@
       "tags": [
         "SAE",
         "features",
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2609-00051v1",
+      "title": "From Detection to Refusal: Safer LLMs via Circuit-Guided Weight Scaling",
+      "authors": "Kuan-Lin Chu, Chung-En Sun, Tsui-Wei Weng",
+      "date": "2026-08-30",
+      "url": "https://arxiv.org/abs/2609.00051v1",
+      "abstract": "Despite extensive alignment efforts, Large Language Models (LLMs) remain vulnerable to generating unsafe content under adversarial prompting, yet the internal mechanisms by which safety behaviors are implemented remain poorly understood. We study LLM safety from a mechanistic interpretability perspective and characterize a multi-stage *safety circuit* that organizes refusal behavior, consisting of (i) $\\textbf{Harmful Detection Heads}$ that respond to harmful inputs, (ii) $\\textbf{Safety Neurons",
+      "tags": [
+        "circuits",
         "safety"
       ],
       "source": "arXiv",
