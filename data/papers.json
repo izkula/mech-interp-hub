@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-02",
+  "lastUpdated": "2026-09-03",
   "papers": [
     {
       "id": "arxiv-2609-00755v1",
@@ -49,6 +49,41 @@
         "safety",
         "probing"
       ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2609-01832v1",
+      "title": "Interpretable Symptom Vectors for Depression in a Large Language Model",
+      "authors": "Fangyi Zhu, Ajay Subramanian, Allison Constant, Camille Wang, Ravish Gupta, et al.",
+      "date": "2026-09-01",
+      "url": "https://arxiv.org/abs/2609.01832v1",
+      "abstract": "Patients with depression present with diverse symptom profiles, yet clinical practice routinely reduces this variation to a single severity score. Large language models (LLMs) can potentially capture various symptoms and their severity from patient speech. However, how depressive symptoms are represented inside LLMs remains poorly understood, limiting clinical trust. To examine whether internal model activations match clinician judgment, we analyzed the residual stream of Gemma-3-27B-PT using me",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2609-01936v1",
+      "title": "Sparse Readout Prism: Explaining Logit-Lens Scores in Features Instead of Tokens",
+      "authors": "Matteo He, William F. Shen, Xinchi Qiu, Nicholas D. Lane",
+      "date": "2026-09-01",
+      "url": "https://arxiv.org/abs/2609.01936v1",
+      "abstract": "A language model's prediction of its next token develops across layers, and lens methods track this process by decoding intermediate hidden states into tokens. But a lens reading reflects both the hidden state and the readout (the unembedding matrix) used to decode it. Many lenses are fit on a corpus, and we show that two lenses differing only in their fitting corpus can report different tokens for the same hidden states. We call this dependence corpus conditionality. To examine readout structur",
+      "tags": [
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2609-01723v1",
+      "title": "Hearing the Whispers: Black-Box Membership Inference Attacks on Finetuned TTS Models",
+      "authors": "Kunlin Cai, Kaiyuan Zhang, Zihang Xiang, Jinghuai Zhang, Abeer Alwan, et al.",
+      "date": "2026-09-01",
+      "url": "https://arxiv.org/abs/2609.01723v1",
+      "abstract": "Text-to-Speech (TTS) foundation models are increasingly fine-tuned on private datasets to synthesize highly personalized voices, introducing severe privacy risks by exposing both biometric identities and sensitive speech content. Existing black-box membership inference attacks (MIAs) follow a two-stage pipeline of query generation and representation engineering, both of which face unique challenges when adapted to TTS. For query generation, dual conditioning on synthesis text and reference speec",
+      "tags": [],
       "source": "arXiv",
       "featured": false
     },
