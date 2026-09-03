@@ -5,7 +5,7 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 02 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 03 Sep 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
@@ -35,6 +35,27 @@
       <description><![CDATA[<p><strong>Authors:</strong> Bhuvan Koduru, Dareen Safar B Alharthi, Rita Singh, Bhiksha Raj</p><p>Audio language models are designed to understand speech, yet it remains unclear whether they capture how something is said beyond what is said. We present a mechanistic analysis of paralinguistic information in four open source models, Whisper-large-v2, Qwen2-Audio-7B Instruct, Qwen2.5-Omni-7B, and Chroma-4B, using the Expresso dataset with controlled speaking styles. We combine centered kernel alignment, linear probing with leave one speaker out evaluation, open ended tone prediction, and a con</p><p><strong>Tags:</strong> safety, probing</p>]]></description>
       <pubDate>Tue, 01 Sep 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2609.00727v1</guid>
+    </item>
+    <item>
+      <title>Interpretable Symptom Vectors for Depression in a Large Language Model</title>
+      <link>https://arxiv.org/abs/2609.01832v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Fangyi Zhu, Ajay Subramanian, Allison Constant, Camille Wang, Ravish Gupta, et al.</p><p>Patients with depression present with diverse symptom profiles, yet clinical practice routinely reduces this variation to a single severity score. Large language models (LLMs) can potentially capture various symptoms and their severity from patient speech. However, how depressive symptoms are represented inside LLMs remains poorly understood, limiting clinical trust. To examine whether internal model activations match clinician judgment, we analyzed the residual stream of Gemma-3-27B-PT using me</p>]]></description>
+      <pubDate>Tue, 01 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2609.01832v1</guid>
+    </item>
+    <item>
+      <title>Sparse Readout Prism: Explaining Logit-Lens Scores in Features Instead of Tokens</title>
+      <link>https://arxiv.org/abs/2609.01936v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Matteo He, William F. Shen, Xinchi Qiu, Nicholas D. Lane</p><p>A language model&#x27;s prediction of its next token develops across layers, and lens methods track this process by decoding intermediate hidden states into tokens. But a lens reading reflects both the hidden state and the readout (the unembedding matrix) used to decode it. Many lenses are fit on a corpus, and we show that two lenses differing only in their fitting corpus can report different tokens for the same hidden states. We call this dependence corpus conditionality. To examine readout structur</p><p><strong>Tags:</strong> features</p>]]></description>
+      <pubDate>Tue, 01 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2609.01936v1</guid>
+    </item>
+    <item>
+      <title>Hearing the Whispers: Black-Box Membership Inference Attacks on Finetuned TTS Models</title>
+      <link>https://arxiv.org/abs/2609.01723v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Kunlin Cai, Kaiyuan Zhang, Zihang Xiang, Jinghuai Zhang, Abeer Alwan, et al.</p><p>Text-to-Speech (TTS) foundation models are increasingly fine-tuned on private datasets to synthesize highly personalized voices, introducing severe privacy risks by exposing both biometric identities and sensitive speech content. Existing black-box membership inference attacks (MIAs) follow a two-stage pipeline of query generation and representation engineering, both of which face unique challenges when adapted to TTS. For query generation, dual conditioning on synthesis text and reference speec</p>]]></description>
+      <pubDate>Tue, 01 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2609.01723v1</guid>
     </item>
     <item>
       <title>MURANO: Design, Run, and Reproduce Mechanistic Interpretability Experiments as Composable Pipelines</title>
@@ -196,27 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Suchit Gupte, Xueru Zhang, Mohammad Mahdi Khalili</p><p>Sparse autoencoders (SAEs) are widely used to interpret the internal representations of large language models (LLMs), yet their reliability under post-hoc model compression remains poorly understood. We present a systematic study of how pruning affects SAE behavior and theoretically show that, for a fixed SAE, its impact is governed by perturbation energy, a covariance-weighted norm. This perspective exposes a key limitation of magnitude pruning: by ignoring activation geometry, it distorts the </p><p><strong>Tags:</strong> SAE, theory</p>]]></description>
       <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2608.25941v1</guid>
-    </item>
-    <item>
-      <title>LMSM: LLM Security Framework Inspired by Linux Security Modules</title>
-      <link>https://arxiv.org/abs/2608.25697v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> XiuYu Zhang, Bonan Ruan, Junfeng Fang, An Zhang, Tat-Seng Chua, et al.</p><p>Large language models (LLMs) are increasingly deployed with layered defenses, yet malicious prompts can still bypass them. Interpretability methods can expose model-internal signals along the generation path that could inform enforcement, but these signals are not security controls by themselves. Deployments that adapt them for safety typically couple each signal to its own calibration, policy logic, and intervention code, so each new artifact creates integration work instead of strengthening a </p><p><strong>Tags:</strong> safety</p>]]></description>
-      <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.25697v1</guid>
-    </item>
-    <item>
-      <title>Escaping Low-Dimensional Overlap: Multi-Task Model Merging via High-Dimensional Sparse Disentanglement</title>
-      <link>https://arxiv.org/abs/2608.25354v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Yihang Zhang, Shengke Sun, Junjie Wen, Feng Zeng</p><p>Model merging provides an efficient way to construct multi-task generalist models without additional training, but its performance often degrades under severe task interference. Task interference in model merging primarily stems from \textit{superposition}, where task-specific features become entangled within the parameter space. This entanglement renders conventional decomposition methods insufficient for effectively isolating useful task directions from interfering components. In this paper, w</p><p><strong>Tags:</strong> superposition, features</p>]]></description>
-      <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.25354v1</guid>
-    </item>
-    <item>
-      <title>Interpreting Latent Protein Language Model Features with Geometric Annotations</title>
-      <link>https://arxiv.org/abs/2608.26419v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Siddharth Setlur, Djordje Mihajlovic, Darrick Lee</p><p>Protein language models (pLMs) encode information about protein sequences which enable downstream tasks such as structure prediction, but their internal representations are not well understood. Sparse autoencoders (SAEs) provide a promising tool to disentangle latent pLM representations into interpretable features, but existing annotation pipelines largely rely on protein-level annotations derived from database labels and LLM annotations of top activating sequences. Such annotations can overlook</p><p><strong>Tags:</strong> SAE, features, biology</p>]]></description>
-      <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.26419v1</guid>
     </item>
   </channel>
 </rss>
