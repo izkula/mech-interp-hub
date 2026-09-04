@@ -1,6 +1,64 @@
 {
-  "lastUpdated": "2026-09-03",
+  "lastUpdated": "2026-09-04",
   "papers": [
+    {
+      "id": "arxiv-2609-03687v1",
+      "title": "A Circuit for Plural Reference: How LLMs Represent and Retrieve Singular and Plural Entities",
+      "authors": "Anh Danh, Rick Nouwen, Massimo Poesio",
+      "date": "2026-09-03",
+      "url": "https://arxiv.org/abs/2609.03687v1",
+      "abstract": "Coreference resolution is an important task in contextual reasoning. In this paper, we investigate the mechanism for representing and retrieving singular and plural entities for plural reference. We use a combination of mechanistic interpretability and attention pattern analysis to study the process in which LLMs predict a pronoun to refer back to previously mentioned entities. Using a range of causal intervention techniques, we find a set of attention heads that are responsible for (1) represen",
+      "tags": [
+        "circuits",
+        "attention",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2609-03629v1",
+      "title": "EraseSAE: Surgical Concept Erasure in Text-to-Video Diffusion Models via Sparse Autoencoders",
+      "authors": "Xinghao Wang, Dong Li, Wei Yu, Yingwei Pan, Tao Gong, et al.",
+      "date": "2026-09-03",
+      "url": "https://arxiv.org/abs/2609.03629v1",
+      "abstract": "Recent advances in text-to-video (T2V) diffusion models have demonstrated remarkable generative capabilities, yet their reliance on loosely curated training data raises pressing safety and copyright concerns. Concept erasure offers a principled remedy by removing unwanted semantics from pretrained models while preserving remaining concepts. However, existing approaches typically operate at a coarse granularity misaligned with the fine-grained, distributed nature of concept representations, leadi",
+      "tags": [
+        "SAE",
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2609-03090v1",
+      "title": "The Gradient Does Not See Rank: Rank-Indifference in Matrix-CODI on ProsQA",
+      "authors": "Samuel Larson",
+      "date": "2026-09-02",
+      "url": "https://arxiv.org/abs/2609.03090v1",
+      "abstract": "Continuous chain-of-thought models compress reasoning into latent tokens. Matrix-valued variants, which route each latent token through a d x d matrix bottleneck, introduce rank as a single-sample structural observable on the latent matrix Z. If matrix latents carry parallel reasoning paths via superposition, rank should track them, and truncating Z to low rank should hurt accuracy on tasks whose solutions plausibly require multiple components. Across four training regimes of a matrix-CODI model",
+      "tags": [
+        "superposition",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2609-03026v1",
+      "title": "ObserverBench: Testing Mechanistic Estimates for Intervention and Control",
+      "authors": "Vijay Erramilli",
+      "date": "2026-09-02",
+      "url": "https://arxiv.org/abs/2609.03026v1",
+      "abstract": "Mechanistic interpretability is increasingly used to guide interventions such as activation steering, circuit removal, and safety monitoring. Yet an internal estimate that is accurate on average can still choose a poor action.   We present ObserverBench, a benchmark framework for testing whether an internal estimator---an observer---is adequate for the intervention, control, or safety task it directs. Each task fixes the model, information boundary, allowed actions, decision rule, held-out cases",
+      "tags": [
+        "circuits",
+        "safety",
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2609-00755v1",
       "title": "S^3martCirc: Self-supervised Smart Circuit Discovery",
