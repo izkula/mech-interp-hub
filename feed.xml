@@ -5,9 +5,37 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 03 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 04 Sep 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>A Circuit for Plural Reference: How LLMs Represent and Retrieve Singular and Plural Entities</title>
+      <link>https://arxiv.org/abs/2609.03687v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Anh Danh, Rick Nouwen, Massimo Poesio</p><p>Coreference resolution is an important task in contextual reasoning. In this paper, we investigate the mechanism for representing and retrieving singular and plural entities for plural reference. We use a combination of mechanistic interpretability and attention pattern analysis to study the process in which LLMs predict a pronoun to refer back to previously mentioned entities. Using a range of causal intervention techniques, we find a set of attention heads that are responsible for (1) represen</p><p><strong>Tags:</strong> circuits, attention, reasoning</p>]]></description>
+      <pubDate>Thu, 03 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2609.03687v1</guid>
+    </item>
+    <item>
+      <title>EraseSAE: Surgical Concept Erasure in Text-to-Video Diffusion Models via Sparse Autoencoders</title>
+      <link>https://arxiv.org/abs/2609.03629v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Xinghao Wang, Dong Li, Wei Yu, Yingwei Pan, Tao Gong, et al.</p><p>Recent advances in text-to-video (T2V) diffusion models have demonstrated remarkable generative capabilities, yet their reliance on loosely curated training data raises pressing safety and copyright concerns. Concept erasure offers a principled remedy by removing unwanted semantics from pretrained models while preserving remaining concepts. However, existing approaches typically operate at a coarse granularity misaligned with the fine-grained, distributed nature of concept representations, leadi</p><p><strong>Tags:</strong> SAE, safety</p>]]></description>
+      <pubDate>Thu, 03 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2609.03629v1</guid>
+    </item>
+    <item>
+      <title>The Gradient Does Not See Rank: Rank-Indifference in Matrix-CODI on ProsQA</title>
+      <link>https://arxiv.org/abs/2609.03090v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Samuel Larson</p><p>Continuous chain-of-thought models compress reasoning into latent tokens. Matrix-valued variants, which route each latent token through a d x d matrix bottleneck, introduce rank as a single-sample structural observable on the latent matrix Z. If matrix latents carry parallel reasoning paths via superposition, rank should track them, and truncating Z to low rank should hurt accuracy on tasks whose solutions plausibly require multiple components. Across four training regimes of a matrix-CODI model</p><p><strong>Tags:</strong> superposition, reasoning</p>]]></description>
+      <pubDate>Wed, 02 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2609.03090v1</guid>
+    </item>
+    <item>
+      <title>ObserverBench: Testing Mechanistic Estimates for Intervention and Control</title>
+      <link>https://arxiv.org/abs/2609.03026v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Vijay Erramilli</p><p>Mechanistic interpretability is increasingly used to guide interventions such as activation steering, circuit removal, and safety monitoring. Yet an internal estimate that is accurate on average can still choose a poor action.   We present ObserverBench, a benchmark framework for testing whether an internal estimator---an observer---is adequate for the intervention, control, or safety task it directs. Each task fixes the model, information boundary, allowed actions, decision rule, held-out cases</p><p><strong>Tags:</strong> circuits, safety, steering</p>]]></description>
+      <pubDate>Wed, 02 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2609.03026v1</guid>
+    </item>
     <item>
       <title>S^3martCirc: Self-supervised Smart Circuit Discovery</title>
       <link>https://arxiv.org/abs/2609.00755v1</link>
@@ -189,34 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Piotr Jedryszek, Oliver M. Crook</p><p>Sparse autoencoders (SAEs), and other interpretability methods could turn AI models in Biology and other fields into engines of scientific discovery by explaining the superhuman capabilities of those models. However, a latent is only useful if we know three things: whether it is coherent, whether it can be described, and whether that description has predictive power. These questions are routinely conflated. We assemble them into a single pipeline and report the practical innovations each stage r</p><p><strong>Tags:</strong> SAE, biology</p>]]></description>
       <pubDate>Thu, 27 Aug 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2608.27754v1</guid>
-    </item>
-    <item>
-      <title>How Do Linear Probes Emerge? A Circuit-Tracing Framework with Concept-Targeted Attribution</title>
-      <link>https://arxiv.org/abs/2608.27510v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Vedant Palit, Florent Draye, Terry Jingchen Zhang, Bernhard Schölkopf, Zhijing Jin</p><p>Transcoder attribution graphs are usually trained to explain why a model assigns high probability to a particular next token. We introduce Concept-Targeted Attribution (CTA), which instead trains attribution graphs with respect to a linear probe direction. CTA therefore yields probe-specific circuits that explain why an internal concept representation arises in a prompt, independently of whether it is expressed in the generated token. Using Cross-Layer Transcoders, we show that these probe-targe</p><p><strong>Tags:</strong> circuits, probing</p>]]></description>
-      <pubDate>Thu, 27 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.27510v1</guid>
-    </item>
-    <item>
-      <title>A Deeper Analysis of Block-Sparse Featurizers</title>
-      <link>https://arxiv.org/abs/2608.27515v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Alexandru-Iulius Jerpelea, Amith Ananthram</p><p>The recently introduced block-sparse featurizer (BSF; Fel et al., 2026) is similar to a sparse autoencoder (SAE), but its atomic unit is a small subspace (a block of directions) rather than a single direction. It is designed for features that live on low-dimensional manifolds, which are especially frequent in vision. This work studies the BSF&#x27;s strengths and weaknesses, finding how it still somewhat suffers from classic SAE failure modes, like feature splitting and composition. We propose severa</p><p><strong>Tags:</strong> SAE, features, vision</p>]]></description>
-      <pubDate>Thu, 27 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.27515v1</guid>
-    </item>
-    <item>
-      <title>Finding and using interpretable latents in a neutrino foundation model with sparse autoencoders</title>
-      <link>https://arxiv.org/abs/2608.26090v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Raphaël Bonnet-Guerrini, Johann Ioannou-Nikolaides, Inar Timiryasov, Vincenzo Piuri</p><p>We present a first application of sparse-autoencoder-based mechanistic interpretability to particle physics. Studying a neutrino foundation model pretrained on IceCube data and fine-tuned for direction reconstruction, we identify a validated atlas of physical concepts in the model representation, using a strict validation protocol consisting of held-out tests, matched nuisance controls, and replication across independent dictionary trainings. Causal interventions show that the direction head bar</p><p><strong>Tags:</strong> SAE</p>]]></description>
-      <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.26090v1</guid>
-    </item>
-    <item>
-      <title>When Pruning Meets Interpretability: Preserving Sparse Autoencoder Robustness in LLMs</title>
-      <link>https://arxiv.org/abs/2608.25941v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Suchit Gupte, Xueru Zhang, Mohammad Mahdi Khalili</p><p>Sparse autoencoders (SAEs) are widely used to interpret the internal representations of large language models (LLMs), yet their reliability under post-hoc model compression remains poorly understood. We present a systematic study of how pruning affects SAE behavior and theoretically show that, for a fixed SAE, its impact is governed by perturbation energy, a covariance-weighted norm. This perspective exposes a key limitation of magnitude pruning: by ignoring activation geometry, it distorts the </p><p><strong>Tags:</strong> SAE, theory</p>]]></description>
-      <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.25941v1</guid>
     </item>
   </channel>
 </rss>
