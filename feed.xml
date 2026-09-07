@@ -5,9 +5,37 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 06 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 07 Sep 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Beneath the Surface of Chains-of-Thought: A Mechanistic Interpretation of Reasoning Operations in LLMs</title>
+      <link>https://arxiv.org/abs/2609.04753v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Seogyeong Jeong, Jaehui Hwang, Dongyoon Han, Geonmo Gu, Alice Oh, et al.</p><p>Reasoning in large language models unfolds through diverse functional operations, such as problem formulation, goal decomposition, and deduction. Although these operations are explicitly distinguished in text, little is known about how they are geometrically organized in representation spaces. To this end, we investigate whether distinct reasoning operations exhibit corresponding geometric structure in hidden representations. We find that operations are separable in held-out representations, wit</p><p><strong>Tags:</strong> reasoning</p>]]></description>
+      <pubDate>Fri, 04 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2609.04753v1</guid>
+    </item>
+    <item>
+      <title>Recurrence Is Not Enough: Causally Validating Multilingual SAE Translation Features in Gemma 2 and 3</title>
+      <link>https://arxiv.org/abs/2609.04808v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Giang Son Nguyen, Nhi Ngoc-Yen Nguyen, Wray Buntine, Dung D. Le</p><p>Sparse autoencoder (SAE) features are increasingly used to explain and steer language-model behavior, but it remains unclear whether a feature found in one language context plays the same causal role when processing prompts in another language. We study this question using translation-initiation features (Wu et al., 2026). We reproduce the SAE feature discovery method from Wu et al. in Gemma 2 and extend it to multilingual settings that vary prompt language, source language, and target language.</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Fri, 04 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2609.04808v1</guid>
+    </item>
+    <item>
+      <title>Influence Score and Transformers interpretability: Measure of the Effective Impact of Attention Heads at inference time</title>
+      <link>https://arxiv.org/abs/2609.05074v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Lisa Bouger, Yannick Teglia, Philippe Loubet Moundi</p><p>We propose an influence score to quantify the contribution of attention heads to classification decisions in Transformer-based models designed for prompt injection detection. The score combines directional influence on the logits with structural contribution within the residual stream, enabling a multi-scale analysis at the head, layer, and network levels. Applied to a DeBERTa model specialized for prompt injection detection, our framework reveals distinct decision behaviours between correct and</p><p><strong>Tags:</strong> attention</p>]]></description>
+      <pubDate>Fri, 04 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2609.05074v1</guid>
+    </item>
+    <item>
+      <title>Locating and Steering Refusal Beyond Attention</title>
+      <link>https://arxiv.org/abs/2609.04721v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Preethi Carmel Bosco, Gopalakrishnan Srinivasan</p><p>Where inside a language model does refusal live, and does that place change when the architecture does? In a transformer, refusal is governed by a single direction in the residual stream, a finding that safety and interpretability tooling now depend on. State-space models (SSMs) route information through a recurrent update instead of attention, sharing no token-mixing mechanism with a transformer. Does the same safety representation survive this shift, or must it be rediscovered per architecture</p><p><strong>Tags:</strong> safety, steering</p>]]></description>
+      <pubDate>Fri, 04 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2609.04721v1</guid>
+    </item>
     <item>
       <title>A Circuit for Plural Reference: How LLMs Represent and Retrieve Singular and Plural Entities</title>
       <link>https://arxiv.org/abs/2609.03687v1</link>
@@ -23,6 +51,13 @@
       <guid>https://arxiv.org/abs/2609.03629v1</guid>
     </item>
     <item>
+      <title>SharedSAE: One Feature Dictionary Across Language Models</title>
+      <link>https://arxiv.org/abs/2609.04344v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Daniil Ognev, Célian Vasson, Lijie Hu, Kentaro Inui, Benjamin Heinzerling</p><p>Sparse autoencoders (SAEs) are widely used to interpret language model activations, but SAE training and latent labelling are typically repeated for every model. Here, we show that a single shared SAE can replace a collection of dedicated per-model SAEs. Our method, SharedSAE, combines a shared dictionary with model-specific encoder-decoder pairs. Unlike the closest prior method, which discards activation magnitudes and requires all models at inference, SharedSAE instead normalizes only selectio</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Thu, 03 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2609.04344v1</guid>
+    </item>
+    <item>
       <title>The Gradient Does Not See Rank: Rank-Indifference in Matrix-CODI on ProsQA</title>
       <link>https://arxiv.org/abs/2609.03090v1</link>
       <description><![CDATA[<p><strong>Authors:</strong> Samuel Larson</p><p>Continuous chain-of-thought models compress reasoning into latent tokens. Matrix-valued variants, which route each latent token through a d x d matrix bottleneck, introduce rank as a single-sample structural observable on the latent matrix Z. If matrix latents carry parallel reasoning paths via superposition, rank should track them, and truncating Z to low rank should hurt accuracy on tasks whose solutions plausibly require multiple components. Across four training regimes of a matrix-CODI model</p><p><strong>Tags:</strong> superposition, reasoning</p>]]></description>
@@ -35,6 +70,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Vijay Erramilli</p><p>Mechanistic interpretability is increasingly used to guide interventions such as activation steering, circuit removal, and safety monitoring. Yet an internal estimate that is accurate on average can still choose a poor action.   We present ObserverBench, a benchmark framework for testing whether an internal estimator---an observer---is adequate for the intervention, control, or safety task it directs. Each task fixes the model, information boundary, allowed actions, decision rule, held-out cases</p><p><strong>Tags:</strong> circuits, safety, steering</p>]]></description>
       <pubDate>Wed, 02 Sep 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2609.03026v1</guid>
+    </item>
+    <item>
+      <title>FailSAE: Towards Interpretable Failure Prediction for Vision-Language Models via Sparse Autoencoders</title>
+      <link>https://arxiv.org/abs/2609.04276v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Jie Ma, Zongxi Liu, Yi Zhu</p><p>Vision-language models (VLMs), such as CLIP, have achieved strong performance across multimodal tasks by aligning visual and textual representations in a shared embedding space. As VLMs are increasingly used for high-stakes domains, failure prediction becomes critical for risk-aware deployment and human intervention. Existing failure prediction methods typically rely on confidence scores or auxiliary classifiers. Although these methods are effective on predicting VLM failures, they provide limit</p><p><strong>Tags:</strong> SAE, probing, vision</p>]]></description>
+      <pubDate>Wed, 02 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2609.04276v1</guid>
     </item>
     <item>
       <title>S^3martCirc: Self-supervised Smart Circuit Discovery</title>
@@ -175,48 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Sasha Boguraev, Toshiki Nakai, Kyle Mahowald, Julius Steuer</p><p>Linguistic theory has long recognized cross-linguistic syntactic regularities, leading to claims that these similar structures are processed by similar mechanisms. However, this hypothesis has been difficult to test empirically due to our lack of fine-grained, manipulable access of human processing mechanisms. In this work, we take advantage of techniques from mechanistic interpretability to study such a question in multilingual LMs. We first isolate language-internal mechanisms before attemptin</p><p><strong>Tags:</strong> theory</p>]]></description>
       <pubDate>Fri, 28 Aug 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2608.28924v1</guid>
-    </item>
-    <item>
-      <title>Enhancing SAE-based Steering via Neighbor Integrated Feature Selection</title>
-      <link>https://arxiv.org/abs/2608.28806v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Yutian Liu, Xu Wang, Difan Zou</p><p>Sparse autoencoders (SAEs) disentangle model activations into interpretable features and are widely used for steering large language models. Most existing SAE-based steering methods select features by applying a top- filter based on statistical scores, assuming that higher-scoring features yield stronger steering effects. In this paper, we show that this assumption is often invalid, leading to suboptimal feature selection. Our analysis reveals that effective steering features may be distributed </p><p><strong>Tags:</strong> SAE, features, steering</p>]]></description>
-      <pubDate>Fri, 28 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.28806v1</guid>
-    </item>
-    <item>
-      <title>Circuit Condensation: Post-Training that Concentrates a Behavior&#x27;s Causal Circuit</title>
-      <link>https://arxiv.org/abs/2608.27254v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Sai Adith Senthil Kumar</p><p>One approach to mechanistic interpretability explains behavior through circuits: the components and connections that carry it. Frozen discovery often returns hundreds of edges, making them hard to inspect, compare, or verify exhaustively. We introduce Circuit Condensation, which post-trains models to concentrate behaviors into smaller causal graphs. Each round prunes low-attribution edges and trains a low-rank adapter to match the original through what remains, retaining the cut only if task per</p><p><strong>Tags:</strong> circuits</p>]]></description>
-      <pubDate>Thu, 27 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.27254v1</guid>
-    </item>
-    <item>
-      <title>Making Clinical Language Models Auditable: Concept-Guided Fine-Tuning for Robust Prediction</title>
-      <link>https://arxiv.org/abs/2608.27397v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Jin Mu, Guanhua Chen</p><p>Clinical language models can achieve strong in-hospital accuracy yet fail under deployment shifts because they exploit note-specific artifacts (e.g., templates, separators, boilerplate) that do not reflect patient state. We propose CAST (Concept-guided Artifact Suppression Tuning), an SAE-based framework for auditable clinical text classification. CAST uses Sparse Autoencoders to expose sparse, human-auditable features from intermediate Transformer activations, labels SAE latents with an LLM-ass</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Thu, 27 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.27397v1</guid>
-    </item>
-    <item>
-      <title>Planting a Latent Variable in Natural-Looking Text: a More Realistic Test of Belief States in LLMs and Their Link to Concept Geometry</title>
-      <link>https://arxiv.org/abs/2608.26887v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Alexandru-Iulius Jerpelea</p><p>LLMs are thought to track &quot;belief states,&quot; i.e., running probability distributions over the latent variables that govern language (Shai et al., 2024; Sarfati et al., 2026), but so far this has only been comprehensively demonstrated on toy synthetic data and in a few isolated case studies. It has also never been empirically connected to the geometry of LLM features (the concepts interpretability finds in model activations). In this work, we plant a controllable latent variable inside natural-look</p><p><strong>Tags:</strong> features</p>]]></description>
-      <pubDate>Thu, 27 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.26887v1</guid>
-    </item>
-    <item>
-      <title>Circuit Discovery Helps Detect LLM Jailbreaking: A Mechanistic Interpretability Study</title>
-      <link>https://arxiv.org/abs/2608.27504v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Paria Mehrbod, Boris Knyazev, Guy Wolf, Eugene Belilovsky, Geraldin Nanfack</p><p>Despite extensive safety alignment, large language models (LLMs) remain vulnerable to jailbreak attacks that bypass safeguards to elicit harmful content. While prior work attributes this vulnerability to safety training limitations, the internal mechanisms by which LLMs process adversarial prompts remain poorly understood. We present a mechanistic analysis of the jailbreaking behavior in a large-scale, safety-aligned LLM, focusing on LLaMA-2-7B-chat-hf. Leveraging edge attribution patching and s</p><p><strong>Tags:</strong> circuits, safety</p>]]></description>
-      <pubDate>Thu, 27 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.27504v1</guid>
-    </item>
-    <item>
-      <title>Efficient Auto-Interpretability of AI Models in Biology</title>
-      <link>https://arxiv.org/abs/2608.27754v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Piotr Jedryszek, Oliver M. Crook</p><p>Sparse autoencoders (SAEs), and other interpretability methods could turn AI models in Biology and other fields into engines of scientific discovery by explaining the superhuman capabilities of those models. However, a latent is only useful if we know three things: whether it is coherent, whether it can be described, and whether that description has predictive power. These questions are routinely conflated. We assemble them into a single pipeline and report the practical innovations each stage r</p><p><strong>Tags:</strong> SAE, biology</p>]]></description>
-      <pubDate>Thu, 27 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.27754v1</guid>
     </item>
   </channel>
 </rss>
