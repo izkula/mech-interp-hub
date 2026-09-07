@@ -1,6 +1,60 @@
 {
-  "lastUpdated": "2026-09-06",
+  "lastUpdated": "2026-09-07",
   "papers": [
+    {
+      "id": "arxiv-2609-04753v1",
+      "title": "Beneath the Surface of Chains-of-Thought: A Mechanistic Interpretation of Reasoning Operations in LLMs",
+      "authors": "Seogyeong Jeong, Jaehui Hwang, Dongyoon Han, Geonmo Gu, Alice Oh, et al.",
+      "date": "2026-09-04",
+      "url": "https://arxiv.org/abs/2609.04753v1",
+      "abstract": "Reasoning in large language models unfolds through diverse functional operations, such as problem formulation, goal decomposition, and deduction. Although these operations are explicitly distinguished in text, little is known about how they are geometrically organized in representation spaces. To this end, we investigate whether distinct reasoning operations exhibit corresponding geometric structure in hidden representations. We find that operations are separable in held-out representations, wit",
+      "tags": [
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2609-04808v1",
+      "title": "Recurrence Is Not Enough: Causally Validating Multilingual SAE Translation Features in Gemma 2 and 3",
+      "authors": "Giang Son Nguyen, Nhi Ngoc-Yen Nguyen, Wray Buntine, Dung D. Le",
+      "date": "2026-09-04",
+      "url": "https://arxiv.org/abs/2609.04808v1",
+      "abstract": "Sparse autoencoder (SAE) features are increasingly used to explain and steer language-model behavior, but it remains unclear whether a feature found in one language context plays the same causal role when processing prompts in another language. We study this question using translation-initiation features (Wu et al., 2026). We reproduce the SAE feature discovery method from Wu et al. in Gemma 2 and extend it to multilingual settings that vary prompt language, source language, and target language.",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2609-05074v1",
+      "title": "Influence Score and Transformers interpretability: Measure of the Effective Impact of Attention Heads at inference time",
+      "authors": "Lisa Bouger, Yannick Teglia, Philippe Loubet Moundi",
+      "date": "2026-09-04",
+      "url": "https://arxiv.org/abs/2609.05074v1",
+      "abstract": "We propose an influence score to quantify the contribution of attention heads to classification decisions in Transformer-based models designed for prompt injection detection. The score combines directional influence on the logits with structural contribution within the residual stream, enabling a multi-scale analysis at the head, layer, and network levels. Applied to a DeBERTa model specialized for prompt injection detection, our framework reveals distinct decision behaviours between correct and",
+      "tags": [
+        "attention"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2609-04721v1",
+      "title": "Locating and Steering Refusal Beyond Attention",
+      "authors": "Preethi Carmel Bosco, Gopalakrishnan Srinivasan",
+      "date": "2026-09-04",
+      "url": "https://arxiv.org/abs/2609.04721v1",
+      "abstract": "Where inside a language model does refusal live, and does that place change when the architecture does? In a transformer, refusal is governed by a single direction in the residual stream, a finding that safety and interpretability tooling now depend on. State-space models (SSMs) route information through a recurrent update instead of attention, sharing no token-mixing mechanism with a transformer. Does the same safety representation survive this shift, or must it be rediscovered per architecture",
+      "tags": [
+        "safety",
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2609-03687v1",
       "title": "A Circuit for Plural Reference: How LLMs Represent and Retrieve Singular and Plural Entities",
@@ -31,6 +85,20 @@
       "featured": false
     },
     {
+      "id": "arxiv-2609-04344v1",
+      "title": "SharedSAE: One Feature Dictionary Across Language Models",
+      "authors": "Daniil Ognev, C\u00e9lian Vasson, Lijie Hu, Kentaro Inui, Benjamin Heinzerling",
+      "date": "2026-09-03",
+      "url": "https://arxiv.org/abs/2609.04344v1",
+      "abstract": "Sparse autoencoders (SAEs) are widely used to interpret language model activations, but SAE training and latent labelling are typically repeated for every model. Here, we show that a single shared SAE can replace a collection of dedicated per-model SAEs. Our method, SharedSAE, combines a shared dictionary with model-specific encoder-decoder pairs. Unlike the closest prior method, which discards activation magnitudes and requires all models at inference, SharedSAE instead normalizes only selectio",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
       "id": "arxiv-2609-03090v1",
       "title": "The Gradient Does Not See Rank: Rank-Indifference in Matrix-CODI on ProsQA",
       "authors": "Samuel Larson",
@@ -55,6 +123,21 @@
         "circuits",
         "safety",
         "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2609-04276v1",
+      "title": "FailSAE: Towards Interpretable Failure Prediction for Vision-Language Models via Sparse Autoencoders",
+      "authors": "Jie Ma, Zongxi Liu, Yi Zhu",
+      "date": "2026-09-02",
+      "url": "https://arxiv.org/abs/2609.04276v1",
+      "abstract": "Vision-language models (VLMs), such as CLIP, have achieved strong performance across multimodal tasks by aligning visual and textual representations in a shared embedding space. As VLMs are increasingly used for high-stakes domains, failure prediction becomes critical for risk-aware deployment and human intervention. Existing failure prediction methods typically rely on confidence scores or auxiliary classifiers. Although these methods are effective on predicting VLM failures, they provide limit",
+      "tags": [
+        "SAE",
+        "probing",
+        "vision"
       ],
       "source": "arXiv",
       "featured": false
