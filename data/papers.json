@@ -1,6 +1,162 @@
 {
-  "lastUpdated": "2026-09-08",
+  "lastUpdated": "2026-09-09",
   "papers": [
+    {
+      "id": "arxiv-2609-09113v1",
+      "title": "SAEScientist-Bench: Can AI Agents Conduct Autonomous SAE Interpretability Research?",
+      "authors": "Yuqiao Tan, Shizhu He, Jun Zhao, Kang Liu",
+      "date": "2026-09-08",
+      "url": "https://arxiv.org/abs/2609.09113v1",
+      "abstract": "While research on recursive self-improvement (RSI) has predominantly automated model training pipelines, reliable autonomous development demands a missing pillar: post-hoc monitoring and auditing to understand what models learn and ensure safe alignment. Mechanistic interpretability tools are essential to bridge this gap, among which Sparse Autoencoders (SAEs) serve as a cornerstone by isolating interpretable features for model inspection and steering. In this paper, we introduce SAEScientist-Be",
+      "tags": [
+        "SAE",
+        "features",
+        "safety",
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2609-08322v1",
+      "title": "Tracing Stereotypes from Representation to Output in Multilingual LLMs",
+      "authors": "Ariun-Erdene Tumurchuluun, Yusser Al Ghussin, Pinzhen Chen, Josef van Genabith, Koel Dutta Chowdhury",
+      "date": "2026-09-08",
+      "url": "https://arxiv.org/abs/2609.08322v1",
+      "abstract": "Multilingual LLMs show stereotype-related behavior that varies across languages, but behavioral scores do not show where the relevant information is represented or how it affects the output. To investigate these internal mechanisms, we compare linear probing, attribution patching, sparse autoencoders (SAEs) and feature ablation in Llama-3.1-8B, Qwen3-8B, and Gemma-2-9B. Probe performance peaks substantially earlier than attribution in all three models, with a separation of 36-53% of model depth.",
+      "tags": [
+        "SAE",
+        "features",
+        "probing"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2609-08173v1",
+      "title": "Key Path Identification for Resolving Knowledge Conflicts via SAE-based Steering",
+      "authors": "Wenbo Zhang, Zhongxiang Sun, Zhiguang Han, Jun Xu",
+      "date": "2026-09-08",
+      "url": "https://arxiv.org/abs/2609.08173v1",
+      "abstract": "Sparse autoencoder (SAE)-based steering has been widely used to address knowledge conflicts by guiding LLMs to be more faithful to the contextual knowledge. Existing methods usually perform mass steering, which modifies a large batch of SAE features identified via correlation-based methods. However, due to the inaccurate correlation and the neglected feature interactions, mass steering methods fail to precisely identify the features that play the key roles in steering and introduce a large numbe",
+      "tags": [
+        "SAE",
+        "features",
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2609-09055v1",
+      "title": "\"World Knowledge\" in the Weights: Reading Concept Circuits of Vision Transformers",
+      "authors": "Yanlin Chen, Tang Li, Xi Peng",
+      "date": "2026-09-08",
+      "url": "https://arxiv.org/abs/2609.09055v1",
+      "abstract": "Vision transformers (ViTs) have achieved remarkable generalization across visual domains, yet little is known about how they internally represent the structure of the world. To address this gap, we use Cross-Layer Transcoders (CLTs) to read concept circuits from ViTs: directed graphs whose nodes correspond to sparse, interpretable concepts and edges capture concept interactions across layers. Our method yields two complementary views of model behavior. The global concept circuit is input-invaria",
+      "tags": [
+        "circuits",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2609-07681v1",
+      "title": "On the Recall Scaling Laws in Mamba: A Theoretical and Mechanistic Study via Hashing",
+      "authors": "Yuval Koren, Assaf Ben-Kish, Raja Giryes, Lior Wolf, Itamar Zimerman",
+      "date": "2026-09-07",
+      "url": "https://arxiv.org/abs/2609.07681v1",
+      "abstract": "Associative Recall (AR) is the cognitive ability to learn and retrieve links between items in memory. In NLP, AR is used as a benchmark for evaluating the in-context memory capacity of architectures such as Mamba, and has been found to strongly correlate with language modeling performance. This paper explores AR from the perspective of mechanistic interpretability, aiming to reverse-engineer the exact internal algorithm used by Mamba to perform recall. Our key insight is that Mamba performs reca",
+      "tags": [
+        "theory"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2609-07061v1",
+      "title": "PhysSAE: Mechanistic Interpretability with Sparse Autoencoders",
+      "authors": "Nandita N. Patil, Eshwar R. A., Gajanan V. Honnavar",
+      "date": "2026-09-07",
+      "url": "https://arxiv.org/abs/2609.07061v1",
+      "abstract": "Physics-Informed Neural Networks (PINNs) embed PDE residuals into neural network training, but their internal representations remain opaque: it is unknown what physical features their hidden layers encode or whether those features have a localized causal role. We present PhysSAE, a mechanistic interpretability framework that trains overcomplete sparse autoencoders (SAEs) on PINN penultimate-layer activations and evaluates dictionary atoms through direct causal intervention in the original frozen",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2609-07876v1",
+      "title": "LLM Layers Immediately Correct Each Other",
+      "authors": "Arjun Patrawala, Jiahai Feng, Erik Jones, Jacob Steinhardt",
+      "date": "2026-09-07",
+      "url": "https://arxiv.org/abs/2609.07876v1",
+      "abstract": "Recent methods in language model interpretability employ techniques such as sparse autoencoders to decompose residual stream contributions into linear, semantically meaningful features. Such methods are commonly interpreted as identifying features that persist in the residual stream and that subsequent layers build upon. We challenge this view by identifying the Transformer Layer Correction Mechanism (TLCM), wherein adjacent transformer layers systematically counteract portions of each other's c",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2609-07746v1",
+      "title": "LLM Forensics: Where Do Backdoors Hide? Localizing and Controlling Trigger Mechanisms with Sparse Autoencoders",
+      "authors": "Wissam Antoun, Francis Kulumba, Th\u00e9o Lasnier, Beno\u00eet Sagot, Djam\u00e9 Seddah",
+      "date": "2026-09-07",
+      "url": "https://arxiv.org/abs/2609.07746v1",
+      "abstract": "Even though backdoors in LLMs have been a growing concern, their inner workings are still under heavy scrutiny. Trigger-based backdoors are easy to define behaviorally, a rare input that makes the model switch to a chosen response pattern, but the mechanism between triggers and their responses is less clear. We study this mechanism in a controlled, harmless language-switching setting, where fixed trigger sequences make 1B and 8B language models continue English prompts in French or German. For t",
+      "tags": [
+        "SAE"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2609-06968v1",
+      "title": "Tracing Query Expansion Effects through Sparse Autoencoder Features",
+      "authors": "Fangan Dong, Weiran Shi, Zhiwei Xu, Xuri Ge, Ben He, et al.",
+      "date": "2026-09-07",
+      "url": "https://arxiv.org/abs/2609.06968v1",
+      "abstract": "Query expansion (QE) is a critical technique in information retrieval that enriches underspecified queries with additional textual context. However, its effect is often unreliable in modern dense retrieval, especially for strong off-the-shelf retrievers without retraining. Existing studies mainly examine expansion quality, semantic drift, or retrieval outcomes, but rarely explain how QE changes dense retrievers internally. In this work, we trace QE effects through sparse autoencoder (SAE) featur",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2609-06862v1",
+      "title": "Feature Superposition in Neural Networks: From Theory to Practice",
+      "authors": "Dai Shi, Xiaoyu Li, Andi Han, Jos\u00e9 Miguel Hern\u00e1ndez-Lobato",
+      "date": "2026-09-06",
+      "url": "https://arxiv.org/abs/2609.06862v1",
+      "abstract": "Superposition refers to neural networks representing more features than they have dimensions. It offers a possible explanation for polysemantic neurons and motivates methods for recovering interpretable features from neural activations. Theoretical models typically start with a given set of input features and assumptions about how their values vary across inputs, then study how a network encodes those values in a lower-dimensional hidden representation. Empirical work, by contrast, seeks to iden",
+      "tags": [
+        "superposition",
+        "features",
+        "theory"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2609-05794v1",
+      "title": "Bait-and-Recover: Poisoning Internal Refusal Signals to Defend LLMs against White-Box Editing Jailbreaks",
+      "authors": "Tian Gao, Zhipeng Xie, Yuhao Wu, Junhua Liu, Xin Fang",
+      "date": "2026-09-05",
+      "url": "https://arxiv.org/abs/2609.05794v1",
+      "abstract": "Open-weight large language models face a low-cost white-box threat from representation engineering attacks. Attackers can estimate refusal directions and search for projection-matrix edits that suppress safety alignment while preserving general capabilities, within minutes on a single GPU and without gradient-based training. We propose Bait-and-Recover, a weight-level defense that places a bait adapter where attackers read activations and a paired recovery adapter at the subsequent layer. Traine",
+      "tags": [
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2609-04753v1",
       "title": "Beneath the Surface of Chains-of-Thought: A Mechanistic Interpretation of Reasoning Operations in LLMs",
@@ -52,6 +208,17 @@
         "safety",
         "steering"
       ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2609-05575v1",
+      "title": "Capsule Lens: Locating and Tracking Concept Geometry in Model Representations",
+      "authors": "Yiming Tang, Harshvardhan Saini, Samyak Jha, Huaming Chen, Xufeng Duan, et al.",
+      "date": "2026-09-04",
+      "url": "https://arxiv.org/abs/2609.05575v1",
+      "abstract": "Understanding how concepts are encoded in the internal representations of machine learning models is a central problem in mechanistic interpretability, essential both for the science of deep learning and for the trustworthy deployment of increasingly capable models. Existing approaches to interpret model representations mainly map representations onto more interpretable spaces and do not directly characterize how concepts occupy representation space; various hypotheses have been proposed, but of",
+      "tags": [],
       "source": "arXiv",
       "featured": false
     },
