@@ -5,9 +5,86 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 08 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 09 Sep 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>SAEScientist-Bench: Can AI Agents Conduct Autonomous SAE Interpretability Research?</title>
+      <link>https://arxiv.org/abs/2609.09113v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Yuqiao Tan, Shizhu He, Jun Zhao, Kang Liu</p><p>While research on recursive self-improvement (RSI) has predominantly automated model training pipelines, reliable autonomous development demands a missing pillar: post-hoc monitoring and auditing to understand what models learn and ensure safe alignment. Mechanistic interpretability tools are essential to bridge this gap, among which Sparse Autoencoders (SAEs) serve as a cornerstone by isolating interpretable features for model inspection and steering. In this paper, we introduce SAEScientist-Be</p><p><strong>Tags:</strong> SAE, features, safety, steering</p>]]></description>
+      <pubDate>Tue, 08 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2609.09113v1</guid>
+    </item>
+    <item>
+      <title>Tracing Stereotypes from Representation to Output in Multilingual LLMs</title>
+      <link>https://arxiv.org/abs/2609.08322v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Ariun-Erdene Tumurchuluun, Yusser Al Ghussin, Pinzhen Chen, Josef van Genabith, Koel Dutta Chowdhury</p><p>Multilingual LLMs show stereotype-related behavior that varies across languages, but behavioral scores do not show where the relevant information is represented or how it affects the output. To investigate these internal mechanisms, we compare linear probing, attribution patching, sparse autoencoders (SAEs) and feature ablation in Llama-3.1-8B, Qwen3-8B, and Gemma-2-9B. Probe performance peaks substantially earlier than attribution in all three models, with a separation of 36-53% of model depth.</p><p><strong>Tags:</strong> SAE, features, probing</p>]]></description>
+      <pubDate>Tue, 08 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2609.08322v1</guid>
+    </item>
+    <item>
+      <title>Key Path Identification for Resolving Knowledge Conflicts via SAE-based Steering</title>
+      <link>https://arxiv.org/abs/2609.08173v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Wenbo Zhang, Zhongxiang Sun, Zhiguang Han, Jun Xu</p><p>Sparse autoencoder (SAE)-based steering has been widely used to address knowledge conflicts by guiding LLMs to be more faithful to the contextual knowledge. Existing methods usually perform mass steering, which modifies a large batch of SAE features identified via correlation-based methods. However, due to the inaccurate correlation and the neglected feature interactions, mass steering methods fail to precisely identify the features that play the key roles in steering and introduce a large numbe</p><p><strong>Tags:</strong> SAE, features, steering</p>]]></description>
+      <pubDate>Tue, 08 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2609.08173v1</guid>
+    </item>
+    <item>
+      <title>&quot;World Knowledge&quot; in the Weights: Reading Concept Circuits of Vision Transformers</title>
+      <link>https://arxiv.org/abs/2609.09055v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Yanlin Chen, Tang Li, Xi Peng</p><p>Vision transformers (ViTs) have achieved remarkable generalization across visual domains, yet little is known about how they internally represent the structure of the world. To address this gap, we use Cross-Layer Transcoders (CLTs) to read concept circuits from ViTs: directed graphs whose nodes correspond to sparse, interpretable concepts and edges capture concept interactions across layers. Our method yields two complementary views of model behavior. The global concept circuit is input-invaria</p><p><strong>Tags:</strong> circuits, vision</p>]]></description>
+      <pubDate>Tue, 08 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2609.09055v1</guid>
+    </item>
+    <item>
+      <title>On the Recall Scaling Laws in Mamba: A Theoretical and Mechanistic Study via Hashing</title>
+      <link>https://arxiv.org/abs/2609.07681v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Yuval Koren, Assaf Ben-Kish, Raja Giryes, Lior Wolf, Itamar Zimerman</p><p>Associative Recall (AR) is the cognitive ability to learn and retrieve links between items in memory. In NLP, AR is used as a benchmark for evaluating the in-context memory capacity of architectures such as Mamba, and has been found to strongly correlate with language modeling performance. This paper explores AR from the perspective of mechanistic interpretability, aiming to reverse-engineer the exact internal algorithm used by Mamba to perform recall. Our key insight is that Mamba performs reca</p><p><strong>Tags:</strong> theory</p>]]></description>
+      <pubDate>Mon, 07 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2609.07681v1</guid>
+    </item>
+    <item>
+      <title>PhysSAE: Mechanistic Interpretability with Sparse Autoencoders</title>
+      <link>https://arxiv.org/abs/2609.07061v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Nandita N. Patil, Eshwar R. A., Gajanan V. Honnavar</p><p>Physics-Informed Neural Networks (PINNs) embed PDE residuals into neural network training, but their internal representations remain opaque: it is unknown what physical features their hidden layers encode or whether those features have a localized causal role. We present PhysSAE, a mechanistic interpretability framework that trains overcomplete sparse autoencoders (SAEs) on PINN penultimate-layer activations and evaluates dictionary atoms through direct causal intervention in the original frozen</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Mon, 07 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2609.07061v1</guid>
+    </item>
+    <item>
+      <title>LLM Layers Immediately Correct Each Other</title>
+      <link>https://arxiv.org/abs/2609.07876v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Arjun Patrawala, Jiahai Feng, Erik Jones, Jacob Steinhardt</p><p>Recent methods in language model interpretability employ techniques such as sparse autoencoders to decompose residual stream contributions into linear, semantically meaningful features. Such methods are commonly interpreted as identifying features that persist in the residual stream and that subsequent layers build upon. We challenge this view by identifying the Transformer Layer Correction Mechanism (TLCM), wherein adjacent transformer layers systematically counteract portions of each other&#x27;s c</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Mon, 07 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2609.07876v1</guid>
+    </item>
+    <item>
+      <title>LLM Forensics: Where Do Backdoors Hide? Localizing and Controlling Trigger Mechanisms with Sparse Autoencoders</title>
+      <link>https://arxiv.org/abs/2609.07746v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Wissam Antoun, Francis Kulumba, Théo Lasnier, Benoît Sagot, Djamé Seddah</p><p>Even though backdoors in LLMs have been a growing concern, their inner workings are still under heavy scrutiny. Trigger-based backdoors are easy to define behaviorally, a rare input that makes the model switch to a chosen response pattern, but the mechanism between triggers and their responses is less clear. We study this mechanism in a controlled, harmless language-switching setting, where fixed trigger sequences make 1B and 8B language models continue English prompts in French or German. For t</p><p><strong>Tags:</strong> SAE</p>]]></description>
+      <pubDate>Mon, 07 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2609.07746v1</guid>
+    </item>
+    <item>
+      <title>Tracing Query Expansion Effects through Sparse Autoencoder Features</title>
+      <link>https://arxiv.org/abs/2609.06968v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Fangan Dong, Weiran Shi, Zhiwei Xu, Xuri Ge, Ben He, et al.</p><p>Query expansion (QE) is a critical technique in information retrieval that enriches underspecified queries with additional textual context. However, its effect is often unreliable in modern dense retrieval, especially for strong off-the-shelf retrievers without retraining. Existing studies mainly examine expansion quality, semantic drift, or retrieval outcomes, but rarely explain how QE changes dense retrievers internally. In this work, we trace QE effects through sparse autoencoder (SAE) featur</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Mon, 07 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2609.06968v1</guid>
+    </item>
+    <item>
+      <title>Feature Superposition in Neural Networks: From Theory to Practice</title>
+      <link>https://arxiv.org/abs/2609.06862v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Dai Shi, Xiaoyu Li, Andi Han, José Miguel Hernández-Lobato</p><p>Superposition refers to neural networks representing more features than they have dimensions. It offers a possible explanation for polysemantic neurons and motivates methods for recovering interpretable features from neural activations. Theoretical models typically start with a given set of input features and assumptions about how their values vary across inputs, then study how a network encodes those values in a lower-dimensional hidden representation. Empirical work, by contrast, seeks to iden</p><p><strong>Tags:</strong> superposition, features, theory</p>]]></description>
+      <pubDate>Sun, 06 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2609.06862v1</guid>
+    </item>
+    <item>
+      <title>Bait-and-Recover: Poisoning Internal Refusal Signals to Defend LLMs against White-Box Editing Jailbreaks</title>
+      <link>https://arxiv.org/abs/2609.05794v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Tian Gao, Zhipeng Xie, Yuhao Wu, Junhua Liu, Xin Fang</p><p>Open-weight large language models face a low-cost white-box threat from representation engineering attacks. Attackers can estimate refusal directions and search for projection-matrix edits that suppress safety alignment while preserving general capabilities, within minutes on a single GPU and without gradient-based training. We propose Bait-and-Recover, a weight-level defense that places a bait adapter where attackers read activations and a paired recovery adapter at the subsequent layer. Traine</p><p><strong>Tags:</strong> safety</p>]]></description>
+      <pubDate>Sat, 05 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2609.05794v1</guid>
+    </item>
     <item>
       <title>Beneath the Surface of Chains-of-Thought: A Mechanistic Interpretation of Reasoning Operations in LLMs</title>
       <link>https://arxiv.org/abs/2609.04753v1</link>
@@ -35,6 +112,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Preethi Carmel Bosco, Gopalakrishnan Srinivasan</p><p>Where inside a language model does refusal live, and does that place change when the architecture does? In a transformer, refusal is governed by a single direction in the residual stream, a finding that safety and interpretability tooling now depend on. State-space models (SSMs) route information through a recurrent update instead of attention, sharing no token-mixing mechanism with a transformer. Does the same safety representation survive this shift, or must it be rediscovered per architecture</p><p><strong>Tags:</strong> safety, steering</p>]]></description>
       <pubDate>Fri, 04 Sep 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2609.04721v1</guid>
+    </item>
+    <item>
+      <title>Capsule Lens: Locating and Tracking Concept Geometry in Model Representations</title>
+      <link>https://arxiv.org/abs/2609.05575v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Yiming Tang, Harshvardhan Saini, Samyak Jha, Huaming Chen, Xufeng Duan, et al.</p><p>Understanding how concepts are encoded in the internal representations of machine learning models is a central problem in mechanistic interpretability, essential both for the science of deep learning and for the trustworthy deployment of increasingly capable models. Existing approaches to interpret model representations mainly map representations onto more interpretable spaces and do not directly characterize how concepts occupy representation space; various hypotheses have been proposed, but of</p>]]></description>
+      <pubDate>Fri, 04 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2609.05575v1</guid>
     </item>
     <item>
       <title>A Circuit for Plural Reference: How LLMs Represent and Retrieve Singular and Plural Entities</title>
@@ -133,90 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Alireza Bayat Makou, Emirhan Böge, Phu Gia Hoang, Federico Tiblias, Jingcheng Niu, et al.</p><p>This paper presents Murano, an open source framework for designing, running, and reproducing mechanistic interpretability studies of large language models, intended for researchers across disciplines. These studies often combine loading, recording, attribution, intervention, and evaluation, while existing libraries tend to focus on different parts of this workflow. As a result, researchers using several libraries may need to adapt outputs from one for use by another. To bridge this gap, Murano r</p>]]></description>
       <pubDate>Mon, 31 Aug 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2608.30662v1</guid>
-    </item>
-    <item>
-      <title>The Safety Relay in Roleplay Jailbreaks: A Component-Resolved Causal Analysis of Harm Recognition and Refusal</title>
-      <link>https://arxiv.org/abs/2608.30585v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Md Mokarram Chowdhury, Ernie Chang, Yang Li</p><p>Large language models are trained to follow instructions while refusing harmful requests. Jailbreaks exploit this balance to elicit content a model would ordinarily reject. Roleplay jailbreaks are especially concerning: the harmful request can remain visible inside a roleplay wrapper made of a persona, scenario, and task, yet the model may comply. We use mechanistic interpretability to determine how this context reverses refusal and which elements contribute to the reversal. Across two benchmark</p><p><strong>Tags:</strong> safety</p>]]></description>
-      <pubDate>Mon, 31 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.30585v1</guid>
-    </item>
-    <item>
-      <title>Enhancing Low-Resource Language Reasoning via High-Resource Language Feature Transfer</title>
-      <link>https://arxiv.org/abs/2608.30462v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Minju Song, Hyeon Hwang, Junhyun Lee, Jaewoo Kang</p><p>Large language models exhibit substantial performance variation across languages, even when solving semantically equivalent tasks. Existing analyses often treat this phenomenon as an observational disparity caused by differences in pretraining data, tokenization, or benchmark coverage. We study a complementary hypothesis: high-resource languages (HRLs) may more reliably elicit latent computations useful for task-specific (i.e. mathematical) reasoning, while lower-resource languages (LRLs) may un</p><p><strong>Tags:</strong> features, reasoning</p>]]></description>
-      <pubDate>Mon, 31 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.30462v1</guid>
-    </item>
-    <item>
-      <title>Why Are LLM Backdoor Defenses Fragmented? A Feature-Level Explanation with Sparse Autoencoders</title>
-      <link>https://arxiv.org/abs/2608.30403v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Yizhe Zeng, Chenxu Niu, Wei Zhang, Hao Huang, Yunpeng Li, et al.</p><p>Backdoor attacks pose a serious threat to large language models (LLMs), but existing defenses remain fragmented, failing to pro?vide unified defense against both dirty-label and clean-label attacks. To investigate why such fragmentation arises, we present the first systematic feature-level mechanistic analysis of LLM backdoors using sparse autoencoders (SAEs). Starting from a 2 x 2 comparison of clean and poisoned models on clean and triggered inputs, we trace backdoor-induced logit shifts to hi</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Mon, 31 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.30403v1</guid>
-    </item>
-    <item>
-      <title>Where Identity Lives: Localized, Retain-Free Identity Unlearning in Multimodal Large Language Models</title>
-      <link>https://arxiv.org/abs/2608.30649v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Kangwook Ko, Jaehyuk Jang, Wonjun Lee, Hee-Seon Kim, Changick Kim</p><p>Removing a specific individual&#x27;s information from multimodal large language models (MLLMs) is often needed after deployment, but existing methods rely on a retain set, which is hardest to obtain at that point, and rebuilding it recreates the privacy exposure that unlearning aims to remove. Forgetting from the forget set alone instead damages the shared visual-language computation, harming perception. We cast retain-free unlearning as a localization problem: causal tracing, weight transplant, and</p><p><strong>Tags:</strong> vision</p>]]></description>
-      <pubDate>Mon, 31 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.30649v1</guid>
-    </item>
-    <item>
-      <title>VisLens: Single-Pass Interpretable Visual Search for Multimodal LLMs</title>
-      <link>https://arxiv.org/abs/2608.30705v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Jingyi He, Sanghwan Kim, Zeynep Akata</p><p>Multimodal large language models (MLLMs) struggle with fine-grained Visual Search, the task of locating small or rare objects in high-resolution images. Existing remedies fall into two families: (1) Training-free methods based on attention or confidence scores are accurate but slow, since they require multiple MLLM queries per example. (2) Reinforcement Learning (RL) trained tool-use models are faster at inference but opaque, since their tool calls remain uncontrollable and hard to interpret. To</p><p><strong>Tags:</strong> vision</p>]]></description>
-      <pubDate>Mon, 31 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.30705v1</guid>
-    </item>
-    <item>
-      <title>Latent Mechanisms of Language Control in Multilingual Language Models</title>
-      <link>https://arxiv.org/abs/2609.00325v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Ryo Mitsuhashi, Sabri Boughorbel, Majd Hawasly</p><p>Multilingual large language models can exhibit unintended code-switching -- unnecessarily alternating between languages during generation. We present a comparative study of three methods that identify language-controlling latents in cross-layer transcoders: activation value-based selection (ValSel), activation frequency-based selection (FreqSel), and LLM-generated latent annotation-based selection (AnnSel). To evaluate the efficacy of these methods in identifying language-controlling latents, we</p>]]></description>
-      <pubDate>Mon, 31 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2609.00325v1</guid>
-    </item>
-    <item>
-      <title>Interpreting and Steering for Safe and Correct Code Generation</title>
-      <link>https://arxiv.org/abs/2608.30025v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Hao Yan, Ziyu Yao</p><p>Large language models (LLMs) frequently generate source code containing vulnerabilities, yet little work studies the internal mechanisms that distinguish safe from vulnerable generation in them. In this work, we systematically perform a mechanistic interpretation of LLMs, aiming at both understanding how code safety-vs-vulnerability is represented or driven by components in an LM and turning the insights into actionable steering strategies to encourage safer code generation. To this end, we intr</p><p><strong>Tags:</strong> safety, steering</p>]]></description>
-      <pubDate>Sun, 30 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.30025v1</guid>
-    </item>
-    <item>
-      <title>When Safety Speaks a Language: A Mechanistic Analysis of Safety-Language Identity Entanglement in LLMs</title>
-      <link>https://arxiv.org/abs/2608.29936v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Apoorva Upadhyaya, Sandipan Sikdar</p><p>Safety alignment of large language models (LLMs) degrades across languages, yet the internal mechanism driving this asymmetry remains poorly understood. Our work, therefore, presents a systematic mechanistic analysis of multilingual safety using sparse autoencoder (SAE) features, sparse interpretable directions in the residual stream associated with harmful and harmless model behavior across three instruction-tuned LLMs, eight languages, and all model layers. We observe that safety-relevant feat</p><p><strong>Tags:</strong> SAE, features, safety</p>]]></description>
-      <pubDate>Sun, 30 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.29936v1</guid>
-    </item>
-    <item>
-      <title>From Detection to Refusal: Safer LLMs via Circuit-Guided Weight Scaling</title>
-      <link>https://arxiv.org/abs/2609.00051v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Kuan-Lin Chu, Chung-En Sun, Tsui-Wei Weng</p><p>Despite extensive alignment efforts, Large Language Models (LLMs) remain vulnerable to generating unsafe content under adversarial prompting, yet the internal mechanisms by which safety behaviors are implemented remain poorly understood. We study LLM safety from a mechanistic interpretability perspective and characterize a multi-stage *safety circuit* that organizes refusal behavior, consisting of (i) $\textbf{Harmful Detection Heads}$ that respond to harmful inputs, (ii) $\textbf{Safety Neurons</p><p><strong>Tags:</strong> circuits, safety</p>]]></description>
-      <pubDate>Sun, 30 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2609.00051v1</guid>
-    </item>
-    <item>
-      <title>A Unifying Perspective on Language Model Representations: From Filler-Role Structure to Mechanistic Interpretability</title>
-      <link>https://arxiv.org/abs/2608.29034v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Zhang Enyan, R. Thomas McCoy</p><p>A wide range of methods have been proposed for interpreting language models, delivering important insights into their inner workings. However, different methods and their resulting insights stand in relative isolation: what could the underlying structure of language models be, such that they give rise to all our interpretations? In this work, we propose using Tensor Product Representations (TPRs) as a unifying hypothesis. TPRs give a concrete proposal for how compositional structure could be rep</p>]]></description>
-      <pubDate>Sat, 29 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.29034v1</guid>
-    </item>
-    <item>
-      <title>REINS: Refusal-Enhanced Inhibitory Steering with Sparse Autoencoder Features</title>
-      <link>https://arxiv.org/abs/2608.28233v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Kai-Xuan Ding, Hao-Xiang Xu, Ji-Hua Peng, Zi-Qi Chen, Jiaqi Wang, et al.</p><p>Steering with Sparse Autoencoders (SAEs) offers a lightweight inference-time path for adapting the behavior of large language models without retraining. By exposing sparse and interpretable features, SAE steering provides a promising interface for safety control that guides harmful continuations toward refusal. However, we observe that complex wrappers can still undermine existing SAE steering methods on harmful prompts. To evaluate this failure mode systematically, we construct Generalized Unde</p><p><strong>Tags:</strong> SAE, features, safety, steering</p>]]></description>
-      <pubDate>Fri, 28 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.28233v1</guid>
-    </item>
-    <item>
-      <title>Causal Interventions Reveal Typologically Organized Syntactic Mechanisms in Multilingual Language Models</title>
-      <link>https://arxiv.org/abs/2608.28924v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Sasha Boguraev, Toshiki Nakai, Kyle Mahowald, Julius Steuer</p><p>Linguistic theory has long recognized cross-linguistic syntactic regularities, leading to claims that these similar structures are processed by similar mechanisms. However, this hypothesis has been difficult to test empirically due to our lack of fine-grained, manipulable access of human processing mechanisms. In this work, we take advantage of techniques from mechanistic interpretability to study such a question in multilingual LMs. We first isolate language-internal mechanisms before attemptin</p><p><strong>Tags:</strong> theory</p>]]></description>
-      <pubDate>Fri, 28 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.28924v1</guid>
     </item>
   </channel>
 </rss>
