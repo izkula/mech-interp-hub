@@ -5,9 +5,37 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 09 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 10 Sep 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Beyond Top Words: MonoTM for Topic Modeling with Interpretable Monosemantic Features</title>
+      <link>https://arxiv.org/abs/2609.09575v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Una Joh, Bei Yu</p><p>Topic models summarize large text corpora, but top-ranked words often provide only a limited representation of topic semantics. Sparse autoencoders (SAEs) offer a way to move beyond word-level descriptors by extracting interpretable features from dense representations, yet how feature interpretability relates to topic-inference quality remains unclear. We introduce \textbf{MonoTM}, an interpretable topic modeling framework that decouples these roles. Across three benchmark corpora, we show that </p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Wed, 09 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2609.09575v1</guid>
+    </item>
+    <item>
+      <title>A Dominant Diffuse Phase in the Sparse Autoencoder Phase Diagram</title>
+      <link>https://arxiv.org/abs/2609.10299v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Alexis D. Plascencia</p><p>Sparse autoencoders (SAEs) are increasingly used to recover interpretable features from neural-network activations, yet systematic feature co-occurrence can cause distinct features to be absorbed or merged. The MAIS-O43 open problem proposes a controlled experiment to characterize when recovery of a true synthetic dictionary gives way to feature merging as the nesting fraction $γ$, sparsity penalty $λ$, and dictionary size $M$ vary. We implement the specified protocol and evaluate 200 independen</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Wed, 09 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2609.10299v1</guid>
+    </item>
+    <item>
+      <title>High-probability guarantees for linear accessibility in feature superposition</title>
+      <link>https://arxiv.org/abs/2609.09556v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Enrico Vompa</p><p>Neural networks can leverage feature superposition to encode more concepts than dimensions, but cross-feature interference constrains the linear accessibility of simultaneously active features. By framing linear accessibility as a compressed sensing problem, we derive high-probability bounds for fixed supports under subgaussian noise, proving the sufficient dimension scales linearly ($d=O_{\varepsilon}(k \log m)$) rather than prior worst-case quadratic limits. We then validate these bounds acros</p><p><strong>Tags:</strong> superposition, features</p>]]></description>
+      <pubDate>Wed, 09 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2609.09556v1</guid>
+    </item>
+    <item>
+      <title>Contrastive Projection: Reading Transformer Internals by Differencing Logit Lenses</title>
+      <link>https://arxiv.org/abs/2609.09902v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Olli Tuomi</p><p>Reading a transformer&#x27;s internal states in token space is easy to do and hard to trust: a logit lens on a single hidden state is dominated, at intermediate layers, by the generic tokens the model would predict for almost any input. We read the difference instead. Subtracting two closely matched prompts&#x27; hidden states and projecting through the unembedding cancels the shared component and surfaces what separates them, an operation equivalent to reading a RepE/ActAdd steering vector through a logi</p><p><strong>Tags:</strong> steering</p>]]></description>
+      <pubDate>Wed, 09 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2609.09902v1</guid>
+    </item>
     <item>
       <title>SAEScientist-Bench: Can AI Agents Conduct Autonomous SAE Interpretability Research?</title>
       <link>https://arxiv.org/abs/2609.09113v1</link>
@@ -35,6 +63,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Yanlin Chen, Tang Li, Xi Peng</p><p>Vision transformers (ViTs) have achieved remarkable generalization across visual domains, yet little is known about how they internally represent the structure of the world. To address this gap, we use Cross-Layer Transcoders (CLTs) to read concept circuits from ViTs: directed graphs whose nodes correspond to sparse, interpretable concepts and edges capture concept interactions across layers. Our method yields two complementary views of model behavior. The global concept circuit is input-invaria</p><p><strong>Tags:</strong> circuits, vision</p>]]></description>
       <pubDate>Tue, 08 Sep 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2609.09055v1</guid>
+    </item>
+    <item>
+      <title>Vision-language models know more about agriculture than they show and rubric-grounded verifications close the gap</title>
+      <link>https://arxiv.org/abs/2609.09417v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Earl Ranario, Jared Smith, Lars Lundqvist, Urmil Jatin Chandarana</p><p>Vision-language models (VLMs) show promise for agricultural classification, but zero-shot performance on disease, pest, damage, quality, and species identification remains poor, and it is unclear whether this reflects weak visual features or a failure to connect them to domain knowledge. We build a benchmark of 116 datasets, 834 classes, and 8,324 images spanning these tasks to isolate where the gap arises. Linear probing shows VLM vision encoders already encode agricultural features nearly as s</p><p><strong>Tags:</strong> features, probing, vision</p>]]></description>
+      <pubDate>Tue, 08 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2609.09417v1</guid>
     </item>
     <item>
       <title>On the Recall Scaling Laws in Mamba: A Theoretical and Mechanistic Study via Hashing</title>
@@ -182,41 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Himil Vasava, Ming Jiang</p><p>LLM-based evaluators of natural language generation (NLG) quality are widely deployed as scoring tools and as automated training signals, yet the internal procedure by which they assign a rating remains poorly understood. We investigate this procedure mechanistically through an eight-attack perturbation taxonomy across the Readability and Adequacy dimensions of NLG quality, a generation pipeline that produces paired clean and corrupt summaries with controlled error intensity and explicit token-l</p>]]></description>
       <pubDate>Tue, 01 Sep 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2609.01604v1</guid>
-    </item>
-    <item>
-      <title>Heard but Not Heeded: Paralinguistic Information Encoding and Loss in Audio-Language Models</title>
-      <link>https://arxiv.org/abs/2609.00727v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Bhuvan Koduru, Dareen Safar B Alharthi, Rita Singh, Bhiksha Raj</p><p>Audio language models are designed to understand speech, yet it remains unclear whether they capture how something is said beyond what is said. We present a mechanistic analysis of paralinguistic information in four open source models, Whisper-large-v2, Qwen2-Audio-7B Instruct, Qwen2.5-Omni-7B, and Chroma-4B, using the Expresso dataset with controlled speaking styles. We combine centered kernel alignment, linear probing with leave one speaker out evaluation, open ended tone prediction, and a con</p><p><strong>Tags:</strong> safety, probing</p>]]></description>
-      <pubDate>Tue, 01 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2609.00727v1</guid>
-    </item>
-    <item>
-      <title>Interpretable Symptom Vectors for Depression in a Large Language Model</title>
-      <link>https://arxiv.org/abs/2609.01832v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Fangyi Zhu, Ajay Subramanian, Allison Constant, Camille Wang, Ravish Gupta, et al.</p><p>Patients with depression present with diverse symptom profiles, yet clinical practice routinely reduces this variation to a single severity score. Large language models (LLMs) can potentially capture various symptoms and their severity from patient speech. However, how depressive symptoms are represented inside LLMs remains poorly understood, limiting clinical trust. To examine whether internal model activations match clinician judgment, we analyzed the residual stream of Gemma-3-27B-PT using me</p>]]></description>
-      <pubDate>Tue, 01 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2609.01832v1</guid>
-    </item>
-    <item>
-      <title>Sparse Readout Prism: Explaining Logit-Lens Scores in Features Instead of Tokens</title>
-      <link>https://arxiv.org/abs/2609.01936v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Matteo He, William F. Shen, Xinchi Qiu, Nicholas D. Lane</p><p>A language model&#x27;s prediction of its next token develops across layers, and lens methods track this process by decoding intermediate hidden states into tokens. But a lens reading reflects both the hidden state and the readout (the unembedding matrix) used to decode it. Many lenses are fit on a corpus, and we show that two lenses differing only in their fitting corpus can report different tokens for the same hidden states. We call this dependence corpus conditionality. To examine readout structur</p><p><strong>Tags:</strong> features</p>]]></description>
-      <pubDate>Tue, 01 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2609.01936v1</guid>
-    </item>
-    <item>
-      <title>Hearing the Whispers: Black-Box Membership Inference Attacks on Finetuned TTS Models</title>
-      <link>https://arxiv.org/abs/2609.01723v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Kunlin Cai, Kaiyuan Zhang, Zihang Xiang, Jinghuai Zhang, Abeer Alwan, et al.</p><p>Text-to-Speech (TTS) foundation models are increasingly fine-tuned on private datasets to synthesize highly personalized voices, introducing severe privacy risks by exposing both biometric identities and sensitive speech content. Existing black-box membership inference attacks (MIAs) follow a two-stage pipeline of query generation and representation engineering, both of which face unique challenges when adapted to TTS. For query generation, dual conditioning on synthesis text and reference speec</p>]]></description>
-      <pubDate>Tue, 01 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2609.01723v1</guid>
-    </item>
-    <item>
-      <title>MURANO: Design, Run, and Reproduce Mechanistic Interpretability Experiments as Composable Pipelines</title>
-      <link>https://arxiv.org/abs/2608.30662v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Alireza Bayat Makou, Emirhan Böge, Phu Gia Hoang, Federico Tiblias, Jingcheng Niu, et al.</p><p>This paper presents Murano, an open source framework for designing, running, and reproducing mechanistic interpretability studies of large language models, intended for researchers across disciplines. These studies often combine loading, recording, attribution, intervention, and evaluation, while existing libraries tend to focus on different parts of this workflow. As a result, researchers using several libraries may need to adapt outputs from one for use by another. To bridge this gap, Murano r</p>]]></description>
-      <pubDate>Mon, 31 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2608.30662v1</guid>
     </item>
   </channel>
 </rss>
