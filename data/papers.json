@@ -1,6 +1,61 @@
 {
-  "lastUpdated": "2026-09-09",
+  "lastUpdated": "2026-09-10",
   "papers": [
+    {
+      "id": "arxiv-2609-09575v1",
+      "title": "Beyond Top Words: MonoTM for Topic Modeling with Interpretable Monosemantic Features",
+      "authors": "Una Joh, Bei Yu",
+      "date": "2026-09-09",
+      "url": "https://arxiv.org/abs/2609.09575v1",
+      "abstract": "Topic models summarize large text corpora, but top-ranked words often provide only a limited representation of topic semantics. Sparse autoencoders (SAEs) offer a way to move beyond word-level descriptors by extracting interpretable features from dense representations, yet how feature interpretability relates to topic-inference quality remains unclear. We introduce \\textbf{MonoTM}, an interpretable topic modeling framework that decouples these roles. Across three benchmark corpora, we show that ",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2609-10299v1",
+      "title": "A Dominant Diffuse Phase in the Sparse Autoencoder Phase Diagram",
+      "authors": "Alexis D. Plascencia",
+      "date": "2026-09-09",
+      "url": "https://arxiv.org/abs/2609.10299v1",
+      "abstract": "Sparse autoencoders (SAEs) are increasingly used to recover interpretable features from neural-network activations, yet systematic feature co-occurrence can cause distinct features to be absorbed or merged. The MAIS-O43 open problem proposes a controlled experiment to characterize when recovery of a true synthetic dictionary gives way to feature merging as the nesting fraction $\u03b3$, sparsity penalty $\u03bb$, and dictionary size $M$ vary. We implement the specified protocol and evaluate 200 independen",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2609-09556v1",
+      "title": "High-probability guarantees for linear accessibility in feature superposition",
+      "authors": "Enrico Vompa",
+      "date": "2026-09-09",
+      "url": "https://arxiv.org/abs/2609.09556v1",
+      "abstract": "Neural networks can leverage feature superposition to encode more concepts than dimensions, but cross-feature interference constrains the linear accessibility of simultaneously active features. By framing linear accessibility as a compressed sensing problem, we derive high-probability bounds for fixed supports under subgaussian noise, proving the sufficient dimension scales linearly ($d=O_{\\varepsilon}(k \\log m)$) rather than prior worst-case quadratic limits. We then validate these bounds acros",
+      "tags": [
+        "superposition",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2609-09902v1",
+      "title": "Contrastive Projection: Reading Transformer Internals by Differencing Logit Lenses",
+      "authors": "Olli Tuomi",
+      "date": "2026-09-09",
+      "url": "https://arxiv.org/abs/2609.09902v1",
+      "abstract": "Reading a transformer's internal states in token space is easy to do and hard to trust: a logit lens on a single hidden state is dominated, at intermediate layers, by the generic tokens the model would predict for almost any input. We read the difference instead. Subtracting two closely matched prompts' hidden states and projecting through the unembedding cancels the shared component and surfaces what separates them, an operation equivalent to reading a RepE/ActAdd steering vector through a logi",
+      "tags": [
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2609-09113v1",
       "title": "SAEScientist-Bench: Can AI Agents Conduct Autonomous SAE Interpretability Research?",
@@ -56,6 +111,21 @@
       "abstract": "Vision transformers (ViTs) have achieved remarkable generalization across visual domains, yet little is known about how they internally represent the structure of the world. To address this gap, we use Cross-Layer Transcoders (CLTs) to read concept circuits from ViTs: directed graphs whose nodes correspond to sparse, interpretable concepts and edges capture concept interactions across layers. Our method yields two complementary views of model behavior. The global concept circuit is input-invaria",
       "tags": [
         "circuits",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2609-09417v1",
+      "title": "Vision-language models know more about agriculture than they show and rubric-grounded verifications close the gap",
+      "authors": "Earl Ranario, Jared Smith, Lars Lundqvist, Urmil Jatin Chandarana",
+      "date": "2026-09-08",
+      "url": "https://arxiv.org/abs/2609.09417v1",
+      "abstract": "Vision-language models (VLMs) show promise for agricultural classification, but zero-shot performance on disease, pest, damage, quality, and species identification remains poor, and it is unclear whether this reflects weak visual features or a failure to connect them to domain knowledge. We build a benchmark of 116 datasets, 834 classes, and 8,324 images spanning these tasks to isolate where the gap arises. Linear probing shows VLM vision encoders already encode agricultural features nearly as s",
+      "tags": [
+        "features",
+        "probing",
         "vision"
       ],
       "source": "arXiv",
