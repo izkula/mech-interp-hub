@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-10",
+  "lastUpdated": "2026-09-11",
   "papers": [
     {
       "id": "arxiv-2609-09575v1",
@@ -52,6 +52,19 @@
       "abstract": "Reading a transformer's internal states in token space is easy to do and hard to trust: a logit lens on a single hidden state is dominated, at intermediate layers, by the generic tokens the model would predict for almost any input. We read the difference instead. Subtracting two closely matched prompts' hidden states and projecting through the unembedding cancels the shared component and surfaces what separates them, an operation equivalent to reading a RepE/ActAdd steering vector through a logi",
       "tags": [
         "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2609-10645v1",
+      "title": "Sparse Weight and Edge Circuit Discovery in Transformer-based Acoustic Models",
+      "authors": "Jiankun Wei, Ewan Dunbar, Gerald Penn",
+      "date": "2026-09-09",
+      "url": "https://arxiv.org/abs/2609.10645v1",
+      "abstract": "Transformer-based foundation models are powerful but opaque, motivating Mechanistic Interpretation methods to uncover the black-box by identifying small computation subgraphs responsible for a task. DiscoGP is a joint weight-and-edge circuit discovery framework originally developed for text decoders. We extend DiscoGP to speech encoders and present, to our knowledge, the first circuit discovery study for modern speech foundation models. Across HuBERT and Wav2Vec 2.0 on several speech classificat",
+      "tags": [
+        "circuits"
       ],
       "source": "arXiv",
       "featured": false
@@ -126,6 +139,20 @@
       "tags": [
         "features",
         "probing",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2609-10613v1",
+      "title": "Understanding In-Context Multimodal Jailbreaks via Posterior Reweighting",
+      "authors": "Xu Zhang, Dev Mistry, Xiang Xu, Ren Wang",
+      "date": "2026-09-08",
+      "url": "https://arxiv.org/abs/2609.10613v1",
+      "abstract": "In-context learning (ICL) jailbreaks reveal a critical vulnerability in multimodal large language models (MLLMs): harmful demonstrations in the prompt can induce unsafe outputs without modifying model parameters. Despite extensive empirical evidence, existing work lacks a principled understanding of why such jailbreaks reliably succeed or how their effectiveness scales with context composition. We propose a posterior reweighting framework that models a safety-aligned MLLM as implicitly operating",
+      "tags": [
+        "safety",
         "vision"
       ],
       "source": "arXiv",
@@ -892,6 +919,20 @@
       "tags": [
         "attention",
         "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2608-24007v2",
+      "title": "Revenge of Monosemanticity: Neuron Specialization as a New Form of Feature Learning in MLPs",
+      "authors": "Amirhesam Abedsoltan, Enric Boix-Adsera, Fivos Kalogiannis, Mikhail Belkin",
+      "date": "2026-08-25",
+      "url": "https://arxiv.org/abs/2608.24007v2",
+      "abstract": "Understanding how neural networks learn and organize features is central to understanding their behavior. Much existing theory of feature learning has focused on the emergence of a global low-dimensional representation. We show that this picture is incomplete. In regression problems with clustered data, we demonstrate that multilayer perceptrons (MLPs) naturally develop monosemantic specialized neurons: individual neurons become strongly aligned with a specific predictive feature relevant to a p",
+      "tags": [
+        "features",
+        "theory"
       ],
       "source": "arXiv",
       "featured": false
