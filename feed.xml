@@ -5,7 +5,7 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 10 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 11 Sep 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
@@ -35,6 +35,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Olli Tuomi</p><p>Reading a transformer&#x27;s internal states in token space is easy to do and hard to trust: a logit lens on a single hidden state is dominated, at intermediate layers, by the generic tokens the model would predict for almost any input. We read the difference instead. Subtracting two closely matched prompts&#x27; hidden states and projecting through the unembedding cancels the shared component and surfaces what separates them, an operation equivalent to reading a RepE/ActAdd steering vector through a logi</p><p><strong>Tags:</strong> steering</p>]]></description>
       <pubDate>Wed, 09 Sep 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2609.09902v1</guid>
+    </item>
+    <item>
+      <title>Sparse Weight and Edge Circuit Discovery in Transformer-based Acoustic Models</title>
+      <link>https://arxiv.org/abs/2609.10645v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Jiankun Wei, Ewan Dunbar, Gerald Penn</p><p>Transformer-based foundation models are powerful but opaque, motivating Mechanistic Interpretation methods to uncover the black-box by identifying small computation subgraphs responsible for a task. DiscoGP is a joint weight-and-edge circuit discovery framework originally developed for text decoders. We extend DiscoGP to speech encoders and present, to our knowledge, the first circuit discovery study for modern speech foundation models. Across HuBERT and Wav2Vec 2.0 on several speech classificat</p><p><strong>Tags:</strong> circuits</p>]]></description>
+      <pubDate>Wed, 09 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2609.10645v1</guid>
     </item>
     <item>
       <title>SAEScientist-Bench: Can AI Agents Conduct Autonomous SAE Interpretability Research?</title>
@@ -70,6 +77,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Earl Ranario, Jared Smith, Lars Lundqvist, Urmil Jatin Chandarana</p><p>Vision-language models (VLMs) show promise for agricultural classification, but zero-shot performance on disease, pest, damage, quality, and species identification remains poor, and it is unclear whether this reflects weak visual features or a failure to connect them to domain knowledge. We build a benchmark of 116 datasets, 834 classes, and 8,324 images spanning these tasks to isolate where the gap arises. Linear probing shows VLM vision encoders already encode agricultural features nearly as s</p><p><strong>Tags:</strong> features, probing, vision</p>]]></description>
       <pubDate>Tue, 08 Sep 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2609.09417v1</guid>
+    </item>
+    <item>
+      <title>Understanding In-Context Multimodal Jailbreaks via Posterior Reweighting</title>
+      <link>https://arxiv.org/abs/2609.10613v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Xu Zhang, Dev Mistry, Xiang Xu, Ren Wang</p><p>In-context learning (ICL) jailbreaks reveal a critical vulnerability in multimodal large language models (MLLMs): harmful demonstrations in the prompt can induce unsafe outputs without modifying model parameters. Despite extensive empirical evidence, existing work lacks a principled understanding of why such jailbreaks reliably succeed or how their effectiveness scales with context composition. We propose a posterior reweighting framework that models a safety-aligned MLLM as implicitly operating</p><p><strong>Tags:</strong> safety, vision</p>]]></description>
+      <pubDate>Tue, 08 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2609.10613v1</guid>
     </item>
     <item>
       <title>On the Recall Scaling Laws in Mamba: A Theoretical and Mechanistic Study via Hashing</title>
@@ -203,20 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Wendy Zheng, Yinhan He, Liang Wu, Jundong Li</p><p>Large Language Models (LLMs) have demonstrated remarkable performance across diverse tasks, from text summarization to question answering. Despite these capabilities, their black-box nature obscures internal decision-making processes. Mechanistic interpretability (MI) aims to address this by reverse-engineering neural networks into human-understandable algorithms. Current MI approaches for LLMs typically follow a two-stage paradigm: first identifying important components (circuit discovery), whe</p><p><strong>Tags:</strong> circuits</p>]]></description>
       <pubDate>Tue, 01 Sep 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2609.00755v1</guid>
-    </item>
-    <item>
-      <title>Exploring Sparse Autoencoders in Text-Based Causal Confounding Adjustment</title>
-      <link>https://arxiv.org/abs/2609.01322v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Mian Zhong, Katherine A. Keith, Anjalie Field</p><p>In many settings, studying causal questions based on text data requires adjusting for confounding information within texts. Yet there is a tradeoff in constructing text representations for adjustment: they must be sufficiently large and/or dense to preserve the confounding variables necessary for unbiased effect estimation, but sufficiently small and/or sparse to satisfy finite-sample overlap and yield low-variance estimates. To address this tradeoff, we turn to sparse autoencoders (SAEs), and p</p><p><strong>Tags:</strong> SAE</p>]]></description>
-      <pubDate>Tue, 01 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2609.01322v1</guid>
-    </item>
-    <item>
-      <title>Beyond Scores: Understanding LLM-as-a-Judge Mechanisms in Summarization Evaluation</title>
-      <link>https://arxiv.org/abs/2609.01604v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Himil Vasava, Ming Jiang</p><p>LLM-based evaluators of natural language generation (NLG) quality are widely deployed as scoring tools and as automated training signals, yet the internal procedure by which they assign a rating remains poorly understood. We investigate this procedure mechanistically through an eight-attack perturbation taxonomy across the Readability and Adequacy dimensions of NLG quality, a generation pipeline that produces paired clean and corrupt summaries with controlled error intensity and explicit token-l</p>]]></description>
-      <pubDate>Tue, 01 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2609.01604v1</guid>
     </item>
   </channel>
 </rss>
