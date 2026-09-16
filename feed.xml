@@ -5,9 +5,51 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 15 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 16 Sep 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Interpreting and Steering LLM Agents for Social Simulations</title>
+      <link>https://arxiv.org/abs/2609.16436v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Jiayue Gaveal Fan, Arul Murugan, Shreyas Krishnan, Abhishek Nagaraj</p><p>Simulations based on large language models (LLMs) have proven to be powerful for understanding human behavior, making them valuable additions to the social scientific toolkit. However, LLMs are ultimately black boxes based on deep neural networks which limits their value for social science. This is because of a lack of (i) interpretability: i.e. the ability to assign clear mechanisms driving observed behavior; and a lack of (ii) steerability: i.e. the ability to mute or amplify specific theoreti</p><p><strong>Tags:</strong> steering</p>]]></description>
+      <pubDate>Mon, 14 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2609.16436v1</guid>
+    </item>
+    <item>
+      <title>Artificial entrepreneurial cognition: Locating and causally steering an opportunity recognition dial inside large language models (LLMs)</title>
+      <link>https://arxiv.org/abs/2609.15277v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Christian Fisch, Angela Altmeier, Martin Obschonka, Michal Kosinski, Pin Ni</p><p>Entrepreneurial cognition is a foundation of entrepreneurship research. Yet the growing involvement of large language models (LLMs) in entrepreneurial work extends the cognition question beyond human actors to systems whose internal representations remain largely unexplored. We introduce artificial entrepreneurial cognition, the functional organisation of entrepreneurship-relevant representations and computations inside artificial intelligence (AI) systems. We bring mechanistic interpretability </p><p><strong>Tags:</strong> steering</p>]]></description>
+      <pubDate>Mon, 14 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2609.15277v1</guid>
+    </item>
+    <item>
+      <title>The Misery of Mechanistic Interpretability: A Formal Perspective</title>
+      <link>https://arxiv.org/abs/2609.15533v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Tobias Ladner, Matthias Althoff</p><p>Mechanistic interpretability has become the dominant lens for understanding frontier language models, as their inner workings are complex and inherently black boxes. To gain insights into these models, interpretable replacement networks (IRNs) are trained at all layers, exposing interpretable features through sparsely activated neurons. However, the faithfulness of an IRN is usually evaluated only empirically on clean data, and we show that even semantically minor input perturbations flip the do</p><p><strong>Tags:</strong> features</p>]]></description>
+      <pubDate>Mon, 14 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2609.15533v1</guid>
+    </item>
+    <item>
+      <title>Test-Time Unlearning via Sparse Autoencoder</title>
+      <link>https://arxiv.org/abs/2609.16229v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Pingzhi Li, Jinhao Duan, Vaishnav Tadiparthi, Nakul Agarwal, Kwonjoon Lee, et al.</p><p>Machine unlearning aims to remove specific knowledge from a trained large language model (LLM) without retraining from scratch. Existing methods modify model weights via gradient ascent and its advances. While effective on certain benchmarks, these weight-based approaches exhibit a sharp forget-utility trade-off, where stronger forgetting of target knowledge can degrade model utility, and unlearned knowledge may reappear under post-unlearning fine-tuning or prompt attacks. We propose ARIA (autoe</p><p><strong>Tags:</strong> SAE</p>]]></description>
+      <pubDate>Mon, 14 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2609.16229v1</guid>
+    </item>
+    <item>
+      <title>What Does an LLM Learn from Reinforcement Learning? A Mechanistic Interpretability Perspective with Fixed-SAE Track</title>
+      <link>https://arxiv.org/abs/2609.15064v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Lingheng Du, Yiming Tang, Xufeng Duan, Dianbo Liu</p><p>Reinforcement learning (RL) is widely utilized in large language model training to improve targeted capabilities, yet how RL reshapes a model remains poorly understood. Prior attempts to explain how RL works largely offer behavioral perspectives, leaving open what RL gives a model at the representation level: can RL create genuinely novel features, and which existing features does it enhance or suppress? Recent developments in mechanistic interpretability suggest sparse autoencoders (SAEs) as a </p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Mon, 14 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2609.15064v1</guid>
+    </item>
+    <item>
+      <title>Inside VLM Chart Reading: Tracing Value Reading from Vertical Bar Charts Across Space and Depth</title>
+      <link>https://arxiv.org/abs/2609.13745v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Tianhao Niu, Qingfu Zhu, Wanxiang Che</p><p>Vision--language models (VLMs) can answer chart questions accurately, but output accuracy does not show how they combine the evidence needed to recover an exact value. We study vertical-bar value reading with controlled counterfactual activation patching in Qwen2.5VL-7B-Instruct and InternVL3.5-8B. The study connects three analyses: (1) The single-factor results show that the changed bar-top region restores much more answer preference than the unchanged bar body, despite containing fewer visual </p><p><strong>Tags:</strong> vision</p>]]></description>
+      <pubDate>Sat, 12 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2609.13745v1</guid>
+    </item>
     <item>
       <title>Beyond Top Words: MonoTM for Topic Modeling with Interpretable Monosemantic Features</title>
       <link>https://arxiv.org/abs/2609.09575v1</link>
@@ -175,48 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Anh Danh, Rick Nouwen, Massimo Poesio</p><p>Coreference resolution is an important task in contextual reasoning. In this paper, we investigate the mechanism for representing and retrieving singular and plural entities for plural reference. We use a combination of mechanistic interpretability and attention pattern analysis to study the process in which LLMs predict a pronoun to refer back to previously mentioned entities. Using a range of causal intervention techniques, we find a set of attention heads that are responsible for (1) represen</p><p><strong>Tags:</strong> circuits, attention, reasoning</p>]]></description>
       <pubDate>Thu, 03 Sep 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2609.03687v1</guid>
-    </item>
-    <item>
-      <title>EraseSAE: Surgical Concept Erasure in Text-to-Video Diffusion Models via Sparse Autoencoders</title>
-      <link>https://arxiv.org/abs/2609.03629v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Xinghao Wang, Dong Li, Wei Yu, Yingwei Pan, Tao Gong, et al.</p><p>Recent advances in text-to-video (T2V) diffusion models have demonstrated remarkable generative capabilities, yet their reliance on loosely curated training data raises pressing safety and copyright concerns. Concept erasure offers a principled remedy by removing unwanted semantics from pretrained models while preserving remaining concepts. However, existing approaches typically operate at a coarse granularity misaligned with the fine-grained, distributed nature of concept representations, leadi</p><p><strong>Tags:</strong> SAE, safety</p>]]></description>
-      <pubDate>Thu, 03 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2609.03629v1</guid>
-    </item>
-    <item>
-      <title>SharedSAE: One Feature Dictionary Across Language Models</title>
-      <link>https://arxiv.org/abs/2609.04344v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Daniil Ognev, Célian Vasson, Lijie Hu, Kentaro Inui, Benjamin Heinzerling</p><p>Sparse autoencoders (SAEs) are widely used to interpret language model activations, but SAE training and latent labelling are typically repeated for every model. Here, we show that a single shared SAE can replace a collection of dedicated per-model SAEs. Our method, SharedSAE, combines a shared dictionary with model-specific encoder-decoder pairs. Unlike the closest prior method, which discards activation magnitudes and requires all models at inference, SharedSAE instead normalizes only selectio</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Thu, 03 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2609.04344v1</guid>
-    </item>
-    <item>
-      <title>The Gradient Does Not See Rank: Rank-Indifference in Matrix-CODI on ProsQA</title>
-      <link>https://arxiv.org/abs/2609.03090v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Samuel Larson</p><p>Continuous chain-of-thought models compress reasoning into latent tokens. Matrix-valued variants, which route each latent token through a d x d matrix bottleneck, introduce rank as a single-sample structural observable on the latent matrix Z. If matrix latents carry parallel reasoning paths via superposition, rank should track them, and truncating Z to low rank should hurt accuracy on tasks whose solutions plausibly require multiple components. Across four training regimes of a matrix-CODI model</p><p><strong>Tags:</strong> superposition, reasoning</p>]]></description>
-      <pubDate>Wed, 02 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2609.03090v1</guid>
-    </item>
-    <item>
-      <title>ObserverBench: Testing Mechanistic Estimates for Intervention and Control</title>
-      <link>https://arxiv.org/abs/2609.03026v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Vijay Erramilli</p><p>Mechanistic interpretability is increasingly used to guide interventions such as activation steering, circuit removal, and safety monitoring. Yet an internal estimate that is accurate on average can still choose a poor action.   We present ObserverBench, a benchmark framework for testing whether an internal estimator---an observer---is adequate for the intervention, control, or safety task it directs. Each task fixes the model, information boundary, allowed actions, decision rule, held-out cases</p><p><strong>Tags:</strong> circuits, safety, steering</p>]]></description>
-      <pubDate>Wed, 02 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2609.03026v1</guid>
-    </item>
-    <item>
-      <title>FailSAE: Towards Interpretable Failure Prediction for Vision-Language Models via Sparse Autoencoders</title>
-      <link>https://arxiv.org/abs/2609.04276v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Jie Ma, Zongxi Liu, Yi Zhu</p><p>Vision-language models (VLMs), such as CLIP, have achieved strong performance across multimodal tasks by aligning visual and textual representations in a shared embedding space. As VLMs are increasingly used for high-stakes domains, failure prediction becomes critical for risk-aware deployment and human intervention. Existing failure prediction methods typically rely on confidence scores or auxiliary classifiers. Although these methods are effective on predicting VLM failures, they provide limit</p><p><strong>Tags:</strong> SAE, probing, vision</p>]]></description>
-      <pubDate>Wed, 02 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2609.04276v1</guid>
-    </item>
-    <item>
-      <title>S^3martCirc: Self-supervised Smart Circuit Discovery</title>
-      <link>https://arxiv.org/abs/2609.00755v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Wendy Zheng, Yinhan He, Liang Wu, Jundong Li</p><p>Large Language Models (LLMs) have demonstrated remarkable performance across diverse tasks, from text summarization to question answering. Despite these capabilities, their black-box nature obscures internal decision-making processes. Mechanistic interpretability (MI) aims to address this by reverse-engineering neural networks into human-understandable algorithms. Current MI approaches for LLMs typically follow a two-stage paradigm: first identifying important components (circuit discovery), whe</p><p><strong>Tags:</strong> circuits</p>]]></description>
-      <pubDate>Tue, 01 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2609.00755v1</guid>
     </item>
   </channel>
 </rss>
