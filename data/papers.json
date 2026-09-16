@@ -1,6 +1,85 @@
 {
-  "lastUpdated": "2026-09-15",
+  "lastUpdated": "2026-09-16",
   "papers": [
+    {
+      "id": "arxiv-2609-16436v1",
+      "title": "Interpreting and Steering LLM Agents for Social Simulations",
+      "authors": "Jiayue Gaveal Fan, Arul Murugan, Shreyas Krishnan, Abhishek Nagaraj",
+      "date": "2026-09-14",
+      "url": "https://arxiv.org/abs/2609.16436v1",
+      "abstract": "Simulations based on large language models (LLMs) have proven to be powerful for understanding human behavior, making them valuable additions to the social scientific toolkit. However, LLMs are ultimately black boxes based on deep neural networks which limits their value for social science. This is because of a lack of (i) interpretability: i.e. the ability to assign clear mechanisms driving observed behavior; and a lack of (ii) steerability: i.e. the ability to mute or amplify specific theoreti",
+      "tags": [
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2609-15277v1",
+      "title": "Artificial entrepreneurial cognition: Locating and causally steering an opportunity recognition dial inside large language models (LLMs)",
+      "authors": "Christian Fisch, Angela Altmeier, Martin Obschonka, Michal Kosinski, Pin Ni",
+      "date": "2026-09-14",
+      "url": "https://arxiv.org/abs/2609.15277v1",
+      "abstract": "Entrepreneurial cognition is a foundation of entrepreneurship research. Yet the growing involvement of large language models (LLMs) in entrepreneurial work extends the cognition question beyond human actors to systems whose internal representations remain largely unexplored. We introduce artificial entrepreneurial cognition, the functional organisation of entrepreneurship-relevant representations and computations inside artificial intelligence (AI) systems. We bring mechanistic interpretability ",
+      "tags": [
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2609-15533v1",
+      "title": "The Misery of Mechanistic Interpretability: A Formal Perspective",
+      "authors": "Tobias Ladner, Matthias Althoff",
+      "date": "2026-09-14",
+      "url": "https://arxiv.org/abs/2609.15533v1",
+      "abstract": "Mechanistic interpretability has become the dominant lens for understanding frontier language models, as their inner workings are complex and inherently black boxes. To gain insights into these models, interpretable replacement networks (IRNs) are trained at all layers, exposing interpretable features through sparsely activated neurons. However, the faithfulness of an IRN is usually evaluated only empirically on clean data, and we show that even semantically minor input perturbations flip the do",
+      "tags": [
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2609-16229v1",
+      "title": "Test-Time Unlearning via Sparse Autoencoder",
+      "authors": "Pingzhi Li, Jinhao Duan, Vaishnav Tadiparthi, Nakul Agarwal, Kwonjoon Lee, et al.",
+      "date": "2026-09-14",
+      "url": "https://arxiv.org/abs/2609.16229v1",
+      "abstract": "Machine unlearning aims to remove specific knowledge from a trained large language model (LLM) without retraining from scratch. Existing methods modify model weights via gradient ascent and its advances. While effective on certain benchmarks, these weight-based approaches exhibit a sharp forget-utility trade-off, where stronger forgetting of target knowledge can degrade model utility, and unlearned knowledge may reappear under post-unlearning fine-tuning or prompt attacks. We propose ARIA (autoe",
+      "tags": [
+        "SAE"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2609-15064v1",
+      "title": "What Does an LLM Learn from Reinforcement Learning? A Mechanistic Interpretability Perspective with Fixed-SAE Track",
+      "authors": "Lingheng Du, Yiming Tang, Xufeng Duan, Dianbo Liu",
+      "date": "2026-09-14",
+      "url": "https://arxiv.org/abs/2609.15064v1",
+      "abstract": "Reinforcement learning (RL) is widely utilized in large language model training to improve targeted capabilities, yet how RL reshapes a model remains poorly understood. Prior attempts to explain how RL works largely offer behavioral perspectives, leaving open what RL gives a model at the representation level: can RL create genuinely novel features, and which existing features does it enhance or suppress? Recent developments in mechanistic interpretability suggest sparse autoencoders (SAEs) as a ",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2609-13745v1",
+      "title": "Inside VLM Chart Reading: Tracing Value Reading from Vertical Bar Charts Across Space and Depth",
+      "authors": "Tianhao Niu, Qingfu Zhu, Wanxiang Che",
+      "date": "2026-09-12",
+      "url": "https://arxiv.org/abs/2609.13745v1",
+      "abstract": "Vision--language models (VLMs) can answer chart questions accurately, but output accuracy does not show how they combine the evidence needed to recover an exact value. We study vertical-bar value reading with controlled counterfactual activation patching in Qwen2.5VL-7B-Instruct and InternVL3.5-8B. The study connects three analyses: (1) The single-factor results show that the changed bar-top region restores much more answer preference than the unchanged bar body, despite containing fewer visual ",
+      "tags": [
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2609-09575v1",
       "title": "Beyond Top Words: MonoTM for Topic Modeling with Interpretable Monosemantic Features",
@@ -1236,6 +1315,19 @@
         "safety",
         "probing",
         "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2609-13198v1",
+      "title": "SPICE: Simple Polysemantic Feature Interpretation via Clustering-based Explanation",
+      "authors": "Sehyun Lee, Dahee Kwon, Damin Lee, Jaesik Choi",
+      "date": "2026-08-14",
+      "url": "https://arxiv.org/abs/2609.13198v1",
+      "abstract": "One of the pivotal recent challenges in neural network interpretability is polysemanticity, where a single neuron is activated by multiple, often unrelated concepts, hindering clear functional understanding. Although prior work has explored this phenomenon, existing approaches remain architecture-specific and depend on manual heuristics such as a fixed number of concept clusters ($K$), limiting their generality and scalability--especially for modern Transformer-based models. To address these lim",
+      "tags": [
+        "features"
       ],
       "source": "arXiv",
       "featured": false
