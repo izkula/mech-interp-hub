@@ -483,7 +483,7 @@
       }
     }
     if (view.z < 0.9) return;
-    const fs = Math.max(5.6, Math.round(10 / view.z * 8) / 8);
+    const fs = Math.min(Math.max(5.6, Math.round(10 / view.z * 8) / 8), Math.round(13 / view.z * 8) / 8); // 10-13 px on screen
     // street names on one segment per name
     const done = new Set();
     g.font = `700 ${fs}px Overpass, sans-serif`; g.fillStyle = 'rgba(170,182,200,.55)';
@@ -791,21 +791,28 @@
 
   // ------------------------------------------------------------ picking
   // the lane whose centre line passes closest to the tap, measured as a true 2D distance
-  function pick(sx, sy, touch) {
-    const [wx, wy] = toWorld(sx, sy), tol = Math.max(LW * 0.6, (touch ? 18 : 8) / view.z);
-    let best = null, bd = tol;
+  // Every lane whose centre line passes within a finger's reach of the tap, closest first.
+  // Distances are in screen pixels so "close" means the same thing at every zoom level.
+  function laneCandidates(sx, sy, touch) {
+    const [wx, wy] = toWorld(sx, sy), reach = (touch ? 22 : 9) / view.z, out = [];
     for (const L of links) {
-      if (L.len < 24) continue;
+      if (L.len < 16) continue;
       const rx = wx - L.x0, ry = wy - L.y0, raw = rx * L.ux + ry * L.uy;
-      if (raw < -8 || raw > L.len + 8) continue;
-      const s = Math.max(10, Math.min(L.len - 10, raw)), o = rx * L.nx + ry * L.ny;
+      if (raw < -reach || raw > L.len + reach) continue;
+      const s = Math.max(6, Math.min(L.len - 6, raw)), o = rx * L.nx + ry * L.ny;
       for (let k = 0; k < L.lanes; k++) {
         const d = Math.hypot(raw - s, o - S.laneOff(L, k));
-        if (d < bd) { bd = d; best = { li: L.i, k, s }; }
+        if (d < Math.max(reach, LW * 0.55)) out.push({ li: L.i, k, s, px: d * view.z });
       }
     }
-    return best && placeSel(best);
+    return out.sort((a, b) => a.px - b.px);
   }
+  function pick(sx, sy, touch) {
+    const c = laneCandidates(sx, sy, touch);
+    return c.length ? placeSel({ li: c[0].li, k: c[0].k, s: c[0].s }) : null;
+  }
+  // a finger can't tell apart lanes whose centres are this close on screen
+  const FINGER_PX = 10;
   function placeSel(p) { const [x, y] = S.lanePt(links[p.li], p.k, p.s); p.x = x; p.y = y; return p; }
   const reverseOf = L => links.find(M => M.from === L.to && M.to === L.from && M.road === L.road);
   // "85 m before Bank St": the cross street at the end of this block
@@ -856,7 +863,7 @@
         panel.innerHTML = `<div class="eyebrow">Step 1 of 2 · Scout</div>
           <div class="cities" role="radiogroup" aria-label="City">${Object.values(SIM.LAYOUTS).map(l => { const b = bestFor(l.id); return `<button class="city" role="radio" aria-checked="${l.id === LAY.id}" data-city="${l.id}"><canvas data-thumb="${l.id}" aria-hidden="true"></canvas><b>${l.name}</b><span>${b ? 'Best ' + fmt(b.score) : esc(l.tagline)}</span></button>`; }).join('')}</div>
           <h2 class="keep">Pick a lane to crash in</h2>
-          <p>Tap any lane to see how busy it is. Pinch or double-tap to zoom, drag to pan. Bridges, ramps and corners where queues back up are good places to start.</p>
+          <p>Tap a road to zoom in, then tap the exact lane to see how busy it is. Pinch to zoom, drag to pan. Bridges, ramps and corners where queues back up are good places to start.</p>
           <div class="legend"><span><i style="background:#ff3b30;box-shadow:0 0 8px #ff3b30"></i>Bright tail lights: braking</span></div>
           ${best}`;
         panel.querySelectorAll('[data-city]').forEach(b => b.onclick = () => switchCity(b.dataset.city));
@@ -1217,7 +1224,6 @@
     }
     if (wasClick && e.type === 'pointerup') {
       const touch = e.pointerType !== 'mouse';
-      if (lastTap && e.timeStamp - lastTap.t < 320 && Math.hypot(x - lastTap.x, y - lastTap.y) < 36) { zoomAt(x, y, 2); lastTap = null; return; }
       lastTap = { t: e.timeStamp, x, y };
       onTap(x, y, touch);
     }
@@ -1243,12 +1249,26 @@
   $('bZoomOut').onclick = () => { const [x, y] = mapCentre(); zoomAt(x, y, 1 / 1.8); };
   function onTap(x, y, touch) {
     if (mode !== 'scout') return;
-    const p = pick(x, y, touch);
-    if (!p && touch && sel) return; // a stray tap on a phone shouldn't lose the selection
-    sel = p; if (p) surfaceSheet(); renderPanel();
-    if (sel) keepVisible(sel.x, sel.y);
+    const c = laneCandidates(x, y, touch);
+    if (!c.length) { if (!(touch && sel)) { sel = null; renderPanel(); } return; }
+    // several lanes under the finger that are too close together to tell apart: zoom in on the spot
+    // (keeping it under the finger) instead of guessing, then the next tap picks the exact lane
+    const rival = c.find(o => o.li !== c[0].li || o.k !== c[0].k);
+    if (touch && rival && rival.px - c[0].px < FINGER_PX && view.z < 6) {
+      const need = (FINGER_PX + 10) / LW;              // neighbouring lanes ~20 px apart: one zoom is always enough
+      zoomAt(x, y, Math.max(1.6, need / view.z), 0.35);
+      toast('Zoomed in · tap the exact lane');
+      return;
+    }
+    $('toast').classList.remove('show');
+    sel = placeSel({ li: c[0].li, k: c[0].k, s: c[0].s }); surfaceSheet(); renderPanel();
+    // never move the map after a pick; if the panel would cover the lane, shrink the panel instead
+    requestAnimationFrame(() => {
+      const top = panel.getBoundingClientRect().top - cv.getBoundingClientRect().top;
+      if (y > top - 24 && !panelMin && $('bCollapse') && getComputedStyle($('bCollapse')).display !== 'none') { panelMin = true; applyCollapse(); }
+    });
   }
-  // on phones the panel covers the lower map; slide the chosen lane into view above it
+  // after moving the pick with the panel's nudge buttons, keep it on screen
   function keepVisible(wx, wy) {
     const sy = wy * view.z + view.oy, sx = wx * view.z + view.ox, top = panel.getBoundingClientRect().top - cv.getBoundingClientRect().top;
     if (sy < top - 30 && sy > 90 && sx > 20 && sx < W - 20) return;
@@ -1321,7 +1341,7 @@
   }
 
   // test hook: screen position of the middle of a named link (used by automated checks)
-  window.__snarlDebug = { screenOfLane(lbl, k) { const L = links.find(l => S.linkLabel(l) === lbl); if (!L) return null; const [x, y] = S.lanePt(L, k, L.len / 2); return [x * view.z + view.ox, y * view.z + view.oy]; }, setZ: z => { const [x, y] = [W / 2, H / 2]; const wx = (x - view.ox) / view.z, wy = (y - view.oy) / view.z; view.z = z; view.ox = x - wx * z; view.oy = y - wy * z; clampView(); bgDirty = true; }, view: () => ({ z: +view.z.toFixed(3), ox: Math.round(view.ox), oy: Math.round(view.oy) }), screenOfLabel(lbl) { const L = links.find(l => S.linkLabel(l) === lbl); if (!L) return null; const [x, y] = S.lanePt(L, 0, L.len / 2); return [x * view.z + view.ox, y * view.z + view.oy]; } };
+  window.__snarlDebug = { sel: () => sel && { li: sel.li, k: sel.k, s: sel.s }, links: () => links.map(L => ({ i: L.i, lanes: L.lanes, len: L.len })), toScreen: (li, k, s) => { const [x, y] = S.lanePt(links[li], k, s); return [x * view.z + view.ox, y * view.z + view.oy]; }, fit: () => { userView = false; fitView(); cam = null; }, layout: () => LAY.id, screenOfLane(lbl, k) { const L = links.find(l => S.linkLabel(l) === lbl); if (!L) return null; const [x, y] = S.lanePt(L, k, L.len / 2); return [x * view.z + view.ox, y * view.z + view.oy]; }, setZ: z => { const [x, y] = [W / 2, H / 2]; const wx = (x - view.ox) / view.z, wy = (y - view.oy) / view.z; view.z = z; view.ox = x - wx * z; view.oy = y - wy * z; clampView(); bgDirty = true; }, view: () => ({ z: +view.z.toFixed(3), ox: Math.round(view.ox), oy: Math.round(view.oy) }), screenOfLabel(lbl) { const L = links.find(l => S.linkLabel(l) === lbl); if (!L) return null; const [x, y] = S.lanePt(L, 0, L.len / 2); return [x * view.z + view.ox, y * view.z + view.oy]; } };
   window.addEventListener('resize', resize);
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => { bgDirty = true; cityBgReady = false; });
   setLayout(SIM.LAYOUTS[store.city] ? store.city : 'portside'); resize(); renderPanel();
