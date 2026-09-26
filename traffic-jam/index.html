@@ -168,8 +168,15 @@ details.how p{margin:6px 0 0 !important;font-size:13px !important}
 .legend i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;vertical-align:-1px}
 
 @media (max-width:640px),(max-height:500px){
-  .grip{display:block;position:absolute;top:0;left:50%;transform:translateX(-50%);width:84px;height:22px;border:0;background:transparent;cursor:pointer;padding:0}
-  .grip::before{content:"";display:block;width:40px;height:5px;border-radius:3px;background:rgba(255,255,255,.28);margin:8px auto 0}
+  .grip{display:block;position:absolute;top:0;left:0;right:0;height:30px;border:0;background:transparent;cursor:grab;padding:0;touch-action:none;z-index:2}
+  .grip::before{content:"";display:block;width:44px;height:5px;border-radius:3px;background:rgba(255,255,255,.35);margin:9px auto 0}
+  .grip:active{cursor:grabbing}
+  .grip:focus-visible{outline:none}
+  .grip:focus-visible::before{background:var(--amber)}
+  #panel{transition:transform .25s cubic-bezier(.2,.8,.2,1)}
+  #panel.dragging{transition:none}
+  #panel.peek{transform:translateY(calc(100% - 50px));overflow:hidden}
+  #panel.peek h2{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
   #app #panel{padding-top:24px}
   #panel.min{padding-bottom:10px}
   #panel.min > :not(.keep):not(.grip){display:none}
@@ -218,7 +225,7 @@ details.how p{margin:6px 0 0 !important;font-size:13px !important}
   #zoom{right:8px;top:60px}
 }
 @media (max-width:400px){.btn{padding:0 12px;font-size:13px;letter-spacing:.04em}}
-@media (prefers-reduced-motion:reduce){#toast{transition:none}}
+@media (prefers-reduced-motion:reduce){#panel{transition:none !important}#toast{transition:none}}
 </style>
 </head>
 <body>

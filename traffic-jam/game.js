@@ -824,17 +824,58 @@
   // ------------------------------------------------------------ panel
   const panel = $('panel');
   function hazardIcon() { return '<svg class="haz" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2 19 18H1z" fill="none" stroke="#1b1206" stroke-width="2.2" stroke-linejoin="round"/><path d="M10 8v4.5" stroke="#1b1206" stroke-width="2.2" stroke-linecap="round"/><circle cx="10" cy="15.2" r="1.2" fill="#1b1206"/></svg>'; }
-  let panelMin = false;
+  // bottom sheet on phones: 0 = full, 1 = compact, 2 = tucked away (just the handle and title showing)
+  let sheet = 0;
+  const sheetOn = () => getComputedStyle($('bGrip') || panel).display !== 'none' && !!$('bGrip');
+  function applySheet() {
+    panel.classList.toggle('min', sheet >= 1);
+    panel.classList.toggle('peek', sheet === 2);
+    panel.style.transform = '';
+    const g = $('bGrip');
+    if (g) { g.setAttribute('aria-expanded', String(sheet === 0)); g.setAttribute('aria-label', sheet === 0 ? 'Shrink panel' : 'Expand panel'); }
+    setTimeout(updateInsets, 260);
+  }
   function renderPanel() {
     renderPanelBody();
     const grip = document.createElement('button');
     grip.className = 'grip'; grip.id = 'bGrip';
-    grip.setAttribute('aria-label', panelMin ? 'Expand panel' : 'Collapse panel');
-    grip.setAttribute('aria-expanded', String(!panelMin));
-    grip.onclick = () => { panelMin = !panelMin; panel.classList.toggle('min', panelMin); requestAnimationFrame(updateInsets); grip.setAttribute('aria-expanded', String(!panelMin)); grip.setAttribute('aria-label', panelMin ? 'Expand panel' : 'Collapse panel'); };
+    grip.title = 'Drag down to move the panel out of the way';
     panel.prepend(grip);
-    panel.classList.toggle('min', panelMin);
-    requestAnimationFrame(updateInsets);
+    wireGrip(grip);
+    grip.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setSheet(sheet === 0 ? 1 : 0); } if (e.key === 'ArrowDown') setSheet(sheet + 1); if (e.key === 'ArrowUp') setSheet(sheet - 1); });
+    applySheet();
+  }
+  function setSheet(n) { sheet = Math.max(0, Math.min(2, n)); applySheet(); }
+  // a tucked-away panel pops back up when it has something new to show (a lane picked, a result)
+  function surfaceSheet() { if (sheet === 2) sheet = 1; }
+  function wireGrip(grip) {
+    let d = null;
+    grip.addEventListener('pointerdown', e => {
+      try { grip.setPointerCapture(e.pointerId); } catch (err) { /* ignore */ }
+      d = { y: e.clientY, t: e.timeStamp, lastY: e.clientY, lastT: e.timeStamp, v: 0, moved: false, h: panel.getBoundingClientRect().height };
+      panel.classList.add('dragging');
+    });
+    grip.addEventListener('pointermove', e => {
+      if (!d) return;
+      const dy = e.clientY - d.y;
+      if (Math.abs(dy) > 6) d.moved = true;
+      const dt = Math.max(1, e.timeStamp - d.lastT); d.v = (e.clientY - d.lastY) / dt; d.lastY = e.clientY; d.lastT = e.timeStamp;
+      // follow the finger downwards; resist a little when pulled up past the top
+      const off = dy > 0 ? Math.min(dy, d.h - 44) : dy * 0.25;
+      panel.style.transform = `translateY(${off}px)`;
+    });
+    const end = e => {
+      if (!d) return;
+      panel.classList.remove('dragging');
+      const dy = e.clientY - d.y, fast = Math.abs(d.v) > 0.5, moved = d.moved;
+      d = null;
+      if (!moved) { setSheet(sheet === 0 ? 1 : 0); return; }                 // tap: full <-> compact (tucked -> full)
+      if (dy > 40 || (fast && dy > 0)) setSheet(sheet + (dy > 260 || (fast && Math.abs(dy) > 120) ? 2 : 1));
+      else if (dy < -40 || (fast && dy < 0)) setSheet(sheet - (dy < -260 ? 2 : 1));
+      else applySheet();
+    };
+    grip.addEventListener('pointerup', end);
+    grip.addEventListener('pointercancel', end);
   }
   function renderPanelBody() {
     if (mode === 'scout' || mode === 'intro') {
@@ -998,7 +1039,7 @@
   }
   let clearedToast = false;
   function finish() {
-    mode = 'result';
+    mode = 'result'; surfaceSheet();
     const score = Math.max(0, (live.delay - base.delay) / 60);
     const diff = links.map(L => live.delayLink[L.i] - base.delayLink[L.i]);
     const mx = Math.max(1, ...diff);
@@ -1233,7 +1274,7 @@
     if (mode !== 'scout') return;
     const p = pick(x, y, touch);
     if (!p && touch && sel) return; // a stray tap on a phone shouldn't lose the selection
-    sel = p; renderPanel();
+    sel = p; if (p) surfaceSheet(); renderPanel();
     if (sel) keepVisible(sel.x, sel.y);
   }
   // on phones the panel covers the lower map; slide the chosen lane into view above it
