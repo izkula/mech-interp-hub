@@ -824,111 +824,30 @@
   // ------------------------------------------------------------ panel
   const panel = $('panel');
   function hazardIcon() { return '<svg class="haz" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2 19 18H1z" fill="none" stroke="#1b1206" stroke-width="2.2" stroke-linejoin="round"/><path d="M10 8v4.5" stroke="#1b1206" stroke-width="2.2" stroke-linecap="round"/><circle cx="10" cy="15.2" r="1.2" fill="#1b1206"/></svg>'; }
-  // bottom sheet on phones: 0 = full, 1 = compact, 2 = tucked away (just the handle and title showing)
-  let sheet = 0, sheetAnim = 0;
-  const PEEK = 52;
-  const sheetOn = () => { const g = $('bGrip'); return !!g && getComputedStyle(g).display !== 'none'; };
-  // resting offset for a state, measured with the state's content applied
-  const restOffset = st => st === 2 ? Math.max(0, panel.offsetHeight - PEEK) : 0;
-  function setContentFor(st) { panel.classList.toggle('min', st >= 1); panel.classList.toggle('peek', st === 2); }
-  // Settle into state `st`, animating from wherever the panel is on screen right now.
-  // The content swap changes the panel's height, so measure before and after and animate the difference
-  // (otherwise the panel jumps the moment it's released).
-  function settle(st, velocity) {
-    const from = panel.getBoundingClientRect().top;
-    sheet = Math.max(0, Math.min(2, st));
-    panel.style.transition = 'none';
-    setContentFor(sheet);
-    const target = sheetOn() ? restOffset(sheet) : 0;
-    panel.style.transform = `translateY(${target}px)`;
-    const to = panel.getBoundingClientRect().top;
-    const startOff = target + (from - to);
-    panel.style.transform = `translateY(${startOff}px)`;
-    const g = $('bGrip');
-    if (g) { g.setAttribute('aria-expanded', String(sheet === 0)); g.setAttribute('aria-label', sheet === 0 ? 'Shrink panel' : 'Expand panel'); }
-    if (reduceMotion || Math.abs(startOff - target) < 1) { panel.style.transform = target ? `translateY(${target}px)` : ''; finishSettle(); return; }
-    // a spring-like ease whose length scales with the distance, carrying some of the finger's speed
-    const dist = Math.abs(startOff - target), v = Math.min(3, Math.abs(velocity || 0));
-    const dur = Math.max(180, Math.min(380, 150 + dist * 0.6 - v * 40));
-    cancelAnimationFrame(sheetAnim);
-    const t0 = performance.now();
-    const tick = now => {
-      const k = Math.min(1, (now - t0) / dur), e = 1 - Math.pow(1 - k, 3);
-      const y = startOff + (target - startOff) * e;
-      panel.style.transform = `translateY(${y}px)`;
-      if (k < 1) sheetAnim = requestAnimationFrame(tick);
-      else { panel.style.transform = target ? `translateY(${target}px)` : ''; finishSettle(); }
-    };
-    sheetAnim = requestAnimationFrame(tick);
-  }
-  function finishSettle() { panel.style.transition = ''; updateInsets(); }
-  function applySheet() {
-    // after re-rendering the panel content: snap to the current state with no animation
-    cancelAnimationFrame(sheetAnim);
-    setContentFor(sheet);
-    panel.style.transform = sheetOn() && sheet === 2 ? `translateY(${restOffset(2)}px)` : '';
-    const g = $('bGrip');
-    if (g) { g.setAttribute('aria-expanded', String(sheet === 0)); g.setAttribute('aria-label', sheet === 0 ? 'Shrink panel' : 'Expand panel'); }
-    requestAnimationFrame(updateInsets);
-  }
+  // on phones the panel can be collapsed to its essentials with a Hide / Show button
+  let panelMin = false;
   function renderPanel() {
     renderPanelBody();
-    const grip = document.createElement('button');
-    grip.className = 'grip'; grip.id = 'bGrip';
-    grip.title = 'Drag down to move the panel out of the way';
-    panel.prepend(grip);
-    wireGrip(grip);
-    grip.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); settle(sheet === 0 ? 1 : 0); } if (e.key === 'ArrowDown') settle(sheet + 1); if (e.key === 'ArrowUp') settle(sheet - 1); });
-    applySheet();
+    const b = document.createElement('button');
+    b.className = 'collapse'; b.id = 'bCollapse';
+    panel.prepend(b);
+    b.onclick = () => { panelMin = !panelMin; applyCollapse(); };
+    applyCollapse();
   }
-  function setSheet(n) { settle(n); }
-  // a tucked-away panel pops back up when it has something new to show (a lane picked, a result)
-  function surfaceSheet() { if (sheet === 2) sheet = 1; }
-  function wireGrip(grip) {
-    let d = null, raf = 0, pendingY = 0;
-    const paint = () => { raf = 0; if (d) panel.style.transform = `translateY(${pendingY}px)`; };
-    grip.addEventListener('pointerdown', e => {
-      if (!sheetOn()) return;
-      try { grip.setPointerCapture(e.pointerId); } catch (err) { /* ignore */ }
-      cancelAnimationFrame(sheetAnim);
-      const m = /translateY\(([-\d.]+)px\)/.exec(panel.style.transform || '');
-      d = { y: e.clientY, base: m ? +m[1] : 0, samples: [[e.timeStamp, e.clientY]], moved: false, maxOff: panel.offsetHeight - PEEK };
-      panel.style.transition = 'none';
-      panel.classList.add('dragging');
-    });
-    grip.addEventListener('pointermove', e => {
-      if (!d) return;
-      const dy = e.clientY - d.y;
-      if (Math.abs(dy) > 5) d.moved = true;
-      d.samples.push([e.timeStamp, e.clientY]); if (d.samples.length > 6) d.samples.shift();
-      let off = d.base + dy;
-      if (off < 0) off = off * 0.3;                       // resist pulling above the top
-      if (off > d.maxOff) off = d.maxOff + (off - d.maxOff) * 0.3;
-      pendingY = off;
-      if (!raf) raf = requestAnimationFrame(paint);        // one style write per frame
-    });
-    const end = e => {
-      if (!d) return;
-      panel.classList.remove('dragging');
-      const s0 = d.samples[0], s1 = d.samples[d.samples.length - 1];
-      const v = e.timeStamp - s0[0] < 120 && s1[0] > s0[0] ? (s1[1] - s0[1]) / (s1[0] - s0[0]) : 0; // px per ms, recent
-      const moved = d.moved, dy = e.clientY - d.y;
-      d = null; cancelAnimationFrame(raf); raf = 0;
-      if (!moved) { settle(sheet === 2 ? 1 : sheet === 0 ? 1 : 0); return; }
-      // pick the state from where the finger let go, nudged by a flick
-      const cur = panel.getBoundingClientRect().top, h = panel.offsetHeight;
-      // steps from how far the finger travelled and from how fast it flicked; use whichever says more
-      const travelled = dy / Math.max(120, h * 0.5);
-      const byDist = Math.abs(travelled) > 1.1 ? 2 : Math.abs(travelled) > 0.35 ? 1 : 0;
-      const byFlick = Math.abs(v) > 1.6 ? 2 : Math.abs(v) > 0.6 ? 1 : 0;
-      const dir = Math.abs(v) > 0.6 ? Math.sign(v) : Math.sign(dy);
-      const st = Math.max(0, Math.min(2, sheet + dir * Math.max(byDist, byFlick)));
-      void cur;
-      settle(st, v);
-    };
-    grip.addEventListener('pointerup', end);
-    grip.addEventListener('pointercancel', end);
+  function applyCollapse() {
+    const b = $('bCollapse');
+    panel.classList.toggle('min', panelMin);
+    if (b) {
+      b.setAttribute('aria-expanded', String(!panelMin));
+      b.innerHTML = panelMin
+        ? '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 10l4-4 4 4"/></svg>Show'
+        : '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 6l4 4 4-4"/></svg>Hide';
+      b.setAttribute('aria-label', panelMin ? 'Show the full panel' : 'Hide the panel details');
+    }
+    requestAnimationFrame(updateInsets);
   }
+  // a collapsed panel opens again when it has something new to show (a lane picked, a result)
+  function surfaceSheet() { panelMin = false; }
   function renderPanelBody() {
     if (mode === 'scout' || mode === 'intro') {
       const b0 = bestFor(LAY.id);
@@ -975,9 +894,9 @@
       panel.innerHTML = `<div class="eyebrow keep" id="rStatus">Lane blocked</div>
         <h2>${esc(lb.road)}</h2>
         <div class="stats keep">
-          <div class="stat"><b id="rDelay" style="color:var(--red)">0</b><span>score so far<br>(minutes lost)</span></div>
-          <div class="stat"><b id="rStop">0</b><span>cars stuck in<br>your jam now</span></div>
-          <div class="stat"><b id="rClock">0:00</b><span>since the<br>crash</span></div>
+          <div class="stat"><b id="rDelay" style="color:var(--red)">0</b><span>score so far <br>(minutes lost)</span></div>
+          <div class="stat"><b id="rStop">0</b><span>cars stuck in <br>your jam now</span></div>
+          <div class="stat"><b id="rClock">0:00</b><span>since the <br>crash</span></div>
         </div>
         <div class="chart"><canvas id="rChart" aria-label="Chart of cars stuck in your jam over time"></canvas></div>
         <p class="explain">Your score adds up every minute drivers lose compared with the exact same morning without your crash. It keeps counting after the tow truck because the queue takes a while to drain.</p>
