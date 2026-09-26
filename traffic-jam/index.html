@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Snarl</title>
+<meta name="description" content="Stage one fender-bender in a simulated rush-hour city and see how big a traffic jam you can cause.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;700;800;900&family=Overpass+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0f141c; --ink:#e9edf3; --mute:#97a1b2; --faint:#5d6778;
+  --panel:rgba(14,18,26,.9); --line:rgba(255,255,255,.1);
+  --sign:#0b6a45; --sign-hi:#0e7d52; --sign-edge:#e7efe9;
+  --amber:#f6a623; --amber-hi:#ffbd4a; --red:#ff5c4d; --go:#48d597;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html,body{height:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 'Overpass',system-ui,-apple-system,'Segoe UI',sans-serif;overflow:hidden;-webkit-font-smoothing:antialiased}
+button{font:inherit;color:inherit}
+#app{position:fixed;left:0;right:0;top:env(safe-area-inset-top,0px);bottom:env(safe-area-inset-bottom,0px);overflow:hidden}
+#map{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:none;cursor:crosshair}
+#map.panning{cursor:grabbing}
+.num{font-family:'Overpass Mono',ui-monospace,monospace;font-variant-numeric:tabular-nums}
+
+/* highway-sign plates */
+.plate{background:var(--sign);color:#fff;border-radius:9px;box-shadow:inset 0 0 0 2px var(--sign),inset 0 0 0 4px var(--sign-edge),0 10px 30px rgba(0,0,0,.45)}
+#brand{position:absolute;top:16px;left:16px;padding:10px 16px 8px;display:flex;align-items:center;gap:14px;pointer-events:none}
+#brand h1{margin:0;font-weight:900;font-size:26px;letter-spacing:.08em;line-height:1}
+#brand .sub{display:flex;flex-direction:column;border-left:2px solid rgba(255,255,255,.55);padding-left:12px;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;line-height:1.25}
+#brand .clock{font-family:'Overpass Mono',monospace;font-size:15px;letter-spacing:.02em;text-transform:none}
+
+#tools{position:absolute;top:16px;right:16px;display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end;max-width:calc(100% - 32px)}
+.tool{background:var(--panel);border:1px solid var(--line);border-radius:8px;height:36px;min-width:36px;padding:0 12px;display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:700;letter-spacing:.03em;cursor:pointer;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.tool:hover{border-color:rgba(255,255,255,.28)}
+.tool[aria-pressed="true"]{background:#1d2a22;border-color:var(--go);color:#c9f5df}
+.tool:focus-visible,.btn:focus-visible,.seg button:focus-visible{outline:2px solid var(--amber);outline-offset:2px}
+.tool svg{width:16px;height:16px}
+
+#panel{position:absolute;left:16px;bottom:16px;width:min(410px,calc(100% - 32px));max-height:calc(100% - 110px);overflow:auto;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 18px 18px;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 16px 40px rgba(0,0,0,.45)}
+.eyebrow{font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+#panel h2{margin:4px 0 6px;font-size:21px;font-weight:800;line-height:1.15;text-wrap:balance}
+#panel p{margin:0 0 10px;color:#c4cbd6;font-size:14px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:12px 0 14px}
+.stat{border-top:1px solid var(--line);padding-top:7px}
+.stat b{display:block;font-family:'Overpass Mono',monospace;font-variant-numeric:tabular-nums;font-size:19px;font-weight:700;line-height:1.1}
+.stat span{font-size:11px;color:var(--mute);letter-spacing:.04em}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.btn{white-space:nowrap;border:0;border-radius:9px;height:44px;padding:0 18px;font-weight:800;font-size:14px;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;display:inline-flex;align-items:center;gap:9px}
+.btn.crash{background:var(--amber);color:#1b1206;flex:1;justify-content:center;box-shadow:0 0 0 1px #000 inset,0 6px 18px rgba(246,166,35,.28)}
+.btn.crash:hover{background:var(--amber-hi)}
+.btn.crash .haz{width:18px;height:18px}
+.btn.go{background:var(--sign);color:#fff;box-shadow:inset 0 0 0 2px var(--sign),inset 0 0 0 3px var(--sign-edge);flex:1;justify-content:center}
+.btn.go:hover{background:var(--sign-hi)}
+.btn.ghost{background:transparent;border:1px solid var(--line);color:var(--ink)}
+.btn.ghost:hover{border-color:rgba(255,255,255,.3)}
+.chip{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;padding:3px 9px;border-radius:99px;background:rgba(255,255,255,.07);color:#cfd6e0}
+.chip.amber{background:rgba(246,166,35,.16);color:var(--amber-hi)}
+.chip.red{background:rgba(255,92,77,.16);color:#ff8a7e}
+.chip.go{background:rgba(72,213,151,.14);color:#8ff0c2}
+.hint{font-size:12.5px;color:var(--mute);margin-top:10px}
+.hint kbd{font-family:'Overpass Mono',monospace;font-size:11px;border:1px solid var(--line);border-radius:4px;padding:0 4px}
+
+.timeline{position:relative;height:8px;background:rgba(255,255,255,.08);border-radius:99px;margin:12px 0 6px;overflow:visible}
+.timeline .fill{position:absolute;left:0;top:0;bottom:0;background:linear-gradient(90deg,var(--red),#ff8f5a);border-radius:99px}
+.timeline .tow{position:absolute;top:-5px;width:2px;height:18px;background:var(--amber)}
+.tl-labels{display:flex;justify-content:space-between;font-size:11px;color:var(--mute)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.seg button{background:transparent;border:0;height:32px;padding:0 11px;font-size:12px;font-weight:800;cursor:pointer;color:var(--mute)}
+.seg button[aria-pressed="true"]{background:rgba(255,255,255,.1);color:var(--ink)}
+
+.result-plate{padding:14px 16px 12px;margin:6px 0 12px;text-align:left}
+.result-plate .k{font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;opacity:.85}
+.result-plate .big{font-family:'Overpass',sans-serif;font-weight:900;font-size:52px;line-height:1;letter-spacing:-.01em;font-variant-numeric:tabular-nums;margin:6px 0 2px}
+.result-plate .unit{font-size:13px;font-weight:700;opacity:.9}
+.grade{display:flex;align-items:center;gap:10px;margin:0 0 8px}
+.grade .diamond{width:30px;height:30px;flex:none;background:var(--amber);transform:rotate(45deg);border-radius:4px;box-shadow:inset 0 0 0 2px #1b1206,inset 0 0 0 3px var(--amber)}
+.grade b{font-size:18px;font-weight:900}
+.history{margin-top:12px;border-top:1px solid var(--line);padding-top:10px}
+.history ol{list-style:none;margin:6px 0 0;padding:0;display:grid;gap:4px}
+.history li{display:flex;justify-content:space-between;gap:10px;font-size:13px;color:#c4cbd6}
+.history li .num{color:var(--ink)}
+.history li.best .num{color:var(--amber-hi)}
+.history li span:first-child{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+
+#toast{position:absolute;left:50%;top:78px;transform:translateX(-50%);background:#1b1206;color:var(--amber-hi);border:1px solid var(--amber);font-weight:800;font-size:13px;letter-spacing:.06em;text-transform:uppercase;padding:8px 14px;border-radius:8px;pointer-events:none;opacity:0;transition:opacity .25s;white-space:nowrap}
+#toast.show{opacity:1}
+#tip{position:absolute;pointer-events:none;background:rgba(10,13,19,.92);border:1px solid var(--line);border-radius:6px;padding:4px 8px;font-size:12px;font-weight:700;white-space:nowrap;transform:translate(12px,12px)}
+
+.overlay{position:absolute;inset:0;background:rgba(6,9,14,.62);display:flex;align-items:center;justify-content:center;padding:16px;backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px)}
+.card{width:min(520px,100%);max-height:100%;overflow:auto;background:#121822;border:1px solid var(--line);border-radius:16px;padding:22px 22px 20px;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+.card .plate{display:inline-flex;align-items:baseline;gap:12px;padding:10px 18px 8px;margin-bottom:14px}
+.card .plate h1{margin:0;font-size:34px;font-weight:900;letter-spacing:.08em;line-height:1}
+.card .plate small{font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+.card h3{margin:16px 0 6px;font-size:13px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--amber-hi)}
+.card p,.card li{color:#c9d0da;font-size:14.5px;margin:0 0 8px;max-width:62ch}
+.card ul{padding-left:18px;margin:0 0 8px}
+.card .lede{font-size:16px;color:var(--ink)}
+.card .row{margin-top:16px}
+.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:12.5px;color:var(--mute);margin-top:6px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;vertical-align:-1px}
+
+@media (max-width:640px){
+  #brand{top:10px;left:10px;padding:8px 12px 6px;gap:10px}
+  #brand h1{font-size:20px}
+  #brand .sub{font-size:9.5px;padding-left:9px}
+  #brand .clock{font-size:13px}
+  #tools{top:auto;bottom:auto;top:62px;right:10px}
+  #tools .lbl{display:none}
+  #panel{left:10px;right:10px;bottom:10px;width:auto;padding:12px 14px 14px;max-height:52%}
+  #panel h2{font-size:18px}
+  .result-plate .big{font-size:42px}
+  .stat b{font-size:16px}
+  #toast{top:112px}
+}
+@media (hover:none){.hint.keys{display:none}}
+@media (max-width:400px){.btn{padding:0 12px;font-size:13px;letter-spacing:.04em}}
+@media (prefers-reduced-motion:reduce){#toast{transition:none}}
+</style>
+</head>
+<body>
+<div id="app">
+  <canvas id="map" aria-label="Map of Portside at rush hour. Click or tap a lane to choose a crash site."></canvas>
+
+  <div id="brand" class="plate">
+    <h1>SNARL</h1>
+    <div class="sub"><span>Portside · Rush hour</span><span class="clock" id="clock">8:00 AM</span></div>
+  </div>
+
+  <div id="tools">
+    <button class="tool" id="bSpeed" aria-pressed="false" title="Colour roads by speed">
+      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 12a6 6 0 1 1 12 0"/><path d="M8 12l3-4"/></svg><span class="lbl">Speed map</span></button>
+    <button class="tool" id="bSound" aria-pressed="true" title="Sound">
+      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 6h3l4-3v10l-4-3H2z"/><path id="sndWave" d="M11.5 5.5a3.5 3.5 0 0 1 0 5"/></svg><span class="lbl">Sound</span></button>
+    <button class="tool" id="bFit" title="Fit the whole city on screen">
+      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 6V2h4M10 2h4v4M14 10v4h-4M6 14H2v-4"/></svg><span class="lbl">Fit</span></button>
+    <button class="tool" id="bHelp" title="How it works">?</button>
+  </div>
+
+  <section id="panel" aria-live="polite"></section>
+  <div id="toast" role="status"></div>
+  <div id="tip" hidden></div>
+
+  <div class="overlay" id="intro">
+    <div class="card" role="dialog" aria-modal="true" aria-labelledby="introTitle">
+      <div class="plate"><h1 id="introTitle">SNARL</h1><small>Exit here for gridlock</small></div>
+      <p class="lede">It's 8:00 AM in Portside and everyone west of the river is trying to get downtown. You get one fender-bender. Put it where it hurts most.</p>
+      <h3>How to play</h3>
+      <ul>
+        <li><b>Scout.</b> Watch the traffic. Scroll or pinch to zoom, drag to pan. Red tail lights mean braking.</li>
+        <li><b>Pick a lane.</b> Click any lane to see its flow and speed, then press <b>Crash here</b>.</li>
+        <li><b>Watch it spread.</b> The crash blocks that lane until the tow truck clears it after 5 minutes. Scoring runs 8 minutes.</li>
+      </ul>
+      <p>Your score is the <b>extra delay</b> your crash causes, in vehicle-minutes. A copy of the same morning runs alongside with no crash, so only the delay you caused counts.</p>
+      <div class="row"><button class="btn go" id="bStart">Start scouting</button></div>
+    </div>
+  </div>
+
+  <div class="overlay" id="help" hidden>
+    <div class="card" role="dialog" aria-modal="true" aria-labelledby="helpTitle">
+      <div class="plate"><h1 id="helpTitle" style="font-size:24px">HOW IT WORKS</h1></div>
+      <p>Every car is simulated individually, with the models traffic engineers use.</p>
+      <h3>Driving</h3>
+      <ul>
+        <li><b>Car following</b> uses the Intelligent Driver Model. Each driver has their own reaction gap, acceleration and preferred speed. Trucks and buses are slower to get going.</li>
+        <li><b>Lane changes</b> follow MOBIL. A driver moves over when the other lane is faster and the car behind can brake safely. Drivers also get into the right lane before a turn or exit.</li>
+        <li><b>Rubbernecking.</b> Drivers slow to look at the crash, in both directions.</li>
+      </ul>
+      <h3>The city</h3>
+      <ul>
+        <li><b>Traffic lights</b> run fixed two-phase cycles, timed as a green wave along Main St.</li>
+        <li><b>Don't block the box.</b> Drivers won't enter an intersection they can't clear. When a queue backs up to the corner, cross traffic still flows, but that approach stalls on green.</li>
+        <li><b>Freeway on-ramps</b> merge by yielding to gaps. An off-ramp that backs up spills onto the freeway.</li>
+      </ul>
+      <h3>Routing</h3>
+      <ul>
+        <li>40% of drivers use a navigation app. It re-plans their route every few seconds from live speeds and knows about your crash. Everyone else takes their usual route.</li>
+      </ul>
+      <h3>Scoring</h3>
+      <p>Extra delay = time lost by every driver (including cars waiting to enter the map) in the crash city, minus the same total in an identical city without the crash.</p>
+      <div class="legend"><span><i style="background:#48d597"></i>Free flow</span><span><i style="background:#f6c343"></i>Slow</span><span><i style="background:#ff5c4d"></i>Jammed</span></div>
+      <div class="row"><button class="btn go" id="bHelpClose">Back to the city</button></div>
+    </div>
+  </div>
+</div>
+
+<script src="sim.js"></script>
+<script src="game.js"></script>
+</body>
+</html>
