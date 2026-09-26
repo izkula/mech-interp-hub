@@ -17,7 +17,18 @@
   let W = 0, H = 0, DPR = 1, userView = false, bgDirty = true;
   const view = { z: 1, ox: 0, oy: 0 };
   const bg = document.createElement('canvas');
-  let bgView = null, lastWheel = 0;
+  let lastWheel = 0;
+  // Whole city pre-rendered once at a fixed resolution; drawn scaled while the view is moving
+  const cityBg = document.createElement('canvas'), CITY = { x0: -60, y0: -20, x1: 1080, y1: 690, res: 2.4 };
+  let cityBgReady = false;
+  function renderCityBg() {
+    const saved = { z: view.z, ox: view.ox, oy: view.oy }, savedDpr = DPR;
+    const w = Math.round((CITY.x1 - CITY.x0) * CITY.res), h = Math.round((CITY.y1 - CITY.y0) * CITY.res);
+    DPR = 1; view.z = CITY.res; view.ox = -CITY.x0 * CITY.res; view.oy = -CITY.y0 * CITY.res;
+    drawStatic(cityBg, w, h);
+    DPR = savedDpr; Object.assign(view, saved);
+    cityBgReady = true;
+  }
   const WORLD = { x0: -20, y0: 10, x1: 1020, y1: 650 };
   function fitView() {
     const bw = WORLD.x1 - WORLD.x0, bh = WORLD.y1 - WORLD.y0;
@@ -28,11 +39,13 @@
     clampView(); bgDirty = true;
   }
   function clampView() {
-    const minZ = Math.min(W / (WORLD.x1 - WORLD.x0), H / (WORLD.y1 - WORLD.y0)) * 0.9;
-    view.z = Math.max(minZ, Math.min(view.z, 9));
-    const mx = W * 0.5, my = H * 0.5;
-    view.ox = Math.min(mx - WORLD.x0 * view.z, Math.max(W - mx - WORLD.x1 * view.z, view.ox));
-    view.oy = Math.min(my - WORLD.y0 * view.z, Math.max(H - my - WORLD.y1 * view.z, view.oy));
+    const bw = WORLD.x1 - WORLD.x0, bh = WORLD.y1 - WORLD.y0;
+    view.z = Math.max(Math.min(W / bw, H / bh), Math.min(view.z, 9));
+    // when the city is narrower (or shorter) than the screen, centre it; otherwise keep it covering the screen
+    if (bw * view.z <= W) view.ox = (W - bw * view.z) / 2 - WORLD.x0 * view.z;
+    else view.ox = Math.min(-WORLD.x0 * view.z, Math.max(W - WORLD.x1 * view.z, view.ox));
+    if (bh * view.z <= H) view.oy = (H - bh * view.z) / 2 - WORLD.y0 * view.z;
+    else view.oy = Math.min(-WORLD.y0 * view.z, Math.max(H - WORLD.y1 * view.z, view.oy));
   }
   function resize() {
     DPR = Math.min(2, window.devicePixelRatio || 1);
@@ -184,11 +197,12 @@
   }
   function strokeSeg(g, x0, y0, x1, y1, w, col, cap) { g.strokeStyle = col; g.lineWidth = w; g.lineCap = cap || 'butt'; g.beginPath(); g.moveTo(x0, y0); g.lineTo(x1, y1); g.stroke(); }
 
-  function drawStatic() {
-    bg.width = cv.width; bg.height = cv.height;
-    const g = bg.getContext('2d');
+  function drawStatic(target, tw, th) {
+    const out = target || bg;
+    out.width = tw || cv.width; out.height = th || cv.height;
+    const g = out.getContext('2d');
     g.setTransform(1, 0, 0, 1, 0, 0);
-    g.fillStyle = P.ground; g.fillRect(0, 0, bg.width, bg.height);
+    g.fillStyle = P.ground; g.fillRect(0, 0, out.width, out.height);
     g.setTransform(DPR * view.z, 0, 0, DPR * view.z, DPR * view.ox, DPR * view.oy);
     const px = 1 / view.z;
 
@@ -452,13 +466,16 @@
   function drawWorld(w, now) {
     const g = ctx;
     g.setTransform(1, 0, 0, 1, 0, 0);
-    const moving = ptrs.size > 0 || cam || now - lastWheel < 200;
-    if (bgDirty && (!moving || !bgView || bg.width !== cv.width || bg.height !== cv.height)) { drawStatic(); bgView = { z: view.z, ox: view.ox, oy: view.oy }; bgDirty = false; }
+    const moving = (ptrs.size > 0 && moved) || pinch || cam || now - lastWheel < 180;
+    if (!cityBgReady) renderCityBg();
+    if (bgDirty && !moving) { drawStatic(); bgDirty = false; }
     if (bgDirty) {
-      const k = view.z / bgView.z;
+      // mid-gesture: draw the whole-city layer scaled into place (no re-render, no empty edges)
+      const k = DPR * view.z / CITY.res;
       g.fillStyle = P.ground; g.fillRect(0, 0, cv.width, cv.height);
-      g.setTransform(k, 0, 0, k, DPR * (view.ox - bgView.ox * k), DPR * (view.oy - bgView.oy * k));
-      g.drawImage(bg, 0, 0);
+      g.imageSmoothingEnabled = true; g.imageSmoothingQuality = 'high';
+      g.setTransform(k, 0, 0, k, DPR * (view.ox + CITY.x0 * view.z), DPR * (view.oy + CITY.y0 * view.z));
+      g.drawImage(cityBg, 0, 0);
       g.setTransform(1, 0, 0, 1, 0, 0);
     } else g.drawImage(bg, 0, 0);
     g.setTransform(DPR * view.z, 0, 0, DPR * view.z, DPR * view.ox, DPR * view.oy);
@@ -869,7 +886,8 @@
   // ------------------------------------------------------------ input
   const ptrs = new Map(); let drag = null, pinch = null, moved = false;
   cv.addEventListener('pointerdown', e => {
-    cv.setPointerCapture(e.pointerId); cam = null;
+    try { cv.setPointerCapture(e.pointerId); } catch (err) { /* synthetic or already-released pointer */ }
+    cam = null;
     ptrs.set(e.pointerId, { x: e.offsetX, y: e.offsetY });
     if (ptrs.size === 1) { drag = { x: e.offsetX, y: e.offsetY, ox: view.ox, oy: view.oy }; moved = false; }
     else if (ptrs.size === 2) {
@@ -903,6 +921,7 @@
     const wasClick = ptrs.size === 1 && !moved && ptrs.has(e.pointerId);
     ptrs.delete(e.pointerId);
     if (ptrs.size < 2) pinch = null;
+    if (ptrs.size === 1) { const r = [...ptrs.values()][0]; drag = { x: r.x, y: r.y, ox: view.ox, oy: view.oy }; }
     if (ptrs.size === 0) { drag = null; cv.classList.remove('panning'); }
     if (wasClick && e.type === 'pointerup') onTap(e.offsetX, e.offsetY, e.pointerType !== 'mouse');
   }
@@ -987,9 +1006,9 @@
   }
 
   // test hook: screen position of the middle of a named link (used by automated checks)
-  window.__snarlDebug = { screenOfLabel(lbl) { const L = links.find(l => S.linkLabel(l) === lbl); if (!L) return null; const [x, y] = S.lanePt(L, 0, L.len / 2); return [x * view.z + view.ox, y * view.z + view.oy]; } };
+  window.__snarlDebug = { view: () => ({ z: +view.z.toFixed(3), ox: Math.round(view.ox), oy: Math.round(view.oy) }), screenOfLabel(lbl) { const L = links.find(l => S.linkLabel(l) === lbl); if (!L) return null; const [x, y] = S.lanePt(L, 0, L.len / 2); return [x * view.z + view.ox, y * view.z + view.oy]; } };
   window.addEventListener('resize', resize);
-  if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => { bgDirty = true; });
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => { bgDirty = true; cityBgReady = false; });
   boot(); resize(); renderPanel();
   requestAnimationFrame(frame);
 })();
