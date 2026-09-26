@@ -17,9 +17,9 @@
   let W = 0, H = 0, DPR = 1, userView = false, bgDirty = true;
   const view = { z: 1, ox: 0, oy: 0 };
   const bg = document.createElement('canvas');
-  let lastWheel = 0;
+  let lastWheel = 0, lastMove = 0;
   // Whole city pre-rendered once at a fixed resolution; drawn scaled while the view is moving
-  const cityBg = document.createElement('canvas'), CITY = { x0: -60, y0: -20, x1: 1080, y1: 690, res: 2.4 };
+  const cityBg = document.createElement('canvas'), CITY = { x0: -60, y0: -20, x1: 1080, y1: 690, res: 2.8 };
   let cityBgReady = false;
   function renderCityBg() {
     const saved = { z: view.z, ox: view.ox, oy: view.oy }, savedDpr = DPR;
@@ -48,25 +48,47 @@
     else view.oy = Math.min(-WORLD.y0 * view.z, Math.max(H - WORLD.y1 * view.z, view.oy));
   }
   function resize() {
-    DPR = Math.min(2, window.devicePixelRatio || 1);
+    DPR = Math.min(2, window.devicePixelRatio || 1); cvRect = null;
     W = cv.clientWidth; H = cv.clientHeight;
     cv.width = Math.round(W * DPR); cv.height = Math.round(H * DPR);
     if (!userView) fitView(); else clampView();
     bgDirty = true;
   }
-  let cam = null;
+  let cam = null, fling = null;
+  const zLimits = () => [Math.min(W / (WORLD.x1 - WORLD.x0), H / (WORLD.y1 - WORLD.y0)), 9];
   function flyTo(wx, wy, z) {
-    z = Math.max(view.z, z);
-    cam = { t: 0, z0: view.z, z1: z, cx0: (W / 2 - view.ox) / view.z, cy0: (H / 2 - view.oy) / view.z, cx1: wx, cy1: wy };
+    const z0 = view.z, z1 = Math.max(view.z, z), cx0 = (W / 2 - view.ox) / view.z, cy0 = (H / 2 - view.oy) / view.z;
+    cam = { t: 0, dur: 1.1, f: e => { const zz = z0 * Math.pow(z1 / z0, e); view.z = zz; view.ox = W / 2 - (cx0 + (wx - cx0) * e) * zz; view.oy = H / 2 - (cy0 + (wy - cy0) * e) * zz; } };
     if (reduceMotion) cam.t = 1;
   }
+  // zoom by `factor`, keeping the world point under screen point (sx, sy) fixed
+  function zoomAt(sx, sy, factor, dur) {
+    const [lo, hi] = zLimits(), z0 = view.z, z1 = Math.max(lo, Math.min(hi, z0 * factor));
+    const wx = (sx - view.ox) / z0, wy = (sy - view.oy) / z0;
+    cam = { t: reduceMotion ? 1 : 0, dur: dur || 0.32, f: e => { const zz = z0 * Math.pow(z1 / z0, e); view.z = zz; view.ox = sx - wx * zz; view.oy = sy - wy * zz; } };
+    fling = null;
+  }
   function stepCam(dt) {
-    if (!cam) return;
-    cam.t = Math.min(1, cam.t + dt / 1.1);
-    const e = cam.t < 0.5 ? 2 * cam.t * cam.t : 1 - Math.pow(-2 * cam.t + 2, 2) / 2;
-    const z = cam.z0 * Math.pow(cam.z1 / cam.z0, e), cx = cam.cx0 + (cam.cx1 - cam.cx0) * e, cy = cam.cy0 + (cam.cy1 - cam.cy0) * e;
-    view.z = z; view.ox = W / 2 - cx * z; view.oy = H / 2 - cy * z; clampView(); bgDirty = true; userView = true;
-    if (cam.t >= 1) cam = null;
+    if (cam) {
+      cam.t = Math.min(1, cam.t + dt / cam.dur);
+      const t = cam.t, e = t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+      cam.f(cam.dur < 0.5 ? 1 - Math.pow(1 - t, 3) : e);
+      clampView(); bgDirty = true; userView = true;
+      if (cam.t >= 1) cam = null;
+    }
+    if (fling) {
+      view.ox += fling.vx * dt * 1000; view.oy += fling.vy * dt * 1000;
+      const ox = view.ox, oy = view.oy; clampView();
+      if (view.ox !== ox) fling.vx = 0; if (view.oy !== oy) fling.vy = 0;
+      const k = Math.exp(-dt * 5); fling.vx *= k; fling.vy *= k;
+      bgDirty = true;
+      if (Math.hypot(fling.vx, fling.vy) < 0.02) fling = null;
+    }
+  }
+  // centre of the part of the map not covered by the bottom panel
+  function mapCentre() {
+    const top = panel.getBoundingClientRect().top - cv.getBoundingClientRect().top;
+    return [W / 2, W < 700 ? Math.max(120, Math.min(H / 2, top / 2 + 30)) : H / 2];
   }
   const toWorld = (sx, sy) => [(sx - view.ox) / view.z, (sy - view.oy) / view.z];
 
@@ -268,7 +290,6 @@
 
     drawMarkings(g, px);
     drawStreetLights(g);
-    drawLabels(g, px);
   }
 
   function drawBuildings(g, px) {
@@ -384,7 +405,7 @@
     g.globalAlpha = 1; g.globalCompositeOperation = 'source-over';
   }
 
-  function drawLabels(g, px) {
+  function drawLabels(g) {
     g.textAlign = 'center'; g.textBaseline = 'middle';
     // districts
     if (view.z < 2.2) {
@@ -395,14 +416,13 @@
     g.font = `800 ${18}px Overpass, sans-serif`;
     spaced(g, 'PORT OF PORTSIDE', 470, 30, 6);
     }
-    const rf = Math.max(13, 16 / view.z);
+    const rf = Math.max(13, Math.round(16 / view.z * 4) / 4);
     g.save(); g.translate(598, 470); g.rotate(-Math.PI / 2); g.fillStyle = 'rgba(120,170,200,.18)'; g.font = `800 ${rf}px Overpass, sans-serif`; spaced(g, 'KELL RIVER', 0, 0, rf * 0.38); g.restore();
     if (view.z < 0.9) return;
-    const fs = Math.max(5.6, 10 / view.z);
+    const fs = Math.max(5.6, Math.round(10 / view.z * 8) / 8);
     // street names on one segment per name
     const done = new Set();
     g.font = `700 ${fs}px Overpass, sans-serif`; g.fillStyle = 'rgba(170,182,200,.55)';
-    const pick = roads.filter(r => !r.bridge && r.cls !== 'ramp').sort((a, b) => Math.abs(a.a.x - 330) - Math.abs(b.a.x - 330));
     for (const rd of roads) {
       const key = rd.name; if (done.has(key) || rd.cls === 'ramp') continue;
       const cands = roads.filter(r => r.name === key);
@@ -413,10 +433,12 @@
       const off = hw + 3 + fs * 0.6, mx = (x0 + x1) / 2 + (-Math.sin(ang)) * -off, my = (y0 + y1) / 2 + Math.cos(ang) * -off;
       g.save(); g.translate(mx, my); g.rotate(ang); spaced(g, key.toUpperCase(), 0, 0, fs * 0.2); g.restore();
     }
-    void pick;
   }
+  const widthCache = new Map();
   function spaced(g, text, x, y, sp) {
-    const chars = [...text]; const widths = chars.map(c => g.measureText(c).width);
+    const chars = [...text], key = g.font + '|' + text;
+    let widths = widthCache.get(key);
+    if (!widths) { widths = chars.map(c => g.measureText(c).width); widthCache.set(key, widths); }
     const total = widths.reduce((a, b) => a + b, 0) + sp * (chars.length - 1);
     let cx = x - total / 2; const al = g.textAlign; g.textAlign = 'left';
     chars.forEach((c, i) => { g.fillText(c, cx, y); cx += widths[i] + sp; });
@@ -466,14 +488,15 @@
   function drawWorld(w, now) {
     const g = ctx;
     g.setTransform(1, 0, 0, 1, 0, 0);
-    const moving = (ptrs.size > 0 && moved) || pinch || cam || now - lastWheel < 180;
+    const moving = (ptrs.size > 0 && moved) || pinch || cam || fling || now - lastWheel < 180;
+    if (moving) lastMove = now;
     if (!cityBgReady) renderCityBg();
-    if (bgDirty && !moving) { drawStatic(); bgDirty = false; }
-    if (bgDirty) {
+    const needCrisp = DPR * view.z > CITY.res * 1.15;
+    if (bgDirty && needCrisp && now - lastMove > 220) { drawStatic(); bgDirty = false; }
+    if (!needCrisp || bgDirty) {
       // mid-gesture: draw the whole-city layer scaled into place (no re-render, no empty edges)
       const k = DPR * view.z / CITY.res;
       g.fillStyle = P.ground; g.fillRect(0, 0, cv.width, cv.height);
-      g.imageSmoothingEnabled = true; g.imageSmoothingQuality = 'high';
       g.setTransform(k, 0, 0, k, DPR * (view.ox + CITY.x0 * view.z), DPR * (view.oy + CITY.y0 * view.z));
       g.drawImage(cityBg, 0, 0);
       g.setTransform(1, 0, 0, 1, 0, 0);
@@ -481,6 +504,7 @@
     g.setTransform(DPR * view.z, 0, 0, DPR * view.z, DPR * view.ox, DPR * view.oy);
     const z = view.z, detail = z > 1.3, vs = Math.min(1.45, Math.max(1, 1.9 / z));
 
+    drawLabels(g);
     if (showSpeed) drawSpeedMap(g, w);
     if (mode === 'result' && heat) drawHeat(g);
 
@@ -721,7 +745,7 @@
       if (!sel) {
         panel.innerHTML = `<div class="eyebrow">Step 1 of 2 · Scout</div>
           <h2 class="keep">Pick a lane to crash in</h2>
-          <p>Tap any lane to see how busy it is. Pinch to zoom, drag to pan. Bridges, ramps and corners where queues back up are good places to start.</p>
+          <p>Tap any lane to see how busy it is. Pinch or double-tap to zoom, drag to pan. Bridges, ramps and corners where queues back up are good places to start.</p>
           <div class="legend"><span><i style="background:#ff3b30;box-shadow:0 0 8px #ff3b30"></i>Bright tail lights: braking</span></div>
           ${best}`;
       } else {
@@ -884,58 +908,90 @@
   };
 
   // ------------------------------------------------------------ input
-  const ptrs = new Map(); let drag = null, pinch = null, moved = false;
+  const ptrs = new Map(); let drag = null, pinch = null, moved = false, lastTap = null, cvRect = null;
+  // client coordinates are reliable for touch on iOS; offsetX is not
+  function pos(e) { if (!cvRect) cvRect = cv.getBoundingClientRect(); return [e.clientX - cvRect.left, e.clientY - cvRect.top]; }
+  function startPinch() {
+    const [a, b] = [...ptrs.values()];
+    pinch = { d: Math.max(20, Math.hypot(a.x - b.x, a.y - b.y)), z: view.z, cx: (a.x + b.x) / 2, cy: (a.y + b.y) / 2, ox: view.ox, oy: view.oy };
+  }
   cv.addEventListener('pointerdown', e => {
     try { cv.setPointerCapture(e.pointerId); } catch (err) { /* synthetic or already-released pointer */ }
-    cam = null;
-    ptrs.set(e.pointerId, { x: e.offsetX, y: e.offsetY });
-    if (ptrs.size === 1) { drag = { x: e.offsetX, y: e.offsetY, ox: view.ox, oy: view.oy }; moved = false; }
-    else if (ptrs.size === 2) {
-      const [a, b] = [...ptrs.values()];
-      pinch = { d: Math.hypot(a.x - b.x, a.y - b.y), z: view.z, cx: (a.x + b.x) / 2, cy: (a.y + b.y) / 2, ox: view.ox, oy: view.oy }; moved = true;
-    }
+    cvRect = cv.getBoundingClientRect();
+    cam = null; fling = null;
+    const [x, y] = pos(e);
+    ptrs.set(e.pointerId, { x, y });
+    if (ptrs.size === 1) { drag = { x, y, ox: view.ox, oy: view.oy, lx: x, ly: y, lt: e.timeStamp, vx: 0, vy: 0 }; moved = false; }
+    else if (ptrs.size === 2) { startPinch(); moved = true; }
   });
   cv.addEventListener('pointermove', e => {
-    if (ptrs.has(e.pointerId)) ptrs.set(e.pointerId, { x: e.offsetX, y: e.offsetY });
-    if (pinch && ptrs.size === 2) {
-      const [a, b] = [...ptrs.values()], d = Math.hypot(a.x - b.x, a.y - b.y);
+    const [x, y] = pos(e);
+    if (ptrs.has(e.pointerId)) ptrs.set(e.pointerId, { x, y });
+    if (pinch && ptrs.size >= 2) {
+      const [a, b] = [...ptrs.values()], d = Math.max(20, Math.hypot(a.x - b.x, a.y - b.y));
+      const [lo, hi] = zLimits();
       const wx = (pinch.cx - pinch.ox) / pinch.z, wy = (pinch.cy - pinch.oy) / pinch.z;
-      view.z = pinch.z * d / pinch.d; clampView();
+      view.z = Math.max(lo, Math.min(hi, pinch.z * d / pinch.d));
       view.ox = (a.x + b.x) / 2 - wx * view.z; view.oy = (a.y + b.y) / 2 - wy * view.z; clampView();
       userView = true; bgDirty = true; return;
     }
     if (drag && ptrs.size === 1) {
-      const dx = e.offsetX - drag.x, dy = e.offsetY - drag.y;
-      if (!moved && Math.hypot(dx, dy) > 6) { moved = true; cv.classList.add('panning'); }
-      if (moved) { view.ox = drag.ox + dx; view.oy = drag.oy + dy; clampView(); userView = true; bgDirty = true; }
+      const dx = x - drag.x, dy = y - drag.y;
+      if (!moved && Math.hypot(dx, dy) > 8) { moved = true; cv.classList.add('panning'); }
+      if (moved) {
+        view.ox = drag.ox + (x - drag.x); view.oy = drag.oy + (y - drag.y); clampView(); userView = true; bgDirty = true;
+        const dt = Math.max(1, e.timeStamp - drag.lt), k = Math.min(1, dt / 60);
+        drag.vx = drag.vx * (1 - k) + (x - drag.lx) / dt * k; drag.vy = drag.vy * (1 - k) + (y - drag.ly) / dt * k;
+        drag.lx = x; drag.ly = y; drag.lt = e.timeStamp;
+      }
       return;
     }
     if (e.pointerType === 'mouse' && mode === 'scout') {
-      hover = pick(e.offsetX, e.offsetY);
+      hover = pick(x, y);
       const tip = $('tip');
-      if (hover) { tip.hidden = false; tip.textContent = S.linkLabel(links[hover.li]); tip.style.left = e.offsetX + 'px'; tip.style.top = e.offsetY + 'px'; cv.style.cursor = 'pointer'; }
+      if (hover) { tip.hidden = false; tip.textContent = S.linkLabel(links[hover.li]); tip.style.left = x + 'px'; tip.style.top = y + 'px'; cv.style.cursor = 'pointer'; }
       else { tip.hidden = true; cv.style.cursor = ''; }
     }
   });
   function endPtr(e) {
+    const [x, y] = pos(e);
     const wasClick = ptrs.size === 1 && !moved && ptrs.has(e.pointerId);
+    const wasDrag = ptrs.size === 1 && moved && !pinch && drag;
     ptrs.delete(e.pointerId);
     if (ptrs.size < 2) pinch = null;
-    if (ptrs.size === 1) { const r = [...ptrs.values()][0]; drag = { x: r.x, y: r.y, ox: view.ox, oy: view.oy }; }
-    if (ptrs.size === 0) { drag = null; cv.classList.remove('panning'); }
-    if (wasClick && e.type === 'pointerup') onTap(e.offsetX, e.offsetY, e.pointerType !== 'mouse');
+    if (ptrs.size >= 2) startPinch();
+    if (ptrs.size === 1) { const r = [...ptrs.values()][0]; drag = { x: r.x, y: r.y, ox: view.ox, oy: view.oy, lx: r.x, ly: r.y, lt: e.timeStamp, vx: 0, vy: 0 }; }
+    if (ptrs.size === 0) {
+      // keep gliding after a flick, like a native map
+      if (wasDrag && e.type === 'pointerup' && e.timeStamp - drag.lt < 80 && Math.hypot(drag.vx, drag.vy) > 0.25 && !reduceMotion) fling = { vx: drag.vx, vy: drag.vy };
+      drag = null; cv.classList.remove('panning');
+    }
+    if (wasClick && e.type === 'pointerup') {
+      const touch = e.pointerType !== 'mouse';
+      if (lastTap && e.timeStamp - lastTap.t < 320 && Math.hypot(x - lastTap.x, y - lastTap.y) < 36) { zoomAt(x, y, 2); lastTap = null; return; }
+      lastTap = { t: e.timeStamp, x, y };
+      onTap(x, y, touch);
+    }
   }
   cv.addEventListener('pointerup', endPtr);
   cv.addEventListener('pointercancel', endPtr);
   cv.addEventListener('pointerleave', () => { if (!ptrs.size) { hover = null; $('tip').hidden = true; } });
+  cv.addEventListener('dblclick', e => e.preventDefault());
   cv.addEventListener('wheel', e => {
-    e.preventDefault(); cam = null; lastWheel = performance.now();
-    const f = Math.exp(-e.deltaY * (e.deltaMode === 1 ? 0.05 : 0.0016));
-    const wx = (e.offsetX - view.ox) / view.z, wy = (e.offsetY - view.oy) / view.z;
-    view.z *= f; clampView();
-    view.ox = e.offsetX - wx * view.z; view.oy = e.offsetY - wy * view.z; clampView();
+    e.preventDefault(); cam = null; fling = null; lastWheel = performance.now();
+    const [x, y] = pos(e);
+    const f = Math.exp(-e.deltaY * (e.deltaMode === 1 ? 0.05 : e.ctrlKey ? 0.01 : 0.0016));
+    const wx = (x - view.ox) / view.z, wy = (y - view.oy) / view.z;
+    const [lo, hi] = zLimits();
+    view.z = Math.max(lo, Math.min(hi, view.z * f));
+    view.ox = x - wx * view.z; view.oy = y - wy * view.z; clampView();
     userView = true; bgDirty = true;
   }, { passive: false });
+  // stop iOS from running its own page zoom/scroll alongside the map's gestures
+  for (const t of ['touchstart', 'touchmove']) cv.addEventListener(t, e => e.preventDefault(), { passive: false });
+  document.addEventListener('touchmove', e => { if (e.touches.length > 1) e.preventDefault(); }, { passive: false });
+  $('bZoomIn').onclick = () => { const [x, y] = mapCentre(); zoomAt(x, y, 1.8); };
+  $('bZoomOut').onclick = () => { const [x, y] = mapCentre(); zoomAt(x, y, 1 / 1.8); };
   function onTap(x, y, touch) {
     if (mode !== 'scout') return;
     const p = pick(x, y, touch);
@@ -1006,7 +1062,7 @@
   }
 
   // test hook: screen position of the middle of a named link (used by automated checks)
-  window.__snarlDebug = { view: () => ({ z: +view.z.toFixed(3), ox: Math.round(view.ox), oy: Math.round(view.oy) }), screenOfLabel(lbl) { const L = links.find(l => S.linkLabel(l) === lbl); if (!L) return null; const [x, y] = S.lanePt(L, 0, L.len / 2); return [x * view.z + view.ox, y * view.z + view.oy]; } };
+  window.__snarlDebug = { setZ: z => { const [x, y] = [W / 2, H / 2]; const wx = (x - view.ox) / view.z, wy = (y - view.oy) / view.z; view.z = z; view.ox = x - wx * z; view.oy = y - wy * z; clampView(); bgDirty = true; }, view: () => ({ z: +view.z.toFixed(3), ox: Math.round(view.ox), oy: Math.round(view.oy) }), screenOfLabel(lbl) { const L = links.find(l => S.linkLabel(l) === lbl); if (!L) return null; const [x, y] = S.lanePt(L, 0, L.len / 2); return [x * view.z + view.ox, y * view.z + view.oy]; } };
   window.addEventListener('resize', resize);
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => { bgDirty = true; cityBgReady = false; });
   boot(); resize(); renderPanel();
