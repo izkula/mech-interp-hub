@@ -1,6 +1,8 @@
 (function () {
   'use strict';
-  const S = SIM, { links, nodes, roads, LW } = S;
+  const LW = SIM.LW, sims = {};
+  let S, links, nodes, roads, LAY;
+  const simFor = id => sims[id] || (sims[id] = SIM.make(id));
   const $ = id => document.getElementById(id);
   const cv = $('map'), ctx = cv.getContext('2d');
   const reduceMotion = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -34,7 +36,7 @@
     const bw = WORLD.x1 - WORLD.x0, bh = WORLD.y1 - WORLD.y0;
     let z = Math.min(W / bw, H / bh);
     let cx = (WORLD.x0 + WORLD.x1) / 2, cy = (WORLD.y0 + WORLD.y1) / 2;
-    if (W < 700) { z = Math.max(z, Math.min(H * 0.7 / bh, W * 2.1 / bw)); cx = 560; cy = 330; }
+    if (W < 700) { z = Math.max(z, Math.min(H * 0.7 / bh, W * 2.1 / bw)); [cx, cy] = LAY.focus; }
     view.z = z; view.ox = W / 2 - cx * z; view.oy = H / 2 - cy * z;
     clampView(); bgDirty = true;
   }
@@ -127,15 +129,25 @@
   };
 
   // ------------------------------------------------------------ city dressing (static, seeded)
-  const riverW = y => 540 + 7 * Math.sin(y / 47) + 3 * Math.sin(y / 13);
-  const riverE = y => 652 + 6 * Math.sin(y / 61 + 2) + 2 * Math.sin(y / 17);
+  function inPoly(x, y, pts) {
+    let c = false;
+    for (let i = 0, j = pts.length - 1; i < pts.length; j = i++) {
+      const [xi, yi] = pts[i], [xj, yj] = pts[j];
+      if ((yi > y) !== (yj > y) && x < (xj - xi) * (y - yi) / (yj - yi) + xi) c = !c;
+    }
+    return c;
+  }
+  const inWater = (x, y) => LAY.water.some(p => inPoly(x, y, p));
+  const rectInWater = (x, y, w, h, m) => inWater(x - m, y - m) || inWater(x + w + m, y - m) || inWater(x - m, y + h + m) || inWater(x + w + m, y + h + m) || inWater(x + w / 2, y + h / 2);
   const city = { bldg: [], trees: [], lots: [], boxes: [], parks: [] };
-  (function genCity() {
+  function genCity() {
+    city.bldg = []; city.trees = []; city.lots = []; city.boxes = []; city.parks = [];
     const r = { s: 777 }, R = () => S.rnd(r);
     const segs = roads.map(rd => {
-      const A = rd.a, B = rd.b, hw = S.hw(rd.cls);
+      const A = rd.a, B = rd.b, hw = S.hw(rd);
       return { ax: A.x, ay: A.y, bx: B.x, by: B.y, hw };
     });
+    if (LAY.cityGen !== 'portside') return genZoned(segs, R);
     const segDist = (px, py, s) => {
       const dx = s.bx - s.ax, dy = s.by - s.ay, t = Math.max(0, Math.min(1, ((px - s.ax) * dx + (py - s.ay) * dy) / (dx * dx + dy * dy)));
       return Math.hypot(px - s.ax - dx * t, py - s.ay - dy * t);
@@ -143,7 +155,7 @@
     const clearOf = (x, y, w, h, pad) => {
       const cx = x + w / 2, cy = y + h / 2, hd = Math.hypot(w, h) / 2;
       for (const s of segs) if (segDist(cx, cy, s) < s.hw + 4 + hd * (pad || 0.95)) return false;
-      if (x + w > riverW(cy) - 6 && x < riverE(cy) + 6) return false;
+      if (rectInWater(x, y, w, h, 6)) return false;
       return true;
     };
     const XS = [-80, 60, 200, 340, 480, 540], XE = [652, 700, 820, 940, 1080], YS = [-60, 80, 230, 350, 470, 590, 720];
@@ -224,7 +236,48 @@
         for (let i = 0; i < 18; i++) { const a = i / 18 * Math.PI * 2; city.trees.push({ x: (x0 + x1) / 2 + Math.cos(a) * 38, y: (y0 + y1) / 2 + Math.sin(a) * 30, r: 3.2 }); }
       }
     }
-  })();
+  }
+  // generic city: fill a grid of cells by zone, keeping clear of roads and water
+  function genZoned(segs, R) {
+    const Wd = LAY.world, cs = 34;
+    const segRect = (s, x, y, w, h) => {
+      // distance from a road segment to a rectangle (0 if they overlap)
+      const cl = (v, a, b) => Math.max(a, Math.min(b, v));
+      let best = Infinity;
+      for (let i = 0; i <= 16; i++) {
+        const t = i / 16, px = s.ax + (s.bx - s.ax) * t, py = s.ay + (s.by - s.ay) * t;
+        best = Math.min(best, Math.hypot(px - cl(px, x, x + w), py - cl(py, y, y + h)));
+      }
+      return best;
+    };
+    const near = (x, y, w, h) => segs.filter(s => Math.min(s.ax, s.bx) < x + w + 40 && Math.max(s.ax, s.bx) > x - 40 && Math.min(s.ay, s.by) < y + h + 40 && Math.max(s.ay, s.by) > y - 40);
+    const clear = (x, y, w, h, gap) => !rectInWater(x, y, w, h, 3) && near(x, y, w, h).every(s => segRect(s, x, y, w, h) > s.hw + (gap || 3.5));
+    city.boxes.push({ x: Wd.x0 - 120, y: Wd.y0 - 120, w: Wd.x1 - Wd.x0 + 240, h: Wd.y1 - Wd.y0 + 240, kind: 'base' });
+    for (let gx = Wd.x0 - 100; gx < Wd.x1 + 100; gx += cs) for (let gy = Wd.y0 - 100; gy < Wd.y1 + 100; gy += cs) {
+      const cx = gx + cs / 2, cy = gy + cs / 2, z = LAY.zone(cx, cy);
+      if (!z || inWater(cx, cy)) continue;
+      if (z === 'down' || z === 'mid') {
+        let i1 = 1.5 + R() * 3, i2 = 1.5 + R() * 3, w = cs - i1 - 1.5 - R() * 3, h = cs - i2 - 1.5 - R() * 3;
+        if (R() < 0.07) { if (clear(gx + 2, gy + 2, cs - 4, cs - 4)) city.lots.push({ x: gx + 2, y: gy + 2, w: cs - 4, h: cs - 4 }); continue; }
+        for (let tries = 0; tries < 3; tries++) {
+          if (clear(gx + i1, gy + i2, w, h)) { city.bldg.push({ x: gx + i1, y: gy + i2, w, h, ht: z === 'down' ? 30 + Math.pow(R(), 1.5) * 150 : 12 + R() * 40, k: 'tower', c: R() }); break; }
+          i1 += 3; i2 += 3; w -= 6; h -= 6; if (w < 10 || h < 10) break;
+        }
+      } else if (z === 'res') {
+        for (const [qx, qy] of [[0, 0], [0.5, 0.5], [0.5, 0], [0, 0.5]]) {
+          if (R() < 0.35) continue;
+          const w = 9 + R() * 4, h = 9 + R() * 4, x = gx + qx * cs + 1 + R() * (cs / 2 - w - 1 > 0 ? cs / 2 - w - 1 : 0), y = gy + qy * cs + 1 + R() * (cs / 2 - h - 1 > 0 ? cs / 2 - h - 1 : 0);
+          if (clear(x, y, w, h)) city.bldg.push({ x, y, w, h, ht: 6 + R() * 5, k: 'house', c: R() });
+        }
+        if (R() < 0.6) { const x = gx + R() * cs, y = gy + R() * cs; if (clear(x - 3, y - 3, 6, 6, 1)) city.trees.push({ x, y, r: 2.5 + R() * 3 }); }
+      } else if (z === 'works') {
+        if (clear(gx + 3, gy + 3, cs - 6, cs - 6)) city.bldg.push({ x: gx + 3, y: gy + 3, w: cs - 6, h: cs - 6, ht: 9 + R() * 6, k: 'shed', c: R() });
+      } else if (z === 'park') {
+        city.parks.push({ x: gx, y: gy, w: cs, h: cs, kind: 'green' });
+        for (let i = 0; i < 4; i++) { const x = gx + R() * cs, y = gy + R() * cs; if (clear(x - 3, y - 3, 6, 6, 1)) city.trees.push({ x, y, r: 2.5 + R() * 3.5 }); }
+      }
+    }
+  }
 
   // ------------------------------------------------------------ static layer
   function roadEnds(rd) {
@@ -265,18 +318,17 @@
       for (let x = l.x + 2.7; x < l.x + l.w - 1; x += 2.7) { g.beginPath(); g.moveTo(x, l.y + 1); g.lineTo(x, l.y + 5.5); g.moveTo(x, l.y + l.h - 1); g.lineTo(x, l.y + l.h - 5.5); g.stroke(); }
     }
 
-    // river
-    g.beginPath();
-    g.moveTo(riverW(-80), -80);
-    for (let y = -80; y <= 740; y += 8) g.lineTo(riverW(y), y);
-    for (let y = 740; y >= -80; y -= 8) g.lineTo(riverE(y), y);
-    g.closePath();
-    const wg = g.createLinearGradient(540, 0, 655, 0); wg.addColorStop(0, P.water); wg.addColorStop(0.5, P.water2); wg.addColorStop(1, P.water);
-    g.fillStyle = wg; g.fill();
-    g.strokeStyle = '#1f3440'; g.lineWidth = 1.2; g.stroke();
-    g.strokeStyle = 'rgba(120,170,200,.07)'; g.lineWidth = Math.min(0.8, 1.2 * px);
+    // water
     const rr = { s: 99 };
-    for (let i = 0; i < 90; i++) { const y = -60 + S.rnd(rr) * 780, x = riverW(y) + 8 + S.rnd(rr) * 90, l = 6 + S.rnd(rr) * 14; g.beginPath(); g.moveTo(x, y); g.lineTo(x + l, y); g.stroke(); }
+    for (const poly of LAY.water) {
+      let x0 = Infinity, x1 = -Infinity, y0 = Infinity, y1 = -Infinity;
+      g.beginPath(); poly.forEach(([x, y], i) => { if (i) g.lineTo(x, y); else g.moveTo(x, y); x0 = Math.min(x0, x); x1 = Math.max(x1, x); y0 = Math.min(y0, y); y1 = Math.max(y1, y); }); g.closePath();
+      const wg = g.createLinearGradient(x0, 0, Math.min(x1, x0 + 140), 0); wg.addColorStop(0, P.water); wg.addColorStop(0.5, P.water2); wg.addColorStop(1, P.water);
+      g.fillStyle = wg; g.fill();
+      g.strokeStyle = '#1f3440'; g.lineWidth = 1.2; g.stroke();
+      g.strokeStyle = 'rgba(120,170,200,.07)'; g.lineWidth = Math.min(0.8, 1.2 * px);
+      for (let i = 0; i < 90; i++) { const x = x0 + S.rnd(rr) * Math.min(x1 - x0, 400), y = y0 + S.rnd(rr) * (y1 - y0), l = 6 + S.rnd(rr) * 14; if (inPoly(x, y, poly) && inPoly(x + l, y, poly)) { g.beginPath(); g.moveTo(x, y); g.lineTo(x + l, y); g.stroke(); } }
+    }
 
     // trees under buildings' shadows
     drawBuildings(g, px);
@@ -288,7 +340,7 @@
 
     // roads: sidewalks, bridge decks, asphalt
     for (const rd of roads) {
-      const [x0, y0, x1, y1] = roadEnds(rd), hw = S.hw(rd.cls);
+      const [x0, y0, x1, y1] = roadEnds(rd), hw = S.hw(rd);
       if (rd.bridge) {
         strokeSeg(g, x0 + 3, y0 + 5, x1 + 3, y1 + 5, 2 * hw + 10, 'rgba(0,0,0,.45)');
         strokeSeg(g, x0, y0, x1, y1, 2 * hw + 7, P.deck);
@@ -297,7 +349,7 @@
     }
     for (const n of nodes) if (n.type === 'signal' || n.type === 'bend') { const h = n.hwMax + 3.5; g.fillStyle = P.side; g.fillRect(n.x - h, n.y - h, 2 * h, 2 * h); }
     for (const rd of roads) {
-      const [x0, y0, x1, y1] = roadEnds(rd), hw = S.hw(rd.cls);
+      const [x0, y0, x1, y1] = roadEnds(rd), hw = S.hw(rd);
       strokeSeg(g, x0, y0, x1, y1, 2 * hw, rd.cls === 'hwy' ? P.hwy : P.asphalt);
     }
     for (const n of nodes) if (n.type === 'signal' || n.type === 'bend') { const h = n.hwMax; g.fillStyle = P.asphalt; g.fillRect(n.x - h, n.y - h, 2 * h, 2 * h); }
@@ -365,7 +417,7 @@
       }
       g.setLineDash([]);
       // centre line (drawn once per road: from the link whose from-index is lower)
-      if (L.i % 2 === 0) {
+      if (L.road.links[0] === L.i && !L.road.oneway) {
         if (L.cls === 'hwy') {
           const [x0, y0] = S.lanePt(L, 0, -n0.r, 0), [x1, y1] = S.lanePt(L, 0, L.len + n1.r, 0);
           strokeSeg(g, x0, y0, x1, y1, 1.1, '#555e6c');
@@ -394,7 +446,7 @@
       if (n.type !== 'signal') continue;
       for (const rd of n.roads) {
         const other = rd.a === n ? rd.b : rd.a, dx = other.x - n.x, dy = other.y - n.y, d = Math.hypot(dx, dy), ux = dx / d, uy = dy / d;
-        const hw = S.hw(rd.cls), cx = n.x + ux * (n.r - 1.9), cy = n.y + uy * (n.r - 1.9);
+        const hw = S.hw(rd), cx = n.x + ux * (n.r - 1.9), cy = n.y + uy * (n.r - 1.9);
         g.save(); g.translate(cx, cy); g.rotate(Math.atan2(uy, ux));
         for (let o = -hw + 0.4; o < hw - 0.4; o += 1.25) g.fillRect(-1.4, o, 2.8, 0.62);
         g.restore();
@@ -405,7 +457,7 @@
   function drawStreetLights(g) {
     g.globalCompositeOperation = 'lighter';
     for (const rd of roads) {
-      const [x0, y0, x1, y1, ux, uy] = roadEnds(rd), hw = S.hw(rd.cls), d = Math.hypot(x1 - x0, y1 - y0);
+      const [x0, y0, x1, y1, ux, uy] = roadEnds(rd), hw = S.hw(rd), d = Math.hypot(x1 - x0, y1 - y0);
       const step = rd.cls === 'hwy' ? 46 : 34, rad = rd.cls === 'hwy' ? 20 : 15;
       for (let s = 14, i = 0; s < d - 8; s += step, i++) {
         if (rd.cls === 'hwy') {
@@ -422,17 +474,14 @@
 
   function drawLabels(g) {
     g.textAlign = 'center'; g.textBaseline = 'middle';
-    // districts
-    if (view.z < 2.2) {
-    g.fillStyle = 'rgba(200,210,225,.06)';
-    g.font = `900 ${34}px Overpass, sans-serif`;
-    spaced(g, 'WESTGATE', 270, 415, 9);
-    spaced(g, 'DOWNTOWN', 820, 415, 9);
-    g.font = `800 ${18}px Overpass, sans-serif`;
-    spaced(g, 'PORT OF PORTSIDE', 470, 30, 6);
+    for (const lb of LAY.labels) {
+      if (lb.water) {
+        const f = Math.max(lb.size, Math.round(lb.size * 1.25 / view.z * 4) / 4);
+        g.save(); g.translate(lb.x, lb.y); if (lb.rot) g.rotate(lb.rot); g.fillStyle = 'rgba(120,170,200,.2)'; g.font = `800 ${f}px Overpass, sans-serif`; spaced(g, lb.t, 0, 0, f * 0.38); g.restore();
+      } else if (view.z < 2.2) {
+        g.save(); g.translate(lb.x, lb.y); if (lb.rot) g.rotate(lb.rot); g.fillStyle = 'rgba(200,210,225,.06)'; g.font = `900 ${lb.size}px Overpass, sans-serif`; spaced(g, lb.t, 0, 0, lb.sp); g.restore();
+      }
     }
-    const rf = Math.max(13, Math.round(16 / view.z * 4) / 4);
-    g.save(); g.translate(598, 470); g.rotate(-Math.PI / 2); g.fillStyle = 'rgba(120,170,200,.18)'; g.font = `800 ${rf}px Overpass, sans-serif`; spaced(g, 'KELL RIVER', 0, 0, rf * 0.38); g.restore();
     if (view.z < 0.9) return;
     const fs = Math.max(5.6, Math.round(10 / view.z * 8) / 8);
     // street names on one segment per name
@@ -443,7 +492,7 @@
       const cands = roads.filter(r => r.name === key);
       const r = cands[Math.floor(cands.length / 2)];
       done.add(key);
-      const [x0, y0, x1, y1, ux, uy] = roadEnds(r), hw = S.hw(r.cls);
+      const [x0, y0, x1, y1, ux, uy] = roadEnds(r), hw = S.hw(r);
       let ang = Math.atan2(uy, ux); if (ang > Math.PI / 2 || ang < -Math.PI / 2) ang += Math.PI;
       const off = hw + 3 + fs * 0.6, mx = (x0 + x1) / 2 + (-Math.sin(ang)) * -off, my = (y0 + y1) / 2 + Math.cos(ang) * -off;
       g.save(); g.translate(mx, my); g.rotate(ang); spaced(g, key.toUpperCase(), 0, 0, fs * 0.2); g.restore();
@@ -673,8 +722,9 @@
   function drawMarkers(g) {
     const r = 9 / view.z * 1.0;
     g.textAlign = 'center'; g.textBaseline = 'middle';
-    for (const m of store.attempts.slice(0, 12)) {
-      const best = store.best && m.id === store.best.id;
+    const b = bestFor(LAY.id);
+    for (const m of attemptsFor(LAY.id).slice(0, 12)) {
+      const best = b && m.id === b.id;
       g.fillStyle = best ? 'rgba(246,166,35,.95)' : 'rgba(14,18,26,.85)';
       g.strokeStyle = best ? '#1b1206' : 'rgba(246,166,35,.8)'; g.lineWidth = 1.2 / view.z;
       g.beginPath(); g.arc(m.x, m.y, r, 0, 7); g.fill(); g.stroke();
@@ -691,15 +741,35 @@
   const SCOUT_SPEED = 1.6, BASE_SEED = 20260926;
   const store = loadStore();
   function loadStore() {
-    try { const s = JSON.parse(localStorage.getItem('snarl-v1')); if (s && Array.isArray(s.attempts)) return s; } catch (e) { /* storage unavailable */ }
-    return { attempts: [], best: null };
+    try { const s = JSON.parse(localStorage.getItem('snarl-v2')); if (s && Array.isArray(s.attempts)) return s; } catch (e) { /* storage unavailable */ }
+    try { // carry over attempts saved before cities existed; they were all in Portside
+      const o = JSON.parse(localStorage.getItem('snarl-v1'));
+      if (o && Array.isArray(o.attempts)) return { attempts: o.attempts.map(a => Object.assign({ layout: 'portside' }, a)), city: 'portside' };
+    } catch (e) { /* storage unavailable */ }
+    return { attempts: [], city: 'portside' };
   }
-  function saveStore() { try { localStorage.setItem('snarl-v1', JSON.stringify(store)); } catch (e) { /* storage unavailable */ } }
+  function saveStore() { try { localStorage.setItem('snarl-v2', JSON.stringify(store)); } catch (e) { /* storage unavailable */ } }
+  const attemptsFor = id => store.attempts.filter(a => (a.layout || 'portside') === id);
+  const bestFor = id => attemptsFor(id).reduce((b, a) => (!b || a.score > b.score ? a : b), null);
+  const boardFor = id => attemptsFor(id).slice().sort((a, b) => b.score - a.score).slice(0, 10);
 
   function boot() {
     const w = S.newWorld(BASE_SEED);
     for (let i = 0; i < 1500; i++) S.step(w);
     snap = w; live = S.clone(snap);
+  }
+  // switch the whole game to another city
+  function setLayout(id) {
+    S = simFor(id); LAY = S.layout; links = S.links; nodes = S.nodes; roads = S.roads;
+    Object.assign(WORLD, LAY.world);
+    const bw = WORLD.x1 - WORLD.x0 + 160, bh = WORLD.y1 - WORLD.y0 + 120;
+    Object.assign(CITY, { x0: WORLD.x0 - 80, y0: WORLD.y0 - 60, x1: WORLD.x1 + 80, y1: WORLD.y1 + 60, res: Math.min(2.8, Math.sqrt(7.2e6 / (bw * bh))) });
+    genCity(); cityBgReady = false; bgDirty = true;
+    sel = null; hover = null; heat = null; base = null; smoke = []; cam = null; fling = null;
+    boot();
+    store.city = id; saveStore();
+    const bc = document.getElementById('brandCity'); if (bc) bc.textContent = LAY.name + ' · Rush hour';
+    userView = false; if (W) fitView();
   }
   const GRADES = [
     [0, 'Nobody noticed', 'Traffic flowed around it like water around a pebble.'],
@@ -720,20 +790,30 @@
   const fmt = v => Math.round(v).toLocaleString('en-US');
 
   // ------------------------------------------------------------ picking
+  // the lane whose centre line passes closest to the tap, measured as a true 2D distance
   function pick(sx, sy, touch) {
-    const [wx, wy] = toWorld(sx, sy), tol = Math.max(LW * 0.7, (touch ? 26 : 10) / view.z);
+    const [wx, wy] = toWorld(sx, sy), tol = Math.max(LW * 0.6, (touch ? 18 : 8) / view.z);
     let best = null, bd = tol;
     for (const L of links) {
-      const rx = wx - L.x0, ry = wy - L.y0, s = rx * L.ux + ry * L.uy;
-      if (s < 10 || s > L.len - 10) continue;
-      const o = rx * L.nx + ry * L.ny;
+      if (L.len < 24) continue;
+      const rx = wx - L.x0, ry = wy - L.y0, raw = rx * L.ux + ry * L.uy;
+      if (raw < -8 || raw > L.len + 8) continue;
+      const s = Math.max(10, Math.min(L.len - 10, raw)), o = rx * L.nx + ry * L.ny;
       for (let k = 0; k < L.lanes; k++) {
-        const d = Math.abs(o - S.laneOff(L, k));
+        const d = Math.hypot(raw - s, o - S.laneOff(L, k));
         if (d < bd) { bd = d; best = { li: L.i, k, s }; }
       }
     }
-    if (best) { const [x, y] = S.lanePt(links[best.li], best.k, best.s); best.x = x; best.y = y; }
-    return best;
+    return best && placeSel(best);
+  }
+  function placeSel(p) { const [x, y] = S.lanePt(links[p.li], p.k, p.s); p.x = x; p.y = y; return p; }
+  const reverseOf = L => links.find(M => M.from === L.to && M.to === L.from && M.road === L.road);
+  // "85 m before Bank St": the cross street at the end of this block
+  function aheadText(p) {
+    const L = links[p.li], n = nodes[L.to], dist = Math.round((L.len - p.s) / 5) * 5;
+    if (n.type === 'edge') return `${dist} m before the edge of town`;
+    const other = n.roads.map(r => r.name).find(nm => nm !== L.road.name && !/ramp$/.test(nm));
+    return other ? `${dist} m before ${other}` : `${dist} m before the bend`;
   }
   function laneLabel(p) {
     const L = links[p.li];
@@ -758,18 +838,29 @@
   }
   function renderPanelBody() {
     if (mode === 'scout' || mode === 'intro') {
-      const best = store.best ? `<div class="hint">Your best: <b class="num">${fmt(store.best.score)}</b> vehicle-min on ${esc(store.best.road)}</div>` : '';
+      const b0 = bestFor(LAY.id);
+      const best = b0 ? `<div class="hint">Your best in ${esc(LAY.name)}: <b class="num">${fmt(b0.score)}</b> on ${esc(b0.road)} · <button class="linkbtn" id="bBoard2">Leaderboard</button></div>` : '';
       if (!sel) {
         panel.innerHTML = `<div class="eyebrow">Step 1 of 2 · Scout</div>
+          <div class="cities" role="radiogroup" aria-label="City">${Object.values(SIM.LAYOUTS).map(l => { const b = bestFor(l.id); return `<button class="city" role="radio" aria-checked="${l.id === LAY.id}" data-city="${l.id}"><canvas data-thumb="${l.id}" aria-hidden="true"></canvas><b>${l.name}</b><span>${b ? 'Best ' + fmt(b.score) : esc(l.tagline)}</span></button>`; }).join('')}</div>
           <h2 class="keep">Pick a lane to crash in</h2>
           <p>Tap any lane to see how busy it is. Pinch or double-tap to zoom, drag to pan. Bridges, ramps and corners where queues back up are good places to start.</p>
           <div class="legend"><span><i style="background:#ff3b30;box-shadow:0 0 8px #ff3b30"></i>Bright tail lights: braking</span></div>
           ${best}`;
+        panel.querySelectorAll('[data-city]').forEach(b => b.onclick = () => switchCity(b.dataset.city));
+        panel.querySelectorAll('[data-thumb]').forEach(c => drawThumb(c, simFor(c.dataset.thumb)));
+        if ($('bBoard2')) $('bBoard2').onclick = () => openBoard(LAY.id);
       } else {
         const lb = laneLabel(sel);
         panel.innerHTML = `<div class="eyebrow">Step 2 of 2 · Crash site</div>
           <h2 class="keep">${esc(lb.road)}</h2>
-          <div class="row"><span class="chip amber">${lb.lane}${lb.lanes > 1 ? ' of ' + lb.lanes : ''}</span><span class="chip">${lb.lanes > 1 ? 'Other lane stays open' : 'Blocks the road in this direction'}</span></div>
+          <div class="where">${esc(aheadText(sel))} · ${lb.lanes > 1 ? 'the other lane stays open' : 'blocks this direction'}</div>
+          <div class="adjust" role="group" aria-label="Fine-tune the crash site">
+            <button class="tool" id="bBack" aria-label="Move 15 metres back">◀ 15 m</button>
+            ${lb.lanes > 1 ? `<div class="seg" role="group" aria-label="Lane">${[0, 1].map(k => `<button data-lane="${k}" aria-pressed="${sel.k === k}">${k ? 'Right' : 'Left'} lane</button>`).join('')}</div>` : ''}
+            ${reverseOf(links[sel.li]) ? '<button class="tool" id="bFlip" title="Crash in the opposite direction instead">⇄ Other way</button>' : ''}
+            <button class="tool" id="bFwd" aria-label="Move 15 metres ahead">15 m ▶</button>
+          </div>
           <div class="stats">
             <div class="stat"><b id="sFlow">–</b><span>cars / min</span></div>
             <div class="stat"><b id="sSpeed">–</b><span>avg km/h</span></div>
@@ -778,6 +869,12 @@
           <div class="row keep"><button class="btn crash" id="bCrash">${hazardIcon()}Crash here</button><button class="btn ghost" id="bCancel">Cancel</button></div>
           <div class="hint keys">Press <kbd>Enter</kbd> to crash, <kbd>Esc</kbd> to cancel.</div>`;
         $('bCrash').onclick = doCrash; $('bCancel').onclick = () => { sel = null; renderPanel(); };
+        const move = p => { sel = placeSel(p); renderPanel(); keepVisible(sel.x, sel.y); };
+        const L = links[sel.li];
+        $('bBack').onclick = () => move({ li: sel.li, k: sel.k, s: Math.max(10, sel.s - 15) });
+        $('bFwd').onclick = () => move({ li: sel.li, k: sel.k, s: Math.min(L.len - 10, sel.s + 15) });
+        panel.querySelectorAll('[data-lane]').forEach(b => b.onclick = () => move({ li: sel.li, k: +b.dataset.lane, s: sel.s }));
+        if ($('bFlip')) $('bFlip').onclick = () => { const M = reverseOf(L); move({ li: M.i, k: Math.min(sel.k, M.lanes - 1), s: Math.max(10, Math.min(M.len - 10, M.len - sel.s)) }); };
         updateSelStats();
       }
     } else if (mode === 'run') {
@@ -806,15 +903,15 @@
       $('bAbort').onclick = () => { newAttempt(); };
     } else if (mode === 'result') {
       const r = lastResult, gr = gradeOf(r.score);
-      const isBest = store.best && store.best.id === r.id;
-      const hist = store.attempts.slice(0, 6).map(a => `<li class="${store.best && a.id === store.best.id ? 'best' : ''}"><span>${esc(a.road)}</span><span class="num">${fmt(a.score)}</span></li>`).join('');
+      const isBest = r.newBest;
+      const hist = boardRows(boardFor(LAY.id).slice(0, 5), r.id);
       panel.innerHTML = `<div class="eyebrow">${esc(r.road)}</div>
         <div class="plate result-plate keep">
           <div class="k">Extra delay caused</div>
           <div class="big">${fmt(r.score)}</div>
           <div class="unit">vehicle-minutes · about ${(r.score * 1.3 / 60).toFixed(1)} person-hours</div>
         </div>
-        <div class="grade"><div class="diamond" aria-hidden="true"></div><div><b>${gr[1]}</b>${isBest && store.attempts.length > 1 ? ' <span class="chip go">New best</span>' : ''}<div style="color:var(--mute);font-size:13px">${gr[2]}</div></div></div>
+        <div class="grade"><div class="diamond" aria-hidden="true"></div><div><b>${gr[1]}</b>${isBest && attemptsFor(LAY.id).length > 1 ? ' <span class="chip go">New best</span>' : r.rank ? ` <span class="chip">#${r.rank} in ${esc(LAY.name)}</span>` : ''}<div style="color:var(--mute);font-size:13px">${gr[2]}</div></div></div>
         <div class="stats">
           <div class="stat"><b>${fmt(r.peak)}</b><span>most cars stuck at once</span></div>
           <div class="stat"><b>${fmt(r.lost)}</b><span>trips not finished</span></div>
@@ -824,8 +921,9 @@
         <p style="font-size:13px;color:var(--mute)">${esc(r.tip)}</p>
         <details class="how"><summary>How the score works</summary><p>Every driver's lost time is added up: any minute spent crawling or stopped when they'd normally be moving. The game runs the exact same morning twice, once with your crash and once without, and your score is the difference. ${fmt(r.score)} vehicle-minutes is about ${(r.score * 1.3 / 60).toFixed(1)} hours of people's time, counting 1.3 people per car.</p></details>
         <div class="row keep"><button class="btn go" id="bAgain">Try another spot</button><button class="btn ghost" id="bShare">Copy result</button></div>
-        <div class="history"><div class="eyebrow">Your attempts</div><ol>${hist}</ol></div>`;
-      $('bAgain').onclick = newAttempt; $('bShare').onclick = share;
+        <div class="history"><div class="row" style="justify-content:space-between"><div class="eyebrow">Your ${esc(LAY.name)} leaderboard</div><button class="linkbtn" id="bBoard3">See all cities</button></div><ol class="board">${hist}</ol></div>`;
+      $('bAgain').onclick = newAttempt; $('bShare').onclick = share; $('bBoard3').onclick = () => openBoard(LAY.id);
+      wireBoard(panel);
       requestAnimationFrame(() => drawChart($('resChart'), r.hist, r.dur));
     }
   }
@@ -888,8 +986,8 @@
   function doCrash() {
     if (!sel || mode !== 'scout') return;
     Snd.init();
-    base = S.clone(live);
-    S.applyCrash(live, sel.li, sel.k, sel.s);
+    base = S.clone(live); S.syncBaseline(base);
+    S.applyCrash(live, sel.li, sel.k, sel.s, base);
     crashT = live.t; peakStop = 0; heat = null; smoke = []; jam = 0; hist = [{ t: 0, jam: 0 }]; drainedFor = 0; finishing = false;
     Tow.load().catch(() => {}); // fetch the 3D finale in the background
     mode = 'run'; hover = null; $('tip').hidden = true;
@@ -913,9 +1011,14 @@
       color: CAR_COLS[Math.floor((live.crash.cols[0] || 0.3) * CAR_COLS.length) % CAR_COLS.length],
     };
     lastResult.tip = tipFor(lastResult, links[sel.li]);
-    store.attempts.unshift({ id: lastResult.id, score: lastResult.score, road: lastResult.road, x: lastResult.x, y: lastResult.y });
-    store.attempts = store.attempts.slice(0, 30);
-    if (!store.best || lastResult.score > store.best.score) store.best = { id: lastResult.id, score: lastResult.score, road: lastResult.road };
+    const hot = heat.map((v, i) => [i, Math.round(v * 100)]).filter(h => h[1] >= 4).sort((a, b) => b[1] - a[1]).slice(0, 40);
+    const prevBest = bestFor(LAY.id);
+    store.attempts.unshift({ id: lastResult.id, layout: LAY.id, score: lastResult.score, road: lastResult.road, x: lastResult.x, y: lastResult.y, li: sel.li, k: sel.k, s: Math.round(sel.s), heat: hot, date: Date.now() });
+    const keep = new Set(store.attempts.slice(0, 40).map(a => a.id));
+    for (const id of Object.keys(SIM.LAYOUTS)) boardFor(id).forEach(a => keep.add(a.id));
+    store.attempts = store.attempts.filter(a => keep.has(a.id));
+    lastResult.newBest = !prevBest || lastResult.score > prevBest.score;
+    lastResult.rank = boardFor(LAY.id).findIndex(a => a.id === lastResult.id) + 1;
     saveStore();
     renderPanel();
     playFinale(lastResult);
@@ -951,6 +1054,55 @@
     if (L.cls === 'hwy') return 'Freeway traffic arrives fast and has nowhere else to go. The red glow shows how far back the queue reached.';
     return 'Red glow on the map shows where the extra delay piled up. Queues that reach an intersection start blocking other routes.';
   }
+  function switchCity(id) {
+    if (id === LAY.id || (mode !== 'scout' && mode !== 'result')) return;
+    toast('Loading ' + SIM.LAYOUTS[id].name + '…');
+    setTimeout(() => { setLayout(id); mode = 'scout'; renderPanel(); }, 30);
+  }
+  // mini map: water, roads, where the jam spread (red) and the crash site (amber)
+  function drawThumb(c, sim, att) {
+    const r = window.devicePixelRatio || 1, w = c.clientWidth || 120, h = c.clientHeight || 76;
+    c.width = Math.round(w * r); c.height = Math.round(h * r);
+    const g = c.getContext('2d'), Wd = sim.layout.world, bw = Wd.x1 - Wd.x0, bh = Wd.y1 - Wd.y0;
+    const z = Math.max(w / bw, h / bh) * (att ? 1 : 1), ox = (w - bw * z) / 2 - Wd.x0 * z, oy = (h - bh * z) / 2 - Wd.y0 * z;
+    g.setTransform(r, 0, 0, r, 0, 0); g.fillStyle = '#171e29'; g.fillRect(0, 0, w, h);
+    g.setTransform(r * z, 0, 0, r * z, r * ox, r * oy);
+    g.fillStyle = '#0d2130';
+    for (const poly of sim.layout.water) { g.beginPath(); poly.forEach(([x, y], i) => i ? g.lineTo(x, y) : g.moveTo(x, y)); g.closePath(); g.fill(); }
+    g.lineCap = 'round';
+    for (const rd of sim.roads) { g.strokeStyle = rd.cls === 'hwy' ? '#6b7383' : '#4a5160'; g.lineWidth = Math.max(sim.hw(rd) * 2, 1.4 / z); g.beginPath(); g.moveTo(rd.a.x, rd.a.y); g.lineTo(rd.b.x, rd.b.y); g.stroke(); }
+    if (att) {
+      for (const [li, v] of att.heat || []) { const L = sim.links[li]; if (!L) continue; g.strokeStyle = `rgba(255,80,60,${0.25 + v / 130})`; g.lineWidth = Math.max(10, 3 / z); g.beginPath(); g.moveTo(L.x0, L.y0); g.lineTo(L.x1, L.y1); g.stroke(); }
+      const rr = 5.5 / z; g.fillStyle = '#f6a623'; g.strokeStyle = '#1b1206'; g.lineWidth = 1.6 / z;
+      g.beginPath(); g.arc(att.x, att.y, rr, 0, 7); g.fill(); g.stroke();
+    }
+  }
+  function boardRows(list, highlightId) {
+    if (!list.length) return '<li class="empty">No crashes here yet.</li>';
+    return list.map((a, i) => `<li class="${a.id === highlightId ? 'me' : ''}"><span class="rank num">${i + 1}</span><canvas data-att="${a.id}" aria-hidden="true"></canvas><span class="who"><b>${esc(a.road)}</b><small>${esc(gradeOf(a.score)[1])}${a.date ? ' · ' + new Date(a.date).toLocaleDateString(undefined, { month: 'short', day: 'numeric' }) : ''}</small></span><span class="sc num">${fmt(a.score)}</span>${a.li != null ? `<button class="tool retry" data-retry="${a.id}" title="Go back to this spot and crash there again">Retry</button>` : ''}</li>`).join('');
+  }
+  function wireBoard(root) {
+    root.querySelectorAll('canvas[data-att]').forEach(c => { const a = store.attempts.find(x => String(x.id) === c.dataset.att); if (a) drawThumb(c, simFor(a.layout || 'portside'), a); });
+    root.querySelectorAll('[data-retry]').forEach(b => b.onclick = () => retry(store.attempts.find(x => String(x.id) === b.dataset.retry)));
+  }
+  function retry(a) {
+    if (!a) return;
+    $('board').hidden = true;
+    const go = () => { mode = 'scout'; live = S.clone(snap); base = null; heat = null; smoke = []; sel = placeSel({ li: a.li, k: a.k, s: a.s }); renderPanel(); flyTo(sel.x, sel.y, 2); };
+    if ((a.layout || 'portside') !== LAY.id) { toast('Loading ' + SIM.LAYOUTS[a.layout].name + '…'); setTimeout(() => { setLayout(a.layout); go(); }, 30); } else go();
+  }
+  let boardCity = null;
+  function openBoard(id) {
+    boardCity = id || LAY.id;
+    const tabs = Object.values(SIM.LAYOUTS).map(l => `<button role="tab" aria-selected="${l.id === boardCity}" data-bc="${l.id}">${l.name}${bestFor(l.id) ? ' · ' + fmt(bestFor(l.id).score) : ''}</button>`).join('');
+    $('boardTabs').innerHTML = tabs;
+    $('boardList').innerHTML = boardRows(boardFor(boardCity));
+    $('boardNote').textContent = attemptsFor(boardCity).length ? `Your top ${Math.min(10, attemptsFor(boardCity).length)} of ${attemptsFor(boardCity).length} crashes in ${SIM.LAYOUTS[boardCity].name}. Scores are kept in this browser.` : `No crashes in ${SIM.LAYOUTS[boardCity].name} yet. Pick a lane and see what happens.`;
+    $('board').hidden = false;
+    $('boardTabs').querySelectorAll('[data-bc]').forEach(b => b.onclick = () => openBoard(b.dataset.bc));
+    wireBoard($('boardList'));
+    $('bBoardClose').focus();
+  }
   function newAttempt() {
     live = S.clone(snap); base = null; sel = null; heat = null; smoke = []; clearedToast = false;
     mode = 'scout'; renderPanel();
@@ -958,7 +1110,7 @@
   async function share() {
     const r = lastResult, gr = gradeOf(r.score);
     const url = /github\.io$/.test(location.hostname) ? location.href.split('#')[0] : SHARE_URL;
-    const text = `SNARL · Portside rush hour\nI crashed on ${r.road} and caused ${fmt(r.score)} vehicle-minutes of extra delay (${gr[1]}).\nCan you cause a worse jam?${url ? ' ' + url : ''}`;
+    const text = `SNARL · ${LAY.name} rush hour\nI crashed on ${r.road} and caused ${fmt(r.score)} vehicle-minutes of extra delay (${gr[1]}).\nCan you cause a worse jam?${url ? ' ' + url : ''}`;
     try { await navigator.clipboard.writeText(text); toast('Result copied'); }
     catch (e) { const ta = document.createElement('textarea'); ta.value = text; document.body.appendChild(ta); ta.select(); try { document.execCommand('copy'); toast('Result copied'); } catch (e2) { toast('Copy not allowed here'); } ta.remove(); }
   }
@@ -1093,6 +1245,7 @@
   }
   window.addEventListener('keydown', e => {
     if (!$('help').hidden && e.key === 'Escape') { $('help').hidden = true; return; }
+    if (!$('board').hidden && e.key === 'Escape') { $('board').hidden = true; return; }
     if (mode === 'scout' && sel && e.key === 'Enter' && document.activeElement.tagName !== 'BUTTON') { e.preventDefault(); doCrash(); }
     if (mode === 'scout' && sel && e.key === 'Escape') { sel = null; renderPanel(); }
   });
@@ -1100,6 +1253,8 @@
   for (const ev of ['gesturestart', 'gesturechange']) document.addEventListener(ev, e => e.preventDefault());
   document.addEventListener('touchend', () => Snd.ac && Snd.on && Snd.init(), { passive: true });
   $('bStart').onclick = () => { Snd.init(); $('intro').hidden = true; mode = 'scout'; renderPanel(); };
+  $('bBoard').onclick = () => openBoard(LAY.id);
+  $('bBoardClose').onclick = () => { $('board').hidden = true; };
   $('bHelp').onclick = () => { $('help').hidden = false; $('bHelpClose').focus(); };
   $('bHelpClose').onclick = () => { $('help').hidden = true; };
   $('bFit').onclick = () => { userView = false; fitView(); };
@@ -1154,9 +1309,9 @@
   }
 
   // test hook: screen position of the middle of a named link (used by automated checks)
-  window.__snarlDebug = { setZ: z => { const [x, y] = [W / 2, H / 2]; const wx = (x - view.ox) / view.z, wy = (y - view.oy) / view.z; view.z = z; view.ox = x - wx * z; view.oy = y - wy * z; clampView(); bgDirty = true; }, view: () => ({ z: +view.z.toFixed(3), ox: Math.round(view.ox), oy: Math.round(view.oy) }), screenOfLabel(lbl) { const L = links.find(l => S.linkLabel(l) === lbl); if (!L) return null; const [x, y] = S.lanePt(L, 0, L.len / 2); return [x * view.z + view.ox, y * view.z + view.oy]; } };
+  window.__snarlDebug = { screenOfLane(lbl, k) { const L = links.find(l => S.linkLabel(l) === lbl); if (!L) return null; const [x, y] = S.lanePt(L, k, L.len / 2); return [x * view.z + view.ox, y * view.z + view.oy]; }, setZ: z => { const [x, y] = [W / 2, H / 2]; const wx = (x - view.ox) / view.z, wy = (y - view.oy) / view.z; view.z = z; view.ox = x - wx * z; view.oy = y - wy * z; clampView(); bgDirty = true; }, view: () => ({ z: +view.z.toFixed(3), ox: Math.round(view.ox), oy: Math.round(view.oy) }), screenOfLabel(lbl) { const L = links.find(l => S.linkLabel(l) === lbl); if (!L) return null; const [x, y] = S.lanePt(L, 0, L.len / 2); return [x * view.z + view.ox, y * view.z + view.oy]; } };
   window.addEventListener('resize', resize);
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => { bgDirty = true; cityBgReady = false; });
-  boot(); resize(); renderPanel();
+  setLayout(SIM.LAYOUTS[store.city] ? store.city : 'portside'); resize(); renderPanel();
   requestAnimationFrame(frame);
 })();

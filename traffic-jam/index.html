@@ -96,6 +96,37 @@ button{font:inherit;color:inherit;touch-action:manipulation}
 #zoom{position:absolute;right:16px;top:64px;display:flex;flex-direction:column;gap:6px}
 #zoom .tool{padding:0;justify-content:center}
 .grip{display:none}
+.cities{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:8px 0 12px}
+.city{background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:10px;padding:6px 6px 7px;text-align:left;cursor:pointer;display:flex;flex-direction:column;gap:3px;min-width:0}
+.city canvas{width:100%;height:46px;border-radius:6px;display:block}
+.city b{font-size:13px;font-weight:800}
+.city span{font-size:10.5px;color:var(--mute);line-height:1.25;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.city[aria-checked="true"]{border-color:var(--amber);background:rgba(246,166,35,.1)}
+.city:focus-visible,.linkbtn:focus-visible,.tabs button:focus-visible{outline:2px solid var(--amber);outline-offset:2px}
+.where{font-size:13px;color:#c4cbd6;margin:-2px 0 10px}
+.adjust{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:0 0 4px}
+.adjust .tool{height:34px;padding:0 10px;font-size:12px}
+.adjust .seg button{height:34px}
+.linkbtn{background:none;border:0;padding:0;color:var(--amber-hi);font-weight:700;font-size:12.5px;cursor:pointer;text-decoration:underline;text-underline-offset:2px}
+ol.board{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:6px}
+ol.board li{display:grid;grid-template-columns:20px 84px minmax(0,1fr) auto auto;align-items:center;gap:10px;padding:6px 8px;border-radius:9px;background:rgba(255,255,255,.035)}
+ol.board li.me{background:rgba(246,166,35,.12);box-shadow:inset 0 0 0 1px rgba(246,166,35,.5)}
+ol.board li.empty{display:block;color:var(--mute);font-size:13px;background:none;padding:4px 0}
+ol.board .rank{color:var(--mute);font-size:13px;text-align:right}
+ol.board canvas{width:84px;height:54px;border-radius:6px;display:block}
+ol.board .who{display:flex;flex-direction:column;min-width:0}
+ol.board .who b{font-size:13px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+ol.board .who small{font-size:11.5px;color:var(--mute)}
+ol.board .sc{font-size:16px;font-weight:700;color:var(--amber-hi)}
+ol.board .retry{height:30px;padding:0 10px;font-size:12px}
+.board-card{width:min(600px,100%)}
+#panel ol.board li{grid-template-columns:16px 60px minmax(0,1fr) auto auto;gap:8px;padding:5px 6px}
+#panel ol.board canvas{width:60px;height:40px}
+#panel ol.board .retry{padding:0 8px}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:4px 0 6px}
+.tabs button{background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:99px;height:32px;padding:0 12px;font-size:12.5px;font-weight:700;cursor:pointer;color:var(--mute)}
+.tabs button[aria-selected="true"]{background:rgba(246,166,35,.14);border-color:var(--amber);color:var(--ink)}
+@media (max-width:480px){ol.board li{grid-template-columns:18px 64px minmax(0,1fr) auto;gap:8px}ol.board canvas{width:64px;height:42px}ol.board .retry{grid-column:3/5;justify-self:start;height:28px}}
 .stat span{display:block;line-height:1.25}
 .chart{position:relative;height:96px;margin:4px 0 8px}
 .chart canvas{width:100%;height:100%;display:block}
@@ -192,11 +223,11 @@ details.how p{margin:6px 0 0 !important;font-size:13px !important}
 </head>
 <body>
 <div id="app">
-  <canvas id="map" aria-label="Map of Portside at rush hour. Click or tap a lane to choose a crash site."></canvas>
+  <canvas id="map" aria-label="Map of the city at rush hour. Click or tap a lane to choose a crash site."></canvas>
 
   <div id="brand" class="plate">
     <h1>SNARL</h1>
-    <div class="sub"><span>Portside · Rush hour</span><span class="clock" id="clock">8:00 AM</span></div>
+    <div class="sub"><span id="brandCity">Portside · Rush hour</span><span class="clock" id="clock">8:00 AM</span></div>
   </div>
 
   <div id="tools">
@@ -204,6 +235,8 @@ details.how p{margin:6px 0 0 !important;font-size:13px !important}
       <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 12a6 6 0 1 1 12 0"/><path d="M8 12l3-4"/></svg><span class="lbl">Speed map</span></button>
     <button class="tool" id="bSound" aria-pressed="true" title="Sound">
       <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 6h3l4-3v10l-4-3H2z"/><path id="sndWave" d="M11.5 5.5a3.5 3.5 0 0 1 0 5"/></svg><span class="lbl">Sound</span></button>
+    <button class="tool" id="bBoard" title="Your best crashes in each city">
+      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 2h8v4a4 4 0 0 1-8 0z"/><path d="M4 3H1.5v1.5A2.5 2.5 0 0 0 4 7M12 3h2.5v1.5A2.5 2.5 0 0 1 12 7M8 10v3M5 14h6"/></svg><span class="lbl">Leaderboard</span></button>
     <button class="tool" id="bFit" title="Fit the whole city on screen">
       <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 6V2h4M10 2h4v4M14 10v4h-4M6 14H2v-4"/></svg><span class="lbl">Fit</span></button>
     <button class="tool" id="bHelp" title="How it works">?</button>
@@ -230,7 +263,7 @@ details.how p{margin:6px 0 0 !important;font-size:13px !important}
   <div class="overlay" id="intro">
     <div class="card" role="dialog" aria-modal="true" aria-labelledby="introTitle">
       <div class="plate"><h1 id="introTitle">SNARL</h1><small>Exit here for gridlock</small></div>
-      <p class="lede">It's 8:00 AM in Portside and everyone west of the river is trying to get downtown. You get one fender-bender. Put it where it hurts most.</p>
+      <p class="lede">It's 8:00 AM and the whole city is trying to get to work. You get one fender-bender. Put it where it hurts most. Pick from three cities: a river town, a one-way grid and a ring road.</p>
       <h3>How to play</h3>
       <ul>
         <li><b>Scout.</b> Watch the traffic. Pinch, double-tap or use + and − to zoom; drag to pan. Red tail lights mean braking.</li>
@@ -239,6 +272,15 @@ details.how p{margin:6px 0 0 !important;font-size:13px !important}
       </ul>
       <p>Your score is the <b>extra delay</b> your crash causes, in vehicle-minutes. A copy of the same morning runs alongside with no crash, so only the delay you caused counts.</p>
       <div class="row"><button class="btn go" id="bStart">Start scouting</button></div>
+    </div>
+  </div>
+
+  <div class="overlay" id="board" hidden>
+    <div class="card board-card" role="dialog" aria-modal="true" aria-labelledby="boardTitle">
+      <div class="row" style="justify-content:space-between;align-items:flex-start;margin-top:0"><div class="plate"><h1 id="boardTitle" style="font-size:24px">LEADERBOARD</h1></div><button class="tool" id="bBoardClose" aria-label="Close leaderboard">✕</button></div>
+      <div class="tabs" role="tablist" id="boardTabs"></div>
+      <p class="hint" id="boardNote"></p>
+      <ol class="board" id="boardList"></ol>
     </div>
   </div>
 

@@ -14,7 +14,9 @@ const SIM = (function () {
     st: { lanes: 1, v0: 12.5, med: 0, pri: 2 },
     ramp: { lanes: 1, v0: 15, med: 0, pri: 1 },
   };
-  const hw = cls => CLS[cls].med + CLS[cls].lanes * LW;
+  // half-width of a road: two-way roads put each direction to the right of the centre line;
+  // one-way roads are centred on it
+  const hw = r => typeof r === 'string' ? CLS[r].med + CLS[r].lanes * LW : r.oneway ? CLS[r.cls].lanes * LW / 2 : CLS[r.cls].med + CLS[r.cls].lanes * LW;
 
   function rnd(r) {
     r.s = (r.s + 0x6D2B79F5) | 0; let t = r.s;
@@ -28,59 +30,216 @@ const SIM = (function () {
     return (h >>> 0) / 4294967296;
   }
 
+
+  // ---------------------------------------------------------------- layouts
+  // Each layout builds its road network with N (node), R (road) and chain, and returns its
+  // demand as generators G(vehicles per hour, origin links, destination links).
+  const wavy = (x0, a, f, p) => y => x0 + a * Math.sin(y / f + p) + a * 0.4 * Math.sin(y / (f * 0.28));
+  const riverW = y => 540 + 7 * Math.sin(y / 47) + 3 * Math.sin(y / 13), riverE = y => 652 + 6 * Math.sin(y / 61 + 2) + 2 * Math.sin(y / 17);
+  function bandPoly(left, right, y0, y1) { const pts = []; for (let y = y0; y <= y1; y += 8) pts.push([left(y), y]); for (let y = y1; y >= y0; y -= 8) pts.push([right(y), y]); return pts; }
+  function ellipsePoly(cx, cy, rx, ry) { const pts = []; for (let i = 0; i < 48; i++) { const a = i / 48 * Math.PI * 2; pts.push([cx + Math.cos(a) * rx * (1 + 0.06 * Math.sin(a * 3)), cy + Math.sin(a) * ry * (1 + 0.05 * Math.cos(a * 5))]); } return pts; }
+  const LAYOUTS = {
+    portside: {
+      id: 'portside', name: 'Portside', tagline: 'River city. Three crossings, one freeway.',
+      world: { x0: -20, y0: 10, x1: 1020, y1: 650 }, focus: [560, 330], demandScale: 1.2, cityGen: 'portside',
+      water: [bandPoly(riverW, riverE, -80, 740)],
+      labels: [
+        { t: 'WESTGATE', x: 270, y: 415, size: 34, sp: 9 }, { t: 'DOWNTOWN', x: 820, y: 415, size: 34, sp: 9 },
+        { t: 'PORT OF PORTSIDE', x: 470, y: 30, size: 18, sp: 6 }, { t: 'KELL RIVER', x: 598, y: 470, size: 13, sp: 5, rot: -Math.PI / 2, water: true },
+      ],
+      build({ N, R, chain }) {
+      const XW = [60, 200, 340, 480], XE = [700, 820, 940], YS = [230, 350, 470, 590];
+      const g = (x, y) => 'g' + x + '_' + y;
+      for (const x of XW.concat(XE)) for (const y of YS) N(g(x, y), x, y);
+      N('HW0', -40, 80, 'edge'); N('HA', 250, 80, 'hwy'); N('HB', 430, 80, 'hwy');
+      N('HC', 730, 80, 'hwy'); N('HD', 910, 80, 'hwy'); N('HW1', 1040, 80, 'edge');
+      N('J1', 340, 150); N('J2', 820, 150);
+      N('W1', -40, 350, 'edge'); N('W2', -40, 470, 'edge'); N('E1', 1040, 350, 'edge'); N('E2', 1040, 470, 'edge');
+      N('S1', 200, 680, 'edge'); N('S2', 820, 680, 'edge');
+
+      chain(['HW0', 'HA', 'HB'], 'hwy', 'Harbor Fwy');
+      R('HB', 'HC', 'hwy', 'Harbor Fwy', { bridge: true });
+      chain(['HC', 'HD', 'HW1'], 'hwy', 'Harbor Fwy');
+      R('HA', 'J1', 'ramp', 'Oak Ave ramp'); R('J1', 'HB', 'ramp', 'Oak Ave ramp');
+      R('HC', 'J2', 'ramp', 'Tower Ave ramp'); R('J2', 'HD', 'ramp', 'Tower Ave ramp');
+      R('J1', g(340, 230), 'art', 'Oak Ave'); R('J2', g(820, 230), 'art', 'Tower Ave');
+      chain(XW.map(x => g(x, 230)), 'st', 'Elm St');
+      chain(XE.map(x => g(x, 230)), 'st', 'Cannery Row');
+      chain(['W1'].concat(XW.map(x => g(x, 350))), 'art', 'Main St');
+      R(g(480, 350), g(700, 350), 'art', 'Main St Bridge', { bridge: true });
+      chain(XE.map(x => g(x, 350)).concat(['E1']), 'art', 'Main St');
+      chain(['W2'].concat(XW.map(x => g(x, 470))), 'st', 'Pine St');
+      chain(XE.map(x => g(x, 470)).concat(['E2']), 'st', 'Harbor St');
+      chain(XW.map(x => g(x, 590)), 'st', 'River Rd');
+      R(g(480, 590), g(700, 590), 'st', 'Old Bridge', { bridge: true });
+      chain(XE.map(x => g(x, 590)), 'st', 'Dock St');
+      const NS = { 60: '1st Ave', 200: '2nd Ave', 340: 'Oak Ave', 480: 'Bank St', 700: 'Quay St', 820: 'Tower Ave', 940: 'Ferry St' };
+      for (const x of XW.concat(XE)) chain(YS.map(y => g(x, y)), (x === 340 || x === 820) ? 'art' : 'st', NS[x]);
+      R(g(200, 590), 'S1', 'st', '2nd Ave'); R(g(820, 590), 'S2', 'art', 'Tower Ave');
+      },
+      demand({ src, snk, zone, G }) {
+      const WEST = zone(n => n.x <= 480 && n.y >= 230), EAST = zone(n => n.x >= 700 && n.y >= 230);
+      return [
+        G(1750, [src('HW0')], [snk('HW1')]),
+        G(1200, [src('HW1')], [snk('HW0')]),
+        G(380, [src('HW0')], EAST),
+        G(200, [src('HW1')], WEST),
+        G(820, WEST, EAST),
+        G(320, [src('W1'), src('W2')], EAST),
+        G(200, [src('S1')], EAST),
+        G(160, WEST, [snk('HW1'), snk('E1'), snk('E2')]),
+        G(160, EAST, WEST),
+        G(560, WEST, WEST),
+        G(640, EAST, EAST),
+        G(160, [src('E1'), src('E2')], EAST),
+        G(120, [src('E1'), src('E2'), src('S2')], WEST),
+        G(160, EAST, [snk('S2'), snk('E1'), snk('E2'), snk('HW0')]),
+        G(130, [src('S2')], EAST),
+        G(100, [src('W1'), src('W2')], WEST),
+      ];
+      },
+    },
+
+    midtown: {
+      id: 'midtown', name: 'Midtown', tagline: 'One-way grid. Hard mode: drivers just go around.',
+      world: { x0: -20, y0: 0, x1: 940, y1: 620 }, focus: [520, 320], demandScale: 1.15, cityGen: 'generic',
+      water: [bandPoly(wavy(868, 5, 40, 1), () => 1200, -120, 760)],
+      zone(x, y) { if (x > 845) return null; if (x > 350 && x < 470 && y > 170 && y < 250) return 'park'; if (y < 60 || y > 560) return 'mid'; return 'down'; },
+      labels: [
+        { t: 'MIDTOWN', x: 410, y: 312, size: 36, sp: 10 },
+        { t: 'EAST RIVER', x: 905, y: 170, size: 13, sp: 5, rot: -Math.PI / 2, water: true },
+      ],
+      build({ N, R, chain }) {
+        const AX = [60, 200, 340, 480, 620, 760], SY = [60, 160, 260, 360, 460, 560], g = (x, y) => 'm' + x + '_' + y;
+        for (const x of AX) for (const y of SY) N(g(x, y), x, y);
+        for (const y of SY) N('f' + y, 830, y);
+        N('FN', 830, -60, 'edge'); N('FS', 830, 700, 'edge'); N('TE', 1080, 360, 'edge');
+        for (const x of AX) { N('an' + x, x, -60, 'edge'); N('as' + x, x, 700, 'edge'); }
+        for (const y of SY) N('sw' + y, -60, y, 'edge');
+        // avenues: N = northbound one-way, S = southbound one-way, 2 = two-way
+        const AV = { 60: ['West End Ave', '2', 'st'], 200: ['Amsterdam Ave', 'N', 'art'], 340: ['Columbus Ave', 'S', 'art'], 480: ['Park Ave', '2', 'art'], 620: ['Lexington Ave', 'N', 'art'], 760: ['Third Ave', 'S', 'art'] };
+        for (const x of AX) {
+          const [name, dir, cls] = AV[x], col = ['an' + x].concat(SY.map(y => g(x, y)), ['as' + x]);
+          if (dir === 'N') chain(col.slice().reverse(), cls, name, { oneway: true });
+          else if (dir === 'S') chain(col, cls, name, { oneway: true });
+          else chain(col, cls, name);
+        }
+        // streets: E = eastbound one-way, W = westbound one-way, 2 = two-way
+        const ST = { 60: ['57th St', 'E'], 160: ['50th St', 'W'], 260: ['42nd St', '2'], 360: ['34th St', '2'], 460: ['23rd St', 'W'], 560: ['14th St', 'E'] };
+        for (const y of SY) {
+          const [name, dir] = ST[y], row = ['sw' + y].concat(AX.map(x => g(x, y)), ['f' + y]);
+          if (dir === 'E') chain(row, 'st', name, { oneway: true });
+          else if (dir === 'W') chain(row.slice().reverse(), 'st', name, { oneway: true });
+          else chain(row, 'art', name);
+        }
+        chain(['FN'].concat(SY.map(y => 'f' + y), ['FS']), 'art', 'FDR Drive');
+        R('f360', 'TE', 'art', 'Midtown Bridge', { bridge: true });
+      },
+      demand({ src, snk, zone, edgeSrc, edgeSnk, G }) {
+        const CORE = zone(n => n.x >= 200 && n.x <= 760 && n.y >= 160 && n.y <= 460);
+        const ALL = zone(() => true);
+        const SOUTH = edgeSrc(n => n.y > 650 && n.x < 800), WEST = edgeSrc(n => n.x < 0), OUT = edgeSnk(() => true);
+        return [
+          G(820, [src('TE')], CORE),
+          G(1250, SOUTH, CORE),
+          G(700, WEST, CORE),
+          G(820, [src('FS')], [snk('FN')]),
+          G(700, [src('FN')], [snk('FS')]),
+          G(300, [src('FN'), src('FS')], CORE),
+          G(1100, ALL, ALL),
+          G(300, CORE, OUT),
+          G(160, [src('TE')], [snk('FN'), snk('FS')]),
+        ];
+      },
+    },
+
+    beltway: {
+      id: 'beltway', name: 'Beltway', tagline: 'A ring road around a tight downtown.',
+      world: { x0: -20, y0: 0, x1: 1020, y1: 660 }, focus: [500, 330], demandScale: 1.8, cityGen: 'generic', relativeSignals: true,
+      water: [ellipsePoly(120, 485, 92, 58)],
+      zone(x, y) {
+        const d = Math.hypot(x - 500, y - 330);
+        if (d < 135) return 'down'; if (d < 238) return 'mid';
+        if (x > 820 && y < 170) return 'works'; if (x < 180 && y < 170) return 'works';
+        if (Math.hypot(x - 120, y - 485) < 125) return 'park';
+        return 'res';
+      },
+      labels: [
+        { t: 'CITY CENTRE', x: 500, y: 300, size: 22, sp: 7 },
+        { t: 'NORTHSIDE', x: 250, y: 60, size: 26, sp: 8 }, { t: 'EASTFIELD', x: 860, y: 520, size: 26, sp: 8 },
+        { t: 'MIRROR LAKE', x: 120, y: 487, size: 11, sp: 4, water: true },
+      ],
+      build({ N, R, chain }) {
+        const cx = 500, cy = 330, RR = 250, ring = [];
+        for (let k = 0; k < 8; k++) { const a = k * Math.PI / 4; N('r' + k, Math.round(cx + RR * Math.cos(a)), Math.round(cy + RR * Math.sin(a))); ring.push('r' + k); }
+        chain(ring.concat(['r0']), 'art', 'Ring Road', { ring: true });
+        const DX = [420, 500, 580], DY = [250, 330, 410], d = (x, y) => 'd' + x + '_' + y;
+        for (const x of DX) for (const y of DY) N(d(x, y), x, y);
+        const rowNames = { 250: 'Court St', 330: 'Center St', 410: 'Market St' }, colNames = { 420: 'West Pl', 500: 'Grand Ave', 580: 'East Pl' };
+        for (const y of DY) chain(DX.map(x => d(x, y)), y === 330 ? 'art' : 'st', rowNames[y]);
+        for (const x of DX) chain(DY.map(y => d(x, y)), x === 500 ? 'art' : 'st', colNames[x]);
+        // cardinal boulevards: edge -> ring -> downtown
+        N('eE', 1060, 330, 'edge'); N('eW', -60, 330, 'edge'); N('eS', 500, 720, 'edge'); N('eN', 500, -60, 'edge');
+        chain(['eE', 'r0', d(580, 330)], 'art', 'East Blvd');
+        chain(['eS', 'r2', d(500, 410)], 'art', 'South Blvd');
+        chain(['eW', 'r4', d(420, 330)], 'art', 'West Blvd');
+        chain(['eN', 'r6', d(500, 250)], 'art', 'North Blvd');
+        // diagonal parkways out to the corners, each with a suburban junction
+        const diag = [[1, 'Harbor Pkwy'], [3, 'Lakeside Dr'], [5, 'Mill Rd'], [7, 'Airport Rd']];
+        for (const [k, name] of diag) {
+          const a = k * Math.PI / 4, ux = Math.cos(a), uy = Math.sin(a);
+          N('m' + k, Math.round(cx + 380 * ux), Math.round(cy + 330 * uy));
+          N('x' + k, Math.round(cx + 640 * ux), Math.round(cy + 520 * uy), 'edge');
+          chain(['x' + k, 'm' + k, 'r' + k], 'st', name);
+        }
+        // suburban cross streets linking the parkways to the boulevards
+        R('m1', 'r0', 'st', 'Eastfield Rd'); R('m1', 'r2', 'st', 'Dock Rd');
+        R('m3', 'r4', 'st', 'Lake Rd'); R('m5', 'r4', 'st', 'Mill Ln'); R('m5', 'r6', 'st', 'Hill St'); R('m7', 'r6', 'st', 'Summit Ave'); R('m7', 'r0', 'st', 'Field Rd');
+      },
+      demand({ zone, edgeSrc, edgeSnk, ring, G }) {
+        const CORE = zone(n => Math.hypot(n.x - 500, n.y - 330) < 140), RING = ring;
+        const IN = edgeSrc(() => true), OUT = edgeSnk(() => true);
+        const SUB = zone(n => Math.hypot(n.x - 500, n.y - 330) > 240);
+        return [
+          G(1500, IN, CORE),
+          G(380, CORE, OUT),
+          G(650, IN, OUT),
+          G(320, RING, CORE),
+          G(260, CORE, RING),
+          G(300, SUB, CORE),
+          G(260, RING, RING),
+        ];
+      },
+    },
+  };
+
+  function make(layoutId) {
+  const LAY = LAYOUTS[layoutId] || LAYOUTS.portside;
   // ---------------------------------------------------------------- network
   const nodes = [], byName = {}, roads = [];
   function N(name, x, y, type) { const n = { i: nodes.length, name, x, y, type: type || '', ins: [], outs: [], roads: [], r: 0 }; nodes.push(n); byName[name] = n; }
   function R(a, b, cls, name, opt) { const r = Object.assign({ i: roads.length, a: byName[a], b: byName[b], cls, name }, opt || {}); r.a.roads.push(r); r.b.roads.push(r); roads.push(r); }
   function chain(ns, cls, name, opt) { for (let i = 0; i < ns.length - 1; i++) R(ns[i], ns[i + 1], cls, name, opt); }
-
-  const XW = [60, 200, 340, 480], XE = [700, 820, 940], YS = [230, 350, 470, 590];
-  const g = (x, y) => 'g' + x + '_' + y;
-  for (const x of XW.concat(XE)) for (const y of YS) N(g(x, y), x, y);
-  N('HW0', -40, 80, 'edge'); N('HA', 250, 80, 'hwy'); N('HB', 430, 80, 'hwy');
-  N('HC', 730, 80, 'hwy'); N('HD', 910, 80, 'hwy'); N('HW1', 1040, 80, 'edge');
-  N('J1', 340, 150); N('J2', 820, 150);
-  N('W1', -40, 350, 'edge'); N('W2', -40, 470, 'edge'); N('E1', 1040, 350, 'edge'); N('E2', 1040, 470, 'edge');
-  N('S1', 200, 680, 'edge'); N('S2', 820, 680, 'edge');
-
-  chain(['HW0', 'HA', 'HB'], 'hwy', 'Harbor Fwy');
-  R('HB', 'HC', 'hwy', 'Harbor Fwy', { bridge: true });
-  chain(['HC', 'HD', 'HW1'], 'hwy', 'Harbor Fwy');
-  R('HA', 'J1', 'ramp', 'Oak Ave ramp'); R('J1', 'HB', 'ramp', 'Oak Ave ramp');
-  R('HC', 'J2', 'ramp', 'Tower Ave ramp'); R('J2', 'HD', 'ramp', 'Tower Ave ramp');
-  R('J1', g(340, 230), 'art', 'Oak Ave'); R('J2', g(820, 230), 'art', 'Tower Ave');
-  chain(XW.map(x => g(x, 230)), 'st', 'Elm St');
-  chain(XE.map(x => g(x, 230)), 'st', 'Cannery Row');
-  chain(['W1'].concat(XW.map(x => g(x, 350))), 'art', 'Main St');
-  R(g(480, 350), g(700, 350), 'art', 'Main St Bridge', { bridge: true });
-  chain(XE.map(x => g(x, 350)).concat(['E1']), 'art', 'Main St');
-  chain(['W2'].concat(XW.map(x => g(x, 470))), 'st', 'Pine St');
-  chain(XE.map(x => g(x, 470)).concat(['E2']), 'st', 'Harbor St');
-  chain(XW.map(x => g(x, 590)), 'st', 'River Rd');
-  R(g(480, 590), g(700, 590), 'st', 'Old Bridge', { bridge: true });
-  chain(XE.map(x => g(x, 590)), 'st', 'Dock St');
-  const NS = { 60: '1st Ave', 200: '2nd Ave', 340: 'Oak Ave', 480: 'Bank St', 700: 'Quay St', 820: 'Tower Ave', 940: 'Ferry St' };
-  for (const x of XW.concat(XE)) chain(YS.map(y => g(x, y)), (x === 340 || x === 820) ? 'art' : 'st', NS[x]);
-  R(g(200, 590), 'S1', 'st', '2nd Ave'); R(g(820, 590), 'S2', 'art', 'Tower Ave');
+  LAY.build({ N, R, chain });
 
   for (const n of nodes) {
     if (!n.type) n.type = n.roads.length >= 3 ? 'signal' : 'bend';
-    const m = Math.max(...n.roads.map(r => hw(r.cls)));
+    const m = Math.max(...n.roads.map(r => hw(r)));
     n.r = n.type === 'edge' ? 0 : n.type === 'hwy' ? 16 : n.type === 'signal' ? m + 3.2 : m + 0.4;
     n.hwMax = m;
   }
 
   const links = [];
   for (const r of roads) {
-    for (const [A, B] of [[r.a, r.b], [r.b, r.a]]) {
+    for (const [A, B] of r.oneway ? [[r.a, r.b]] : [[r.a, r.b], [r.b, r.a]]) {
       const c = CLS[r.cls], dx = B.x - A.x, dy = B.y - A.y, D = Math.hypot(dx, dy), ux = dx / D, uy = dy / D;
       const L = {
-        i: links.length, road: r, from: A.i, to: B.i, cls: r.cls, lanes: c.lanes, v0: c.v0, med: c.med,
+        i: links.length, road: r, from: A.i, to: B.i, cls: r.cls, lanes: c.lanes, v0: c.v0, med: r.oneway ? -c.lanes * LW / 2 : c.med,
         ux, uy, nx: -uy, ny: ux, x0: A.x + ux * A.r, y0: A.y + uy * A.r, len: D - A.r - B.r,
         source: A.type === 'edge', sink: B.type === 'edge', grp: 0,
       };
       L.x1 = L.x0 + ux * L.len; L.y1 = L.y0 + uy * L.len;
-      links.push(L); A.outs.push(L.i); B.ins.push(L.i);
+      links.push(L); A.outs.push(L.i); B.ins.push(L.i); (r.links || (r.links = [])).push(L.i);
     }
   }
   const NL = links.length;
@@ -95,7 +254,8 @@ const SIM = (function () {
     if (n.type !== 'signal') continue;
     const w = [0, 0];
     for (const li of n.ins) {
-      const L = links[li]; L.grp = Math.abs(L.uy) > Math.abs(L.ux) ? 0 : 1;
+      const L = links[li], ref = links[n.ins[0]];
+      L.grp = LAY.relativeSignals ? (Math.abs(L.ux * ref.ux + L.uy * ref.uy) > 0.7071 ? 0 : 1) : (Math.abs(L.uy) > Math.abs(L.ux) ? 0 : 1);
       w[L.grp] += L.lanes * (L.cls === 'art' ? 1.5 : L.cls === 'ramp' ? 2.2 : 1);
     }
     n.C = 60; const G = n.C - 8;
@@ -231,31 +391,15 @@ const SIM = (function () {
   const src = n => links.find(L => nodes[L.from].name === n).i;
   const snk = n => links.find(L => nodes[L.to].name === n).i;
   const zone = f => links.filter(L => isMid(L) && f(nodes[L.from]) && f(nodes[L.to])).map(L => L.i);
-  const WEST = zone(n => n.x <= 480 && n.y >= 230), EAST = zone(n => n.x >= 700 && n.y >= 230);
-  const DEMAND = 1.2;
+  const edgeSrc = f => links.filter(L => L.source && f(nodes[L.from])).map(L => L.i);
+  const edgeSnk = f => links.filter(L => L.sink && f(nodes[L.to])).map(L => L.i);
+  const DEMAND = LAY.demandScale || 1;
   function G(vph, O, D) {
     const w = a => a.map(i => links[i].sink || links[i].source ? 1 : links[i].len);
     const Ow = w(O), Dw = w(D);
     return { rate: vph * DEMAND / 3600, O, Ow, Ot: Ow.reduce((a, b) => a + b, 0), D, Dw, Dt: Dw.reduce((a, b) => a + b, 0) };
   }
-  const GENS = [
-    G(1750, [src('HW0')], [snk('HW1')]),
-    G(1200, [src('HW1')], [snk('HW0')]),
-    G(380, [src('HW0')], EAST),
-    G(200, [src('HW1')], WEST),
-    G(820, WEST, EAST),
-    G(320, [src('W1'), src('W2')], EAST),
-    G(200, [src('S1')], EAST),
-    G(160, WEST, [snk('HW1'), snk('E1'), snk('E2')]),
-    G(160, EAST, WEST),
-    G(560, WEST, WEST),
-    G(640, EAST, EAST),
-    G(160, [src('E1'), src('E2')], EAST),
-    G(120, [src('E1'), src('E2'), src('S2')], WEST),
-    G(160, EAST, [snk('S2'), snk('E1'), snk('E2'), snk('HW0')]),
-    G(130, [src('S2')], EAST),
-    G(100, [src('W1'), src('W2')], WEST),
-  ];
+  const GENS = LAY.demand({ src, snk, zone, edgeSrc, edgeSnk, G, ring: links.filter(L => L.road.ring).map(L => L.i) });
   const KINDS = [
     { len: 4.5, w: 1.85, a: 1.5, b: 2.0, T: 1.3, p: 0.84, vf: 1 },
     { len: 5.4, w: 2.0, a: 1.3, b: 2.0, T: 1.4, p: 0.07, vf: 0.97 },
@@ -495,6 +639,8 @@ const SIM = (function () {
       w.delay += dt * q.length; w.delayLink[li] += dt * q.length; w.waiting += q.length;
     }
     if (w.crash && !w.crash.cleared && w.t >= w.crash.tClear) clearCrash(w);
+    // the drivers in the wreck are stuck until the tow truck arrives
+    if (w.crash && !w.crash.cleared) { w.delay += DT * w.crash.nv; w.delayLink[w.crash.l] += DT * w.crash.nv; }
     if (w.t >= w.nextEma) { updateEma(w); w.nextEma = w.t + 2; }
     if (w.t >= w.nextRT) { w.rt = routeTable(w.lcost); w.nextRT = w.t + 6; }
     if (w.t >= w.nextFlow) {
@@ -571,7 +717,9 @@ const SIM = (function () {
     return out;
   }
 
-  function applyCrash(w, li, k, s) {
+  // base (optional): the no-crash comparison city; the wrecked cars are removed from it too,
+  // so the only difference between the two cities is the blocked lane
+  function applyCrash(w, li, k, s, base) {
     const L = links[li], arr = w.lanes[li][k];
     const front = Math.min(L.len - 3, Math.max(20, s + 5)), CLEN = 18;
     const victims = [];
@@ -580,14 +728,22 @@ const SIM = (function () {
       if (c.s > front - CLEN - 3 && c.s - c.len < front + 2) { victims.push(c); arr.splice(i, 1); c.dead = true; }
     }
     w.cars = w.cars.filter(c => !c.dead);
+    if (base) {
+      const gone = new Set(victims.map(v => v.id));
+      for (const LA of base.lanes) for (const arr of LA) for (let i = arr.length - 1; i >= 0; i--) if (gone.has(arr[i].id)) arr.splice(i, 1);
+      base.cars = base.cars.filter(c => !gone.has(c.id));
+      base.nid = w.nid + 1; // keep new car ids in step
+    }
     const cr = { id: w.nid++, crash: true, l: li, k, s: front, v: 0, acc: 0, len: CLEN, wid: 2, conn: null, lcT: 1, dest: -1, next: -1, stuck: 0 };
     insertSorted(arr, cr); w.cars.push(cr);
     const [x, y] = lanePt(L, k, front - 5);
-    w.crash = { l: li, k, s: front, t0: w.t, tClear: w.t + CLEAR_T, id: cr.id, x, y, cleared: false, cols: victims.map(v => v.col).concat([0.3, 0.7]).slice(0, 2) };
+    w.crash = { nv: Math.max(2, victims.length), l: li, k, s: front, t0: w.t, tClear: w.t + CLEAR_T, id: cr.id, x, y, cleared: false, cols: victims.map(v => v.col).concat([0.3, 0.7]).slice(0, 2) };
     w.rub = rubberIntervals(x, y);
     // navigation apps learn about the crash quickly
     w.nextEma = w.t + 0.5; w.nextRT = w.t + 1;
   }
+  // give the no-crash comparison city the same route refresh the crash city gets, so only the crash differs
+  function syncBaseline(b) { b.nextEma = b.t + 0.5; b.nextRT = b.t + 1; }
   function clearCrash(w) {
     const cr = w.crash, arr = w.lanes[cr.l][cr.k], i = arr.findIndex(c => c.crash);
     if (i >= 0) arr.splice(i, 1);
@@ -619,13 +775,17 @@ const SIM = (function () {
         ? `${street} on-ramp · ${east ? 'eastbound' : 'westbound'}`
         : `${street} exit · from ${east ? 'westbound' : 'eastbound'}`;
     }
+    if (r.ring) { const f = nodes[L.from], cx = (LAY.world.x0 + LAY.world.x1) / 2, cy = (LAY.world.y0 + LAY.world.y1) / 2; return `${r.name} · ${((f.x - cx) * L.uy - (f.y - cy) * L.ux) > 0 ? 'clockwise' : 'anticlockwise'}`; }
     const dir = Math.abs(L.ux) > Math.abs(L.uy) ? (L.ux > 0 ? 'eastbound' : 'westbound') : (L.uy > 0 ? 'southbound' : 'northbound');
     return `${r.name} · ${dir}`;
   }
 
   return {
     LW, DT, CLEAR_T, RUN_T, CLS, KINDS, nodes, links, roads, moves, hw, laneOff, lanePt, sig, getConn, connAt,
-    newWorld, clone, step, applyCrash, carPoint, linkLabel, rnd,
+    newWorld, clone, step, applyCrash, syncBaseline, carPoint, linkLabel, rnd, layout: LAY,
   };
+  }
+
+  return { make, LAYOUTS, LW, DT, CLEAR_T, RUN_T, rnd, hw };
 })();
 if (typeof module !== 'undefined') module.exports = SIM;
