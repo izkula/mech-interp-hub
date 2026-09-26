@@ -96,6 +96,29 @@ button{font:inherit;color:inherit;touch-action:manipulation}
 #zoom{position:absolute;right:16px;top:64px;display:flex;flex-direction:column;gap:6px}
 #zoom .tool{padding:0;justify-content:center}
 .grip{display:none}
+.stat span{display:block;line-height:1.25}
+.chart{position:relative;height:96px;margin:4px 0 8px}
+.chart canvas{width:100%;height:100%;display:block}
+.explain{font-size:12.5px !important;color:var(--mute) !important;margin:0 0 10px !important}
+.speedrow{gap:8px}
+.seglabel{font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--mute)}
+#speedHint{margin-top:6px}
+details.how{margin:0 0 12px;font-size:13px;color:#c4cbd6}
+details.how summary{cursor:pointer;font-weight:700;color:var(--ink);font-size:13px}
+details.how p{margin:6px 0 0 !important;font-size:13px !important}
+#towScene{position:absolute;inset:0;z-index:20;background:#0a0e15;transition:opacity .6s}
+#towScene.out{opacity:0}
+#towStage{position:absolute;inset:0}
+.tow-canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.tow-hud{position:absolute;top:16px;left:16px;right:16px;display:flex;justify-content:space-between;align-items:flex-start;gap:12px;pointer-events:none}
+.tow-hud .tool{pointer-events:auto}
+.tow-road{font-size:18px;font-weight:800;margin-top:2px;text-shadow:0 2px 12px rgba(0,0,0,.8)}
+.tow-score{position:absolute;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);padding:12px 22px 12px;text-align:center;min-width:min(300px,calc(100% - 32px))}
+.tow-score .k{font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;opacity:.85}
+.tow-score .big{font-weight:900;font-size:56px;line-height:1;margin:6px 0 2px;font-family:'Overpass',sans-serif}
+.tow-score .unit{font-size:13px;font-weight:700;opacity:.9}
+.tow-grade{font-weight:900;font-size:18px;color:var(--amber-hi);max-height:0;opacity:0;overflow:hidden;transition:opacity .4s,max-height .4s,margin .4s}
+.tow-grade.show{opacity:1;max-height:40px;margin-top:6px}
 #toast{position:absolute;left:50%;top:78px;transform:translateX(-50%);background:#1b1206;color:var(--amber-hi);border:1px solid var(--amber);font-weight:800;font-size:13px;letter-spacing:.06em;text-transform:uppercase;padding:8px 14px;border-radius:8px;pointer-events:none;opacity:0;transition:opacity .25s;white-space:nowrap}
 #toast.show{opacity:1}
 #tip{position:absolute;pointer-events:none;background:rgba(10,13,19,.92);border:1px solid var(--line);border-radius:6px;padding:4px 8px;font-size:12px;font-weight:700;white-space:nowrap;transform:translate(12px,12px)}
@@ -124,6 +147,7 @@ button{font:inherit;color:inherit;touch-action:manipulation}
   #panel.min .result-plate .big{font-size:32px}
   #panel.min .result-plate .unit{display:none}
   #panel.min .stats{margin:6px 0 8px}
+  #panel.min .stat span br{display:none}
   .btn{height:46px}
   .seg button{height:38px;padding:0 13px}
   .tool{height:40px;min-width:40px}
@@ -140,6 +164,8 @@ button{font:inherit;color:inherit;touch-action:manipulation}
   .result-plate .big{font-size:42px}
   .stat b{font-size:16px}
   #toast{top:112px}
+  .tow-score .big{font-size:44px}
+  .chart{height:80px}
   #zoom{right:10px;top:112px}
 }
 @media (hover:none){.hint.keys{display:none}}
@@ -189,6 +215,16 @@ button{font:inherit;color:inherit;touch-action:manipulation}
   </div>
   <section id="panel" aria-live="polite"></section>
   <div id="toast" role="status"></div>
+  <div id="towScene" hidden>
+    <div id="towStage"></div>
+    <div class="tow-hud"><div><div class="eyebrow">Replay · clearing the wreck</div><div class="tow-road" id="towRoad"></div></div><button class="tool" id="bSkipTow">Skip</button></div>
+    <div class="plate tow-score" aria-live="polite">
+      <div class="k">Extra delay caused</div>
+      <div class="big num" id="towNum">0</div>
+      <div class="unit">vehicle-minutes</div>
+      <div class="tow-grade" id="towGrade"></div>
+    </div>
+  </div>
   <div id="tip" hidden></div>
 
   <div class="overlay" id="intro">
@@ -227,7 +263,8 @@ button{font:inherit;color:inherit;touch-action:manipulation}
         <li>40% of drivers use a navigation app. It re-plans their route every few seconds from live speeds and knows about your crash. Everyone else takes their usual route.</li>
       </ul>
       <h3>Scoring</h3>
-      <p>Extra delay = time lost by every driver (including cars waiting to enter the map) in the crash city, minus the same total in an identical city without the crash.</p>
+      <p>Every driver's lost time is added up: each minute spent crawling or stopped when they'd normally be moving. The game runs the exact same morning twice, once with your crash and once without, and your score is the difference in vehicle-minutes. That's why queues at ordinary red lights don't count.</p>
+      <p>The round keeps going after the tow truck because the queue takes a while to drain, and drivers are still losing time. Once the lane reopens the game fast-forwards and ends as soon as the jam has cleared (at most 8 minutes after the crash).</p>
       <div class="legend"><span><i style="background:#48d597"></i>Free flow</span><span><i style="background:#f6c343"></i>Slow</span><span><i style="background:#ff5c4d"></i>Jammed</span></div>
       <div class="row"><button class="btn go" id="bHelpClose">Back to the city</button></div>
     </div>
@@ -235,6 +272,7 @@ button{font:inherit;color:inherit;touch-action:manipulation}
 </div>
 
 <script src="sim.js"></script>
+<script src="tow.js"></script>
 <script src="game.js"></script>
 </body>
 </html>

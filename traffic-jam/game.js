@@ -38,14 +38,28 @@
     view.z = z; view.ox = W / 2 - cx * z; view.oy = H / 2 - cy * z;
     clampView(); bgDirty = true;
   }
+  // screen space covered by the panel / title sign, so the map can be scrolled out from under them
+  let ins = { l: 0, b: 0, t: 0 };
+  function updateInsets() {
+    const pnl = document.getElementById('panel'), brand = document.getElementById('brand');
+    if (!W || !pnl) return;
+    const cr = cv.getBoundingClientRect(), pr = pnl.getBoundingClientRect();
+    ins = { l: 0, b: 0, t: 0 };
+    if (pr.height > 0) {
+      if (pr.width > W * 0.55 || pr.height < H * 0.5) ins.b = Math.max(0, cr.bottom - pr.top + 8);
+      else ins.l = Math.max(0, pr.right - cr.left + 8);
+    }
+    if (W < 700 || H < 500) ins.t = Math.max(0, brand.getBoundingClientRect().bottom - cr.top);
+    clampView(); bgDirty = true;
+  }
   function clampView() {
-    const bw = WORLD.x1 - WORLD.x0, bh = WORLD.y1 - WORLD.y0;
+    const bw = WORLD.x1 - WORLD.x0, bh = WORLD.y1 - WORLD.y0, vw = W - ins.l, vh = H - ins.b - ins.t;
     view.z = Math.max(Math.min(W / bw, H / bh), Math.min(view.z, 9));
-    // when the city is narrower (or shorter) than the screen, centre it; otherwise keep it covering the screen
-    if (bw * view.z <= W) view.ox = (W - bw * view.z) / 2 - WORLD.x0 * view.z;
-    else view.ox = Math.min(-WORLD.x0 * view.z, Math.max(W - WORLD.x1 * view.z, view.ox));
-    if (bh * view.z <= H) view.oy = (H - bh * view.z) / 2 - WORLD.y0 * view.z;
-    else view.oy = Math.min(-WORLD.y0 * view.z, Math.max(H - WORLD.y1 * view.z, view.oy));
+    // when the city is smaller than the visible area, centre it there; otherwise let every edge reach the visible area
+    if (bw * view.z <= vw) view.ox = ins.l + (vw - bw * view.z) / 2 - WORLD.x0 * view.z;
+    else view.ox = Math.min(ins.l - WORLD.x0 * view.z, Math.max(W - WORLD.x1 * view.z, view.ox));
+    if (bh * view.z <= vh) view.oy = ins.t + (vh - bh * view.z) / 2 - WORLD.y0 * view.z;
+    else view.oy = Math.min(ins.t - WORLD.y0 * view.z, Math.max(H - ins.b - WORLD.y1 * view.z, view.oy));
   }
   function resize() {
     DPR = Math.min(2, window.devicePixelRatio || 1); cvRect = null;
@@ -53,6 +67,7 @@
     cv.width = Math.round(W * DPR); cv.height = Math.round(H * DPR);
     if (!userView) fitView(); else clampView();
     bgDirty = true;
+    if (typeof requestAnimationFrame === 'function') requestAnimationFrame(updateInsets);
   }
   let cam = null, fling = null;
   const zLimits = () => [Math.min(W / (WORLD.x1 - WORLD.x0), H / (WORLD.y1 - WORLD.y0)), 9];
@@ -672,6 +687,7 @@
   // ------------------------------------------------------------ game state
   let mode = 'intro', live = null, base = null, snap = null, sel = null, hover = null, crashT = 0;
   let runSpeed = 6, showSpeed = false, heat = null, peakStop = 0, lastResult = null, smoke = [];
+  let jam = 0, hist = [], drainedFor = 0, finishing = false;
   const SCOUT_SPEED = 1.6, BASE_SEED = 20260926;
   const store = loadStore();
   function loadStore() {
@@ -735,9 +751,10 @@
     grip.className = 'grip'; grip.id = 'bGrip';
     grip.setAttribute('aria-label', panelMin ? 'Expand panel' : 'Collapse panel');
     grip.setAttribute('aria-expanded', String(!panelMin));
-    grip.onclick = () => { panelMin = !panelMin; panel.classList.toggle('min', panelMin); grip.setAttribute('aria-expanded', String(!panelMin)); grip.setAttribute('aria-label', panelMin ? 'Expand panel' : 'Collapse panel'); };
+    grip.onclick = () => { panelMin = !panelMin; panel.classList.toggle('min', panelMin); requestAnimationFrame(updateInsets); grip.setAttribute('aria-expanded', String(!panelMin)); grip.setAttribute('aria-label', panelMin ? 'Expand panel' : 'Collapse panel'); };
     panel.prepend(grip);
     panel.classList.toggle('min', panelMin);
+    requestAnimationFrame(updateInsets);
   }
   function renderPanelBody() {
     if (mode === 'scout' || mode === 'intro') {
@@ -767,20 +784,25 @@
       const lb = laneLabel(sel);
       panel.innerHTML = `<div class="eyebrow keep" id="rStatus">Lane blocked</div>
         <h2>${esc(lb.road)}</h2>
-        <div class="timeline" aria-hidden="true"><div class="fill" id="rFill" style="width:0"></div><div class="tow" style="left:${S.CLEAR_T / S.RUN_T * 100}%"></div></div>
-        <div class="tl-labels"><span>Crash</span><span>Tow truck ${mmss(S.CLEAR_T)}</span><span>${mmss(S.RUN_T)}</span></div>
         <div class="stats keep">
-          <div class="stat"><b id="rDelay" style="color:var(--red)">0</b><span>extra veh-min</span></div>
-          <div class="stat"><b id="rStop">0</b><span>cars stopped</span></div>
-          <div class="stat"><b id="rClock">0:00</b><span>elapsed</span></div>
+          <div class="stat"><b id="rDelay" style="color:var(--red)">0</b><span>score so far<br>(minutes lost)</span></div>
+          <div class="stat"><b id="rStop">0</b><span>cars stuck in<br>your jam now</span></div>
+          <div class="stat"><b id="rClock">0:00</b><span>since the<br>crash</span></div>
         </div>
-        <div class="row keep" style="justify-content:space-between">
-          <div class="seg" role="group" aria-label="Simulation speed">
-            ${[[2, '2×'], [6, '6×'], [20, '20×'], [80, 'Skip']].map(([v, l]) => `<button data-sp="${v}" aria-pressed="${v === runSpeed}">${l}</button>`).join('')}
+        <div class="chart"><canvas id="rChart" aria-label="Chart of cars stuck in your jam over time"></canvas></div>
+        <p class="explain">Your score adds up every minute drivers lose compared with the exact same morning without your crash. It keeps counting after the tow truck because the queue takes a while to drain.</p>
+        <div class="row keep speedrow">
+          <span class="seglabel" id="speedLbl">Sim speed</span>
+          <div class="seg" role="group" aria-labelledby="speedLbl">
+            ${[[2, '2×'], [6, '6×'], [20, '20×'], [80, 'Skip']].map(([v, l]) => `<button data-sp="${v}" aria-pressed="${v === runSpeed}" title="${v === 80 ? 'Jump to the end' : v + ' simulated seconds per real second'}">${l}</button>`).join('')}
           </div>
-          <button class="btn ghost" id="bAbort" style="height:32px;padding:0 12px;font-size:12px">Give up</button>
-        </div>`;
-      panel.querySelectorAll('[data-sp]').forEach(b => b.onclick = () => { runSpeed = +b.dataset.sp; panel.querySelectorAll('[data-sp]').forEach(x => x.setAttribute('aria-pressed', x === b)); });
+          <button class="btn ghost" id="bAbort" style="height:32px;padding:0 12px;font-size:12px;margin-left:auto">Give up</button>
+        </div>
+        <div class="hint" id="speedHint">${runSpeed === 80 ? 'Skipping ahead' : runSpeed + '× = ' + runSpeed + ' seconds of traffic per real second'}</div>`;
+      panel.querySelectorAll('[data-sp]').forEach(b => b.onclick = () => {
+        runSpeed = +b.dataset.sp; panel.querySelectorAll('[data-sp]').forEach(x => x.setAttribute('aria-pressed', x === b));
+        $('speedHint').textContent = runSpeed === 80 ? 'Skipping ahead' : runSpeed + '× = ' + runSpeed + ' seconds of traffic per real second';
+      });
       $('bAbort').onclick = () => { newAttempt(); };
     } else if (mode === 'result') {
       const r = lastResult, gr = gradeOf(r.score);
@@ -794,14 +816,17 @@
         </div>
         <div class="grade"><div class="diamond" aria-hidden="true"></div><div><b>${gr[1]}</b>${isBest && store.attempts.length > 1 ? ' <span class="chip go">New best</span>' : ''}<div style="color:var(--mute);font-size:13px">${gr[2]}</div></div></div>
         <div class="stats">
-          <div class="stat"><b>${fmt(r.peak)}</b><span>peak extra cars stopped</span></div>
+          <div class="stat"><b>${fmt(r.peak)}</b><span>most cars stuck at once</span></div>
           <div class="stat"><b>${fmt(r.lost)}</b><span>trips not finished</span></div>
           <div class="stat"><b>${r.spread}</b><span>blocks jammed</span></div>
         </div>
+        <div class="chart"><canvas id="resChart" aria-label="Chart of cars stuck in your jam over time"></canvas></div>
         <p style="font-size:13px;color:var(--mute)">${esc(r.tip)}</p>
+        <details class="how"><summary>How the score works</summary><p>Every driver's lost time is added up: any minute spent crawling or stopped when they'd normally be moving. The game runs the exact same morning twice, once with your crash and once without, and your score is the difference. ${fmt(r.score)} vehicle-minutes is about ${(r.score * 1.3 / 60).toFixed(1)} hours of people's time, counting 1.3 people per car.</p></details>
         <div class="row keep"><button class="btn go" id="bAgain">Try another spot</button><button class="btn ghost" id="bShare">Copy result</button></div>
         <div class="history"><div class="eyebrow">Your attempts</div><ol>${hist}</ol></div>`;
       $('bAgain').onclick = newAttempt; $('bShare').onclick = share;
+      requestAnimationFrame(() => drawChart($('resChart'), r.hist, r.dur));
     }
   }
   function esc(s) { return String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c])); }
@@ -817,10 +842,43 @@
     if (mode !== 'run') return;
     const el = live.t - crashT, ex = (live.delay - base.delay) / 60;
     $('rDelay').textContent = fmt(Math.max(0, ex));
-    $('rStop').textContent = fmt(live.stopped) + (live.stopped > base.stopped ? ` (+${live.stopped - base.stopped})` : '');
+    $('rStop').textContent = fmt(Math.round(jam));
     $('rClock').textContent = mmss(el);
-    $('rFill').style.width = Math.min(100, el / S.RUN_T * 100) + '%';
-    $('rStatus').textContent = live.crash && !live.crash.cleared ? `Lane blocked · tow truck in ${mmss(S.CLEAR_T - el)}` : 'Lane cleared · watching the jam dissolve';
+    $('rStatus').textContent = live.crash && !live.crash.cleared ? `Lane blocked · tow truck in ${mmss(S.CLEAR_T - el)}` : 'Lane reopened · fast-forwarding while the queue drains';
+    drawChart($('rChart'), hist.concat([{ t: el, jam }]), el);
+  }
+
+  // cars stuck in your jam over time, with the tow truck marked
+  function drawChart(c, data, now) {
+    if (!c) return;
+    const r = window.devicePixelRatio || 1, w = c.clientWidth, h = c.clientHeight;
+    if (!w || !h) return;
+    if (c.width !== Math.round(w * r)) { c.width = Math.round(w * r); c.height = Math.round(h * r); }
+    const g = c.getContext('2d'); g.setTransform(r, 0, 0, r, 0, 0); g.clearRect(0, 0, w, h);
+    const top = 16, bot = h - 16, T = Math.max(S.RUN_T * 0.8, now || 0, ...data.map(d => d.t));
+    const ymax = Math.max(10, ...data.map(d => d.jam)) * 1.12;
+    const X = t => 2 + (w - 4) * t / T, Y = v => bot - (bot - top) * v / ymax;
+    g.font = '600 10.5px Overpass, system-ui, sans-serif'; g.textBaseline = 'alphabetic';
+    // grid baseline
+    g.strokeStyle = 'rgba(255,255,255,.12)'; g.lineWidth = 1; g.beginPath(); g.moveTo(0, bot + 0.5); g.lineTo(w, bot + 0.5); g.stroke();
+    // tow truck marker
+    const tx = X(S.CLEAR_T);
+    g.strokeStyle = 'rgba(246,166,35,.8)'; g.setLineDash([3, 3]); g.beginPath(); g.moveTo(tx + 0.5, top - 4); g.lineTo(tx + 0.5, bot); g.stroke(); g.setLineDash([]);
+    g.fillStyle = '#ffbd4a'; g.textAlign = tx > w - 70 ? 'right' : 'left'; g.fillText('Tow truck', tx + (tx > w - 70 ? -4 : 4), top + 2);
+    // area + line
+    if (data.length > 1) {
+      g.beginPath(); g.moveTo(X(data[0].t), bot); data.forEach(d => g.lineTo(X(d.t), Y(d.jam))); g.lineTo(X(data[data.length - 1].t), bot); g.closePath();
+      const gr = g.createLinearGradient(0, top, 0, bot); gr.addColorStop(0, 'rgba(255,92,77,.45)'); gr.addColorStop(1, 'rgba(255,92,77,.04)'); g.fillStyle = gr; g.fill();
+      g.beginPath(); data.forEach((d, i) => i ? g.lineTo(X(d.t), Y(d.jam)) : g.moveTo(X(d.t), Y(d.jam)));
+      g.strokeStyle = '#ff5c4d'; g.lineWidth = 2; g.lineJoin = 'round'; g.stroke();
+      const e = data[data.length - 1]; g.fillStyle = '#ff5c4d'; g.beginPath(); g.arc(X(e.t), Y(e.jam), 3, 0, 7); g.fill();
+      // label the peak
+      const pk = data.reduce((a, d) => d.jam > a.jam ? d : a, data[0]);
+      if (pk.jam >= 3) { g.fillStyle = '#e9edf3'; g.textAlign = X(pk.t) > w - 60 ? 'right' : 'left'; g.fillText('peak ' + Math.round(pk.jam), X(pk.t) + (X(pk.t) > w - 60 ? -5 : 5), Math.max(top + 12, Y(pk.jam) - 4)); }
+    }
+    g.fillStyle = '#97a1b2'; g.textAlign = 'left'; g.fillText('0:00', 0, h - 2);
+    g.textAlign = 'center'; g.fillText('Cars stuck in your jam · time since crash', w / 2, h - 2);
+    g.textAlign = 'right'; g.fillText(mmss(T), w, h - 2);
   }
 
   let toastT = 0;
@@ -832,7 +890,8 @@
     Snd.init();
     base = S.clone(live);
     S.applyCrash(live, sel.li, sel.k, sel.s);
-    crashT = live.t; peakStop = 0; heat = null; smoke = [];
+    crashT = live.t; peakStop = 0; heat = null; smoke = []; jam = 0; hist = [{ t: 0, jam: 0 }]; drainedFor = 0; finishing = false;
+    Tow.load().catch(() => {}); // fetch the 3D finale in the background
     mode = 'run'; hover = null; $('tip').hidden = true;
     Snd.crash(); toast('Crash! Lane blocked');
     const narrow = W < 700;
@@ -849,8 +908,9 @@
     const lb = laneLabel(sel);
     lastResult = {
       id: Date.now(), score: Math.round(score), road: lb.road + (lb.lanes > 1 ? ` (${lb.lane.toLowerCase()})` : ''),
-      x: live.crash.x, y: live.crash.y, peak: peakStop, lost: Math.max(0, base.arrived - live.arrived),
-      spread: diff.filter(d => d > 90).length,
+      x: live.crash.x, y: live.crash.y, peak: Math.round(peakStop), lost: Math.max(0, base.arrived - live.arrived),
+      spread: diff.filter(d => d > 90).length, hist: hist.concat([{ t: live.t - crashT, jam }]), dur: live.t - crashT,
+      color: CAR_COLS[Math.floor((live.crash.cols[0] || 0.3) * CAR_COLS.length) % CAR_COLS.length],
     };
     lastResult.tip = tipFor(lastResult, links[sel.li]);
     store.attempts.unshift({ id: lastResult.id, score: lastResult.score, road: lastResult.road, x: lastResult.x, y: lastResult.y });
@@ -858,6 +918,31 @@
     if (!store.best || lastResult.score > store.best.score) store.best = { id: lastResult.id, score: lastResult.score, road: lastResult.road };
     saveStore();
     renderPanel();
+    playFinale(lastResult);
+  }
+  async function playFinale(r) {
+    if (reduceMotion) return;
+    const ov = $('towScene');
+    let ok = !!window.THREE;
+    if (!ok) ok = await Promise.race([Tow.load().then(() => true, () => false), new Promise(res => setTimeout(() => res(false), 3000))]);
+    if (!ok || lastResult !== r || mode !== 'result') return;
+    const gr = gradeOf(r.score);
+    $('towRoad').textContent = r.road; $('towNum').textContent = '0'; $('towGrade').textContent = ''; $('towGrade').classList.remove('show');
+    ov.hidden = false; ov.classList.remove('out');
+    let handle = null;
+    const close = () => { ov.classList.add('out'); setTimeout(() => { ov.hidden = true; }, 600); };
+    $('bSkipTow').onclick = () => { if (handle) handle.skip(); else close(); };
+    try {
+      handle = Tow.play({
+        host: $('towStage'), road: r.road.split(' · ')[0], color: parseInt(r.color.slice(1), 16),
+        onTick: p => {
+          const k = Math.min(1, Math.max(0, (p - 0.12) / 0.62)), e = 1 - Math.pow(1 - k, 3);
+          $('towNum').textContent = fmt(r.score * e);
+          if (p > 0.78 && !$('towGrade').textContent) { $('towGrade').textContent = gr[1]; $('towGrade').classList.add('show'); }
+        },
+        onDone: () => { $('towNum').textContent = fmt(r.score); close(); },
+      });
+    } catch (e) { close(); }
   }
   function tipFor(r, L) {
     if (r.score < 40 && L.lanes > 1) return 'The other lane soaked it up. Try a spot where there is only one lane, or where drivers have no other way to go.';
@@ -1031,8 +1116,14 @@
       S.step(live); if (base) S.step(base);
       acc -= S.DT; n++;
       if (mode === 'run') {
-        peakStop = Math.max(peakStop, live.stopped - base.stopped);
-        if (live.t - crashT >= S.RUN_T) { acc = 0; finish(); break; }
+        const el = live.t - crashT;
+        // cars stuck because of the crash: stopped cars minus stopped cars in the no-crash city, smoothed over ~8 s
+        jam += (Math.max(0, live.stopped - base.stopped) - jam) * S.DT / 8;
+        peakStop = Math.max(peakStop, jam);
+        if (el - hist[hist.length - 1].t >= 4) hist.push({ t: el, jam });
+        // after the tow truck, stop once the queue has drained (or at the time limit)
+        if (live.crash && live.crash.cleared) drainedFor = jam < Math.max(3, peakStop * 0.06) ? drainedFor + S.DT : 0;
+        if (el >= S.RUN_T || drainedFor >= 20) { acc = 0; finish(); break; }
       }
       if (performance.now() - t0 > budget) { acc = Math.min(acc, S.DT * 4); break; }
     }
@@ -1043,15 +1134,16 @@
     stepCam(dt);
     if (mode === 'intro' || mode === 'scout') advance(dt * SCOUT_SPEED);
     else if (mode === 'run') {
-      advance(dt * runSpeed);
-      if (live.crash && live.crash.cleared && !clearedToast) { clearedToast = true; toast('Tow truck cleared the lane'); }
+      const draining = live.crash && live.crash.cleared;
+      advance(dt * (draining ? Math.max(runSpeed, 20) : runSpeed));
+      if (draining && !clearedToast) { clearedToast = true; toast('Tow truck cleared the lane'); }
       // smoke particles
       if (!reduceMotion && live.crash && !live.crash.cleared && live.t - crashT < 90 && Math.random() < 0.6) {
         smoke.push({ x: live.crash.x + 2 + (Math.random() - 0.5) * 2, y: live.crash.y + (Math.random() - 0.5) * 2, vx: 1.4 + Math.random(), vy: -0.8 - Math.random() * 0.6, r: 1.5 + Math.random() * 1.5, life: 1 });
       }
       honkT -= dt;
-      const extra = live.stopped - base.stopped;
-      if (honkT <= 0 && extra > 15 && runSpeed <= 20) { if (Math.random() < Math.min(0.9, extra / 120)) Snd.honk(); honkT = 0.5 + Math.random() * 1.5; }
+      const extra = jam;
+      if (mode === 'run' && honkT <= 0 && extra > 15 && runSpeed <= 20) { if (Math.random() < Math.min(0.9, extra / 120)) Snd.honk(); honkT = 0.5 + Math.random() * 1.5; }
     }
     for (const p of smoke) { p.x += p.vx * dt * 3; p.y += p.vy * dt * 3; p.r += dt * 3; p.life -= dt * 0.35; }
     smoke = smoke.filter(p => p.life > 0);
