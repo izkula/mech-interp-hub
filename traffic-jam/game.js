@@ -835,7 +835,6 @@
   let panelMin = false;
   function renderPanel() {
     renderPanelBody();
-    panel.scrollTop = 0;
     const b = document.createElement('button');
     b.className = 'collapse'; b.id = 'bCollapse';
     panel.prepend(b);
@@ -1027,7 +1026,6 @@
     lastResult = {
       id: Date.now(), score: Math.round(score), road: lb.road + (lb.lanes > 1 ? ` (${lb.lane.toLowerCase()})` : ''),
       x: live.crash.x, y: live.crash.y, peak: Math.round(peakStop), lost: Math.max(0, base.arrived - live.arrived),
-      cls: links[sel.li].cls, bridge: !!links[sel.li].road.bridge,
       spread: diff.filter(d => d > 90).length, hist: hist.concat([{ t: live.t - crashT, jam }]), dur: live.t - crashT,
       color: CAR_COLS[Math.floor((live.crash.cols[0] || 0.3) * CAR_COLS.length) % CAR_COLS.length],
     };
@@ -1058,7 +1056,7 @@
     $('bSkipTow').onclick = () => { if (handle) handle.skip(); else close(); };
     try {
       handle = Tow.play({
-        host: $('towStage'), road: r.road.split(' · ')[0], color: parseInt(r.color.slice(1), 16), cls: r.cls, bridge: r.bridge, seed: r.id,
+        host: $('towStage'), road: r.road.split(' · ')[0], color: parseInt(r.color.slice(1), 16),
         onTick: p => {
           const k = Math.min(1, Math.max(0, (p - 0.12) / 0.62)), e = 1 - Math.pow(1 - k, 3);
           $('towNum').textContent = fmt(r.score * e);
