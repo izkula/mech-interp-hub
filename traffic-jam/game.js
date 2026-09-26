@@ -17,6 +17,7 @@
   let W = 0, H = 0, DPR = 1, userView = false, bgDirty = true;
   const view = { z: 1, ox: 0, oy: 0 };
   const bg = document.createElement('canvas');
+  let bgView = null, lastWheel = 0;
   const WORLD = { x0: -20, y0: 10, x1: 1020, y1: 650 };
   function fitView() {
     const bw = WORLD.x1 - WORLD.x0, bh = WORLD.y1 - WORLD.y0;
@@ -451,8 +452,15 @@
   function drawWorld(w, now) {
     const g = ctx;
     g.setTransform(1, 0, 0, 1, 0, 0);
-    if (bgDirty) { drawStatic(); bgDirty = false; }
-    g.drawImage(bg, 0, 0);
+    const moving = ptrs.size > 0 || cam || now - lastWheel < 200;
+    if (bgDirty && (!moving || !bgView || bg.width !== cv.width || bg.height !== cv.height)) { drawStatic(); bgView = { z: view.z, ox: view.ox, oy: view.oy }; bgDirty = false; }
+    if (bgDirty) {
+      const k = view.z / bgView.z;
+      g.fillStyle = P.ground; g.fillRect(0, 0, cv.width, cv.height);
+      g.setTransform(k, 0, 0, k, DPR * (view.ox - bgView.ox * k), DPR * (view.oy - bgView.oy * k));
+      g.drawImage(bg, 0, 0);
+      g.setTransform(1, 0, 0, 1, 0, 0);
+    } else g.drawImage(bg, 0, 0);
     g.setTransform(DPR * view.z, 0, 0, DPR * view.z, DPR * view.ox, DPR * view.oy);
     const z = view.z, detail = z > 1.3, vs = Math.min(1.45, Math.max(1, 1.9 / z));
 
@@ -655,8 +663,8 @@
   const fmt = v => Math.round(v).toLocaleString('en-US');
 
   // ------------------------------------------------------------ picking
-  function pick(sx, sy) {
-    const [wx, wy] = toWorld(sx, sy), tol = Math.max(LW * 0.7, 10 / view.z);
+  function pick(sx, sy, touch) {
+    const [wx, wy] = toWorld(sx, sy), tol = Math.max(LW * 0.7, (touch ? 26 : 10) / view.z);
     let best = null, bd = tol;
     for (const L of links) {
       const rx = wx - L.x0, ry = wy - L.y0, s = rx * L.ux + ry * L.uy;
@@ -679,42 +687,53 @@
   // ------------------------------------------------------------ panel
   const panel = $('panel');
   function hazardIcon() { return '<svg class="haz" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2 19 18H1z" fill="none" stroke="#1b1206" stroke-width="2.2" stroke-linejoin="round"/><path d="M10 8v4.5" stroke="#1b1206" stroke-width="2.2" stroke-linecap="round"/><circle cx="10" cy="15.2" r="1.2" fill="#1b1206"/></svg>'; }
+  let panelMin = false;
   function renderPanel() {
+    renderPanelBody();
+    const grip = document.createElement('button');
+    grip.className = 'grip'; grip.id = 'bGrip';
+    grip.setAttribute('aria-label', panelMin ? 'Expand panel' : 'Collapse panel');
+    grip.setAttribute('aria-expanded', String(!panelMin));
+    grip.onclick = () => { panelMin = !panelMin; panel.classList.toggle('min', panelMin); grip.setAttribute('aria-expanded', String(!panelMin)); grip.setAttribute('aria-label', panelMin ? 'Expand panel' : 'Collapse panel'); };
+    panel.prepend(grip);
+    panel.classList.toggle('min', panelMin);
+  }
+  function renderPanelBody() {
     if (mode === 'scout' || mode === 'intro') {
       const best = store.best ? `<div class="hint">Your best: <b class="num">${fmt(store.best.score)}</b> vehicle-min on ${esc(store.best.road)}</div>` : '';
       if (!sel) {
         panel.innerHTML = `<div class="eyebrow">Step 1 of 2 · Scout</div>
-          <h2>Pick a lane to crash in</h2>
-          <p>Click or tap any lane to see how busy it is. Bridges, ramps and corners where queues back up are good places to start.</p>
+          <h2 class="keep">Pick a lane to crash in</h2>
+          <p>Tap any lane to see how busy it is. Pinch to zoom, drag to pan. Bridges, ramps and corners where queues back up are good places to start.</p>
           <div class="legend"><span><i style="background:#ff3b30;box-shadow:0 0 8px #ff3b30"></i>Bright tail lights: braking</span></div>
           ${best}`;
       } else {
         const lb = laneLabel(sel);
         panel.innerHTML = `<div class="eyebrow">Step 2 of 2 · Crash site</div>
-          <h2>${esc(lb.road)}</h2>
+          <h2 class="keep">${esc(lb.road)}</h2>
           <div class="row"><span class="chip amber">${lb.lane}${lb.lanes > 1 ? ' of ' + lb.lanes : ''}</span><span class="chip">${lb.lanes > 1 ? 'Other lane stays open' : 'Blocks the road in this direction'}</span></div>
           <div class="stats">
             <div class="stat"><b id="sFlow">–</b><span>cars / min</span></div>
             <div class="stat"><b id="sSpeed">–</b><span>avg km/h</span></div>
             <div class="stat"><b id="sCars">–</b><span>cars on block</span></div>
           </div>
-          <div class="row"><button class="btn crash" id="bCrash">${hazardIcon()}Crash here</button><button class="btn ghost" id="bCancel">Cancel</button></div>
+          <div class="row keep"><button class="btn crash" id="bCrash">${hazardIcon()}Crash here</button><button class="btn ghost" id="bCancel">Cancel</button></div>
           <div class="hint keys">Press <kbd>Enter</kbd> to crash, <kbd>Esc</kbd> to cancel.</div>`;
         $('bCrash').onclick = doCrash; $('bCancel').onclick = () => { sel = null; renderPanel(); };
         updateSelStats();
       }
     } else if (mode === 'run') {
       const lb = laneLabel(sel);
-      panel.innerHTML = `<div class="eyebrow" id="rStatus">Lane blocked</div>
+      panel.innerHTML = `<div class="eyebrow keep" id="rStatus">Lane blocked</div>
         <h2>${esc(lb.road)}</h2>
         <div class="timeline" aria-hidden="true"><div class="fill" id="rFill" style="width:0"></div><div class="tow" style="left:${S.CLEAR_T / S.RUN_T * 100}%"></div></div>
         <div class="tl-labels"><span>Crash</span><span>Tow truck ${mmss(S.CLEAR_T)}</span><span>${mmss(S.RUN_T)}</span></div>
-        <div class="stats">
+        <div class="stats keep">
           <div class="stat"><b id="rDelay" style="color:var(--red)">0</b><span>extra veh-min</span></div>
           <div class="stat"><b id="rStop">0</b><span>cars stopped</span></div>
           <div class="stat"><b id="rClock">0:00</b><span>elapsed</span></div>
         </div>
-        <div class="row" style="justify-content:space-between">
+        <div class="row keep" style="justify-content:space-between">
           <div class="seg" role="group" aria-label="Simulation speed">
             ${[[2, '2×'], [6, '6×'], [20, '20×'], [80, 'Skip']].map(([v, l]) => `<button data-sp="${v}" aria-pressed="${v === runSpeed}">${l}</button>`).join('')}
           </div>
@@ -727,7 +746,7 @@
       const isBest = store.best && store.best.id === r.id;
       const hist = store.attempts.slice(0, 6).map(a => `<li class="${store.best && a.id === store.best.id ? 'best' : ''}"><span>${esc(a.road)}</span><span class="num">${fmt(a.score)}</span></li>`).join('');
       panel.innerHTML = `<div class="eyebrow">${esc(r.road)}</div>
-        <div class="plate result-plate">
+        <div class="plate result-plate keep">
           <div class="k">Extra delay caused</div>
           <div class="big">${fmt(r.score)}</div>
           <div class="unit">vehicle-minutes · about ${(r.score * 1.3 / 60).toFixed(1)} person-hours</div>
@@ -739,7 +758,7 @@
           <div class="stat"><b>${r.spread}</b><span>blocks jammed</span></div>
         </div>
         <p style="font-size:13px;color:var(--mute)">${esc(r.tip)}</p>
-        <div class="row"><button class="btn go" id="bAgain">Try another spot</button><button class="btn ghost" id="bShare">Copy result</button></div>
+        <div class="row keep"><button class="btn go" id="bAgain">Try another spot</button><button class="btn ghost" id="bShare">Copy result</button></div>
         <div class="history"><div class="eyebrow">Your attempts</div><ol>${hist}</ol></div>`;
       $('bAgain').onclick = newAttempt; $('bShare').onclick = share;
     }
@@ -769,6 +788,7 @@
   // ------------------------------------------------------------ flow
   function doCrash() {
     if (!sel || mode !== 'scout') return;
+    Snd.init();
     base = S.clone(live);
     S.applyCrash(live, sel.li, sel.k, sel.s);
     crashT = live.t; peakStop = 0; heat = null; smoke = [];
@@ -821,7 +841,12 @@
   // ------------------------------------------------------------ sound
   const Snd = {
     ac: null, on: true,
-    init() { if (this.ac) return; try { this.ac = new (window.AudioContext || window.webkitAudioContext)(); } catch (e) { this.ac = null; } },
+    init() {
+      if (!this.ac) { try { this.ac = new (window.AudioContext || window.webkitAudioContext)(); } catch (e) { this.ac = null; } }
+      if (this.ac && this.ac.state === 'suspended') this.ac.resume().catch(() => {});
+      // iOS unlocks Web Audio only after a sound starts inside a tap
+      if (this.ac && !this.unlocked) { try { const b = this.ac.createBuffer(1, 1, 22050), src = this.ac.createBufferSource(); src.buffer = b; src.connect(this.ac.destination); src.start(0); this.unlocked = true; } catch (e) { /* ignore */ } }
+    },
     noise(dur) { const ac = this.ac, b = ac.createBuffer(1, ac.sampleRate * dur, ac.sampleRate), d = b.getChannelData(0); for (let i = 0; i < d.length; i++) d[i] = (Math.random() * 2 - 1) * Math.pow(1 - i / d.length, 2); const s = ac.createBufferSource(); s.buffer = b; return s; },
     crash() {
       if (!this.on || !this.ac) return; const ac = this.ac, t = ac.currentTime;
@@ -879,23 +904,32 @@
     ptrs.delete(e.pointerId);
     if (ptrs.size < 2) pinch = null;
     if (ptrs.size === 0) { drag = null; cv.classList.remove('panning'); }
-    if (wasClick && e.type === 'pointerup') onTap(e.offsetX, e.offsetY);
+    if (wasClick && e.type === 'pointerup') onTap(e.offsetX, e.offsetY, e.pointerType !== 'mouse');
   }
   cv.addEventListener('pointerup', endPtr);
   cv.addEventListener('pointercancel', endPtr);
   cv.addEventListener('pointerleave', () => { if (!ptrs.size) { hover = null; $('tip').hidden = true; } });
   cv.addEventListener('wheel', e => {
-    e.preventDefault(); cam = null;
+    e.preventDefault(); cam = null; lastWheel = performance.now();
     const f = Math.exp(-e.deltaY * (e.deltaMode === 1 ? 0.05 : 0.0016));
     const wx = (e.offsetX - view.ox) / view.z, wy = (e.offsetY - view.oy) / view.z;
     view.z *= f; clampView();
     view.ox = e.offsetX - wx * view.z; view.oy = e.offsetY - wy * view.z; clampView();
     userView = true; bgDirty = true;
   }, { passive: false });
-  function onTap(x, y) {
+  function onTap(x, y, touch) {
     if (mode !== 'scout') return;
-    const p = pick(x, y);
+    const p = pick(x, y, touch);
+    if (!p && touch && sel) return; // a stray tap on a phone shouldn't lose the selection
     sel = p; renderPanel();
+    if (sel) keepVisible(sel.x, sel.y);
+  }
+  // on phones the panel covers the lower map; slide the chosen lane into view above it
+  function keepVisible(wx, wy) {
+    const sy = wy * view.z + view.oy, sx = wx * view.z + view.ox, top = panel.getBoundingClientRect().top - cv.getBoundingClientRect().top;
+    if (sy < top - 30 && sy > 90 && sx > 20 && sx < W - 20) return;
+    const cy = wy + (H / 2 - Math.max(100, top * 0.5)) / view.z;
+    flyTo(wx, cy, view.z);
   }
   window.addEventListener('keydown', e => {
     if (!$('help').hidden && e.key === 'Escape') { $('help').hidden = true; return; }
@@ -903,6 +937,8 @@
     if (mode === 'scout' && sel && e.key === 'Escape') { sel = null; renderPanel(); }
   });
 
+  for (const ev of ['gesturestart', 'gesturechange']) document.addEventListener(ev, e => e.preventDefault());
+  document.addEventListener('touchend', () => Snd.ac && Snd.on && Snd.init(), { passive: true });
   $('bStart').onclick = () => { Snd.init(); $('intro').hidden = true; mode = 'scout'; renderPanel(); };
   $('bHelp').onclick = () => { $('help').hidden = false; $('bHelpClose').focus(); };
   $('bHelpClose').onclick = () => { $('help').hidden = true; };
@@ -950,6 +986,8 @@
     requestAnimationFrame(frame);
   }
 
+  // test hook: screen position of the middle of a named link (used by automated checks)
+  window.__snarlDebug = { screenOfLabel(lbl) { const L = links.find(l => S.linkLabel(l) === lbl); if (!L) return null; const [x, y] = S.lanePt(L, 0, L.len / 2); return [x * view.z + view.ox, y * view.z + view.oy]; } };
   window.addEventListener('resize', resize);
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => { bgDirty = true; });
   boot(); resize(); renderPanel();

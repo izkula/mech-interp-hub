@@ -2,7 +2,12 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Snarl">
+<meta name="theme-color" content="#0f141c">
 <title>Snarl</title>
 <meta name="description" content="Stage one fender-bender in a simulated rush-hour city and see how big a traffic jam you can cause.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,9 +24,9 @@
 *{box-sizing:border-box}
 [hidden]{display:none!important}
 html,body{height:100%}
-body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 'Overpass',system-ui,-apple-system,'Segoe UI',sans-serif;overflow:hidden;-webkit-font-smoothing:antialiased}
-button{font:inherit;color:inherit}
-#app{position:fixed;left:0;right:0;top:env(safe-area-inset-top,0px);bottom:env(safe-area-inset-bottom,0px);overflow:hidden}
+body{-webkit-text-size-adjust:100%;text-size-adjust:100%;-webkit-tap-highlight-color:transparent;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none;margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 'Overpass',system-ui,-apple-system,'Segoe UI',sans-serif;overflow:hidden;-webkit-font-smoothing:antialiased}
+button{font:inherit;color:inherit;touch-action:manipulation}
+#app{position:fixed;left:env(safe-area-inset-left,0px);right:env(safe-area-inset-right,0px);top:env(safe-area-inset-top,0px);bottom:env(safe-area-inset-bottom,0px);overflow:hidden}
 #map{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:none;cursor:crosshair}
 #map.panning{cursor:grabbing}
 .num{font-family:'Overpass Mono',ui-monospace,monospace;font-variant-numeric:tabular-nums}
@@ -86,6 +91,7 @@ button{font:inherit;color:inherit}
 .history li.best .num{color:var(--amber-hi)}
 .history li span:first-child{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 
+.grip{display:none}
 #toast{position:absolute;left:50%;top:78px;transform:translateX(-50%);background:#1b1206;color:var(--amber-hi);border:1px solid var(--amber);font-weight:800;font-size:13px;letter-spacing:.06em;text-transform:uppercase;padding:8px 14px;border-radius:8px;pointer-events:none;opacity:0;transition:opacity .25s;white-space:nowrap}
 #toast.show{opacity:1}
 #tip{position:absolute;pointer-events:none;background:rgba(10,13,19,.92);border:1px solid var(--line);border-radius:6px;padding:4px 8px;font-size:12px;font-weight:700;white-space:nowrap;transform:translate(12px,12px)}
@@ -103,6 +109,21 @@ button{font:inherit;color:inherit}
 .legend{display:flex;gap:16px;flex-wrap:wrap;font-size:12.5px;color:var(--mute);margin-top:6px}
 .legend i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;vertical-align:-1px}
 
+@media (max-width:640px),(max-height:500px){
+  .grip{display:block;position:absolute;top:0;left:50%;transform:translateX(-50%);width:84px;height:22px;border:0;background:transparent;cursor:pointer;padding:0}
+  .grip::before{content:"";display:block;width:40px;height:5px;border-radius:3px;background:rgba(255,255,255,.28);margin:8px auto 0}
+  #app #panel{padding-top:24px}
+  #panel.min{padding-bottom:10px}
+  #panel.min > :not(.keep):not(.grip){display:none}
+  #panel.min h2{margin:2px 0 4px}
+  #panel.min .result-plate{margin:4px 0 10px;padding:8px 12px}
+  #panel.min .result-plate .big{font-size:32px}
+  #panel.min .result-plate .unit{display:none}
+  #panel.min .stats{margin:6px 0 8px}
+  .btn{height:46px}
+  .seg button{height:38px;padding:0 13px}
+  .tool{height:40px;min-width:40px}
+}
 @media (max-width:640px){
   #brand{top:10px;left:10px;padding:8px 12px 6px;gap:10px}
   #brand h1{font-size:20px}
@@ -117,6 +138,22 @@ button{font:inherit;color:inherit}
   #toast{top:112px}
 }
 @media (hover:none){.hint.keys{display:none}}
+@media (max-height:500px) and (min-width:560px){
+  #brand{top:8px;left:8px;padding:6px 12px 5px}
+  #brand h1{font-size:18px}
+  #brand .sub{font-size:9px}
+  #brand .clock{font-size:12px}
+  #tools{top:8px;right:8px}
+  #tools .lbl{display:none}
+  #panel{left:8px;bottom:8px;top:auto;width:min(340px,48%);max-height:calc(100% - 64px);padding:18px 14px 12px}
+  #panel h2{font-size:17px}
+  #panel p{font-size:13px}
+  .stats{margin:8px 0 10px}
+  .result-plate .big{font-size:36px}
+  .card{padding:16px}
+  .card .plate h1{font-size:24px}
+  #toast{top:56px}
+}
 @media (max-width:400px){.btn{padding:0 12px;font-size:13px;letter-spacing:.04em}}
 @media (prefers-reduced-motion:reduce){#toast{transition:none}}
 </style>
