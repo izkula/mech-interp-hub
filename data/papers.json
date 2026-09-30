@@ -1,6 +1,84 @@
 {
-  "lastUpdated": "2026-09-29",
+  "lastUpdated": "2026-09-30",
   "papers": [
+    {
+      "id": "arxiv-2609-37680v1",
+      "title": "When Models Don't Manipulate Manifolds: The Geometry of a Comparison Task",
+      "authors": "Sai Sumedh R. Hindupur, Hadas Orgad, Thomas Fel, Demba Ba",
+      "date": "2026-09-29",
+      "url": "https://arxiv.org/abs/2609.37680v1",
+      "abstract": "One of the current premises of mechanistic interpretability research is that detailed accounts of the geometry of neural network representations can tell us how models perform computations, and how to effectively intervene on them. While low dimensional manifolds have been observed for multiple concepts in the literature (e.g. numbers encoded on helices, days of the week on a circle, ...), with structure believed to reflect properties of data and tasks, the extent to which models rely on them fo",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2609-36813v1",
+      "title": "RESCUE: Repairing Language Model Errors to Sparse Circuits via Reinforcement Learning",
+      "authors": "Chuanpu Liu, Miao Yu, Yikai Cai, Yuanhe Zhang, Zhenhong Zhou, et al.",
+      "date": "2026-09-29",
+      "url": "https://arxiv.org/abs/2609.36813v1",
+      "abstract": "Large language models (LLMs) exhibit strong general capabilities that mechanistic interpretability has attributed to sparse computational circuits. However, existing circuit studies emphasize preserving functionality or explaining safety, leaving the mechanisms underlying failures across a broader range of tasks largely unexplored. Extending circuit analysis from abilities to errors, we explore the perspective that such failures may likewise arise from erroneous internal computations and that ta",
+      "tags": [
+        "circuits",
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2609-37857v1",
+      "title": "Active Budget Can Kill Sensitivity: Diagnosing and Repairing TopK Sparse Autoencoder Reliability",
+      "authors": "Zhenting Huang, Junnan Liu, Qianren Mao, Zhixing Tan, Bo Jiang",
+      "date": "2026-09-29",
+      "url": "https://arxiv.org/abs/2609.37857v1",
+      "abstract": "Sparse autoencoders (SAEs) are increasingly scaled to wider dictionaries to recover fine-grained structure from large language model activations. However, a feature is useful for interpretation only if it remains a stable unit of analysis when the same meaning is expressed in different surface forms. We study this reliability question for TopK SAEs via feature sensitivity. Experiments demonstrate that scaling selectively reduces the sensitivity of rare features, while common features remain comp",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2609-37737v1",
+      "title": "Where Do LLMs Decide to Break the Rules? Mechanistic Localization of Prompt Injection Compliance",
+      "authors": "Rui Wen, Jiayang Liu, Zeyu Yang, Jun Sakuma, Lu Sun",
+      "date": "2026-09-29",
+      "url": "https://arxiv.org/abs/2609.37737v1",
+      "abstract": "When a prompt injection attack succeeds, a Large Language Model (LLM) abandons its assigned system role to comply with an adversarial instruction. While prior work has extensively quantified how often this occurs, we ask a more fundamental question: where inside the network does the model actually decide to break the rules? Using layer-by-layer causal activation patching across five models (4B to 32B parameters), we find a clear dissociation: attack information is linearly decodable from the fir",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2609-37046v1",
+      "title": "Speed in the Blind Spot: An Interpretability Analysis of Dynamic Perception in VLMs for Autonomous Driving",
+      "authors": "Katharina Winter, Stefan Englmeier, Fabian B. Flohr",
+      "date": "2026-09-29",
+      "url": "https://arxiv.org/abs/2609.37046v1",
+      "abstract": "Vision-Language Models are increasingly used in autonomous-driving systems, yet their ability to recover dynamic physical state from visual input remains insufficiently characterized. We study velocity understanding as a controlled diagnostic across three tasks: surrounding-agent speed, current ego speed, and short-horizon future ego-speed proposal. On nuScenes, we evaluate open-weight general-purpose and PhysicalAI VLMs, together with the driving-oriented Alpamayo-1.5 Vision-Language-Action mod",
+      "tags": [
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2609-36557v1",
+      "title": "How Medical VLMs Underutilize Their Vision Encoders: A Dermatology Perspective",
+      "authors": "Janet Wang, Yunbei Zhang, Xiao Wang, Jihun Hamm",
+      "date": "2026-09-29",
+      "url": "https://arxiv.org/abs/2609.36557v1",
+      "abstract": "Medical Vision-Language Models (VLMs) show significant promise for clinical image understanding, offering accurate diagnosis with interpretable reasoning. However, a critical performance gap exists between their strong vision encoders and the full multimodal model: in dermatology, the MedSigLIP encoder outperforms MedGemma by an average of 10.26 percentage points even when both use zero target-task labels; few-shot linear probing provides further evidence of strong visual representations. This g",
+      "tags": [
+        "probing",
+        "vision",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2609-35686v1",
       "title": "Rethinking Circuit Evaluation: Do Circuits Explain Model Errors?",
@@ -172,6 +250,34 @@
       "abstract": "Reliable AI safeguards require both control mechanisms that reduce unsafe behavior and monitoring mechanisms that detect safety risks during model interactions. Established behavioral safeguards include alignment methods that optimize model outputs and text monitors that assess interaction text. Representation engineering instead reads or modifies internal model states, but the relative strengths of these approaches remain unclear because they are often evaluated under different settings. We pre",
       "tags": [
         "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2609-36265v1",
+      "title": "In-Context Learning Amplifies a Latent Symbolic Circuit",
+      "authors": "Melissa Wessel",
+      "date": "2026-09-28",
+      "url": "https://arxiv.org/abs/2609.36265v1",
+      "abstract": "Large language models can learn abstract rules from just a few in-context examples, but how their internal mechanisms activate as examples accumulate is not well understood. We trace a three-stage symbolic reasoning circuit (abstraction, induction, retrieval) across shot counts in three model families and find it is detectable and functional well before the model achieves high accuracy. Per-head causal contribution grows up to 8x from 1- to 10-shot, and cross-shot activation patching raises accu",
+      "tags": [
+        "circuits",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2609-36294v1",
+      "title": "When Trees Are Not Enough: Learning Mixed-Topology Feature Graphs with Adaptive Graph Sparse Autoencoders",
+      "authors": "Xiaozuo Shen, Yifei Cai, Tian Tan, Rui Ning, Chunsheng Xin, et al.",
+      "date": "2026-09-28",
+      "url": "https://arxiv.org/abs/2609.36294v1",
+      "abstract": "Sparse autoencoders (SAEs) expose interpretable features in large language model activations, yet existing structured SAEs impose single-parent trees or forests, while post-hoc graphs permit multiple parents but neither guide feature learning nor ensure reliable relation recovery. We introduce the Adaptive Graph Sparse Autoencoder (AG-SAE), a structure-guided training paradigm that treats each feature's complete parent set as an atomic structural hypothesis and lets evidence select zero, one, or",
+      "tags": [
+        "SAE",
+        "features"
       ],
       "source": "arXiv",
       "featured": false
