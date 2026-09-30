@@ -5,9 +5,51 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 29 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 30 Sep 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>When Models Don&#x27;t Manipulate Manifolds: The Geometry of a Comparison Task</title>
+      <link>https://arxiv.org/abs/2609.37680v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Sai Sumedh R. Hindupur, Hadas Orgad, Thomas Fel, Demba Ba</p><p>One of the current premises of mechanistic interpretability research is that detailed accounts of the geometry of neural network representations can tell us how models perform computations, and how to effectively intervene on them. While low dimensional manifolds have been observed for multiple concepts in the literature (e.g. numbers encoded on helices, days of the week on a circle, ...), with structure believed to reflect properties of data and tasks, the extent to which models rely on them fo</p>]]></description>
+      <pubDate>Tue, 29 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2609.37680v1</guid>
+    </item>
+    <item>
+      <title>RESCUE: Repairing Language Model Errors to Sparse Circuits via Reinforcement Learning</title>
+      <link>https://arxiv.org/abs/2609.36813v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Chuanpu Liu, Miao Yu, Yikai Cai, Yuanhe Zhang, Zhenhong Zhou, et al.</p><p>Large language models (LLMs) exhibit strong general capabilities that mechanistic interpretability has attributed to sparse computational circuits. However, existing circuit studies emphasize preserving functionality or explaining safety, leaving the mechanisms underlying failures across a broader range of tasks largely unexplored. Extending circuit analysis from abilities to errors, we explore the perspective that such failures may likewise arise from erroneous internal computations and that ta</p><p><strong>Tags:</strong> circuits, safety</p>]]></description>
+      <pubDate>Tue, 29 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2609.36813v1</guid>
+    </item>
+    <item>
+      <title>Active Budget Can Kill Sensitivity: Diagnosing and Repairing TopK Sparse Autoencoder Reliability</title>
+      <link>https://arxiv.org/abs/2609.37857v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Zhenting Huang, Junnan Liu, Qianren Mao, Zhixing Tan, Bo Jiang</p><p>Sparse autoencoders (SAEs) are increasingly scaled to wider dictionaries to recover fine-grained structure from large language model activations. However, a feature is useful for interpretation only if it remains a stable unit of analysis when the same meaning is expressed in different surface forms. We study this reliability question for TopK SAEs via feature sensitivity. Experiments demonstrate that scaling selectively reduces the sensitivity of rare features, while common features remain comp</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Tue, 29 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2609.37857v1</guid>
+    </item>
+    <item>
+      <title>Where Do LLMs Decide to Break the Rules? Mechanistic Localization of Prompt Injection Compliance</title>
+      <link>https://arxiv.org/abs/2609.37737v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Rui Wen, Jiayang Liu, Zeyu Yang, Jun Sakuma, Lu Sun</p><p>When a prompt injection attack succeeds, a Large Language Model (LLM) abandons its assigned system role to comply with an adversarial instruction. While prior work has extensively quantified how often this occurs, we ask a more fundamental question: where inside the network does the model actually decide to break the rules? Using layer-by-layer causal activation patching across five models (4B to 32B parameters), we find a clear dissociation: attack information is linearly decodable from the fir</p>]]></description>
+      <pubDate>Tue, 29 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2609.37737v1</guid>
+    </item>
+    <item>
+      <title>Speed in the Blind Spot: An Interpretability Analysis of Dynamic Perception in VLMs for Autonomous Driving</title>
+      <link>https://arxiv.org/abs/2609.37046v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Katharina Winter, Stefan Englmeier, Fabian B. Flohr</p><p>Vision-Language Models are increasingly used in autonomous-driving systems, yet their ability to recover dynamic physical state from visual input remains insufficiently characterized. We study velocity understanding as a controlled diagnostic across three tasks: surrounding-agent speed, current ego speed, and short-horizon future ego-speed proposal. On nuScenes, we evaluate open-weight general-purpose and PhysicalAI VLMs, together with the driving-oriented Alpamayo-1.5 Vision-Language-Action mod</p><p><strong>Tags:</strong> vision</p>]]></description>
+      <pubDate>Tue, 29 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2609.37046v1</guid>
+    </item>
+    <item>
+      <title>How Medical VLMs Underutilize Their Vision Encoders: A Dermatology Perspective</title>
+      <link>https://arxiv.org/abs/2609.36557v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Janet Wang, Yunbei Zhang, Xiao Wang, Jihun Hamm</p><p>Medical Vision-Language Models (VLMs) show significant promise for clinical image understanding, offering accurate diagnosis with interpretable reasoning. However, a critical performance gap exists between their strong vision encoders and the full multimodal model: in dermatology, the MedSigLIP encoder outperforms MedGemma by an average of 10.26 percentage points even when both use zero target-task labels; few-shot linear probing provides further evidence of strong visual representations. This g</p><p><strong>Tags:</strong> probing, vision, reasoning</p>]]></description>
+      <pubDate>Tue, 29 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2609.36557v1</guid>
+    </item>
     <item>
       <title>Rethinking Circuit Evaluation: Do Circuits Explain Model Errors?</title>
       <link>https://arxiv.org/abs/2609.35686v1</link>
@@ -100,6 +142,20 @@
       <guid>https://arxiv.org/abs/2609.34771v1</guid>
     </item>
     <item>
+      <title>In-Context Learning Amplifies a Latent Symbolic Circuit</title>
+      <link>https://arxiv.org/abs/2609.36265v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Melissa Wessel</p><p>Large language models can learn abstract rules from just a few in-context examples, but how their internal mechanisms activate as examples accumulate is not well understood. We trace a three-stage symbolic reasoning circuit (abstraction, induction, retrieval) across shot counts in three model families and find it is detectable and functional well before the model achieves high accuracy. Per-head causal contribution grows up to 8x from 1- to 10-shot, and cross-shot activation patching raises accu</p><p><strong>Tags:</strong> circuits, reasoning</p>]]></description>
+      <pubDate>Mon, 28 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2609.36265v1</guid>
+    </item>
+    <item>
+      <title>When Trees Are Not Enough: Learning Mixed-Topology Feature Graphs with Adaptive Graph Sparse Autoencoders</title>
+      <link>https://arxiv.org/abs/2609.36294v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Xiaozuo Shen, Yifei Cai, Tian Tan, Rui Ning, Chunsheng Xin, et al.</p><p>Sparse autoencoders (SAEs) expose interpretable features in large language model activations, yet existing structured SAEs impose single-parent trees or forests, while post-hoc graphs permit multiple parents but neither guide feature learning nor ensure reliable relation recovery. We introduce the Adaptive Graph Sparse Autoencoder (AG-SAE), a structure-guided training paradigm that treats each feature&#x27;s complete parent set as an atomic structural hypothesis and lets evidence select zero, one, or</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Mon, 28 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2609.36294v1</guid>
+    </item>
+    <item>
       <title>Augmenting Visual Anomaly Detection with Automated Interpretability</title>
       <link>https://arxiv.org/abs/2609.33818v1</link>
       <description><![CDATA[<p><strong>Authors:</strong> Antonio De Santis, Arsenio Leo, Marco Brambilla</p><p>Visual anomaly detectors identify deviations from known-normal data, but their anomaly signals may mix evidence of actual anomalies with benign visual variation. We investigate whether automated interpretability can augment visual anomaly detectors by identifying and intervening on different components of this signal. We decompose PatchCore nearest-normal residuals into sparse features using Sparse Autoencoders (SAEs), and provide high-activation and contrastive non-active examples to a Multimod</p><p><strong>Tags:</strong> SAE, features, vision</p>]]></description>
@@ -161,62 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Drandreb Earl O. Juanico, Rowel O. Atienza</p><p>We present FLIP, a final-layer inference-time probe for testing whether a logit-facing intervention site in an open-weight vision-language model (VLM) supports structured, task-linked computation rather than generic perturbation. Behavioral change under internal intervention is otherwise mechanistically ambiguous: it may reflect improved use of visual evidence, generic output instability, or outright degradation. FLIP applies elementwise flooring to the final normalized hidden state before logit</p><p><strong>Tags:</strong> probing, vision</p>]]></description>
       <pubDate>Fri, 25 Sep 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2609.30993v1</guid>
-    </item>
-    <item>
-      <title>FTB Graph: Determining and Validating First-token Broadcasters and Language-Identity Head Circuits in Multilingual Language Models</title>
-      <link>https://arxiv.org/abs/2609.30954v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Arjun Pillai, Christian Hoang, Anjelo Laroza</p><p>Large language models operating in multilingual contexts must resolve target response languages early in generation, yet the causal circuitry governing first-token language identity decisions remains poorly mapped. We present an end-to-end structural circuit analysis across six model architectures spanning four families: GPT-2, BLOOM-560M, Pythia-1B/2.8B, and Qwen2.5-1.5B Base/Instruct. Using Edge Attribution Patching (EAP) with FP16 active clamping, followed by exact activation patching verific</p><p><strong>Tags:</strong> circuits</p>]]></description>
-      <pubDate>Fri, 25 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2609.30954v1</guid>
-    </item>
-    <item>
-      <title>Why Jailbreaks Succeed in Diffusion Language Models: An Energy Landscape Analysis</title>
-      <link>https://arxiv.org/abs/2609.30841v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Thong Bach, Dung Nguyen, Thao Minh Le, Truyen Tran</p><p>Existing attacks and defenses for diffusion-based large language models (dLLMs) target specific vulnerabilities but lack a shared framework explaining why attacks succeed. We propose one by interpreting safety alignment as shaping the denoising energy landscape: a well-aligned model routes harmful queries toward safe outputs through an energy barrier that separates the two regions. Current jailbreak attacks reduce to two strategies for circumventing this barrier: obscuring the query&#x27;s safety dis</p><p><strong>Tags:</strong> safety</p>]]></description>
-      <pubDate>Fri, 25 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2609.30841v1</guid>
-    </item>
-    <item>
-      <title>Hallucination Neurons and Where to Find Them: An Investigation into the existence of Hallucination Neurons</title>
-      <link>https://arxiv.org/abs/2609.29781v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Huseyin Cavus, Sebin Sabu, Joshua Spear, Jaskaran Singh Kawatra, Pavithra Rajendran</p><p>Interpretable machine learning for Large Language Models (LLMs) increasingly relies on sparse probing methods that identify small sets of neurons claimed to detect and causally influence behaviors such as factuality recall, safety alignment, and hallucination. These claims have important implications for model auditing and behavioral steering, yet they are rarely tested against known failure modes of $L_1$-regularized probing in correlated, high-dimensional feature spaces. We propose a five-step</p><p><strong>Tags:</strong> features, safety, probing, steering</p>]]></description>
-      <pubDate>Thu, 24 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2609.29781v1</guid>
-    </item>
-    <item>
-      <title>Parts-of-Speech as Emergent Categories in SAE Latent Space</title>
-      <link>https://arxiv.org/abs/2609.29362v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Alessandro Bondielli, Lucia Passaro, Serena Auriemma, Alessandro Lenci</p><p>Sparse AutoEncoders (SAEs) offer a promising way to inspect language model representations, but it is still unclear what kind of linguistic structure their latents expose. We use part-of-speech (PoS) categories as a controlled test case to study whether morpho-syntactic information is encoded by individual latents or by structured groups of features. We find that PoS distinctions are highly recoverable from SAE activations, but do not align with one-to-one latent / category mappings. This recove</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Thu, 24 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2609.29362v1</guid>
-    </item>
-    <item>
-      <title>Where Hallucinations Live: A Cross-Architecture Circuit in VQ-Tokenized Vision-Language Models</title>
-      <link>https://arxiv.org/abs/2609.29048v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Shamanthak Hegde, Xiangrui Liu, Maitreya Patel, Yezhou Yang</p><p>Unified vision-language models (VLMs) that tokenize images through a vector-quantized (VQ) codebook routinely hallucinate objects on grounded yes/no benchmarks, yet existing decoding-time fixes treat this as generic miscalibration without an architectural account. Using activation patching across twenty-five models spanning eight LLM families, we identify an early-layer ($L_0$) attention routing circuit shared across VQ-tokenized VLMs and propose a three-gate diagnostic that distinguishes the mo</p><p><strong>Tags:</strong> circuits, vision</p>]]></description>
-      <pubDate>Thu, 24 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2609.29048v1</guid>
-    </item>
-    <item>
-      <title>Stream Recursion Model (SRM)</title>
-      <link>https://arxiv.org/abs/2609.28809v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Asael Sorensen, Charles Brock, David Chamberlain, Jennifer Minnich, Matthew Hoffman, et al.</p><p>Mechanistic interpretability seeks to make verifiable statements about the internal behavior of large language models (LLMs). Many interpretability techniques struggle to scale with the increasing size and depth of architectures. Our solution to this is to introduce smaller models with structures that lend themselves to interpretability. In this work, we introduce the Stream Recursion Model (SRM), a modification of the Hierarchical Reasoning Model (HRM) designed to expose internal computational </p><p><strong>Tags:</strong> reasoning</p>]]></description>
-      <pubDate>Wed, 23 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2609.28809v1</guid>
-    </item>
-    <item>
-      <title>Script Choice in LLMs: Evidence for Late-Layer Commitment</title>
-      <link>https://arxiv.org/abs/2609.28784v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> David Kletz, Sandra Mitrović, Itay Sabato, Ljiljana Dolamić, Fabio Rinaldi</p><p>In this paper, we investigate how script knowledge is distributed across the layers of LLMs using two complementary interpretability methods: logistic regression probing and logit-lens analysis. Our probing experiments reveal a clear asymmetry: both the input script and the instructed output script are encoded in the earliest layers of the network, while, in contrast, commitment to the actual output script emerges only in the final layers, with the model&#x27;s intermediate representations defaulting</p><p><strong>Tags:</strong> probing</p>]]></description>
-      <pubDate>Wed, 23 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2609.28784v1</guid>
-    </item>
-    <item>
-      <title>Matryoshka attribution: Learning to attribute language model outputs to representations and weights</title>
-      <link>https://arxiv.org/abs/2609.25518v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Aryaman Arora, Kirill Acharya, Nathan Hu, Yanzhe Zhang, Noah Goodman, et al.</p><p>Attributing language model outputs to their internal computations is an open problem in interpretability. Existing methods, which use causal interventions, gradients, or learnable masks, either are infeasibly expensive or struggle to identify actual causally-important internal computations. We propose framing attribution as the problem of identifying nested subsets of internal components which minimise a downstream loss. To learn this task, we introduce Matryoshka Attribution (MAttr), a mask lea</p>]]></description>
-      <pubDate>Tue, 22 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2609.25518v1</guid>
     </item>
   </channel>
 </rss>
