@@ -1,6 +1,48 @@
 {
-  "lastUpdated": "2026-09-30",
+  "lastUpdated": "2026-10-01",
   "papers": [
+    {
+      "id": "arxiv-2609-39625v1",
+      "title": "D-Scope: Decomposing and Steering Diffusion Transformers with Sparse Autoencoders",
+      "authors": "Xinyue Xu, Jiahao Zhang, Lijie Hu, Peter Hase, Hao Wang",
+      "date": "2026-09-30",
+      "url": "https://arxiv.org/abs/2609.39625v1",
+      "abstract": "Sparse autoencoders (SAEs) reveal visual structure in diffusion transformers (DiTs), but interpreting a feature does not establish whether it can be used to control generation. We introduce D-Scope (Diffusion Scope), a framework that connects feature interpretation to generation control through shared visual evidence. D-Scope aggregates SigLIP~2 embeddings of highly activating image patches into visual centroids. Matching target text descriptions against these visual centroids in the shared imag",
+      "tags": [
+        "SAE",
+        "features",
+        "steering",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2609-39243v1",
+      "title": "Right Answer, Wrong Mechanism: Detecting Pernicious Divergence in Causal Interventions",
+      "authors": "Beiming Liu, Minjie Chen",
+      "date": "2026-09-30",
+      "url": "https://arxiv.org/abs/2609.39243v1",
+      "abstract": "Causal interventions such as activation patching and distributed alignment search (DAS) are the main tool for making mechanistic claims about neural networks. Recent work showed that these interventions routinely push representations off the model's natural distribution, and that such divergence is sometimes harmless and sometimes pernicious: it can recruit pathways the model never uses on natural inputs, so that an intervention produces the expected answer through the wrong mechanism. No method",
+      "tags": [
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2609-39263v1",
+      "title": "Concept Subspaces Compute Beyond the Logit Lens: A Weights-Only Test for Locating Representations Upstream of Readout",
+      "authors": "Aojie Yuan, Zhiyuan Julian Su, Haiyue Zhang, Zijian Su",
+      "date": "2026-09-30",
+      "url": "https://arxiv.org/abs/2609.39263v1",
+      "abstract": "A concept subspace's effect on model behavior does not establish how it relates to the output readout. We introduce a two-sided geometric diagnostic that measures an extracted subspace's overlap with the dominant right-singular directions of the unembedding matrix, evaluated against output-oriented positive controls. Given an extracted basis, the raw diagnostic requires only model weights. Our testbed is the Format-Agnostic Reasoning Subspace (FARS), a ten-dimensional basis extracted from eighte",
+      "tags": [
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2609-37680v1",
       "title": "When Models Don't Manipulate Manifolds: The Geometry of a Comparison Task",
