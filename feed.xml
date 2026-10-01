@@ -5,9 +5,30 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 30 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 01 Oct 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>D-Scope: Decomposing and Steering Diffusion Transformers with Sparse Autoencoders</title>
+      <link>https://arxiv.org/abs/2609.39625v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Xinyue Xu, Jiahao Zhang, Lijie Hu, Peter Hase, Hao Wang</p><p>Sparse autoencoders (SAEs) reveal visual structure in diffusion transformers (DiTs), but interpreting a feature does not establish whether it can be used to control generation. We introduce D-Scope (Diffusion Scope), a framework that connects feature interpretation to generation control through shared visual evidence. D-Scope aggregates SigLIP~2 embeddings of highly activating image patches into visual centroids. Matching target text descriptions against these visual centroids in the shared imag</p><p><strong>Tags:</strong> SAE, features, steering, vision</p>]]></description>
+      <pubDate>Wed, 30 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2609.39625v1</guid>
+    </item>
+    <item>
+      <title>Right Answer, Wrong Mechanism: Detecting Pernicious Divergence in Causal Interventions</title>
+      <link>https://arxiv.org/abs/2609.39243v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Beiming Liu, Minjie Chen</p><p>Causal interventions such as activation patching and distributed alignment search (DAS) are the main tool for making mechanistic claims about neural networks. Recent work showed that these interventions routinely push representations off the model&#x27;s natural distribution, and that such divergence is sometimes harmless and sometimes pernicious: it can recruit pathways the model never uses on natural inputs, so that an intervention produces the expected answer through the wrong mechanism. No method</p><p><strong>Tags:</strong> safety</p>]]></description>
+      <pubDate>Wed, 30 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2609.39243v1</guid>
+    </item>
+    <item>
+      <title>Concept Subspaces Compute Beyond the Logit Lens: A Weights-Only Test for Locating Representations Upstream of Readout</title>
+      <link>https://arxiv.org/abs/2609.39263v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Aojie Yuan, Zhiyuan Julian Su, Haiyue Zhang, Zijian Su</p><p>A concept subspace&#x27;s effect on model behavior does not establish how it relates to the output readout. We introduce a two-sided geometric diagnostic that measures an extracted subspace&#x27;s overlap with the dominant right-singular directions of the unembedding matrix, evaluated against output-oriented positive controls. Given an extracted basis, the raw diagnostic requires only model weights. Our testbed is the Format-Agnostic Reasoning Subspace (FARS), a ten-dimensional basis extracted from eighte</p><p><strong>Tags:</strong> reasoning</p>]]></description>
+      <pubDate>Wed, 30 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2609.39263v1</guid>
+    </item>
     <item>
       <title>When Models Don&#x27;t Manipulate Manifolds: The Geometry of a Comparison Task</title>
       <link>https://arxiv.org/abs/2609.37680v1</link>
@@ -196,27 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Jonathan Drechsel, Steffen Herbold</p><p>Model-internal features can be studied through both their ability to identify a specified concept and their causal effect when manipulated, e.g., through steering or weight editing. A prominent approach to feature learning is Sparse Autoencoders (SAEs), which learn broad feature dictionaries whose relation to particular concepts is typically identified post hoc. However, many interpretability questions are instead hypothesis-driven and concern a concept specified in advance. We study this settin</p><p><strong>Tags:</strong> SAE, features, steering</p>]]></description>
       <pubDate>Sat, 26 Sep 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2609.32355v1</guid>
-    </item>
-    <item>
-      <title>Mechanistic Interpretability Reveals Shared Causal Subspaces in Brain-to-Speech Decoders</title>
-      <link>https://arxiv.org/abs/2609.31992v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Maryam Maghsoudi, Ayushi Mishra, Sanghamitra Dutta</p><p>Decoding covert speech, such as mimed or imagined, from brain activity is harder than decoding vocalized speech. Cross-modal transfer, where information from one speech form helps decode another, is a promising remedy; yet how a decoder internally represents and processes brain activity from different speech forms remains unclear. In this work, we ask: which internal neurons of a decoder carry cross-modal information, and are these neurons shared across different speech forms? To answer these qu</p>]]></description>
-      <pubDate>Fri, 25 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2609.31992v1</guid>
-    </item>
-    <item>
-      <title>Neuralyzing the Trace: Selective Representation-Level Unlearning with Contrastive Sparse Autoencoders</title>
-      <link>https://arxiv.org/abs/2609.31056v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Itai Zehavi, Fanny Jourdan, Ulrich Aivodji</p><p>Machine unlearning aims to remove targeted information while preserving a model&#x27;s other abilities. In realistic settings, such as privacy requests under the EU GDPR, the target may be narrow, for example information associated with a single person. Behavioral forgetting alone may be insufficient, motivating interventions directly on internal representations. However, standard mechanistic-interpretability extractors are poorly selective for such targets. We identify an energy bias in reconstructi</p><p><strong>Tags:</strong> SAE</p>]]></description>
-      <pubDate>Fri, 25 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2609.31056v1</guid>
-    </item>
-    <item>
-      <title>FLIP: Final Layer Inference-Time Probing for Vision-Language Models</title>
-      <link>https://arxiv.org/abs/2609.30993v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Drandreb Earl O. Juanico, Rowel O. Atienza</p><p>We present FLIP, a final-layer inference-time probe for testing whether a logit-facing intervention site in an open-weight vision-language model (VLM) supports structured, task-linked computation rather than generic perturbation. Behavioral change under internal intervention is otherwise mechanistically ambiguous: it may reflect improved use of visual evidence, generic output instability, or outright degradation. FLIP applies elementwise flooring to the final normalized hidden state before logit</p><p><strong>Tags:</strong> probing, vision</p>]]></description>
-      <pubDate>Fri, 25 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2609.30993v1</guid>
     </item>
   </channel>
 </rss>
