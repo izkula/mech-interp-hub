@@ -5,9 +5,37 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 02 Oct 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Are We Recovering Mechanisms? Objective-Level Recovery Gaps in Mechanistic Interpretability</title>
+      <link>https://arxiv.org/abs/2610.02098v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Chuqin Geng, Li Zhang, Haolin Ye, Mark Zhang, Luke Zhang, et al.</p><p>Mechanistic interpretability aims to recover the internal computations responsible for model behavior. Progress in automated circuit discovery is often framed as a search problem: better attribution or optimization should identify better mechanisms. This assumes that the evaluation objective can recognize a better circuit once it is found. We show that intervention-defined faithfulness can instead prefer an equally sized circuit that reproduces the model&#x27;s behavior less well, creating an objecti</p><p><strong>Tags:</strong> circuits</p>]]></description>
+      <pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.02098v1</guid>
+    </item>
+    <item>
+      <title>Beyond Linear Concepts: Discovering and Aligning Non-Linear Concept Manifolds in Large Language Models</title>
+      <link>https://arxiv.org/abs/2610.01821v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Tido Specht, Elias Benedict Krey, Nils Neukirch, Nils Strodthoff</p><p>Understanding information processing in large language models (LLMs) requires dissecting the geometric organization of their internal token representations. While existing mechanistic interpretability (MI) methods seek to extract concepts, they are constrained by a strong linearity assumption challenged by evidence of non-linear feature manifolds. We move beyond linear concepts by adapting Non-Linear Multi-Dimensional Concept Discovery (NLMCD) from computer vision to token-level LLM activations,</p><p><strong>Tags:</strong> features, vision</p>]]></description>
+      <pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.01821v1</guid>
+    </item>
+    <item>
+      <title>Generative modeling of intrinsically disordered protein regions by reinforcing sparse autoencoder features</title>
+      <link>https://arxiv.org/abs/2610.02189v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Jason X. Liu, Sebastian Ibarraran, Frank Hu, Soojung Yang, Xinyu A. Feng, et al.</p><p>Intrinsically disordered protein regions (IDRs) play central roles in cellular processes such as transcriptional regulation, signal transduction, and subcellular localization, yet their functional design remains challenging. Structure-based design methods do not readily apply to IDRs, and existing protein language models are trained on full-length protein sequences, thus learning a prior that is biased towards folded domains. Here, we present IDiom, an autoregressive protein language model train</p><p><strong>Tags:</strong> SAE, features, biology</p>]]></description>
+      <pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.02189v1</guid>
+    </item>
+    <item>
+      <title>From Isolated Feature to Orbits: Discovering Music Concepts via Multi-SAE Alignment</title>
+      <link>https://arxiv.org/abs/2610.01864v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Liwei Lin, Gus Xia</p><p>How can we understand what a music foundation model has learned \textit{internally}? Most interpretability approaches, such as probing and Sparse Autoencoders (SAEs), focus on identifying individual features with minimal structural assumptions. We argue that many concepts are better understood as \textit{structured relations} rather than isolated features. This is especially prominent in music, where tonal structures are organized in the space of pitch and time. For example, concepts such as cho</p><p><strong>Tags:</strong> SAE, features, safety, probing</p>]]></description>
+      <pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.01864v1</guid>
+    </item>
     <item>
       <title>D-Scope: Decomposing and Steering Diffusion Transformers with Sparse Autoencoders</title>
       <link>https://arxiv.org/abs/2609.39625v1</link>
@@ -189,34 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Johann D. Gaebler, Calvin Isley, Max Lamparth, Stephen Casper, Sharad Goel</p><p>Current approaches to aligning language models often make it hard to know what behavior is being rewarded or to change that reward in a targeted way. In particular, standard preference-based methods collapse multiple considerations into aggregate human judgments, obscuring what drives the resulting reward, while principle-based methods specify high-level values without fully operationalizing them. To address this gap, we develop a rubric-based framework to transform a general-purpose constitutio</p>]]></description>
       <pubDate>Sun, 27 Sep 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2609.33086v1</guid>
-    </item>
-    <item>
-      <title>ManiEdit: Sequential Unstructured Knowledge Editing for Language Models from a Manifold Perspective</title>
-      <link>https://arxiv.org/abs/2609.33534v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Rui Liu, Chenheng Zhang, Haoxuan Li, Zhouchen Lin</p><p>Large language models (LLMs) inevitably generate some incorrect or outdated content, necessitating efficient and precise mechanisms for continual knowledge updates. However, existing model editing methods struggle to sequentially edit unstructured long-form knowledge, suffering from severe edit forgetting and degradation of general capabilities. To address these challenges, we reframe knowledge editing from a manifold perspective, viewing it as a localized displacement of an edit sub-manifold wi</p><p><strong>Tags:</strong> editing</p>]]></description>
-      <pubDate>Sun, 27 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2609.33534v1</guid>
-    </item>
-    <item>
-      <title>Identifying Temporal Features within Transcoders for Time Sensitive Factual Recall</title>
-      <link>https://arxiv.org/abs/2609.33183v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Sanjay Govindan, Yang Song, Maurice Pagnucco</p><p>Large Language Models (LLMs) suffer from temporal misalignment, often due to the contradictory nature of their training corpora. While current mitigation strategies rely on computationally expensive fine-tuning or context-heavy retrieval augmented generation (RAG), the internal mechanisms governing time-sensitive recall remain under-explored. Unlike prior studies that identify temporal components such as attention heads and MLP layers, we provide the first feature-level map of temporal recall by</p><p><strong>Tags:</strong> features, safety, attention</p>]]></description>
-      <pubDate>Sun, 27 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2609.33183v1</guid>
-    </item>
-    <item>
-      <title>PULSE: Identifying Demonstration-Utility Features with Sparse Autoencoders</title>
-      <link>https://arxiv.org/abs/2609.32469v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Chenduo Hao, Chuanbao Gao, Pinjun Zeng, Jingze Zhu, Chonghan Liu, et al.</p><p>In-context learning is highly sensitive to demonstration choice, yet most methods select demonstrations using external query-demonstration similarity. Such criteria can miss model-specific signals: Similar demonstrations may activate different internal features and downstream behaviors. We introduce PULSE (Paired Utility Localization over Sparse Encodings), an SAE-based framework for identifying model-internal features associated with demonstration utility and using them for demonstration select</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Sat, 26 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2609.32469v1</guid>
-    </item>
-    <item>
-      <title>Gradients for Interventions and Activations for Detection: Targeted Feature Learning in Language Models</title>
-      <link>https://arxiv.org/abs/2609.32355v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Jonathan Drechsel, Steffen Herbold</p><p>Model-internal features can be studied through both their ability to identify a specified concept and their causal effect when manipulated, e.g., through steering or weight editing. A prominent approach to feature learning is Sparse Autoencoders (SAEs), which learn broad feature dictionaries whose relation to particular concepts is typically identified post hoc. However, many interpretability questions are instead hypothesis-driven and concern a concept specified in advance. We study this settin</p><p><strong>Tags:</strong> SAE, features, steering</p>]]></description>
-      <pubDate>Sat, 26 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2609.32355v1</guid>
     </item>
   </channel>
 </rss>
