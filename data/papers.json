@@ -1,6 +1,64 @@
 {
-  "lastUpdated": "2026-10-01",
+  "lastUpdated": "2026-10-02",
   "papers": [
+    {
+      "id": "arxiv-2610-02098v1",
+      "title": "Are We Recovering Mechanisms? Objective-Level Recovery Gaps in Mechanistic Interpretability",
+      "authors": "Chuqin Geng, Li Zhang, Haolin Ye, Mark Zhang, Luke Zhang, et al.",
+      "date": "2026-10-01",
+      "url": "https://arxiv.org/abs/2610.02098v1",
+      "abstract": "Mechanistic interpretability aims to recover the internal computations responsible for model behavior. Progress in automated circuit discovery is often framed as a search problem: better attribution or optimization should identify better mechanisms. This assumes that the evaluation objective can recognize a better circuit once it is found. We show that intervention-defined faithfulness can instead prefer an equally sized circuit that reproduces the model's behavior less well, creating an objecti",
+      "tags": [
+        "circuits"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-01821v1",
+      "title": "Beyond Linear Concepts: Discovering and Aligning Non-Linear Concept Manifolds in Large Language Models",
+      "authors": "Tido Specht, Elias Benedict Krey, Nils Neukirch, Nils Strodthoff",
+      "date": "2026-10-01",
+      "url": "https://arxiv.org/abs/2610.01821v1",
+      "abstract": "Understanding information processing in large language models (LLMs) requires dissecting the geometric organization of their internal token representations. While existing mechanistic interpretability (MI) methods seek to extract concepts, they are constrained by a strong linearity assumption challenged by evidence of non-linear feature manifolds. We move beyond linear concepts by adapting Non-Linear Multi-Dimensional Concept Discovery (NLMCD) from computer vision to token-level LLM activations,",
+      "tags": [
+        "features",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-02189v1",
+      "title": "Generative modeling of intrinsically disordered protein regions by reinforcing sparse autoencoder features",
+      "authors": "Jason X. Liu, Sebastian Ibarraran, Frank Hu, Soojung Yang, Xinyu A. Feng, et al.",
+      "date": "2026-10-01",
+      "url": "https://arxiv.org/abs/2610.02189v1",
+      "abstract": "Intrinsically disordered protein regions (IDRs) play central roles in cellular processes such as transcriptional regulation, signal transduction, and subcellular localization, yet their functional design remains challenging. Structure-based design methods do not readily apply to IDRs, and existing protein language models are trained on full-length protein sequences, thus learning a prior that is biased towards folded domains. Here, we present IDiom, an autoregressive protein language model train",
+      "tags": [
+        "SAE",
+        "features",
+        "biology"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-01864v1",
+      "title": "From Isolated Feature to Orbits: Discovering Music Concepts via Multi-SAE Alignment",
+      "authors": "Liwei Lin, Gus Xia",
+      "date": "2026-10-01",
+      "url": "https://arxiv.org/abs/2610.01864v1",
+      "abstract": "How can we understand what a music foundation model has learned \\textit{internally}? Most interpretability approaches, such as probing and Sparse Autoencoders (SAEs), focus on identifying individual features with minimal structural assumptions. We argue that many concepts are better understood as \\textit{structured relations} rather than isolated features. This is especially prominent in music, where tonal structures are organized in the space of pitch and time. For example, concepts such as cho",
+      "tags": [
+        "SAE",
+        "features",
+        "safety",
+        "probing"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2609-39625v1",
       "title": "D-Scope: Decomposing and Steering Diffusion Transformers with Sparse Autoencoders",
