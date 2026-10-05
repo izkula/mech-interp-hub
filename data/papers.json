@@ -1,6 +1,75 @@
 {
-  "lastUpdated": "2026-10-04",
+  "lastUpdated": "2026-10-05",
   "papers": [
+    {
+      "id": "arxiv-2610-03389v1",
+      "title": "From Patching to Pruning Visual Computation in Vision Language Models",
+      "authors": "Rahul Chowdhury, Timothy A Rupprecht, Xuan Shen, Shaoyi Huang, Pu Zhao, et al.",
+      "date": "2026-10-02",
+      "url": "https://arxiv.org/abs/2610.03389v1",
+      "abstract": "Vision language models (VLMs) incur substantial inference cost because every visual token is processed by the attention and MLP projections of every decoder layer, even when token-specific visual computation is unnecessary at many depths. We introduce Patch-to-Prune (P2P), inspired by Mechanistic Interpretability, a training-free framework that converts activation patching from a diagnostic tool into an inference-time computation bypass. P2P performs validation-guided forward and backward layer ",
+      "tags": [
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-02829v1",
+      "title": "Clinical Concept Centers in LLMs",
+      "authors": "Aishik Nagar, Abhishek Vaidyanathan, Arun-Kumar Kaliya-Perumal, Elijah Tzen Hsuen Boey, Stefan Winkler",
+      "date": "2026-10-02",
+      "url": "https://arxiv.org/abs/2610.02829v1",
+      "abstract": "Large language models are increasingly used in clinical settings. However, research into the reliability and performance of these models has focused almost entirely on the language substrate, scoring what the model says. Mechanistic interpretability has found that the latent space carries a higher fidelity of representation than the text: internal representations not only encode substantially more than the output verbalizes, but the stated reasoning also systematically omits features that causal",
+      "tags": [
+        "features",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-03498v1",
+      "title": "Detect and Suppress: A Mechanistic Defense against Adversarial Patches in VLA Models",
+      "authors": "Yukiya Horiba, Koshiro Aoki, Shunsuke Yasuki, Bum Jun Kim, Taiki Miyanishi",
+      "date": "2026-10-02",
+      "url": "https://arxiv.org/abs/2610.03498v1",
+      "abstract": "Adversarial patches can disrupt Vision-Language-Action (VLA) models by manipulating visual observations, leading to failures in robot control. However, it remains poorly understood which internal mechanisms underlie these failures and how targeted interventions can mitigate them. In this work, we mechanistically analyze VLA representations using a sparse autoencoder (SAE) and identify a feature whose activation strongly correlates with the presence of an adversarial patch. Based on this analysis",
+      "tags": [
+        "SAE",
+        "features",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-03698v1",
+      "title": "Decoding the Functional Roles of Register and High-Norm Patch Tokens in Vision Transformers",
+      "authors": "Neel Varma, Andrew Rufail, Dipika Khullar, Vasu Sharma",
+      "date": "2026-10-02",
+      "url": "https://arxiv.org/abs/2610.03698v1",
+      "abstract": "Self-supervised Vision Transformers (ViTs), such as DINOv2, learn rich visual representations, but the functions of their internal tokens remain poorly understood. Recent architectures introduce dedicated register tokens to reduce high-norm out- lier patch tokens that emerge in background re- gions, yet the semantic and functional roles of both token types have not been fully established. In this paper, we analyze these roles by training sparse autoencoders (SAEs) on register-token and outlier-t",
+      "tags": [
+        "SAE",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-03445v1",
+      "title": "Corrupted but Correct: Why Vision-Language Models Lie to Themselves Internally",
+      "authors": "Arun Josephraj Arokiaraj, Zekun Wu, Adriano Koshiyama",
+      "date": "2026-10-02",
+      "url": "https://arxiv.org/abs/2610.03445v1",
+      "abstract": "A targeted adversarial perturbation can drive a vision-language model's (VLM's) teacher-forced training loss for a fixed target caption to near zero, yet the same model, allowed to generate freely, produces the original, correct description with no trace of the target. We call this dissociation the train/inference gap, and give it a precise mechanistic account on Qwen2.5-VL-7B-Instruct using a controlled two-stage PGD attack on 200 held-out COCO images. First, we show that image-level pixel stat",
+      "tags": [
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2610-02098v1",
       "title": "Are We Recovering Mechanisms? Objective-Level Recovery Gaps in Mechanistic Interpretability",
@@ -56,6 +125,17 @@
         "safety",
         "probing"
       ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-02439v1",
+      "title": "A Generative Model of Complex Networks Using Graphons and Neural Inverse Operators",
+      "authors": "Wooseong Choi, Italo'Ivo Lima Dias Pinto, Chen Sun, Gaurav Gupta, Dong Song, et al.",
+      "date": "2026-10-01",
+      "url": "https://arxiv.org/abs/2610.02439v1",
+      "abstract": "Generative graph models are central to understanding and simulating complex networks. However, existing approaches have complementary strengths and limitations. Mechanistic models offer interpretability but rely on instance-specific estimation methods. Deep generative models, on the other hand, offer amortized inference at the cost of interpretability and are largely limited to graph sizes seen during training. Scientific applications motivate a framework that retains the strengths of both parad",
+      "tags": [],
       "source": "arXiv",
       "featured": false
     },
