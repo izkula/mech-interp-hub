@@ -5,9 +5,44 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 04 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 05 Oct 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>From Patching to Pruning Visual Computation in Vision Language Models</title>
+      <link>https://arxiv.org/abs/2610.03389v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Rahul Chowdhury, Timothy A Rupprecht, Xuan Shen, Shaoyi Huang, Pu Zhao, et al.</p><p>Vision language models (VLMs) incur substantial inference cost because every visual token is processed by the attention and MLP projections of every decoder layer, even when token-specific visual computation is unnecessary at many depths. We introduce Patch-to-Prune (P2P), inspired by Mechanistic Interpretability, a training-free framework that converts activation patching from a diagnostic tool into an inference-time computation bypass. P2P performs validation-guided forward and backward layer </p><p><strong>Tags:</strong> vision</p>]]></description>
+      <pubDate>Fri, 02 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.03389v1</guid>
+    </item>
+    <item>
+      <title>Clinical Concept Centers in LLMs</title>
+      <link>https://arxiv.org/abs/2610.02829v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Aishik Nagar, Abhishek Vaidyanathan, Arun-Kumar Kaliya-Perumal, Elijah Tzen Hsuen Boey, Stefan Winkler</p><p>Large language models are increasingly used in clinical settings. However, research into the reliability and performance of these models has focused almost entirely on the language substrate, scoring what the model says. Mechanistic interpretability has found that the latent space carries a higher fidelity of representation than the text: internal representations not only encode substantially more than the output verbalizes, but the stated reasoning also systematically omits features that causal</p><p><strong>Tags:</strong> features, reasoning</p>]]></description>
+      <pubDate>Fri, 02 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.02829v1</guid>
+    </item>
+    <item>
+      <title>Detect and Suppress: A Mechanistic Defense against Adversarial Patches in VLA Models</title>
+      <link>https://arxiv.org/abs/2610.03498v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Yukiya Horiba, Koshiro Aoki, Shunsuke Yasuki, Bum Jun Kim, Taiki Miyanishi</p><p>Adversarial patches can disrupt Vision-Language-Action (VLA) models by manipulating visual observations, leading to failures in robot control. However, it remains poorly understood which internal mechanisms underlie these failures and how targeted interventions can mitigate them. In this work, we mechanistically analyze VLA representations using a sparse autoencoder (SAE) and identify a feature whose activation strongly correlates with the presence of an adversarial patch. Based on this analysis</p><p><strong>Tags:</strong> SAE, features, vision</p>]]></description>
+      <pubDate>Fri, 02 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.03498v1</guid>
+    </item>
+    <item>
+      <title>Decoding the Functional Roles of Register and High-Norm Patch Tokens in Vision Transformers</title>
+      <link>https://arxiv.org/abs/2610.03698v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Neel Varma, Andrew Rufail, Dipika Khullar, Vasu Sharma</p><p>Self-supervised Vision Transformers (ViTs), such as DINOv2, learn rich visual representations, but the functions of their internal tokens remain poorly understood. Recent architectures introduce dedicated register tokens to reduce high-norm out- lier patch tokens that emerge in background re- gions, yet the semantic and functional roles of both token types have not been fully established. In this paper, we analyze these roles by training sparse autoencoders (SAEs) on register-token and outlier-t</p><p><strong>Tags:</strong> SAE, vision</p>]]></description>
+      <pubDate>Fri, 02 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.03698v1</guid>
+    </item>
+    <item>
+      <title>Corrupted but Correct: Why Vision-Language Models Lie to Themselves Internally</title>
+      <link>https://arxiv.org/abs/2610.03445v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Arun Josephraj Arokiaraj, Zekun Wu, Adriano Koshiyama</p><p>A targeted adversarial perturbation can drive a vision-language model&#x27;s (VLM&#x27;s) teacher-forced training loss for a fixed target caption to near zero, yet the same model, allowed to generate freely, produces the original, correct description with no trace of the target. We call this dissociation the train/inference gap, and give it a precise mechanistic account on Qwen2.5-VL-7B-Instruct using a controlled two-stage PGD attack on 200 held-out COCO images. First, we show that image-level pixel stat</p><p><strong>Tags:</strong> vision</p>]]></description>
+      <pubDate>Fri, 02 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.03445v1</guid>
+    </item>
     <item>
       <title>Are We Recovering Mechanisms? Objective-Level Recovery Gaps in Mechanistic Interpretability</title>
       <link>https://arxiv.org/abs/2610.02098v1</link>
@@ -35,6 +70,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Liwei Lin, Gus Xia</p><p>How can we understand what a music foundation model has learned \textit{internally}? Most interpretability approaches, such as probing and Sparse Autoencoders (SAEs), focus on identifying individual features with minimal structural assumptions. We argue that many concepts are better understood as \textit{structured relations} rather than isolated features. This is especially prominent in music, where tonal structures are organized in the space of pitch and time. For example, concepts such as cho</p><p><strong>Tags:</strong> SAE, features, safety, probing</p>]]></description>
       <pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2610.01864v1</guid>
+    </item>
+    <item>
+      <title>A Generative Model of Complex Networks Using Graphons and Neural Inverse Operators</title>
+      <link>https://arxiv.org/abs/2610.02439v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Wooseong Choi, Italo&#x27;Ivo Lima Dias Pinto, Chen Sun, Gaurav Gupta, Dong Song, et al.</p><p>Generative graph models are central to understanding and simulating complex networks. However, existing approaches have complementary strengths and limitations. Mechanistic models offer interpretability but rely on instance-specific estimation methods. Deep generative models, on the other hand, offer amortized inference at the cost of interpretability and are largely limited to graph sizes seen during training. Scientific applications motivate a framework that retains the strengths of both parad</p>]]></description>
+      <pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.02439v1</guid>
     </item>
     <item>
       <title>D-Scope: Decomposing and Steering Diffusion Transformers with Sparse Autoencoders</title>
@@ -175,48 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Yucong Cao, Chenqi Li, Tingting Zhu</p><p>Sparse autoencoders (SAEs) decompose dense model activations into discrete latents, making individual features easy to interpret--and easy to misinterpret. In EEG foundation models, this creates a tempting inference: if removing alpha-band activity strongly changes a latent&#x27;s activation, one might conclude that the latent represents alpha activity. Across 27 settings spanning three backbones, three EEG datasets, and three network depths, this interpretation initially appears compelling: alpha re</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
       <pubDate>Mon, 28 Sep 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2609.34091v1</guid>
-    </item>
-    <item>
-      <title>Who Is Left of Whom? Tracing Spatial Evidence and Role Binding in Relative-Position Reasoning</title>
-      <link>https://arxiv.org/abs/2609.35486v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Yingjin Song, Denis Paperno, Albert Gatt</p><p>High instance-level accuracy can mask inconsistencies in spatial reasoning when objects exchange positions or their roles are reversed in the query. The internal representations supporting relative-position reasoning remain poorly understood. We investigate two complementary components of this process: tracking object locations in the input and representing their query roles. Across three VLMs with visual or textual inputs and their language-model backbones, activation patching reveals a staged </p><p><strong>Tags:</strong> vision, reasoning</p>]]></description>
-      <pubDate>Mon, 28 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2609.35486v1</guid>
-    </item>
-    <item>
-      <title>When Do Model Internals Help? Exploring the Role of Representation Engineering in LLM Safety</title>
-      <link>https://arxiv.org/abs/2609.34771v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Tianyi Guan, Jianhui Chen, Liangming Pan</p><p>Reliable AI safeguards require both control mechanisms that reduce unsafe behavior and monitoring mechanisms that detect safety risks during model interactions. Established behavioral safeguards include alignment methods that optimize model outputs and text monitors that assess interaction text. Representation engineering instead reads or modifies internal model states, but the relative strengths of these approaches remain unclear because they are often evaluated under different settings. We pre</p><p><strong>Tags:</strong> safety</p>]]></description>
-      <pubDate>Mon, 28 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2609.34771v1</guid>
-    </item>
-    <item>
-      <title>In-Context Learning Amplifies a Latent Symbolic Circuit</title>
-      <link>https://arxiv.org/abs/2609.36265v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Melissa Wessel</p><p>Large language models can learn abstract rules from just a few in-context examples, but how their internal mechanisms activate as examples accumulate is not well understood. We trace a three-stage symbolic reasoning circuit (abstraction, induction, retrieval) across shot counts in three model families and find it is detectable and functional well before the model achieves high accuracy. Per-head causal contribution grows up to 8x from 1- to 10-shot, and cross-shot activation patching raises accu</p><p><strong>Tags:</strong> circuits, reasoning</p>]]></description>
-      <pubDate>Mon, 28 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2609.36265v1</guid>
-    </item>
-    <item>
-      <title>When Trees Are Not Enough: Learning Mixed-Topology Feature Graphs with Adaptive Graph Sparse Autoencoders</title>
-      <link>https://arxiv.org/abs/2609.36294v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Xiaozuo Shen, Yifei Cai, Tian Tan, Rui Ning, Chunsheng Xin, et al.</p><p>Sparse autoencoders (SAEs) expose interpretable features in large language model activations, yet existing structured SAEs impose single-parent trees or forests, while post-hoc graphs permit multiple parents but neither guide feature learning nor ensure reliable relation recovery. We introduce the Adaptive Graph Sparse Autoencoder (AG-SAE), a structure-guided training paradigm that treats each feature&#x27;s complete parent set as an atomic structural hypothesis and lets evidence select zero, one, or</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Mon, 28 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2609.36294v1</guid>
-    </item>
-    <item>
-      <title>Augmenting Visual Anomaly Detection with Automated Interpretability</title>
-      <link>https://arxiv.org/abs/2609.33818v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Antonio De Santis, Arsenio Leo, Marco Brambilla</p><p>Visual anomaly detectors identify deviations from known-normal data, but their anomaly signals may mix evidence of actual anomalies with benign visual variation. We investigate whether automated interpretability can augment visual anomaly detectors by identifying and intervening on different components of this signal. We decompose PatchCore nearest-normal residuals into sparse features using Sparse Autoencoders (SAEs), and provide high-activation and contrastive non-active examples to a Multimod</p><p><strong>Tags:</strong> SAE, features, vision</p>]]></description>
-      <pubDate>Sun, 27 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2609.33818v1</guid>
-    </item>
-    <item>
-      <title>From Constitutions to Control: Interpretable Rewards for Aligning Language Models</title>
-      <link>https://arxiv.org/abs/2609.33086v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Johann D. Gaebler, Calvin Isley, Max Lamparth, Stephen Casper, Sharad Goel</p><p>Current approaches to aligning language models often make it hard to know what behavior is being rewarded or to change that reward in a targeted way. In particular, standard preference-based methods collapse multiple considerations into aggregate human judgments, obscuring what drives the resulting reward, while principle-based methods specify high-level values without fully operationalizing them. To address this gap, we develop a rubric-based framework to transform a general-purpose constitutio</p>]]></description>
-      <pubDate>Sun, 27 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2609.33086v1</guid>
     </item>
   </channel>
 </rss>
