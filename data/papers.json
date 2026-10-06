@@ -1,6 +1,109 @@
 {
-  "lastUpdated": "2026-10-05",
+  "lastUpdated": "2026-10-06",
   "papers": [
+    {
+      "id": "arxiv-2610-06049v1",
+      "title": "Backdooring Sparse Autoencoders",
+      "authors": "Enrico Ahlers, Daniel Passon, Tobias Kiecker, Eik Reichmann, Lars Grunske",
+      "date": "2026-10-05",
+      "url": "https://arxiv.org/abs/2610.06049v1",
+      "abstract": "Sparse autoencoders (SAEs) are increasingly used not only to interpret language models but also to intervene on their internal representations. We show that this creates a supply-chain attack surface: a maliciously modified SAE can induce attacker-chosen behavior when inserted into the forward pass of an otherwise unchanged language model. We introduce a decoder-only SAE backdoor that leaves both the underlying LLM and the SAE encoder frozen, restricting the attack to a single auxiliary componen",
+      "tags": [
+        "SAE"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-06605v1",
+      "title": "Separators Make Carry Propagation Learnable:The Geometry of Latent Carry in a Multiplication Transformer",
+      "authors": "Sama Satariyan, Raphael Cousin, G{\u00e9}rard Biau",
+      "date": "2026-10-05",
+      "url": "https://arxiv.org/abs/2610.06605v1",
+      "abstract": "Transformers asked to multiply multi-digit numbers in a single forward pass often fail, and interpretability studies of pretrained language models find arithmetic solved by input-range heuristics rather than by an explicit carry. We train small Llama-style transformers from scratch on 4x4 multiplication without chain of thought and find that the input format is decisive: inserting a space token between digits raises exact-match accuracy from 1% to 89%. Output positions are learned in carry-chain",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-05541v1",
+      "title": "Don't Judge an LLM Only by Its Activations: Discovering Suppressed Safety Features via Counterfactual Activation Potential",
+      "authors": "Swadesh Swain, Sanghamitra Dutta",
+      "date": "2026-10-04",
+      "url": "https://arxiv.org/abs/2610.05541v1",
+      "abstract": "Mechanistic interpretability has emerged as the primary means to understand safety behavior of LLMs. However, existing tools primarily focus on the activating neurons or features of a model. The role of the remaining large set of inactive components is invisible to such methods. This work demonstrates that the inactive set contains safety-critical features that are causally relevant for refusal of harmful prompts. Suppressing such features could turn refusals into compliance, while passing undet",
+      "tags": [
+        "features",
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-04905v1",
+      "title": "ScopeSAE: Model-Scope Feature Discovery with Interpretable Layer Selection",
+      "authors": "Qingwen Zeng, Zehao Fu, Shuyu Meng, Linghan Huang, Jiayi Zhang, et al.",
+      "date": "2026-10-04",
+      "url": "https://arxiv.org/abs/2610.04905v1",
+      "abstract": "Sparse autoencoders (SAEs) are a central tool in mechanistic interpretability. However, existing SAEs are primarily trained per layer. The modeling subspace is therefore fixed by layer identity, independent of which token-layer states actually drive each prediction. We argue that this constraint contributes to several limitations observed in layer-wise SAEs, including low feature utilization, high dictionary redundancy, and features that lack direct behavioral grounding. In this paper, we propos",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-04925v1",
+      "title": "TSAE: Structured Sparse Autoencoders for Interpreting Time-Series Forecasting Models",
+      "authors": "Baoxi Liu, Yi Xie",
+      "date": "2026-10-04",
+      "url": "https://arxiv.org/abs/2610.04925v1",
+      "abstract": "Time-series forecasting informs critical decisions in energy dispatch, industrial operations, and environmental monitoring; understanding the patterns models rely on is essential for assessing reliability and identifying failures. Input attribution identifies important variables and time segments but offers limited insight into internal features, while standard sparse autoencoder (SAE) objectives do not directly constrain cross-variable structure or temporal continuity. We introduce TSAE, a stru",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-05295v1",
+      "title": "Readable Before Actionable: Causal Tracing of Indirect Prompt Injection",
+      "authors": "Zhe Yu, Wenpeng Xing, Xingxing Yang, Meng Han",
+      "date": "2026-10-04",
+      "url": "https://arxiv.org/abs/2610.05295v1",
+      "abstract": "Indirect prompt injection causes LLM agents to follow commands embedded in external data. A probe may distinguish instructions from data without identifying a state edit that changes the next action. We study this gap through counterfactual role probes, component-wise activation patching, and separate interventions on AgentDojo trajectories. Role decoding survives changes in content and format. In controlled Qwen tests, it precedes strong tool-choice effects from patches along an independently e",
+      "tags": [
+        "probing"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-05080v1",
+      "title": "Tracing a Sparse Emotion-Control Circuit in LLM-Based Text-to-Speech",
+      "authors": "Hongfei Du, Jiacheng Shi, Yanfu Zhang, Ye Gao",
+      "date": "2026-10-04",
+      "url": "https://arxiv.org/abs/2610.05080v1",
+      "abstract": "LLM-based text-to-speech (TTS) models can generate emotionally expressive speech, but how reference emotion is routed through the model and realized in decoded speech remains unclear. We introduce two emotion-sensitive metrics for matched neutral and emotional syntheses---a codec trajectory score and a late residual direction score---and use them to score activation-patching interventions. Under controlled matched-reference conditions, this analysis identifies a sparse source-to-readout componen",
+      "tags": [
+        "circuits"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-04992v1",
+      "title": "ContractLens: Latent Security Knowledge for Malicious Smart Contract Detection",
+      "authors": "Shuyi Miao, Xinyi Huang, Wangjie Qiu, Fei Shen, Jinchun He, et al.",
+      "date": "2026-10-04",
+      "url": "https://arxiv.org/abs/2610.04992v1",
+      "abstract": "Detecting malicious smart contracts is essential to safeguarding the Web3.0 ecosystem. However, existing auditing methods based on large language models (LLMs) largely rely on prompt engineering or attack-specific fine-tuning, while the internal representations that support malicious logic detection remain poorly characterized. To address this gap, we propose ContractLens, a framework that localizes and uses latent security knowledge in pretrained LLMs for interpretable malicious smart contract ",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2610-03389v1",
       "title": "From Patching to Pruning Visual Computation in Vision Language Models",
@@ -66,6 +169,59 @@
       "abstract": "A targeted adversarial perturbation can drive a vision-language model's (VLM's) teacher-forced training loss for a fixed target caption to near zero, yet the same model, allowed to generate freely, produces the original, correct description with no trace of the target. We call this dissociation the train/inference gap, and give it a precise mechanistic account on Qwen2.5-VL-7B-Instruct using a controlled two-stage PGD attack on 200 held-out COCO images. First, we show that image-level pixel stat",
       "tags": [
         "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-04119v1",
+      "title": "Copying Before Suppression: What Drives a Below-Chance Dip During Language Model Training?",
+      "authors": "Tejas Dahiya, Cole Blondin",
+      "date": "2026-10-02",
+      "url": "https://arxiv.org/abs/2610.04119v1",
+      "abstract": "Mechanistic interpretability usually studies fully trained models, yet the computations that drive a behaviour can change while the model is still learning the task. On the Indirect Object Identification task, a model should continue with the name mentioned once rather than the name mentioned twice. Pythia models pass through an early training window in which they prefer the repeated name, so accuracy in a choice between the two names falls below one half while language-model loss on a fixed tex",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-04017v1",
+      "title": "Slaying the Hydra: Interaction-Aware Circuit Discovery in Language Models",
+      "authors": "Sankaran Vaidyanathan, Rafal Urbaniak, Emily Bunnapradist, Michelangelo Naim, Daniel Waxman",
+      "date": "2026-10-02",
+      "url": "https://arxiv.org/abs/2610.04017v1",
+      "abstract": "Localizing behavior to individual components of a language model is a central goal of mechanistic interpretability. However, scoring components one at a time misses context-dependent effects: a primary component can inhibit the activation of a backup, leading to issues with ranking components. Actual causality studies the structure of such interactions via witnesses: variables that provide contextual information to resolve interaction terms. However, estimation with witnesses typically requires ",
+      "tags": [
+        "circuits"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-04112v1",
+      "title": "The Independence Prior of SAEs Fragments Visual Concepts",
+      "authors": "Tommaso Mencattini, Giorgos Nikolaou, Donato Crisostomi, Thomas Fel, Francesco Montagna, et al.",
+      "date": "2026-10-02",
+      "url": "https://arxiv.org/abs/2610.04112v1",
+      "abstract": "Sparse Autoencoders (SAEs) decompose model activations into sparse combinations of interpretable dictionary atoms. Although SAEs are grounded in the Linear Representation Hypothesis (LRH), their objective smuggles in an additional prior: concepts across patches are treated as independent, an assumption clearly violated by natural images and by the activations they induce. We therefore specialize LRH to vision through the Markov-Field Linear Representation Hypothesis (MFLRH), which adds the missi",
+      "tags": [
+        "SAE",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-04020v1",
+      "title": "ClasSAE: Class-Aligned Sparse Autoencoders via Differentiable Feature-Class Affinity",
+      "authors": "Jakub St\u0119pie\u0144, Marcin Mazur, Jacek Tabor, Przemys\u0142aw Spurek",
+      "date": "2026-10-02",
+      "url": "https://arxiv.org/abs/2610.04020v1",
+      "abstract": "Sparse Autoencoders (SAEs) began as an unsupervised tool for decomposing neural representations into sparse, interpretable features, and are increasingly used not only for passive analysis but also for active interventions such as unlearning, bias mitigation, and concept editing. A central challenge for these editing and steering methods is reliably matching features to target concepts; most current approaches address this by computing post-hoc scores over an already-trained, frozen dictionary. ",
+      "tags": [
+        "SAE",
+        "features",
+        "steering"
       ],
       "source": "arXiv",
       "featured": false
