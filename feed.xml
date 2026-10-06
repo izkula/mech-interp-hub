@@ -5,9 +5,65 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 05 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 06 Oct 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Backdooring Sparse Autoencoders</title>
+      <link>https://arxiv.org/abs/2610.06049v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Enrico Ahlers, Daniel Passon, Tobias Kiecker, Eik Reichmann, Lars Grunske</p><p>Sparse autoencoders (SAEs) are increasingly used not only to interpret language models but also to intervene on their internal representations. We show that this creates a supply-chain attack surface: a maliciously modified SAE can induce attacker-chosen behavior when inserted into the forward pass of an otherwise unchanged language model. We introduce a decoder-only SAE backdoor that leaves both the underlying LLM and the SAE encoder frozen, restricting the attack to a single auxiliary componen</p><p><strong>Tags:</strong> SAE</p>]]></description>
+      <pubDate>Mon, 05 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.06049v1</guid>
+    </item>
+    <item>
+      <title>Separators Make Carry Propagation Learnable:The Geometry of Latent Carry in a Multiplication Transformer</title>
+      <link>https://arxiv.org/abs/2610.06605v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Sama Satariyan, Raphael Cousin, G{é}rard Biau</p><p>Transformers asked to multiply multi-digit numbers in a single forward pass often fail, and interpretability studies of pretrained language models find arithmetic solved by input-range heuristics rather than by an explicit carry. We train small Llama-style transformers from scratch on 4x4 multiplication without chain of thought and find that the input format is decisive: inserting a space token between digits raises exact-match accuracy from 1% to 89%. Output positions are learned in carry-chain</p>]]></description>
+      <pubDate>Mon, 05 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.06605v1</guid>
+    </item>
+    <item>
+      <title>Don&#x27;t Judge an LLM Only by Its Activations: Discovering Suppressed Safety Features via Counterfactual Activation Potential</title>
+      <link>https://arxiv.org/abs/2610.05541v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Swadesh Swain, Sanghamitra Dutta</p><p>Mechanistic interpretability has emerged as the primary means to understand safety behavior of LLMs. However, existing tools primarily focus on the activating neurons or features of a model. The role of the remaining large set of inactive components is invisible to such methods. This work demonstrates that the inactive set contains safety-critical features that are causally relevant for refusal of harmful prompts. Suppressing such features could turn refusals into compliance, while passing undet</p><p><strong>Tags:</strong> features, safety</p>]]></description>
+      <pubDate>Sun, 04 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.05541v1</guid>
+    </item>
+    <item>
+      <title>ScopeSAE: Model-Scope Feature Discovery with Interpretable Layer Selection</title>
+      <link>https://arxiv.org/abs/2610.04905v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Qingwen Zeng, Zehao Fu, Shuyu Meng, Linghan Huang, Jiayi Zhang, et al.</p><p>Sparse autoencoders (SAEs) are a central tool in mechanistic interpretability. However, existing SAEs are primarily trained per layer. The modeling subspace is therefore fixed by layer identity, independent of which token-layer states actually drive each prediction. We argue that this constraint contributes to several limitations observed in layer-wise SAEs, including low feature utilization, high dictionary redundancy, and features that lack direct behavioral grounding. In this paper, we propos</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Sun, 04 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.04905v1</guid>
+    </item>
+    <item>
+      <title>TSAE: Structured Sparse Autoencoders for Interpreting Time-Series Forecasting Models</title>
+      <link>https://arxiv.org/abs/2610.04925v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Baoxi Liu, Yi Xie</p><p>Time-series forecasting informs critical decisions in energy dispatch, industrial operations, and environmental monitoring; understanding the patterns models rely on is essential for assessing reliability and identifying failures. Input attribution identifies important variables and time segments but offers limited insight into internal features, while standard sparse autoencoder (SAE) objectives do not directly constrain cross-variable structure or temporal continuity. We introduce TSAE, a stru</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Sun, 04 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.04925v1</guid>
+    </item>
+    <item>
+      <title>Readable Before Actionable: Causal Tracing of Indirect Prompt Injection</title>
+      <link>https://arxiv.org/abs/2610.05295v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Zhe Yu, Wenpeng Xing, Xingxing Yang, Meng Han</p><p>Indirect prompt injection causes LLM agents to follow commands embedded in external data. A probe may distinguish instructions from data without identifying a state edit that changes the next action. We study this gap through counterfactual role probes, component-wise activation patching, and separate interventions on AgentDojo trajectories. Role decoding survives changes in content and format. In controlled Qwen tests, it precedes strong tool-choice effects from patches along an independently e</p><p><strong>Tags:</strong> probing</p>]]></description>
+      <pubDate>Sun, 04 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.05295v1</guid>
+    </item>
+    <item>
+      <title>Tracing a Sparse Emotion-Control Circuit in LLM-Based Text-to-Speech</title>
+      <link>https://arxiv.org/abs/2610.05080v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Hongfei Du, Jiacheng Shi, Yanfu Zhang, Ye Gao</p><p>LLM-based text-to-speech (TTS) models can generate emotionally expressive speech, but how reference emotion is routed through the model and realized in decoded speech remains unclear. We introduce two emotion-sensitive metrics for matched neutral and emotional syntheses---a codec trajectory score and a late residual direction score---and use them to score activation-patching interventions. Under controlled matched-reference conditions, this analysis identifies a sparse source-to-readout componen</p><p><strong>Tags:</strong> circuits</p>]]></description>
+      <pubDate>Sun, 04 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.05080v1</guid>
+    </item>
+    <item>
+      <title>ContractLens: Latent Security Knowledge for Malicious Smart Contract Detection</title>
+      <link>https://arxiv.org/abs/2610.04992v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Shuyi Miao, Xinyi Huang, Wangjie Qiu, Fei Shen, Jinchun He, et al.</p><p>Detecting malicious smart contracts is essential to safeguarding the Web3.0 ecosystem. However, existing auditing methods based on large language models (LLMs) largely rely on prompt engineering or attack-specific fine-tuning, while the internal representations that support malicious logic detection remain poorly characterized. To address this gap, we propose ContractLens, a framework that localizes and uses latent security knowledge in pretrained LLMs for interpretable malicious smart contract </p>]]></description>
+      <pubDate>Sun, 04 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.04992v1</guid>
+    </item>
     <item>
       <title>From Patching to Pruning Visual Computation in Vision Language Models</title>
       <link>https://arxiv.org/abs/2610.03389v1</link>
@@ -42,6 +98,34 @@
       <description><![CDATA[<p><strong>Authors:</strong> Arun Josephraj Arokiaraj, Zekun Wu, Adriano Koshiyama</p><p>A targeted adversarial perturbation can drive a vision-language model&#x27;s (VLM&#x27;s) teacher-forced training loss for a fixed target caption to near zero, yet the same model, allowed to generate freely, produces the original, correct description with no trace of the target. We call this dissociation the train/inference gap, and give it a precise mechanistic account on Qwen2.5-VL-7B-Instruct using a controlled two-stage PGD attack on 200 held-out COCO images. First, we show that image-level pixel stat</p><p><strong>Tags:</strong> vision</p>]]></description>
       <pubDate>Fri, 02 Oct 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2610.03445v1</guid>
+    </item>
+    <item>
+      <title>Copying Before Suppression: What Drives a Below-Chance Dip During Language Model Training?</title>
+      <link>https://arxiv.org/abs/2610.04119v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Tejas Dahiya, Cole Blondin</p><p>Mechanistic interpretability usually studies fully trained models, yet the computations that drive a behaviour can change while the model is still learning the task. On the Indirect Object Identification task, a model should continue with the name mentioned once rather than the name mentioned twice. Pythia models pass through an early training window in which they prefer the repeated name, so accuracy in a choice between the two names falls below one half while language-model loss on a fixed tex</p>]]></description>
+      <pubDate>Fri, 02 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.04119v1</guid>
+    </item>
+    <item>
+      <title>Slaying the Hydra: Interaction-Aware Circuit Discovery in Language Models</title>
+      <link>https://arxiv.org/abs/2610.04017v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Sankaran Vaidyanathan, Rafal Urbaniak, Emily Bunnapradist, Michelangelo Naim, Daniel Waxman</p><p>Localizing behavior to individual components of a language model is a central goal of mechanistic interpretability. However, scoring components one at a time misses context-dependent effects: a primary component can inhibit the activation of a backup, leading to issues with ranking components. Actual causality studies the structure of such interactions via witnesses: variables that provide contextual information to resolve interaction terms. However, estimation with witnesses typically requires </p><p><strong>Tags:</strong> circuits</p>]]></description>
+      <pubDate>Fri, 02 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.04017v1</guid>
+    </item>
+    <item>
+      <title>The Independence Prior of SAEs Fragments Visual Concepts</title>
+      <link>https://arxiv.org/abs/2610.04112v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Tommaso Mencattini, Giorgos Nikolaou, Donato Crisostomi, Thomas Fel, Francesco Montagna, et al.</p><p>Sparse Autoencoders (SAEs) decompose model activations into sparse combinations of interpretable dictionary atoms. Although SAEs are grounded in the Linear Representation Hypothesis (LRH), their objective smuggles in an additional prior: concepts across patches are treated as independent, an assumption clearly violated by natural images and by the activations they induce. We therefore specialize LRH to vision through the Markov-Field Linear Representation Hypothesis (MFLRH), which adds the missi</p><p><strong>Tags:</strong> SAE, vision</p>]]></description>
+      <pubDate>Fri, 02 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.04112v1</guid>
+    </item>
+    <item>
+      <title>ClasSAE: Class-Aligned Sparse Autoencoders via Differentiable Feature-Class Affinity</title>
+      <link>https://arxiv.org/abs/2610.04020v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Jakub Stępień, Marcin Mazur, Jacek Tabor, Przemysław Spurek</p><p>Sparse Autoencoders (SAEs) began as an unsupervised tool for decomposing neural representations into sparse, interpretable features, and are increasingly used not only for passive analysis but also for active interventions such as unlearning, bias mitigation, and concept editing. A central challenge for these editing and steering methods is reliably matching features to target concepts; most current approaches address this by computing post-hoc scores over an already-trained, frozen dictionary. </p><p><strong>Tags:</strong> SAE, features, steering</p>]]></description>
+      <pubDate>Fri, 02 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.04020v1</guid>
     </item>
     <item>
       <title>Are We Recovering Mechanisms? Objective-Level Recovery Gaps in Mechanistic Interpretability</title>
@@ -133,90 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Katharina Winter, Stefan Englmeier, Fabian B. Flohr</p><p>Vision-Language Models are increasingly used in autonomous-driving systems, yet their ability to recover dynamic physical state from visual input remains insufficiently characterized. We study velocity understanding as a controlled diagnostic across three tasks: surrounding-agent speed, current ego speed, and short-horizon future ego-speed proposal. On nuScenes, we evaluate open-weight general-purpose and PhysicalAI VLMs, together with the driving-oriented Alpamayo-1.5 Vision-Language-Action mod</p><p><strong>Tags:</strong> vision</p>]]></description>
       <pubDate>Tue, 29 Sep 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2609.37046v1</guid>
-    </item>
-    <item>
-      <title>How Medical VLMs Underutilize Their Vision Encoders: A Dermatology Perspective</title>
-      <link>https://arxiv.org/abs/2609.36557v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Janet Wang, Yunbei Zhang, Xiao Wang, Jihun Hamm</p><p>Medical Vision-Language Models (VLMs) show significant promise for clinical image understanding, offering accurate diagnosis with interpretable reasoning. However, a critical performance gap exists between their strong vision encoders and the full multimodal model: in dermatology, the MedSigLIP encoder outperforms MedGemma by an average of 10.26 percentage points even when both use zero target-task labels; few-shot linear probing provides further evidence of strong visual representations. This g</p><p><strong>Tags:</strong> probing, vision, reasoning</p>]]></description>
-      <pubDate>Tue, 29 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2609.36557v1</guid>
-    </item>
-    <item>
-      <title>Rethinking Circuit Evaluation: Do Circuits Explain Model Errors?</title>
-      <link>https://arxiv.org/abs/2609.35686v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Li Zhang, Chuqin Geng, Mark Zhang, Chen Yang, Luke Zhang, et al.</p><p>Mechanistic interpretability (MI) aims to explain a model&#x27;s behaviour through analyzing its internal computations; circuit-based explanations aim to isolate these computations with compact subnetworks validated by ablating the rest of the model. We show that circuits validated this way may fail to recover the underlying mechanism of the model&#x27;s behaviour by closely reproducing its successful decisions while failing to account for most of its errors. Such explanations should account for the model</p><p><strong>Tags:</strong> circuits</p>]]></description>
-      <pubDate>Mon, 28 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2609.35686v1</guid>
-    </item>
-    <item>
-      <title>Signatures of semantic search in the activations of large language models</title>
-      <link>https://arxiv.org/abs/2609.35599v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Luke Leckie, Peter M. Todd, Jacob G. Foster</p><p>When recalling lists of concepts (e.g., animals) during the semantic fluency task (SFT), both humans and large language models (LLMs) organise their output into clusters of related items (e.g., sea animals) that are punctuated by strategic switches between clusters. In humans, this pattern can be explained by a semantic foraging process, whereby distinct neural and behavioural signatures accompany within-cluster production (&quot;exploit&quot;) and between-cluster switching (&quot;explore&quot;). Whether LLMs likew</p>]]></description>
-      <pubDate>Mon, 28 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2609.35599v1</guid>
-    </item>
-    <item>
-      <title>Less Sycophancy, Stronger Refusal? Lessons for AI Safety from Mechanistic Interpretability</title>
-      <link>https://arxiv.org/abs/2609.35544v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Xu Wang, Difan Zou, Xuansheng Wu</p><p>Reliable refusal of harmful requests is essential to the safe deployment of language models. Because excessive eagerness to please users may undermine existing refusal capabilities, reducing sycophancy offers a potential route to stronger refusal beyond the harmful scenarios covered by safety training. We investigate this possibility using compensatory feature injection (CFI), a training technique designed to limit the acquisition of a target concept by supplying its associated activation during</p><p><strong>Tags:</strong> features, safety</p>]]></description>
-      <pubDate>Mon, 28 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2609.35544v1</guid>
-    </item>
-    <item>
-      <title>From Input to Output: A Flexible Agent for Dual-End Interpretation of Sparse Autoencoder Features</title>
-      <link>https://arxiv.org/abs/2609.35367v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Dewen Liu, Zixuan Li, Jonathan Pan, Zhao Wu, Zijun Yao, et al.</p><p>Sparse autoencoders (SAEs) are an important tool for mechanistic interpretability, but interpreting their many features remains challenging. Existing methods characterize input-side activation patterns and output-side intervention effects, yet often leave their functional connection implicit, while input-side evidence collection typically relies on costly large-corpus scans. We introduce functional interpretation, which characterizes an SAE feature as a mapping from its activating input semantic</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Mon, 28 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2609.35367v1</guid>
-    </item>
-    <item>
-      <title>Understanding On-Policy Distillation: A Mechanistic Interpretability Perspective via Sparse Crosscoders</title>
-      <link>https://arxiv.org/abs/2609.35210v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Zichao Yu, Qianshuo Ye, Xu Wang, Difan Zou</p><p>On-policy distillation (OPD) is a widely adopted post-training technique for LLM reasoning. It is commonly believed to transfer knowledge from a stronger teacher, yet what OPD actually distills into the student&#x27;s internal representations remains unclear. We study this question with sparse crosscoders, which learn one feature dictionary shared by the student before and after OPD and the teacher. Standard crosscoder analyses, however, identify model-specific features but cannot tell how a model&#x27;s </p><p><strong>Tags:</strong> features, reasoning</p>]]></description>
-      <pubDate>Mon, 28 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2609.35210v1</guid>
-    </item>
-    <item>
-      <title>Verifying the Linear Representation Hypothesis: How Interpretable Are Vision SAEs?</title>
-      <link>https://arxiv.org/abs/2609.35020v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Teodor Chiaburu, Franz Motzkus, Frank Haußer, Felix Bießmann</p><p>Vision Sparse Autoencoders (SAEs) have become a popular tool in Mechanistic Interpretability due to their presumed ability to disentangle complex features learned by a model into monosemantic concepts. Despite their growing popularity, evaluating their interpretability remains an active topic of research. The bedrock motivating the adoption of SAEs is the Linear Representation Hypothesis (LRH), which claims that polysemantic features can be projected onto a (near) orthogonal basis of sparse, hum</p><p><strong>Tags:</strong> SAE, features, vision</p>]]></description>
-      <pubDate>Mon, 28 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2609.35020v1</guid>
-    </item>
-    <item>
-      <title>On Temporal Binding in Large Audio Language Models</title>
-      <link>https://arxiv.org/abs/2609.34806v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Paul Primus, Gerhard Widmer</p><p>Reasoning about temporal structure of audio recordings requires Large Audio Language Models (LALMs) to associate sound events with their temporal position. Understanding the underlying mechanisms is a first step toward diagnosing failures and identifying model components that may need improvement. Using mechanistic interpretability, we investigate how temporal information is represented and bound to sound events in three open-source LALMs. We find that across all three, event-specific location b</p><p><strong>Tags:</strong> reasoning</p>]]></description>
-      <pubDate>Mon, 28 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2609.34806v1</guid>
-    </item>
-    <item>
-      <title>Beyond Token Scale: Chunk-Level Sparse Autoencoders for Reliable Semantic Feature Discovery</title>
-      <link>https://arxiv.org/abs/2609.35521v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Xu Wang, Yifan Yang, TingHao YU, Difan Zou</p><p>Sparse autoencoders (SAEs) expose features that help us understand and steer language models, but faithful reconstruction does not guarantee informative concepts. Token-level objectives reward lexical and formatting details alongside semantic content, all competing for a limited sparse budget. We introduce a family of chunk-level SAEs that encode mean-pooled activations over chunks, each a contiguous span of tokens: Mean-Chunk reconstructs the observed chunk, Cross-Chunk predicts an independentl</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Mon, 28 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2609.35521v1</guid>
-    </item>
-    <item>
-      <title>Routing Without Embeddings: Fast And Interpretable Routing With Regular Expressions</title>
-      <link>https://arxiv.org/abs/2609.34326v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Yifan Lu, Qiyue Zhang, Haotian Shan, Hanjie Chen, Jiarong Xing</p><p>Large Language Model (LLM) routers commonly rely on neural query embeddings, with larger encoders expected to better capture query intent and difficulty. Yet scaling Qwen2.5 encoders from 0.5B to 72B parameters brings little improvement in routing accuracy (Figure 1b), suggesting that small encoders may already capture the query properties needed for routing. We therefore investigate which properties matter and whether they can be extracted directly from text without a neural encoder. We introdu</p>]]></description>
-      <pubDate>Mon, 28 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2609.34326v1</guid>
-    </item>
-    <item>
-      <title>Towards Interpretable Framework for Neural Audio Codecs via Sparse Autoencoders: Exploration toward Age, Gender, and Accent Steering</title>
-      <link>https://arxiv.org/abs/2609.34052v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Shih-Heng Wang, Tiantian Feng, Aditya Kommineni, Huang-Cheng Chou, Bowen Yi, et al.</p><p>Neural audio codecs (NACs) are widely used in speech generation and audio-language modeling, yet how they encode speaker-trait information remains poorly understood. Prior work applied sparse autoencoders (SAEs) to investigate accent information in NACs through task-level analysis. Here, we extend this analysis to the waveform level and to age, gender, and accent, using SAE steering to probe trait-related information in sparse activations. We identify trait-associated dimensions, modify their ac</p><p><strong>Tags:</strong> SAE, probing, steering</p>]]></description>
-      <pubDate>Mon, 28 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2609.34052v1</guid>
-    </item>
-    <item>
-      <title>When Is an SAE Feature Interpretable? A Validation Ladder for EEG Foundation Models</title>
-      <link>https://arxiv.org/abs/2609.34091v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Yucong Cao, Chenqi Li, Tingting Zhu</p><p>Sparse autoencoders (SAEs) decompose dense model activations into discrete latents, making individual features easy to interpret--and easy to misinterpret. In EEG foundation models, this creates a tempting inference: if removing alpha-band activity strongly changes a latent&#x27;s activation, one might conclude that the latent represents alpha activity. Across 27 settings spanning three backbones, three EEG datasets, and three network depths, this interpretation initially appears compelling: alpha re</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Mon, 28 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2609.34091v1</guid>
     </item>
   </channel>
 </rss>
