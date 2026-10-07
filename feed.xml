@@ -5,9 +5,16 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 06 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 07 Oct 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Mechanistic Interpretability of Atmospheric Rivers in GraphCast</title>
+      <link>https://arxiv.org/abs/2610.07583v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Madelyn Mathai, Timothy B. Higgins, Kevin M. Grise, Chirag Agarwal, Antonios Mamalakis</p><p>While AI weather models now rival operational forecasts, how they represent the atmosphere internally remains an open question: feature attribution reveals which input patterns matter, not what the model computes or how it combines information internally. We train sparse autoencoders (SAEs) on GraphCast to uncover its learned concepts, using atmospheric rivers as our phenomenon of focus. Both standard and Matryoshka SAEs show GraphCast computes atmospheric river intensity, measured by integrated</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Tue, 06 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.07583v1</guid>
+    </item>
     <item>
       <title>Backdooring Sparse Autoencoders</title>
       <link>https://arxiv.org/abs/2610.06049v1</link>
@@ -21,6 +28,27 @@
       <description><![CDATA[<p><strong>Authors:</strong> Sama Satariyan, Raphael Cousin, G{é}rard Biau</p><p>Transformers asked to multiply multi-digit numbers in a single forward pass often fail, and interpretability studies of pretrained language models find arithmetic solved by input-range heuristics rather than by an explicit carry. We train small Llama-style transformers from scratch on 4x4 multiplication without chain of thought and find that the input format is decisive: inserting a space token between digits raises exact-match accuracy from 1% to 89%. Output positions are learned in carry-chain</p>]]></description>
       <pubDate>Mon, 05 Oct 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2610.06605v1</guid>
+    </item>
+    <item>
+      <title>Inference and learning in sparse autoencoders as natural gradient flow</title>
+      <link>https://arxiv.org/abs/2610.07389v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Hadi Vafaii, Tejas Rao, David Chanin, Thomas Fel, Jacob L. Yates, et al.</p><p>Sparse autoencoders are widely used to uncover interpretable features in neural networks, yet reliable recovery remains difficult when features overlap or activate infrequently. These challenges involve both inferring which features explain an input and learning the dictionary that represents them. Here, we unify inference and dictionary learning as natural-gradient flows on a shared variational free energy. We instantiate this framework as BeFOND, an encoder-free sparse coding model with closed</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Mon, 05 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.07389v1</guid>
+    </item>
+    <item>
+      <title>From Local Evidence to Safety Verdicts: Causal Tracing in Vision-Language Models</title>
+      <link>https://arxiv.org/abs/2610.07514v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Faezeh Dehghan Tarzjani, Mevan Wijewardena, Alexander Romanus, Sampad Mohanty</p><p>A vision-language model may need to combine an image with a prompt to recognize a safety risk that neither reveals alone. Where does this joint safety judgment become accessible inside the model? We introduce SSU-Bench, a dataset of matched safe and unsafe image-text combinations constructed using single-item prompt edits or image edits with annotated intended regions. Using three vision-language models, we transfer internal states between paired inputs and measure the resulting change in the sa</p><p><strong>Tags:</strong> safety, vision</p>]]></description>
+      <pubDate>Mon, 05 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.07514v1</guid>
+    </item>
+    <item>
+      <title>COMPASS: Finding Where Reasoning Lives in Language Models</title>
+      <link>https://arxiv.org/abs/2610.07469v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Pratyay Dutta, Kowshik Thopalli, Vivek Narayanaswamy</p><p>Explicitly eliciting reasoning substantially improves LLM performance. Existing approaches require a predefined characterization of reasoning, whether through CoT prompt design, contrastive CoT directions, or via SAE derived reasoning features. For mathematical reasoning with verifiable answers, we show that a much simpler signal suffices, which is the correctness of the model&#x27;s own direct answer attempts. This signal yields a latent direction that elicits reasoning. This direction is decodable </p><p><strong>Tags:</strong> SAE, features, reasoning</p>]]></description>
+      <pubDate>Mon, 05 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.07469v1</guid>
     </item>
     <item>
       <title>Don&#x27;t Judge an LLM Only by Its Activations: Discovering Suppressed Safety Features via Counterfactual Activation Potential</title>
@@ -63,6 +91,20 @@
       <description><![CDATA[<p><strong>Authors:</strong> Shuyi Miao, Xinyi Huang, Wangjie Qiu, Fei Shen, Jinchun He, et al.</p><p>Detecting malicious smart contracts is essential to safeguarding the Web3.0 ecosystem. However, existing auditing methods based on large language models (LLMs) largely rely on prompt engineering or attack-specific fine-tuning, while the internal representations that support malicious logic detection remain poorly characterized. To address this gap, we propose ContractLens, a framework that localizes and uses latent security knowledge in pretrained LLMs for interpretable malicious smart contract </p>]]></description>
       <pubDate>Sun, 04 Oct 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2610.04992v1</guid>
+    </item>
+    <item>
+      <title>Beyond the Linear Representation Hypothesis: Non-Linear Activation Steering in Text-to-Image Models</title>
+      <link>https://arxiv.org/abs/2610.06945v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Muhammad Atif Butt, Paweł Skierś, Joost Van De Weijer, Kamil Deja</p><p>Mechanistic interpretability often relies on the Linear Representation Hypothesis (LRH), which assumes that high-level concepts are encoded as linear directions in activation space. Yet a natural visual concept does not necessarily require a linear visual transition: between sunny and stormy lies an intermediate weather state such as a sky with a few white clouds, not simply a weaker storm; between a caterpillar and a butterfly, the progression is not a caterpillar with continuously growing wing</p><p><strong>Tags:</strong> steering, vision</p>]]></description>
+      <pubDate>Sat, 03 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.06945v1</guid>
+    </item>
+    <item>
+      <title>Metonymic Circuits for Abstract Concept Grounding in Vision Transformers</title>
+      <link>https://arxiv.org/abs/2610.06928v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Jing Ding, Ziqiao Ma, Jiayuan Mao, Joyce Chai, Freda Shi</p><p>We study how Vision Transformers ground abstract concepts (e.g., angry) when training data provide limited direct referential evidence. We hypothesize a metonymic grounding mechanism in which abstract predictions are driven by concrete, interpretable anchor concepts (e.g., fire) that bridge visual signals to abstract semantics. By applying Transcoders on CLIP and DINO vision encoders, we recover intermediate features that can be associated with semantic labels for more concrete concepts, and tra</p><p><strong>Tags:</strong> circuits, features, vision</p>]]></description>
+      <pubDate>Sat, 03 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.06928v1</guid>
     </item>
     <item>
       <title>From Patching to Pruning Visual Computation in Vision Language Models</title>
@@ -175,48 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Beiming Liu, Minjie Chen</p><p>Causal interventions such as activation patching and distributed alignment search (DAS) are the main tool for making mechanistic claims about neural networks. Recent work showed that these interventions routinely push representations off the model&#x27;s natural distribution, and that such divergence is sometimes harmless and sometimes pernicious: it can recruit pathways the model never uses on natural inputs, so that an intervention produces the expected answer through the wrong mechanism. No method</p><p><strong>Tags:</strong> safety</p>]]></description>
       <pubDate>Wed, 30 Sep 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2609.39243v1</guid>
-    </item>
-    <item>
-      <title>Concept Subspaces Compute Beyond the Logit Lens: A Weights-Only Test for Locating Representations Upstream of Readout</title>
-      <link>https://arxiv.org/abs/2609.39263v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Aojie Yuan, Zhiyuan Julian Su, Haiyue Zhang, Zijian Su</p><p>A concept subspace&#x27;s effect on model behavior does not establish how it relates to the output readout. We introduce a two-sided geometric diagnostic that measures an extracted subspace&#x27;s overlap with the dominant right-singular directions of the unembedding matrix, evaluated against output-oriented positive controls. Given an extracted basis, the raw diagnostic requires only model weights. Our testbed is the Format-Agnostic Reasoning Subspace (FARS), a ten-dimensional basis extracted from eighte</p><p><strong>Tags:</strong> reasoning</p>]]></description>
-      <pubDate>Wed, 30 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2609.39263v1</guid>
-    </item>
-    <item>
-      <title>When Models Don&#x27;t Manipulate Manifolds: The Geometry of a Comparison Task</title>
-      <link>https://arxiv.org/abs/2609.37680v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Sai Sumedh R. Hindupur, Hadas Orgad, Thomas Fel, Demba Ba</p><p>One of the current premises of mechanistic interpretability research is that detailed accounts of the geometry of neural network representations can tell us how models perform computations, and how to effectively intervene on them. While low dimensional manifolds have been observed for multiple concepts in the literature (e.g. numbers encoded on helices, days of the week on a circle, ...), with structure believed to reflect properties of data and tasks, the extent to which models rely on them fo</p>]]></description>
-      <pubDate>Tue, 29 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2609.37680v1</guid>
-    </item>
-    <item>
-      <title>RESCUE: Repairing Language Model Errors to Sparse Circuits via Reinforcement Learning</title>
-      <link>https://arxiv.org/abs/2609.36813v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Chuanpu Liu, Miao Yu, Yikai Cai, Yuanhe Zhang, Zhenhong Zhou, et al.</p><p>Large language models (LLMs) exhibit strong general capabilities that mechanistic interpretability has attributed to sparse computational circuits. However, existing circuit studies emphasize preserving functionality or explaining safety, leaving the mechanisms underlying failures across a broader range of tasks largely unexplored. Extending circuit analysis from abilities to errors, we explore the perspective that such failures may likewise arise from erroneous internal computations and that ta</p><p><strong>Tags:</strong> circuits, safety</p>]]></description>
-      <pubDate>Tue, 29 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2609.36813v1</guid>
-    </item>
-    <item>
-      <title>Active Budget Can Kill Sensitivity: Diagnosing and Repairing TopK Sparse Autoencoder Reliability</title>
-      <link>https://arxiv.org/abs/2609.37857v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Zhenting Huang, Junnan Liu, Qianren Mao, Zhixing Tan, Bo Jiang</p><p>Sparse autoencoders (SAEs) are increasingly scaled to wider dictionaries to recover fine-grained structure from large language model activations. However, a feature is useful for interpretation only if it remains a stable unit of analysis when the same meaning is expressed in different surface forms. We study this reliability question for TopK SAEs via feature sensitivity. Experiments demonstrate that scaling selectively reduces the sensitivity of rare features, while common features remain comp</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Tue, 29 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2609.37857v1</guid>
-    </item>
-    <item>
-      <title>Where Do LLMs Decide to Break the Rules? Mechanistic Localization of Prompt Injection Compliance</title>
-      <link>https://arxiv.org/abs/2609.37737v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Rui Wen, Jiayang Liu, Zeyu Yang, Jun Sakuma, Lu Sun</p><p>When a prompt injection attack succeeds, a Large Language Model (LLM) abandons its assigned system role to comply with an adversarial instruction. While prior work has extensively quantified how often this occurs, we ask a more fundamental question: where inside the network does the model actually decide to break the rules? Using layer-by-layer causal activation patching across five models (4B to 32B parameters), we find a clear dissociation: attack information is linearly decodable from the fir</p>]]></description>
-      <pubDate>Tue, 29 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2609.37737v1</guid>
-    </item>
-    <item>
-      <title>Speed in the Blind Spot: An Interpretability Analysis of Dynamic Perception in VLMs for Autonomous Driving</title>
-      <link>https://arxiv.org/abs/2609.37046v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Katharina Winter, Stefan Englmeier, Fabian B. Flohr</p><p>Vision-Language Models are increasingly used in autonomous-driving systems, yet their ability to recover dynamic physical state from visual input remains insufficiently characterized. We study velocity understanding as a controlled diagnostic across three tasks: surrounding-agent speed, current ego speed, and short-horizon future ego-speed proposal. On nuScenes, we evaluate open-weight general-purpose and PhysicalAI VLMs, together with the driving-oriented Alpamayo-1.5 Vision-Language-Action mod</p><p><strong>Tags:</strong> vision</p>]]></description>
-      <pubDate>Tue, 29 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2609.37046v1</guid>
     </item>
   </channel>
 </rss>
