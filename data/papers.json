@@ -1,6 +1,20 @@
 {
-  "lastUpdated": "2026-10-06",
+  "lastUpdated": "2026-10-07",
   "papers": [
+    {
+      "id": "arxiv-2610-07583v1",
+      "title": "Mechanistic Interpretability of Atmospheric Rivers in GraphCast",
+      "authors": "Madelyn Mathai, Timothy B. Higgins, Kevin M. Grise, Chirag Agarwal, Antonios Mamalakis",
+      "date": "2026-10-06",
+      "url": "https://arxiv.org/abs/2610.07583v1",
+      "abstract": "While AI weather models now rival operational forecasts, how they represent the atmosphere internally remains an open question: feature attribution reveals which input patterns matter, not what the model computes or how it combines information internally. We train sparse autoencoders (SAEs) on GraphCast to uncover its learned concepts, using atmospheric rivers as our phenomenon of focus. Both standard and Matryoshka SAEs show GraphCast computes atmospheric river intensity, measured by integrated",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2610-06049v1",
       "title": "Backdooring Sparse Autoencoders",
@@ -22,6 +36,49 @@
       "url": "https://arxiv.org/abs/2610.06605v1",
       "abstract": "Transformers asked to multiply multi-digit numbers in a single forward pass often fail, and interpretability studies of pretrained language models find arithmetic solved by input-range heuristics rather than by an explicit carry. We train small Llama-style transformers from scratch on 4x4 multiplication without chain of thought and find that the input format is decisive: inserting a space token between digits raises exact-match accuracy from 1% to 89%. Output positions are learned in carry-chain",
       "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-07389v1",
+      "title": "Inference and learning in sparse autoencoders as natural gradient flow",
+      "authors": "Hadi Vafaii, Tejas Rao, David Chanin, Thomas Fel, Jacob L. Yates, et al.",
+      "date": "2026-10-05",
+      "url": "https://arxiv.org/abs/2610.07389v1",
+      "abstract": "Sparse autoencoders are widely used to uncover interpretable features in neural networks, yet reliable recovery remains difficult when features overlap or activate infrequently. These challenges involve both inferring which features explain an input and learning the dictionary that represents them. Here, we unify inference and dictionary learning as natural-gradient flows on a shared variational free energy. We instantiate this framework as BeFOND, an encoder-free sparse coding model with closed",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-07514v1",
+      "title": "From Local Evidence to Safety Verdicts: Causal Tracing in Vision-Language Models",
+      "authors": "Faezeh Dehghan Tarzjani, Mevan Wijewardena, Alexander Romanus, Sampad Mohanty",
+      "date": "2026-10-05",
+      "url": "https://arxiv.org/abs/2610.07514v1",
+      "abstract": "A vision-language model may need to combine an image with a prompt to recognize a safety risk that neither reveals alone. Where does this joint safety judgment become accessible inside the model? We introduce SSU-Bench, a dataset of matched safe and unsafe image-text combinations constructed using single-item prompt edits or image edits with annotated intended regions. Using three vision-language models, we transfer internal states between paired inputs and measure the resulting change in the sa",
+      "tags": [
+        "safety",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-07469v1",
+      "title": "COMPASS: Finding Where Reasoning Lives in Language Models",
+      "authors": "Pratyay Dutta, Kowshik Thopalli, Vivek Narayanaswamy",
+      "date": "2026-10-05",
+      "url": "https://arxiv.org/abs/2610.07469v1",
+      "abstract": "Explicitly eliciting reasoning substantially improves LLM performance. Existing approaches require a predefined characterization of reasoning, whether through CoT prompt design, contrastive CoT directions, or via SAE derived reasoning features. For mathematical reasoning with verifiable answers, we show that a much simpler signal suffices, which is the correctness of the model's own direct answer attempts. This signal yields a latent direction that elicits reasoning. This direction is decodable ",
+      "tags": [
+        "SAE",
+        "features",
+        "reasoning"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -101,6 +158,35 @@
       "url": "https://arxiv.org/abs/2610.04992v1",
       "abstract": "Detecting malicious smart contracts is essential to safeguarding the Web3.0 ecosystem. However, existing auditing methods based on large language models (LLMs) largely rely on prompt engineering or attack-specific fine-tuning, while the internal representations that support malicious logic detection remain poorly characterized. To address this gap, we propose ContractLens, a framework that localizes and uses latent security knowledge in pretrained LLMs for interpretable malicious smart contract ",
       "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-06945v1",
+      "title": "Beyond the Linear Representation Hypothesis: Non-Linear Activation Steering in Text-to-Image Models",
+      "authors": "Muhammad Atif Butt, Pawe\u0142 Skier\u015b, Joost Van De Weijer, Kamil Deja",
+      "date": "2026-10-03",
+      "url": "https://arxiv.org/abs/2610.06945v1",
+      "abstract": "Mechanistic interpretability often relies on the Linear Representation Hypothesis (LRH), which assumes that high-level concepts are encoded as linear directions in activation space. Yet a natural visual concept does not necessarily require a linear visual transition: between sunny and stormy lies an intermediate weather state such as a sky with a few white clouds, not simply a weaker storm; between a caterpillar and a butterfly, the progression is not a caterpillar with continuously growing wing",
+      "tags": [
+        "steering",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-06928v1",
+      "title": "Metonymic Circuits for Abstract Concept Grounding in Vision Transformers",
+      "authors": "Jing Ding, Ziqiao Ma, Jiayuan Mao, Joyce Chai, Freda Shi",
+      "date": "2026-10-03",
+      "url": "https://arxiv.org/abs/2610.06928v1",
+      "abstract": "We study how Vision Transformers ground abstract concepts (e.g., angry) when training data provide limited direct referential evidence. We hypothesize a metonymic grounding mechanism in which abstract predictions are driven by concrete, interpretable anchor concepts (e.g., fire) that bridge visual signals to abstract semantics. By applying Transcoders on CLIP and DINO vision encoders, we recover intermediate features that can be associated with semantic labels for more concrete concepts, and tra",
+      "tags": [
+        "circuits",
+        "features",
+        "vision"
+      ],
       "source": "arXiv",
       "featured": false
     },
@@ -614,6 +700,19 @@
       "tags": [
         "SAE",
         "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-06897v1",
+      "title": "Capacity, Responsiveness and Alignment: What Makes a Latent Structure Actionable",
+      "authors": "Or Shafran, Mor Geva",
+      "date": "2026-09-28",
+      "url": "https://arxiv.org/abs/2610.06897v1",
+      "abstract": "Localizing latent structures in the activation space of language models (LMs) is central to understanding and controlling their behavior. Yet, localized structures can differ substantially in their causal influence, raising the question of what makes a structure actionable. We tackle this question by casting causal influence as a product of three factors and showing empirically that they act as interpretable, distinct constraints: capacity, measuring the sensitivity of the model's output to move",
+      "tags": [
+        "safety"
       ],
       "source": "arXiv",
       "featured": false
