@@ -1,6 +1,60 @@
 {
-  "lastUpdated": "2026-10-07",
+  "lastUpdated": "2026-10-08",
   "papers": [
+    {
+      "id": "arxiv-2610-10178v1",
+      "title": "Do Vision-Language-Action Models Understand Instructions? A Mechanistic Interpretability Study on Language Grounding",
+      "authors": "Theodor Wulff, Angelo Cangelosi",
+      "date": "2026-10-07",
+      "url": "https://arxiv.org/abs/2610.10178v1",
+      "abstract": "Vision-Language-Action models are designed to generalise across environments and task descriptions, raising the question of whether their action generation actually depends on the language instruction, or whether they largely rely on visual cues and superficial correlations. Robustness to variance in the visual and linguistic observation space is critical for real-world deployment, yet VLAs lack explicit grounding modules and instead rely on the intrinsic language grounding capabilities of their",
+      "tags": [
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-09496v1",
+      "title": "Sparse Feature Policy Unlearning Mitigates State Hallucination in Vision-Language-Action Models",
+      "authors": "Jiho Lee, Jeongeun Park, Heayoun Choi, Taekyung Kim, Eunwoo Kim",
+      "date": "2026-10-07",
+      "url": "https://arxiv.org/abs/2610.09496v1",
+      "abstract": "Vision-Language-Action (VLA) models have shown strong generalization in robotic manipulation by leveraging rich representations from pretrained vision-language models. However, their deployment in real-world environments remains limited by recurring unreliable behaviors. In this work, we study state hallucination, a recurring failure pattern in which a VLA continues acting as if an unrealized robot-object state had been achieved. Our analyses find that state hallucination coincides with weakened",
+      "tags": [
+        "features",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-10276v1",
+      "title": "PatchBench: Measuring Collateral Damage in Activation Patching",
+      "authors": "Alexi Canesse, Mathis Le Bail, Ma\u00ebl Jenny, Cl\u00e9ment Elliker, Mahammed El Sharkawy, et al.",
+      "date": "2026-10-07",
+      "url": "https://arxiv.org/abs/2610.10276v1",
+      "abstract": "An LLM safety patch can pass a benchmark while still being a poor repair. This risk is especially acute for jailbreak repairs, where the goal is to correct a specific unsafe behaviour without changing unrelated behaviours. A patch may block exact evaluation prompts yet fail on close harmful variants, or suppress harmful behaviour by over-refusing benign prompts that share its wording or structure. Existing protocols primarily test whether models can be broken, while aggregate metrics (attack suc",
+      "tags": [
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-09600v1",
+      "title": "SafeEvo: Deciphering the Safety Alignment Mechanism and Evolution in Language Models",
+      "authors": "Miao Yu, Hao Huang, Lu Yuan, Yunpeng Li, Kun Wang, et al.",
+      "date": "2026-10-07",
+      "url": "https://arxiv.org/abs/2610.09600v1",
+      "abstract": "Safety interpretability advances the study of Large Language Model (LLM) alignment from behavioral constraints driven by data or algorithms towards a deeper understanding of internal mechanisms. However, existing works have focused primarily on safety-related representations, attention heads, or neurons after alignment, while largely overlooking the safety mechanisms in pretrained-only models and their evolution across alignment checkpoints. To address this, we propose SafeEvo, an interpretabili",
+      "tags": [
+        "safety",
+        "attention"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2610-07583v1",
       "title": "Mechanistic Interpretability of Atmospheric Rivers in GraphCast",
