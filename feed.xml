@@ -5,9 +5,37 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 07 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 08 Oct 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Do Vision-Language-Action Models Understand Instructions? A Mechanistic Interpretability Study on Language Grounding</title>
+      <link>https://arxiv.org/abs/2610.10178v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Theodor Wulff, Angelo Cangelosi</p><p>Vision-Language-Action models are designed to generalise across environments and task descriptions, raising the question of whether their action generation actually depends on the language instruction, or whether they largely rely on visual cues and superficial correlations. Robustness to variance in the visual and linguistic observation space is critical for real-world deployment, yet VLAs lack explicit grounding modules and instead rely on the intrinsic language grounding capabilities of their</p><p><strong>Tags:</strong> vision</p>]]></description>
+      <pubDate>Wed, 07 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.10178v1</guid>
+    </item>
+    <item>
+      <title>Sparse Feature Policy Unlearning Mitigates State Hallucination in Vision-Language-Action Models</title>
+      <link>https://arxiv.org/abs/2610.09496v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Jiho Lee, Jeongeun Park, Heayoun Choi, Taekyung Kim, Eunwoo Kim</p><p>Vision-Language-Action (VLA) models have shown strong generalization in robotic manipulation by leveraging rich representations from pretrained vision-language models. However, their deployment in real-world environments remains limited by recurring unreliable behaviors. In this work, we study state hallucination, a recurring failure pattern in which a VLA continues acting as if an unrealized robot-object state had been achieved. Our analyses find that state hallucination coincides with weakened</p><p><strong>Tags:</strong> features, vision</p>]]></description>
+      <pubDate>Wed, 07 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.09496v1</guid>
+    </item>
+    <item>
+      <title>PatchBench: Measuring Collateral Damage in Activation Patching</title>
+      <link>https://arxiv.org/abs/2610.10276v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Alexi Canesse, Mathis Le Bail, Maël Jenny, Clément Elliker, Mahammed El Sharkawy, et al.</p><p>An LLM safety patch can pass a benchmark while still being a poor repair. This risk is especially acute for jailbreak repairs, where the goal is to correct a specific unsafe behaviour without changing unrelated behaviours. A patch may block exact evaluation prompts yet fail on close harmful variants, or suppress harmful behaviour by over-refusing benign prompts that share its wording or structure. Existing protocols primarily test whether models can be broken, while aggregate metrics (attack suc</p><p><strong>Tags:</strong> safety</p>]]></description>
+      <pubDate>Wed, 07 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.10276v1</guid>
+    </item>
+    <item>
+      <title>SafeEvo: Deciphering the Safety Alignment Mechanism and Evolution in Language Models</title>
+      <link>https://arxiv.org/abs/2610.09600v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Miao Yu, Hao Huang, Lu Yuan, Yunpeng Li, Kun Wang, et al.</p><p>Safety interpretability advances the study of Large Language Model (LLM) alignment from behavioral constraints driven by data or algorithms towards a deeper understanding of internal mechanisms. However, existing works have focused primarily on safety-related representations, attention heads, or neurons after alignment, while largely overlooking the safety mechanisms in pretrained-only models and their evolution across alignment checkpoints. To address this, we propose SafeEvo, an interpretabili</p><p><strong>Tags:</strong> safety, attention</p>]]></description>
+      <pubDate>Wed, 07 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.09600v1</guid>
+    </item>
     <item>
       <title>Mechanistic Interpretability of Atmospheric Rivers in GraphCast</title>
       <link>https://arxiv.org/abs/2610.07583v1</link>
@@ -189,34 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Jason X. Liu, Sebastian Ibarraran, Frank Hu, Soojung Yang, Xinyu A. Feng, et al.</p><p>Intrinsically disordered protein regions (IDRs) play central roles in cellular processes such as transcriptional regulation, signal transduction, and subcellular localization, yet their functional design remains challenging. Structure-based design methods do not readily apply to IDRs, and existing protein language models are trained on full-length protein sequences, thus learning a prior that is biased towards folded domains. Here, we present IDiom, an autoregressive protein language model train</p><p><strong>Tags:</strong> SAE, features, biology</p>]]></description>
       <pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2610.02189v1</guid>
-    </item>
-    <item>
-      <title>From Isolated Feature to Orbits: Discovering Music Concepts via Multi-SAE Alignment</title>
-      <link>https://arxiv.org/abs/2610.01864v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Liwei Lin, Gus Xia</p><p>How can we understand what a music foundation model has learned \textit{internally}? Most interpretability approaches, such as probing and Sparse Autoencoders (SAEs), focus on identifying individual features with minimal structural assumptions. We argue that many concepts are better understood as \textit{structured relations} rather than isolated features. This is especially prominent in music, where tonal structures are organized in the space of pitch and time. For example, concepts such as cho</p><p><strong>Tags:</strong> SAE, features, safety, probing</p>]]></description>
-      <pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2610.01864v1</guid>
-    </item>
-    <item>
-      <title>A Generative Model of Complex Networks Using Graphons and Neural Inverse Operators</title>
-      <link>https://arxiv.org/abs/2610.02439v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Wooseong Choi, Italo&#x27;Ivo Lima Dias Pinto, Chen Sun, Gaurav Gupta, Dong Song, et al.</p><p>Generative graph models are central to understanding and simulating complex networks. However, existing approaches have complementary strengths and limitations. Mechanistic models offer interpretability but rely on instance-specific estimation methods. Deep generative models, on the other hand, offer amortized inference at the cost of interpretability and are largely limited to graph sizes seen during training. Scientific applications motivate a framework that retains the strengths of both parad</p>]]></description>
-      <pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2610.02439v1</guid>
-    </item>
-    <item>
-      <title>D-Scope: Decomposing and Steering Diffusion Transformers with Sparse Autoencoders</title>
-      <link>https://arxiv.org/abs/2609.39625v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Xinyue Xu, Jiahao Zhang, Lijie Hu, Peter Hase, Hao Wang</p><p>Sparse autoencoders (SAEs) reveal visual structure in diffusion transformers (DiTs), but interpreting a feature does not establish whether it can be used to control generation. We introduce D-Scope (Diffusion Scope), a framework that connects feature interpretation to generation control through shared visual evidence. D-Scope aggregates SigLIP~2 embeddings of highly activating image patches into visual centroids. Matching target text descriptions against these visual centroids in the shared imag</p><p><strong>Tags:</strong> SAE, features, steering, vision</p>]]></description>
-      <pubDate>Wed, 30 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2609.39625v1</guid>
-    </item>
-    <item>
-      <title>Right Answer, Wrong Mechanism: Detecting Pernicious Divergence in Causal Interventions</title>
-      <link>https://arxiv.org/abs/2609.39243v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Beiming Liu, Minjie Chen</p><p>Causal interventions such as activation patching and distributed alignment search (DAS) are the main tool for making mechanistic claims about neural networks. Recent work showed that these interventions routinely push representations off the model&#x27;s natural distribution, and that such divergence is sometimes harmless and sometimes pernicious: it can recruit pathways the model never uses on natural inputs, so that an intervention produces the expected answer through the wrong mechanism. No method</p><p><strong>Tags:</strong> safety</p>]]></description>
-      <pubDate>Wed, 30 Sep 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2609.39243v1</guid>
     </item>
   </channel>
 </rss>
