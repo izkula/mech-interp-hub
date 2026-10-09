@@ -1,6 +1,19 @@
 {
-  "lastUpdated": "2026-10-08",
+  "lastUpdated": "2026-10-09",
   "papers": [
+    {
+      "id": "arxiv-2610-11153v1",
+      "title": "CARE: Constrained Attention Refinement for Fine-Grained Visual Classification via Teacher-Student Distillation",
+      "authors": "Ruibo Wen, Hang Shao, Yiming Lei",
+      "date": "2026-10-08",
+      "url": "https://arxiv.org/abs/2610.11153v1",
+      "abstract": "Fine-grained visual classification requires models to recognize subtle local traits while exposing the visual evidence behind their predictions. Class-specific attention pathways provide a natural basis for interpretable recognition, but their constrained prediction structure limits discriminative capacity and underuses intermediate representations from strong pretrained backbones. To address this problem, we propose CARE, a constrained attention refinement framework for interpretable fine-grain",
+      "tags": [
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2610-10178v1",
       "title": "Do Vision-Language-Action Models Understand Instructions? A Mechanistic Interpretability Study on Language Grounding",
@@ -51,6 +64,21 @@
       "tags": [
         "safety",
         "attention"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-10865v1",
+      "title": "Disentangling Linguistic and Paralinguistic Information with Routed Sparse Autoencoders",
+      "authors": "Beimnet Bekele Guta, Xiaoyu Yang, Guangzhi Sun, Philip C. Woodland",
+      "date": "2026-10-07",
+      "url": "https://arxiv.org/abs/2610.10865v1",
+      "abstract": "Self-supervised speech encoders contain linguistic and paralinguistic information in a shared, entangled representation space. We combine a TopK sparse autoencoder with route-specific supervision and cross-factor adversaries. Across frozen SPEAR and WavLM encoders, independent probes show factor-specific retention and suppression: linguistic information remains stronger in the linguistic route, while paralinguistic factors, including speaker identity, emotion, and prosody, are retained in the pa",
+      "tags": [
+        "SAE",
+        "probing",
+        "vision"
       ],
       "source": "arXiv",
       "featured": false
