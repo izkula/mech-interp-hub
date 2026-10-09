@@ -5,9 +5,16 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 08 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 09 Oct 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>CARE: Constrained Attention Refinement for Fine-Grained Visual Classification via Teacher-Student Distillation</title>
+      <link>https://arxiv.org/abs/2610.11153v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Ruibo Wen, Hang Shao, Yiming Lei</p><p>Fine-grained visual classification requires models to recognize subtle local traits while exposing the visual evidence behind their predictions. Class-specific attention pathways provide a natural basis for interpretable recognition, but their constrained prediction structure limits discriminative capacity and underuses intermediate representations from strong pretrained backbones. To address this problem, we propose CARE, a constrained attention refinement framework for interpretable fine-grain</p><p><strong>Tags:</strong> vision</p>]]></description>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.11153v1</guid>
+    </item>
     <item>
       <title>Do Vision-Language-Action Models Understand Instructions? A Mechanistic Interpretability Study on Language Grounding</title>
       <link>https://arxiv.org/abs/2610.10178v1</link>
@@ -35,6 +42,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Miao Yu, Hao Huang, Lu Yuan, Yunpeng Li, Kun Wang, et al.</p><p>Safety interpretability advances the study of Large Language Model (LLM) alignment from behavioral constraints driven by data or algorithms towards a deeper understanding of internal mechanisms. However, existing works have focused primarily on safety-related representations, attention heads, or neurons after alignment, while largely overlooking the safety mechanisms in pretrained-only models and their evolution across alignment checkpoints. To address this, we propose SafeEvo, an interpretabili</p><p><strong>Tags:</strong> safety, attention</p>]]></description>
       <pubDate>Wed, 07 Oct 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2610.09600v1</guid>
+    </item>
+    <item>
+      <title>Disentangling Linguistic and Paralinguistic Information with Routed Sparse Autoencoders</title>
+      <link>https://arxiv.org/abs/2610.10865v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Beimnet Bekele Guta, Xiaoyu Yang, Guangzhi Sun, Philip C. Woodland</p><p>Self-supervised speech encoders contain linguistic and paralinguistic information in a shared, entangled representation space. We combine a TopK sparse autoencoder with route-specific supervision and cross-factor adversaries. Across frozen SPEAR and WavLM encoders, independent probes show factor-specific retention and suppression: linguistic information remains stronger in the linguistic route, while paralinguistic factors, including speaker identity, emotion, and prosody, are retained in the pa</p><p><strong>Tags:</strong> SAE, probing, vision</p>]]></description>
+      <pubDate>Wed, 07 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.10865v1</guid>
     </item>
     <item>
       <title>Mechanistic Interpretability of Atmospheric Rivers in GraphCast</title>
@@ -203,20 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Chuqin Geng, Li Zhang, Haolin Ye, Mark Zhang, Luke Zhang, et al.</p><p>Mechanistic interpretability aims to recover the internal computations responsible for model behavior. Progress in automated circuit discovery is often framed as a search problem: better attribution or optimization should identify better mechanisms. This assumes that the evaluation objective can recognize a better circuit once it is found. We show that intervention-defined faithfulness can instead prefer an equally sized circuit that reproduces the model&#x27;s behavior less well, creating an objecti</p><p><strong>Tags:</strong> circuits</p>]]></description>
       <pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2610.02098v1</guid>
-    </item>
-    <item>
-      <title>Beyond Linear Concepts: Discovering and Aligning Non-Linear Concept Manifolds in Large Language Models</title>
-      <link>https://arxiv.org/abs/2610.01821v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Tido Specht, Elias Benedict Krey, Nils Neukirch, Nils Strodthoff</p><p>Understanding information processing in large language models (LLMs) requires dissecting the geometric organization of their internal token representations. While existing mechanistic interpretability (MI) methods seek to extract concepts, they are constrained by a strong linearity assumption challenged by evidence of non-linear feature manifolds. We move beyond linear concepts by adapting Non-Linear Multi-Dimensional Concept Discovery (NLMCD) from computer vision to token-level LLM activations,</p><p><strong>Tags:</strong> features, vision</p>]]></description>
-      <pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2610.01821v1</guid>
-    </item>
-    <item>
-      <title>Generative modeling of intrinsically disordered protein regions by reinforcing sparse autoencoder features</title>
-      <link>https://arxiv.org/abs/2610.02189v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Jason X. Liu, Sebastian Ibarraran, Frank Hu, Soojung Yang, Xinyu A. Feng, et al.</p><p>Intrinsically disordered protein regions (IDRs) play central roles in cellular processes such as transcriptional regulation, signal transduction, and subcellular localization, yet their functional design remains challenging. Structure-based design methods do not readily apply to IDRs, and existing protein language models are trained on full-length protein sequences, thus learning a prior that is biased towards folded domains. Here, we present IDiom, an autoregressive protein language model train</p><p><strong>Tags:</strong> SAE, features, biology</p>]]></description>
-      <pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2610.02189v1</guid>
     </item>
   </channel>
 </rss>
