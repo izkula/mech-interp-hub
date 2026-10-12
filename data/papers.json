@@ -1,6 +1,35 @@
 {
-  "lastUpdated": "2026-10-11",
+  "lastUpdated": "2026-10-12",
   "papers": [
+    {
+      "id": "arxiv-2610-12989v1",
+      "title": "Language Models Have Interpretable Narrative Mechanisms",
+      "authors": "David Yiyang Liu, Aditya Joshi, Paul Dawson, Andrew Piper",
+      "date": "2026-10-09",
+      "url": "https://arxiv.org/abs/2610.12989v1",
+      "abstract": "We investigate whether language models contain internal components that contribute to representing narrativity, the degree to which a text exhibits narrative properties. Across GPT-2-Small, Gemma-2-2B, and Llama-3.1-8B, we identify attention heads, MLP neurons, and sparse autoencoder features whose activations correlate with narrativity. Ablating selected neuron and feature sets increases next-token prediction loss more for high-narrativity than for low-narrativity texts, and reduces the narrati",
+      "tags": [
+        "SAE",
+        "features",
+        "attention"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-12924v1",
+      "title": "Sparse Dictionary Learning for Measure-Valued Data via Linearized Optimal Transport: Efficient Algorithms and Sample Complexity",
+      "authors": "Brendan Mallery, Shuchin Aeron, James Murphy",
+      "date": "2026-10-09",
+      "url": "https://arxiv.org/abs/2610.12924v1",
+      "abstract": "We study dictionary learning for probability measure-valued data by embedding measures into Hilbert spaces using features derived from optimal transport geometry. We learn data-adapted dictionaries through sparse autoencoder parameterizations, producing fast, scalable representations of probability measures as sparse finite-dimensional codes. The resulting framework combines the rich, geometric structure of optimal transport with the interpretability and efficiency of sparse representation learn",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2610-11153v1",
       "title": "CARE: Constrained Attention Refinement for Fine-Grained Visual Classification via Teacher-Student Distillation",
