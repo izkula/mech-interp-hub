@@ -5,9 +5,23 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 11 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 12 Oct 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Language Models Have Interpretable Narrative Mechanisms</title>
+      <link>https://arxiv.org/abs/2610.12989v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> David Yiyang Liu, Aditya Joshi, Paul Dawson, Andrew Piper</p><p>We investigate whether language models contain internal components that contribute to representing narrativity, the degree to which a text exhibits narrative properties. Across GPT-2-Small, Gemma-2-2B, and Llama-3.1-8B, we identify attention heads, MLP neurons, and sparse autoencoder features whose activations correlate with narrativity. Ablating selected neuron and feature sets increases next-token prediction loss more for high-narrativity than for low-narrativity texts, and reduces the narrati</p><p><strong>Tags:</strong> SAE, features, attention</p>]]></description>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.12989v1</guid>
+    </item>
+    <item>
+      <title>Sparse Dictionary Learning for Measure-Valued Data via Linearized Optimal Transport: Efficient Algorithms and Sample Complexity</title>
+      <link>https://arxiv.org/abs/2610.12924v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Brendan Mallery, Shuchin Aeron, James Murphy</p><p>We study dictionary learning for probability measure-valued data by embedding measures into Hilbert spaces using features derived from optimal transport geometry. We learn data-adapted dictionaries through sparse autoencoder parameterizations, producing fast, scalable representations of probability measures as sparse finite-dimensional codes. The resulting framework combines the rich, geometric structure of optimal transport with the interpretability and efficiency of sparse representation learn</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.12924v1</guid>
+    </item>
     <item>
       <title>CARE: Constrained Attention Refinement for Fine-Grained Visual Classification via Teacher-Student Distillation</title>
       <link>https://arxiv.org/abs/2610.11153v1</link>
@@ -203,20 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Tommaso Mencattini, Giorgos Nikolaou, Donato Crisostomi, Thomas Fel, Francesco Montagna, et al.</p><p>Sparse Autoencoders (SAEs) decompose model activations into sparse combinations of interpretable dictionary atoms. Although SAEs are grounded in the Linear Representation Hypothesis (LRH), their objective smuggles in an additional prior: concepts across patches are treated as independent, an assumption clearly violated by natural images and by the activations they induce. We therefore specialize LRH to vision through the Markov-Field Linear Representation Hypothesis (MFLRH), which adds the missi</p><p><strong>Tags:</strong> SAE, vision</p>]]></description>
       <pubDate>Fri, 02 Oct 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2610.04112v1</guid>
-    </item>
-    <item>
-      <title>ClasSAE: Class-Aligned Sparse Autoencoders via Differentiable Feature-Class Affinity</title>
-      <link>https://arxiv.org/abs/2610.04020v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Jakub Stępień, Marcin Mazur, Jacek Tabor, Przemysław Spurek</p><p>Sparse Autoencoders (SAEs) began as an unsupervised tool for decomposing neural representations into sparse, interpretable features, and are increasingly used not only for passive analysis but also for active interventions such as unlearning, bias mitigation, and concept editing. A central challenge for these editing and steering methods is reliably matching features to target concepts; most current approaches address this by computing post-hoc scores over an already-trained, frozen dictionary. </p><p><strong>Tags:</strong> SAE, features, steering</p>]]></description>
-      <pubDate>Fri, 02 Oct 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2610.04020v1</guid>
-    </item>
-    <item>
-      <title>Are We Recovering Mechanisms? Objective-Level Recovery Gaps in Mechanistic Interpretability</title>
-      <link>https://arxiv.org/abs/2610.02098v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Chuqin Geng, Li Zhang, Haolin Ye, Mark Zhang, Luke Zhang, et al.</p><p>Mechanistic interpretability aims to recover the internal computations responsible for model behavior. Progress in automated circuit discovery is often framed as a search problem: better attribution or optimization should identify better mechanisms. This assumes that the evaluation objective can recognize a better circuit once it is found. We show that intervention-defined faithfulness can instead prefer an equally sized circuit that reproduces the model&#x27;s behavior less well, creating an objecti</p><p><strong>Tags:</strong> circuits</p>]]></description>
-      <pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2610.02098v1</guid>
     </item>
   </channel>
 </rss>
