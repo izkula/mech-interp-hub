@@ -1,6 +1,73 @@
 {
-  "lastUpdated": "2026-10-13",
+  "lastUpdated": "2026-10-14",
   "papers": [
+    {
+      "id": "arxiv-2610-18127v1",
+      "title": "Monitoring latent reasoning in looped language models",
+      "authors": "Pawel Olszowiec, Paulina Tomaszewska, Maciej \u017belaszczyk, Michal Byra, Neo Christopher Chung",
+      "date": "2026-10-13",
+      "url": "https://arxiv.org/abs/2610.18127v1",
+      "abstract": "Looped language models (LMs) reuse one block of layers several times per token generation, promising more latent computation at no additional storage cost. Despite their rising popularity, the analysis of looped LMs is still in its infancy: little is known about whether the iterative transformations actually improve their capabilities, or whether these models remain stable under prompt perturbation. We construct an inspection protocol rooted in Mechanistic Interpretability comprising five divers",
+      "tags": [
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-18462v1",
+      "title": "Readout Scaling Shapes Sparse Feature Recovery",
+      "authors": "Brain Xiao, Sarah Wilson",
+      "date": "2026-10-13",
+      "url": "https://arxiv.org/abs/2610.18462v1",
+      "abstract": "Readout scaling changes what a sparse autoencoder (SAE) learns, but the benefit of removing it depends on the data. We use readout-canonicalized decision-space (RC-DS) coordinates to remove singular-value gains while preserving retained decision information. At a fixed readout condition number, changing the generating distribution reverses which training coordinates recover known factors best. In our controlled coordinate-matching study, recovery is highest when training restores the space in wh",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-17898v1",
+      "title": "Evaluating the Causal Faithfulness of SHAP as a Candidate Attribution Method for SAE Features",
+      "authors": "Samuel Xie, Noura Al-Moubayed",
+      "date": "2026-10-13",
+      "url": "https://arxiv.org/abs/2610.17898v1",
+      "abstract": "Sparse autoencoders decompose language model representations into interpretable features, but feature interpretation in this literature remains predominantly correlational. Attribution methods offer more direct estimates of feature influence, yet their faithfulness to actual causal effects has not been systematically evaluated in the SAE setting. We apply SHAP-based attribution to SAE latent features and evaluate it against direct causal intervention, using sentiment classification on SST-2 with",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-17495v1",
+      "title": "A Sense of Proprioception in Language Models",
+      "authors": "Jonas Geiping",
+      "date": "2026-10-12",
+      "url": "https://arxiv.org/abs/2610.17495v1",
+      "abstract": "In humans, proprioception corresponds to the sense of self-movement or position, e.g. understanding the position of one's arm. This sense is often less well-understood and in popular understanding sometimes conflated with introspection. But, notably, proprioception is a separate sense, with dedicated receptors and verifiable outcomes. On the other hand though, language models cannot observe their own internal states during training (and for example answer the question which experts activated in ",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-15850v1",
+      "title": "What Do Sparse Autoencoder Feature Discovery Scores Identify? From Activations to Interventions",
+      "authors": "Yifeng Guo, Yanran Li, Xiang Chen",
+      "date": "2026-10-11",
+      "url": "https://arxiv.org/abs/2610.15850v1",
+      "abstract": "Sparse autoencoder (SAE) features are typically discovered from how their activations co-vary with behaviour, yet they are often used through interventions such as steering or ablation. We take intervention attribution, the first-order effect of a specified intervention on the model output, as our estimand. For a broad class of response functions, we show that observational feature-discovery evidence generally does not identify this attribution, and derive an exact gradient-based decomposition o",
+      "tags": [
+        "SAE",
+        "features",
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2610-12989v1",
       "title": "Language Models Have Interpretable Narrative Mechanisms",
@@ -26,6 +93,21 @@
       "tags": [
         "SAE",
         "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-14190v1",
+      "title": "Cross-Modal Latent Influence: Patch-Level Training Sample Attribution for Vision-Language Models",
+      "authors": "Laura Yao, Shixing Yu, Jie Peng, Promit Ghosal, Kyra Gan, et al.",
+      "date": "2026-10-09",
+      "url": "https://arxiv.org/abs/2610.14190v1",
+      "abstract": "Explaining a vision--language model (VLM) prediction requires tracing training-example influence to the multimodal evidence that mediates it, yet existing attribution methods largely operate only at the sample level. Recent latent-mediated influence methods provide feature-level attribution in language models, but lack the multimodal and spatial structure needed to ground influence in VLMs. We introduce MOSAIC (Multimodal Orthogonalized Sparse Autoencoders for Influence Characterization). It lea",
+      "tags": [
+        "SAE",
+        "features",
+        "vision"
       ],
       "source": "arXiv",
       "featured": false
@@ -878,6 +960,20 @@
         "features",
         "safety",
         "attention"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-13997v1",
+      "title": "SharedSAE: a unified sparse dictionary across u-net blocks and denoising time for diffusion models",
+      "authors": "Longhao Lei, Lan Yao",
+      "date": "2026-09-27",
+      "url": "https://arxiv.org/abs/2610.13997v1",
+      "abstract": "Concept representations in diffusion models drift across network depth and denoising time, yet existing sparse autoencoders offer only per-block or per-timestep dictionaries, leaving no single feature dictionary for localization and intervention in the network. We present Shared Sparse Autoencoder (SharedSAE), which learns one sparse dictionary shared across four U-Net attention blocks and all 50 denoising steps of SDXL 1.0. A block-specific low-rank input adapter aligns the residual distributio",
+      "tags": [
+        "SAE",
+        "features"
       ],
       "source": "arXiv",
       "featured": false
