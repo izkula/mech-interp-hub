@@ -5,9 +5,30 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 14 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Sparse Autoencoders for Mechanistic Interpretability in NLP: A Critical Survey of Recoverability, Interpretability, and Utility</title>
+      <link>https://arxiv.org/abs/2610.20139v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Salima Lamsiyah, Adelaide Danilov, Oleksandr Marchenko Breneur, Aria Nourbakhsh</p><p>Sparse autoencoders (SAEs) have emerged as a promising approach to mechanistic interpretability by decomposing language-model activations into sparse, potentially interpretable features. However, differences in design assumptions, evaluation objectives, and experimental settings complicate conclusions about their effectiveness. We present a critical survey of 138 studies on SAEs in natural language processing. Our contributions are fourfold: (1) we propose a task-grounded taxonomy connecting dic</p><p><strong>Tags:</strong> SAE, features, survey</p>]]></description>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.20139v1</guid>
+    </item>
+    <item>
+      <title>Sparse Transformer: a Controlled Testbed for Mechanistic Interpretability</title>
+      <link>https://arxiv.org/abs/2610.19907v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Anton Korznikov, Alexey Dontsov, Elena Tutubalina</p><p>Mechanistic interpretability aims to decompose neural network computations into human-understandable features, yet progress is limited by the absence of ground-truth units to evaluate against. We address this with a Sparse Transformer (ST): a 5-layer language model trained on TinyStories whose wide, TopK-sparse MLP forces neuron specialization. We show that ST neurons are highly interpretable: they outperform a loss-matched dense transformer by 43% on AutoInterp, and circuits of a median of 12 n</p><p><strong>Tags:</strong> circuits, features</p>]]></description>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.19907v1</guid>
+    </item>
+    <item>
+      <title>Sparse Autoencoders Are a Shared Coordinate System for Symbolic Matching</title>
+      <link>https://arxiv.org/abs/2610.19636v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Xiaocong Yang, Xuanyu Meng, Yuji Zhang, Jiawei Han, ChengXiang Zhai</p><p>Large language models (LLMs) hold broad knowledge in one set of weights, but lack interpretability and trustworthy reasoning, especially in high-stakes use cases. A neuro-symbolic model, with its interpretable architecture and System 2 reasoning capacity, is a promising alternative if built at the scale of LLMs; however, its symbolic backbone is usually constructed with human effort, so existing neuro-symbolic models are bottlenecked by the scope of the symbol component and usually domain-specif</p><p><strong>Tags:</strong> SAE, reasoning</p>]]></description>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.19636v1</guid>
+    </item>
     <item>
       <title>Monitoring latent reasoning in looped language models</title>
       <link>https://arxiv.org/abs/2610.18127v1</link>
@@ -196,27 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Muhammad Atif Butt, Paweł Skierś, Joost Van De Weijer, Kamil Deja</p><p>Mechanistic interpretability often relies on the Linear Representation Hypothesis (LRH), which assumes that high-level concepts are encoded as linear directions in activation space. Yet a natural visual concept does not necessarily require a linear visual transition: between sunny and stormy lies an intermediate weather state such as a sky with a few white clouds, not simply a weaker storm; between a caterpillar and a butterfly, the progression is not a caterpillar with continuously growing wing</p><p><strong>Tags:</strong> steering, vision</p>]]></description>
       <pubDate>Sat, 03 Oct 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2610.06945v1</guid>
-    </item>
-    <item>
-      <title>Metonymic Circuits for Abstract Concept Grounding in Vision Transformers</title>
-      <link>https://arxiv.org/abs/2610.06928v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Jing Ding, Ziqiao Ma, Jiayuan Mao, Joyce Chai, Freda Shi</p><p>We study how Vision Transformers ground abstract concepts (e.g., angry) when training data provide limited direct referential evidence. We hypothesize a metonymic grounding mechanism in which abstract predictions are driven by concrete, interpretable anchor concepts (e.g., fire) that bridge visual signals to abstract semantics. By applying Transcoders on CLIP and DINO vision encoders, we recover intermediate features that can be associated with semantic labels for more concrete concepts, and tra</p><p><strong>Tags:</strong> circuits, features, vision</p>]]></description>
-      <pubDate>Sat, 03 Oct 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2610.06928v1</guid>
-    </item>
-    <item>
-      <title>From Patching to Pruning Visual Computation in Vision Language Models</title>
-      <link>https://arxiv.org/abs/2610.03389v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Rahul Chowdhury, Timothy A Rupprecht, Xuan Shen, Shaoyi Huang, Pu Zhao, et al.</p><p>Vision language models (VLMs) incur substantial inference cost because every visual token is processed by the attention and MLP projections of every decoder layer, even when token-specific visual computation is unnecessary at many depths. We introduce Patch-to-Prune (P2P), inspired by Mechanistic Interpretability, a training-free framework that converts activation patching from a diagnostic tool into an inference-time computation bypass. P2P performs validation-guided forward and backward layer </p><p><strong>Tags:</strong> vision</p>]]></description>
-      <pubDate>Fri, 02 Oct 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2610.03389v1</guid>
-    </item>
-    <item>
-      <title>Clinical Concept Centers in LLMs</title>
-      <link>https://arxiv.org/abs/2610.02829v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Aishik Nagar, Abhishek Vaidyanathan, Arun-Kumar Kaliya-Perumal, Elijah Tzen Hsuen Boey, Stefan Winkler</p><p>Large language models are increasingly used in clinical settings. However, research into the reliability and performance of these models has focused almost entirely on the language substrate, scoring what the model says. Mechanistic interpretability has found that the latent space carries a higher fidelity of representation than the text: internal representations not only encode substantially more than the output verbalizes, but the stated reasoning also systematically omits features that causal</p><p><strong>Tags:</strong> features, reasoning</p>]]></description>
-      <pubDate>Fri, 02 Oct 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2610.02829v1</guid>
     </item>
   </channel>
 </rss>
