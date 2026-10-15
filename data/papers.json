@@ -1,6 +1,49 @@
 {
-  "lastUpdated": "2026-10-14",
+  "lastUpdated": "2026-10-15",
   "papers": [
+    {
+      "id": "arxiv-2610-20139v1",
+      "title": "Sparse Autoencoders for Mechanistic Interpretability in NLP: A Critical Survey of Recoverability, Interpretability, and Utility",
+      "authors": "Salima Lamsiyah, Adelaide Danilov, Oleksandr Marchenko Breneur, Aria Nourbakhsh",
+      "date": "2026-10-14",
+      "url": "https://arxiv.org/abs/2610.20139v1",
+      "abstract": "Sparse autoencoders (SAEs) have emerged as a promising approach to mechanistic interpretability by decomposing language-model activations into sparse, potentially interpretable features. However, differences in design assumptions, evaluation objectives, and experimental settings complicate conclusions about their effectiveness. We present a critical survey of 138 studies on SAEs in natural language processing. Our contributions are fourfold: (1) we propose a task-grounded taxonomy connecting dic",
+      "tags": [
+        "SAE",
+        "features",
+        "survey"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-19907v1",
+      "title": "Sparse Transformer: a Controlled Testbed for Mechanistic Interpretability",
+      "authors": "Anton Korznikov, Alexey Dontsov, Elena Tutubalina",
+      "date": "2026-10-14",
+      "url": "https://arxiv.org/abs/2610.19907v1",
+      "abstract": "Mechanistic interpretability aims to decompose neural network computations into human-understandable features, yet progress is limited by the absence of ground-truth units to evaluate against. We address this with a Sparse Transformer (ST): a 5-layer language model trained on TinyStories whose wide, TopK-sparse MLP forces neuron specialization. We show that ST neurons are highly interpretable: they outperform a loss-matched dense transformer by 43% on AutoInterp, and circuits of a median of 12 n",
+      "tags": [
+        "circuits",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-19636v1",
+      "title": "Sparse Autoencoders Are a Shared Coordinate System for Symbolic Matching",
+      "authors": "Xiaocong Yang, Xuanyu Meng, Yuji Zhang, Jiawei Han, ChengXiang Zhai",
+      "date": "2026-10-14",
+      "url": "https://arxiv.org/abs/2610.19636v1",
+      "abstract": "Large language models (LLMs) hold broad knowledge in one set of weights, but lack interpretability and trustworthy reasoning, especially in high-stakes use cases. A neuro-symbolic model, with its interpretable architecture and System 2 reasoning capacity, is a promising alternative if built at the scale of LLMs; however, its symbolic backbone is usually constructed with human effort, so existing neuro-symbolic models are bottlenecked by the scope of the symbol component and usually domain-specif",
+      "tags": [
+        "SAE",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2610-18127v1",
       "title": "Monitoring latent reasoning in looped language models",
