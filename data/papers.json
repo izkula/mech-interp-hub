@@ -1,6 +1,83 @@
 {
-  "lastUpdated": "2026-10-15",
+  "lastUpdated": "2026-10-16",
   "papers": [
+    {
+      "id": "arxiv-2610-21638v1",
+      "title": "Spurious Attention Heads in Vision Transformers: Mechanistic Identification of Annotation-Driven Bias in Medical Chest X-Ray Analysis",
+      "authors": "Joshua Muhumuza, Cornelius Kalenzi",
+      "date": "2026-10-15",
+      "url": "https://arxiv.org/abs/2610.21638v1",
+      "abstract": "Vision Transformers deployed in medical imaging exploit spurious correlations, yet the internal mechanisms remain unidentified and impossible to fix. We apply mechanistic interpretability to locate one such mechanism in ViT-Base 16: a single attention head (L8H10) that functions as a dedicated annotation-reader on chest X-rays, attending to corner text rather than lung pathology in 62% of 200 COVID-19 images. Causal validation via inpainting confirms annotation content rather than luminance or e",
+      "tags": [
+        "attention",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-21223v1",
+      "title": "Learning and Forecasting Multiscale Spatiotemporal Epidemic Dynamics with Lagrangian-Eulerian Graph Neural ODEs",
+      "authors": "Jinyi Duan, Qian Li, Biao Tang",
+      "date": "2026-10-15",
+      "url": "https://arxiv.org/abs/2610.21223v1",
+      "abstract": "Accurate medium- to long-range epidemic forecasting requires extrapolating high-dimensional, heterogeneous and nonstationary dynamics from partial observations. Yet hybrid models often leave implicit which observations inform which epidemic processes and how learned graph interactions modify system state. We introduce LE-EpiGNODE, which replaces generic message passing with process-specific, mechanism-guided neural operators: age-contact information drives Lagrangian infection generation, wherea",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-21261v1",
+      "title": "Behavioral Compositionality of Sparse Autoencoder Representations",
+      "authors": "Haotian Ma, Ziye Mei, Frederic Sala",
+      "date": "2026-10-15",
+      "url": "https://arxiv.org/abs/2610.21261v1",
+      "abstract": "Sparse autoencoders (SAEs) represent model activations with sparse, linearly decoded features, but the downstream effects of those features need not compose additively. We introduce SAE Additivity Residuals (SAR), which measure the behavioral variation left unexplained above a chosen interaction order. Under independent feature subset sampling, population SAR is exactly the normalized energy of interactions above that order and bounds coalition ordering error for the optimal low order approximat",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-21240v1",
+      "title": "Representation Redistribution in Sparse Autoencoders",
+      "authors": "Ziye Mei, Haotian Ma",
+      "date": "2026-10-15",
+      "url": "https://arxiv.org/abs/2610.21240v1",
+      "abstract": "Sparse autoencoders (SAEs) decompose language model activations into sparse features, but prompt transformations designed to preserve the underlying request can redistribute activity across them. A feature change observed on one transformed prompt need not recur, and even a recurring change need not affect a downstream computation. We introduce the redistribution sensitivity score (RSS), which identifies large feature responses that recur in a consistent direction, and evaluate the resulting sup",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-22127v1",
+      "title": "Explaining the Roles of Experts in Mixture-of-Experts LLMs for Personalization",
+      "authors": "Sekh Mainul Islam, Pepa Atanasova, Isabelle Augenstein",
+      "date": "2026-10-15",
+      "url": "https://arxiv.org/abs/2610.22127v1",
+      "abstract": "Personalization of Large Language Models (LLMs) is increasingly important for user-centric applications, yet prior methods mainly adapt dense LLMs, whose polysemantic neurons, each encoding multiple unrelated concepts, hinder localizing the components behind personalization, and thus understanding and controlling it. We propose to personalize Mixture-of-Experts (MoE) LLMs, which sparsely route each token to a few specialized experts, reducing polysemanticity and enabling such localization. We ad",
+      "tags": [
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-21176v1",
+      "title": "Language Models Share a Readout Bottleneck in Working Memory",
+      "authors": "Dongyu Gong",
+      "date": "2026-10-15",
+      "url": "https://arxiv.org/abs/2610.21176v1",
+      "abstract": "Large language models (LLMs) reproduce a human working-memory signature on the N-back task: performance declines as memory load N increases, and errors concentrate on lures, items that repeat the current stimulus at a neighboring but incorrect serial position. We ask whether this shared behavioral signature reflects a shared mechanism. The literature offers two candidate accounts. On a precision account, softmax attention cannot concentrate its weight on the item N positions back, so adjacent it",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2610-20139v1",
       "title": "Sparse Autoencoders for Mechanistic Interpretability in NLP: A Critical Survey of Recoverability, Interpretability, and Utility",
@@ -40,6 +117,81 @@
       "tags": [
         "SAE",
         "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-20854v1",
+      "title": "Two dissociable axes of brain hierarchical dynamics track universal and population-specific effects of mindfulness",
+      "authors": "Victor Oswald, David Zarka, Riku Johannes Ihalainen, Gulshan Kumar, Rikkert Hindriks, et al.",
+      "date": "2026-10-14",
+      "url": "https://arxiv.org/abs/2610.20854v1",
+      "abstract": "How mental training reshapes the temporal architecture of large-scale brain dynamics and how these mechanisms differ between healthy and clinically vulnerable populations remains poorly understood. Time-averaged neural measures collapse the multi-scale nature of brain activity, obscuring the dynamic processes through which behavioural interventions reorganise hierarchical brain function. Here, applying a sliding-window Temporal Irreversibility Index to source-reconstructed EEG across three compl",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-20851v1",
+      "title": "Complete or Sparse: A Tale of Two Identifiabilities",
+      "authors": "Junze Zhou, David Klindt",
+      "date": "2026-10-14",
+      "url": "https://arxiv.org/abs/2610.20851v1",
+      "abstract": "Understanding when neural networks learn interpretable representations is central to mechanistic interpretability. We study this through identifiability: when can supervised learning recover the true latent variables underlying the data? We introduce two data generating processes distinguished by their causal direction where either labels cause latents (generative) or latents cause labels (discriminative). When the representation has at least as many dimensions as the latent space, we prove that",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-20748v1",
+      "title": "Interpreting Language Model Parameters",
+      "authors": "Lucius Bushnaq, Dan Braun, Oliver Clive-Griffin, Bart Bussmann, Nathan Hu, et al.",
+      "date": "2026-10-14",
+      "url": "https://arxiv.org/abs/2610.20748v1",
+      "abstract": "Mechanistic interpretability aims to uncover how neural networks use their parameters to implement their impressive neural algorithms. Although previous work has uncovered substantial structure in the intermediate representations that networks use, little progress has been made to understand how the parameters and nonlinearities of networks perform computations on those representations. In this work, we present a method that brings us closer to this understanding by decomposing a language model'",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-20680v1",
+      "title": "Diminishing Returns of Data in Sparse Autoencoders: Functional Behavior does not Guarantee Feature Reproducibility",
+      "authors": "Sambit Ghosh, Madelyn Mathai, R. Venkatesh Babu, Chirag Agarwal",
+      "date": "2026-10-14",
+      "url": "https://arxiv.org/abs/2610.20680v1",
+      "abstract": "Sparse autoencoders (SAEs) are typically trained on hundreds of millions to billions of activation tokens, yet little work has tested whether this scale is necessary. We study how much activation data SAEs need by training four SAE architectures on three language models with budgets ranging from 5M tokens to a 500M-token reference. We measure two notions of convergence: functional behavior on standard evaluations and one-to-one reproducibility of learned features. Functional data requirements ar",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-20750v1",
+      "title": "Causal Analysis of Robot Foundation Models Enables Efficiency Gains",
+      "authors": "Aiden Swann, Mathilde Papillon, Mozes Jacobs, Siddharth Boppana, Tal Haklay, et al.",
+      "date": "2026-10-14",
+      "url": "https://arxiv.org/abs/2610.20750v1",
+      "abstract": "Vision-language-action (VLA) models are a promising approach to general purpose robot manipulation. While the internal computation of vision-language models, which compose the backbone of VLAs, has been studied extensively, less is known about how their perceptual and semantic representations are transformed into action in VLA models. We study this question mechanistically in three frontier VLA models ($\u03c0_{0.5}$, MolmoAct2, and MolmoBot) by analyzing the causal pathways through which the input i",
+      "tags": [
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-20683v1",
+      "title": "Causal Syntax Circuits in CodeLMs: Budget and Probe Decide What Looks Localised",
+      "authors": "Harsh Kumar, Tanmay Shailesh Joshi, Rahul Maity, Anusa Saha",
+      "date": "2026-10-14",
+      "url": "https://arxiv.org/abs/2610.20683v1",
+      "abstract": "Code models write Python when the prompt does not say which language to use. We ask a mechanistic question about that habit: is it produced by a small, findable group of components inside the model? We run one pipeline---mean ablation, activation patching, greedy circuit extraction, a random-control significance test, and activation steering---over 55 model-language settings spanning ten open code models (five base and five instruction-tuned), three target languages (Rust, C#, PHP), two prompt s",
+      "tags": [
+        "circuits",
+        "probing",
+        "steering"
       ],
       "source": "arXiv",
       "featured": false
@@ -543,6 +695,22 @@
       "tags": [
         "SAE",
         "features",
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-20638v1",
+      "title": "Feature Elicitation for SAE Steering of Deceptive Behaviour in Small LLMs",
+      "authors": "J Koorndijk",
+      "date": "2026-10-02",
+      "url": "https://arxiv.org/abs/2610.20638v1",
+      "abstract": "Research on deceptive alignment is becoming increasingly urgent as frontier-model capabilities advance and their risk of causing catastrophic harm increases. Alignment faking is a form of deceptive alignment, with the compliance gap serving as a key behavioural indicator. This behaviour remains understudied in small LLMs and prior mechanistic interventions have not been shown to mitigate the compliance gap. We test whether steering SAE (sparse autoencoders) features associated with deontological",
+      "tags": [
+        "SAE",
+        "features",
+        "safety",
         "steering"
       ],
       "source": "arXiv",
