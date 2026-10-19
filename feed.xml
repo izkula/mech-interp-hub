@@ -5,9 +5,30 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 18 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Beyond SAEs: Consistent Concept Discovery with Sparse Coding</title>
+      <link>https://arxiv.org/abs/2610.23801v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Jinho Choi, Hyesu Lim, Jaegul Choo, Steffen Schneider</p><p>Sparse autoencoders (SAEs) explain foundation model representations by decomposing activations into sparse combinations of learned dictionary atoms. However, the learned dictionaries can vary across training runs, limiting the reliability and reproducibility of SAE-based analyses. We propose Consistent Sparse Dictionary Learning (ConSDL), which replaces the standard linear encoder with per-sample sparse coding. This is motivated by our synthetic analysis showing that coefficients from a single l</p><p><strong>Tags:</strong> SAE</p>]]></description>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.23801v1</guid>
+    </item>
+    <item>
+      <title>Many Biases, One Circuit: Post-Training Tunes a Pretrained Cue-Routing Mechanism</title>
+      <link>https://arxiv.org/abs/2610.22937v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Prakhar Gupta, Terry Jingchen Zhang, Zhijing Jin</p><p>Language models often abandon a correct answer when the prompt contains a cue, a hint toward a wrong option such as &quot;I think the answer is B.&quot; Sycophancy and related biases show this failure. They are often studied separately and blamed on alignment. We test this view causally, tracing the attention heads behind these biases through the stages of two post-training pipelines. In multiple-choice tests on most models, four cue types rely largely on the same few heads, a shared circuit already prese</p><p><strong>Tags:</strong> circuits, safety, attention</p>]]></description>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.22937v1</guid>
+    </item>
+    <item>
+      <title>VocalGrad: Evaluating Acoustic Perception in Audio Language Models</title>
+      <link>https://arxiv.org/abs/2610.23745v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Koki Ryu, Hitomi Yanaka</p><p>Recent large audio language models (LALMs) have extended their capabilities beyond lexical speech understanding to tasks requiring paralinguistic and non-linguistic audio understanding, such as emotion recognition. However, these models still struggle to reliably utilize acoustic information, particularly when it co-occurs with spoken linguistic content. Existing benchmarks do not clearly distinguish acoustic perception from higher-level reasoning, making it difficult to identify the source of t</p><p><strong>Tags:</strong> reasoning</p>]]></description>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.23745v1</guid>
+    </item>
     <item>
       <title>Spurious Attention Heads in Vision Transformers: Mechanistic Identification of Annotation-Driven Bias in Medical Chest X-Ray Analysis</title>
       <link>https://arxiv.org/abs/2610.21638v1</link>
@@ -196,27 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Alexi Canesse, Mathis Le Bail, Maël Jenny, Clément Elliker, Mahammed El Sharkawy, et al.</p><p>An LLM safety patch can pass a benchmark while still being a poor repair. This risk is especially acute for jailbreak repairs, where the goal is to correct a specific unsafe behaviour without changing unrelated behaviours. A patch may block exact evaluation prompts yet fail on close harmful variants, or suppress harmful behaviour by over-refusing benign prompts that share its wording or structure. Existing protocols primarily test whether models can be broken, while aggregate metrics (attack suc</p><p><strong>Tags:</strong> safety</p>]]></description>
       <pubDate>Wed, 07 Oct 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2610.10276v1</guid>
-    </item>
-    <item>
-      <title>SafeEvo: Deciphering the Safety Alignment Mechanism and Evolution in Language Models</title>
-      <link>https://arxiv.org/abs/2610.09600v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Miao Yu, Hao Huang, Lu Yuan, Yunpeng Li, Kun Wang, et al.</p><p>Safety interpretability advances the study of Large Language Model (LLM) alignment from behavioral constraints driven by data or algorithms towards a deeper understanding of internal mechanisms. However, existing works have focused primarily on safety-related representations, attention heads, or neurons after alignment, while largely overlooking the safety mechanisms in pretrained-only models and their evolution across alignment checkpoints. To address this, we propose SafeEvo, an interpretabili</p><p><strong>Tags:</strong> safety, attention</p>]]></description>
-      <pubDate>Wed, 07 Oct 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2610.09600v1</guid>
-    </item>
-    <item>
-      <title>Disentangling Linguistic and Paralinguistic Information with Routed Sparse Autoencoders</title>
-      <link>https://arxiv.org/abs/2610.10865v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Beimnet Bekele Guta, Xiaoyu Yang, Guangzhi Sun, Philip C. Woodland</p><p>Self-supervised speech encoders contain linguistic and paralinguistic information in a shared, entangled representation space. We combine a TopK sparse autoencoder with route-specific supervision and cross-factor adversaries. Across frozen SPEAR and WavLM encoders, independent probes show factor-specific retention and suppression: linguistic information remains stronger in the linguistic route, while paralinguistic factors, including speaker identity, emotion, and prosody, are retained in the pa</p><p><strong>Tags:</strong> SAE, probing, vision</p>]]></description>
-      <pubDate>Wed, 07 Oct 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2610.10865v1</guid>
-    </item>
-    <item>
-      <title>Mechanistic Interpretability of Atmospheric Rivers in GraphCast</title>
-      <link>https://arxiv.org/abs/2610.07583v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Madelyn Mathai, Timothy B. Higgins, Kevin M. Grise, Chirag Agarwal, Antonios Mamalakis</p><p>While AI weather models now rival operational forecasts, how they represent the atmosphere internally remains an open question: feature attribution reveals which input patterns matter, not what the model computes or how it combines information internally. We train sparse autoencoders (SAEs) on GraphCast to uncover its learned concepts, using atmospheric rivers as our phenomenon of focus. Both standard and Matryoshka SAEs show GraphCast computes atmospheric river intensity, measured by integrated</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Tue, 06 Oct 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2610.07583v1</guid>
     </item>
   </channel>
 </rss>
