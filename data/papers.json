@@ -1,6 +1,47 @@
 {
-  "lastUpdated": "2026-10-18",
+  "lastUpdated": "2026-10-19",
   "papers": [
+    {
+      "id": "arxiv-2610-23801v1",
+      "title": "Beyond SAEs: Consistent Concept Discovery with Sparse Coding",
+      "authors": "Jinho Choi, Hyesu Lim, Jaegul Choo, Steffen Schneider",
+      "date": "2026-10-16",
+      "url": "https://arxiv.org/abs/2610.23801v1",
+      "abstract": "Sparse autoencoders (SAEs) explain foundation model representations by decomposing activations into sparse combinations of learned dictionary atoms. However, the learned dictionaries can vary across training runs, limiting the reliability and reproducibility of SAE-based analyses. We propose Consistent Sparse Dictionary Learning (ConSDL), which replaces the standard linear encoder with per-sample sparse coding. This is motivated by our synthetic analysis showing that coefficients from a single l",
+      "tags": [
+        "SAE"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-22937v1",
+      "title": "Many Biases, One Circuit: Post-Training Tunes a Pretrained Cue-Routing Mechanism",
+      "authors": "Prakhar Gupta, Terry Jingchen Zhang, Zhijing Jin",
+      "date": "2026-10-16",
+      "url": "https://arxiv.org/abs/2610.22937v1",
+      "abstract": "Language models often abandon a correct answer when the prompt contains a cue, a hint toward a wrong option such as \"I think the answer is B.\" Sycophancy and related biases show this failure. They are often studied separately and blamed on alignment. We test this view causally, tracing the attention heads behind these biases through the stages of two post-training pipelines. In multiple-choice tests on most models, four cue types rely largely on the same few heads, a shared circuit already prese",
+      "tags": [
+        "circuits",
+        "safety",
+        "attention"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-23745v1",
+      "title": "VocalGrad: Evaluating Acoustic Perception in Audio Language Models",
+      "authors": "Koki Ryu, Hitomi Yanaka",
+      "date": "2026-10-16",
+      "url": "https://arxiv.org/abs/2610.23745v1",
+      "abstract": "Recent large audio language models (LALMs) have extended their capabilities beyond lexical speech understanding to tasks requiring paralinguistic and non-linguistic audio understanding, such as emotion recognition. However, these models still struggle to reliably utilize acoustic information, particularly when it co-occurs with spoken linguistic content. Existing benchmarks do not clearly distinguish acoustic perception from higher-level reasoning, making it difficult to identify the source of t",
+      "tags": [
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2610-21638v1",
       "title": "Spurious Attention Heads in Vision Transformers: Mechanistic Identification of Annotation-Driven Bias in Medical Chest X-Ray Analysis",
