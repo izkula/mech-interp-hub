@@ -5,9 +5,44 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 19 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 20 Oct 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Strength Controls Change How Interventions Compare Across Sparse Autoencoder Codes</title>
+      <link>https://arxiv.org/abs/2610.26489v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Jinchen Zhang, Zheyuan Liu, Yihan Zhu, Meng Jiang</p><p>Changing sparse autoencoder (SAE) codes can alter both intervention direction and magnitude, so comparing intervention effects requires a strength control specifying what is held equal. Norm matching and output calibration provide different controls, but whether interventions yield different effects across codes after strength matching remains unclear. We compare intervention effects under these controls for fixed feature groups in Gemma and Llama and observe: (1) Whole-patch scaling. With one c</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.26489v1</guid>
+    </item>
+    <item>
+      <title>From Black Box to Controller: Inference-Time Steering of LLM via Feature Amplification</title>
+      <link>https://arxiv.org/abs/2610.25700v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Keqi Chen, Zekai Sun, Yuhua Wen, Tianyi Tian, Xinyang Huang, et al.</p><p>Inference-time steering is crucial for deploying Large Language Models (LLMs) in real-world applications, where they must flexibly adjust behavior preferences. For instance, a model should dynamically adjust its caution level based on the risk of the scenario. This requirement introduces a challenge: modulating the intensity of LLM preferences. Prompt engineering can require task-specific prompt design, while fine-tuning requires additional optimization and data. These requirements can make repe</p><p><strong>Tags:</strong> features, steering</p>]]></description>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.25700v1</guid>
+    </item>
+    <item>
+      <title>A Symmetry-Matching Approach to Blind-Spot Reduction in Sparse Autoencoders</title>
+      <link>https://arxiv.org/abs/2610.24908v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Csaba Balogh</p><p>Language models can treat semantically distinct inputs as interchangeable at the representation level, creating blind spots that standard sparse autoencoder (SAE) objectives do not target. In safety-critical settings such as clinical dosage extraction, legal clause interpretation, or financial amount verification, such failures can propagate silently into downstream decisions. We study this problem as one of feature-basis orientation. Building on a symmetry-matching view from algebraic error-det</p><p><strong>Tags:</strong> SAE, features, safety</p>]]></description>
+      <pubDate>Sat, 17 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.24908v1</guid>
+    </item>
+    <item>
+      <title>From Stories to Features: Scaling Concept Vectors for AI Alignment &amp; Interpretability</title>
+      <link>https://arxiv.org/abs/2610.24556v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Dmitry Scherbakov, Oleg Chernikov, Victoria Khamash, Kirill Afendulev, Alexey Dontsov, et al.</p><p>We study feature vectors: directions in a language model&#x27;s activation space that correspond to human-interpretable concepts, such as honesty or deception. Existing unsupervised methods like sparse autoencoders attempt to recover the whole feature space, often at the cost of feature quality and interpretability. We take a more pragmatic route: focusing on concepts relevant to AI safety and alignment, we generate synthetic concept-antagonist story pairs and use the difference of their mean model a</p><p><strong>Tags:</strong> SAE, features, safety</p>]]></description>
+      <pubDate>Sat, 17 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.24556v1</guid>
+    </item>
+    <item>
+      <title>Comparing Sparsified MLPs and Transcoders: Many Transcoder Features Are Neurons in Disguise</title>
+      <link>https://arxiv.org/abs/2610.24521v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Stepan Shabalin, Mateusz Piotrowski</p><p>MLP neurons in transformer language models are widely understood to be polysemantic, motivating transcoders - sparse, learned approximations of MLP layers - as interpretable replacement models for mechanistic analysis. However, recent work shows that MLP neurons can be used to recover sparse, interpretable circuits (Arora et al. 2026, Ye et al. 2025), raising the question of whether transcoders are necessary for circuit analysis.   We define neuron features as transcoder features whose weights a</p><p><strong>Tags:</strong> circuits, features</p>]]></description>
+      <pubDate>Sat, 17 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.24521v1</guid>
+    </item>
     <item>
       <title>Beyond SAEs: Consistent Concept Discovery with Sparse Coding</title>
       <link>https://arxiv.org/abs/2610.23801v1</link>
@@ -28,6 +63,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Koki Ryu, Hitomi Yanaka</p><p>Recent large audio language models (LALMs) have extended their capabilities beyond lexical speech understanding to tasks requiring paralinguistic and non-linguistic audio understanding, such as emotion recognition. However, these models still struggle to reliably utilize acoustic information, particularly when it co-occurs with spoken linguistic content. Existing benchmarks do not clearly distinguish acoustic perception from higher-level reasoning, making it difficult to identify the source of t</p><p><strong>Tags:</strong> reasoning</p>]]></description>
       <pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2610.23745v1</guid>
+    </item>
+    <item>
+      <title>Do LMs Know What Variables Do? Interpreting Code Representations via Variable Roles</title>
+      <link>https://arxiv.org/abs/2610.24118v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Célian Vasson, Daniil Ognev, Kentaro Inui, Benjamin Heinzerling</p><p>Variable roles describe recurring behaviors such as accumulation, traversal, and retaining the best candidate encountered. We use Sajaniemi&#x27;s independently defined taxonomy to study which role distinctions can be recovered from large language models, how sparse autoencoders (SAEs) retain those distinctions, and whether associated directions support control of generation. We introduce static annotation rules for all eleven roles and a corpus of 126,926 natural-code files across five languages. Ac</p><p><strong>Tags:</strong> SAE</p>]]></description>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.24118v1</guid>
     </item>
     <item>
       <title>Spurious Attention Heads in Vision Transformers: Mechanistic Identification of Annotation-Driven Bias in Medical Chest X-Ray Analysis</title>
@@ -175,48 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> David Yiyang Liu, Aditya Joshi, Paul Dawson, Andrew Piper</p><p>We investigate whether language models contain internal components that contribute to representing narrativity, the degree to which a text exhibits narrative properties. Across GPT-2-Small, Gemma-2-2B, and Llama-3.1-8B, we identify attention heads, MLP neurons, and sparse autoencoder features whose activations correlate with narrativity. Ablating selected neuron and feature sets increases next-token prediction loss more for high-narrativity than for low-narrativity texts, and reduces the narrati</p><p><strong>Tags:</strong> SAE, features, attention</p>]]></description>
       <pubDate>Fri, 09 Oct 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2610.12989v1</guid>
-    </item>
-    <item>
-      <title>Sparse Dictionary Learning for Measure-Valued Data via Linearized Optimal Transport: Efficient Algorithms and Sample Complexity</title>
-      <link>https://arxiv.org/abs/2610.12924v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Brendan Mallery, Shuchin Aeron, James Murphy</p><p>We study dictionary learning for probability measure-valued data by embedding measures into Hilbert spaces using features derived from optimal transport geometry. We learn data-adapted dictionaries through sparse autoencoder parameterizations, producing fast, scalable representations of probability measures as sparse finite-dimensional codes. The resulting framework combines the rich, geometric structure of optimal transport with the interpretability and efficiency of sparse representation learn</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Fri, 09 Oct 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2610.12924v1</guid>
-    </item>
-    <item>
-      <title>Cross-Modal Latent Influence: Patch-Level Training Sample Attribution for Vision-Language Models</title>
-      <link>https://arxiv.org/abs/2610.14190v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Laura Yao, Shixing Yu, Jie Peng, Promit Ghosal, Kyra Gan, et al.</p><p>Explaining a vision--language model (VLM) prediction requires tracing training-example influence to the multimodal evidence that mediates it, yet existing attribution methods largely operate only at the sample level. Recent latent-mediated influence methods provide feature-level attribution in language models, but lack the multimodal and spatial structure needed to ground influence in VLMs. We introduce MOSAIC (Multimodal Orthogonalized Sparse Autoencoders for Influence Characterization). It lea</p><p><strong>Tags:</strong> SAE, features, vision</p>]]></description>
-      <pubDate>Fri, 09 Oct 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2610.14190v1</guid>
-    </item>
-    <item>
-      <title>CARE: Constrained Attention Refinement for Fine-Grained Visual Classification via Teacher-Student Distillation</title>
-      <link>https://arxiv.org/abs/2610.11153v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Ruibo Wen, Hang Shao, Yiming Lei</p><p>Fine-grained visual classification requires models to recognize subtle local traits while exposing the visual evidence behind their predictions. Class-specific attention pathways provide a natural basis for interpretable recognition, but their constrained prediction structure limits discriminative capacity and underuses intermediate representations from strong pretrained backbones. To address this problem, we propose CARE, a constrained attention refinement framework for interpretable fine-grain</p><p><strong>Tags:</strong> vision</p>]]></description>
-      <pubDate>Thu, 08 Oct 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2610.11153v1</guid>
-    </item>
-    <item>
-      <title>Do Vision-Language-Action Models Understand Instructions? A Mechanistic Interpretability Study on Language Grounding</title>
-      <link>https://arxiv.org/abs/2610.10178v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Theodor Wulff, Angelo Cangelosi</p><p>Vision-Language-Action models are designed to generalise across environments and task descriptions, raising the question of whether their action generation actually depends on the language instruction, or whether they largely rely on visual cues and superficial correlations. Robustness to variance in the visual and linguistic observation space is critical for real-world deployment, yet VLAs lack explicit grounding modules and instead rely on the intrinsic language grounding capabilities of their</p><p><strong>Tags:</strong> vision</p>]]></description>
-      <pubDate>Wed, 07 Oct 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2610.10178v1</guid>
-    </item>
-    <item>
-      <title>Sparse Feature Policy Unlearning Mitigates State Hallucination in Vision-Language-Action Models</title>
-      <link>https://arxiv.org/abs/2610.09496v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Jiho Lee, Jeongeun Park, Heayoun Choi, Taekyung Kim, Eunwoo Kim</p><p>Vision-Language-Action (VLA) models have shown strong generalization in robotic manipulation by leveraging rich representations from pretrained vision-language models. However, their deployment in real-world environments remains limited by recurring unreliable behaviors. In this work, we study state hallucination, a recurring failure pattern in which a VLA continues acting as if an unrealized robot-object state had been achieved. Our analyses find that state hallucination coincides with weakened</p><p><strong>Tags:</strong> features, vision</p>]]></description>
-      <pubDate>Wed, 07 Oct 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2610.09496v1</guid>
-    </item>
-    <item>
-      <title>PatchBench: Measuring Collateral Damage in Activation Patching</title>
-      <link>https://arxiv.org/abs/2610.10276v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Alexi Canesse, Mathis Le Bail, Maël Jenny, Clément Elliker, Mahammed El Sharkawy, et al.</p><p>An LLM safety patch can pass a benchmark while still being a poor repair. This risk is especially acute for jailbreak repairs, where the goal is to correct a specific unsafe behaviour without changing unrelated behaviours. A patch may block exact evaluation prompts yet fail on close harmful variants, or suppress harmful behaviour by over-refusing benign prompts that share its wording or structure. Existing protocols primarily test whether models can be broken, while aggregate metrics (attack suc</p><p><strong>Tags:</strong> safety</p>]]></description>
-      <pubDate>Wed, 07 Oct 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2610.10276v1</guid>
     </item>
   </channel>
 </rss>
