@@ -1,6 +1,78 @@
 {
-  "lastUpdated": "2026-10-19",
+  "lastUpdated": "2026-10-20",
   "papers": [
+    {
+      "id": "arxiv-2610-26489v1",
+      "title": "Strength Controls Change How Interventions Compare Across Sparse Autoencoder Codes",
+      "authors": "Jinchen Zhang, Zheyuan Liu, Yihan Zhu, Meng Jiang",
+      "date": "2026-10-19",
+      "url": "https://arxiv.org/abs/2610.26489v1",
+      "abstract": "Changing sparse autoencoder (SAE) codes can alter both intervention direction and magnitude, so comparing intervention effects requires a strength control specifying what is held equal. Norm matching and output calibration provide different controls, but whether interventions yield different effects across codes after strength matching remains unclear. We compare intervention effects under these controls for fixed feature groups in Gemma and Llama and observe: (1) Whole-patch scaling. With one c",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-25700v1",
+      "title": "From Black Box to Controller: Inference-Time Steering of LLM via Feature Amplification",
+      "authors": "Keqi Chen, Zekai Sun, Yuhua Wen, Tianyi Tian, Xinyang Huang, et al.",
+      "date": "2026-10-19",
+      "url": "https://arxiv.org/abs/2610.25700v1",
+      "abstract": "Inference-time steering is crucial for deploying Large Language Models (LLMs) in real-world applications, where they must flexibly adjust behavior preferences. For instance, a model should dynamically adjust its caution level based on the risk of the scenario. This requirement introduces a challenge: modulating the intensity of LLM preferences. Prompt engineering can require task-specific prompt design, while fine-tuning requires additional optimization and data. These requirements can make repe",
+      "tags": [
+        "features",
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-24908v1",
+      "title": "A Symmetry-Matching Approach to Blind-Spot Reduction in Sparse Autoencoders",
+      "authors": "Csaba Balogh",
+      "date": "2026-10-17",
+      "url": "https://arxiv.org/abs/2610.24908v1",
+      "abstract": "Language models can treat semantically distinct inputs as interchangeable at the representation level, creating blind spots that standard sparse autoencoder (SAE) objectives do not target. In safety-critical settings such as clinical dosage extraction, legal clause interpretation, or financial amount verification, such failures can propagate silently into downstream decisions. We study this problem as one of feature-basis orientation. Building on a symmetry-matching view from algebraic error-det",
+      "tags": [
+        "SAE",
+        "features",
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-24556v1",
+      "title": "From Stories to Features: Scaling Concept Vectors for AI Alignment & Interpretability",
+      "authors": "Dmitry Scherbakov, Oleg Chernikov, Victoria Khamash, Kirill Afendulev, Alexey Dontsov, et al.",
+      "date": "2026-10-17",
+      "url": "https://arxiv.org/abs/2610.24556v1",
+      "abstract": "We study feature vectors: directions in a language model's activation space that correspond to human-interpretable concepts, such as honesty or deception. Existing unsupervised methods like sparse autoencoders attempt to recover the whole feature space, often at the cost of feature quality and interpretability. We take a more pragmatic route: focusing on concepts relevant to AI safety and alignment, we generate synthetic concept-antagonist story pairs and use the difference of their mean model a",
+      "tags": [
+        "SAE",
+        "features",
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-24521v1",
+      "title": "Comparing Sparsified MLPs and Transcoders: Many Transcoder Features Are Neurons in Disguise",
+      "authors": "Stepan Shabalin, Mateusz Piotrowski",
+      "date": "2026-10-17",
+      "url": "https://arxiv.org/abs/2610.24521v1",
+      "abstract": "MLP neurons in transformer language models are widely understood to be polysemantic, motivating transcoders - sparse, learned approximations of MLP layers - as interpretable replacement models for mechanistic analysis. However, recent work shows that MLP neurons can be used to recover sparse, interpretable circuits (Arora et al. 2026, Ye et al. 2025), raising the question of whether transcoders are necessary for circuit analysis.   We define neuron features as transcoder features whose weights a",
+      "tags": [
+        "circuits",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2610-23801v1",
       "title": "Beyond SAEs: Consistent Concept Discovery with Sparse Coding",
@@ -38,6 +110,19 @@
       "abstract": "Recent large audio language models (LALMs) have extended their capabilities beyond lexical speech understanding to tasks requiring paralinguistic and non-linguistic audio understanding, such as emotion recognition. However, these models still struggle to reliably utilize acoustic information, particularly when it co-occurs with spoken linguistic content. Existing benchmarks do not clearly distinguish acoustic perception from higher-level reasoning, making it difficult to identify the source of t",
       "tags": [
         "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-24118v1",
+      "title": "Do LMs Know What Variables Do? Interpreting Code Representations via Variable Roles",
+      "authors": "C\u00e9lian Vasson, Daniil Ognev, Kentaro Inui, Benjamin Heinzerling",
+      "date": "2026-10-16",
+      "url": "https://arxiv.org/abs/2610.24118v1",
+      "abstract": "Variable roles describe recurring behaviors such as accumulation, traversal, and retaining the best candidate encountered. We use Sajaniemi's independently defined taxonomy to study which role distinctions can be recovered from large language models, how sparse autoencoders (SAEs) retain those distinctions, and whether associated directions support control of generation. We introduce static annotation rules for all eleven roles and a corpus of 126,926 natural-code files across five languages. Ac",
+      "tags": [
+        "SAE"
       ],
       "source": "arXiv",
       "featured": false
