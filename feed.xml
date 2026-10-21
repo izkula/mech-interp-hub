@@ -5,9 +5,37 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 20 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 21 Oct 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Are Linguistic and Arithmetic Circuits Dissociated in LLMs?</title>
+      <link>https://arxiv.org/abs/2610.27790v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Riku Kisako, Tatsuki Kuribayashi, Ryohei Sasano</p><p>Large language models (LLMs) exhibit both knowledge of language, rendered by, for example, grammatical judgment ability, and abilities to perform tasks through language, such as math-word problem solving. Motivated by neurolinguistic studies of their neural dissociation in human brains, in this study, we investigate the overlap of their circuits in large language models (LLMs). Specifically, we examine the overlap and causal effects between the circuits extracted for linguistic and arithmetic ta</p><p><strong>Tags:</strong> circuits</p>]]></description>
+      <pubDate>Tue, 20 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.27790v1</guid>
+    </item>
+    <item>
+      <title>Decision Sufficiency of Learned Representation Interfaces for Safe Generative Control</title>
+      <link>https://arxiv.org/abs/2610.27446v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Jipeng Li, Yanning Shen</p><p>A controller can guide a language model toward safe and useful responses by choosing when to assist, ask for clarification, or refuse. When the controller uses selected internal features, poor performance alone cannot distinguish missing information from limitations of its decision rules or training. We study decision sufficiency: whether the best controller using a representation can match the minimum average loss attainable with full state information, under the same strategies and evaluation </p><p><strong>Tags:</strong> features</p>]]></description>
+      <pubDate>Tue, 20 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.27446v1</guid>
+    </item>
+    <item>
+      <title>How Language Models Organize Task Information</title>
+      <link>https://arxiv.org/abs/2610.27724v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Kaiyang Wan, Yuxia Wang</p><p>Dense linear probes assess task readability from language model (LM) representations, but do not directly reveal how many features suffice for prediction. We measure readout sparsity with \(k^*\), the smallest feature count found by a fixed search protocol that recovers 95% of dense-probe AUROC above chance. We evaluate 19 LMs from five labs on 14 core tasks. Ten base models give the nine reliably readable tasks similar feature counts and nearly the same order. This agreement extends to the sele</p><p><strong>Tags:</strong> features, probing</p>]]></description>
+      <pubDate>Tue, 20 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.27724v1</guid>
+    </item>
+    <item>
+      <title>Why Static Probes Fail: Context Determines Deception Feature Composition</title>
+      <link>https://arxiv.org/abs/2610.27577v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Yao Huang, Siyuan Chen, Zhenghan Zhou, Yinpeng Dong</p><p>With increasing autonomy, Large Language Models (LLMs) may engage in deceptive behaviors, such as scheming to pursue misaligned goals or sandbagging to escape oversight. Monitoring outputs alone is insufficient, as models can produce seemingly benign responses while harboring misaligned internal objectives. While mechanistic approaches like linear probing are promising, they rely on the assumption that deception corresponds to a single direction in representation space. We demonstrate that such </p><p><strong>Tags:</strong> features, probing</p>]]></description>
+      <pubDate>Tue, 20 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.27577v1</guid>
+    </item>
     <item>
       <title>Strength Controls Change How Interventions Compare Across Sparse Autoencoder Codes</title>
       <link>https://arxiv.org/abs/2610.26489v1</link>
@@ -21,6 +49,20 @@
       <description><![CDATA[<p><strong>Authors:</strong> Keqi Chen, Zekai Sun, Yuhua Wen, Tianyi Tian, Xinyang Huang, et al.</p><p>Inference-time steering is crucial for deploying Large Language Models (LLMs) in real-world applications, where they must flexibly adjust behavior preferences. For instance, a model should dynamically adjust its caution level based on the risk of the scenario. This requirement introduces a challenge: modulating the intensity of LLM preferences. Prompt engineering can require task-specific prompt design, while fine-tuning requires additional optimization and data. These requirements can make repe</p><p><strong>Tags:</strong> features, steering</p>]]></description>
       <pubDate>Mon, 19 Oct 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2610.25700v1</guid>
+    </item>
+    <item>
+      <title>Correcting Attribution Patching with a Few Exact Measurements</title>
+      <link>https://arxiv.org/abs/2610.27393v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Luyang Zhang, Minxing Zheng, Jialu Wang</p><p>Mechanistic interpretability asks which language model components matter for a behavior, and activation patching answers by changing one component&#x27;s activation and measuring its effect, at a cost growing with components and prompts. Attribution patching estimates these effects from one gradient pass, but its estimates can be far off, and verifying each one restores the cost. Can the structure of these errors reduce this cost? We propose Guided-AP, which uses a few exact measurements to reveal at</p>]]></description>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.27393v1</guid>
+    </item>
+    <item>
+      <title>Shaped SAEs: Expanding the Toolkit for Mechanistic Interpretability</title>
+      <link>https://arxiv.org/abs/2610.27375v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Oveys Delafrooz Noroozi, Bhagyashree Puranik, Upamanyu Madhow</p><p>Sparse autoencoders (SAEs) seek to decompose the dense activations of large language models (LLMs) into sparse, potentially interpretable features using a learned overcomplete dictionary. In this work, we ask whether it is possible to enhance the semantic selectivity of the learned dictionary atoms by linearly \emph{shaping} the dense activations prior to learning an SAE. We explore rank-reducing transformations based on the recently introduced J-space corresponding to the averaged Jacobian from</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.27375v1</guid>
     </item>
     <item>
       <title>A Symmetry-Matching Approach to Blind-Spot Reduction in Sparse Autoencoders</title>
@@ -42,6 +84,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Stepan Shabalin, Mateusz Piotrowski</p><p>MLP neurons in transformer language models are widely understood to be polysemantic, motivating transcoders - sparse, learned approximations of MLP layers - as interpretable replacement models for mechanistic analysis. However, recent work shows that MLP neurons can be used to recover sparse, interpretable circuits (Arora et al. 2026, Ye et al. 2025), raising the question of whether transcoders are necessary for circuit analysis.   We define neuron features as transcoder features whose weights a</p><p><strong>Tags:</strong> circuits, features</p>]]></description>
       <pubDate>Sat, 17 Oct 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2610.24521v1</guid>
+    </item>
+    <item>
+      <title>Memory Internalization via Test-Time Training for Long-Video Understanding</title>
+      <link>https://arxiv.org/abs/2610.26910v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Haonan Zhao, Jiaxuan Chen, Qingyang Liu, Shuochen Chang, Siyu Sun, et al.</p><p>Long-video understanding often requires answering many questions about a single video whose evidence is distributed across extended temporal contexts. Conventional video-language models repeatedly encode frames or retrieve visual evidence for every question. Parameterized video memory offers a write-once alternative, but existing methods rely primarily on synthesized text and fixed adaptation configurations, leaving open where video knowledge should be written and how visual evidence should shap</p><p><strong>Tags:</strong> vision</p>]]></description>
+      <pubDate>Sat, 17 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.26910v1</guid>
     </item>
     <item>
       <title>Beyond SAEs: Consistent Concept Discovery with Sparse Coding</title>
@@ -168,55 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Aiden Swann, Mathilde Papillon, Mozes Jacobs, Siddharth Boppana, Tal Haklay, et al.</p><p>Vision-language-action (VLA) models are a promising approach to general purpose robot manipulation. While the internal computation of vision-language models, which compose the backbone of VLAs, has been studied extensively, less is known about how their perceptual and semantic representations are transformed into action in VLA models. We study this question mechanistically in three frontier VLA models ($π_{0.5}$, MolmoAct2, and MolmoBot) by analyzing the causal pathways through which the input i</p><p><strong>Tags:</strong> vision</p>]]></description>
       <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2610.20750v1</guid>
-    </item>
-    <item>
-      <title>Causal Syntax Circuits in CodeLMs: Budget and Probe Decide What Looks Localised</title>
-      <link>https://arxiv.org/abs/2610.20683v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Harsh Kumar, Tanmay Shailesh Joshi, Rahul Maity, Anusa Saha</p><p>Code models write Python when the prompt does not say which language to use. We ask a mechanistic question about that habit: is it produced by a small, findable group of components inside the model? We run one pipeline---mean ablation, activation patching, greedy circuit extraction, a random-control significance test, and activation steering---over 55 model-language settings spanning ten open code models (five base and five instruction-tuned), three target languages (Rust, C#, PHP), two prompt s</p><p><strong>Tags:</strong> circuits, probing, steering</p>]]></description>
-      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2610.20683v1</guid>
-    </item>
-    <item>
-      <title>Monitoring latent reasoning in looped language models</title>
-      <link>https://arxiv.org/abs/2610.18127v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Pawel Olszowiec, Paulina Tomaszewska, Maciej Żelaszczyk, Michal Byra, Neo Christopher Chung</p><p>Looped language models (LMs) reuse one block of layers several times per token generation, promising more latent computation at no additional storage cost. Despite their rising popularity, the analysis of looped LMs is still in its infancy: little is known about whether the iterative transformations actually improve their capabilities, or whether these models remain stable under prompt perturbation. We construct an inspection protocol rooted in Mechanistic Interpretability comprising five divers</p><p><strong>Tags:</strong> reasoning</p>]]></description>
-      <pubDate>Tue, 13 Oct 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2610.18127v1</guid>
-    </item>
-    <item>
-      <title>Readout Scaling Shapes Sparse Feature Recovery</title>
-      <link>https://arxiv.org/abs/2610.18462v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Brain Xiao, Sarah Wilson</p><p>Readout scaling changes what a sparse autoencoder (SAE) learns, but the benefit of removing it depends on the data. We use readout-canonicalized decision-space (RC-DS) coordinates to remove singular-value gains while preserving retained decision information. At a fixed readout condition number, changing the generating distribution reverses which training coordinates recover known factors best. In our controlled coordinate-matching study, recovery is highest when training restores the space in wh</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Tue, 13 Oct 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2610.18462v1</guid>
-    </item>
-    <item>
-      <title>Evaluating the Causal Faithfulness of SHAP as a Candidate Attribution Method for SAE Features</title>
-      <link>https://arxiv.org/abs/2610.17898v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Samuel Xie, Noura Al-Moubayed</p><p>Sparse autoencoders decompose language model representations into interpretable features, but feature interpretation in this literature remains predominantly correlational. Attribution methods offer more direct estimates of feature influence, yet their faithfulness to actual causal effects has not been systematically evaluated in the SAE setting. We apply SHAP-based attribution to SAE latent features and evaluate it against direct causal intervention, using sentiment classification on SST-2 with</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Tue, 13 Oct 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2610.17898v1</guid>
-    </item>
-    <item>
-      <title>A Sense of Proprioception in Language Models</title>
-      <link>https://arxiv.org/abs/2610.17495v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Jonas Geiping</p><p>In humans, proprioception corresponds to the sense of self-movement or position, e.g. understanding the position of one&#x27;s arm. This sense is often less well-understood and in popular understanding sometimes conflated with introspection. But, notably, proprioception is a separate sense, with dedicated receptors and verifiable outcomes. On the other hand though, language models cannot observe their own internal states during training (and for example answer the question which experts activated in </p>]]></description>
-      <pubDate>Mon, 12 Oct 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2610.17495v1</guid>
-    </item>
-    <item>
-      <title>What Do Sparse Autoencoder Feature Discovery Scores Identify? From Activations to Interventions</title>
-      <link>https://arxiv.org/abs/2610.15850v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Yifeng Guo, Yanran Li, Xiang Chen</p><p>Sparse autoencoder (SAE) features are typically discovered from how their activations co-vary with behaviour, yet they are often used through interventions such as steering or ablation. We take intervention attribution, the first-order effect of a specified intervention on the model output, as our estimand. For a broad class of response functions, we show that observational feature-discovery evidence generally does not identify this attribution, and derive an exact gradient-based decomposition o</p><p><strong>Tags:</strong> SAE, features, steering</p>]]></description>
-      <pubDate>Sun, 11 Oct 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2610.15850v1</guid>
-    </item>
-    <item>
-      <title>Language Models Have Interpretable Narrative Mechanisms</title>
-      <link>https://arxiv.org/abs/2610.12989v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> David Yiyang Liu, Aditya Joshi, Paul Dawson, Andrew Piper</p><p>We investigate whether language models contain internal components that contribute to representing narrativity, the degree to which a text exhibits narrative properties. Across GPT-2-Small, Gemma-2-2B, and Llama-3.1-8B, we identify attention heads, MLP neurons, and sparse autoencoder features whose activations correlate with narrativity. Ablating selected neuron and feature sets increases next-token prediction loss more for high-narrativity than for low-narrativity texts, and reduces the narrati</p><p><strong>Tags:</strong> SAE, features, attention</p>]]></description>
-      <pubDate>Fri, 09 Oct 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2610.12989v1</guid>
     </item>
   </channel>
 </rss>
