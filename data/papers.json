@@ -1,6 +1,60 @@
 {
-  "lastUpdated": "2026-10-20",
+  "lastUpdated": "2026-10-21",
   "papers": [
+    {
+      "id": "arxiv-2610-27790v1",
+      "title": "Are Linguistic and Arithmetic Circuits Dissociated in LLMs?",
+      "authors": "Riku Kisako, Tatsuki Kuribayashi, Ryohei Sasano",
+      "date": "2026-10-20",
+      "url": "https://arxiv.org/abs/2610.27790v1",
+      "abstract": "Large language models (LLMs) exhibit both knowledge of language, rendered by, for example, grammatical judgment ability, and abilities to perform tasks through language, such as math-word problem solving. Motivated by neurolinguistic studies of their neural dissociation in human brains, in this study, we investigate the overlap of their circuits in large language models (LLMs). Specifically, we examine the overlap and causal effects between the circuits extracted for linguistic and arithmetic ta",
+      "tags": [
+        "circuits"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-27446v1",
+      "title": "Decision Sufficiency of Learned Representation Interfaces for Safe Generative Control",
+      "authors": "Jipeng Li, Yanning Shen",
+      "date": "2026-10-20",
+      "url": "https://arxiv.org/abs/2610.27446v1",
+      "abstract": "A controller can guide a language model toward safe and useful responses by choosing when to assist, ask for clarification, or refuse. When the controller uses selected internal features, poor performance alone cannot distinguish missing information from limitations of its decision rules or training. We study decision sufficiency: whether the best controller using a representation can match the minimum average loss attainable with full state information, under the same strategies and evaluation ",
+      "tags": [
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-27724v1",
+      "title": "How Language Models Organize Task Information",
+      "authors": "Kaiyang Wan, Yuxia Wang",
+      "date": "2026-10-20",
+      "url": "https://arxiv.org/abs/2610.27724v1",
+      "abstract": "Dense linear probes assess task readability from language model (LM) representations, but do not directly reveal how many features suffice for prediction. We measure readout sparsity with \\(k^*\\), the smallest feature count found by a fixed search protocol that recovers 95% of dense-probe AUROC above chance. We evaluate 19 LMs from five labs on 14 core tasks. Ten base models give the nine reliably readable tasks similar feature counts and nearly the same order. This agreement extends to the sele",
+      "tags": [
+        "features",
+        "probing"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-27577v1",
+      "title": "Why Static Probes Fail: Context Determines Deception Feature Composition",
+      "authors": "Yao Huang, Siyuan Chen, Zhenghan Zhou, Yinpeng Dong",
+      "date": "2026-10-20",
+      "url": "https://arxiv.org/abs/2610.27577v1",
+      "abstract": "With increasing autonomy, Large Language Models (LLMs) may engage in deceptive behaviors, such as scheming to pursue misaligned goals or sandbagging to escape oversight. Monitoring outputs alone is insufficient, as models can produce seemingly benign responses while harboring misaligned internal objectives. While mechanistic approaches like linear probing are promising, they rely on the assumption that deception corresponds to a single direction in representation space. We demonstrate that such ",
+      "tags": [
+        "features",
+        "probing"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2610-26489v1",
       "title": "Strength Controls Change How Interventions Compare Across Sparse Autoencoder Codes",
@@ -25,6 +79,31 @@
       "tags": [
         "features",
         "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-27393v1",
+      "title": "Correcting Attribution Patching with a Few Exact Measurements",
+      "authors": "Luyang Zhang, Minxing Zheng, Jialu Wang",
+      "date": "2026-10-19",
+      "url": "https://arxiv.org/abs/2610.27393v1",
+      "abstract": "Mechanistic interpretability asks which language model components matter for a behavior, and activation patching answers by changing one component's activation and measuring its effect, at a cost growing with components and prompts. Attribution patching estimates these effects from one gradient pass, but its estimates can be far off, and verifying each one restores the cost. Can the structure of these errors reduce this cost? We propose Guided-AP, which uses a few exact measurements to reveal at",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-27375v1",
+      "title": "Shaped SAEs: Expanding the Toolkit for Mechanistic Interpretability",
+      "authors": "Oveys Delafrooz Noroozi, Bhagyashree Puranik, Upamanyu Madhow",
+      "date": "2026-10-19",
+      "url": "https://arxiv.org/abs/2610.27375v1",
+      "abstract": "Sparse autoencoders (SAEs) seek to decompose the dense activations of large language models (LLMs) into sparse, potentially interpretable features using a learned overcomplete dictionary. In this work, we ask whether it is possible to enhance the semantic selectivity of the learned dictionary atoms by linearly \\emph{shaping} the dense activations prior to learning an SAE. We explore rank-reducing transformations based on the recently introduced J-space corresponding to the averaged Jacobian from",
+      "tags": [
+        "SAE",
+        "features"
       ],
       "source": "arXiv",
       "featured": false
@@ -69,6 +148,19 @@
       "tags": [
         "circuits",
         "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-26910v1",
+      "title": "Memory Internalization via Test-Time Training for Long-Video Understanding",
+      "authors": "Haonan Zhao, Jiaxuan Chen, Qingyang Liu, Shuochen Chang, Siyu Sun, et al.",
+      "date": "2026-10-17",
+      "url": "https://arxiv.org/abs/2610.26910v1",
+      "abstract": "Long-video understanding often requires answering many questions about a single video whose evidence is distributed across extended temporal contexts. Conventional video-language models repeatedly encode frames or retrieve visual evidence for every question. Parameterized video memory offers a write-once alternative, but existing methods rely primarily on synthesized text and fixed adaptation configurations, leaving open where video knowledge should be written and how visual evidence should shap",
+      "tags": [
+        "vision"
       ],
       "source": "arXiv",
       "featured": false
