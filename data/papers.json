@@ -1,6 +1,35 @@
 {
-  "lastUpdated": "2026-10-21",
+  "lastUpdated": "2026-10-22",
   "papers": [
+    {
+      "id": "arxiv-2610-30006v1",
+      "title": "Building Auditable AI Text Detectors with Sparse Autoencoders",
+      "authors": "Liam Dugan, Callum McDougall, Matthew Denton, Philip Pham, Christine Kaeser-Chen, et al.",
+      "date": "2026-10-21",
+      "url": "https://arxiv.org/abs/2610.30006v1",
+      "abstract": "AI-generated text detectors are increasingly deployed in consequential settings---peer review, education, admissions, journalism, and content moderation---where their outputs directly affect individuals. Yet the strongest detectors are fine-tuned neural classifiers whose decisions are opaque, while transparent alternatives (stylometric and linguistic-feature classifiers) underperform them by wide margins. We present a pipeline that converts a fine-tuned neural detector into a classifier that ope",
+      "tags": [
+        "SAE",
+        "features",
+        "probing",
+        "survey"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-29129v1",
+      "title": "Mitigating Reward Hacking in Realistic Scenarios Through Representation Engineering",
+      "authors": "Austin Meek, Kyle Cox, Matthew Nguyen, Austin J. Brockmeier, Steven Basart",
+      "date": "2026-10-21",
+      "url": "https://arxiv.org/abs/2610.29129v1",
+      "abstract": "Reward hacking is a major problem in current production machine learning systems, resulting in costly and dangerous failures. Here we study how to monitor for and mitigate reward hacking in realistic settings, including tool calls and long contexts. We apply a dynamic intervention to steering directions obtained by three different methods: difference-in-means vectors from labeled rollouts, gradient optimization-based vectors, and vectors extracted when models reference an anti-reward-hacking mod",
+      "tags": [
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2610-27790v1",
       "title": "Are Linguistic and Arithmetic Circuits Dissociated in LLMs?",
@@ -51,6 +80,72 @@
       "tags": [
         "features",
         "probing"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-28992v1",
+      "title": "Language Impairment as a Lens onto Large Language Models",
+      "authors": "Muxuan He, Wang Bill Zhu, Yue Chen, Elsi Kaiser, Weizhi Du, et al.",
+      "date": "2026-10-20",
+      "url": "https://arxiv.org/abs/2610.28992v1",
+      "abstract": "Although large language models (LLMs) encode language in highly distributed spaces, they remain vulnerable to focal disruptions---a phenomenon strikingly similar to how localized brain damage causes clinical aphasia in humans. To investigate this theoretical tension, we ask whether LLMs possess a functional structure analogous to the human language system, by introducing a novel mechanistic interpretability framework inspired by aphasia. Through two complementary approaches, classifier-guided le",
+      "tags": [
+        "probing",
+        "theory"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-28799v1",
+      "title": "Where Do Legal Factors Live in LLMs?",
+      "authors": "Li Zhang, Kevin Ashley",
+      "date": "2026-10-20",
+      "url": "https://arxiv.org/abs/2610.28799v1",
+      "abstract": "In case-based legal reasoning, legal professionals identify legally significant fact patterns in a new dispute and compare them with those of decided cases. In AI & Law, HYPO dimensions and CATO factors represent these patterns symbolically, organizing expert knowledge distilled from case narratives as explicit, structured, interpretable, and auditable legal concepts and relations that support case comparison, legal argument, and precedent-based reasoning. Large language models (LLMs) are increa",
+      "tags": [
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-28904v1",
+      "title": "Tropical Cyclone Attributes in Sparse Autoencoder Features of an AI Weather Model",
+      "authors": "Jiapei Liu, Ruidong Li, Ting Sun, Guangheng Ni",
+      "date": "2026-10-20",
+      "url": "https://arxiv.org/abs/2610.28904v1",
+      "abstract": "Artificial intelligence (AI) weather models now forecast weather events skillfully, but how they represent these events internally remains unknown. Sparse autoencoders (SAEs) provide sparse features for probing hidden states, but how information about multiple physical attributes of an event is organized across them remains unclear. Using tropical cyclones in GraphCast as a test case, we analyze 2,115 six-hourly timesteps from 205 cyclones, relating SAE activations to position, intensity, and pr",
+      "tags": [
+        "SAE",
+        "features",
+        "probing"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-28811v1",
+      "title": "A Mechanistic Study of Automated Failure Attribution in LLM-based Agentic Systems",
+      "authors": "Wendy Zheng, Liang Wu, Yinhan He, Mayank Darbari, Jundong Li, et al.",
+      "date": "2026-10-20",
+      "url": "https://arxiv.org/abs/2610.28811v1",
+      "abstract": "Agentic systems have demonstrated strong capabilities on complex tasks by enabling multiple interacting large language model (LLM)-based agents to collaborate and execute subtasks in parallel. However, this collaborative structure introduces new challenges for reliably evaluating and diagnosing system failures, particularly failure attribution: tracing a system's execution to identify the agent step responsible for an incorrect final outcome. Because manually performing this task is time- and la",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-28810v1",
+      "title": "Combining Long-Term Memory and LLMs Comes at a High Cost: From Prompt Injection to Persistent Compromise",
+      "authors": "Pedro H. Barcha Correia, Matheus Azevedo de S\u00e1, Paulo H. Gomes de Senna, Giovanni Mandel Martignago, Victor Takashi Hayashi, et al.",
+      "date": "2026-10-20",
+      "url": "https://arxiv.org/abs/2610.28810v1",
+      "abstract": "The widespread adoption of generative artificial intelligence in recent years has brought a parallel rise in prompt injection and jailbreak attacks. By embedding malicious instructions, these exploits manipulate language models to bypass intended behavior and operational boundaries. In traditional chatbots, such attacks are confined to a single session because state memory is not preserved across conversations. However, persistent memory features in modern conversational interfaces enable cross-",
+      "tags": [
+        "features"
       ],
       "source": "arXiv",
       "featured": false
