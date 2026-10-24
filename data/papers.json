@@ -1,6 +1,20 @@
 {
-  "lastUpdated": "2026-10-23",
+  "lastUpdated": "2026-10-24",
   "papers": [
+    {
+      "id": "arxiv-2610-31520v1",
+      "title": "The Geometry of Metaphor: Probing and Steering Metaphor Representations in Large Language Models",
+      "authors": "Shihui Li, Mette Andersen, Martha Lewis",
+      "date": "2026-10-22",
+      "url": "https://arxiv.org/abs/2610.31520v1",
+      "abstract": "Metaphor is a crucial aspect of human cognition. As such, we would like to understand how it is represented in large language models (LLMs) and how it might be controlled. We use mechanistic interpretability techniques to identify causal subspaces in a range of LLMs covering different architectures and sizes. We show that we are able to steer output on classification tasks across different parts of speech. We are also able to steer output on generation tasks, indicating that these techniques can",
+      "tags": [
+        "probing",
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2610-30006v1",
       "title": "Building Auditable AI Text Detectors with Sparse Autoencoders",
@@ -26,6 +40,21 @@
       "abstract": "Reward hacking is a major problem in current production machine learning systems, resulting in costly and dangerous failures. Here we study how to monitor for and mitigate reward hacking in realistic settings, including tool calls and long contexts. We apply a dynamic intervention to steering directions obtained by three different methods: difference-in-means vectors from labeled rollouts, gradient optimization-based vectors, and vectors extracted when models reference an anti-reward-hacking mod",
       "tags": [
         "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-30474v1",
+      "title": "Rethinking SAE Evaluation: An Atomic Interpretable Unit Framework Reveals Hidden Polysemanticity and Redundancy",
+      "authors": "Riteng Zhang, Xiaoqian Wang",
+      "date": "2026-10-21",
+      "url": "https://arxiv.org/abs/2610.30474v1",
+      "abstract": "Sparse autoencoders (SAEs) were originally motivated by discovering monosemantic features, a property that characterizes individual features but does not specify what the learned feature set should look like as a whole. As SAEs have increasingly been adopted for attribution, circuit discovery, and intervention, researchers have begun evaluating metrics that describe global properties of the feature set, such as sparsity, dead feature rates, reconstruction fidelity, and disentanglement, a diverse",
+      "tags": [
+        "SAE",
+        "circuits",
+        "features"
       ],
       "source": "arXiv",
       "featured": false
