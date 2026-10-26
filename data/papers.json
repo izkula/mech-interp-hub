@@ -1,6 +1,35 @@
 {
-  "lastUpdated": "2026-10-25",
+  "lastUpdated": "2026-10-26",
   "papers": [
+    {
+      "id": "arxiv-2610-32059v1",
+      "title": "Concept Acupuncturist: An Efficient and Precise Concept Erasure Method for Diffusion Models via Sparse Autoencoders",
+      "authors": "Yiran Xiahou, Siliang Qin, Kai Chen, Shengzhi Zhang, Renyang Liu",
+      "date": "2026-10-23",
+      "url": "https://arxiv.org/abs/2610.32059v1",
+      "abstract": "Diffusion-based image generation models produce high-quality images but may generate harmful or policy-violating content, motivating machine unlearning (MU) to selectively remove target concepts while preserving general capabilities. However, existing MU approaches often struggle with the distributed and entangled nature of concept representations, leading to inefficient optimization and imprecise edits when applied through large-scale fine-tuning over full diffusion trajectories. To bridge this",
+      "tags": [
+        "SAE",
+        "safety",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-32007v1",
+      "title": "MI-MIDI 2: From Observation to Control with Sparse Autoencoders in Text-to-MIDI Generation",
+      "authors": "Jakub Po\u0107wiardowski, Mateusz Modrzejewski",
+      "date": "2026-10-23",
+      "url": "https://arxiv.org/abs/2610.32007v1",
+      "abstract": "Sparse autoencoders (SAEs) can expose features of a generative model without predefined labels, but in language models the evidence used to interpret these features has proven an unreliable guide to which of them steer the output. Whether interpretations of SAE features predict control in music generators has not, to our knowledge, been tested. We develop an end-to-end protocol for discovering and evaluating SAE features in text-to-MIDI generation and apply it to text2midi and MIDI-LLM. The prot",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2610-31520v1",
       "title": "The Geometry of Metaphor: Probing and Steering Metaphor Representations in Large Language Models",
@@ -11,6 +40,20 @@
       "tags": [
         "probing",
         "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-31894v1",
+      "title": "TaxoSAE: Rethinking Sparse Autoencoders through Taxonomic Logic",
+      "authors": "Xinyu Guo, Minglai Yang, Clayton T. Morrison, Eduardo Blanco, Mihai Surdeanu",
+      "date": "2026-10-22",
+      "url": "https://arxiv.org/abs/2610.31894v1",
+      "abstract": "Recent Sparse Autoencoders (SAEs) decompose the representations of large language models (LLMs) into interpretable features, enabling precise readout and control of encoded knowledge. However, existing SAEs treat each feature as a standalone unit, whereas real-world knowledge is often taxonomically organized. As a result, readout carries no guarantee of taxonomic consistency, and control lacks the granularity to specify the scope of an edit. We propose TaxoSAE, which explicitly encodes taxonomic",
+      "tags": [
+        "SAE",
+        "features"
       ],
       "source": "arXiv",
       "featured": false
