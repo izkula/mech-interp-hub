@@ -5,9 +5,30 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 26 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 27 Oct 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Mechanistic Insights into LoRA: Layer Sparsity for Adaptive Fine-Tuning via Path Patching</title>
+      <link>https://arxiv.org/abs/2610.34756v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Fei Zuo, Yizhou Huang, Kezhi Wang</p><p>Low-Rank Adaptation (LoRA) has emerged as the dominant paradigm for parameter-efficient fine-tuning of large language models. Standard all-layer LoRA applies adaptation throughout the transformer, despite heterogeneous contributions from its components. In this work, we conduct a systematic mechanistic interpretability analysis to understand how LoRA affects model internals. We observe that LoRA&#x27;s adaptation effect is highly non-uniform, with significant component-wise and layer-wise sparsity. M</p>]]></description>
+      <pubDate>Mon, 26 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.34756v1</guid>
+    </item>
+    <item>
+      <title>Do vision models know that three is three?</title>
+      <link>https://arxiv.org/abs/2610.35857v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Ankit Sonthalia, Arnas Uselis, Seong Joon Oh</p><p>Do vision models encode the transition $2{\to}3$ the same way whether it appears in handwritten digits or in hand gestures, and do they &quot;understand&quot; that clean${\to}$dirty is the same transformation regardless of whether it is applied to a kitchen or a carpet? The linear representation hypothesis (LRH) answers this for language models: concept changes correspond to directions in (language) embedding space. In vision, the same concept can manifest in visually unrelated &quot;regimes&quot; that rarely co-oc</p><p><strong>Tags:</strong> vision</p>]]></description>
+      <pubDate>Mon, 26 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.35857v1</guid>
+    </item>
+    <item>
+      <title>Does Notation Matter? MusicXML Tokenisation for Symbolic Music Generation and Understanding</title>
+      <link>https://arxiv.org/abs/2610.34247v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Andrea Poltronieri, Matteo Spanio, Simone Chieppa, Xavier Serra, Martín Rocamora</p><p>Symbolic music representations encode musical content at varying levels of completeness, from performance-oriented formats such as MIDI to fully notated scores such as MusicXML. Yet the impact of this representational richness on deep learning models remains poorly understood. While tokenisation has been extensively studied for MIDI, score-based formats have received considerably less attention, and MusicXML in particular remains largely unexplored despite being the de-facto standard for score i</p>]]></description>
+      <pubDate>Sun, 25 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.34247v1</guid>
+    </item>
     <item>
       <title>Concept Acupuncturist: An Efficient and Precise Concept Erasure Method for Diffusion Models via Sparse Autoencoders</title>
       <link>https://arxiv.org/abs/2610.32059v1</link>
@@ -21,6 +42,20 @@
       <description><![CDATA[<p><strong>Authors:</strong> Jakub Poćwiardowski, Mateusz Modrzejewski</p><p>Sparse autoencoders (SAEs) can expose features of a generative model without predefined labels, but in language models the evidence used to interpret these features has proven an unreliable guide to which of them steer the output. Whether interpretations of SAE features predict control in music generators has not, to our knowledge, been tested. We develop an end-to-end protocol for discovering and evaluating SAE features in text-to-MIDI generation and apply it to text2midi and MIDI-LLM. The prot</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
       <pubDate>Fri, 23 Oct 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2610.32007v1</guid>
+    </item>
+    <item>
+      <title>Do VLAs Know They Will Fail? Interpretable Success and Failure Patterns in Physical AI Systems</title>
+      <link>https://arxiv.org/abs/2610.32208v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Christian A. Rogers, Qian Lin, Daniel S. Brown</p><p>Vision-Language-Action (VLA) models have emerged as powerful general-purpose robot policies, but their successes and failures remain difficult to diagnose and understand. In this work, we show that sparse autoencoder (SAE) representations of OpenVLA activations contain outcome-predictive information and can be used to predict task failure before the robot reaches an unrecoverable state. Moreover, to provide insights into what common behaviors may contribute to these outcomes, we identify individ</p><p><strong>Tags:</strong> SAE, vision</p>]]></description>
+      <pubDate>Fri, 23 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.32208v1</guid>
+    </item>
+    <item>
+      <title>Angular Supervision for Visual Object Grounding in Autoregressive Vision-Language Models</title>
+      <link>https://arxiv.org/abs/2610.32220v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Parsa Esmaeilkhani, Longin Jan Latecki</p><p>Autoregressive vision-language models (VLMs) struggle to ground generated text in the correct image regions, and existing explainability methods, such as attention maps and Logit Lens, often produce poor spatial explanations due to weak text-to-vision attention and sink tokens. We propose \textbf{Angular Relevance} ($R_L$), a simple visualization measure based on cosine similarity between visual token embeddings and unembedding-matrix rows. Because $R_L$ is invariant to token norm, it produces s</p><p><strong>Tags:</strong> vision</p>]]></description>
+      <pubDate>Fri, 23 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.32220v1</guid>
     </item>
     <item>
       <title>The Geometry of Metaphor: Probing and Steering Metaphor Representations in Large Language Models</title>
@@ -56,6 +91,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Riteng Zhang, Xiaoqian Wang</p><p>Sparse autoencoders (SAEs) were originally motivated by discovering monosemantic features, a property that characterizes individual features but does not specify what the learned feature set should look like as a whole. As SAEs have increasingly been adopted for attribution, circuit discovery, and intervention, researchers have begun evaluating metrics that describe global properties of the feature set, such as sparsity, dead feature rates, reconstruction fidelity, and disentanglement, a diverse</p><p><strong>Tags:</strong> SAE, circuits, features</p>]]></description>
       <pubDate>Wed, 21 Oct 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2610.30474v1</guid>
+    </item>
+    <item>
+      <title>VLMProbe: An Open-source Library for VLM Probing and Interpretation</title>
+      <link>https://arxiv.org/abs/2610.33072v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Gexin Huang, Haisheng Fu, Yanting Yang, Chen Zhao, Ruinan Jin, et al.</p><p>Understanding how vision-language models use visual information requires connecting internal representations to model behavior. We present vlmprobe, an open-source library that integrates lens readouts, attention attribution, causal interventions, and sparse autoencoder (SAE) analysis within a common model interface. Shared adapters, calibration and checkpoint utilities, evaluation pipelines, and visualizations support systematic analysis across architectures. Using this framework, we compare me</p><p><strong>Tags:</strong> SAE, probing, vision</p>]]></description>
+      <pubDate>Wed, 21 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.33072v1</guid>
     </item>
     <item>
       <title>Are Linguistic and Arithmetic Circuits Dissociated in LLMs?</title>
@@ -175,48 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Haonan Zhao, Jiaxuan Chen, Qingyang Liu, Shuochen Chang, Siyu Sun, et al.</p><p>Long-video understanding often requires answering many questions about a single video whose evidence is distributed across extended temporal contexts. Conventional video-language models repeatedly encode frames or retrieve visual evidence for every question. Parameterized video memory offers a write-once alternative, but existing methods rely primarily on synthesized text and fixed adaptation configurations, leaving open where video knowledge should be written and how visual evidence should shap</p><p><strong>Tags:</strong> vision</p>]]></description>
       <pubDate>Sat, 17 Oct 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2610.26910v1</guid>
-    </item>
-    <item>
-      <title>Beyond SAEs: Consistent Concept Discovery with Sparse Coding</title>
-      <link>https://arxiv.org/abs/2610.23801v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Jinho Choi, Hyesu Lim, Jaegul Choo, Steffen Schneider</p><p>Sparse autoencoders (SAEs) explain foundation model representations by decomposing activations into sparse combinations of learned dictionary atoms. However, the learned dictionaries can vary across training runs, limiting the reliability and reproducibility of SAE-based analyses. We propose Consistent Sparse Dictionary Learning (ConSDL), which replaces the standard linear encoder with per-sample sparse coding. This is motivated by our synthetic analysis showing that coefficients from a single l</p><p><strong>Tags:</strong> SAE</p>]]></description>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2610.23801v1</guid>
-    </item>
-    <item>
-      <title>Many Biases, One Circuit: Post-Training Tunes a Pretrained Cue-Routing Mechanism</title>
-      <link>https://arxiv.org/abs/2610.22937v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Prakhar Gupta, Terry Jingchen Zhang, Zhijing Jin</p><p>Language models often abandon a correct answer when the prompt contains a cue, a hint toward a wrong option such as &quot;I think the answer is B.&quot; Sycophancy and related biases show this failure. They are often studied separately and blamed on alignment. We test this view causally, tracing the attention heads behind these biases through the stages of two post-training pipelines. In multiple-choice tests on most models, four cue types rely largely on the same few heads, a shared circuit already prese</p><p><strong>Tags:</strong> circuits, safety, attention</p>]]></description>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2610.22937v1</guid>
-    </item>
-    <item>
-      <title>VocalGrad: Evaluating Acoustic Perception in Audio Language Models</title>
-      <link>https://arxiv.org/abs/2610.23745v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Koki Ryu, Hitomi Yanaka</p><p>Recent large audio language models (LALMs) have extended their capabilities beyond lexical speech understanding to tasks requiring paralinguistic and non-linguistic audio understanding, such as emotion recognition. However, these models still struggle to reliably utilize acoustic information, particularly when it co-occurs with spoken linguistic content. Existing benchmarks do not clearly distinguish acoustic perception from higher-level reasoning, making it difficult to identify the source of t</p><p><strong>Tags:</strong> reasoning</p>]]></description>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2610.23745v1</guid>
-    </item>
-    <item>
-      <title>Do LMs Know What Variables Do? Interpreting Code Representations via Variable Roles</title>
-      <link>https://arxiv.org/abs/2610.24118v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Célian Vasson, Daniil Ognev, Kentaro Inui, Benjamin Heinzerling</p><p>Variable roles describe recurring behaviors such as accumulation, traversal, and retaining the best candidate encountered. We use Sajaniemi&#x27;s independently defined taxonomy to study which role distinctions can be recovered from large language models, how sparse autoencoders (SAEs) retain those distinctions, and whether associated directions support control of generation. We introduce static annotation rules for all eleven roles and a corpus of 126,926 natural-code files across five languages. Ac</p><p><strong>Tags:</strong> SAE</p>]]></description>
-      <pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2610.24118v1</guid>
-    </item>
-    <item>
-      <title>Spurious Attention Heads in Vision Transformers: Mechanistic Identification of Annotation-Driven Bias in Medical Chest X-Ray Analysis</title>
-      <link>https://arxiv.org/abs/2610.21638v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Joshua Muhumuza, Cornelius Kalenzi</p><p>Vision Transformers deployed in medical imaging exploit spurious correlations, yet the internal mechanisms remain unidentified and impossible to fix. We apply mechanistic interpretability to locate one such mechanism in ViT-Base 16: a single attention head (L8H10) that functions as a dedicated annotation-reader on chest X-rays, attending to corner text rather than lung pathology in 62% of 200 COVID-19 images. Causal validation via inpainting confirms annotation content rather than luminance or e</p><p><strong>Tags:</strong> attention, vision</p>]]></description>
-      <pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2610.21638v1</guid>
-    </item>
-    <item>
-      <title>Learning and Forecasting Multiscale Spatiotemporal Epidemic Dynamics with Lagrangian-Eulerian Graph Neural ODEs</title>
-      <link>https://arxiv.org/abs/2610.21223v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Jinyi Duan, Qian Li, Biao Tang</p><p>Accurate medium- to long-range epidemic forecasting requires extrapolating high-dimensional, heterogeneous and nonstationary dynamics from partial observations. Yet hybrid models often leave implicit which observations inform which epidemic processes and how learned graph interactions modify system state. We introduce LE-EpiGNODE, which replaces generic message passing with process-specific, mechanism-guided neural operators: age-contact information drives Lagrangian infection generation, wherea</p>]]></description>
-      <pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2610.21223v1</guid>
     </item>
   </channel>
 </rss>
