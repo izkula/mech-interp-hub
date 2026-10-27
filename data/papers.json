@@ -1,6 +1,41 @@
 {
-  "lastUpdated": "2026-10-26",
+  "lastUpdated": "2026-10-27",
   "papers": [
+    {
+      "id": "arxiv-2610-34756v1",
+      "title": "Mechanistic Insights into LoRA: Layer Sparsity for Adaptive Fine-Tuning via Path Patching",
+      "authors": "Fei Zuo, Yizhou Huang, Kezhi Wang",
+      "date": "2026-10-26",
+      "url": "https://arxiv.org/abs/2610.34756v1",
+      "abstract": "Low-Rank Adaptation (LoRA) has emerged as the dominant paradigm for parameter-efficient fine-tuning of large language models. Standard all-layer LoRA applies adaptation throughout the transformer, despite heterogeneous contributions from its components. In this work, we conduct a systematic mechanistic interpretability analysis to understand how LoRA affects model internals. We observe that LoRA's adaptation effect is highly non-uniform, with significant component-wise and layer-wise sparsity. M",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-35857v1",
+      "title": "Do vision models know that three is three?",
+      "authors": "Ankit Sonthalia, Arnas Uselis, Seong Joon Oh",
+      "date": "2026-10-26",
+      "url": "https://arxiv.org/abs/2610.35857v1",
+      "abstract": "Do vision models encode the transition $2{\\to}3$ the same way whether it appears in handwritten digits or in hand gestures, and do they \"understand\" that clean${\\to}$dirty is the same transformation regardless of whether it is applied to a kitchen or a carpet? The linear representation hypothesis (LRH) answers this for language models: concept changes correspond to directions in (language) embedding space. In vision, the same concept can manifest in visually unrelated \"regimes\" that rarely co-oc",
+      "tags": [
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-34247v1",
+      "title": "Does Notation Matter? MusicXML Tokenisation for Symbolic Music Generation and Understanding",
+      "authors": "Andrea Poltronieri, Matteo Spanio, Simone Chieppa, Xavier Serra, Mart\u00edn Rocamora",
+      "date": "2026-10-25",
+      "url": "https://arxiv.org/abs/2610.34247v1",
+      "abstract": "Symbolic music representations encode musical content at varying levels of completeness, from performance-oriented formats such as MIDI to fully notated scores such as MusicXML. Yet the impact of this representational richness on deep learning models remains poorly understood. While tokenisation has been extensively studied for MIDI, score-based formats have received considerably less attention, and MusicXML in particular remains largely unexplored despite being the de-facto standard for score i",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2610-32059v1",
       "title": "Concept Acupuncturist: An Efficient and Precise Concept Erasure Method for Diffusion Models via Sparse Autoencoders",
@@ -26,6 +61,33 @@
       "tags": [
         "SAE",
         "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-32208v1",
+      "title": "Do VLAs Know They Will Fail? Interpretable Success and Failure Patterns in Physical AI Systems",
+      "authors": "Christian A. Rogers, Qian Lin, Daniel S. Brown",
+      "date": "2026-10-23",
+      "url": "https://arxiv.org/abs/2610.32208v1",
+      "abstract": "Vision-Language-Action (VLA) models have emerged as powerful general-purpose robot policies, but their successes and failures remain difficult to diagnose and understand. In this work, we show that sparse autoencoder (SAE) representations of OpenVLA activations contain outcome-predictive information and can be used to predict task failure before the robot reaches an unrecoverable state. Moreover, to provide insights into what common behaviors may contribute to these outcomes, we identify individ",
+      "tags": [
+        "SAE",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-32220v1",
+      "title": "Angular Supervision for Visual Object Grounding in Autoregressive Vision-Language Models",
+      "authors": "Parsa Esmaeilkhani, Longin Jan Latecki",
+      "date": "2026-10-23",
+      "url": "https://arxiv.org/abs/2610.32220v1",
+      "abstract": "Autoregressive vision-language models (VLMs) struggle to ground generated text in the correct image regions, and existing explainability methods, such as attention maps and Logit Lens, often produce poor spatial explanations due to weak text-to-vision attention and sink tokens. We propose \\textbf{Angular Relevance} ($R_L$), a simple visualization measure based on cosine similarity between visual token embeddings and unembedding-matrix rows. Because $R_L$ is invariant to token norm, it produces s",
+      "tags": [
+        "vision"
       ],
       "source": "arXiv",
       "featured": false
@@ -98,6 +160,21 @@
         "SAE",
         "circuits",
         "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-33072v1",
+      "title": "VLMProbe: An Open-source Library for VLM Probing and Interpretation",
+      "authors": "Gexin Huang, Haisheng Fu, Yanting Yang, Chen Zhao, Ruinan Jin, et al.",
+      "date": "2026-10-21",
+      "url": "https://arxiv.org/abs/2610.33072v1",
+      "abstract": "Understanding how vision-language models use visual information requires connecting internal representations to model behavior. We present vlmprobe, an open-source library that integrates lens readouts, attention attribution, causal interventions, and sparse autoencoder (SAE) analysis within a common model interface. Shared adapters, calibration and checkpoint utilities, evaluation pipelines, and visualizations support systematic analysis across architectures. Using this framework, we compare me",
+      "tags": [
+        "SAE",
+        "probing",
+        "vision"
       ],
       "source": "arXiv",
       "featured": false
