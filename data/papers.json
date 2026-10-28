@@ -1,6 +1,50 @@
 {
-  "lastUpdated": "2026-10-27",
+  "lastUpdated": "2026-10-28",
   "papers": [
+    {
+      "id": "arxiv-2610-37157v1",
+      "title": "What Survives Distillation? A Mechanistic Interpretability Study of GPT-2 and DistilGPT-2",
+      "authors": "Nabeelah Faumi, Deshan Sumanathilaka",
+      "date": "2026-10-27",
+      "url": "https://arxiv.org/abs/2610.37157v1",
+      "abstract": "Knowledge distillation compresses large language models into compact students that preserve aggregate metrics, yet the mechanistic consequences of depth-reduction distillation remain largely uncharacterized. This work applies linear CKA, logit lens analysis, attention pattern decomposition, sparse autoencoder feature statistics, and activation patching to compare GPT-2 and its six-layer student DistilGPT-2 across two canonical circuits: the Indirect Object Identification (IOI) circuit and the Gr",
+      "tags": [
+        "SAE",
+        "circuits",
+        "features",
+        "attention"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-36763v1",
+      "title": "The Vocabulary Is Already Here: Adapting Pretrained Interpretable Features for Generative Recommendation",
+      "authors": "Ziluowen Luo, Ruochen Liu, Jun Yin, Hao Yan, Zhengxuan Hu, et al.",
+      "date": "2026-10-27",
+      "url": "https://arxiv.org/abs/2610.36763v1",
+      "abstract": "Generative recommendation (GR) predicts the next item through its semantic ID (SID). Existing methods commonly fit SID vocabularies to pretrained language model (PLM) representations of item descriptions, incurring additional training costs and making vocabulary coverage dependent on the fitting domains. We observe that pretrained sparse autoencoders expose PLM features with human-interpretable semantic annotations, allowing feature indices to serve as a reusable SID vocabulary. However, reusing",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-37126v1",
+      "title": "Mechanistic Failure Modes of Weight Pruning in Transformer Language Models",
+      "authors": "Nabeelah Faumi, Deshan Sumanathilaka",
+      "date": "2026-10-27",
+      "url": "https://arxiv.org/abs/2610.37126v1",
+      "abstract": "Pruned language models are judged almost entirely by accuracy and perplexity, which assumes that preserved output behaviour implies preserved internal computation. We test this assumption with a factorial pruning study on GPT-2, crossing two importance criteria (magnitude, random), two component types (attention heads, MLP neurons) and three sparsity levels (3%, 50%, 70%). Using the fully characterised indirect object identification (IOI) circuit as ground truth, we measure circuit integrity wit",
+      "tags": [
+        "circuits",
+        "attention"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2610-34756v1",
       "title": "Mechanistic Insights into LoRA: Layer Sparsity for Adaptive Fine-Tuning via Path Patching",
@@ -21,6 +65,21 @@
       "abstract": "Do vision models encode the transition $2{\\to}3$ the same way whether it appears in handwritten digits or in hand gestures, and do they \"understand\" that clean${\\to}$dirty is the same transformation regardless of whether it is applied to a kitchen or a carpet? The linear representation hypothesis (LRH) answers this for language models: concept changes correspond to directions in (language) embedding space. In vision, the same concept can manifest in visually unrelated \"regimes\" that rarely co-oc",
       "tags": [
         "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-36226v1",
+      "title": "Structure, Not Sequence: Tracking and Validating Folding Mechanisms in ESMFold's Trunk with Sparse Autoencoders",
+      "authors": "Bohan Liu, Xiaohan Fan, Wenqian Ye, Aidong Zhang",
+      "date": "2026-10-26",
+      "url": "https://arxiv.org/abs/2610.36226v1",
+      "abstract": "Structure predictors like ESMFold fold proteins using neural network computation and have transformed structural biology. However, the driving mechanism from amino-acid (AA) sequence to 3D structure is insufficiently understood, and biological meaning remains locked in the dense network. Sparse autoencoders (SAEs) have shown promising results in obtaining interpretable concept features over an overcomplete basis of intermediate protein sequence-model representations. Yet folding models, which pr",
+      "tags": [
+        "SAE",
+        "features",
+        "biology"
       ],
       "source": "arXiv",
       "featured": false
