@@ -1,6 +1,72 @@
 {
-  "lastUpdated": "2026-10-29",
+  "lastUpdated": "2026-10-30",
   "papers": [
+    {
+      "id": "arxiv-2610-40637v1",
+      "title": "world2vec: Mechanistic world models through latent dynamics learning",
+      "authors": "Tobias Schmidt, Rodrigo Gonzalez Laiz, Kriszti\u00e1n Szuppinger, Steffen Schneider",
+      "date": "2026-10-29",
+      "url": "https://arxiv.org/abs/2610.40637v1",
+      "abstract": "World models can achieve strong control performance without faithfully capturing the dynamics of their environment, limiting their potential for mechanistic interpretability and scientific discovery. Here, we introduce world2vec to learn mechanistic world models without reward information directly from observations and actions. World2vec learns latent dynamics that faithfully reproduce the true system over long prediction horizons, with at least one order of magnitude fewer parameters than Dream",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-39182v1",
+      "title": "Reasoning or Pattern Exploitation? Mechanistic Insights from RL-Trained Language Models",
+      "authors": "Aishik Nagar, Cheston Tan",
+      "date": "2026-10-29",
+      "url": "https://arxiv.org/abs/2610.39182v1",
+      "abstract": "Large language models (LLMs) are increasingly described as acquiring \"reasoning\" skills after reinforcement learning with verifiable rewards. However, whether these gains reflect genuine reasoning or more superficial adaptations remains underexplored. In this work, we probe LLMs trained in a finite and exhaustively analyzable logical domain, namely Tic-Tac-Toe, and trace how internal representations evolve across reinforcement learning (RL) with Group Relative Policy Optimization (GRPO). Quantit",
+      "tags": [
+        "probing",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-40505v1",
+      "title": "Discovering Interpretable Acoustic Features in Autoregressive Voice-Cloning TTS Models",
+      "authors": "Anuj Diwan, David Harwath, Eunsol Choi",
+      "date": "2026-10-29",
+      "url": "https://arxiv.org/abs/2610.40505v1",
+      "abstract": "Voice-cloning TTS models synthesize an unseen speaker's voice from brief speech prompts, but it remains unclear which acoustic properties they represent and use. We introduce a feature-based interpretability framework for autoregressive voice-cloning TTS models, analyzing features from sparse autoencoders (SAEs), PCA, and random directions via sparse probing, steering, and quantitative auto-interpretability. We focus on Qwen3-TTS and extend probing and steering to $5$ additional models to test g",
+      "tags": [
+        "SAE",
+        "features",
+        "probing",
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-39205v1",
+      "title": "Sparse Autoencoders as Implicit Diversification Regularisers for Cross-Sectional Cryptocurrency Returns",
+      "authors": "Weijia Han, Lisha Qu",
+      "date": "2026-10-29",
+      "url": "https://arxiv.org/abs/2610.39205v1",
+      "abstract": "Factor models are central to asset pricing and portfolio construction, but neural factors are often difficult to interpret, and their effect on portfolio risk is unclear. A sparse autoencoder (SAE) may address both concerns by describing daily returns across many assets with only a few active features. We ask whether this sparse representation produces stable financial factors and better-diversified portfolios. We study cryptocurrency returns, use equities as a secondary test, and compare the SA",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-38326v1",
+      "title": "Can LLMs Faithfully Solve Ontology Engineering Tasks? A Mechanistic Interpretability Study",
+      "authors": "Bohui Zhang, Albert Mero\u00f1o-Pe\u00f1uela, Elena Simperl",
+      "date": "2026-10-28",
+      "url": "https://arxiv.org/abs/2610.38326v1",
+      "abstract": "Ontological knowledge underpins large language model (LLM) performance on knowledge-intensive tasks. However, existing evaluations of LLMs' ontological understanding largely rely on behavioral correctness, leaving the underlying mechanisms unexplained. Existing mechanistic interpretability work has largely focused on instance-level factual knowledge, leaving ontological knowledge under-explored. To bridge this gap, we introduce MIOE, a causal-abstraction benchmark that evaluates interchange inte",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2610-37157v1",
       "title": "What Survives Distillation? A Mechanistic Interpretability Study of GPT-2 and DistilGPT-2",
@@ -41,6 +107,20 @@
       "tags": [
         "circuits",
         "attention"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-38067v1",
+      "title": "From Error Prediction to Causal Influence: Auditing SAE Features in Multiple-Choice QA",
+      "authors": "Aria Nourbakhsh, Adelaide Danilov, Oleksandr Marchenko Breneur, Salima Lamsiyah",
+      "date": "2026-10-27",
+      "url": "https://arxiv.org/abs/2610.38067v1",
+      "abstract": "Sparse autoencoders (SAEs) can predict internal features associated with model errors, but association alone does not establish causal influence. We study this distinction in multiple-choice question answering, where answer preference can be measured by the logit margin between the correct answer and the competing choices. Across eight datasets, we analyze Gemma~3 1B and 4B with Gemma Scope SAEs. We propose a pipeline to filter out the features that have high correlation with format and content ",
+      "tags": [
+        "SAE",
+        "features"
       ],
       "source": "arXiv",
       "featured": false
@@ -780,6 +860,19 @@
         "SAE",
         "features",
         "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-37676v1",
+      "title": "Scoring Explanations Without Reading Them: Structural Shortcuts in Automated-Interpretability Evaluation Data",
+      "authors": "Xupeng Chen",
+      "date": "2026-10-10",
+      "url": "https://arxiv.org/abs/2610.37676v1",
+      "abstract": "Automated interpretability scores an explanation of a sparse-autoencoder (SAE) feature by asking a model to predict, token by token, where the feature fires on evaluation examples or to judge whether marked tokens fit it. We find that the evaluation data standard pipelines build can be scored without reading the explanation. On Neuronpedia's stored fuzzing runs for 500 random GPT-2 small features, 91.3% of activating examples are cropped with the peak on the centre token, and a rule that says \"y",
+      "tags": [
+        "features"
       ],
       "source": "arXiv",
       "featured": false
