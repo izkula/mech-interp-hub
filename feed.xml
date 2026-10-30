@@ -5,9 +5,44 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 29 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>world2vec: Mechanistic world models through latent dynamics learning</title>
+      <link>https://arxiv.org/abs/2610.40637v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Tobias Schmidt, Rodrigo Gonzalez Laiz, Krisztián Szuppinger, Steffen Schneider</p><p>World models can achieve strong control performance without faithfully capturing the dynamics of their environment, limiting their potential for mechanistic interpretability and scientific discovery. Here, we introduce world2vec to learn mechanistic world models without reward information directly from observations and actions. World2vec learns latent dynamics that faithfully reproduce the true system over long prediction horizons, with at least one order of magnitude fewer parameters than Dream</p>]]></description>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.40637v1</guid>
+    </item>
+    <item>
+      <title>Reasoning or Pattern Exploitation? Mechanistic Insights from RL-Trained Language Models</title>
+      <link>https://arxiv.org/abs/2610.39182v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Aishik Nagar, Cheston Tan</p><p>Large language models (LLMs) are increasingly described as acquiring &quot;reasoning&quot; skills after reinforcement learning with verifiable rewards. However, whether these gains reflect genuine reasoning or more superficial adaptations remains underexplored. In this work, we probe LLMs trained in a finite and exhaustively analyzable logical domain, namely Tic-Tac-Toe, and trace how internal representations evolve across reinforcement learning (RL) with Group Relative Policy Optimization (GRPO). Quantit</p><p><strong>Tags:</strong> probing, reasoning</p>]]></description>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.39182v1</guid>
+    </item>
+    <item>
+      <title>Discovering Interpretable Acoustic Features in Autoregressive Voice-Cloning TTS Models</title>
+      <link>https://arxiv.org/abs/2610.40505v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Anuj Diwan, David Harwath, Eunsol Choi</p><p>Voice-cloning TTS models synthesize an unseen speaker&#x27;s voice from brief speech prompts, but it remains unclear which acoustic properties they represent and use. We introduce a feature-based interpretability framework for autoregressive voice-cloning TTS models, analyzing features from sparse autoencoders (SAEs), PCA, and random directions via sparse probing, steering, and quantitative auto-interpretability. We focus on Qwen3-TTS and extend probing and steering to $5$ additional models to test g</p><p><strong>Tags:</strong> SAE, features, probing, steering</p>]]></description>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.40505v1</guid>
+    </item>
+    <item>
+      <title>Sparse Autoencoders as Implicit Diversification Regularisers for Cross-Sectional Cryptocurrency Returns</title>
+      <link>https://arxiv.org/abs/2610.39205v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Weijia Han, Lisha Qu</p><p>Factor models are central to asset pricing and portfolio construction, but neural factors are often difficult to interpret, and their effect on portfolio risk is unclear. A sparse autoencoder (SAE) may address both concerns by describing daily returns across many assets with only a few active features. We ask whether this sparse representation produces stable financial factors and better-diversified portfolios. We study cryptocurrency returns, use equities as a secondary test, and compare the SA</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.39205v1</guid>
+    </item>
+    <item>
+      <title>Can LLMs Faithfully Solve Ontology Engineering Tasks? A Mechanistic Interpretability Study</title>
+      <link>https://arxiv.org/abs/2610.38326v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Bohui Zhang, Albert Meroño-Peñuela, Elena Simperl</p><p>Ontological knowledge underpins large language model (LLM) performance on knowledge-intensive tasks. However, existing evaluations of LLMs&#x27; ontological understanding largely rely on behavioral correctness, leaving the underlying mechanisms unexplained. Existing mechanistic interpretability work has largely focused on instance-level factual knowledge, leaving ontological knowledge under-explored. To bridge this gap, we introduce MIOE, a causal-abstraction benchmark that evaluates interchange inte</p>]]></description>
+      <pubDate>Wed, 28 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.38326v1</guid>
+    </item>
     <item>
       <title>What Survives Distillation? A Mechanistic Interpretability Study of GPT-2 and DistilGPT-2</title>
       <link>https://arxiv.org/abs/2610.37157v1</link>
@@ -28,6 +63,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Nabeelah Faumi, Deshan Sumanathilaka</p><p>Pruned language models are judged almost entirely by accuracy and perplexity, which assumes that preserved output behaviour implies preserved internal computation. We test this assumption with a factorial pruning study on GPT-2, crossing two importance criteria (magnitude, random), two component types (attention heads, MLP neurons) and three sparsity levels (3%, 50%, 70%). Using the fully characterised indirect object identification (IOI) circuit as ground truth, we measure circuit integrity wit</p><p><strong>Tags:</strong> circuits, attention</p>]]></description>
       <pubDate>Tue, 27 Oct 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2610.37126v1</guid>
+    </item>
+    <item>
+      <title>From Error Prediction to Causal Influence: Auditing SAE Features in Multiple-Choice QA</title>
+      <link>https://arxiv.org/abs/2610.38067v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Aria Nourbakhsh, Adelaide Danilov, Oleksandr Marchenko Breneur, Salima Lamsiyah</p><p>Sparse autoencoders (SAEs) can predict internal features associated with model errors, but association alone does not establish causal influence. We study this distinction in multiple-choice question answering, where answer preference can be measured by the logit margin between the correct answer and the competing choices. Across eight datasets, we analyze Gemma~3 1B and 4B with Gemma Scope SAEs. We propose a pipeline to filter out the features that have high correlation with format and content </p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.38067v1</guid>
     </item>
     <item>
       <title>Mechanistic Insights into LoRA: Layer Sparsity for Adaptive Fine-Tuning via Path Patching</title>
@@ -175,48 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Jiapei Liu, Ruidong Li, Ting Sun, Guangheng Ni</p><p>Artificial intelligence (AI) weather models now forecast weather events skillfully, but how they represent these events internally remains unknown. Sparse autoencoders (SAEs) provide sparse features for probing hidden states, but how information about multiple physical attributes of an event is organized across them remains unclear. Using tropical cyclones in GraphCast as a test case, we analyze 2,115 six-hourly timesteps from 205 cyclones, relating SAE activations to position, intensity, and pr</p><p><strong>Tags:</strong> SAE, features, probing</p>]]></description>
       <pubDate>Tue, 20 Oct 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2610.28904v1</guid>
-    </item>
-    <item>
-      <title>A Mechanistic Study of Automated Failure Attribution in LLM-based Agentic Systems</title>
-      <link>https://arxiv.org/abs/2610.28811v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Wendy Zheng, Liang Wu, Yinhan He, Mayank Darbari, Jundong Li, et al.</p><p>Agentic systems have demonstrated strong capabilities on complex tasks by enabling multiple interacting large language model (LLM)-based agents to collaborate and execute subtasks in parallel. However, this collaborative structure introduces new challenges for reliably evaluating and diagnosing system failures, particularly failure attribution: tracing a system&#x27;s execution to identify the agent step responsible for an incorrect final outcome. Because manually performing this task is time- and la</p>]]></description>
-      <pubDate>Tue, 20 Oct 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2610.28811v1</guid>
-    </item>
-    <item>
-      <title>Combining Long-Term Memory and LLMs Comes at a High Cost: From Prompt Injection to Persistent Compromise</title>
-      <link>https://arxiv.org/abs/2610.28810v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Pedro H. Barcha Correia, Matheus Azevedo de Sá, Paulo H. Gomes de Senna, Giovanni Mandel Martignago, Victor Takashi Hayashi, et al.</p><p>The widespread adoption of generative artificial intelligence in recent years has brought a parallel rise in prompt injection and jailbreak attacks. By embedding malicious instructions, these exploits manipulate language models to bypass intended behavior and operational boundaries. In traditional chatbots, such attacks are confined to a single session because state memory is not preserved across conversations. However, persistent memory features in modern conversational interfaces enable cross-</p><p><strong>Tags:</strong> features</p>]]></description>
-      <pubDate>Tue, 20 Oct 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2610.28810v1</guid>
-    </item>
-    <item>
-      <title>Strength Controls Change How Interventions Compare Across Sparse Autoencoder Codes</title>
-      <link>https://arxiv.org/abs/2610.26489v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Jinchen Zhang, Zheyuan Liu, Yihan Zhu, Meng Jiang</p><p>Changing sparse autoencoder (SAE) codes can alter both intervention direction and magnitude, so comparing intervention effects requires a strength control specifying what is held equal. Norm matching and output calibration provide different controls, but whether interventions yield different effects across codes after strength matching remains unclear. We compare intervention effects under these controls for fixed feature groups in Gemma and Llama and observe: (1) Whole-patch scaling. With one c</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Mon, 19 Oct 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2610.26489v1</guid>
-    </item>
-    <item>
-      <title>From Black Box to Controller: Inference-Time Steering of LLM via Feature Amplification</title>
-      <link>https://arxiv.org/abs/2610.25700v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Keqi Chen, Zekai Sun, Yuhua Wen, Tianyi Tian, Xinyang Huang, et al.</p><p>Inference-time steering is crucial for deploying Large Language Models (LLMs) in real-world applications, where they must flexibly adjust behavior preferences. For instance, a model should dynamically adjust its caution level based on the risk of the scenario. This requirement introduces a challenge: modulating the intensity of LLM preferences. Prompt engineering can require task-specific prompt design, while fine-tuning requires additional optimization and data. These requirements can make repe</p><p><strong>Tags:</strong> features, steering</p>]]></description>
-      <pubDate>Mon, 19 Oct 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2610.25700v1</guid>
-    </item>
-    <item>
-      <title>Correcting Attribution Patching with a Few Exact Measurements</title>
-      <link>https://arxiv.org/abs/2610.27393v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Luyang Zhang, Minxing Zheng, Jialu Wang</p><p>Mechanistic interpretability asks which language model components matter for a behavior, and activation patching answers by changing one component&#x27;s activation and measuring its effect, at a cost growing with components and prompts. Attribution patching estimates these effects from one gradient pass, but its estimates can be far off, and verifying each one restores the cost. Can the structure of these errors reduce this cost? We propose Guided-AP, which uses a few exact measurements to reveal at</p>]]></description>
-      <pubDate>Mon, 19 Oct 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2610.27393v1</guid>
-    </item>
-    <item>
-      <title>Shaped SAEs: Expanding the Toolkit for Mechanistic Interpretability</title>
-      <link>https://arxiv.org/abs/2610.27375v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Oveys Delafrooz Noroozi, Bhagyashree Puranik, Upamanyu Madhow</p><p>Sparse autoencoders (SAEs) seek to decompose the dense activations of large language models (LLMs) into sparse, potentially interpretable features using a learned overcomplete dictionary. In this work, we ask whether it is possible to enhance the semantic selectivity of the learned dictionary atoms by linearly \emph{shaping} the dense activations prior to learning an SAE. We explore rank-reducing transformations based on the recently introduced J-space corresponding to the averaged Jacobian from</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Mon, 19 Oct 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2610.27375v1</guid>
     </item>
   </channel>
 </rss>
