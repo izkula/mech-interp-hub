@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-30",
+  "lastUpdated": "2026-10-31",
   "papers": [
     {
       "id": "arxiv-2610-40637v1",
@@ -489,6 +489,20 @@
         "features"
       ],
       "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "ss-7d098cb5c09041adc15c",
+      "title": "A New Principle for Eliminating the Ideal Transformer in Center-Tapped Circuit Analysis",
+      "authors": "R. Brezovnik, Jo\u017eef Ritonja",
+      "date": "2026-10-19",
+      "url": "https://www.semanticscholar.org/paper/7d098cb5c09041adc15c400da61f45b949cb2c06",
+      "abstract": "In electrical circuit theory, the classical transformer equivalent circuit is well known, in which the secondary quantities are referred to the primary side (or vice versa) through the turns ratio, and the ideal transformer can be eliminated from the equivalent circuit, leaving both sides of the transformer connected galvanically. In electrical circuits with a center-tapped transformer, it is not so simple to eliminate the transformer by referring secondary quantities to the primary and consider",
+      "tags": [
+        "circuits",
+        "theory"
+      ],
+      "source": "Semantic Scholar",
       "featured": false
     },
     {
