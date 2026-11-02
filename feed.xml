@@ -5,9 +5,23 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 Nov 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Mechanistic Interpretability for End-to-End Self-Driving</title>
+      <link>https://arxiv.org/abs/2610.41185v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Manav Gagvani, Benjamin Namikas, Sivamurugan Velmurugan, Nysa Kumar, Shrey Sharma, et al.</p><p>End-to-end (E2E) autonomous driving models achieve strong planning performance but remain largely opaque, limiting observability and trust. We apply mechanistic interpretability to E2E driving by training Sparse Autoencoders (SAEs) on the internal activations of a simple, single-camera end-to-end path planning model. Unsupervised clustering of SAE latents reveals interpretable structure aligned with route intent, vehicle speed, and braking behavior, recovering route intent with 98.3% accuracy wi</p><p><strong>Tags:</strong> SAE</p>]]></description>
+      <pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.41185v1</guid>
+    </item>
+    <item>
+      <title>From Representation to Readout: Mechanistic Analysis of Membership Signals in Language Models</title>
+      <link>https://arxiv.org/abs/2610.41445v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Wenxi Dai, Jingyu Hu, Yanting Yang, Mengnan Du</p><p>Membership inference aims to determine whether a particular example was included in a model&#x27;s training data. Such membership signals are often broadly described as memorization, while the underlying mechanisms can involve both how information is represented internally and how it is accessed by the model to produce behaviors. We therefore present a mechanistic study of membership signals in large language models (LLMs). We introduce Decodable Information Score, Used Information Score, and Readout</p>]]></description>
+      <pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.41445v1</guid>
+    </item>
     <item>
       <title>world2vec: Mechanistic world models through latent dynamics learning</title>
       <link>https://arxiv.org/abs/2610.40637v1</link>
@@ -35,6 +49,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Weijia Han, Lisha Qu</p><p>Factor models are central to asset pricing and portfolio construction, but neural factors are often difficult to interpret, and their effect on portfolio risk is unclear. A sparse autoencoder (SAE) may address both concerns by describing daily returns across many assets with only a few active features. We ask whether this sparse representation produces stable financial factors and better-diversified portfolios. We study cryptocurrency returns, use equities as a secondary test, and compare the SA</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
       <pubDate>Thu, 29 Oct 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2610.39205v1</guid>
+    </item>
+    <item>
+      <title>Sparse Autoencoders for Expert-Assisted Interpretation of Histopathology Foundation Model Embeddings</title>
+      <link>https://arxiv.org/abs/2610.40905v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Šimon Šmída, Wanda Benesova</p><p>Histopathology foundation models learn rich embedding representations, but their internal structure remains difficult to inspect. Concept-level interpretability is particularly relevant in computational pathology because pathologists reason through recurring morphological and tissue-level patterns, including tissue architecture, cellular morphology, staining variation, and artifacts. In this work, we investigate whether sparse autoencoders (SAEs) can decompose embeddings from histopathology foun</p><p><strong>Tags:</strong> SAE</p>]]></description>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2610.40905v1</guid>
     </item>
     <item>
       <title>Can LLMs Faithfully Solve Ontology Engineering Tasks? A Mechanistic Interpretability Study</title>
@@ -196,27 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Yao Huang, Siyuan Chen, Zhenghan Zhou, Yinpeng Dong</p><p>With increasing autonomy, Large Language Models (LLMs) may engage in deceptive behaviors, such as scheming to pursue misaligned goals or sandbagging to escape oversight. Monitoring outputs alone is insufficient, as models can produce seemingly benign responses while harboring misaligned internal objectives. While mechanistic approaches like linear probing are promising, they rely on the assumption that deception corresponds to a single direction in representation space. We demonstrate that such </p><p><strong>Tags:</strong> features, probing</p>]]></description>
       <pubDate>Tue, 20 Oct 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2610.27577v1</guid>
-    </item>
-    <item>
-      <title>Language Impairment as a Lens onto Large Language Models</title>
-      <link>https://arxiv.org/abs/2610.28992v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Muxuan He, Wang Bill Zhu, Yue Chen, Elsi Kaiser, Weizhi Du, et al.</p><p>Although large language models (LLMs) encode language in highly distributed spaces, they remain vulnerable to focal disruptions---a phenomenon strikingly similar to how localized brain damage causes clinical aphasia in humans. To investigate this theoretical tension, we ask whether LLMs possess a functional structure analogous to the human language system, by introducing a novel mechanistic interpretability framework inspired by aphasia. Through two complementary approaches, classifier-guided le</p><p><strong>Tags:</strong> probing, theory</p>]]></description>
-      <pubDate>Tue, 20 Oct 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2610.28992v1</guid>
-    </item>
-    <item>
-      <title>Where Do Legal Factors Live in LLMs?</title>
-      <link>https://arxiv.org/abs/2610.28799v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Li Zhang, Kevin Ashley</p><p>In case-based legal reasoning, legal professionals identify legally significant fact patterns in a new dispute and compare them with those of decided cases. In AI &amp; Law, HYPO dimensions and CATO factors represent these patterns symbolically, organizing expert knowledge distilled from case narratives as explicit, structured, interpretable, and auditable legal concepts and relations that support case comparison, legal argument, and precedent-based reasoning. Large language models (LLMs) are increa</p><p><strong>Tags:</strong> reasoning</p>]]></description>
-      <pubDate>Tue, 20 Oct 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2610.28799v1</guid>
-    </item>
-    <item>
-      <title>Tropical Cyclone Attributes in Sparse Autoencoder Features of an AI Weather Model</title>
-      <link>https://arxiv.org/abs/2610.28904v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Jiapei Liu, Ruidong Li, Ting Sun, Guangheng Ni</p><p>Artificial intelligence (AI) weather models now forecast weather events skillfully, but how they represent these events internally remains unknown. Sparse autoencoders (SAEs) provide sparse features for probing hidden states, but how information about multiple physical attributes of an event is organized across them remains unclear. Using tropical cyclones in GraphCast as a test case, we analyze 2,115 six-hourly timesteps from 205 cyclones, relating SAE activations to position, intensity, and pr</p><p><strong>Tags:</strong> SAE, features, probing</p>]]></description>
-      <pubDate>Tue, 20 Oct 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2610.28904v1</guid>
     </item>
   </channel>
 </rss>
