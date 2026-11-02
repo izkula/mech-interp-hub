@@ -1,6 +1,30 @@
 {
-  "lastUpdated": "2026-11-01",
+  "lastUpdated": "2026-11-02",
   "papers": [
+    {
+      "id": "arxiv-2610-41185v1",
+      "title": "Mechanistic Interpretability for End-to-End Self-Driving",
+      "authors": "Manav Gagvani, Benjamin Namikas, Sivamurugan Velmurugan, Nysa Kumar, Shrey Sharma, et al.",
+      "date": "2026-10-30",
+      "url": "https://arxiv.org/abs/2610.41185v1",
+      "abstract": "End-to-end (E2E) autonomous driving models achieve strong planning performance but remain largely opaque, limiting observability and trust. We apply mechanistic interpretability to E2E driving by training Sparse Autoencoders (SAEs) on the internal activations of a simple, single-camera end-to-end path planning model. Unsupervised clustering of SAE latents reveals interpretable structure aligned with route intent, vehicle speed, and braking behavior, recovering route intent with 98.3% accuracy wi",
+      "tags": [
+        "SAE"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-41445v1",
+      "title": "From Representation to Readout: Mechanistic Analysis of Membership Signals in Language Models",
+      "authors": "Wenxi Dai, Jingyu Hu, Yanting Yang, Mengnan Du",
+      "date": "2026-10-30",
+      "url": "https://arxiv.org/abs/2610.41445v1",
+      "abstract": "Membership inference aims to determine whether a particular example was included in a model's training data. Such membership signals are often broadly described as memorization, while the underlying mechanisms can involve both how information is represented internally and how it is accessed by the model to produce behaviors. We therefore present a mechanistic study of membership signals in large language models (LLMs). We introduce Decodable Information Score, Used Information Score, and Readout",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2610-40637v1",
       "title": "world2vec: Mechanistic world models through latent dynamics learning",
@@ -52,6 +76,19 @@
       "tags": [
         "SAE",
         "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2610-40905v1",
+      "title": "Sparse Autoencoders for Expert-Assisted Interpretation of Histopathology Foundation Model Embeddings",
+      "authors": "\u0160imon \u0160m\u00edda, Wanda Benesova",
+      "date": "2026-10-29",
+      "url": "https://arxiv.org/abs/2610.40905v1",
+      "abstract": "Histopathology foundation models learn rich embedding representations, but their internal structure remains difficult to inspect. Concept-level interpretability is particularly relevant in computational pathology because pathologists reason through recurring morphological and tissue-level patterns, including tissue architecture, cellular morphology, staining variation, and artifacts. In this work, we investigate whether sparse autoencoders (SAEs) can decompose embeddings from histopathology foun",
+      "tags": [
+        "SAE"
       ],
       "source": "arXiv",
       "featured": false
