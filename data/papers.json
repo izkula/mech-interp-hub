@@ -1,6 +1,157 @@
 {
-  "lastUpdated": "2026-11-02",
+  "lastUpdated": "2026-11-03",
   "papers": [
+    {
+      "id": "arxiv-2611-02503v1",
+      "title": "Towards Multi-Value Alignment via Value Localization in LLMs",
+      "authors": "Xueqi Ma, Yanbei Jiang, Xingjun Ma, James Bailey, Sarah M. Erfani",
+      "date": "2026-11-02",
+      "url": "https://arxiv.org/abs/2611.02503v1",
+      "abstract": "Aligning large language models (LLMs) with multiple, potentially conflicting human values remains challenging, as existing multi-objective alignment methods often require costly fine-tuning and provide limited insight into the internal mechanisms underlying value-related behaviors. In this work, we investigate multi-value alignment from a mechanistic interpretability perspective by identifying value-sensitive attention heads (value heads) in LLMs. Using a probing-based value localization framewo",
+      "tags": [
+        "safety",
+        "probing",
+        "attention"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-03420v1",
+      "title": "Temporal Island Sparse Autoencoders for Interpreting Clinical Time-Series Models",
+      "authors": "Muhan Yeo, Bong Gyun Kang, HyunGi Kim, Sungroh Yoon",
+      "date": "2026-11-02",
+      "url": "https://arxiv.org/abs/2611.03420v1",
+      "abstract": "Deep learning models for electronic health records achieve strong predictive performance but provide little insight into what clinical concepts they represent internally. Post-hoc attribution methods produce per-cell importance scores that lack temporal coherence, cross-variable structure, and reusability across patients. We introduce the Temporal Island Sparse Autoencoder (TI-SAE), which learns a backbone-specific, patient-shared clinical concept dictionary from a frozen predictive model's repr",
+      "tags": [
+        "SAE"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-01513v1",
+      "title": "Label-Free Localization and Test-Time Suppression of CLIP's Typographic Circuits",
+      "authors": "Bohan Liu, Wenqian Ye, Guangzhi Xiong, Zhenghao He, Sanchit Sinha, et al.",
+      "date": "2026-11-01",
+      "url": "https://arxiv.org/abs/2611.01513v1",
+      "abstract": "CLIP-based Vision-Language Models have become cornerstones of modern multimodal systems. The cross-modal contrastive objective equips the CLIP vision encoder to both see objects and read text. These two abilities induce an entanglement between the encoding of lexical and semantic shapes, creating a distinctive vulnerability to typographic attacks, in which rendered text overrides an image's semantic content with its literal meaning. The black-box nature of these encoders has prevented a mechanis",
+      "tags": [
+        "circuits",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-01378v1",
+      "title": "Information-Theoretic Design of Sparse Autoencoder-Based Steering",
+      "authors": "Hirofumi Morise",
+      "date": "2026-11-01",
+      "url": "https://arxiv.org/abs/2611.01378v1",
+      "abstract": "Sparse autoencoder (SAE)-based activation steering is a lightweight approach for modifying the behavior of large language models (LLMs) by adding small vectors to hidden states during inference. However, designing effective steering interventions remains challenging. In this work, we develop an information-theoretic framework for analyzing SAE activations through empirical feature-firing distributions. The central object of the framework is the Jensen--Shannon divergence (JSD) between such firin",
+      "tags": [
+        "SAE",
+        "features",
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-01981v1",
+      "title": "Opening the Black Box of Neural Auction Mechanisms",
+      "authors": "Li Kong, Zilong Liu, Haoyang Zhou, Hanbing Liu, Qi Qi",
+      "date": "2026-11-01",
+      "url": "https://arxiv.org/abs/2611.01981v1",
+      "abstract": "Neural auction design has emerged as a powerful paradigm within automated mechanism design for modern Web platforms. Because these learned mechanisms directly dictate critical economic outcomes, their lack of internal transparency raises significant auditability and trust concerns. Opening this black box \\textit{post-hoc} is therefore essential, yet presents two distinctive challenges: (1) activation contexts are dense, correlated numerical profiles devoid of explicit semantic structure, and (2)",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-00786v1",
+      "title": "The Tangled Web They Weave: Exploring Neural Representations with Directed Simplicial Complexes",
+      "authors": "Michael Bleher",
+      "date": "2026-10-31",
+      "url": "https://arxiv.org/abs/2611.00786v1",
+      "abstract": "Understanding how artificial neural networks (ANNs) represent and combine features internally is a central challenge in mechanistic interpretability. Existing neural circuit-discovery methods represent neuron interactions as pairwise edges in a graph. But distributed neural representations consist of large groups of neurons that are inherently linked by higher-order causal dependencies: suppressing a subgroup of neurons in concert may shift the activation of other neurons in the feature represen",
+      "tags": [
+        "circuits",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-00640v1",
+      "title": "Bridging Singular Learning Theory and Mechanistic Interpretability at the Billion-Parameter Scale",
+      "authors": "Ethan Ji, Wei Wang, Yizhou Sun",
+      "date": "2026-10-31",
+      "url": "https://arxiv.org/abs/2611.00640v1",
+      "abstract": "Mechanistic interpretability (MI) explains a computation in a trained network by identifying the components and variables that implement it and testing them with interventions. Singular learning theory (SLT) describes the same network through the geometry of the loss around its parameters, summarized by the local learning coefficient. In pretrained language models the two have not been compared: SLT's estimates at this scale concern whole models or components whose roles were not independently e",
+      "tags": [
+        "theory"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-00633v1",
+      "title": "Evidence-grounded large language models guide perovskite solar cell design and optimization",
+      "authors": "YanKai Chen, Zhi Wan, ZiHao Li, Tao Jing",
+      "date": "2026-10-31",
+      "url": "https://arxiv.org/abs/2611.00633v1",
+      "abstract": "Using large language models to interpret experimental evidence, design discriminating experiments and formulate well-supported mechanistic explanations remains a central challenge in materials research. Here we establish PSM-Bench, an 800-question benchmark developed by perovskite researchers to evaluate scientific reasoning in perovskite photovoltaics. We also introduce OpenPerov, an expert-informed language-model framework that learns from expert-calibrated evidence records reconstructed from ",
+      "tags": [
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-01272v1",
+      "title": "Geometry of Confabulation and Refusal in Small Language Models",
+      "authors": "Vladimir Kazei",
+      "date": "2026-10-31",
+      "url": "https://arxiv.org/abs/2611.01272v1",
+      "abstract": "Faced with an unanswerable question, small language models can either refuse or confabulate: confidently produce a wrong answer. Can the hidden state before the first generated token provide a clue? Can we flip confabulations into refusals? I introduce ConfabQA, a 784-item benchmark whose obscure-pre-cutoff category breaks the typical correctness/knowledge-cutoff confound and map the geometry of the hidden state with linear probes, a sparse autoencoder (SAE), and direct optimization of intervent",
+      "tags": [
+        "SAE",
+        "probing"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-00606v1",
+      "title": "Sparse Autoencoder Attribution Graphs Are Decided at the Margin",
+      "authors": "Karl Li",
+      "date": "2026-10-31",
+      "url": "https://arxiv.org/abs/2611.00606v1",
+      "abstract": "Attribution graphs over the features of sparse autoencoders (SAEs) are used to predict what an ablation does and are compared across training seeds. A TopK SAE keeps the largest preactivations at each token, and a feature's margin is its preactivation's distance to the cutoff. On five public TopK SAE pairs from three Pythia models, zeroing one feature moves a next layer feature across the cutoff in 0.74 of cases or more, and the crossings carry most of the response's energy. Over writes that sca",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-00602v1",
+      "title": "Editing the Goal: Per-Token SAE Steering and Its Depth Limits in $\u03c0_{0.5}$",
+      "authors": "Rocio Perales Valdes, Animesh Garg",
+      "date": "2026-10-31",
+      "url": "https://arxiv.org/abs/2611.00602v1",
+      "abstract": "Sparse autoencoders (SAEs) have recovered interpretable, causally relevant features in robot foundation models (RFMs) such as $\u03c0_{0.5}$ (arXiv:2603.19183, arXiv:2603.19233). SAE features on individual instruction tokens are less interpretable than timestep-pooled ones (arXiv:2603.19183), and whether they can redirect a robot's goal remains untested. We show that replacing the SAE features of a single goal word with those of an alternative goal word, leaving the instruction text unchanged, steers",
+      "tags": [
+        "SAE",
+        "features",
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2610-41185v1",
       "title": "Mechanistic Interpretability for End-to-End Self-Driving",
@@ -21,6 +172,46 @@
       "date": "2026-10-30",
       "url": "https://arxiv.org/abs/2610.41445v1",
       "abstract": "Membership inference aims to determine whether a particular example was included in a model's training data. Such membership signals are often broadly described as memorization, while the underlying mechanisms can involve both how information is represented internally and how it is accessed by the model to produce behaviors. We therefore present a mechanistic study of membership signals in large language models (LLMs). We introduce Decodable Information Score, Used Information Score, and Readout",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-00420v1",
+      "title": "Circuit Oracle: Automating Attribution Graph Analysis via Natural-Language Queries",
+      "authors": "Shariar Kabir, Hong Kiat Tan, Swastik Agrawal, Sai V R Chereddy, Sriram Balasubramanian",
+      "date": "2026-10-30",
+      "url": "https://arxiv.org/abs/2611.00420v1",
+      "abstract": "Attribution graphs, an emerging tool in mechanistic interpretability, use transcoders to decompose language model computations into sparse interpretable features connected by causal edges. However, turning a graph into a safety-relevant insight requires hours of manual analysis by experts. We introduce Circuit Oracle, an off-the-shelf LLM equipped with a multi-agent harness and task-specific authored skills, which answers natural-language questions about a target model by reading the attribution",
+      "tags": [
+        "circuits",
+        "features",
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-00298v1",
+      "title": "A Framework for Task-Agnostic Counterfactual Fairness in Transformers through Activation Steering",
+      "authors": "Joshua Wolff Anderson, Yanshan Wang, Shyam Visweswaran",
+      "date": "2026-10-30",
+      "url": "https://arxiv.org/abs/2611.00298v1",
+      "abstract": "Bias in transformer-based models is a growing concern as these architectures become more prevalent in automated decision-making systems, such as prediction models for hiring, lending, and clinical treatment recommendation. Mechanistic interpretability (MI) is a growing body of work that measures meaningful causal effects of activations on model output by identifying human-interpretable features encoded in model activations. When such features correspond to sensitive attributes, they provide a di",
+      "tags": [
+        "features",
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-00155v1",
+      "title": "From Concepts to Actual Causes: Toward Closing the Concept-Malfunction Gap in Robot Foundation Models",
+      "authors": "Gihyuk Ko",
+      "date": "2026-10-30",
+      "url": "https://arxiv.org/abs/2611.00155v1",
+      "abstract": "Post-incident analysis of a robot foundation model poses a singular causal question: which internal components caused this failure, and to what degree? Mechanistic interpretability (MI), however, establishes general causal claims by decoding the concepts a policy has learned, yet knowing which concepts are encoded is insufficient for identifying the actual cause of a specific incident. In this position paper, we analyze this concept-malfunction gap by posing fault isolation in the framework of a",
       "tags": [],
       "source": "arXiv",
       "featured": false
