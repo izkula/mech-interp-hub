@@ -5,9 +5,37 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Nov 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Unifying and Beyond the Theory of Pervasive Capability Degradation in LLM Post-training SFT from Feature Interference</title>
+      <link>https://arxiv.org/abs/2611.05003v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Hang Chen, Jiaying Zhu, Wenya Wang</p><p>Pervasive Capability Degradation (PCD) refers to the phenomenon in which supervised fine-tuning (SFT), while adapting a large language model (LLM) to a target task, often erodes the general capabilities acquired during pre-training. Prevailing explanations attribute PCD to macroscopic distribution shift and therefore lack microscopic manipulability, leaving existing mitigation methods without a complete theoretical foundation. In this paper, we first develop a bottom-up geometric theory of PCD g</p><p><strong>Tags:</strong> features, theory</p>]]></description>
+      <pubDate>Tue, 03 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.05003v1</guid>
+    </item>
+    <item>
+      <title>A Circuit for In-Context Learning</title>
+      <link>https://arxiv.org/abs/2611.05344v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Andrew Gao, William Gao</p><p>In-context learning (ICL) lets a pretrained language model perform a task specified by demonstrations in its prompt, with no parameter updates. With arbitrary labels the model must acquire a mapping it cannot have memorized, so the learning happens within a single forward pass. Prior work found candidate parts but not how they compose. We give the composition for few-shot sentence classification with arbitrary labels in three 3-4B-parameter transformers. The model implements a key-value memory o</p><p><strong>Tags:</strong> circuits</p>]]></description>
+      <pubDate>Tue, 03 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.05344v1</guid>
+    </item>
+    <item>
+      <title>Whose Effect Is It? How Objectives Inflate Learned Subspace Interventions</title>
+      <link>https://arxiv.org/abs/2611.05033v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Toygar Tanyel, Serkan Ayvaz</p><p>Interpretability often locates concepts by copying part of a language model&#x27;s state from one input into another (activation patching). A larger output change counts as stronger evidence that this part carries the concept. Methods that learn which part to copy often change the output more than the whole state does. By that reading, learned parts isolate the concept more cleanly. Yet the whole contains the part. So whose effect is this excess, the network&#x27;s or the method&#x27;s? Copying the whole state</p>]]></description>
+      <pubDate>Tue, 03 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.05033v1</guid>
+    </item>
+    <item>
+      <title>Reducing Logprob Without Causal Verification: Diagnosing SAE-Based PII Suppression in LLMs</title>
+      <link>https://arxiv.org/abs/2611.04782v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Chaerin Lee, Wonho Lee, Sohee Park, Daeseon Choi</p><p>SAE-based feature-level interventions to suppress PII leakage in LLMs are primarily evaluated by log-probability reduction. We show that this criterion cannot distinguish feature specific suppression from a magnitude artifact: a direction-agnostic effect of sufficiently large activation perturbations. Across 36 (model, layer, PII type) cases, we compare selected SAE feature interventions with coherencematched random direction controls using logprob and rank-aware metrics. While 17 cases (47%) ap</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Tue, 03 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.04782v1</guid>
+    </item>
     <item>
       <title>Towards Multi-Value Alignment via Value Localization in LLMs</title>
       <link>https://arxiv.org/abs/2611.02503v1</link>
@@ -21,6 +49,20 @@
       <description><![CDATA[<p><strong>Authors:</strong> Muhan Yeo, Bong Gyun Kang, HyunGi Kim, Sungroh Yoon</p><p>Deep learning models for electronic health records achieve strong predictive performance but provide little insight into what clinical concepts they represent internally. Post-hoc attribution methods produce per-cell importance scores that lack temporal coherence, cross-variable structure, and reusability across patients. We introduce the Temporal Island Sparse Autoencoder (TI-SAE), which learns a backbone-specific, patient-shared clinical concept dictionary from a frozen predictive model&#x27;s repr</p><p><strong>Tags:</strong> SAE</p>]]></description>
       <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2611.03420v1</guid>
+    </item>
+    <item>
+      <title>Follow the Features: SAE Feature-Guided Data-Efficient Instruction-Tuning of Large Language Models</title>
+      <link>https://arxiv.org/abs/2611.04085v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Ryan Swift, Konstantinos Psounis</p><p>Selecting small, effective instruction-tuning datasets requires identifying which aspects of the original data to retain. We introduce Follow the Features (FtF), a data-selection method that uses sparse autoencoder (SAE) features to characterize training data and guide subset construction. FtF ranks features using dataset-level activation statistics, scores samples by their expression of highly ranked features, and incorporates feature resampling to encourage diversity. The LLM-SAE pair used for</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.04085v1</guid>
+    </item>
+    <item>
+      <title>Dr. No: Feature Steering for Abstention in Vision-Language Models</title>
+      <link>https://arxiv.org/abs/2611.03862v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Farid Hasanov, Riccardo Renzulli, Bahram Zonooz, Mykola Pechenizkiy, Decebal Constantin Mocanu</p><p>Large foundation models often answer even when the available visual or textual evidence is insufficient to support a reliable conclusion. This failure to abstain makes them hard to trust in high-stakes or information-seeking settings, where a confident but unsupported answer can be worse than no answer at all. It also raises a natural question: can the internal mechanisms behind this behaviour be identified and controlled at inference time? We present Dr. No, a feature-steering approach that min</p><p><strong>Tags:</strong> features, steering, vision</p>]]></description>
+      <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.03862v1</guid>
     </item>
     <item>
       <title>Label-Free Localization and Test-Time Suppression of CLIP&#x27;s Typographic Circuits</title>
@@ -175,48 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Ziluowen Luo, Ruochen Liu, Jun Yin, Hao Yan, Zhengxuan Hu, et al.</p><p>Generative recommendation (GR) predicts the next item through its semantic ID (SID). Existing methods commonly fit SID vocabularies to pretrained language model (PLM) representations of item descriptions, incurring additional training costs and making vocabulary coverage dependent on the fitting domains. We observe that pretrained sparse autoencoders expose PLM features with human-interpretable semantic annotations, allowing feature indices to serve as a reusable SID vocabulary. However, reusing</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
       <pubDate>Tue, 27 Oct 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2610.36763v1</guid>
-    </item>
-    <item>
-      <title>Mechanistic Failure Modes of Weight Pruning in Transformer Language Models</title>
-      <link>https://arxiv.org/abs/2610.37126v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Nabeelah Faumi, Deshan Sumanathilaka</p><p>Pruned language models are judged almost entirely by accuracy and perplexity, which assumes that preserved output behaviour implies preserved internal computation. We test this assumption with a factorial pruning study on GPT-2, crossing two importance criteria (magnitude, random), two component types (attention heads, MLP neurons) and three sparsity levels (3%, 50%, 70%). Using the fully characterised indirect object identification (IOI) circuit as ground truth, we measure circuit integrity wit</p><p><strong>Tags:</strong> circuits, attention</p>]]></description>
-      <pubDate>Tue, 27 Oct 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2610.37126v1</guid>
-    </item>
-    <item>
-      <title>From Error Prediction to Causal Influence: Auditing SAE Features in Multiple-Choice QA</title>
-      <link>https://arxiv.org/abs/2610.38067v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Aria Nourbakhsh, Adelaide Danilov, Oleksandr Marchenko Breneur, Salima Lamsiyah</p><p>Sparse autoencoders (SAEs) can predict internal features associated with model errors, but association alone does not establish causal influence. We study this distinction in multiple-choice question answering, where answer preference can be measured by the logit margin between the correct answer and the competing choices. Across eight datasets, we analyze Gemma~3 1B and 4B with Gemma Scope SAEs. We propose a pipeline to filter out the features that have high correlation with format and content </p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Tue, 27 Oct 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2610.38067v1</guid>
-    </item>
-    <item>
-      <title>Mechanistic Insights into LoRA: Layer Sparsity for Adaptive Fine-Tuning via Path Patching</title>
-      <link>https://arxiv.org/abs/2610.34756v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Fei Zuo, Yizhou Huang, Kezhi Wang</p><p>Low-Rank Adaptation (LoRA) has emerged as the dominant paradigm for parameter-efficient fine-tuning of large language models. Standard all-layer LoRA applies adaptation throughout the transformer, despite heterogeneous contributions from its components. In this work, we conduct a systematic mechanistic interpretability analysis to understand how LoRA affects model internals. We observe that LoRA&#x27;s adaptation effect is highly non-uniform, with significant component-wise and layer-wise sparsity. M</p>]]></description>
-      <pubDate>Mon, 26 Oct 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2610.34756v1</guid>
-    </item>
-    <item>
-      <title>Do vision models know that three is three?</title>
-      <link>https://arxiv.org/abs/2610.35857v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Ankit Sonthalia, Arnas Uselis, Seong Joon Oh</p><p>Do vision models encode the transition $2{\to}3$ the same way whether it appears in handwritten digits or in hand gestures, and do they &quot;understand&quot; that clean${\to}$dirty is the same transformation regardless of whether it is applied to a kitchen or a carpet? The linear representation hypothesis (LRH) answers this for language models: concept changes correspond to directions in (language) embedding space. In vision, the same concept can manifest in visually unrelated &quot;regimes&quot; that rarely co-oc</p><p><strong>Tags:</strong> vision</p>]]></description>
-      <pubDate>Mon, 26 Oct 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2610.35857v1</guid>
-    </item>
-    <item>
-      <title>Structure, Not Sequence: Tracking and Validating Folding Mechanisms in ESMFold&#x27;s Trunk with Sparse Autoencoders</title>
-      <link>https://arxiv.org/abs/2610.36226v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Bohan Liu, Xiaohan Fan, Wenqian Ye, Aidong Zhang</p><p>Structure predictors like ESMFold fold proteins using neural network computation and have transformed structural biology. However, the driving mechanism from amino-acid (AA) sequence to 3D structure is insufficiently understood, and biological meaning remains locked in the dense network. Sparse autoencoders (SAEs) have shown promising results in obtaining interpretable concept features over an overcomplete basis of intermediate protein sequence-model representations. Yet folding models, which pr</p><p><strong>Tags:</strong> SAE, features, biology</p>]]></description>
-      <pubDate>Mon, 26 Oct 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2610.36226v1</guid>
-    </item>
-    <item>
-      <title>Does Notation Matter? MusicXML Tokenisation for Symbolic Music Generation and Understanding</title>
-      <link>https://arxiv.org/abs/2610.34247v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Andrea Poltronieri, Matteo Spanio, Simone Chieppa, Xavier Serra, Martín Rocamora</p><p>Symbolic music representations encode musical content at varying levels of completeness, from performance-oriented formats such as MIDI to fully notated scores such as MusicXML. Yet the impact of this representational richness on deep learning models remains poorly understood. While tokenisation has been extensively studied for MIDI, score-based formats have received considerably less attention, and MusicXML in particular remains largely unexplored despite being the de-facto standard for score i</p>]]></description>
-      <pubDate>Sun, 25 Oct 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2610.34247v1</guid>
     </item>
   </channel>
 </rss>
