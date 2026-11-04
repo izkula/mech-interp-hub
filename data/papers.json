@@ -1,6 +1,58 @@
 {
-  "lastUpdated": "2026-11-03",
+  "lastUpdated": "2026-11-04",
   "papers": [
+    {
+      "id": "arxiv-2611-05003v1",
+      "title": "Unifying and Beyond the Theory of Pervasive Capability Degradation in LLM Post-training SFT from Feature Interference",
+      "authors": "Hang Chen, Jiaying Zhu, Wenya Wang",
+      "date": "2026-11-03",
+      "url": "https://arxiv.org/abs/2611.05003v1",
+      "abstract": "Pervasive Capability Degradation (PCD) refers to the phenomenon in which supervised fine-tuning (SFT), while adapting a large language model (LLM) to a target task, often erodes the general capabilities acquired during pre-training. Prevailing explanations attribute PCD to macroscopic distribution shift and therefore lack microscopic manipulability, leaving existing mitigation methods without a complete theoretical foundation. In this paper, we first develop a bottom-up geometric theory of PCD g",
+      "tags": [
+        "features",
+        "theory"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-05344v1",
+      "title": "A Circuit for In-Context Learning",
+      "authors": "Andrew Gao, William Gao",
+      "date": "2026-11-03",
+      "url": "https://arxiv.org/abs/2611.05344v1",
+      "abstract": "In-context learning (ICL) lets a pretrained language model perform a task specified by demonstrations in its prompt, with no parameter updates. With arbitrary labels the model must acquire a mapping it cannot have memorized, so the learning happens within a single forward pass. Prior work found candidate parts but not how they compose. We give the composition for few-shot sentence classification with arbitrary labels in three 3-4B-parameter transformers. The model implements a key-value memory o",
+      "tags": [
+        "circuits"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-05033v1",
+      "title": "Whose Effect Is It? How Objectives Inflate Learned Subspace Interventions",
+      "authors": "Toygar Tanyel, Serkan Ayvaz",
+      "date": "2026-11-03",
+      "url": "https://arxiv.org/abs/2611.05033v1",
+      "abstract": "Interpretability often locates concepts by copying part of a language model's state from one input into another (activation patching). A larger output change counts as stronger evidence that this part carries the concept. Methods that learn which part to copy often change the output more than the whole state does. By that reading, learned parts isolate the concept more cleanly. Yet the whole contains the part. So whose effect is this excess, the network's or the method's? Copying the whole state",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-04782v1",
+      "title": "Reducing Logprob Without Causal Verification: Diagnosing SAE-Based PII Suppression in LLMs",
+      "authors": "Chaerin Lee, Wonho Lee, Sohee Park, Daeseon Choi",
+      "date": "2026-11-03",
+      "url": "https://arxiv.org/abs/2611.04782v1",
+      "abstract": "SAE-based feature-level interventions to suppress PII leakage in LLMs are primarily evaluated by log-probability reduction. We show that this criterion cannot distinguish feature specific suppression from a magnitude artifact: a direction-agnostic effect of sufficiently large activation perturbations. Across 36 (model, layer, PII type) cases, we compare selected SAE feature interventions with coherencematched random direction controls using logprob and rank-aware metrics. While 17 cases (47%) ap",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2611-02503v1",
       "title": "Towards Multi-Value Alignment via Value Localization in LLMs",
@@ -25,6 +77,35 @@
       "abstract": "Deep learning models for electronic health records achieve strong predictive performance but provide little insight into what clinical concepts they represent internally. Post-hoc attribution methods produce per-cell importance scores that lack temporal coherence, cross-variable structure, and reusability across patients. We introduce the Temporal Island Sparse Autoencoder (TI-SAE), which learns a backbone-specific, patient-shared clinical concept dictionary from a frozen predictive model's repr",
       "tags": [
         "SAE"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-04085v1",
+      "title": "Follow the Features: SAE Feature-Guided Data-Efficient Instruction-Tuning of Large Language Models",
+      "authors": "Ryan Swift, Konstantinos Psounis",
+      "date": "2026-11-02",
+      "url": "https://arxiv.org/abs/2611.04085v1",
+      "abstract": "Selecting small, effective instruction-tuning datasets requires identifying which aspects of the original data to retain. We introduce Follow the Features (FtF), a data-selection method that uses sparse autoencoder (SAE) features to characterize training data and guide subset construction. FtF ranks features using dataset-level activation statistics, scores samples by their expression of highly ranked features, and incorporates feature resampling to encourage diversity. The LLM-SAE pair used for",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-03862v1",
+      "title": "Dr. No: Feature Steering for Abstention in Vision-Language Models",
+      "authors": "Farid Hasanov, Riccardo Renzulli, Bahram Zonooz, Mykola Pechenizkiy, Decebal Constantin Mocanu",
+      "date": "2026-11-02",
+      "url": "https://arxiv.org/abs/2611.03862v1",
+      "abstract": "Large foundation models often answer even when the available visual or textual evidence is insufficient to support a reliable conclusion. This failure to abstain makes them hard to trust in high-stakes or information-seeking settings, where a confident but unsupported answer can be worse than no answer at all. It also raises a natural question: can the internal mechanisms behind this behaviour be identified and controlled at inference time? We present Dr. No, a feature-steering approach that min",
+      "tags": [
+        "features",
+        "steering",
+        "vision"
       ],
       "source": "arXiv",
       "featured": false
