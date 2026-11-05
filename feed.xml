@@ -5,9 +5,16 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 04 Nov 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Persona Perspectives: Adopting Viewpoints Reorganizes Representations in LLMs</title>
+      <link>https://arxiv.org/abs/2611.06848v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Austin C. Kozlowski, Avital Mintz, Madison Lee</p><p>Common methods for monitoring features in large language models (LLMs) such as linear probes and sparse autoencoders (SAEs) assume that features maintain a consistent representation across contexts. LLMs, however, can flexibly adopt different perspectives or &quot;personas&quot; that suggest different underlying systems of conceptual relations. In this paper, we examine whether prompting an LLM to adopt a persona alters the representational geometry of the model&#x27;s latent space. We extract representations </p><p><strong>Tags:</strong> SAE, features, probing</p>]]></description>
+      <pubDate>Wed, 04 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.06848v1</guid>
+    </item>
     <item>
       <title>Unifying and Beyond the Theory of Pervasive Capability Degradation in LLM Post-training SFT from Feature Interference</title>
       <link>https://arxiv.org/abs/2611.05003v1</link>
@@ -35,6 +42,20 @@
       <description><![CDATA[<p><strong>Authors:</strong> Chaerin Lee, Wonho Lee, Sohee Park, Daeseon Choi</p><p>SAE-based feature-level interventions to suppress PII leakage in LLMs are primarily evaluated by log-probability reduction. We show that this criterion cannot distinguish feature specific suppression from a magnitude artifact: a direction-agnostic effect of sufficiently large activation perturbations. Across 36 (model, layer, PII type) cases, we compare selected SAE feature interventions with coherencematched random direction controls using logprob and rank-aware metrics. While 17 cases (47%) ap</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
       <pubDate>Tue, 03 Nov 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2611.04782v1</guid>
+    </item>
+    <item>
+      <title>When Are Two SAE Latents the Same Feature?</title>
+      <link>https://arxiv.org/abs/2611.05655v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Alexandra Suvorikova, Ilgam Latypov, Anton Trukhan, Yuriy Dorn</p><p>Comparing sparse autoencoders (SAEs) requires connecting feature correspondence, differences between whole dictionaries, and uncertainty from finite evaluation data. We develop a framework that connects these tasks through an energy-weighted optimal-transport plan under a specified similarity geometry. The same plan defines a dictionary-level discrepancy, decomposes it into latent contributions, and quantifies how each latent&#x27;s mass is distributed across counterparts. We characterize relationshi</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Tue, 03 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.05655v1</guid>
+    </item>
+    <item>
+      <title>From Activation to Intervention: Interpreting Sparse Visual Features through Reconstruction</title>
+      <link>https://arxiv.org/abs/2611.05522v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Jianyang Gu, Jacob Beattie, Mridul Khurana, Julia Chae, Xi Xiao, et al.</p><p>Sparse autoencoders (SAEs) decompose visual representations into individual features, offering a promising basis for explaining model behavior. Interpreting these features typically relies on images or pixel regions that most strongly activate them. However, this evidence becomes ambiguous when multiple features with different semantics frequently activate in the same locations, such as texture and color in the same patterns. We propose Reconstructive SAE Intervention (RecSAEI), a framework that</p><p><strong>Tags:</strong> SAE, features, vision</p>]]></description>
+      <pubDate>Tue, 03 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.05522v1</guid>
     </item>
     <item>
       <title>Towards Multi-Value Alignment via Value Localization in LLMs</title>
@@ -196,27 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Šimon Šmída, Wanda Benesova</p><p>Histopathology foundation models learn rich embedding representations, but their internal structure remains difficult to inspect. Concept-level interpretability is particularly relevant in computational pathology because pathologists reason through recurring morphological and tissue-level patterns, including tissue architecture, cellular morphology, staining variation, and artifacts. In this work, we investigate whether sparse autoencoders (SAEs) can decompose embeddings from histopathology foun</p><p><strong>Tags:</strong> SAE</p>]]></description>
       <pubDate>Thu, 29 Oct 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2610.40905v1</guid>
-    </item>
-    <item>
-      <title>Can LLMs Faithfully Solve Ontology Engineering Tasks? A Mechanistic Interpretability Study</title>
-      <link>https://arxiv.org/abs/2610.38326v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Bohui Zhang, Albert Meroño-Peñuela, Elena Simperl</p><p>Ontological knowledge underpins large language model (LLM) performance on knowledge-intensive tasks. However, existing evaluations of LLMs&#x27; ontological understanding largely rely on behavioral correctness, leaving the underlying mechanisms unexplained. Existing mechanistic interpretability work has largely focused on instance-level factual knowledge, leaving ontological knowledge under-explored. To bridge this gap, we introduce MIOE, a causal-abstraction benchmark that evaluates interchange inte</p>]]></description>
-      <pubDate>Wed, 28 Oct 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2610.38326v1</guid>
-    </item>
-    <item>
-      <title>What Survives Distillation? A Mechanistic Interpretability Study of GPT-2 and DistilGPT-2</title>
-      <link>https://arxiv.org/abs/2610.37157v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Nabeelah Faumi, Deshan Sumanathilaka</p><p>Knowledge distillation compresses large language models into compact students that preserve aggregate metrics, yet the mechanistic consequences of depth-reduction distillation remain largely uncharacterized. This work applies linear CKA, logit lens analysis, attention pattern decomposition, sparse autoencoder feature statistics, and activation patching to compare GPT-2 and its six-layer student DistilGPT-2 across two canonical circuits: the Indirect Object Identification (IOI) circuit and the Gr</p><p><strong>Tags:</strong> SAE, circuits, features, attention</p>]]></description>
-      <pubDate>Tue, 27 Oct 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2610.37157v1</guid>
-    </item>
-    <item>
-      <title>The Vocabulary Is Already Here: Adapting Pretrained Interpretable Features for Generative Recommendation</title>
-      <link>https://arxiv.org/abs/2610.36763v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Ziluowen Luo, Ruochen Liu, Jun Yin, Hao Yan, Zhengxuan Hu, et al.</p><p>Generative recommendation (GR) predicts the next item through its semantic ID (SID). Existing methods commonly fit SID vocabularies to pretrained language model (PLM) representations of item descriptions, incurring additional training costs and making vocabulary coverage dependent on the fitting domains. We observe that pretrained sparse autoencoders expose PLM features with human-interpretable semantic annotations, allowing feature indices to serve as a reusable SID vocabulary. However, reusing</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Tue, 27 Oct 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2610.36763v1</guid>
     </item>
   </channel>
 </rss>
