@@ -1,6 +1,21 @@
 {
-  "lastUpdated": "2026-11-04",
+  "lastUpdated": "2026-11-05",
   "papers": [
+    {
+      "id": "arxiv-2611-06848v1",
+      "title": "Persona Perspectives: Adopting Viewpoints Reorganizes Representations in LLMs",
+      "authors": "Austin C. Kozlowski, Avital Mintz, Madison Lee",
+      "date": "2026-11-04",
+      "url": "https://arxiv.org/abs/2611.06848v1",
+      "abstract": "Common methods for monitoring features in large language models (LLMs) such as linear probes and sparse autoencoders (SAEs) assume that features maintain a consistent representation across contexts. LLMs, however, can flexibly adopt different perspectives or \"personas\" that suggest different underlying systems of conceptual relations. In this paper, we examine whether prompting an LLM to adopt a persona alters the representational geometry of the model's latent space. We extract representations ",
+      "tags": [
+        "SAE",
+        "features",
+        "probing"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2611-05003v1",
       "title": "Unifying and Beyond the Theory of Pervasive Capability Degradation in LLM Post-training SFT from Feature Interference",
@@ -49,6 +64,35 @@
       "tags": [
         "SAE",
         "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-05655v1",
+      "title": "When Are Two SAE Latents the Same Feature?",
+      "authors": "Alexandra Suvorikova, Ilgam Latypov, Anton Trukhan, Yuriy Dorn",
+      "date": "2026-11-03",
+      "url": "https://arxiv.org/abs/2611.05655v1",
+      "abstract": "Comparing sparse autoencoders (SAEs) requires connecting feature correspondence, differences between whole dictionaries, and uncertainty from finite evaluation data. We develop a framework that connects these tasks through an energy-weighted optimal-transport plan under a specified similarity geometry. The same plan defines a dictionary-level discrepancy, decomposes it into latent contributions, and quantifies how each latent's mass is distributed across counterparts. We characterize relationshi",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-05522v1",
+      "title": "From Activation to Intervention: Interpreting Sparse Visual Features through Reconstruction",
+      "authors": "Jianyang Gu, Jacob Beattie, Mridul Khurana, Julia Chae, Xi Xiao, et al.",
+      "date": "2026-11-03",
+      "url": "https://arxiv.org/abs/2611.05522v1",
+      "abstract": "Sparse autoencoders (SAEs) decompose visual representations into individual features, offering a promising basis for explaining model behavior. Interpreting these features typically relies on images or pixel regions that most strongly activate them. However, this evidence becomes ambiguous when multiple features with different semantics frequently activate in the same locations, such as texture and color in the same patterns. We propose Reconstructive SAE Intervention (RecSAEI), a framework that",
+      "tags": [
+        "SAE",
+        "features",
+        "vision"
       ],
       "source": "arXiv",
       "featured": false
