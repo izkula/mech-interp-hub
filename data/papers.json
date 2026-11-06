@@ -1,6 +1,74 @@
 {
-  "lastUpdated": "2026-11-05",
+  "lastUpdated": "2026-11-06",
   "papers": [
+    {
+      "id": "arxiv-2611-08438v1",
+      "title": "Understanding AI from the Inside: The State of Mechanistic Interpretability for AI Safety",
+      "authors": "Fazl Barez, Tung-Yu Wu, Hunar Batra, Gabriele Dominici, Florent Draye, et al.",
+      "date": "2026-11-05",
+      "url": "https://arxiv.org/abs/2611.08438v1",
+      "abstract": "Neural networks are likely to be among the most consequential artefacts in human history. As these systems become more capable and autonomous, their potential to cause societal harm also grows, making AI safety one of the defining challenges of our time. Yet we continue to build increasingly powerful systems without fully understanding how they work, how they will behave in unfamiliar situations, or how to reliably control them. Mechanistic interpretability offers a path towards understanding th",
+      "tags": [
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-07283v1",
+      "title": "Encoding and Propagation of Grammatical Number in Large Language Models",
+      "authors": "Jacob Solinsky, Serguei Pakhomov",
+      "date": "2026-11-05",
+      "url": "https://arxiv.org/abs/2611.07283v1",
+      "abstract": "Sparse autoencoders (SAEs) have become an increasingly popular means of translating Large Language Model (LLM) hidden state vectors into a human-comprehensible list of features or symbols. As such, SAEs may provide insight into an LLM's knowledge representation and internal ``mental'' grammar - topics of pragmatic interest for mechanistic interpretation of AI behavior and of theoretical interest for the study of in silico representations of human language. Language models with fewer than 100M pa",
+      "tags": [
+        "SAE",
+        "features",
+        "theory"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-08487v1",
+      "title": "User Embeddings are Superpositions of Interpretable Behavioral Modes",
+      "authors": "Jonathan Kozaczuk, Zheng Dong, Noyan Evirgen, Keivan Majidi, Eddie K. H. Ng, et al.",
+      "date": "2026-11-05",
+      "url": "https://arxiv.org/abs/2611.08487v1",
+      "abstract": "User embeddings are central components of modern recommendation, personalization, and behavioral modeling systems. Though these embeddings can compactly encode rich behavioral information, they are inherently dense and opaque, limiting interpretability. To address this gap, we argue that user embeddings can be understood as sparse superpositions of interpretable behavioral modes. This structure is directly predicted by generative models of user behavior for linear embeddings and extends approxim",
+      "tags": [
+        "superposition"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-07756v1",
+      "title": "Scaling Laws for SAE Training Data",
+      "authors": "Nikita Koriagin, Nikita Balagansky, Daniil Gavrilov",
+      "date": "2026-11-05",
+      "url": "https://arxiv.org/abs/2611.07756v1",
+      "abstract": "Activation storage is often a bottleneck in sparse autoencoder (SAE) training. We study how many unique activations an SAE needs when its total training budget is fixed. Quality improves rapidly as the buffer grows, then reaches a plateau where replaying the buffer is nearly as effective as using fresh activations throughout training. Beyond this point, additional unique activations bring little benefit to reconstruction or interpretability, so the buffer need not grow with the training budget. ",
+      "tags": [
+        "SAE"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-08089v1",
+      "title": "SAE Interprets MoE: Sparse AutoEncoders Reveal That MoE Experts Exhibit Human-Interpretable Fine-Grained Specialization",
+      "authors": "Anyuan Zhuo, Shaohua Zhang, Yuan Lin, Pinyan Lu",
+      "date": "2026-11-05",
+      "url": "https://arxiv.org/abs/2611.08089v1",
+      "abstract": "Mixture-of-Experts (MoE) models route each token to a few of many experts, yet what an individual expert is responsible for remains unsettled. Existing analyses count how often an expert is selected on domain-labeled corpora, an instrument that fixes the taxonomy in advance, stays coarse, and records selection rather than contribution. We instead study specialization in feature space by training a sparse autoencoder (SAE) on the output of an MoE layer. Since this output is a router-weighted sum ",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2611-06848v1",
       "title": "Persona Perspectives: Adopting Viewpoints Reorganizes Representations in LLMs",
