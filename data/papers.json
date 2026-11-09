@@ -1,6 +1,63 @@
 {
-  "lastUpdated": "2026-11-08",
+  "lastUpdated": "2026-11-09",
   "papers": [
+    {
+      "id": "arxiv-2611-09233v1",
+      "title": "Cross-Layer TopK: Dynamically Allocating Sparsity Across Layers in Transcoders",
+      "authors": "Anyuan Zhuo, Shaohua Zhang, Tianle Li, Yuan Lin, Diandian Gu, et al.",
+      "date": "2026-11-06",
+      "url": "https://arxiv.org/abs/2611.09233v1",
+      "abstract": "Cross-Layer Transcoders (CLTs) decompose the activations of large language models into human-interpretable features and trace how these features interact across layers to form circuits, making them a key tool for mechanistic interpretability. However, training CLTs effectively and efficiently is hard. Beyond the usual trade-off between sparsity and reconstruction quality, a CLT has to model all layers at once, which adds a further challenge. The common JumpReLU recipe controls sparsity only indi",
+      "tags": [
+        "circuits",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-09196v1",
+      "title": "Calibrated concept profiles: making the reading of a model's neurons a measurement",
+      "authors": "Piotr Wilam",
+      "date": "2026-11-06",
+      "url": "https://arxiv.org/abs/2611.09196v1",
+      "abstract": "Interpretability has largely moved from reading a model's neurons directly to reading a second model trained on the first: a probe, a sparse autoencoder, a crosscoder. The move answered real faults -- mixed meanings, thresholds without a unit, readings that did not transfer from one study to the next -- but gave up what a direct reading alone provides: nothing trained in between, the neurons themselves named, and a reading that can be repeated and compared. Here the direct reading is made a meas",
+      "tags": [
+        "SAE",
+        "probing"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-08895v1",
+      "title": "Localizing and Editing the Goal Representation of a Vision-Language-Action Model",
+      "authors": "Sudhanshu Srivastava, Faisal Aqlan",
+      "date": "2026-11-06",
+      "url": "https://arxiv.org/abs/2611.08895v1",
+      "abstract": "Operators can state safety constraints for robots as prohibitions such as \"do not put the bowl on the stove\". We study whether OpenVLA follows such prohibitions and where it represents the goal it executes. The 10 tasks of LIBEROGoal share one scene, so we can label the goal that each rollout executes. We combine closed-loop rollouts with activation patching, linear probes, activation steering and runtime monitors. On LIBERO-Goal, negation had no detectable effect on which task OpenVLA executed.",
+      "tags": [
+        "safety",
+        "probing",
+        "steering",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-09356v1",
+      "title": "Challenges, Opportunities, and Misconceptions in Neurosymbolic AI",
+      "authors": "Giuseppe Marra, Pierre Genev\u00e8s, Meghyn Bienvenu, Thomas Schiex, Sylvie Thi\u00e9baux, et al.",
+      "date": "2026-11-06",
+      "url": "https://arxiv.org/abs/2611.09356v1",
+      "abstract": "We examine opportunities for neurosymbolic AI alongside increasingly powerful neural models, particularly with regards to efficiency, safety and interpretability. We identify two major challenges: ensuring semantic alignment between neural and symbolic components, and managing the computational cost of symbolic inference and learning. We discuss representative methodological approaches to these challenges and address several common misconceptions concerning differentiability, independence assump",
+      "tags": [
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2611-08438v1",
       "title": "Understanding AI from the Inside: The State of Mechanistic Interpretability for AI Safety",
@@ -62,6 +119,35 @@
       "date": "2026-11-05",
       "url": "https://arxiv.org/abs/2611.08089v1",
       "abstract": "Mixture-of-Experts (MoE) models route each token to a few of many experts, yet what an individual expert is responsible for remains unsettled. Existing analyses count how often an expert is selected on domain-labeled corpora, an instrument that fixes the taxonomy in advance, stays coarse, and records selection rather than contribution. We instead study specialization in feature space by training a sparse autoencoder (SAE) on the output of an MoE layer. Since this output is a router-weighted sum ",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-08790v1",
+      "title": "SteerGR: Steering Generative Recommendation via Sparse Autoencoders for Controllable Game Discovery",
+      "authors": "Sunkyung Lee, Xiaokai Wei, Da Long, Hyunsik Jeon, Jiajun Wu, et al.",
+      "date": "2026-11-05",
+      "url": "https://arxiv.org/abs/2611.08790v1",
+      "abstract": "Generative recommendation aims to predict item identifiers from user interaction histories, but explicit control over the properties of recommended items remains underexplored. A key challenge is to connect human-readable concepts to internal features whose interventions effectively change the recommended items. To address this, we propose Steerable Generative Recommender (SteerGR), a framework that uses sparse autoencoders for concept-level control in game discovery. SteerGR proceeds through th",
+      "tags": [
+        "SAE",
+        "features",
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-08551v1",
+      "title": "How Small Can We Go? Calibrating Activation-Cache Compression for SAE Training",
+      "authors": "Abraham Yeung",
+      "date": "2026-11-05",
+      "url": "https://arxiv.org/abs/2611.08551v1",
+      "abstract": "To train a sparse autoencoder (SAE), you need a massive cache of model activations. We look into the effects that compression has on an SAE in two ways: we keep the original fp32-trained SAE and pass the compressed cache into the same SAE to see how many feature activations stay the same (the frozen-SAE test), and we retrain an SAE on the compressed cache and see how many of the original features still exist (the retraining test). We found that in the retraining test, there is no clear scale for",
       "tags": [
         "SAE",
         "features"
