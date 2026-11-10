@@ -1,6 +1,125 @@
 {
-  "lastUpdated": "2026-11-09",
+  "lastUpdated": "2026-11-10",
   "papers": [
+    {
+      "id": "arxiv-2611-12206v1",
+      "title": "A Geometric Invariant of Attention Predicts Head Specialization from Weights Alone",
+      "authors": "Miguel P. Bento",
+      "date": "2026-11-09",
+      "url": "https://arxiv.org/abs/2611.12206v1",
+      "abstract": "Transformers are built with continuous symmetries in the attention mechanism. We derive $\u03c1$, a scalar invariant that measures each head's capacity to couple to rotary positional encodings. This framework allows us to analyze heads without forward passes, opening a new research direction into data-independent analysis of modern LLMs. Empirically, we find that $\u03c1$ predicts induction heads, the most-studied circuit type in mechanistic interpretability, with Spearman correlation between $-0.55$ and ",
+      "tags": [
+        "circuits"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-11890v1",
+      "title": "Training Vision Transformers to Focus: Emergence of Spatial Attention Head Specialization",
+      "authors": "Yuji Nozawa, Yu-Chieh Lin, Youyang Ng",
+      "date": "2026-11-09",
+      "url": "https://arxiv.org/abs/2611.11890v1",
+      "abstract": "Self-supervised learning in Vision Transformer models, such as DINO, enables robust visual perception without requiring labeled data by leveraging large-scale image datasets. However, these models lack a focusing mechanism during training, resulting in perceptual representations that are often ambiguous or overly similar. In this work, we introduce two visual focusing loss functions designed to establish correspondence between the model's attention and specific regions within images. Specificall",
+      "tags": [
+        "attention",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-11398v1",
+      "title": "Decomposing Earth Embeddings with Sparse Autoencoders",
+      "authors": "Vitus Benson, Fanny Yang, Markus Reichstein",
+      "date": "2026-11-08",
+      "url": "https://arxiv.org/abs/2611.11398v1",
+      "abstract": "Earth observation foundation models produce global metre-resolution embeddings that underpin work across agriculture, ecology, hydrology, and beyond. Yet these embeddings are opaque: each dimension entangles unrelated physical concepts, which makes them difficult to interpret and their robustness hard to assess. Here, we propose sparse autoencoders (SAEs) as a principled way to decompose Earth embeddings into sparse, approximately monosemantic features over an overcomplete dictionary. Because LL",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-10974v1",
+      "title": "SWEET: Mitigating Spurious Feature Reliance in LLM Reasoning via Weight Editing",
+      "authors": "Zhizhang Fu, Lucas Zhao, Michalis Korakakis, Mengru Ding, Lukasz Szpruch, et al.",
+      "date": "2026-11-07",
+      "url": "https://arxiv.org/abs/2611.10974v1",
+      "abstract": "Reasoning in large language models can be disrupted by simple input perturbations (e.g. adding irrelevant distractors), suggesting reliance on spurious correlations. Identifying and suppressing the spurious features involved in long chain-of-thought reasoning remains challenging. We introduce Spurious-feature WEight EdiTing (SWEET), a training-free method that combines counterfactual interventions with mechanistic interpretability to identify and suppress spurious-features. SWEET extracts token-",
+      "tags": [
+        "features",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-10936v1",
+      "title": "Can small transformers learn the language of Coxeter groups?",
+      "authors": "J. Elisenda Grigsby, Yiyao Huang, Arushi Katyal, Ryan Lin, Pranav Ramakrishnan, et al.",
+      "date": "2026-11-07",
+      "url": "https://arxiv.org/abs/2611.10936v1",
+      "abstract": "The field of mechanistic interpretability is well-suited to collaborative projects between mathematicians and AI researchers. This work describes one such project. We trained a small transformer to learn the language of the Coxeter group affine A2, best known as the symmetries of the tiling of the Euclidean plane by equilateral triangles. We then formulated and proved a word-theoretic conjecture about affine A2 after observing the attention patterns of the trained model.",
+      "tags": [
+        "attention"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-10760v1",
+      "title": "ConwayNet: Interpretability, Activation Coherence, and Noise Resilience via a Game-of-Life-Inspired Lateral Inhibition in Artificial Neural Networks",
+      "authors": "Yair Cohen, Scott M. Gilmore",
+      "date": "2026-11-07",
+      "url": "https://arxiv.org/abs/2611.10760v1",
+      "abstract": "Deep neural networks achieve universal function approximation by stacking interconnected nonlinearities, but as a consequence they are sensitive to noise and resist mechanistic interpretation. In contrast, the local update rules of cellular automata, such as Conway's Game of Life, give rise to not merely interpretable but programmable dynamics. We explore a bridge between these worlds: a lateral inhibition in neural networks based on continuous Game-of-Life rules that derives inhibitory and exci",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-10457v1",
+      "title": "Represented but Not Used: Value-Policy Dissociation in LLM Agents",
+      "authors": "Yuzhang Luo, Mohamed Aghzal, Liangming Pan, Ziyu Yao",
+      "date": "2026-11-07",
+      "url": "https://arxiv.org/abs/2611.10457v1",
+      "abstract": "Large language model (LLM) agents need to choose actions whose consequences unfold over multiple future steps, yet poor decisions do not reveal whether the model failed to represent those consequences or failed to use them. Mechanistic interpretability has studied internal representations of environment state and plans, but sequential decision making also requires evaluating how candidate actions change future outcomes. Reinforcement learning formalizes this as action value. We study this comput",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-10400v1",
+      "title": "Detecting and Explaining Robot Policy Failures from Sparse Internal Features",
+      "authors": "Riad Ahmed, Sujosh Nag, Moniruzzaman Akash, Momotaz Begum",
+      "date": "2026-11-07",
+      "url": "https://arxiv.org/abs/2611.10400v1",
+      "abstract": "Visuomotor policies can handle many robot manipulation tasks, but understanding their failures remains difficult. Unfamiliar conditions and small action errors can lead to failure, yet watching the robot alone tells us little about what went wrong inside the policy. We introduce MIND (Mechanistic Interpretability for Neural Diagnosis), a method that looks inside a trained policy to detect failures during execution and identify the internal concepts involved. MIND uses a sparse autoencoder to bre",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-10503v1",
+      "title": "Learning a Unified Cross-Model Semantic Dictionary via Gated Bottleneck Sparse Autoencoders",
+      "authors": "Jinchi Zhu, Tie Luo",
+      "date": "2026-11-07",
+      "url": "https://arxiv.org/abs/2611.10503v1",
+      "abstract": "Foundation models pretrained on similar data distributions tend to learn overlapping semantic structure, but their representations are distinct due to different model architecture, pretraining objectives and protocols. This prevents unified interpretability and cross-model feature reuse. Existing approaches extract interpretable concepts from individual models and align these concepts in a shared coordinate system using cross-reconstruction objectives, but the alignment only applies to latent co",
+      "tags": [
+        "SAE",
+        "features",
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2611-09233v1",
       "title": "Cross-Layer TopK: Dynamically Allocating Sparsity Across Layers in Transcoders",
@@ -151,6 +270,19 @@
       "tags": [
         "SAE",
         "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-12538v1",
+      "title": "Language Defaults Before Content: A Causal Layer Map of Multilingual Generation",
+      "authors": "Shenbin Qian, Yves Scherrer",
+      "date": "2026-11-05",
+      "url": "https://arxiv.org/abs/2611.12538v1",
+      "abstract": "Multilingual generation requires large language models (LLMs) to determine both what to say and in what language to say it, yet these two commitments are difficult to disentangle from model outputs alone. We use translation as a controlled probe: for multi-parallel segments that a model translates well in one language direction but poorly in another, content is held fixed while language varies. Using activation patching, we write residual-stream states from successful runs into failing ones and ",
+      "tags": [
+        "probing"
       ],
       "source": "arXiv",
       "featured": false
