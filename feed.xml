@@ -5,9 +5,72 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Nov 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>A Geometric Invariant of Attention Predicts Head Specialization from Weights Alone</title>
+      <link>https://arxiv.org/abs/2611.12206v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Miguel P. Bento</p><p>Transformers are built with continuous symmetries in the attention mechanism. We derive $ρ$, a scalar invariant that measures each head&#x27;s capacity to couple to rotary positional encodings. This framework allows us to analyze heads without forward passes, opening a new research direction into data-independent analysis of modern LLMs. Empirically, we find that $ρ$ predicts induction heads, the most-studied circuit type in mechanistic interpretability, with Spearman correlation between $-0.55$ and </p><p><strong>Tags:</strong> circuits</p>]]></description>
+      <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.12206v1</guid>
+    </item>
+    <item>
+      <title>Training Vision Transformers to Focus: Emergence of Spatial Attention Head Specialization</title>
+      <link>https://arxiv.org/abs/2611.11890v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Yuji Nozawa, Yu-Chieh Lin, Youyang Ng</p><p>Self-supervised learning in Vision Transformer models, such as DINO, enables robust visual perception without requiring labeled data by leveraging large-scale image datasets. However, these models lack a focusing mechanism during training, resulting in perceptual representations that are often ambiguous or overly similar. In this work, we introduce two visual focusing loss functions designed to establish correspondence between the model&#x27;s attention and specific regions within images. Specificall</p><p><strong>Tags:</strong> attention, vision</p>]]></description>
+      <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.11890v1</guid>
+    </item>
+    <item>
+      <title>Decomposing Earth Embeddings with Sparse Autoencoders</title>
+      <link>https://arxiv.org/abs/2611.11398v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Vitus Benson, Fanny Yang, Markus Reichstein</p><p>Earth observation foundation models produce global metre-resolution embeddings that underpin work across agriculture, ecology, hydrology, and beyond. Yet these embeddings are opaque: each dimension entangles unrelated physical concepts, which makes them difficult to interpret and their robustness hard to assess. Here, we propose sparse autoencoders (SAEs) as a principled way to decompose Earth embeddings into sparse, approximately monosemantic features over an overcomplete dictionary. Because LL</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Sun, 08 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.11398v1</guid>
+    </item>
+    <item>
+      <title>SWEET: Mitigating Spurious Feature Reliance in LLM Reasoning via Weight Editing</title>
+      <link>https://arxiv.org/abs/2611.10974v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Zhizhang Fu, Lucas Zhao, Michalis Korakakis, Mengru Ding, Lukasz Szpruch, et al.</p><p>Reasoning in large language models can be disrupted by simple input perturbations (e.g. adding irrelevant distractors), suggesting reliance on spurious correlations. Identifying and suppressing the spurious features involved in long chain-of-thought reasoning remains challenging. We introduce Spurious-feature WEight EdiTing (SWEET), a training-free method that combines counterfactual interventions with mechanistic interpretability to identify and suppress spurious-features. SWEET extracts token-</p><p><strong>Tags:</strong> features, reasoning</p>]]></description>
+      <pubDate>Sat, 07 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.10974v1</guid>
+    </item>
+    <item>
+      <title>Can small transformers learn the language of Coxeter groups?</title>
+      <link>https://arxiv.org/abs/2611.10936v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> J. Elisenda Grigsby, Yiyao Huang, Arushi Katyal, Ryan Lin, Pranav Ramakrishnan, et al.</p><p>The field of mechanistic interpretability is well-suited to collaborative projects between mathematicians and AI researchers. This work describes one such project. We trained a small transformer to learn the language of the Coxeter group affine A2, best known as the symmetries of the tiling of the Euclidean plane by equilateral triangles. We then formulated and proved a word-theoretic conjecture about affine A2 after observing the attention patterns of the trained model.</p><p><strong>Tags:</strong> attention</p>]]></description>
+      <pubDate>Sat, 07 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.10936v1</guid>
+    </item>
+    <item>
+      <title>ConwayNet: Interpretability, Activation Coherence, and Noise Resilience via a Game-of-Life-Inspired Lateral Inhibition in Artificial Neural Networks</title>
+      <link>https://arxiv.org/abs/2611.10760v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Yair Cohen, Scott M. Gilmore</p><p>Deep neural networks achieve universal function approximation by stacking interconnected nonlinearities, but as a consequence they are sensitive to noise and resist mechanistic interpretation. In contrast, the local update rules of cellular automata, such as Conway&#x27;s Game of Life, give rise to not merely interpretable but programmable dynamics. We explore a bridge between these worlds: a lateral inhibition in neural networks based on continuous Game-of-Life rules that derives inhibitory and exci</p>]]></description>
+      <pubDate>Sat, 07 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.10760v1</guid>
+    </item>
+    <item>
+      <title>Represented but Not Used: Value-Policy Dissociation in LLM Agents</title>
+      <link>https://arxiv.org/abs/2611.10457v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Yuzhang Luo, Mohamed Aghzal, Liangming Pan, Ziyu Yao</p><p>Large language model (LLM) agents need to choose actions whose consequences unfold over multiple future steps, yet poor decisions do not reveal whether the model failed to represent those consequences or failed to use them. Mechanistic interpretability has studied internal representations of environment state and plans, but sequential decision making also requires evaluating how candidate actions change future outcomes. Reinforcement learning formalizes this as action value. We study this comput</p>]]></description>
+      <pubDate>Sat, 07 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.10457v1</guid>
+    </item>
+    <item>
+      <title>Detecting and Explaining Robot Policy Failures from Sparse Internal Features</title>
+      <link>https://arxiv.org/abs/2611.10400v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Riad Ahmed, Sujosh Nag, Moniruzzaman Akash, Momotaz Begum</p><p>Visuomotor policies can handle many robot manipulation tasks, but understanding their failures remains difficult. Unfamiliar conditions and small action errors can lead to failure, yet watching the robot alone tells us little about what went wrong inside the policy. We introduce MIND (Mechanistic Interpretability for Neural Diagnosis), a method that looks inside a trained policy to detect failures during execution and identify the internal concepts involved. MIND uses a sparse autoencoder to bre</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Sat, 07 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.10400v1</guid>
+    </item>
+    <item>
+      <title>Learning a Unified Cross-Model Semantic Dictionary via Gated Bottleneck Sparse Autoencoders</title>
+      <link>https://arxiv.org/abs/2611.10503v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Jinchi Zhu, Tie Luo</p><p>Foundation models pretrained on similar data distributions tend to learn overlapping semantic structure, but their representations are distinct due to different model architecture, pretraining objectives and protocols. This prevents unified interpretability and cross-model feature reuse. Existing approaches extract interpretable concepts from individual models and align these concepts in a shared coordinate system using cross-reconstruction objectives, but the alignment only applies to latent co</p><p><strong>Tags:</strong> SAE, features, safety</p>]]></description>
+      <pubDate>Sat, 07 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.10503v1</guid>
+    </item>
     <item>
       <title>Cross-Layer TopK: Dynamically Allocating Sparsity Across Layers in Transcoders</title>
       <link>https://arxiv.org/abs/2611.09233v1</link>
@@ -86,6 +149,13 @@
       <guid>https://arxiv.org/abs/2611.08551v1</guid>
     </item>
     <item>
+      <title>Language Defaults Before Content: A Causal Layer Map of Multilingual Generation</title>
+      <link>https://arxiv.org/abs/2611.12538v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Shenbin Qian, Yves Scherrer</p><p>Multilingual generation requires large language models (LLMs) to determine both what to say and in what language to say it, yet these two commitments are difficult to disentangle from model outputs alone. We use translation as a controlled probe: for multi-parallel segments that a model translates well in one language direction but poorly in another, content is held fixed while language varies. Using activation patching, we write residual-stream states from successful runs into failing ones and </p><p><strong>Tags:</strong> probing</p>]]></description>
+      <pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.12538v1</guid>
+    </item>
+    <item>
       <title>Persona Perspectives: Adopting Viewpoints Reorganizes Representations in LLMs</title>
       <link>https://arxiv.org/abs/2611.06848v1</link>
       <description><![CDATA[<p><strong>Authors:</strong> Austin C. Kozlowski, Avital Mintz, Madison Lee</p><p>Common methods for monitoring features in large language models (LLMs) such as linear probes and sparse autoencoders (SAEs) assume that features maintain a consistent representation across contexts. LLMs, however, can flexibly adopt different perspectives or &quot;personas&quot; that suggest different underlying systems of conceptual relations. In this paper, we examine whether prompting an LLM to adopt a persona alters the representational geometry of the model&#x27;s latent space. We extract representations </p><p><strong>Tags:</strong> SAE, features, probing</p>]]></description>
@@ -147,76 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Muhan Yeo, Bong Gyun Kang, HyunGi Kim, Sungroh Yoon</p><p>Deep learning models for electronic health records achieve strong predictive performance but provide little insight into what clinical concepts they represent internally. Post-hoc attribution methods produce per-cell importance scores that lack temporal coherence, cross-variable structure, and reusability across patients. We introduce the Temporal Island Sparse Autoencoder (TI-SAE), which learns a backbone-specific, patient-shared clinical concept dictionary from a frozen predictive model&#x27;s repr</p><p><strong>Tags:</strong> SAE</p>]]></description>
       <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2611.03420v1</guid>
-    </item>
-    <item>
-      <title>Follow the Features: SAE Feature-Guided Data-Efficient Instruction-Tuning of Large Language Models</title>
-      <link>https://arxiv.org/abs/2611.04085v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Ryan Swift, Konstantinos Psounis</p><p>Selecting small, effective instruction-tuning datasets requires identifying which aspects of the original data to retain. We introduce Follow the Features (FtF), a data-selection method that uses sparse autoencoder (SAE) features to characterize training data and guide subset construction. FtF ranks features using dataset-level activation statistics, scores samples by their expression of highly ranked features, and incorporates feature resampling to encourage diversity. The LLM-SAE pair used for</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2611.04085v1</guid>
-    </item>
-    <item>
-      <title>Dr. No: Feature Steering for Abstention in Vision-Language Models</title>
-      <link>https://arxiv.org/abs/2611.03862v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Farid Hasanov, Riccardo Renzulli, Bahram Zonooz, Mykola Pechenizkiy, Decebal Constantin Mocanu</p><p>Large foundation models often answer even when the available visual or textual evidence is insufficient to support a reliable conclusion. This failure to abstain makes them hard to trust in high-stakes or information-seeking settings, where a confident but unsupported answer can be worse than no answer at all. It also raises a natural question: can the internal mechanisms behind this behaviour be identified and controlled at inference time? We present Dr. No, a feature-steering approach that min</p><p><strong>Tags:</strong> features, steering, vision</p>]]></description>
-      <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2611.03862v1</guid>
-    </item>
-    <item>
-      <title>Label-Free Localization and Test-Time Suppression of CLIP&#x27;s Typographic Circuits</title>
-      <link>https://arxiv.org/abs/2611.01513v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Bohan Liu, Wenqian Ye, Guangzhi Xiong, Zhenghao He, Sanchit Sinha, et al.</p><p>CLIP-based Vision-Language Models have become cornerstones of modern multimodal systems. The cross-modal contrastive objective equips the CLIP vision encoder to both see objects and read text. These two abilities induce an entanglement between the encoding of lexical and semantic shapes, creating a distinctive vulnerability to typographic attacks, in which rendered text overrides an image&#x27;s semantic content with its literal meaning. The black-box nature of these encoders has prevented a mechanis</p><p><strong>Tags:</strong> circuits, vision</p>]]></description>
-      <pubDate>Sun, 01 Nov 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2611.01513v1</guid>
-    </item>
-    <item>
-      <title>Information-Theoretic Design of Sparse Autoencoder-Based Steering</title>
-      <link>https://arxiv.org/abs/2611.01378v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Hirofumi Morise</p><p>Sparse autoencoder (SAE)-based activation steering is a lightweight approach for modifying the behavior of large language models (LLMs) by adding small vectors to hidden states during inference. However, designing effective steering interventions remains challenging. In this work, we develop an information-theoretic framework for analyzing SAE activations through empirical feature-firing distributions. The central object of the framework is the Jensen--Shannon divergence (JSD) between such firin</p><p><strong>Tags:</strong> SAE, features, steering</p>]]></description>
-      <pubDate>Sun, 01 Nov 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2611.01378v1</guid>
-    </item>
-    <item>
-      <title>Opening the Black Box of Neural Auction Mechanisms</title>
-      <link>https://arxiv.org/abs/2611.01981v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Li Kong, Zilong Liu, Haoyang Zhou, Hanbing Liu, Qi Qi</p><p>Neural auction design has emerged as a powerful paradigm within automated mechanism design for modern Web platforms. Because these learned mechanisms directly dictate critical economic outcomes, their lack of internal transparency raises significant auditability and trust concerns. Opening this black box \textit{post-hoc} is therefore essential, yet presents two distinctive challenges: (1) activation contexts are dense, correlated numerical profiles devoid of explicit semantic structure, and (2)</p>]]></description>
-      <pubDate>Sun, 01 Nov 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2611.01981v1</guid>
-    </item>
-    <item>
-      <title>The Tangled Web They Weave: Exploring Neural Representations with Directed Simplicial Complexes</title>
-      <link>https://arxiv.org/abs/2611.00786v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Michael Bleher</p><p>Understanding how artificial neural networks (ANNs) represent and combine features internally is a central challenge in mechanistic interpretability. Existing neural circuit-discovery methods represent neuron interactions as pairwise edges in a graph. But distributed neural representations consist of large groups of neurons that are inherently linked by higher-order causal dependencies: suppressing a subgroup of neurons in concert may shift the activation of other neurons in the feature represen</p><p><strong>Tags:</strong> circuits, features</p>]]></description>
-      <pubDate>Sat, 31 Oct 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2611.00786v1</guid>
-    </item>
-    <item>
-      <title>Bridging Singular Learning Theory and Mechanistic Interpretability at the Billion-Parameter Scale</title>
-      <link>https://arxiv.org/abs/2611.00640v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Ethan Ji, Wei Wang, Yizhou Sun</p><p>Mechanistic interpretability (MI) explains a computation in a trained network by identifying the components and variables that implement it and testing them with interventions. Singular learning theory (SLT) describes the same network through the geometry of the loss around its parameters, summarized by the local learning coefficient. In pretrained language models the two have not been compared: SLT&#x27;s estimates at this scale concern whole models or components whose roles were not independently e</p><p><strong>Tags:</strong> theory</p>]]></description>
-      <pubDate>Sat, 31 Oct 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2611.00640v1</guid>
-    </item>
-    <item>
-      <title>Evidence-grounded large language models guide perovskite solar cell design and optimization</title>
-      <link>https://arxiv.org/abs/2611.00633v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> YanKai Chen, Zhi Wan, ZiHao Li, Tao Jing</p><p>Using large language models to interpret experimental evidence, design discriminating experiments and formulate well-supported mechanistic explanations remains a central challenge in materials research. Here we establish PSM-Bench, an 800-question benchmark developed by perovskite researchers to evaluate scientific reasoning in perovskite photovoltaics. We also introduce OpenPerov, an expert-informed language-model framework that learns from expert-calibrated evidence records reconstructed from </p><p><strong>Tags:</strong> reasoning</p>]]></description>
-      <pubDate>Sat, 31 Oct 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2611.00633v1</guid>
-    </item>
-    <item>
-      <title>Geometry of Confabulation and Refusal in Small Language Models</title>
-      <link>https://arxiv.org/abs/2611.01272v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Vladimir Kazei</p><p>Faced with an unanswerable question, small language models can either refuse or confabulate: confidently produce a wrong answer. Can the hidden state before the first generated token provide a clue? Can we flip confabulations into refusals? I introduce ConfabQA, a 784-item benchmark whose obscure-pre-cutoff category breaks the typical correctness/knowledge-cutoff confound and map the geometry of the hidden state with linear probes, a sparse autoencoder (SAE), and direct optimization of intervent</p><p><strong>Tags:</strong> SAE, probing</p>]]></description>
-      <pubDate>Sat, 31 Oct 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2611.01272v1</guid>
-    </item>
-    <item>
-      <title>Sparse Autoencoder Attribution Graphs Are Decided at the Margin</title>
-      <link>https://arxiv.org/abs/2611.00606v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Karl Li</p><p>Attribution graphs over the features of sparse autoencoders (SAEs) are used to predict what an ablation does and are compared across training seeds. A TopK SAE keeps the largest preactivations at each token, and a feature&#x27;s margin is its preactivation&#x27;s distance to the cutoff. On five public TopK SAE pairs from three Pythia models, zeroing one feature moves a next layer feature across the cutoff in 0.74 of cases or more, and the crossings carry most of the response&#x27;s energy. Over writes that sca</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Sat, 31 Oct 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2611.00606v1</guid>
     </item>
   </channel>
 </rss>
