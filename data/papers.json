@@ -1,6 +1,44 @@
 {
-  "lastUpdated": "2026-11-10",
+  "lastUpdated": "2026-11-11",
   "papers": [
+    {
+      "id": "arxiv-2611-14483v1",
+      "title": "Mechanistic Interpretability Needs a Logic of Inference",
+      "authors": "Zhimin Hu, Chen Jiang, Hanbo Xie, N. Apurva Ratan Murty, Sashank Varma",
+      "date": "2026-11-10",
+      "url": "https://arxiv.org/abs/2611.14483v1",
+      "abstract": "Neural networks are increasingly studied not merely as predictive systems, but as complex systems whose internal computations are themselves objects of scientific inquiry. Recent progress in mechanistic interpretability (MI) has made it possible to identify neurons, features, circuits, population structures, and dynamical patterns associated with model behavior. As these tools improve, attention is shifting from what can be observed inside a model to how those observations support mechanistic ex",
+      "tags": [
+        "circuits",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-13868v1",
+      "title": "Mechanistic Interpretability of Deep Neural Networks: Methods, Frameworks, and Perspectives",
+      "authors": "Lorenzo Cirillo, Irene Amerini, Andrea Cavallaro",
+      "date": "2026-11-10",
+      "url": "https://arxiv.org/abs/2611.13868v1",
+      "abstract": "Deep neural networks underpin fundamental tasks in a wide range of signal domains, such as image, audio, and language processing. However, their internal mechanisms are notably difficult to interpret. Internal activations are structured signals transformed across layers that may encode a multitude of interdependent relationships, as individual neurons frequently represent multiple underlying concepts. Mechanistic interpretability aims to uncover the internal mechanisms of neural networks by iden",
+      "tags": [
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-14168v1",
+      "title": "Representational Atoms in Neural Networks",
+      "authors": "Chenhui Hu, Pengfei Cao, Kang Liu, Jun Zhao",
+      "date": "2026-11-10",
+      "url": "https://arxiv.org/abs/2611.14168v1",
+      "abstract": "Understanding the internal representations of neural networks and characterizing their relationship with human conceptual structure are two critical questions for elucidating model mechanisms. The former reveals how learned knowledge is organized in internal representations, whereas the latter provides a basis for interpreting these representations through human conceptual structure. Here, we formally define fundamental representational units (FRUs) and establish two evaluation criteria: fidelit",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2611-12206v1",
       "title": "A Geometric Invariant of Attention Predicts Head Specialization from Weights Alone",
@@ -29,6 +67,17 @@
       "featured": false
     },
     {
+      "id": "arxiv-2611-13322v1",
+      "title": "MicroLens: Read, Trace, and Rewire the Residual Stream with Two Lenses",
+      "authors": "Nika Zahedi, Fangyi Zhu, Anna Wu",
+      "date": "2026-11-09",
+      "url": "https://arxiv.org/abs/2611.13322v1",
+      "abstract": "Lenses that decode hidden states into words are a popular way to look inside language models, but a heatmap of decoded words only shows what a vector reads as and cannot distinguish whether, or how much, the model uses the information. We present an interactive viewer that puts reading, tracing and editing on the same layers-by-tokens grid of the residual stream. In the viewer, every cell can be decoded with two lenses, the logit lens and the Jacobian lens (J-lens), traced back to the tokens it ",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
       "id": "arxiv-2611-11398v1",
       "title": "Decomposing Earth Embeddings with Sparse Autoencoders",
       "authors": "Vitus Benson, Fanny Yang, Markus Reichstein",
@@ -38,6 +87,45 @@
       "tags": [
         "SAE",
         "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-11573v1",
+      "title": "Beyond the Transcript: Measuring and Improving the Use of Acoustic Information in Audio Language Models",
+      "authors": "Linkai Peng, Baorian Nuchged, Yuyang Yao",
+      "date": "2026-11-08",
+      "url": "https://arxiv.org/abs/2611.11573v1",
+      "abstract": "Audio language model benchmarks provide comprehensive evaluation across diverse tasks. However, some tasks can be answered from the transcript or even the question alone, and benchmark scores can therefore confound acoustic understanding with language modeling ability. We distinguish lexical tasks, for which the transcript usually suffices, from global-attribute and within-recording-structure tasks, which require the model to analyse the recording beyond its words, either as a whole, for propert",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-11531v1",
+      "title": "Probing Transformer Representations Layer by Layer, Module by Module",
+      "authors": "Ambroise Odonnat, Theo Gnassounou, Laetitia Chapel, Romain Tavenard, Ievgen Redko",
+      "date": "2026-11-08",
+      "url": "https://arxiv.org/abs/2611.11531v1",
+      "abstract": "Which representation should be probed in a transformer-based foundation model? Recent work shows that the standard practice of probing the final layer is often suboptimal, as intermediate layers can provide better features. Yet, representations are still largely studied along depth alone, treating each transformer block as an atomic unit. In this work, we analyze transformer representations layer by layer, module by module. Through more than 144,000 linear probing evaluations of vision foundatio",
+      "tags": [
+        "features",
+        "probing",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-11547v1",
+      "title": "Dropping Tokens Without Dropping Them: Causal Attribution for Diabetic Retinopathy",
+      "authors": "Pramath Girish Haritz, Chandra Sekhar Seelamantula",
+      "date": "2026-11-08",
+      "url": "https://arxiv.org/abs/2611.11547v1",
+      "abstract": "In this work, we investigate whether attention-based attribution maps in a vision transformer provide causal explanations for diabetic retinopathy (DR) classification. We introduce a principled decomposition of attention into two attribution maps: the contribution ($c_t$), which satisfies the completeness axiom in explainable artificial intelligence (xAI), and the pull ($p_t$), which quantifies causal explanations. We define an identity relating $c_t$ and $p_t$ that characterizes when $c_t$ fail",
+      "tags": [
+        "vision"
       ],
       "source": "arXiv",
       "featured": false
@@ -121,6 +209,19 @@
       "featured": false
     },
     {
+      "id": "arxiv-2611-10450v1",
+      "title": "The Truth Beneath the Tokens: Prompt-Space Recovery of Knowledge Edits in Language Models",
+      "authors": "Manit Baser, Rachel Yeo Hui Min, Aditya Nawal, Dinil Mon Divakaran, Mohan Gurusamy",
+      "date": "2026-11-07",
+      "url": "https://arxiv.org/abs/2611.10450v1",
+      "abstract": "Model editing provides an efficient way to update factual knowledge in transformer models. Recent approaches reverse edits by modifying, masking, or decomposing model weights, but make recovery dependent on weight-space interventions. We instead show that pre-edit knowledge can be recovered through input-space interventions alone, without modifying the edited model's weights. We introduce Memento, a prompt-space mechanism for auditing residual knowledge that learns a reusable recovery signal to ",
+      "tags": [
+        "editing"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
       "id": "arxiv-2611-09233v1",
       "title": "Cross-Layer TopK: Dynamically Allocating Sparsity Across Layers in Transcoders",
       "authors": "Anyuan Zhuo, Shaohua Zhang, Tianle Li, Yuan Lin, Diandian Gu, et al.",
@@ -173,6 +274,20 @@
       "abstract": "We examine opportunities for neurosymbolic AI alongside increasingly powerful neural models, particularly with regards to efficiency, safety and interpretability. We identify two major challenges: ensuring semantic alignment between neural and symbolic components, and managing the computational cost of symbolic inference and learning. We discuss representative methodological approaches to these challenges and address several common misconceptions concerning differentiability, independence assump",
       "tags": [
         "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-10297v1",
+      "title": "Uncertainty, Not Concealment: A Mechanistic Reappraisal of Sycophancy in Vision-Language Models",
+      "authors": "Mohamed I. Eldagla, Zeyad H. ElShafei, Ahmed M. Anter",
+      "date": "2026-11-06",
+      "url": "https://arxiv.org/abs/2611.10297v1",
+      "abstract": "Vision-language models (VLMs) in medical retrieval-augmented generation must be able to say when a retrieved report contradicts the X-ray, so understanding whether they can detect such conflicts is important for safe deployment. The sycophancy mask hypothesis holds that these models internally detect conflicts but refuse to report them, concealing a detected contradiction. We introduce a three-part diagnostic that separates concealment from uncertainty: representation probing, activation steerin",
+      "tags": [
+        "probing",
+        "vision"
       ],
       "source": "arXiv",
       "featured": false
@@ -1251,6 +1366,20 @@
       "abstract": "Variable roles describe recurring behaviors such as accumulation, traversal, and retaining the best candidate encountered. We use Sajaniemi's independently defined taxonomy to study which role distinctions can be recovered from large language models, how sparse autoencoders (SAEs) retain those distinctions, and whether associated directions support control of generation. We introduce static annotation rules for all eleven roles and a corpus of 126,926 natural-code files across five languages. Ac",
       "tags": [
         "SAE"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-09945v1",
+      "title": "A Model Organism for Studying Unverbalized Evaluation Awareness",
+      "authors": "Daniel Donnelly, Evan Chapple, Haritz Puerto, Sahar Abdelnabi",
+      "date": "2026-10-16",
+      "url": "https://arxiv.org/abs/2611.09945v1",
+      "abstract": "Large language models can recognize when they are being evaluated and change their behavior accordingly, undermining the reliability of safety benchmarks. Evaluation awareness (EA) is usually measured by having an LLM judge scan reasoning traces for explicit statements of recognition, but this signal is increasingly unreliable. Recent frontier-model system cards report a drop in verbalized rates between releases, which is indistinguishable from awareness that has gone unverbalized. Interpretabil",
+      "tags": [
+        "safety",
+        "reasoning"
       ],
       "source": "arXiv",
       "featured": false
