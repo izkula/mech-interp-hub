@@ -5,9 +5,30 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Nov 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Mechanistic Interpretability Needs a Logic of Inference</title>
+      <link>https://arxiv.org/abs/2611.14483v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Zhimin Hu, Chen Jiang, Hanbo Xie, N. Apurva Ratan Murty, Sashank Varma</p><p>Neural networks are increasingly studied not merely as predictive systems, but as complex systems whose internal computations are themselves objects of scientific inquiry. Recent progress in mechanistic interpretability (MI) has made it possible to identify neurons, features, circuits, population structures, and dynamical patterns associated with model behavior. As these tools improve, attention is shifting from what can be observed inside a model to how those observations support mechanistic ex</p><p><strong>Tags:</strong> circuits, features</p>]]></description>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.14483v1</guid>
+    </item>
+    <item>
+      <title>Mechanistic Interpretability of Deep Neural Networks: Methods, Frameworks, and Perspectives</title>
+      <link>https://arxiv.org/abs/2611.13868v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Lorenzo Cirillo, Irene Amerini, Andrea Cavallaro</p><p>Deep neural networks underpin fundamental tasks in a wide range of signal domains, such as image, audio, and language processing. However, their internal mechanisms are notably difficult to interpret. Internal activations are structured signals transformed across layers that may encode a multitude of interdependent relationships, as individual neurons frequently represent multiple underlying concepts. Mechanistic interpretability aims to uncover the internal mechanisms of neural networks by iden</p><p><strong>Tags:</strong> vision</p>]]></description>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.13868v1</guid>
+    </item>
+    <item>
+      <title>Representational Atoms in Neural Networks</title>
+      <link>https://arxiv.org/abs/2611.14168v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Chenhui Hu, Pengfei Cao, Kang Liu, Jun Zhao</p><p>Understanding the internal representations of neural networks and characterizing their relationship with human conceptual structure are two critical questions for elucidating model mechanisms. The former reveals how learned knowledge is organized in internal representations, whereas the latter provides a basis for interpreting these representations through human conceptual structure. Here, we formally define fundamental representational units (FRUs) and establish two evaluation criteria: fidelit</p>]]></description>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.14168v1</guid>
+    </item>
     <item>
       <title>A Geometric Invariant of Attention Predicts Head Specialization from Weights Alone</title>
       <link>https://arxiv.org/abs/2611.12206v1</link>
@@ -23,11 +44,39 @@
       <guid>https://arxiv.org/abs/2611.11890v1</guid>
     </item>
     <item>
+      <title>MicroLens: Read, Trace, and Rewire the Residual Stream with Two Lenses</title>
+      <link>https://arxiv.org/abs/2611.13322v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Nika Zahedi, Fangyi Zhu, Anna Wu</p><p>Lenses that decode hidden states into words are a popular way to look inside language models, but a heatmap of decoded words only shows what a vector reads as and cannot distinguish whether, or how much, the model uses the information. We present an interactive viewer that puts reading, tracing and editing on the same layers-by-tokens grid of the residual stream. In the viewer, every cell can be decoded with two lenses, the logit lens and the Jacobian lens (J-lens), traced back to the tokens it </p>]]></description>
+      <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.13322v1</guid>
+    </item>
+    <item>
       <title>Decomposing Earth Embeddings with Sparse Autoencoders</title>
       <link>https://arxiv.org/abs/2611.11398v1</link>
       <description><![CDATA[<p><strong>Authors:</strong> Vitus Benson, Fanny Yang, Markus Reichstein</p><p>Earth observation foundation models produce global metre-resolution embeddings that underpin work across agriculture, ecology, hydrology, and beyond. Yet these embeddings are opaque: each dimension entangles unrelated physical concepts, which makes them difficult to interpret and their robustness hard to assess. Here, we propose sparse autoencoders (SAEs) as a principled way to decompose Earth embeddings into sparse, approximately monosemantic features over an overcomplete dictionary. Because LL</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
       <pubDate>Sun, 08 Nov 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2611.11398v1</guid>
+    </item>
+    <item>
+      <title>Beyond the Transcript: Measuring and Improving the Use of Acoustic Information in Audio Language Models</title>
+      <link>https://arxiv.org/abs/2611.11573v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Linkai Peng, Baorian Nuchged, Yuyang Yao</p><p>Audio language model benchmarks provide comprehensive evaluation across diverse tasks. However, some tasks can be answered from the transcript or even the question alone, and benchmark scores can therefore confound acoustic understanding with language modeling ability. We distinguish lexical tasks, for which the transcript usually suffices, from global-attribute and within-recording-structure tasks, which require the model to analyse the recording beyond its words, either as a whole, for propert</p>]]></description>
+      <pubDate>Sun, 08 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.11573v1</guid>
+    </item>
+    <item>
+      <title>Probing Transformer Representations Layer by Layer, Module by Module</title>
+      <link>https://arxiv.org/abs/2611.11531v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Ambroise Odonnat, Theo Gnassounou, Laetitia Chapel, Romain Tavenard, Ievgen Redko</p><p>Which representation should be probed in a transformer-based foundation model? Recent work shows that the standard practice of probing the final layer is often suboptimal, as intermediate layers can provide better features. Yet, representations are still largely studied along depth alone, treating each transformer block as an atomic unit. In this work, we analyze transformer representations layer by layer, module by module. Through more than 144,000 linear probing evaluations of vision foundatio</p><p><strong>Tags:</strong> features, probing, vision</p>]]></description>
+      <pubDate>Sun, 08 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.11531v1</guid>
+    </item>
+    <item>
+      <title>Dropping Tokens Without Dropping Them: Causal Attribution for Diabetic Retinopathy</title>
+      <link>https://arxiv.org/abs/2611.11547v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Pramath Girish Haritz, Chandra Sekhar Seelamantula</p><p>In this work, we investigate whether attention-based attribution maps in a vision transformer provide causal explanations for diabetic retinopathy (DR) classification. We introduce a principled decomposition of attention into two attribution maps: the contribution ($c_t$), which satisfies the completeness axiom in explainable artificial intelligence (xAI), and the pull ($p_t$), which quantifies causal explanations. We define an identity relating $c_t$ and $p_t$ that characterizes when $c_t$ fail</p><p><strong>Tags:</strong> vision</p>]]></description>
+      <pubDate>Sun, 08 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.11547v1</guid>
     </item>
     <item>
       <title>SWEET: Mitigating Spurious Feature Reliance in LLM Reasoning via Weight Editing</title>
@@ -72,6 +121,13 @@
       <guid>https://arxiv.org/abs/2611.10503v1</guid>
     </item>
     <item>
+      <title>The Truth Beneath the Tokens: Prompt-Space Recovery of Knowledge Edits in Language Models</title>
+      <link>https://arxiv.org/abs/2611.10450v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Manit Baser, Rachel Yeo Hui Min, Aditya Nawal, Dinil Mon Divakaran, Mohan Gurusamy</p><p>Model editing provides an efficient way to update factual knowledge in transformer models. Recent approaches reverse edits by modifying, masking, or decomposing model weights, but make recovery dependent on weight-space interventions. We instead show that pre-edit knowledge can be recovered through input-space interventions alone, without modifying the edited model&#x27;s weights. We introduce Memento, a prompt-space mechanism for auditing residual knowledge that learns a reusable recovery signal to </p><p><strong>Tags:</strong> editing</p>]]></description>
+      <pubDate>Sat, 07 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.10450v1</guid>
+    </item>
+    <item>
       <title>Cross-Layer TopK: Dynamically Allocating Sparsity Across Layers in Transcoders</title>
       <link>https://arxiv.org/abs/2611.09233v1</link>
       <description><![CDATA[<p><strong>Authors:</strong> Anyuan Zhuo, Shaohua Zhang, Tianle Li, Yuan Lin, Diandian Gu, et al.</p><p>Cross-Layer Transcoders (CLTs) decompose the activations of large language models into human-interpretable features and trace how these features interact across layers to form circuits, making them a key tool for mechanistic interpretability. However, training CLTs effectively and efficiently is hard. Beyond the usual trade-off between sparsity and reconstruction quality, a CLT has to model all layers at once, which adds a further challenge. The common JumpReLU recipe controls sparsity only indi</p><p><strong>Tags:</strong> circuits, features</p>]]></description>
@@ -98,6 +154,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Giuseppe Marra, Pierre Genevès, Meghyn Bienvenu, Thomas Schiex, Sylvie Thiébaux, et al.</p><p>We examine opportunities for neurosymbolic AI alongside increasingly powerful neural models, particularly with regards to efficiency, safety and interpretability. We identify two major challenges: ensuring semantic alignment between neural and symbolic components, and managing the computational cost of symbolic inference and learning. We discuss representative methodological approaches to these challenges and address several common misconceptions concerning differentiability, independence assump</p><p><strong>Tags:</strong> safety</p>]]></description>
       <pubDate>Fri, 06 Nov 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2611.09356v1</guid>
+    </item>
+    <item>
+      <title>Uncertainty, Not Concealment: A Mechanistic Reappraisal of Sycophancy in Vision-Language Models</title>
+      <link>https://arxiv.org/abs/2611.10297v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Mohamed I. Eldagla, Zeyad H. ElShafei, Ahmed M. Anter</p><p>Vision-language models (VLMs) in medical retrieval-augmented generation must be able to say when a retrieved report contradicts the X-ray, so understanding whether they can detect such conflicts is important for safe deployment. The sycophancy mask hypothesis holds that these models internally detect conflicts but refuse to report them, concealing a detected contradiction. We introduce a three-part diagnostic that separates concealment from uncertainty: representation probing, activation steerin</p><p><strong>Tags:</strong> probing, vision</p>]]></description>
+      <pubDate>Fri, 06 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.10297v1</guid>
     </item>
     <item>
       <title>Understanding AI from the Inside: The State of Mechanistic Interpretability for AI Safety</title>
@@ -154,69 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Shenbin Qian, Yves Scherrer</p><p>Multilingual generation requires large language models (LLMs) to determine both what to say and in what language to say it, yet these two commitments are difficult to disentangle from model outputs alone. We use translation as a controlled probe: for multi-parallel segments that a model translates well in one language direction but poorly in another, content is held fixed while language varies. Using activation patching, we write residual-stream states from successful runs into failing ones and </p><p><strong>Tags:</strong> probing</p>]]></description>
       <pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2611.12538v1</guid>
-    </item>
-    <item>
-      <title>Persona Perspectives: Adopting Viewpoints Reorganizes Representations in LLMs</title>
-      <link>https://arxiv.org/abs/2611.06848v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Austin C. Kozlowski, Avital Mintz, Madison Lee</p><p>Common methods for monitoring features in large language models (LLMs) such as linear probes and sparse autoencoders (SAEs) assume that features maintain a consistent representation across contexts. LLMs, however, can flexibly adopt different perspectives or &quot;personas&quot; that suggest different underlying systems of conceptual relations. In this paper, we examine whether prompting an LLM to adopt a persona alters the representational geometry of the model&#x27;s latent space. We extract representations </p><p><strong>Tags:</strong> SAE, features, probing</p>]]></description>
-      <pubDate>Wed, 04 Nov 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2611.06848v1</guid>
-    </item>
-    <item>
-      <title>Unifying and Beyond the Theory of Pervasive Capability Degradation in LLM Post-training SFT from Feature Interference</title>
-      <link>https://arxiv.org/abs/2611.05003v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Hang Chen, Jiaying Zhu, Wenya Wang</p><p>Pervasive Capability Degradation (PCD) refers to the phenomenon in which supervised fine-tuning (SFT), while adapting a large language model (LLM) to a target task, often erodes the general capabilities acquired during pre-training. Prevailing explanations attribute PCD to macroscopic distribution shift and therefore lack microscopic manipulability, leaving existing mitigation methods without a complete theoretical foundation. In this paper, we first develop a bottom-up geometric theory of PCD g</p><p><strong>Tags:</strong> features, theory</p>]]></description>
-      <pubDate>Tue, 03 Nov 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2611.05003v1</guid>
-    </item>
-    <item>
-      <title>A Circuit for In-Context Learning</title>
-      <link>https://arxiv.org/abs/2611.05344v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Andrew Gao, William Gao</p><p>In-context learning (ICL) lets a pretrained language model perform a task specified by demonstrations in its prompt, with no parameter updates. With arbitrary labels the model must acquire a mapping it cannot have memorized, so the learning happens within a single forward pass. Prior work found candidate parts but not how they compose. We give the composition for few-shot sentence classification with arbitrary labels in three 3-4B-parameter transformers. The model implements a key-value memory o</p><p><strong>Tags:</strong> circuits</p>]]></description>
-      <pubDate>Tue, 03 Nov 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2611.05344v1</guid>
-    </item>
-    <item>
-      <title>Whose Effect Is It? How Objectives Inflate Learned Subspace Interventions</title>
-      <link>https://arxiv.org/abs/2611.05033v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Toygar Tanyel, Serkan Ayvaz</p><p>Interpretability often locates concepts by copying part of a language model&#x27;s state from one input into another (activation patching). A larger output change counts as stronger evidence that this part carries the concept. Methods that learn which part to copy often change the output more than the whole state does. By that reading, learned parts isolate the concept more cleanly. Yet the whole contains the part. So whose effect is this excess, the network&#x27;s or the method&#x27;s? Copying the whole state</p>]]></description>
-      <pubDate>Tue, 03 Nov 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2611.05033v1</guid>
-    </item>
-    <item>
-      <title>Reducing Logprob Without Causal Verification: Diagnosing SAE-Based PII Suppression in LLMs</title>
-      <link>https://arxiv.org/abs/2611.04782v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Chaerin Lee, Wonho Lee, Sohee Park, Daeseon Choi</p><p>SAE-based feature-level interventions to suppress PII leakage in LLMs are primarily evaluated by log-probability reduction. We show that this criterion cannot distinguish feature specific suppression from a magnitude artifact: a direction-agnostic effect of sufficiently large activation perturbations. Across 36 (model, layer, PII type) cases, we compare selected SAE feature interventions with coherencematched random direction controls using logprob and rank-aware metrics. While 17 cases (47%) ap</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Tue, 03 Nov 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2611.04782v1</guid>
-    </item>
-    <item>
-      <title>When Are Two SAE Latents the Same Feature?</title>
-      <link>https://arxiv.org/abs/2611.05655v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Alexandra Suvorikova, Ilgam Latypov, Anton Trukhan, Yuriy Dorn</p><p>Comparing sparse autoencoders (SAEs) requires connecting feature correspondence, differences between whole dictionaries, and uncertainty from finite evaluation data. We develop a framework that connects these tasks through an energy-weighted optimal-transport plan under a specified similarity geometry. The same plan defines a dictionary-level discrepancy, decomposes it into latent contributions, and quantifies how each latent&#x27;s mass is distributed across counterparts. We characterize relationshi</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Tue, 03 Nov 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2611.05655v1</guid>
-    </item>
-    <item>
-      <title>From Activation to Intervention: Interpreting Sparse Visual Features through Reconstruction</title>
-      <link>https://arxiv.org/abs/2611.05522v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Jianyang Gu, Jacob Beattie, Mridul Khurana, Julia Chae, Xi Xiao, et al.</p><p>Sparse autoencoders (SAEs) decompose visual representations into individual features, offering a promising basis for explaining model behavior. Interpreting these features typically relies on images or pixel regions that most strongly activate them. However, this evidence becomes ambiguous when multiple features with different semantics frequently activate in the same locations, such as texture and color in the same patterns. We propose Reconstructive SAE Intervention (RecSAEI), a framework that</p><p><strong>Tags:</strong> SAE, features, vision</p>]]></description>
-      <pubDate>Tue, 03 Nov 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2611.05522v1</guid>
-    </item>
-    <item>
-      <title>Towards Multi-Value Alignment via Value Localization in LLMs</title>
-      <link>https://arxiv.org/abs/2611.02503v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Xueqi Ma, Yanbei Jiang, Xingjun Ma, James Bailey, Sarah M. Erfani</p><p>Aligning large language models (LLMs) with multiple, potentially conflicting human values remains challenging, as existing multi-objective alignment methods often require costly fine-tuning and provide limited insight into the internal mechanisms underlying value-related behaviors. In this work, we investigate multi-value alignment from a mechanistic interpretability perspective by identifying value-sensitive attention heads (value heads) in LLMs. Using a probing-based value localization framewo</p><p><strong>Tags:</strong> safety, probing, attention</p>]]></description>
-      <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2611.02503v1</guid>
-    </item>
-    <item>
-      <title>Temporal Island Sparse Autoencoders for Interpreting Clinical Time-Series Models</title>
-      <link>https://arxiv.org/abs/2611.03420v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Muhan Yeo, Bong Gyun Kang, HyunGi Kim, Sungroh Yoon</p><p>Deep learning models for electronic health records achieve strong predictive performance but provide little insight into what clinical concepts they represent internally. Post-hoc attribution methods produce per-cell importance scores that lack temporal coherence, cross-variable structure, and reusability across patients. We introduce the Temporal Island Sparse Autoencoder (TI-SAE), which learns a backbone-specific, patient-shared clinical concept dictionary from a frozen predictive model&#x27;s repr</p><p><strong>Tags:</strong> SAE</p>]]></description>
-      <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2611.03420v1</guid>
     </item>
   </channel>
 </rss>
