@@ -1,6 +1,45 @@
 {
-  "lastUpdated": "2026-11-12",
+  "lastUpdated": "2026-11-13",
   "papers": [
+    {
+      "id": "arxiv-2611-16183v1",
+      "title": "Data-Efficient LLM Safety Alignment Guided by Interpretable Features",
+      "authors": "Hongyu Li, Zhan Yu, Zhe Zhao, Kimmo Yan, Xiong Kuang, et al.",
+      "date": "2026-11-12",
+      "url": "https://arxiv.org/abs/2611.16183v1",
+      "abstract": "Existing large language models typically rely on massive fine-tuning datasets for safety alignment, which results in higher costs for safety alignment and often leads to the problem of over-refusal. We propose Less is Safer (LIS), a compact yet highly effective dataset for safety alignment, constructed through interpretable feature-guided selection and adversarial synthesis. Specifically, we leverage Sparse Autoencoder (SAE) activations to efficiently select prompts that cover diverse and interp",
+      "tags": [
+        "SAE",
+        "features",
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-15735v1",
+      "title": "Where Is Uncertainty Observed? A Mechanistic Understanding of Uncertainty Quantification in LLMs",
+      "authors": "Xiaoyu Liang, Virginia Ceccatelli, Aliai Eusebi, Tobias Braun, Nils Loose, et al.",
+      "date": "2026-11-11",
+      "url": "https://arxiv.org/abs/2611.15735v1",
+      "abstract": "Knowing when a large language model's (LLM's) response can be trusted is critical for its safe use. Uncertainty quantification (UQ) can help LLMs recognize if their responses may be unreliable. Existing taxonomies organize UQ methods by uncertainty source or estimation mechanism. They leave unresolved the question of where uncertainty is observed in the model's computation. The answer matters because the observation point determines whether an estimator has access to enough information to recove",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-15653v1",
+      "title": "A Mechanistic Interpretability Study of an Astronomy Foundation Model",
+      "authors": "Rachel C. Zhang, Alberto Bietti, Wes Gurnee, Alessandro Favero, Miles Cranmer",
+      "date": "2026-11-11",
+      "url": "https://arxiv.org/abs/2611.15653v1",
+      "abstract": "Foundation models are increasingly used across the sciences, but whether their internal computations correspond to known scientific operations or proceed through different mechanisms remains unclear. Understanding these mechanisms is essential for assessing reliability, identifying failure modes, and learning new science from the models. We present, to our knowledge, the first causal mechanistic interpretability study of an astronomy foundation model, AION-1, focusing on its multimodal advantage",
+      "tags": [
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2611-14483v1",
       "title": "Mechanistic Interpretability Needs a Logic of Inference",
