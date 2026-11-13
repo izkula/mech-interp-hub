@@ -5,9 +5,30 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Nov 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Data-Efficient LLM Safety Alignment Guided by Interpretable Features</title>
+      <link>https://arxiv.org/abs/2611.16183v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Hongyu Li, Zhan Yu, Zhe Zhao, Kimmo Yan, Xiong Kuang, et al.</p><p>Existing large language models typically rely on massive fine-tuning datasets for safety alignment, which results in higher costs for safety alignment and often leads to the problem of over-refusal. We propose Less is Safer (LIS), a compact yet highly effective dataset for safety alignment, constructed through interpretable feature-guided selection and adversarial synthesis. Specifically, we leverage Sparse Autoencoder (SAE) activations to efficiently select prompts that cover diverse and interp</p><p><strong>Tags:</strong> SAE, features, safety</p>]]></description>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.16183v1</guid>
+    </item>
+    <item>
+      <title>Where Is Uncertainty Observed? A Mechanistic Understanding of Uncertainty Quantification in LLMs</title>
+      <link>https://arxiv.org/abs/2611.15735v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Xiaoyu Liang, Virginia Ceccatelli, Aliai Eusebi, Tobias Braun, Nils Loose, et al.</p><p>Knowing when a large language model&#x27;s (LLM&#x27;s) response can be trusted is critical for its safe use. Uncertainty quantification (UQ) can help LLMs recognize if their responses may be unreliable. Existing taxonomies organize UQ methods by uncertainty source or estimation mechanism. They leave unresolved the question of where uncertainty is observed in the model&#x27;s computation. The answer matters because the observation point determines whether an estimator has access to enough information to recove</p>]]></description>
+      <pubDate>Wed, 11 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.15735v1</guid>
+    </item>
+    <item>
+      <title>A Mechanistic Interpretability Study of an Astronomy Foundation Model</title>
+      <link>https://arxiv.org/abs/2611.15653v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Rachel C. Zhang, Alberto Bietti, Wes Gurnee, Alessandro Favero, Miles Cranmer</p><p>Foundation models are increasingly used across the sciences, but whether their internal computations correspond to known scientific operations or proceed through different mechanisms remains unclear. Understanding these mechanisms is essential for assessing reliability, identifying failure modes, and learning new science from the models. We present, to our knowledge, the first causal mechanistic interpretability study of an astronomy foundation model, AION-1, focusing on its multimodal advantage</p><p><strong>Tags:</strong> vision</p>]]></description>
+      <pubDate>Wed, 11 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.15653v1</guid>
+    </item>
     <item>
       <title>Mechanistic Interpretability Needs a Logic of Inference</title>
       <link>https://arxiv.org/abs/2611.14483v1</link>
@@ -196,27 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Anyuan Zhuo, Shaohua Zhang, Yuan Lin, Pinyan Lu</p><p>Mixture-of-Experts (MoE) models route each token to a few of many experts, yet what an individual expert is responsible for remains unsettled. Existing analyses count how often an expert is selected on domain-labeled corpora, an instrument that fixes the taxonomy in advance, stays coarse, and records selection rather than contribution. We instead study specialization in feature space by training a sparse autoencoder (SAE) on the output of an MoE layer. Since this output is a router-weighted sum </p><p><strong>Tags:</strong> SAE, features</p>]]></description>
       <pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2611.08089v1</guid>
-    </item>
-    <item>
-      <title>SteerGR: Steering Generative Recommendation via Sparse Autoencoders for Controllable Game Discovery</title>
-      <link>https://arxiv.org/abs/2611.08790v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Sunkyung Lee, Xiaokai Wei, Da Long, Hyunsik Jeon, Jiajun Wu, et al.</p><p>Generative recommendation aims to predict item identifiers from user interaction histories, but explicit control over the properties of recommended items remains underexplored. A key challenge is to connect human-readable concepts to internal features whose interventions effectively change the recommended items. To address this, we propose Steerable Generative Recommender (SteerGR), a framework that uses sparse autoencoders for concept-level control in game discovery. SteerGR proceeds through th</p><p><strong>Tags:</strong> SAE, features, steering</p>]]></description>
-      <pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2611.08790v1</guid>
-    </item>
-    <item>
-      <title>How Small Can We Go? Calibrating Activation-Cache Compression for SAE Training</title>
-      <link>https://arxiv.org/abs/2611.08551v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Abraham Yeung</p><p>To train a sparse autoencoder (SAE), you need a massive cache of model activations. We look into the effects that compression has on an SAE in two ways: we keep the original fp32-trained SAE and pass the compressed cache into the same SAE to see how many feature activations stay the same (the frozen-SAE test), and we retrain an SAE on the compressed cache and see how many of the original features still exist (the retraining test). We found that in the retraining test, there is no clear scale for</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2611.08551v1</guid>
-    </item>
-    <item>
-      <title>Language Defaults Before Content: A Causal Layer Map of Multilingual Generation</title>
-      <link>https://arxiv.org/abs/2611.12538v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Shenbin Qian, Yves Scherrer</p><p>Multilingual generation requires large language models (LLMs) to determine both what to say and in what language to say it, yet these two commitments are difficult to disentangle from model outputs alone. We use translation as a controlled probe: for multi-parallel segments that a model translates well in one language direction but poorly in another, content is held fixed while language varies. Using activation patching, we write residual-stream states from successful runs into failing ones and </p><p><strong>Tags:</strong> probing</p>]]></description>
-      <pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2611.12538v1</guid>
     </item>
   </channel>
 </rss>
