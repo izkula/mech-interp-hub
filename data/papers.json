@@ -1,6 +1,91 @@
 {
-  "lastUpdated": "2026-11-15",
+  "lastUpdated": "2026-11-16",
   "papers": [
+    {
+      "id": "arxiv-2611-18514v1",
+      "title": "Can Mechanistic Interpretability Help Explain LLM Agent Failures? A Case Study on Web Element Hallucination",
+      "authors": "Mohamed Aghzal, Mor Geva, Gregory J. Stein, Ziyu Yao",
+      "date": "2026-11-13",
+      "url": "https://arxiv.org/abs/2611.18514v1",
+      "abstract": "Mechanistic Interpretability (MI) has made significant progress in explaining the internal computations of Large Language Models (LLMs); however, these advances have yet to demonstrate comparable success in explaining the decision-making processes of LLM-based agents. This paper examines the challenges MI tools face when applied to realistic agentic failures. We focus on one such failure: web agents hallucinating actions that are not available on a website. We apply a series of mechanistic analy",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-18274v1",
+      "title": "Right Token, Right Time: From Per-Token Gating to Trajectory-Aware Activation Steering",
+      "authors": "Nima Eshraghi, Lovedeep Gondara, Sagarika Suresh, Xiaotong Xu, Jithin Pradeep, et al.",
+      "date": "2026-11-13",
+      "url": "https://arxiv.org/abs/2611.18274v1",
+      "abstract": "Activation steering via sparse autoencoders (SAEs) enables behavioral control of large language models without task-specific fine-tuning. Yet, standard methods apply the steering signal at every generated token, displacing representations from the distribution the model was trained on and eroding generation quality. We show that \\emph{when} along a generation the intervention is applied is a decisive axis of control. We cast steering as a per-token allocation problem under a fixed budget of stee",
+      "tags": [
+        "SAE",
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-18089v1",
+      "title": "Deep Latents, Long Memory: Latent persistence explains temporal correlations in transformer activations",
+      "authors": "Francesco Cagnetta, Santiago Acevedo",
+      "date": "2026-11-13",
+      "url": "https://arxiv.org/abs/2611.18089v1",
+      "abstract": "The hidden layers of Large Language Models (LLMs) are believed to encode representations of the data whose abstraction increases with depth. However, in the absence of an operational notion of abstraction, this statement is hard to test quantitatively. Here, we propose an alternative view, building on the principle that the correlations of a sequence reflect the structure of the process that generated it. We define the autocorrelation function of a layer as the average dot product between its ac",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-17856v1",
+      "title": "DECODE: Diagnosing Interpretability Failures in Automated Interpretation Process",
+      "authors": "Dohyun Kim, Jaeung Lee, Donghee Hong, Jaemin Jo",
+      "date": "2026-11-13",
+      "url": "https://arxiv.org/abs/2611.17856v1",
+      "abstract": "Tools for interpreting the internal representations of Large Language Models (LLMs) increasingly rely on LLMs themselves to both generate and evaluate explanations, creating a self-referential automated interpretation process with minimal human oversight. This automation raises significant reliability concerns, which are exacerbated by the absence of ground truth. In practice, it is difficult to validate explanations or to attribute interpretability failures to their source -- whether they origi",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-18179v1",
+      "title": "Explanations that Transfer: Interpreting Medical Retrieval with Sparse AutoEncoders",
+      "authors": "Diane Bouchacourt, Ga\u00ebtan Brison",
+      "date": "2026-11-13",
+      "url": "https://arxiv.org/abs/2611.18179v1",
+      "abstract": "Medical AI systems that answer users' queries rely on retrieving medical knowledge from large document collections. In this context, finetuning general models on medical datasets can improve retrieval relevance. Yet the dense embeddings underlying modern retrieval systems remain largely opaque, making it difficult to understand the mechanics behind their results. Moreover, adapting to a specific medical dataset risks losing transferability to new clinical corpora. In this work, we tackle these i",
+      "tags": [
+        "SAE"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-18248v1",
+      "title": "Dancing Tokens on the Vocabulary Network from LLM Generation",
+      "authors": "Yuan-Chao Hu",
+      "date": "2026-11-13",
+      "url": "https://arxiv.org/abs/2611.18248v1",
+      "abstract": "Large language models (LLMs) generate text one token at a time, yet how a particular generation relates to the geometry learned in pre-training remains unclear. The fundamental explainability of LLMs is elusive. Here, we build a similarity network from the input embeddings of six open LLMs and map generation onto it. The token-embedding network is scale-free while heavy-tailed, as are random embeddings with matched covariance, but far more fragmented. Distillation barely changes this topology be",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-17831v1",
+      "title": "V-JEPA-LM: Video-Language Models That Read Dynamics Beyond Static, Text-Aligned Representations",
+      "authors": "Keuntae Kim, Dongjun Kim, Yong Suk Choi",
+      "date": "2026-11-13",
+      "url": "https://arxiv.org/abs/2611.17831v1",
+      "abstract": "World-model video encoders such as V-JEPA learn how scenes change (direction, speed, order, state) from video alone. To answer questions, they are joined to a language model trained on captions and question-answer pairs. But each caption or question names only a few attributes of a clip, so the model learns to retrieve those attributes rather than to read the clip, and the dynamics the encoder carries go unused: on the same items, a linear probe reads speed from frozen V-JEPA features at 87% whi",
+      "tags": [
+        "features",
+        "probing"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2611-16183v1",
       "title": "Data-Efficient LLM Safety Alignment Guided by Interpretable Features",
@@ -13,6 +98,17 @@
         "features",
         "safety"
       ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-17548v1",
+      "title": "Mechanism-Level Chemical Reaction Simulation with Electron Bookkeeping Transformer",
+      "authors": "Sarah Cao, Shitong Luo, Connor W. Coley",
+      "date": "2026-11-12",
+      "url": "https://arxiv.org/abs/2611.17548v1",
+      "abstract": "Modeling chemical reaction mechanisms is central to understanding and predicting chemical reactivity. We present Electron Bookkeeping Transformer (Bookkeeper), a data-driven model that simulates chemical reactions at mechanistic resolution by generating electron movement trajectories. Following the symbolic arrow-pushing formalism in chemistry, Bookkeeper explicitly models each electron as a token and predicts its movement sequentially, ensuring mass and charge conservation during both elementar",
+      "tags": [],
       "source": "arXiv",
       "featured": false
     },
