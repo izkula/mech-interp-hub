@@ -5,15 +5,71 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 15 Nov 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Can Mechanistic Interpretability Help Explain LLM Agent Failures? A Case Study on Web Element Hallucination</title>
+      <link>https://arxiv.org/abs/2611.18514v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Mohamed Aghzal, Mor Geva, Gregory J. Stein, Ziyu Yao</p><p>Mechanistic Interpretability (MI) has made significant progress in explaining the internal computations of Large Language Models (LLMs); however, these advances have yet to demonstrate comparable success in explaining the decision-making processes of LLM-based agents. This paper examines the challenges MI tools face when applied to realistic agentic failures. We focus on one such failure: web agents hallucinating actions that are not available on a website. We apply a series of mechanistic analy</p>]]></description>
+      <pubDate>Fri, 13 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.18514v1</guid>
+    </item>
+    <item>
+      <title>Right Token, Right Time: From Per-Token Gating to Trajectory-Aware Activation Steering</title>
+      <link>https://arxiv.org/abs/2611.18274v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Nima Eshraghi, Lovedeep Gondara, Sagarika Suresh, Xiaotong Xu, Jithin Pradeep, et al.</p><p>Activation steering via sparse autoencoders (SAEs) enables behavioral control of large language models without task-specific fine-tuning. Yet, standard methods apply the steering signal at every generated token, displacing representations from the distribution the model was trained on and eroding generation quality. We show that \emph{when} along a generation the intervention is applied is a decisive axis of control. We cast steering as a per-token allocation problem under a fixed budget of stee</p><p><strong>Tags:</strong> SAE, steering</p>]]></description>
+      <pubDate>Fri, 13 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.18274v1</guid>
+    </item>
+    <item>
+      <title>Deep Latents, Long Memory: Latent persistence explains temporal correlations in transformer activations</title>
+      <link>https://arxiv.org/abs/2611.18089v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Francesco Cagnetta, Santiago Acevedo</p><p>The hidden layers of Large Language Models (LLMs) are believed to encode representations of the data whose abstraction increases with depth. However, in the absence of an operational notion of abstraction, this statement is hard to test quantitatively. Here, we propose an alternative view, building on the principle that the correlations of a sequence reflect the structure of the process that generated it. We define the autocorrelation function of a layer as the average dot product between its ac</p>]]></description>
+      <pubDate>Fri, 13 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.18089v1</guid>
+    </item>
+    <item>
+      <title>DECODE: Diagnosing Interpretability Failures in Automated Interpretation Process</title>
+      <link>https://arxiv.org/abs/2611.17856v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Dohyun Kim, Jaeung Lee, Donghee Hong, Jaemin Jo</p><p>Tools for interpreting the internal representations of Large Language Models (LLMs) increasingly rely on LLMs themselves to both generate and evaluate explanations, creating a self-referential automated interpretation process with minimal human oversight. This automation raises significant reliability concerns, which are exacerbated by the absence of ground truth. In practice, it is difficult to validate explanations or to attribute interpretability failures to their source -- whether they origi</p>]]></description>
+      <pubDate>Fri, 13 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.17856v1</guid>
+    </item>
+    <item>
+      <title>Explanations that Transfer: Interpreting Medical Retrieval with Sparse AutoEncoders</title>
+      <link>https://arxiv.org/abs/2611.18179v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Diane Bouchacourt, Gaëtan Brison</p><p>Medical AI systems that answer users&#x27; queries rely on retrieving medical knowledge from large document collections. In this context, finetuning general models on medical datasets can improve retrieval relevance. Yet the dense embeddings underlying modern retrieval systems remain largely opaque, making it difficult to understand the mechanics behind their results. Moreover, adapting to a specific medical dataset risks losing transferability to new clinical corpora. In this work, we tackle these i</p><p><strong>Tags:</strong> SAE</p>]]></description>
+      <pubDate>Fri, 13 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.18179v1</guid>
+    </item>
+    <item>
+      <title>Dancing Tokens on the Vocabulary Network from LLM Generation</title>
+      <link>https://arxiv.org/abs/2611.18248v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Yuan-Chao Hu</p><p>Large language models (LLMs) generate text one token at a time, yet how a particular generation relates to the geometry learned in pre-training remains unclear. The fundamental explainability of LLMs is elusive. Here, we build a similarity network from the input embeddings of six open LLMs and map generation onto it. The token-embedding network is scale-free while heavy-tailed, as are random embeddings with matched covariance, but far more fragmented. Distillation barely changes this topology be</p>]]></description>
+      <pubDate>Fri, 13 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.18248v1</guid>
+    </item>
+    <item>
+      <title>V-JEPA-LM: Video-Language Models That Read Dynamics Beyond Static, Text-Aligned Representations</title>
+      <link>https://arxiv.org/abs/2611.17831v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Keuntae Kim, Dongjun Kim, Yong Suk Choi</p><p>World-model video encoders such as V-JEPA learn how scenes change (direction, speed, order, state) from video alone. To answer questions, they are joined to a language model trained on captions and question-answer pairs. But each caption or question names only a few attributes of a clip, so the model learns to retrieve those attributes rather than to read the clip, and the dynamics the encoder carries go unused: on the same items, a linear probe reads speed from frozen V-JEPA features at 87% whi</p><p><strong>Tags:</strong> features, probing</p>]]></description>
+      <pubDate>Fri, 13 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.17831v1</guid>
+    </item>
     <item>
       <title>Data-Efficient LLM Safety Alignment Guided by Interpretable Features</title>
       <link>https://arxiv.org/abs/2611.16183v1</link>
       <description><![CDATA[<p><strong>Authors:</strong> Hongyu Li, Zhan Yu, Zhe Zhao, Kimmo Yan, Xiong Kuang, et al.</p><p>Existing large language models typically rely on massive fine-tuning datasets for safety alignment, which results in higher costs for safety alignment and often leads to the problem of over-refusal. We propose Less is Safer (LIS), a compact yet highly effective dataset for safety alignment, constructed through interpretable feature-guided selection and adversarial synthesis. Specifically, we leverage Sparse Autoencoder (SAE) activations to efficiently select prompts that cover diverse and interp</p><p><strong>Tags:</strong> SAE, features, safety</p>]]></description>
       <pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2611.16183v1</guid>
+    </item>
+    <item>
+      <title>Mechanism-Level Chemical Reaction Simulation with Electron Bookkeeping Transformer</title>
+      <link>https://arxiv.org/abs/2611.17548v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Sarah Cao, Shitong Luo, Connor W. Coley</p><p>Modeling chemical reaction mechanisms is central to understanding and predicting chemical reactivity. We present Electron Bookkeeping Transformer (Bookkeeper), a data-driven model that simulates chemical reactions at mechanistic resolution by generating electron movement trajectories. Following the symbolic arrow-pushing formalism in chemistry, Bookkeeper explicitly models each electron as a token and predicts its movement sequentially, ensuring mass and charge conservation during both elementar</p>]]></description>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.17548v1</guid>
     </item>
     <item>
       <title>Where Is Uncertainty Observed? A Mechanistic Understanding of Uncertainty Quantification in LLMs</title>
@@ -161,62 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Piotr Wilam</p><p>Interpretability has largely moved from reading a model&#x27;s neurons directly to reading a second model trained on the first: a probe, a sparse autoencoder, a crosscoder. The move answered real faults -- mixed meanings, thresholds without a unit, readings that did not transfer from one study to the next -- but gave up what a direct reading alone provides: nothing trained in between, the neurons themselves named, and a reading that can be repeated and compared. Here the direct reading is made a meas</p><p><strong>Tags:</strong> SAE, probing</p>]]></description>
       <pubDate>Fri, 06 Nov 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2611.09196v1</guid>
-    </item>
-    <item>
-      <title>Localizing and Editing the Goal Representation of a Vision-Language-Action Model</title>
-      <link>https://arxiv.org/abs/2611.08895v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Sudhanshu Srivastava, Faisal Aqlan</p><p>Operators can state safety constraints for robots as prohibitions such as &quot;do not put the bowl on the stove&quot;. We study whether OpenVLA follows such prohibitions and where it represents the goal it executes. The 10 tasks of LIBEROGoal share one scene, so we can label the goal that each rollout executes. We combine closed-loop rollouts with activation patching, linear probes, activation steering and runtime monitors. On LIBERO-Goal, negation had no detectable effect on which task OpenVLA executed.</p><p><strong>Tags:</strong> safety, probing, steering, vision</p>]]></description>
-      <pubDate>Fri, 06 Nov 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2611.08895v1</guid>
-    </item>
-    <item>
-      <title>Challenges, Opportunities, and Misconceptions in Neurosymbolic AI</title>
-      <link>https://arxiv.org/abs/2611.09356v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Giuseppe Marra, Pierre Genevès, Meghyn Bienvenu, Thomas Schiex, Sylvie Thiébaux, et al.</p><p>We examine opportunities for neurosymbolic AI alongside increasingly powerful neural models, particularly with regards to efficiency, safety and interpretability. We identify two major challenges: ensuring semantic alignment between neural and symbolic components, and managing the computational cost of symbolic inference and learning. We discuss representative methodological approaches to these challenges and address several common misconceptions concerning differentiability, independence assump</p><p><strong>Tags:</strong> safety</p>]]></description>
-      <pubDate>Fri, 06 Nov 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2611.09356v1</guid>
-    </item>
-    <item>
-      <title>Uncertainty, Not Concealment: A Mechanistic Reappraisal of Sycophancy in Vision-Language Models</title>
-      <link>https://arxiv.org/abs/2611.10297v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Mohamed I. Eldagla, Zeyad H. ElShafei, Ahmed M. Anter</p><p>Vision-language models (VLMs) in medical retrieval-augmented generation must be able to say when a retrieved report contradicts the X-ray, so understanding whether they can detect such conflicts is important for safe deployment. The sycophancy mask hypothesis holds that these models internally detect conflicts but refuse to report them, concealing a detected contradiction. We introduce a three-part diagnostic that separates concealment from uncertainty: representation probing, activation steerin</p><p><strong>Tags:</strong> probing, vision</p>]]></description>
-      <pubDate>Fri, 06 Nov 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2611.10297v1</guid>
-    </item>
-    <item>
-      <title>Understanding AI from the Inside: The State of Mechanistic Interpretability for AI Safety</title>
-      <link>https://arxiv.org/abs/2611.08438v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Fazl Barez, Tung-Yu Wu, Hunar Batra, Gabriele Dominici, Florent Draye, et al.</p><p>Neural networks are likely to be among the most consequential artefacts in human history. As these systems become more capable and autonomous, their potential to cause societal harm also grows, making AI safety one of the defining challenges of our time. Yet we continue to build increasingly powerful systems without fully understanding how they work, how they will behave in unfamiliar situations, or how to reliably control them. Mechanistic interpretability offers a path towards understanding th</p><p><strong>Tags:</strong> safety</p>]]></description>
-      <pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2611.08438v1</guid>
-    </item>
-    <item>
-      <title>Encoding and Propagation of Grammatical Number in Large Language Models</title>
-      <link>https://arxiv.org/abs/2611.07283v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Jacob Solinsky, Serguei Pakhomov</p><p>Sparse autoencoders (SAEs) have become an increasingly popular means of translating Large Language Model (LLM) hidden state vectors into a human-comprehensible list of features or symbols. As such, SAEs may provide insight into an LLM&#x27;s knowledge representation and internal ``mental&#x27;&#x27; grammar - topics of pragmatic interest for mechanistic interpretation of AI behavior and of theoretical interest for the study of in silico representations of human language. Language models with fewer than 100M pa</p><p><strong>Tags:</strong> SAE, features, theory</p>]]></description>
-      <pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2611.07283v1</guid>
-    </item>
-    <item>
-      <title>User Embeddings are Superpositions of Interpretable Behavioral Modes</title>
-      <link>https://arxiv.org/abs/2611.08487v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Jonathan Kozaczuk, Zheng Dong, Noyan Evirgen, Keivan Majidi, Eddie K. H. Ng, et al.</p><p>User embeddings are central components of modern recommendation, personalization, and behavioral modeling systems. Though these embeddings can compactly encode rich behavioral information, they are inherently dense and opaque, limiting interpretability. To address this gap, we argue that user embeddings can be understood as sparse superpositions of interpretable behavioral modes. This structure is directly predicted by generative models of user behavior for linear embeddings and extends approxim</p><p><strong>Tags:</strong> superposition</p>]]></description>
-      <pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2611.08487v1</guid>
-    </item>
-    <item>
-      <title>Scaling Laws for SAE Training Data</title>
-      <link>https://arxiv.org/abs/2611.07756v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Nikita Koriagin, Nikita Balagansky, Daniil Gavrilov</p><p>Activation storage is often a bottleneck in sparse autoencoder (SAE) training. We study how many unique activations an SAE needs when its total training budget is fixed. Quality improves rapidly as the buffer grows, then reaches a plateau where replaying the buffer is nearly as effective as using fresh activations throughout training. Beyond this point, additional unique activations bring little benefit to reconstruction or interpretability, so the buffer need not grow with the training budget. </p><p><strong>Tags:</strong> SAE</p>]]></description>
-      <pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2611.07756v1</guid>
-    </item>
-    <item>
-      <title>SAE Interprets MoE: Sparse AutoEncoders Reveal That MoE Experts Exhibit Human-Interpretable Fine-Grained Specialization</title>
-      <link>https://arxiv.org/abs/2611.08089v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Anyuan Zhuo, Shaohua Zhang, Yuan Lin, Pinyan Lu</p><p>Mixture-of-Experts (MoE) models route each token to a few of many experts, yet what an individual expert is responsible for remains unsettled. Existing analyses count how often an expert is selected on domain-labeled corpora, an instrument that fixes the taxonomy in advance, stays coarse, and records selection rather than contribution. We instead study specialization in feature space by training a sparse autoencoder (SAE) on the output of an MoE layer. Since this output is a router-weighted sum </p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2611.08089v1</guid>
     </item>
   </channel>
 </rss>
