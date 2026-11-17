@@ -5,9 +5,44 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Nov 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Abstention Direction in Large Language Models: Mechanistic Interpretability of Abstention Across Query Ambiguity, Knowledge Limits, and Safety Alignment</title>
+      <link>https://arxiv.org/abs/2611.20441v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Koki Itai, Jun Hirako, Hiroaki Yamagiwa</p><p>Abstention, the withholding of a response by a large language model (LLM) under uncertainty or safety risks, is essential for trustworthy models. The causes of abstention fall into three perspectives: ambiguity in the Query (Q), limits of Model Knowledge (MK), and misalignment with Human Values (HV). However, prior analyses of internal representations have focused on HV, using a refusal direction computed from harmful and harmless queries. No study has analyzed the three perspectives jointly. We</p><p><strong>Tags:</strong> safety</p>]]></description>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.20441v1</guid>
+    </item>
+    <item>
+      <title>Pretty Linear Liars: Unregularized Probes Favor Intervention-Unfaithful Features</title>
+      <link>https://arxiv.org/abs/2611.20371v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Karl Vilhelmsson Emneby, Julian Yocum, Cameron Allen</p><p>Linear probing is a common technique in mechanistic interpretability despite the fact that the decodability of a given feature does not necessarily imply the network uses that feature. Intervention faithfulness, not merely decodability, is the appropriate criterion for whether a feature serves a defined active role in the model. Meanwhile, probe regularization has been used for feature discovery, but the impact of regularization on feature causality remains unclear. We study probe regularization</p><p><strong>Tags:</strong> features, probing</p>]]></description>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.20371v1</guid>
+    </item>
+    <item>
+      <title>Beyond Job Titles: Interpreting Early-Career Job Advertisements with Sparse Autoencoders and Semantic Clustering</title>
+      <link>https://arxiv.org/abs/2611.21586v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Yisong Cao, Leah Kim, Brian Wright, Ali Rivera</p><p>Job titles and job descriptions alone provide limited insight into how technical roles differ in a changing job market. To assess how such roles differ in their work and industry applications, we design and compare two methods based on deep learning and transformer representations using 36,081 early-career job postings collected from LinkedIn in the United States between December 2025 and October 2026.   We first apply PERC, short for Preprocessing (P), Embedding (E), Dimensionality Reduction (R</p><p><strong>Tags:</strong> SAE</p>]]></description>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.21586v1</guid>
+    </item>
+    <item>
+      <title>Representational Change Under Self-Consuming Training: A Sparse Autoencoder Analysis</title>
+      <link>https://arxiv.org/abs/2611.21348v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Suchit Gupte, Zhongteng Cai, Xueru Zhang, Mohammad Mahdi Khalili</p><p>Large language models are increasingly exposed to model-generated text, raising the possibility that future models will be trained recursively on the outputs of their predecessors. Prior work on such self-consuming training loops has largely focused on output quality and downstream performance, leaving their effects on internal representations poorly understood. We study how representations evolve across five generations of self-consumption and whether sparse autoencoders (SAEs) remain reliable </p><p><strong>Tags:</strong> SAE</p>]]></description>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.21348v1</guid>
+    </item>
+    <item>
+      <title>Interpretable deep concepts of organoid morphology</title>
+      <link>https://arxiv.org/abs/2611.20840v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Lion Jasper Gleiter, Tingying Peng</p><p>Image-based classification of organoid morphologies can indicate drug response, viability, or successful differentiation. In recent work, learned representations outperform handcrafted features as the basis for downstream classifiers. However, their black-box nature hides the morphological cues a classifier relies on. Based on the foundation models DINOv3 (general-purpose) and ViTAMIn-O (organoid-specific), we train sparse autoencoders (SAEs) to learn interpretable concepts related to distinct o</p><p><strong>Tags:</strong> SAE, features, probing, vision</p>]]></description>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.20840v1</guid>
+    </item>
     <item>
       <title>Can Mechanistic Interpretability Help Explain LLM Agent Failures? A Case Study on Web Element Hallucination</title>
       <link>https://arxiv.org/abs/2611.18514v1</link>
@@ -182,41 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Yuzhang Luo, Mohamed Aghzal, Liangming Pan, Ziyu Yao</p><p>Large language model (LLM) agents need to choose actions whose consequences unfold over multiple future steps, yet poor decisions do not reveal whether the model failed to represent those consequences or failed to use them. Mechanistic interpretability has studied internal representations of environment state and plans, but sequential decision making also requires evaluating how candidate actions change future outcomes. Reinforcement learning formalizes this as action value. We study this comput</p>]]></description>
       <pubDate>Sat, 07 Nov 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2611.10457v1</guid>
-    </item>
-    <item>
-      <title>Detecting and Explaining Robot Policy Failures from Sparse Internal Features</title>
-      <link>https://arxiv.org/abs/2611.10400v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Riad Ahmed, Sujosh Nag, Moniruzzaman Akash, Momotaz Begum</p><p>Visuomotor policies can handle many robot manipulation tasks, but understanding their failures remains difficult. Unfamiliar conditions and small action errors can lead to failure, yet watching the robot alone tells us little about what went wrong inside the policy. We introduce MIND (Mechanistic Interpretability for Neural Diagnosis), a method that looks inside a trained policy to detect failures during execution and identify the internal concepts involved. MIND uses a sparse autoencoder to bre</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Sat, 07 Nov 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2611.10400v1</guid>
-    </item>
-    <item>
-      <title>Learning a Unified Cross-Model Semantic Dictionary via Gated Bottleneck Sparse Autoencoders</title>
-      <link>https://arxiv.org/abs/2611.10503v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Jinchi Zhu, Tie Luo</p><p>Foundation models pretrained on similar data distributions tend to learn overlapping semantic structure, but their representations are distinct due to different model architecture, pretraining objectives and protocols. This prevents unified interpretability and cross-model feature reuse. Existing approaches extract interpretable concepts from individual models and align these concepts in a shared coordinate system using cross-reconstruction objectives, but the alignment only applies to latent co</p><p><strong>Tags:</strong> SAE, features, safety</p>]]></description>
-      <pubDate>Sat, 07 Nov 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2611.10503v1</guid>
-    </item>
-    <item>
-      <title>The Truth Beneath the Tokens: Prompt-Space Recovery of Knowledge Edits in Language Models</title>
-      <link>https://arxiv.org/abs/2611.10450v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Manit Baser, Rachel Yeo Hui Min, Aditya Nawal, Dinil Mon Divakaran, Mohan Gurusamy</p><p>Model editing provides an efficient way to update factual knowledge in transformer models. Recent approaches reverse edits by modifying, masking, or decomposing model weights, but make recovery dependent on weight-space interventions. We instead show that pre-edit knowledge can be recovered through input-space interventions alone, without modifying the edited model&#x27;s weights. We introduce Memento, a prompt-space mechanism for auditing residual knowledge that learns a reusable recovery signal to </p><p><strong>Tags:</strong> editing</p>]]></description>
-      <pubDate>Sat, 07 Nov 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2611.10450v1</guid>
-    </item>
-    <item>
-      <title>Cross-Layer TopK: Dynamically Allocating Sparsity Across Layers in Transcoders</title>
-      <link>https://arxiv.org/abs/2611.09233v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Anyuan Zhuo, Shaohua Zhang, Tianle Li, Yuan Lin, Diandian Gu, et al.</p><p>Cross-Layer Transcoders (CLTs) decompose the activations of large language models into human-interpretable features and trace how these features interact across layers to form circuits, making them a key tool for mechanistic interpretability. However, training CLTs effectively and efficiently is hard. Beyond the usual trade-off between sparsity and reconstruction quality, a CLT has to model all layers at once, which adds a further challenge. The common JumpReLU recipe controls sparsity only indi</p><p><strong>Tags:</strong> circuits, features</p>]]></description>
-      <pubDate>Fri, 06 Nov 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2611.09233v1</guid>
-    </item>
-    <item>
-      <title>Calibrated concept profiles: making the reading of a model&#x27;s neurons a measurement</title>
-      <link>https://arxiv.org/abs/2611.09196v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Piotr Wilam</p><p>Interpretability has largely moved from reading a model&#x27;s neurons directly to reading a second model trained on the first: a probe, a sparse autoencoder, a crosscoder. The move answered real faults -- mixed meanings, thresholds without a unit, readings that did not transfer from one study to the next -- but gave up what a direct reading alone provides: nothing trained in between, the neurons themselves named, and a reading that can be repeated and compared. Here the direct reading is made a meas</p><p><strong>Tags:</strong> SAE, probing</p>]]></description>
-      <pubDate>Fri, 06 Nov 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2611.09196v1</guid>
     </item>
   </channel>
 </rss>
