@@ -1,6 +1,75 @@
 {
-  "lastUpdated": "2026-11-16",
+  "lastUpdated": "2026-11-17",
   "papers": [
+    {
+      "id": "arxiv-2611-20441v1",
+      "title": "Abstention Direction in Large Language Models: Mechanistic Interpretability of Abstention Across Query Ambiguity, Knowledge Limits, and Safety Alignment",
+      "authors": "Koki Itai, Jun Hirako, Hiroaki Yamagiwa",
+      "date": "2026-11-16",
+      "url": "https://arxiv.org/abs/2611.20441v1",
+      "abstract": "Abstention, the withholding of a response by a large language model (LLM) under uncertainty or safety risks, is essential for trustworthy models. The causes of abstention fall into three perspectives: ambiguity in the Query (Q), limits of Model Knowledge (MK), and misalignment with Human Values (HV). However, prior analyses of internal representations have focused on HV, using a refusal direction computed from harmful and harmless queries. No study has analyzed the three perspectives jointly. We",
+      "tags": [
+        "safety"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-20371v1",
+      "title": "Pretty Linear Liars: Unregularized Probes Favor Intervention-Unfaithful Features",
+      "authors": "Karl Vilhelmsson Emneby, Julian Yocum, Cameron Allen",
+      "date": "2026-11-16",
+      "url": "https://arxiv.org/abs/2611.20371v1",
+      "abstract": "Linear probing is a common technique in mechanistic interpretability despite the fact that the decodability of a given feature does not necessarily imply the network uses that feature. Intervention faithfulness, not merely decodability, is the appropriate criterion for whether a feature serves a defined active role in the model. Meanwhile, probe regularization has been used for feature discovery, but the impact of regularization on feature causality remains unclear. We study probe regularization",
+      "tags": [
+        "features",
+        "probing"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-21586v1",
+      "title": "Beyond Job Titles: Interpreting Early-Career Job Advertisements with Sparse Autoencoders and Semantic Clustering",
+      "authors": "Yisong Cao, Leah Kim, Brian Wright, Ali Rivera",
+      "date": "2026-11-16",
+      "url": "https://arxiv.org/abs/2611.21586v1",
+      "abstract": "Job titles and job descriptions alone provide limited insight into how technical roles differ in a changing job market. To assess how such roles differ in their work and industry applications, we design and compare two methods based on deep learning and transformer representations using 36,081 early-career job postings collected from LinkedIn in the United States between December 2025 and October 2026.   We first apply PERC, short for Preprocessing (P), Embedding (E), Dimensionality Reduction (R",
+      "tags": [
+        "SAE"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-21348v1",
+      "title": "Representational Change Under Self-Consuming Training: A Sparse Autoencoder Analysis",
+      "authors": "Suchit Gupte, Zhongteng Cai, Xueru Zhang, Mohammad Mahdi Khalili",
+      "date": "2026-11-16",
+      "url": "https://arxiv.org/abs/2611.21348v1",
+      "abstract": "Large language models are increasingly exposed to model-generated text, raising the possibility that future models will be trained recursively on the outputs of their predecessors. Prior work on such self-consuming training loops has largely focused on output quality and downstream performance, leaving their effects on internal representations poorly understood. We study how representations evolve across five generations of self-consumption and whether sparse autoencoders (SAEs) remain reliable ",
+      "tags": [
+        "SAE"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-20840v1",
+      "title": "Interpretable deep concepts of organoid morphology",
+      "authors": "Lion Jasper Gleiter, Tingying Peng",
+      "date": "2026-11-16",
+      "url": "https://arxiv.org/abs/2611.20840v1",
+      "abstract": "Image-based classification of organoid morphologies can indicate drug response, viability, or successful differentiation. In recent work, learned representations outperform handcrafted features as the basis for downstream classifiers. However, their black-box nature hides the morphological cues a classifier relies on. Based on the foundation models DINOv3 (general-purpose) and ViTAMIn-O (organoid-specific), we train sparse autoencoders (SAEs) to learn interpretable concepts related to distinct o",
+      "tags": [
+        "SAE",
+        "features",
+        "probing",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2611-18514v1",
       "title": "Can Mechanistic Interpretability Help Explain LLM Agent Failures? A Case Study on Web Element Hallucination",
