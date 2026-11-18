@@ -5,7 +5,7 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Nov 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
     <item>
@@ -42,6 +42,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Lion Jasper Gleiter, Tingying Peng</p><p>Image-based classification of organoid morphologies can indicate drug response, viability, or successful differentiation. In recent work, learned representations outperform handcrafted features as the basis for downstream classifiers. However, their black-box nature hides the morphological cues a classifier relies on. Based on the foundation models DINOv3 (general-purpose) and ViTAMIn-O (organoid-specific), we train sparse autoencoders (SAEs) to learn interpretable concepts related to distinct o</p><p><strong>Tags:</strong> SAE, features, probing, vision</p>]]></description>
       <pubDate>Mon, 16 Nov 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2611.20840v1</guid>
+    </item>
+    <item>
+      <title>Disambiguating Moral Circuits and Moral Features in Language Models: Moral content, normative judgment or cue words? Evidence from 14 models</title>
+      <link>https://arxiv.org/abs/2611.21705v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Davide Liga, Liuwen Yu, Matteo Magnini</p><p>Interpretability methods can locate the attention heads and sparse autoencoder (SAE) features that change the answer a language model gives to a moral prompt, e.g., whether &quot;Stealing medicine for a dying child is morally&quot; continues with &quot;justified&quot; or &quot;wrong&quot;. Such a component could respond to moral content, to the judgment of conduct by any norm, or to the word &quot;morally&quot; in the prompt. We built 227 minimal pairs of short phrases, validated by five annotators, whose two versions differ in a mora</p><p><strong>Tags:</strong> SAE, circuits, features, attention</p>]]></description>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.21705v1</guid>
     </item>
     <item>
       <title>Can Mechanistic Interpretability Help Explain LLM Agent Failures? A Case Study on Web Element Hallucination</title>
@@ -210,13 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Yair Cohen, Scott M. Gilmore</p><p>Deep neural networks achieve universal function approximation by stacking interconnected nonlinearities, but as a consequence they are sensitive to noise and resist mechanistic interpretation. In contrast, the local update rules of cellular automata, such as Conway&#x27;s Game of Life, give rise to not merely interpretable but programmable dynamics. We explore a bridge between these worlds: a lateral inhibition in neural networks based on continuous Game-of-Life rules that derives inhibitory and exci</p>]]></description>
       <pubDate>Sat, 07 Nov 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2611.10760v1</guid>
-    </item>
-    <item>
-      <title>Represented but Not Used: Value-Policy Dissociation in LLM Agents</title>
-      <link>https://arxiv.org/abs/2611.10457v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Yuzhang Luo, Mohamed Aghzal, Liangming Pan, Ziyu Yao</p><p>Large language model (LLM) agents need to choose actions whose consequences unfold over multiple future steps, yet poor decisions do not reveal whether the model failed to represent those consequences or failed to use them. Mechanistic interpretability has studied internal representations of environment state and plans, but sequential decision making also requires evaluating how candidate actions change future outcomes. Reinforcement learning formalizes this as action value. We study this comput</p>]]></description>
-      <pubDate>Sat, 07 Nov 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2611.10457v1</guid>
     </item>
   </channel>
 </rss>
