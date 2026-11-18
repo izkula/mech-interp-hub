@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-17",
+  "lastUpdated": "2026-11-18",
   "papers": [
     {
       "id": "arxiv-2611-20441v1",
@@ -66,6 +66,22 @@
         "features",
         "probing",
         "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-21705v1",
+      "title": "Disambiguating Moral Circuits and Moral Features in Language Models: Moral content, normative judgment or cue words? Evidence from 14 models",
+      "authors": "Davide Liga, Liuwen Yu, Matteo Magnini",
+      "date": "2026-11-16",
+      "url": "https://arxiv.org/abs/2611.21705v1",
+      "abstract": "Interpretability methods can locate the attention heads and sparse autoencoder (SAE) features that change the answer a language model gives to a moral prompt, e.g., whether \"Stealing medicine for a dying child is morally\" continues with \"justified\" or \"wrong\". Such a component could respond to moral content, to the judgment of conduct by any norm, or to the word \"morally\" in the prompt. We built 227 minimal pairs of short phrases, validated by five annotators, whose two versions differ in a mora",
+      "tags": [
+        "SAE",
+        "circuits",
+        "features",
+        "attention"
       ],
       "source": "arXiv",
       "featured": false
