@@ -5,9 +5,30 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Nov 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Harmonic Circuit: Chord Progression Lies in a Sparse Principal Information Flow in Symbolic Music Models</title>
+      <link>https://arxiv.org/abs/2611.24453v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Ruiji Yu, Gus Xia</p><p>Mechanistic Interpretability (MI) seeks to decode neural network computations into human-understandable logic. A core methodology in MI is circuit discovery: identifying the information flow in sub-networks that drive specific model behaviors. While circuit discovery has matured within Natural Language Processing (NLP), the interpretable circuits in music models remain largely unexplored. In this work, we identify a music-functional circuit within two symbolic music generative models: ChatMusici</p><p><strong>Tags:</strong> circuits</p>]]></description>
+      <pubDate>Wed, 18 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.24453v1</guid>
+    </item>
+    <item>
+      <title>GateWatch: Low-Overhead LLM Monitoring with Boolean Circuits</title>
+      <link>https://arxiv.org/abs/2611.24619v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Firas Spanioli, Yaniv David</p><p>As large language models (LLMs) and LLM-based agents are increasingly deployed, monitoring their behavior becomes important for detecting unsafe or unintended actions. Activation probes offer an efficient approach, but existing methods face trade-offs between accuracy, interpretability, and computational overhead. Probes on raw activations lack interpretable inputs, whereas sparse autoencoder (SAE) probes use interpretable features but often rely on additive classifiers and large SAE encoders, l</p><p><strong>Tags:</strong> SAE, circuits, features, probing</p>]]></description>
+      <pubDate>Wed, 18 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.24619v1</guid>
+    </item>
+    <item>
+      <title>Tracking Representations in LLM Reasoning Traces for Iterated Games</title>
+      <link>https://arxiv.org/abs/2611.23403v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Chaipat Tirapongprasert, Rajarshi Das, Parijat Dube</p><p>Large language model (LLM) agents achieve state-of-the-art performance across domains through chain-of-thought (CoT) reasoning. Despite their ubiquitous use, little is understood about the relationship between the externalized trace and the model&#x27;s actual computation. We address this by investigating how LLM agents make decisions in iterative games with incomplete information. Using a series of mechanistic interpretability techniques, we find that the model forms and iteratively revises an inter</p><p><strong>Tags:</strong> reasoning</p>]]></description>
+      <pubDate>Tue, 17 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.23403v1</guid>
+    </item>
     <item>
       <title>Abstention Direction in Large Language Models: Mechanistic Interpretability of Abstention Across Query Ambiguity, Knowledge Limits, and Safety Alignment</title>
       <link>https://arxiv.org/abs/2611.20441v1</link>
@@ -196,27 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Pramath Girish Haritz, Chandra Sekhar Seelamantula</p><p>In this work, we investigate whether attention-based attribution maps in a vision transformer provide causal explanations for diabetic retinopathy (DR) classification. We introduce a principled decomposition of attention into two attribution maps: the contribution ($c_t$), which satisfies the completeness axiom in explainable artificial intelligence (xAI), and the pull ($p_t$), which quantifies causal explanations. We define an identity relating $c_t$ and $p_t$ that characterizes when $c_t$ fail</p><p><strong>Tags:</strong> vision</p>]]></description>
       <pubDate>Sun, 08 Nov 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2611.11547v1</guid>
-    </item>
-    <item>
-      <title>SWEET: Mitigating Spurious Feature Reliance in LLM Reasoning via Weight Editing</title>
-      <link>https://arxiv.org/abs/2611.10974v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Zhizhang Fu, Lucas Zhao, Michalis Korakakis, Mengru Ding, Lukasz Szpruch, et al.</p><p>Reasoning in large language models can be disrupted by simple input perturbations (e.g. adding irrelevant distractors), suggesting reliance on spurious correlations. Identifying and suppressing the spurious features involved in long chain-of-thought reasoning remains challenging. We introduce Spurious-feature WEight EdiTing (SWEET), a training-free method that combines counterfactual interventions with mechanistic interpretability to identify and suppress spurious-features. SWEET extracts token-</p><p><strong>Tags:</strong> features, reasoning</p>]]></description>
-      <pubDate>Sat, 07 Nov 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2611.10974v1</guid>
-    </item>
-    <item>
-      <title>Can small transformers learn the language of Coxeter groups?</title>
-      <link>https://arxiv.org/abs/2611.10936v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> J. Elisenda Grigsby, Yiyao Huang, Arushi Katyal, Ryan Lin, Pranav Ramakrishnan, et al.</p><p>The field of mechanistic interpretability is well-suited to collaborative projects between mathematicians and AI researchers. This work describes one such project. We trained a small transformer to learn the language of the Coxeter group affine A2, best known as the symmetries of the tiling of the Euclidean plane by equilateral triangles. We then formulated and proved a word-theoretic conjecture about affine A2 after observing the attention patterns of the trained model.</p><p><strong>Tags:</strong> attention</p>]]></description>
-      <pubDate>Sat, 07 Nov 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2611.10936v1</guid>
-    </item>
-    <item>
-      <title>ConwayNet: Interpretability, Activation Coherence, and Noise Resilience via a Game-of-Life-Inspired Lateral Inhibition in Artificial Neural Networks</title>
-      <link>https://arxiv.org/abs/2611.10760v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Yair Cohen, Scott M. Gilmore</p><p>Deep neural networks achieve universal function approximation by stacking interconnected nonlinearities, but as a consequence they are sensitive to noise and resist mechanistic interpretation. In contrast, the local update rules of cellular automata, such as Conway&#x27;s Game of Life, give rise to not merely interpretable but programmable dynamics. We explore a bridge between these worlds: a lateral inhibition in neural networks based on continuous Game-of-Life rules that derives inhibitory and exci</p>]]></description>
-      <pubDate>Sat, 07 Nov 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2611.10760v1</guid>
     </item>
   </channel>
 </rss>
