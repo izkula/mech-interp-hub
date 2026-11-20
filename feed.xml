@@ -5,9 +5,23 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Nov 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Who Moved My $Z$ Boson? Revealing Resonance Features Inside a Neural Network</title>
+      <link>https://arxiv.org/abs/2611.26291v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Kevin Alberto Urquía Calderón, Midori Kato, Inar Timiryasov, Oleg Ruchayskiy</p><p>Methods used in mechanistic interpretability have revealed human-aligned concepts inside language and image models. In this paper, we search for physics concepts inside a neural a generative collider physics model trained on real LHC data (ShellFlow). We discover features inside ShellFlow that represent resonances, such as the $Z$, $J/ψ$, and $Υ$. The network was never told which muons come from a resonance, it was only trained to generate the kinematics of the final-state particles. We use thes</p><p><strong>Tags:</strong> features, vision</p>]]></description>
+      <pubDate>Thu, 19 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.26291v1</guid>
+    </item>
+    <item>
+      <title>Revealing Pathway Interactions in Network Computations with Complete Path Contribution</title>
+      <link>https://arxiv.org/abs/2611.26101v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Shenghua Liu, Youssef Faragalla, Surya Ganguli, Stephen A. Baccus</p><p>Networks pass signals through many layers of interconnected units, so explaining what they compute means tracing how information travels from input to output and how pathways interact. Most existing approaches analyze only pairwise interactions between components such as units, layers or attention heads. Even when these measurements are combined post hoc into a circuit, they do not capture higher-order interactions along full causal chains (paths) from input to output, and so cannot address how </p><p><strong>Tags:</strong> circuits, attention</p>]]></description>
+      <pubDate>Thu, 19 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.26101v1</guid>
+    </item>
     <item>
       <title>Harmonic Circuit: Chord Progression Lies in a Sparse Principal Information Flow in Symbolic Music Models</title>
       <link>https://arxiv.org/abs/2611.24453v1</link>
@@ -21,6 +35,20 @@
       <description><![CDATA[<p><strong>Authors:</strong> Firas Spanioli, Yaniv David</p><p>As large language models (LLMs) and LLM-based agents are increasingly deployed, monitoring their behavior becomes important for detecting unsafe or unintended actions. Activation probes offer an efficient approach, but existing methods face trade-offs between accuracy, interpretability, and computational overhead. Probes on raw activations lack interpretable inputs, whereas sparse autoencoder (SAE) probes use interpretable features but often rely on additive classifiers and large SAE encoders, l</p><p><strong>Tags:</strong> SAE, circuits, features, probing</p>]]></description>
       <pubDate>Wed, 18 Nov 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2611.24619v1</guid>
+    </item>
+    <item>
+      <title>Separating Interpretability and Reconstruction in Sparse Autoencoders</title>
+      <link>https://arxiv.org/abs/2611.25165v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Anh Tien Nguyen, Dimitris Samaras, Mahdi S. Hosseini</p><p>Sparse Autoencoders (SAEs) are effective tools for mechanistic interpretability by decomposing neural representations into sparse and interpretable features. However, a single sparse representation in traditional SAEs is responsible for both reconstruction fidelity and interpretability, which are not guaranteed to align. To separate these objectives, we propose DualSAE, a modular framework that augments standard SAEs with a plug-in Residual Branch. A standard SAE serves as the Sparse Branch, lea</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Wed, 18 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.25165v1</guid>
+    </item>
+    <item>
+      <title>Auditing Learned Dynamics in Weather Models</title>
+      <link>https://arxiv.org/abs/2611.25119v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Skylar Gu, Christina Last</p><p>Learned weather models are experimentally accessible computational systems whose internal representations can be inspected and manipulated. Using sparse autoencoder features from GraphCast, DeepMind&#x27;s autoregressive weather forecasting model, we test whether causal relevance requires physical semantics, a question that matters for auditing whether AI forecasters used in high-assurance settings rely on reliable mechanisms. We also look at whether physically associated latent directions can be ste</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
+      <pubDate>Wed, 18 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.25119v1</guid>
     </item>
     <item>
       <title>Tracking Representations in LLM Reasoning Traces for Iterated Games</title>
@@ -189,34 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Nika Zahedi, Fangyi Zhu, Anna Wu</p><p>Lenses that decode hidden states into words are a popular way to look inside language models, but a heatmap of decoded words only shows what a vector reads as and cannot distinguish whether, or how much, the model uses the information. We present an interactive viewer that puts reading, tracing and editing on the same layers-by-tokens grid of the residual stream. In the viewer, every cell can be decoded with two lenses, the logit lens and the Jacobian lens (J-lens), traced back to the tokens it </p>]]></description>
       <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2611.13322v1</guid>
-    </item>
-    <item>
-      <title>Decomposing Earth Embeddings with Sparse Autoencoders</title>
-      <link>https://arxiv.org/abs/2611.11398v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Vitus Benson, Fanny Yang, Markus Reichstein</p><p>Earth observation foundation models produce global metre-resolution embeddings that underpin work across agriculture, ecology, hydrology, and beyond. Yet these embeddings are opaque: each dimension entangles unrelated physical concepts, which makes them difficult to interpret and their robustness hard to assess. Here, we propose sparse autoencoders (SAEs) as a principled way to decompose Earth embeddings into sparse, approximately monosemantic features over an overcomplete dictionary. Because LL</p><p><strong>Tags:</strong> SAE, features</p>]]></description>
-      <pubDate>Sun, 08 Nov 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2611.11398v1</guid>
-    </item>
-    <item>
-      <title>Beyond the Transcript: Measuring and Improving the Use of Acoustic Information in Audio Language Models</title>
-      <link>https://arxiv.org/abs/2611.11573v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Linkai Peng, Baorian Nuchged, Yuyang Yao</p><p>Audio language model benchmarks provide comprehensive evaluation across diverse tasks. However, some tasks can be answered from the transcript or even the question alone, and benchmark scores can therefore confound acoustic understanding with language modeling ability. We distinguish lexical tasks, for which the transcript usually suffices, from global-attribute and within-recording-structure tasks, which require the model to analyse the recording beyond its words, either as a whole, for propert</p>]]></description>
-      <pubDate>Sun, 08 Nov 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2611.11573v1</guid>
-    </item>
-    <item>
-      <title>Probing Transformer Representations Layer by Layer, Module by Module</title>
-      <link>https://arxiv.org/abs/2611.11531v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Ambroise Odonnat, Theo Gnassounou, Laetitia Chapel, Romain Tavenard, Ievgen Redko</p><p>Which representation should be probed in a transformer-based foundation model? Recent work shows that the standard practice of probing the final layer is often suboptimal, as intermediate layers can provide better features. Yet, representations are still largely studied along depth alone, treating each transformer block as an atomic unit. In this work, we analyze transformer representations layer by layer, module by module. Through more than 144,000 linear probing evaluations of vision foundatio</p><p><strong>Tags:</strong> features, probing, vision</p>]]></description>
-      <pubDate>Sun, 08 Nov 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2611.11531v1</guid>
-    </item>
-    <item>
-      <title>Dropping Tokens Without Dropping Them: Causal Attribution for Diabetic Retinopathy</title>
-      <link>https://arxiv.org/abs/2611.11547v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Pramath Girish Haritz, Chandra Sekhar Seelamantula</p><p>In this work, we investigate whether attention-based attribution maps in a vision transformer provide causal explanations for diabetic retinopathy (DR) classification. We introduce a principled decomposition of attention into two attribution maps: the contribution ($c_t$), which satisfies the completeness axiom in explainable artificial intelligence (xAI), and the pull ($p_t$), which quantifies causal explanations. We define an identity relating $c_t$ and $p_t$ that characterizes when $c_t$ fail</p><p><strong>Tags:</strong> vision</p>]]></description>
-      <pubDate>Sun, 08 Nov 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2611.11547v1</guid>
     </item>
   </channel>
 </rss>
