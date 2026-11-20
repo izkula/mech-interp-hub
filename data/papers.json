@@ -1,6 +1,34 @@
 {
-  "lastUpdated": "2026-11-19",
+  "lastUpdated": "2026-11-20",
   "papers": [
+    {
+      "id": "arxiv-2611-26291v1",
+      "title": "Who Moved My $Z$ Boson? Revealing Resonance Features Inside a Neural Network",
+      "authors": "Kevin Alberto Urqu\u00eda Calder\u00f3n, Midori Kato, Inar Timiryasov, Oleg Ruchayskiy",
+      "date": "2026-11-19",
+      "url": "https://arxiv.org/abs/2611.26291v1",
+      "abstract": "Methods used in mechanistic interpretability have revealed human-aligned concepts inside language and image models. In this paper, we search for physics concepts inside a neural a generative collider physics model trained on real LHC data (ShellFlow). We discover features inside ShellFlow that represent resonances, such as the $Z$, $J/\u03c8$, and $\u03a5$. The network was never told which muons come from a resonance, it was only trained to generate the kinematics of the final-state particles. We use thes",
+      "tags": [
+        "features",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-26101v1",
+      "title": "Revealing Pathway Interactions in Network Computations with Complete Path Contribution",
+      "authors": "Shenghua Liu, Youssef Faragalla, Surya Ganguli, Stephen A. Baccus",
+      "date": "2026-11-19",
+      "url": "https://arxiv.org/abs/2611.26101v1",
+      "abstract": "Networks pass signals through many layers of interconnected units, so explaining what they compute means tracing how information travels from input to output and how pathways interact. Most existing approaches analyze only pairwise interactions between components such as units, layers or attention heads. Even when these measurements are combined post hoc into a circuit, they do not capture higher-order interactions along full causal chains (paths) from input to output, and so cannot address how ",
+      "tags": [
+        "circuits",
+        "attention"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2611-24453v1",
       "title": "Harmonic Circuit: Chord Progression Lies in a Sparse Principal Information Flow in Symbolic Music Models",
@@ -26,6 +54,34 @@
         "circuits",
         "features",
         "probing"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-25165v1",
+      "title": "Separating Interpretability and Reconstruction in Sparse Autoencoders",
+      "authors": "Anh Tien Nguyen, Dimitris Samaras, Mahdi S. Hosseini",
+      "date": "2026-11-18",
+      "url": "https://arxiv.org/abs/2611.25165v1",
+      "abstract": "Sparse Autoencoders (SAEs) are effective tools for mechanistic interpretability by decomposing neural representations into sparse and interpretable features. However, a single sparse representation in traditional SAEs is responsible for both reconstruction fidelity and interpretability, which are not guaranteed to align. To separate these objectives, we propose DualSAE, a modular framework that augments standard SAEs with a plug-in Residual Branch. A standard SAE serves as the Sparse Branch, lea",
+      "tags": [
+        "SAE",
+        "features"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-25119v1",
+      "title": "Auditing Learned Dynamics in Weather Models",
+      "authors": "Skylar Gu, Christina Last",
+      "date": "2026-11-18",
+      "url": "https://arxiv.org/abs/2611.25119v1",
+      "abstract": "Learned weather models are experimentally accessible computational systems whose internal representations can be inspected and manipulated. Using sparse autoencoder features from GraphCast, DeepMind's autoregressive weather forecasting model, we test whether causal relevance requires physical semantics, a question that matters for auditing whether AI forecasters used in high-assurance settings rely on reliable mechanisms. We also look at whether physically associated latent directions can be ste",
+      "tags": [
+        "SAE",
+        "features"
       ],
       "source": "arXiv",
       "featured": false
