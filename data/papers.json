@@ -1,6 +1,61 @@
 {
-  "lastUpdated": "2026-11-22",
+  "lastUpdated": "2026-11-23",
   "papers": [
+    {
+      "id": "arxiv-2611-27353v1",
+      "title": "WaXup: Weight Averaging of Experts as Data Augmentation for Robust Introspection",
+      "authors": "Marc Bo\u00eblle, Lucas Dixon, Alexandre Ram\u00e9",
+      "date": "2026-11-20",
+      "url": "https://arxiv.org/abs/2611.27353v1",
+      "abstract": "As the capabilities of large language models keep improving, traditional mechanistic interpretability methods struggle to keep pace. In contrast, trainable introspection methods emerge as a promising alternative; they repurpose the model itself as a self-diagnostic tool, trained to verbalize what it has learned during finetuning in natural language. While training on datasets of finetuned experts achieves encouraging results, it currently lacks robustness and generalization. Building on the data",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-27079v1",
+      "title": "Weight-space programming and mechanistic interpretability for model editing in particle physics",
+      "authors": "Rapha\u00ebl Bonnet-Guerrini, Johann Ioannou-Nikolaides, Troels Petersen",
+      "date": "2026-11-20",
+      "url": "https://arxiv.org/abs/2611.27079v1",
+      "abstract": "We demonstrate that weight-space programming and edits guided by sparse autoencoders can remove unwanted aspects of a particle-physics foundation model through direct edits to its weights. In a foundation model trained on jets, we observe that adding a single soft neutral particle causes large changes in jet classification, violating infrared safety. We locate the responsible attention heads with mechanistic analysis and trace the flaw's origin to pretraining on datasets with different reconstru",
+      "tags": [
+        "SAE",
+        "safety",
+        "attention",
+        "editing"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-27652v1",
+      "title": "Auditing Post-Training Unlearning in Diffusion Language Models using Sparse Autoencoders",
+      "authors": "Yunha Seo, Changhoon Kim",
+      "date": "2026-11-20",
+      "url": "https://arxiv.org/abs/2611.27652v1",
+      "abstract": "Machine unlearning is an approach to privacy protection: it aims to remove the influence of designated data while preserving the model's behavior on information that should be retained. While a growing body of work investigates this objective in autoregressive large language models, machine unlearning remains underexplored in diffusion language models (DLMs). DLMs generate text through iterative denoising, exposing partially masked states whose internal representations change throughout the gene",
+      "tags": [
+        "SAE"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-27921v1",
+      "title": "ESSI: Computationally Efficient Semantic Search for Sparse Autoencoder Concepts",
+      "authors": "James Baker",
+      "date": "2026-11-20",
+      "url": "https://arxiv.org/abs/2611.27921v1",
+      "abstract": "Sparse autoencoders (SAEs) decompose diffusion model activations into interpretable features, but steering a model with them requires identifying which features map to a given semantic concept, if any. Existing methods for this concept to feature task are expensive, relying on grid searches or repeated passes through the frozen UNet. We propose Efficient Semantic Sparse Identification (ESSI). Using segmentation masks to label SDXL activations as concept or non-concept, ESSI ranks SAE features an",
+      "tags": [
+        "SAE",
+        "features",
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2611-26291v1",
       "title": "Who Moved My $Z$ Boson? Revealing Resonance Features Inside a Neural Network",
@@ -25,6 +80,19 @@
       "tags": [
         "circuits",
         "attention"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-26711v1",
+      "title": "Parasite Features: Causal Abstraction Through Spurious Pathways",
+      "authors": "Denis Sutter, Qing Yao, Sasha Boguraev, Julian Minder, Antonio Di Maio, et al.",
+      "date": "2026-11-19",
+      "url": "https://arxiv.org/abs/2611.26711v1",
+      "abstract": "Causal Abstraction defines a notion of \\emph{equivalence} between a neural network and an algorithm, thus serving as a powerful framework for mechanistic interpretability. In this paper, however, we show the existence of a class of \\emph{spurious features} which straightforwardly pass such equivalence tests. Suppose there are two directions in a model's representation space where: (i) one discriminates the input based on some feature, and (ii) the other steers the model towards a certain output.",
+      "tags": [
+        "features"
       ],
       "source": "arXiv",
       "featured": false
