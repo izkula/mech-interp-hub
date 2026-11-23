@@ -5,9 +5,37 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 22 Nov 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>WaXup: Weight Averaging of Experts as Data Augmentation for Robust Introspection</title>
+      <link>https://arxiv.org/abs/2611.27353v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Marc Boëlle, Lucas Dixon, Alexandre Ramé</p><p>As the capabilities of large language models keep improving, traditional mechanistic interpretability methods struggle to keep pace. In contrast, trainable introspection methods emerge as a promising alternative; they repurpose the model itself as a self-diagnostic tool, trained to verbalize what it has learned during finetuning in natural language. While training on datasets of finetuned experts achieves encouraging results, it currently lacks robustness and generalization. Building on the data</p>]]></description>
+      <pubDate>Fri, 20 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.27353v1</guid>
+    </item>
+    <item>
+      <title>Weight-space programming and mechanistic interpretability for model editing in particle physics</title>
+      <link>https://arxiv.org/abs/2611.27079v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Raphaël Bonnet-Guerrini, Johann Ioannou-Nikolaides, Troels Petersen</p><p>We demonstrate that weight-space programming and edits guided by sparse autoencoders can remove unwanted aspects of a particle-physics foundation model through direct edits to its weights. In a foundation model trained on jets, we observe that adding a single soft neutral particle causes large changes in jet classification, violating infrared safety. We locate the responsible attention heads with mechanistic analysis and trace the flaw&#x27;s origin to pretraining on datasets with different reconstru</p><p><strong>Tags:</strong> SAE, safety, attention, editing</p>]]></description>
+      <pubDate>Fri, 20 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.27079v1</guid>
+    </item>
+    <item>
+      <title>Auditing Post-Training Unlearning in Diffusion Language Models using Sparse Autoencoders</title>
+      <link>https://arxiv.org/abs/2611.27652v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Yunha Seo, Changhoon Kim</p><p>Machine unlearning is an approach to privacy protection: it aims to remove the influence of designated data while preserving the model&#x27;s behavior on information that should be retained. While a growing body of work investigates this objective in autoregressive large language models, machine unlearning remains underexplored in diffusion language models (DLMs). DLMs generate text through iterative denoising, exposing partially masked states whose internal representations change throughout the gene</p><p><strong>Tags:</strong> SAE</p>]]></description>
+      <pubDate>Fri, 20 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.27652v1</guid>
+    </item>
+    <item>
+      <title>ESSI: Computationally Efficient Semantic Search for Sparse Autoencoder Concepts</title>
+      <link>https://arxiv.org/abs/2611.27921v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> James Baker</p><p>Sparse autoencoders (SAEs) decompose diffusion model activations into interpretable features, but steering a model with them requires identifying which features map to a given semantic concept, if any. Existing methods for this concept to feature task are expensive, relying on grid searches or repeated passes through the frozen UNet. We propose Efficient Semantic Sparse Identification (ESSI). Using segmentation masks to label SDXL activations as concept or non-concept, ESSI ranks SAE features an</p><p><strong>Tags:</strong> SAE, features, steering</p>]]></description>
+      <pubDate>Fri, 20 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.27921v1</guid>
+    </item>
     <item>
       <title>Who Moved My $Z$ Boson? Revealing Resonance Features Inside a Neural Network</title>
       <link>https://arxiv.org/abs/2611.26291v1</link>
@@ -21,6 +49,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Shenghua Liu, Youssef Faragalla, Surya Ganguli, Stephen A. Baccus</p><p>Networks pass signals through many layers of interconnected units, so explaining what they compute means tracing how information travels from input to output and how pathways interact. Most existing approaches analyze only pairwise interactions between components such as units, layers or attention heads. Even when these measurements are combined post hoc into a circuit, they do not capture higher-order interactions along full causal chains (paths) from input to output, and so cannot address how </p><p><strong>Tags:</strong> circuits, attention</p>]]></description>
       <pubDate>Thu, 19 Nov 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2611.26101v1</guid>
+    </item>
+    <item>
+      <title>Parasite Features: Causal Abstraction Through Spurious Pathways</title>
+      <link>https://arxiv.org/abs/2611.26711v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Denis Sutter, Qing Yao, Sasha Boguraev, Julian Minder, Antonio Di Maio, et al.</p><p>Causal Abstraction defines a notion of \emph{equivalence} between a neural network and an algorithm, thus serving as a powerful framework for mechanistic interpretability. In this paper, however, we show the existence of a class of \emph{spurious features} which straightforwardly pass such equivalence tests. Suppose there are two directions in a model&#x27;s representation space where: (i) one discriminates the input based on some feature, and (ii) the other steers the model towards a certain output.</p><p><strong>Tags:</strong> features</p>]]></description>
+      <pubDate>Thu, 19 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.26711v1</guid>
     </item>
     <item>
       <title>Harmonic Circuit: Chord Progression Lies in a Sparse Principal Information Flow in Symbolic Music Models</title>
@@ -182,41 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Zhimin Hu, Chen Jiang, Hanbo Xie, N. Apurva Ratan Murty, Sashank Varma</p><p>Neural networks are increasingly studied not merely as predictive systems, but as complex systems whose internal computations are themselves objects of scientific inquiry. Recent progress in mechanistic interpretability (MI) has made it possible to identify neurons, features, circuits, population structures, and dynamical patterns associated with model behavior. As these tools improve, attention is shifting from what can be observed inside a model to how those observations support mechanistic ex</p><p><strong>Tags:</strong> circuits, features</p>]]></description>
       <pubDate>Tue, 10 Nov 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2611.14483v1</guid>
-    </item>
-    <item>
-      <title>Mechanistic Interpretability of Deep Neural Networks: Methods, Frameworks, and Perspectives</title>
-      <link>https://arxiv.org/abs/2611.13868v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Lorenzo Cirillo, Irene Amerini, Andrea Cavallaro</p><p>Deep neural networks underpin fundamental tasks in a wide range of signal domains, such as image, audio, and language processing. However, their internal mechanisms are notably difficult to interpret. Internal activations are structured signals transformed across layers that may encode a multitude of interdependent relationships, as individual neurons frequently represent multiple underlying concepts. Mechanistic interpretability aims to uncover the internal mechanisms of neural networks by iden</p><p><strong>Tags:</strong> vision</p>]]></description>
-      <pubDate>Tue, 10 Nov 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2611.13868v1</guid>
-    </item>
-    <item>
-      <title>Representational Atoms in Neural Networks</title>
-      <link>https://arxiv.org/abs/2611.14168v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Chenhui Hu, Pengfei Cao, Kang Liu, Jun Zhao</p><p>Understanding the internal representations of neural networks and characterizing their relationship with human conceptual structure are two critical questions for elucidating model mechanisms. The former reveals how learned knowledge is organized in internal representations, whereas the latter provides a basis for interpreting these representations through human conceptual structure. Here, we formally define fundamental representational units (FRUs) and establish two evaluation criteria: fidelit</p>]]></description>
-      <pubDate>Tue, 10 Nov 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2611.14168v1</guid>
-    </item>
-    <item>
-      <title>A Geometric Invariant of Attention Predicts Head Specialization from Weights Alone</title>
-      <link>https://arxiv.org/abs/2611.12206v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Miguel P. Bento</p><p>Transformers are built with continuous symmetries in the attention mechanism. We derive $ρ$, a scalar invariant that measures each head&#x27;s capacity to couple to rotary positional encodings. This framework allows us to analyze heads without forward passes, opening a new research direction into data-independent analysis of modern LLMs. Empirically, we find that $ρ$ predicts induction heads, the most-studied circuit type in mechanistic interpretability, with Spearman correlation between $-0.55$ and </p><p><strong>Tags:</strong> circuits</p>]]></description>
-      <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2611.12206v1</guid>
-    </item>
-    <item>
-      <title>Training Vision Transformers to Focus: Emergence of Spatial Attention Head Specialization</title>
-      <link>https://arxiv.org/abs/2611.11890v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Yuji Nozawa, Yu-Chieh Lin, Youyang Ng</p><p>Self-supervised learning in Vision Transformer models, such as DINO, enables robust visual perception without requiring labeled data by leveraging large-scale image datasets. However, these models lack a focusing mechanism during training, resulting in perceptual representations that are often ambiguous or overly similar. In this work, we introduce two visual focusing loss functions designed to establish correspondence between the model&#x27;s attention and specific regions within images. Specificall</p><p><strong>Tags:</strong> attention, vision</p>]]></description>
-      <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2611.11890v1</guid>
-    </item>
-    <item>
-      <title>MicroLens: Read, Trace, and Rewire the Residual Stream with Two Lenses</title>
-      <link>https://arxiv.org/abs/2611.13322v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Nika Zahedi, Fangyi Zhu, Anna Wu</p><p>Lenses that decode hidden states into words are a popular way to look inside language models, but a heatmap of decoded words only shows what a vector reads as and cannot distinguish whether, or how much, the model uses the information. We present an interactive viewer that puts reading, tracing and editing on the same layers-by-tokens grid of the residual stream. In the viewer, every cell can be decoded with two lenses, the logit lens and the Jacobian lens (J-lens), traced back to the tokens it </p>]]></description>
-      <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2611.13322v1</guid>
     </item>
   </channel>
 </rss>
