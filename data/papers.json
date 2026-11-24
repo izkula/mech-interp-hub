@@ -1,6 +1,85 @@
 {
-  "lastUpdated": "2026-11-23",
+  "lastUpdated": "2026-11-24",
   "papers": [
+    {
+      "id": "arxiv-2611-30939v1",
+      "title": "Beyond Patching: Consistent Circuit Discovery via Gradient Spectral Analysis",
+      "authors": "Yujie Zhang, Tianyi Zhao, Guanghui Min, Chen Chen",
+      "date": "2026-11-23",
+      "url": "https://arxiv.org/abs/2611.30939v1",
+      "abstract": "Mechanistic interpretability seeks to reverse-engineer neural networks by identifying small, faithful subgraphs--circuits--that implement specific behaviors. The dominant paradigm scores each unit by replacing its clean activation with a corrupted counterpart as causal intervention. While effective, this approach rests on a brittle prerequisite: the structure prompt pairs are task-specific, expensive to engineer, and silently couple the discovered circuit to prompt-design choices. In this work, ",
+      "tags": [
+        "circuits"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-30117v1",
+      "title": "What Remains After Concept Erasure? Sparse Autoencoder Probes for Auditing Diffusion Models",
+      "authors": "Zhuan Shi, Lu Wei, Yuta Nakashima, Noa Garcia, Golnoosh Farnadi",
+      "date": "2026-11-23",
+      "url": "https://arxiv.org/abs/2611.30117v1",
+      "abstract": "Concept erasure aims to remove selected visual concepts from text-to-image diffusion models while preserving the generation of non-target concepts. Evaluation typically measures target suppression and non-target preservation in generated images, but a concept's absence from these outputs does not establish its removal from the model. We introduce SAE-Audit, a white-box audit using sparse autoencoder (SAE) probes to test whether activation interventions can restore target-concept generation witho",
+      "tags": [
+        "SAE",
+        "probing",
+        "vision"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-30290v1",
+      "title": "Uncovering Separable and Composable Skill Mechanisms in Vision-Language Models",
+      "authors": "Miaoyu Li, Boyang Li",
+      "date": "2026-11-23",
+      "url": "https://arxiv.org/abs/2611.30290v1",
+      "abstract": "Recent work has sought to localize the internal mechanisms underlying visual reasoning skills in vision-language models. These methods largely overlook separability and composability in both mechanism identification and evaluation. We propose separability and composability as two important desiderata for skill localization. Separability requires identified mechanisms to contribute primarily to their target skills while having limited effects on other skills, enabling precise diagnosis and target",
+      "tags": [
+        "vision",
+        "reasoning"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-29368v1",
+      "title": "SAE-Audit: Clinical-Trial Prediction via Inference-Time Optimization of Black-Box LLMs Audited by Sparse Autoencoder Evidence",
+      "authors": "Junbo Shen",
+      "date": "2026-11-22",
+      "url": "https://arxiv.org/abs/2611.29368v1",
+      "abstract": "Clinical trials are costly and often take years to complete, making early outcome prediction valuable for trial planning. Large language models (LLMs) are increasingly used to forecast clinical-trial outcomes, yet their predictions remain unreliable and their rationales may not faithfully reflect the evidence underlying their answers. On tasks such as predicting whether a registered clinical trial will complete or terminate early, frontier LLMs perform only modestly above chance in our experimen",
+      "tags": [
+        "SAE"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-29285v1",
+      "title": "Compared to What? Calibrating Machine-Unlearning Diagnostics with Present, Absent and Suppressed Anchors",
+      "authors": "Arsalan Kaleem",
+      "date": "2026-11-22",
+      "url": "https://arxiv.org/abs/2611.29285v1",
+      "abstract": "Unlearning methods for language models are judged mainly by behaviour, but a model can stop producing an answer while still encoding it. Internal diagnostics such as linear probes, the logit lens and relearning speed are used to tell removal from suppression, yet none has been checked against cases where the answer is known. We build such cases. A present anchor learned a set of synthetic facts; an absent anchor is a never-taught oracle retrained without them; and suppressed anchors are unlearne",
+      "tags": [
+        "probing"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-28487v1",
+      "title": "PatchLens: Adapting Mechanistic Interpretability Techniques for Non-Expert Audiences",
+      "authors": "Gwenyth Lincroft, Yik Su Chan, Adam Belfki, Emma Bortz, Jonathan Bell",
+      "date": "2026-11-21",
+      "url": "https://arxiv.org/abs/2611.28487v1",
+      "abstract": "A chat interface presents a reply as finished text, concealing a model that predicts at every position and reruns. Mechanistic interpretability can show how a large language model produces text, but its tools are built for researchers. We present PatchLens, a browser interface that runs logit lens and activation patching on remotely served research-scale models. Each layer's state appears as the tokens it comes closest to, laid out by layer and input position; an intervention is a drag from one ",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2611-27353v1",
       "title": "WaXup: Weight Averaging of Experts as Data Augmentation for Robust Introspection",
@@ -94,6 +173,17 @@
       "tags": [
         "features"
       ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-28153v1",
+      "title": "From Observation to Explanation: Mechanistic Interpretability of LLM-Generated Code for Principled Repair",
+      "authors": "Musfiqur Rahman",
+      "date": "2026-11-19",
+      "url": "https://arxiv.org/abs/2611.28153v1",
+      "abstract": "Large language models (LLMs) have transformed software development, yet our understanding of how they generate code remains critically underdeveloped. We address this gap by triangulating evidence across three layers. Longitudinally, autonomous agent-attributed code is statistically indistinguishable from human code under a semantic modification definition (HR = 1.019, p = 0.490), yet attracts disproportionately corrective modifications in production (49.1% vs 37.9% human baseline). This finding",
+      "tags": [],
       "source": "arXiv",
       "featured": false
     },
