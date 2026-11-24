@@ -5,9 +5,51 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Nov 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Beyond Patching: Consistent Circuit Discovery via Gradient Spectral Analysis</title>
+      <link>https://arxiv.org/abs/2611.30939v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Yujie Zhang, Tianyi Zhao, Guanghui Min, Chen Chen</p><p>Mechanistic interpretability seeks to reverse-engineer neural networks by identifying small, faithful subgraphs--circuits--that implement specific behaviors. The dominant paradigm scores each unit by replacing its clean activation with a corrupted counterpart as causal intervention. While effective, this approach rests on a brittle prerequisite: the structure prompt pairs are task-specific, expensive to engineer, and silently couple the discovered circuit to prompt-design choices. In this work, </p><p><strong>Tags:</strong> circuits</p>]]></description>
+      <pubDate>Mon, 23 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.30939v1</guid>
+    </item>
+    <item>
+      <title>What Remains After Concept Erasure? Sparse Autoencoder Probes for Auditing Diffusion Models</title>
+      <link>https://arxiv.org/abs/2611.30117v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Zhuan Shi, Lu Wei, Yuta Nakashima, Noa Garcia, Golnoosh Farnadi</p><p>Concept erasure aims to remove selected visual concepts from text-to-image diffusion models while preserving the generation of non-target concepts. Evaluation typically measures target suppression and non-target preservation in generated images, but a concept&#x27;s absence from these outputs does not establish its removal from the model. We introduce SAE-Audit, a white-box audit using sparse autoencoder (SAE) probes to test whether activation interventions can restore target-concept generation witho</p><p><strong>Tags:</strong> SAE, probing, vision</p>]]></description>
+      <pubDate>Mon, 23 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.30117v1</guid>
+    </item>
+    <item>
+      <title>Uncovering Separable and Composable Skill Mechanisms in Vision-Language Models</title>
+      <link>https://arxiv.org/abs/2611.30290v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Miaoyu Li, Boyang Li</p><p>Recent work has sought to localize the internal mechanisms underlying visual reasoning skills in vision-language models. These methods largely overlook separability and composability in both mechanism identification and evaluation. We propose separability and composability as two important desiderata for skill localization. Separability requires identified mechanisms to contribute primarily to their target skills while having limited effects on other skills, enabling precise diagnosis and target</p><p><strong>Tags:</strong> vision, reasoning</p>]]></description>
+      <pubDate>Mon, 23 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.30290v1</guid>
+    </item>
+    <item>
+      <title>SAE-Audit: Clinical-Trial Prediction via Inference-Time Optimization of Black-Box LLMs Audited by Sparse Autoencoder Evidence</title>
+      <link>https://arxiv.org/abs/2611.29368v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Junbo Shen</p><p>Clinical trials are costly and often take years to complete, making early outcome prediction valuable for trial planning. Large language models (LLMs) are increasingly used to forecast clinical-trial outcomes, yet their predictions remain unreliable and their rationales may not faithfully reflect the evidence underlying their answers. On tasks such as predicting whether a registered clinical trial will complete or terminate early, frontier LLMs perform only modestly above chance in our experimen</p><p><strong>Tags:</strong> SAE</p>]]></description>
+      <pubDate>Sun, 22 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.29368v1</guid>
+    </item>
+    <item>
+      <title>Compared to What? Calibrating Machine-Unlearning Diagnostics with Present, Absent and Suppressed Anchors</title>
+      <link>https://arxiv.org/abs/2611.29285v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Arsalan Kaleem</p><p>Unlearning methods for language models are judged mainly by behaviour, but a model can stop producing an answer while still encoding it. Internal diagnostics such as linear probes, the logit lens and relearning speed are used to tell removal from suppression, yet none has been checked against cases where the answer is known. We build such cases. A present anchor learned a set of synthetic facts; an absent anchor is a never-taught oracle retrained without them; and suppressed anchors are unlearne</p><p><strong>Tags:</strong> probing</p>]]></description>
+      <pubDate>Sun, 22 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.29285v1</guid>
+    </item>
+    <item>
+      <title>PatchLens: Adapting Mechanistic Interpretability Techniques for Non-Expert Audiences</title>
+      <link>https://arxiv.org/abs/2611.28487v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Gwenyth Lincroft, Yik Su Chan, Adam Belfki, Emma Bortz, Jonathan Bell</p><p>A chat interface presents a reply as finished text, concealing a model that predicts at every position and reruns. Mechanistic interpretability can show how a large language model produces text, but its tools are built for researchers. We present PatchLens, a browser interface that runs logit lens and activation patching on remotely served research-scale models. Each layer&#x27;s state appears as the tokens it comes closest to, laid out by layer and input position; an intervention is a drag from one </p>]]></description>
+      <pubDate>Sat, 21 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.28487v1</guid>
+    </item>
     <item>
       <title>WaXup: Weight Averaging of Experts as Data Augmentation for Robust Introspection</title>
       <link>https://arxiv.org/abs/2611.27353v1</link>
@@ -56,6 +98,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Denis Sutter, Qing Yao, Sasha Boguraev, Julian Minder, Antonio Di Maio, et al.</p><p>Causal Abstraction defines a notion of \emph{equivalence} between a neural network and an algorithm, thus serving as a powerful framework for mechanistic interpretability. In this paper, however, we show the existence of a class of \emph{spurious features} which straightforwardly pass such equivalence tests. Suppose there are two directions in a model&#x27;s representation space where: (i) one discriminates the input based on some feature, and (ii) the other steers the model towards a certain output.</p><p><strong>Tags:</strong> features</p>]]></description>
       <pubDate>Thu, 19 Nov 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2611.26711v1</guid>
+    </item>
+    <item>
+      <title>From Observation to Explanation: Mechanistic Interpretability of LLM-Generated Code for Principled Repair</title>
+      <link>https://arxiv.org/abs/2611.28153v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Musfiqur Rahman</p><p>Large language models (LLMs) have transformed software development, yet our understanding of how they generate code remains critically underdeveloped. We address this gap by triangulating evidence across three layers. Longitudinally, autonomous agent-attributed code is statistically indistinguishable from human code under a semantic modification definition (HR = 1.019, p = 0.490), yet attracts disproportionately corrective modifications in production (49.1% vs 37.9% human baseline). This finding</p>]]></description>
+      <pubDate>Thu, 19 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.28153v1</guid>
     </item>
     <item>
       <title>Harmonic Circuit: Chord Progression Lies in a Sparse Principal Information Flow in Symbolic Music Models</title>
@@ -168,55 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Diane Bouchacourt, Gaëtan Brison</p><p>Medical AI systems that answer users&#x27; queries rely on retrieving medical knowledge from large document collections. In this context, finetuning general models on medical datasets can improve retrieval relevance. Yet the dense embeddings underlying modern retrieval systems remain largely opaque, making it difficult to understand the mechanics behind their results. Moreover, adapting to a specific medical dataset risks losing transferability to new clinical corpora. In this work, we tackle these i</p><p><strong>Tags:</strong> SAE</p>]]></description>
       <pubDate>Fri, 13 Nov 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2611.18179v1</guid>
-    </item>
-    <item>
-      <title>Dancing Tokens on the Vocabulary Network from LLM Generation</title>
-      <link>https://arxiv.org/abs/2611.18248v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Yuan-Chao Hu</p><p>Large language models (LLMs) generate text one token at a time, yet how a particular generation relates to the geometry learned in pre-training remains unclear. The fundamental explainability of LLMs is elusive. Here, we build a similarity network from the input embeddings of six open LLMs and map generation onto it. The token-embedding network is scale-free while heavy-tailed, as are random embeddings with matched covariance, but far more fragmented. Distillation barely changes this topology be</p>]]></description>
-      <pubDate>Fri, 13 Nov 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2611.18248v1</guid>
-    </item>
-    <item>
-      <title>V-JEPA-LM: Video-Language Models That Read Dynamics Beyond Static, Text-Aligned Representations</title>
-      <link>https://arxiv.org/abs/2611.17831v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Keuntae Kim, Dongjun Kim, Yong Suk Choi</p><p>World-model video encoders such as V-JEPA learn how scenes change (direction, speed, order, state) from video alone. To answer questions, they are joined to a language model trained on captions and question-answer pairs. But each caption or question names only a few attributes of a clip, so the model learns to retrieve those attributes rather than to read the clip, and the dynamics the encoder carries go unused: on the same items, a linear probe reads speed from frozen V-JEPA features at 87% whi</p><p><strong>Tags:</strong> features, probing</p>]]></description>
-      <pubDate>Fri, 13 Nov 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2611.17831v1</guid>
-    </item>
-    <item>
-      <title>Data-Efficient LLM Safety Alignment Guided by Interpretable Features</title>
-      <link>https://arxiv.org/abs/2611.16183v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Hongyu Li, Zhan Yu, Zhe Zhao, Kimmo Yan, Xiong Kuang, et al.</p><p>Existing large language models typically rely on massive fine-tuning datasets for safety alignment, which results in higher costs for safety alignment and often leads to the problem of over-refusal. We propose Less is Safer (LIS), a compact yet highly effective dataset for safety alignment, constructed through interpretable feature-guided selection and adversarial synthesis. Specifically, we leverage Sparse Autoencoder (SAE) activations to efficiently select prompts that cover diverse and interp</p><p><strong>Tags:</strong> SAE, features, safety</p>]]></description>
-      <pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2611.16183v1</guid>
-    </item>
-    <item>
-      <title>Mechanism-Level Chemical Reaction Simulation with Electron Bookkeeping Transformer</title>
-      <link>https://arxiv.org/abs/2611.17548v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Sarah Cao, Shitong Luo, Connor W. Coley</p><p>Modeling chemical reaction mechanisms is central to understanding and predicting chemical reactivity. We present Electron Bookkeeping Transformer (Bookkeeper), a data-driven model that simulates chemical reactions at mechanistic resolution by generating electron movement trajectories. Following the symbolic arrow-pushing formalism in chemistry, Bookkeeper explicitly models each electron as a token and predicts its movement sequentially, ensuring mass and charge conservation during both elementar</p>]]></description>
-      <pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2611.17548v1</guid>
-    </item>
-    <item>
-      <title>Where Is Uncertainty Observed? A Mechanistic Understanding of Uncertainty Quantification in LLMs</title>
-      <link>https://arxiv.org/abs/2611.15735v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Xiaoyu Liang, Virginia Ceccatelli, Aliai Eusebi, Tobias Braun, Nils Loose, et al.</p><p>Knowing when a large language model&#x27;s (LLM&#x27;s) response can be trusted is critical for its safe use. Uncertainty quantification (UQ) can help LLMs recognize if their responses may be unreliable. Existing taxonomies organize UQ methods by uncertainty source or estimation mechanism. They leave unresolved the question of where uncertainty is observed in the model&#x27;s computation. The answer matters because the observation point determines whether an estimator has access to enough information to recove</p>]]></description>
-      <pubDate>Wed, 11 Nov 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2611.15735v1</guid>
-    </item>
-    <item>
-      <title>A Mechanistic Interpretability Study of an Astronomy Foundation Model</title>
-      <link>https://arxiv.org/abs/2611.15653v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Rachel C. Zhang, Alberto Bietti, Wes Gurnee, Alessandro Favero, Miles Cranmer</p><p>Foundation models are increasingly used across the sciences, but whether their internal computations correspond to known scientific operations or proceed through different mechanisms remains unclear. Understanding these mechanisms is essential for assessing reliability, identifying failure modes, and learning new science from the models. We present, to our knowledge, the first causal mechanistic interpretability study of an astronomy foundation model, AION-1, focusing on its multimodal advantage</p><p><strong>Tags:</strong> vision</p>]]></description>
-      <pubDate>Wed, 11 Nov 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2611.15653v1</guid>
-    </item>
-    <item>
-      <title>Mechanistic Interpretability Needs a Logic of Inference</title>
-      <link>https://arxiv.org/abs/2611.14483v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Zhimin Hu, Chen Jiang, Hanbo Xie, N. Apurva Ratan Murty, Sashank Varma</p><p>Neural networks are increasingly studied not merely as predictive systems, but as complex systems whose internal computations are themselves objects of scientific inquiry. Recent progress in mechanistic interpretability (MI) has made it possible to identify neurons, features, circuits, population structures, and dynamical patterns associated with model behavior. As these tools improve, attention is shifting from what can be observed inside a model to how those observations support mechanistic ex</p><p><strong>Tags:</strong> circuits, features</p>]]></description>
-      <pubDate>Tue, 10 Nov 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2611.14483v1</guid>
     </item>
   </channel>
 </rss>
