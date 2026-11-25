@@ -1,6 +1,42 @@
 {
-  "lastUpdated": "2026-11-24",
+  "lastUpdated": "2026-11-25",
   "papers": [
+    {
+      "id": "arxiv-2611-32685v1",
+      "title": "Social Bias Neurons in Multilingual Language Models: A Mechanistic Interpretability Analysis",
+      "authors": "Lance Calvin Lim Gamboa, Yue Feng, Mark Lee",
+      "date": "2026-11-24",
+      "url": "https://arxiv.org/abs/2611.32685v1",
+      "abstract": "Multilingual models exhibit social bias when processing inputs pertaining to societal stereotypes. We adapt emerging mechanistic interpretability methods to pinpoint and characterize model components that encode this bias. We conduct our analysis across three instruction-tuned models, four languages, and seven bias dimensions. Specifically, we leverage multilingual bias benchmarks in implementing two methods for identifying social bias neurons: activation probability entropy and integrated gap g",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-31795v1",
+      "title": "Constructive Causal Abstraction and a Case Study in Mechanistic Interpretability",
+      "authors": "Yuchen Zhu, Sergio Hernan Garrido Mejia, Dominik Janzing",
+      "date": "2026-11-24",
+      "url": "https://arxiv.org/abs/2611.31795v1",
+      "abstract": "Existing frameworks in causal abstraction first propose a high-level causal model, and then verify whether its interventional effects agree with those of a given micro-level model - the two models are declared causally consistent when the discrepancy is zero. However, proposing a consistent macro causal model is difficult, because macro causal relations are almost never well-defined, since distinct micro-level interventions associated with the same apparent macro intervention can produce differe",
+      "tags": [],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-31730v1",
+      "title": "Tokenization and Architecture Jointly Allocate Component Roles in Time Series Transformers",
+      "authors": "Mingyu Kim, Doguk Kim",
+      "date": "2026-11-24",
+      "url": "https://arxiv.org/abs/2611.31730v1",
+      "abstract": "Time series transformers have achieved strong forecasting performance, yet it remains unclear which of their components, attention or the feed-forward network (FFN), constructs temporal features, and how tokenization such as patching changes this. We propose a temporal probing framework that uses 15 token-level diagnostic tasks to measure feature construction as the gain in linear decodability of temporal properties from one sub-layer to the next (a matched MLP probe already saturates at the emb",
+      "tags": [
+        "features",
+        "probing"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2611-30939v1",
       "title": "Beyond Patching: Consistent Circuit Discovery via Gradient Spectral Analysis",
