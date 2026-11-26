@@ -1,6 +1,21 @@
 {
-  "lastUpdated": "2026-11-25",
+  "lastUpdated": "2026-11-26",
   "papers": [
+    {
+      "id": "arxiv-2611-33640v1",
+      "title": "Sparse-to-Sparse Feature Learning for Cross-Layer Analysis and Steering",
+      "authors": "Masahiro Kaneko, Ayana Niwa, Timothy Baldwin",
+      "date": "2026-11-25",
+      "url": "https://arxiv.org/abs/2611.33640v1",
+      "abstract": "Understanding how models internally represent information is a central challenge in interpretation and control. Sparse autoencoders (SAEs) decompose dense hidden representations into sparse features, and cross-layer methods capture structure spanning multiple layers. However, existing objectives do not explicitly train the sparse code at one layer to predict the sparse code at the next layer. We propose sparse-to-sparse feature learning (S2S), where sparse features at each intermediate layer are",
+      "tags": [
+        "SAE",
+        "features",
+        "steering"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
     {
       "id": "arxiv-2611-32685v1",
       "title": "Social Bias Neurons in Multilingual Language Models: A Mechanistic Interpretability Analysis",
@@ -33,6 +48,20 @@
       "tags": [
         "features",
         "probing"
+      ],
+      "source": "arXiv",
+      "featured": false
+    },
+    {
+      "id": "arxiv-2611-33252v1",
+      "title": "MonoQPM: Splitting Features into Concepts for Inherent Interpretability and Predictive Performance",
+      "authors": "Thomas Norrenbrock, Robert Zimmermann, Timo Kaiser, Sovan Biswas, Neslihan Kose, et al.",
+      "date": "2026-11-24",
+      "url": "https://arxiv.org/abs/2611.33252v1",
+      "abstract": "Alongside superposition, polysemanticity is one of the primary obstacles to achieving interpretable deep neural networks. While these phenomena are typically intrinsically linked, the Quadratic Programming Enhanced Model (QPM) naturally decouples them. By representing classes with a sparse binary assignment of very few features, QPM prevents superposition by design on its final features but still exhibits polysemanticity. However, measuring polysemanticity is an open problem. This work proposes ",
+      "tags": [
+        "superposition",
+        "features"
       ],
       "source": "arXiv",
       "featured": false
