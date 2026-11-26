@@ -5,9 +5,16 @@
     <link>https://izkula.github.io/cc</link>
     <description>Latest research in mechanistic interpretability - understanding how neural networks work internally</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Nov 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://izkula.github.io/cc/feed.xml" rel="self" type="application/rss+xml"/>
 
+    <item>
+      <title>Sparse-to-Sparse Feature Learning for Cross-Layer Analysis and Steering</title>
+      <link>https://arxiv.org/abs/2611.33640v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Masahiro Kaneko, Ayana Niwa, Timothy Baldwin</p><p>Understanding how models internally represent information is a central challenge in interpretation and control. Sparse autoencoders (SAEs) decompose dense hidden representations into sparse features, and cross-layer methods capture structure spanning multiple layers. However, existing objectives do not explicitly train the sparse code at one layer to predict the sparse code at the next layer. We propose sparse-to-sparse feature learning (S2S), where sparse features at each intermediate layer are</p><p><strong>Tags:</strong> SAE, features, steering</p>]]></description>
+      <pubDate>Wed, 25 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.33640v1</guid>
+    </item>
     <item>
       <title>Social Bias Neurons in Multilingual Language Models: A Mechanistic Interpretability Analysis</title>
       <link>https://arxiv.org/abs/2611.32685v1</link>
@@ -28,6 +35,13 @@
       <description><![CDATA[<p><strong>Authors:</strong> Mingyu Kim, Doguk Kim</p><p>Time series transformers have achieved strong forecasting performance, yet it remains unclear which of their components, attention or the feed-forward network (FFN), constructs temporal features, and how tokenization such as patching changes this. We propose a temporal probing framework that uses 15 token-level diagnostic tasks to measure feature construction as the gain in linear decodability of temporal properties from one sub-layer to the next (a matched MLP probe already saturates at the emb</p><p><strong>Tags:</strong> features, probing</p>]]></description>
       <pubDate>Tue, 24 Nov 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2611.31730v1</guid>
+    </item>
+    <item>
+      <title>MonoQPM: Splitting Features into Concepts for Inherent Interpretability and Predictive Performance</title>
+      <link>https://arxiv.org/abs/2611.33252v1</link>
+      <description><![CDATA[<p><strong>Authors:</strong> Thomas Norrenbrock, Robert Zimmermann, Timo Kaiser, Sovan Biswas, Neslihan Kose, et al.</p><p>Alongside superposition, polysemanticity is one of the primary obstacles to achieving interpretable deep neural networks. While these phenomena are typically intrinsically linked, the Quadratic Programming Enhanced Model (QPM) naturally decouples them. By representing classes with a sparse binary assignment of very few features, QPM prevents superposition by design on its final features but still exhibits polysemanticity. However, measuring polysemanticity is an open problem. This work proposes </p><p><strong>Tags:</strong> superposition, features</p>]]></description>
+      <pubDate>Tue, 24 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://arxiv.org/abs/2611.33252v1</guid>
     </item>
     <item>
       <title>Beyond Patching: Consistent Circuit Discovery via Gradient Spectral Analysis</title>
@@ -203,20 +217,6 @@
       <description><![CDATA[<p><strong>Authors:</strong> Davide Liga, Liuwen Yu, Matteo Magnini</p><p>Interpretability methods can locate the attention heads and sparse autoencoder (SAE) features that change the answer a language model gives to a moral prompt, e.g., whether &quot;Stealing medicine for a dying child is morally&quot; continues with &quot;justified&quot; or &quot;wrong&quot;. Such a component could respond to moral content, to the judgment of conduct by any norm, or to the word &quot;morally&quot; in the prompt. We built 227 minimal pairs of short phrases, validated by five annotators, whose two versions differ in a mora</p><p><strong>Tags:</strong> SAE, circuits, features, attention</p>]]></description>
       <pubDate>Mon, 16 Nov 2026 00:00:00 +0000</pubDate>
       <guid>https://arxiv.org/abs/2611.21705v1</guid>
-    </item>
-    <item>
-      <title>Can Mechanistic Interpretability Help Explain LLM Agent Failures? A Case Study on Web Element Hallucination</title>
-      <link>https://arxiv.org/abs/2611.18514v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Mohamed Aghzal, Mor Geva, Gregory J. Stein, Ziyu Yao</p><p>Mechanistic Interpretability (MI) has made significant progress in explaining the internal computations of Large Language Models (LLMs); however, these advances have yet to demonstrate comparable success in explaining the decision-making processes of LLM-based agents. This paper examines the challenges MI tools face when applied to realistic agentic failures. We focus on one such failure: web agents hallucinating actions that are not available on a website. We apply a series of mechanistic analy</p>]]></description>
-      <pubDate>Fri, 13 Nov 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2611.18514v1</guid>
-    </item>
-    <item>
-      <title>Right Token, Right Time: From Per-Token Gating to Trajectory-Aware Activation Steering</title>
-      <link>https://arxiv.org/abs/2611.18274v1</link>
-      <description><![CDATA[<p><strong>Authors:</strong> Nima Eshraghi, Lovedeep Gondara, Sagarika Suresh, Xiaotong Xu, Jithin Pradeep, et al.</p><p>Activation steering via sparse autoencoders (SAEs) enables behavioral control of large language models without task-specific fine-tuning. Yet, standard methods apply the steering signal at every generated token, displacing representations from the distribution the model was trained on and eroding generation quality. We show that \emph{when} along a generation the intervention is applied is a decisive axis of control. We cast steering as a per-token allocation problem under a fixed budget of stee</p><p><strong>Tags:</strong> SAE, steering</p>]]></description>
-      <pubDate>Fri, 13 Nov 2026 00:00:00 +0000</pubDate>
-      <guid>https://arxiv.org/abs/2611.18274v1</guid>
     </item>
   </channel>
 </rss>
